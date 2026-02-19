@@ -1,3 +1,4 @@
-// Math Race — core game for Phase 1a
-// Components will be added in Step 4: visual race mechanic, question display, answer input
-export {};
+export { default as MathRacePage } from './MathRacePage';
+export { default as RaceTrack } from './RaceTrack';
+export { default as QuestionCard } from './QuestionCard';
+export { default as CountdownOverlay } from './CountdownOverlay';
