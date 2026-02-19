@@ -1,0 +1,56 @@
+graph TB
+    subgraph Users["👥 Users"]
+        Kid["🧒 Child Player<br/>(tablet/phone)"]
+        Teacher["👩‍🏫 Teacher<br/>(any device)"]
+        Admin["🔧 Admin (You)"]
+    end
+
+    subgraph GitHubPages["📦 GitHub Pages (Frontend Hosting)"]
+        React["⚛️ React + Vite App<br/>TypeScript + Tailwind"]
+        SW["🌐 Static Files<br/>HTML / JS / CSS / Assets"]
+    end
+
+    subgraph Firebase["🔥 Firebase (Backend Services)"]
+        Auth["🔐 Firebase Auth<br/>Google Sign-In (teachers)<br/>Email/Password (teachers)<br/>Anonymous (kids)"]
+        RTDB["⚡ Realtime Database<br/>Room state & sync<br/>Live player positions<br/>Live leaderboard<br/>Game session data"]
+        Firestore["💾 Firestore<br/>Game history<br/>Teacher templates<br/>Leaderboard records<br/>Student codes<br/>Admin aggregate stats"]
+    end
+
+    subgraph CICD["🔄 CI/CD Pipeline"]
+        GH_Actions["⚙️ GitHub Actions"]
+        Dev["🌿 dev branch"]
+        Main["🌿 main branch"]
+    end
+
+    subgraph AppInternals["🧠 App Architecture"]
+        Router["🧭 React Router v6<br/>Page navigation"]
+        Zustand["📊 Zustand Store<br/>Global state"]
+        i18n["🌍 react-i18next<br/>RO / EN + more"]
+        GameEngine["🎮 Game Engine<br/>Question generation<br/>Scoring logic"]
+        RoomManager["🚪 Room Manager<br/>Create/join rooms<br/>Real-time sync"]
+    end
+
+    Kid -->|"Join via room code<br/>(no account)"| React
+    Teacher -->|"Login + create sessions"| React
+    Admin -->|"View admin dashboard"| React
+
+    React --> Router
+    Router --> Zustand
+    Zustand --> GameEngine
+    Zustand --> RoomManager
+    React --> i18n
+
+    RoomManager -->|"WebSocket-like sync"| RTDB
+    GameEngine -->|"Save results"| Firestore
+    React -->|"Login/signup"| Auth
+    Teacher -->|"Templates & history"| Firestore
+
+    Dev -->|"PR merge"| Main
+    Main -->|"Auto-deploy"| GH_Actions
+    GH_Actions -->|"Build & publish"| GitHubPages
+
+    style Users fill:#fef3c7,stroke:#f59e0b,color:#000
+    style GitHubPages fill:#dbeafe,stroke:#3b82f6,color:#000
+    style Firebase fill:#fee2e2,stroke:#ef4444,color:#000
+    style CICD fill:#d1fae5,stroke:#10b981,color:#000
+    style AppInternals fill:#ede9fe,stroke:#8b5cf6,color:#000
