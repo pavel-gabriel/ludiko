@@ -1,0 +1,50 @@
+{
+  "app": {
+    "title": "Ludiko",
+    "subtitle": "Jocuri de Matematică"
+  },
+  "home": {
+    "createRoom": "Creează Cameră",
+    "joinRoom": "Intră în Cameră",
+    "tagline": "Învață matematica jucându-te!"
+  },
+  "create": {
+    "title": "Cameră Nouă",
+    "yourName": "Numele tău",
+    "namePlaceholder": "Ex: Maria",
+    "difficulty": "Dificultate",
+    "easy": "Ușor",
+    "medium": "Mediu",
+    "hard": "Greu",
+    "rounds": "Runde",
+    "timePerRound": "Timp per rundă (sec)",
+    "operations": "Operații",
+    "create": "Creează",
+    "back": "Înapoi"
+  },
+  "join": {
+    "title": "Intră în Cameră",
+    "yourName": "Numele tău",
+    "namePlaceholder": "Ex: Andrei",
+    "roomCode": "Codul camerei",
+    "codePlaceholder": "Ex: ABC123",
+    "join": "Intră",
+    "back": "Înapoi",
+    "invalidCode": "Cod invalid"
+  },
+  "lobby": {
+    "title": "Sala de Așteptare",
+    "roomCode": "Codul camerei",
+    "players": "Jucători",
+    "ready": "Gata!",
+    "notReady": "Pregătește-te",
+    "startGame": "Începe Jocul",
+    "waitingForPlayers": "Se așteaptă jucători...",
+    "leave": "Ieși"
+  },
+  "settings": {
+    "language": "Limbă",
+    "dyslexicFont": "Font pentru dislexie",
+    "sound": "Sunet"
+  }
+}

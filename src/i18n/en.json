@@ -1,0 +1,50 @@
+{
+  "app": {
+    "title": "Ludiko",
+    "subtitle": "Math Games"
+  },
+  "home": {
+    "createRoom": "Create Room",
+    "joinRoom": "Join Room",
+    "tagline": "Learn math by playing!"
+  },
+  "create": {
+    "title": "New Room",
+    "yourName": "Your name",
+    "namePlaceholder": "E.g. Maria",
+    "difficulty": "Difficulty",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "rounds": "Rounds",
+    "timePerRound": "Time per round (sec)",
+    "operations": "Operations",
+    "create": "Create",
+    "back": "Back"
+  },
+  "join": {
+    "title": "Join Room",
+    "yourName": "Your name",
+    "namePlaceholder": "E.g. Andrew",
+    "roomCode": "Room code",
+    "codePlaceholder": "E.g. ABC123",
+    "join": "Join",
+    "back": "Back",
+    "invalidCode": "Invalid code"
+  },
+  "lobby": {
+    "title": "Waiting Room",
+    "roomCode": "Room code",
+    "players": "Players",
+    "ready": "Ready!",
+    "notReady": "Get Ready",
+    "startGame": "Start Game",
+    "waitingForPlayers": "Waiting for players...",
+    "leave": "Leave"
+  },
+  "settings": {
+    "language": "Language",
+    "dyslexicFont": "Dyslexia-friendly font",
+    "sound": "Sound"
+  }
+}
