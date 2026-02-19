@@ -1,0 +1,18 @@
+rules_version = '2';
+
+// Firestore rules for Ludiko
+// Phase 1a: minimal rules — Firestore is used for persistent data (history, templates)
+// which isn't wired up yet. These rules lock everything down until Phase 1b.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default: deny all reads and writes
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Phase 1b will add:
+    // - /gameHistory/{id}: authenticated users can read their own history
+    // - /templates/{id}: teachers can CRUD their own templates
+    // - /adminStats/{id}: only admin UID can read
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "rules": {
+    "rooms": {
+      /* Index on 'code' for efficient room lookup by join code */
+      ".indexOn": ["code"],
+      "$roomId": {
+        /* Any authenticated user can read a room */
+        ".read": "auth != null",
+        /* Only authenticated users can create a room */
+        ".write": "auth != null",
+        "players": {
+          "$playerIndex": {
+            /* Players can update their own fields (e.g. isReady, score) */
+            ".write": "auth != null"
+          }
+        },
+        "game": {
+          /* All authenticated players in the room can read game state */
+          ".read": "auth != null",
+          /* All authenticated players can write (record answers, advance) */
+          ".write": "auth != null",
+          "progress": {
+            "$playerId": {
+              /* Any authenticated user can update progress */
+              ".write": "auth != null"
+            }
+          }
+        }
+      }
+    }
+  }
+}
