@@ -1,23 +1,32 @@
 {
   "app": {
     "title": "Ludiko",
-    "subtitle": "Jocuri de Matematică"
+    "subtitle": "Jocuri Educative"
   },
   "home": {
     "createRoom": "Creează Cameră",
     "joinRoom": "Intră în Cameră",
-    "tagline": "Învață matematica jucându-te!"
+    "tagline": "Învață jucându-te!"
   },
   "create": {
     "title": "Cameră Nouă",
     "yourName": "Numele tău",
     "namePlaceholder": "Ex: Maria",
+    "gameType": "Joc",
+    "gameTypeMathRace": "Cursă Matematică",
+    "gameTypeShapeMatch": "Potrivește Formele",
+    "gameTypeMemoryGame": "Joc de Memorie",
+    "gameMode": "Mod",
+    "gameModeRaceToFinish": "Cursă la Finish",
+    "gameModeTimedSprint": "Sprint Cronometrat",
     "difficulty": "Dificultate",
     "easy": "Ușor",
     "medium": "Mediu",
     "hard": "Greu",
     "rounds": "Runde",
+    "pairs": "Perechi",
     "timePerRound": "Timp per rundă (sec)",
+    "totalTime": "Timp total (sec)",
     "operations": "Operații",
     "create": "Creează",
     "back": "Înapoi"
@@ -49,12 +58,28 @@
     "tryAgain": "Mai încearcă!",
     "timeUp": "Timpul a expirat!",
     "getReady": "Pregătește-te!",
-    "go": "Start!"
+    "go": "Start!",
+    "tapTheShape": "Apasă pe",
+    "matchesFound": "Potriviri",
+    "moves": "Mutări",
+    "score": "Scor"
   },
   "results": {
     "title": "Rezultate",
     "playAgain": "Joacă din Nou",
-    "exit": "Ieși"
+    "exit": "Ieși",
+    "champion": "Campion!",
+    "accuracy": "precizie"
+  },
+  "shapes": {
+    "circle": "Cerc",
+    "square": "Pătrat",
+    "triangle": "Triunghi",
+    "star": "Stea",
+    "heart": "Inimă",
+    "diamond": "Romb",
+    "hexagon": "Hexagon",
+    "oval": "Oval"
   },
   "settings": {
     "language": "Limbă",

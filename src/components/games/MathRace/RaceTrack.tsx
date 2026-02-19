@@ -18,7 +18,7 @@ export default function RaceTrack({
   totalQuestions,
 }: RaceTrackProps) {
   return (
-    <div className="w-full space-y-3">
+    <div className="w-full space-y-3" role="region" aria-label="Race track">
       {players.map((player) => {
         const correct = progress[player.id] ?? 0;
         /* Position as a percentage of the track (0% to 100%) */
@@ -29,7 +29,15 @@ export default function RaceTrack({
         const finished = correct >= totalQuestions;
 
         return (
-          <div key={player.id} className="relative">
+          <div
+            key={player.id}
+            className="relative"
+            role="progressbar"
+            aria-valuenow={correct}
+            aria-valuemin={0}
+            aria-valuemax={totalQuestions}
+            aria-label={`${player.name}: ${correct}/${totalQuestions}`}
+          >
             {/* Player label */}
             <div className="flex items-center gap-2 mb-1">
               <span className="text-lg">{player.avatar}</span>

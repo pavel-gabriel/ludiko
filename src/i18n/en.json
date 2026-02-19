@@ -1,23 +1,32 @@
 {
   "app": {
     "title": "Ludiko",
-    "subtitle": "Math Games"
+    "subtitle": "Educational Games"
   },
   "home": {
     "createRoom": "Create Room",
     "joinRoom": "Join Room",
-    "tagline": "Learn math by playing!"
+    "tagline": "Learn by playing!"
   },
   "create": {
     "title": "New Room",
     "yourName": "Your name",
     "namePlaceholder": "E.g. Maria",
+    "gameType": "Game",
+    "gameTypeMathRace": "Math Race",
+    "gameTypeShapeMatch": "Shape Match",
+    "gameTypeMemoryGame": "Memory Game",
+    "gameMode": "Mode",
+    "gameModeRaceToFinish": "Race to Finish",
+    "gameModeTimedSprint": "Timed Sprint",
     "difficulty": "Difficulty",
     "easy": "Easy",
     "medium": "Medium",
     "hard": "Hard",
     "rounds": "Rounds",
+    "pairs": "Pairs",
     "timePerRound": "Time per round (sec)",
+    "totalTime": "Total time (sec)",
     "operations": "Operations",
     "create": "Create",
     "back": "Back"
@@ -49,12 +58,28 @@
     "tryAgain": "Try again!",
     "timeUp": "Time's up!",
     "getReady": "Get ready!",
-    "go": "Go!"
+    "go": "Go!",
+    "tapTheShape": "Tap the",
+    "matchesFound": "Matches",
+    "moves": "Moves",
+    "score": "Score"
   },
   "results": {
     "title": "Results",
     "playAgain": "Play Again",
-    "exit": "Exit"
+    "exit": "Exit",
+    "champion": "Champion!",
+    "accuracy": "accuracy"
+  },
+  "shapes": {
+    "circle": "Circle",
+    "square": "Square",
+    "triangle": "Triangle",
+    "star": "Star",
+    "heart": "Heart",
+    "diamond": "Diamond",
+    "hexagon": "Hexagon",
+    "oval": "Oval"
   },
   "settings": {
     "language": "Language",

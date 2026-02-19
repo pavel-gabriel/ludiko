@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import LanguageToggle from '@/components/ui/LanguageToggle';
 import DyslexiaToggle from '@/components/ui/DyslexiaToggle';
+import PersistentLeaderboard from '@/components/leaderboard/PersistentLeaderboard';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -32,6 +33,9 @@ export default function HomePage() {
           {t('home.joinRoom')}
         </Button>
       </div>
+
+      {/* Persistent leaderboard (shows only when history exists) */}
+      <PersistentLeaderboard />
     </div>
   );
 }

@@ -1,9 +1,30 @@
-import type { Difficulty, Operation, Question } from '@/utils/types';
-import { DIFFICULTY_RANGES } from '@/utils/constants';
+import type { Difficulty, Operation, Question, ShapeQuestion, MemoryCard } from '@/utils/types';
+import { DIFFICULTY_RANGES, SHAPES, MEMORY_EMOJIS } from '@/utils/constants';
+
+/* ------------------------------------------------------------------ */
+/*  Helpers                                                           */
+/* ------------------------------------------------------------------ */
 
 function randomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+function shuffle<T>(arr: T[]): T[] {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function uid(): string {
+  return Math.random().toString(36).substring(2, 8);
+}
+
+/* ------------------------------------------------------------------ */
+/*  Math question generation                                          */
+/* ------------------------------------------------------------------ */
 
 function computeAnswer(a: number, b: number, op: Operation): number {
   switch (op) {
@@ -59,6 +80,7 @@ function generateWrongAnswers(correct: number, count: number): number[] {
   return [...wrongs];
 }
 
+/** Generate a single math question */
 export function generateQuestion(
   difficulty: Difficulty,
   operations: Operation[],
@@ -68,18 +90,70 @@ export function generateQuestion(
   const correctAnswer = computeAnswer(a, b, operation);
 
   const wrongAnswers = generateWrongAnswers(correctAnswer, 3);
-  const options = [correctAnswer, ...wrongAnswers].sort(() => Math.random() - 0.5);
+  const options = shuffle([correctAnswer, ...wrongAnswers]);
+
+  return { id: uid(), a, b, operation, correctAnswer, options };
+}
+
+/** Check if an answer is correct */
+export function checkAnswer(question: Question, answer: number): boolean {
+  return answer === question.correctAnswer;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Shape question generation                                         */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Generate a shape question: "Tap the [shape]" with 4 shape options.
+ * Difficulty controls how many shapes are in the pool.
+ */
+export function generateShapeQuestion(difficulty: Difficulty): ShapeQuestion {
+  /* Harder difficulties use more shapes so distractors are harder */
+  const poolSize = difficulty === 'easy' ? 4 : difficulty === 'medium' ? 6 : SHAPES.length;
+  const pool = shuffle(SHAPES.slice(0, poolSize));
+
+  const target = pool[0];
+  const distractors = pool.slice(1, 4);
+
+  const options = shuffle([
+    { shape: target.name, color: target.color, label: target.labelKey },
+    ...distractors.map((s) => ({
+      shape: s.name,
+      color: s.color,
+      label: s.labelKey,
+    })),
+  ]);
+
+  const correctIndex = options.findIndex((o) => o.shape === target.name);
 
   return {
-    id: Math.random().toString(36).substring(2, 8),
-    a,
-    b,
-    operation,
-    correctAnswer,
+    id: uid(),
+    targetShape: target.name,
+    targetLabel: target.labelKey,
     options,
+    correctIndex,
   };
 }
 
-export function checkAnswer(question: Question, answer: number): boolean {
-  return answer === question.correctAnswer;
+/* ------------------------------------------------------------------ */
+/*  Memory card generation                                            */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Generate a shuffled grid of memory cards (pairs of emojis).
+ * @param pairCount Number of unique pairs (4-16)
+ */
+export function generateMemoryCards(pairCount: number): MemoryCard[] {
+  const clampedPairs = Math.min(Math.max(pairCount, 4), 16);
+  const emojis = shuffle(MEMORY_EMOJIS).slice(0, clampedPairs);
+
+  const cards: MemoryCard[] = [];
+  for (const emoji of emojis) {
+    const pairId = uid();
+    cards.push({ id: uid(), pairId, emoji, flipped: false, matched: false });
+    cards.push({ id: uid(), pairId, emoji, flipped: false, matched: false });
+  }
+
+  return shuffle(cards);
 }

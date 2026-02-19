@@ -13,7 +13,11 @@ export default function CountdownOverlay({ count }: CountdownOverlayProps) {
   const { t } = useTranslation();
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-ludiko-purple/90">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-ludiko-purple/90"
+      role="alert"
+      aria-live="assertive"
+    >
       <div className="text-center animate-pulse">
         {count > 0 ? (
           <span className="text-9xl font-extrabold text-white drop-shadow-lg">

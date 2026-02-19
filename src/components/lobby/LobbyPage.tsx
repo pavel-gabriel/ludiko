@@ -69,11 +69,12 @@ export default function LobbyPage() {
           <h3 className="text-sm font-semibold text-gray-500 mb-2">
             {t('lobby.players')} ({room.players.length})
           </h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2" role="list" aria-label="Player list">
             {room.players.map((player) => (
               <li
                 key={player.id}
                 className="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-3"
+                aria-label={`${player.name}${player.isHost ? ' (Host)' : ''}${player.isReady ? ' - Ready' : ''}`}
               >
                 <span className="text-2xl">{player.avatar}</span>
                 <span className="font-bold flex-1">{player.name}</span>

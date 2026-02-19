@@ -3,7 +3,7 @@ import HomePage from '@/components/lobby/HomePage';
 import CreateRoom from '@/components/lobby/CreateRoom';
 import JoinRoom from '@/components/lobby/JoinRoom';
 import LobbyPage from '@/components/lobby/LobbyPage';
-import { MathRacePage } from '@/components/games/MathRace';
+import GameRouter from '@/components/games/GameRouter';
 
 /** All application routes — add new pages here */
 export default function AppRoutes() {
@@ -13,7 +13,7 @@ export default function AppRoutes() {
       <Route path="/create" element={<CreateRoom />} />
       <Route path="/join" element={<JoinRoom />} />
       <Route path="/lobby" element={<LobbyPage />} />
-      <Route path="/game" element={<MathRacePage />} />
+      <Route path="/game" element={<GameRouter />} />
     </Routes>
   );
 }
