@@ -3,8 +3,8 @@ import type { Difficulty, GameSettings } from './types';
 export const APP_NAME = 'Ludiko';
 
 export const ROOM_CODE_LENGTH = 6;
-export const MAX_PLAYERS = 8;
-export const MIN_PLAYERS = 2;
+export const MAX_PLAYERS = 30;
+export const MIN_PLAYERS = 1;
 
 export const AVATARS = ['🦊', '🐸', '🐱', '🐶', '🐰', '🦁', '🐼', '🐨'];
 

@@ -42,6 +42,20 @@
     "waitingForPlayers": "Waiting for players...",
     "leave": "Leave"
   },
+  "game": {
+    "leaderboard": "Leaderboard",
+    "question": "Question",
+    "correct": "Correct!",
+    "tryAgain": "Try again!",
+    "timeUp": "Time's up!",
+    "getReady": "Get ready!",
+    "go": "Go!"
+  },
+  "results": {
+    "title": "Results",
+    "playAgain": "Play Again",
+    "exit": "Exit"
+  },
   "settings": {
     "language": "Language",
     "dyslexicFont": "Dyslexia-friendly font",

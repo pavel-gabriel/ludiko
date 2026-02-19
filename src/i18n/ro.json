@@ -42,6 +42,20 @@
     "waitingForPlayers": "Se așteaptă jucători...",
     "leave": "Ieși"
   },
+  "game": {
+    "leaderboard": "Clasament",
+    "question": "Întrebarea",
+    "correct": "Corect!",
+    "tryAgain": "Mai încearcă!",
+    "timeUp": "Timpul a expirat!",
+    "getReady": "Pregătește-te!",
+    "go": "Start!"
+  },
+  "results": {
+    "title": "Rezultate",
+    "playAgain": "Joacă din Nou",
+    "exit": "Ieși"
+  },
   "settings": {
     "language": "Limbă",
     "dyslexicFont": "Font pentru dislexie",

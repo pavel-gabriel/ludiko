@@ -1,9 +1,12 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { getDatabase } from 'firebase/database';
+import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
@@ -11,5 +14,14 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+
+/** Firestore — persistent data (history, templates, scores) */
 export const db = getFirestore(app);
+
+/** Realtime Database — live room state, player positions, leaderboard sync */
+export const rtdb = getDatabase(app);
+
+/** Firebase Auth — anonymous for kids, Google/email for teachers */
+export const auth = getAuth(app);
+
 export default app;
