@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import { useRoomStore } from '@/store/roomStore';
 import { joinRoomByCode } from '@/services/roomManager';
+import { ensureAnonymousAuth } from '@/services/authService';
 
 export default function JoinRoom() {
   const { t } = useTranslation();
@@ -21,6 +22,8 @@ export default function JoinRoom() {
     setError('');
 
     try {
+      /* Anonymous sign-in before any RTDB write (no PII, GDPR safe) */
+      await ensureAnonymousAuth();
       const result = await joinRoomByCode(code.toUpperCase(), name.trim());
       if (!result) {
         setError(t('join.invalidCode'));

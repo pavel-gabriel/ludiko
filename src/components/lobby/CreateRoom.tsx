@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import { useRoomStore } from '@/store/roomStore';
 import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
+import { ensureAnonymousAuth } from '@/services/authService';
 import type { Difficulty, Operation } from '@/utils/types';
 import { DEFAULT_GAME_SETTINGS } from '@/utils/constants';
 
@@ -30,6 +31,8 @@ export default function CreateRoom() {
     if (!name.trim() || operations.length === 0 || loading) return;
     setLoading(true);
     try {
+      /* Anonymous sign-in before any RTDB write (no PII, GDPR safe) */
+      await ensureAnonymousAuth();
       const room = buildRoom(name.trim(), { difficulty, rounds, timePerRound, operations });
       await createRoomInDB(room);
       registerDisconnectCleanup(room.id, true);
