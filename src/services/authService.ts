@@ -1,5 +1,5 @@
 import { signInAnonymously, onAuthStateChanged, type User } from 'firebase/auth';
-import { auth } from '@/services/firebase';
+import { auth, firebaseEnabled } from '@/services/firebase';
 
 /**
  * Ensure the user has a Firebase Auth session.
@@ -8,7 +8,8 @@ import { auth } from '@/services/firebase';
  *
  * Returns the Firebase User object.
  */
-export async function ensureAnonymousAuth(): Promise<User> {
+export async function ensureAnonymousAuth(): Promise<User | null> {
+  if (!firebaseEnabled) return null;
   /* If already signed in, return current user */
   if (auth.currentUser) return auth.currentUser;
 
@@ -21,10 +22,12 @@ export async function ensureAnonymousAuth(): Promise<User> {
  * Returns an unsubscribe function.
  */
 export function onAuthChange(callback: (user: User | null) => void) {
+  if (!firebaseEnabled) return () => {};
   return onAuthStateChanged(auth, callback);
 }
 
 /** Get the current user's UID, or null if not signed in */
 export function getCurrentUid(): string | null {
+  if (!firebaseEnabled) return null;
   return auth.currentUser?.uid ?? null;
 }

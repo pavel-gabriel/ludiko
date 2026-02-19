@@ -7,7 +7,7 @@ import {
   getDocs,
   serverTimestamp,
 } from 'firebase/firestore';
-import { db } from '@/services/firebase';
+import { db, firebaseEnabled } from '@/services/firebase';
 import type { GameType, GameMode, Difficulty } from '@/utils/types';
 
 /** A saved game result stored in Firestore /gameHistory */
@@ -42,6 +42,7 @@ export interface PlayerResult {
  * Called when a game finishes (from GameResults component).
  */
 export async function saveGameHistory(entry: GameHistoryEntry): Promise<string> {
+  if (!firebaseEnabled) return '';
   const docRef = await addDoc(collection(db, 'gameHistory'), entry);
   return docRef.id;
 }
@@ -62,6 +63,7 @@ export interface LeaderboardEntry {
 export async function fetchRecentHistory(
   maxResults = 50,
 ): Promise<GameHistoryEntry[]> {
+  if (!firebaseEnabled) return [];
   const q = query(
     collection(db, 'gameHistory'),
     orderBy('createdAt', 'desc'),
