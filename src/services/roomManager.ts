@@ -1,6 +1,25 @@
+import {
+  ref,
+  set,
+  get,
+  onValue,
+  update,
+  remove,
+  query,
+  orderByChild,
+  equalTo,
+  onDisconnect,
+  type Unsubscribe,
+} from 'firebase/database';
+import { rtdb } from '@/services/firebase';
 import type { Room, Player, GameSettings } from '@/utils/types';
 import { ROOM_CODE_LENGTH, DEFAULT_GAME_SETTINGS, AVATARS } from '@/utils/constants';
 
+/* ------------------------------------------------------------------ */
+/*  Helpers                                                           */
+/* ------------------------------------------------------------------ */
+
+/** Generate a random 6-char room code (no ambiguous chars like 0/O/1/I) */
 function generateRoomCode(): string {
   const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
   let code = '';
@@ -10,11 +29,22 @@ function generateRoomCode(): string {
   return code;
 }
 
+/** Generate a short unique player ID */
 function generatePlayerId(): string {
   return Math.random().toString(36).substring(2, 10);
 }
 
-export function createRoom(hostName: string, settings?: Partial<GameSettings>): Room {
+/** Pick an avatar based on current player count */
+function pickAvatar(playerCount: number): string {
+  return AVATARS[playerCount % AVATARS.length];
+}
+
+/* ------------------------------------------------------------------ */
+/*  Local room builders (used before pushing to RTDB)                 */
+/* ------------------------------------------------------------------ */
+
+/** Build a new Room object with the host as the first player */
+export function buildRoom(hostName: string, settings?: Partial<GameSettings>): Room {
   const hostId = generatePlayerId();
   return {
     id: generatePlayerId(),
@@ -24,7 +54,7 @@ export function createRoom(hostName: string, settings?: Partial<GameSettings>): 
       {
         id: hostId,
         name: hostName,
-        avatar: AVATARS[0],
+        avatar: pickAvatar(0),
         score: 0,
         isHost: true,
         isReady: true,
@@ -36,40 +66,109 @@ export function createRoom(hostName: string, settings?: Partial<GameSettings>): 
   };
 }
 
-export function addPlayerToRoom(room: Room, playerName: string): Player {
-  const avatarIndex = room.players.length % AVATARS.length;
-  const player: Player = {
+/** Build a Player object for someone joining an existing room */
+export function buildPlayer(name: string, playerCount: number): Player {
+  return {
     id: generatePlayerId(),
-    name: playerName,
-    avatar: AVATARS[avatarIndex],
+    name,
+    avatar: pickAvatar(playerCount),
     score: 0,
     isHost: false,
     isReady: false,
   };
-  room.players.push(player);
-  return player;
 }
 
-export function removePlayerFromRoom(room: Room, playerId: string): void {
-  room.players = room.players.filter((p) => p.id !== playerId);
+/* ------------------------------------------------------------------ */
+/*  RTDB operations                                                   */
+/* ------------------------------------------------------------------ */
+
+/** Write a newly created room to RTDB */
+export async function createRoomInDB(room: Room): Promise<void> {
+  const roomRef = ref(rtdb, `rooms/${room.id}`);
+  await set(roomRef, room);
 }
 
-// TODO: Wire up to Firestore
-export async function createRoomInFirestore(_room: Room): Promise<void> {
-  // await setDoc(doc(db, 'rooms', room.id), room);
+/** Look up a room by its 6-digit code and add the player */
+export async function joinRoomByCode(
+  code: string,
+  playerName: string,
+): Promise<{ room: Room; player: Player } | null> {
+  /* Query RTDB for a room with this code */
+  const roomsRef = ref(rtdb, 'rooms');
+  const q = query(roomsRef, orderByChild('code'), equalTo(code.toUpperCase()));
+  const snapshot = await get(q);
+
+  if (!snapshot.exists()) return null;
+
+  /* There should be exactly one room per code */
+  let roomId = '';
+  let roomData: Room | null = null;
+  snapshot.forEach((child) => {
+    roomId = child.key!;
+    roomData = child.val() as Room;
+  });
+
+  if (!roomData || (roomData as Room).status !== 'waiting') return null;
+
+  const room = roomData as Room;
+  const players: Player[] = room.players ?? [];
+  const player = buildPlayer(playerName, players.length);
+  players.push(player);
+
+  /* Push the updated players list back to RTDB */
+  await update(ref(rtdb, `rooms/${roomId}`), { players });
+
+  return { room: { ...room, id: roomId, players }, player };
 }
 
-export async function joinRoomByCode(_code: string, _playerName: string): Promise<Room | null> {
-  // const q = query(collection(db, 'rooms'), where('code', '==', code));
-  // const snapshot = await getDocs(q);
-  // ...
-  return null;
+/**
+ * Subscribe to real-time updates for a room.
+ * Returns an unsubscribe function.
+ */
+export function listenToRoom(
+  roomId: string,
+  callback: (room: Room | null) => void,
+): Unsubscribe {
+  const roomRef = ref(rtdb, `rooms/${roomId}`);
+  return onValue(roomRef, (snapshot) => {
+    callback(snapshot.exists() ? (snapshot.val() as Room) : null);
+  });
 }
 
-export async function listenToRoom(
-  _roomId: string,
-  _callback: (room: Room) => void,
-): Promise<() => void> {
-  // return onSnapshot(doc(db, 'rooms', roomId), (doc) => callback(doc.data()));
-  return () => {};
+/** Update the room status (e.g. 'waiting' -> 'playing' -> 'finished') */
+export async function updateRoomStatus(
+  roomId: string,
+  status: Room['status'],
+): Promise<void> {
+  await update(ref(rtdb, `rooms/${roomId}`), { status });
+}
+
+/** Mark a specific player as ready in the room */
+export async function setPlayerReady(
+  roomId: string,
+  playerIndex: number,
+  ready: boolean,
+): Promise<void> {
+  await update(ref(rtdb, `rooms/${roomId}/players/${playerIndex}`), {
+    isReady: ready,
+  });
+}
+
+/** Remove the room from RTDB (host cleanup) */
+export async function deleteRoom(roomId: string): Promise<void> {
+  await remove(ref(rtdb, `rooms/${roomId}`));
+}
+
+/**
+ * Register an onDisconnect handler so that if a player's browser closes,
+ * the room knows. For the host, the entire room is deleted.
+ */
+export function registerDisconnectCleanup(
+  roomId: string,
+  isHost: boolean,
+): void {
+  if (isHost) {
+    const roomRef = ref(rtdb, `rooms/${roomId}`);
+    onDisconnect(roomRef).remove();
+  }
 }

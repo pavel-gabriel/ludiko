@@ -1,12 +1,36 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import { useRoomStore } from '@/store/roomStore';
+import { listenToRoom, updateRoomStatus, deleteRoom } from '@/services/roomManager';
 
 export default function LobbyPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { room, currentPlayer, reset } = useRoomStore();
+  const { room, currentPlayer, setRoom, reset } = useRoomStore();
+
+  /* Subscribe to real-time room updates from RTDB */
+  useEffect(() => {
+    if (!room) return;
+
+    const unsubscribe = listenToRoom(room.id, (updatedRoom) => {
+      if (!updatedRoom) {
+        /* Room was deleted (host disconnected) */
+        reset();
+        navigate('/');
+        return;
+      }
+      setRoom(updatedRoom);
+
+      /* If room status changed to 'playing', navigate to game */
+      if (updatedRoom.status === 'playing') {
+        navigate('/game');
+      }
+    });
+
+    return () => unsubscribe();
+  }, [room?.id]);
 
   if (!room || !currentPlayer) {
     navigate('/');
@@ -15,13 +39,18 @@ export default function LobbyPage() {
 
   const isHost = currentPlayer.isHost;
 
-  const handleLeave = () => {
+  const handleLeave = async () => {
+    if (isHost) {
+      /* Host leaving deletes the room for everyone */
+      await deleteRoom(room.id);
+    }
     reset();
     navigate('/');
   };
 
-  const handleStart = () => {
-    // TODO: Wire up to Firebase and start game
+  const handleStart = async () => {
+    /* Set room status to 'playing' — all listeners will navigate to game */
+    await updateRoomStatus(room.id, 'playing');
   };
 
   return (
@@ -83,7 +112,6 @@ export default function LobbyPage() {
               size="md"
               className="flex-1"
               onClick={handleStart}
-              disabled={room.players.length < 2}
             >
               {t('lobby.startGame')}
             </Button>

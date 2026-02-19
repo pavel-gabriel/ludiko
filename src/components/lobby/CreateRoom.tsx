@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import { useRoomStore } from '@/store/roomStore';
-import { createRoom } from '@/services/roomManager';
+import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import type { Difficulty, Operation } from '@/utils/types';
 import { DEFAULT_GAME_SETTINGS } from '@/utils/constants';
 
@@ -24,12 +24,21 @@ export default function CreateRoom() {
     );
   };
 
-  const handleCreate = () => {
-    if (!name.trim() || operations.length === 0) return;
-    const room = createRoom(name.trim(), { difficulty, rounds, timePerRound, operations });
-    setRoom(room);
-    setCurrentPlayer(room.players[0]);
-    navigate('/lobby');
+  const [loading, setLoading] = useState(false);
+
+  const handleCreate = async () => {
+    if (!name.trim() || operations.length === 0 || loading) return;
+    setLoading(true);
+    try {
+      const room = buildRoom(name.trim(), { difficulty, rounds, timePerRound, operations });
+      await createRoomInDB(room);
+      registerDisconnectCleanup(room.id, true);
+      setRoom(room);
+      setCurrentPlayer(room.players[0]);
+      navigate('/lobby');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

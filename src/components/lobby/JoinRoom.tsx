@@ -2,24 +2,38 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import { useRoomStore } from '@/store/roomStore';
+import { joinRoomByCode } from '@/services/roomManager';
 
 export default function JoinRoom() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { setRoom, setCurrentPlayer } = useRoomStore();
 
   const [name, setName] = useState('');
   const [code, setCode] = useState('');
   const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleJoin = async () => {
-    if (!name.trim() || !code.trim()) return;
+    if (!name.trim() || !code.trim() || loading) return;
+    setLoading(true);
+    setError('');
 
-    // TODO: Wire up to Firebase
-    // const room = await joinRoomByCode(code.toUpperCase(), name.trim());
-    // if (!room) { setError(t('join.invalidCode')); return; }
-    // setRoom(room); navigate('/lobby');
-
-    setError(t('join.invalidCode'));
+    try {
+      const result = await joinRoomByCode(code.toUpperCase(), name.trim());
+      if (!result) {
+        setError(t('join.invalidCode'));
+        return;
+      }
+      setRoom(result.room);
+      setCurrentPlayer(result.player);
+      navigate('/lobby');
+    } catch {
+      setError(t('join.invalidCode'));
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -64,7 +78,7 @@ export default function JoinRoom() {
             size="md"
             className="flex-1"
             onClick={handleJoin}
-            disabled={!name.trim() || code.length < 6}
+            disabled={!name.trim() || code.length < 6 || loading}
           >
             {t('join.join')}
           </Button>
