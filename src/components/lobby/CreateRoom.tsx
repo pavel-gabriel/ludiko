@@ -52,7 +52,7 @@ export default function CreateRoom() {
         operations: showMathOptions ? operations : ['+'],
         rounds,
         timePerRound,
-        shapeMode: isShapeMatch ? shapeMode : undefined,
+        shapeMode: isShapeMatch ? shapeMode : null,
       }, avatar);
       await createRoomInDB(room);
       registerDisconnectCleanup(room.id, true);
