@@ -8,14 +8,17 @@ interface CountdownOverlayProps {
 
 export default function CountdownOverlay({ count }: CountdownOverlayProps) {
   const { t } = useTranslation();
-  const prevCount = useRef(count);
+  const mounted = useRef(false);
 
   useEffect(() => {
-    if (count !== prevCount.current) {
+    if (!mounted.current) {
+      mounted.current = true;
+      /* Play beep for the initial count (e.g. "3") */
       if (count > 0) playCountdownBeep();
-      else playGo();
-      prevCount.current = count;
+      return;
     }
+    if (count > 0) playCountdownBeep();
+    else playGo();
   }, [count]);
 
   return (

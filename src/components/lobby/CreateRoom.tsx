@@ -7,6 +7,7 @@ import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services
 import { ensureAnonymousAuth } from '@/services/authService';
 import type { Difficulty, Operation, GameType, GameMode } from '@/utils/types';
 import { DEFAULT_GAME_SETTINGS, GAME_TYPES } from '@/utils/constants';
+import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function CreateRoom() {
   const { t } = useTranslation();
