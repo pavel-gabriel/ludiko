@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { ShapeQuestion } from '@/utils/types';
 import ShapeSVG from './ShapeSVG';
+import { playCorrect, playWrong } from '@/utils/sounds';
 
 interface ShapeCardProps {
   question: ShapeQuestion;
@@ -11,10 +12,6 @@ interface ShapeCardProps {
   onAnswer: (correct: boolean) => void;
 }
 
-/**
- * Displays a shape question: "Tap the [target]!" and a 2x2 grid of shapes.
- * Gives visual feedback on correct/wrong answers.
- */
 export default function ShapeCard({
   question,
   questionNumber,
@@ -23,27 +20,37 @@ export default function ShapeCard({
   onAnswer,
 }: ShapeCardProps) {
   const { t } = useTranslation();
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null);
-  const [disabled, setDisabled] = useState(false);
+  const [selected, setSelected] = useState<number | null>(null);
+  const [correct, setCorrect] = useState(false);
 
   const handleTap = (index: number) => {
-    if (disabled) return;
-    setDisabled(true);
+    if (selected !== null) return;
 
     const isCorrect = index === question.correctIndex;
-    setFeedback(isCorrect ? 'correct' : 'wrong');
+    setSelected(index);
+    setCorrect(isCorrect);
 
-    /* Brief delay before advancing */
-    setTimeout(() => {
-      onAnswer(isCorrect);
-      setFeedback(null);
-      setDisabled(false);
-    }, isCorrect ? 600 : 900);
+    if (isCorrect) playCorrect();
+    else playWrong();
+
+    setTimeout(() => onAnswer(isCorrect), isCorrect ? 500 : 700);
+  };
+
+  const getShapeStyle = (index: number) => {
+    if (selected === null) {
+      return 'border-gray-200 bg-white hover:border-ludiko-purple hover:scale-105';
+    }
+    if (index === question.correctIndex) {
+      return 'border-green-400 bg-green-50 ring-2 ring-green-400';
+    }
+    if (index === selected && !correct) {
+      return 'border-red-400 bg-red-50';
+    }
+    return 'border-gray-200 bg-gray-50 opacity-60';
   };
 
   return (
     <div className="card w-full max-w-md mx-auto" role="region" aria-label={t('game.question')}>
-      {/* Header: question counter + timer */}
       <div className="flex justify-between items-center mb-4">
         <span className="text-sm font-semibold text-gray-500">
           {questionNumber}/{totalQuestions}
@@ -60,29 +67,19 @@ export default function ShapeCard({
         </span>
       </div>
 
-      {/* Prompt: "Tap the [shape]!" */}
       <h3 className="text-2xl font-bold text-center mb-6">
         {t('game.tapTheShape')}{' '}
         <span className="text-ludiko-purple">{t(question.targetLabel)}</span>!
       </h3>
 
-      {/* 2x2 shape grid */}
       <div className="grid grid-cols-2 gap-4 mb-4">
         {question.options.map((option, i) => (
           <button
             key={`${question.id}-${i}`}
             onClick={() => handleTap(i)}
-            disabled={disabled}
+            disabled={selected !== null}
             aria-label={t(option.label)}
-            className={`flex flex-col items-center justify-center p-4 rounded-2xl border-3 transition-all active:scale-95
-              ${disabled ? 'opacity-70' : 'hover:scale-105'}
-              ${
-                feedback && i === question.correctIndex
-                  ? 'border-green-400 bg-green-50'
-                  : feedback === 'wrong' && disabled
-                    ? 'border-gray-200 bg-gray-50'
-                    : 'border-gray-200 bg-white hover:border-ludiko-purple'
-              }`}
+            className={`flex flex-col items-center justify-center p-4 rounded-2xl border-3 transition-all active:scale-95 ${getShapeStyle(i)}`}
           >
             <ShapeSVG shape={option.shape} color={option.color} size={72} />
             <span className="text-sm font-semibold mt-2">{t(option.label)}</span>
@@ -90,15 +87,14 @@ export default function ShapeCard({
         ))}
       </div>
 
-      {/* Feedback message */}
-      {feedback && (
+      {selected !== null && (
         <p
           className={`text-center text-lg font-bold ${
-            feedback === 'correct' ? 'text-green-500' : 'text-orange-500'
+            correct ? 'text-green-500' : 'text-red-500'
           }`}
           aria-live="assertive"
         >
-          {feedback === 'correct' ? t('game.correct') : t('game.tryAgain')}
+          {correct ? t('game.correct') : t('game.wrong')}
         </p>
       )}
     </div>

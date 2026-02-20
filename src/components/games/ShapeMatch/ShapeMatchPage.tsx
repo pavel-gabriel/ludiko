@@ -7,20 +7,16 @@ import {
   initShapeGameState,
   listenToGameState,
   recordCorrectAnswer,
-  advanceQuestion,
   setGamePhase,
   type RTDBGameState,
 } from '@/services/gameSession';
+import { updateRoomStatus } from '@/services/roomManager';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import CountdownOverlay from '@/components/games/MathRace/CountdownOverlay';
 import RaceTrack from '@/components/games/MathRace/RaceTrack';
 import ShapeCard from './ShapeCard';
 import GameResults from '@/components/leaderboard/GameResults';
 
-/**
- * Shape Match game page.
- * Same multiplayer flow as Math Race but with shape identification questions.
- */
 export default function ShapeMatchPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -32,6 +28,9 @@ export default function ShapeMatchPage() {
   const [timeRemaining, setTimeRemaining] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  /* Each player tracks their own question index locally */
+  const [localIndex, setLocalIndex] = useState(0);
+
   const isHost = currentPlayer?.isHost ?? false;
   const settings = room?.settings;
   const totalQuestions = settings?.rounds ?? 10;
@@ -39,7 +38,6 @@ export default function ShapeMatchPage() {
   /* ----- STEP 1: Host generates shape questions ----- */
   useEffect(() => {
     if (!room || !isHost || !settings) return;
-
     const questions = Array.from({ length: totalQuestions }, () =>
       generateShapeQuestion(settings.difficulty),
     );
@@ -71,9 +69,11 @@ export default function ShapeMatchPage() {
     return () => clearInterval(interval);
   }, [showCountdown, isHost, room?.id]);
 
-  /* ----- STEP 4: Per-question timer ----- */
+  /* ----- STEP 4: Per-question timer, resets on localIndex ----- */
   useEffect(() => {
     if (!gameState || gameState.phase !== 'playing' || !settings) return;
+    if (localIndex >= totalQuestions) return;
+
     setTimeRemaining(settings.timePerRound);
     if (timerRef.current) clearInterval(timerRef.current);
 
@@ -81,7 +81,7 @@ export default function ShapeMatchPage() {
       setTimeRemaining((prev) => {
         if (prev <= 1) {
           clearInterval(timerRef.current!);
-          if (isHost && room) handleTimeUp();
+          setLocalIndex((i) => i + 1);
           return 0;
         }
         return prev - 1;
@@ -89,7 +89,15 @@ export default function ShapeMatchPage() {
     }, 1000);
 
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  }, [gameState?.currentIndex, gameState?.phase]);
+  }, [localIndex, gameState?.phase]);
+
+  /* ----- STEP 5: Detect game end ----- */
+  useEffect(() => {
+    if (!room || !isHost || !gameState || gameState.phase !== 'playing') return;
+    if (localIndex >= totalQuestions) {
+      setGamePhase(room.id, 'finished');
+    }
+  }, [localIndex]);
 
   /* ----- Handle shape answer ----- */
   const handleAnswer = useCallback(
@@ -98,24 +106,11 @@ export default function ShapeMatchPage() {
       if (correct) {
         const newCount = (gameState.progress[currentPlayer.id] ?? 0) + 1;
         await recordCorrectAnswer(room.id, currentPlayer.id, newCount);
-        if (newCount >= totalQuestions && isHost) {
-          await setGamePhase(room.id, 'finished');
-        }
       }
+      setLocalIndex((prev) => prev + 1);
     },
-    [gameState, room, currentPlayer, totalQuestions, isHost],
+    [gameState, room, currentPlayer],
   );
-
-  /* ----- Handle time up ----- */
-  const handleTimeUp = useCallback(async () => {
-    if (!gameState || !room || !isHost) return;
-    const next = gameState.currentIndex + 1;
-    if (next >= totalQuestions) {
-      await setGamePhase(room.id, 'finished');
-    } else {
-      await advanceQuestion(room.id, next);
-    }
-  }, [gameState, room, isHost, totalQuestions]);
 
   /* ----- Navigation guard ----- */
   if (!room || !currentPlayer) {
@@ -131,8 +126,8 @@ export default function ShapeMatchPage() {
         players={room.players}
         scores={gameState.progress}
         totalQuestions={totalQuestions}
-        onPlayAgain={() => { reset(); navigate('/'); }}
-        onExit={() => { reset(); navigate('/'); }}
+        onPlayAgain={async () => { await updateRoomStatus(room.id, 'waiting'); navigate('/lobby'); }}
+        onNewGame={() => { reset(); navigate('/'); }}
       />
     );
   }
@@ -145,7 +140,7 @@ export default function ShapeMatchPage() {
     );
   }
 
-  const currentQ = gameState.shapeQuestions[gameState.currentIndex];
+  const currentQ = gameState.shapeQuestions[localIndex];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-ludiko-green/10 to-ludiko-blue/10 px-4 py-6 flex flex-col gap-6">
@@ -156,8 +151,9 @@ export default function ShapeMatchPage() {
       />
       {currentQ && (
         <ShapeCard
+          key={localIndex}
           question={currentQ}
-          questionNumber={gameState.currentIndex + 1}
+          questionNumber={localIndex + 1}
           totalQuestions={totalQuestions}
           timeRemaining={timeRemaining}
           onAnswer={handleAnswer}

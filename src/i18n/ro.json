@@ -1,7 +1,8 @@
 {
   "app": {
     "title": "Ludiko",
-    "subtitle": "Jocuri Educative"
+    "subtitle": "Jocuri Educative",
+    "pageTitle": "Ludiko - Jocuri de Matematică"
   },
   "home": {
     "createRoom": "Creează Cameră",
@@ -55,6 +56,7 @@
     "leaderboard": "Clasament",
     "question": "Întrebarea",
     "correct": "Corect!",
+    "wrong": "Greșit!",
     "tryAgain": "Mai încearcă!",
     "timeUp": "Timpul a expirat!",
     "getReady": "Pregătește-te!",
@@ -66,6 +68,8 @@
   },
   "results": {
     "title": "Rezultate",
+    "replay": "Rejoacă",
+    "newGame": "Joc Nou",
     "playAgain": "Joacă din Nou",
     "exit": "Ieși",
     "champion": "Campion!",

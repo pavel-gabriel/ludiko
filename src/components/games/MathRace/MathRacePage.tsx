@@ -7,10 +7,10 @@ import {
   initGameState,
   listenToGameState,
   recordCorrectAnswer,
-  advanceQuestion,
   setGamePhase,
   type RTDBGameState,
 } from '@/services/gameSession';
+import { updateRoomStatus } from '@/services/roomManager';
 import type { Question } from '@/utils/types';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import RaceTrack from './RaceTrack';
@@ -32,7 +32,7 @@ export default function MathRacePage() {
   const [timeRemaining, setTimeRemaining] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  /* In Timed Sprint, each player tracks their own local question index */
+  /* Each player tracks their own question index locally */
   const [localIndex, setLocalIndex] = useState(0);
 
   const isHost = currentPlayer?.isHost ?? false;
@@ -80,31 +80,21 @@ export default function MathRacePage() {
     return () => clearInterval(interval);
   }, [showCountdown, isHost, room?.id]);
 
-  /* ----- STEP 4: Timer ----- */
+  /* ----- STEP 4a: Race mode — per-question timer, resets each question ----- */
   useEffect(() => {
+    if (isSprint) return;
     if (!gameState || gameState.phase !== 'playing' || !settings) return;
+    if (localIndex >= displayTotal) return;
 
-    if (isSprint) {
-      /* Timed Sprint: single global countdown from totalTime setting */
-      setTimeRemaining(settings.timePerRound);
-    } else {
-      /* Race to Finish: per-question timer */
-      setTimeRemaining(settings.timePerRound);
-    }
-
+    setTimeRemaining(settings.timePerRound);
     if (timerRef.current) clearInterval(timerRef.current);
 
     timerRef.current = setInterval(() => {
       setTimeRemaining((prev) => {
         if (prev <= 1) {
           clearInterval(timerRef.current!);
-          if (isSprint) {
-            /* Sprint timer expired — end the game */
-            if (isHost && room) setGamePhase(room.id, 'finished');
-          } else {
-            /* Race: time up on this question — auto-advance */
-            if (isHost && room && gameState) handleTimeUp();
-          }
+          /* Auto-skip question when time expires (counts as wrong) */
+          setLocalIndex((i) => i + 1);
           return 0;
         }
         return prev - 1;
@@ -112,47 +102,58 @@ export default function MathRacePage() {
     }, 1000);
 
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
-    /* Sprint: only restart timer once (on phase change to playing).
-       Race: restart on every question advance. */
-  }, [isSprint ? gameState?.phase : gameState?.currentIndex, gameState?.phase]);
+  }, [localIndex, gameState?.phase, isSprint]);
+
+  /* ----- STEP 4b: Sprint mode — single global countdown ----- */
+  useEffect(() => {
+    if (!isSprint) return;
+    if (!gameState || gameState.phase !== 'playing' || !settings) return;
+
+    setTimeRemaining(settings.timePerRound);
+    if (timerRef.current) clearInterval(timerRef.current);
+
+    timerRef.current = setInterval(() => {
+      setTimeRemaining((prev) => {
+        if (prev <= 1) {
+          clearInterval(timerRef.current!);
+          if (isHost && room) setGamePhase(room.id, 'finished');
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => { if (timerRef.current) clearInterval(timerRef.current); };
+  }, [gameState?.phase, isSprint]);
+
+  /* ----- STEP 5: Detect game end (Race mode) ----- */
+  useEffect(() => {
+    if (isSprint) return;
+    if (!room || !isHost || !gameState || gameState.phase !== 'playing') return;
+    if (localIndex >= displayTotal) {
+      setGamePhase(room.id, 'finished');
+    }
+  }, [localIndex]);
 
   /* ----- Handle answer from player ----- */
   const handleAnswer = useCallback(
     async (answer: number) => {
       if (!gameState || !room || !currentPlayer) return;
 
-      const qIndex = isSprint ? localIndex : gameState.currentIndex;
-      const currentQ = gameState.questions?.[qIndex];
+      const currentQ = gameState.questions?.[localIndex];
       if (!currentQ) return;
 
+      /* Only correct answers count toward score */
       if (answer === currentQ.correctAnswer) {
         const newCount = (gameState.progress[currentPlayer.id] ?? 0) + 1;
         await recordCorrectAnswer(room.id, currentPlayer.id, newCount);
-
-        if (isSprint) {
-          /* Sprint: advance to next question locally */
-          setLocalIndex((prev) => prev + 1);
-        } else {
-          /* Race: check if player finished all questions */
-          if (newCount >= displayTotal && isHost) {
-            await setGamePhase(room.id, 'finished');
-          }
-        }
       }
-    },
-    [gameState, room, currentPlayer, displayTotal, isHost, isSprint, localIndex],
-  );
 
-  /* ----- Handle time up (Race mode: auto-advance, host only) ----- */
-  const handleTimeUp = useCallback(async () => {
-    if (!gameState || !room || !isHost) return;
-    const nextIndex = gameState.currentIndex + 1;
-    if (nextIndex >= displayTotal) {
-      await setGamePhase(room.id, 'finished');
-    } else {
-      await advanceQuestion(room.id, nextIndex);
-    }
-  }, [gameState, room, isHost, displayTotal]);
+      /* Always advance to the next question */
+      setLocalIndex((prev) => prev + 1);
+    },
+    [gameState, room, currentPlayer, localIndex],
+  );
 
   /* ----- Navigation guards ----- */
   if (!room || !currentPlayer) {
@@ -163,18 +164,16 @@ export default function MathRacePage() {
   if (showCountdown) return <CountdownOverlay count={countdown} />;
 
   if (gameState?.phase === 'finished') {
-    /* In Sprint mode, totalQuestions for results = player's score (no fixed total) */
-    const resultsTotal = isSprint
-      ? Math.max(...Object.values(gameState.progress), 1)
-      : displayTotal;
+    /* Sprint: use total questions answered (localIndex) as denominator */
+    const resultsTotal = isSprint ? Math.max(localIndex, 1) : displayTotal;
 
     return (
       <GameResults
         players={room.players}
         scores={gameState.progress}
         totalQuestions={resultsTotal}
-        onPlayAgain={() => { reset(); navigate('/'); }}
-        onExit={() => { reset(); navigate('/'); }}
+        onPlayAgain={async () => { await updateRoomStatus(room.id, 'waiting'); navigate('/lobby'); }}
+        onNewGame={() => { reset(); navigate('/'); }}
       />
     );
   }
@@ -187,8 +186,7 @@ export default function MathRacePage() {
     );
   }
 
-  const qIndex = isSprint ? localIndex : gameState.currentIndex;
-  const currentQuestion = gameState.questions[qIndex];
+  const currentQuestion = gameState.questions[localIndex];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-ludiko-blue/10 to-ludiko-purple/10 px-4 py-6 flex flex-col gap-6">
@@ -216,8 +214,9 @@ export default function MathRacePage() {
 
       {currentQuestion && (
         <QuestionCard
+          key={localIndex}
           question={currentQuestion}
-          questionNumber={isSprint ? (gameState.progress[currentPlayer.id] ?? 0) + 1 : qIndex + 1}
+          questionNumber={isSprint ? (gameState.progress[currentPlayer.id] ?? 0) + 1 : localIndex + 1}
           totalQuestions={isSprint ? undefined : displayTotal}
           timeRemaining={isSprint ? undefined : timeRemaining}
           onAnswer={handleAnswer}
