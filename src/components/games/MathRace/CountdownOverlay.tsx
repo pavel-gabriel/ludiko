@@ -1,16 +1,22 @@
+import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { playCountdownBeep, playGo } from '@/utils/sounds';
 
 interface CountdownOverlayProps {
-  /** Current countdown number (3, 2, 1, 0) — 0 means "Go!" */
   count: number;
 }
 
-/**
- * Full-screen overlay that shows 3… 2… 1… Go! before the game starts.
- * Large, animated numbers centered on screen.
- */
 export default function CountdownOverlay({ count }: CountdownOverlayProps) {
   const { t } = useTranslation();
+  const prevCount = useRef(count);
+
+  useEffect(() => {
+    if (count !== prevCount.current) {
+      if (count > 0) playCountdownBeep();
+      else playGo();
+      prevCount.current = count;
+    }
+  }, [count]);
 
   return (
     <div

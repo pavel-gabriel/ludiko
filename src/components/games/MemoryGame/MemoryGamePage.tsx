@@ -10,6 +10,7 @@ import {
   setGamePhase,
   type RTDBGameState,
 } from '@/services/gameSession';
+import { updateRoomStatus } from '@/services/roomManager';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import type { MemoryCard } from '@/utils/types';
 import CountdownOverlay from '@/components/games/MathRace/CountdownOverlay';
@@ -144,8 +145,8 @@ export default function MemoryGamePage() {
         players={room.players}
         scores={gameState.progress}
         totalQuestions={totalPairs}
-        onPlayAgain={() => { reset(); navigate('/'); }}
-        onExit={() => { reset(); navigate('/'); }}
+        onPlayAgain={async () => { await updateRoomStatus(room.id, 'waiting'); navigate('/lobby'); }}
+        onNewGame={() => { reset(); navigate('/'); }}
       />
     );
   }

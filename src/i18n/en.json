@@ -1,7 +1,8 @@
 {
   "app": {
     "title": "Ludiko",
-    "subtitle": "Educational Games"
+    "subtitle": "Educational Games",
+    "pageTitle": "Ludiko - Math Games"
   },
   "home": {
     "createRoom": "Create Room",
@@ -55,6 +56,7 @@
     "leaderboard": "Leaderboard",
     "question": "Question",
     "correct": "Correct!",
+    "wrong": "Wrong!",
     "tryAgain": "Try again!",
     "timeUp": "Time's up!",
     "getReady": "Get ready!",
@@ -66,6 +68,8 @@
   },
   "results": {
     "title": "Results",
+    "replay": "Replay",
+    "newGame": "New Game",
     "playAgain": "Play Again",
     "exit": "Exit",
     "champion": "Champion!",

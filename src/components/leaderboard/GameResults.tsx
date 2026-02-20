@@ -5,43 +5,40 @@ import { useRoomStore } from '@/store/roomStore';
 import { saveGameHistory, type PlayerResult } from '@/services/historyService';
 import type { Player } from '@/utils/types';
 import { serverTimestamp } from 'firebase/firestore';
+import { playFinish } from '@/utils/sounds';
 
 interface GameResultsProps {
   players: Player[];
-  /** Final scores: playerId -> total correct answers */
   scores: Record<string, number>;
   totalQuestions: number;
+  /** Replay the same game (go to lobby and re-start) */
   onPlayAgain: () => void;
-  onExit: () => void;
+  /** New game configuration (go to home page) */
+  onNewGame: () => void;
 }
 
-/** Podium bar heights in px for 1st, 2nd, 3rd */
 const PODIUM_HEIGHTS = [140, 100, 72];
 const PODIUM_COLORS = ['bg-ludiko-yellow', 'bg-gray-200', 'bg-orange-200'];
 const PODIUM_RINGS = ['ring-yellow-400', 'ring-gray-400', 'ring-orange-400'];
 const PLACE_LABELS = ['1st', '2nd', '3rd'];
 
-/**
- * End-of-game results screen with animated top-3 podium.
- * Shows rankings, accuracy %, and action buttons.
- */
 export default function GameResults({
   players,
   scores,
   totalQuestions,
   onPlayAgain,
-  onExit,
+  onNewGame,
 }: GameResultsProps) {
   const { t } = useTranslation();
   const { room } = useRoomStore();
   const savedRef = useRef(false);
 
-  /* Sort players by score descending */
+  useEffect(() => { playFinish(); }, []);
+
   const ranked = [...players].sort(
     (a, b) => (scores[b.id] ?? 0) - (scores[a.id] ?? 0),
   );
 
-  /* Save game history to Firestore (once) */
   useEffect(() => {
     if (savedRef.current || !room) return;
     savedRef.current = true;
@@ -66,15 +63,12 @@ export default function GameResults({
       playerCount: players.length,
       results,
       createdAt: serverTimestamp(),
-    }).catch(() => {
-      /* Firestore write may fail if rules deny it — that's okay for now */
-    });
+    }).catch(() => {});
   }, []);
 
   const podiumPlayers = ranked.slice(0, 3);
   const restPlayers = ranked.slice(3);
 
-  /* Reorder podium for display: [2nd, 1st, 3rd] so 1st is in the center */
   const podiumDisplay = podiumPlayers.length >= 3
     ? [podiumPlayers[1], podiumPlayers[0], podiumPlayers[2]]
     : podiumPlayers;
@@ -85,14 +79,12 @@ export default function GameResults({
       <div className="card w-full max-w-md text-center">
         <h2 className="text-2xl font-bold mb-2">{t('results.title')}</h2>
 
-        {/* Champion label */}
         {ranked.length > 0 && (
           <p className="text-sm text-ludiko-purple font-bold mb-4 animate-bounce">
             {ranked[0].avatar} {ranked[0].name} — {t('results.champion')}
           </p>
         )}
 
-        {/* Podium */}
         {podiumPlayers.length > 0 && (
           <div
             className="flex items-end justify-center gap-3 mb-6"
@@ -131,7 +123,6 @@ export default function GameResults({
           </div>
         )}
 
-        {/* Remaining players (4th place and below) */}
         {restPlayers.length > 0 && (
           <ul className="space-y-2 mb-6">
             {restPlayers.map((player, index) => {
@@ -159,7 +150,6 @@ export default function GameResults({
           </ul>
         )}
 
-        {/* Accuracy summary for podium players */}
         {podiumPlayers.length > 0 && (
           <div className="flex justify-center gap-4 mb-6 text-sm text-gray-500">
             {ranked.slice(0, 3).map((player) => {
@@ -178,11 +168,11 @@ export default function GameResults({
         )}
 
         <div className="flex gap-3">
-          <Button variant="orange" size="md" onClick={onExit}>
-            {t('results.exit')}
+          <Button variant="orange" size="md" onClick={onNewGame}>
+            {t('results.newGame')}
           </Button>
           <Button variant="green" size="md" className="flex-1" onClick={onPlayAgain}>
-            {t('results.playAgain')}
+            {t('results.replay')}
           </Button>
         </div>
       </div>
