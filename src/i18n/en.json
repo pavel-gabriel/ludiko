@@ -13,6 +13,7 @@
     "title": "New Room",
     "yourName": "Your name",
     "namePlaceholder": "E.g. Maria",
+    "avatar": "Your avatar",
     "gameType": "Game",
     "gameTypeMathRace": "Math Race",
     "gameTypeShapeMatch": "Shape Match",
@@ -29,6 +30,9 @@
     "timePerRound": "Time per round (sec)",
     "totalTime": "Total time (sec)",
     "operations": "Operations",
+    "shapeMode": "Shape mode",
+    "shapeModeImage": "Find shape",
+    "shapeModeWord": "Find word",
     "create": "Create",
     "back": "Back"
   },
@@ -62,9 +66,12 @@
     "getReady": "Get ready!",
     "go": "Go!",
     "tapTheShape": "Tap the",
+    "findTheWord": "Find the word for",
     "matchesFound": "Matches",
     "moves": "Moves",
-    "score": "Score"
+    "tries": "Tries",
+    "score": "Score",
+    "exitGame": "Exit"
   },
   "results": {
     "title": "Results",

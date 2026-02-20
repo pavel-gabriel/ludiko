@@ -5,6 +5,7 @@ import Button from '@/components/ui/Button';
 import { useRoomStore } from '@/store/roomStore';
 import { joinRoomByCode } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
+import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function JoinRoom() {
   const { t } = useTranslation();
@@ -12,6 +13,7 @@ export default function JoinRoom() {
   const { setRoom, setCurrentPlayer } = useRoomStore();
 
   const [name, setName] = useState('');
+  const [avatar, setAvatar] = useState(EMOJI_OPTIONS[Math.floor(Math.random() * EMOJI_OPTIONS.length)]);
   const [code, setCode] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -24,7 +26,7 @@ export default function JoinRoom() {
     try {
       /* Anonymous sign-in before any RTDB write (no PII, GDPR safe) */
       await ensureAnonymousAuth();
-      const result = await joinRoomByCode(code.toUpperCase(), name.trim());
+      const result = await joinRoomByCode(code.toUpperCase(), name.trim(), avatar);
       if (!result) {
         setError(t('join.invalidCode'));
         return;
@@ -44,7 +46,7 @@ export default function JoinRoom() {
       <div className="card w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center">{t('join.title')}</h2>
 
-        <label className="block mb-4">
+        <label className="block mb-2">
           <span className="text-sm font-semibold">{t('join.yourName')}</span>
           <input
             type="text"
@@ -55,6 +57,12 @@ export default function JoinRoom() {
             maxLength={20}
           />
         </label>
+
+        {/* Avatar picker */}
+        <div className="mb-4">
+          <span className="text-sm font-semibold">{t('create.avatar')}</span>
+          <EmojiPicker selected={avatar} onChange={setAvatar} />
+        </div>
 
         <label className="block mb-4">
           <span className="text-sm font-semibold">{t('join.roomCode')}</span>

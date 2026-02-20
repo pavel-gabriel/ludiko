@@ -28,14 +28,26 @@ export default function ShapeMatchPage() {
   const [timeRemaining, setTimeRemaining] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  /* Each player tracks their own question index locally */
   const [localIndex, setLocalIndex] = useState(0);
 
   const isHost = currentPlayer?.isHost ?? false;
   const settings = room?.settings;
   const totalQuestions = settings?.rounds ?? 10;
+  const shapeMode = settings?.shapeMode ?? 'image';
 
-  /* ----- STEP 1: Host generates shape questions ----- */
+  const handleExit = useCallback(() => {
+    reset();
+    navigate('/');
+  }, [reset, navigate]);
+
+  /* Intercept browser back button */
+  useEffect(() => {
+    const onPopState = () => { handleExit(); };
+    window.history.pushState(null, '', window.location.href);
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, [handleExit]);
+
   useEffect(() => {
     if (!room || !isHost || !settings) return;
     const questions = Array.from({ length: totalQuestions }, () =>
@@ -45,14 +57,12 @@ export default function ShapeMatchPage() {
     initShapeGameState(room.id, questions, playerIds);
   }, [room?.id, isHost]);
 
-  /* ----- STEP 2: Subscribe to game state ----- */
   useEffect(() => {
     if (!room) return;
     const unsub = listenToGameState(room.id, setGameState);
     return () => unsub();
   }, [room?.id]);
 
-  /* ----- STEP 3: Countdown ----- */
   useEffect(() => {
     if (!showCountdown) return;
     const interval = setInterval(() => {
@@ -69,7 +79,6 @@ export default function ShapeMatchPage() {
     return () => clearInterval(interval);
   }, [showCountdown, isHost, room?.id]);
 
-  /* ----- STEP 4: Per-question timer, resets on localIndex ----- */
   useEffect(() => {
     if (!gameState || gameState.phase !== 'playing' || !settings) return;
     if (localIndex >= totalQuestions) return;
@@ -91,7 +100,6 @@ export default function ShapeMatchPage() {
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [localIndex, gameState?.phase]);
 
-  /* ----- STEP 5: Detect game end ----- */
   useEffect(() => {
     if (!room || !isHost || !gameState || gameState.phase !== 'playing') return;
     if (localIndex >= totalQuestions) {
@@ -99,7 +107,6 @@ export default function ShapeMatchPage() {
     }
   }, [localIndex]);
 
-  /* ----- Handle shape answer ----- */
   const handleAnswer = useCallback(
     async (correct: boolean) => {
       if (!gameState || !room || !currentPlayer) return;
@@ -112,7 +119,6 @@ export default function ShapeMatchPage() {
     [gameState, room, currentPlayer],
   );
 
-  /* ----- Navigation guard ----- */
   if (!room || !currentPlayer) {
     navigate('/');
     return null;
@@ -143,22 +149,34 @@ export default function ShapeMatchPage() {
   const currentQ = gameState.shapeQuestions[localIndex];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-ludiko-green/10 to-ludiko-blue/10 px-4 py-6 flex flex-col gap-6">
-      <RaceTrack
-        players={room.players}
-        progress={gameState.progress}
-        totalQuestions={totalQuestions}
-      />
-      {currentQ && (
-        <ShapeCard
-          key={localIndex}
-          question={currentQ}
-          questionNumber={localIndex + 1}
+    <div className="min-h-screen bg-gradient-to-b from-ludiko-green/10 to-ludiko-blue/10 px-4 py-6 flex flex-col items-center">
+      <div className="w-full max-w-md flex flex-col gap-6 flex-1">
+        <div className="flex justify-end">
+          <button
+            onClick={handleExit}
+            className="text-sm font-bold text-gray-400 hover:text-red-500 transition-colors px-3 py-1 rounded-lg hover:bg-red-50"
+          >
+            {t('game.exitGame')}
+          </button>
+        </div>
+
+        <RaceTrack
+          players={room.players}
+          progress={gameState.progress}
           totalQuestions={totalQuestions}
-          timeRemaining={timeRemaining}
-          onAnswer={handleAnswer}
         />
-      )}
+        {currentQ && (
+          <ShapeCard
+            key={localIndex}
+            question={currentQ}
+            questionNumber={localIndex + 1}
+            totalQuestions={totalQuestions}
+            timeRemaining={timeRemaining}
+            shapeMode={shapeMode}
+            onAnswer={handleAnswer}
+          />
+        )}
+      </div>
     </div>
   );
 }

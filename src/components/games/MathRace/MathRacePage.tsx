@@ -42,6 +42,19 @@ export default function MathRacePage() {
   /* For display and scoring in Race mode */
   const displayTotal = settings?.rounds ?? 10;
 
+  const handleExit = useCallback(() => {
+    reset();
+    navigate('/');
+  }, [reset, navigate]);
+
+  /* Intercept browser back button — exit cleanly instead of re-mounting */
+  useEffect(() => {
+    const onPopState = () => { handleExit(); };
+    window.history.pushState(null, '', window.location.href);
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, [handleExit]);
+
   /* ----- STEP 1: Host generates questions and pushes game state ----- */
   useEffect(() => {
     if (!room || !isHost || !settings) return;
@@ -189,39 +202,51 @@ export default function MathRacePage() {
   const currentQuestion = gameState.questions[localIndex];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-ludiko-blue/10 to-ludiko-purple/10 px-4 py-6 flex flex-col gap-6">
-      {/* Race track (Race mode) or score display (Sprint mode) */}
-      {!isSprint ? (
-        <RaceTrack
-          players={room.players}
-          progress={gameState.progress}
-          totalQuestions={displayTotal}
-        />
-      ) : (
-        <div className="flex justify-between items-center max-w-md mx-auto w-full">
-          <span className="text-lg font-bold text-ludiko-purple">
-            {t('game.score')}: {gameState.progress[currentPlayer.id] ?? 0}
-          </span>
-          <span
-            className={`text-lg font-bold px-4 py-1 rounded-full ${
-              timeRemaining <= 10 ? 'bg-red-100 text-red-600 animate-pulse' : 'bg-ludiko-blue/20'
-            }`}
+    <div className="min-h-screen bg-gradient-to-b from-ludiko-blue/10 to-ludiko-purple/10 px-4 py-6 flex flex-col items-center">
+      <div className="w-full max-w-md flex flex-col gap-6 flex-1">
+        {/* Exit button */}
+        <div className="flex justify-end">
+          <button
+            onClick={handleExit}
+            className="text-sm font-bold text-gray-400 hover:text-red-500 transition-colors px-3 py-1 rounded-lg hover:bg-red-50"
           >
-            {timeRemaining}s
-          </span>
+            {t('game.exitGame')}
+          </button>
         </div>
-      )}
 
-      {currentQuestion && (
-        <QuestionCard
-          key={localIndex}
-          question={currentQuestion}
-          questionNumber={isSprint ? (gameState.progress[currentPlayer.id] ?? 0) + 1 : localIndex + 1}
-          totalQuestions={isSprint ? undefined : displayTotal}
-          timeRemaining={isSprint ? undefined : timeRemaining}
-          onAnswer={handleAnswer}
-        />
-      )}
+        {/* Race track (Race mode) or score display (Sprint mode) */}
+        {!isSprint ? (
+          <RaceTrack
+            players={room.players}
+            progress={gameState.progress}
+            totalQuestions={displayTotal}
+          />
+        ) : (
+          <div className="flex justify-between items-center w-full">
+            <span className="text-lg font-bold text-ludiko-purple">
+              {t('game.score')}: {gameState.progress[currentPlayer.id] ?? 0}
+            </span>
+            <span
+              className={`text-lg font-bold px-4 py-1 rounded-full ${
+                timeRemaining <= 10 ? 'bg-red-100 text-red-600 animate-pulse' : 'bg-ludiko-blue/20'
+              }`}
+            >
+              {timeRemaining}s
+            </span>
+          </div>
+        )}
+
+        {currentQuestion && (
+          <QuestionCard
+            key={localIndex}
+            question={currentQuestion}
+            questionNumber={isSprint ? (gameState.progress[currentPlayer.id] ?? 0) + 1 : localIndex + 1}
+            totalQuestions={isSprint ? undefined : displayTotal}
+            timeRemaining={isSprint ? undefined : timeRemaining}
+            onAnswer={handleAnswer}
+          />
+        )}
+      </div>
     </div>
   );
 }
