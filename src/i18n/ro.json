@@ -13,6 +13,7 @@
     "title": "Cameră Nouă",
     "yourName": "Numele tău",
     "namePlaceholder": "Ex: Maria",
+    "avatar": "Avatarul tău",
     "gameType": "Joc",
     "gameTypeMathRace": "Cursă Matematică",
     "gameTypeShapeMatch": "Potrivește Formele",
@@ -29,6 +30,9 @@
     "timePerRound": "Timp per rundă (sec)",
     "totalTime": "Timp total (sec)",
     "operations": "Operații",
+    "shapeMode": "Mod forme",
+    "shapeModeImage": "Găsește forma",
+    "shapeModeWord": "Găsește cuvântul",
     "create": "Creează",
     "back": "Înapoi"
   },
@@ -62,9 +66,12 @@
     "getReady": "Pregătește-te!",
     "go": "Start!",
     "tapTheShape": "Apasă pe",
+    "findTheWord": "Găsește cuvântul pentru",
     "matchesFound": "Potriviri",
     "moves": "Mutări",
-    "score": "Scor"
+    "tries": "Încercări",
+    "score": "Scor",
+    "exitGame": "Ieși"
   },
   "results": {
     "title": "Rezultate",

@@ -3,6 +3,7 @@ export type Operation = '+' | '-' | '×' | '÷';
 export type Language = 'ro' | 'en';
 export type GameType = 'mathRace' | 'shapeMatch' | 'memoryGame';
 export type GameMode = 'raceToFinish' | 'timedSprint';
+export type ShapeMode = 'image' | 'word';
 
 export interface Player {
   id: string;
@@ -30,6 +31,7 @@ export interface GameSettings {
   operations: Operation[];
   rounds: number;
   timePerRound: number;
+  shapeMode?: ShapeMode;
 }
 
 /** Math question (used by Math Race and Timed Sprint) */

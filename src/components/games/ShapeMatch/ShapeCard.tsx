@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import type { ShapeQuestion } from '@/utils/types';
+import type { ShapeQuestion, ShapeMode } from '@/utils/types';
 import ShapeSVG from './ShapeSVG';
 import { playCorrect, playWrong } from '@/utils/sounds';
 
@@ -9,6 +9,7 @@ interface ShapeCardProps {
   questionNumber: number;
   totalQuestions: number;
   timeRemaining: number;
+  shapeMode: ShapeMode;
   onAnswer: (correct: boolean) => void;
 }
 
@@ -17,6 +18,7 @@ export default function ShapeCard({
   questionNumber,
   totalQuestions,
   timeRemaining,
+  shapeMode,
   onAnswer,
 }: ShapeCardProps) {
   const { t } = useTranslation();
@@ -49,6 +51,8 @@ export default function ShapeCard({
     return 'border-gray-200 bg-gray-50 opacity-60';
   };
 
+  const isWordMode = shapeMode === 'word';
+
   return (
     <div className="card w-full max-w-md mx-auto" role="region" aria-label={t('game.question')}>
       <div className="flex justify-between items-center mb-4">
@@ -67,11 +71,26 @@ export default function ShapeCard({
         </span>
       </div>
 
-      <h3 className="text-2xl font-bold text-center mb-6">
-        {t('game.tapTheShape')}{' '}
-        <span className="text-ludiko-purple">{t(question.targetLabel)}</span>!
-      </h3>
+      {/* Prompt: word mode shows the shape, image mode shows the word */}
+      {isWordMode ? (
+        <div className="flex flex-col items-center mb-6">
+          <h3 className="text-lg font-bold text-center mb-3">
+            {t('game.findTheWord')}
+          </h3>
+          <ShapeSVG
+            shape={question.options[question.correctIndex].shape}
+            color={question.options[question.correctIndex].color}
+            size={96}
+          />
+        </div>
+      ) : (
+        <h3 className="text-2xl font-bold text-center mb-6">
+          {t('game.tapTheShape')}{' '}
+          <span className="text-ludiko-purple">{t(question.targetLabel)}</span>!
+        </h3>
+      )}
 
+      {/* Options: word mode shows text buttons, image mode shows shape buttons */}
       <div className="grid grid-cols-2 gap-4 mb-4">
         {question.options.map((option, i) => (
           <button
@@ -81,8 +100,14 @@ export default function ShapeCard({
             aria-label={t(option.label)}
             className={`flex flex-col items-center justify-center p-4 rounded-2xl border-3 transition-all active:scale-95 ${getShapeStyle(i)}`}
           >
-            <ShapeSVG shape={option.shape} color={option.color} size={72} />
-            <span className="text-sm font-semibold mt-2">{t(option.label)}</span>
+            {isWordMode ? (
+              <span className="text-lg font-bold">{t(option.label)}</span>
+            ) : (
+              <>
+                <ShapeSVG shape={option.shape} color={option.color} size={72} />
+                <span className="text-sm font-semibold mt-2">{t(option.label)}</span>
+              </>
+            )}
           </button>
         ))}
       </div>

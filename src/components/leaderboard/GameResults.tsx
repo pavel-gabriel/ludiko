@@ -6,6 +6,7 @@ import { saveGameHistory, type PlayerResult } from '@/services/historyService';
 import type { Player } from '@/utils/types';
 import { serverTimestamp } from 'firebase/firestore';
 import { playFinish } from '@/utils/sounds';
+import Confetti from '@/components/ui/Confetti';
 
 interface GameResultsProps {
   players: Player[];
@@ -76,6 +77,7 @@ export default function GameResults({
 
   return (
     <div className="page">
+      <Confetti />
       <div className="card w-full max-w-md text-center">
         <h2 className="text-2xl font-bold mb-2">{t('results.title')}</h2>
 

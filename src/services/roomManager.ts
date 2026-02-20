@@ -44,7 +44,7 @@ function pickAvatar(playerCount: number): string {
 /* ------------------------------------------------------------------ */
 
 /** Build a new Room object with the host as the first player */
-export function buildRoom(hostName: string, settings?: Partial<GameSettings>): Room {
+export function buildRoom(hostName: string, settings?: Partial<GameSettings>, avatar?: string): Room {
   const hostId = generatePlayerId();
   return {
     id: generatePlayerId(),
@@ -54,7 +54,7 @@ export function buildRoom(hostName: string, settings?: Partial<GameSettings>): R
       {
         id: hostId,
         name: hostName,
-        avatar: pickAvatar(0),
+        avatar: avatar || pickAvatar(0),
         score: 0,
         isHost: true,
         isReady: true,
@@ -67,11 +67,11 @@ export function buildRoom(hostName: string, settings?: Partial<GameSettings>): R
 }
 
 /** Build a Player object for someone joining an existing room */
-export function buildPlayer(name: string, playerCount: number): Player {
+export function buildPlayer(name: string, playerCount: number, avatar?: string): Player {
   return {
     id: generatePlayerId(),
     name,
-    avatar: pickAvatar(playerCount),
+    avatar: avatar || pickAvatar(playerCount),
     score: 0,
     isHost: false,
     isReady: false,
@@ -92,6 +92,7 @@ export async function createRoomInDB(room: Room): Promise<void> {
 export async function joinRoomByCode(
   code: string,
   playerName: string,
+  avatar?: string,
 ): Promise<{ room: Room; player: Player } | null> {
   /* Query RTDB for a room with this code */
   const roomsRef = ref(rtdb, 'rooms');
@@ -112,7 +113,7 @@ export async function joinRoomByCode(
 
   const room = roomData as Room;
   const players: Player[] = room.players ?? [];
-  const player = buildPlayer(playerName, players.length);
+  const player = buildPlayer(playerName, players.length, avatar);
   players.push(player);
 
   /* Push the updated players list back to RTDB */

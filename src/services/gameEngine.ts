@@ -142,10 +142,10 @@ export function generateShapeQuestion(difficulty: Difficulty): ShapeQuestion {
 
 /**
  * Generate a shuffled grid of memory cards (pairs of emojis).
- * @param pairCount Number of unique pairs (4-16)
+ * @param pairCount Number of unique pairs (3+, capped to available emojis)
  */
 export function generateMemoryCards(pairCount: number): MemoryCard[] {
-  const clampedPairs = Math.min(Math.max(pairCount, 4), 16);
+  const clampedPairs = Math.min(Math.max(pairCount, 3), MEMORY_EMOJIS.length);
   const emojis = shuffle(MEMORY_EMOJIS).slice(0, clampedPairs);
 
   const cards: MemoryCard[] = [];

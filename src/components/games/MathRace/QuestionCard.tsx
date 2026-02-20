@@ -49,7 +49,7 @@ export default function QuestionCard({
   };
 
   return (
-    <div className="w-full max-w-md mx-auto" role="region" aria-label={t('game.question')}>
+    <div className="card w-full max-w-md mx-auto" role="region" aria-label={t('game.question')}>
       <div className="flex justify-between items-center mb-4">
         <span className="text-sm font-semibold text-gray-500">
           {totalQuestions != null
@@ -76,18 +76,7 @@ export default function QuestionCard({
         </p>
       </div>
 
-      {selected !== null && (
-        <div
-          className={`text-center text-lg font-bold mb-3 ${
-            correct ? 'text-green-600' : 'text-red-500'
-          }`}
-          aria-live="assertive"
-        >
-          {correct ? t('game.correct') : t('game.wrong')}
-        </div>
-      )}
-
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-3 mb-4">
         {question.options.map((option) => (
           <button
             key={option}
@@ -100,6 +89,17 @@ export default function QuestionCard({
           </button>
         ))}
       </div>
+
+      {selected !== null && (
+        <p
+          className={`text-center text-lg font-bold ${
+            correct ? 'text-green-500' : 'text-red-500'
+          }`}
+          aria-live="assertive"
+        >
+          {correct ? t('game.correct') : t('game.wrong')}
+        </p>
+      )}
     </div>
   );
 }
