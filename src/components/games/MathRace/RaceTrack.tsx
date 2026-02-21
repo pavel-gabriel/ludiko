@@ -41,7 +41,7 @@ export default function RaceTrack({
             {/* Player label */}
             <div className="flex items-center gap-2 mb-1">
               <span className="text-lg">{player.avatar}</span>
-              <span className="text-xs font-bold truncate max-w-[80px]">
+              <span className="text-xs font-bold truncate max-w-[80px]" title={player.name}>
                 {player.name}
               </span>
               <span className="text-xs text-gray-400 ml-auto">

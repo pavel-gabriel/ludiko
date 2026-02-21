@@ -39,7 +39,7 @@ export default function MemoryBoard({
 
   return (
     <div
-      className="grid gap-1.5 w-full"
+      className="grid gap-1 sm:gap-1.5 w-full max-w-lg mx-auto"
       style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}
       role="grid"
       aria-label="Memory card grid"

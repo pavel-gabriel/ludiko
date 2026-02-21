@@ -55,7 +55,11 @@
     "startGame": "Start Game",
     "waitingForPlayers": "Waiting for players...",
     "soloHint": "Or start solo to practice!",
-    "leave": "Leave"
+    "leave": "Leave",
+    "copyCode": "Click to copy code",
+    "copied": "Copied!",
+    "markReady": "Ready!",
+    "cancelReady": "Not Ready"
   },
   "game": {
     "leaderboard": "Leaderboard",

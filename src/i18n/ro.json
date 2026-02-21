@@ -55,7 +55,11 @@
     "startGame": "Începe Jocul",
     "waitingForPlayers": "Se așteaptă jucători...",
     "soloHint": "Sau începe singur pentru practică!",
-    "leave": "Ieși"
+    "leave": "Ieși",
+    "copyCode": "Click pentru a copia codul",
+    "copied": "Copiat!",
+    "markReady": "Gata!",
+    "cancelReady": "Nu sunt gata"
   },
   "game": {
     "leaderboard": "Clasament",

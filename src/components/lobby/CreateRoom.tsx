@@ -211,8 +211,8 @@ export default function CreateRoom() {
               inputMode="numeric"
               value={rounds}
               onChange={(e) => {
-                const v = e.target.value.replace(/\D/g, '');
-                setRounds(v === '' ? '' as unknown as number : parseInt(v, 10));
+                const v = parseInt(e.target.value.replace(/\D/g, ''), 10);
+                setRounds(isNaN(v) ? 0 : v);
               }}
               onBlur={() => {
                 const min = isMemory ? 3 : 5;
@@ -232,8 +232,8 @@ export default function CreateRoom() {
               inputMode="numeric"
               value={timePerRound}
               onChange={(e) => {
-                const v = e.target.value.replace(/\D/g, '');
-                setTimePerRound(v === '' ? '' as unknown as number : parseInt(v, 10));
+                const v = parseInt(e.target.value.replace(/\D/g, ''), 10);
+                setTimePerRound(isNaN(v) ? 0 : v);
               }}
               onBlur={() => {
                 const max = gameMode === 'timedSprint' || isMemory ? 300 : 60;
