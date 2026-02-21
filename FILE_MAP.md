@@ -38,7 +38,7 @@
 | File | Key Exports | Lines |
 |------|-------------|-------|
 | `firebase.ts` | `db` (Firestore), `rtdb` (RTDB), `auth`, `firebaseEnabled` flag. Lazy init, graceful fallback without env vars | 40 |
-| `authService.ts` | `ensureAnonymousAuth()`, `onAuthChange()`, `getCurrentUid()`. Anonymous auth for kids; teacher auth placeholder | 33 |
+| `authService.ts` | `ensureAnonymousAuth`, `signInWithGoogle`, `signInWithEmail`, `registerWithEmail`, `logOut`, `isTeacher`, `onAuthChange`, `getCurrentUid`, `getCurrentUser`. Anonymous auth (kids) + Google/Email auth (teachers) | 85 |
 | `roomManager.ts` | `buildRoom`, `buildPlayer`, `createRoomInDB`, `lookupRoomByCode`, `joinRoomByCode`, `listenToRoom`, `updateRoomStatus`, `setPlayerReady`, `replayRoom`, `deleteRoom`, `registerDisconnectCleanup`, `cleanPlayers`. All RTDB room CRUD + disconnect handlers | 226 |
 | `gameSession.ts` | `RTDBGameState` interface, `initMathGameState`, `initShapeGameState`, `initMemoryGameState`, `listenToGameState`, `recordCorrectAnswer`, `advanceQuestion`, `setGamePhase`, `recordPlayerFinished`. Game state in RTDB | 150 |
 | `gameEngine.ts` | `generateQuestion` (math), `checkAnswer`, `generateShapeQuestion`, `generateMemoryCards`. Pure functions, no Firebase | 159 |
@@ -124,17 +124,36 @@
 
 ## Teacher — `src/components/teacher/`
 
-| File | Purpose | Lines |
-|------|---------|-------|
-| `index.ts` | Placeholder for Phase 1c teacher dashboard | 3 |
+| File | Component | Lines |
+|------|-----------|-------|
+| `index.ts` | Barrel exports for all teacher components | 7 |
+| `TeacherLogin.tsx` | Login page: Google sign-in + email/password form, register/login toggle, upserts TeacherProfile to Firestore | 130 |
+| `TeacherDashboard.tsx` | Main dashboard: session list with status badges (draft/active/finished), delete sessions, nav to new session/templates | 115 |
+| `SessionConfig.tsx` | Create/edit session: game type, classroom mode (self-paced/teacher-controlled), difficulty, operations, rounds, time, student count, global timer, custom questions editor, template load/save | 470 |
+| `SessionDetail.tsx` | Session view: shows student codes (copy individual/all), start session (creates RTDB room), edit, navigate to live dashboard | 160 |
+| `TeacherLiveDashboard.tsx` | Real-time monitoring: student progress bars, room code display, global timer countdown, teacher-controlled next question button, end session, export CSV | 180 |
+| `SessionResults.tsx` | Post-session results: summary stats (avg accuracy, pass rate), ranked student list with color-coded accuracy badges, CSV export | 120 |
+| `TemplatesPage.tsx` | Template list: view saved templates, delete, info about creating templates from session config | 75 |
+
+## State — `src/store/authStore.ts`
+
+| File | Key Exports | Lines |
+|------|-------------|-------|
+| `authStore.ts` | `useAuthStore`: `uid`, `teacherProfile`, `loading`, `setUid`, `setTeacherProfile`, `reset` | 27 |
+
+## Services — `src/services/teacherService.ts`
+
+| File | Key Exports | Lines |
+|------|-------------|-------|
+| `teacherService.ts` | `upsertTeacherProfile`, `getTeacherProfile`, `createSession`, `getTeacherSessions`, `getSession`, `updateSession`, `deleteSession`, `generateStudentCodes`, `saveSessionResults`, `getSessionResults`, `saveTemplate`, `getTeacherTemplates`, `deleteTemplate`, `exportResultsToCSV`, `downloadCSV`. Firestore CRUD for teachers, sessions, templates, results + CSV export | 210 |
 
 ## i18n — `src/i18n/`
 
 | File | Purpose | Lines |
 |------|---------|-------|
 | `config.ts` | i18next init: LanguageDetector (localStorage → navigator), ro + en, fallback ro | 26 |
-| `ro.json` | Romanian translations (default). Sections: app, home, create, join, lobby, game, results, shapes, settings | 107 |
-| `en.json` | English translations (parallel). Sections: app, home, create, join, lobby, game, results, shapes, settings | 107 |
+| `ro.json` | Romanian translations. Sections: app, home, create, join, lobby, game, results, shapes, settings, teacher | 178 |
+| `en.json` | English translations. Sections: app, home, create, join, lobby, game, results, shapes, settings, teacher | 178 |
 
 ## Styles — `src/styles/`
 
@@ -147,6 +166,7 @@
 | File | Purpose | Lines |
 |------|---------|-------|
 | `gameEngine.test.ts` | 23 vitest tests: math question generation (options, division integers, non-negative), shape questions (4 options, correctIndex), memory cards (pairs, IDs) | ~100 |
+| `teacherService.test.ts` | 6 vitest tests: student code generation (count, uniqueness, format, labels), CSV export (header, rows, empty) | ~80 |
 | `setup.ts` | Vitest setup: imports `@testing-library/jest-dom` | 1 |
 
 ## Public — `public/`
