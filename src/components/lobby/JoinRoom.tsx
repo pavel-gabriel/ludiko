@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import { useRoomStore } from '@/store/roomStore';
-import { joinRoomByCode } from '@/services/roomManager';
+import { joinRoomByCode, lookupRoomByCode } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
@@ -17,6 +17,27 @@ export default function JoinRoom() {
   const [code, setCode] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [takenAvatars, setTakenAvatars] = useState<string[]>([]);
+
+  /* When the code reaches 6 chars, look up the room to find taken avatars */
+  useEffect(() => {
+    if (code.length < 6) {
+      setTakenAvatars([]);
+      return;
+    }
+    let cancelled = false;
+    lookupRoomByCode(code).then((room) => {
+      if (cancelled || !room) return;
+      const taken = room.players.map((p) => p.avatar);
+      setTakenAvatars(taken);
+      /* If current avatar is taken, auto-switch to first available */
+      if (taken.includes(avatar)) {
+        const firstAvailable = EMOJI_OPTIONS.find((e) => !taken.includes(e));
+        if (firstAvailable) setAvatar(firstAvailable);
+      }
+    }).catch(() => {});
+    return () => { cancelled = true; };
+  }, [code]);
 
   const handleJoin = async () => {
     if (!name.trim() || !code.trim() || loading) return;
@@ -61,7 +82,7 @@ export default function JoinRoom() {
         {/* Avatar picker */}
         <div className="mb-4">
           <span className="text-sm font-semibold">{t('create.avatar')}</span>
-          <EmojiPicker selected={avatar} onChange={setAvatar} />
+          <EmojiPicker selected={avatar} onChange={setAvatar} exclude={takenAvatars} />
         </div>
 
         <label className="block mb-4">

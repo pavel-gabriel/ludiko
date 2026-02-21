@@ -8,7 +8,7 @@ interface ShapeCardProps {
   question: ShapeQuestion;
   questionNumber: number;
   totalQuestions: number;
-  timeRemaining: number;
+  timeRemaining?: number;
   shapeMode: ShapeMode;
   onAnswer: (correct: boolean) => void;
 }
@@ -59,16 +59,18 @@ export default function ShapeCard({
         <span className="text-sm font-semibold text-gray-500">
           {questionNumber}/{totalQuestions}
         </span>
-        <span
-          className={`text-sm font-bold px-3 py-1 rounded-full ${
-            timeRemaining <= 5
-              ? 'bg-red-100 text-red-600'
-              : 'bg-ludiko-blue/20 text-ludiko-text'
-          }`}
-          aria-live="polite"
-        >
-          {timeRemaining}s
-        </span>
+        {timeRemaining != null && (
+          <span
+            className={`text-sm font-bold px-3 py-1 rounded-full ${
+              timeRemaining <= 5
+                ? 'bg-red-100 text-red-600'
+                : 'bg-ludiko-blue/20 text-ludiko-text'
+            }`}
+            aria-live="polite"
+          >
+            {timeRemaining}s
+          </span>
+        )}
       </div>
 
       {/* Prompt: word mode shows the shape, image mode shows the word */}
@@ -103,10 +105,7 @@ export default function ShapeCard({
             {isWordMode ? (
               <span className="text-lg font-bold">{t(option.label)}</span>
             ) : (
-              <>
-                <ShapeSVG shape={option.shape} color={option.color} size={72} />
-                <span className="text-sm font-semibold mt-2">{t(option.label)}</span>
-              </>
+              <ShapeSVG shape={option.shape} color={option.color} size={72} />
             )}
           </button>
         ))}

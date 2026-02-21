@@ -71,7 +71,9 @@
     "moves": "Mutări",
     "tries": "Încercări",
     "score": "Scor",
-    "exitGame": "Ieși"
+    "exitGame": "Ieși",
+    "finished": "Terminat!",
+    "waitingForOthers": "Se așteaptă ceilalți jucători..."
   },
   "results": {
     "title": "Rezultate",

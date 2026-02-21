@@ -7,10 +7,11 @@ import {
   initMemoryGameState,
   listenToGameState,
   recordCorrectAnswer,
+  recordPlayerFinished,
   setGamePhase,
   type RTDBGameState,
 } from '@/services/gameSession';
-import { updateRoomStatus } from '@/services/roomManager';
+import { replayRoom, deleteRoom, listenToRoom } from '@/services/roomManager';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import type { MemoryCard } from '@/utils/types';
 import CountdownOverlay from '@/components/games/MathRace/CountdownOverlay';
@@ -27,6 +28,7 @@ export default function MemoryGamePage() {
   const [showCountdown, setShowCountdown] = useState(true);
   const [timeRemaining, setTimeRemaining] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const finishedRef = useRef(false);
 
   /* Local flip state (each player flips independently) */
   const [cards, setCards] = useState<MemoryCard[]>([]);
@@ -41,9 +43,10 @@ export default function MemoryGamePage() {
   const totalPairs = settings?.rounds ?? 8;
 
   const handleExit = useCallback(() => {
+    if (isHost && room) deleteRoom(room.id);
     reset();
     navigate('/');
-  }, [reset, navigate]);
+  }, [reset, navigate, isHost, room]);
 
   /* Intercept browser back button */
   useEffect(() => {
@@ -52,6 +55,15 @@ export default function MemoryGamePage() {
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, [handleExit]);
+
+  /* Listen for room deletion (host left) — non-host players exit */
+  useEffect(() => {
+    if (!room) return;
+    const unsub = listenToRoom(room.id, (r) => {
+      if (!r) { reset(); navigate('/'); }
+    });
+    return () => unsub();
+  }, [room?.id]);
 
   /* ----- STEP 1: Host generates memory cards ----- */
   useEffect(() => {
@@ -138,7 +150,10 @@ export default function MemoryGamePage() {
             const pairsFound = newMatched.size / 2;
             await recordCorrectAnswer(room.id, currentPlayer.id, pairsFound);
 
-            if (pairsFound >= cards.length / 2 && isHost) {
+            /* Any player finding all pairs ends the game */
+            if (pairsFound >= cards.length / 2 && !finishedRef.current) {
+              finishedRef.current = true;
+              await recordPlayerFinished(room.id, currentPlayer.id);
               await setGamePhase(room.id, 'finished');
             }
           }
@@ -148,7 +163,7 @@ export default function MemoryGamePage() {
         }, isMatch ? 500 : 800);
       }
     },
-    [flippedIndices, matchedIndices, checking, cards, gameState, room, currentPlayer, isHost],
+    [flippedIndices, matchedIndices, checking, cards, gameState, room, currentPlayer],
   );
 
   /* Cleanup timeout on unmount */
@@ -174,7 +189,9 @@ export default function MemoryGamePage() {
         players={room.players}
         scores={gameState.progress}
         totalQuestions={actualPairs}
-        onPlayAgain={async () => { await updateRoomStatus(room.id, 'waiting'); navigate('/lobby'); }}
+        finishTimes={gameState.finishTimes}
+        gameMode="raceToFinish"
+        onPlayAgain={async () => { await replayRoom(room.id); navigate('/lobby'); }}
         onNewGame={() => { reset(); navigate('/'); }}
       />
     );

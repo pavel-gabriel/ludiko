@@ -3,12 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import { useRoomStore } from '@/store/roomStore';
-import { listenToRoom, updateRoomStatus, deleteRoom } from '@/services/roomManager';
+import {
+  listenToRoom,
+  updateRoomStatus,
+  deleteRoom,
+  setPlayerReady,
+} from '@/services/roomManager';
 
 export default function LobbyPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { room, currentPlayer, setRoom, reset } = useRoomStore();
+  const { room, currentPlayer, setRoom, setCurrentPlayer, reset } = useRoomStore();
 
   /* Subscribe to real-time room updates from RTDB */
   useEffect(() => {
@@ -22,6 +27,12 @@ export default function LobbyPage() {
         return;
       }
       setRoom(updatedRoom);
+
+      /* Keep currentPlayer in sync with RTDB (e.g. isReady changes) */
+      if (currentPlayer) {
+        const me = updatedRoom.players.find((p) => p.id === currentPlayer.id);
+        if (me) setCurrentPlayer(me);
+      }
 
       /* If room status changed to 'playing', navigate to game */
       if (updatedRoom.status === 'playing') {
@@ -38,6 +49,13 @@ export default function LobbyPage() {
   }
 
   const isHost = currentPlayer.isHost;
+  const myIndex = room.players.findIndex((p) => p.id === currentPlayer.id);
+
+  /* All non-host players must be ready for host to start */
+  const allOthersReady = room.players
+    .filter((p) => !p.isHost)
+    .every((p) => p.isReady);
+  const canStart = isHost && allOthersReady;
 
   const handleLeave = async () => {
     if (isHost) {
@@ -48,7 +66,13 @@ export default function LobbyPage() {
     navigate('/');
   };
 
+  const handleReady = async () => {
+    if (myIndex < 0) return;
+    await setPlayerReady(room.id, myIndex, !currentPlayer.isReady);
+  };
+
   const handleStart = async () => {
+    if (!canStart) return;
     /* Set room status to 'playing' — all listeners will navigate to game */
     await updateRoomStatus(room.id, 'playing');
   };
@@ -107,12 +131,23 @@ export default function LobbyPage() {
           <Button variant="orange" size="md" onClick={handleLeave}>
             {t('lobby.leave')}
           </Button>
+          {!isHost && (
+            <Button
+              variant={currentPlayer.isReady ? 'blue' : 'green'}
+              size="md"
+              className="flex-1"
+              onClick={handleReady}
+            >
+              {currentPlayer.isReady ? t('lobby.ready') : t('lobby.notReady')}
+            </Button>
+          )}
           {isHost && (
             <Button
               variant="green"
               size="md"
               className="flex-1"
               onClick={handleStart}
+              disabled={!canStart}
             >
               {t('lobby.startGame')}
             </Button>

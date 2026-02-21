@@ -88,6 +88,22 @@ export async function createRoomInDB(room: Room): Promise<void> {
   await set(roomRef, room);
 }
 
+/** Look up a room by code (read-only, no side effects) */
+export async function lookupRoomByCode(code: string): Promise<Room | null> {
+  const roomsRef = ref(rtdb, 'rooms');
+  const q = query(roomsRef, orderByChild('code'), equalTo(code.toUpperCase()));
+  const snapshot = await get(q);
+  if (!snapshot.exists()) return null;
+  let roomData: Room | null = null;
+  let roomId = '';
+  snapshot.forEach((child) => {
+    roomId = child.key!;
+    roomData = child.val() as Room;
+  });
+  if (!roomData || (roomData as Room).status !== 'waiting') return null;
+  return { ...(roomData as Room), id: roomId };
+}
+
 /** Look up a room by its 6-digit code and add the player */
 export async function joinRoomByCode(
   code: string,
@@ -152,6 +168,26 @@ export async function setPlayerReady(
 ): Promise<void> {
   await update(ref(rtdb, `rooms/${roomId}/players/${playerIndex}`), {
     isReady: ready,
+  });
+}
+
+/** Reset room for replay: set status to waiting, reset all players' ready + scores, clear game */
+export async function replayRoom(roomId: string): Promise<void> {
+  const roomRef = ref(rtdb, `rooms/${roomId}`);
+  const snapshot = await get(roomRef);
+  if (!snapshot.exists()) return;
+  const room = snapshot.val() as Room;
+
+  const players = (room.players ?? []).map((p: Player) => ({
+    ...p,
+    score: 0,
+    isReady: p.isHost,
+  }));
+
+  await update(roomRef, {
+    status: 'waiting',
+    players,
+    game: null,
   });
 }
 

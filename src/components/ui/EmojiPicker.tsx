@@ -3,12 +3,16 @@ const EMOJI_OPTIONS = ['🦊', '🐸', '🐱', '🐶', '🐰', '🦁', '🐼', '
 interface EmojiPickerProps {
   selected: string;
   onChange: (emoji: string) => void;
+  /** Avatars that are already taken and should be hidden */
+  exclude?: string[];
 }
 
-export default function EmojiPicker({ selected, onChange }: EmojiPickerProps) {
+export default function EmojiPicker({ selected, onChange, exclude = [] }: EmojiPickerProps) {
+  const available = EMOJI_OPTIONS.filter((e) => !exclude.includes(e));
+
   return (
     <div className="flex flex-wrap gap-2 mt-1">
-      {EMOJI_OPTIONS.map((emoji) => (
+      {available.map((emoji) => (
         <button
           key={emoji}
           type="button"

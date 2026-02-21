@@ -20,6 +20,10 @@ export interface RTDBGameState {
   phase: 'countdown' | 'playing' | 'finished';
   /** Timestamp when the current question started (for timer sync) */
   questionStartedAt: number;
+  /** Timestamp (ms) when game started playing (set by host) */
+  startedAt?: number;
+  /** Per-player finish timestamps (ms) — set when a player completes all rounds */
+  finishTimes?: Record<string, number>;
 }
 
 /** Build the initial progress map for all players */
@@ -129,5 +133,17 @@ export async function setGamePhase(
   roomId: string,
   phase: RTDBGameState['phase'],
 ): Promise<void> {
-  await update(ref(rtdb, `rooms/${roomId}/game`), { phase });
+  const updates: Record<string, unknown> = { phase };
+  if (phase === 'playing') updates.startedAt = Date.now();
+  await update(ref(rtdb, `rooms/${roomId}/game`), updates);
+}
+
+/** Record that a player finished all rounds (stores timestamp for ranking) */
+export async function recordPlayerFinished(
+  roomId: string,
+  playerId: string,
+): Promise<void> {
+  await update(ref(rtdb, `rooms/${roomId}/game/finishTimes`), {
+    [playerId]: Date.now(),
+  });
 }

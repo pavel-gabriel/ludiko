@@ -7,10 +7,11 @@ import {
   initGameState,
   listenToGameState,
   recordCorrectAnswer,
+  recordPlayerFinished,
   setGamePhase,
   type RTDBGameState,
 } from '@/services/gameSession';
-import { updateRoomStatus } from '@/services/roomManager';
+import { replayRoom, deleteRoom, listenToRoom } from '@/services/roomManager';
 import type { Question } from '@/utils/types';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import RaceTrack from './RaceTrack';
@@ -31,6 +32,7 @@ export default function MathRacePage() {
   const [showCountdown, setShowCountdown] = useState(true);
   const [timeRemaining, setTimeRemaining] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const finishedRef = useRef(false);
 
   /* Each player tracks their own question index locally */
   const [localIndex, setLocalIndex] = useState(0);
@@ -43,9 +45,10 @@ export default function MathRacePage() {
   const displayTotal = settings?.rounds ?? 10;
 
   const handleExit = useCallback(() => {
+    if (isHost && room) deleteRoom(room.id);
     reset();
     navigate('/');
-  }, [reset, navigate]);
+  }, [reset, navigate, isHost, room]);
 
   /* Intercept browser back button — exit cleanly instead of re-mounting */
   useEffect(() => {
@@ -54,6 +57,15 @@ export default function MathRacePage() {
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
   }, [handleExit]);
+
+  /* Listen for room deletion (host left) — non-host players exit */
+  useEffect(() => {
+    if (!room) return;
+    const unsub = listenToRoom(room.id, (r) => {
+      if (!r) { reset(); navigate('/'); }
+    });
+    return () => unsub();
+  }, [room?.id]);
 
   /* ----- STEP 1: Host generates questions and pushes game state ----- */
   useEffect(() => {
@@ -139,14 +151,39 @@ export default function MathRacePage() {
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [gameState?.phase, isSprint]);
 
-  /* ----- STEP 5: Detect game end (Race mode) ----- */
+  /* ----- STEP 5a: Record this player finished + first-to-finish ends game (Race) ----- */
   useEffect(() => {
     if (isSprint) return;
-    if (!room || !isHost || !gameState || gameState.phase !== 'playing') return;
-    if (localIndex >= displayTotal) {
-      setGamePhase(room.id, 'finished');
+    if (!room || !currentPlayer || !gameState || gameState.phase !== 'playing') return;
+    if (localIndex >= displayTotal && !finishedRef.current) {
+      finishedRef.current = true;
+      recordPlayerFinished(room.id, currentPlayer.id).then(() => {
+        /* Any player finishing ends the game for everyone */
+        setGamePhase(room.id, 'finished');
+      });
     }
   }, [localIndex]);
+
+  /* ----- STEP 5b: Sprint — record finish when player reaches max rounds ----- */
+  useEffect(() => {
+    if (!isSprint) return;
+    if (!room || !currentPlayer || !gameState || gameState.phase !== 'playing') return;
+    if (localIndex >= displayTotal && !finishedRef.current) {
+      finishedRef.current = true;
+      recordPlayerFinished(room.id, currentPlayer.id);
+    }
+  }, [localIndex]);
+
+  /* ----- STEP 5c: Sprint — host checks if ALL players finished their rounds ----- */
+  useEffect(() => {
+    if (!isSprint) return;
+    if (!room || !isHost || !gameState || gameState.phase !== 'playing') return;
+    const finishTimes = gameState.finishTimes ?? {};
+    const allFinished = room.players.every((p) => finishTimes[p.id]);
+    if (allFinished) {
+      setGamePhase(room.id, 'finished');
+    }
+  }, [gameState?.finishTimes, isHost, isSprint]);
 
   /* ----- Handle answer from player ----- */
   const handleAnswer = useCallback(
@@ -176,16 +213,20 @@ export default function MathRacePage() {
 
   if (showCountdown) return <CountdownOverlay count={countdown} />;
 
+  /* Player finished their rounds but game not over yet (waiting for others in sprint) */
+  const playerDone = localIndex >= displayTotal;
+
   if (gameState?.phase === 'finished') {
-    /* Sprint: use total questions answered (localIndex) as denominator */
-    const resultsTotal = isSprint ? Math.max(localIndex, 1) : displayTotal;
+    const resultsTotal = displayTotal;
 
     return (
       <GameResults
         players={room.players}
         scores={gameState.progress}
         totalQuestions={resultsTotal}
-        onPlayAgain={async () => { await updateRoomStatus(room.id, 'waiting'); navigate('/lobby'); }}
+        finishTimes={gameState.finishTimes}
+        gameMode={settings?.gameMode ?? 'raceToFinish'}
+        onPlayAgain={async () => { await replayRoom(room.id); navigate('/lobby'); }}
         onNewGame={() => { reset(); navigate('/'); }}
       />
     );
@@ -195,6 +236,30 @@ export default function MathRacePage() {
     return (
       <div className="page">
         <p className="text-lg text-gray-500">{t('game.getReady')}</p>
+      </div>
+    );
+  }
+
+  /* Show waiting message when this player is done but game continues (sprint) */
+  if (playerDone && isSprint) {
+    return (
+      <div className="page">
+        <div className="card w-full max-w-md text-center">
+          <p className="text-lg font-bold text-ludiko-purple mb-2">
+            {t('game.finished')}
+          </p>
+          <p className="text-4xl font-extrabold text-ludiko-green mb-2">
+            {gameState.progress[currentPlayer.id] ?? 0}/{displayTotal}
+          </p>
+          <p className="text-sm text-gray-500">{t('game.waitingForOthers')}</p>
+          <span
+            className={`inline-block mt-3 text-lg font-bold px-4 py-1 rounded-full ${
+              timeRemaining <= 10 ? 'bg-red-100 text-red-600 animate-pulse' : 'bg-ludiko-blue/20'
+            }`}
+          >
+            {timeRemaining}s
+          </span>
+        </div>
       </div>
     );
   }
@@ -226,6 +291,9 @@ export default function MathRacePage() {
             <span className="text-lg font-bold text-ludiko-purple">
               {t('game.score')}: {gameState.progress[currentPlayer.id] ?? 0}
             </span>
+            <span className="text-sm text-gray-500">
+              {localIndex}/{displayTotal}
+            </span>
             <span
               className={`text-lg font-bold px-4 py-1 rounded-full ${
                 timeRemaining <= 10 ? 'bg-red-100 text-red-600 animate-pulse' : 'bg-ludiko-blue/20'
@@ -240,8 +308,8 @@ export default function MathRacePage() {
           <QuestionCard
             key={localIndex}
             question={currentQuestion}
-            questionNumber={isSprint ? (gameState.progress[currentPlayer.id] ?? 0) + 1 : localIndex + 1}
-            totalQuestions={isSprint ? undefined : displayTotal}
+            questionNumber={isSprint ? localIndex + 1 : localIndex + 1}
+            totalQuestions={displayTotal}
             timeRemaining={isSprint ? undefined : timeRemaining}
             onAnswer={handleAnswer}
           />
