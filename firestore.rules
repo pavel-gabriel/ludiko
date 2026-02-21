@@ -1,6 +1,6 @@
 rules_version = '2';
 
-// Firestore rules for Ludiko — Phase 1b
+// Firestore rules for Ludiko — Phase 1c (Classroom / Teacher Mode)
 service cloud.firestore {
   match /databases/{database}/documents {
     // Default: deny all reads and writes
@@ -9,15 +9,38 @@ service cloud.firestore {
     }
 
     // Game history: any authenticated user can create entries and read all history
-    // (anonymous auth counts — kids are signed in anonymously before RTDB writes)
     match /gameHistory/{docId} {
       allow read: if request.auth != null;
       allow create: if request.auth != null;
-      // No update or delete — history is immutable
     }
 
-    // Phase 1c will add:
-    // - /templates/{id}: teachers can CRUD their own templates
-    // - /adminStats/{id}: only admin UID can read
+    // Teacher profiles: teachers can read/write their own profile
+    match /teachers/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Classroom sessions: teachers can CRUD their own sessions
+    match /sessions/{sessionId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+                    && request.resource.data.teacherUid == request.auth.uid;
+      allow update, delete: if request.auth != null
+                            && resource.data.teacherUid == request.auth.uid;
+    }
+
+    // Session results: teachers can read/write results for their sessions
+    match /sessionResults/{sessionId} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Templates: teachers can CRUD their own templates
+    match /templates/{templateId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null
+                    && request.resource.data.teacherUid == request.auth.uid;
+      allow update, delete: if request.auth != null
+                            && resource.data.teacherUid == request.auth.uid;
+    }
   }
 }

@@ -118,6 +118,7 @@
     "switchToLogin": "Ai deja cont? Conectează-te",
     "backToHome": "Înapoi la Pagina Principală",
     "authError": "Autentificarea a eșuat. Încearcă din nou.",
+    "unauthorizedDomain": "Conectarea cu Google nu este disponibilă pe acest domeniu. Adaugă-l în Firebase Console → Authentication → Settings → Authorized domains. Folosește email/parolă.",
     "dashboard": "Panou Profesor",
     "teacher": "Profesor",
     "logout": "Deconectare",

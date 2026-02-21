@@ -118,6 +118,7 @@
     "switchToLogin": "Already have an account? Sign In",
     "backToHome": "Back to Home",
     "authError": "Authentication failed. Please try again.",
+    "unauthorizedDomain": "Google Sign-In is not available on this domain. Add it in Firebase Console → Authentication → Settings → Authorized domains. Use email/password instead.",
     "dashboard": "Teacher Dashboard",
     "teacher": "Teacher",
     "logout": "Logout",

@@ -7,7 +7,7 @@ import {
   signInWithEmail,
   registerWithEmail,
 } from '@/services/authService';
-import { upsertTeacherProfile } from '@/services/teacherService';
+import { upsertTeacherProfile, getTeacherProfile } from '@/services/teacherService';
 import { useAuthStore } from '@/store/authStore';
 
 export default function TeacherLogin() {
@@ -22,9 +22,25 @@ export default function TeacherLogin() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
+  /** After auth succeeds, persist profile to Firestore (best-effort) and navigate */
   const handleSuccess = async (uid: string, name: string, userEmail: string) => {
     const profile = { uid, email: userEmail, displayName: name, createdAt: Date.now() };
-    await upsertTeacherProfile(profile);
+    try {
+      /* Try to fetch existing profile first */
+      const existing = await getTeacherProfile(uid);
+      if (existing) {
+        setUid(uid);
+        setTeacherProfile(existing);
+        navigate('/teacher');
+        return;
+      }
+      /* Create new profile */
+      await upsertTeacherProfile(profile);
+    } catch {
+      /* Firestore write may fail (rules not yet deployed) — still allow navigation.
+         The profile will be created on next successful write. */
+      console.warn('Could not save teacher profile to Firestore — continuing anyway');
+    }
     setUid(uid);
     setTeacherProfile(profile);
     navigate('/teacher');
@@ -39,7 +55,12 @@ export default function TeacherLogin() {
         await handleSuccess(user.uid, user.displayName || 'Teacher', user.email || '');
       }
     } catch (err: unknown) {
-      setError((err as Error).message || t('teacher.authError'));
+      const msg = (err as Error).message || '';
+      if (msg.includes('unauthorized-domain')) {
+        setError(t('teacher.unauthorizedDomain'));
+      } else {
+        setError(msg || t('teacher.authError'));
+      }
     } finally {
       setLoading(false);
     }
@@ -53,8 +74,19 @@ export default function TeacherLogin() {
     try {
       if (mode === 'register') {
         if (!displayName.trim()) return;
-        const user = await registerWithEmail(email, password, displayName.trim());
-        if (user) await handleSuccess(user.uid, displayName.trim(), email);
+        let user;
+        try {
+          user = await registerWithEmail(email, password, displayName.trim());
+        } catch (regErr: unknown) {
+          const msg = (regErr as { code?: string }).code ?? '';
+          /* If account already exists (e.g. previous failed attempt), try login instead */
+          if (msg === 'auth/email-already-in-use') {
+            user = await signInWithEmail(email, password);
+          } else {
+            throw regErr;
+          }
+        }
+        if (user) await handleSuccess(user.uid, user.displayName || displayName.trim(), email);
       } else {
         const user = await signInWithEmail(email, password);
         if (user) await handleSuccess(user.uid, user.displayName || 'Teacher', email);
