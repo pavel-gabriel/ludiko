@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import { useRoomStore } from '@/store/roomStore';
-import { joinRoomByCode, lookupRoomByCode } from '@/services/roomManager';
+import { joinRoomByCode, lookupRoomByCode, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
@@ -52,6 +52,8 @@ export default function JoinRoom() {
         setError(t('join.invalidCode'));
         return;
       }
+      const playerIdx = result.room.players.findIndex((p) => p.id === result.player.id);
+      registerDisconnectCleanup(result.room.id, false, playerIdx);
       setRoom(result.room);
       setCurrentPlayer(result.player);
       navigate('/lobby');

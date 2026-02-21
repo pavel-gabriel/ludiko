@@ -34,8 +34,8 @@ export default function CreateRoom() {
   /** Math Race needs operations; Shape Match & Memory don't */
   const showMathOptions = gameType === 'mathRace';
   const isShapeMatch = gameType === 'shapeMatch';
-  /** Timed Sprint only applies to Math Race and Shape Match */
-  const showModeSelector = gameType !== 'memoryGame';
+  /** All game types support mode selection */
+  const showModeSelector = true;
   /** Memory game uses "pairs" instead of "rounds" */
   const isMemory = gameType === 'memoryGame';
 
@@ -47,7 +47,7 @@ export default function CreateRoom() {
       await ensureAnonymousAuth();
       const room = buildRoom(name.trim(), {
         gameType,
-        gameMode: isMemory ? 'raceToFinish' : gameMode,
+        gameMode,
         difficulty,
         operations: showMathOptions ? operations : ['+'],
         rounds,

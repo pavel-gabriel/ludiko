@@ -148,7 +148,11 @@ export function listenToRoom(
 ): Unsubscribe {
   const roomRef = ref(rtdb, `rooms/${roomId}`);
   return onValue(roomRef, (snapshot) => {
-    callback(snapshot.exists() ? (snapshot.val() as Room) : null);
+    if (!snapshot.exists()) { callback(null); return; }
+    const room = snapshot.val() as Room;
+    /* Clean up null slots left by onDisconnect.remove() on player refs */
+    room.players = cleanPlayers(room.players);
+    callback(room);
   });
 }
 
@@ -199,13 +203,23 @@ export async function deleteRoom(roomId: string): Promise<void> {
 /**
  * Register an onDisconnect handler so that if a player's browser closes,
  * the room knows. For the host, the entire room is deleted.
+ * For non-host, the player slot is nullified (cleaned up on next read).
  */
 export function registerDisconnectCleanup(
   roomId: string,
   isHost: boolean,
+  playerIndex?: number,
 ): void {
   if (isHost) {
     const roomRef = ref(rtdb, `rooms/${roomId}`);
     onDisconnect(roomRef).remove();
+  } else if (playerIndex != null) {
+    const playerRef = ref(rtdb, `rooms/${roomId}/players/${playerIndex}`);
+    onDisconnect(playerRef).remove();
   }
+}
+
+/** Remove null/undefined holes from a players array (left by disconnects) */
+export function cleanPlayers(players: (Player | null | undefined)[]): Player[] {
+  return players.filter((p): p is Player => p != null);
 }

@@ -35,7 +35,7 @@ function computeAnswer(a: number, b: number, op: Operation): number {
     case '×':
       return a * b;
     case '÷':
-      return a / b;
+      return Math.round(a / b);
   }
 }
 
@@ -71,7 +71,7 @@ function generateWrongAnswers(correct: number, count: number): number[] {
 
   while (wrongs.size < count) {
     const offset = randomInt(1, range);
-    const wrong = correct + (Math.random() > 0.5 ? offset : -offset);
+    const wrong = Math.round(correct + (Math.random() > 0.5 ? offset : -offset));
     if (wrong !== correct && wrong >= 0) {
       wrongs.add(wrong);
     }

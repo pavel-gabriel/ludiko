@@ -54,6 +54,7 @@
     "notReady": "Pregătește-te",
     "startGame": "Începe Jocul",
     "waitingForPlayers": "Se așteaptă jucători...",
+    "soloHint": "Sau începe singur pentru practică!",
     "leave": "Ieși"
   },
   "game": {

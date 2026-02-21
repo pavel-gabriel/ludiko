@@ -27,7 +27,7 @@
 
   .dyslexic-mode body,
   .dyslexic-mode {
-    font-family: 'OpenDyslexic', sans-serif !important;
+    font-family: 'OpenDyslexic', 'Comic Sans MS', 'Comic Sans', cursive, sans-serif !important;
   }
 }
 

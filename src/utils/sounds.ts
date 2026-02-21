@@ -11,6 +11,10 @@ function getCtx(): AudioContext | null {
       return null;
     }
   }
+  /* Resume if suspended (browser autoplay policy) */
+  if (audioCtx.state === 'suspended') {
+    audioCtx.resume().catch(() => {});
+  }
   return audioCtx;
 }
 
