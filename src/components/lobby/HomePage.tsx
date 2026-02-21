@@ -34,6 +34,9 @@ export default function HomePage() {
         <Button variant="blue" size="lg" onClick={() => navigate('/join')}>
           {t('home.joinRoom')}
         </Button>
+        <Button variant="purple" size="lg" onClick={() => navigate('/teacher/login')}>
+          {t('home.teacherMode')}
+        </Button>
       </div>
 
       {/* Persistent leaderboard (shows only when history exists) */}

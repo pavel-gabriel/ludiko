@@ -29,11 +29,11 @@ export default function CountdownOverlay({ count }: CountdownOverlayProps) {
     >
       <div className="text-center animate-pulse">
         {count > 0 ? (
-          <span className="text-9xl font-extrabold text-white drop-shadow-lg">
+          <span className="text-6xl sm:text-9xl font-extrabold text-white drop-shadow-lg">
             {count}
           </span>
         ) : (
-          <span className="text-7xl font-extrabold text-ludiko-yellow drop-shadow-lg">
+          <span className="text-5xl sm:text-7xl font-extrabold text-ludiko-yellow drop-shadow-lg">
             {t('game.go')}
           </span>
         )}

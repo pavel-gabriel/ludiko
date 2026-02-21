@@ -32,7 +32,7 @@ export default class ErrorBoundary extends Component<Props, State> {
           <button
             onClick={() => {
               this.setState({ hasError: false });
-              window.location.href = '/ludiko/';
+              window.location.href = import.meta.env.BASE_URL || '/';
             }}
             className="bg-ludiko-blue px-6 py-3 rounded-xl font-bold text-ludiko-text shadow-md hover:shadow-lg transition-all"
           >

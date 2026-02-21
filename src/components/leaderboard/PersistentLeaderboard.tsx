@@ -37,7 +37,7 @@ export default function PersistentLeaderboard() {
       <ul className="space-y-2">
         {entries.slice(0, 10).map((entry, index) => (
           <li
-            key={entry.name}
+            key={`${entry.name}::${entry.avatar}`}
             className={`flex items-center gap-3 rounded-xl px-4 py-2 ${
               index === 0
                 ? 'bg-ludiko-yellow/40 ring-1 ring-ludiko-yellow'

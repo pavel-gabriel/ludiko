@@ -114,7 +114,7 @@ export default function GameResults({
 
         {podiumPlayers.length > 0 && (
           <div
-            className="flex items-end justify-center gap-3 mb-6"
+            className="flex items-end justify-center gap-2 sm:gap-3 mb-6"
             role="img"
             aria-label="Podium: top 3 players"
           >
@@ -139,7 +139,7 @@ export default function GameResults({
                     {score}/{totalQuestions} ({accuracy}%)
                   </span>
                   <div
-                    className={`w-20 rounded-t-xl flex items-center justify-center mt-1
+                    className={`w-16 sm:w-20 rounded-t-xl flex items-center justify-center mt-1
                       ${PODIUM_COLORS[rank]} ring-2 ${PODIUM_RINGS[rank]}
                       transition-all duration-700`}
                     style={{ height: `${PODIUM_HEIGHTS[rank]}px` }}

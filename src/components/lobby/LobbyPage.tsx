@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
@@ -14,6 +14,7 @@ export default function LobbyPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { room, currentPlayer, setRoom, setCurrentPlayer, reset } = useRoomStore();
+  const [copied, setCopied] = useState(false);
 
   /* Subscribe to real-time room updates from RTDB */
   useEffect(() => {
@@ -84,9 +85,23 @@ export default function LobbyPage() {
 
         <div className="text-center mb-6">
           <span className="text-sm text-gray-500">{t('lobby.roomCode')}</span>
-          <p className="text-3xl font-extrabold tracking-widest text-ludiko-purple">
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText(room.code).then(() => {
+                setCopied(true);
+                setTimeout(() => setCopied(false), 2000);
+              }).catch(() => {});
+            }}
+            className="block mx-auto text-3xl font-extrabold tracking-widest text-ludiko-purple hover:text-ludiko-blue transition-colors cursor-pointer"
+            title={t('lobby.copyCode')}
+          >
             {room.code}
-          </p>
+          </button>
+          {copied && (
+            <span className="text-xs text-ludiko-green font-bold animate-pulse">
+              {t('lobby.copied')}
+            </span>
+          )}
         </div>
 
         <div className="mb-6">
@@ -136,12 +151,12 @@ export default function LobbyPage() {
           </Button>
           {!isHost && (
             <Button
-              variant={currentPlayer.isReady ? 'blue' : 'green'}
+              variant={currentPlayer.isReady ? 'orange' : 'green'}
               size="md"
               className="flex-1"
               onClick={handleReady}
             >
-              {currentPlayer.isReady ? t('lobby.ready') : t('lobby.notReady')}
+              {currentPlayer.isReady ? t('lobby.cancelReady') : t('lobby.markReady')}
             </Button>
           )}
           {isHost && (
