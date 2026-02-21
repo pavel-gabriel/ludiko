@@ -122,9 +122,12 @@ export default function LobbyPage() {
         </div>
 
         {room.players.length < 2 && (
-          <p className="text-center text-gray-400 text-sm mb-4">
-            {t('lobby.waitingForPlayers')}
-          </p>
+          <div className="text-center mb-4">
+            <p className="text-gray-400 text-sm">{t('lobby.waitingForPlayers')}</p>
+            {isHost && (
+              <p className="text-gray-300 text-xs mt-1">{t('lobby.soloHint')}</p>
+            )}
+          </div>
         )}
 
         <div className="flex gap-3">

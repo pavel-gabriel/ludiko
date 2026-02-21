@@ -123,12 +123,23 @@ export default function MemoryGamePage() {
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [gameState?.phase]);
 
+  /* ----- STEP 5: Host checks if ALL players have finished ----- */
+  useEffect(() => {
+    if (!room || !isHost || !gameState || gameState.phase !== 'playing') return;
+    const finishTimes = gameState.finishTimes ?? {};
+    const allFinished = room.players.every((p) => finishTimes[p.id]);
+    if (allFinished) {
+      setGamePhase(room.id, 'finished');
+    }
+  }, [gameState?.finishTimes, isHost]);
+
   /* ----- Handle card flip ----- */
   const handleFlip = useCallback(
     (index: number) => {
       if (checking || !gameState || !room || !currentPlayer) return;
       if (flippedIndices.includes(index) || matchedIndices.has(index)) return;
       if (gameState.phase !== 'playing') return;
+      if (finishedRef.current) return;
 
       const newFlipped = [...flippedIndices, index];
       setFlippedIndices(newFlipped);
@@ -150,11 +161,10 @@ export default function MemoryGamePage() {
             const pairsFound = newMatched.size / 2;
             await recordCorrectAnswer(room.id, currentPlayer.id, pairsFound);
 
-            /* Any player finding all pairs ends the game */
+            /* This player found all pairs — record finish (game continues for others) */
             if (pairsFound >= cards.length / 2 && !finishedRef.current) {
               finishedRef.current = true;
               await recordPlayerFinished(room.id, currentPlayer.id);
-              await setGamePhase(room.id, 'finished');
             }
           }
 
@@ -182,6 +192,7 @@ export default function MemoryGamePage() {
 
   /* Actual pairs in the game (cards.length / 2) */
   const actualPairs = cards.length > 0 ? cards.length / 2 : totalPairs;
+  const iAmDone = finishedRef.current || matchedIndices.size / 2 >= actualPairs;
 
   if (gameState?.phase === 'finished') {
     return (
@@ -206,6 +217,31 @@ export default function MemoryGamePage() {
   }
 
   const myScore = gameState.progress[currentPlayer.id] ?? 0;
+
+  /* Player finished but waiting for others / timer */
+  if (iAmDone && gameState.phase === 'playing') {
+    return (
+      <div className="page">
+        <div className="card w-full max-w-md text-center">
+          <p className="text-lg font-bold text-ludiko-purple mb-2">
+            {t('game.finished')}
+          </p>
+          <p className="text-4xl font-extrabold text-ludiko-green mb-2">
+            {myScore}/{actualPairs}
+          </p>
+          <p className="text-sm text-gray-500 mb-1">{t('game.tries')}: {tries}</p>
+          <p className="text-sm text-gray-500">{t('game.waitingForOthers')}</p>
+          <span
+            className={`inline-block mt-3 text-lg font-bold px-4 py-1 rounded-full ${
+              timeRemaining <= 10 ? 'bg-red-100 text-red-600 animate-pulse' : 'bg-ludiko-blue/20'
+            }`}
+          >
+            {timeRemaining}s
+          </span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-ludiko-pink/10 to-ludiko-yellow/10 px-4 py-6 flex flex-col items-center">

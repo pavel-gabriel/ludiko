@@ -54,6 +54,7 @@
     "notReady": "Get Ready",
     "startGame": "Start Game",
     "waitingForPlayers": "Waiting for players...",
+    "soloHint": "Or start solo to practice!",
     "leave": "Leave"
   },
   "game": {

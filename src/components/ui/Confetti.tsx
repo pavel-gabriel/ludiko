@@ -29,12 +29,17 @@ export default function Confetti() {
   const [particles] = useState(generateParticles);
   const [visible, setVisible] = useState(true);
 
+  /* Respect prefers-reduced-motion */
+  const prefersReducedMotion =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   useEffect(() => {
     const timer = setTimeout(() => setVisible(false), 4000);
     return () => clearTimeout(timer);
   }, []);
 
-  if (!visible) return null;
+  if (!visible || prefersReducedMotion) return null;
 
   return (
     <div className="fixed inset-0 z-50 pointer-events-none overflow-hidden">

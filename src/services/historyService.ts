@@ -89,7 +89,8 @@ export function computeLeaderboard(entries: GameHistoryEntry[]): LeaderboardEntr
 
   for (const entry of entries) {
     for (const result of entry.results) {
-      const key = result.name;
+      /* Use name + avatar as composite key to avoid collisions */
+      const key = `${result.name}::${result.avatar}`;
       if (!stats[key]) {
         stats[key] = {
           name: result.name,
@@ -104,8 +105,6 @@ export function computeLeaderboard(entries: GameHistoryEntry[]): LeaderboardEntr
       if (result.rank === 1) {
         stats[key].wins += 1;
       }
-      /* Use latest avatar */
-      stats[key].avatar = result.avatar;
     }
   }
 
