@@ -71,7 +71,9 @@
     "moves": "Moves",
     "tries": "Tries",
     "score": "Score",
-    "exitGame": "Exit"
+    "exitGame": "Exit",
+    "finished": "Finished!",
+    "waitingForOthers": "Waiting for other players..."
   },
   "results": {
     "title": "Results",

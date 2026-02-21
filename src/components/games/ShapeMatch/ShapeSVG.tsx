@@ -72,12 +72,16 @@ function starPoints(cx: number, cy: number, spikes: number, outerR: number, inne
   return pts.join(' ');
 }
 
-/** Generate heart SVG path */
+/** Generate heart SVG path — proper heart with two lobes */
 function heartPath(half: number, size: number): string {
   const s = size;
-  return `M ${half} ${s * 0.85}
-    C ${s * 0.15} ${s * 0.55}, ${s * 0.02} ${s * 0.25}, ${half} ${s * 0.15}
-    C ${s * 0.98} ${s * 0.25}, ${s * 0.85} ${s * 0.55}, ${half} ${s * 0.85} Z`;
+  const top = s * 0.3;
+  const bottom = s * 0.88;
+  return `M ${half} ${bottom}
+    C ${s * 0.05} ${s * 0.6}, ${s * 0.0} ${s * 0.2}, ${half * 0.5} ${top}
+    A ${s * 0.15} ${s * 0.15} 0 0 1 ${half} ${top + s * 0.08}
+    A ${s * 0.15} ${s * 0.15} 0 0 1 ${s - half * 0.5} ${top}
+    C ${s * 1.0} ${s * 0.2}, ${s * 0.95} ${s * 0.6}, ${half} ${bottom} Z`;
 }
 
 /** Generate regular hexagon points */

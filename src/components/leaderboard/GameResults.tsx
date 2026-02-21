@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import { useRoomStore } from '@/store/roomStore';
 import { saveGameHistory, type PlayerResult } from '@/services/historyService';
-import type { Player } from '@/utils/types';
+import type { Player, GameMode } from '@/utils/types';
 import { serverTimestamp } from 'firebase/firestore';
 import { playFinish } from '@/utils/sounds';
 import Confetti from '@/components/ui/Confetti';
@@ -12,6 +12,10 @@ interface GameResultsProps {
   players: Player[];
   scores: Record<string, number>;
   totalQuestions: number;
+  /** Per-player finish timestamps for speed-based ranking */
+  finishTimes?: Record<string, number>;
+  /** Game mode — used to decide ranking strategy */
+  gameMode?: GameMode;
   /** Replay the same game (go to lobby and re-start) */
   onPlayAgain: () => void;
   /** New game configuration (go to home page) */
@@ -27,6 +31,8 @@ export default function GameResults({
   players,
   scores,
   totalQuestions,
+  finishTimes,
+  gameMode,
   onPlayAgain,
   onNewGame,
 }: GameResultsProps) {
@@ -36,9 +42,28 @@ export default function GameResults({
 
   useEffect(() => { playFinish(); }, []);
 
-  const ranked = [...players].sort(
-    (a, b) => (scores[b.id] ?? 0) - (scores[a.id] ?? 0),
-  );
+  /* Rank players based on game mode */
+  const ranked = [...players].sort((a, b) => {
+    const scoreA = scores[a.id] ?? 0;
+    const scoreB = scores[b.id] ?? 0;
+
+    if (gameMode === 'timedSprint' && finishTimes) {
+      /* Timed sprint: rank by most correct answers, then by fastest finish */
+      if (scoreA !== scoreB) return scoreB - scoreA;
+      const timeA = finishTimes[a.id] ?? Infinity;
+      const timeB = finishTimes[b.id] ?? Infinity;
+      return timeA - timeB;
+    }
+
+    /* Race to finish / default: rank by most correct, then by fastest finish */
+    if (scoreA !== scoreB) return scoreB - scoreA;
+    if (finishTimes) {
+      const timeA = finishTimes[a.id] ?? Infinity;
+      const timeB = finishTimes[b.id] ?? Infinity;
+      return timeA - timeB;
+    }
+    return 0;
+  });
 
   useEffect(() => {
     if (savedRef.current || !room) return;
@@ -96,6 +121,10 @@ export default function GameResults({
             {podiumDisplay.map((player, displayIdx) => {
               const rank = podiumOrder[displayIdx];
               const score = scores[player.id] ?? 0;
+              const accuracy =
+                totalQuestions > 0
+                  ? Math.round((score / totalQuestions) * 100)
+                  : 0;
               return (
                 <div
                   key={player.id}
@@ -106,11 +135,11 @@ export default function GameResults({
                   <span className="text-xs font-bold truncate max-w-[80px]">
                     {player.name}
                   </span>
-                  <span className="text-xs text-gray-500 mb-1">
-                    {score}/{totalQuestions}
+                  <span className="text-xs text-gray-500">
+                    {score}/{totalQuestions} ({accuracy}%)
                   </span>
                   <div
-                    className={`w-20 rounded-t-xl flex items-center justify-center
+                    className={`w-20 rounded-t-xl flex items-center justify-center mt-1
                       ${PODIUM_COLORS[rank]} ring-2 ${PODIUM_RINGS[rank]}
                       transition-all duration-700`}
                     style={{ height: `${PODIUM_HEIGHTS[rank]}px` }}
@@ -150,23 +179,6 @@ export default function GameResults({
               );
             })}
           </ul>
-        )}
-
-        {podiumPlayers.length > 0 && (
-          <div className="flex justify-center gap-4 mb-6 text-sm text-gray-500">
-            {ranked.slice(0, 3).map((player) => {
-              const score = scores[player.id] ?? 0;
-              const accuracy =
-                totalQuestions > 0
-                  ? Math.round((score / totalQuestions) * 100)
-                  : 0;
-              return (
-                <span key={player.id}>
-                  {player.avatar} {accuracy}% {t('results.accuracy')}
-                </span>
-              );
-            })}
-          </div>
         )}
 
         <div className="flex gap-3">
