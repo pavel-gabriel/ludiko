@@ -55,7 +55,13 @@ export default function TeacherLogin() {
         await handleSuccess(user.uid, user.displayName || 'Teacher', user.email || '');
       }
     } catch (err: unknown) {
+      const code = (err as { code?: string }).code ?? '';
       const msg = (err as Error).message || '';
+      /* User closed the popup — not an error, just re-enable the button */
+      if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request') {
+        setLoading(false);
+        return;
+      }
       if (msg.includes('unauthorized-domain')) {
         setError(t('teacher.unauthorizedDomain'));
       } else {

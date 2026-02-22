@@ -16,6 +16,8 @@ interface GameResultsProps {
   finishTimes?: Record<string, number>;
   /** Game mode — used to decide ranking strategy */
   gameMode?: GameMode;
+  /** Timestamp (ms) when the game started playing — used to compute elapsed time */
+  startedAt?: number;
   /** Replay the same game (go to lobby and re-start) */
   onPlayAgain: () => void;
   /** New game configuration (go to home page) */
@@ -27,12 +29,20 @@ const PODIUM_COLORS = ['bg-ludiko-yellow', 'bg-gray-200', 'bg-orange-200'];
 const PODIUM_RINGS = ['ring-yellow-400', 'ring-gray-400', 'ring-orange-400'];
 const PLACE_LABELS = ['1st', '2nd', '3rd'];
 
+/** Format elapsed seconds as M:SS */
+function formatTime(seconds: number): string {
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return `${m}:${s.toString().padStart(2, '0')}`;
+}
+
 export default function GameResults({
   players,
   scores,
   totalQuestions,
   finishTimes,
   gameMode,
+  startedAt,
   onPlayAgain,
   onNewGame,
 }: GameResultsProps) {
@@ -138,6 +148,11 @@ export default function GameResults({
                   <span className="text-xs text-gray-500">
                     {score}/{totalQuestions} ({accuracy}%)
                   </span>
+                  {startedAt && finishTimes?.[player.id] && (
+                    <span className="text-xs text-ludiko-purple font-bold">
+                      {t('results.finishTime')}: {formatTime(Math.round((finishTimes[player.id] - startedAt) / 1000))}
+                    </span>
+                  )}
                   <div
                     className={`w-16 sm:w-20 rounded-t-xl flex items-center justify-center mt-1
                       ${PODIUM_COLORS[rank]} ring-2 ${PODIUM_RINGS[rank]}
@@ -172,9 +187,16 @@ export default function GameResults({
                   </span>
                   <span className="text-2xl">{player.avatar}</span>
                   <span className="font-bold flex-1 text-left">{player.name}</span>
-                  <span className="text-sm font-semibold">
-                    {score}/{totalQuestions} ({accuracy}%)
-                  </span>
+                  <div className="text-right">
+                    <span className="text-sm font-semibold">
+                      {score}/{totalQuestions} ({accuracy}%)
+                    </span>
+                    {startedAt && finishTimes?.[player.id] && (
+                      <span className="block text-xs text-ludiko-purple font-bold">
+                        {t('results.finishTime')}: {formatTime(Math.round((finishTimes[player.id] - startedAt) / 1000))}
+                      </span>
+                    )}
+                  </div>
                 </li>
               );
             })}

@@ -11,7 +11,7 @@ import {
   setGamePhase,
   type RTDBGameState,
 } from '@/services/gameSession';
-import { replayRoom, deleteRoom, listenToRoom } from '@/services/roomManager';
+import { replayRoom, deleteRoom, removePlayer, listenToRoom } from '@/services/roomManager';
 import type { Question } from '@/utils/types';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import RaceTrack from './RaceTrack';
@@ -58,11 +58,13 @@ export default function MathRacePage() {
     return () => window.removeEventListener('popstate', onPopState);
   }, [handleExit]);
 
-  /* Listen for room deletion (host left) — non-host players exit */
+  /* Listen for room changes — handle deletion (host left) and replay (back to waiting) */
   useEffect(() => {
     if (!room) return;
     const unsub = listenToRoom(room.id, (r) => {
-      if (!r) { reset(); navigate('/'); }
+      if (!r) { reset(); navigate('/'); return; }
+      /* Replay triggered: room went back to waiting — return to lobby */
+      if (r.status === 'waiting') { navigate('/lobby'); }
     });
     return () => unsub();
   }, [room?.id]);
@@ -226,8 +228,9 @@ export default function MathRacePage() {
         totalQuestions={resultsTotal}
         finishTimes={gameState.finishTimes}
         gameMode={settings?.gameMode ?? 'raceToFinish'}
+        startedAt={gameState.startedAt}
         onPlayAgain={async () => { await replayRoom(room.id); navigate('/lobby'); }}
-        onNewGame={() => { reset(); navigate('/'); }}
+        onNewGame={async () => { await removePlayer(room.id, currentPlayer.id); reset(); navigate('/'); }}
       />
     );
   }
