@@ -24,6 +24,18 @@ import type {
 } from '@/utils/types';
 
 /* ------------------------------------------------------------------ */
+/*  Helpers                                                            */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Recursively strip `undefined` values from an object.
+ * Firestore rejects documents containing `undefined` fields.
+ */
+function stripUndefined<T extends Record<string, unknown>>(obj: T): T {
+  return JSON.parse(JSON.stringify(obj));
+}
+
+/* ------------------------------------------------------------------ */
 /*  Teacher profile                                                   */
 /* ------------------------------------------------------------------ */
 
@@ -54,16 +66,16 @@ export async function createSession(
   studentCodes: StudentCode[],
 ): Promise<string> {
   if (!firebaseEnabled) return '';
-  const session: Omit<ClassroomSession, 'id'> = {
+  const session = stripUndefined({
     teacherUid,
     title,
     settings,
     classroomMode,
     globalTimer,
     studentCodes,
-    status: 'draft',
+    status: 'draft' as const,
     createdAt: Date.now(),
-  };
+  });
   const ref = await addDoc(collection(db, 'sessions'), session);
   return ref.id;
 }
@@ -93,7 +105,7 @@ export async function updateSession(
   updates: Partial<ClassroomSession>,
 ): Promise<void> {
   if (!firebaseEnabled) return;
-  await updateDoc(doc(db, 'sessions', sessionId), updates);
+  await updateDoc(doc(db, 'sessions', sessionId), stripUndefined(updates as Record<string, unknown>));
 }
 
 /** Delete a session */
@@ -169,15 +181,15 @@ export async function saveTemplate(
   customQuestions?: CustomQuestion[],
 ): Promise<string> {
   if (!firebaseEnabled) return '';
-  const template: Omit<SessionTemplate, 'id'> = {
+  const template = stripUndefined({
     teacherUid,
     name,
     settings,
     classroomMode,
     globalTimer,
-    customQuestions,
+    ...(customQuestions && customQuestions.length > 0 && { customQuestions }),
     createdAt: Date.now(),
-  };
+  });
   const ref = await addDoc(collection(db, 'templates'), template);
   return ref.id;
 }

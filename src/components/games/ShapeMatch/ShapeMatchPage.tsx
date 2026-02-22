@@ -11,7 +11,7 @@ import {
   setGamePhase,
   type RTDBGameState,
 } from '@/services/gameSession';
-import { replayRoom, deleteRoom, listenToRoom } from '@/services/roomManager';
+import { replayRoom, deleteRoom, removePlayer, listenToRoom } from '@/services/roomManager';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import CountdownOverlay from '@/components/games/MathRace/CountdownOverlay';
 import RaceTrack from '@/components/games/MathRace/RaceTrack';
@@ -55,11 +55,12 @@ export default function ShapeMatchPage() {
     return () => window.removeEventListener('popstate', onPopState);
   }, [handleExit]);
 
-  /* Listen for room deletion (host left) — non-host players exit */
+  /* Listen for room changes — handle deletion (host left) and replay (back to waiting) */
   useEffect(() => {
     if (!room) return;
     const unsub = listenToRoom(room.id, (r) => {
-      if (!r) { reset(); navigate('/'); }
+      if (!r) { reset(); navigate('/'); return; }
+      if (r.status === 'waiting') { navigate('/lobby'); }
     });
     return () => unsub();
   }, [room?.id]);
@@ -206,8 +207,9 @@ export default function ShapeMatchPage() {
         totalQuestions={totalQuestions}
         finishTimes={gameState.finishTimes}
         gameMode={settings?.gameMode ?? 'raceToFinish'}
+        startedAt={gameState.startedAt}
         onPlayAgain={async () => { await replayRoom(room.id); navigate('/lobby'); }}
-        onNewGame={() => { reset(); navigate('/'); }}
+        onNewGame={async () => { await removePlayer(room.id, currentPlayer.id); reset(); navigate('/'); }}
       />
     );
   }

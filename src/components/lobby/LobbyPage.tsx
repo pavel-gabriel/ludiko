@@ -7,6 +7,7 @@ import {
   listenToRoom,
   updateRoomStatus,
   deleteRoom,
+  removePlayer,
   setPlayerReady,
 } from '@/services/roomManager';
 
@@ -62,6 +63,9 @@ export default function LobbyPage() {
     if (isHost) {
       /* Host leaving deletes the room for everyone */
       await deleteRoom(room.id);
+    } else {
+      /* Non-host leaving removes their player entry from RTDB */
+      await removePlayer(room.id, currentPlayer.id);
     }
     reset();
     navigate('/');

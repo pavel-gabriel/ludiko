@@ -200,6 +200,16 @@ export async function deleteRoom(roomId: string): Promise<void> {
   await remove(ref(rtdb, `rooms/${roomId}`));
 }
 
+/** Remove a specific player from the room by their player ID */
+export async function removePlayer(roomId: string, playerId: string): Promise<void> {
+  const roomRef = ref(rtdb, `rooms/${roomId}`);
+  const snapshot = await get(roomRef);
+  if (!snapshot.exists()) return;
+  const room = snapshot.val() as Room;
+  const players = (room.players ?? []).filter((p: Player) => p.id !== playerId);
+  await update(roomRef, { players });
+}
+
 /**
  * Register an onDisconnect handler so that if a player's browser closes,
  * the room knows. For the host, the entire room is deleted.
