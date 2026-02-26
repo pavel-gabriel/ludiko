@@ -5,7 +5,7 @@
     <title>Ludiko</title>
     <script>
       // GitHub Pages SPA redirect: rewrite path to query string so index.html can restore it
-      var pathSegmentsToKeep = 1; // keep /ludiko/ prefix
+      var pathSegmentsToKeep = 0; // custom domain serves at root, no prefix
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
