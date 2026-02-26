@@ -176,6 +176,8 @@
     "customQs": "custom Qs",
     "templateHint": "Save templates when creating sessions to reuse configurations",
     "templateNamePlaceholder": "Template name",
-    "saveTemplate": "Save Template"
+    "saveTemplate": "Save Template",
+    "duplicateTemplateName": "A template with this name already exists",
+    "saveError": "Failed to save. Please try again."
   }
 }
