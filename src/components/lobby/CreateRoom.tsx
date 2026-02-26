@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { useRoomStore } from '@/store/roomStore';
 import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
@@ -66,7 +67,8 @@ export default function CreateRoom() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-md">
+      <div className="card w-full max-w-md relative">
+        <CloseButton />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('create.title')}</h2>
 
         {/* Name */}
@@ -245,20 +247,15 @@ export default function CreateRoom() {
           </label>
         </div>
 
-        <div className="flex gap-3">
-          <Button variant="orange" size="md" onClick={() => navigate('/')}>
-            {t('create.back')}
-          </Button>
-          <Button
-            variant="green"
-            size="md"
-            className="flex-1"
-            onClick={handleCreate}
-            disabled={!name.trim() || (showMathOptions && operations.length === 0)}
-          >
-            {t('create.create')}
-          </Button>
-        </div>
+        <Button
+          variant="green"
+          size="lg"
+          className="w-full"
+          onClick={handleCreate}
+          disabled={!name.trim() || (showMathOptions && operations.length === 0)}
+        >
+          {t('create.create')}
+        </Button>
       </div>
     </div>
   );
