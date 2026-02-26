@@ -7,6 +7,7 @@ import type { Player, GameMode } from '@/utils/types';
 import { serverTimestamp } from 'firebase/firestore';
 import { playFinish } from '@/utils/sounds';
 import Confetti from '@/components/ui/Confetti';
+import CloseButton from '@/components/ui/CloseButton';
 
 interface GameResultsProps {
   players: Player[];
@@ -22,6 +23,8 @@ interface GameResultsProps {
   onPlayAgain: () => void;
   /** New game configuration (go to home page) */
   onNewGame: () => void;
+  /** Single player mode — hides "New Game" button since X does the same */
+  isSinglePlayer?: boolean;
 }
 
 const PODIUM_HEIGHTS = [140, 100, 72];
@@ -113,7 +116,8 @@ export default function GameResults({
   return (
     <div className="page">
       <Confetti />
-      <div className="card w-full max-w-md text-center">
+      <div className="card w-full max-w-md text-center relative">
+        <CloseButton onClick={onNewGame} />
         <h2 className="text-2xl font-bold mb-2">{t('results.title')}</h2>
 
         {ranked.length > 0 && (
@@ -204,9 +208,6 @@ export default function GameResults({
         )}
 
         <div className="flex gap-3">
-          <Button variant="orange" size="md" onClick={onNewGame}>
-            {t('results.newGame')}
-          </Button>
           <Button variant="green" size="md" className="flex-1" onClick={onPlayAgain}>
             {t('results.replay')}
           </Button>

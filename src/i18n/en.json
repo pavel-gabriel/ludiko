@@ -49,7 +49,11 @@
     "codePlaceholder": "E.g. ABC123",
     "join": "Join",
     "back": "Back",
-    "invalidCode": "Invalid code"
+    "invalidCode": "Invalid code",
+    "studentCode": "Your student code",
+    "studentCodePlaceholder": "E.g. CAT-12",
+    "classroomHint": "Enter the unique code given by your teacher",
+    "invalidStudentCode": "Invalid student code. Use the code given by your teacher."
   },
   "lobby": {
     "title": "Waiting Room",
@@ -94,6 +98,12 @@
     "champion": "Champion!",
     "accuracy": "accuracy",
     "finishTime": "Time"
+  },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "all": "All",
+    "played": "games",
+    "noData": "No games yet"
   },
   "shapes": {
     "circle": "Circle",
@@ -177,6 +187,7 @@
     "studentProgress": "Student Progress",
     "waitingForStudents": "Waiting for students to join...",
     "nextQuestion": "Next Question",
+    "startGame": "Start Test",
     "endSession": "End Session",
     "exportCSV": "Export CSV",
     "done": "Done",

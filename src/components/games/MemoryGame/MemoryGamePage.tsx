@@ -195,7 +195,27 @@ export default function MemoryGamePage() {
   const actualPairs = cards.length > 0 ? cards.length / 2 : totalPairs;
   const iAmDone = finishedRef.current || matchedIndices.size / 2 >= actualPairs;
 
+  const isSinglePlayer = room.players.length === 1 && !room.classroomSessionId;
+
   if (gameState?.phase === 'finished') {
+    const handleReplay = async () => {
+      if (isSinglePlayer) {
+        setFlippedIndices([]);
+        setMatchedIndices(new Set());
+        setTries(0);
+        setChecking(false);
+        finishedRef.current = false;
+        setShowCountdown(true);
+        setCountdown(COUNTDOWN_SECONDS);
+        const newCards = generateMemoryCards(totalPairs);
+        setCards(newCards);
+        await initMemoryGameState(room.id, newCards, [currentPlayer.id]);
+      } else {
+        await replayRoom(room.id);
+        navigate('/lobby');
+      }
+    };
+
     return (
       <GameResults
         players={room.players}
@@ -204,7 +224,8 @@ export default function MemoryGamePage() {
         finishTimes={gameState.finishTimes}
         gameMode="raceToFinish"
         startedAt={gameState.startedAt}
-        onPlayAgain={async () => { await replayRoom(room.id); navigate('/lobby'); }}
+        isSinglePlayer={isSinglePlayer}
+        onPlayAgain={handleReplay}
         onNewGame={async () => { await removePlayer(room.id, currentPlayer.id); reset(); navigate('/'); }}
       />
     );
