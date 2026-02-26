@@ -13,17 +13,18 @@ import type { ClassroomSession } from '@/utils/types';
 export default function TeacherDashboard() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { uid, teacherProfile, reset } = useAuthStore();
+  const { uid, teacherProfile, loading: authLoading, reset } = useAuthStore();
   const [sessions, setSessions] = useState<ClassroomSession[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (authLoading) return;
     if (!uid) { navigate('/teacher/login'); return; }
     getTeacherSessions(uid).then((s) => {
       setSessions(s);
       setLoading(false);
     });
-  }, [uid]);
+  }, [uid, authLoading]);
 
   const handleLogout = async () => {
     await logOut();

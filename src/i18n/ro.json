@@ -176,6 +176,8 @@
     "customQs": "întrebări custom",
     "templateHint": "Salvează șabloane la crearea sesiunilor pentru a reutiliza configurațiile",
     "templateNamePlaceholder": "Numele șablonului",
-    "saveTemplate": "Salvează Șablon"
+    "saveTemplate": "Salvează Șablon",
+    "duplicateTemplateName": "Există deja un șablon cu acest nume",
+    "saveError": "Salvarea a eșuat. Încearcă din nou."
   }
 }

@@ -26,7 +26,7 @@ export default function SessionConfig() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { sessionId } = useParams<{ sessionId: string }>();
-  const { uid } = useAuthStore();
+  const { uid, loading: authLoading } = useAuthStore();
   const isNew = sessionId === 'new';
 
   const [title, setTitle] = useState('');
@@ -42,10 +42,12 @@ export default function SessionConfig() {
   const [customQuestions, setCustomQuestions] = useState<CustomQuestion[]>([]);
   const [templates, setTemplates] = useState<SessionTemplate[]>([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
   const [templateName, setTemplateName] = useState('');
 
   /* Load existing session if editing */
   useEffect(() => {
+    if (authLoading) return;
     if (!uid) { navigate('/teacher/login'); return; }
     if (!isNew && sessionId) {
       getSession(sessionId).then((s) => {
@@ -63,7 +65,7 @@ export default function SessionConfig() {
       });
     }
     getTeacherTemplates(uid).then(setTemplates);
-  }, [uid, sessionId]);
+  }, [uid, sessionId, authLoading]);
 
   const showMathOptions = gameType === 'mathRace';
   const isShapeMatch = gameType === 'shapeMatch';
@@ -124,6 +126,13 @@ export default function SessionConfig() {
 
   const handleSaveTemplate = async () => {
     if (!uid || !templateName.trim()) return;
+    const trimmedName = templateName.trim();
+    /* Check for duplicate template name */
+    if (templates.some((tmpl) => tmpl.name.toLowerCase() === trimmedName.toLowerCase())) {
+      setError(t('teacher.duplicateTemplateName'));
+      return;
+    }
+    setError('');
     const settings = {
       gameType,
       gameMode: 'raceToFinish' as const,
@@ -133,15 +142,20 @@ export default function SessionConfig() {
       timePerRound,
       ...(isShapeMatch && { shapeMode }),
     };
-    await saveTemplate(uid, templateName.trim(), settings, classroomMode, globalTimer, customQuestions.length > 0 ? customQuestions : undefined);
-    setTemplateName('');
-    /* Refresh templates */
-    getTeacherTemplates(uid).then(setTemplates);
+    try {
+      await saveTemplate(uid, trimmedName, settings, classroomMode, globalTimer, customQuestions.length > 0 ? customQuestions : undefined);
+      setTemplateName('');
+      /* Refresh templates */
+      getTeacherTemplates(uid).then(setTemplates);
+    } catch (err: unknown) {
+      setError((err as Error).message || t('teacher.saveError'));
+    }
   };
 
   const handleSave = async () => {
     if (!uid || !title.trim() || loading) return;
     setLoading(true);
+    setError('');
     try {
       const settings = {
         gameType,
@@ -166,6 +180,8 @@ export default function SessionConfig() {
         });
         navigate('/teacher');
       }
+    } catch (err: unknown) {
+      setError((err as Error).message || t('teacher.saveError'));
     } finally {
       setLoading(false);
     }
@@ -177,6 +193,12 @@ export default function SessionConfig() {
         <h2 className="text-2xl font-bold mb-4 text-center">
           {isNew ? t('teacher.newSession') : t('teacher.editSession')}
         </h2>
+
+        {error && (
+          <div className="bg-red-100 text-red-700 rounded-xl px-4 py-2 mb-4 text-sm">
+            {error}
+          </div>
+        )}
 
         {/* Template selector */}
         {templates.length > 0 && (
