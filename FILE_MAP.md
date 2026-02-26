@@ -161,16 +161,17 @@ Helper: `stripUndefined(obj)` — JSON parse/stringify to remove undefined
 
 ## App Shell
 
-### `src/App.tsx` (46 lines)
+### `src/App.tsx` (50 lines)
 - Effect 1: Update document.title + lang on i18n change
 - Effect 2: `onAuthStateChanged` → restore uid + teacherProfile from Firebase
+- Effect 3: Sync `dyslexic-mode` class on `<html>` from settingsStore.dyslexicFont
 - Render: ErrorBoundary > Providers > AppRoutes
 
 ### `src/app/providers.tsx` (11 lines)
 BrowserRouter with basename="/"
 
-### `src/app/AppRoutes.tsx` (39 lines)
-Routes: `/` HomePage, `/create` CreateRoom, `/join` JoinRoom, `/lobby` LobbyPage, `/game` GameRouter
+### `src/app/AppRoutes.tsx` (46 lines)
+Routes: `/` HomePage, `/singleplayer` SinglePlayerPage, `/multiplayer` MultiplayerPage, `/settings` SettingsPage, `/create` CreateRoom, `/join` JoinRoom, `/lobby` LobbyPage, `/game` GameRouter
 Teacher: `/teacher/login`, `/teacher`, `/teacher/session/new`, `/teacher/session/:id/edit`, `/teacher/session/:id`, `/teacher/live/:id`, `/teacher/results/:id`, `/teacher/templates`
 
 ### `src/main.tsx` (13 lines)
@@ -208,8 +209,20 @@ Props: `selected`, `onChange`, `exclude?`. Exports `EMOJI_OPTIONS` (16 emojis)
 
 ## Lobby Components
 
-### `src/components/lobby/HomePage.tsx` (46 lines)
-Settings toggles (top-right), title, 3 buttons: Create/Join/Teacher Mode, PersistentLeaderboard
+### `src/components/lobby/HomePage.tsx` (47 lines)
+Gear icon (top-right) → /settings. Title + tagline. 3 buttons: Single Player, Multiplayer, Teacher Mode. PersistentLeaderboard.
+
+### `src/components/lobby/SinglePlayerPage.tsx` (195 lines)
+Simplified game config: name, avatar, game type, shape mode, difficulty, operations, rounds/time.
+No mode selector — defaults to raceToFinish. "Play" button creates room with `status:'playing'` and navigates directly to `/game` (skips lobby).
+Handler: `handlePlay()` — ensureAnonymousAuth → buildRoom → set status='playing' → createRoomInDB → store → navigate('/game')
+
+### `src/components/lobby/MultiplayerPage.tsx` (27 lines)
+Title + 2 buttons: Create Room → /create, Join Room → /join. Back → /
+
+### `src/components/lobby/SettingsPage.tsx` (82 lines)
+Sound toggle (switch), Language selector (RO/EN buttons), Dyslexic font toggle (switch). Back → /
+Note: dyslexic-mode class managed globally in App.tsx effect, not DyslexiaToggle component.
 
 ### `src/components/lobby/CreateRoom.tsx` (265 lines)
 State: name, avatar, gameType, gameMode, difficulty, rounds, timePerRound, operations, shapeMode, loading
@@ -338,7 +351,7 @@ Template list: name, game type, delete button, hint text
 
 ```
 app.pageTitle, app.tagline
-home.createRoom, home.joinRoom, home.teacherMode
+home.singlePlayer, home.multiplayer, home.createRoom, home.joinRoom, home.teacherMode, home.settings, home.play
 create.* (gameType, difficulty, operations, rounds, timePerRound, shapeMode, etc.)
 join.* (title, name, code, join, error.*)
 lobby.* (title, roomCode, copied, ready, waiting, start, leave, soloHint)
