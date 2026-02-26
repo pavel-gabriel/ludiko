@@ -7,6 +7,8 @@ import CreateRoom from '@/components/lobby/CreateRoom';
 import JoinRoom from '@/components/lobby/JoinRoom';
 import LobbyPage from '@/components/lobby/LobbyPage';
 import GameRouter from '@/components/games/GameRouter';
+import InteractiveSetupPage from '@/components/lobby/InteractiveSetupPage';
+import { InteractiveGamePage } from '@/components/games/InteractiveGame';
 import {
   TeacherLogin,
   TeacherDashboard,
@@ -29,7 +31,9 @@ export default function AppRoutes() {
       <Route path="/create" element={<CreateRoom />} />
       <Route path="/join" element={<JoinRoom />} />
       <Route path="/lobby" element={<LobbyPage />} />
+      <Route path="/interactive" element={<InteractiveSetupPage />} />
       <Route path="/game" element={<GameRouter />} />
+      <Route path="/game/interactive" element={<InteractiveGamePage />} />
 
       {/* Teacher routes */}
       <Route path="/teacher/login" element={<TeacherLogin />} />

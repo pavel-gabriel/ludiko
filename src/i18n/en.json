@@ -110,6 +110,13 @@
     "dyslexicFont": "Dyslexia-friendly font",
     "sound": "Sound"
   },
+  "interactive": {
+    "button": "Interactive Mode",
+    "title": "Interactive Mode",
+    "player1": "Player 1",
+    "player2": "Player 2",
+    "differentAvatars": "Players must have different avatars"
+  },
   "teacher": {
     "login": "Teacher Login",
     "googleSignIn": "Sign in with Google",

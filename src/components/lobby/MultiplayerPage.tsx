@@ -23,6 +23,9 @@ export default function MultiplayerPage() {
         <Button variant="blue" size="lg" onClick={() => navigate('/join')}>
           {t('home.joinRoom')}
         </Button>
+        <Button variant="purple" size="lg" onClick={() => navigate('/interactive')}>
+          {t('interactive.button')}
+        </Button>
       </div>
     </div>
   );

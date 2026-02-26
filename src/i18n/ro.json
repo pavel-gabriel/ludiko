@@ -110,6 +110,13 @@
     "dyslexicFont": "Font pentru dislexie",
     "sound": "Sunet"
   },
+  "interactive": {
+    "button": "Mod Interactiv",
+    "title": "Mod Interactiv",
+    "player1": "Jucătorul 1",
+    "player2": "Jucătorul 2",
+    "differentAvatars": "Jucătorii trebuie să aibă avatare diferite"
+  },
   "teacher": {
     "login": "Autentificare Profesor",
     "googleSignIn": "Conectare cu Google",

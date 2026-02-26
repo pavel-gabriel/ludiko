@@ -60,7 +60,7 @@ export default function TeacherDashboard() {
         </div>
 
         {/* Actions */}
-        <div className="flex gap-3 mb-6">
+        <div className="flex gap-3 mb-3">
           <Button
             variant="pink"
             size="md"
@@ -76,6 +76,16 @@ export default function TeacherDashboard() {
             onClick={() => navigate('/teacher/templates')}
           >
             {t('teacher.templates')}
+          </Button>
+        </div>
+        <div className="mb-6">
+          <Button
+            variant="purple"
+            size="md"
+            className="w-full"
+            onClick={() => navigate('/interactive')}
+          >
+            {t('interactive.button')}
           </Button>
         </div>
 
