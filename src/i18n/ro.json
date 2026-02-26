@@ -5,9 +5,13 @@
     "pageTitle": "Ludiko - Jocuri de Matematică"
   },
   "home": {
+    "singlePlayer": "Un Jucător",
+    "multiplayer": "Multiplayer",
     "createRoom": "Creează Cameră",
     "joinRoom": "Intră în Cameră",
     "teacherMode": "Mod Profesor",
+    "settings": "Setări",
+    "play": "Joacă",
     "tagline": "Învață jucându-te!"
   },
   "create": {

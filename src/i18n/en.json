@@ -5,9 +5,13 @@
     "pageTitle": "Ludiko - Math Games"
   },
   "home": {
+    "singlePlayer": "Single Player",
+    "multiplayer": "Multiplayer",
     "createRoom": "Create Room",
     "joinRoom": "Join Room",
     "teacherMode": "Teacher Mode",
+    "settings": "Settings",
+    "play": "Play",
     "tagline": "Learn by playing!"
   },
   "create": {

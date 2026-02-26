@@ -6,15 +6,22 @@ import ErrorBoundary from '@/components/ui/ErrorBoundary';
 import { onAuthChange } from '@/services/authService';
 import { getTeacherProfile } from '@/services/teacherService';
 import { useAuthStore } from '@/store/authStore';
+import { useSettingsStore } from '@/store/settingsStore';
 
 export default function App() {
   const { t, i18n } = useTranslation();
   const { setUid, setTeacherProfile, setLoading } = useAuthStore();
+  const dyslexicFont = useSettingsStore((s) => s.dyslexicFont);
 
   useEffect(() => {
     document.title = t('app.pageTitle');
     document.documentElement.lang = i18n.language;
   }, [i18n.language, t]);
+
+  /* Keep dyslexic-mode class on <html> in sync with store */
+  useEffect(() => {
+    document.documentElement.classList.toggle('dyslexic-mode', dyslexicFont);
+  }, [dyslexicFont]);
 
   /* Restore auth state on app mount / page refresh */
   useEffect(() => {
