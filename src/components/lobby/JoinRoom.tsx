@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { useRoomStore } from '@/store/roomStore';
 import { joinRoomByCode, lookupRoomByCode, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
@@ -66,7 +67,8 @@ export default function JoinRoom() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-md">
+      <div className="card w-full max-w-md relative">
+        <CloseButton />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('join.title')}</h2>
 
         <label className="block mb-2">
@@ -103,20 +105,15 @@ export default function JoinRoom() {
           {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
         </label>
 
-        <div className="flex gap-3">
-          <Button variant="orange" size="md" onClick={() => navigate('/')}>
-            {t('join.back')}
-          </Button>
-          <Button
-            variant="blue"
-            size="md"
-            className="flex-1"
-            onClick={handleJoin}
-            disabled={!name.trim() || code.length < 6 || loading}
-          >
-            {t('join.join')}
-          </Button>
-        </div>
+        <Button
+          variant="blue"
+          size="lg"
+          className="w-full"
+          onClick={handleJoin}
+          disabled={!name.trim() || code.length < 6 || loading}
+        >
+          {t('join.join')}
+        </Button>
       </div>
     </div>
   );

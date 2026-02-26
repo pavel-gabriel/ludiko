@@ -1,11 +1,9 @@
-import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { useSettingsStore } from '@/store/settingsStore';
 
 export default function SettingsPage() {
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
   const { language, dyslexicFont, soundEnabled, setLanguage, toggleDyslexicFont, toggleSound } = useSettingsStore();
 
   const handleLanguageChange = (lang: string) => {
@@ -15,7 +13,8 @@ export default function SettingsPage() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-sm">
+      <div className="card w-full max-w-sm relative">
+        <CloseButton />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('home.settings')}</h2>
 
         {/* Sound */}
@@ -74,11 +73,6 @@ export default function SettingsPage() {
           </button>
         </div>
 
-        <div className="mt-6">
-          <Button variant="orange" size="md" className="w-full" onClick={() => navigate('/')}>
-            {t('create.back')}
-          </Button>
-        </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { useRoomStore } from '@/store/roomStore';
 import {
   listenToRoom,
@@ -84,7 +85,8 @@ export default function LobbyPage() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-md">
+      <div className="card w-full max-w-md relative">
+        <CloseButton onClick={handleLeave} />
         <h2 className="text-2xl font-bold mb-2 text-center">{t('lobby.title')}</h2>
 
         <div className="text-center mb-6">
@@ -150,13 +152,10 @@ export default function LobbyPage() {
         )}
 
         <div className="flex gap-3">
-          <Button variant="orange" size="md" onClick={handleLeave}>
-            {t('lobby.leave')}
-          </Button>
           {!isHost && (
             <Button
               variant={currentPlayer.isReady ? 'orange' : 'green'}
-              size="md"
+              size="lg"
               className="flex-1"
               onClick={handleReady}
             >
@@ -166,7 +165,7 @@ export default function LobbyPage() {
           {isHost && (
             <Button
               variant="green"
-              size="md"
+              size="lg"
               className="flex-1"
               onClick={handleStart}
               disabled={!canStart}
