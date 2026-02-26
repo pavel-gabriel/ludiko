@@ -27,7 +27,7 @@ export default function SessionConfig() {
   const navigate = useNavigate();
   const { sessionId } = useParams<{ sessionId: string }>();
   const { uid, loading: authLoading } = useAuthStore();
-  const isNew = sessionId === 'new';
+  const isNew = !sessionId;
 
   const [title, setTitle] = useState('');
   const [gameType, setGameType] = useState<GameType>(DEFAULT_GAME_SETTINGS.gameType);

@@ -2,24 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'OpenDyslexic';
-  src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Regular.woff')
-    format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'OpenDyslexic';
-  src: url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/woff/OpenDyslexic-Bold.woff')
-    format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
 @layer base {
   body {
     @apply bg-ludiko-bg text-ludiko-text font-nunito;
@@ -27,7 +9,7 @@
 
   .dyslexic-mode body,
   .dyslexic-mode {
-    font-family: 'OpenDyslexic', 'Comic Sans MS', 'Comic Sans', cursive, sans-serif !important;
+    font-family: 'OpenDyslexic', 'Nunito', sans-serif !important;
   }
 }
 

@@ -14,7 +14,8 @@
 | `firestore.indexes.json` | sessions(teacherUid+createdAt), templates(teacherUid+createdAt) |
 | `database.rules.json` | `.indexOn: ["code"]`, auth read/write on rooms |
 | `public/CNAME` | `www.ludiko.ro` |
-| `package.json` | react 19, firebase 11.3, zustand 5, react-router-dom 7, i18next 24, vitest 3 |
+| `package.json` | react 19, firebase 11.3, zustand 5, react-router-dom 7, i18next 24, vitest 3, @fontsource/opendyslexic |
+| `public/404.html` | SPA redirect for GitHub Pages; `pathSegmentsToKeep=0` (custom domain, no prefix) |
 
 ---
 
@@ -172,8 +173,8 @@ BrowserRouter with basename="/"
 Routes: `/` HomePage, `/create` CreateRoom, `/join` JoinRoom, `/lobby` LobbyPage, `/game` GameRouter
 Teacher: `/teacher/login`, `/teacher`, `/teacher/session/new`, `/teacher/session/:id/edit`, `/teacher/session/:id`, `/teacher/live/:id`, `/teacher/results/:id`, `/teacher/templates`
 
-### `src/main.tsx` (11 lines)
-Entry: imports i18n, renders App into #root
+### `src/main.tsx` (13 lines)
+Entry: imports i18n, @fontsource/opendyslexic (400+700), styles, renders App into #root
 
 ### `src/i18n/config.ts` (26 lines)
 i18next + LanguageDetector, fallback: 'ro', supported: ['ro','en']
@@ -216,6 +217,7 @@ Handler: `handleCreate()` — ensureAnonymousAuth → buildRoom → createRoomIn
 UI: Full game config form (name, avatar, type, mode, difficulty, ops, rounds, time)
 
 ### `src/components/lobby/JoinRoom.tsx` (123 lines)
+NOTE: Route `/join` — direct URL access handled by 404.html SPA redirect
 State: name, avatar, code, error, loading, takenAvatars
 Effect: code 6 chars → lookupRoomByCode → extract taken avatars
 Handler: `handleJoin()` — ensureAnonymousAuth → joinRoomByCode → store → navigate
@@ -312,6 +314,7 @@ UI: header+logout, new session/templates buttons, session list with status badge
 
 ### `SessionConfig.tsx` (495 lines)
 State: title, gameType, difficulty, operations, rounds, timePerRound, shapeMode, classroomMode, globalTimer, studentCount, customQuestions, templates, loading, error, templateName
+`isNew = !sessionId` — route `/teacher/session/new` has no `:sessionId` param → undefined → isNew=true
 Waits for authLoading. Loads existing session if editing. Loads templates.
 handleSaveTemplate: duplicate name check (case-insensitive), saveTemplate
 handleSave: createSession (new) or updateSession (edit), with catch → error display
