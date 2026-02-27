@@ -8,7 +8,7 @@ export default function MultiplayerPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="page relative">
+    <div className="page relative" role="main">
       <CloseButton />
       <div className="text-center mb-10">
         <h1 className="text-4xl font-extrabold text-ludiko-purple mb-2">

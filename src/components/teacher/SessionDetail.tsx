@@ -83,7 +83,7 @@ export default function SessionDetail() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-lg">
+      <div className="card w-full max-w-lg" role="main">
         <h2 className="text-2xl font-bold mb-2 text-center">{session.title}</h2>
         <p className="text-sm text-center text-gray-500 mb-4">
           {t(`teacher.mode.${session.classroomMode}`)} &middot;{' '}
@@ -110,6 +110,7 @@ export default function SessionDetail() {
             <button
               onClick={handleCopyAllCodes}
               className="text-xs text-ludiko-purple hover:underline font-bold"
+              aria-label={t('teacher.copyAll')}
             >
               {t('teacher.copyAll')}
             </button>
@@ -119,6 +120,7 @@ export default function SessionDetail() {
               <button
                 key={sc.code}
                 onClick={() => handleCopyCode(sc.code)}
+                aria-label={`${copied === sc.code ? t('lobby.copied') : t('lobby.copyCode')}: ${sc.code} — ${sc.label}`}
                 className={`flex items-center gap-2 px-3 py-2 rounded-xl text-left transition-colors ${
                   copied === sc.code ? 'bg-ludiko-green/30' : 'bg-gray-50 hover:bg-gray-100'
                 }`}

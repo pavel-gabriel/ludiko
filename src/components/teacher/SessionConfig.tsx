@@ -189,13 +189,17 @@ export default function SessionConfig() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-lg">
+      <div className="card w-full max-w-lg" role="main">
         <h2 className="text-2xl font-bold mb-4 text-center">
           {isNew ? t('teacher.newSession') : t('teacher.editSession')}
         </h2>
 
         {error && (
-          <div className="bg-red-100 text-red-700 rounded-xl px-4 py-2 mb-4 text-sm">
+          <div
+            className="bg-red-100 text-red-700 rounded-xl px-4 py-2 mb-4 text-sm"
+            role="alert"
+            aria-live="assertive"
+          >
             {error}
           </div>
         )}
@@ -405,6 +409,7 @@ export default function SessionConfig() {
             <button
               onClick={addCustomQuestion}
               className="text-xs bg-ludiko-blue/20 hover:bg-ludiko-blue/40 px-3 py-1 rounded-lg font-bold text-ludiko-purple transition-colors"
+              aria-label={t('teacher.addQuestion')}
             >
               + {t('teacher.addQuestion')}
             </button>
@@ -426,6 +431,7 @@ export default function SessionConfig() {
                 <button
                   onClick={() => removeCustomQuestion(qi)}
                   className="text-red-400 hover:text-red-600 font-bold"
+                  aria-label={`${t('teacher.delete')} Q${qi + 1}`}
                 >
                   &times;
                 </button>
@@ -461,6 +467,7 @@ export default function SessionConfig() {
             value={templateName}
             onChange={(e) => setTemplateName(e.target.value)}
             placeholder={t('teacher.templateNamePlaceholder')}
+            aria-label={t('teacher.templateNamePlaceholder')}
             className="flex-1 px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:outline-none focus:border-ludiko-purple"
             maxLength={40}
           />

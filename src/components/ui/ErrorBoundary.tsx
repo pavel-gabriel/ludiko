@@ -25,8 +25,12 @@ export default class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen flex flex-col items-center justify-center p-8 text-center bg-gradient-to-b from-ludiko-pink/10 to-white">
-          <span className="text-6xl mb-4">😵</span>
+        <div
+          className="min-h-screen flex flex-col items-center justify-center p-8 text-center bg-gradient-to-b from-ludiko-pink/10 to-white"
+          role="alert"
+          aria-live="assertive"
+        >
+          <span className="text-6xl mb-4" aria-hidden="true">😵</span>
           <h1 className="text-2xl font-bold mb-2">Oops!</h1>
           <p className="text-gray-500 mb-6">Something went wrong.</p>
           <button
@@ -34,6 +38,7 @@ export default class ErrorBoundary extends Component<Props, State> {
               this.setState({ hasError: false });
               window.location.href = import.meta.env.BASE_URL || '/';
             }}
+            aria-label="Go to home page"
             className="bg-ludiko-blue px-6 py-3 rounded-xl font-bold text-ludiko-text shadow-md hover:shadow-lg transition-all"
           >
             Go Home

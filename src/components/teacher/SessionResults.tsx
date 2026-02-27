@@ -54,14 +54,14 @@ export default function SessionResults() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-lg">
+      <div className="card w-full max-w-lg" role="main">
         <h2 className="text-2xl font-bold mb-2 text-center">{session.title}</h2>
         <p className="text-sm text-center text-gray-500 mb-4">
           {t('teacher.results')} &middot; {results.length} {t('teacher.students')}
         </p>
 
         {/* Summary stats */}
-        <div className="grid grid-cols-3 gap-2 mb-4">
+        <div className="grid grid-cols-3 gap-2 mb-4" role="region" aria-label={t('teacher.avgAccuracy')}>
           <div className="bg-ludiko-green/20 rounded-xl p-3 text-center">
             <p className="text-2xl font-bold">{avgAccuracy}%</p>
             <p className="text-xs text-gray-500">{t('teacher.avgAccuracy')}</p>
@@ -82,9 +82,9 @@ export default function SessionResults() {
         {sorted.length === 0 ? (
           <p className="text-center text-gray-400 py-4">{t('teacher.noResults')}</p>
         ) : (
-          <div className="space-y-2 max-h-80 overflow-y-auto mb-4">
+          <ul className="space-y-2 max-h-80 overflow-y-auto mb-4" aria-label={t('teacher.results')}>
             {sorted.map((result, i) => (
-              <div
+              <li
                 key={result.studentCode}
                 className="flex items-center gap-3 bg-gray-50 rounded-xl px-4 py-2"
               >
@@ -109,9 +109,9 @@ export default function SessionResults() {
                 }`}>
                   {result.accuracy}%
                 </span>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         )}
 
         {/* Actions */}

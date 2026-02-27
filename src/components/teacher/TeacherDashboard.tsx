@@ -45,7 +45,7 @@ export default function TeacherDashboard() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-lg">
+      <div className="card w-full max-w-lg" role="main">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div>
@@ -148,6 +148,7 @@ export default function TeacherDashboard() {
                       onClick={() => handleDelete(session.id)}
                       className="text-red-400 hover:text-red-600 px-2 text-sm font-bold"
                       title={t('teacher.delete')}
+                      aria-label={`${t('teacher.delete')} ${session.title}`}
                     >
                       &times;
                     </button>

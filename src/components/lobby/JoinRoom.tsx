@@ -94,7 +94,7 @@ export default function JoinRoom() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-md relative">
+      <div className="card w-full max-w-md relative" role="main">
         <CloseButton />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('join.title')}</h2>
 
@@ -134,7 +134,11 @@ export default function JoinRoom() {
             className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple uppercase tracking-widest text-center text-xl font-bold"
             maxLength={6}
           />
-          {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+          {error && (
+            <p className="text-red-500 text-sm mt-1" role="alert" aria-live="assertive">
+              {error}
+            </p>
+          )}
         </label>
 
         <Button
