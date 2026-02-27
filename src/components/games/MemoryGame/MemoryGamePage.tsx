@@ -267,17 +267,18 @@ export default function MemoryGamePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-ludiko-pink/10 to-ludiko-yellow/10 px-4 py-6 flex flex-col items-center">
-      <div className="w-full max-w-lg flex flex-col gap-4 flex-1">
+    <div className="min-h-screen bg-gradient-to-b from-ludiko-pink/10 to-ludiko-yellow/10 px-4 py-6 flex flex-col items-center justify-center">
+      <div className="w-full max-w-lg flex flex-col gap-4 relative">
         {/* Exit button */}
-        <div className="flex justify-end">
-          <button
-            onClick={handleExit}
-            className="text-sm font-bold text-gray-400 hover:text-red-500 transition-colors px-3 py-1 rounded-lg hover:bg-red-50"
-          >
-            {t('game.exitGame')}
-          </button>
-        </div>
+        <button
+          onClick={handleExit}
+          aria-label={t('game.exitGame')}
+          className="absolute -top-2 right-0 w-8 h-8 rounded-full bg-red-500 hover:bg-red-600 flex items-center justify-center transition-colors shadow-sm z-10"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-white">
+            <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
 
         {/* Score header in a card */}
         <div className="card">

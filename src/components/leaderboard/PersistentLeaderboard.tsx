@@ -4,113 +4,81 @@ import {
   fetchRecentHistory,
   computeLeaderboard,
   type LeaderboardEntry,
-  type GameHistoryEntry,
 } from '@/services/historyService';
-import type { GameType } from '@/utils/types';
-import { GAME_TYPES } from '@/utils/constants';
+
+interface PersistentLeaderboardProps {
+  onClose: () => void;
+}
 
 /**
- * Persistent leaderboard that shows all-time stats from Firestore.
- * Displayed on the home page when the trophy button is clicked.
- * Supports filtering by game type and shows play count.
+ * Persistent leaderboard shown as a modal overlay.
+ * All-time stats from Firestore, no game-type filtering.
  */
-export default function PersistentLeaderboard() {
+export default function PersistentLeaderboard({ onClose }: PersistentLeaderboardProps) {
   const { t } = useTranslation();
-  const [allHistory, setAllHistory] = useState<GameHistoryEntry[]>([]);
   const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
   const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState<GameType | 'all'>('all');
 
   useEffect(() => {
     fetchRecentHistory(50)
-      .then((history) => {
-        setAllHistory(history);
-        setEntries(computeLeaderboard(history));
-      })
+      .then((history) => setEntries(computeLeaderboard(history)))
       .catch(() => {})
       .finally(() => setLoading(false));
   }, []);
 
-  useEffect(() => {
-    if (allHistory.length === 0) return;
-    const filtered = filter === 'all'
-      ? allHistory
-      : allHistory.filter((h) => h.gameType === filter);
-    setEntries(computeLeaderboard(filtered));
-  }, [filter, allHistory]);
-
-  if (loading) {
-    return (
-      <div className="w-full max-w-md mt-6 text-center">
-        <p className="text-sm text-gray-400">{t('teacher.loading')}</p>
-      </div>
-    );
-  }
-
   return (
-    <div className="w-full max-w-md mt-6" role="region" aria-label={t('game.leaderboard')}>
-      <h3 className="text-sm font-semibold text-gray-500 mb-3 text-center">
-        {t('game.leaderboard')}
-      </h3>
-
-      {/* Game type filter */}
-      <div className="flex gap-1 mb-3 justify-center flex-wrap">
+    /* Backdrop */
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm"
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label={t('game.leaderboard')}
+    >
+      {/* Panel — stop click from bubbling to backdrop */}
+      <div
+        className="bg-white rounded-2xl shadow-xl w-full max-w-sm p-6 relative"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Close button */}
         <button
-          onClick={() => setFilter('all')}
-          className={`px-3 py-1 rounded-lg text-xs font-bold transition-colors ${
-            filter === 'all'
-              ? 'bg-ludiko-purple/20 text-ludiko-text ring-1 ring-ludiko-purple'
-              : 'bg-gray-50 hover:bg-gray-100 text-gray-500'
-          }`}
+          onClick={onClose}
+          className="absolute top-3 right-3 w-8 h-8 rounded-full bg-red-500 hover:bg-red-600 flex items-center justify-center transition-colors shadow-sm"
+          aria-label="Close leaderboard"
         >
-          {t('leaderboard.all')}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-white">
+            <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
         </button>
-        {GAME_TYPES.map(({ type, emoji, labelKey }) => (
-          <button
-            key={type}
-            onClick={() => setFilter(type)}
-            className={`px-3 py-1 rounded-lg text-xs font-bold transition-colors ${
-              filter === type
-                ? 'bg-ludiko-purple/20 text-ludiko-text ring-1 ring-ludiko-purple'
-                : 'bg-gray-50 hover:bg-gray-100 text-gray-500'
-            }`}
-          >
-            {emoji} {t(labelKey)}
-          </button>
-        ))}
-      </div>
 
-      {entries.length === 0 ? (
-        <p className="text-center text-gray-400 text-sm py-4">{t('leaderboard.noData')}</p>
-      ) : (
-        <ul className="space-y-2">
-          {entries.slice(0, 10).map((entry, index) => (
-            <li
-              key={`${entry.name}::${entry.avatar}`}
-              className={`flex items-center gap-3 rounded-xl px-4 py-2 ${
-                index === 0
-                  ? 'bg-ludiko-yellow/40 ring-1 ring-ludiko-yellow'
-                  : 'bg-white/80'
-              }`}
-            >
-              <span className="text-sm font-bold text-gray-400 w-5">
-                {index + 1}
-              </span>
-              <span className="text-xl">{entry.avatar}</span>
-              <span className="font-bold flex-1 text-sm truncate">{entry.name}</span>
-              <span className="text-xs font-semibold text-ludiko-purple">
-                {entry.wins}W
-              </span>
-              <span className="text-xs text-gray-500">
-                {entry.totalGames} {t('leaderboard.played')}
-              </span>
-              <span className="text-xs text-gray-400">
-                {entry.avgAccuracy}%
-              </span>
-            </li>
-          ))}
-        </ul>
-      )}
+        <h3 className="text-lg font-bold text-center mb-4">{t('game.leaderboard')}</h3>
+
+        {loading ? (
+          <p className="text-sm text-gray-400 text-center py-4">{t('teacher.loading')}</p>
+        ) : entries.length === 0 ? (
+          <p className="text-center text-gray-400 text-sm py-4">{t('leaderboard.noData')}</p>
+        ) : (
+          <ul className="space-y-2 max-h-80 overflow-y-auto" aria-label={t('game.leaderboard')}>
+            {entries.slice(0, 10).map((entry, index) => (
+              <li
+                key={`${entry.name}::${entry.avatar}`}
+                className={`flex items-center gap-3 rounded-xl px-4 py-2 ${
+                  index === 0
+                    ? 'bg-ludiko-yellow/40 ring-1 ring-ludiko-yellow'
+                    : 'bg-gray-50'
+                }`}
+              >
+                <span className="text-sm font-bold text-gray-400 w-5">{index + 1}</span>
+                <span className="text-xl">{entry.avatar}</span>
+                <span className="font-bold flex-1 text-sm truncate">{entry.name}</span>
+                <span className="text-xs font-semibold text-ludiko-purple">{entry.wins}W</span>
+                <span className="text-xs text-gray-500">{entry.totalGames} {t('leaderboard.played')}</span>
+                <span className="text-xs text-gray-400">{entry.avgAccuracy}%</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 }

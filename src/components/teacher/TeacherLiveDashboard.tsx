@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { useAuthStore } from '@/store/authStore';
 import {
   getSession,
@@ -163,7 +164,8 @@ export default function TeacherLiveDashboard() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-2xl" role="main">
+      <div className="card w-full max-w-2xl relative" role="main">
+        <CloseButton onClick={() => navigate('/teacher')} />
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
           <div>
@@ -269,7 +271,7 @@ export default function TeacherLiveDashboard() {
             </Button>
           )}
           {isPlaying && (
-            <Button variant="pink" size="md" onClick={handleEndSession}>
+            <Button variant="pink" size="md" className="flex-1" onClick={handleEndSession}>
               {t('teacher.endSession')}
             </Button>
           )}

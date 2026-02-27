@@ -170,27 +170,6 @@ export default function InteractiveSetupPage() {
           </label>
         )}
 
-        {/* Difficulty */}
-        <label className="block mb-4">
-          <span className="text-sm font-semibold">{t('create.difficulty')}</span>
-          <div className="flex gap-2 mt-1">
-            {(['easy', 'medium', 'hard'] as Difficulty[]).map((d) => (
-              <button
-                key={d}
-                onClick={() => setDifficulty(d)}
-                aria-pressed={difficulty === d}
-                className={`flex-1 py-2 rounded-xl font-bold transition-colors ${
-                  difficulty === d
-                    ? 'bg-ludiko-purple text-white'
-                    : 'bg-gray-100 hover:bg-gray-200'
-                }`}
-              >
-                {t(`create.${d}`)}
-              </button>
-            ))}
-          </div>
-        </label>
-
         {/* Operations (math only) */}
         {showMathOptions && (
           <label className="block mb-4">
@@ -213,6 +192,27 @@ export default function InteractiveSetupPage() {
             </div>
           </label>
         )}
+
+        {/* Difficulty */}
+        <label className="block mb-4">
+          <span className="text-sm font-semibold">{t('create.difficulty')}</span>
+          <div className="flex gap-2 mt-1">
+            {(['easy', 'medium', 'hard'] as Difficulty[]).map((d) => (
+              <button
+                key={d}
+                onClick={() => setDifficulty(d)}
+                aria-pressed={difficulty === d}
+                className={`flex-1 py-2 rounded-xl font-bold transition-colors ${
+                  difficulty === d
+                    ? 'bg-ludiko-purple text-white'
+                    : 'bg-gray-100 hover:bg-gray-200'
+                }`}
+              >
+                {t(`create.${d}`)}
+              </button>
+            ))}
+          </div>
+        </label>
 
         {/* Rounds + Time */}
         <div className="grid grid-cols-2 gap-4 mb-6">

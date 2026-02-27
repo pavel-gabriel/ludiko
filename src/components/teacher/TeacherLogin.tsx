@@ -98,7 +98,18 @@ export default function TeacherLogin() {
         if (user) await handleSuccess(user.uid, user.displayName || 'Teacher', email);
       }
     } catch (err: unknown) {
-      setError((err as Error).message || t('teacher.authError'));
+      const code = (err as { code?: string }).code ?? '';
+      if (
+        code.includes('wrong-password') ||
+        code.includes('invalid-credential') ||
+        code.includes('user-not-found') ||
+        code.includes('invalid-email') ||
+        code.includes('INVALID_LOGIN_CREDENTIALS')
+      ) {
+        setError(t('teacher.incorrectCredentials'));
+      } else {
+        setError(t('teacher.authError'));
+      }
     } finally {
       setLoading(false);
     }

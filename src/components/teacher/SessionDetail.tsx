@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { useAuthStore } from '@/store/authStore';
 import { useRoomStore } from '@/store/roomStore';
 import {
@@ -83,7 +84,8 @@ export default function SessionDetail() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-lg" role="main">
+      <div className="card w-full max-w-lg relative" role="main">
+        <CloseButton onClick={() => navigate('/teacher')} />
         <h2 className="text-2xl font-bold mb-2 text-center">{session.title}</h2>
         <p className="text-sm text-center text-gray-500 mb-4">
           {t(`teacher.mode.${session.classroomMode}`)} &middot;{' '}

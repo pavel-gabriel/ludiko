@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
+import { useAuthStore } from '@/store/authStore';
 import { generateQuestion } from '@/services/gameEngine';
 import {
   initGameState,
@@ -23,6 +24,7 @@ export default function InteractiveGamePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { room, currentPlayer, reset } = useRoomStore();
+  const { uid } = useAuthStore();
 
   const [gameState, setGameState] = useState<RTDBGameState | null>(null);
   const [countdown, setCountdown] = useState(COUNTDOWN_SECONDS);
@@ -45,8 +47,8 @@ export default function InteractiveGamePage() {
   const handleExit = useCallback(() => {
     if (room) deleteRoom(room.id);
     reset();
-    navigate('/');
-  }, [reset, navigate, room]);
+    navigate(uid ? '/teacher' : '/');
+  }, [reset, navigate, room, uid]);
 
   /* Intercept browser back button */
   useEffect(() => {
@@ -183,6 +185,21 @@ export default function InteractiveGamePage() {
 
   if (showCountdown) return <CountdownOverlay count={countdown} />;
 
+  const handleReplay = useCallback(async () => {
+    if (!room || !settings) return;
+    setLocalIndex1(0);
+    setLocalIndex2(0);
+    finished1Ref.current = false;
+    finished2Ref.current = false;
+    setShowCountdown(true);
+    setCountdown(COUNTDOWN_SECONDS);
+    const questions: Question[] = [];
+    for (let i = 0; i < displayTotal; i++) {
+      questions.push(generateQuestion(settings.difficulty, settings.operations));
+    }
+    await initGameState(room.id, questions, room.players.map((p) => p.id));
+  }, [room, settings, displayTotal]);
+
   if (gameState?.phase === 'finished') {
     return (
       <GameResults
@@ -192,8 +209,8 @@ export default function InteractiveGamePage() {
         finishTimes={gameState.finishTimes}
         gameMode="raceToFinish"
         startedAt={gameState.startedAt}
-        onPlayAgain={() => { reset(); navigate('/interactive'); }}
-        onNewGame={() => { if (room) deleteRoom(room.id); reset(); navigate('/'); }}
+        onPlayAgain={handleReplay}
+        onNewGame={() => { if (room) deleteRoom(room.id); reset(); navigate(uid ? '/teacher' : '/'); }}
       />
     );
   }
@@ -212,13 +229,15 @@ export default function InteractiveGamePage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-ludiko-blue/10 to-ludiko-purple/10 flex flex-col" role="main">
       {/* Exit button */}
-      <div className="flex justify-end px-4 pt-2">
+      <div className="flex justify-end px-4 pt-3">
         <button
           onClick={handleExit}
           aria-label={t('game.exitGame')}
-          className="text-sm font-bold text-gray-400 hover:text-red-500 transition-colors px-3 py-1 rounded-lg hover:bg-red-50"
+          className="w-8 h-8 rounded-full bg-red-500 hover:bg-red-600 flex items-center justify-center transition-colors shadow-sm"
         >
-          {t('game.exitGame')}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-white">
+            <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
         </button>
       </div>
 
