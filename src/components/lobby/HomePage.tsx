@@ -14,10 +14,10 @@ export default function HomePage() {
       {/* Leaderboard trophy button — top left */}
       <button
         onClick={() => setShowLeaderboard((v) => !v)}
-        className="absolute top-4 left-4 w-10 h-10 rounded-full bg-white shadow flex items-center justify-center text-xl hover:bg-gray-50 transition-colors"
+        className="absolute top-4 left-4 w-11 h-11 rounded-full bg-ludiko-yellow shadow-md flex items-center justify-center hover:bg-yellow-300 transition-colors"
         aria-label={t('game.leaderboard')}
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-ludiko-yellow" style={{ filter: 'drop-shadow(0 0 1px rgba(0,0,0,0.3))' }}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 text-yellow-800">
           <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
           <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
           <path d="M4 22h16" />
@@ -60,7 +60,7 @@ export default function HomePage() {
         </Button>
       </div>
 
-      {showLeaderboard && <PersistentLeaderboard />}
+      {showLeaderboard && <PersistentLeaderboard onClose={() => setShowLeaderboard(false)} />}
     </div>
   );
 }

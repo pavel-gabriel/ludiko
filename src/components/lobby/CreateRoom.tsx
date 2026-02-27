@@ -104,7 +104,7 @@ export default function CreateRoom() {
                   aria-pressed={gameType === type}
                   className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
                     gameType === type
-                      ? 'bg-ludiko-purple/20 text-ludiko-text ring-1 ring-ludiko-purple'
+                      ? 'bg-ludiko-purple text-white'
                       : 'bg-gray-50 hover:bg-gray-100'
                   }`}
                 >
@@ -126,7 +126,7 @@ export default function CreateRoom() {
                     aria-pressed={shapeMode === mode}
                     className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
                       shapeMode === mode
-                        ? 'bg-ludiko-purple/20 text-ludiko-text ring-1 ring-ludiko-purple'
+                        ? 'bg-ludiko-purple text-white'
                         : 'bg-gray-50 hover:bg-gray-100'
                     }`}
                   >
@@ -149,7 +149,7 @@ export default function CreateRoom() {
                     aria-pressed={operations.includes(op)}
                     className={`flex-1 py-2 rounded-xl font-bold text-xl transition-colors ${
                       operations.includes(op)
-                        ? 'bg-ludiko-purple/20 text-ludiko-text ring-1 ring-ludiko-purple'
+                        ? 'bg-ludiko-purple text-white'
                         : 'bg-gray-50 hover:bg-gray-100'
                     }`}
                   >
@@ -171,7 +171,7 @@ export default function CreateRoom() {
                   aria-pressed={difficulty === d}
                   className={`flex-1 py-2 rounded-xl font-bold transition-colors ${
                     difficulty === d
-                      ? 'bg-ludiko-purple/20 text-ludiko-text ring-1 ring-ludiko-purple'
+                      ? 'bg-ludiko-purple text-white'
                       : 'bg-gray-50 hover:bg-gray-100'
                   }`}
                 >
@@ -196,7 +196,7 @@ export default function CreateRoom() {
                     aria-pressed={gameMode === mode}
                     className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
                       gameMode === mode
-                        ? 'bg-ludiko-purple/20 text-ludiko-text ring-1 ring-ludiko-purple'
+                        ? 'bg-ludiko-purple text-white'
                         : 'bg-gray-50 hover:bg-gray-100'
                     }`}
                   >
@@ -222,7 +222,7 @@ export default function CreateRoom() {
                   setRounds(isNaN(v) ? 0 : v);
                 }}
                 onBlur={() => {
-                  const min = isMemory ? 3 : 5;
+                  const min = isMemory ? 2 : 5;
                   const max = isMemory ? 50 : 30;
                   if (!rounds || rounds < min) setRounds(min);
                   else if (rounds > max) setRounds(max);

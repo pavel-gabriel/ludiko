@@ -1,4 +1,11 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+}
 import HomePage from '@/components/lobby/HomePage';
 import SinglePlayerPage from '@/components/lobby/SinglePlayerPage';
 import MultiplayerPage from '@/components/lobby/MultiplayerPage';
@@ -23,7 +30,9 @@ import AdminDashboard from '@/components/admin/AdminDashboard';
 /** All application routes — add new pages here */
 export default function AppRoutes() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       {/* Player routes */}
       <Route path="/" element={<HomePage />} />
       <Route path="/singleplayer" element={<SinglePlayerPage />} />
@@ -49,5 +58,6 @@ export default function AppRoutes() {
       <Route path="/teacher/results/:sessionId" element={<SessionResults />} />
       <Route path="/teacher/templates" element={<TemplatesPage />} />
     </Routes>
+    </>
   );
 }
