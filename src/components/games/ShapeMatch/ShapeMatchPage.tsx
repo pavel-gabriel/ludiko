@@ -199,7 +199,29 @@ export default function ShapeMatchPage() {
 
   const playerDone = localIndex >= totalQuestions;
 
+  const isSinglePlayer = room.players.length === 1 && !room.classroomSessionId;
+
   if (gameState?.phase === 'finished') {
+    const handleReplay = async () => {
+      if (isSinglePlayer) {
+        setLocalIndex(0);
+        finishedRef.current = false;
+        setShowCountdown(true);
+        setCountdown(COUNTDOWN_SECONDS);
+        if (settings) {
+          const count = isSprint ? 100 : totalQuestions;
+          const newQs = [];
+          for (let i = 0; i < count; i++) {
+            newQs.push(generateShapeQuestion(settings.difficulty));
+          }
+          await initShapeGameState(room.id, newQs, [currentPlayer.id]);
+        }
+      } else {
+        await replayRoom(room.id);
+        navigate('/lobby');
+      }
+    };
+
     return (
       <GameResults
         players={room.players}
@@ -208,7 +230,8 @@ export default function ShapeMatchPage() {
         finishTimes={gameState.finishTimes}
         gameMode={settings?.gameMode ?? 'raceToFinish'}
         startedAt={gameState.startedAt}
-        onPlayAgain={async () => { await replayRoom(room.id); navigate('/lobby'); }}
+        isSinglePlayer={isSinglePlayer}
+        onPlayAgain={handleReplay}
         onNewGame={async () => { await removePlayer(room.id, currentPlayer.id); reset(); navigate('/'); }}
       />
     );
@@ -260,13 +283,13 @@ export default function ShapeMatchPage() {
           </button>
         </div>
 
-        {!isSprint ? (
+        {!isSprint && !isSinglePlayer ? (
           <RaceTrack
             players={room.players}
             progress={gameState.progress}
             totalQuestions={totalQuestions}
           />
-        ) : (
+        ) : isSprint ? (
           <div className="flex justify-between items-center w-full">
             <span className="text-lg font-bold text-ludiko-purple">
               {t('game.score')}: {gameState.progress[currentPlayer.id] ?? 0}
@@ -282,7 +305,7 @@ export default function ShapeMatchPage() {
               {timeRemaining}s
             </span>
           </div>
-        )}
+        ) : null}
 
         {currentQ && (
           <ShapeCard

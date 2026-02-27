@@ -5,8 +5,8 @@
     "pageTitle": "Ludiko - Jocuri de Matematică"
   },
   "home": {
-    "singlePlayer": "Un Jucător",
-    "multiplayer": "Multiplayer",
+    "singlePlayer": "Jucător Unic",
+    "multiplayer": "Multi-Jucător",
     "createRoom": "Creează Cameră",
     "joinRoom": "Intră în Cameră",
     "teacherMode": "Mod Profesor",
@@ -49,7 +49,11 @@
     "codePlaceholder": "Ex: ABC123",
     "join": "Intră",
     "back": "Înapoi",
-    "invalidCode": "Cod invalid"
+    "invalidCode": "Cod invalid",
+    "studentCode": "Codul tău de elev",
+    "studentCodePlaceholder": "Ex: PISICA-12",
+    "classroomHint": "Introdu codul unic primit de la profesor",
+    "invalidStudentCode": "Cod de elev invalid. Folosește codul primit de la profesor."
   },
   "lobby": {
     "title": "Sala de Așteptare",
@@ -95,6 +99,12 @@
     "accuracy": "precizie",
     "finishTime": "Timp"
   },
+  "leaderboard": {
+    "title": "Clasament",
+    "all": "Toate",
+    "played": "jocuri",
+    "noData": "Niciun joc încă"
+  },
   "shapes": {
     "circle": "Cerc",
     "square": "Pătrat",
@@ -109,6 +119,13 @@
     "language": "Limbă",
     "dyslexicFont": "Font pentru dislexie",
     "sound": "Sunet"
+  },
+  "interactive": {
+    "button": "Mod Interactiv",
+    "title": "Mod Interactiv",
+    "player1": "Jucătorul 1",
+    "player2": "Jucătorul 2",
+    "differentAvatars": "Jucătorii trebuie să aibă avatare diferite"
   },
   "teacher": {
     "login": "Autentificare Profesor",
@@ -170,6 +187,7 @@
     "studentProgress": "Progresul Elevilor",
     "waitingForStudents": "Se așteaptă conectarea elevilor...",
     "nextQuestion": "Întrebarea Următoare",
+    "startGame": "Începe Testul",
     "endSession": "Termină Sesiunea",
     "exportCSV": "Exportă CSV",
     "done": "Gata",

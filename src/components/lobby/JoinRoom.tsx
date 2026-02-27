@@ -6,6 +6,7 @@ import CloseButton from '@/components/ui/CloseButton';
 import { useRoomStore } from '@/store/roomStore';
 import { joinRoomByCode, lookupRoomByCode, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
+import { getSession } from '@/services/teacherService';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function JoinRoom() {
@@ -19,15 +20,19 @@ export default function JoinRoom() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [takenAvatars, setTakenAvatars] = useState<string[]>([]);
+  const [isClassroom, setIsClassroom] = useState(false);
+  const [validCodes, setValidCodes] = useState<string[]>([]);
 
-  /* When the code reaches 6 chars, look up the room to find taken avatars */
+  /* When the code reaches 6 chars, look up the room to find taken avatars and check if classroom */
   useEffect(() => {
     if (code.length < 6) {
       setTakenAvatars([]);
+      setIsClassroom(false);
+      setValidCodes([]);
       return;
     }
     let cancelled = false;
-    lookupRoomByCode(code).then((room) => {
+    lookupRoomByCode(code).then(async (room) => {
       if (cancelled || !room) return;
       const taken = room.players.map((p) => p.avatar);
       setTakenAvatars(taken);
@@ -36,12 +41,34 @@ export default function JoinRoom() {
         const firstAvailable = EMOJI_OPTIONS.find((e) => !taken.includes(e));
         if (firstAvailable) setAvatar(firstAvailable);
       }
+      /* Check if this is a classroom session — enforce student code entry */
+      if (room.classroomSessionId) {
+        setIsClassroom(true);
+        try {
+          const session = await getSession(room.classroomSessionId);
+          if (session && !cancelled) {
+            setValidCodes(session.studentCodes.map((sc) => sc.code));
+          }
+        } catch {}
+      } else {
+        setIsClassroom(false);
+        setValidCodes([]);
+      }
     }).catch(() => {});
     return () => { cancelled = true; };
   }, [code]);
 
   const handleJoin = async () => {
     if (!name.trim() || !code.trim() || loading) return;
+
+    /* For classroom sessions, validate the student code */
+    if (isClassroom && validCodes.length > 0) {
+      if (!validCodes.includes(name.trim().toUpperCase())) {
+        setError(t('join.invalidStudentCode'));
+        return;
+      }
+    }
+
     setLoading(true);
     setError('');
 
@@ -72,15 +99,20 @@ export default function JoinRoom() {
         <h2 className="text-2xl font-bold mb-6 text-center">{t('join.title')}</h2>
 
         <label className="block mb-2">
-          <span className="text-sm font-semibold">{t('join.yourName')}</span>
+          <span className="text-sm font-semibold">
+            {isClassroom ? t('join.studentCode') : t('join.yourName')}
+          </span>
           <input
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder={t('join.namePlaceholder')}
+            placeholder={isClassroom ? t('join.studentCodePlaceholder') : t('join.namePlaceholder')}
             className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
             maxLength={20}
           />
+          {isClassroom && (
+            <p className="text-xs text-ludiko-purple mt-1">{t('join.classroomHint')}</p>
+          )}
         </label>
 
         {/* Avatar picker */}

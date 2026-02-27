@@ -50,7 +50,7 @@ export default function RaceTrack({
             </div>
 
             {/* Track */}
-            <div className="relative h-8 bg-gray-100 rounded-full overflow-hidden">
+            <div className="relative h-10 bg-gray-100 rounded-full overflow-hidden">
               {/* Finish line indicator */}
               <div className="absolute right-0 top-0 bottom-0 w-1 bg-ludiko-purple z-10" />
 
@@ -60,7 +60,7 @@ export default function RaceTrack({
                 style={{ left: `${position}%` }}
               >
                 <span
-                  className={`text-2xl -translate-x-1/2 ${
+                  className={`text-3xl -translate-x-1/2 ${
                     finished ? 'animate-bounce' : ''
                   }`}
                 >

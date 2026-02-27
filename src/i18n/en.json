@@ -49,7 +49,11 @@
     "codePlaceholder": "E.g. ABC123",
     "join": "Join",
     "back": "Back",
-    "invalidCode": "Invalid code"
+    "invalidCode": "Invalid code",
+    "studentCode": "Your student code",
+    "studentCodePlaceholder": "E.g. CAT-12",
+    "classroomHint": "Enter the unique code given by your teacher",
+    "invalidStudentCode": "Invalid student code. Use the code given by your teacher."
   },
   "lobby": {
     "title": "Waiting Room",
@@ -95,6 +99,12 @@
     "accuracy": "accuracy",
     "finishTime": "Time"
   },
+  "leaderboard": {
+    "title": "Leaderboard",
+    "all": "All",
+    "played": "games",
+    "noData": "No games yet"
+  },
   "shapes": {
     "circle": "Circle",
     "square": "Square",
@@ -109,6 +119,13 @@
     "language": "Language",
     "dyslexicFont": "Dyslexia-friendly font",
     "sound": "Sound"
+  },
+  "interactive": {
+    "button": "Interactive Mode",
+    "title": "Interactive Mode",
+    "player1": "Player 1",
+    "player2": "Player 2",
+    "differentAvatars": "Players must have different avatars"
   },
   "teacher": {
     "login": "Teacher Login",
@@ -170,6 +187,7 @@
     "studentProgress": "Student Progress",
     "waitingForStudents": "Waiting for students to join...",
     "nextQuestion": "Next Question",
+    "startGame": "Start Test",
     "endSession": "End Session",
     "exportCSV": "Export CSV",
     "done": "Done",

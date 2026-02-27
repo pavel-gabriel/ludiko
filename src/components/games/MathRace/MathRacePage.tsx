@@ -218,8 +218,32 @@ export default function MathRacePage() {
   /* Player finished their rounds but game not over yet (waiting for others in sprint) */
   const playerDone = localIndex >= displayTotal;
 
+  const isSinglePlayer = room.players.length === 1 && !room.classroomSessionId;
+
   if (gameState?.phase === 'finished') {
     const resultsTotal = displayTotal;
+
+    const handleReplay = async () => {
+      if (isSinglePlayer) {
+        /* Single player: restart game in-place instead of going to lobby */
+        setLocalIndex(0);
+        finishedRef.current = false;
+        setShowCountdown(true);
+        setCountdown(COUNTDOWN_SECONDS);
+        /* Re-generate questions and re-init game state */
+        if (settings) {
+          const count = isSprint ? SPRINT_POOL_SIZE : displayTotal;
+          const newQuestions: Question[] = [];
+          for (let i = 0; i < count; i++) {
+            newQuestions.push(generateQuestion(settings.difficulty, settings.operations));
+          }
+          await initGameState(room.id, newQuestions, [currentPlayer.id]);
+        }
+      } else {
+        await replayRoom(room.id);
+        navigate('/lobby');
+      }
+    };
 
     return (
       <GameResults
@@ -229,7 +253,8 @@ export default function MathRacePage() {
         finishTimes={gameState.finishTimes}
         gameMode={settings?.gameMode ?? 'raceToFinish'}
         startedAt={gameState.startedAt}
-        onPlayAgain={async () => { await replayRoom(room.id); navigate('/lobby'); }}
+        isSinglePlayer={isSinglePlayer}
+        onPlayAgain={handleReplay}
         onNewGame={async () => { await removePlayer(room.id, currentPlayer.id); reset(); navigate('/'); }}
       />
     );
@@ -282,14 +307,14 @@ export default function MathRacePage() {
           </button>
         </div>
 
-        {/* Race track (Race mode) or score display (Sprint mode) */}
-        {!isSprint ? (
+        {/* Race track (Race mode, multiplayer only) or score display (Sprint mode) */}
+        {!isSprint && !isSinglePlayer ? (
           <RaceTrack
             players={room.players}
             progress={gameState.progress}
             totalQuestions={displayTotal}
           />
-        ) : (
+        ) : isSprint ? (
           <div className="flex justify-between items-center w-full">
             <span className="text-lg font-bold text-ludiko-purple">
               {t('game.score')}: {gameState.progress[currentPlayer.id] ?? 0}
@@ -305,7 +330,7 @@ export default function MathRacePage() {
               {timeRemaining}s
             </span>
           </div>
-        )}
+        ) : null}
 
         {currentQuestion && (
           <QuestionCard

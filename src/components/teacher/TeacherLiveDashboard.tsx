@@ -10,8 +10,16 @@ import {
   exportResultsToCSV,
   downloadCSV,
 } from '@/services/teacherService';
-import { listenToRoom } from '@/services/roomManager';
-import { listenToGameState, setGamePhase, advanceQuestion } from '@/services/gameSession';
+import { listenToRoom, updateRoomStatus } from '@/services/roomManager';
+import {
+  listenToGameState,
+  setGamePhase,
+  advanceQuestion,
+  initMathGameState,
+  initShapeGameState,
+  initMemoryGameState,
+} from '@/services/gameSession';
+import { generateQuestion, generateShapeQuestion, generateMemoryCards } from '@/services/gameEngine';
 import type { RTDBGameState } from '@/services/gameSession';
 import type { ClassroomSession, Room, StudentSessionResult } from '@/utils/types';
 
@@ -72,6 +80,35 @@ export default function TeacherLiveDashboard() {
     await advanceQuestion(session.roomId, gameState.currentIndex + 1);
   }, [session?.roomId, gameState?.currentIndex]);
 
+  /* Teacher starts the game — generates questions and starts play */
+  const handleStartGame = useCallback(async () => {
+    if (!session?.roomId || !room) return;
+    const { settings } = session;
+    const playerIds = room.players.map((p) => p.id);
+
+    if (settings.gameType === 'mathRace') {
+      const count = settings.gameMode === 'timedSprint' ? 100 : settings.rounds;
+      const questions = [];
+      for (let i = 0; i < count; i++) {
+        questions.push(generateQuestion(settings.difficulty, settings.operations));
+      }
+      await initMathGameState(session.roomId, questions, playerIds);
+    } else if (settings.gameType === 'shapeMatch') {
+      const count = settings.gameMode === 'timedSprint' ? 100 : settings.rounds;
+      const questions = [];
+      for (let i = 0; i < count; i++) {
+        questions.push(generateShapeQuestion(settings.difficulty));
+      }
+      await initShapeGameState(session.roomId, questions, playerIds);
+    } else if (settings.gameType === 'memoryGame') {
+      const cards = generateMemoryCards(settings.rounds);
+      await initMemoryGameState(session.roomId, cards, playerIds);
+    }
+
+    await updateRoomStatus(session.roomId, 'playing');
+    await setGamePhase(session.roomId, 'playing');
+  }, [session?.roomId, room, session?.settings]);
+
   /* End session early */
   const handleEndSession = async () => {
     if (!session?.roomId || !sessionId) return;
@@ -122,6 +159,7 @@ export default function TeacherLiveDashboard() {
   const isTeacherControlled = session.classroomMode === 'teacherControlled';
   const isPlaying = gameState?.phase === 'playing';
   const isFinished = gameState?.phase === 'finished';
+  const gameNotStarted = !gameState || gameState.phase === 'countdown';
 
   return (
     <div className="page">
@@ -220,6 +258,11 @@ export default function TeacherLiveDashboard() {
           <Button variant="orange" size="md" onClick={() => navigate('/teacher')}>
             {t('teacher.back')}
           </Button>
+          {gameNotStarted && (
+            <Button variant="green" size="md" className="flex-1" onClick={handleStartGame}>
+              {t('teacher.startGame')}
+            </Button>
+          )}
           {isPlaying && (
             <Button variant="pink" size="md" onClick={handleEndSession}>
               {t('teacher.endSession')}
