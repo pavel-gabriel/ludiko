@@ -18,20 +18,29 @@ export default function EmojiPicker({ selected, onChange, exclude = [] }: EmojiP
       <button
         type="button"
         onClick={() => setExpanded(true)}
+        aria-label={`Selected avatar: ${selected}. Click to change.`}
+        aria-expanded={false}
         className="mt-1 flex items-center gap-2 px-3 py-2 rounded-xl bg-ludiko-purple/10 hover:bg-ludiko-purple/20 transition-colors"
       >
-        <span className="text-3xl">{selected}</span>
-        <span className="text-xs text-ludiko-purple font-bold">&#9662;</span>
+        <span className="text-3xl" aria-hidden="true">{selected}</span>
+        <span className="text-xs text-ludiko-purple font-bold" aria-hidden="true">&#9662;</span>
       </button>
     );
   }
 
   return (
-    <div className="flex flex-wrap gap-2 mt-1">
+    <div
+      className="flex flex-wrap gap-2 mt-1"
+      role="listbox"
+      aria-label="Choose an avatar"
+    >
       {available.map((emoji) => (
         <button
           key={emoji}
           type="button"
+          role="option"
+          aria-selected={selected === emoji}
+          aria-label={emoji}
           onClick={() => { onChange(emoji); setExpanded(false); }}
           className={`w-10 h-10 text-xl rounded-xl flex items-center justify-center transition-all
             ${selected === emoji

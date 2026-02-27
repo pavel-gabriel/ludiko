@@ -106,11 +106,15 @@ export default function TeacherLogin() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-sm">
+      <div className="card w-full max-w-sm" role="main">
         <h2 className="text-2xl font-bold mb-4 text-center">{t('teacher.login')}</h2>
 
         {error && (
-          <div className="bg-red-100 text-red-700 rounded-xl px-4 py-2 mb-4 text-sm">
+          <div
+            className="bg-red-100 text-red-700 rounded-xl px-4 py-2 mb-4 text-sm"
+            role="alert"
+            aria-live="assertive"
+          >
             {error}
           </div>
         )}
@@ -129,13 +133,14 @@ export default function TeacherLogin() {
         <div className="text-center text-gray-400 text-sm mb-4">{t('teacher.or')}</div>
 
         {/* Email/Password form */}
-        <form onSubmit={handleEmailSubmit} className="space-y-3">
+        <form onSubmit={handleEmailSubmit} className="space-y-3" aria-label={t('teacher.login')}>
           {mode === 'register' && (
             <input
               type="text"
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
               placeholder={t('teacher.namePlaceholder')}
+              aria-label={t('teacher.namePlaceholder')}
               className="w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
               maxLength={40}
             />
@@ -145,6 +150,7 @@ export default function TeacherLogin() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t('teacher.emailPlaceholder')}
+            aria-label={t('teacher.emailPlaceholder')}
             className="w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
           />
           <input
@@ -152,6 +158,7 @@ export default function TeacherLogin() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder={t('teacher.passwordPlaceholder')}
+            aria-label={t('teacher.passwordPlaceholder')}
             className="w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
             minLength={6}
           />
@@ -168,6 +175,7 @@ export default function TeacherLogin() {
         <button
           onClick={() => setMode(mode === 'login' ? 'register' : 'login')}
           className="mt-4 w-full text-center text-sm text-ludiko-purple hover:underline"
+          aria-pressed={mode === 'register'}
         >
           {mode === 'login' ? t('teacher.switchToRegister') : t('teacher.switchToLogin')}
         </button>

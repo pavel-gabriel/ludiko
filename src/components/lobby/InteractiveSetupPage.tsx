@@ -82,12 +82,12 @@ export default function InteractiveSetupPage() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-md relative">
+      <div className="card w-full max-w-md relative" role="main">
         <CloseButton />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('interactive.title')}</h2>
 
         {/* Player 1 */}
-        <div className="border border-gray-200 rounded-xl p-3 mb-4">
+        <div className="border border-gray-200 rounded-xl p-3 mb-4" role="group" aria-label={t('interactive.player1')}>
           <h3 className="text-sm font-bold text-ludiko-purple mb-2">{t('interactive.player1')}</h3>
           <label className="block mb-2">
             <span className="text-sm font-semibold">{t('create.yourName')}</span>
@@ -107,7 +107,7 @@ export default function InteractiveSetupPage() {
         </div>
 
         {/* Player 2 */}
-        <div className="border border-gray-200 rounded-xl p-3 mb-4">
+        <div className="border border-gray-200 rounded-xl p-3 mb-4" role="group" aria-label={t('interactive.player2')}>
           <h3 className="text-sm font-bold text-ludiko-pink mb-2">{t('interactive.player2')}</h3>
           <label className="block mb-2">
             <span className="text-sm font-semibold">{t('create.yourName')}</span>
@@ -260,7 +260,9 @@ export default function InteractiveSetupPage() {
         </div>
 
         {avatar1 === avatar2 && (
-          <p className="text-xs text-red-500 mb-2 text-center">{t('interactive.differentAvatars')}</p>
+          <p className="text-xs text-red-500 mb-2 text-center" role="alert" aria-live="polite">
+            {t('interactive.differentAvatars')}
+          </p>
         )}
 
         <Button

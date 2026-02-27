@@ -210,11 +210,12 @@ export default function InteractiveGamePage() {
   const question2 = gameState.questions[localIndex2];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-ludiko-blue/10 to-ludiko-purple/10 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-ludiko-blue/10 to-ludiko-purple/10 flex flex-col" role="main">
       {/* Exit button */}
       <div className="flex justify-end px-4 pt-2">
         <button
           onClick={handleExit}
+          aria-label={t('game.exitGame')}
           className="text-sm font-bold text-gray-400 hover:text-red-500 transition-colors px-3 py-1 rounded-lg hover:bg-red-50"
         >
           {t('game.exitGame')}
@@ -233,9 +234,9 @@ export default function InteractiveGamePage() {
       {/* Split screen — two game panels side by side */}
       <div className="flex flex-1 gap-1 px-1 pb-2 min-h-0">
         {/* Player 1 panel */}
-        <div className="flex-1 flex flex-col min-w-0">
+        <div className="flex-1 flex flex-col min-w-0" role="region" aria-label={player1.name}>
           <div className="text-center py-1">
-            <span className="text-lg">{player1.avatar}</span>
+            <span className="text-lg" aria-hidden="true">{player1.avatar}</span>
             <span className="text-xs font-bold ml-1 truncate">{player1.name}</span>
           </div>
           {localIndex1 < displayTotal && question1 ? (
@@ -259,9 +260,9 @@ export default function InteractiveGamePage() {
         <div className="w-0.5 bg-gray-300 self-stretch my-2 rounded-full" />
 
         {/* Player 2 panel */}
-        <div className="flex-1 flex flex-col min-w-0">
+        <div className="flex-1 flex flex-col min-w-0" role="region" aria-label={player2.name}>
           <div className="text-center py-1">
-            <span className="text-lg">{player2.avatar}</span>
+            <span className="text-lg" aria-hidden="true">{player2.avatar}</span>
             <span className="text-xs font-bold ml-1 truncate">{player2.name}</span>
           </div>
           {localIndex2 < displayTotal && question2 ? (

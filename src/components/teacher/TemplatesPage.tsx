@@ -28,7 +28,7 @@ export default function TemplatesPage() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-lg">
+      <div className="card w-full max-w-lg" role="main">
         <h2 className="text-2xl font-bold mb-4 text-center">{t('teacher.templates')}</h2>
 
         {loading ? (
@@ -59,6 +59,7 @@ export default function TemplatesPage() {
                   onClick={() => handleDelete(tmpl.id)}
                   className="text-red-400 hover:text-red-600 px-2 text-sm font-bold"
                   title={t('teacher.delete')}
+                  aria-label={`${t('teacher.delete')} ${tmpl.name}`}
                 >
                   &times;
                 </button>

@@ -163,7 +163,7 @@ export default function TeacherLiveDashboard() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-2xl">
+      <div className="card w-full max-w-2xl" role="main">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
           <div>
@@ -205,7 +205,7 @@ export default function TeacherLiveDashboard() {
         )}
 
         {/* Student progress table */}
-        <div className="mb-4">
+        <div className="mb-4" role="region" aria-label={t('teacher.studentProgress')} aria-live="polite">
           <h3 className="text-sm font-semibold text-gray-500 mb-2">
             {t('teacher.studentProgress')} ({students.length})
           </h3>
@@ -235,6 +235,11 @@ export default function TeacherLiveDashboard() {
                               finished ? 'bg-ludiko-green' : 'bg-ludiko-blue'
                             }`}
                             style={{ width: `${pct}%` }}
+                            role="progressbar"
+                            aria-valuenow={pct}
+                            aria-valuemin={0}
+                            aria-valuemax={100}
+                            aria-label={`${student.name}: ${score}/${totalQuestions}`}
                           />
                         </div>
                       </div>

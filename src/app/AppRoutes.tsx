@@ -18,6 +18,7 @@ import {
   SessionResults,
   TemplatesPage,
 } from '@/components/teacher';
+import AdminDashboard from '@/components/admin/AdminDashboard';
 
 /** All application routes — add new pages here */
 export default function AppRoutes() {
@@ -34,6 +35,9 @@ export default function AppRoutes() {
       <Route path="/interactive" element={<InteractiveSetupPage />} />
       <Route path="/game" element={<GameRouter />} />
       <Route path="/game/interactive" element={<InteractiveGamePage />} />
+
+      {/* Admin route — PIN-protected, owner only */}
+      <Route path="/admin" element={<AdminDashboard />} />
 
       {/* Teacher routes */}
       <Route path="/teacher/login" element={<TeacherLogin />} />
