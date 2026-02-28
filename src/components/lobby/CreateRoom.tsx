@@ -68,7 +68,7 @@ export default function CreateRoom() {
   return (
     <div className="page">
       <div className="card w-full max-w-md relative">
-        <CloseButton />
+        <CloseButton onClick={() => navigate(-1)} />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('create.title')}</h2>
 
         {/* Name */}

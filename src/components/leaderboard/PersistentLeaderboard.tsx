@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   fetchRecentHistory,
   computeLeaderboard,
   type LeaderboardEntry,
+  type GameHistoryEntry,
 } from '@/services/historyService';
+import type { GameType } from '@/utils/types';
+import { GAME_TYPES } from '@/utils/constants';
 
 interface PersistentLeaderboardProps {
   onClose: () => void;
@@ -12,19 +15,27 @@ interface PersistentLeaderboardProps {
 
 /**
  * Persistent leaderboard shown as a modal overlay.
- * All-time stats from Firestore, no game-type filtering.
+ * Supports filtering by game type via dropdown.
  */
 export default function PersistentLeaderboard({ onClose }: PersistentLeaderboardProps) {
   const { t } = useTranslation();
-  const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
+  const [allHistory, setAllHistory] = useState<GameHistoryEntry[]>([]);
   const [loading, setLoading] = useState(true);
+  const [filterType, setFilterType] = useState<GameType | 'all'>('all');
 
   useEffect(() => {
     fetchRecentHistory(50)
-      .then((history) => setEntries(computeLeaderboard(history)))
+      .then((history) => setAllHistory(history))
       .catch(() => {})
       .finally(() => setLoading(false));
   }, []);
+
+  const entries: LeaderboardEntry[] = useMemo(() => {
+    const filtered = filterType === 'all'
+      ? allHistory
+      : allHistory.filter((h) => h.gameType === filterType);
+    return computeLeaderboard(filtered);
+  }, [allHistory, filterType]);
 
   return (
     /* Backdrop */
@@ -51,7 +62,36 @@ export default function PersistentLeaderboard({ onClose }: PersistentLeaderboard
           </svg>
         </button>
 
-        <h3 className="text-lg font-bold text-center mb-4">{t('game.leaderboard')}</h3>
+        <h3 className="text-lg font-bold text-center mb-3">{t('game.leaderboard')}</h3>
+
+        {/* Game type filter */}
+        <div className="flex justify-center mb-3">
+          <div className="inline-flex rounded-xl bg-gray-100 p-0.5 gap-0.5">
+            <button
+              onClick={() => setFilterType('all')}
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
+                filterType === 'all'
+                  ? 'bg-ludiko-purple text-white'
+                  : 'text-gray-500 hover:text-gray-700'
+              }`}
+            >
+              {t('leaderboard.all')}
+            </button>
+            {GAME_TYPES.map(({ type, emoji, labelKey }) => (
+              <button
+                key={type}
+                onClick={() => setFilterType(type)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
+                  filterType === type
+                    ? 'bg-ludiko-purple text-white'
+                    : 'text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                {emoji} {t(labelKey)}
+              </button>
+            ))}
+          </div>
+        </div>
 
         {loading ? (
           <p className="text-sm text-gray-400 text-center py-4">{t('teacher.loading')}</p>

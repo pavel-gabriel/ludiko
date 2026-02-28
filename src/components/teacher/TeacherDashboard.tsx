@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { useAuthStore } from '@/store/authStore';
 import { logOut } from '@/services/authService';
 import {
@@ -29,7 +30,7 @@ export default function TeacherDashboard() {
   const handleLogout = async () => {
     await logOut();
     reset();
-    navigate('/');
+    navigate('/teacher/login');
   };
 
   const handleDelete = async (sessionId: string) => {
@@ -45,28 +46,16 @@ export default function TeacherDashboard() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-lg" role="main">
+      <div className="card w-full max-w-lg relative" role="main">
+        <CloseButton onClick={handleLogout} />
         {/* Header */}
-        <div className="relative flex items-center justify-center mb-6">
+        <div className="flex items-center justify-center mb-6">
           <div className="text-center">
             <h2 className="text-2xl font-bold">{t('teacher.dashboard')}</h2>
             <p className="text-sm text-gray-500">
               {teacherProfile?.displayName || t('teacher.teacher')}
             </p>
           </div>
-          {/* Icon-only logout */}
-          <button
-            onClick={handleLogout}
-            className="absolute right-0 w-9 h-9 rounded-full bg-ludiko-orange hover:bg-orange-300 flex items-center justify-center transition-colors shadow-sm"
-            aria-label={t('teacher.logout')}
-            title={t('teacher.logout')}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-ludiko-text">
-              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-              <polyline points="16 17 21 12 16 7" />
-              <line x1="21" y1="12" x2="9" y2="12" />
-            </svg>
-          </button>
         </div>
 
         {/* Actions */}
