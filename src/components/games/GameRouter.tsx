@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { useRoomStore } from '@/store/roomStore';
 import { MathRacePage } from '@/components/games/MathRace';
 import ShapeMatchPage from '@/components/games/ShapeMatch/ShapeMatchPage';
@@ -9,12 +9,10 @@ import MemoryGamePage from '@/components/games/MemoryGame/MemoryGamePage';
  * Renders MathRacePage, ShapeMatchPage, or MemoryGamePage.
  */
 export default function GameRouter() {
-  const navigate = useNavigate();
   const { room } = useRoomStore();
 
   if (!room) {
-    navigate('/');
-    return null;
+    return <Navigate to="/" replace />;
   }
 
   switch (room.settings.gameType) {

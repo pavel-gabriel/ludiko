@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
 interface CloseButtonProps {
-  /** Override default navigate('/') */
+  /** Override default navigate(-1) (go back) */
   onClick?: () => void;
 }
 
@@ -11,7 +11,7 @@ export default function CloseButton({ onClick }: CloseButtonProps) {
 
   return (
     <button
-      onClick={onClick ?? (() => navigate('/'))}
+      onClick={onClick ?? (() => navigate(-1))}
       className="absolute top-3 right-3 w-8 h-8 rounded-full bg-red-500 hover:bg-red-600 flex items-center justify-center transition-colors shadow-sm"
       aria-label="Close"
     >

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import {
   signInWithGoogle,
   signInWithEmail,
@@ -117,7 +118,8 @@ export default function TeacherLogin() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-sm" role="main">
+      <div className="card w-full max-w-sm relative" role="main">
+        <CloseButton />
         <h2 className="text-2xl font-bold mb-4 text-center">{t('teacher.login')}</h2>
 
         {error && (
@@ -191,14 +193,6 @@ export default function TeacherLogin() {
           {mode === 'login' ? t('teacher.switchToRegister') : t('teacher.switchToLogin')}
         </button>
 
-        <Button
-          variant="orange"
-          size="md"
-          className="w-full mt-4"
-          onClick={() => navigate('/')}
-        >
-          {t('teacher.backToHome')}
-        </Button>
       </div>
     </div>
   );
