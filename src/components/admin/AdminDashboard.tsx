@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { verifyAdminPin, getAdminStats } from '@/services/adminService';
 import type { AdminStats } from '@/services/adminService';
 
@@ -62,7 +62,6 @@ interface PinGateProps {
 
 function PinGate({ onSuccess }: PinGateProps) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const [pin, setPin] = useState('');
   const [error, setError] = useState(false);
 
@@ -78,7 +77,8 @@ function PinGate({ onSuccess }: PinGateProps) {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-xs text-center" role="main">
+      <div className="card w-full max-w-xs text-center relative" role="main">
+        <CloseButton />
         <h1 className="text-2xl font-bold mb-2">{t('admin.title')}</h1>
         <p className="text-gray-500 text-sm mb-6">{t('admin.pinPrompt')}</p>
 
@@ -103,13 +103,6 @@ function PinGate({ onSuccess }: PinGateProps) {
           </Button>
         </form>
 
-        <button
-          onClick={() => navigate('/')}
-          className="mt-4 text-sm text-gray-400 hover:text-gray-600 underline"
-          aria-label={t('admin.backToHome')}
-        >
-          {t('admin.backToHome')}
-        </button>
       </div>
     </div>
   );
@@ -121,7 +114,6 @@ function PinGate({ onSuccess }: PinGateProps) {
 
 export default function AdminDashboard() {
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const [unlocked, setUnlocked] = useState(false);
   const [stats, setStats] = useState<AdminStats | null>(null);
   const [loading, setLoading] = useState(false);
@@ -143,16 +135,12 @@ export default function AdminDashboard() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-2xl" role="main">
+      <div className="card w-full max-w-2xl relative" role="main">
+        <CloseButton />
         {/* Header */}
-        <div className="flex items-center justify-between mb-6">
-          <div>
-            <h1 className="text-2xl font-bold">{t('admin.title')}</h1>
-            <p className="text-sm text-gray-500">{t('admin.subtitle')}</p>
-          </div>
-          <Button variant="orange" size="sm" onClick={() => navigate('/')}>
-            {t('admin.backToHome')}
-          </Button>
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold">{t('admin.title')}</h1>
+          <p className="text-sm text-gray-500">{t('admin.subtitle')}</p>
         </div>
 
         {loading && (

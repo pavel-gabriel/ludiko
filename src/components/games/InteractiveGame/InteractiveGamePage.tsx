@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
 import { useAuthStore } from '@/store/authStore';
@@ -261,8 +261,7 @@ export default function InteractiveGamePage() {
 
   /* Navigation guards */
   if (!room || !currentPlayer || !player1 || !player2) {
-    navigate('/');
-    return null;
+    return <Navigate to="/" replace />;
   }
 
   if (showCountdown) return <CountdownOverlay count={countdown} />;
@@ -298,7 +297,7 @@ export default function InteractiveGamePage() {
     return (
       <GameResults
         players={room.players}
-        scores={gameState.progress}
+        scores={gameState.progress ?? {}}
         totalQuestions={displayTotal}
         finishTimes={gameState.finishTimes}
         gameMode="raceToFinish"
@@ -309,8 +308,8 @@ export default function InteractiveGamePage() {
     );
   }
 
-  /* Loading guard — check based on game type */
-  const isReady = gameState && (
+  /* Loading guard — check based on game type; also ensure progress exists */
+  const isReady = gameState && gameState.progress && (
     gameType === 'memoryGame'
       ? gameState.memoryCards && gameState.memoryCards.length > 0
       : gameType === 'shapeMatch'
@@ -471,7 +470,7 @@ export default function InteractiveGamePage() {
         <div className="px-4 py-2">
           <RaceTrack
             players={room.players}
-            progress={gameState.progress}
+            progress={gameState.progress ?? {}}
             totalQuestions={displayTotal}
           />
         </div>
