@@ -6,8 +6,8 @@ import CloseButton from '@/components/ui/CloseButton';
 import { useRoomStore } from '@/store/roomStore';
 import { buildRoom, buildPlayer, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
-import type { Difficulty, Operation } from '@/utils/types';
-import { DEFAULT_GAME_SETTINGS } from '@/utils/constants';
+import type { Difficulty, Operation, GameType, ShapeMode } from '@/utils/types';
+import { DEFAULT_GAME_SETTINGS, GAME_TYPES } from '@/utils/constants';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function InteractiveSetupPage() {
@@ -23,11 +23,13 @@ export default function InteractiveSetupPage() {
   const [name2, setName2] = useState('');
   const [avatar2, setAvatar2] = useState(EMOJI_OPTIONS[1]);
 
-  /* Game settings — interactive mode only supports mathRace */
+  /* Game settings */
+  const [gameType, setGameType] = useState<GameType>(DEFAULT_GAME_SETTINGS.gameType);
   const [difficulty, setDifficulty] = useState<Difficulty>(DEFAULT_GAME_SETTINGS.difficulty);
   const [rounds, setRounds] = useState(DEFAULT_GAME_SETTINGS.rounds);
   const [timePerRound, setTimePerRound] = useState(DEFAULT_GAME_SETTINGS.timePerRound);
   const [operations, setOperations] = useState<Operation[]>(DEFAULT_GAME_SETTINGS.operations);
+  const [shapeMode, setShapeMode] = useState<ShapeMode>('image');
   const [loading, setLoading] = useState(false);
 
   const toggleOperation = (op: Operation) => {
@@ -36,19 +38,24 @@ export default function InteractiveSetupPage() {
     );
   };
 
+  const isMath = gameType === 'mathRace';
+  const isShapeMatch = gameType === 'shapeMatch';
+  const isMemory = gameType === 'memoryGame';
+
   const handleStart = async () => {
     if (!name1.trim() || !name2.trim() || loading) return;
-    if (operations.length === 0) return;
+    if (isMath && operations.length === 0) return;
     setLoading(true);
     try {
       await ensureAnonymousAuth();
       const room = buildRoom(name1.trim(), {
-        gameType: 'mathRace',
+        gameType,
         gameMode: 'raceToFinish',
         difficulty,
-        operations,
+        operations: isMath ? operations : ['+'],
         rounds,
         timePerRound,
+        ...(isShapeMatch && { shapeMode }),
       }, avatar1);
 
       /* Add player 2 to the room */
@@ -71,7 +78,7 @@ export default function InteractiveSetupPage() {
     name1.trim() &&
     name2.trim() &&
     avatar1 !== avatar2 &&
-    operations.length > 0;
+    (!isMath || operations.length > 0);
 
   return (
     <div className="page">
@@ -119,53 +126,101 @@ export default function InteractiveSetupPage() {
           </div>
         </div>
 
-        {/* Operations */}
+        {/* Game type selector */}
         <label className="block mb-4">
-          <span className="text-sm font-semibold">{t('create.operations')}</span>
+          <span className="text-sm font-semibold">{t('create.gameType')}</span>
           <div className="flex gap-2 mt-1">
-            {(['+', '-', '×', '÷'] as Operation[]).map((op) => (
+            {GAME_TYPES.map(({ type, emoji, labelKey }) => (
               <button
-                key={op}
-                onClick={() => toggleOperation(op)}
-                aria-pressed={operations.includes(op)}
-                className={`flex-1 py-2 rounded-xl font-bold text-xl transition-colors ${
-                  operations.includes(op)
-                    ? 'bg-ludiko-green text-ludiko-text'
+                key={type}
+                onClick={() => setGameType(type)}
+                aria-pressed={gameType === type}
+                className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
+                  gameType === type
+                    ? 'bg-ludiko-purple text-white'
                     : 'bg-gray-100 hover:bg-gray-200'
                 }`}
               >
-                {op}
+                {emoji} {t(labelKey)}
               </button>
             ))}
           </div>
         </label>
 
-        {/* Difficulty */}
-        <label className="block mb-4">
-          <span className="text-sm font-semibold">{t('create.difficulty')}</span>
-          <div className="flex gap-2 mt-1">
-            {(['easy', 'medium', 'hard'] as Difficulty[]).map((d) => (
-              <button
-                key={d}
-                onClick={() => setDifficulty(d)}
-                aria-pressed={difficulty === d}
-                className={`flex-1 py-2 rounded-xl font-bold transition-colors ${
-                  difficulty === d
-                    ? 'bg-ludiko-purple text-white'
-                    : 'bg-gray-100 hover:bg-gray-200'
-                }`}
-              >
-                {t(`create.${d}`)}
-              </button>
-            ))}
-          </div>
-        </label>
+        {/* Shape mode toggle */}
+        {isShapeMatch && (
+          <label className="block mb-4">
+            <span className="text-sm font-semibold">{t('create.shapeMode')}</span>
+            <div className="flex gap-2 mt-1">
+              {(['image', 'word'] as ShapeMode[]).map((mode) => (
+                <button
+                  key={mode}
+                  onClick={() => setShapeMode(mode)}
+                  aria-pressed={shapeMode === mode}
+                  className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
+                    shapeMode === mode
+                      ? 'bg-ludiko-green text-ludiko-text'
+                      : 'bg-gray-100 hover:bg-gray-200'
+                  }`}
+                >
+                  {t(`create.shapeMode${mode.charAt(0).toUpperCase() + mode.slice(1)}`)}
+                </button>
+              ))}
+            </div>
+          </label>
+        )}
+
+        {/* Operations (math only) */}
+        {isMath && (
+          <label className="block mb-4">
+            <span className="text-sm font-semibold">{t('create.operations')}</span>
+            <div className="flex gap-2 mt-1">
+              {(['+', '-', '×', '÷'] as Operation[]).map((op) => (
+                <button
+                  key={op}
+                  onClick={() => toggleOperation(op)}
+                  aria-pressed={operations.includes(op)}
+                  className={`flex-1 py-2 rounded-xl font-bold text-xl transition-colors ${
+                    operations.includes(op)
+                      ? 'bg-ludiko-green text-ludiko-text'
+                      : 'bg-gray-100 hover:bg-gray-200'
+                  }`}
+                >
+                  {op}
+                </button>
+              ))}
+            </div>
+          </label>
+        )}
+
+        {/* Difficulty (math & shape only) */}
+        {!isMemory && (
+          <label className="block mb-4">
+            <span className="text-sm font-semibold">{t('create.difficulty')}</span>
+            <div className="flex gap-2 mt-1">
+              {(['easy', 'medium', 'hard'] as Difficulty[]).map((d) => (
+                <button
+                  key={d}
+                  onClick={() => setDifficulty(d)}
+                  aria-pressed={difficulty === d}
+                  className={`flex-1 py-2 rounded-xl font-bold transition-colors ${
+                    difficulty === d
+                      ? 'bg-ludiko-purple text-white'
+                      : 'bg-gray-100 hover:bg-gray-200'
+                  }`}
+                >
+                  {t(`create.${d}`)}
+                </button>
+              ))}
+            </div>
+          </label>
+        )}
 
         {/* Rounds + Time */}
         <div className="grid grid-cols-2 gap-4 mb-6">
           <label className="block">
             <span className="text-sm font-semibold">
-              {t('create.rounds')}
+              {isMemory ? t('create.pairs') : t('create.rounds')}
             </span>
             <input
               type="text"
@@ -176,8 +231,8 @@ export default function InteractiveSetupPage() {
                 setRounds(isNaN(v) ? 0 : v);
               }}
               onBlur={() => {
-                const min = 5;
-                const max = 30;
+                const min = isMemory ? 3 : 5;
+                const max = isMemory ? 50 : 30;
                 if (!rounds || rounds < min) setRounds(min);
                 else if (rounds > max) setRounds(max);
               }}
@@ -186,7 +241,7 @@ export default function InteractiveSetupPage() {
           </label>
           <label className="block">
             <span className="text-sm font-semibold">
-              {t('create.timePerRound')}
+              {isMemory ? t('create.totalTime') : t('create.timePerRound')}
             </span>
             <input
               type="text"
@@ -197,8 +252,9 @@ export default function InteractiveSetupPage() {
                 setTimePerRound(isNaN(v) ? 0 : v);
               }}
               onBlur={() => {
+                const max = isMemory ? 300 : 60;
                 if (!timePerRound || timePerRound < 5) setTimePerRound(5);
-                else if (timePerRound > 60) setTimePerRound(60);
+                else if (timePerRound > max) setTimePerRound(max);
               }}
               className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none"
             />
