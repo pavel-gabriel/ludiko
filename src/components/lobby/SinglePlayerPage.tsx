@@ -67,23 +67,20 @@ export default function SinglePlayerPage() {
         <CloseButton />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('home.singlePlayer')}</h2>
 
-        {/* Name */}
-        <label className="block mb-2">
-          <span className="text-sm font-semibold">{t('create.yourName')}</span>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder={t('create.namePlaceholder')}
-            className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
-            maxLength={20}
-            aria-label={t('create.yourName')}
-          />
-        </label>
-
-        {/* Avatar picker */}
-        <div className="mb-4">
-          <span className="text-sm font-semibold">{t('create.avatar')}</span>
+        {/* Name + Avatar */}
+        <div className="flex flex-wrap gap-x-3 gap-y-2 items-end mb-4">
+          <label className="block flex-1 min-w-[60%]">
+            <span className="text-sm font-semibold">{t('create.yourName')}</span>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder={t('create.namePlaceholder')}
+              className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
+              maxLength={20}
+              aria-label={t('create.yourName')}
+            />
+          </label>
           <EmojiPicker selected={avatar} onChange={setAvatar} />
         </div>
 

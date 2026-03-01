@@ -89,19 +89,18 @@ export default function InteractiveSetupPage() {
         {/* Player 1 */}
         <div className="border border-gray-200 rounded-xl p-3 mb-4" role="group" aria-label={t('interactive.player1')}>
           <h3 className="text-sm font-bold text-ludiko-purple mb-2">{t('interactive.player1')}</h3>
-          <label className="block mb-2">
-            <span className="text-sm font-semibold">{t('create.yourName')}</span>
-            <input
-              type="text"
-              value={name1}
-              onChange={(e) => setName1(e.target.value)}
-              placeholder={t('create.namePlaceholder')}
-              className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
-              maxLength={20}
-            />
-          </label>
-          <div>
-            <span className="text-sm font-semibold">{t('create.avatar')}</span>
+          <div className="flex flex-wrap gap-x-3 gap-y-2 items-end">
+            <label className="block flex-1 min-w-[60%]">
+              <span className="text-sm font-semibold">{t('create.yourName')}</span>
+              <input
+                type="text"
+                value={name1}
+                onChange={(e) => setName1(e.target.value)}
+                placeholder={t('create.namePlaceholder')}
+                className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
+                maxLength={20}
+              />
+            </label>
             <EmojiPicker selected={avatar1} onChange={setAvatar1} exclude={[avatar2]} />
           </div>
         </div>
@@ -109,19 +108,18 @@ export default function InteractiveSetupPage() {
         {/* Player 2 */}
         <div className="border border-gray-200 rounded-xl p-3 mb-4" role="group" aria-label={t('interactive.player2')}>
           <h3 className="text-sm font-bold text-ludiko-pink mb-2">{t('interactive.player2')}</h3>
-          <label className="block mb-2">
-            <span className="text-sm font-semibold">{t('create.yourName')}</span>
-            <input
-              type="text"
-              value={name2}
-              onChange={(e) => setName2(e.target.value)}
-              placeholder={t('create.namePlaceholder')}
-              className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-pink focus:outline-none focus:border-ludiko-purple"
-              maxLength={20}
-            />
-          </label>
-          <div>
-            <span className="text-sm font-semibold">{t('create.avatar')}</span>
+          <div className="flex flex-wrap gap-x-3 gap-y-2 items-end">
+            <label className="block flex-1 min-w-[60%]">
+              <span className="text-sm font-semibold">{t('create.yourName')}</span>
+              <input
+                type="text"
+                value={name2}
+                onChange={(e) => setName2(e.target.value)}
+                placeholder={t('create.namePlaceholder')}
+                className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-pink focus:outline-none focus:border-ludiko-purple"
+                maxLength={20}
+              />
+            </label>
             <EmojiPicker selected={avatar2} onChange={setAvatar2} exclude={[avatar1]} />
           </div>
         </div>
