@@ -105,7 +105,7 @@ export default function CreateRoom() {
                   className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
                     gameType === type
                       ? 'bg-ludiko-purple text-white'
-                      : 'bg-gray-50 hover:bg-gray-100'
+                      : 'bg-gray-100 hover:bg-gray-200'
                   }`}
                 >
                   {emoji} {t(labelKey)}
@@ -126,8 +126,8 @@ export default function CreateRoom() {
                     aria-pressed={shapeMode === mode}
                     className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
                       shapeMode === mode
-                        ? 'bg-ludiko-purple text-white'
-                        : 'bg-gray-50 hover:bg-gray-100'
+                        ? 'bg-ludiko-green text-ludiko-text'
+                        : 'bg-gray-100 hover:bg-gray-200'
                     }`}
                   >
                     {t(`create.shapeMode${mode.charAt(0).toUpperCase() + mode.slice(1)}`)}
@@ -149,8 +149,8 @@ export default function CreateRoom() {
                     aria-pressed={operations.includes(op)}
                     className={`flex-1 py-2 rounded-xl font-bold text-xl transition-colors ${
                       operations.includes(op)
-                        ? 'bg-ludiko-purple text-white'
-                        : 'bg-gray-50 hover:bg-gray-100'
+                        ? 'bg-ludiko-green text-ludiko-text'
+                        : 'bg-gray-100 hover:bg-gray-200'
                     }`}
                   >
                     {op}
@@ -172,7 +172,7 @@ export default function CreateRoom() {
                   className={`flex-1 py-2 rounded-xl font-bold transition-colors ${
                     difficulty === d
                       ? 'bg-ludiko-purple text-white'
-                      : 'bg-gray-50 hover:bg-gray-100'
+                      : 'bg-gray-100 hover:bg-gray-200'
                   }`}
                 >
                   {t(`create.${d}`)}
@@ -197,7 +197,7 @@ export default function CreateRoom() {
                     className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
                       gameMode === mode
                         ? 'bg-ludiko-purple text-white'
-                        : 'bg-gray-50 hover:bg-gray-100'
+                        : 'bg-gray-100 hover:bg-gray-200'
                     }`}
                   >
                     {t(`create.gameMode${mode.charAt(0).toUpperCase() + mode.slice(1)}`)}
