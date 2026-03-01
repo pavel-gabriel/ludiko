@@ -47,7 +47,7 @@ export default function TeacherDashboard() {
   return (
     <div className="page">
       <div className="card w-full max-w-lg relative" role="main">
-        <CloseButton onClick={handleLogout} />
+        <CloseButton />
         {/* Header */}
         <div className="flex items-center justify-center mb-6">
           <div className="text-center">
@@ -57,6 +57,20 @@ export default function TeacherDashboard() {
             </p>
           </div>
         </div>
+
+        {/* Logout button */}
+        <button
+          onClick={handleLogout}
+          className="absolute top-3 left-3 w-8 h-8 rounded-full bg-orange-400 hover:bg-orange-500 flex items-center justify-center transition-colors shadow-sm"
+          aria-label={t('teacher.logout')}
+          title={t('teacher.logout')}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4 text-white">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+        </button>
 
         {/* Actions */}
         <div className="flex gap-3 mb-3">
