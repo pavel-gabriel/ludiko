@@ -1,4 +1,4 @@
-import { collection, getDocs, query, orderBy, limit } from 'firebase/firestore';
+import { collection, getDocs } from 'firebase/firestore';
 import { db, firebaseEnabled } from '@/services/firebase';
 import type { ClassroomSession, StudentSessionResult } from '@/utils/types';
 
@@ -52,9 +52,19 @@ export function verifyAdminPin(pin: string): boolean {
 /*  Aggregate stats                                                    */
 /* ------------------------------------------------------------------ */
 
+/** Safe query — returns null instead of throwing on permission / network errors */
+async function safeDocs(ref: Parameters<typeof getDocs>[0]) {
+  try {
+    return await getDocs(ref);
+  } catch {
+    return null as Awaited<ReturnType<typeof getDocs>> | null;
+  }
+}
+
 /**
  * Fetch aggregate platform statistics for the admin dashboard.
- * All queries run in parallel for speed.
+ * Each query is independently error-tolerant so partial data still loads
+ * even when Firestore rules block some collections (e.g. bulk teacher reads).
  */
 export async function getAdminStats(): Promise<AdminStats> {
   if (!firebaseEnabled) {
@@ -70,16 +80,16 @@ export async function getAdminStats(): Promise<AdminStats> {
     };
   }
 
-  /* Run three top-level queries in parallel */
+  /* Run three top-level queries in parallel; each may fail independently */
   const [teachersSnap, sessionsSnap, resultsSnap] = await Promise.all([
-    getDocs(collection(db, 'teachers')),
-    getDocs(collection(db, 'sessions')),
-    getDocs(collection(db, 'sessionResults')),
+    safeDocs(collection(db, 'teachers')),
+    safeDocs(collection(db, 'sessions')),
+    safeDocs(collection(db, 'sessionResults')),
   ]);
 
-  const sessions = sessionsSnap.docs.map(
-    (d) => ({ id: d.id, ...d.data() } as ClassroomSession),
-  );
+  const sessions = sessionsSnap
+    ? sessionsSnap.docs.map((d) => ({ id: d.id, ...(d.data() as object) } as ClassroomSession))
+    : [];
 
   /* Count sessions by status */
   const activeSessions = sessions.filter((s) => s.status === 'active').length;
@@ -95,30 +105,31 @@ export async function getAdminStats(): Promise<AdminStats> {
 
   /* Count total student result entries across all result docs */
   let totalStudentResults = 0;
-  for (const d of resultsSnap.docs) {
-    const results = (d.data().results ?? []) as StudentSessionResult[];
-    totalStudentResults += results.length;
+  if (resultsSnap) {
+    for (const d of resultsSnap.docs) {
+      const data = d.data() as Record<string, unknown>;
+      const results = (data.results ?? []) as StudentSessionResult[];
+      totalStudentResults += results.length;
+    }
   }
 
-  /* 5 most recent sessions */
-  const recentSnap = await getDocs(
-    query(collection(db, 'sessions'), orderBy('createdAt', 'desc'), limit(5)),
-  );
-  const recentSessions: RecentSessionRow[] = recentSnap.docs.map((d) => {
-    const s = d.data() as ClassroomSession;
-    return {
-      id: d.id,
+  /* 5 most recent sessions — sort already-fetched data instead of a
+     separate orderBy query (which requires a Firestore index) */
+  const recentSessions: RecentSessionRow[] = [...sessions]
+    .sort((a, b) => (b.createdAt ?? 0) - (a.createdAt ?? 0))
+    .slice(0, 5)
+    .map((s) => ({
+      id: s.id,
       title: s.title,
       teacherUid: s.teacherUid,
       status: s.status,
       gameType: s.settings?.gameType ?? 'unknown',
       studentCount: s.studentCodes?.length ?? 0,
       createdAt: s.createdAt,
-    };
-  });
+    }));
 
   return {
-    totalTeachers: teachersSnap.size,
+    totalTeachers: teachersSnap?.size ?? 0,
     totalSessions: sessions.length,
     activeSessions,
     finishedSessions,
