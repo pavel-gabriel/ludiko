@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
-import CloseButton from '@/components/ui/CloseButton';
 import { useAuthStore } from '@/store/authStore';
 import { logOut } from '@/services/authService';
 import {
@@ -47,21 +46,10 @@ export default function TeacherDashboard() {
   return (
     <div className="page">
       <div className="card w-full max-w-lg relative" role="main">
-        <CloseButton />
-        {/* Header */}
-        <div className="flex items-center justify-center mb-6">
-          <div className="text-center">
-            <h2 className="text-2xl font-bold">{t('teacher.dashboard')}</h2>
-            <p className="text-sm text-gray-500">
-              {teacherProfile?.displayName || t('teacher.teacher')}
-            </p>
-          </div>
-        </div>
-
-        {/* Logout button */}
+        {/* Logout button (top-right, replaces close X) */}
         <button
           onClick={handleLogout}
-          className="absolute top-3 left-3 w-8 h-8 rounded-full bg-orange-400 hover:bg-orange-500 flex items-center justify-center transition-colors shadow-sm"
+          className="absolute top-3 right-3 w-8 h-8 rounded-full bg-orange-400 hover:bg-orange-500 flex items-center justify-center transition-colors shadow-sm"
           aria-label={t('teacher.logout')}
           title={t('teacher.logout')}
         >
@@ -71,6 +59,16 @@ export default function TeacherDashboard() {
             <line x1="21" y1="12" x2="9" y2="12" />
           </svg>
         </button>
+
+        {/* Header */}
+        <div className="flex items-center justify-center mb-6">
+          <div className="text-center">
+            <h2 className="text-2xl font-bold">{t('teacher.dashboard')}</h2>
+            <p className="text-sm text-gray-500">
+              {teacherProfile?.displayName || t('teacher.teacher')}
+            </p>
+          </div>
+        </div>
 
         {/* Actions */}
         <div className="flex gap-3 mb-3">

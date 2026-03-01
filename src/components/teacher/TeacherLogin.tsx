@@ -119,7 +119,7 @@ export default function TeacherLogin() {
   return (
     <div className="page">
       <div className="card w-full max-w-sm relative" role="main">
-        <CloseButton />
+        <CloseButton onClick={() => navigate('/')} />
         <h2 className="text-2xl font-bold mb-4 text-center">{t('teacher.login')}</h2>
 
         {error && (
