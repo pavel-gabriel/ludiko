@@ -66,7 +66,7 @@ export default function PersistentLeaderboard({ onClose }: PersistentLeaderboard
 
         {/* Game type filter */}
         <div className="flex justify-center mb-3">
-          <div className="inline-flex rounded-xl bg-gray-100 p-0.5 gap-0.5">
+          <div className="inline-flex flex-wrap justify-center rounded-xl bg-gray-100 p-0.5 gap-0.5">
             <button
               onClick={() => setFilterType('all')}
               className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${

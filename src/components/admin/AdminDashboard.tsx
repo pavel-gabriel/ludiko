@@ -15,6 +15,8 @@ function gameTypeLabel(key: string): string {
     mathRace: 'Math Race',
     shapeMatch: 'Shape Match',
     memoryGame: 'Memory Game',
+    countingGame: 'Counting',
+    numberSequence: 'Sequences',
     unknown: 'Unknown',
   };
   return map[key] ?? key;

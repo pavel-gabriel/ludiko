@@ -9,6 +9,7 @@ import {
   orderByChild,
   equalTo,
   onDisconnect,
+  runTransaction,
   type Unsubscribe,
 } from 'firebase/database';
 import { rtdb } from '@/services/firebase';
@@ -128,14 +129,22 @@ export async function joinRoomByCode(
   if (!roomData || (roomData as Room).status !== 'waiting') return null;
 
   const room = roomData as Room;
-  const players: Player[] = room.players ?? [];
-  const player = buildPlayer(playerName, players.length, avatar);
-  players.push(player);
+  const player = buildPlayer(playerName, (room.players ?? []).length, avatar);
 
-  /* Push the updated players list back to RTDB */
-  await update(ref(rtdb, `rooms/${roomId}`), { players });
+  /* Add the player atomically — concurrent joins must not overwrite each other */
+  let joinedPlayers: Player[] = [];
+  const result = await runTransaction(
+    ref(rtdb, `rooms/${roomId}/players`),
+    (current: (Player | null)[] | null) => {
+      const list = cleanPlayers(current ?? []);
+      list.push(player);
+      joinedPlayers = list;
+      return list;
+    },
+  );
+  if (!result.committed) return null;
 
-  return { room: { ...room, id: roomId, players }, player };
+  return { room: { ...room, id: roomId, players: joinedPlayers }, player };
 }
 
 /**
@@ -200,14 +209,15 @@ export async function deleteRoom(roomId: string): Promise<void> {
   await remove(ref(rtdb, `rooms/${roomId}`));
 }
 
-/** Remove a specific player from the room by their player ID */
+/** Remove a specific player from the room by their player ID (atomic) */
 export async function removePlayer(roomId: string, playerId: string): Promise<void> {
-  const roomRef = ref(rtdb, `rooms/${roomId}`);
-  const snapshot = await get(roomRef);
-  if (!snapshot.exists()) return;
-  const room = snapshot.val() as Room;
-  const players = (room.players ?? []).filter((p: Player) => p.id !== playerId);
-  await update(roomRef, { players });
+  await runTransaction(
+    ref(rtdb, `rooms/${roomId}/players`),
+    (current: (Player | null)[] | null) => {
+      if (current == null) return current;
+      return cleanPlayers(current).filter((p) => p.id !== playerId);
+    },
+  );
 }
 
 /**

@@ -30,7 +30,12 @@ export const GAME_TYPES: { type: GameType; emoji: string; labelKey: string }[] =
   { type: 'mathRace', emoji: '🏎️', labelKey: 'create.gameTypeMathRace' },
   { type: 'shapeMatch', emoji: '🔷', labelKey: 'create.gameTypeShapeMatch' },
   { type: 'memoryGame', emoji: '🃏', labelKey: 'create.gameTypeMemoryGame' },
+  { type: 'countingGame', emoji: '🍎', labelKey: 'create.gameTypeCountingGame' },
+  { type: 'numberSequence', emoji: '🔢', labelKey: 'create.gameTypeNumberSequence' },
 ];
+
+/** Countable emojis for the Counting game (single-codepoint, kid-friendly) */
+export const COUNTING_EMOJIS = ['🍎', '⭐', '🎈', '🐟', '🌸', '🦆', '🍪', '🐞', '🍄', '🐢'];
 
 /** Shapes used in Shape Match game — SVG path names + i18n keys */
 export const SHAPES = [
