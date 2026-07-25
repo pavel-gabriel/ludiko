@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { useAuthStore } from '@/store/authStore';
 import {
   createSession,
@@ -189,7 +190,8 @@ export default function SessionConfig() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-lg" role="main">
+      <div className="card w-full max-w-lg relative" role="main">
+        <CloseButton onClick={() => navigate('/teacher')} />
         <h2 className="text-2xl font-bold mb-4 text-center">
           {isNew ? t('teacher.newSession') : t('teacher.editSession')}
         </h2>
@@ -238,13 +240,13 @@ export default function SessionConfig() {
         {/* Game type */}
         <label className="block mb-3">
           <span className="text-sm font-semibold">{t('create.gameType')}</span>
-          <div className="flex gap-2 mt-1">
+          <div className="grid grid-cols-3 gap-2 mt-1">
             {GAME_TYPES.map(({ type, emoji, labelKey }) => (
               <button
                 key={type}
                 onClick={() => setGameType(type)}
                 aria-pressed={gameType === type}
-                className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
+                className={`py-2 px-1 rounded-xl font-bold text-sm transition-colors ${
                   gameType === type
                     ? 'bg-ludiko-purple text-white'
                     : 'bg-gray-100 hover:bg-gray-200'

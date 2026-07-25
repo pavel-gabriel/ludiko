@@ -1,10 +1,10 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
-import { generateQuestion } from '@/services/gameEngine';
+import { generateNumericQuestion } from '@/services/gameEngine';
 import {
-  initGameState,
+  initMathGameState,
   listenToGameState,
   recordCorrectAnswer,
   recordPlayerFinished,
@@ -25,7 +25,7 @@ const SPRINT_POOL_SIZE = 100;
 export default function MathRacePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { room, currentPlayer, reset } = useRoomStore();
+  const { room, currentPlayer, reset, setRoom } = useRoomStore();
 
   const [gameState, setGameState] = useState<RTDBGameState | null>(null);
   const [countdown, setCountdown] = useState(COUNTDOWN_SECONDS);
@@ -63,6 +63,8 @@ export default function MathRacePage() {
     if (!room) return;
     const unsub = listenToRoom(room.id, (r) => {
       if (!r) { reset(); navigate('/'); return; }
+      /* Keep players list fresh (disconnects) so finish checks stay correct */
+      setRoom({ ...r, id: room.id });
       /* Replay triggered: room went back to waiting — return to lobby */
       if (r.status === 'waiting') { navigate('/lobby'); }
     });
@@ -76,11 +78,11 @@ export default function MathRacePage() {
     const count = isSprint ? SPRINT_POOL_SIZE : displayTotal;
     const questions: Question[] = [];
     for (let i = 0; i < count; i++) {
-      questions.push(generateQuestion(settings.difficulty, settings.operations));
+      questions.push(generateNumericQuestion(settings.gameType, settings.difficulty, settings.operations));
     }
 
     const playerIds = room.players.map((p) => p.id);
-    initGameState(room.id, questions, playerIds);
+    initMathGameState(room.id, questions, playerIds, settings.gameType);
   }, [room?.id, isHost]);
 
   /* ----- STEP 2: Subscribe to game state from RTDB ----- */
@@ -209,8 +211,7 @@ export default function MathRacePage() {
 
   /* ----- Navigation guards ----- */
   if (!room || !currentPlayer) {
-    navigate('/');
-    return null;
+    return <Navigate to="/" replace />;
   }
 
   if (showCountdown) return <CountdownOverlay count={countdown} />;
@@ -235,9 +236,9 @@ export default function MathRacePage() {
           const count = isSprint ? SPRINT_POOL_SIZE : displayTotal;
           const newQuestions: Question[] = [];
           for (let i = 0; i < count; i++) {
-            newQuestions.push(generateQuestion(settings.difficulty, settings.operations));
+            newQuestions.push(generateNumericQuestion(settings.gameType, settings.difficulty, settings.operations));
           }
-          await initGameState(room.id, newQuestions, [currentPlayer.id]);
+          await initMathGameState(room.id, newQuestions, [currentPlayer.id], settings.gameType);
         }
       } else {
         await replayRoom(room.id);

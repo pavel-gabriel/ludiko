@@ -3,7 +3,7 @@ import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
 import { useAuthStore } from '@/store/authStore';
-import { generateQuestion, generateShapeQuestion, generateMemoryCards } from '@/services/gameEngine';
+import { generateNumericQuestion, generateShapeQuestion, generateMemoryCards } from '@/services/gameEngine';
 import {
   initMathGameState,
   initShapeGameState,
@@ -86,9 +86,9 @@ export default function InteractiveGamePage() {
     } else {
       const questions: Question[] = [];
       for (let i = 0; i < displayTotal; i++) {
-        questions.push(generateQuestion(settings.difficulty, settings.operations));
+        questions.push(generateNumericQuestion(gameType, settings.difficulty, settings.operations));
       }
-      initMathGameState(room.id, questions, playerIds);
+      initMathGameState(room.id, questions, playerIds, gameType);
     }
   }, [room?.id]);
 
@@ -288,8 +288,8 @@ export default function InteractiveGamePage() {
       await initMemoryGameState(room.id, cards, playerIds);
     } else {
       const qs: Question[] = [];
-      for (let i = 0; i < displayTotal; i++) qs.push(generateQuestion(settings.difficulty, settings.operations));
-      await initMathGameState(room.id, qs, playerIds);
+      for (let i = 0; i < displayTotal; i++) qs.push(generateNumericQuestion(gameType, settings.difficulty, settings.operations));
+      await initMathGameState(room.id, qs, playerIds, gameType);
     }
   };
 

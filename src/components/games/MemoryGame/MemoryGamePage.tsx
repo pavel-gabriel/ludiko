@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
 import { generateMemoryCards } from '@/services/gameEngine';
@@ -21,7 +21,7 @@ import GameResults from '@/components/leaderboard/GameResults';
 export default function MemoryGamePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { room, currentPlayer, reset } = useRoomStore();
+  const { room, currentPlayer, reset, setRoom } = useRoomStore();
 
   const [gameState, setGameState] = useState<RTDBGameState | null>(null);
   const [countdown, setCountdown] = useState(COUNTDOWN_SECONDS);
@@ -61,6 +61,8 @@ export default function MemoryGamePage() {
     if (!room) return;
     const unsub = listenToRoom(room.id, (r) => {
       if (!r) { reset(); navigate('/'); return; }
+      /* Keep players list fresh (disconnects) so finish checks stay correct */
+      setRoom({ ...r, id: room.id });
       if (r.status === 'waiting') { navigate('/lobby'); }
     });
     return () => unsub();
@@ -79,8 +81,10 @@ export default function MemoryGamePage() {
     if (!room) return;
     const unsub = listenToGameState(room.id, (state) => {
       setGameState(state);
-      if (state?.memoryCards && cards.length === 0) {
-        setCards(state.memoryCards);
+      /* Adopt the board once — functional update avoids the stale-closure
+         trap where `cards` is frozen at [] and every snapshot overwrites */
+      if (state?.memoryCards) {
+        setCards((prev) => (prev.length === 0 ? state.memoryCards! : prev));
       }
     });
     return () => unsub();
@@ -185,8 +189,7 @@ export default function MemoryGamePage() {
   }, []);
 
   if (!room || !currentPlayer) {
-    navigate('/');
-    return null;
+    return <Navigate to="/" replace />;
   }
 
   if (showCountdown) return <CountdownOverlay count={countdown} />;

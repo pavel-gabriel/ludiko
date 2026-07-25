@@ -1,7 +1,7 @@
 export type Difficulty = 'easy' | 'medium' | 'hard';
 export type Operation = '+' | '-' | '×' | '÷';
 export type Language = 'ro' | 'en';
-export type GameType = 'mathRace' | 'shapeMatch' | 'memoryGame';
+export type GameType = 'mathRace' | 'shapeMatch' | 'memoryGame' | 'countingGame' | 'numberSequence';
 export type GameMode = 'raceToFinish' | 'timedSprint';
 export type ShapeMode = 'image' | 'word';
 
@@ -38,7 +38,10 @@ export interface GameSettings {
   shapeMode?: ShapeMode;
 }
 
-/** Math question (used by Math Race and Timed Sprint) */
+/** Kind of numeric question — 'math' when absent (backward compatible) */
+export type QuestionKind = 'math' | 'counting' | 'sequence';
+
+/** Numeric question (Math Race, Counting, Number Sequence — all modes) */
 export interface Question {
   id: string;
   a: number;
@@ -46,6 +49,14 @@ export interface Question {
   operation: Operation;
   correctAnswer: number;
   options: number[];
+  /** Question kind; treated as 'math' when absent */
+  kind?: QuestionKind;
+  /** Counting: emojis to display (may include distractors on hard) */
+  emojis?: string[];
+  /** Counting: the emoji the player must count */
+  targetEmoji?: string;
+  /** Sequence: display string like "2, 4, 6, ?, 10" */
+  prompt?: string;
 }
 
 /** Shape question (used by Shape Match) */

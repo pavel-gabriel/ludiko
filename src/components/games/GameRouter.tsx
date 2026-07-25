@@ -6,7 +6,7 @@ import MemoryGamePage from '@/components/games/MemoryGame/MemoryGamePage';
 
 /**
  * Routes to the correct game component based on room settings.
- * Renders MathRacePage, ShapeMatchPage, or MemoryGamePage.
+ * Counting and Number Sequence reuse the MathRace flow (numeric questions).
  */
 export default function GameRouter() {
   const { room } = useRoomStore();
@@ -21,6 +21,8 @@ export default function GameRouter() {
     case 'memoryGame':
       return <MemoryGamePage />;
     case 'mathRace':
+    case 'countingGame':
+    case 'numberSequence':
     default:
       return <MathRacePage />;
   }
