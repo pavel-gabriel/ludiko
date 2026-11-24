@@ -12,7 +12,8 @@ import {
   getTeacherTemplates,
   saveTemplate,
 } from '@/services/teacherService';
-import { DEFAULT_GAME_SETTINGS, GAME_TYPES } from '@/utils/constants';
+import { DEFAULT_GAME_SETTINGS, usesOperations } from '@/utils/constants';
+import GameTypePicker from '@/components/ui/GameTypePicker';
 import type {
   GameType,
   Difficulty,
@@ -68,7 +69,7 @@ export default function SessionConfig() {
     getTeacherTemplates(uid).then(setTemplates);
   }, [uid, sessionId, authLoading]);
 
-  const showMathOptions = gameType === 'mathRace';
+  const showMathOptions = usesOperations(gameType);
   const isShapeMatch = gameType === 'shapeMatch';
   const isMemory = gameType === 'memoryGame';
 
@@ -238,25 +239,10 @@ export default function SessionConfig() {
         </label>
 
         {/* Game type */}
-        <label className="block mb-3">
+        <div className="block mb-3">
           <span className="text-sm font-semibold">{t('create.gameType')}</span>
-          <div className="grid grid-cols-3 gap-2 mt-1">
-            {GAME_TYPES.map(({ type, emoji, labelKey }) => (
-              <button
-                key={type}
-                onClick={() => setGameType(type)}
-                aria-pressed={gameType === type}
-                className={`py-2 px-1 rounded-xl font-bold text-sm transition-colors ${
-                  gameType === type
-                    ? 'bg-ludiko-purple text-white'
-                    : 'bg-gray-100 hover:bg-gray-200'
-                }`}
-              >
-                {emoji} {t(labelKey)}
-              </button>
-            ))}
-          </div>
-        </label>
+          <GameTypePicker value={gameType} onChange={setGameType} />
+        </div>
 
         {/* Classroom mode */}
         <label className="block mb-3">

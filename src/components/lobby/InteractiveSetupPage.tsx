@@ -7,7 +7,8 @@ import { useRoomStore } from '@/store/roomStore';
 import { buildRoom, buildPlayer, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
 import type { Difficulty, Operation, GameType, ShapeMode } from '@/utils/types';
-import { DEFAULT_GAME_SETTINGS, GAME_TYPES } from '@/utils/constants';
+import { DEFAULT_GAME_SETTINGS, usesOperations } from '@/utils/constants';
+import GameTypePicker from '@/components/ui/GameTypePicker';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function InteractiveSetupPage() {
@@ -38,7 +39,7 @@ export default function InteractiveSetupPage() {
     );
   };
 
-  const isMath = gameType === 'mathRace';
+  const isMath = usesOperations(gameType);
   const isShapeMatch = gameType === 'shapeMatch';
   const isMemory = gameType === 'memoryGame';
 
@@ -125,25 +126,10 @@ export default function InteractiveSetupPage() {
         </div>
 
         {/* Game type selector */}
-        <label className="block mb-4">
+        <div className="block mb-4">
           <span className="text-sm font-semibold">{t('create.gameType')}</span>
-          <div className="grid grid-cols-3 gap-2 mt-1">
-            {GAME_TYPES.map(({ type, emoji, labelKey }) => (
-              <button
-                key={type}
-                onClick={() => setGameType(type)}
-                aria-pressed={gameType === type}
-                className={`py-2 px-1 rounded-xl font-bold text-sm transition-colors ${
-                  gameType === type
-                    ? 'bg-ludiko-purple text-white'
-                    : 'bg-gray-100 hover:bg-gray-200'
-                }`}
-              >
-                {emoji} {t(labelKey)}
-              </button>
-            ))}
-          </div>
-        </label>
+          <GameTypePicker value={gameType} onChange={setGameType} />
+        </div>
 
         {/* Shape mode toggle */}
         {isShapeMatch && (

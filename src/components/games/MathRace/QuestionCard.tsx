@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Question } from '@/utils/types';
 import { playCorrect, playWrong } from '@/utils/sounds';
+import EquationExpression from './EquationExpression';
 
 interface QuestionCardProps {
   question: Question;
@@ -82,6 +83,8 @@ export default function QuestionCard({
               ))}
             </div>
           </>
+        ) : question.kind === 'equation' ? (
+          <EquationExpression question={question} className="text-4xl sm:text-5xl" />
         ) : question.kind === 'sequence' ? (
           <>
             <p className="text-lg font-bold text-ludiko-purple mb-3" aria-live="polite">

@@ -21,6 +21,7 @@
     "avatar": "Avatarul tău",
     "gameType": "Joc",
     "gameTypeMathRace": "Cursă Matematică",
+    "gameTypeEquations": "Ecuații",
     "gameTypeShapeMatch": "Potrivește Formele",
     "gameTypeMemoryGame": "Joc de Memorie",
     "gameTypeCountingGame": "Numărare",
@@ -41,7 +42,9 @@
     "shapeModeImage": "Găsește forma",
     "shapeModeWord": "Găsește cuvântul",
     "create": "Creează",
-    "back": "Înapoi"
+    "back": "Înapoi",
+    "categoryMath": "Jocuri de matematică",
+    "categoryOther": "Alte jocuri"
   },
   "join": {
     "title": "Intră în Cameră",
@@ -91,7 +94,9 @@
     "score": "Scor",
     "exitGame": "Ieși",
     "finished": "Terminat!",
-    "waitingForOthers": "Se așteaptă ceilalți jucători..."
+    "waitingForOthers": "Se așteaptă ceilalți jucători...",
+    "findValue": "Află valoarea lui {{variable}}",
+    "unknownValue": "numărul necunoscut {{variable}}"
   },
   "results": {
     "title": "Rezultate",
