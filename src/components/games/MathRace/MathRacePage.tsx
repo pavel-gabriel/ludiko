@@ -13,7 +13,7 @@ import {
 } from '@/services/gameSession';
 import { replayRoom, deleteRoom, removePlayer, listenToRoom } from '@/services/roomManager';
 import type { Question } from '@/utils/types';
-import { COUNTDOWN_SECONDS } from '@/utils/constants';
+import { COUNTDOWN_SECONDS, questionStyleFor } from '@/utils/constants';
 import RaceTrack from './RaceTrack';
 import QuestionCard from './QuestionCard';
 import CountdownOverlay from './CountdownOverlay';
@@ -76,7 +76,7 @@ export default function MathRacePage() {
     const count = isSprint ? SPRINT_POOL_SIZE : displayTotal;
     const questions: Question[] = [];
     for (let i = 0; i < count; i++) {
-      questions.push(generateQuestion(settings.difficulty, settings.operations));
+      questions.push(generateQuestion(settings.difficulty, settings.operations, questionStyleFor(settings.gameType)));
     }
 
     const playerIds = room.players.map((p) => p.id);
@@ -235,7 +235,7 @@ export default function MathRacePage() {
           const count = isSprint ? SPRINT_POOL_SIZE : displayTotal;
           const newQuestions: Question[] = [];
           for (let i = 0; i < count; i++) {
-            newQuestions.push(generateQuestion(settings.difficulty, settings.operations));
+            newQuestions.push(generateQuestion(settings.difficulty, settings.operations, questionStyleFor(settings.gameType)));
           }
           await initGameState(room.id, newQuestions, [currentPlayer.id]);
         }

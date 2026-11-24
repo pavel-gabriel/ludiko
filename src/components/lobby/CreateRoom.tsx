@@ -7,7 +7,8 @@ import { useRoomStore } from '@/store/roomStore';
 import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
 import type { Difficulty, Operation, GameType, GameMode, ShapeMode } from '@/utils/types';
-import { DEFAULT_GAME_SETTINGS, GAME_TYPES } from '@/utils/constants';
+import { DEFAULT_GAME_SETTINGS, isMathGame } from '@/utils/constants';
+import GameTypePicker from '@/components/ui/GameTypePicker';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function CreateRoom() {
@@ -33,7 +34,7 @@ export default function CreateRoom() {
   };
 
   /** Math Race needs operations; Shape Match & Memory don't */
-  const showMathOptions = gameType === 'mathRace';
+  const showMathOptions = isMathGame(gameType);
   const isShapeMatch = gameType === 'shapeMatch';
   /** All game types support mode selection */
   const showModeSelector = true;
@@ -94,25 +95,10 @@ export default function CreateRoom() {
         {/* Game Configuration Group */}
         <div className="border border-gray-200 rounded-xl p-3 mb-4 space-y-3">
           {/* Game type selector */}
-          <label className="block">
+          <div className="block">
             <span className="text-sm font-semibold">{t('create.gameType')}</span>
-            <div className="flex gap-2 mt-1">
-              {GAME_TYPES.map(({ type, emoji, labelKey }) => (
-                <button
-                  key={type}
-                  onClick={() => setGameType(type)}
-                  aria-pressed={gameType === type}
-                  className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
-                    gameType === type
-                      ? 'bg-ludiko-purple text-white'
-                      : 'bg-gray-50 hover:bg-gray-100'
-                  }`}
-                >
-                  {emoji} {t(labelKey)}
-                </button>
-              ))}
-            </div>
-          </label>
+            <GameTypePicker value={gameType} onChange={setGameType} idleClassName="bg-gray-50 hover:bg-gray-100" />
+          </div>
 
           {/* Shape mode toggle (Shape Match only) */}
           {isShapeMatch && (

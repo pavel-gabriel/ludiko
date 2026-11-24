@@ -23,6 +23,7 @@ export default function GameRouter() {
     case 'memoryGame':
       return <MemoryGamePage />;
     case 'mathRace':
+    case 'equations':
     default:
       return <MathRacePage />;
   }

@@ -21,6 +21,7 @@ import {
   initMemoryGameState,
 } from '@/services/gameSession';
 import { generateQuestion, generateShapeQuestion, generateMemoryCards } from '@/services/gameEngine';
+import { isMathGame, questionStyleFor } from '@/utils/constants';
 import type { RTDBGameState } from '@/services/gameSession';
 import type { ClassroomSession, Room, StudentSessionResult } from '@/utils/types';
 
@@ -87,11 +88,11 @@ export default function TeacherLiveDashboard() {
     const { settings } = session;
     const playerIds = room.players.map((p) => p.id);
 
-    if (settings.gameType === 'mathRace') {
+    if (isMathGame(settings.gameType)) {
       const count = settings.gameMode === 'timedSprint' ? 100 : settings.rounds;
       const questions = [];
       for (let i = 0; i < count; i++) {
-        questions.push(generateQuestion(settings.difficulty, settings.operations));
+        questions.push(generateQuestion(settings.difficulty, settings.operations, questionStyleFor(settings.gameType)));
       }
       await initMathGameState(session.roomId, questions, playerIds);
     } else if (settings.gameType === 'shapeMatch') {

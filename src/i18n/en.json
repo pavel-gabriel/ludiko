@@ -21,6 +21,7 @@
     "avatar": "Your avatar",
     "gameType": "Game",
     "gameTypeMathRace": "Math Race",
+    "gameTypeEquations": "Equations",
     "gameTypeShapeMatch": "Shape Match",
     "gameTypeMemoryGame": "Memory Game",
     "gameMode": "Mode",
@@ -39,7 +40,9 @@
     "shapeModeImage": "Find shape",
     "shapeModeWord": "Find word",
     "create": "Create",
-    "back": "Back"
+    "back": "Back",
+    "categoryMath": "Math games",
+    "categoryOther": "Other games"
   },
   "join": {
     "title": "Join Room",
@@ -87,7 +90,9 @@
     "score": "Score",
     "exitGame": "Exit",
     "finished": "Finished!",
-    "waitingForOthers": "Waiting for other players..."
+    "waitingForOthers": "Waiting for other players...",
+    "findValue": "Find the value of {{variable}}",
+    "unknownValue": "unknown number {{variable}}"
   },
   "results": {
     "title": "Results",

@@ -1,4 +1,4 @@
-import type { Difficulty, GameSettings, GameType } from './types';
+import type { Difficulty, GameCategory, GameSettings, GameType, QuestionStyle } from './types';
 
 export const APP_NAME = 'Ludiko';
 
@@ -26,11 +26,33 @@ export const DEFAULT_GAME_SETTINGS: GameSettings = {
 export const COUNTDOWN_SECONDS = 3;
 
 /** Available game types with their emoji + i18n keys */
-export const GAME_TYPES: { type: GameType; emoji: string; labelKey: string }[] = [
-  { type: 'mathRace', emoji: '🏎️', labelKey: 'create.gameTypeMathRace' },
-  { type: 'shapeMatch', emoji: '🔷', labelKey: 'create.gameTypeShapeMatch' },
-  { type: 'memoryGame', emoji: '🃏', labelKey: 'create.gameTypeMemoryGame' },
+export const GAME_TYPES: {
+  type: GameType;
+  emoji: string;
+  labelKey: string;
+  category: GameCategory;
+}[] = [
+  { type: 'mathRace', emoji: '🏎️', labelKey: 'create.gameTypeMathRace', category: 'math' },
+  { type: 'equations', emoji: '🧮', labelKey: 'create.gameTypeEquations', category: 'math' },
+  { type: 'shapeMatch', emoji: '🔷', labelKey: 'create.gameTypeShapeMatch', category: 'other' },
+  { type: 'memoryGame', emoji: '🃏', labelKey: 'create.gameTypeMemoryGame', category: 'other' },
 ];
+
+/** Game categories in display order, with i18n keys */
+export const GAME_CATEGORIES: { category: GameCategory; labelKey: string }[] = [
+  { category: 'math', labelKey: 'create.categoryMath' },
+  { category: 'other', labelKey: 'create.categoryOther' },
+];
+
+/** True for game types that use math questions (operations setting applies) */
+export function isMathGame(gameType: GameType): boolean {
+  return gameType === 'mathRace' || gameType === 'equations';
+}
+
+/** Question style to generate for a math game type */
+export function questionStyleFor(gameType: GameType): QuestionStyle {
+  return gameType === 'equations' ? 'equation' : 'classic';
+}
 
 /** Shapes used in Shape Match game — SVG path names + i18n keys */
 export const SHAPES = [
@@ -57,3 +79,6 @@ export const MEMORY_EMOJIS = [
 
 /** Timed Sprint total duration in seconds */
 export const TIMED_SPRINT_DURATION = 60;
+
+/** Letter shown for the unknown number in equation questions (e.g. "a + 7 = 15") */
+export const EQUATION_VARIABLE = 'a';

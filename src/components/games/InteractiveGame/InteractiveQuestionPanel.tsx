@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Question } from '@/utils/types';
 import { playCorrect, playWrong } from '@/utils/sounds';
+import MathExpression from '@/components/games/MathRace/MathExpression';
 
 interface InteractiveQuestionPanelProps {
   question: Question;
@@ -71,9 +72,7 @@ export default function InteractiveQuestionPanel({
 
       {/* Question */}
       <div className="text-center mb-2">
-        <p className="text-3xl sm:text-4xl font-extrabold text-ludiko-text">
-          {question.a} {question.operation} {question.b}
-        </p>
+        <MathExpression question={question} className="text-2xl sm:text-4xl" showHint={false} />
       </div>
 
       {/* Answer grid */}

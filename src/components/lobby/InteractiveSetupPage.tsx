@@ -6,8 +6,8 @@ import CloseButton from '@/components/ui/CloseButton';
 import { useRoomStore } from '@/store/roomStore';
 import { buildRoom, buildPlayer, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
-import type { Difficulty, Operation } from '@/utils/types';
-import { DEFAULT_GAME_SETTINGS } from '@/utils/constants';
+import type { Difficulty, GameType, Operation } from '@/utils/types';
+import { DEFAULT_GAME_SETTINGS, GAME_TYPES } from '@/utils/constants';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function InteractiveSetupPage() {
@@ -23,7 +23,8 @@ export default function InteractiveSetupPage() {
   const [name2, setName2] = useState('');
   const [avatar2, setAvatar2] = useState(EMOJI_OPTIONS[1]);
 
-  /* Game settings — interactive mode only supports mathRace */
+  /* Game settings — interactive mode supports math games only */
+  const [gameType, setGameType] = useState<GameType>('mathRace');
   const [difficulty, setDifficulty] = useState<Difficulty>(DEFAULT_GAME_SETTINGS.difficulty);
   const [rounds, setRounds] = useState(DEFAULT_GAME_SETTINGS.rounds);
   const [timePerRound, setTimePerRound] = useState(DEFAULT_GAME_SETTINGS.timePerRound);
@@ -43,7 +44,7 @@ export default function InteractiveSetupPage() {
     try {
       await ensureAnonymousAuth();
       const room = buildRoom(name1.trim(), {
-        gameType: 'mathRace',
+        gameType,
         gameMode: 'raceToFinish',
         difficulty,
         operations,
@@ -116,6 +117,28 @@ export default function InteractiveSetupPage() {
           <div>
             <span className="text-sm font-semibold">{t('create.avatar')}</span>
             <EmojiPicker selected={avatar2} onChange={setAvatar2} exclude={[avatar1]} />
+          </div>
+        </div>
+
+        {/* Math game type (Math Race / Equations) */}
+        <div className="block mb-4">
+          <span className="text-sm font-semibold">{t('create.gameType')}</span>
+          <div className="flex gap-2 mt-1">
+            {GAME_TYPES.filter((g) => g.category === 'math').map(({ type, emoji, labelKey }) => (
+              <button
+                key={type}
+                type="button"
+                onClick={() => setGameType(type)}
+                aria-pressed={gameType === type}
+                className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
+                  gameType === type
+                    ? 'bg-ludiko-purple text-white'
+                    : 'bg-gray-100 hover:bg-gray-200'
+                }`}
+              >
+                {emoji} {t(labelKey)}
+              </button>
+            ))}
           </div>
         </div>
 

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Question } from '@/utils/types';
 import { playCorrect, playWrong } from '@/utils/sounds';
+import MathExpression from './MathExpression';
 
 interface QuestionCardProps {
   question: Question;
@@ -71,9 +72,7 @@ export default function QuestionCard({
       </div>
 
       <div className="text-center mb-6">
-        <p className="text-5xl font-extrabold text-ludiko-text" aria-live="polite">
-          {question.a} {question.operation} {question.b}
-        </p>
+        <MathExpression question={question} className="text-4xl sm:text-5xl" />
       </div>
 
       <div className="grid grid-cols-2 gap-3 mb-4">

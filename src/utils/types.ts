@@ -1,7 +1,10 @@
 export type Difficulty = 'easy' | 'medium' | 'hard';
 export type Operation = '+' | '-' | '×' | '÷';
 export type Language = 'ro' | 'en';
-export type GameType = 'mathRace' | 'shapeMatch' | 'memoryGame';
+export type GameType = 'mathRace' | 'equations' | 'shapeMatch' | 'memoryGame';
+export type GameCategory = 'math' | 'other';
+/** classic: "3 + 4 = ?" · equation: "? + 4 = 7" (find the missing number) */
+export type QuestionStyle = 'classic' | 'equation';
 export type GameMode = 'raceToFinish' | 'timedSprint';
 export type ShapeMode = 'image' | 'word';
 
@@ -46,6 +49,12 @@ export interface Question {
   operation: Operation;
   correctAnswer: number;
   options: number[];
+  /** Question style — omitted for classic questions (backward compatible) */
+  style?: QuestionStyle;
+  /** Equation only: which operand is unknown */
+  unknown?: 'a' | 'b';
+  /** Equation only: result shown on the right of "=" */
+  result?: number;
 }
 
 /** Shape question (used by Shape Match) */

@@ -1,5 +1,12 @@
 import { describe, it, expect } from 'vitest';
-import { generateQuestion, checkAnswer, generateShapeQuestion, generateMemoryCards } from '../src/services/gameEngine';
+import {
+  generateQuestion,
+  checkAnswer,
+  generateShapeQuestion,
+  generateMemoryCards,
+  isEquationValid,
+} from '../src/services/gameEngine';
+import { isMathGame, questionStyleFor } from '../src/utils/constants';
 import type { Difficulty, Operation } from '../src/utils/types';
 
 describe('gameEngine', () => {
@@ -172,6 +179,70 @@ describe('gameEngine', () => {
       const cards = generateMemoryCards(10);
       const ids = cards.map((c) => c.id);
       expect(new Set(ids).size).toBe(ids.length);
+    });
+  });
+
+  describe('generateQuestion (equation style)', () => {
+    const ops: Operation[] = ['+', '-', '×', '÷'];
+    const difficulties: Difficulty[] = ['easy', 'medium', 'hard'];
+
+    for (const op of ops) {
+      for (const d of difficulties) {
+        it(`builds valid ${op} equations on ${d}`, () => {
+          for (let i = 0; i < 200; i++) {
+            const q = generateQuestion(d, [op], 'equation');
+            expect(q.style).toBe('equation');
+            expect(q.operation).toBe(op);
+            expect(['a', 'b']).toContain(q.unknown);
+            expect(isEquationValid(q)).toBe(true);
+            expect(q.correctAnswer).toBe(q.unknown === 'a' ? q.a : q.b);
+            expect(Number.isInteger(q.correctAnswer)).toBe(true);
+            expect(q.correctAnswer).toBeGreaterThanOrEqual(0);
+            expect(q.result!).toBeGreaterThanOrEqual(0);
+            expect(q.options).toHaveLength(4);
+            expect(new Set(q.options).size).toBe(4);
+            expect(q.options).toContain(q.correctAnswer);
+            if (op === '×' || op === '÷') {
+              expect(q.correctAnswer).toBeGreaterThanOrEqual(1);
+              expect(Math.min(...q.options)).toBeGreaterThanOrEqual(1);
+            }
+            if (op === '÷') expect(q.a % q.b).toBe(0);
+          }
+        });
+      }
+    }
+
+    it('hides both the left and right operand over many questions', () => {
+      const seen = new Set<string>();
+      for (let i = 0; i < 100; i++) seen.add(generateQuestion('easy', ['+'], 'equation').unknown!);
+      expect(seen).toEqual(new Set(['a', 'b']));
+    });
+
+    it('classic style stays unchanged (no equation fields)', () => {
+      const q = generateQuestion('easy', ['+']);
+      expect(q.style).toBeUndefined();
+      expect(q.unknown).toBeUndefined();
+      expect(q.result).toBeUndefined();
+    });
+
+    it('checkAnswer works for equations', () => {
+      const q = generateQuestion('medium', ['×'], 'equation');
+      expect(checkAnswer(q, q.correctAnswer)).toBe(true);
+      expect(checkAnswer(q, q.correctAnswer + 1)).toBe(false);
+    });
+  });
+
+  describe('game type helpers', () => {
+    it('treats mathRace and equations as math games', () => {
+      expect(isMathGame('mathRace')).toBe(true);
+      expect(isMathGame('equations')).toBe(true);
+      expect(isMathGame('shapeMatch')).toBe(false);
+      expect(isMathGame('memoryGame')).toBe(false);
+    });
+
+    it('maps game type to question style', () => {
+      expect(questionStyleFor('equations')).toBe('equation');
+      expect(questionStyleFor('mathRace')).toBe('classic');
     });
   });
 });

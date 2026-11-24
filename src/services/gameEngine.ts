@@ -1,4 +1,11 @@
-import type { Difficulty, Operation, Question, ShapeQuestion, MemoryCard } from '@/utils/types';
+import type {
+  Difficulty,
+  Operation,
+  Question,
+  QuestionStyle,
+  ShapeQuestion,
+  MemoryCard,
+} from '@/utils/types';
 import { DIFFICULTY_RANGES, SHAPES, MEMORY_EMOJIS } from '@/utils/constants';
 
 /* ------------------------------------------------------------------ */
@@ -65,14 +72,14 @@ function generateOperands(
   return { a: randomInt(min, max), b: randomInt(min, max) };
 }
 
-function generateWrongAnswers(correct: number, count: number): number[] {
+function generateWrongAnswers(correct: number, count: number, minValue = 0): number[] {
   const wrongs = new Set<number>();
   const range = Math.max(5, Math.abs(correct));
 
   while (wrongs.size < count) {
     const offset = randomInt(1, range);
     const wrong = Math.round(correct + (Math.random() > 0.5 ? offset : -offset));
-    if (wrong !== correct && wrong >= 0) {
+    if (wrong !== correct && wrong >= minValue) {
       wrongs.add(wrong);
     }
   }
@@ -80,12 +87,48 @@ function generateWrongAnswers(correct: number, count: number): number[] {
   return [...wrongs];
 }
 
+/**
+ * Generate an equation question with one missing operand, e.g.
+ * "? + 7 = 15", "20 − ? = 12", "? × 4 = 28", "36 ÷ ? = 9".
+ * Operands come from the same ranges as classic questions, so the
+ * hidden number is always a whole, non-negative number.
+ */
+function generateEquationQuestion(difficulty: Difficulty, operation: Operation): Question {
+  const { a, b } = generateOperands(difficulty, operation);
+  const result = computeAnswer(a, b, operation);
+  const unknown: 'a' | 'b' = Math.random() < 0.5 ? 'a' : 'b';
+  const correctAnswer = unknown === 'a' ? a : b;
+
+  /* Missing factors / divisors / dividends are never 0 — keep distractors ≥ 1 */
+  const minValue = operation === '×' || operation === '÷' ? 1 : 0;
+  const wrongAnswers = generateWrongAnswers(correctAnswer, 3, minValue);
+  const options = shuffle([correctAnswer, ...wrongAnswers]);
+
+  return {
+    id: uid(),
+    a,
+    b,
+    operation,
+    correctAnswer,
+    options,
+    style: 'equation',
+    unknown,
+    result,
+  };
+}
+
 /** Generate a single math question */
 export function generateQuestion(
   difficulty: Difficulty,
   operations: Operation[],
+  style: QuestionStyle = 'classic',
 ): Question {
   const operation = operations[Math.floor(Math.random() * operations.length)];
+
+  if (style === 'equation') {
+    return generateEquationQuestion(difficulty, operation);
+  }
+
   const { a, b } = generateOperands(difficulty, operation);
   const correctAnswer = computeAnswer(a, b, operation);
 
@@ -93,6 +136,12 @@ export function generateQuestion(
   const options = shuffle([correctAnswer, ...wrongAnswers]);
 
   return { id: uid(), a, b, operation, correctAnswer, options };
+}
+
+/** Check whether an equation question is consistent (a op b = result) */
+export function isEquationValid(q: Question): boolean {
+  if (q.style !== 'equation' || q.result == null) return false;
+  return computeAnswer(q.a, q.b, q.operation) === q.result;
 }
 
 /** Check if an answer is correct */

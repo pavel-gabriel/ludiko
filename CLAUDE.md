@@ -13,7 +13,9 @@
 `/` HomePage | `/create` CreateRoom | `/join` JoinRoom | `/lobby` LobbyPage | `/game` GameRouter
 
 ### Game Types (src/components/games/)
-- **MathRace/** — Math questions, Race to Finish or Timed Sprint modes
+- **MathRace/** — Math questions, Race to Finish or Timed Sprint modes. Also serves the
+  **Equations** game type (`gameType: 'equations'`): find the missing number, e.g. `a + 7 = 15`,
+  for + − × ÷ (`generateQuestion(..., 'equation')`, rendered by `MathExpression.tsx`)
 - **ShapeMatch/** — Tap the correct shape, Race to Finish only
 - **MemoryGame/** — Card flip matching pairs
 
@@ -21,7 +23,8 @@
 1. Host creates room → RTDB `rooms/{id}` with code, players, settings
 2. Others join by 6-char code → `joinRoomByCode` queries RTDB `orderByChild('code')`
 3. Host clicks Start → status='playing' → all navigate to `/game`
-4. GameRouter picks component by `room.settings.gameType`
+4. GameRouter picks component by `room.settings.gameType` (game types are grouped into
+   Math / Other categories in `GAME_TYPES`; pickers use `GameTypePicker`, `isMathGame()`)
 5. Each player tracks own question via `localIndex` (local state)
 6. Only correct answers call `recordCorrectAnswer` (RTDB progress)
 7. Game ends when host finishes all questions (Race) or timer expires (Sprint)

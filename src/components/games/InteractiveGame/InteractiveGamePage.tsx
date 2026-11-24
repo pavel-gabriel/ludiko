@@ -14,7 +14,7 @@ import {
 } from '@/services/gameSession';
 import { deleteRoom } from '@/services/roomManager';
 import type { Question } from '@/utils/types';
-import { COUNTDOWN_SECONDS } from '@/utils/constants';
+import { COUNTDOWN_SECONDS, questionStyleFor } from '@/utils/constants';
 import CountdownOverlay from '@/components/games/MathRace/CountdownOverlay';
 import GameResults from '@/components/leaderboard/GameResults';
 import InteractiveQuestionPanel from './InteractiveQuestionPanel';
@@ -63,7 +63,7 @@ export default function InteractiveGamePage() {
     if (!room || !settings) return;
     const questions: Question[] = [];
     for (let i = 0; i < displayTotal; i++) {
-      questions.push(generateQuestion(settings.difficulty, settings.operations));
+      questions.push(generateQuestion(settings.difficulty, settings.operations, questionStyleFor(settings.gameType)));
     }
     const playerIds = room.players.map((p) => p.id);
     initGameState(room.id, questions, playerIds);
@@ -195,7 +195,7 @@ export default function InteractiveGamePage() {
     setCountdown(COUNTDOWN_SECONDS);
     const questions: Question[] = [];
     for (let i = 0; i < displayTotal; i++) {
-      questions.push(generateQuestion(settings.difficulty, settings.operations));
+      questions.push(generateQuestion(settings.difficulty, settings.operations, questionStyleFor(settings.gameType)));
     }
     await initGameState(room.id, questions, room.players.map((p) => p.id));
   }, [room, settings, displayTotal]);
