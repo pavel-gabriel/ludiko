@@ -7,7 +7,10 @@ import {
   generateCountingQuestion,
   generateSequenceQuestion,
   generateNumericQuestion,
+  generateEquationQuestion,
+  isEquationValid,
 } from '../src/services/gameEngine';
+import { usesOperations, GAME_TYPES } from '../src/utils/constants';
 import type { Difficulty, Operation } from '../src/utils/types';
 
 describe('gameEngine', () => {
@@ -282,6 +285,68 @@ describe('gameEngine', () => {
       expect(generateNumericQuestion('countingGame', 'easy', ['+']).kind).toBe('counting');
       expect(generateNumericQuestion('numberSequence', 'easy', ['+']).kind).toBe('sequence');
       expect(generateNumericQuestion('mathRace', 'easy', ['+']).kind).toBeUndefined();
+    });
+  });
+
+  describe('generateEquationQuestion', () => {
+    const ops: Operation[] = ['+', '-', '×', '÷'];
+    const difficulties: Difficulty[] = ['easy', 'medium', 'hard'];
+
+    for (const op of ops) {
+      for (const d of difficulties) {
+        it(`builds valid ${op} equations on ${d}`, () => {
+          for (let i = 0; i < 200; i++) {
+            const q = generateEquationQuestion(d, [op]);
+            expect(q.kind).toBe('equation');
+            expect(q.operation).toBe(op);
+            expect(['a', 'b']).toContain(q.unknown);
+            expect(isEquationValid(q)).toBe(true);
+            expect(q.correctAnswer).toBe(q.unknown === 'a' ? q.a : q.b);
+            expect(Number.isInteger(q.correctAnswer)).toBe(true);
+            expect(q.correctAnswer).toBeGreaterThanOrEqual(0);
+            expect(q.result!).toBeGreaterThanOrEqual(0);
+            expect(q.options).toHaveLength(4);
+            expect(new Set(q.options).size).toBe(4);
+            expect(q.options).toContain(q.correctAnswer);
+            if (op === '×' || op === '÷') {
+              expect(q.correctAnswer).toBeGreaterThanOrEqual(1);
+              expect(Math.min(...q.options)).toBeGreaterThanOrEqual(1);
+            }
+            if (op === '÷') expect(q.a % q.b).toBe(0);
+          }
+        });
+      }
+    }
+
+    it('hides both the left and right operand over many questions', () => {
+      const seen = new Set<string>();
+      for (let i = 0; i < 100; i++) seen.add(generateEquationQuestion('easy', ['+']).unknown!);
+      expect(seen).toEqual(new Set(['a', 'b']));
+    });
+
+    it('is routed by generateNumericQuestion for the equations game', () => {
+      const q = generateNumericQuestion('equations', 'easy', ['×']);
+      expect(q.kind).toBe('equation');
+      expect(q.operation).toBe('×');
+    });
+
+    it('checkAnswer works for equations', () => {
+      const q = generateEquationQuestion('medium', ['-']);
+      expect(checkAnswer(q, q.correctAnswer)).toBe(true);
+      expect(checkAnswer(q, q.correctAnswer + 1)).toBe(false);
+    });
+  });
+
+  describe('game type metadata', () => {
+    it('only Math Race and Equations use operations', () => {
+      expect(GAME_TYPES.filter((g) => usesOperations(g.type)).map((g) => g.type)).toEqual([
+        'mathRace',
+        'equations',
+      ]);
+    });
+
+    it('every game type has a category', () => {
+      for (const g of GAME_TYPES) expect(['math', 'other']).toContain(g.category);
     });
   });
 });

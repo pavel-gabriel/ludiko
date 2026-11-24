@@ -1,7 +1,14 @@
 export type Difficulty = 'easy' | 'medium' | 'hard';
 export type Operation = '+' | '-' | '×' | '÷';
 export type Language = 'ro' | 'en';
-export type GameType = 'mathRace' | 'shapeMatch' | 'memoryGame' | 'countingGame' | 'numberSequence';
+export type GameType =
+  | 'mathRace'
+  | 'equations'
+  | 'shapeMatch'
+  | 'memoryGame'
+  | 'countingGame'
+  | 'numberSequence';
+export type GameCategory = 'math' | 'other';
 export type GameMode = 'raceToFinish' | 'timedSprint';
 export type ShapeMode = 'image' | 'word';
 
@@ -39,7 +46,7 @@ export interface GameSettings {
 }
 
 /** Kind of numeric question — 'math' when absent (backward compatible) */
-export type QuestionKind = 'math' | 'counting' | 'sequence';
+export type QuestionKind = 'math' | 'counting' | 'sequence' | 'equation';
 
 /** Numeric question (Math Race, Counting, Number Sequence — all modes) */
 export interface Question {
@@ -57,6 +64,10 @@ export interface Question {
   targetEmoji?: string;
   /** Sequence: display string like "2, 4, 6, ?, 10" */
   prompt?: string;
+  /** Equation: which operand is hidden ("a + 7 = 15" → 'a') */
+  unknown?: 'a' | 'b';
+  /** Equation: value on the right of "=" */
+  result?: number;
 }
 
 /** Shape question (used by Shape Match) */

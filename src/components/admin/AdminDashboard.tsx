@@ -13,6 +13,7 @@ import type { AdminStats } from '@/services/adminService';
 function gameTypeLabel(key: string): string {
   const map: Record<string, string> = {
     mathRace: 'Math Race',
+    equations: 'Equations',
     shapeMatch: 'Shape Match',
     memoryGame: 'Memory Game',
     countingGame: 'Counting',

@@ -68,14 +68,14 @@ function generateOperands(
   return { a: randomInt(min, max), b: randomInt(min, max) };
 }
 
-function generateWrongAnswers(correct: number, count: number): number[] {
+function generateWrongAnswers(correct: number, count: number, minValue = 0): number[] {
   const wrongs = new Set<number>();
   const range = Math.max(5, Math.abs(correct));
 
   while (wrongs.size < count) {
     const offset = randomInt(1, range);
     const wrong = Math.round(correct + (Math.random() > 0.5 ? offset : -offset));
-    if (wrong !== correct && wrong >= 0) {
+    if (wrong !== correct && wrong >= minValue) {
       wrongs.add(wrong);
     }
   }
@@ -214,9 +214,49 @@ export function generateSequenceQuestion(difficulty: Difficulty): Question {
   };
 }
 
+/* ------------------------------------------------------------------ */
+/*  Equation question generation                                      */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Generate an equation with one missing operand, e.g.
+ * "a + 7 = 15", "20 - a = 12", "a × 4 = 28", "36 ÷ a = 9".
+ * Operands come from the same ranges as Math Race, so the hidden
+ * number is always a whole, non-negative number.
+ */
+export function generateEquationQuestion(difficulty: Difficulty, operations: Operation[]): Question {
+  const operation = operations[Math.floor(Math.random() * operations.length)];
+  const { a, b } = generateOperands(difficulty, operation);
+  const result = computeAnswer(a, b, operation);
+  const unknown: 'a' | 'b' = Math.random() < 0.5 ? 'a' : 'b';
+  const correctAnswer = unknown === 'a' ? a : b;
+
+  /* Missing factors / dividends / divisors are never 0 — keep distractors ≥ 1 */
+  const minValue = operation === '×' || operation === '÷' ? 1 : 0;
+  const options = shuffle([correctAnswer, ...generateWrongAnswers(correctAnswer, 3, minValue)]);
+
+  return {
+    id: uid(),
+    a,
+    b,
+    operation,
+    correctAnswer,
+    options,
+    kind: 'equation',
+    unknown,
+    result,
+  };
+}
+
+/** Check whether an equation question is consistent (a op b = result) */
+export function isEquationValid(q: Question): boolean {
+  if (q.kind !== 'equation' || q.result == null) return false;
+  return computeAnswer(q.a, q.b, q.operation) === q.result;
+}
+
 /**
  * Generate one question for any numeric game type.
- * Math Race uses operations; Counting/Sequence only use difficulty.
+ * Math Race and Equations use operations; Counting/Sequence only use difficulty.
  */
 export function generateNumericQuestion(
   gameType: string,
@@ -225,6 +265,7 @@ export function generateNumericQuestion(
 ): Question {
   if (gameType === 'countingGame') return generateCountingQuestion(difficulty);
   if (gameType === 'numberSequence') return generateSequenceQuestion(difficulty);
+  if (gameType === 'equations') return generateEquationQuestion(difficulty, operations);
   return generateQuestion(difficulty, operations);
 }
 

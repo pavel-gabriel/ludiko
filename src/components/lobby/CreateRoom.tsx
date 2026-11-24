@@ -7,7 +7,8 @@ import { useRoomStore } from '@/store/roomStore';
 import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
 import type { Difficulty, Operation, GameType, GameMode, ShapeMode } from '@/utils/types';
-import { DEFAULT_GAME_SETTINGS, GAME_TYPES } from '@/utils/constants';
+import { DEFAULT_GAME_SETTINGS, usesOperations } from '@/utils/constants';
+import GameTypePicker from '@/components/ui/GameTypePicker';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function CreateRoom() {
@@ -33,7 +34,7 @@ export default function CreateRoom() {
   };
 
   /** Math Race needs operations; Shape Match & Memory don't */
-  const showMathOptions = gameType === 'mathRace';
+  const showMathOptions = usesOperations(gameType);
   const isShapeMatch = gameType === 'shapeMatch';
   /** All game types support mode selection */
   const showModeSelector = true;
@@ -89,25 +90,10 @@ export default function CreateRoom() {
         </div>
 
         {/* Game type selector */}
-        <label className="block mb-4">
+        <div className="block mb-4">
           <span className="text-sm font-semibold">{t('create.gameType')}</span>
-          <div className="grid grid-cols-3 gap-2 mt-1">
-            {GAME_TYPES.map(({ type, emoji, labelKey }) => (
-              <button
-                key={type}
-                onClick={() => setGameType(type)}
-                aria-pressed={gameType === type}
-                className={`py-2 px-1 rounded-xl font-bold text-sm transition-colors ${
-                  gameType === type
-                    ? 'bg-ludiko-purple text-white'
-                    : 'bg-gray-100 hover:bg-gray-200'
-                }`}
-              >
-                {emoji} {t(labelKey)}
-              </button>
-            ))}
-          </div>
-        </label>
+          <GameTypePicker value={gameType} onChange={setGameType} />
+        </div>
 
         {/* Shape mode toggle (Shape Match only) */}
         {isShapeMatch && (
