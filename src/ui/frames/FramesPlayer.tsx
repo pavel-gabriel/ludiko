@@ -6,6 +6,7 @@ import { localize } from '@/engine/types'
 import Visual from '@/ui/visuals/Visual'
 import ReadAloudButton from '@/ui/speech/ReadAloudButton'
 import { resolveMediaSrc } from '@/ui/visuals/ImageVisual'
+import { MascotSvg } from '@/ui/mascot/Mascot'
 import './frames.css'
 
 interface Props {
@@ -129,7 +130,10 @@ function Player({ explanation, onDone }: Props) {
       aria-label={localize(explanation.title, lang)}
       onKeyDown={onKeyDown}
     >
-      <p className="text-center text-sm font-semibold text-ludiko-text/70">{t('frames.intro')}</p>
+      <div className="flex items-center justify-center gap-2">
+        <MascotSvg mood="think" size={44} className="shrink-0" decorative />
+        <p className="text-center text-sm font-semibold text-ludiko-text/70">{t('frames.intro')}</p>
+      </div>
       <h2 className="mb-3 text-center text-xl font-extrabold text-ludiko-text">{localize(explanation.title, lang)}</h2>
 
       {/* progress: dots + words, so it is never colour-only */}

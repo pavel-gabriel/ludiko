@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import type { SubjectId } from '@/engine/types'
 import type { AssignmentBit } from '@/learner'
+import { MascotSvg } from '@/ui/mascot/Mascot'
 import AssignmentCard from './AssignmentCard'
 import BitTiles, { type HomeBit } from './BitTiles'
 import ProgressBar from './ProgressBar'
@@ -25,6 +26,8 @@ export interface LearnHomeViewProps {
   subjects: SubjectHome[]
   /** Assignments from the child's class (docs/CLASSROOM.md), shown as an extra bit; absent without a class link */
   assignments?: AssignmentBit[]
+  /** Stickers in the album (the chip shows it); absent in fixtures */
+  stickerCount?: number
 }
 
 /** "N zile de joacă" with the language's own plural form; zero is an invitation, never a reset message */
@@ -48,7 +51,7 @@ function BigCard({ to, tone, icon, children, testId }: { to: string; tone: strin
 }
 
 /** The learner's front door: greeting, stars, gentle streak, and one big card per thing to do */
-export default function LearnHomeView({ profile, stars, playDays, subjects, assignments }: LearnHomeViewProps) {
+export default function LearnHomeView({ profile, stars, playDays, subjects, assignments, stickerCount }: LearnHomeViewProps) {
   const { t, i18n } = useTranslation()
   const streak = streakText(t, i18n.language, playDays)
   const multi = subjects.length > 1
@@ -56,15 +59,16 @@ export default function LearnHomeView({ profile, stars, playDays, subjects, assi
   return (
     <div className="flex flex-col gap-4">
       <header className="flex items-center gap-3 rounded-3xl bg-white p-4 shadow-md">
-        <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-ludiko-purple text-4xl" aria-hidden="true">
+        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-ludiko-purple text-3xl" aria-hidden="true">
           {profile.avatar}
         </span>
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1">
           <h1 className="truncate text-2xl font-extrabold leading-tight text-ludiko-text">
             {t('learn.greeting', { name: profile.nickname })}
           </h1>
           <p className="text-sm font-semibold text-ludiko-text/70">{t('learn.greetingSub')}</p>
         </div>
+        <MascotSvg mood="wave" size={72} className="-my-2 shrink-0" label={t('mascot.label.wave')} />
       </header>
 
       <div className="flex flex-wrap gap-2" data-testid="learn-chips">
@@ -76,6 +80,15 @@ export default function LearnHomeView({ profile, stars, playDays, subjects, assi
           <span aria-hidden="true">🌈 </span>
           {streak}
         </span>
+        <Link
+          to="/learn/album"
+          className="inline-flex min-h-[44px] items-center gap-1 rounded-full bg-ludiko-purple px-4 py-2 text-sm font-extrabold text-ludiko-text shadow-sm"
+          data-testid="link-album"
+        >
+          <span aria-hidden="true">🎨 </span>
+          {t('album.homeChip')}
+          {stickerCount !== undefined && <span className="ml-1 rounded-full bg-white/70 px-2 text-xs">{stickerCount}</span>}
+        </Link>
       </div>
 
       {assignments && assignments.length > 0 && <AssignmentCard assignments={assignments} />}
