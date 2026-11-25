@@ -73,6 +73,16 @@ export default function HomePage() {
       </button>
 
       <div className="flex flex-col gap-4 w-full max-w-xs">
+        <Button
+          variant="green"
+          size="lg"
+          onClick={() => navigate('/learn')}
+          className="w-full ring-4 ring-ludiko-yellow shadow-lg"
+          data-testid="learn-entry"
+        >
+          <span aria-hidden="true">🧭 </span>
+          {t('learn.title')}
+        </Button>
         <Button variant="pink" size="lg" onClick={() => navigate('/singleplayer')}>
           {t('home.singlePlayer')}
         </Button>

@@ -14,6 +14,12 @@ const ItemsPreviewPage = lazy(() => import('@/ui/items/ItemsPreviewPage'));
 const FramesPreviewPage = lazy(() => import('@/ui/frames/FramesPreviewPage'));
 const PracticeListPage = lazy(() => import('@/ui/session/PracticeListPage'));
 const PracticePage = lazy(() => import('@/ui/session/PracticePage'));
+const LearnHomePage = lazy(() => import('@/ui/learn/LearnHomePage'));
+const PlacementPage = lazy(() => import('@/ui/learn/PlacementPage'));
+const MissionPage = lazy(() => import('@/ui/learn/MissionPage'));
+const SkillMapPage = lazy(() => import('@/ui/learn/SkillMapPage'));
+const ParentPage = lazy(() => import('@/ui/learn/ParentPage'));
+const LearnPreviewPage = lazy(() => import('@/ui/learn/LearnPreviewPage'));
 const ProfilePickerPage = lazy(() => import('@/components/profiles/ProfilePickerPage'));
 const SinglePlayerPage = lazy(() => import('@/components/lobby/SinglePlayerPage'));
 const MultiplayerPage = lazy(() => import('@/components/lobby/MultiplayerPage'));
@@ -57,7 +63,15 @@ export default function AppRoutes() {
           <Route path="/practice" element={<PracticeListPage />} />
           <Route path="/practice/:skillId" element={<PracticePage />} />
 
+          {/* Learner area (Phase 1A): check -> mission -> map, and the parent summary */}
+          <Route path="/learn" element={<LearnHomePage />} />
+          <Route path="/learn/check/:subject" element={<PlacementPage />} />
+          <Route path="/learn/mission/:subject" element={<MissionPage />} />
+          <Route path="/learn/map/:subject" element={<SkillMapPage />} />
+          <Route path="/learn/parent" element={<ParentPage />} />
+
           {/* Dev previews (Phase 0) */}
+          <Route path="/dev/learn" element={<LearnPreviewPage />} />
           <Route path="/dev/frames" element={<FramesPreviewPage />} />
           <Route path="/dev/items" element={<ItemsPreviewPage />} />
           <Route path="/singleplayer" element={<SinglePlayerPage />} />
