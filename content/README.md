@@ -18,6 +18,8 @@ content/
   skills/<subject>/*.json           arrays of Skill      (e.g. skills/mat/grade1.json)
   items/<subject>/*.json            arrays of static Item (authored banks; math mostly uses generators)
   explanations/<subject>/*.json     arrays of Explanation (2-6 frames each)
+  data/<subject>/*.json             curated own word/sentence lists read by generators (e.g. data/rom/words.json:
+                                    child words + hyphenation + emoji); each file carries a `provenance` object
 ```
 
 - Types: `src/engine/types.ts`. Validators: `src/engine/content/validate.ts`

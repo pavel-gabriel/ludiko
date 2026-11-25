@@ -9,13 +9,32 @@
 import type { Difficulty, Item, Skill } from '../../types';
 import { getItemsForSkill } from '../../content/registry';
 import { addition, subtraction } from './arithmetic';
+import { clock } from './clock';
 import { compare } from './compare';
 import { counting } from './counting';
+import { fraction } from './fraction';
+import { measure } from './measure';
+import { money } from './money';
 import { numberRecognition } from './numberRecognition';
 import { placeValue } from './placeValue';
 import { getGenerator, registerGenerator } from './registry';
+import { shapes } from './shapes';
+import { timeUnits } from './timeUnits';
 import { mulberry32, randInt, shuffle } from './util';
 import { wordProblem } from './wordProblem';
+// grade III-IV generators: each module registers itself
+import './division';
+import './equation';
+import './multiplication';
+import './numberReading';
+import './orderOfOps';
+import './rounding';
+// Romanian generators register themselves (letters, syllables, word-picture, sentence-order, punctuation, word-relations)
+import './romLetters';
+import './romSyllables';
+import './romWordPicture';
+import './romSentences';
+import './romVocab';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';
@@ -28,6 +47,12 @@ registerGenerator('addition', addition);
 registerGenerator('subtraction', subtraction);
 registerGenerator('place-value', placeValue);
 registerGenerator('word-problem', wordProblem);
+registerGenerator('clock', clock);
+registerGenerator('time-units', timeUnits);
+registerGenerator('money', money);
+registerGenerator('measure', measure);
+registerGenerator('fraction', fraction);
+registerGenerator('shapes', shapes);
 
 export interface GenerateOptions {
   /** Fixed difficulty for every item. Omitted: each item is 1-3 (mixed, easier-weighted). */

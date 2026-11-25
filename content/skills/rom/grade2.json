@@ -1,0 +1,249 @@
+[
+  {
+    "id": "rom.vocab.antonym.2",
+    "subject": "rom",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Cuvinte cu sens opus",
+      "en": "Words with opposite meanings"
+    },
+    "prerequisites": [
+      "rom.word.read.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "word-relations",
+        "params": {
+          "relation": "antonym"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.vocab.antonym.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.vocab.antonym.2",
+      "kind": "data",
+      "title": "Skill rom.vocab.antonym.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.text.literal.2",
+    "subject": "rom",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Găsim informații în text: cine, ce, unde, când, cum",
+      "en": "Finding information in a text"
+    },
+    "prerequisites": [
+      "rom.text.literal.1",
+      "rom.sent.punct.1"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade2.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.text.literal.2"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.text.literal.2",
+      "kind": "data",
+      "title": "Skill rom.text.literal.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.text.sequence.2",
+    "subject": "rom",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Ordinea întâmplărilor din text",
+      "en": "The order of events in a text"
+    },
+    "prerequisites": [
+      "rom.text.literal.1"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade2.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.text.sequence.2"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.text.sequence.2",
+      "kind": "data",
+      "title": "Skill rom.text.sequence.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.vocab.synonym.2",
+    "subject": "rom",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Cuvinte cu înțeles asemănător",
+      "en": "Words with similar meanings"
+    },
+    "prerequisites": [
+      "rom.vocab.antonym.2"
+    ],
+    "itemSources": [
+      {
+        "generator": "word-relations",
+        "params": {
+          "relation": "synonym"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.vocab.synonym.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.vocab.synonym.2",
+      "kind": "data",
+      "title": "Skill rom.vocab.synonym.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.text.mainidea.2",
+    "subject": "rom",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Despre ce este vorba în text? Ideea principală",
+      "en": "What is the text about? The main idea"
+    },
+    "prerequisites": [
+      "rom.text.literal.2"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade2.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.text.mainidea.2"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.text.mainidea.2",
+      "kind": "data",
+      "title": "Skill rom.text.mainidea.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.text.inference.2",
+    "subject": "rom",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Ce simte personajul și de ce? Citim printre rânduri",
+      "en": "How does the character feel and why? Reading between the lines"
+    },
+    "prerequisites": [
+      "rom.text.literal.2"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade2.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.text.inference.2"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.text.inference.2",
+      "kind": "data",
+      "title": "Skill rom.text.inference.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  }
+]

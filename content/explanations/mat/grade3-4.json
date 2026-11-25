@@ -1,0 +1,2278 @@
+[
+  {
+    "id": "exp.num.1000.read",
+    "skillId": "mat.num.1000.read",
+    "title": {
+      "ro": "Cum citim și scriem un număr până la 1000: 345",
+      "en": "How to read and write a number to 1000: 345"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Să citim numărul 345. Are 3 sute, 4 zeci și 5 unități. Începem cu sutele: 3 sute se citesc „trei sute”.",
+          "en": "Let's read 345. It has 3 hundreds, 4 tens and 5 ones. Start with the hundreds: 3 hundreds is “three hundred”."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Adăugăm zecile: 4 zeci înseamnă 40, se citește „patruzeci”.",
+          "en": "Add the tens: 4 tens is 40, “forty”."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3,
+          "tens": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Adăugăm unitățile și legăm cu „și”: 345 se citește „trei sute patruzeci și cinci”.",
+          "en": "Add the ones: 345 is “three hundred forty-five”."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3,
+          "tens": 4,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Atenție la zero: în 305 nu sunt zeci, deci citim „trei sute cinci”. Nu spunem nimic despre zeci.",
+          "en": "Careful with zero: 305 has no tens, so we read “three hundred five”."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3,
+          "ones": 5
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.num.1000.read",
+      "kind": "explanation",
+      "title": "How to read and write a number to 1000: 345",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.num.1000.place",
+    "skillId": "mat.num.1000.place",
+    "title": {
+      "ro": "Sute, zeci și unități: 273",
+      "en": "Hundreds, tens and ones: 273"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Numărul 273 se formează din 2 sute, 7 zeci și 3 unități.",
+          "en": "The number 273 is made of 2 hundreds, 7 tens and 3 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 2,
+          "tens": 7,
+          "ones": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare cifră are o valoare după locul ei: 2 sute = 200, 7 zeci = 70, 3 unități = 3.",
+          "en": "Each digit has a value from its place: 2 hundreds = 200, 7 tens = 70, 3 ones = 3."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Deci 273 = 200 + 70 + 3. Pe axă, 273 se află între 200 și 300.",
+          "en": "So 273 = 200 + 70 + 3. On the line, 273 is between 200 and 300."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 200,
+          "to": 300,
+          "step": 10,
+          "marks": [
+            273
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "10 sute formează o mie: 1000 este numărul de după 999.",
+          "en": "10 hundreds make one thousand: 1000 comes right after 999."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 100,
+          "marks": [
+            1000
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.num.1000.place",
+      "kind": "explanation",
+      "title": "Hundreds, tens and ones: 273",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.add.nocarry.1000",
+    "skillId": "mat.add.nocarry.1000",
+    "title": {
+      "ro": "Adunăm pe ordine: 324 + 155",
+      "en": "Adding by place: 324 + 155"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vrem să aflăm 324 + 155. Începem cu 324: 3 sute, 2 zeci și 4 unități.",
+          "en": "We want 324 + 155. Start with 324: 3 hundreds, 2 tens and 4 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3,
+          "tens": 2,
+          "ones": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai punem 155: 1 sută, 5 zeci și 5 unități.",
+          "en": "Now add 155: 1 hundred, 5 tens and 5 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 1,
+          "tens": 5,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Adunăm unitățile cu unitățile (4 + 5 = 9), zecile cu zecile (2 + 5 = 7) și sutele cu sutele (3 + 1 = 4).",
+          "en": "Add ones to ones (4 + 5 = 9), tens to tens (2 + 5 = 7) and hundreds to hundreds (3 + 1 = 4)."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 4,
+          "tens": 7,
+          "ones": 9
+        }
+      },
+      {
+        "text": {
+          "ro": "Rezultat: 4 sute, 7 zeci și 9 unități. Deci 324 + 155 = 479.",
+          "en": "Result: 4 hundreds, 7 tens and 9 ones. So 324 + 155 = 479."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 4,
+          "tens": 7,
+          "ones": 9
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.add.nocarry.1000",
+      "kind": "explanation",
+      "title": "Adding by place: 324 + 155",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.sub.noborrow.1000",
+    "skillId": "mat.sub.noborrow.1000",
+    "title": {
+      "ro": "Scădem pe ordine: 587 − 235",
+      "en": "Subtracting by place: 587 − 235"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vrem să aflăm 587 − 235. Începem cu 587: 5 sute, 8 zeci și 7 unități.",
+          "en": "We want 587 − 235. Start with 587: 5 hundreds, 8 tens and 7 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 5,
+          "tens": 8,
+          "ones": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "Scădem unitățile: 7 − 5 = 2. Apoi zecile: 8 − 3 = 5.",
+          "en": "Subtract the ones: 7 − 5 = 2. Then the tens: 8 − 3 = 5."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 5,
+          "ones": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Scădem sutele: 5 − 2 = 3.",
+          "en": "Subtract the hundreds: 5 − 2 = 3."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Rezultat: 3 sute, 5 zeci și 2 unități. Deci 587 − 235 = 352.",
+          "en": "Result: 3 hundreds, 5 tens and 2 ones. So 587 − 235 = 352."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3,
+          "tens": 5,
+          "ones": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.sub.noborrow.1000",
+      "kind": "explanation",
+      "title": "Subtracting by place: 587 − 235",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.mul.table.small",
+    "skillId": "mat.mul.table.small",
+    "title": {
+      "ro": "Înmulțirea ca adunare repetată: 3 × 4",
+      "en": "Multiplication as repeated addition: 3 × 4"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 3 grupe, în fiecare grupă sunt câte 4 mere. Câte mere sunt în total?",
+          "en": "There are 3 groups with 4 apples in each. How many apples in total?"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 12,
+          "groups": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Adunăm numărul de mere din fiecare grupă: 4 + 4 + 4 = 12. Scriem pe scurt 3 × 4 = 12.",
+          "en": "Add the apples in each group: 4 + 4 + 4 = 12. In short, 3 × 4 = 12."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 12,
+          "step": 1,
+          "marks": [
+            4,
+            8,
+            12
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 4
+            },
+            {
+              "from": 4,
+              "to": 8
+            },
+            {
+              "from": 8,
+              "to": 12
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Ordinea factorilor nu contează: 4 × 3 = 12. Sunt 4 grupe de câte 3.",
+          "en": "The order of the factors does not matter: 4 × 3 = 12. That is 4 groups of 3."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 12,
+          "groups": 4
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.mul.table.small",
+      "kind": "explanation",
+      "title": "Multiplication as repeated addition: 3 × 4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.mul.table.large",
+    "skillId": "mat.mul.table.large",
+    "title": {
+      "ro": "Un truc pentru 6 × 7",
+      "en": "A trick for 6 × 7"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Nu știm pe de rost 6 × 7? Descompunem 7 = 5 + 2.",
+          "en": "Don't remember 6 × 7? Split 7 = 5 + 2."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 42,
+          "groups": 6
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai întâi 6 × 5 = 30 (tabla lui 5 o știm bine).",
+          "en": "First 6 × 5 = 30 (we know the 5 table well)."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 42,
+          "step": 6,
+          "marks": [
+            30
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 30
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi 6 × 2 = 12. Adunăm: 30 + 12 = 42.",
+          "en": "Then 6 × 2 = 12. Add: 30 + 12 = 42."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 42,
+          "step": 6,
+          "marks": [
+            30,
+            42
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 30
+            },
+            {
+              "from": 30,
+              "to": 42
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Deci 6 × 7 = 42. La fel putem face și la 8 × 7 sau 9 × 6.",
+          "en": "So 6 × 7 = 42. The same works for 8 × 7 or 9 × 6."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 42,
+          "groups": 6
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.mul.table.large",
+      "kind": "explanation",
+      "title": "A trick for 6 × 7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.div.table",
+    "skillId": "mat.div.table",
+    "title": {
+      "ro": "Împărțirea: 12 : 3",
+      "en": "Division: 12 ÷ 3"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 12 mere pe care le punem în 3 farfurii, în mod egal.",
+          "en": "We have 12 apples to share equally on 3 plates."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 12,
+          "groups": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "În fiecare farfurie sunt 4 mere. Deci 12 : 3 = 4.",
+          "en": "Each plate gets 4 apples. So 12 ÷ 3 = 4."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 12,
+          "groups": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Împărțirea se verifică cu înmulțirea: 3 × 4 = 12, deci 12 : 3 = 4.",
+          "en": "Check division with multiplication: 3 × 4 = 12, so 12 ÷ 3 = 4."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 12,
+          "step": 1,
+          "marks": [
+            4,
+            8,
+            12
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 4
+            },
+            {
+              "from": 4,
+              "to": 8
+            },
+            {
+              "from": 8,
+              "to": 12
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Putem și scădea de câte ori încape 3 în 12: 12, 9, 6, 3, 0 — de 4 ori.",
+          "en": "We can also subtract 3 until we reach 0: 12, 9, 6, 3, 0 — 4 times."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 12,
+          "step": 1,
+          "marks": [
+            0
+          ],
+          "jumps": [
+            {
+              "from": 12,
+              "to": 9
+            },
+            {
+              "from": 9,
+              "to": 6
+            },
+            {
+              "from": 6,
+              "to": 3
+            },
+            {
+              "from": 3,
+              "to": 0
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.div.table",
+      "kind": "explanation",
+      "title": "Division: 12 ÷ 3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.add.carry.1000",
+    "skillId": "mat.add.carry.1000",
+    "title": {
+      "ro": "Adunare cu trecere peste ordin: 358 + 276",
+      "en": "Adding with carrying: 358 + 276"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vrem să aflăm 358 + 276. Începem cu unitățile: 8 + 6 = 14 unități.",
+          "en": "We want 358 + 276. Start with the ones: 8 + 6 = 14 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3,
+          "tens": 5,
+          "ones": 8
+        }
+      },
+      {
+        "text": {
+          "ro": "14 unități = 1 zece și 4 unități. Scriem 4 și ținem minte 1 zece.",
+          "en": "14 ones = 1 ten and 4 ones. Write 4 and carry 1 ten."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Zecile: 5 + 7 + 1 = 13 zeci = 1 sută și 3 zeci. Scriem 3 și ținem minte 1 sută.",
+          "en": "Tens: 5 + 7 + 1 = 13 tens = 1 hundred and 3 tens. Write 3 and carry 1 hundred."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 1,
+          "tens": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Sutele: 3 + 2 + 1 = 6. Deci 358 + 276 = 634.",
+          "en": "Hundreds: 3 + 2 + 1 = 6. So 358 + 276 = 634."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 6,
+          "tens": 3,
+          "ones": 4
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.add.carry.1000",
+      "kind": "explanation",
+      "title": "Adding with carrying: 358 + 276",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.sub.borrow.1000",
+    "skillId": "mat.sub.borrow.1000",
+    "title": {
+      "ro": "Scădere cu împrumut: 532 − 247",
+      "en": "Subtracting with borrowing: 532 − 247"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vrem să aflăm 532 − 247. La unități, 2 este mai mic decât 7.",
+          "en": "We want 532 − 247. In the ones, 2 is smaller than 7."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 5,
+          "tens": 3,
+          "ones": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Desfacem o zece în 10 unități: acum avem 2 zeci și 12 unități. 12 − 7 = 5.",
+          "en": "Break one ten into 10 ones: now 2 tens and 12 ones. 12 − 7 = 5."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 5,
+          "tens": 2,
+          "ones": 12
+        }
+      },
+      {
+        "text": {
+          "ro": "La zeci, 2 este mai mic decât 4. Desfacem o sută în 10 zeci: 12 − 4 = 8 zeci.",
+          "en": "In the tens, 2 is smaller than 4. Break a hundred into 10 tens: 12 − 4 = 8 tens."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 4,
+          "tens": 12,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "La sute: 4 − 2 = 2. Deci 532 − 247 = 285.",
+          "en": "Hundreds: 4 − 2 = 2. So 532 − 247 = 285."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 2,
+          "tens": 8,
+          "ones": 5
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.sub.borrow.1000",
+      "kind": "explanation",
+      "title": "Subtracting with borrowing: 532 − 247",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.equation.unknown",
+    "skillId": "mat.equation.unknown",
+    "title": {
+      "ro": "Aflăm numărul necunoscut: 27 + ? = 63",
+      "en": "Finding the unknown number: 27 + ? = 63"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În 27 + ? = 63 ne trebuie numărul care ajunge de la 27 la 63.",
+          "en": "In 27 + ? = 63 we need the number that takes us from 27 to 63."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 20,
+          "to": 70,
+          "step": 5,
+          "marks": [
+            27,
+            63
+          ],
+          "jumps": [
+            {
+              "from": 27,
+              "to": 63
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Folosim operația inversă: dacă 27 + ? = 63, atunci ? = 63 − 27 = 36.",
+          "en": "Use the inverse operation: if 27 + ? = 63 then ? = 63 − 27 = 36."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 20,
+          "to": 70,
+          "step": 5,
+          "marks": [
+            27,
+            63
+          ],
+          "jumps": [
+            {
+              "from": 63,
+              "to": 27
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "La înmulțire: ? × 6 = 42. Căutăm numărul care, luat de 6 ori, dă 42.",
+          "en": "For multiplication: ? × 6 = 42. We look for the number that, taken 6 times, gives 42."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 42,
+          "groups": 6
+        }
+      },
+      {
+        "text": {
+          "ro": "Operația inversă este împărțirea: ? = 42 : 6 = 7. Verificăm: 7 × 6 = 42.",
+          "en": "The inverse is division: ? = 42 ÷ 6 = 7. Check: 7 × 6 = 42."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 42,
+          "groups": 6
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.equation.unknown",
+      "kind": "explanation",
+      "title": "Finding the unknown number: 27 + ? = 63",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.order.noparen",
+    "skillId": "mat.order.noparen",
+    "title": {
+      "ro": "Întâi înmulțirea sau împărțirea: 7 + 3 × 4",
+      "en": "Multiplication or division first: 7 + 3 × 4"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În 7 + 3 × 4 sunt două operații. Regula: înmulțirea și împărțirea se fac înaintea adunării și scăderii.",
+          "en": "In 7 + 3 × 4 there are two operations. Rule: multiplication and division come before addition and subtraction."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai întâi 3 × 4 = 12 (3 grupe de câte 4).",
+          "en": "First 3 × 4 = 12 (3 groups of 4)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 12,
+          "groups": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi 7 + 12 = 19. Deci 7 + 3 × 4 = 19.",
+          "en": "Then 7 + 12 = 19. So 7 + 3 × 4 = 19."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            7,
+            19
+          ],
+          "jumps": [
+            {
+              "from": 7,
+              "to": 19
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Greșeală frecventă: de la stânga la dreapta, 7 + 3 = 10 și 10 × 4 = 40. Nu este corect!",
+          "en": "Common mistake: left to right, 7 + 3 = 10 and 10 × 4 = 40. That is wrong!"
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 40,
+          "step": 5,
+          "marks": [
+            10,
+            40
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.order.noparen",
+      "kind": "explanation",
+      "title": "Multiplication or division first: 7 + 3 × 4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.order.paren",
+    "skillId": "mat.order.paren",
+    "title": {
+      "ro": "Parantezele se calculează primele: (7 + 3) × 4",
+      "en": "Parentheses come first: (7 + 3) × 4"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În (7 + 3) × 4 parantezele ne spun ce facem primul: adunarea 7 + 3.",
+          "en": "In (7 + 3) × 4 the parentheses tell us what to do first: 7 + 3."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 10
+        }
+      },
+      {
+        "text": {
+          "ro": "7 + 3 = 10. Acum avem 10 × 4.",
+          "en": "7 + 3 = 10. Now we have 10 × 4."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 10
+        }
+      },
+      {
+        "text": {
+          "ro": "10 × 4 = 40: patru grupe de câte 10. Deci (7 + 3) × 4 = 40.",
+          "en": "10 × 4 = 40: four groups of 10. So (7 + 3) × 4 = 40."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 40,
+          "step": 10,
+          "marks": [
+            10,
+            20,
+            30,
+            40
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 20
+            },
+            {
+              "from": 20,
+              "to": 30
+            },
+            {
+              "from": 30,
+              "to": 40
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Fără paranteze, 7 + 3 × 4 = 19. Parantezele schimbă rezultatul!",
+          "en": "Without parentheses, 7 + 3 × 4 = 19. Parentheses change the result!"
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 40,
+          "step": 5,
+          "marks": [
+            19,
+            40
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.order.paren",
+      "kind": "explanation",
+      "title": "Parentheses come first: (7 + 3) × 4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.wordproblem.1000",
+    "skillId": "mat.wordproblem.1000",
+    "title": {
+      "ro": "Problemă în doi pași",
+      "en": "A two-step problem"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ana are 245 de stickere. Primește încă 130, apoi dăruiește 75. Câte stickere are la final?",
+          "en": "Ana has 245 stickers. She gets 130 more, then gives away 75. How many does she have at the end?"
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 2,
+          "tens": 4,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Pasul 1: primește 130, deci adunăm: 245 + 130 = 375.",
+          "en": "Step 1: she gets 130, so add: 245 + 130 = 375."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 200,
+          "to": 400,
+          "step": 25,
+          "marks": [
+            245,
+            375
+          ],
+          "jumps": [
+            {
+              "from": 245,
+              "to": 375
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Pasul 2: dăruiește 75, deci scădem: 375 − 75 = 300.",
+          "en": "Step 2: she gives away 75, so subtract: 375 − 75 = 300."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 200,
+          "to": 400,
+          "step": 25,
+          "marks": [
+            300,
+            375
+          ],
+          "jumps": [
+            {
+              "from": 375,
+              "to": 300
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Răspuns: Ana are 300 de stickere. Verificăm că răspunsul are sens: a primit mai mult decât a dat.",
+          "en": "Answer: Ana has 300 stickers. Does it make sense? She received more than she gave."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.wordproblem.1000",
+      "kind": "explanation",
+      "title": "A two-step problem",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.wordproblem.muldiv",
+    "skillId": "mat.wordproblem.muldiv",
+    "title": {
+      "ro": "Grupe egale: înmulțire sau împărțire?",
+      "en": "Equal groups: multiply or divide?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Într-o cutie sunt 5 mere. Câte mere sunt în 6 cutii? Avem 6 grupe egale de câte 5.",
+          "en": "A box holds 5 apples. How many apples in 6 boxes? We have 6 equal groups of 5."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 30,
+          "groups": 6
+        }
+      },
+      {
+        "text": {
+          "ro": "Știm câte sunt într-o grupă și câte grupe sunt, deci înmulțim: 6 × 5 = 30.",
+          "en": "We know the size of a group and the number of groups, so we multiply: 6 × 5 = 30."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 30,
+          "step": 5,
+          "marks": [
+            30
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 5
+            },
+            {
+              "from": 5,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 15
+            },
+            {
+              "from": 15,
+              "to": 20
+            },
+            {
+              "from": 20,
+              "to": 25
+            },
+            {
+              "from": 25,
+              "to": 30
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Acum invers: 30 de mere se împart în mod egal în 6 cutii. Câte mere sunt într-o cutie?",
+          "en": "Now the other way: 30 apples are shared equally into 6 boxes. How many in each box?"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 30,
+          "groups": 6
+        }
+      },
+      {
+        "text": {
+          "ro": "Știm totalul și numărul de grupe, deci împărțim: 30 : 6 = 5 mere într-o cutie.",
+          "en": "We know the total and the number of groups, so we divide: 30 ÷ 6 = 5 apples in each box."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 30,
+          "groups": 6
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.wordproblem.muldiv",
+      "kind": "explanation",
+      "title": "Equal groups: multiply or divide?",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.num.1m.read",
+    "skillId": "mat.num.1m.read",
+    "title": {
+      "ro": "Citim numere mari: 45 302",
+      "en": "Reading big numbers: 45 302"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Numerele mari se citesc pe clase, de la stânga la dreapta. În 45 302 sunt 45 de mii și 302 unități.",
+          "en": "Big numbers are read by classes, left to right. 45 302 is 45 thousand and 302."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 40000,
+          "to": 50000,
+          "step": 1000,
+          "marks": [
+            45302
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Citim întâi clasa miilor: „patruzeci și cinci de mii”. După 20 se spune „de mii”.",
+          "en": "First the thousands class: “forty-five thousand”. In Romanian, from 20 up, we say “de mii”."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 100000,
+          "step": 10000,
+          "marks": [
+            45000
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi clasa unităților: „trei sute doi”. Tot numărul: patruzeci și cinci de mii trei sute doi.",
+          "en": "Then the ones class: “three hundred two”. Whole number: forty-five thousand three hundred two."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 45000,
+          "to": 46000,
+          "step": 100,
+          "marks": [
+            45302
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Atenție la formele: 1 000 = „o mie”, 2 000 = „două mii”, 15 000 = „cincisprezece mii”, 20 000 = „douăzeci de mii”.",
+          "en": "Watch the forms: 1 000 = “o mie”, 2 000 = “două mii”, 15 000 = “cincisprezece mii”, 20 000 = “douăzeci de mii”."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 10000,
+          "to": 30000,
+          "step": 5000,
+          "marks": [
+            15000,
+            20000
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.num.1m.read",
+      "kind": "explanation",
+      "title": "Reading big numbers: 45 302",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.num.1m.place",
+    "skillId": "mat.num.1m.place",
+    "title": {
+      "ro": "Ordine și clase: 345 678",
+      "en": "Orders and classes: 345 678"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Numărul 345 678 are două clase: clasa miilor (345) și clasa unităților (678).",
+          "en": "The number 345 678 has two classes: thousands (345) and ones (678)."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000000,
+          "step": 100000,
+          "marks": [
+            345678
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Clasa unităților are unități, zeci și sute: 678 = 6 sute + 7 zeci + 8 unități.",
+          "en": "The ones class has ones, tens and hundreds: 678 = 6 hundreds + 7 tens + 8 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 6,
+          "tens": 7,
+          "ones": 8
+        }
+      },
+      {
+        "text": {
+          "ro": "Clasa miilor are unități de mii, zeci de mii și sute de mii: 345 mii = 3 sute de mii + 4 zeci de mii + 5 mii.",
+          "en": "The thousands class has thousands, ten thousands and hundred thousands: 345 thousand = 3 + 4 + 5."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3,
+          "tens": 4,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare ordin este de 10 ori mai mare decât cel din dreapta lui. 10 sute de mii = 1 000 000, un milion.",
+          "en": "Each order is 10 times bigger than the one on its right. 10 hundred thousands = 1 000 000, a million."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000000,
+          "step": 100000,
+          "marks": [
+            1000000
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.num.1m.place",
+      "kind": "explanation",
+      "title": "Orders and classes: 345 678",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.add.1m",
+    "skillId": "mat.add.1m",
+    "title": {
+      "ro": "Adunăm numere mari: 2847 + 1685",
+      "en": "Adding big numbers: 2847 + 1685"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Descompunem al doilea număr: 1685 = 1000 + 600 + 80 + 5. Pornim de la 2847.",
+          "en": "Split the second number: 1685 = 1000 + 600 + 80 + 5. Start at 2847."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 2000,
+          "to": 5000,
+          "step": 500,
+          "marks": [
+            2847
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Adăugăm 1000 și 600: 2847 + 1000 = 3847, apoi + 600 = 4447.",
+          "en": "Add 1000 and 600: 2847 + 1000 = 3847, then + 600 = 4447."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 2000,
+          "to": 5000,
+          "step": 500,
+          "marks": [
+            2847,
+            3847,
+            4447
+          ],
+          "jumps": [
+            {
+              "from": 2847,
+              "to": 3847
+            },
+            {
+              "from": 3847,
+              "to": 4447
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Adăugăm 80 și 5: 4447 + 80 = 4527, apoi + 5 = 4532.",
+          "en": "Add 80 and 5: 4447 + 80 = 4527, then + 5 = 4532."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 4400,
+          "to": 4600,
+          "step": 20,
+          "marks": [
+            4447,
+            4527,
+            4532
+          ],
+          "jumps": [
+            {
+              "from": 4447,
+              "to": 4527
+            },
+            {
+              "from": 4527,
+              "to": 4532
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "La fel facem în scris, coloană cu coloană, cu grijă la reportări. 2847 + 1685 = 4532.",
+          "en": "In writing we go column by column, carrying carefully. 2847 + 1685 = 4532."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 5000,
+          "step": 1000,
+          "marks": [
+            4532
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.add.1m",
+      "kind": "explanation",
+      "title": "Adding big numbers: 2847 + 1685",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.sub.1m",
+    "skillId": "mat.sub.1m",
+    "title": {
+      "ro": "Scădem numere mari: 6012 − 2785",
+      "en": "Subtracting big numbers: 6012 − 2785"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vrem să aflăm cât ne lipsește de la 2785 la 6012. Putem număra în sus.",
+          "en": "We want the gap from 2785 to 6012. We can count up."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 2000,
+          "to": 7000,
+          "step": 500,
+          "marks": [
+            2785,
+            6012
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Din 2785 până la 3000 sunt 215. Din 3000 până la 6000 sunt 3000.",
+          "en": "From 2785 to 3000 is 215. From 3000 to 6000 is 3000."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 2000,
+          "to": 7000,
+          "step": 500,
+          "marks": [
+            2785,
+            3000,
+            6000
+          ],
+          "jumps": [
+            {
+              "from": 2785,
+              "to": 3000
+            },
+            {
+              "from": 3000,
+              "to": 6000
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Din 6000 până la 6012 sunt 12. Adunăm: 215 + 3000 + 12 = 3227.",
+          "en": "From 6000 to 6012 is 12. Add: 215 + 3000 + 12 = 3227."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 2000,
+          "to": 7000,
+          "step": 500,
+          "marks": [
+            3000,
+            6000,
+            6012
+          ],
+          "jumps": [
+            {
+              "from": 6000,
+              "to": 6012
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Verificăm cu adunarea: 3227 + 2785 = 6012. Deci 6012 − 2785 = 3227.",
+          "en": "Check with addition: 3227 + 2785 = 6012. So 6012 − 2785 = 3227."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 7000,
+          "step": 1000,
+          "marks": [
+            3227,
+            6012
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.sub.1m",
+      "kind": "explanation",
+      "title": "Subtracting big numbers: 6012 − 2785",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.round",
+    "skillId": "mat.round",
+    "title": {
+      "ro": "Rotunjim 4567 la sute",
+      "en": "Rounding 4567 to hundreds"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vrem să rotunjim 4567 la sute. Între ce două sute se află? Între 4500 și 4600.",
+          "en": "We round 4567 to hundreds. Between which two hundreds is it? Between 4500 and 4600."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 4500,
+          "to": 4600,
+          "step": 10,
+          "marks": [
+            4567
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Ne uităm la cifra zecilor: 6. Dacă este 5 sau mai mare, rotunjim în sus.",
+          "en": "Look at the tens digit: 6. If it is 5 or more, round up."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 4500,
+          "to": 4600,
+          "step": 10,
+          "marks": [
+            4550,
+            4567
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "4567 este mai aproape de 4600, deci 4567 ≈ 4600.",
+          "en": "4567 is closer to 4600, so 4567 ≈ 4600."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 4500,
+          "to": 4600,
+          "step": 10,
+          "marks": [
+            4567,
+            4600
+          ],
+          "jumps": [
+            {
+              "from": 4567,
+              "to": 4600
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă cifra zecilor este 0, 1, 2, 3 sau 4, rotunjim în jos: 4532 ≈ 4500.",
+          "en": "If the tens digit is 0, 1, 2, 3 or 4, round down: 4532 ≈ 4500."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 4500,
+          "to": 4600,
+          "step": 10,
+          "marks": [
+            4532,
+            4500
+          ],
+          "jumps": [
+            {
+              "from": 4532,
+              "to": 4500
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.round",
+      "kind": "explanation",
+      "title": "Rounding 4567 to hundreds",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.mul.1digit",
+    "skillId": "mat.mul.1digit",
+    "title": {
+      "ro": "Înmulțim pe ordine: 347 × 6",
+      "en": "Multiplying by place: 347 × 6"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Descompunem 347 în 300 + 40 + 7 și înmulțim fiecare parte cu 6.",
+          "en": "Split 347 into 300 + 40 + 7 and multiply each part by 6."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3,
+          "tens": 4,
+          "ones": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "300 × 6 = 1800 și 40 × 6 = 240. Până acum: 1800 + 240 = 2040.",
+          "en": "300 × 6 = 1800 and 40 × 6 = 240. So far: 1800 + 240 = 2040."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 2100,
+          "step": 300,
+          "marks": [
+            1800,
+            2040
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 1800
+            },
+            {
+              "from": 1800,
+              "to": 2040
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "7 × 6 = 42. Adunăm: 2040 + 42 = 2082.",
+          "en": "7 × 6 = 42. Add: 2040 + 42 = 2082."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1800,
+          "to": 2100,
+          "step": 30,
+          "marks": [
+            2040,
+            2082
+          ],
+          "jumps": [
+            {
+              "from": 2040,
+              "to": 2082
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Deci 347 × 6 = 2082. În scris înmulțim de la dreapta la stânga și ținem minte reportările.",
+          "en": "So 347 × 6 = 2082. In writing we multiply right to left and carry."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 2100,
+          "step": 300,
+          "marks": [
+            2082
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.mul.1digit",
+      "kind": "explanation",
+      "title": "Multiplying by place: 347 × 6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.mul.2digit",
+    "skillId": "mat.mul.2digit",
+    "title": {
+      "ro": "Înmulțim cu 24: 36 × 24",
+      "en": "Multiplying by 24: 36 × 24"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Descompunem 24 = 20 + 4. Atunci 36 × 24 = 36 × 20 + 36 × 4.",
+          "en": "Split 24 = 20 + 4. Then 36 × 24 = 36 × 20 + 36 × 4."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 900,
+          "step": 100,
+          "marks": [
+            864
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "36 × 20 = 720 (36 × 2 = 72 și mai punem un zero).",
+          "en": "36 × 20 = 720 (36 × 2 = 72 and add a zero)."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 900,
+          "step": 100,
+          "marks": [
+            720
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 720
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "36 × 4 = 144. Adunăm cele două produse: 720 + 144 = 864.",
+          "en": "36 × 4 = 144. Add the two products: 720 + 144 = 864."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 900,
+          "step": 100,
+          "marks": [
+            720,
+            864
+          ],
+          "jumps": [
+            {
+              "from": 720,
+              "to": 864
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Deci 36 × 24 = 864. Estimare: 36 × 24 e aproape de 40 × 25 = 1000, deci rezultatul are sens.",
+          "en": "So 36 × 24 = 864. Estimate: 36 × 24 is close to 40 × 25 = 1000, so the result makes sense."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 100,
+          "marks": [
+            864,
+            1000
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.mul.2digit",
+      "kind": "explanation",
+      "title": "Multiplying by 24: 36 × 24",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.div.1digit.exact",
+    "skillId": "mat.div.1digit.exact",
+    "title": {
+      "ro": "Împărțim pe ordine: 372 : 3",
+      "en": "Dividing by place: 372 ÷ 3"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vrem să aflăm 372 : 3. Împărțim ordin cu ordin, începând cu sutele: 3 sute : 3 = 1 sută.",
+          "en": "We want 372 ÷ 3. Divide order by order, starting with hundreds: 3 hundreds ÷ 3 = 1 hundred."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 3,
+          "tens": 7,
+          "ones": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Zecile: 7 zeci : 3 = 2 zeci, rămâne 1 zece.",
+          "en": "Tens: 7 tens ÷ 3 = 2 tens, with 1 ten left over."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 1,
+          "tens": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Cele 10 unități din zecea rămasă, plus cele 2 unități fac 12 unități. 12 : 3 = 4 unități.",
+          "en": "The 1 ten left and the 2 ones make 12 ones. 12 ÷ 3 = 4 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "ones": 12
+        }
+      },
+      {
+        "text": {
+          "ro": "Câtul este 1 sută, 2 zeci și 4 unități: 124. Verificăm: 124 × 3 = 372.",
+          "en": "The quotient is 1 hundred, 2 tens and 4 ones: 124. Check: 124 × 3 = 372."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 1,
+          "tens": 2,
+          "ones": 4
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.div.1digit.exact",
+      "kind": "explanation",
+      "title": "Dividing by place: 372 ÷ 3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.div.1digit.rem",
+    "skillId": "mat.div.1digit.rem",
+    "title": {
+      "ro": "Împărțire cu rest: 47 : 5",
+      "en": "Division with remainder: 47 ÷ 5"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vrem să aflăm de câte ori încape 5 în 47. Sărim din 5 în 5 de la 0.",
+          "en": "We want to know how many times 5 fits in 47. Jump by 5 from 0."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 50,
+          "step": 5,
+          "marks": [
+            47
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Sărim 9 ori: 9 × 5 = 45. Încă un salt ar ajunge la 50, peste 47.",
+          "en": "Nine jumps: 9 × 5 = 45. One more jump would reach 50, past 47."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 50,
+          "step": 5,
+          "marks": [
+            45,
+            47
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 5
+            },
+            {
+              "from": 5,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 15
+            },
+            {
+              "from": 15,
+              "to": 20
+            },
+            {
+              "from": 20,
+              "to": 25
+            },
+            {
+              "from": 25,
+              "to": 30
+            },
+            {
+              "from": 30,
+              "to": 35
+            },
+            {
+              "from": 35,
+              "to": 40
+            },
+            {
+              "from": 40,
+              "to": 45
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Rămân 47 − 45 = 2. Restul (2) este mereu mai mic decât împărțitorul (5).",
+          "en": "What is left: 47 − 45 = 2. The remainder (2) is always smaller than the divisor (5)."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 40,
+          "to": 50,
+          "step": 1,
+          "marks": [
+            45,
+            47
+          ],
+          "jumps": [
+            {
+              "from": 45,
+              "to": 47
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Deci 47 : 5 = 9 rest 2. Verificăm: 5 × 9 + 2 = 47.",
+          "en": "So 47 ÷ 5 = 9 remainder 2. Check: 5 × 9 + 2 = 47."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 50,
+          "step": 5,
+          "marks": [
+            45,
+            47
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.div.1digit.rem",
+      "kind": "explanation",
+      "title": "Division with remainder: 47 ÷ 5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.order.ops",
+    "skillId": "mat.order.ops",
+    "title": {
+      "ro": "Mai multe operații: 150 − 4 × (18 + 12)",
+      "en": "Several operations: 150 − 4 × (18 + 12)"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ordinea: 1) parantezele, 2) înmulțirea și împărțirea, 3) adunarea și scăderea.",
+          "en": "Order: 1) parentheses, 2) multiplication and division, 3) addition and subtraction."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 150,
+          "step": 10,
+          "marks": [
+            150
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Întâi paranteza: 18 + 12 = 30. Expresia devine 150 − 4 × 30.",
+          "en": "First the parentheses: 18 + 12 = 30. The expression becomes 150 − 4 × 30."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 40,
+          "step": 10,
+          "marks": [
+            18,
+            30
+          ],
+          "jumps": [
+            {
+              "from": 18,
+              "to": 30
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi înmulțirea: 4 × 30 = 120. Expresia devine 150 − 120.",
+          "en": "Then the multiplication: 4 × 30 = 120. The expression becomes 150 − 120."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 150,
+          "step": 30,
+          "marks": [
+            120
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 30
+            },
+            {
+              "from": 30,
+              "to": 60
+            },
+            {
+              "from": 60,
+              "to": 90
+            },
+            {
+              "from": 90,
+              "to": 120
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "La final scăderea: 150 − 120 = 30. Deci 150 − 4 × (18 + 12) = 30.",
+          "en": "Finally the subtraction: 150 − 120 = 30. So 150 − 4 × (18 + 12) = 30."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 150,
+          "step": 30,
+          "marks": [
+            30,
+            150
+          ],
+          "jumps": [
+            {
+              "from": 150,
+              "to": 30
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.order.ops",
+      "kind": "explanation",
+      "title": "Several operations: 150 − 4 × (18 + 12)",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.equation.big",
+    "skillId": "mat.equation.big",
+    "title": {
+      "ro": "Aflăm necunoscuta: ? + 248 = 1000",
+      "en": "Finding the unknown: ? + 248 = 1000"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În ? + 248 = 1000, adunând 248 la un număr obținem 1000.",
+          "en": "In ? + 248 = 1000, adding 248 to a number gives 1000."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 100,
+          "marks": [
+            248,
+            1000
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Operația inversă: ? = 1000 − 248 = 752.",
+          "en": "Inverse operation: ? = 1000 − 248 = 752."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 100,
+          "marks": [
+            752,
+            1000
+          ],
+          "jumps": [
+            {
+              "from": 1000,
+              "to": 752
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "La împărțire: ? : 8 = 5. Numărul necunoscut este de 8 ori mai mare decât 5.",
+          "en": "For division: ? ÷ 8 = 5. The unknown is 8 times bigger than 5."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 40,
+          "groups": 8
+        }
+      },
+      {
+        "text": {
+          "ro": "Operația inversă este înmulțirea: ? = 5 × 8 = 40. Verificăm: 40 : 8 = 5.",
+          "en": "The inverse is multiplication: ? = 5 × 8 = 40. Check: 40 ÷ 8 = 5."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 40,
+          "groups": 8
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.equation.big",
+      "kind": "explanation",
+      "title": "Finding the unknown: ? + 248 = 1000",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.wordproblem.multistep",
+    "skillId": "mat.wordproblem.multistep",
+    "title": {
+      "ro": "Problemă cu două operații",
+      "en": "A problem with two operations"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un magazin primește 8 cutii cu câte 125 de caiete și vinde 340. Câte caiete rămân?",
+          "en": "A shop gets 8 boxes with 125 notebooks each and sells 340. How many notebooks are left?"
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 125,
+          "marks": [
+            125
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Pasul 1: câte caiete sunt în total? 8 × 125 = 1000.",
+          "en": "Step 1: how many notebooks in total? 8 × 125 = 1000."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 125,
+          "marks": [
+            125,
+            1000
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 125
+            },
+            {
+              "from": 125,
+              "to": 250
+            },
+            {
+              "from": 250,
+              "to": 375
+            },
+            {
+              "from": 375,
+              "to": 500
+            },
+            {
+              "from": 500,
+              "to": 625
+            },
+            {
+              "from": 625,
+              "to": 750
+            },
+            {
+              "from": 750,
+              "to": 875
+            },
+            {
+              "from": 875,
+              "to": 1000
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Pasul 2: se vând 340, deci scădem: 1000 − 340 = 660.",
+          "en": "Step 2: 340 are sold, so subtract: 1000 − 340 = 660."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 100,
+          "marks": [
+            660,
+            1000
+          ],
+          "jumps": [
+            {
+              "from": 1000,
+              "to": 660
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Răspuns: au rămas 660 de caiete. Scriem și un singur exercițiu: 8 × 125 − 340 = 660.",
+          "en": "Answer: 660 notebooks are left. As one expression: 8 × 125 − 340 = 660."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 100,
+          "marks": [
+            660
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.wordproblem.multistep",
+      "kind": "explanation",
+      "title": "A problem with two operations",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  }
+]

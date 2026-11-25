@@ -14,6 +14,12 @@ import SkillMapPage from '@/ui/learn/SkillMapPage'
 import ParentPage from '@/ui/learn/ParentPage'
 import HomePage from '@/components/lobby/HomePage'
 
+/* These tests exercise one subject; the fake learner returns the same placement for any subject */
+vi.mock('@/ui/learn/subjects', async (importOriginal) => ({
+  ...(await importOriginal<typeof import('@/ui/learn/subjects')>()),
+  LEARN_SUBJECTS: ['mat'],
+}))
+
 vi.mock('@/learner', async () => ({
   learnerService: (await import('./helpers/fakeLearner')).fakeLearner,
 }))
@@ -138,11 +144,10 @@ describe('/learn home', () => {
     state.summary.playDaysThisWeek = 3
     renderAt('/learn')
     await settle()
-    const card = screen.getByTestId('card-mission')
-    expect(card).toHaveTextContent('Misiunea de azi')
-    expect(card).toHaveTextContent('9 minute')
-    expect(card).toHaveTextContent('1 din 2 pași făcuți')
-    expect(card).toHaveAttribute('href', '/learn/mission/mat')
+    const card = screen.getByTestId('card-bits')
+    expect(card).toHaveTextContent('Biții de azi')
+    expect(screen.getByTestId('bit-0')).toHaveAttribute('href', '/learn/bit/mat/0')
+    expect(screen.getByTestId('link-mission')).toHaveAttribute('href', '/learn/mission/mat')
     expect(screen.queryByTestId('card-check')).toBeNull()
     expect(screen.getByTestId('streak')).toHaveTextContent('3 zile de joacă')
     expect(screen.getByTestId('link-parents')).toHaveAttribute('href', '/learn/parent')

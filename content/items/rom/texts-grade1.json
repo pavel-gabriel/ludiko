@@ -1,0 +1,878 @@
+[
+  {
+    "id": "item.rom.text.literal.1.t01",
+    "type": "read-and-answer",
+    "skillId": "rom.text.literal.1",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.literal.1",
+    "passage": {
+      "ro": "Ana are un cățel mic. Îl cheamă Bobi. Lui îi place să alerge prin curte."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.literal.1.t01.q1",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Cine are un cățel?",
+          "en": "Who has a puppy?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t01.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t01.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Ana"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Bobi"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Mama"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.text.literal.1.t01.q2",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Cum îl cheamă pe cățel?",
+          "en": "What is the puppy's name?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t01.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t01.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Bobi"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Rex"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Ana"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.text.literal.1.t01.q3",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Adevărat sau fals? Cățelului îi place să alerge prin curte.",
+          "en": "True or false? The puppy likes to run around the yard."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t01.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t01.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.literal.1.t01",
+      "kind": "item",
+      "title": "Text item.rom.text.literal.1.t01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.literal.1.t02",
+    "type": "read-and-answer",
+    "skillId": "rom.text.literal.1",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.literal.1",
+    "passage": {
+      "ro": "Luca merge la școală cu ghiozdanul roșu. În ghiozdan are o carte și un penar. La ora de desen colorează un soare galben."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.literal.1.t02.q1",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Ce culoare are ghiozdanul lui Luca?",
+          "en": "What colour is Luca's schoolbag?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t02.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t02.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "albastru"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "verde"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "roșu"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.literal.1.t02.q2",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Ce are Luca în ghiozdan?",
+          "en": "What does Luca have in his schoolbag?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t02.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t02.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "un măr și o pară"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "o minge și o păpușă"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "o carte și un penar"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.literal.1.t02.q3",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Unde merge Luca?",
+          "en": "Where does Luca go?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t02.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t02.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "la piscină"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "la școală"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "la bunici"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.literal.1.t02.q4",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Adevărat sau fals? Luca colorează un soare albastru.",
+          "en": "True or false? Luca colours a blue sun."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t02.q4",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t02.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.literal.1.t02",
+      "kind": "item",
+      "title": "Text item.rom.text.literal.1.t02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.literal.1.t03",
+    "type": "read-and-answer",
+    "skillId": "rom.text.literal.1",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.literal.1",
+    "passage": {
+      "ro": "Bunica are o grădină cu flori. Vara înfloresc trandafirii roșii. Fluturii vin să se odihnească pe ei."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.literal.1.t03.q1",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Ce are bunica?",
+          "en": "What does grandma have?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t03.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t03.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "o grădină cu flori"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "un câine mare"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "o mașină nouă"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.text.literal.1.t03.q2",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Când înfloresc trandafirii?",
+          "en": "When do the roses bloom?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t03.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t03.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "iarna"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "toamna"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "vara"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.literal.1.t03.q3",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Adevărat sau fals? Fluturii se odihnesc pe trandafiri.",
+          "en": "True or false? The butterflies rest on the roses."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t03.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t03.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.literal.1.t03",
+      "kind": "item",
+      "title": "Text item.rom.text.literal.1.t03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.literal.1.t04",
+    "type": "read-and-answer",
+    "skillId": "rom.text.literal.1",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.literal.1",
+    "passage": {
+      "ro": "Duminică mergem în parc. Eu iau mingea mea. Tata ia o sticlă cu apă."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.literal.1.t04.q1",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Când mergem în parc?",
+          "en": "When do we go to the park?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t04.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t04.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "duminică"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "luni"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "vineri"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.text.literal.1.t04.q2",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Ce ia tata?",
+          "en": "What does Dad take?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t04.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t04.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "o carte"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "o sticlă cu apă"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "mingea"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.literal.1.t04.q3",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Adevărat sau fals? Cel care povestește ia mingea.",
+          "en": "True or false? The one telling the story takes the ball."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t04.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t04.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.literal.1.t04",
+      "kind": "item",
+      "title": "Text item.rom.text.literal.1.t04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.literal.1.t05",
+    "type": "read-and-answer",
+    "skillId": "rom.text.literal.1",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.literal.1",
+    "passage": {
+      "ro": "Pe cer sunt nori gri. Începe să plouă. Maria deschide umbrela și merge acasă."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.literal.1.t05.q1",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Ce culoare au norii?",
+          "en": "What colour are the clouds?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t05.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t05.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "roșii"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "gri"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "albi"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.literal.1.t05.q2",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Ce deschide Maria?",
+          "en": "What does Maria open?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t05.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t05.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "fereastra"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "umbrela"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "ușa"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.literal.1.t05.q3",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "De ce deschide Maria umbrela?",
+          "en": "Why does Maria open her umbrella?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t05.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t05.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Pentru că este soare."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Pentru că plouă."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Pentru că este noapte."
+            }
+          }
+        ],
+        "correctId": "b"
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.literal.1.t05",
+      "kind": "item",
+      "title": "Text item.rom.text.literal.1.t05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.literal.1.t06",
+    "type": "read-and-answer",
+    "skillId": "rom.text.literal.1",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.literal.1",
+    "passage": {
+      "ro": "Vaca stă în grajd. Dimineața fermierul o mulge. Laptele proaspăt ajunge în căni."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.literal.1.t06.q1",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Unde stă vaca?",
+          "en": "Where does the cow stay?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t06.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t06.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "în pădure"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "în grajd"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "în lac"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.literal.1.t06.q2",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Când o mulge fermierul?",
+          "en": "When does the farmer milk her?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t06.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t06.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "la prânz"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "seara"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "dimineața"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.literal.1.t06.q3",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Cine mulge vaca?",
+          "en": "Who milks the cow?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t06.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t06.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "fermierul"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "copilul"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "bunica"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.text.literal.1.t06.q4",
+        "skillId": "rom.text.literal.1",
+        "difficulty": 1,
+        "prompt": {
+          "ro": "Adevărat sau fals? Laptele ajunge în căni.",
+          "en": "True or false? The milk ends up in mugs."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.literal.1.t06.q4",
+          "kind": "item",
+          "title": "Question item.rom.text.literal.1.t06.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.literal.1.t06",
+      "kind": "item",
+      "title": "Text item.rom.text.literal.1.t06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  }
+]

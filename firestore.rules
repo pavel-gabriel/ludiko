@@ -71,6 +71,45 @@ service cloud.firestore {
                     && request.resource.data.status in ['open', 'resolved', 'dismissed'];
     }
 
+    // Push reminder subscriptions (docs/NOTIFICATIONS.md §3). One document per device, id = sha-256
+    // hex of the endpoint. No personal data. Clients (anonymous auth) may create/update/delete but
+    // never read or list: the sender reads with the Admin SDK, which bypasses these rules, and is
+    // the only writer of `lastSentDay` (clients may only keep it unchanged, which lets them update
+    // a document the sender has already touched).
+    match /pushSubscriptions/{subId} {
+      function validPushFields(d) {
+        return d.keys().hasAll(['endpoint', 'keys', 'hour', 'timezone', 'lang', 'active', 'createdAt', 'updatedAt'])
+          && d.keys().hasOnly(['endpoint', 'keys', 'hour', 'timezone', 'lang', 'active',
+                               'lastPlayedDay', 'lastSentDay', 'createdAt', 'updatedAt'])
+          && d.endpoint is string
+          && d.endpoint.size() <= 1024
+          && d.endpoint.matches('^https://.+')
+          && d['keys'] is map
+          && d['keys'].keys().hasOnly(['p256dh', 'auth'])
+          && d['keys'].keys().hasAll(['p256dh', 'auth'])
+          && d['keys'].p256dh is string && d['keys'].p256dh.size() > 0 && d['keys'].p256dh.size() <= 256
+          && d['keys'].auth is string && d['keys'].auth.size() > 0 && d['keys'].auth.size() <= 64
+          && d.hour is int && d.hour >= 8 && d.hour <= 20
+          && d.timezone is string && d.timezone.size() > 0 && d.timezone.size() <= 64
+          && d.lang in ['ro', 'en']
+          && d.active is bool
+          && (!('lastPlayedDay' in d)
+              || (d.lastPlayedDay is string && d.lastPlayedDay.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')))
+          && d.createdAt is number
+          && d.updatedAt is number;
+      }
+
+      allow read: if false;
+      allow create: if request.auth != null
+                    && subId.matches('^[0-9a-f]{64}$')
+                    && validPushFields(request.resource.data)
+                    && !('lastSentDay' in request.resource.data);
+      allow update: if request.auth != null
+                    && validPushFields(request.resource.data)
+                    && request.resource.data.get('lastSentDay', null) == resource.data.get('lastSentDay', null);
+      allow delete: if request.auth != null;
+    }
+
     // Templates: teachers can CRUD their own templates
     match /templates/{templateId} {
       allow read: if request.auth != null;

@@ -1,10 +1,14 @@
-import { useEffect, useId, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useId, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import type { SubjectId } from '@/engine/types'
 import type { ParentSummary } from '@/learner'
+import { isPushSupported, needsInstall } from '@/services/pushAvailability'
 import ProgressBar from './ProgressBar'
 import { subjectEmoji } from './subjects'
+
+/* Pulls in pushService (and Firebase): only fetched where reminders can work, i.e. configured + supported */
+const RemindersCard = lazy(() => import('./RemindersCard'))
 
 interface ParentViewProps {
   profileName: string
@@ -156,6 +160,12 @@ export default function ParentView({ profileName, summary, titleOf, onRedo }: Pa
           )}
         </section>
       ))}
+
+      {(isPushSupported() || needsInstall()) && (
+        <Suspense fallback={null}>
+          <RemindersCard />
+        </Suspense>
+      )}
 
       <div className={`${section} bg-ludiko-green/60`}>
         <h3 className={heading}>

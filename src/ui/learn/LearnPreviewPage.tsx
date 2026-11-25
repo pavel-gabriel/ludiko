@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { getSkillsBySubject } from '@/engine/content/registry'
 import { localize, type SkillState } from '@/engine/types'
 import type { ParentSummary } from '@/learner'
+import BitDone from './BitDone'
 import BreakOffer from './BreakOffer'
 import LearnHomeView from './LearnHomeView'
 import MissionComplete from './MissionComplete'
@@ -95,7 +96,7 @@ export default function LearnPreviewPage() {
           profile={profile}
           stars={48}
           playDays={3}
-          subjects={[{ subject: 'mat', placement: 'done', mission: { done: 1, total: 4, minutes: 9, complete: false } }]}
+          subjects={[{ subject: 'mat', placement: 'done', mission: { done: 1, total: 4, minutes: 9, complete: false }, bits: [{ index: 0, kind: 'warmup', done: true }, { index: 1, kind: 'island', done: false }, { index: 2, kind: 'challenge', done: false }] }]}
         />
       </Frame>
       <Frame id="home-done" title="Learner home: mission complete">
@@ -103,7 +104,7 @@ export default function LearnPreviewPage() {
           profile={profile}
           stars={60}
           playDays={5}
-          subjects={[{ subject: 'mat', placement: 'done', mission: { done: 4, total: 4, minutes: 9, complete: true } }]}
+          subjects={[{ subject: 'mat', placement: 'done', mission: { done: 4, total: 4, minutes: 9, complete: true }, bits: [{ index: 0, kind: 'warmup', done: true }, { index: 1, kind: 'island', done: true }, { index: 2, kind: 'challenge', done: true }] }]}
         />
       </Frame>
       <Frame id="check-intro" title="Check: intro">
@@ -138,7 +139,13 @@ export default function LearnPreviewPage() {
       <Frame id="mission-check-not-yet" title="Mission: challenge not yet">
         <StepCelebration kind="check" stars={1} passed={false} reward={null} onNext={noop} />
       </Frame>
-      <Frame id="mission-complete" title="Mission: complete">
+      <Frame id="bit-done" title="Bit: done, another one offered">
+        <BitDone kind="island" stars={2} reward={null} allDone={false} hasNext onNext={noop} onStop={noop} />
+      </Frame>
+      <Frame id="bit-done-last" title="Bit: last bit of the day">
+        <BitDone kind="challenge" stars={3} passed reward={{ stars: 3, sticker: '🐼', newSticker: true, saved: true }} allDone hasNext={false} onNext={noop} onStop={noop} />
+      </Frame>
+      <Frame id="mission-complete"title="Mission: complete">
         <MissionComplete onMap={noop} onHome={noop} fresh={false} />
       </Frame>
       <Frame id="map" title="Skill map">

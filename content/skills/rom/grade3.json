@@ -1,0 +1,123 @@
+[
+  {
+    "id": "rom.text.types.3",
+    "subject": "rom",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LLR-III-IV-2014",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Text narativ și text informativ",
+      "en": "Narrative and informative texts"
+    },
+    "prerequisites": [
+      "rom.text.mainidea.2"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.text.types.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.text.types.3",
+      "kind": "data",
+      "title": "Skill rom.text.types.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.text.characters.3",
+    "subject": "rom",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LLR-III-IV-2014",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Personajele: cum sunt și ce fac",
+      "en": "Characters: what they are like and what they do"
+    },
+    "prerequisites": [
+      "rom.text.inference.2"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.text.characters.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.text.characters.3",
+      "kind": "data",
+      "title": "Skill rom.text.characters.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.vocab.context.3",
+    "subject": "rom",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LLR-III-IV-2014",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Înțelesul cuvintelor din text",
+      "en": "Word meanings in context"
+    },
+    "prerequisites": [
+      "rom.vocab.synonym.2",
+      "rom.text.literal.2"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.vocab.context.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.vocab.context.3",
+      "kind": "data",
+      "title": "Skill rom.vocab.context.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  }
+]

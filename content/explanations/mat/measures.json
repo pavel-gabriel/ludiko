@@ -1,0 +1,1533 @@
+[
+  {
+    "id": "exp.clock.hour",
+    "skillId": "mat.clock.hour",
+    "title": {
+      "ro": "Ceasul arată ora fixă",
+      "en": "The clock shows a full hour"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ceasul are două limbi. Limba mică arată orele, iar limba mare arată minutele.",
+          "en": "A clock has two hands. The short hand shows the hours and the long hand shows the minutes."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 3,
+          "minutes": 0
+        }
+      },
+      {
+        "text": {
+          "ro": "Când limba mare arată spre 12, este o oră fixă.",
+          "en": "When the long hand points to 12, it is a full hour."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 6,
+          "minutes": 0
+        }
+      },
+      {
+        "text": {
+          "ro": "Limba mică arată spre 6, deci este ora 6. Scriem 6:00.",
+          "en": "The short hand points to 6, so it is 6 o'clock. We write 6:00."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 6,
+          "minutes": 0
+        }
+      },
+      {
+        "text": {
+          "ro": "Încearcă singur: aici limba mică arată spre 9, deci este ora 9.",
+          "en": "Try it yourself: here the short hand points to 9, so it is 9 o'clock."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 9,
+          "minutes": 0
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.clock.hour",
+      "kind": "explanation",
+      "title": "The clock shows a full hour",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.clock.half",
+    "skillId": "mat.clock.half",
+    "title": {
+      "ro": "Ora și jumătate",
+      "en": "Half past the hour"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "La ora 4 limba mare arată spre 12.",
+          "en": "At 4 o'clock the long hand points to 12."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 4,
+          "minutes": 0
+        }
+      },
+      {
+        "text": {
+          "ro": "După jumătate de oră, limba mare a ajuns spre 6. Au trecut 30 de minute.",
+          "en": "After half an hour the long hand has reached 6. 30 minutes have passed."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 4,
+          "minutes": 30
+        }
+      },
+      {
+        "text": {
+          "ro": "Limba mică este între 4 și 5. Spunem: ora 4 și jumătate.",
+          "en": "The short hand is between 4 and 5. We say: half past 4."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 4,
+          "minutes": 30
+        }
+      },
+      {
+        "text": {
+          "ro": "Se scrie 4:30. Peste încă 30 de minute va fi ora 5.",
+          "en": "We write 4:30. In another 30 minutes it will be 5 o'clock."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 5,
+          "minutes": 0
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.clock.half",
+      "kind": "explanation",
+      "title": "Half past the hour",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.clock.quarter",
+    "skillId": "mat.clock.quarter",
+    "title": {
+      "ro": "Ora și un sfert, ora fără un sfert",
+      "en": "Quarter past and quarter to"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un sfert de oră înseamnă 15 minute. Limba mare arată spre 3: ora 3 și un sfert.",
+          "en": "A quarter of an hour is 15 minutes. The long hand points to 3: quarter past 3."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 3,
+          "minutes": 15
+        }
+      },
+      {
+        "text": {
+          "ro": "La jumătate, limba mare arată spre 6: ora 3 și jumătate.",
+          "en": "At half past, the long hand points to 6."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 3,
+          "minutes": 30
+        }
+      },
+      {
+        "text": {
+          "ro": "După 45 de minute limba mare arată spre 9. Mai lipsește un sfert până la ora 4: ora 4 fără un sfert.",
+          "en": "After 45 minutes the long hand points to 9. A quarter is missing until 4: quarter to 4."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 3,
+          "minutes": 45
+        }
+      },
+      {
+        "text": {
+          "ro": "Se scrie 3:45. Peste un sfert de oră va fi ora 4.",
+          "en": "We write 3:45. In a quarter of an hour it will be 4 o'clock."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 4,
+          "minutes": 0
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.clock.quarter",
+      "kind": "explanation",
+      "title": "Quarter past and quarter to",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.clock.minutes",
+    "skillId": "mat.clock.minutes",
+    "title": {
+      "ro": "Citim minutele pe ceas",
+      "en": "Reading minutes on the clock"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Între două numere ale ceasului trec 5 minute. Limba mare arată spre 4: 4 × 5 = 20 de minute.",
+          "en": "Between two numbers on the clock, 5 minutes pass. The long hand points to 4: 4 × 5 = 20 minutes."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 2,
+          "minutes": 20
+        }
+      },
+      {
+        "text": {
+          "ro": "Limba mică e între 2 și 3. Este ora 2 și 20 de minute (2:20).",
+          "en": "The short hand is between 2 and 3. It is 20 minutes past 2 (2:20)."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 2,
+          "minutes": 20
+        }
+      },
+      {
+        "text": {
+          "ro": "Peste 30 de minute: 20 + 30 = 50. Ceasul arată 2:50.",
+          "en": "In 30 minutes: 20 + 30 = 50. The clock shows 2:50."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 2,
+          "minutes": 50
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu 50 de minute trecute, mai lipsesc 10 minute până la ora 3: ora 3 fără 10 minute.",
+          "en": "With 50 minutes gone, 10 minutes are missing until 3: 10 to 3."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 2,
+          "minutes": 50
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.clock.minutes",
+      "kind": "explanation",
+      "title": "Reading minutes on the clock",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.time.calendar",
+    "skillId": "mat.time.calendar",
+    "title": {
+      "ro": "Zilele, lunile și anul",
+      "en": "Days, months and the year"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "O săptămână are 7 zile: luni, marți, miercuri, joi, vineri, sâmbătă, duminică.",
+          "en": "A week has 7 days: Monday to Sunday."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 7,
+          "step": 1,
+          "marks": [
+            7
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Două săptămâni au 14 zile: 7 + 7 = 14.",
+          "en": "Two weeks have 14 days: 7 + 7 = 14."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 14,
+          "step": 1,
+          "marks": [
+            7,
+            14
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 7
+            },
+            {
+              "from": 7,
+              "to": 14
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Un an are 12 luni: ianuarie, februarie, martie… până la decembrie.",
+          "en": "A year has 12 months: January, February, March… up to December."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 12,
+          "step": 1,
+          "marks": [
+            12
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Un an are 12 luni, deci doi ani au 24 de luni.",
+          "en": "A year has 12 months, so two years have 24 months."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 24,
+          "step": 2,
+          "marks": [
+            12,
+            24
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 12
+            },
+            {
+              "from": 12,
+              "to": 24
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.time.calendar",
+      "kind": "explanation",
+      "title": "Days, months and the year",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.time.hm",
+    "skillId": "mat.time.hm",
+    "title": {
+      "ro": "O oră are 60 de minute",
+      "en": "An hour has 60 minutes"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Limba mare face un tur întreg al ceasului în 60 de minute. Deci 1 oră = 60 de minute.",
+          "en": "The long hand goes once around the clock in 60 minutes. So 1 hour = 60 minutes."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 5,
+          "minutes": 0
+        }
+      },
+      {
+        "text": {
+          "ro": "Jumătate de oră are 30 de minute, iar un sfert de oră are 15 minute.",
+          "en": "Half an hour is 30 minutes and a quarter of an hour is 15 minutes."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 60,
+          "step": 15,
+          "marks": [
+            15,
+            30,
+            60
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "2 ore = 60 + 60 = 120 de minute.",
+          "en": "2 hours = 60 + 60 = 120 minutes."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 120,
+          "step": 20,
+          "marks": [
+            60,
+            120
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 60
+            },
+            {
+              "from": 60,
+              "to": 120
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "De la ora 3 la ora 7 sunt 4 ore: numărăm 4 sărituri pe ceas.",
+          "en": "From 3 o'clock to 7 o'clock is 4 hours: count 4 steps around the clock."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 3,
+          "to": 7,
+          "step": 1,
+          "marks": [
+            3,
+            7
+          ],
+          "jumps": [
+            {
+              "from": 3,
+              "to": 7
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.time.hm",
+      "kind": "explanation",
+      "title": "An hour has 60 minutes",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.money.recognise",
+    "skillId": "mat.money.recognise",
+    "title": {
+      "ro": "Numărăm banii",
+      "en": "Counting money"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Banii noștri se numesc lei. Aici este o bancnotă de 5 lei și una de 1 leu.",
+          "en": "Our money is called lei. Here are a 5 lei note and a 1 leu note."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            500,
+            100
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Adunăm valorile: 10 + 5 + 1 = 16. Avem 16 lei.",
+          "en": "Add the values: 10 + 5 + 1 = 16. We have 16 lei."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            1000,
+            500,
+            100
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Monedele mici se numesc bani. Aici sunt 50 de bani, 10 bani și 10 bani.",
+          "en": "Small coins are called bani. Here are 50 bani, 10 bani and 10 bani."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            50,
+            10,
+            10
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "50 + 10 + 10 = 70. Avem 70 de bani.",
+          "en": "50 + 10 + 10 = 70. We have 70 bani."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            50,
+            10,
+            10
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.money.recognise",
+      "kind": "explanation",
+      "title": "Counting money",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.money.add",
+    "skillId": "mat.money.add",
+    "title": {
+      "ro": "Cât costă totul?",
+      "en": "How much does it all cost?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un caiet costă 8 lei și un pix costă 5 lei. Aflăm cât costă la un loc.",
+          "en": "A notebook costs 8 lei and a pen costs 5 lei. We find the cost together."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            500,
+            100,
+            100,
+            100,
+            500
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Pornim de la 8 și mai adăugăm 5: 8 + 2 = 10, apoi 10 + 3 = 13.",
+          "en": "Start at 8 and add 5 more: 8 + 2 = 10, then 10 + 3 = 13."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            8,
+            10,
+            13
+          ],
+          "jumps": [
+            {
+              "from": 8,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 13
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Împreună costă 13 lei.",
+          "en": "Together they cost 13 lei."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            1000,
+            100,
+            100,
+            100
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.money.add",
+      "kind": "explanation",
+      "title": "How much does it all cost?",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.money.change",
+    "skillId": "mat.money.change",
+    "title": {
+      "ro": "Cât rest primim?",
+      "en": "How much change do we get?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Plătim cu 20 de lei un lucru care costă 13 lei.",
+          "en": "We pay 20 lei for something that costs 13 lei."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            2000
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Restul este cât lipsește de la 13 până la 20. Sărim de la 13 la 20.",
+          "en": "The change is what is missing from 13 up to 20. Jump from 13 to 20."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            13,
+            20
+          ],
+          "jumps": [
+            {
+              "from": 13,
+              "to": 20
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "20 − 13 = 7. Primim un rest de 7 lei.",
+          "en": "20 − 13 = 7. We get 7 lei change."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            500,
+            100,
+            100
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.money.change",
+      "kind": "explanation",
+      "title": "How much change do we get?",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.money.bani",
+    "skillId": "mat.money.bani",
+    "title": {
+      "ro": "1 leu = 100 de bani",
+      "en": "1 leu = 100 bani"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Două monede de 50 de bani fac 100 de bani.",
+          "en": "Two 50 bani coins make 100 bani."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            50,
+            50
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "100 de bani sunt cât 1 leu: 1 leu = 100 de bani.",
+          "en": "100 bani are worth 1 leu: 1 leu = 100 bani."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            100
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "3 lei și 50 de bani: 3 lei = 300 de bani, plus 50 de bani.",
+          "en": "3 lei and 50 bani: 3 lei = 300 bani, plus 50 bani."
+        },
+        "visual": {
+          "kind": "money",
+          "amounts": [
+            100,
+            100,
+            100,
+            50
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "300 + 50 = 350. Deci 3 lei și 50 de bani = 350 de bani.",
+          "en": "300 + 50 = 350. So 3 lei and 50 bani = 350 bani."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 400,
+          "step": 50,
+          "marks": [
+            300,
+            350
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 300
+            },
+            {
+              "from": 300,
+              "to": 350
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.money.bani",
+      "kind": "explanation",
+      "title": "1 leu = 100 bani",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.length.cm",
+    "skillId": "mat.length.cm",
+    "title": {
+      "ro": "Măsurăm cu rigla",
+      "en": "Measuring with a ruler"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Rigla are un 0 la început. Punem capătul obiectului chiar la 0.",
+          "en": "A ruler starts with 0. Put the end of the object exactly at 0."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            0
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Citim numărul unde se termină obiectul: aici 8. Obiectul măsoară 8 cm.",
+          "en": "Read the number where the object ends: here 8. The object is 8 cm long."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            8
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 8
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă obiectul începe la 3 și se termină la 9, măsoară 9 − 3 = 6 cm.",
+          "en": "If the object starts at 3 and ends at 9, it is 9 − 3 = 6 cm long."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            3,
+            9
+          ],
+          "jumps": [
+            {
+              "from": 3,
+              "to": 9
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.length.cm",
+      "kind": "explanation",
+      "title": "Measuring with a ruler",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.length.m",
+    "skillId": "mat.length.m",
+    "title": {
+      "ro": "1 m = 100 cm",
+      "en": "1 m = 100 cm"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pentru lucruri lungi folosim metrul (m). Pentru lucruri scurte folosim centimetrul (cm).",
+          "en": "For long things we use metres (m). For short things we use centimetres (cm)."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 100,
+          "step": 10,
+          "marks": [
+            100
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Un metru are 100 de centimetri: 1 m = 100 cm.",
+          "en": "One metre has 100 centimetres: 1 m = 100 cm."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 100,
+          "step": 10,
+          "marks": [
+            100
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 100
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "2 m = 100 cm + 100 cm = 200 cm.",
+          "en": "2 m = 100 cm + 100 cm = 200 cm."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 200,
+          "step": 20,
+          "marks": [
+            100,
+            200
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 100
+            },
+            {
+              "from": 100,
+              "to": 200
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "150 cm = 100 cm + 50 cm = 1 m și 50 cm.",
+          "en": "150 cm = 100 cm + 50 cm = 1 m and 50 cm."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 200,
+          "step": 25,
+          "marks": [
+            100,
+            150
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 100
+            },
+            {
+              "from": 100,
+              "to": 150
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.length.m",
+      "kind": "explanation",
+      "title": "1 m = 100 cm",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.measure.mass.capacity",
+    "skillId": "mat.measure.mass.capacity",
+    "title": {
+      "ro": "Kilograme și litri",
+      "en": "Kilograms and litres"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Greutatea o măsurăm în kilograme (kg), iar lucrurile mici în grame (g).",
+          "en": "We measure weight in kilograms (kg), and small things in grams (g)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Un sac are 5 kg, altul are 7 kg. Împreună: 5 + 7 = 12 kg.",
+          "en": "One sack is 5 kg, another is 7 kg. Together: 5 + 7 = 12 kg."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 15,
+          "step": 1,
+          "marks": [
+            5,
+            12
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 5
+            },
+            {
+              "from": 5,
+              "to": 12
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Lichidele le măsurăm în litri (l). Aici sunt 3 sticle de câte 1 l: 3 l.",
+          "en": "We measure liquids in litres (l). Here are 3 bottles of 1 l each: 3 l."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍼",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru cantități mici folosim mililitri (ml), de exemplu un pahar mic.",
+          "en": "For small amounts we use millilitres (ml), for example a small glass."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥛",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.measure.mass.capacity",
+      "kind": "explanation",
+      "title": "Kilograms and litres",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.measure.convert",
+    "skillId": "mat.measure.convert",
+    "title": {
+      "ro": "Din unități mari în unități mici",
+      "en": "From big units to small units"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "1 kg = 1000 g, 1 l = 1000 ml, 1 km = 1000 m, 1 m = 100 cm.",
+          "en": "1 kg = 1000 g, 1 l = 1000 ml, 1 km = 1000 m, 1 m = 100 cm."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 100,
+          "marks": [
+            1000
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 1000
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Din unitate mare în unitate mică înmulțim: 3 kg = 3 × 1000 g = 3000 g.",
+          "en": "From a big unit to a small unit we multiply: 3 kg = 3 × 1000 g = 3000 g."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 3000,
+          "step": 500,
+          "marks": [
+            1000,
+            2000,
+            3000
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 1000
+            },
+            {
+              "from": 1000,
+              "to": 2000
+            },
+            {
+              "from": 2000,
+              "to": 3000
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Din unitate mică în unitate mare împărțim: 2000 ml = 2 l.",
+          "en": "From a small unit to a big unit we divide: 2000 ml = 2 l."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 2000,
+          "step": 500,
+          "marks": [
+            1000,
+            2000
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 1000
+            },
+            {
+              "from": 1000,
+              "to": 2000
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "2 kg 300 g = 2000 g + 300 g = 2300 g.",
+          "en": "2 kg 300 g = 2000 g + 300 g = 2300 g."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 2500,
+          "step": 500,
+          "marks": [
+            2000,
+            2300
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 2000
+            },
+            {
+              "from": 2000,
+              "to": 2300
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.measure.convert",
+      "kind": "explanation",
+      "title": "From big units to small units",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fraction.half",
+    "skillId": "mat.fraction.half",
+    "title": {
+      "ro": "Jumătate și un sfert",
+      "en": "A half and a quarter"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un cerc împărțit în 2 părți egale: o parte este o jumătate (1/2).",
+          "en": "A circle split into 2 equal parts: one part is a half (1/2)."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 2,
+          "shape": "circle"
+        }
+      },
+      {
+        "text": {
+          "ro": "Un cerc împărțit în 4 părți egale: o parte este un sfert (1/4).",
+          "en": "A circle split into 4 equal parts: one part is a quarter (1/4)."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 4,
+          "shape": "circle"
+        }
+      },
+      {
+        "text": {
+          "ro": "Trei părți din patru: trei sferturi (3/4).",
+          "en": "Three parts out of four: three quarters (3/4)."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 3,
+          "denominator": 4,
+          "shape": "circle"
+        }
+      },
+      {
+        "text": {
+          "ro": "Jumătate din 8 mere sunt 4 mere: împărțim în 2 grupe egale.",
+          "en": "Half of 8 apples is 4 apples: split into 2 equal groups."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 8,
+          "groups": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fraction.half",
+      "kind": "explanation",
+      "title": "A half and a quarter",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fraction.set",
+    "skillId": "mat.fraction.set",
+    "title": {
+      "ro": "Cât este 1/3 din 12?",
+      "en": "What is 1/3 of 12?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 12 stele. Pentru 1/3 le împărțim în 3 grupe egale.",
+          "en": "We have 12 stars. For 1/3 we split them into 3 equal groups."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 12,
+          "groups": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare grupă are 4 stele, pentru că 12 : 3 = 4. Deci 1/3 din 12 = 4.",
+          "en": "Each group has 4 stars because 12 ÷ 3 = 4. So 1/3 of 12 = 4."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru 2/3 luăm 2 grupe: 2 × 4 = 8. Deci 2/3 din 12 = 8.",
+          "en": "For 2/3 we take 2 groups: 2 × 4 = 8. So 2/3 of 12 = 8."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 2,
+          "denominator": 3,
+          "shape": "bar"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fraction.set",
+      "kind": "explanation",
+      "title": "What is 1/3 of 12?",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fraction.compare",
+    "skillId": "mat.fraction.compare",
+    "title": {
+      "ro": "Care fracție este mai mare?",
+      "en": "Which fraction is bigger?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "3/8 înseamnă 3 părți din 8 părți egale.",
+          "en": "3/8 means 3 parts out of 8 equal parts."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 3,
+          "denominator": 8,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "5/8 înseamnă 5 părți din aceleași 8 părți egale.",
+          "en": "5/8 means 5 parts out of the same 8 equal parts."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 5,
+          "denominator": 8,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Părțile au aceeași mărime, deci are mai mult cea cu mai multe părți: 3/8 < 5/8.",
+          "en": "The parts are the same size, so the one with more parts is bigger: 3/8 < 5/8."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 5,
+          "denominator": 8,
+          "shape": "bar"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fraction.compare",
+      "kind": "explanation",
+      "title": "Which fraction is bigger?",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geom.shapes",
+    "skillId": "mat.geom.shapes",
+    "title": {
+      "ro": "Laturi și colțuri",
+      "en": "Sides and corners"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Triunghiul are 3 laturi și 3 colțuri.",
+          "en": "A triangle has 3 sides and 3 corners."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔺",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Pătratul are 4 laturi egale și 4 colțuri.",
+          "en": "A square has 4 equal sides and 4 corners."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🟦",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Dreptunghiul are tot 4 laturi și 4 colțuri, dar laturile sunt egale doar două câte două.",
+          "en": "A rectangle also has 4 sides and 4 corners, but its sides are equal only in pairs."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🟩",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Cercul nu are nici laturi, nici colțuri.",
+          "en": "A circle has no sides and no corners."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭕",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.geom.shapes",
+      "kind": "explanation",
+      "title": "Sides and corners",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geom.perimeter",
+    "skillId": "mat.geom.perimeter",
+    "title": {
+      "ro": "Perimetrul este suma laturilor",
+      "en": "Perimeter is the sum of the sides"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Perimetrul unei figuri este lungimea drumului în jurul ei: adunăm toate laturile.",
+          "en": "The perimeter of a shape is the length of the path around it: add all the sides."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 16,
+          "step": 1,
+          "marks": [
+            0
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Triunghi cu laturile de 4 cm, 5 cm și 6 cm: 4 + 5 + 6 = 15 cm.",
+          "en": "A triangle with sides of 4 cm, 5 cm and 6 cm: 4 + 5 + 6 = 15 cm."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 16,
+          "step": 1,
+          "marks": [
+            4,
+            9,
+            15
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 4
+            },
+            {
+              "from": 4,
+              "to": 9
+            },
+            {
+              "from": 9,
+              "to": 15
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Pătrat cu latura de 5 cm: 5 + 5 + 5 + 5 = 20 cm.",
+          "en": "A square with a side of 5 cm: 5 + 5 + 5 + 5 = 20 cm."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            5,
+            10,
+            15,
+            20
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 5
+            },
+            {
+              "from": 5,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 15
+            },
+            {
+              "from": 15,
+              "to": 20
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Dreptunghi de 7 cm și 3 cm: 7 + 3 + 7 + 3 = 20 cm.",
+          "en": "A rectangle of 7 cm and 3 cm: 7 + 3 + 7 + 3 = 20 cm."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            7,
+            10,
+            17,
+            20
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 7
+            },
+            {
+              "from": 7,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 17
+            },
+            {
+              "from": 17,
+              "to": 20
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.geom.perimeter",
+      "kind": "explanation",
+      "title": "Perimeter is the sum of the sides",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "rom.letters.sound.0",
+    "subject": "rom",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "1.2"
+      },
+      {
+        "programa": "CLR-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Sunetul și litera de la începutul cuvântului",
+      "en": "The first sound and letter of a word"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "letters",
+        "params": {
+          "kinds": [
+            "initial-letter",
+            "initial-picture",
+            "final-letter"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.letters.sound.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.letters.sound.0",
+      "kind": "data",
+      "title": "Skill rom.letters.sound.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.letters.vowel.0",
+    "subject": "rom",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Vocale și consoane",
+      "en": "Vowels and consonants"
+    },
+    "prerequisites": [
+      "rom.letters.sound.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "letters",
+        "params": {
+          "kinds": [
+            "vowel-pick",
+            "vowel-sort",
+            "vowel-count"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.letters.vowel.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.letters.vowel.0",
+      "kind": "data",
+      "title": "Skill rom.letters.vowel.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.letters.case.0",
+    "subject": "rom",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Litera mare și litera mică",
+      "en": "Capital and small letters"
+    },
+    "prerequisites": [
+      "rom.letters.sound.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "letters",
+        "params": {
+          "kinds": [
+            "case-choice",
+            "case-match"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.letters.case.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.letters.case.0",
+      "kind": "data",
+      "title": "Skill rom.letters.case.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.syll.count.0",
+    "subject": "rom",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "Câte silabe are cuvântul?",
+      "en": "Counting the syllables of a word"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "syllables",
+        "params": {
+          "kinds": [
+            "count"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.syll.count.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.syll.count.0",
+      "kind": "data",
+      "title": "Skill rom.syll.count.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.word.picture.0",
+    "subject": "rom",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Cuvântul și imaginea lui",
+      "en": "A word and its picture"
+    },
+    "prerequisites": [
+      "rom.letters.sound.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "word-picture",
+        "params": {
+          "kinds": [
+            "word-to-picture",
+            "match"
+          ],
+          "level": 1
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.word.picture.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.word.picture.0",
+      "kind": "data",
+      "title": "Skill rom.word.picture.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  }
+]
