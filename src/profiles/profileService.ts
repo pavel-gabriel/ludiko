@@ -5,6 +5,7 @@ import {
   MISSIONS_KEPT,
   NICKNAME_MAX,
   type ChildProfile,
+  type ClassLink,
   type ProfileBackup,
   type ProfileLanguage,
   type ProfileProgress,
@@ -78,6 +79,27 @@ export async function updateProfile(id: string, patch: Partial<ProfileInput>): P
     ...(patch.language !== undefined ? { language: patch.language } : {}),
     updatedAt: Date.now(),
   }
+  await dbPut('profiles', next)
+  return next
+}
+
+const isStr = (v: unknown, max: number): v is string => typeof v === 'string' && v.length > 0 && v.length <= max
+
+/** A class link read from storage or a backup file, or undefined if it is not well formed */
+export function sanitizeClassLink(v: unknown): ClassLink | undefined {
+  if (typeof v !== 'object' || v === null) return undefined
+  const l = v as Record<string, unknown>
+  if (!isStr(l.classId, 128) || !isStr(l.seatId, 64) || !isStr(l.joinCode, 16) || !isStr(l.className, 120)) return undefined
+  return { classId: l.classId, seatId: l.seatId, joinCode: l.joinCode, className: l.className }
+}
+
+/** Set (or, with null, remove) the profile's class link. Does not bump `updatedAt`. */
+export async function setClassLink(id: string, link: ClassLink | null): Promise<ChildProfile> {
+  const existing = await getProfile(id)
+  if (!existing) throw new Error('profile not found')
+  const { classLink: _old, ...rest } = existing
+  void _old
+  const next: ChildProfile = link ? { ...rest, classLink: { ...link } } : rest
   await dbPut('profiles', next)
   return next
 }
@@ -267,6 +289,10 @@ export async function importProfile(text: string): Promise<ChildProfile> {
     nickname: validateNickname(b.profile.nickname),
     updatedAt: Date.now(),
   }
+  // class link: kept when well formed, dropped otherwise (never trusted blindly)
+  const classLink = sanitizeClassLink(b.profile.classLink)
+  if (classLink) profile.classLink = classLink
+  else delete profile.classLink
   await dbPut('profiles', profile)
   const g = b.progress
   const isObj = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v)

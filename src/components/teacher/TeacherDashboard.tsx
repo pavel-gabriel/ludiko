@@ -89,7 +89,7 @@ export default function TeacherDashboard() {
             {t('teacher.templates')}
           </Button>
         </div>
-        <div className="mb-6">
+        <div className="mb-3">
           <Button
             variant="purple"
             size="md"
@@ -97,6 +97,16 @@ export default function TeacherDashboard() {
             onClick={() => navigate('/interactive')}
           >
             {t('interactive.button')}
+          </Button>
+        </div>
+        <div className="mb-6">
+          <Button
+            variant="green"
+            size="md"
+            className="w-full"
+            onClick={() => navigate('/teacher/classes')}
+          >
+            {t('classroom.myClasses')}
           </Button>
         </div>
 

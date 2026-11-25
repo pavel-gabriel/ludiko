@@ -2,14 +2,14 @@
  * `measure` generator: length (cm, m, km), mass (kg, g) and capacity (l, ml).
  * params: units (plain units to compare/add), unitNames (units asked in `unit` items), pairs (conversions, "m-cm" "km-m" "kg-g" "l-ml"),
  *         kinds (ruler, compare, convert, add, unit, tf), maxVal (bound for plain values), max.
- *  - ruler:   number-line used as a ruler ("Cât măsoară creionul?")
+ *  - ruler:   ruler visual ("Cât măsoară creionul?")
  *  - compare: same unit (choice / fill-gap with < > =) or mixed units ("1 m {{gap}} 90 cm")
  *  - convert: "3 m = {{gap}} cm", "2 kg 300 g = ? g"
  *  - add:     two quantities added or subtracted
  *  - unit:    which unit measures a given thing
  *  - tf:      true/false statements
  */
-import type { ChoiceItem, FillGapItem, Item, NumberInputItem, TrueFalseItem } from '../../types';
+import type { ChoiceItem, FillGapItem, Item, NumberInputItem, TrueFalseItem, VisualSpec } from '../../types';
 import type { GeneratorFn } from './registry';
 import { baseFields, chance, optionCount, paramInt, paramStrings, pick, randInt, shuffle, weighted } from './util';
 import { stringOptions, textOptions } from './measureText';
@@ -88,17 +88,17 @@ function ruler(ctx: Ctx, maxVal: number): Item {
     b = randInt(rng, a + 2, Math.max(a + 2, top));
   } else b = randInt(rng, 2, top);
   const len = b - a;
-  const visual = {
-    kind: 'number-line' as const,
-    from: 0,
+  const visual: VisualSpec = {
+    kind: 'ruler',
     to: top,
-    step: 1,
-    marks: a ? [a, b] : [b],
-    jumps: [{ from: a, to: b }],
+    unit: 'cm',
+    ...(a ? { from: a } : {}),
+    objectEnd: b,
+    objectLabel: { ro: thing.ro, en: thing.en },
   };
   const prompt = offset
     ? { ro: `${thing.ro} începe la ${a} și se termină la ${b} pe riglă. Câți cm măsoară?`, en: `${thing.en} starts at ${a} and ends at ${b} on the ruler. How many cm long is it?` }
-    : { ro: `${thing.ro} începe de la 0 pe riglă și ajunge până la semnul colorat. Câți cm măsoară?`, en: `${thing.en} starts at 0 on the ruler and reaches the coloured mark. How many cm long is it?` };
+    : { ro: `${thing.ro} începe de la 0 pe riglă. Câți cm măsoară?`, en: `${thing.en} starts at 0 on the ruler. How many cm long is it?` };
   if (chance(rng, 0.5)) {
     const item: NumberInputItem = { ...baseFields(ctx, prompt, visual), type: 'number-input', correct: len };
     return item;

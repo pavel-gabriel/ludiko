@@ -183,6 +183,8 @@ Fluency modes (Race, Sprint) are offered only for skills that are already `pract
 5. **Later:** volunteer reviewers (pedagogy-faculty students doing teaching practice, teachers). Items move `beta → reviewed`.
 6. **Curriculum versioning:** content is tagged by programa version, so when the programa changes (e.g. the proposed "Științe" merge for V–VII) we remap skills instead of rewriting them.
 
+**Admin access to the report queue:** Firebase email login + `admins/{uid}` allow-list, enforced in Firestore rules. Setup steps: [`ADMIN.md`](./ADMIN.md).
+
 ## 10. Reach: anywhere, on any phone
 
 - **Offline-first PWA:** a service worker caches the app shell and content bundles per subject and grade; progress is stored locally (IndexedDB) and synced when online.
@@ -242,7 +244,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 - [x] Offline PWA (service worker, content bundle caching), performance budget in CI
 - [x] Explanation frames + first SVG visual kit (number line, blocks, clock, coins)
 - [x] "Raportează o greșeală" button + admin queue (⚠️ needs real admin auth before launch)
-- [ ] Rebuild the existing games as modes over items (Race, Sprint, Memory, Duel)
+- [x] Rebuild the existing games as modes over items (Race, Sprint, Memory, Duel) — rooms with `settings.skillIds` run on items (`src/services/itemGame.ts`, `roomGame.ts`); v1 rooms and Shape Match keep the v1 generators
 
 ### Phase 1A — Math 0–IV: check → gaps → missions
 - [x] Math skill graph 0–IV with prerequisites, tagged to MEM/Matematică competences — 63 skills (0–II core, III–IV numbers & operations, I–IV measures); **competence codes to verify**
@@ -263,7 +265,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 
 ### Phase 1C — Parents & teachers
 - [ ] Optional parent account, sync, weekly plain-language summary
-- [ ] Teacher class view: competence heatmap, groups, assign missions, PDF export
+- [x] Teacher class view: competence heatmap, groups, class-wide assignments, CSV export, seats + join codes (docs/CLASSROOM.md; PDF export and per-group assignments still open)
 - [ ] Live class modes rebuilt on items: Boss battle, Class goal, Race
 
 ### Phase 1D — Other primary subjects

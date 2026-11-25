@@ -396,13 +396,14 @@ describe('measure correctness', () => {
     for (const id of ['mat.length.cm', 'mat.length.m', 'mat.measure.mass.capacity', 'mat.measure.convert']) {
       let conv = 0;
       for (const it of itemsOf(id)) {
-        if (it.visual?.kind === 'number-line' && it.visual.jumps?.length === 1) {
-          const j = it.visual.jumps[0];
-          const len = j.to - j.from;
+        if (it.visual?.kind === 'ruler' && it.visual.objectEnd !== undefined) {
+          const len = it.visual.objectEnd - (it.visual.from ?? 0);
           const ans = it.type === 'number-input' ? it.correct : Number(correctText(it as ChoiceItem));
           expect(ans, it.id).toBe(len);
-          expect(j.to).toBeLessThanOrEqual(it.visual.to);
+          expect(it.visual.objectEnd).toBeLessThanOrEqual(it.visual.to);
+          expect(it.visual.unit).toBe('cm');
         }
+        expect(it.visual?.kind === 'number-line' && it.visual.jumps?.length === 1 && id === 'mat.length.cm', it.id).toBe(false);
         if (it.type === 'fill-gap' && it.options?.join() === '<,>,=') {
           const m = /^(\d+) (\w+) \{\{gap\}\} (\d+) (\w+)$/.exec(it.template.ro)!;
           const units: Record<string, number> = { km: 100000, m: 100, cm: 1, kg: 1000, g: 1, l: 1000, ml: 1 };

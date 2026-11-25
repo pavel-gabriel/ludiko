@@ -152,6 +152,33 @@ export interface Bit {
   done: boolean;
 }
 
+/* --- class assignments (docs/CLASSROOM.md §4): an extra bit, "Tema de la clasă" --- */
+
+/** One assigned skill with the child's own state; done = practised or mastered */
+export interface AssignmentSkill {
+  skillId: string;
+  state: SkillState;
+  done: boolean;
+}
+
+/** A teacher's assignment as the child sees it on /learn. Done-ness is derived from skill states, never stored. */
+export interface AssignmentBit {
+  kind: 'assignment';
+  assignmentId: string;
+  title: string;
+  subject: SubjectId;
+  /** YYYY-MM-DD */
+  dueDay: string;
+  /** Whole local days until dueDay: 0 = today, negative = past due */
+  daysLeft: number;
+  skills: AssignmentSkill[];
+  doneCount: number;
+  total: number;
+  done: boolean;
+  /** Not done and past the due day (shown gently: "you can still do it") */
+  overdue: boolean;
+}
+
 export interface LearnerService {
   /**
    * Today's bits (1–3), derived from the stored mission: stable for the day, offline too.
@@ -197,4 +224,10 @@ export interface LearnerService {
   getSkillMap(profileId: string, subject: SubjectId, now?: number): Promise<SkillMapNode[]>;
   getLevelHistory(profileId: string, subject: SubjectId): Promise<LevelHistoryEntry[]>;
   getParentSummary(profileId: string, now?: number): Promise<ParentSummary>;
+
+  /**
+   * Assignments from the child's class, from the locally cached copy (works offline; refreshed in the
+   * background by src/classroom/syncGate). Empty when the profile has no classLink. Open ones first.
+   */
+  getClassAssignments(profileId: string, now?: number): Promise<AssignmentBit[]>;
 }

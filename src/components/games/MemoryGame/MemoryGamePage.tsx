@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
-import { generateMemoryCards } from '@/services/gameEngine';
+import { buildRoomMemoryCards } from '@/services/roomGame';
 import {
   initMemoryGameState,
   listenToGameState,
@@ -71,7 +71,7 @@ export default function MemoryGamePage() {
   /* ----- STEP 1: Host generates memory cards ----- */
   useEffect(() => {
     if (!room || !isHost || !settings) return;
-    const memCards = generateMemoryCards(totalPairs);
+    const memCards = buildRoomMemoryCards(settings);
     const playerIds = room.players.map((p) => p.id);
     initMemoryGameState(room.id, memCards, playerIds);
   }, [room?.id, isHost]);
@@ -210,7 +210,7 @@ export default function MemoryGamePage() {
         finishedRef.current = false;
         setShowCountdown(true);
         setCountdown(COUNTDOWN_SECONDS);
-        const newCards = generateMemoryCards(totalPairs);
+        const newCards = buildRoomMemoryCards(settings!);
         setCards(newCards);
         await initMemoryGameState(room.id, newCards, [currentPlayer.id]);
       } else {

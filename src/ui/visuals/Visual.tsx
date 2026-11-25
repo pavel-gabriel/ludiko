@@ -9,6 +9,8 @@ import Money from './Money'
 import Objects from './Objects'
 import FractionVisual from './FractionVisual'
 import ImageVisual from './ImageVisual'
+import Shape from './Shape'
+import Ruler from './Ruler'
 import { visualLabel } from './labels'
 
 export type VisualSize = 'sm' | 'md' | 'lg'
@@ -61,6 +63,15 @@ export default function Visual({ spec, size = 'md', showLabels = true, className
       break
     case 'image':
       svg = <ImageVisual src={spec.media.src} alt={localize(spec.media.alt, lang)} label={label} />
+      break
+    case 'shape':
+      svg = <Shape shape={spec.shape} sides={spec.sides} unit={spec.unit} hideSide={spec.hideSide} label={label} lang={lang} />
+      break
+    case 'ruler':
+      svg = (
+        <Ruler to={spec.to} unit={spec.unit} from={spec.from} objectEnd={spec.objectEnd}
+          objectLabel={spec.objectLabel ? localize(spec.objectLabel, lang) : undefined} label={label} lang={lang} />
+      )
       break
   }
 

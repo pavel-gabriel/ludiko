@@ -23,7 +23,9 @@ export const ITEM_TYPES = [
 
 export const SUBJECT_IDS = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'] as const;
 export const REVIEW_STATUSES = ['auto-checked', 'beta', 'reviewed'] as const;
-export const VISUAL_KINDS = ['number-line', 'base10-blocks', 'clock', 'money', 'objects', 'fraction', 'image'] as const;
+export const VISUAL_KINDS = ['number-line', 'base10-blocks', 'clock', 'money', 'objects', 'fraction', 'shape', 'ruler', 'image'] as const;
+
+const SHAPE_SIDE_COUNTS: Record<string, number[]> = { triangle: [3], square: [1, 4], rectangle: [2, 4], circle: [] };
 
 export const GAP_MARKER = '{{gap}}';
 export const MIN_FRAMES = 2;
@@ -135,6 +137,50 @@ export function validateVisual(v: unknown, where: string): string[] {
         errors.push(`${where}: "shape" must be "circle" or "bar"`);
       }
       break;
+    case 'shape': {
+      fields(['shape', 'sides', 'unit', 'hideSide']);
+      const shape = v.shape as string;
+      if (typeof shape !== 'string' || !(shape in SHAPE_SIDE_COUNTS)) {
+        errors.push(`${where}: "shape" must be one of ${Object.keys(SHAPE_SIDE_COUNTS).join(', ')}`);
+        break;
+      }
+      const allowed = SHAPE_SIDE_COUNTS[shape];
+      if (v.sides !== undefined) {
+        if (!Array.isArray(v.sides) || !v.sides.every((s) => isNum(s) && s > 0)) {
+          errors.push(`${where}: "sides" must be an array of positive numbers`);
+        } else if (!allowed.includes(v.sides.length)) {
+          errors.push(
+            allowed.length
+              ? `${where}: a ${shape} needs ${allowed.join(' or ')} side value(s), got ${v.sides.length}`
+              : `${where}: a circle has no "sides"`,
+          );
+        }
+      }
+      if (v.unit !== undefined && !isNonEmpty(v.unit)) errors.push(`${where}: "unit" must be a non-empty string`);
+      if (v.hideSide !== undefined) {
+        const n = Array.isArray(v.sides) ? v.sides.length : 0;
+        if (!isInt(v.hideSide) || v.hideSide < 0 || v.hideSide >= n) {
+          errors.push(`${where}: "hideSide" must be an index into "sides" (0-${Math.max(0, n - 1)})`);
+        }
+      }
+      break;
+    }
+    case 'ruler': {
+      fields(['to', 'unit', 'from', 'objectEnd', 'objectLabel']);
+      if (!isInt(v.to) || v.to < 1 || v.to > 100) errors.push(`${where}: "to" must be an integer 1-100`);
+      if (v.unit !== 'cm' && v.unit !== 'm') errors.push(`${where}: "unit" must be "cm" or "m"`);
+      if (v.from !== undefined && !(isNum(v.from) && v.from >= 0)) errors.push(`${where}: "from" must be a number >= 0`);
+      if (v.objectEnd !== undefined) {
+        const from = isNum(v.from) ? v.from : 0;
+        if (!isNum(v.objectEnd)) errors.push(`${where}: "objectEnd" must be a number`);
+        else {
+          if (v.objectEnd <= from) errors.push(`${where}: "from" must be less than "objectEnd"`);
+          if (isNum(v.to) && v.objectEnd > v.to) errors.push(`${where}: "objectEnd" must not exceed "to"`);
+        }
+      } else if (v.from !== undefined) errors.push(`${where}: "from" needs "objectEnd"`);
+      if (v.objectLabel !== undefined) errors.push(...validateLocalizedText(v.objectLabel, `${where}.objectLabel`));
+      break;
+    }
     case 'image':
       fields(['media']);
       errors.push(...validateMediaRef(v.media, `${where}.media`, 'image'));

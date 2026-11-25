@@ -1,4 +1,4 @@
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs } from 'firebase/firestore';
 import { db, firebaseEnabled } from '@/services/firebase';
 import type { ClassroomSession, StudentSessionResult } from '@/utils/types';
 
@@ -36,16 +36,33 @@ export interface RecentSessionRow {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Admin PIN guard                                                    */
+/*  Admin gate (Firebase email auth + admins/{uid} doc)                */
 /* ------------------------------------------------------------------ */
 
+export type AdminAccess = 'admin' | 'not-admin' | 'anonymous' | 'signed-out' | 'unavailable';
+
+/** True when `admins/{uid}` exists. Rules let a user read only their own doc. */
+export async function checkIsAdmin(uid: string): Promise<boolean> {
+  if (!firebaseEnabled) return false;
+  try {
+    const snap = await getDoc(doc(db, 'admins', uid));
+    return snap.exists();
+  } catch {
+    return false;
+  }
+}
+
 /**
- * Verify a PIN against the env var VITE_ADMIN_PIN.
- * Falls back to "admin" when the var is not set (dev only).
+ * Decide what the admin UI may show for the given auth user.
+ * UI convenience only: Firestore rules (isAdmin()) are the real enforcement.
  */
-export function verifyAdminPin(pin: string): boolean {
-  const expected = import.meta.env.VITE_ADMIN_PIN ?? 'admin';
-  return pin === expected;
+export async function resolveAdminAccess(
+  user: { uid: string; isAnonymous: boolean } | null,
+): Promise<AdminAccess> {
+  if (!firebaseEnabled) return 'unavailable';
+  if (!user) return 'signed-out';
+  if (user.isAnonymous) return 'anonymous';
+  return (await checkIsAdmin(user.uid)) ? 'admin' : 'not-admin';
 }
 
 /* ------------------------------------------------------------------ */

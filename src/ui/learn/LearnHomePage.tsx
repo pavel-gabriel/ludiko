@@ -1,4 +1,6 @@
-import { learnerService } from '@/learner'
+import { useCallback, useEffect } from 'react'
+import { refreshClassData } from '@/classroom/syncGate'
+import { learnerService, type AssignmentBit } from '@/learner'
 import type { ChildProfile } from '@/profiles/types'
 import { getProgress } from '@/profiles/profileService'
 import LearnHomeView, { type LearnHomeViewProps, type SubjectHome } from './LearnHomeView'
@@ -7,7 +9,7 @@ import RequireProfile from './RequireProfile'
 import { LEARN_SUBJECTS } from './subjects'
 import { useAsync } from './useAsync'
 
-type HomeData = Pick<LearnHomeViewProps, 'stars' | 'playDays' | 'subjects'>
+type HomeData = Pick<LearnHomeViewProps, 'stars' | 'playDays' | 'subjects' | 'assignments'>
 
 async function loadSubject(profileId: string, subject: SubjectHome['subject']): Promise<SubjectHome> {
   const placement = await learnerService.getPlacement(profileId, subject)
@@ -36,14 +38,22 @@ async function loadHome(profileId: string): Promise<HomeData> {
     learnerService.getParentSummary(profileId).then((s) => s.playDaysThisWeek, () => 0),
     getProgress(profileId).then((p) => p.stars, () => 0),
   ])
-  return { subjects, playDays, stars }
+  // class assignments come from a local copy: absent link, empty cache or a failure all mean "none"
+  const assignments: AssignmentBit[] = await (async () => learnerService.getClassAssignments(profileId))().catch(() => [])
+  return { subjects, playDays, stars, assignments }
 }
 
 function LearnHome({ profile }: { profile: ChildProfile }) {
-  const { data, loading, failed, reload } = useAsync(() => loadHome(profile.id), profile.id)
+  const { data, failed, reload } = useAsync(() => loadHome(profile.id), profile.id)
+  const refresh = useCallback(() => reload(), [reload])
+
+  // linked to a class: refresh the cached assignments in the background (offline-safe) and sync the summary if due
+  useEffect(() => {
+    if (profile.classLink) refreshClassData(profile.id, refresh)
+  }, [profile.id, profile.classLink, refresh])
 
   if (failed) return <LearnError onRetry={reload} />
-  if (loading || !data) return <LearnLoading />
+  if (!data) return <LearnLoading />
 
   return (
     <LearnShell backTo="/" backLabel="Ludiko">

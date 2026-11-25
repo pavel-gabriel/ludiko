@@ -43,6 +43,23 @@ export type VisualSpec =
   /** Count objects: an emoji/icon repeated, optionally in groups (multiplication/division) */
   | { kind: 'objects'; icon: string; count: number; groups?: number }
   | { kind: 'fraction'; numerator: number; denominator: number; shape?: 'circle' | 'bar' }
+  /**
+   * A geometric figure drawn by us. `sides` (optional) are the side lengths written next to each side,
+   * in drawing order (square/rectangle: top, right, bottom, left; triangle: 3 sides). `unit` e.g. 'cm'.
+   * `hideSide` (index) shows "?" instead of that length (for perimeter/missing-side questions).
+   */
+  | {
+      kind: 'shape';
+      shape: 'triangle' | 'square' | 'rectangle' | 'circle';
+      sides?: number[];
+      unit?: string;
+      hideSide?: number;
+    }
+  /**
+   * A ruler from 0 to `to` in `unit` with an optional object (a coloured bar) lying on it from `from`
+   * (default 0) to `objectEnd`. Used for measuring length.
+   */
+  | { kind: 'ruler'; to: number; unit: 'cm' | 'm'; from?: number; objectEnd?: number; objectLabel?: LocalizedText }
   | { kind: 'image'; media: MediaRef };
 
 export interface MediaRef {

@@ -1,13 +1,20 @@
 import { ref, update, onValue, type Unsubscribe } from 'firebase/database';
 import { rtdb } from '@/services/firebase';
+import type { Item } from '@/engine/types';
 import type { Question, ShapeQuestion, MemoryCard, GameType } from '@/utils/types';
+import { normalizeItems, sanitizeForRtdb } from '@/services/rtdbSafe';
 
 /** Shape of the game state stored in RTDB under rooms/{roomId}/game */
 export interface RTDBGameState {
   /** Which game is being played */
   gameType: GameType;
-  /** Math questions (Math Race / Timed Sprint) */
+  /** Math questions (Math Race / Timed Sprint), v1 rooms */
   questions?: Question[];
+  /**
+   * v2: shared-model items (any skill) for Race / Sprint / Duel. Present instead of `questions` when the
+   * room was created with `settings.skillIds`. RTDB-safe (see `sanitizeForRtdb`).
+   */
+  items?: Item[];
   /** Shape questions (Shape Match) */
   shapeQuestions?: ShapeQuestion[];
   /** Memory cards layout (Memory Game) — shared board for all players */
@@ -45,6 +52,24 @@ export async function initMathGameState(
   const gameState: RTDBGameState = {
     gameType,
     questions,
+    currentIndex: 0,
+    progress: buildProgress(playerIds),
+    phase: 'countdown',
+    questionStartedAt: 0,
+  };
+  await update(ref(rtdb, `rooms/${roomId}`), { game: gameState });
+}
+
+/** Write the initial game state for item-based Race / Sprint / Duel (v2): items of any skill */
+export async function initItemGameState(
+  roomId: string,
+  items: Item[],
+  playerIds: string[],
+  gameType: GameType = 'mathRace',
+): Promise<void> {
+  const gameState: RTDBGameState = {
+    gameType,
+    items: sanitizeForRtdb(items),
     currentIndex: 0,
     progress: buildProgress(playerIds),
     phase: 'countdown',
@@ -103,7 +128,13 @@ export function listenToGameState(
 ): Unsubscribe {
   const gameRef = ref(rtdb, `rooms/${roomId}/game`);
   return onValue(gameRef, (snapshot) => {
-    callback(snapshot.exists() ? (snapshot.val() as RTDBGameState) : null);
+    if (!snapshot.exists()) {
+      callback(null);
+      return;
+    }
+    const state = snapshot.val() as RTDBGameState;
+    if (state.items) state.items = normalizeItems(state.items);
+    callback(state);
   });
 }
 

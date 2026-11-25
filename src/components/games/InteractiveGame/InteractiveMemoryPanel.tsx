@@ -115,7 +115,17 @@ export default function InteractiveMemoryPanel({
                 `}
               >
                 {showFace ? (
-                  <span className={isSmall ? 'text-sm' : 'text-lg'}>{card.emoji}</span>
+                  <span
+                    className={
+                      card.isText
+                        ? `${isSmall || card.emoji.length > 6 ? 'text-[10px]' : 'text-xs'} font-extrabold leading-tight text-ludiko-text break-words text-center`
+                        : isSmall
+                          ? 'text-sm'
+                          : 'text-lg'
+                    }
+                  >
+                    {card.emoji}
+                  </span>
                 ) : (
                   <span className={`${isSmall ? 'text-xs' : 'text-sm'} text-white/60`}>?</span>
                 )}
