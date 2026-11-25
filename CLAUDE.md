@@ -7,6 +7,12 @@
 - **Path alias**: `@/` = `src/` (configured in vite.config.ts + tsconfig.json)
 - **Base URL**: `/ludiko/` (GitHub Pages subpath)
 
+## Product Direction (v2)
+- **Read `docs/PLAN.md` first** — Ludiko is becoming a free tutor that checks a child's level, finds gaps
+  (skill graph across grades, tagged with RO programa competences) and fixes them through play; offline-first PWA.
+- Evidence/market: `docs/MARKET_RESEARCH.md`. Track roadmap progress via the checkboxes in `docs/PLAN.md` §13.
+- Current code below is v1; games will be rebuilt as modes over a shared item model.
+
 ## Architecture
 
 ### Routes (src/app/AppRoutes.tsx)
