@@ -253,8 +253,8 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 - [ ] Math explanations (frames) for every skill — **1 in content + 4 samples; most skills still need one**
 
 ### Phase 1B — Romanian 0–IV: reading comprehension
-- [ ] Skill graph: sounds/letters → syllables → words → sentences → short texts → comprehension (literal → inferential)
-- [ ] `listen-and-answer`, `read-and-answer` items; illustrated short texts
+- [x] Skill graph: sounds/letters → syllables → words → sentences → short texts → comprehension (literal → inferential) — **23 skills `rom.*`, grades 0–IV (`content/skills/rom/`); CLR-2013 / LLR-III-IV-2014 codes to verify**
+- [ ] `listen-and-answer`, `read-and-answer` items; illustrated short texts — **6 generators (letters, syllables, word-picture, sentence-order, punctuation, word-relations) over curated own word/sentence lists (`content/data/rom/`), 40 original `read-and-answer` texts (beta), 23 explanations; `listen-and-answer` (needs narration audio) and text illustrations still to do**
 - [ ] Pre-recorded narration pack for grades 0–II
 - [ ] Placement + missions reuse the 1A engine
 

@@ -29,6 +29,12 @@ import './multiplication';
 import './numberReading';
 import './orderOfOps';
 import './rounding';
+// Romanian generators register themselves (letters, syllables, word-picture, sentence-order, punctuation, word-relations)
+import './romLetters';
+import './romSyllables';
+import './romWordPicture';
+import './romSentences';
+import './romVocab';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

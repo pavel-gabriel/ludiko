@@ -11,6 +11,12 @@ import { fakeLearner, resetFake, state, SUMMARY } from './helpers/fakeLearner'
 import BitPage from '@/ui/learn/BitPage'
 import LearnHomePage from '@/ui/learn/LearnHomePage'
 
+/* The fake learner answers the same for every subject; pin the home to math so each tile appears once */
+vi.mock('@/ui/learn/subjects', async (importOriginal) => ({
+  ...(await importOriginal<typeof import('@/ui/learn/subjects')>()),
+  LEARN_SUBJECTS: ['mat'],
+}))
+
 vi.mock('@/learner', async () => ({
   learnerService: (await import('./helpers/fakeLearner')).fakeLearner,
 }))

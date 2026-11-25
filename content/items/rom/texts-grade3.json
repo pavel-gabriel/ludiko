@@ -1,0 +1,1972 @@
+[
+  {
+    "id": "item.rom.text.types.3.t01",
+    "type": "read-and-answer",
+    "skillId": "rom.text.types.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.types.3",
+    "passage": {
+      "ro": "Albina este o insectă mică, dar foarte harnică. Ea trăiește într-un stup, împreună cu mii de surori. Din floare în floare, albina adună nectar și polen. Din nectar, ea face miere. Fiecare stup are o regină care depune ouă. Albinele comunică între ele printr-un fel de dans. Fără albine, multe plante nu ar avea fructe."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.types.3.t01.q1",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce fel de text este acesta?",
+          "en": "What kind of text is this?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t01.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t01.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "O poezie despre flori."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Un text narativ, care povestește o întâmplare."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Un text informativ, care ne spune lucruri despre albine."
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.types.3.t01.q2",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Unde trăiesc albinele?",
+          "en": "Where do bees live?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t01.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t01.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "într-un cuib"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "într-o peșteră"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "într-un stup"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.types.3.t01.q3",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce adună albina din flori?",
+          "en": "What does the bee collect from flowers?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t01.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t01.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "semințe"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "frunze"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "nectar și polen"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.types.3.t01.q4",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Albinele comunică între ele printr-un fel de dans.",
+          "en": "True or false? Bees communicate with each other through a kind of dance."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t01.q4",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t01.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.types.3.t01",
+      "kind": "item",
+      "title": "Text item.rom.text.types.3.t01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.types.3.t02",
+    "type": "read-and-answer",
+    "skillId": "rom.text.types.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.types.3",
+    "passage": {
+      "ro": "Era o dimineață rece de iarnă. Vlad și sora lui, Ilinca, au ieșit în curte cu săniuța. Ei au urcat dealul din spatele casei. De acolo au alunecat râzând până jos. Dintr-odată, săniuța s-a răsturnat într-un morman de zăpadă. Copiii au izbucnit în râs și s-au scuturat de zăpadă. Apoi au urcat din nou dealul, hotărâți să mai încerce o dată."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.types.3.t02.q1",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce fel de text este acesta?",
+          "en": "What kind of text is this?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t02.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t02.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "O listă de reguli."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Un text informativ despre zăpadă."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Un text narativ, cu personaje și întâmplări."
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.types.3.t02.q2",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cine sunt personajele?",
+          "en": "Who are the characters?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t02.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t02.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Vlad și Ilinca"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Vlad și bunicul"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Ilinca și mama"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.text.types.3.t02.q3",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce s-a întâmplat dintr-odată?",
+          "en": "What suddenly happened?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t02.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t02.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "A început să ningă."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Au venit părinții."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Săniuța s-a răsturnat."
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.types.3.t02.q4",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Textul ne dă informații despre cum se formează zăpada.",
+          "en": "True or false? The text gives information about how snow forms."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t02.q4",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t02.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.types.3.t02",
+      "kind": "item",
+      "title": "Text item.rom.text.types.3.t02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.types.3.t03",
+    "type": "read-and-answer",
+    "skillId": "rom.text.types.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.types.3",
+    "passage": {
+      "ro": "Broasca țestoasă are o carapace tare pe spate. Când simte un pericol, își trage capul și picioarele în carapace. Ea merge încet, dar poate trăi mulți ani. Unele țestoase trăiesc peste o sută de ani. Se hrănesc cu frunze, flori și fructe. Țestoasele de uscat își sapă adăposturi în pământ. Iarna dorm într-un loc ferit."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.types.3.t03.q1",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce fel de text este acesta?",
+          "en": "What kind of text is this?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t03.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t03.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Un text narativ, cu personaje care vorbesc."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "O poezie despre vară."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Un text informativ, care ne spune lucruri despre țestoase."
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.types.3.t03.q2",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cu ce se hrănesc țestoasele?",
+          "en": "What do tortoises eat?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t03.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t03.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "cu pești mari"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "cu frunze, flori și fructe"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "cu pietre"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.types.3.t03.q3",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce face țestoasa când simte un pericol?",
+          "en": "What does the tortoise do when it senses danger?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t03.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t03.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "sare în apă"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "își trage capul și picioarele în carapace"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "fuge repede"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.types.3.t03.q4",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Țestoasele aleargă foarte repede.",
+          "en": "True or false? Tortoises run very fast."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t03.q4",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t03.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.types.3.t03",
+      "kind": "item",
+      "title": "Text item.rom.text.types.3.t03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.types.3.t04",
+    "type": "read-and-answer",
+    "skillId": "rom.text.types.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.types.3",
+    "passage": {
+      "ro": "Într-o zi, Teo a găsit pe stradă un cățeluș pierdut. Cățelul tremura de frig și era foarte slab. Teo l-a luat în brațe și l-a dus acasă. Mama i-a dat puțină supă călduță. După ce a mâncat, cățelul a adormit lângă calorifer. A doua zi, Teo a lipit anunțuri pe stâlpii din cartier. Seara, un domn a sunat la ușă și și-a recunoscut cățelul."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.types.3.t04.q1",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce fel de text este acesta?",
+          "en": "What kind of text is this?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t04.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t04.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Un text informativ despre câini."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Un text narativ, care povestește o întâmplare."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Un afiș cu reguli."
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.types.3.t04.q2",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Unde a găsit Teo cățelul?",
+          "en": "Where did Teo find the puppy?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t04.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t04.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "în parc"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "pe stradă"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "la școală"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.types.3.t04.q3",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce a făcut Teo a doua zi?",
+          "en": "What did Teo do the next day?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t04.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t04.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "a vândut cățelul"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "a plecat în vacanță"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "a lipit anunțuri în cartier"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.types.3.t04.q4",
+        "skillId": "rom.text.types.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Cățelul avea un stăpân.",
+          "en": "True or false? The puppy had an owner."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.types.3.t04.q4",
+          "kind": "item",
+          "title": "Question item.rom.text.types.3.t04.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.types.3.t04",
+      "kind": "item",
+      "title": "Text item.rom.text.types.3.t04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.characters.3.t01",
+    "type": "read-and-answer",
+    "skillId": "rom.text.characters.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.characters.3",
+    "passage": {
+      "ro": "Ilie era cel mai înalt băiat din clasă, dar era și cel mai timid. Când învățătoarea îl chema la tablă, el se făcea roșu la față. Într-o zi, un coleg a scăpat caietele pe jos. Ilie s-a aplecat imediat și l-a ajutat să le adune. Colegul i-a mulțumit și i-a zâmbit. De atunci, Ilie a început să vorbească mai mult cu ceilalți. Încet-încet și-a făcut mulți prieteni."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.characters.3.t01.q1",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cum este Ilie la început?",
+          "en": "What is Ilie like at the start?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t01.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t01.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "supărăcios"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "gălăgios"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "timid"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.characters.3.t01.q2",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce arată că Ilie este săritor?",
+          "en": "What shows that Ilie is helpful?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t01.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t01.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "S-a făcut roșu la față."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "L-a ajutat pe coleg să-și adune caietele."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Era cel mai înalt din clasă."
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.characters.3.t01.q3",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cum s-a schimbat Ilie la sfârșit?",
+          "en": "How did Ilie change by the end?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t01.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t01.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "a rămas la fel de timid"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "a devenit mai deschis și și-a făcut prieteni"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "s-a mutat la altă școală"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.characters.3.t01.q4",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cine este personajul principal?",
+          "en": "Who is the main character?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t01.q4",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t01.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Ilie"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "colegul"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "învățătoarea"
+            }
+          }
+        ],
+        "correctId": "a"
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.characters.3.t01",
+      "kind": "item",
+      "title": "Text item.rom.text.characters.3.t01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.characters.3.t02",
+    "type": "read-and-answer",
+    "skillId": "rom.text.characters.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.characters.3",
+    "passage": {
+      "ro": "Pe uliță locuia o pisică numită Murgilă. Avea blana neagră și ochi verzi, mari. Toată ziua dormea la soare, pe gardul vecinei. Seara, însă, devenea vânător neobosit și prindea șoareci prin hambar. Gospodarii o iubeau pentru că le păzea recolta. Copiii o mângâiau, iar ea torcea mulțumită."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.characters.3.t02.q1",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cum arată Murgilă?",
+          "en": "What does Murgilă look like?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t02.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t02.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "are blana galbenă și ochii căprui"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "are blana neagră și ochii verzi"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "are blana albă și ochii albaștri"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.characters.3.t02.q2",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "De ce o iubeau gospodarii?",
+          "en": "Why did the villagers love her?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t02.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t02.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "pentru că le păzea recolta de șoareci"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "pentru că mânca mult"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "pentru că dormea mult"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.text.characters.3.t02.q3",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce face Murgilă ziua?",
+          "en": "What does Murgilă do during the day?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t02.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t02.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "aleargă prin sat"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "doarme la soare"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "prinde șoareci"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.text.characters.3.t02.q4",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Murgilă prinde șoareci seara.",
+          "en": "True or false? Murgilă catches mice in the evening."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t02.q4",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t02.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.characters.3.t02",
+      "kind": "item",
+      "title": "Text item.rom.text.characters.3.t02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.text.characters.3.t03",
+    "type": "read-and-answer",
+    "skillId": "rom.text.characters.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.text.characters.3",
+    "passage": {
+      "ro": "Cătălina avea un frate mai mic, pe nume Dani. Dani se supăra ușor și plângea la orice. Într-o după-amiază, turnul lui de cuburi s-a prăbușit. Dani a început să țipe. Cătălina nu s-a supărat pe el. Ea l-a mângâiat și i-a spus că vor construi altul mai înalt. Împreună au construit un turn și mai înalt. Dani a râs și a bătut din palme."
+    },
+    "questions": [
+      {
+        "id": "item.rom.text.characters.3.t03.q1",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cum este Cătălina?",
+          "en": "What is Cătălina like?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t03.q1",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t03.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "blândă și răbdătoare"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "timidă și tăcută"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "furioasă și nerăbdătoare"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.text.characters.3.t03.q2",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cum este Dani?",
+          "en": "What is Dani like?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t03.q2",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t03.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "sensibil, se supără ușor"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "calm și răbdător"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "curajos și puternic"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.text.characters.3.t03.q3",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce a făcut Cătălina când s-a prăbușit turnul?",
+          "en": "What did Cătălina do when the tower fell?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t03.q3",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t03.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "a râs de Dani"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "a plecat din cameră"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "l-a liniștit pe Dani și au construit altul"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.text.characters.3.t03.q4",
+        "skillId": "rom.text.characters.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Cătălina a țipat la Dani.",
+          "en": "True or false? Cătălina shouted at Dani."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.text.characters.3.t03.q4",
+          "kind": "item",
+          "title": "Question item.rom.text.characters.3.t03.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.text.characters.3.t03",
+      "kind": "item",
+      "title": "Text item.rom.text.characters.3.t03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.vocab.context.3.t01",
+    "type": "read-and-answer",
+    "skillId": "rom.vocab.context.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.vocab.context.3",
+    "passage": {
+      "ro": "Seara, bunica se așază pe prispă și toarce lână. Aerul este răcoros și liniștit. Din grădină se aude greierele. Pe cer apare luceafărul, o stea strălucitoare. Bunica zâmbește mulțumită, pentru că a terminat lucrul zilei. Nepoții aleargă veseli prin iarbă."
+    },
+    "questions": [
+      {
+        "id": "item.rom.vocab.context.3.t01.q1",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce înseamnă „răcoros” în text?",
+          "en": "What does \"răcoros\" mean in the text?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t01.q1",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t01.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "plin de nori"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "plăcut de rece"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "foarte fierbinte"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t01.q2",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce este „prispa” în text?",
+          "en": "What is a \"prispă\" in the text?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t01.q2",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t01.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "locul acoperit de lângă casă, unde ne putem așeza"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "o încăpere de la subsol"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "un gard de lemn"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t01.q3",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Care cuvânt are un înțeles asemănător cu „strălucitoare”?",
+          "en": "Which word has a similar meaning to \"strălucitoare\"?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t01.q3",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t01.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "luminoasă"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "întunecată"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "greoaie"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t01.q4",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce înseamnă „mulțumită”?",
+          "en": "What does \"mulțumită\" mean?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t01.q4",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t01.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "bucuroasă și împăcată"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "supărată"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "speriată"
+            }
+          }
+        ],
+        "correctId": "a"
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.vocab.context.3.t01",
+      "kind": "item",
+      "title": "Text item.rom.vocab.context.3.t01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.vocab.context.3.t02",
+    "type": "read-and-answer",
+    "skillId": "rom.vocab.context.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.vocab.context.3",
+    "passage": {
+      "ro": "Pe munte, vântul sufla tăios. Turiștii urcau cu pași mărunți, ținându-se de frânghie. Cărarea era îngustă și abruptă. Din când în când se opreau să-și tragă sufletul. În sfârșit au ajuns pe vârf, unde peisajul era fermecător. Toți au rămas muți de uimire."
+    },
+    "questions": [
+      {
+        "id": "item.rom.vocab.context.3.t02.q1",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce înseamnă „tăios” în text?",
+          "en": "What does \"tăios\" mean in the text?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t02.q1",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t02.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "blând și cald"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "umed și ușor"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "foarte rece și aspru"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t02.q2",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce înseamnă „abruptă”?",
+          "en": "What does \"abruptă\" mean?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t02.q2",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t02.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "foarte înclinată"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "foarte largă"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "foarte lungă"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t02.q3",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce înseamnă „să-și tragă sufletul”?",
+          "en": "What does \"să-și tragă sufletul\" mean?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t02.q3",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t02.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "să se odihnească puțin"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "să strige tare"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "să cânte"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t02.q4",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Care cuvânt are sens opus cu „îngustă”?",
+          "en": "Which word is the opposite of \"îngustă\"?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t02.q4",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t02.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "lată"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "scurtă"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "abruptă"
+            }
+          }
+        ],
+        "correctId": "a"
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.vocab.context.3.t02",
+      "kind": "item",
+      "title": "Text item.rom.vocab.context.3.t02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.vocab.context.3.t03",
+    "type": "read-and-answer",
+    "skillId": "rom.vocab.context.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.vocab.context.3",
+    "passage": {
+      "ro": "Într-o ogradă mare trăia o rață îngâmfată, pe nume Ruxi. Dimineața își netezea penele în fața bălții și se admira. Celelalte păsări o priveau cu admirație, dar o și evitau. Într-o zi, Ruxi a alunecat pe malul noroios. A căzut cu totul în mocirlă și s-a murdărit din cap până în picioare. Atunci toată ograda a izbucnit în râs. Ruxi a râs și ea, iar de atunci a fost mai modestă."
+    },
+    "questions": [
+      {
+        "id": "item.rom.vocab.context.3.t03.q1",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce înseamnă „îngâmfată”?",
+          "en": "What does \"îngâmfată\" mean?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t03.q1",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t03.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "care se crede mai bună decât ceilalți"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "care este foarte mică"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "care este obosită"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t03.q2",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce este „mocirla”?",
+          "en": "What is \"mocirlă\"?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t03.q2",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t03.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "o pajiște cu flori"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "un loc cu noroi gros"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "un lac curat"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t03.q3",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cum a devenit Ruxi la sfârșit?",
+          "en": "What did Ruxi become by the end?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t03.q3",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t03.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "mai tristă"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "mai modestă"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "mai îngâmfată"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t03.q4",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Care cuvânt are sens opus cu „modestă”?",
+          "en": "Which word is the opposite of \"modestă\"?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t03.q4",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t03.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "cuminte"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "harnică"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "îngâmfată"
+            }
+          }
+        ],
+        "correctId": "c"
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.vocab.context.3.t03",
+      "kind": "item",
+      "title": "Text item.rom.vocab.context.3.t03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.rom.vocab.context.3.t04",
+    "type": "read-and-answer",
+    "skillId": "rom.vocab.context.3",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.rom.vocab.context.3",
+    "passage": {
+      "ro": "Vecinul nostru este un om foarte darnic. În fiecare toamnă împarte mere din livada lui. Îi ajută pe bătrâni să care coșurile. Copiii îl strigă veseli când trece pe stradă. El le răspunde mereu cu un zâmbet larg. Toată lumea îl respectă."
+    },
+    "questions": [
+      {
+        "id": "item.rom.vocab.context.3.t04.q1",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce înseamnă „darnic”?",
+          "en": "What does \"darnic\" mean?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t04.q1",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t04.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "care vorbește mult"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "care ține totul pentru el"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "care dăruiește cu plăcere"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t04.q2",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce este o „livadă”?",
+          "en": "What is a \"livadă\"?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t04.q2",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t04.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "un loc cu pomi fructiferi"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "o grădină cu flori"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "o pădure de brazi"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t04.q3",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce înseamnă „a căra” în text?",
+          "en": "What does \"a căra\" mean in the text?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t04.q3",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t04.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "a duce dintr-un loc în altul"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "a arunca"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "a număra"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.rom.vocab.context.3.t04.q4",
+        "skillId": "rom.vocab.context.3",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Care cuvânt are sens opus cu „darnic”?",
+          "en": "Which word is the opposite of \"darnic\"?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.rom.vocab.context.3.t04.q4",
+          "kind": "item",
+          "title": "Question item.rom.vocab.context.3.t04.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original text and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "înalt"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "zgârcit"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "vesel"
+            }
+          }
+        ],
+        "correctId": "b"
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.rom.vocab.context.3.t04",
+      "kind": "item",
+      "title": "Text item.rom.vocab.context.3.t04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original text and questions drafted for the competence; awaiting human review"
+    }
+  }
+]

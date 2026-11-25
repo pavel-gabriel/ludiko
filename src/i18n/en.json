@@ -556,7 +556,8 @@
       "other": "{{n}} play days this week"
     },
     "subject": {
-      "mat": "Maths"
+      "mat": "Maths",
+      "rom": "Romanian"
     },
     "home": {
       "missionTitle": "Today's mission",
