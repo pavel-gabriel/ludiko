@@ -252,5 +252,39 @@
     "modified": "modificat de Ludiko",
     "ownContent": "Toate întrebările, explicațiile, ilustrațiile și sunetele care nu apar aici sunt create de Ludiko.",
     "rightsContact": "Deținătorii de drepturi ne pot contacta la"
+  },
+  "report": {
+    "button": "Raportează o greșeală",
+    "dialogTitle": "Ce nu este în regulă?",
+    "reasons": {
+      "wrong-answer": "Răspunsul este greșit",
+      "unclear": "Întrebarea nu este clară",
+      "typo": "Greșeală de scriere",
+      "inappropriate": "Nu este potrivit pentru copii",
+      "rights": "Încalcă drepturile de autor"
+    },
+    "commentLabel": "Detalii (opțional)",
+    "commentPlaceholder": "Spune-ne ce ai observat",
+    "commentCount": "{{n}}/{{max}}",
+    "send": "Trimite",
+    "sending": "Se trimite…",
+    "cancel": "Anulează",
+    "close": "Închide",
+    "thanksTitle": "Mulțumim!",
+    "thanksSent": "Raportul tău a fost trimis. Ne ajută să îmbunătățim jocurile.",
+    "thanksQueued": "Raportul este salvat și va fi trimis când ai din nou conexiune.",
+    "failed": "Nu am putut salva raportul. Încearcă din nou.",
+    "admin": {
+      "section": "Rapoarte conținut",
+      "empty": "Nu există rapoarte deschise.",
+      "count": "{{n}} rapoarte",
+      "hidden": "Ascuns pentru elevi",
+      "reasonsLabel": "Motive",
+      "commentsLabel": "Comentarii",
+      "resolve": "Rezolvat",
+      "dismiss": "Respinge",
+      "loadError": "Nu am putut încărca rapoartele.",
+      "actionError": "Nu am putut actualiza raportul."
+    }
   }
 }

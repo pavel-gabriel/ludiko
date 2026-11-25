@@ -252,5 +252,39 @@
     "modified": "modified by Ludiko",
     "ownContent": "All questions, explanations, illustrations and sounds not listed here are original Ludiko work.",
     "rightsContact": "Rights holders can contact us at"
+  },
+  "report": {
+    "button": "Report a mistake",
+    "dialogTitle": "What is wrong?",
+    "reasons": {
+      "wrong-answer": "The answer is wrong",
+      "unclear": "The question is unclear",
+      "typo": "Spelling mistake",
+      "inappropriate": "Not suitable for children",
+      "rights": "Infringes copyright"
+    },
+    "commentLabel": "Details (optional)",
+    "commentPlaceholder": "Tell us what you noticed",
+    "commentCount": "{{n}}/{{max}}",
+    "send": "Send",
+    "sending": "Sending…",
+    "cancel": "Cancel",
+    "close": "Close",
+    "thanksTitle": "Thank you!",
+    "thanksSent": "Your report has been sent. It helps us make the games better.",
+    "thanksQueued": "Your report is saved and will be sent when you are back online.",
+    "failed": "We could not save your report. Please try again.",
+    "admin": {
+      "section": "Content reports",
+      "empty": "No open reports.",
+      "count": "{{n}} reports",
+      "hidden": "Hidden from students",
+      "reasonsLabel": "Reasons",
+      "commentsLabel": "Comments",
+      "resolve": "Resolved",
+      "dismiss": "Dismiss",
+      "loadError": "Could not load reports.",
+      "actionError": "Could not update the report."
+    }
   }
 }

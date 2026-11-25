@@ -4,6 +4,7 @@ import Button from '@/components/ui/Button';
 import CloseButton from '@/components/ui/CloseButton';
 import { verifyAdminPin, getAdminStats } from '@/services/adminService';
 import type { AdminStats } from '@/services/adminService';
+import ContentReportsSection from '@/components/admin/ContentReportsSection';
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -262,6 +263,7 @@ export default function AdminDashboard() {
             </section>
           </>
         )}
+        <ContentReportsSection />
       </div>
     </div>
   );
