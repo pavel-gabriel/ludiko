@@ -36,3 +36,8 @@ npm test
 ## Deployment
 
 Push to `main` to auto-deploy to GitHub Pages via GitHub Actions.
+
+## License
+
+Copyright (c) 2026 Ludiko. All rights reserved: this is proprietary software and content, see [LICENSE](LICENSE).
+Third-party components keep their own licences (see `content/credits.json` and the in-app Credits page).

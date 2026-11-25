@@ -1,0 +1,41 @@
+Ludiko — Proprietary License
+
+Copyright (c) 2026 Ludiko. All rights reserved.
+
+This repository and everything in it that is not listed as third-party material
+(the "Ludiko Materials") is owned by Ludiko. The Ludiko Materials include, without
+limitation: the source code, the application design and user interface, the
+learning engine, the skill graphs and their structure, all questions, item
+generators, explanations, reading texts, illustrations, SVG visuals, icons, the
+"Ludiko" name and logo, and the documentation.
+
+No license is granted. Except as expressly permitted below or by applicable law,
+you may not copy, modify, publish, distribute, sublicense, sell, host, or create
+derivative works of the Ludiko Materials, in whole or in part, without prior
+written permission from Ludiko.
+
+Permitted without further permission:
+  1. Using the Ludiko web application, as published by Ludiko, for personal,
+     family, or classroom learning.
+  2. Viewing this repository on GitHub and creating forks solely as allowed by
+     the GitHub Terms of Service. Forks do not grant any additional rights.
+
+Third-party material is NOT covered by this license and remains under its own
+license. It is listed in content/credits.json (shown in the app on the Credits
+page) and, for software dependencies, in package.json and each package's own
+license file under node_modules. Official texts of the Romanian Ministry of
+Education used as curriculum references are not claimed by Ludiko.
+
+THE LUDIKO MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED. IN NO EVENT SHALL LUDIKO BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY ARISING FROM THE USE OF THE LUDIKO MATERIALS.
+
+Permission requests and rights questions: pavel.gabriell@yahoo.com
+
+---
+
+Rezumat (RO): Copyright (c) 2026 Ludiko. Toate drepturile rezervate. Codul,
+conținutul educațional (întrebări, explicații, texte, ilustrații) și marca Ludiko
+aparțin Ludiko. Copierea, modificarea sau distribuirea fără acordul scris al
+Ludiko nu sunt permise. Materialele terților rămân sub licențele lor
+(content/credits.json).

@@ -61,6 +61,7 @@ export default function CreditsPage() {
         ))}
 
         <p className="text-xs text-gray-500 border-t border-gray-100 pt-4">
+          <span className="block font-semibold mb-1">{t('credits.copyright', { year: 2026 })}</span>
           {t('credits.ownContent')}
           {RIGHTS_CONTACT && (
             <>

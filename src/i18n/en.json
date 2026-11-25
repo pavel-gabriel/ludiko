@@ -251,7 +251,8 @@
     },
     "modified": "modified by Ludiko",
     "ownContent": "All questions, explanations, illustrations and sounds not listed here are original Ludiko work.",
-    "rightsContact": "Rights holders can contact us at"
+    "rightsContact": "Rights holders can contact us at",
+    "copyright": "© {{year}} Ludiko. All rights reserved."
   },
   "report": {
     "button": "Report a mistake",

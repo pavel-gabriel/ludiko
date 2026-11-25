@@ -8,6 +8,12 @@
 
 ---
 
+## 0. Ownership
+
+Ludiko's own code and content (everything with `licence: OWN`) is **© Ludiko, all rights reserved**:
+see [`LICENSE`](../LICENSE). Contributors, including AI agents working on the owner's behalf, create
+it for Ludiko. Third-party material keeps its own licence and is listed in `content/credits.json`.
+
 ## 1. Legal background (summary)
 
 - **Law 8/1996** on copyright and related rights (republished 2018, amended by Law 69/2022).

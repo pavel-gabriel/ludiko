@@ -116,4 +116,23 @@ describe('content policy (docs/LEGAL_CONTENT_POLICY.md)', () => {
     expect(errs.some((e) => e.includes('duplicate id'))).toBe(true);
     expect(errs.some((e) => e.includes('NC/ND'))).toBe(true);
   });
+
+  it('CI-only tools (web-push, firebase-admin) are never imported by shipped code', () => {
+    const offenders: string[] = [];
+    const walk = (dir: string) => {
+      for (const name of readdirSync(dir)) {
+        const p = join(dir, name);
+        if (statSync(p).isDirectory()) walk(p);
+        else if (/\.(m?[jt]sx?)$/.test(name)) {
+          const src = readFileSync(p, 'utf8');
+          if (/from\s+['"](web-push|firebase-admin)|require\(['"](web-push|firebase-admin)/.test(src)) {
+            offenders.push(relative(ROOT, p));
+          }
+        }
+      }
+    };
+    walk(join(ROOT, 'src'));
+    walk(join(ROOT, 'public'));
+    expect(offenders).toEqual([]);
+  });
 });
