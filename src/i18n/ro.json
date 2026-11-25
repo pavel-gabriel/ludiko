@@ -251,7 +251,8 @@
     },
     "modified": "modificat de Ludiko",
     "ownContent": "Toate întrebările, explicațiile, ilustrațiile și sunetele care nu apar aici sunt create de Ludiko.",
-    "rightsContact": "Deținătorii de drepturi ne pot contacta la"
+    "rightsContact": "Deținătorii de drepturi ne pot contacta la",
+    "copyright": "© {{year}} Ludiko. Toate drepturile rezervate."
   },
   "report": {
     "button": "Raportează o greșeală",
