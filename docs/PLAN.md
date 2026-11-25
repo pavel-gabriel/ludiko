@@ -245,12 +245,15 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 - [ ] Rebuild the existing games as modes over items (Race, Sprint, Memory, Duel)
 
 ### Phase 1A — Math 0–IV: check → gaps → missions
-- [ ] Math skill graph 0–IV with prerequisites, tagged to MEM/Matematică competences — **grades 0–II done (18 skills); III–IV to do; codes to verify**
-- [ ] Generators for every math skill (numbers, place value, compare, +/−/×/÷, equations, fractions, measurement, money, time, geometry basics, word problems) — **7 generators for grades 0–II done**
+- [x] Math skill graph 0–IV with prerequisites, tagged to MEM/Matematică competences — 63 skills (0–II core, III–IV numbers & operations, I–IV measures); **competence codes to verify**
+- [x] Generators for every math skill (numbers, place value, compare, +/−/×/÷, equations, fractions, measurement, money, time, geometry basics, word problems)
 - [x] Placement diagnostic + level statement (resumable, 3-minute bites, parent-only statement)
 - [x] Mastery tracking + mission planner + spaced review (see `docs/ENGINE.md`)
 - [x] Adventure map + Treasure map mode + gentle streak (stickers awarded; sticker album screen to do)
-- [ ] Math explanations (frames) for every skill — **1 in content + 4 samples; most skills still need one**
+- [x] Math explanations (frames) for every skill (beta, AI-drafted — teacher review pending)
+
+### Daily bits & reminders
+- [x] Daily bits (≈3-minute groups from the mission) + parent opt-in Web Push reminders (`docs/NOTIFICATIONS.md`); sender active once secrets are set
 
 ### Phase 1B — Romanian 0–IV: reading comprehension
 - [x] Skill graph: sounds/letters → syllables → words → sentences → short texts → comprehension (literal → inferential) — **23 skills `rom.*`, grades 0–IV (`content/skills/rom/`); CLR-2013 / LLR-III-IV-2014 codes to verify**
