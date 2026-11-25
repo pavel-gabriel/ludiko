@@ -465,5 +465,72 @@
       "fraction": "fracție: {{n}}/{{d}}",
       "image": "imagine"
     }
+  },
+  "session": {
+    "mode": {
+      "practice": "Exersează",
+      "sprint": "Sprint",
+      "check": "Verificare"
+    },
+    "pickMode": "Cum vrei să exersezi?",
+    "practiceDesc": "Un exercițiu pe rând, în ritmul tău. Dacă greșești, îți arătăm cum se face.",
+    "sprintDesc": "Răspunde cât de repede poți, cât timp trece ceasul.",
+    "sprintReady": "Ești gata?",
+    "sprintRules": "Ai {{n}} de secunde. Răspunde la cât mai multe exerciții!",
+    "sprintCount": "Răspunsuri corecte: {{n}}",
+    "start": "Start!",
+    "timeLeft": "Au mai rămas {{n}} secunde",
+    "progress": "Exercițiul {{current}} din {{total}}",
+    "retryBadge": "Încă o încercare",
+    "explainIntro": "Nu-i nimic! Mai încercăm o dată puțin mai târziu.",
+    "skipExplanation": "Sari peste",
+    "exit": "Ieși din exercițiu",
+    "pauseTitle": "Facem o pauză?",
+    "pauseBody": "Ce ai răspuns până acum se păstrează.",
+    "keepGoing": "Continuăm",
+    "leave": "Gata pe azi",
+    "empty": "Încă pregătim exerciții pentru această abilitate. Revino curând!",
+    "back": "Înapoi",
+    "skillMissing": "Nu am găsit această abilitate.",
+    "playingAs": "Joci ca {{name}}",
+    "guestNote": "Joci ca oaspete, așa că stelele nu se salvează.",
+    "pickProfile": "Alege un profil",
+    "list": {
+      "title": "Ce exersăm azi?",
+      "subtitle": "Alege o abilitate și începem.",
+      "items": "Exerciții: {{n}}",
+      "soon": "în curând"
+    },
+    "results": {
+      "starsLabel": "{{n}} din 3 stele",
+      "timeUp": "Timpul a trecut!",
+      "three": {
+        "title": "Minunat!",
+        "body": "Ți-a ieșit foarte bine. Ești gata pentru următorul pas!"
+      },
+      "two": {
+        "title": "Foarte bine!",
+        "body": "Ești pe drumul cel bun. Încă puțină exersare și îți iese perfect."
+      },
+      "one": {
+        "title": "Bravo că ai încercat!",
+        "body": "Fiecare exercițiu te ajută să crești. Data viitoare va fi și mai ușor."
+      },
+      "none": {
+        "title": "Nicio grijă!",
+        "body": "Încercăm din nou când ești gata."
+      },
+      "score": "Corecte din prima: {{correct}} din {{total}}",
+      "sprintScore": "Răspunsuri corecte: {{correct}} din {{total}}",
+      "stickerTitle": "Ai deblocat un autocolant!",
+      "stickerOwned": "Ai deja acest autocolant",
+      "stickerBody": "L-am pus în colecția ta.",
+      "stickerGuest": "Alege un profil ca să-l păstrezi data viitoare.",
+      "reviewTitle": "De mai exersat",
+      "reviewHint": "La acestea mai poți încerca o dată:",
+      "reviewNone": "Niciun exercițiu de repetat. Excelent!",
+      "again": "Încă o dată",
+      "done": "Gata pe azi"
+    }
   }
 }
