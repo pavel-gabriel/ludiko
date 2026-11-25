@@ -1,4 +1,6 @@
 import type { Grade } from '@/engine/types'
+import { noteProfileDeleted, triggerFamilySync } from '@/family/familyGate'
+import { toCloudProfile } from '@/family/merge'
 import { dbDelete, dbGet, dbGetAll, dbPut } from './db'
 import { generateRecoveryCode, isValidRecoveryCode } from './recoveryCode'
 import {
@@ -65,6 +67,7 @@ export async function createProfile(input: ProfileInput): Promise<ChildProfile> 
   }
   await dbPut('profiles', profile)
   await dbPut('progress', emptyProgress(profile.id))
+  triggerFamilySync()
   return profile
 }
 
@@ -80,6 +83,7 @@ export async function updateProfile(id: string, patch: Partial<ProfileInput>): P
     updatedAt: Date.now(),
   }
   await dbPut('profiles', next)
+  triggerFamilySync()
   return next
 }
 
@@ -104,10 +108,17 @@ export async function setClassLink(id: string, link: ClassLink | null): Promise<
   return next
 }
 
-export async function deleteProfile(id: string): Promise<void> {
+/**
+ * Delete a child profile and its progress. While a parent account is signed in the deletion is also
+ * remembered (a tombstone) so the next sync removes the child on the other devices; `fromSync` is used by
+ * the sync itself when it applies a deletion that came from the cloud.
+ */
+export async function deleteProfile(id: string, opts: { fromSync?: boolean } = {}): Promise<void> {
+  const existing = opts.fromSync ? undefined : await getProfile(id)
   await dbDelete('profiles', id)
   await dbDelete('progress', id)
   if (getActiveProfileId() === id) setActiveProfileId(null)
+  if (existing) noteProfileDeleted(toCloudProfile(existing))
 }
 
 export function getActiveProfileId(): string | null {
@@ -150,7 +161,11 @@ const progressLocks = new Map<string, Promise<unknown>>()
  * concurrent callers (session attempts, mission bookkeeping, stars) never overwrite each other.
  * `fn` may mutate the progress it gets (and must return the result); it is saved afterwards.
  */
-export function updateProgress<T>(profileId: string, fn: (progress: ProfileProgress) => T | Promise<T>): Promise<T> {
+export function updateProgress<T>(
+  profileId: string,
+  fn: (progress: ProfileProgress) => T | Promise<T>,
+  opts: { silent?: boolean } = {},
+): Promise<T> {
   const prev = progressLocks.get(profileId) ?? Promise.resolve()
   const run = prev
     .catch(() => {})
@@ -158,6 +173,8 @@ export function updateProgress<T>(profileId: string, fn: (progress: ProfileProgr
       const progress = await getProgress(profileId)
       const result = await fn(progress)
       await saveProgress(progress)
+      // a parent account is signed in: share this progress (throttled; the cloud sync itself passes `silent`)
+      if (!opts.silent) triggerFamilySync()
       return result
     })
   const tail = run.catch(() => {})
@@ -307,5 +324,6 @@ export async function importProfile(text: string): Promise<ChildProfile> {
     ...(isObj(g.levelHistory) ? { levelHistory: g.levelHistory } : {}),
     ...(Array.isArray(g.missions) ? { missions: g.missions.slice(-MISSIONS_KEPT) } : {}),
   } satisfies ProfileProgress)
+  triggerFamilySync()
   return profile
 }

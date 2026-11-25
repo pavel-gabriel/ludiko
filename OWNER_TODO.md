@@ -14,6 +14,10 @@
       firebase deploy --only firestore:rules --project ludiko-2e197
       ```
       Repeat this every time `firestore.rules` changes. Claude will flag it in the chat.
+      - [ ] **Parent accounts** (`docs/PARENT_SYNC.md`) added a `families/{uid}/**` section to the rules:
+            redeploy them again, or creating an account and syncing children will fail with "permission denied".
+      - [ ] Parent accounts also need Firebase console → Authentication → **Email/Password** enabled (the same
+            switch as for the admin account below). Until then "Cont de părinte" cannot create or sign in.
 - [ ] **Admin account** (`docs/ADMIN.md`):
   - [ ] Firebase console → Authentication → enable **Email/Password**.
   - [ ] Add your admin user and copy its **UID**.

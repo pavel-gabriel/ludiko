@@ -22,6 +22,7 @@ const SkillMapPage = lazy(() => import('@/ui/learn/SkillMapPage'));
 const ParentPage = lazy(() => import('@/ui/learn/ParentPage'));
 const AlbumPage = lazy(() => import('@/ui/album/AlbumPage'));
 const MascotPreviewPage = lazy(() => import('@/ui/mascot/MascotPreviewPage'));
+const FamilyAccountPage = lazy(() => import('@/ui/learn/FamilyAccountPage'));
 const LearnPreviewPage = lazy(() => import('@/ui/learn/LearnPreviewPage'));
 const ProfilePickerPage = lazy(() => import('@/components/profiles/ProfilePickerPage'));
 const SinglePlayerPage = lazy(() => import('@/components/lobby/SinglePlayerPage'));
@@ -50,6 +51,7 @@ const ClassPage = lazy(() => import('@/components/teacher/classes/ClassPage'));
 const ClassCodesPage = lazy(() => import('@/components/teacher/classes/ClassCodesPage'));
 const ClassAssignmentPage = lazy(() => import('@/ui/learn/ClassAssignmentPage'));
 const DevClassroomPage = lazy(() => import('@/classroom/dev/DevClassroomPage'));
+const DevFamilyPage = lazy(() => import('@/family/dev/DevFamilyPage'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -80,12 +82,14 @@ export default function AppRoutes() {
           <Route path="/learn/map/:subject" element={<SkillMapPage />} />
           <Route path="/learn/parent" element={<ParentPage />} />
           <Route path="/learn/album" element={<AlbumPage />} />
+          <Route path="/learn/account" element={<FamilyAccountPage />} />
           <Route path="/learn/class/:assignmentId" element={<ClassAssignmentPage />} />
 
           {/* Dev previews (Phase 0) */}
           <Route path="/dev/learn" element={<LearnPreviewPage />} />
           <Route path="/dev/mascot" element={<MascotPreviewPage />} />
           <Route path="/dev/classroom" element={<DevClassroomPage />} />
+          <Route path="/dev/family" element={<DevFamilyPage />} />
           <Route path="/dev/frames" element={<FramesPreviewPage />} />
           <Route path="/dev/items" element={<ItemsPreviewPage />} />
           <Route path="/singleplayer" element={<SinglePlayerPage />} />
