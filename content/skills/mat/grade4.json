@@ -1,0 +1,595 @@
+[
+  {
+    "id": "mat.num.1m.read",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Numerele până la 1 000 000: citire și scriere",
+      "en": "Numbers to 1 000 000: reading and writing"
+    },
+    "prerequisites": [
+      "mat.num.1000.read"
+    ],
+    "itemSources": [
+      {
+        "generator": "number-reading",
+        "params": {
+          "max": 1000000,
+          "mode": "words"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.num.1m.read"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.num.1m.read",
+      "kind": "data",
+      "title": "Skill mat.num.1m.read",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.num.1m.place",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "Numerele până la 1 000 000: ordine și clase",
+      "en": "Numbers to 1 000 000: orders and classes"
+    },
+    "prerequisites": [
+      "mat.num.1m.read",
+      "mat.num.1000.place"
+    ],
+    "itemSources": [
+      {
+        "generator": "number-reading",
+        "params": {
+          "max": 1000000,
+          "mode": "place"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.num.1m.place"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.num.1m.place",
+      "kind": "data",
+      "title": "Skill mat.num.1m.place",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.add.1m",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Adunarea numerelor mari (până la 1 000 000)",
+      "en": "Adding big numbers (to 1 000 000)"
+    },
+    "prerequisites": [
+      "mat.add.carry.1000",
+      "mat.num.1m.place"
+    ],
+    "itemSources": [
+      {
+        "generator": "addition",
+        "params": {
+          "max": 1000000
+        }
+      }
+    ],
+    "explanations": [
+      "exp.add.1m"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.add.1m",
+      "kind": "data",
+      "title": "Skill mat.add.1m",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.sub.1m",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Scăderea numerelor mari (până la 1 000 000)",
+      "en": "Subtracting big numbers (to 1 000 000)"
+    },
+    "prerequisites": [
+      "mat.sub.borrow.1000",
+      "mat.num.1m.place"
+    ],
+    "itemSources": [
+      {
+        "generator": "subtraction",
+        "params": {
+          "max": 1000000
+        }
+      }
+    ],
+    "explanations": [
+      "exp.sub.1m"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.sub.1m",
+      "kind": "data",
+      "title": "Skill mat.sub.1m",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.round",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "1.3"
+      }
+    ],
+    "title": {
+      "ro": "Rotunjirea numerelor naturale",
+      "en": "Rounding natural numbers"
+    },
+    "prerequisites": [
+      "mat.num.1m.place"
+    ],
+    "itemSources": [
+      {
+        "generator": "rounding",
+        "params": {
+          "max": 1000000,
+          "to": [
+            10,
+            100,
+            1000
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.round"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.round",
+      "kind": "data",
+      "title": "Skill mat.round",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.mul.1digit",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Înmulțirea cu un număr de o cifră",
+      "en": "Multiplication by a one-digit number"
+    },
+    "prerequisites": [
+      "mat.mul.table.large",
+      "mat.add.carry.1000"
+    ],
+    "itemSources": [
+      {
+        "generator": "multiplication",
+        "params": {
+          "aMin": 10,
+          "aMax": 99999,
+          "bMin": 2,
+          "bMax": 9,
+          "max": 1000000
+        }
+      }
+    ],
+    "explanations": [
+      "exp.mul.1digit"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.mul.1digit",
+      "kind": "data",
+      "title": "Skill mat.mul.1digit",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.mul.2digit",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Înmulțirea cu un număr de două cifre",
+      "en": "Multiplication by a two-digit number"
+    },
+    "prerequisites": [
+      "mat.mul.1digit"
+    ],
+    "itemSources": [
+      {
+        "generator": "multiplication",
+        "params": {
+          "aMin": 10,
+          "aMax": 9999,
+          "bMin": 10,
+          "bMax": 99,
+          "max": 1000000
+        }
+      }
+    ],
+    "explanations": [
+      "exp.mul.2digit"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.mul.2digit",
+      "kind": "data",
+      "title": "Skill mat.mul.2digit",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.div.1digit.exact",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Împărțirea la un număr de o cifră, fără rest",
+      "en": "Division by a one-digit number, no remainder"
+    },
+    "prerequisites": [
+      "mat.div.table",
+      "mat.sub.borrow.1000"
+    ],
+    "itemSources": [
+      {
+        "generator": "division",
+        "params": {
+          "dMin": 2,
+          "dMax": 9,
+          "max": 10000,
+          "remainder": false
+        }
+      }
+    ],
+    "explanations": [
+      "exp.div.1digit.exact"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.div.1digit.exact",
+      "kind": "data",
+      "title": "Skill mat.div.1digit.exact",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.div.1digit.rem",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Împărțirea la un număr de o cifră, cu rest",
+      "en": "Division by a one-digit number, with remainder"
+    },
+    "prerequisites": [
+      "mat.div.1digit.exact"
+    ],
+    "itemSources": [
+      {
+        "generator": "division",
+        "params": {
+          "dMin": 2,
+          "dMax": 9,
+          "max": 10000,
+          "remainder": true
+        }
+      }
+    ],
+    "explanations": [
+      "exp.div.1digit.rem"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.div.1digit.rem",
+      "kind": "data",
+      "title": "Skill mat.div.1digit.rem",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.order.ops",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.4"
+      }
+    ],
+    "title": {
+      "ro": "Ordinea operațiilor cu numere mari și paranteze",
+      "en": "Order of operations with bigger numbers and parentheses"
+    },
+    "prerequisites": [
+      "mat.order.paren",
+      "mat.mul.1digit"
+    ],
+    "itemSources": [
+      {
+        "generator": "order-of-operations",
+        "params": {
+          "parens": false,
+          "max": 1000,
+          "factorMax": 20
+        }
+      },
+      {
+        "generator": "order-of-operations",
+        "params": {
+          "parens": true,
+          "max": 1000,
+          "factorMax": 20
+        }
+      }
+    ],
+    "explanations": [
+      "exp.order.ops"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.order.ops",
+      "kind": "data",
+      "title": "Skill mat.order.ops",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.equation.big",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Ecuații cu numere mari",
+      "en": "Equations with bigger numbers"
+    },
+    "prerequisites": [
+      "mat.equation.unknown",
+      "mat.mul.1digit",
+      "mat.div.1digit.exact"
+    ],
+    "itemSources": [
+      {
+        "generator": "equation",
+        "params": {
+          "ops": [
+            "+",
+            "-"
+          ],
+          "max": 10000
+        }
+      },
+      {
+        "generator": "equation",
+        "params": {
+          "ops": [
+            "*",
+            "/"
+          ],
+          "max": 10000,
+          "factorMax": 20
+        }
+      }
+    ],
+    "explanations": [
+      "exp.equation.big"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.equation.big",
+      "kind": "data",
+      "title": "Skill mat.equation.big",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.wordproblem.multistep",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Probleme cu mai multe operații",
+      "en": "Multi-step word problems"
+    },
+    "prerequisites": [
+      "mat.wordproblem.muldiv",
+      "mat.wordproblem.1000",
+      "mat.mul.1digit",
+      "mat.div.1digit.exact"
+    ],
+    "itemSources": [
+      {
+        "generator": "word-problem",
+        "params": {
+          "max": 10000,
+          "ops": [
+            "+",
+            "-",
+            "*",
+            "/"
+          ],
+          "factorMax": 200,
+          "groupsMax": 9
+        }
+      },
+      {
+        "generator": "word-problem",
+        "params": {
+          "max": 1000,
+          "ops": [
+            "/"
+          ],
+          "remainder": true,
+          "factorMax": 9,
+          "groupsMax": 9
+        }
+      }
+    ],
+    "explanations": [
+      "exp.wordproblem.multistep"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.wordproblem.multistep",
+      "kind": "data",
+      "title": "Skill mat.wordproblem.multistep",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  }
+]

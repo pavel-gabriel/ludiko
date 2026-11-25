@@ -1,0 +1,676 @@
+[
+  {
+    "id": "mat.num.1000.read",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Numerele până la 1000: citire și scriere",
+      "en": "Numbers to 1000: reading and writing"
+    },
+    "prerequisites": [
+      "mat.placevalue.100",
+      "mat.count.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "number-reading",
+        "params": {
+          "max": 1000,
+          "mode": "words"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.num.1000.read"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.num.1000.read",
+      "kind": "data",
+      "title": "Skill mat.num.1000.read",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.num.1000.place",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "Numerele până la 1000: sute, zeci, unități",
+      "en": "Numbers to 1000: hundreds, tens, ones"
+    },
+    "prerequisites": [
+      "mat.placevalue.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "number-reading",
+        "params": {
+          "max": 1000,
+          "mode": "place"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.num.1000.place"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.num.1000.place",
+      "kind": "data",
+      "title": "Skill mat.num.1000.place",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.add.nocarry.1000",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Adunarea până la 1000, fără trecere peste ordin",
+      "en": "Addition to 1000 without carrying"
+    },
+    "prerequisites": [
+      "mat.add.carry.100",
+      "mat.num.1000.place"
+    ],
+    "itemSources": [
+      {
+        "generator": "addition",
+        "params": {
+          "max": 1000,
+          "carry": false
+        }
+      }
+    ],
+    "explanations": [
+      "exp.add.nocarry.1000"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.add.nocarry.1000",
+      "kind": "data",
+      "title": "Skill mat.add.nocarry.1000",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.sub.noborrow.1000",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Scăderea până la 1000, fără împrumut",
+      "en": "Subtraction within 1000 without borrowing"
+    },
+    "prerequisites": [
+      "mat.sub.borrow.100",
+      "mat.num.1000.place"
+    ],
+    "itemSources": [
+      {
+        "generator": "subtraction",
+        "params": {
+          "max": 1000,
+          "borrow": false
+        }
+      }
+    ],
+    "explanations": [
+      "exp.sub.noborrow.1000"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.sub.noborrow.1000",
+      "kind": "data",
+      "title": "Skill mat.sub.noborrow.1000",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.mul.table.small",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Tabla înmulțirii cu 2, 3, 4 și 5",
+      "en": "Multiplication tables for 2, 3, 4 and 5"
+    },
+    "prerequisites": [
+      "mat.add.nocarry.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "multiplication",
+        "params": {
+          "tables": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.mul.table.small"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.mul.table.small",
+      "kind": "data",
+      "title": "Skill mat.mul.table.small",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.mul.table.large",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Tabla înmulțirii cu 6, 7, 8, 9 și 10",
+      "en": "Multiplication tables for 6, 7, 8, 9 and 10"
+    },
+    "prerequisites": [
+      "mat.mul.table.small"
+    ],
+    "itemSources": [
+      {
+        "generator": "multiplication",
+        "params": {
+          "tables": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.mul.table.large"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.mul.table.large",
+      "kind": "data",
+      "title": "Skill mat.mul.table.large",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.div.table",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Împărțirea ca operație inversă înmulțirii (tabla împărțirii)",
+      "en": "Division as the inverse of multiplication (division tables)"
+    },
+    "prerequisites": [
+      "mat.mul.table.small",
+      "mat.mul.table.large"
+    ],
+    "itemSources": [
+      {
+        "generator": "division",
+        "params": {
+          "tables": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.div.table"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.div.table",
+      "kind": "data",
+      "title": "Skill mat.div.table",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.add.carry.1000",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Adunarea până la 1000, cu trecere peste ordin",
+      "en": "Addition to 1000 with carrying"
+    },
+    "prerequisites": [
+      "mat.add.nocarry.1000",
+      "mat.add.carry.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "addition",
+        "params": {
+          "max": 1000,
+          "carry": true
+        }
+      }
+    ],
+    "explanations": [
+      "exp.add.carry.1000"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.add.carry.1000",
+      "kind": "data",
+      "title": "Skill mat.add.carry.1000",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.sub.borrow.1000",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Scăderea până la 1000, cu împrumut",
+      "en": "Subtraction within 1000 with borrowing"
+    },
+    "prerequisites": [
+      "mat.sub.noborrow.1000",
+      "mat.sub.borrow.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "subtraction",
+        "params": {
+          "max": 1000,
+          "borrow": true
+        }
+      }
+    ],
+    "explanations": [
+      "exp.sub.borrow.1000"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.sub.borrow.1000",
+      "kind": "data",
+      "title": "Skill mat.sub.borrow.1000",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.equation.unknown",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Ecuații simple cu o necunoscută",
+      "en": "Simple equations with one unknown"
+    },
+    "prerequisites": [
+      "mat.add.nocarry.1000",
+      "mat.sub.noborrow.1000",
+      "mat.mul.table.large",
+      "mat.div.table"
+    ],
+    "itemSources": [
+      {
+        "generator": "equation",
+        "params": {
+          "ops": [
+            "+",
+            "-"
+          ],
+          "max": 1000
+        }
+      },
+      {
+        "generator": "equation",
+        "params": {
+          "ops": [
+            "*",
+            "/"
+          ],
+          "max": 100,
+          "factorMax": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.equation.unknown"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.equation.unknown",
+      "kind": "data",
+      "title": "Skill mat.equation.unknown",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.order.noparen",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.4"
+      }
+    ],
+    "title": {
+      "ro": "Ordinea efectuării operațiilor, fără paranteze",
+      "en": "Order of operations without parentheses"
+    },
+    "prerequisites": [
+      "mat.mul.table.large",
+      "mat.div.table",
+      "mat.add.carry.100",
+      "mat.sub.borrow.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "order-of-operations",
+        "params": {
+          "parens": false,
+          "max": 100,
+          "factorMax": 10,
+          "operandMax": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.order.noparen"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.order.noparen",
+      "kind": "data",
+      "title": "Skill mat.order.noparen",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.order.paren",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "2.4"
+      }
+    ],
+    "title": {
+      "ro": "Ordinea efectuării operațiilor, cu paranteze",
+      "en": "Order of operations with parentheses"
+    },
+    "prerequisites": [
+      "mat.order.noparen"
+    ],
+    "itemSources": [
+      {
+        "generator": "order-of-operations",
+        "params": {
+          "parens": true,
+          "max": 100,
+          "factorMax": 10,
+          "operandMax": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.order.paren"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.order.paren",
+      "kind": "data",
+      "title": "Skill mat.order.paren",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.wordproblem.1000",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Probleme cu adunare și scădere, într-un sau două pași (până la 1000)",
+      "en": "Add/subtract word problems in 1-2 steps (to 1000)"
+    },
+    "prerequisites": [
+      "mat.wordproblem.100",
+      "mat.add.carry.1000",
+      "mat.sub.borrow.1000"
+    ],
+    "itemSources": [
+      {
+        "generator": "word-problem",
+        "params": {
+          "max": 1000,
+          "ops": [
+            "+",
+            "-"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.wordproblem.1000"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.wordproblem.1000",
+      "kind": "data",
+      "title": "Skill mat.wordproblem.1000",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.wordproblem.muldiv",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Probleme cu înmulțire și împărțire",
+      "en": "Multiplication and division word problems"
+    },
+    "prerequisites": [
+      "mat.wordproblem.100",
+      "mat.mul.table.large",
+      "mat.div.table"
+    ],
+    "itemSources": [
+      {
+        "generator": "word-problem",
+        "params": {
+          "max": 100,
+          "ops": [
+            "*",
+            "/"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.wordproblem.muldiv"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.wordproblem.muldiv",
+      "kind": "data",
+      "title": "Skill mat.wordproblem.muldiv",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-III-IV-2014) to verify against the official programa"
+    }
+  }
+]

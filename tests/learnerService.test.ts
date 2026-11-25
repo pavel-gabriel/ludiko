@@ -450,7 +450,7 @@ describe('read models', () => {
     expect(later.get('mat.count.10')!.dueForReview).toBe(true)
     // ordered by level
     expect(map[0].grade).toBe(0)
-    expect(map[map.length - 1].grade).toBeGreaterThanOrEqual(2)
+    expect(map[map.length - 1].grade).toBe(Math.max(...getSkillsBySubject('mat').map((s) => s.grade)))
   })
 
   it('parent summary: improved this week, play days, next up, tip', async () => {

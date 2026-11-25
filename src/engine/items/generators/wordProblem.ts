@@ -1,13 +1,17 @@
 /**
- * `word-problem` generator (params: max, ops). Short ORIGINAL Romanian word problems (with English
- * translations) built from templates; one operation, or two at higher difficulty when ops allows it.
- * All quantities are >= 2 so Romanian/English agreement never needs singular forms.
+ * `word-problem` generator (params: max, ops, factorMax, groupsMax, remainder). Short ORIGINAL Romanian
+ * word problems (with English translations) built from templates; one operation, or two at higher
+ * difficulty when ops allows it. `ops` may contain "+", "-", "*" and "/" (multiplication / sharing /
+ * grouping, see ./wordProblemMulDiv). All quantities are >= 2 so Romanian/English agreement never
+ * needs singular forms. Above max=100 quantities scale up (grade III: 1 000, grade IV: 10 000).
  */
-import type { ChoiceItem, Item, LocalizedText, NumberInputItem } from '../../types';
+import type { ChoiceItem, Item, LocalizedText, NumberInputItem, VisualSpec } from '../../types';
 import type { GeneratorFn } from './registry';
 import type { Rng } from './util';
-import { baseFields, chance, numberCards, numberOptions, optionCount, paramInt, paramStrings, pick, randInt, weighted } from './util';
-import { THINGS, roCount, type Thing } from './things';
+import { baseFields, chance, numberOptions, optionCount, paramInt, paramStrings, pick, randInt, weighted } from './util';
+import { THINGS, type Thing } from './things';
+import { fmtCards, roNum } from './numfmt';
+import { mulDivProblem } from './wordProblemMulDiv';
 import { objectsSpec } from './visuals';
 
 const NAMES = ['Ana', 'Maria', 'Ioana', 'Elena', 'Sofia', 'Daria', 'Andrei', 'Mihai', 'Tudor', 'Radu', 'Luca', 'Matei'];
@@ -18,8 +22,10 @@ interface Scene {
   t: Thing;
 }
 
-interface Problem {
+export interface Problem {
   text: LocalizedText;
+  /** Ready-made picture (groups of objects); otherwise a picture of `start` may be added */
+  visual?: VisualSpec;
   answer: number;
   /** Wrong answers a child plausibly gives */
   wrong: number[];
@@ -28,9 +34,12 @@ interface Problem {
   thing: Thing;
 }
 
+/** Smallest sensible starting amount: grows with the number range */
+const floorFor = (max: number, small: number): number => (max > 100 ? Math.max(small, Math.round(max / 10)) : small);
+
 type Template = (s: Scene, v: number[]) => LocalizedText;
 
-const c = (n: number, t: Thing) => roCount(n, t);
+const c = (n: number, t: Thing) => roNum(n, t.ro);
 
 /* ---- one-step templates ------------------------------------------- */
 
@@ -110,7 +119,7 @@ function scene(rng: Rng, needFood = false): Scene {
 function oneStep(rng: Rng, max: number, d: number, op: '+' | '-'): Problem {
   const lim = Math.max(6, Math.round(max * (0.4 + 0.13 * d)));
   if (op === '+') {
-    const total = randInt(rng, 5, Math.min(max, lim));
+    const total = randInt(rng, floorFor(max, 5), Math.min(max, lim));
     const a = randInt(rng, 2, total - 2);
     const b = total - a;
     const s = scene(rng);
@@ -122,8 +131,8 @@ function oneStep(rng: Rng, max: number, d: number, op: '+' | '-'): Problem {
       thing: s.t,
     };
   }
-  const a = randInt(rng, 5, Math.min(max, lim));
-  const b = randInt(rng, 2, a - 2);
+  const a = randInt(rng, floorFor(max, 5), Math.min(max, lim));
+  const b = randInt(rng, floorFor(max / 5, 2), a - 2);
   const tpl = pick(rng, SUB_TEMPLATES);
   const s = scene(rng, tpl.food);
   return {
@@ -143,7 +152,7 @@ function twoStep(rng: Rng, max: number, d: number, ops: string[]): Problem {
   const form = weighted(rng, forms);
   const s = scene(rng);
   if (form === '++') {
-    const total = randInt(rng, 8, Math.min(max, lim));
+    const total = randInt(rng, floorFor(max, 8), Math.min(max, lim));
     const a = randInt(rng, 2, total - 4);
     const b = randInt(rng, 2, total - a - 2);
     const x = total - a - b;
@@ -156,7 +165,7 @@ function twoStep(rng: Rng, max: number, d: number, ops: string[]): Problem {
     const answer = a + b - x;
     return { text: ADD_SUB(s, [a, b, x]), answer, wrong: [answer + 1, answer - 1, a + b, a + b + x, Math.abs(a - b), answer + 10], start: a, thing: s.t };
   }
-  const a = randInt(rng, 5, Math.min(max - 2, lim));
+  const a = randInt(rng, floorFor(max, 5), Math.min(max - 2, lim));
   const b = randInt(rng, 2, a - 2);
   const x = randInt(rng, 2, Math.max(2, Math.min(max - (a - b), lim)));
   const answer = a - b + x;
@@ -166,24 +175,32 @@ function twoStep(rng: Rng, max: number, d: number, ops: string[]): Problem {
 export const wordProblem: GeneratorFn = (params, ctx): Item => {
   const { rng, difficulty: d } = ctx;
   const max = Math.max(12, paramInt(params, 'max', 20));
-  const ops = paramStrings(params, 'ops', ['+', '-']).filter((o) => o === '+' || o === '-');
+  const allOps = paramStrings(params, 'ops', ['+', '-']).filter((o) => ['+', '-', '*', '/'].includes(o));
+  const ops = allOps.filter((o) => o === '+' || o === '-');
+  const mulDiv = allOps.filter((o) => o === '*' || o === '/');
   const allowed = ops.length ? ops : ['+'];
   const twoOps = d >= 3 && chance(rng, d >= 4 ? 0.7 : 0.4);
 
-  const problem = twoOps ? twoStep(rng, max, d, allowed) : oneStep(rng, max, d, allowed.length === 1 ? (allowed[0] as '+' | '-') : pick(rng, ['+', '-'] as const));
+  const useMulDiv = mulDiv.length > 0 && (ops.length === 0 || chance(rng, 0.55));
+  const problem = useMulDiv
+    ? mulDivProblem(rng, params, d, mulDiv as ('*' | '/')[], ops, ops.length > 0 && twoOps, max)
+    : twoOps
+      ? twoStep(rng, max, d, allowed)
+      : oneStep(rng, max, d, allowed.length === 1 ? (allowed[0] as '+' | '-') : pick(rng, ['+', '-'] as const));
   const prompt = problem.text;
   const visual =
-    problem.start !== undefined && problem.start <= 20 && chance(rng, 0.4) ? objectsSpec(problem.thing.icon, problem.start) : undefined;
+    problem.visual ??
+    (problem.start !== undefined && problem.start <= 20 && chance(rng, 0.4) ? objectsSpec(problem.thing.icon, problem.start) : undefined);
 
   if (chance(rng, 0.25)) {
     const item: NumberInputItem = { ...baseFields(ctx, prompt, visual), type: 'number-input', correct: problem.answer };
     return item;
   }
-  const values = numberOptions(rng, problem.answer, problem.wrong, optionCount(d), 0, max);
+  const values = numberOptions(rng, problem.answer, problem.wrong, optionCount(d), 0, Math.max(max, problem.answer));
   const item: ChoiceItem = {
     ...baseFields(ctx, prompt, visual),
     type: 'choice',
-    options: numberCards(values),
+    options: fmtCards(values),
     correctId: `n${problem.answer}`,
   };
   return item;

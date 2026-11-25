@@ -2,7 +2,12 @@ import { describe, it, expect } from 'vitest';
 import { getAllSkills, getExplanation } from '../src/engine/content/registry';
 import type { Explanation, VisualSpec } from '../src/engine/types';
 
-const mathSkills = getAllSkills().filter((s) => s.subject === 'mat' && s.grade <= 2);
+import grade0File from '../content/skills/mat/grade0.json';
+import grade1File from '../content/skills/mat/grade1.json';
+import grade2File from '../content/skills/mat/grade2.json';
+/* Scope: the 18-skill grade 0-II seed graph (measures/III-IV explanations are tested by their own suites) */
+const SEED_IDS = new Set([...grade0File, ...grade1File, ...grade2File].map((s: { id: string }) => s.id));
+const mathSkills = getAllSkills().filter((s) => s.subject === 'mat' && SEED_IDS.has(s.id));
 
 /** Numbers a visual "shows" (plus the small numbers that are implicit in it). */
 function visualNumbers(v: VisualSpec | undefined): { nums: Set<number>; tens: Set<number>; ones: Set<number>; blocks: boolean } {

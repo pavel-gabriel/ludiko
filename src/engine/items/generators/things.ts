@@ -27,4 +27,4 @@ export const THINGS: readonly Thing[] = [
 ];
 
 /** Romanian count phrase for n >= 2: from 20 up the noun takes "de" ("20 de mere", "7 mere"). */
-export const roCount = (n: number, t: Thing): string => (n >= 20 ? `${n} de ${t.ro}` : `${n} ${t.ro}`);
+export const roCount = (n: number, t: Thing): string => (n % 100 === 0 || n % 100 >= 20 ? `${n} de ${t.ro}` : `${n} ${t.ro}`);
