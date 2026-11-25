@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ludiko/content/schema/skill.schema.json",
+  "title": "Skill",
+  "description": "Smallest diagnosable unit (docs/PLAN.md section 5.2). Mirrors Skill in src/engine/types.ts. Semantic checks (graph, mastery bounds) live in src/engine/content/validate.ts.",
+  "type": "object",
+  "required": ["id", "subject", "grade", "semester", "competences", "title", "prerequisites", "itemSources", "explanations", "masteryCheck", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(\\.[a-z0-9]+)+$" },
+    "subject": { "enum": ["mat", "rom", "stiinte", "ist", "geo", "civ", "logic"] },
+    "grade": { "type": "integer", "minimum": 0, "maximum": 8 },
+    "semester": { "enum": [1, 2] },
+    "competences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["programa", "code"],
+        "additionalProperties": false,
+        "properties": {
+          "programa": { "type": "string", "minLength": 1 },
+          "code": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "title": { "$ref": "#/$defs/localizedText" },
+    "prerequisites": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "itemSources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "oneOf": [
+          {
+            "type": "object",
+            "required": ["generator"],
+            "additionalProperties": false,
+            "properties": {
+              "generator": { "type": "string", "minLength": 1 },
+              "params": { "type": "object" }
+            }
+          },
+          {
+            "type": "object",
+            "required": ["bank"],
+            "additionalProperties": false,
+            "properties": { "bank": { "type": "string", "minLength": 1 } }
+          }
+        ]
+      }
+    },
+    "explanations": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "masteryCheck": {
+      "type": "object",
+      "required": ["items", "minCorrect"],
+      "additionalProperties": false,
+      "properties": {
+        "items": { "type": "integer", "minimum": 1 },
+        "minCorrect": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "provenance": { "$ref": "provenance.schema.json" }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["ro"],
+      "additionalProperties": false,
+      "properties": {
+        "ro": { "type": "string", "minLength": 1 },
+        "en": { "type": "string" }
+      }
+    }
+  }
+}
