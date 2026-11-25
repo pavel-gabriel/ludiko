@@ -57,4 +57,6 @@ export interface SessionReward {
   newSticker: boolean
   /** false for guests: nothing was written anywhere */
   saved: boolean
+  /** Extra sticker ids earned on top (mission bonus, island conquered, finished set, play-day milestone) */
+  bonus?: string[]
 }

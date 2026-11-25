@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import ReportButton from '@/components/ui/ReportButton'
 import type { Explanation, Item, ItemResult } from '@/engine/types'
 import FramesPlayer from '@/ui/frames/FramesPlayer'
+import { MascotSvg } from '@/ui/mascot/Mascot'
 import ItemView from '@/ui/items/ItemView'
 import ExitDialog from './ExitDialog'
 import ProgressDots from './ProgressDots'
@@ -274,10 +275,10 @@ export default function SessionRunner({
         <div className="flex flex-col gap-3">
           <p
             role="status"
-            className="rounded-2xl bg-ludiko-yellow px-4 py-3 text-center text-base font-bold text-ludiko-text"
+            className="flex items-center justify-center gap-2 rounded-2xl bg-ludiko-yellow px-4 py-2 text-center text-base font-bold text-ludiko-text"
           >
-            <span aria-hidden="true">💡 </span>
-            {t('session.explainIntro')}
+            <MascotSvg mood="encourage" size={48} className="shrink-0" decorative />
+            <span>{t('session.explainIntro')}</span>
           </p>
           <FramesPlayer explanation={explanation} onDone={() => advance(queue)} />
           <button

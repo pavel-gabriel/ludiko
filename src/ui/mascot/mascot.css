@@ -1,0 +1,95 @@
+/* Ludi's idle animations. Everything here is skipped when the child prefers reduced motion. */
+.ludi-svg {
+  overflow: visible;
+}
+.ludi-svg .ludi-part {
+  transform-box: fill-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ludi-anim .ludi-wing-wave {
+    transform-origin: 50% 8%;
+    animation: ludi-wave 1.1s ease-in-out infinite;
+  }
+  .ludi-anim .ludi-body-bob {
+    transform-origin: 50% 100%;
+    animation: ludi-bob 2.6s ease-in-out infinite;
+  }
+  .ludi-anim .ludi-body-hop {
+    transform-origin: 50% 100%;
+    animation: ludi-hop 0.9s ease-in-out infinite;
+  }
+  .ludi-anim .ludi-body-sway {
+    transform-origin: 50% 100%;
+    animation: ludi-sway 3.4s ease-in-out infinite;
+  }
+  .ludi-anim .ludi-body-breathe {
+    transform-origin: 50% 100%;
+    animation: ludi-breathe 3.6s ease-in-out infinite;
+  }
+  .ludi-anim .ludi-twinkle {
+    transform-origin: 50% 50%;
+    animation: ludi-twinkle 1.4s ease-in-out infinite;
+  }
+  .ludi-anim .ludi-twinkle-b {
+    animation-delay: 0.45s;
+  }
+  .ludi-anim .ludi-float {
+    animation: ludi-float 2.8s ease-in-out infinite;
+  }
+  .ludi-anim .ludi-float-b {
+    animation-delay: 1.2s;
+  }
+  .ludi-anim .ludi-dot {
+    animation: ludi-dot 1.6s ease-in-out infinite;
+  }
+  .ludi-anim .ludi-dot-b {
+    animation-delay: 0.25s;
+  }
+  .ludi-anim .ludi-dot-c {
+    animation-delay: 0.5s;
+  }
+  .ludi-anim .ludi-pulse {
+    transform-origin: 50% 50%;
+    animation: ludi-pulse 1.8s ease-in-out infinite;
+  }
+}
+
+@keyframes ludi-wave {
+  0%, 100% { transform: rotate(-9deg); }
+  50% { transform: rotate(9deg); }
+}
+@keyframes ludi-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+@keyframes ludi-hop {
+  0%, 100% { transform: translateY(0) scale(1, 1); }
+  35% { transform: translateY(-6px) scale(0.98, 1.03); }
+  60% { transform: translateY(0) scale(1.03, 0.97); }
+}
+@keyframes ludi-sway {
+  0%, 100% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(1.5deg); }
+}
+@keyframes ludi-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.025, 1.03); }
+}
+@keyframes ludi-twinkle {
+  0%, 100% { opacity: 0.55; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+@keyframes ludi-float {
+  0% { opacity: 0; transform: translate(0, 5px); }
+  30% { opacity: 1; }
+  100% { opacity: 0; transform: translate(4px, -9px); }
+}
+@keyframes ludi-dot {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+@keyframes ludi-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}

@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import Confetti from '@/components/ui/Confetti'
 import { localize } from '@/engine/types'
+import { AlbumLink, BonusStickers } from '@/ui/album/BonusStickers'
+import { MascotSvg } from '@/ui/mascot/Mascot'
 import { playFinish } from '@/utils/sounds'
 import type { SessionReward, SessionSummary } from './types'
 
@@ -33,8 +35,11 @@ export default function SessionResults({ summary, reward, isGuest, onAgain, onDo
       {stars >= 2 && <Confetti />}
 
       <section className="rounded-3xl bg-white p-6 text-center shadow-md" aria-labelledby="session-results-title">
+        <div className="flex justify-center">
+          <MascotSvg mood={stars >= 2 ? 'cheer' : 'encourage'} size={112} decorative />
+        </div>
         <div
-          className="flex justify-center gap-2 text-5xl"
+          className="mt-1 flex justify-center gap-2 text-5xl"
           role="img"
           aria-label={t('session.results.starsLabel', { n: stars })}
         >
@@ -74,6 +79,18 @@ export default function SessionResults({ summary, reward, isGuest, onAgain, onDo
             </p>
           </div>
         </section>
+      )}
+
+      {reward?.bonus && reward.bonus.length > 0 && (
+        <div className="mt-4">
+          <BonusStickers reward={reward} />
+        </div>
+      )}
+
+      {!isGuest && (reward?.sticker || (reward?.bonus && reward.bonus.length > 0)) && (
+        <div className="mt-3 flex justify-center">
+          <AlbumLink />
+        </div>
       )}
 
       <section className="mt-4 rounded-3xl bg-white p-4 shadow-md" aria-labelledby="session-review-title">

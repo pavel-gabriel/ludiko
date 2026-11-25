@@ -117,6 +117,7 @@ function BitRunner({ profile, subject, index }: { profile: ChildProfile; subject
       const bits = (await learnerService.getTodayBits(profile.id, subject)) ?? []
       const pending = bits.filter((b) => !b.done && b.index !== bit.index)
       const nextIndex = (pending.find((b) => b.index > bit.index) ?? pending[0])?.index
+      if (bits.every((b) => b.done) && !bit.done) progressStore.onMissionComplete()
       reportPlayedToday()
       triggerClassSync(profile.id)
       setView({

@@ -11,7 +11,7 @@ export default function PlacementIntro({ resuming, onStart }: PlacementIntroProp
   const { t } = useTranslation()
   return (
     <section className="flex flex-col gap-5" aria-labelledby="check-intro-title">
-      <Mascot>
+      <Mascot mood="wave">
         <h1 id="check-intro-title" className="text-2xl font-extrabold leading-snug text-ludiko-text">
           {resuming ? t('learn.check.resumeTitle') : t('learn.check.introTitle')}
         </h1>
