@@ -1,0 +1,50 @@
+name: Daily reminders
+
+# Sends at most one push reminder per child device per day, at the parent's chosen local hour.
+# See docs/NOTIFICATIONS.md §4. Without the secrets the job is a no-op (exits 0).
+
+on:
+  schedule:
+    - cron: '7 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Log what would be sent, without sending or writing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+# Never run two senders at once (a queued run waits instead of cancelling a send in progress).
+concurrency:
+  group: daily-reminders
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Send due reminders
+        env:
+          DRY_RUN_INPUT: ${{ inputs.dry_run }}
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ "$DRY_RUN_INPUT" = "true" ]; then
+            node scripts/send-daily-reminders.mjs --dry-run
+          else
+            node scripts/send-daily-reminders.mjs
+          fi
