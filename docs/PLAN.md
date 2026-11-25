@@ -183,6 +183,8 @@ Fluency modes (Race, Sprint) are offered only for skills that are already `pract
 5. **Later:** volunteer reviewers (pedagogy-faculty students doing teaching practice, teachers). Items move `beta → reviewed`.
 6. **Curriculum versioning:** content is tagged by programa version, so when the programa changes (e.g. the proposed "Științe" merge for V–VII) we remap skills instead of rewriting them.
 
+**Admin access to the report queue:** Firebase email login + `admins/{uid}` allow-list, enforced in Firestore rules. Setup steps: [`ADMIN.md`](./ADMIN.md).
+
 ## 10. Reach: anywhere, on any phone
 
 - **Offline-first PWA:** a service worker caches the app shell and content bundles per subject and grade; progress is stored locally (IndexedDB) and synced when online.

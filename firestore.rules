@@ -8,6 +8,22 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
+    // ===== ADMIN AUTH (begin) =====
+    // Admin identity: a document admins/{uid} created manually in the Firebase console.
+    // Clients can never write it; a signed-in user may read ONLY their own doc (the
+    // UI uses that to check admin status). Anonymous sessions are never admins.
+    function isAdmin() {
+      return request.auth != null
+          && exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+          && request.auth.token.firebase.sign_in_provider != 'anonymous';
+    }
+
+    match /admins/{uid} {
+      allow get: if request.auth != null && request.auth.uid == uid;
+      allow list, write: if false;
+    }
+    // ===== ADMIN AUTH (end) =====
+
     // Game history: any authenticated user can create entries and read all history
     match /gameHistory/{docId} {
       allow read: if request.auth != null;
@@ -15,11 +31,11 @@ service cloud.firestore {
     }
 
     // Teacher profiles: teachers can read/write their own profile.
-    // `list` is allowed for any authenticated user so the admin
-    // dashboard can count teachers (get of individual docs stays owner-only).
+    // `list` is admin-only (the admin dashboard counts teachers); get of
+    // individual docs stays owner-only.
     match /teachers/{uid} {
       allow get: if request.auth != null && request.auth.uid == uid;
-      allow list: if request.auth != null;
+      allow list: if isAdmin();
       allow write: if request.auth != null && request.auth.uid == uid;
     }
 
@@ -39,12 +55,10 @@ service cloud.firestore {
 
     // Content reports ("Raportează o greșeală"). Anyone with an anonymous
     // session may create a report, but only with the allowed fields and
-    // status 'open'. Reads and status updates are open to any authenticated
-    // user because the admin dashboard is PIN-gated client-side (there is no
-    // admin identity to check). Known limitation: an anonymous user can read
-    // all reports and change their status. Deletes are denied.
+    // status 'open'. Reads and status updates are admin-only (isAdmin()).
+    // Deletes are denied.
     match /contentReports/{reportId} {
-      allow read: if request.auth != null;
+      allow read: if isAdmin();
       allow create: if request.auth != null
                     && request.resource.data.keys().hasOnly(
                          ['itemId', 'skillId', 'reason', 'comment', 'createdAt', 'status', 'appVersion'])
@@ -66,7 +80,7 @@ service cloud.firestore {
                     && (!('appVersion' in request.resource.data)
                         || (request.resource.data.appVersion is string
                             && request.resource.data.appVersion.size() <= 20));
-      allow update: if request.auth != null
+      allow update: if isAdmin()
                     && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
                     && request.resource.data.status in ['open', 'resolved', 'dismissed'];
     }

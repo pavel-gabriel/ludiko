@@ -159,7 +159,19 @@
     "draftSessions": "Drafts",
     "sessions": "sessions",
     "students": "students",
-    "noData": "No data yet"
+    "noData": "No data yet",
+    "signInPrompt": "Sign in with your admin account",
+    "emailPlaceholder": "Email address",
+    "passwordPlaceholder": "Password",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "signInError": "Incorrect email or password.",
+    "authError": "Sign-in failed. Please try again.",
+    "checking": "Checking access...",
+    "notAdminTitle": "Not an admin",
+    "notAdminBody": "This account does not have admin access. Sign out and use another account.",
+    "signedInAs": "Signed in as {{email}}",
+    "unavailable": "Admin is unavailable: Firebase is not configured."
   },
   "teacher": {
     "login": "Teacher Login",

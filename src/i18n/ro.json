@@ -159,7 +159,19 @@
     "draftSessions": "Ciorne",
     "sessions": "sesiuni",
     "students": "elevi",
-    "noData": "Niciun date încă"
+    "noData": "Niciun date încă",
+    "signInPrompt": "Autentifică-te cu contul de admin",
+    "emailPlaceholder": "Adresa de email",
+    "passwordPlaceholder": "Parola",
+    "signIn": "Autentificare",
+    "signOut": "Deconectare",
+    "signInError": "Email sau parolă incorectă.",
+    "authError": "Autentificarea a eșuat. Încearcă din nou.",
+    "checking": "Se verifică accesul...",
+    "notAdminTitle": "Nu ești admin",
+    "notAdminBody": "Acest cont nu are acces de admin. Deconectează-te și folosește alt cont.",
+    "signedInAs": "Autentificat ca {{email}}",
+    "unavailable": "Adminul nu este disponibil: Firebase nu este configurat."
   },
   "teacher": {
     "login": "Autentificare Profesor",

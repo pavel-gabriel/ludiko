@@ -2,8 +2,10 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import CloseButton from '@/components/ui/CloseButton';
-import { verifyAdminPin, getAdminStats } from '@/services/adminService';
-import type { AdminStats } from '@/services/adminService';
+import { getAdminStats, resolveAdminAccess } from '@/services/adminService';
+import type { AdminStats, AdminAccess } from '@/services/adminService';
+import { onAuthChange, signInWithEmail, logOut, ensureAnonymousAuth } from '@/services/authService';
+import { firebaseEnabled } from '@/services/firebase';
 import ContentReportsSection from '@/components/admin/ContentReportsSection';
 
 /* ------------------------------------------------------------------ */
@@ -57,25 +59,29 @@ function StatCard({ label, value, color }: StatCardProps) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  PIN gate                                                           */
+/*  Sign-in form                                                       */
 /* ------------------------------------------------------------------ */
 
-interface PinGateProps {
-  onSuccess: () => void;
-}
-
-function PinGate({ onSuccess }: PinGateProps) {
+function SignInForm() {
   const { t } = useTranslation();
-  const [pin, setPin] = useState('');
-  const [error, setError] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [busy, setBusy] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (verifyAdminPin(pin)) {
-      onSuccess();
-    } else {
-      setError(true);
-      setPin('');
+    if (!email || !password) return;
+    setBusy(true);
+    setError('');
+    try {
+      await signInWithEmail(email, password);
+    } catch (err: unknown) {
+      const code = (err as { code?: string }).code ?? '';
+      const bad = ['wrong-password', 'invalid-credential', 'user-not-found', 'invalid-email'];
+      setError(bad.some((c) => code.includes(c)) ? t('admin.signInError') : t('admin.authError'));
+    } finally {
+      setBusy(false);
     }
   };
 
@@ -84,29 +90,55 @@ function PinGate({ onSuccess }: PinGateProps) {
       <div className="card w-full max-w-xs text-center relative" role="main">
         <CloseButton />
         <h1 className="text-2xl font-bold mb-2">{t('admin.title')}</h1>
-        <p className="text-gray-500 text-sm mb-6">{t('admin.pinPrompt')}</p>
-
-        <form onSubmit={handleSubmit} aria-label={t('admin.pinFormLabel')}>
+        <p className="text-gray-500 text-sm mb-6">{t('admin.signInPrompt')}</p>
+        <form onSubmit={handleSubmit} className="space-y-3" aria-label={t('admin.signInPrompt')}>
           <input
-            type="password"
-            value={pin}
-            onChange={(e) => { setPin(e.target.value); setError(false); }}
-            placeholder={t('admin.pinPlaceholder')}
-            className="input-field w-full text-center text-xl tracking-widest mb-3"
-            aria-label={t('admin.pinLabel')}
-            autoComplete="current-password"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder={t('admin.emailPlaceholder')}
+            aria-label={t('admin.emailPlaceholder')}
+            className="input-field w-full"
+            autoComplete="username"
             autoFocus
           />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder={t('admin.passwordPlaceholder')}
+            aria-label={t('admin.passwordPlaceholder')}
+            className="input-field w-full"
+            autoComplete="current-password"
+          />
           {error && (
-            <p className="text-red-500 text-sm mb-3" role="alert" aria-live="assertive">
-              {t('admin.pinError')}
+            <p className="text-red-500 text-sm" role="alert" aria-live="assertive">
+              {error}
             </p>
           )}
-          <Button variant="purple" size="md" className="w-full" type="submit">
-            {t('admin.enter')}
+          <Button variant="purple" size="md" className="w-full" type="submit" disabled={busy || !email || !password}>
+            {t('admin.signIn')}
           </Button>
         </form>
+      </div>
+    </div>
+  );
+}
 
+/** Simple full-card message with an optional sign-out button. */
+function GateMessage({ title, body, onSignOut }: { title: string; body: string; onSignOut?: () => void }) {
+  const { t } = useTranslation();
+  return (
+    <div className="page">
+      <div className="card w-full max-w-xs text-center relative" role="main">
+        <CloseButton />
+        <h1 className="text-2xl font-bold mb-2">{title}</h1>
+        <p className="text-gray-500 text-sm mb-6" aria-live="polite">{body}</p>
+        {onSignOut && (
+          <Button variant="purple" size="md" className="w-full" onClick={onSignOut}>
+            {t('admin.signOut')}
+          </Button>
+        )}
       </div>
     </div>
   );
@@ -118,12 +150,29 @@ function PinGate({ onSuccess }: PinGateProps) {
 
 export default function AdminDashboard() {
   const { t } = useTranslation();
-  const [unlocked, setUnlocked] = useState(false);
+  const [access, setAccess] = useState<AdminAccess | 'checking'>('checking');
+  const [email, setEmail] = useState('');
   const [stats, setStats] = useState<AdminStats | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+  const unlocked = access === 'admin';
 
-  /* Fetch stats once PIN is verified */
+  /* Track auth state and resolve admin access (rules enforce it server-side) */
+  useEffect(() => {
+    if (!firebaseEnabled) {
+      setAccess('unavailable');
+      return;
+    }
+    let cancelled = false;
+    const unsub = onAuthChange((user) => {
+      setAccess('checking');
+      setEmail(user?.email ?? '');
+      resolveAdminAccess(user).then((a) => { if (!cancelled) setAccess(a); });
+    });
+    return () => { cancelled = true; unsub(); };
+  }, []);
+
+  /* Fetch stats once admin access is confirmed */
   useEffect(() => {
     if (!unlocked) return;
     setLoading(true);
@@ -132,9 +181,17 @@ export default function AdminDashboard() {
       .catch(() => { setError(true); setLoading(false); });
   }, [unlocked]);
 
-  /* Show PIN gate until unlocked */
-  if (!unlocked) {
-    return <PinGate onSuccess={() => setUnlocked(true)} />;
+  const handleSignOut = () => {
+    setStats(null);
+    /* Restore an anonymous session so the rest of the app keeps working */
+    logOut().then(() => ensureAnonymousAuth()).catch(() => {});
+  };
+
+  if (access === 'unavailable') return <GateMessage title={t('admin.title')} body={t('admin.unavailable')} />;
+  if (access === 'checking') return <GateMessage title={t('admin.title')} body={t('admin.checking')} />;
+  if (access === 'signed-out' || access === 'anonymous') return <SignInForm />;
+  if (access === 'not-admin') {
+    return <GateMessage title={t('admin.notAdminTitle')} body={t('admin.notAdminBody')} onSignOut={handleSignOut} />;
   }
 
   return (
@@ -145,6 +202,12 @@ export default function AdminDashboard() {
         <div className="mb-6">
           <h1 className="text-2xl font-bold">{t('admin.title')}</h1>
           <p className="text-sm text-gray-500">{t('admin.subtitle')}</p>
+          <div className="flex items-center gap-3 mt-2 text-xs text-gray-500">
+            <span>{t('admin.signedInAs', { email })}</span>
+            <button type="button" onClick={handleSignOut} className="text-ludiko-purple hover:underline">
+              {t('admin.signOut')}
+            </button>
+          </div>
         </div>
 
         {loading && (
