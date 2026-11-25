@@ -16,11 +16,8 @@ import {
   listenToGameState,
   setGamePhase,
   advanceQuestion,
-  initMathGameState,
-  initShapeGameState,
-  initMemoryGameState,
 } from '@/services/gameSession';
-import { generateNumericQuestion, generateShapeQuestion, generateMemoryCards } from '@/services/gameEngine';
+import { initRoomGame } from '@/services/roomGame';
 import type { RTDBGameState } from '@/services/gameSession';
 import type { ClassroomSession, Room, StudentSessionResult } from '@/utils/types';
 
@@ -87,25 +84,8 @@ export default function TeacherLiveDashboard() {
     const { settings } = session;
     const playerIds = room.players.map((p) => p.id);
 
-    if (settings.gameType === 'shapeMatch') {
-      const count = settings.gameMode === 'timedSprint' ? 100 : settings.rounds;
-      const questions = [];
-      for (let i = 0; i < count; i++) {
-        questions.push(generateShapeQuestion(settings.difficulty));
-      }
-      await initShapeGameState(session.roomId, questions, playerIds);
-    } else if (settings.gameType === 'memoryGame') {
-      const cards = generateMemoryCards(settings.rounds);
-      await initMemoryGameState(session.roomId, cards, playerIds);
-    } else {
-      /* Numeric games: mathRace, countingGame, numberSequence */
-      const count = settings.gameMode === 'timedSprint' ? 100 : settings.rounds;
-      const questions = [];
-      for (let i = 0; i < count; i++) {
-        questions.push(generateNumericQuestion(settings.gameType, settings.difficulty, settings.operations));
-      }
-      await initMathGameState(session.roomId, questions, playerIds, settings.gameType);
-    }
+    /* v1 settings -> v1 generators; settings.skillIds -> items of those skills (src/services/roomGame.ts) */
+    await initRoomGame(session.roomId, settings, playerIds);
 
     await updateRoomStatus(session.roomId, 'playing');
     await setGamePhase(session.roomId, 'playing');

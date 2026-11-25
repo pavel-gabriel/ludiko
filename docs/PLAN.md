@@ -244,7 +244,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 - [x] Offline PWA (service worker, content bundle caching), performance budget in CI
 - [x] Explanation frames + first SVG visual kit (number line, blocks, clock, coins)
 - [x] "Raportează o greșeală" button + admin queue (⚠️ needs real admin auth before launch)
-- [ ] Rebuild the existing games as modes over items (Race, Sprint, Memory, Duel)
+- [x] Rebuild the existing games as modes over items (Race, Sprint, Memory, Duel) — rooms with `settings.skillIds` run on items (`src/services/itemGame.ts`, `roomGame.ts`); v1 rooms and Shape Match keep the v1 generators
 
 ### Phase 1A — Math 0–IV: check → gaps → missions
 - [x] Math skill graph 0–IV with prerequisites, tagged to MEM/Matematică competences — 63 skills (0–II core, III–IV numbers & operations, I–IV measures); **competence codes to verify**

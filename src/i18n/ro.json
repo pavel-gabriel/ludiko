@@ -757,5 +757,54 @@
     "failed": "Nu am putut salva setarea. Verifică conexiunea la internet și încearcă din nou.",
     "needsInstallTitle": "Mai întâi, adaugă Ludiko pe ecranul principal",
     "needsInstall": "Pe iPhone și iPad, notificările merg doar din aplicația adăugată pe ecranul principal. Apasă Partajează, apoi „Adaugă pe ecranul principal”, deschide Ludiko de acolo și revino aici."
+  },
+  "play": {
+    "title": "Ce exersăm?",
+    "hint": "Alege până la {{max}} abilități sau lasă gol pentru jocul clasic.",
+    "presets": "Alegeri rapide",
+    "preset": {
+      "addTo20": "Adunare până la 20",
+      "subTo20": "Scădere până la 20",
+      "mulTable": "Tabla înmulțirii",
+      "divTable": "Tabla împărțirii",
+      "syllables": "Silabe",
+      "letters": "Litere și sunete",
+      "wordPictures": "Cuvinte și imagini",
+      "clock": "Ceasul"
+    },
+    "chosen": "Alese: {{n}}/{{max}}",
+    "remove": "Scoate: {{name}}",
+    "clear": "Șterge alegerea",
+    "pickYourself": "Alege singur abilitățile",
+    "hidePicker": "Ascunde lista",
+    "subject": "Materia",
+    "grade": "Clasa",
+    "subjects": {
+      "mat": "Matematică",
+      "rom": "Limba română",
+      "stiinte": "Științe",
+      "ist": "Istorie",
+      "geo": "Geografie",
+      "civ": "Educație civică",
+      "logic": "Logică"
+    },
+    "grades": {
+      "0": "Pregătitoare",
+      "1": "I",
+      "2": "II",
+      "3": "III",
+      "4": "IV",
+      "5": "V",
+      "6": "VI",
+      "7": "VII",
+      "8": "VIII"
+    },
+    "maxReached": "Ai ales deja {{max}} abilități. Scoate una ca să adaugi alta.",
+    "notPlayable": "nu merge în acest joc",
+    "noSkills": "Nu sunt abilități în această clasă.",
+    "modeTitle": "Cum jucăm?",
+    "modeRace": "Cursă",
+    "modeMemory": "Memorie",
+    "unplayable": "Nu merg în acest joc: {{names}}. Scoate-le sau schimbă jocul."
   }
 }

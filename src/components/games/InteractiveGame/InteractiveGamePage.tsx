@@ -3,11 +3,8 @@ import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
 import { useAuthStore } from '@/store/authStore';
-import { generateNumericQuestion, generateShapeQuestion, generateMemoryCards } from '@/services/gameEngine';
+import { initRoomGame } from '@/services/roomGame';
 import {
-  initMathGameState,
-  initShapeGameState,
-  initMemoryGameState,
   listenToGameState,
   recordCorrectAnswer,
   recordPlayerFinished,
@@ -15,7 +12,6 @@ import {
   type RTDBGameState,
 } from '@/services/gameSession';
 import { deleteRoom } from '@/services/roomManager';
-import type { Question, ShapeQuestion as ShapeQ } from '@/utils/types';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import CountdownOverlay from '@/components/games/MathRace/CountdownOverlay';
 import GameResults from '@/components/leaderboard/GameResults';
@@ -23,6 +19,7 @@ import InteractiveQuestionPanel from './InteractiveQuestionPanel';
 import InteractiveShapePanel from './InteractiveShapePanel';
 import InteractiveMemoryPanel from './InteractiveMemoryPanel';
 import RaceTrack from '@/components/games/MathRace/RaceTrack';
+import ItemQuestionCard from '@/components/games/shared/ItemQuestionCard';
 
 export default function InteractiveGamePage() {
   const { t } = useTranslation();
@@ -48,7 +45,15 @@ export default function InteractiveGamePage() {
   const settings = room?.settings;
   const gameType = settings?.gameType ?? 'mathRace';
   const isMemory = gameType === 'memoryGame';
-  const displayTotal = settings?.rounds ?? 10;
+  /* Item games (v2) can hold fewer items / memory pairs than rounds asked for: trust what was generated */
+  const itemCount = gameState?.items?.length;
+  const pairCount = gameState?.memoryCards?.length ? gameState.memoryCards.length / 2 : undefined;
+  const roundsSetting = settings?.rounds ?? 10;
+  const displayTotal = isMemory
+    ? (pairCount ?? roundsSetting)
+    : itemCount
+      ? Math.min(roundsSetting, itemCount)
+      : roundsSetting;
 
   const player1 = room?.players[0];
   const player2 = room?.players[1];
@@ -69,27 +74,11 @@ export default function InteractiveGamePage() {
     return () => window.removeEventListener('popstate', onPopState);
   }, [handleExit]);
 
-  /* Host generates questions / cards based on game type */
+  /* Host generates questions / items / cards based on game type (v1) or skills (v2) */
   useEffect(() => {
     if (!room || !settings) return;
     const playerIds = room.players.map((p) => p.id);
-
-    if (gameType === 'shapeMatch') {
-      const questions: ShapeQ[] = [];
-      for (let i = 0; i < displayTotal; i++) {
-        questions.push(generateShapeQuestion(settings.difficulty));
-      }
-      initShapeGameState(room.id, questions, playerIds);
-    } else if (gameType === 'memoryGame') {
-      const cards = generateMemoryCards(displayTotal);
-      initMemoryGameState(room.id, cards, playerIds);
-    } else {
-      const questions: Question[] = [];
-      for (let i = 0; i < displayTotal; i++) {
-        questions.push(generateNumericQuestion(gameType, settings.difficulty, settings.operations));
-      }
-      initMathGameState(room.id, questions, playerIds, gameType);
-    }
+    initRoomGame(room.id, settings, playerIds);
   }, [room?.id]);
 
   /* Subscribe to game state */
@@ -219,6 +208,20 @@ export default function InteractiveGamePage() {
     [gameState, room, player2, localIndex2],
   );
 
+  /* Item answer handlers (v2): one point per correct item */
+  const handleItemResult = useCallback(
+    async (playerNo: 1 | 2, correct: boolean) => {
+      const player = playerNo === 1 ? player1 : player2;
+      if (!room || !player || !gameState) return;
+      if (correct) {
+        const newCount = (gameState.progress[player.id] ?? 0) + 1;
+        await recordCorrectAnswer(room.id, player.id, newCount);
+      }
+      (playerNo === 1 ? setLocalIndex1 : setLocalIndex2)((prev) => prev + 1);
+    },
+    [room, player1, player2, gameState],
+  );
+
   /* Shape answer handlers */
   const handleShapeAnswer1 = useCallback(
     async (correct: boolean) => {
@@ -278,19 +281,7 @@ export default function InteractiveGamePage() {
     setShowCountdown(true);
     setCountdown(COUNTDOWN_SECONDS);
 
-    const playerIds = room.players.map((p) => p.id);
-    if (gameType === 'shapeMatch') {
-      const qs: ShapeQ[] = [];
-      for (let i = 0; i < displayTotal; i++) qs.push(generateShapeQuestion(settings.difficulty));
-      await initShapeGameState(room.id, qs, playerIds);
-    } else if (gameType === 'memoryGame') {
-      const cards = generateMemoryCards(displayTotal);
-      await initMemoryGameState(room.id, cards, playerIds);
-    } else {
-      const qs: Question[] = [];
-      for (let i = 0; i < displayTotal; i++) qs.push(generateNumericQuestion(gameType, settings.difficulty, settings.operations));
-      await initMathGameState(room.id, qs, playerIds, gameType);
-    }
+    await initRoomGame(room.id, settings, room.players.map((p) => p.id));
   };
 
   if (gameState?.phase === 'finished') {
@@ -314,7 +305,7 @@ export default function InteractiveGamePage() {
       ? gameState.memoryCards && gameState.memoryCards.length > 0
       : gameType === 'shapeMatch'
         ? gameState.shapeQuestions && gameState.shapeQuestions.length > 0
-        : gameState.questions && gameState.questions.length > 0
+        : (gameState.questions && gameState.questions.length > 0) || (gameState.items && gameState.items.length > 0)
   );
 
   if (!isReady) {
@@ -360,7 +351,29 @@ export default function InteractiveGamePage() {
         />
       );
     }
-    /* mathRace */
+    /* item game (v2): any skill */
+    if (gameState!.items?.length) {
+      const item = gameState!.items[localIndex1];
+      if (localIndex1 >= displayTotal || !item) {
+        return (
+          <div className="flex-1 flex items-center justify-center">
+            <p className="text-lg font-bold text-ludiko-green">{t('game.finished')}</p>
+          </div>
+        );
+      }
+      return (
+        <ItemQuestionCard
+          key={`p1-${localIndex1}:${item.id}`}
+          item={item}
+          questionNumber={localIndex1 + 1}
+          totalQuestions={displayTotal}
+          timeRemaining={timeRemaining}
+          compact
+          onResult={(correct) => handleItemResult(1, correct)}
+        />
+      );
+    }
+    /* mathRace (v1 questions) */
     const q = gameState!.questions![localIndex1];
     if (localIndex1 >= displayTotal || !q) {
       return (
@@ -416,7 +429,29 @@ export default function InteractiveGamePage() {
         />
       );
     }
-    /* mathRace */
+    /* item game (v2): any skill */
+    if (gameState!.items?.length) {
+      const item = gameState!.items[localIndex2];
+      if (localIndex2 >= displayTotal || !item) {
+        return (
+          <div className="flex-1 flex items-center justify-center">
+            <p className="text-lg font-bold text-ludiko-green">{t('game.finished')}</p>
+          </div>
+        );
+      }
+      return (
+        <ItemQuestionCard
+          key={`p2-${localIndex2}:${item.id}`}
+          item={item}
+          questionNumber={localIndex2 + 1}
+          totalQuestions={displayTotal}
+          timeRemaining={timeRemaining}
+          compact
+          onResult={(correct) => handleItemResult(2, correct)}
+        />
+      );
+    }
+    /* mathRace (v1 questions) */
     const q = gameState!.questions![localIndex2];
     if (localIndex2 >= displayTotal || !q) {
       return (
@@ -437,6 +472,9 @@ export default function InteractiveGamePage() {
       />
     );
   };
+
+  /* Item panels (v2) need room: stacked on phones, side by side from `sm` up */
+  const itemMode = !!gameState.items?.length;
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-ludiko-blue/10 to-ludiko-purple/10 flex flex-col" role="main">
@@ -477,7 +515,7 @@ export default function InteractiveGamePage() {
       )}
 
       {/* Split screen — two game panels side by side */}
-      <div className="flex flex-1 gap-1 px-1 pb-2 min-h-0">
+      <div className={`flex flex-1 gap-1 px-1 pb-2 min-h-0 ${itemMode ? 'flex-col sm:flex-row' : ''}`}>
         {/* Player 1 panel */}
         <div className="flex-1 flex flex-col min-w-0" role="region" aria-label={player1.name}>
           <div className="text-center py-1">
@@ -488,7 +526,7 @@ export default function InteractiveGamePage() {
         </div>
 
         {/* Divider */}
-        <div className="w-0.5 bg-gray-300 self-stretch my-2 rounded-full" />
+        <div className={itemMode ? 'h-0.5 w-full sm:h-auto sm:w-0.5 bg-gray-300 sm:self-stretch sm:my-2 rounded-full' : 'w-0.5 bg-gray-300 self-stretch my-2 rounded-full'} />
 
         {/* Player 2 panel */}
         <div className="flex-1 flex flex-col min-w-0" role="region" aria-label={player2.name}>
