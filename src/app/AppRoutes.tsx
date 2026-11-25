@@ -27,6 +27,7 @@ import {
   TemplatesPage,
 } from '@/components/teacher';
 import AdminDashboard from '@/components/admin/AdminDashboard';
+import FramesPreviewPage from '@/ui/frames/FramesPreviewPage';
 
 /** All application routes — add new pages here */
 export default function AppRoutes() {
@@ -49,6 +50,9 @@ export default function AppRoutes() {
 
       {/* Admin route — PIN-protected, owner only */}
       <Route path="/admin" element={<AdminDashboard />} />
+
+      {/* Dev preview — visual kit + explanation frames gallery */}
+      <Route path="/dev/frames" element={<FramesPreviewPage />} />
 
       {/* Teacher routes */}
       <Route path="/teacher/login" element={<TeacherLogin />} />

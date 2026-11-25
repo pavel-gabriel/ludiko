@@ -1,0 +1,19 @@
+/* Gentle entrance for each frame; skipped entirely when the child prefers reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .frames-enter {
+    animation: frames-enter 0.35s ease-out both;
+  }
+  .frames-enter-back {
+    animation: frames-enter-back 0.35s ease-out both;
+  }
+}
+
+@keyframes frames-enter {
+  from { opacity: 0; transform: translateX(24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes frames-enter-back {
+  from { opacity: 0; transform: translateX(-24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
