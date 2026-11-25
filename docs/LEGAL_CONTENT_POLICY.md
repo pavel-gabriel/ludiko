@@ -29,6 +29,7 @@
 | Open-licence media/text: **CC0, CC BY, CC BY-SA** | ✅ | Author, title, URL, retrieval date, licence; note if modified; CC BY-SA derivatives stay CC BY-SA |
 | Fonts under **OFL-1.1** | ✅ | Listed in credits |
 | Code libraries: **MIT, BSD, ISC, Apache-2.0** | ✅ | Listed in credits |
+| Build/CI-only tools never shipped to users (e.g. `web-push` in the reminders GitHub Action): permissive licences **or MPL-2.0** | ✅ | Approved by the owner 2026-11-25. Unmodified; never imported from `src/` or `public/`; not listed in credits (not distributed) |
 
 ## 3. What we must NOT use
 
