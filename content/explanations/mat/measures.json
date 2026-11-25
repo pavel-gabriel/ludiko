@@ -775,13 +775,10 @@
           "en": "A ruler starts with 0. Put the end of the object exactly at 0."
         },
         "visual": {
-          "kind": "number-line",
-          "from": 0,
-          "to": 20,
-          "step": 1,
-          "marks": [
-            0
-          ]
+          "kind": "ruler",
+          "to": 12,
+          "unit": "cm",
+          "objectEnd": 8
         }
       },
       {
@@ -790,19 +787,10 @@
           "en": "Read the number where the object ends: here 8. The object is 8 cm long."
         },
         "visual": {
-          "kind": "number-line",
-          "from": 0,
-          "to": 20,
-          "step": 1,
-          "marks": [
-            8
-          ],
-          "jumps": [
-            {
-              "from": 0,
-              "to": 8
-            }
-          ]
+          "kind": "ruler",
+          "to": 12,
+          "unit": "cm",
+          "objectEnd": 8
         }
       },
       {
@@ -811,20 +799,11 @@
           "en": "If the object starts at 3 and ends at 9, it is 9 − 3 = 6 cm long."
         },
         "visual": {
-          "kind": "number-line",
-          "from": 0,
-          "to": 20,
-          "step": 1,
-          "marks": [
-            3,
-            9
-          ],
-          "jumps": [
-            {
-              "from": 3,
-              "to": 9
-            }
-          ]
+          "kind": "ruler",
+          "to": 12,
+          "unit": "cm",
+          "from": 3,
+          "objectEnd": 9
         }
       }
     ],
@@ -1343,9 +1322,8 @@
           "en": "A triangle has 3 sides and 3 corners."
         },
         "visual": {
-          "kind": "objects",
-          "icon": "🔺",
-          "count": 3
+          "kind": "shape",
+          "shape": "triangle"
         }
       },
       {
@@ -1354,9 +1332,8 @@
           "en": "A square has 4 equal sides and 4 corners."
         },
         "visual": {
-          "kind": "objects",
-          "icon": "🟦",
-          "count": 4
+          "kind": "shape",
+          "shape": "square"
         }
       },
       {
@@ -1365,9 +1342,8 @@
           "en": "A rectangle also has 4 sides and 4 corners, but its sides are equal only in pairs."
         },
         "visual": {
-          "kind": "objects",
-          "icon": "🟩",
-          "count": 4
+          "kind": "shape",
+          "shape": "rectangle"
         }
       },
       {
@@ -1376,9 +1352,8 @@
           "en": "A circle has no sides and no corners."
         },
         "visual": {
-          "kind": "objects",
-          "icon": "⭕",
-          "count": 1
+          "kind": "shape",
+          "shape": "circle"
         }
       }
     ],
@@ -1407,13 +1382,13 @@
           "en": "The perimeter of a shape is the length of the path around it: add all the sides."
         },
         "visual": {
-          "kind": "number-line",
-          "from": 0,
-          "to": 16,
-          "step": 1,
-          "marks": [
-            0
-          ]
+          "kind": "shape",
+          "shape": "rectangle",
+          "sides": [
+            6,
+            4
+          ],
+          "unit": "cm"
         }
       },
       {
@@ -1422,29 +1397,14 @@
           "en": "A triangle with sides of 4 cm, 5 cm and 6 cm: 4 + 5 + 6 = 15 cm."
         },
         "visual": {
-          "kind": "number-line",
-          "from": 0,
-          "to": 16,
-          "step": 1,
-          "marks": [
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
             4,
-            9,
-            15
+            5,
+            6
           ],
-          "jumps": [
-            {
-              "from": 0,
-              "to": 4
-            },
-            {
-              "from": 4,
-              "to": 9
-            },
-            {
-              "from": 9,
-              "to": 15
-            }
-          ]
+          "unit": "cm"
         }
       },
       {
@@ -1453,34 +1413,12 @@
           "en": "A square with a side of 5 cm: 5 + 5 + 5 + 5 = 20 cm."
         },
         "visual": {
-          "kind": "number-line",
-          "from": 0,
-          "to": 20,
-          "step": 1,
-          "marks": [
-            5,
-            10,
-            15,
-            20
+          "kind": "shape",
+          "shape": "square",
+          "sides": [
+            5
           ],
-          "jumps": [
-            {
-              "from": 0,
-              "to": 5
-            },
-            {
-              "from": 5,
-              "to": 10
-            },
-            {
-              "from": 10,
-              "to": 15
-            },
-            {
-              "from": 15,
-              "to": 20
-            }
-          ]
+          "unit": "cm"
         }
       },
       {
@@ -1489,34 +1427,13 @@
           "en": "A rectangle of 7 cm and 3 cm: 7 + 3 + 7 + 3 = 20 cm."
         },
         "visual": {
-          "kind": "number-line",
-          "from": 0,
-          "to": 20,
-          "step": 1,
-          "marks": [
+          "kind": "shape",
+          "shape": "rectangle",
+          "sides": [
             7,
-            10,
-            17,
-            20
+            3
           ],
-          "jumps": [
-            {
-              "from": 0,
-              "to": 7
-            },
-            {
-              "from": 7,
-              "to": 10
-            },
-            {
-              "from": 10,
-              "to": 17
-            },
-            {
-              "from": 17,
-              "to": 20
-            }
-          ]
+          "unit": "cm"
         }
       }
     ],

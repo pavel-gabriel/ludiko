@@ -77,6 +77,33 @@ const GALLERY: { id: string; titleKey: string; specs: VisualSpec[] }[] = [
     ],
   },
   {
+    id: 'shape',
+    titleKey: 'shape',
+    specs: [
+      { kind: 'shape', shape: 'triangle', sides: [6, 5, 4], unit: 'cm' },
+      { kind: 'shape', shape: 'triangle', sides: [4, 5, 6], unit: 'cm', hideSide: 2 },
+      { kind: 'shape', shape: 'square', sides: [5], unit: 'cm' },
+      { kind: 'shape', shape: 'square', sides: [7], unit: 'm', hideSide: 0 },
+      { kind: 'shape', shape: 'rectangle', sides: [7, 3], unit: 'cm' },
+      { kind: 'shape', shape: 'rectangle', sides: [12, 2], unit: 'cm', hideSide: 1 },
+      { kind: 'shape', shape: 'rectangle', sides: [3, 11, 3, 11], unit: 'cm', hideSide: 3 },
+      { kind: 'shape', shape: 'circle' },
+      { kind: 'shape', shape: 'triangle' },
+    ],
+  },
+  {
+    id: 'ruler',
+    titleKey: 'ruler',
+    specs: [
+      { kind: 'ruler', to: 10, unit: 'cm', objectEnd: 7, objectLabel: { ro: 'Creionul', en: 'The pencil' } },
+      { kind: 'ruler', to: 15, unit: 'cm', from: 3, objectEnd: 9 },
+      { kind: 'ruler', to: 20, unit: 'cm', objectEnd: 13 },
+      { kind: 'ruler', to: 30, unit: 'cm', from: 4, objectEnd: 22, objectLabel: { ro: 'Panglica', en: 'The ribbon' } },
+      { kind: 'ruler', to: 100, unit: 'cm', objectEnd: 64 },
+      { kind: 'ruler', to: 5, unit: 'm' },
+    ],
+  },
+  {
     id: 'image',
     titleKey: 'image',
     specs: [

@@ -405,6 +405,16 @@
       "objectsGroupsUneven": "{{count}} × {{icon}}, împărțite în {{groups}} grupuri",
       "fraction": "Fracția {{numerator}} din {{denominator}}: {{numerator}} din {{denominator}} părți egale sunt colorate",
       "fractionWholes": "Fracția {{numerator}} din {{denominator}}: {{numerator}} părți colorate, fiecare întreg are {{denominator}} părți egale",
+      "shape_triangle": "Triunghi",
+      "shape_square": "Pătrat",
+      "shape_rectangle": "Dreptunghi",
+      "shape_circle": "Cerc",
+      "shapeSides": "{{name}} cu laturile {{list}}",
+      "shapeSide": "{{name}} cu latura {{list}}",
+      "shapeUnknown": "{{name}} cu latura necunoscută",
+      "shapeOneUnknown": "o latură necunoscută",
+      "ruler": "Riglă de la 0 la {{to}} {{unit}}",
+      "rulerObject": "obiect pe riglă",
       "image": "Imagine"
     },
     "preview": {
@@ -420,6 +430,8 @@
       "money": "Bani",
       "objects": "Obiecte",
       "fraction": "Fracții",
+      "shape": "Figuri geometrice",
+      "ruler": "Rigla",
       "image": "Imagine",
       "again": "Reia",
       "finished": "Gata! Ai ajuns la capăt."

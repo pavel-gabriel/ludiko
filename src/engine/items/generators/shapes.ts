@@ -1,10 +1,10 @@
 /**
- * `shapes` generator (params: topic 'names' | 'perimeter', max). There is no shape VisualSpec yet,
- * so figures are described in words (see the report for the proposed `shape` visual).
+ * `shapes` generator (params: topic 'names' | 'perimeter', max). Items carry a `shape` visual;
+ * missing-side questions hide the unknown side (`hideSide`).
  *  - names:     sides/corners of triunghi, pătrat, dreptunghi, cerc (choice, fill-gap, sort, true-false)
  *  - perimeter: perimeter of a triangle, square or rectangle by adding the sides; missing side
  */
-import type { CardContent, ChoiceItem, FillGapItem, Item, NumberInputItem, SortItem, TrueFalseItem } from '../../types';
+import type { CardContent, ChoiceItem, FillGapItem, Item, NumberInputItem, SortItem, TrueFalseItem, VisualSpec } from '../../types';
 import type { GeneratorFn } from './registry';
 import { baseFields, chance, numberOptions, optionCount, pick, randInt, shuffle, weighted } from './util';
 import { stringOptions, textOptions } from './measureText';
@@ -18,13 +18,14 @@ interface Shape {
   en: string;
   enA: string;
   sides: number;
+  kind: 'triangle' | 'square' | 'rectangle' | 'circle';
 }
 
 const SHAPES: Shape[] = [
-  { ro: 'triunghi', roA: 'un triunghi', en: 'triangle', enA: 'a triangle', sides: 3 },
-  { ro: 'pătrat', roA: 'un pătrat', en: 'square', enA: 'a square', sides: 4 },
-  { ro: 'dreptunghi', roA: 'un dreptunghi', en: 'rectangle', enA: 'a rectangle', sides: 4 },
-  { ro: 'cerc', roA: 'un cerc', en: 'circle', enA: 'a circle', sides: 0 },
+  { ro: 'triunghi', roA: 'un triunghi', en: 'triangle', enA: 'a triangle', sides: 3, kind: 'triangle' },
+  { ro: 'pătrat', roA: 'un pătrat', en: 'square', enA: 'a square', sides: 4, kind: 'square' },
+  { ro: 'dreptunghi', roA: 'un dreptunghi', en: 'rectangle', enA: 'a rectangle', sides: 4, kind: 'rectangle' },
+  { ro: 'cerc', roA: 'un cerc', en: 'circle', enA: 'a circle', sides: 0, kind: 'circle' },
 ];
 const POLY = SHAPES.slice(0, 3);
 
@@ -40,13 +41,14 @@ function names(ctx: Ctx): Item {
       const prompt = corners
         ? { ro: `Câte colțuri are ${s.roA}?`, en: `How many corners does ${s.enA} have?` }
         : { ro: `Câte laturi are ${s.roA}?`, en: `How many sides does ${s.enA} have?` };
+      const figure: VisualSpec = { kind: 'shape', shape: s.kind };
       if (chance(rng, 0.5)) {
-        const item: NumberInputItem = { ...baseFields(ctx, prompt), type: 'number-input', correct: s.sides };
+        const item: NumberInputItem = { ...baseFields(ctx, prompt, figure), type: 'number-input', correct: s.sides };
         return item;
       }
       const nums = numberOptions(rng, s.sides, [3, 4, 5, 2, 6, 0], optionCount(d));
       const item: ChoiceItem = {
-        ...baseFields(ctx, prompt),
+        ...baseFields(ctx, prompt, figure),
         type: 'choice',
         options: nums.map((n): CardContent => ({ id: `n${n}`, text: { ro: String(n) } })),
         correctId: `n${s.sides}`,
@@ -138,14 +140,14 @@ function perimeter(ctx: Ctx): Item {
   const side = () => randInt(rng, 2, hi);
   const q = (n: number) => `${n} ${unit}`;
 
-  const answer = (prompt: { ro: string; en: string }, correct: number, wrong: number[]): Item => {
+  const answer = (prompt: { ro: string; en: string }, correct: number, wrong: number[], visual?: VisualSpec): Item => {
     if (chance(rng, 0.5)) {
-      const item: NumberInputItem = { ...baseFields(ctx, prompt), type: 'number-input', correct };
+      const item: NumberInputItem = { ...baseFields(ctx, prompt, visual), type: 'number-input', correct };
       return item;
     }
     const nums = numberOptions(rng, correct, wrong, optionCount(d), 1);
     const item: ChoiceItem = {
-      ...baseFields(ctx, prompt),
+      ...baseFields(ctx, prompt, visual),
       type: 'choice',
       options: nums.map((n): CardContent => ({ id: `n${n}`, text: { ro: String(n) } })),
       correctId: `n${correct}`,
@@ -161,6 +163,7 @@ function perimeter(ctx: Ctx): Item {
         { ro: `Un triunghi are laturile de ${q(a)}, ${q(b)} și ${q(c)}. ${ask.ro}`, en: `A triangle has sides of ${q(a)}, ${q(b)} and ${q(c)}. ${ask.en}` },
         a + b + c,
         [a + b, a + c, b + c, a + b + c + 1, a + b + c - 1, a + b + c + 2],
+        { kind: 'shape', shape: 'triangle', sides: [a, b, c], unit },
       );
     }
     case 'square': {
@@ -169,6 +172,7 @@ function perimeter(ctx: Ctx): Item {
         { ro: `Un pătrat are latura de ${q(a)}. ${ask.ro}`, en: `A square has a side of ${q(a)}. ${ask.en}` },
         4 * a,
         [2 * a, 3 * a, a * a, 4 * a + 1, 4 * a - 1, 5 * a],
+        { kind: 'shape', shape: 'square', sides: [a], unit },
       );
     }
     case 'rect': {
@@ -178,13 +182,18 @@ function perimeter(ctx: Ctx): Item {
         { ro: `Un dreptunghi are lungimea de ${q(l)} și lățimea de ${q(w)}. ${ask.ro}`, en: `A rectangle is ${q(l)} long and ${q(w)} wide. ${ask.en}` },
         2 * (l + w),
         [l + w, l + 2 * w, 2 * l + w, l * w, 2 * (l + w) + 2, 2 * (l + w) - 2],
+        { kind: 'shape', shape: 'rectangle', sides: [l, w], unit },
       );
     }
     case 'missing': {
       if (chance(rng, 0.5)) {
         const a = randInt(rng, 2, hi);
         const item: NumberInputItem = {
-          ...baseFields(ctx, { ro: `Perimetrul unui pătrat este ${q(4 * a)}. Câți ${unit} măsoară o latură?`, en: `The perimeter of a square is ${q(4 * a)}. How many ${unit} is one side?` }),
+          ...baseFields(
+            ctx,
+            { ro: `Perimetrul unui pătrat este ${q(4 * a)}. Câți ${unit} măsoară o latură?`, en: `The perimeter of a square is ${q(4 * a)}. How many ${unit} is one side?` },
+            { kind: 'shape', shape: 'square', sides: [a], unit, hideSide: 0 },
+          ),
           type: 'number-input',
           correct: a,
         };
@@ -195,7 +204,7 @@ function perimeter(ctx: Ctx): Item {
         ...baseFields(ctx, {
           ro: `Un triunghi are perimetrul de ${q(a + b + c)}. Două laturi au ${q(a)} și ${q(b)}. Câți ${unit} are a treia latură?`,
           en: `A triangle has a perimeter of ${q(a + b + c)}. Two sides are ${q(a)} and ${q(b)}. How many ${unit} is the third side?`,
-        }),
+        }, { kind: 'shape', shape: 'triangle', sides: [a, b, c], unit, hideSide: 2 }),
         type: 'number-input',
         correct: c,
       };
@@ -209,7 +218,7 @@ function perimeter(ctx: Ctx): Item {
         ...baseFields(ctx, {
           ro: `Adevărat sau fals: un pătrat cu latura de ${q(a)} are perimetrul de ${q(shown)}.`,
           en: `True or false: a square with a side of ${q(a)} has a perimeter of ${q(shown)}.`,
-        }),
+        }, { kind: 'shape', shape: 'square', sides: [a], unit }),
         type: 'true-false',
         correct: truth,
       };

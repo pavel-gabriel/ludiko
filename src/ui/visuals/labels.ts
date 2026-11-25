@@ -1,6 +1,7 @@
 import type { TFunction } from 'i18next'
 import type { VisualSpec } from '@/engine/types'
 import { localize } from '@/engine/types'
+import { hiddenDrawnSides } from './shapeGeometry'
 import { clockHourLabel, groupMoney, numberLineTicks, splitMoney } from './geometry'
 
 /** Format a number for the UI language (decimal comma in Romanian). */
@@ -83,10 +84,26 @@ export function visualLabel(spec: VisualSpec, t: TFunction, lang: string): strin
     }
     case 'image':
       return localize(spec.media.alt, lang) || t('frames.visual.image')
-    /* TEMPORARY until the shape/ruler visuals land: plain-text description */
-    case 'shape':
-      return `${spec.shape}${spec.sides ? ` ${spec.sides.join(', ')} ${spec.unit ?? ''}` : ''}`.trim()
-    case 'ruler':
-      return `0–${spec.to} ${spec.unit}`
+    case 'shape': {
+      const name = t(`frames.visual.shape_${spec.shape}`)
+      if (spec.shape === 'circle' || !spec.sides?.length) return name
+      const hidden = hiddenDrawnSides(spec.shape, spec.sides.length, spec.hideSide)
+      const hideIdx = hidden.size > 0 ? spec.hideSide : undefined
+      const unit = spec.unit ? ` ${spec.unit}` : ''
+      const known = spec.sides
+        .map((n, i) => (i === hideIdx ? null : `${formatNumber(n, lang)}${unit}`))
+        .filter((x): x is string => x !== null)
+      if (!known.length) return t('frames.visual.shapeUnknown', { name })
+      // a hidden length is never written out (it may be the answer)
+      const one = spec.shape === 'square' && spec.sides.length === 1
+      const base = t(one ? 'frames.visual.shapeSide' : 'frames.visual.shapeSides', { name, list: known.join(', ') })
+      return hideIdx !== undefined ? `${base}; ${t('frames.visual.shapeOneUnknown')}` : base
+    }
+    case 'ruler': {
+      const label = spec.objectLabel ? localize(spec.objectLabel, lang) : ''
+      const base = t('frames.visual.ruler', { to: formatNumber(spec.to, lang), unit: spec.unit })
+      if (spec.objectEnd === undefined) return base
+      return `${base}; ${t('frames.visual.rulerObject')}${label ? `: ${label}` : ''}`
+    }
   }
 }
