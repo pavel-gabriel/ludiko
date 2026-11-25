@@ -93,5 +93,310 @@
       "licence": "OWN",
       "notes": "original explanation; awaiting human review"
     }
+  },
+  {
+    "id": "exp.add.10",
+    "skillId": "mat.add.10",
+    "title": {
+      "ro": "Adunarea până la 10: 3 + 4",
+      "en": "Adding to 10: 3 + 4"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 3 baloane. Numărăm: 1, 2, 3.",
+          "en": "We have 3 balloons. We count: 1, 2, 3."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎈",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai primim 4 baloane. Punem toate la un loc: sunt 7.",
+          "en": "We get 4 more balloons. Together there are 7."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎈",
+          "count": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "Pe axă pornim de la 3 și sărim 4 pași. Ajungem la 7.",
+          "en": "On the line we start at 3 and jump 4 steps. We reach 7."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 10,
+          "step": 1,
+          "marks": [
+            3,
+            7
+          ],
+          "jumps": [
+            {
+              "from": 3,
+              "to": 7
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Verificăm: de la 4 sărim 3 pași. Tot 7! Deci 3 + 4 = 7.",
+          "en": "Check: start at 4 and jump 3 steps. Still 7! So 3 + 4 = 7."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 10,
+          "step": 1,
+          "marks": [
+            4,
+            7
+          ],
+          "jumps": [
+            {
+              "from": 4,
+              "to": 7
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.add.10",
+      "kind": "explanation",
+      "title": "Adding to 10: 3 + 4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.add.nocarry.20",
+    "skillId": "mat.add.nocarry.20",
+    "title": {
+      "ro": "Adunarea fără trecere peste ordin: 12 + 5",
+      "en": "Adding without crossing ten: 12 + 5"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 12: o zece și 2 unități.",
+          "en": "We have 12: one ten and 2 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Adunăm doar unitățile: 2 + 5 = 7. Zecea rămâne la fel.",
+          "en": "We add only the ones: 2 + 5 = 7. The ten stays the same."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔵",
+          "count": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "Pe axă, de la 12 sărim 5 pași și ajungem la 17.",
+          "en": "On the line, from 12 we jump 5 steps and reach 17."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 10,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            12,
+            17
+          ],
+          "jumps": [
+            {
+              "from": 12,
+              "to": 17
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "O zece și 7 unități este 17. Deci 12 + 5 = 17.",
+          "en": "One ten and 7 ones is 17. So 12 + 5 = 17."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 7
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.add.nocarry.20",
+      "kind": "explanation",
+      "title": "Adding without crossing ten: 12 + 5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.add.nocarry.100",
+    "skillId": "mat.add.nocarry.100",
+    "title": {
+      "ro": "Adunarea fără trecere peste ordin: 34 + 25",
+      "en": "Adding without carrying: 34 + 25"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 34: 3 zeci și 4 unități.",
+          "en": "We have 34: 3 tens and 4 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 3,
+          "ones": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Adăugăm 25: 2 zeci și 5 unități.",
+          "en": "We add 25: 2 tens and 5 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 2,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Adunăm zecile: 3 + 2 = 5. Adunăm unitățile: 4 + 5 = 9.",
+          "en": "Add the tens: 3 + 2 = 5. Add the ones: 4 + 5 = 9."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 5,
+          "ones": 9
+        }
+      },
+      {
+        "text": {
+          "ro": "Sărim 20 și apoi 5: 34, 54, 59. Deci 34 + 25 = 59.",
+          "en": "We jump 20, then 5: 34, 54, 59. So 34 + 25 = 59."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 34,
+          "to": 59,
+          "step": 1,
+          "marks": [
+            34,
+            54,
+            59
+          ],
+          "jumps": [
+            {
+              "from": 34,
+              "to": 54
+            },
+            {
+              "from": 54,
+              "to": 59
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.add.nocarry.100",
+      "kind": "explanation",
+      "title": "Adding without carrying: 34 + 25",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.add.carry.100",
+    "skillId": "mat.add.carry.100",
+    "title": {
+      "ro": "Adunarea cu trecere peste ordin: 47 + 26",
+      "en": "Adding with carrying: 47 + 26"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 47: 4 zeci și 7 unități.",
+          "en": "We have 47: 4 tens and 7 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 4,
+          "ones": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "Adăugăm 26: 2 zeci și 6 unități.",
+          "en": "We add 26: 2 tens and 6 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 2,
+          "ones": 6
+        }
+      },
+      {
+        "text": {
+          "ro": "Adunăm: 6 zeci și 13 unități. 13 unități sunt prea multe!",
+          "en": "We add: 6 tens and 13 ones. 13 ones is too many!"
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 6,
+          "ones": 13
+        }
+      },
+      {
+        "text": {
+          "ro": "10 unități fac o zece nouă: 7 zeci și 3 unități. Deci 73.",
+          "en": "10 ones make a new ten: 7 tens and 3 ones. So 73."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 7,
+          "ones": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.add.carry.100",
+      "kind": "explanation",
+      "title": "Adding with carrying: 47 + 26",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
   }
 ]

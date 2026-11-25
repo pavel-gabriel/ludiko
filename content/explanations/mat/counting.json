@@ -1,0 +1,315 @@
+[
+  {
+    "id": "exp.count.10",
+    "skillId": "mat.count.10",
+    "title": {
+      "ro": "Numărăm până la 10",
+      "en": "Counting to 10"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Hai să numărăm buburuzele! Arătăm fiecare buburuză o singură dată.",
+          "en": "Let's count the ladybugs! We point at each one just once."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐞",
+          "count": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "Numărăm în ordine: 1, 2, 3. Spunem câte un număr pentru fiecare.",
+          "en": "We count in order: 1, 2, 3. One number for each ladybug."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐞",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Numerele merg în ordine pe axă: 1, 2, 3, 4, 5, 6, 7.",
+          "en": "The numbers go in order on the line: 1, 2, 3, 4, 5, 6, 7."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 10,
+          "step": 1,
+          "marks": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Ultimul număr spus ne arată câte sunt: 7 buburuze!",
+          "en": "The last number we say tells how many: 7 ladybugs!"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐞",
+          "count": 7
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.count.10",
+      "kind": "explanation",
+      "title": "Counting to 10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.numrec.10",
+    "skillId": "mat.numrec.10",
+    "title": {
+      "ro": "Recunoaștem numerele până la 10",
+      "en": "Recognising numbers to 10"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Hai să numărăm stelele: sunt 4. Numărul lor este 4.",
+          "en": "Let's count the stars: there are 4. Their number is 4."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Căutăm 4 pe axă. Stă după 3 și înainte de 5.",
+          "en": "We look for 4 on the line. It comes after 3 and before 5."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 10,
+          "step": 1,
+          "marks": [
+            3,
+            4,
+            5
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Încercăm din nou. Numărăm baloanele: sunt 8.",
+          "en": "Let's try again. We count the balloons: there are 8."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎈",
+          "count": 8
+        }
+      },
+      {
+        "text": {
+          "ro": "Căutăm 8 pe axă. Stă după 7 și înainte de 9.",
+          "en": "We look for 8 on the line. It comes after 7 and before 9."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 10,
+          "step": 1,
+          "marks": [
+            7,
+            8,
+            9
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.numrec.10",
+      "kind": "explanation",
+      "title": "Recognising numbers to 10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.count.20",
+    "skillId": "mat.count.20",
+    "title": {
+      "ro": "Numărăm până la 20",
+      "en": "Counting to 20"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem o zece de mere: 10. Le numărăm pe rând.",
+          "en": "We have a ten of apples: 10. We count them one by one."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 10
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai punem 4 mere. Numărăm mai departe de la 10.",
+          "en": "We add 4 more apples. We keep counting from 10."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 14
+        }
+      },
+      {
+        "text": {
+          "ro": "De la 10 numărăm: 11, 12, 13, 14. Fiecare pas e un măr.",
+          "en": "From 10 we count: 11, 12, 13, 14. Each step is one apple."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 10,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "14 înseamnă o zece și 4 unități. Avem 14 mere.",
+          "en": "14 means one ten and 4 ones. We have 14 apples."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 4
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.count.20",
+      "kind": "explanation",
+      "title": "Counting to 20",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.count.100",
+    "skillId": "mat.count.100",
+    "title": {
+      "ro": "Numărăm până la 100",
+      "en": "Counting to 100"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Numărăm din zece în zece: 10, 20, 30. Sunt 3 zeci.",
+          "en": "We count by tens: 10, 20, 30. That is 3 tens."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 3,
+          "ones": 0
+        }
+      },
+      {
+        "text": {
+          "ro": "Pe axă sărim din 10 în 10: 10, 20, 30.",
+          "en": "On the line we jump by 10: 10, 20, 30."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 100,
+          "step": 10,
+          "marks": [
+            0,
+            10,
+            20,
+            30
+          ],
+          "jumps": [
+            {
+              "from": 0,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 20
+            },
+            {
+              "from": 20,
+              "to": 30
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai punem 4 unități și numărăm: 31, 32, 33, 34.",
+          "en": "We add 4 ones and count: 31, 32, 33, 34."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 3,
+          "ones": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "34 stă între 33 și 35. După 34 numărăm 35.",
+          "en": "34 sits between 33 and 35. After 34 we count 35."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 30,
+          "to": 40,
+          "step": 1,
+          "marks": [
+            33,
+            34,
+            35
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.count.100",
+      "kind": "explanation",
+      "title": "Counting to 100",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  }
+]

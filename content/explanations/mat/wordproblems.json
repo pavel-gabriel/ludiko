@@ -1,0 +1,167 @@
+[
+  {
+    "id": "exp.wordproblem.20",
+    "skillId": "mat.wordproblem.20",
+    "title": {
+      "ro": "Problemă: Ana și merele",
+      "en": "Word problem: Ana and the apples"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ana are 8 mere. Citim și vedem ce știm.",
+          "en": "Ana has 8 apples. We read and see what we know."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 8
+        }
+      },
+      {
+        "text": {
+          "ro": "Mama îi mai dă 6 mere. „Mai dă” înseamnă că adunăm: 8 + 6.",
+          "en": "Mum gives her 6 more apples. \"More\" means we add: 8 + 6."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 14
+        }
+      },
+      {
+        "text": {
+          "ro": "Completăm până la 10, apoi mai sărim 4. Ajungem la 14.",
+          "en": "Fill up to 10, then jump 4 more. We reach 14."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            8,
+            10,
+            14
+          ],
+          "jumps": [
+            {
+              "from": 8,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 14
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Răspuns: Ana are acum o zece și 4 mere, adică 14.",
+          "en": "Answer: Ana now has one ten and 4 apples, that is 14."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 4
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.wordproblem.20",
+      "kind": "explanation",
+      "title": "Word problem: Ana and the apples",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.wordproblem.100",
+    "skillId": "mat.wordproblem.100",
+    "title": {
+      "ro": "Problemă: creioanele din cutie",
+      "en": "Word problem: pencils in a box"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În cutie sunt 45 de creioane: 4 zeci și 5 unități.",
+          "en": "There are 45 pencils in the box: 4 tens and 5 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 4,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Dăm 18 creioane: o zece și 8 unități. „Dăm” înseamnă că scădem.",
+          "en": "We give away 18 pencils: one ten and 8 ones. \"Give away\" means we subtract."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 8
+        }
+      },
+      {
+        "text": {
+          "ro": "Sărim înapoi 10, apoi 5, apoi 3. Ajungem la 27.",
+          "en": "We jump back 10, then 5, then 3. We reach 27."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 27,
+          "to": 45,
+          "step": 1,
+          "marks": [
+            45,
+            35,
+            30,
+            27
+          ],
+          "jumps": [
+            {
+              "from": 45,
+              "to": 35
+            },
+            {
+              "from": 35,
+              "to": 30
+            },
+            {
+              "from": 30,
+              "to": 27
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Răspuns: au rămas 2 zeci și 7 unități, adică 27 de creioane.",
+          "en": "Answer: 2 tens and 7 ones are left, that is 27 pencils."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 2,
+          "ones": 7
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.wordproblem.100",
+      "kind": "explanation",
+      "title": "Word problem: pencils in a box",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  }
+]

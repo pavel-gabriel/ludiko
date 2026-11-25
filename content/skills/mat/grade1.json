@@ -25,7 +25,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.count.20"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -68,7 +70,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.add.nocarry.20"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -111,7 +115,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.sub.noborrow.20"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -152,7 +158,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.count.100"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -193,7 +201,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.placevalue.100"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -279,7 +289,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.sub.borrow.20"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -325,7 +337,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.wordproblem.20"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4

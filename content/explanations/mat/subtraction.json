@@ -1,0 +1,398 @@
+[
+  {
+    "id": "exp.sub.10",
+    "skillId": "mat.sub.10",
+    "title": {
+      "ro": "Scăderea până la 10: 9 − 4",
+      "en": "Subtracting to 10: 9 − 4"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 9 biscuiți. Numărăm: sunt 9.",
+          "en": "We have 9 cookies. We count: there are 9."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍪",
+          "count": 9
+        }
+      },
+      {
+        "text": {
+          "ro": "Mâncăm 4 biscuiți. Numărăm ce a rămas: sunt 5.",
+          "en": "We eat 4 cookies. We count what is left: there are 5."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍪",
+          "count": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Pe axă pornim de la 9 și sărim 4 pași înapoi. Ajungem la 5.",
+          "en": "On the line we start at 9 and jump 4 steps back. We reach 5."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 10,
+          "step": 1,
+          "marks": [
+            5,
+            9
+          ],
+          "jumps": [
+            {
+              "from": 9,
+              "to": 5
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Verificăm: 5 + 4 = 9. Adunarea ne arată că 9 − 4 = 5.",
+          "en": "Check: 5 + 4 = 9. Adding shows that 9 − 4 = 5."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 10,
+          "step": 1,
+          "marks": [
+            5,
+            9
+          ],
+          "jumps": [
+            {
+              "from": 5,
+              "to": 9
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.sub.10",
+      "kind": "explanation",
+      "title": "Subtracting to 10: 9 − 4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.sub.noborrow.20",
+    "skillId": "mat.sub.noborrow.20",
+    "title": {
+      "ro": "Scăderea fără trecere peste ordin: 17 − 5",
+      "en": "Subtracting without borrowing: 17 − 5"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 17: o zece și 7 unități.",
+          "en": "We have 17: one ten and 7 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "Scădem doar din unități: din 7 scoatem 5. Rămân 2.",
+          "en": "We subtract only from the ones: take 5 from 7. 2 are left."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔵",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Pe axă, de la 17 sărim 5 pași înapoi și ajungem la 12.",
+          "en": "On the line, from 17 we jump 5 steps back and reach 12."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 10,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            12,
+            17
+          ],
+          "jumps": [
+            {
+              "from": 17,
+              "to": 12
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Rămân o zece și 2 unități: 12. Deci 17 − 5 = 12.",
+          "en": "One ten and 2 ones are left: 12. So 17 − 5 = 12."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.sub.noborrow.20",
+      "kind": "explanation",
+      "title": "Subtracting without borrowing: 17 − 5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.sub.borrow.20",
+    "skillId": "mat.sub.borrow.20",
+    "title": {
+      "ro": "Scăderea cu trecere peste ordin: 15 − 7",
+      "en": "Subtracting across ten: 15 − 7"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 15. Vrem să scădem 7, dar avem doar 5 unități.",
+          "en": "We have 15. We want to take away 7, but we have only 5 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai întâi scădem 5 și ajungem la 10: 15 − 5 = 10.",
+          "en": "First take away 5 and reach 10: 15 − 5 = 10."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            10,
+            15
+          ],
+          "jumps": [
+            {
+              "from": 15,
+              "to": 10
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai scădem 2, căci 5 + 2 = 7. Facem 10 − 2 = 8.",
+          "en": "We take away 2 more, since 5 + 2 = 7. We do 10 − 2 = 8."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            8,
+            10,
+            15
+          ],
+          "jumps": [
+            {
+              "from": 15,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 8
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Rămân 8 unități. Deci 15 − 7 = 8.",
+          "en": "8 ones are left. So 15 − 7 = 8."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 0,
+          "ones": 8
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.sub.borrow.20",
+      "kind": "explanation",
+      "title": "Subtracting across ten: 15 − 7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.sub.noborrow.100",
+    "skillId": "mat.sub.noborrow.100",
+    "title": {
+      "ro": "Scăderea fără împrumut: 68 − 35",
+      "en": "Subtracting without borrowing: 68 − 35"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 68: 6 zeci și 8 unități.",
+          "en": "We have 68: 6 tens and 8 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 6,
+          "ones": 8
+        }
+      },
+      {
+        "text": {
+          "ro": "Scădem 35: 3 zeci și 5 unități.",
+          "en": "We subtract 35: 3 tens and 5 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 3,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Scădem zecile: 6 − 3 = 3. Scădem unitățile: 8 − 5 = 3.",
+          "en": "Subtract the tens: 6 − 3 = 3. Subtract the ones: 8 − 5 = 3."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 3,
+          "ones": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Sărim înapoi 30 și apoi 5: 68, 38, 33. Deci 68 − 35 = 33.",
+          "en": "We jump back 30, then 5: 68, 38, 33. So 68 − 35 = 33."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 33,
+          "to": 68,
+          "step": 1,
+          "marks": [
+            68,
+            38,
+            33
+          ],
+          "jumps": [
+            {
+              "from": 68,
+              "to": 38
+            },
+            {
+              "from": 38,
+              "to": 33
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.sub.noborrow.100",
+      "kind": "explanation",
+      "title": "Subtracting without borrowing: 68 − 35",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.sub.borrow.100",
+    "skillId": "mat.sub.borrow.100",
+    "title": {
+      "ro": "Scăderea cu împrumut: 52 − 27",
+      "en": "Subtracting with borrowing: 52 − 27"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem 52: 5 zeci și 2 unități. Vrem să scădem 27.",
+          "en": "We have 52: 5 tens and 2 ones. We want to subtract 27."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 5,
+          "ones": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Din 2 unități nu putem scoate 7. Spargem o zece: 4 zeci și 12 unități.",
+          "en": "We cannot take 7 from 2 ones. Break a ten: 4 tens and 12 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 4,
+          "ones": 12
+        }
+      },
+      {
+        "text": {
+          "ro": "Scădem unitățile: 12 − 7 = 5. Rămân 4 zeci și 5 unități.",
+          "en": "Subtract the ones: 12 − 7 = 5. 4 tens and 5 ones are left."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 4,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Scădem zecile: 4 − 2 = 2. Rămân 2 zeci și 5 unități: 25.",
+          "en": "Subtract the tens: 4 − 2 = 2. 2 tens and 5 ones are left: 25."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 2,
+          "ones": 5
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.sub.borrow.100",
+      "kind": "explanation",
+      "title": "Subtracting with borrowing: 52 − 27",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  }
+]
