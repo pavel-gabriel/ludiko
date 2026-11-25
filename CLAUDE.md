@@ -17,6 +17,20 @@
   enforced by `tests/contentPolicy.test.ts` (runs before deploy).
 - Current code below is v1; games will be rebuilt as modes over a shared item model.
 
+## Working Rules: Agent Orchestration
+- **Default to orchestration:** split work into independent parts and run them as **parallel sub-agents**
+  (isolated worktrees) whenever possible; the main session plans, writes shared contracts first, merges,
+  resolves conflicts, verifies in the browser and reports.
+- **Pick the most efficient model per task (consumption vs. ROI):**
+  - `haiku` — small, well-specified, mechanical tasks (config, simple services, CI scripts, data entry).
+  - `sonnet` — default for features, UI, generators, tests, content drafting.
+  - `opus` — only where reasoning quality pays off (core algorithms, architecture, tricky integrations).
+  - Effort: `low`/`medium` by default; `high` only for child-facing UX or complex logic.
+- Before parallel work, commit a **shared contract** (types/interfaces/data shapes) so agents don't collide.
+- Agents' worktrees may start from `main`: every agent prompt must begin with merging the working branch.
+- Each agent: own i18n namespace, lazy routes, no new deps unless approved, follow the content/IP policy,
+  run `npm test`, `npm run build`, `npm run check:size`, commit locally, never push.
+
 ## Architecture
 
 ### Routes (src/app/AppRoutes.tsx)
