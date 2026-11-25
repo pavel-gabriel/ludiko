@@ -1,0 +1,187 @@
+[
+  {
+    "id": "item.mat.count.20.sort1",
+    "type": "sort",
+    "skillId": "mat.count.20",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Pune fiecare număr în grupa potrivită.",
+      "en": "Put each number in the right group."
+    },
+    "reviewStatus": "beta",
+    "categories": [
+      {
+        "id": "under10",
+        "label": {
+          "ro": "Mai mic decât 10",
+          "en": "Less than 10"
+        }
+      },
+      {
+        "id": "over10",
+        "label": {
+          "ro": "Mai mare decât 10",
+          "en": "More than 10"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "n3",
+        "text": {
+          "ro": "3"
+        },
+        "categoryId": "under10"
+      },
+      {
+        "id": "n14",
+        "text": {
+          "ro": "14"
+        },
+        "categoryId": "over10"
+      },
+      {
+        "id": "n8",
+        "text": {
+          "ro": "8"
+        },
+        "categoryId": "under10"
+      },
+      {
+        "id": "n17",
+        "text": {
+          "ro": "17"
+        },
+        "categoryId": "over10"
+      },
+      {
+        "id": "n5",
+        "text": {
+          "ro": "5"
+        },
+        "categoryId": "under10"
+      },
+      {
+        "id": "n19",
+        "text": {
+          "ro": "19"
+        },
+        "categoryId": "over10"
+      }
+    ],
+    "provenance": {
+      "id": "prov.item.mat.count.20.sort1",
+      "kind": "item",
+      "title": "prov.item.mat.count.20.sort1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.mat.compare.10.order1",
+    "type": "order",
+    "skillId": "mat.compare.10",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Aranjează numerele de la cel mai mic la cel mai mare.",
+      "en": "Arrange the numbers from smallest to largest."
+    },
+    "visual": {
+      "kind": "number-line",
+      "from": 0,
+      "to": 10,
+      "step": 1
+    },
+    "reviewStatus": "beta",
+    "cards": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "7"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "2"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "9"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "4"
+        }
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "d",
+      "a",
+      "c"
+    ],
+    "provenance": {
+      "id": "prov.item.mat.compare.10.order1",
+      "kind": "item",
+      "title": "prov.item.mat.compare.10.order1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "item.mat.count.10.picchoice1",
+    "type": "picture-choice",
+    "skillId": "mat.count.10",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care grup are 5 stele?",
+      "en": "Which group has 5 stars?"
+    },
+    "reviewStatus": "beta",
+    "options": [
+      {
+        "id": "s3",
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 3
+        }
+      },
+      {
+        "id": "s5",
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 5
+        }
+      },
+      {
+        "id": "s7",
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 7
+        }
+      }
+    ],
+    "correctId": "s5",
+    "provenance": {
+      "id": "prov.item.mat.count.10.picchoice1",
+      "kind": "item",
+      "title": "prov.item.mat.count.10.picchoice1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted for the competence; awaiting human review"
+    }
+  }
+]

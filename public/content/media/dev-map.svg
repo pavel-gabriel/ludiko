@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Hartă simplă cu un deal, o casă și un râu">
+  <rect width="400" height="300" fill="#e8f6d8"/>
+  <path d="M0 210 C90 170 150 250 240 215 S360 170 400 195 L400 300 L0 300 Z" fill="#bfe3f7"/>
+  <path d="M30 150 L110 70 L190 150 Z" fill="#9ccf7a" stroke="#4f8a3a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M240 140 L290 95 L340 140 Z" fill="#f4a261" stroke="#b5651d" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="250" y="140" width="80" height="55" fill="#fff3c4" stroke="#b5651d" stroke-width="4"/>
+  <rect x="280" y="160" width="20" height="35" fill="#b5651d"/>
+  <circle cx="60" cy="235" r="14" fill="#ffd166" stroke="#c99700" stroke-width="3"/>
+</svg>

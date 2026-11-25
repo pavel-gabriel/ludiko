@@ -108,5 +108,18 @@
     "licenceUrl": "https://github.com/firebase/firebase-js-sdk/blob/main/LICENSE",
     "retrieved": "2026-11-25",
     "version": "11.10.0"
+  },
+  {
+    "id": "lib-workbox",
+    "kind": "library",
+    "title": "Workbox (service worker runtime)",
+    "author": "Google LLC",
+    "source": "open-licence",
+    "licence": "MIT",
+    "url": "https://developer.chrome.com/docs/workbox",
+    "licenceUrl": "https://github.com/GoogleChrome/workbox/blob/v7/LICENSE",
+    "retrieved": "2026-11-25",
+    "version": "7.4.1",
+    "notes": "Shipped inside the generated service worker (precaching, routing, strategies), built via vite-plugin-pwa (MIT, build-time only)."
   }
 ]

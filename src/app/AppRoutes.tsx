@@ -1,65 +1,104 @@
+import { lazy, Suspense, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import HomePage from '@/components/lobby/HomePage';
+import RouteFallback from '@/components/ui/RouteFallback';
+
+/*
+ * Code-splitting: every route except the home page is lazy-loaded so the
+ * initial bundle stays small (budget: docs/PLAN.md §10, checked by
+ * `npm run check:size`). To add a route use:
+ *   const MyPage = lazy(() => import('@/components/.../MyPage'));
+ * (default export; import the file directly, not a barrel index).
+ */
+const ItemsPreviewPage = lazy(() => import('@/ui/items/ItemsPreviewPage'));
+const FramesPreviewPage = lazy(() => import('@/ui/frames/FramesPreviewPage'));
+const PracticeListPage = lazy(() => import('@/ui/session/PracticeListPage'));
+const PracticePage = lazy(() => import('@/ui/session/PracticePage'));
+const LearnHomePage = lazy(() => import('@/ui/learn/LearnHomePage'));
+const PlacementPage = lazy(() => import('@/ui/learn/PlacementPage'));
+const MissionPage = lazy(() => import('@/ui/learn/MissionPage'));
+const SkillMapPage = lazy(() => import('@/ui/learn/SkillMapPage'));
+const ParentPage = lazy(() => import('@/ui/learn/ParentPage'));
+const LearnPreviewPage = lazy(() => import('@/ui/learn/LearnPreviewPage'));
+const ProfilePickerPage = lazy(() => import('@/components/profiles/ProfilePickerPage'));
+const SinglePlayerPage = lazy(() => import('@/components/lobby/SinglePlayerPage'));
+const MultiplayerPage = lazy(() => import('@/components/lobby/MultiplayerPage'));
+const SettingsPage = lazy(() => import('@/components/lobby/SettingsPage'));
+const CreditsPage = lazy(() => import('@/components/lobby/CreditsPage'));
+const CreateRoom = lazy(() => import('@/components/lobby/CreateRoom'));
+const JoinRoom = lazy(() => import('@/components/lobby/JoinRoom'));
+const LobbyPage = lazy(() => import('@/components/lobby/LobbyPage'));
+const GameRouter = lazy(() => import('@/components/games/GameRouter'));
+const InteractiveSetupPage = lazy(() => import('@/components/lobby/InteractiveSetupPage'));
+const InteractiveGamePage = lazy(
+  () => import('@/components/games/InteractiveGame/InteractiveGamePage'),
+);
+const AdminDashboard = lazy(() => import('@/components/admin/AdminDashboard'));
+const TeacherLogin = lazy(() => import('@/components/teacher/TeacherLogin'));
+const TeacherDashboard = lazy(() => import('@/components/teacher/TeacherDashboard'));
+const SessionConfig = lazy(() => import('@/components/teacher/SessionConfig'));
+const SessionDetail = lazy(() => import('@/components/teacher/SessionDetail'));
+const TeacherLiveDashboard = lazy(() => import('@/components/teacher/TeacherLiveDashboard'));
+const SessionResults = lazy(() => import('@/components/teacher/SessionResults'));
+const TemplatesPage = lazy(() => import('@/components/teacher/TemplatesPage'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   return null;
 }
-import HomePage from '@/components/lobby/HomePage';
-import SinglePlayerPage from '@/components/lobby/SinglePlayerPage';
-import MultiplayerPage from '@/components/lobby/MultiplayerPage';
-import SettingsPage from '@/components/lobby/SettingsPage';
-import CreditsPage from '@/components/lobby/CreditsPage';
-import CreateRoom from '@/components/lobby/CreateRoom';
-import JoinRoom from '@/components/lobby/JoinRoom';
-import LobbyPage from '@/components/lobby/LobbyPage';
-import GameRouter from '@/components/games/GameRouter';
-import InteractiveSetupPage from '@/components/lobby/InteractiveSetupPage';
-import { InteractiveGamePage } from '@/components/games/InteractiveGame';
-import {
-  TeacherLogin,
-  TeacherDashboard,
-  SessionConfig,
-  SessionDetail,
-  TeacherLiveDashboard,
-  SessionResults,
-  TemplatesPage,
-} from '@/components/teacher';
-import AdminDashboard from '@/components/admin/AdminDashboard';
 
 /** All application routes — add new pages here */
 export default function AppRoutes() {
   return (
     <>
       <ScrollToTop />
-      <Routes>
-      {/* Player routes */}
-      <Route path="/" element={<HomePage />} />
-      <Route path="/singleplayer" element={<SinglePlayerPage />} />
-      <Route path="/multiplayer" element={<MultiplayerPage />} />
-      <Route path="/settings" element={<SettingsPage />} />
-      <Route path="/credits" element={<CreditsPage />} />
-      <Route path="/create" element={<CreateRoom />} />
-      <Route path="/join" element={<JoinRoom />} />
-      <Route path="/lobby" element={<LobbyPage />} />
-      <Route path="/interactive" element={<InteractiveSetupPage />} />
-      <Route path="/game" element={<GameRouter />} />
-      <Route path="/game/interactive" element={<InteractiveGamePage />} />
+      <Suspense fallback={<RouteFallback />}>
+        <Routes>
+          {/* Player routes */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/profiles" element={<ProfilePickerPage />} />
 
-      {/* Admin route — PIN-protected, owner only */}
-      <Route path="/admin" element={<AdminDashboard />} />
+          {/* Practice sessions (Phase 1A) */}
+          <Route path="/practice" element={<PracticeListPage />} />
+          <Route path="/practice/:skillId" element={<PracticePage />} />
 
-      {/* Teacher routes */}
-      <Route path="/teacher/login" element={<TeacherLogin />} />
-      <Route path="/teacher" element={<TeacherDashboard />} />
-      <Route path="/teacher/session/new" element={<SessionConfig />} />
-      <Route path="/teacher/session/:sessionId/edit" element={<SessionConfig />} />
-      <Route path="/teacher/session/:sessionId" element={<SessionDetail />} />
-      <Route path="/teacher/live/:sessionId" element={<TeacherLiveDashboard />} />
-      <Route path="/teacher/results/:sessionId" element={<SessionResults />} />
-      <Route path="/teacher/templates" element={<TemplatesPage />} />
-    </Routes>
+          {/* Learner area (Phase 1A): check -> mission -> map, and the parent summary */}
+          <Route path="/learn" element={<LearnHomePage />} />
+          <Route path="/learn/check/:subject" element={<PlacementPage />} />
+          <Route path="/learn/mission/:subject" element={<MissionPage />} />
+          <Route path="/learn/map/:subject" element={<SkillMapPage />} />
+          <Route path="/learn/parent" element={<ParentPage />} />
+
+          {/* Dev previews (Phase 0) */}
+          <Route path="/dev/learn" element={<LearnPreviewPage />} />
+          <Route path="/dev/frames" element={<FramesPreviewPage />} />
+          <Route path="/dev/items" element={<ItemsPreviewPage />} />
+          <Route path="/singleplayer" element={<SinglePlayerPage />} />
+          <Route path="/multiplayer" element={<MultiplayerPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/credits" element={<CreditsPage />} />
+          <Route path="/create" element={<CreateRoom />} />
+          <Route path="/join" element={<JoinRoom />} />
+          <Route path="/lobby" element={<LobbyPage />} />
+          <Route path="/interactive" element={<InteractiveSetupPage />} />
+          <Route path="/game" element={<GameRouter />} />
+          <Route path="/game/interactive" element={<InteractiveGamePage />} />
+
+          {/* Admin route — PIN-protected, owner only */}
+          <Route path="/admin" element={<AdminDashboard />} />
+
+          {/* Teacher routes */}
+          <Route path="/teacher/login" element={<TeacherLogin />} />
+          <Route path="/teacher" element={<TeacherDashboard />} />
+          <Route path="/teacher/session/new" element={<SessionConfig />} />
+          <Route path="/teacher/session/:sessionId/edit" element={<SessionConfig />} />
+          <Route path="/teacher/session/:sessionId" element={<SessionDetail />} />
+          <Route path="/teacher/live/:sessionId" element={<TeacherLiveDashboard />} />
+          <Route path="/teacher/results/:sessionId" element={<SessionResults />} />
+          <Route path="/teacher/templates" element={<TemplatesPage />} />
+        </Routes>
+      </Suspense>
     </>
   );
 }

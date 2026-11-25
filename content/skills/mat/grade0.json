@@ -1,0 +1,215 @@
+[
+  {
+    "id": "mat.count.10",
+    "subject": "mat",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Numărarea până la 10",
+      "en": "Counting to 10"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "counting",
+        "params": {
+          "max": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.count.10"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.count.10",
+      "kind": "data",
+      "title": "Skill mat.count.10",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.numrec.10",
+    "subject": "mat",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Recunoașterea numerelor până la 10",
+      "en": "Recognising numbers to 10"
+    },
+    "prerequisites": [
+      "mat.count.10"
+    ],
+    "itemSources": [
+      {
+        "generator": "number-recognition",
+        "params": {
+          "max": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.numrec.10"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.numrec.10",
+      "kind": "data",
+      "title": "Skill mat.numrec.10",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.compare.10",
+    "subject": "mat",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "Compararea numerelor până la 10",
+      "en": "Comparing numbers to 10"
+    },
+    "prerequisites": [
+      "mat.numrec.10"
+    ],
+    "itemSources": [
+      {
+        "generator": "compare",
+        "params": {
+          "max": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.compare.10"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.compare.10",
+      "kind": "data",
+      "title": "Skill mat.compare.10",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.add.10",
+    "subject": "mat",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Adunarea în limitele 0–10",
+      "en": "Addition within 10"
+    },
+    "prerequisites": [
+      "mat.numrec.10"
+    ],
+    "itemSources": [
+      {
+        "generator": "addition",
+        "params": {
+          "max": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.add.10"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.add.10",
+      "kind": "data",
+      "title": "Skill mat.add.10",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.sub.10",
+    "subject": "mat",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Scăderea în limitele 0–10",
+      "en": "Subtraction within 10"
+    },
+    "prerequisites": [
+      "mat.add.10"
+    ],
+    "itemSources": [
+      {
+        "generator": "subtraction",
+        "params": {
+          "max": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.sub.10"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.sub.10",
+      "kind": "data",
+      "title": "Skill mat.sub.10",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  }
+]

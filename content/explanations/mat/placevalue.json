@@ -1,0 +1,66 @@
+[
+  {
+    "id": "exp.placevalue.100",
+    "skillId": "mat.placevalue.100",
+    "title": {
+      "ro": "Zeci și unități: numărul 47",
+      "en": "Tens and ones: the number 47"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Numărul 47 are 4 zeci și 7 unități.",
+          "en": "The number 47 has 4 tens and 7 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 4,
+          "ones": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "Cele 4 zeci valorează 40. Fiecare zece are 10 unități.",
+          "en": "The 4 tens are worth 40. Each ten has 10 ones."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 4,
+          "ones": 0
+        }
+      },
+      {
+        "text": {
+          "ro": "Cele 7 unități valorează 7. Sunt cuburile mici.",
+          "en": "The 7 ones are worth 7. They are the small cubes."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 0,
+          "ones": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "Le punem la un loc: 40 + 7 = 47.",
+          "en": "We put them together: 40 + 7 = 47."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 4,
+          "ones": 7
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.placevalue.100",
+      "kind": "explanation",
+      "title": "Tens and ones: the number 47",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  }
+]

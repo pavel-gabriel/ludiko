@@ -236,21 +236,21 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 
 ### Phase 0 — Foundations
 - [x] Provenance schema + CI licence check + `/credits` page (content & IP policy)
-- [ ] Content schemas + CI validation; `content/` structure
-- [ ] Item model + renderers: choice, picture-choice, true-false, number-input, fill-gap, order, sort, match
-- [ ] Local child profiles (IndexedDB), recovery code, multi-profile per device
-- [ ] Offline PWA (service worker, content bundle caching), performance budget in CI
-- [ ] Explanation frames + first SVG visual kit (number line, blocks, clock, coins)
-- [ ] "Raportează o greșeală" button + admin queue
+- [x] Content schemas + CI validation; `content/` structure (+ seed math skill graph 0–II)
+- [x] Item model + renderers: choice, picture-choice, true-false, number-input, fill-gap, order, sort, match
+- [x] Local child profiles (IndexedDB), recovery code, multi-profile per device
+- [x] Offline PWA (service worker, content bundle caching), performance budget in CI
+- [x] Explanation frames + first SVG visual kit (number line, blocks, clock, coins)
+- [x] "Raportează o greșeală" button + admin queue (⚠️ needs real admin auth before launch)
 - [ ] Rebuild the existing games as modes over items (Race, Sprint, Memory, Duel)
 
 ### Phase 1A — Math 0–IV: check → gaps → missions
-- [ ] Math skill graph 0–IV with prerequisites, tagged to MEM/Matematică competences
-- [ ] Generators for every math skill (numbers, place value, compare, +/−/×/÷, equations, fractions, measurement, money, time, geometry basics, word problems)
-- [ ] Placement diagnostic + level statement
-- [ ] Mastery tracking + mission planner + spaced review
-- [ ] Adventure map + Treasure map mode + sticker album + gentle streak
-- [ ] Math explanations (frames) for every skill
+- [ ] Math skill graph 0–IV with prerequisites, tagged to MEM/Matematică competences — **grades 0–II done (18 skills); III–IV to do; codes to verify**
+- [ ] Generators for every math skill (numbers, place value, compare, +/−/×/÷, equations, fractions, measurement, money, time, geometry basics, word problems) — **7 generators for grades 0–II done**
+- [x] Placement diagnostic + level statement (resumable, 3-minute bites, parent-only statement)
+- [x] Mastery tracking + mission planner + spaced review (see `docs/ENGINE.md`)
+- [x] Adventure map + Treasure map mode + gentle streak (stickers awarded; sticker album screen to do)
+- [ ] Math explanations (frames) for every skill — **1 in content + 4 samples; most skills still need one**
 
 ### Phase 1B — Romanian 0–IV: reading comprehension
 - [ ] Skill graph: sounds/letters → syllables → words → sentences → short texts → comprehension (literal → inferential)

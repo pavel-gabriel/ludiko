@@ -1,13 +1,20 @@
-import { useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
+import { useProfileStore } from '@/store/profileStore';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
-import PersistentLeaderboard from '@/components/leaderboard/PersistentLeaderboard';
+const PersistentLeaderboard = lazy(() => import('@/components/leaderboard/PersistentLeaderboard'));
 
 export default function HomePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [showLeaderboard, setShowLeaderboard] = useState(false);
+  const activeProfile = useProfileStore((s) => s.activeProfile);
+  const profilesLoaded = useProfileStore((s) => s.loaded);
+  const loadProfiles = useProfileStore((s) => s.load);
+  useEffect(() => {
+    if (!profilesLoaded) void loadProfiles();
+  }, [profilesLoaded, loadProfiles]);
 
   return (
     <div className="page relative">
@@ -48,7 +55,34 @@ export default function HomePage() {
         </p>
       </div>
 
+      <button
+        onClick={() => navigate('/profiles')}
+        className="mb-6 flex items-center gap-2 px-5 py-3 rounded-full bg-white shadow-md font-bold text-lg hover:bg-gray-50 active:scale-95 transition-all"
+      >
+        {activeProfile ? (
+          <>
+            <span className="text-3xl" aria-hidden="true">{activeProfile.avatar}</span>
+            <span className="max-w-[10rem] truncate">{activeProfile.nickname}</span>
+          </>
+        ) : (
+          <>
+            <span className="text-3xl" aria-hidden="true">👤</span>
+            <span>{t('profiles.switchPlayer')}</span>
+          </>
+        )}
+      </button>
+
       <div className="flex flex-col gap-4 w-full max-w-xs">
+        <Button
+          variant="green"
+          size="lg"
+          onClick={() => navigate('/learn')}
+          className="w-full ring-4 ring-ludiko-yellow shadow-lg"
+          data-testid="learn-entry"
+        >
+          <span aria-hidden="true">🧭 </span>
+          {t('learn.title')}
+        </Button>
         <Button variant="pink" size="lg" onClick={() => navigate('/singleplayer')}>
           {t('home.singlePlayer')}
         </Button>
@@ -60,7 +94,11 @@ export default function HomePage() {
         </Button>
       </div>
 
-      {showLeaderboard && <PersistentLeaderboard onClose={() => setShowLeaderboard(false)} />}
+      {showLeaderboard && (
+        <Suspense fallback={null}>
+          <PersistentLeaderboard onClose={() => setShowLeaderboard(false)} />
+        </Suspense>
+      )}
     </div>
   );
 }
