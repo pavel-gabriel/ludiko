@@ -286,5 +286,13 @@
       "loadError": "Could not load reports.",
       "actionError": "Could not update the report."
     }
+  },
+  "pwa": {
+    "loading": "Loading…",
+    "offline": "You're offline — you can keep practising",
+    "updateAvailable": "New version available",
+    "update": "Update",
+    "offlineReady": "All set! Ludiko now works without internet.",
+    "dismiss": "Close"
   }
 }

@@ -286,5 +286,13 @@
       "loadError": "Nu am putut încărca rapoartele.",
       "actionError": "Nu am putut actualiza raportul."
     }
+  },
+  "pwa": {
+    "loading": "Se încarcă…",
+    "offline": "Ești offline — poți exersa în continuare",
+    "updateAvailable": "Versiune nouă disponibilă",
+    "update": "Actualizează",
+    "offlineReady": "Gata! Ludiko funcționează și fără internet.",
+    "dismiss": "Închide"
   }
 }
