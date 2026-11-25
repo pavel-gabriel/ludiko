@@ -14,6 +14,12 @@ import SkillMapPage from '@/ui/learn/SkillMapPage'
 import ParentPage from '@/ui/learn/ParentPage'
 import HomePage from '@/components/lobby/HomePage'
 
+/* These tests exercise one subject; the fake learner returns the same placement for any subject */
+vi.mock('@/ui/learn/subjects', async (importOriginal) => ({
+  ...(await importOriginal<typeof import('@/ui/learn/subjects')>()),
+  LEARN_SUBJECTS: ['mat'],
+}))
+
 vi.mock('@/learner', async () => ({
   learnerService: (await import('./helpers/fakeLearner')).fakeLearner,
 }))

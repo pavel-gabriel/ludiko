@@ -1,0 +1,1011 @@
+[
+  {
+    "id": "exp.rom.letters.sound.0",
+    "skillId": "rom.letters.sound.0",
+    "title": {
+      "ro": "Ce sunet și ce literă auzim la început?",
+      "en": "Which sound and letter do we hear first?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Spune cuvântul rar, ca un melc: c-a-s-ă. Ce auzi la început?",
+          "en": "Say the word slowly, like a snail: c-a-s-ă. What do you hear first?"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Primul sunet se scrie cu o literă. În „casă” primul sunet este c, deci litera este c.",
+          "en": "The first sound is written with a letter. In \"casă\" the first sound is c, so the letter is c."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "La sfârșit faci la fel: spune cuvântul și ascultă ultimul sunet. „casă” se termină cu ă.",
+          "en": "For the end, do the same: say the word and listen to the last sound. \"casă\" ends with ă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐌",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.letters.sound.0",
+      "kind": "explanation",
+      "title": "Explanation for rom.letters.sound.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.letters.vowel.0",
+    "skillId": "rom.letters.vowel.0",
+    "title": {
+      "ro": "Vocale și consoane",
+      "en": "Vowels and consonants"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vocalele sunt: a, ă, â, e, i, î, o, u. Le poți cânta lung: aaa, eee, ooo.",
+          "en": "The vowels are: a, ă, â, e, i, î, o, u. You can sing them for a long time: aaa, eee, ooo."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎵",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Consoanele (b, c, d, m, n, p, r, s, t...) nu se pot cânta singure. Ele au nevoie de o vocală.",
+          "en": "Consonants (b, c, d, m, n, p, r, s, t...) cannot be sung alone. They need a vowel."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔤",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Ca să numeri vocalele dintr-un cuvânt, ascultă-le una câte una. În „casă” sunt două vocale: a și ă.",
+          "en": "To count the vowels in a word, listen to them one by one. In \"casă\" there are two vowels: a and ă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.letters.vowel.0",
+      "kind": "explanation",
+      "title": "Explanation for rom.letters.vowel.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.letters.case.0",
+    "skillId": "rom.letters.case.0",
+    "title": {
+      "ro": "Litera mare și litera mică",
+      "en": "Capital and small letters"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fiecare literă are două forme: litera mică (a) și litera mare (A).",
+          "en": "Every letter has two forms: the small letter (a) and the capital letter (A)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Folosim litera mare la începutul propoziției și la numele de persoane: Ana, Radu.",
+          "en": "We use a capital letter at the start of a sentence and for names: Ana, Radu."
+        }
+      },
+      {
+        "text": {
+          "ro": "Unele perechi seamănă (c – C, o – O), altele sunt diferite (a – A, b – B, ă – Ă, ș – Ș). Privește forma cu atenție.",
+          "en": "Some pairs look alike (c – C, o – O), others differ (a – A, b – B, ă – Ă, ș – Ș). Look at the shape carefully."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.letters.case.0",
+      "kind": "explanation",
+      "title": "Explanation for rom.letters.case.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.syll.count.0",
+    "skillId": "rom.syll.count.0",
+    "title": {
+      "ro": "Câte silabe are cuvântul?",
+      "en": "How many syllables does the word have?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Bate din palme la fiecare bucată a cuvântului: ca (clap) – să (clap).",
+          "en": "Clap once for each part of the word: ca (clap) – să (clap)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👏",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare palmă este o silabă. „casă” are două silabe.",
+          "en": "Each clap is a syllable. \"casă\" has two syllables."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Poți pune mâna sub bărbie: bărbia coboară la fiecare silabă. „pi-si-că” are trei silabe.",
+          "en": "You can put your hand under your chin: your chin drops on every syllable. \"pi-si-că\" has three syllables."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐈",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.syll.count.0",
+      "kind": "explanation",
+      "title": "Explanation for rom.syll.count.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.word.picture.0",
+    "skillId": "rom.word.picture.0",
+    "title": {
+      "ro": "Cuvântul și imaginea lui",
+      "en": "A word and its picture"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Citește cuvântul cu voce tare, literă cu literă sau silabă cu silabă: pi-si-că.",
+          "en": "Read the word aloud, letter by letter or syllable by syllable: pi-si-că."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐈",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Gândește-te ce înseamnă cuvântul: „pisică” este un animal care miaună.",
+          "en": "Think about what the word means: \"pisică\" is an animal that meows."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐈",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Alege imaginea potrivită. Verifică și prima literă: pisică începe cu p.",
+          "en": "Choose the matching picture. Also check the first letter: pisică starts with p."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐈",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.word.picture.0",
+      "kind": "explanation",
+      "title": "Explanation for rom.word.picture.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.syll.split.1",
+    "skillId": "rom.syll.split.1",
+    "title": {
+      "ro": "Cum despărțim cuvintele în silabe",
+      "en": "How to split words into syllables"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fiecare silabă are cel puțin o vocală. Număr vocalele și știu câte silabe sunt.",
+          "en": "Every syllable has at least one vowel. Count the vowels to know how many syllables there are."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👏",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "O consoană între două vocale trece la silaba următoare: ma-ma, ca-să, pi-si-că.",
+          "en": "A single consonant between two vowels goes with the next syllable: ma-ma, ca-să, pi-si-că."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Două consoane se despart: mer-ge, car-te. Dar grupurile bl, br, pl, pr, tr rămân împreună: ta-blă, ca-pră.",
+          "en": "Two consonants are split: mer-ge, car-te. But the groups bl, br, pl, pr, tr stay together: ta-blă, ca-pră."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐐",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.syll.split.1",
+      "kind": "explanation",
+      "title": "Explanation for rom.syll.split.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.syll.build.1",
+    "skillId": "rom.syll.build.1",
+    "title": {
+      "ro": "Formăm cuvinte din silabe",
+      "en": "Building words from syllables"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un cuvânt este făcut din silabe puse una după alta, ca niște cuburi.",
+          "en": "A word is made of syllables placed one after another, like blocks."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔤",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Citește fiecare silabă, apoi încearcă să le lipești: ma + și + nă = mașină.",
+          "en": "Read each syllable, then try to stick them together: ma + și + nă = mașină."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚗",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Spune cuvântul întreg și verifică: se potrivește cu imaginea? Dacă da, ordinea este bună.",
+          "en": "Say the whole word and check: does it match the picture? If so, the order is right."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚗",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.syll.build.1",
+      "kind": "explanation",
+      "title": "Explanation for rom.syll.build.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.word.read.1",
+    "skillId": "rom.word.read.1",
+    "title": {
+      "ro": "Citim cuvinte și le potrivim cu imaginea",
+      "en": "Reading words and matching them to pictures"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Citește cuvântul încet, silabă cu silabă: ca-să.",
+          "en": "Read the word slowly, syllable by syllable: ca-să."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi spune-l întreg, repede: casă. Ce imagine vezi în minte?",
+          "en": "Then say it whole, quickly: casă. Which picture do you see in your mind?"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cuvintele care seamănă se deosebesc prin câte o literă: casă – masă. Privește cu atenție prima literă.",
+          "en": "Words that look alike differ by one letter: casă – masă. Look at the first letter carefully."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.word.read.1",
+      "kind": "explanation",
+      "title": "Explanation for rom.word.read.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.letters.digraph.1",
+    "skillId": "rom.letters.digraph.1",
+    "title": {
+      "ro": "ce, ci, che, chi, ge, gi, ghe, ghi",
+      "en": "ce, ci, che, chi, ge, gi, ghe, ghi"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Literele c și g se citesc altfel când urmează e sau i: ceas, cireșe, geantă, girafă.",
+          "en": "The letters c and g are read differently when e or i follows: ceas, cireșe, geantă, girafă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⏰",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Când vrem sunetul tare, ca în „chitară” sau „ochi”, scriem ch (che, chi). La fel pentru g: gh (ghe, ghi), ca în „înghețată”.",
+          "en": "When we want the hard sound, as in \"chitară\" or \"ochi\", we write ch (che, chi). The same for g: gh (ghe, ghi), as in \"înghețată\"."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎸",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Spune cuvântul și ascultă bine: dacă sună ca în „chitară”, scrii chi; dacă sună ca în „ceas”, scrii ce.",
+          "en": "Say the word and listen closely: if it sounds like in \"chitară\", write chi; if it sounds like in \"ceas\", write ce."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍦",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.letters.digraph.1",
+      "kind": "explanation",
+      "title": "Explanation for rom.letters.digraph.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.sent.order.1",
+    "skillId": "rom.sent.order.1",
+    "title": {
+      "ro": "Punem cuvintele în ordine",
+      "en": "Putting words in order"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "O propoziție începe cu o literă mare și se termină cu un semn: punct, semnul întrebării sau semnul exclamării.",
+          "en": "A sentence starts with a capital letter and ends with a mark: a full stop, question mark or exclamation mark."
+        }
+      },
+      {
+        "text": {
+          "ro": "Caută cuvântul cu literă mare: el vine primul. Caută cuvântul cu punct la sfârșit: el vine ultimul.",
+          "en": "Look for the word with a capital letter: it comes first. Look for the word with the full stop: it comes last."
+        }
+      },
+      {
+        "text": {
+          "ro": "Citește propoziția în gând. Are sens? „Mama gătește supă.” – da! Dacă nu are sens, schimbă ordinea.",
+          "en": "Read the sentence in your head. Does it make sense? \"Mama gătește supă.\" – yes! If not, change the order."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍲",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.sent.order.1",
+      "kind": "explanation",
+      "title": "Explanation for rom.sent.order.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.sent.punct.1",
+    "skillId": "rom.sent.punct.1",
+    "title": {
+      "ro": "Punct, semnul întrebării, semnul exclamării",
+      "en": "Full stop, question mark, exclamation mark"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Punctul (.) arată că povestim ceva: „Ana citește.”",
+          "en": "The full stop (.) shows that we are telling something: \"Ana citește.\""
+        }
+      },
+      {
+        "text": {
+          "ro": "Semnul întrebării (?) arată că întrebăm: „Cine citește?” Întrebările încep adesea cu cine, ce, unde, când, cum.",
+          "en": "The question mark (?) shows that we are asking: \"Cine citește?\" Questions often start with cine, ce, unde, când, cum."
+        }
+      },
+      {
+        "text": {
+          "ro": "Semnul exclamării (!) arată bucurie, mirare sau poruncă: „Ce frumos este!” „Vino repede!”",
+          "en": "The exclamation mark (!) shows joy, surprise or a command: \"Ce frumos este!\" \"Vino repede!\""
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.sent.punct.1",
+      "kind": "explanation",
+      "title": "Explanation for rom.sent.punct.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.text.literal.1",
+    "skillId": "rom.text.literal.1",
+    "title": {
+      "ro": "Căutăm răspunsul în text",
+      "en": "Finding the answer in the text"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Citește textul încet, o propoziție după alta.",
+          "en": "Read the text slowly, one sentence after another."
+        }
+      },
+      {
+        "text": {
+          "ro": "Citește întrebarea și găsește cuvintele importante: cine? ce? unde? când?",
+          "en": "Read the question and find the important words: who? what? where? when?"
+        }
+      },
+      {
+        "text": {
+          "ro": "Caută aceleași cuvinte în text. Răspunsul este chiar lângă ele!",
+          "en": "Look for the same words in the text. The answer is right next to them!"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.text.literal.1",
+      "kind": "explanation",
+      "title": "Explanation for rom.text.literal.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.vocab.antonym.2",
+    "skillId": "rom.vocab.antonym.2",
+    "title": {
+      "ro": "Cuvinte cu sens opus",
+      "en": "Words with opposite meanings"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Unele cuvinte spun lucruri opuse: mare – mic, sus – jos, cald – rece.",
+          "en": "Some words say opposite things: mare – mic, sus – jos, cald – rece."
+        }
+      },
+      {
+        "text": {
+          "ro": "Imaginează-ți cuvântul: ce este exact pe partea cealaltă? Pentru „mare”, pe partea cealaltă este „mic”.",
+          "en": "Picture the word: what is exactly on the other side? For \"mare\" the other side is \"mic\"."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐘",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Verifică într-o propoziție: „Elefantul este mare, șoarecele este mic.” Cuvintele spun lucruri opuse.",
+          "en": "Check in a sentence: \"Elefantul este mare, șoarecele este mic.\" The words say opposite things."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐭",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.vocab.antonym.2",
+      "kind": "explanation",
+      "title": "Explanation for rom.vocab.antonym.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.text.literal.2",
+    "skillId": "rom.text.literal.2",
+    "title": {
+      "ro": "Găsim informații în text",
+      "en": "Finding information in a text"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Citește tot textul o dată, ca să știi despre ce este vorba.",
+          "en": "Read the whole text once so you know what it is about."
+        }
+      },
+      {
+        "text": {
+          "ro": "Citește întrebarea și subliniază în minte cuvintele-cheie: cine, ce, unde, când, cum.",
+          "en": "Read the question and underline the key words in your mind: who, what, where, when, how."
+        }
+      },
+      {
+        "text": {
+          "ro": "Întoarce-te în text și caută cuvintele-cheie. Răspunsul se află în propoziția în care apar.",
+          "en": "Go back to the text and look for the key words. The answer is in the sentence where they appear."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.text.literal.2",
+      "kind": "explanation",
+      "title": "Explanation for rom.text.literal.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.text.sequence.2",
+    "skillId": "rom.text.sequence.2",
+    "title": {
+      "ro": "Ordinea întâmplărilor",
+      "en": "The order of events"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Unele cuvinte ne arată ordinea: mai întâi, apoi, după aceea, la sfârșit.",
+          "en": "Some words show the order: mai întâi (first), apoi (then), după aceea (after that), la sfârșit (at the end)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Pune întâmplările pe rând, ca pe o scară: 1, 2, 3, 4.",
+          "en": "Put the events in a row, like steps on a ladder: 1, 2, 3, 4."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👣",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Verifică: dacă le spui în ordinea aleasă, povestea are sens de la început până la sfârșit?",
+          "en": "Check: if you tell them in your chosen order, does the story make sense from beginning to end?"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.text.sequence.2",
+      "kind": "explanation",
+      "title": "Explanation for rom.text.sequence.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.vocab.synonym.2",
+    "skillId": "rom.vocab.synonym.2",
+    "title": {
+      "ro": "Cuvinte cu înțeles asemănător",
+      "en": "Words with similar meanings"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Sinonimele sunt cuvinte care înseamnă aproape același lucru: repede – iute, casă – locuință.",
+          "en": "Synonyms are words that mean almost the same thing: repede – iute, casă – locuință."
+        }
+      },
+      {
+        "text": {
+          "ro": "Pune cuvântul în propoziție în locul celuilalt: „Merge repede.” – „Merge iute.”",
+          "en": "Put the word in a sentence in place of the other: \"Merge repede.\" – \"Merge iute.\""
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă propoziția spune același lucru, cuvintele sunt sinonime. Dacă se schimbă sensul, nu sunt.",
+          "en": "If the sentence says the same thing, the words are synonyms. If the meaning changes, they are not."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.vocab.synonym.2",
+      "kind": "explanation",
+      "title": "Explanation for rom.vocab.synonym.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.text.mainidea.2",
+    "skillId": "rom.text.mainidea.2",
+    "title": {
+      "ro": "Despre ce este vorba în text?",
+      "en": "What is the text about?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ideea principală spune despre ce este vorba în cea mai mare parte a textului.",
+          "en": "The main idea says what most of the text is about."
+        }
+      },
+      {
+        "text": {
+          "ro": "Întreabă-te: despre cine sau despre ce vorbește tot timpul textul? Nu te opri la un detaliu.",
+          "en": "Ask yourself: who or what does the text talk about all the time? Do not stop at one detail."
+        }
+      },
+      {
+        "text": {
+          "ro": "Un titlu bun spune ideea principală pe scurt. Alege titlul care se potrivește cu tot textul.",
+          "en": "A good title says the main idea in a few words. Choose the title that fits the whole text."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.text.mainidea.2",
+      "kind": "explanation",
+      "title": "Explanation for rom.text.mainidea.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.text.inference.2",
+    "skillId": "rom.text.inference.2",
+    "title": {
+      "ro": "Citim printre rânduri",
+      "en": "Reading between the lines"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Uneori textul nu spune tot. Căutăm indicii: ce face personajul, cum arată, ce spune.",
+          "en": "Sometimes the text does not say everything. We look for clues: what the character does, how they look, what they say."
+        }
+      },
+      {
+        "text": {
+          "ro": "Indiciile + ce știm din viață = răspunsul. Dacă cineva oftează și caută ceva pierdut, de obicei este trist.",
+          "en": "Clues + what we know from life = the answer. If someone sighs and searches for something lost, they are usually sad."
+        }
+      },
+      {
+        "text": {
+          "ro": "Verifică: răspunsul tău se potrivește cu ce scrie în text? Dacă da, este bun.",
+          "en": "Check: does your answer fit what the text says? If so, it is a good one."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.text.inference.2",
+      "kind": "explanation",
+      "title": "Explanation for rom.text.inference.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.text.types.3",
+    "skillId": "rom.text.types.3",
+    "title": {
+      "ro": "Text narativ și text informativ",
+      "en": "Narrative and informative texts"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Textul narativ povestește întâmplări cu personaje: cine? ce a făcut? unde? când?",
+          "en": "A narrative text tells events with characters: who? what did they do? where? when?"
+        }
+      },
+      {
+        "text": {
+          "ro": "Textul informativ ne spune lucruri adevărate despre un animal, un loc sau un obiect.",
+          "en": "An informative text tells us true things about an animal, a place or an object."
+        }
+      },
+      {
+        "text": {
+          "ro": "Întreabă-te: textul povestește o întâmplare sau explică ceva? Așa îl recunoști.",
+          "en": "Ask yourself: does the text tell a story or explain something? That is how you recognise it."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.text.types.3",
+      "kind": "explanation",
+      "title": "Explanation for rom.text.types.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.text.characters.3",
+    "skillId": "rom.text.characters.3",
+    "title": {
+      "ro": "Cum aflăm cum este un personaj",
+      "en": "How we find out what a character is like"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Personajele sunt cei care fac întâmplările din text: oameni, animale sau chiar lucruri.",
+          "en": "Characters are the ones who make the events in the text happen: people, animals or even things."
+        }
+      },
+      {
+        "text": {
+          "ro": "Aflăm cum este un personaj din ce face, din ce spune și din felul în care arată.",
+          "en": "We find out what a character is like from what they do, what they say and how they look."
+        }
+      },
+      {
+        "text": {
+          "ro": "Cine ajută un coleg este săritor. Cine se face roșu când este strigat este timid. Caută astfel de fapte în text.",
+          "en": "Someone who helps a classmate is helpful. Someone who blushes when called on is shy. Look for such actions in the text."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.text.characters.3",
+      "kind": "explanation",
+      "title": "Explanation for rom.text.characters.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.vocab.context.3",
+    "skillId": "rom.vocab.context.3",
+    "title": {
+      "ro": "Înțelesul cuvintelor din text",
+      "en": "The meaning of words in a text"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un cuvânt nou se înțelege din propozițiile din jurul lui.",
+          "en": "A new word can be understood from the sentences around it."
+        }
+      },
+      {
+        "text": {
+          "ro": "Citește propoziția dinainte și pe cea de după. Ce indicii găsești?",
+          "en": "Read the sentence before and the one after. Which clues do you find?"
+        }
+      },
+      {
+        "text": {
+          "ro": "Pune în locul cuvântului nou unul pe care îl cunoști. Dacă propoziția are sens, ai găsit înțelesul.",
+          "en": "Put a word you know in place of the new one. If the sentence makes sense, you have found the meaning."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.vocab.context.3",
+      "kind": "explanation",
+      "title": "Explanation for rom.vocab.context.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.text.mainidea.4",
+    "skillId": "rom.text.mainidea.4",
+    "title": {
+      "ro": "Ideea principală și titlul potrivit",
+      "en": "The main idea and a fitting title"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Citește textul pe bucăți și notează în minte ideea fiecărei bucăți.",
+          "en": "Read the text in parts and note the idea of each part in your mind."
+        }
+      },
+      {
+        "text": {
+          "ro": "Ideea principală leagă toate ideile mici într-una singură. Ea nu este un detaliu, ci imaginea de ansamblu.",
+          "en": "The main idea ties all the small ideas into one. It is not a detail, it is the big picture."
+        }
+      },
+      {
+        "text": {
+          "ro": "Un titlu bun este scurt și se potrivește cu tot textul, nu doar cu o parte din el.",
+          "en": "A good title is short and fits the whole text, not only a part of it."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.text.mainidea.4",
+      "kind": "explanation",
+      "title": "Explanation for rom.text.mainidea.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rom.text.inference.4",
+    "skillId": "rom.text.inference.4",
+    "title": {
+      "ro": "Cauze, sentimente, concluzii",
+      "en": "Causes, feelings, conclusions"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pentru cauză întreabă „de ce?” și caută cuvinte ca „pentru că”, „de aceea”, „din acest motiv”.",
+          "en": "For a cause ask \"why?\" and look for words like \"pentru că\", \"de aceea\", \"din acest motiv\"."
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru sentimente urmărește faptele: ce face personajul, cum arată, ce gest face. Zâmbetul larg arată bucurie.",
+          "en": "For feelings follow the actions: what the character does, how they look, which gesture they make. A broad smile shows joy."
+        }
+      },
+      {
+        "text": {
+          "ro": "Concluzia se formează din mai multe indicii puse împreună. Verific-o mereu cu textul: se potrivește cu tot ce scrie?",
+          "en": "A conclusion is formed from several clues put together. Always check it against the text: does it fit everything it says?"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rom.text.inference.4",
+      "kind": "explanation",
+      "title": "Explanation for rom.text.inference.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

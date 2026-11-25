@@ -1,0 +1,1400 @@
+{
+ "provenance": {
+  "id": "prov.data.rom.words",
+  "kind": "data",
+  "title": "Ludiko Romanian child-word list with syllabification",
+  "author": "Ludiko",
+  "source": "own",
+  "licence": "OWN",
+  "notes": "Original curated list of common child words; hyphenation follows the standard Romanian rules (despărțirea în silabe). Emoji are Unicode characters, no third-party artwork. Hyphenation to be verified by a Romanian teacher/linguist."
+ },
+ "words": [
+  {
+   "w": "pisică",
+   "s": "pi-si-că",
+   "e": "🐈",
+   "en": "cat"
+  },
+  {
+   "w": "câine",
+   "s": "câi-ne",
+   "e": "🐕",
+   "en": "dog"
+  },
+  {
+   "w": "cal",
+   "s": "cal",
+   "e": "🐴",
+   "en": "horse"
+  },
+  {
+   "w": "vacă",
+   "s": "va-că",
+   "e": "🐄",
+   "en": "cow"
+  },
+  {
+   "w": "oaie",
+   "s": "oa-ie",
+   "e": "🐑",
+   "en": "sheep"
+  },
+  {
+   "w": "capră",
+   "s": "ca-pră",
+   "e": "🐐",
+   "en": "goat"
+  },
+  {
+   "w": "porc",
+   "s": "porc",
+   "e": "🐖",
+   "en": "pig"
+  },
+  {
+   "w": "rață",
+   "s": "ra-ță",
+   "e": "🦆",
+   "en": "duck",
+   "g": "bird"
+  },
+  {
+   "w": "cocoș",
+   "s": "co-coș",
+   "e": "🐓",
+   "en": "rooster",
+   "g": "bird"
+  },
+  {
+   "w": "pui",
+   "s": "pui",
+   "e": "🐥",
+   "en": "chick",
+   "g": "bird"
+  },
+  {
+   "w": "iepure",
+   "s": "ie-pu-re",
+   "e": "🐇",
+   "en": "rabbit"
+  },
+  {
+   "w": "șoarece",
+   "s": "șoa-re-ce",
+   "e": "🐭",
+   "en": "mouse"
+  },
+  {
+   "w": "hamster",
+   "s": "ham-ster",
+   "e": "🐹",
+   "en": "hamster"
+  },
+  {
+   "w": "urs",
+   "s": "urs",
+   "e": "🐻",
+   "en": "bear"
+  },
+  {
+   "w": "lup",
+   "s": "lup",
+   "e": "🐺",
+   "en": "wolf"
+  },
+  {
+   "w": "vulpe",
+   "s": "vul-pe",
+   "e": "🦊",
+   "en": "fox"
+  },
+  {
+   "w": "cerb",
+   "s": "cerb",
+   "e": "🦌",
+   "en": "deer"
+  },
+  {
+   "w": "leu",
+   "s": "leu",
+   "e": "🦁",
+   "en": "lion"
+  },
+  {
+   "w": "tigru",
+   "s": "ti-gru",
+   "e": "🐅",
+   "en": "tiger"
+  },
+  {
+   "w": "elefant",
+   "s": "e-le-fant",
+   "e": "🐘",
+   "en": "elephant"
+  },
+  {
+   "w": "girafă",
+   "s": "gi-ra-fă",
+   "e": "🦒",
+   "en": "giraffe"
+  },
+  {
+   "w": "zebră",
+   "s": "ze-bră",
+   "e": "🦓",
+   "en": "zebra"
+  },
+  {
+   "w": "cămilă",
+   "s": "că-mi-lă",
+   "e": "🐫",
+   "en": "camel"
+  },
+  {
+   "w": "maimuță",
+   "s": "mai-mu-ță",
+   "e": "🐒",
+   "en": "monkey"
+  },
+  {
+   "w": "veveriță",
+   "s": "ve-ve-ri-ță",
+   "e": "🐿️",
+   "en": "squirrel"
+  },
+  {
+   "w": "broască",
+   "s": "broas-că",
+   "e": "🐸",
+   "en": "frog"
+  },
+  {
+   "w": "șarpe",
+   "s": "șar-pe",
+   "e": "🐍",
+   "en": "snake"
+  },
+  {
+   "w": "țestoasă",
+   "s": "țes-toa-să",
+   "e": "🐢",
+   "en": "turtle"
+  },
+  {
+   "w": "melc",
+   "s": "melc",
+   "e": "🐌",
+   "en": "snail"
+  },
+  {
+   "w": "albină",
+   "s": "al-bi-nă",
+   "e": "🐝",
+   "en": "bee"
+  },
+  {
+   "w": "furnică",
+   "s": "fur-ni-că",
+   "e": "🐜",
+   "en": "ant"
+  },
+  {
+   "w": "fluture",
+   "s": "flu-tu-re",
+   "e": "🦋",
+   "en": "butterfly"
+  },
+  {
+   "w": "buburuză",
+   "s": "bu-bu-ru-ză",
+   "e": "🐞",
+   "en": "ladybug"
+  },
+  {
+   "w": "pește",
+   "s": "peș-te",
+   "e": "🐟",
+   "en": "fish",
+   "g": "fish"
+  },
+  {
+   "w": "balenă",
+   "s": "ba-le-nă",
+   "e": "🐳",
+   "en": "whale",
+   "g": "fish"
+  },
+  {
+   "w": "delfin",
+   "s": "del-fin",
+   "e": "🐬",
+   "en": "dolphin",
+   "g": "fish"
+  },
+  {
+   "w": "crab",
+   "s": "crab",
+   "e": "🦀",
+   "en": "crab"
+  },
+  {
+   "w": "caracatiță",
+   "s": "ca-ra-ca-ti-ță",
+   "e": "🐙",
+   "en": "octopus"
+  },
+  {
+   "w": "ghiozdan",
+   "s": "ghioz-dan",
+   "e": "🎒",
+   "en": "schoolbag"
+  },
+  {
+   "w": "pachet",
+   "s": "pa-chet",
+   "e": "📦",
+   "en": "package"
+  },
+  {
+   "w": "scoică",
+   "s": "scoi-că",
+   "e": "🐚",
+   "en": "seashell"
+  },
+  {
+   "w": "bufniță",
+   "s": "buf-ni-ță",
+   "e": "🦉",
+   "en": "owl",
+   "g": "bird"
+  },
+  {
+   "w": "vultur",
+   "s": "vul-tur",
+   "e": "🦅",
+   "en": "eagle",
+   "g": "bird"
+  },
+  {
+   "w": "pinguin",
+   "s": "pin-guin",
+   "e": "🐧",
+   "en": "penguin",
+   "g": "bird"
+  },
+  {
+   "w": "porumbel",
+   "s": "po-rum-bel",
+   "e": "🕊️",
+   "en": "dove",
+   "g": "bird"
+  },
+  {
+   "w": "pasăre",
+   "s": "pa-să-re",
+   "e": "🐦",
+   "en": "bird",
+   "g": "bird"
+  },
+  {
+   "w": "dragon",
+   "s": "dra-gon",
+   "e": "🐉",
+   "en": "dragon"
+  },
+  {
+   "w": "taur",
+   "s": "taur",
+   "e": "🐂",
+   "en": "bull"
+  },
+  {
+   "w": "măr",
+   "s": "măr",
+   "e": "🍎",
+   "en": "apple"
+  },
+  {
+   "w": "pară",
+   "s": "pa-ră",
+   "e": "🍐",
+   "en": "pear"
+  },
+  {
+   "w": "banană",
+   "s": "ba-na-nă",
+   "e": "🍌",
+   "en": "banana"
+  },
+  {
+   "w": "căpșună",
+   "s": "căp-șu-nă",
+   "e": "🍓",
+   "en": "strawberry"
+  },
+  {
+   "w": "cireșe",
+   "s": "ci-re-șe",
+   "e": "🍒",
+   "en": "cherries"
+  },
+  {
+   "w": "strugure",
+   "s": "stru-gu-re",
+   "e": "🍇",
+   "en": "grape"
+  },
+  {
+   "w": "portocală",
+   "s": "por-to-ca-lă",
+   "e": "🍊",
+   "en": "orange"
+  },
+  {
+   "w": "pepene",
+   "s": "pe-pe-ne",
+   "e": "🍉",
+   "en": "watermelon"
+  },
+  {
+   "w": "ananas",
+   "s": "a-na-nas",
+   "e": "🍍",
+   "en": "pineapple"
+  },
+  {
+   "w": "piersică",
+   "s": "pier-si-că",
+   "e": "🍑",
+   "en": "peach"
+  },
+  {
+   "w": "cartof",
+   "s": "car-tof",
+   "e": "🥔",
+   "en": "potato"
+  },
+  {
+   "w": "morcov",
+   "s": "mor-cov",
+   "e": "🥕",
+   "en": "carrot"
+  },
+  {
+   "w": "tomată",
+   "s": "to-ma-tă",
+   "e": "🍅",
+   "en": "tomato"
+  },
+  {
+   "w": "castravete",
+   "s": "cas-tra-ve-te",
+   "e": "🥒",
+   "en": "cucumber"
+  },
+  {
+   "w": "porumb",
+   "s": "po-rumb",
+   "e": "🌽",
+   "en": "corn"
+  },
+  {
+   "w": "ciupercă",
+   "s": "ciu-per-că",
+   "e": "🍄",
+   "en": "mushroom"
+  },
+  {
+   "w": "pâine",
+   "s": "pâi-ne",
+   "e": "🍞",
+   "en": "bread"
+  },
+  {
+   "w": "brânză",
+   "s": "brân-ză",
+   "e": "🧀",
+   "en": "cheese"
+  },
+  {
+   "w": "lapte",
+   "s": "lap-te",
+   "e": "🥛",
+   "en": "milk"
+  },
+  {
+   "w": "ou",
+   "s": "ou",
+   "e": "🥚",
+   "en": "egg"
+  },
+  {
+   "w": "tort",
+   "s": "tort",
+   "e": "🎂",
+   "en": "cake"
+  },
+  {
+   "w": "înghețată",
+   "s": "în-ghe-ța-tă",
+   "e": "🍦",
+   "en": "ice cream"
+  },
+  {
+   "w": "ciocolată",
+   "s": "cio-co-la-tă",
+   "e": "🍫",
+   "en": "chocolate"
+  },
+  {
+   "w": "bomboană",
+   "s": "bom-boa-nă",
+   "e": "🍬",
+   "en": "candy"
+  },
+  {
+   "w": "miere",
+   "s": "mie-re",
+   "e": "🍯",
+   "en": "honey"
+  },
+  {
+   "w": "gogoașă",
+   "s": "go-goa-șă",
+   "e": "🍩",
+   "en": "doughnut"
+  },
+  {
+   "w": "biscuit",
+   "s": "bis-cuit",
+   "e": "🍪",
+   "en": "cookie"
+  },
+  {
+   "w": "ceai",
+   "s": "ceai",
+   "e": "🍵",
+   "en": "tea"
+  },
+  {
+   "w": "casă",
+   "s": "ca-să",
+   "e": "🏠",
+   "en": "house"
+  },
+  {
+   "w": "ușă",
+   "s": "u-șă",
+   "e": "🚪",
+   "en": "door"
+  },
+  {
+   "w": "pat",
+   "s": "pat",
+   "e": "🛏️",
+   "en": "bed"
+  },
+  {
+   "w": "bec",
+   "s": "bec",
+   "e": "💡",
+   "en": "light bulb"
+  },
+  {
+   "w": "ceas",
+   "s": "ceas",
+   "e": "⏰",
+   "en": "clock"
+  },
+  {
+   "w": "carte",
+   "s": "car-te",
+   "e": "📖",
+   "en": "book"
+  },
+  {
+   "w": "pix",
+   "s": "pix",
+   "e": "🖊️",
+   "en": "pen"
+  },
+  {
+   "w": "foarfece",
+   "s": "foar-fe-ce",
+   "e": "✂️",
+   "en": "scissors"
+  },
+  {
+   "w": "umbrelă",
+   "s": "um-bre-lă",
+   "e": "☂️",
+   "en": "umbrella"
+  },
+  {
+   "w": "minge",
+   "s": "min-ge",
+   "e": "⚽",
+   "en": "ball"
+  },
+  {
+   "w": "balon",
+   "s": "ba-lon",
+   "e": "🎈",
+   "en": "balloon"
+  },
+  {
+   "w": "tobă",
+   "s": "to-bă",
+   "e": "🥁",
+   "en": "drum"
+  },
+  {
+   "w": "chitară",
+   "s": "chi-ta-ră",
+   "e": "🎸",
+   "en": "guitar"
+  },
+  {
+   "w": "cadou",
+   "s": "ca-dou",
+   "e": "🎁",
+   "en": "gift"
+  },
+  {
+   "w": "rochie",
+   "s": "ro-chie",
+   "e": "👗",
+   "en": "dress"
+  },
+  {
+   "w": "pantof",
+   "s": "pan-tof",
+   "e": "👞",
+   "en": "shoe"
+  },
+  {
+   "w": "geantă",
+   "s": "gean-tă",
+   "e": "👜",
+   "en": "bag"
+  },
+  {
+   "w": "inel",
+   "s": "i-nel",
+   "e": "💍",
+   "en": "ring"
+  },
+  {
+   "w": "coroană",
+   "s": "co-roa-nă",
+   "e": "👑",
+   "en": "crown"
+  },
+  {
+   "w": "lingură",
+   "s": "lin-gu-ră",
+   "e": "🥄",
+   "en": "spoon"
+  },
+  {
+   "w": "lanternă",
+   "s": "lan-ter-nă",
+   "e": "🔦",
+   "en": "flashlight"
+  },
+  {
+   "w": "ciocan",
+   "s": "cio-can",
+   "e": "🔨",
+   "en": "hammer"
+  },
+  {
+   "w": "lacăt",
+   "s": "la-căt",
+   "e": "🔒",
+   "en": "lock"
+  },
+  {
+   "w": "hartă",
+   "s": "har-tă",
+   "e": "🗺️",
+   "en": "map"
+  },
+  {
+   "w": "steag",
+   "s": "steag",
+   "e": "🚩",
+   "en": "flag"
+  },
+  {
+   "w": "trofeu",
+   "s": "tro-feu",
+   "e": "🏆",
+   "en": "trophy"
+  },
+  {
+   "w": "clopot",
+   "s": "clo-pot",
+   "e": "🔔",
+   "en": "bell"
+  },
+  {
+   "w": "telefon",
+   "s": "te-le-fon",
+   "e": "📱",
+   "en": "phone"
+  },
+  {
+   "w": "televizor",
+   "s": "te-le-vi-zor",
+   "e": "📺",
+   "en": "television"
+  },
+  {
+   "w": "cameră",
+   "s": "ca-me-ră",
+   "e": "📷",
+   "en": "camera"
+  },
+  {
+   "w": "calculator",
+   "s": "cal-cu-la-tor",
+   "e": "💻",
+   "en": "computer"
+  },
+  {
+   "w": "pensulă",
+   "s": "pen-su-lă",
+   "e": "🖌️",
+   "en": "paintbrush"
+  },
+  {
+   "w": "robot",
+   "s": "ro-bot",
+   "e": "🤖",
+   "en": "robot"
+  },
+  {
+   "w": "fantomă",
+   "s": "fan-to-mă",
+   "e": "👻",
+   "en": "ghost"
+  },
+  {
+   "w": "soare",
+   "s": "soa-re",
+   "e": "☀️",
+   "en": "sun"
+  },
+  {
+   "w": "lună",
+   "s": "lu-nă",
+   "e": "🌙",
+   "en": "moon"
+  },
+  {
+   "w": "stea",
+   "s": "stea",
+   "e": "⭐",
+   "en": "star"
+  },
+  {
+   "w": "floare",
+   "s": "floa-re",
+   "e": "🌼",
+   "en": "flower",
+   "g": "flower"
+  },
+  {
+   "w": "lalea",
+   "s": "la-lea",
+   "e": "🌷",
+   "en": "tulip",
+   "g": "flower"
+  },
+  {
+   "w": "trandafir",
+   "s": "tran-da-fir",
+   "e": "🌹",
+   "en": "rose",
+   "g": "flower"
+  },
+  {
+   "w": "copac",
+   "s": "co-pac",
+   "e": "🌳",
+   "en": "tree",
+   "g": "tree"
+  },
+  {
+   "w": "palmier",
+   "s": "pal-mier",
+   "e": "🌴",
+   "en": "palm tree",
+   "g": "tree"
+  },
+  {
+   "w": "brad",
+   "s": "brad",
+   "e": "🎄",
+   "en": "fir tree",
+   "g": "tree"
+  },
+  {
+   "w": "cactus",
+   "s": "cac-tus",
+   "e": "🌵",
+   "en": "cactus"
+  },
+  {
+   "w": "frunză",
+   "s": "frun-ză",
+   "e": "🍂",
+   "en": "leaf"
+  },
+  {
+   "w": "munte",
+   "s": "mun-te",
+   "e": "⛰️",
+   "en": "mountain"
+  },
+  {
+   "w": "nor",
+   "s": "nor",
+   "e": "☁️",
+   "en": "cloud"
+  },
+  {
+   "w": "ploaie",
+   "s": "ploa-ie",
+   "e": "🌧️",
+   "en": "rain"
+  },
+  {
+   "w": "zăpadă",
+   "s": "ză-pa-dă",
+   "e": "❄️",
+   "en": "snow"
+  },
+  {
+   "w": "curcubeu",
+   "s": "cur-cu-beu",
+   "e": "🌈",
+   "en": "rainbow"
+  },
+  {
+   "w": "foc",
+   "s": "foc",
+   "e": "🔥",
+   "en": "fire"
+  },
+  {
+   "w": "apă",
+   "s": "a-pă",
+   "e": "💧",
+   "en": "water"
+  },
+  {
+   "w": "vulcan",
+   "s": "vul-can",
+   "e": "🌋",
+   "en": "volcano"
+  },
+  {
+   "w": "insulă",
+   "s": "in-su-lă",
+   "e": "🏝️",
+   "en": "island"
+  },
+  {
+   "w": "plajă",
+   "s": "pla-jă",
+   "e": "🏖️",
+   "en": "beach"
+  },
+  {
+   "w": "cort",
+   "s": "cort",
+   "e": "⛺",
+   "en": "tent"
+  },
+  {
+   "w": "fântână",
+   "s": "fân-tâ-nă",
+   "e": "⛲",
+   "en": "fountain"
+  },
+  {
+   "w": "școală",
+   "s": "școa-lă",
+   "e": "🏫",
+   "en": "school"
+  },
+  {
+   "w": "spital",
+   "s": "spi-tal",
+   "e": "🏥",
+   "en": "hospital"
+  },
+  {
+   "w": "biserică",
+   "s": "bi-se-ri-că",
+   "e": "⛪",
+   "en": "church"
+  },
+  {
+   "w": "castel",
+   "s": "cas-tel",
+   "e": "🏰",
+   "en": "castle"
+  },
+  {
+   "w": "mașină",
+   "s": "ma-și-nă",
+   "e": "🚗",
+   "en": "car"
+  },
+  {
+   "w": "autobuz",
+   "s": "au-to-buz",
+   "e": "🚌",
+   "en": "bus"
+  },
+  {
+   "w": "tren",
+   "s": "tren",
+   "e": "🚆",
+   "en": "train"
+  },
+  {
+   "w": "barcă",
+   "s": "bar-că",
+   "e": "⛵",
+   "en": "boat"
+  },
+  {
+   "w": "bicicletă",
+   "s": "bi-ci-cle-tă",
+   "e": "🚲",
+   "en": "bicycle"
+  },
+  {
+   "w": "vapor",
+   "s": "va-por",
+   "e": "🚢",
+   "en": "ship"
+  },
+  {
+   "w": "elicopter",
+   "s": "e-li-cop-ter",
+   "e": "🚁",
+   "en": "helicopter"
+  },
+  {
+   "w": "rachetă",
+   "s": "ra-che-tă",
+   "e": "🚀",
+   "en": "rocket"
+  },
+  {
+   "w": "tractor",
+   "s": "trac-tor",
+   "e": "🚜",
+   "en": "tractor"
+  },
+  {
+   "w": "mână",
+   "s": "mâ-nă",
+   "e": "✋",
+   "en": "hand"
+  },
+  {
+   "w": "ochi",
+   "s": "o-chi",
+   "e": "👁️",
+   "en": "eye"
+  },
+  {
+   "w": "nas",
+   "s": "nas",
+   "e": "👃",
+   "en": "nose"
+  },
+  {
+   "w": "gură",
+   "s": "gu-ră",
+   "e": "👄",
+   "en": "mouth"
+  },
+  {
+   "w": "ureche",
+   "s": "u-re-che",
+   "e": "👂",
+   "en": "ear"
+  },
+  {
+   "w": "inimă",
+   "s": "i-ni-mă",
+   "e": "❤️",
+   "en": "heart"
+  },
+  {
+   "w": "mamă",
+   "s": "ma-mă",
+   "e": "👩",
+   "en": "mother",
+   "g": "person"
+  },
+  {
+   "w": "tată",
+   "s": "ta-tă",
+   "e": "👨",
+   "en": "father",
+   "g": "person"
+  },
+  {
+   "w": "bunic",
+   "s": "bu-nic",
+   "e": "👴",
+   "en": "grandfather",
+   "g": "person"
+  },
+  {
+   "w": "bunică",
+   "s": "bu-ni-că",
+   "e": "👵",
+   "en": "grandmother",
+   "g": "person"
+  },
+  {
+   "w": "bebeluș",
+   "s": "be-be-luș",
+   "e": "👶",
+   "en": "baby",
+   "g": "person"
+  },
+  {
+   "w": "fată",
+   "s": "fa-tă",
+   "e": "👧",
+   "en": "girl",
+   "g": "person"
+  },
+  {
+   "w": "băiat",
+   "s": "bă-iat",
+   "e": "👦",
+   "en": "boy",
+   "g": "person"
+  },
+  {
+   "w": "prințesă",
+   "s": "prin-țe-să",
+   "e": "👸",
+   "en": "princess",
+   "g": "person"
+  },
+  {
+   "w": "polițist",
+   "s": "po-li-țist",
+   "e": "👮",
+   "en": "police officer",
+   "g": "person"
+  },
+  {
+   "w": "copil",
+   "s": "co-pil",
+   "en": "child"
+  },
+  {
+   "w": "prieten",
+   "s": "prie-ten",
+   "en": "friend"
+  },
+  {
+   "w": "joacă",
+   "s": "joa-că",
+   "en": "play"
+  },
+  {
+   "w": "culoare",
+   "s": "cu-loa-re",
+   "en": "colour"
+  },
+  {
+   "w": "vacanță",
+   "s": "va-can-ță",
+   "en": "holiday"
+  },
+  {
+   "w": "poveste",
+   "s": "po-ves-te",
+   "en": "story"
+  },
+  {
+   "w": "cântec",
+   "s": "cân-tec",
+   "en": "song"
+  },
+  {
+   "w": "desen",
+   "s": "de-sen",
+   "en": "drawing"
+  },
+  {
+   "w": "lecție",
+   "s": "lec-ție",
+   "en": "lesson"
+  },
+  {
+   "w": "frate",
+   "s": "fra-te",
+   "en": "brother"
+  },
+  {
+   "w": "soră",
+   "s": "so-ră",
+   "en": "sister"
+  },
+  {
+   "w": "verde",
+   "s": "ver-de",
+   "en": "green"
+  },
+  {
+   "w": "galben",
+   "s": "gal-ben",
+   "en": "yellow"
+  },
+  {
+   "w": "albastru",
+   "s": "al-bas-tru",
+   "en": "blue"
+  },
+  {
+   "w": "roșu",
+   "s": "ro-șu",
+   "en": "red"
+  },
+  {
+   "w": "negru",
+   "s": "ne-gru",
+   "en": "black"
+  },
+  {
+   "w": "alb",
+   "s": "alb",
+   "en": "white"
+  },
+  {
+   "w": "frumos",
+   "s": "fru-mos",
+   "en": "beautiful"
+  },
+  {
+   "w": "repede",
+   "s": "re-pe-de",
+   "en": "fast"
+  },
+  {
+   "w": "încet",
+   "s": "în-cet",
+   "en": "slow"
+  },
+  {
+   "w": "azi",
+   "s": "a-zi",
+   "en": "today"
+  },
+  {
+   "w": "mâine",
+   "s": "mâi-ne",
+   "en": "tomorrow"
+  },
+  {
+   "w": "ieri",
+   "s": "ie-ri",
+   "en": "yesterday"
+  },
+  {
+   "w": "seară",
+   "s": "sea-ră",
+   "en": "evening"
+  },
+  {
+   "w": "noapte",
+   "s": "noap-te",
+   "en": "night"
+  },
+  {
+   "w": "dimineață",
+   "s": "di-mi-nea-ță",
+   "en": "morning"
+  },
+  {
+   "w": "toamnă",
+   "s": "toam-nă",
+   "en": "autumn"
+  },
+  {
+   "w": "primăvară",
+   "s": "pri-mă-va-ră",
+   "en": "spring"
+  },
+  {
+   "w": "vară",
+   "s": "va-ră",
+   "en": "summer"
+  },
+  {
+   "w": "iarnă",
+   "s": "iar-nă",
+   "en": "winter"
+  },
+  {
+   "w": "oraș",
+   "s": "o-raș",
+   "en": "city"
+  },
+  {
+   "w": "sat",
+   "s": "sat",
+   "en": "village"
+  },
+  {
+   "w": "stradă",
+   "s": "stra-dă",
+   "en": "street"
+  },
+  {
+   "w": "grădină",
+   "s": "gră-di-nă",
+   "en": "garden"
+  },
+  {
+   "w": "parc",
+   "s": "parc",
+   "en": "park"
+  },
+  {
+   "w": "pădure",
+   "s": "pă-du-re",
+   "en": "forest"
+  },
+  {
+   "w": "râu",
+   "s": "râu",
+   "en": "river"
+  },
+  {
+   "w": "lac",
+   "s": "lac",
+   "en": "lake"
+  },
+  {
+   "w": "deal",
+   "s": "deal",
+   "en": "hill"
+  },
+  {
+   "w": "câmp",
+   "s": "câmp",
+   "en": "field"
+  },
+  {
+   "w": "iarbă",
+   "s": "iar-bă",
+   "en": "grass"
+  },
+  {
+   "w": "nisip",
+   "s": "ni-sip",
+   "en": "sand"
+  },
+  {
+   "w": "vânt",
+   "s": "vânt",
+   "en": "wind"
+  },
+  {
+   "w": "furtună",
+   "s": "fur-tu-nă",
+   "en": "storm"
+  },
+  {
+   "w": "ceață",
+   "s": "cea-ță",
+   "en": "fog"
+  },
+  {
+   "w": "gheață",
+   "s": "ghea-ță",
+   "en": "ice"
+  },
+  {
+   "w": "cuvânt",
+   "s": "cu-vânt",
+   "en": "word"
+  },
+  {
+   "w": "literă",
+   "s": "li-te-ră",
+   "en": "letter"
+  },
+  {
+   "w": "silabă",
+   "s": "si-la-bă",
+   "en": "syllable"
+  },
+  {
+   "w": "învățătoare",
+   "s": "în-vă-ță-toa-re",
+   "en": "teacher"
+  },
+  {
+   "w": "elev",
+   "s": "e-lev",
+   "en": "pupil"
+  },
+  {
+   "w": "bancă",
+   "s": "ban-că",
+   "en": "school desk"
+  },
+  {
+   "w": "tablă",
+   "s": "ta-blă",
+   "en": "blackboard"
+  },
+  {
+   "w": "penar",
+   "s": "pe-nar",
+   "en": "pencil case"
+  },
+  {
+   "w": "radieră",
+   "s": "ra-die-ră",
+   "en": "eraser"
+  },
+  {
+   "w": "riglă",
+   "s": "ri-glă",
+   "en": "ruler"
+  },
+  {
+   "w": "masă",
+   "s": "ma-să",
+   "en": "table"
+  },
+  {
+   "w": "fereastră",
+   "s": "fe-reas-tră",
+   "en": "window"
+  },
+  {
+   "w": "lampă",
+   "s": "lam-pă",
+   "en": "lamp"
+  },
+  {
+   "w": "covor",
+   "s": "co-vor",
+   "en": "carpet"
+  },
+  {
+   "w": "cană",
+   "s": "ca-nă",
+   "en": "mug"
+  },
+  {
+   "w": "zahăr",
+   "s": "za-hăr",
+   "en": "sugar"
+  },
+  {
+   "w": "ciorbă",
+   "s": "cior-bă",
+   "en": "sour soup"
+  },
+  {
+   "w": "supă",
+   "s": "su-pă",
+   "en": "soup"
+  },
+  {
+   "w": "unu",
+   "s": "u-nu",
+   "en": "one"
+  },
+  {
+   "w": "doi",
+   "s": "doi",
+   "en": "two"
+  },
+  {
+   "w": "trei",
+   "s": "trei",
+   "en": "three"
+  },
+  {
+   "w": "patru",
+   "s": "pa-tru",
+   "en": "four"
+  },
+  {
+   "w": "șase",
+   "s": "șa-se",
+   "en": "six"
+  },
+  {
+   "w": "șapte",
+   "s": "șap-te",
+   "en": "seven"
+  },
+  {
+   "w": "opt",
+   "s": "opt",
+   "en": "eight"
+  },
+  {
+   "w": "zece",
+   "s": "ze-ce",
+   "en": "ten"
+  },
+  {
+   "w": "mănâncă",
+   "s": "mă-nân-că",
+   "en": "eats"
+  },
+  {
+   "w": "doarme",
+   "s": "doar-me",
+   "en": "sleeps"
+  },
+  {
+   "w": "cântă",
+   "s": "cân-tă",
+   "en": "sings"
+  },
+  {
+   "w": "râde",
+   "s": "râ-de",
+   "en": "laughs"
+  },
+  {
+   "w": "plânge",
+   "s": "plân-ge",
+   "en": "cries"
+  },
+  {
+   "w": "citește",
+   "s": "ci-teș-te",
+   "en": "reads"
+  },
+  {
+   "w": "învață",
+   "s": "în-va-ță",
+   "en": "learns"
+  }
+ ]
+}

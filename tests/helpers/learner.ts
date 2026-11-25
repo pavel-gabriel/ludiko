@@ -1,7 +1,7 @@
 import { applyMasteryCheck, updateMastery, DAY_MS, type MasteryRecord } from '../../src/engine/mastery';
 import { placementResult, progressFromPlacement } from '../../src/engine/diagnostic';
 import { planMission, type Mission } from '../../src/engine/planner';
-import type { Skill } from '../../src/engine/types';
+import type { Grade, Semester, Skill, SubjectId } from '../../src/engine/types';
 import { rng as makeRng, runPlacement } from './engineSim';
 
 /**
@@ -14,6 +14,9 @@ export interface LearnerOpts {
   slip?: number;
   guess?: number;
   pLearn?: number;
+  /** Defaults: maths, declared grade II semester 2 */
+  subject?: SubjectId;
+  declared?: { grade: Grade; semester: Semester };
 }
 
 export interface SimReport {
@@ -38,7 +41,7 @@ export function simulate(skills: Skill[], opts: LearnerOpts, sessions: number, s
     return correct;
   };
 
-  const placement = placementResult(runPlacement(skills, (id) => answer(id), { grade: 2, semester: 2 }));
+  const placement = placementResult(runPlacement(skills, (id) => answer(id), { ...(opts.declared ?? { grade: 2, semester: 2 }), subject: opts.subject }));
   let now = start;
   const progress: Record<string, MasteryRecord> = progressFromPlacement(placement, now);
   const count = (st: string) => Object.values(progress).filter((r) => r.state === st).length;

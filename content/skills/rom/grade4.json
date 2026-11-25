@@ -1,0 +1,84 @@
+[
+  {
+    "id": "rom.text.mainidea.4",
+    "subject": "rom",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LLR-III-IV-2014",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Ideea principală și titlul potrivit",
+      "en": "The main idea and a fitting title"
+    },
+    "prerequisites": [
+      "rom.text.mainidea.2",
+      "rom.text.types.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.text.mainidea.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.text.mainidea.4",
+      "kind": "data",
+      "title": "Skill rom.text.mainidea.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.text.inference.4",
+    "subject": "rom",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LLR-III-IV-2014",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Citim printre rânduri: cauze, sentimente, concluzii",
+      "en": "Reading between the lines: causes, feelings, conclusions"
+    },
+    "prerequisites": [
+      "rom.text.inference.2",
+      "rom.text.characters.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.text.inference.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.text.inference.4",
+      "kind": "data",
+      "title": "Skill rom.text.inference.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  }
+]

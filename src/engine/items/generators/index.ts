@@ -16,6 +16,12 @@ import { placeValue } from './placeValue';
 import { getGenerator, registerGenerator } from './registry';
 import { mulberry32, randInt, shuffle } from './util';
 import { wordProblem } from './wordProblem';
+// Romanian generators register themselves (letters, syllables, word-picture, sentence-order, punctuation, word-relations)
+import './romLetters';
+import './romSyllables';
+import './romWordPicture';
+import './romSentences';
+import './romVocab';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

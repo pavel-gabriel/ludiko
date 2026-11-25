@@ -1,0 +1,319 @@
+[
+  {
+    "id": "rom.syll.split.1",
+    "subject": "rom",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Despărțirea cuvintelor în silabe",
+      "en": "Splitting words into syllables"
+    },
+    "prerequisites": [
+      "rom.syll.count.0",
+      "rom.letters.vowel.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "syllables",
+        "params": {
+          "kinds": [
+            "split"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.syll.split.1"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.syll.split.1",
+      "kind": "data",
+      "title": "Skill rom.syll.split.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.syll.build.1",
+    "subject": "rom",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.2"
+      },
+      {
+        "programa": "CLR-2013",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Formăm cuvinte din silabe",
+      "en": "Building words from syllables"
+    },
+    "prerequisites": [
+      "rom.syll.count.0",
+      "rom.word.picture.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "syllables",
+        "params": {
+          "kinds": [
+            "build"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.syll.build.1"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.syll.build.1",
+      "kind": "data",
+      "title": "Skill rom.syll.build.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.word.read.1",
+    "subject": "rom",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Citim cuvinte și le potrivim cu imaginea",
+      "en": "Reading words and matching them to pictures"
+    },
+    "prerequisites": [
+      "rom.word.picture.0",
+      "rom.syll.count.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "word-picture",
+        "params": {
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture"
+          ],
+          "level": 2
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.word.read.1"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.word.read.1",
+      "kind": "data",
+      "title": "Skill rom.word.read.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.letters.digraph.1",
+    "subject": "rom",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.1"
+      },
+      {
+        "programa": "CLR-2013",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Grupurile de litere ce, ci, che, chi, ge, gi, ghe, ghi",
+      "en": "The letter groups ce, ci, che, chi, ge, gi, ghe, ghi"
+    },
+    "prerequisites": [
+      "rom.letters.case.0",
+      "rom.syll.split.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "letters",
+        "params": {
+          "kinds": [
+            "digraph"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rom.letters.digraph.1"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.letters.digraph.1",
+      "kind": "data",
+      "title": "Skill rom.letters.digraph.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.sent.order.1",
+    "subject": "rom",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "4.2"
+      }
+    ],
+    "title": {
+      "ro": "Ordinea cuvintelor în propoziție",
+      "en": "Word order in a sentence"
+    },
+    "prerequisites": [
+      "rom.word.read.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "sentence-order",
+        "params": {}
+      }
+    ],
+    "explanations": [
+      "exp.rom.sent.order.1"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.sent.order.1",
+      "kind": "data",
+      "title": "Skill rom.sent.order.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.sent.punct.1",
+    "subject": "rom",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "4.2"
+      }
+    ],
+    "title": {
+      "ro": "Semnele de punctuație: punct, semnul întrebării, semnul exclamării",
+      "en": "End marks: full stop, question mark, exclamation mark"
+    },
+    "prerequisites": [
+      "rom.sent.order.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "punctuation",
+        "params": {}
+      }
+    ],
+    "explanations": [
+      "exp.rom.sent.punct.1"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.rom.sent.punct.1",
+      "kind": "data",
+      "title": "Skill rom.sent.punct.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "rom.text.literal.1",
+    "subject": "rom",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CLR-2013",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Înțelegem un text scurt: cine, ce, unde, când",
+      "en": "Understanding a short text: who, what, where, when"
+    },
+    "prerequisites": [
+      "rom.word.read.1",
+      "rom.sent.order.1"
+    ],
+    "itemSources": [
+      {
+        "bank": "rom/texts-grade1.json"
+      }
+    ],
+    "explanations": [
+      "exp.rom.text.literal.1"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.skill.rom.text.literal.1",
+      "kind": "data",
+      "title": "Skill rom.text.literal.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+    }
+  }
+]

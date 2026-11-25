@@ -551,7 +551,8 @@
       "other": "{{n}} de zile de joacă săptămâna asta"
     },
     "subject": {
-      "mat": "Matematică"
+      "mat": "Matematică",
+      "rom": "Limba română"
     },
     "home": {
       "missionTitle": "Misiunea de azi",

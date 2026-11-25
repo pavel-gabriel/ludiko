@@ -1,6 +1,6 @@
 import { getSkillsBySubject } from '../../src/engine/content/registry';
 import { createPlacement, nextProbe, recordProbe, type PlacementState } from '../../src/engine/diagnostic';
-import type { Grade, Semester, Skill } from '../../src/engine/types';
+import type { Grade, Semester, Skill, SubjectId } from '../../src/engine/types';
 
 export const mathSkills = (): Skill[] => getSkillsBySubject('mat');
 
@@ -33,10 +33,10 @@ export function knowsFn(skills: Skill[], missing: Set<string>): (id: string) => 
 export function runPlacement(
   skills: Skill[],
   answer: (skillId: string, i: number) => boolean,
-  opts: { grade: Grade; semester: Semester },
+  opts: { grade: Grade; semester: Semester; subject?: SubjectId },
   maxProbes?: number,
 ): PlacementState {
-  let st = createPlacement(skills, { ...opts, subject: 'mat' }, maxProbes ? { maxProbes } : {});
+  let st = createPlacement(skills, { ...opts, subject: opts.subject ?? 'mat' }, maxProbes ? { maxProbes } : {});
   for (let p = nextProbe(st), guard = 0; !p.done && guard < 100; p = nextProbe(st), guard++) {
     const results = Array.from({ length: p.itemsWanted }, (_, i) => answer(p.skillId, i));
     st = recordProbe(st, p.skillId, results);
