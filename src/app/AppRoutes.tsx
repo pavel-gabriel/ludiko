@@ -10,6 +10,7 @@ import RouteFallback from '@/components/ui/RouteFallback';
  *   const MyPage = lazy(() => import('@/components/.../MyPage'));
  * (default export; import the file directly, not a barrel index).
  */
+const ProfilePickerPage = lazy(() => import('@/components/profiles/ProfilePickerPage'));
 const SinglePlayerPage = lazy(() => import('@/components/lobby/SinglePlayerPage'));
 const MultiplayerPage = lazy(() => import('@/components/lobby/MultiplayerPage'));
 const SettingsPage = lazy(() => import('@/components/lobby/SettingsPage'));
@@ -46,6 +47,7 @@ export default function AppRoutes() {
         <Routes>
           {/* Player routes */}
           <Route path="/" element={<HomePage />} />
+          <Route path="/profiles" element={<ProfilePickerPage />} />
           <Route path="/singleplayer" element={<SinglePlayerPage />} />
           <Route path="/multiplayer" element={<MultiplayerPage />} />
           <Route path="/settings" element={<SettingsPage />} />
