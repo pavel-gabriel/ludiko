@@ -1,5 +1,6 @@
 import { useCallback, useEffect } from 'react'
 import { refreshClassData } from '@/classroom/syncGate'
+import { knownStickers } from '@/ui/album/earning'
 import { learnerService, type AssignmentBit } from '@/learner'
 import type { ChildProfile } from '@/profiles/types'
 import { getProgress } from '@/profiles/profileService'
@@ -9,7 +10,7 @@ import RequireProfile from './RequireProfile'
 import { LEARN_SUBJECTS } from './subjects'
 import { useAsync } from './useAsync'
 
-type HomeData = Pick<LearnHomeViewProps, 'stars' | 'playDays' | 'subjects' | 'assignments'>
+type HomeData = Pick<LearnHomeViewProps, 'stars' | 'playDays' | 'subjects' | 'assignments' | 'stickerCount'>
 
 async function loadSubject(profileId: string, subject: SubjectHome['subject']): Promise<SubjectHome> {
   const placement = await learnerService.getPlacement(profileId, subject)
@@ -34,13 +35,13 @@ async function loadSubject(profileId: string, subject: SubjectHome['subject']): 
 async function loadHome(profileId: string): Promise<HomeData> {
   const subjects = await Promise.all(LEARN_SUBJECTS.map((s) => loadSubject(profileId, s)))
   // stars and the streak are nice-to-have: never block the front door on them
-  const [playDays, stars] = await Promise.all([
+  const [playDays, progress] = await Promise.all([
     learnerService.getParentSummary(profileId).then((s) => s.playDaysThisWeek, () => 0),
-    getProgress(profileId).then((p) => p.stars, () => 0),
+    getProgress(profileId).then((p) => ({ stars: p.stars, stickers: knownStickers(p.stickers).length }), () => ({ stars: 0, stickers: 0 })),
   ])
   // class assignments come from a local copy: absent link, empty cache or a failure all mean "none"
   const assignments: AssignmentBit[] = await (async () => learnerService.getClassAssignments(profileId))().catch(() => [])
-  return { subjects, playDays, stars, assignments }
+  return { subjects, playDays, stars: progress.stars, assignments, stickerCount: progress.stickers }
 }
 
 function LearnHome({ profile }: { profile: ChildProfile }) {

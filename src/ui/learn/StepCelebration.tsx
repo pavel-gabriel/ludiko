@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next'
 import Confetti from '@/components/ui/Confetti'
 import type { MissionStepKind } from '@/learner'
 import type { SessionReward } from '@/ui/session/types'
+import { AlbumLink, BonusStickers } from '@/ui/album/BonusStickers'
+import { MascotSvg } from '@/ui/mascot/Mascot'
 import { playFinish } from '@/utils/sounds'
 import { KIND_ICON } from './TreasurePath'
 
@@ -32,7 +34,10 @@ export default function StepCelebration({ kind, stars, passed, reward, onNext }:
     <section className="flex flex-col gap-4 pt-6" aria-labelledby="step-done-title">
       {(stars >= 2 || passed) && <Confetti />}
       <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-        <div className="text-6xl" aria-hidden="true">{KIND_ICON[kind]}</div>
+        <div className="flex items-end justify-center gap-2">
+          <MascotSvg mood={stars >= 2 || passed ? 'cheer' : 'encourage'} size={104} decorative />
+          <span className="pb-2 text-4xl" aria-hidden="true">{KIND_ICON[kind]}</span>
+        </div>
         <h1 id="step-done-title" className="mt-2 text-3xl font-extrabold text-ludiko-text">
           {t('learn.mission.stepDoneTitle')}
         </h1>
@@ -48,6 +53,13 @@ export default function StepCelebration({ kind, stars, passed, reward, onNext }:
         <div className="flex items-center gap-4 rounded-3xl bg-ludiko-yellow p-4 shadow-md" data-testid="sticker-unlock">
           <span className="text-6xl" aria-hidden="true">{reward.sticker}</span>
           <p className="text-lg font-extrabold text-ludiko-text">{t('learn.check.stickerTitle')}</p>
+        </div>
+      )}
+
+      <BonusStickers reward={reward} />
+      {(reward?.sticker || (reward?.bonus && reward.bonus.length > 0)) && (
+        <div className="flex justify-center">
+          <AlbumLink />
         </div>
       )}
 

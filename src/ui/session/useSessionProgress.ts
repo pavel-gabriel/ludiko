@@ -3,6 +3,7 @@ import type { Item, ItemResult } from '@/engine/types'
 import { learnerService } from '@/learner'
 import { addStars, addSticker, getProgress } from '@/profiles/profileService'
 import { useProfileStore } from '@/store/profileStore'
+import { awardMissionBonus, awardSpecials } from '@/ui/album/albumService'
 import { pickSticker, STICKER_MIN_STARS } from './stickers'
 import type { AttemptMeta as LearnerAttemptMeta } from '@/learner'
 import type { AttemptMeta, SessionReward, SessionSummary } from './types'
@@ -58,16 +59,36 @@ export function useSessionProgress(options: { mode?: LearnerAttemptMeta['mode'] 
         }
         const sticker = wantsSticker ? pickSticker(owned) : undefined
         let saved = false
+        let bonus: string[] = []
         if (profile && summary.completed) {
           try {
             if (stars > 0) await addStars(profile.id, stars)
             if (sticker) await addSticker(profile.id, sticker)
             saved = true
+            // islands conquered, finished sets and play-day milestones that just became due
+            bonus = await awardSpecials(profile.id).catch(() => [])
           } catch {
             /* offline-first storage failed: still show the reward */
           }
         }
-        setReward({ stars, sticker, newSticker: sticker !== undefined, saved })
+        setReward({ stars, sticker, newSticker: sticker !== undefined, saved, ...(bonus.length ? { bonus } : {}) })
+      })
+      .catch(() => {})
+  }, [])
+
+  /** Today's mission is finished: a bonus sticker (queued after the session save, so it lands on the same reward) */
+  const onMissionComplete = useCallback(() => {
+    const profile = profileRef.current
+    if (!profile) return
+    pending.current = pending.current
+      .then(async () => {
+        const { bonus, specials } = await awardMissionBonus(profile.id)
+        const ids = [...(bonus ? [bonus] : []), ...specials]
+        if (ids.length === 0) return
+        setReward((prev) => {
+          const base = prev ?? { stars: 0, newSticker: false, saved: true }
+          return { ...base, bonus: [...new Set([...(base.bonus ?? []), ...ids])] }
+        })
       })
       .catch(() => {})
   }, [])
@@ -82,6 +103,7 @@ export function useSessionProgress(options: { mode?: LearnerAttemptMeta['mode'] 
     profilesLoaded: loaded,
     onAttempt,
     onFinish,
+    onMissionComplete,
     reward,
     reset,
   }

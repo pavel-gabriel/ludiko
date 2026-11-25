@@ -14,7 +14,7 @@ export default function BreakOffer({ progress, onStop, onContinue }: BreakOfferP
   const { t } = useTranslation()
   return (
     <section className="flex flex-col gap-5" aria-labelledby="break-title">
-      <Mascot emoji="🌙">
+      <Mascot mood="sleep">
         <h1 id="break-title" className="text-2xl font-extrabold text-ludiko-text">
           {t('learn.check.breakTitle')}
         </h1>

@@ -5,6 +5,7 @@ import AppRoutes from '@/app/AppRoutes';
 import ErrorBoundary from '@/components/ui/ErrorBoundary';
 import OfflineBanner from '@/components/ui/OfflineBanner';
 import PwaToast from '@/components/ui/PwaToast';
+import { initFamilyGate } from '@/family/familyGate';
 import { useAuthStore } from '@/store/authStore';
 import { useSettingsStore } from '@/store/settingsStore';
 
@@ -34,6 +35,11 @@ export default function App() {
     flush();
     window.addEventListener('online', flush);
     return () => window.removeEventListener('online', flush);
+  }, []);
+
+  /* Parent account: sync once at start and when back online (a no-op unless a parent signed in here) */
+  useEffect(() => {
+    initFamilyGate();
   }, []);
 
   /* Restore auth state on app mount / page refresh */

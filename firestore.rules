@@ -289,5 +289,91 @@ service cloud.firestore {
       allow delete: if resource == null || isTeacherOf(resource.data.classId);
     }
     // ===== END Classroom =====
+
+    // ===== BEGIN Families (docs/PARENT_SYNC.md §3): parent account, synced children =====
+    //
+    // families/{uid}                  consent record of the parent (uid = Firebase Auth uid)
+    // families/{uid}/children/{id}    one document per child: profile, progress, tombstone flag
+    //
+    // Only the parent themself, signed in with email + password (never an anonymous session), may read or
+    // write anything under families/{uid}. Field allowlists on both documents; no recovery code, no class
+    // link, no real names, no per-item answers can be stored. Known limits (rules cannot loop or measure
+    // size): the entries of `skills`, `placements`, `levelHistory` and `missions` are not checked one by
+    // one, and the ~900 KB cap on `progress` is enforced by the client (Firestore itself stops at 1 MiB);
+    // the list sizes below bound the rest.
+
+    function isFamilyOwner(uid) {
+      return request.auth != null
+          && request.auth.uid == uid
+          && request.auth.token.firebase.sign_in_provider == 'password';
+    }
+
+    match /families/{uid} {
+      function validFamily(d) {
+        return d.keys().hasAll(['consentAt', 'consentVersion', 'createdAt', 'updatedAt'])
+            && d.keys().hasOnly(['consentAt', 'consentVersion', 'createdAt', 'updatedAt'])
+            && d.consentAt is number
+            && d.consentVersion is string && d.consentVersion.size() >= 1 && d.consentVersion.size() <= 32
+            && d.createdAt is number
+            && d.updatedAt is number;
+      }
+
+      allow read: if isFamilyOwner(uid);
+      allow create: if isFamilyOwner(uid) && validFamily(request.resource.data);
+      allow update: if isFamilyOwner(uid)
+                    && validFamily(request.resource.data)
+                    && request.resource.data.createdAt == resource.data.createdAt;
+      allow delete: if isFamilyOwner(uid);
+
+      match /children/{childId} {
+        function validChildProfile(p) {
+          return p is map
+              && p.keys().hasAll(['id', 'nickname', 'avatar', 'grade', 'language', 'createdAt', 'updatedAt'])
+              && p.keys().hasOnly(['id', 'nickname', 'avatar', 'grade', 'language', 'createdAt', 'updatedAt'])
+              && p.id == childId
+              && p.nickname is string && p.nickname.size() >= 1 && p.nickname.size() <= 20
+              && p.avatar is string && p.avatar.size() >= 1 && p.avatar.size() <= 32
+              && p.grade is int && p.grade >= 0 && p.grade <= 8
+              && p.language in ['ro', 'en']
+              && p.createdAt is number
+              && p.updatedAt is number;
+        }
+
+        function validChildProgress(g) {
+          return g is map
+              && g.keys().hasAll(['profileId', 'skills', 'stars', 'stickers', 'playDays'])
+              && g.keys().hasOnly(['profileId', 'skills', 'stars', 'stickers', 'playDays',
+                                   'placements', 'levelHistory', 'missions'])
+              && g.profileId == childId
+              && g.skills is map && g.skills.size() <= 2000
+              && g.stars is number && g.stars >= 0
+              && g.stickers is list && g.stickers.size() <= 500
+              && g.playDays is list && g.playDays.size() <= 1500
+              && (!('placements' in g)
+                  || (g.placements is map
+                      && g.placements.keys().hasOnly(['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'])))
+              && (!('levelHistory' in g)
+                  || (g.levelHistory is map
+                      && g.levelHistory.keys().hasOnly(['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'])))
+              && (!('missions' in g) || (g.missions is list && g.missions.size() <= 14));
+        }
+
+        function validChild(d) {
+          return d.keys().hasAll(['profile', 'progress', 'updatedAt', 'deviceId'])
+              && d.keys().hasOnly(['profile', 'progress', 'updatedAt', 'deviceId', 'deleted'])
+              && childId.matches('^[A-Za-z0-9_-]{1,64}$')
+              && validChildProfile(d.profile)
+              && validChildProgress(d.progress)
+              && d.updatedAt is number
+              && d.deviceId is string && d.deviceId.size() <= 64
+              && (!('deleted' in d) || d.deleted is bool);
+        }
+
+        allow read: if isFamilyOwner(uid);
+        allow create, update: if isFamilyOwner(uid) && validChild(request.resource.data);
+        allow delete: if isFamilyOwner(uid);
+      }
+    }
+    // ===== END Families =====
   }
 }

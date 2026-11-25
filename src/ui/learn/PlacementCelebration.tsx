@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import Confetti from '@/components/ui/Confetti'
 import type { SessionReward } from '@/ui/session/types'
+import { AlbumLink } from '@/ui/album/BonusStickers'
+import { MascotSvg } from '@/ui/mascot/Mascot'
 import { playFinish } from '@/utils/sounds'
 
 interface PlacementCelebrationProps {
@@ -25,10 +27,10 @@ export default function PlacementCelebration({ reward, onMission, onMap, onParen
     <section className="flex flex-col gap-4" aria-labelledby="check-done-title">
       <Confetti />
       <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-        <div className="flex justify-center gap-2 text-5xl" aria-hidden="true">
-          <span>⭐</span>
-          <span>🏝️</span>
-          <span>⭐</span>
+        <div className="flex items-end justify-center gap-1" aria-hidden="true">
+          <span className="pb-2 text-4xl">🏝️</span>
+          <MascotSvg mood="cheer" size={120} decorative />
+          <span className="pb-2 text-4xl">⭐</span>
         </div>
         <h1 id="check-done-title" className="mt-3 text-3xl font-extrabold text-ludiko-text">
           {t('learn.check.doneTitle')}
@@ -40,6 +42,12 @@ export default function PlacementCelebration({ reward, onMission, onMap, onParen
         <div className="flex items-center gap-4 rounded-3xl bg-ludiko-yellow p-4 shadow-md" data-testid="sticker-unlock">
           <span className="text-6xl" aria-hidden="true">{reward.sticker}</span>
           <p className="text-lg font-extrabold text-ludiko-text">{t('learn.check.stickerTitle')}</p>
+        </div>
+      )}
+
+      {reward?.sticker && (
+        <div className="flex justify-center">
+          <AlbumLink />
         </div>
       )}
 

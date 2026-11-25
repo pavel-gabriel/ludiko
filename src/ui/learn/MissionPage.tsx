@@ -94,6 +94,7 @@ function Mission({ profile, subject }: { profile: ChildProfile; subject: Subject
       setMission(updated)
       if (summary) {
         progressStore.onFinish(summary)
+        if (updated.completedAt && !mission.completedAt) progressStore.onMissionComplete()
         setView({ name: 'stepDone', kind: step.kind, stars: summary.stars, passed })
       } else {
         setView(updated.completedAt ? { name: 'complete', fresh: true } : { name: 'path' })

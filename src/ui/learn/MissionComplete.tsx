@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import Confetti from '@/components/ui/Confetti'
+import { MascotSvg } from '@/ui/mascot/Mascot'
 import { playFinish } from '@/utils/sounds'
 
 interface MissionCompleteProps {
@@ -21,7 +22,10 @@ export default function MissionComplete({ fresh = true, onMap, onHome }: Mission
     <section className="flex flex-col gap-4 pt-6" aria-labelledby="mission-done-title">
       {fresh && <Confetti />}
       <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-        <div className="text-7xl" aria-hidden="true">💎</div>
+        <div className="flex items-end justify-center gap-2" aria-hidden="true">
+          <MascotSvg mood="cheer" size={120} decorative />
+          <span className="pb-3 text-5xl">💎</span>
+        </div>
         <h1 id="mission-done-title" className="mt-2 text-3xl font-extrabold text-ludiko-text">
           {t('learn.mission.completeTitle')}
         </h1>
