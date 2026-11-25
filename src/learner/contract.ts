@@ -125,7 +125,40 @@ export interface AttemptMeta {
   mode: 'practice' | 'sprint' | 'check' | 'placement';
 }
 
+/* --- daily bits (docs/NOTIFICATIONS.md §1) --- */
+
+export type BitKind = 'warmup' | 'island' | 'challenge';
+
+export interface BitStep {
+  /** Index of the stored mission step this part of the bit completes (use with completeMissionStep) */
+  stepIndex: number;
+  skillId: string;
+  /** Items to play for this part (a bit is 4–6 items; a mastery check keeps its own count) */
+  itemCount: number;
+  kind: MissionStepKind;
+}
+
+/** A ~3-minute slice of today's stored mission, small enough for a short attention span */
+export interface Bit {
+  /** Position in today's list of bits (0-based); the route is /learn/bit/:subject/:index */
+  index: number;
+  kind: BitKind;
+  /** Mission day (YYYY-MM-DD) the steps belong to */
+  day: string;
+  steps: BitStep[];
+  /** Sum of the steps' itemCount */
+  itemCount: number;
+  /** All of the bit's mission steps are done */
+  done: boolean;
+}
+
 export interface LearnerService {
+  /**
+   * Today's bits (1–3), derived from the stored mission: stable for the day, offline too.
+   * Completing a bit = completeMissionStep for each of its steps. undefined if no placement yet.
+   */
+  getTodayBits(profileId: string, subject: SubjectId, now?: number): Promise<Bit[] | undefined>;
+
   /** Semester for a date by the Romanian school calendar (Sep–Jan = 1, Feb–Aug = 2) */
   schoolSemester(now?: number): Semester;
 

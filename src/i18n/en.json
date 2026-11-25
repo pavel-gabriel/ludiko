@@ -669,5 +669,61 @@
       "redoYes": "Yes, redo it",
       "redoNo": "No, keep it"
     }
+  },
+  "bits": {
+    "title": "Today's bits",
+    "subtitle": "A little every day. Do one bit or a few, as you like.",
+    "minutes": "~3 min",
+    "kinds": {
+      "warmup": "Warm-up",
+      "island": "Island of the day",
+      "challenge": "The challenge"
+    },
+    "hints": {
+      "warmup": "Remember what we know",
+      "island": "Something to explore",
+      "challenge": "A little challenge"
+    },
+    "state": {
+      "done": "Done",
+      "todo": "To do"
+    },
+    "tile": "{{kind}}, {{state}}, about 3 minutes",
+    "allDone": "Today's bits are done! Well done!",
+    "fullMission": "The whole mission, step by step",
+    "preparing": "Getting today's bits ready…",
+    "sessionTitle": "{{kind}}: {{title}}",
+    "doneTitle": "Bit finished!",
+    "doneBody": "One more small but important step. Well done!",
+    "allDoneBody": "You did all of today's bits. See you tomorrow!",
+    "another": "Another bit?",
+    "anotherCta": "Yes, one more!",
+    "stop": "Done for today",
+    "empty": "We are still preparing the exercises for this bit. Let's skip it for now.",
+    "skip": "Move on",
+    "notFound": "We could not find this bit. Let's go back to today's bits!",
+    "needCheckTitle": "First, let's see what you know!",
+    "needCheckBody": "We start with a short adventure, then your bits are ready.",
+    "needCheckCta": "Check yourself!"
+  },
+  "push": {
+    "title": "Daily reminders",
+    "intro": "One gentle notification a day, at the hour you choose, so you don't forget the 3 minutes of play.",
+    "consent": "If you turn reminders on, we keep on the Ludiko server only: the technical notification address of this device, the chosen hour, the time zone, the language and the date of the last day played. We do not keep the child's name, grade or progress. We use this only to send at most one notification a day, and none if the child has already played. You can stop it any time: when you turn reminders off, we delete everything we kept.",
+    "toggle": "Daily reminders",
+    "hour": "Reminder time",
+    "hourOption": "{{h}}:00",
+    "pause": "Pause",
+    "resume": "Resume reminders",
+    "status": {
+      "off": "Off. No notifications are sent.",
+      "on": "On: at most one reminder a day, at {{hour}}:00, only if you have not played yet.",
+      "paused": "Paused. No notifications are sent until you resume."
+    },
+    "busy": "Saving…",
+    "denied": "Notifications are blocked in the browser. Allow them in the site settings, then try again.",
+    "failed": "We could not save the setting. Check your internet connection and try again.",
+    "needsInstallTitle": "First, add Ludiko to the Home Screen",
+    "needsInstall": "On iPhone and iPad, notifications only work from the app added to the Home Screen. Tap Share, then \"Add to Home Screen\", open Ludiko from there and come back here."
   }
 }

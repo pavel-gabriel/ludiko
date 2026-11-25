@@ -1,4 +1,5 @@
 import { vi } from 'vitest'
+import { deriveBits } from '@/learner/bitOps'
 import type {
   LearnerService,
   LevelHistoryEntry,
@@ -103,6 +104,7 @@ export const fakeLearner = {
     state.placement = undefined
   }),
   getTodayMission: vi.fn(async () => (state.mission ? clone(state.mission) : undefined)),
+  getTodayBits: vi.fn(async () => (state.mission ? deriveBits(clone(state.mission)) : undefined)),
   completeMissionStep: vi.fn(async (_p: string, _s: string, _day: string, index: number, accuracy: number) => {
     const m = state.mission!
     m.steps[index] = { ...m.steps[index], done: true, accuracy }
