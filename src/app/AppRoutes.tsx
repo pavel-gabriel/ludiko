@@ -7,6 +7,7 @@ function ScrollToTop() {
   return null;
 }
 import HomePage from '@/components/lobby/HomePage';
+import ProfilePickerPage from '@/components/profiles/ProfilePickerPage';
 import SinglePlayerPage from '@/components/lobby/SinglePlayerPage';
 import MultiplayerPage from '@/components/lobby/MultiplayerPage';
 import SettingsPage from '@/components/lobby/SettingsPage';
@@ -36,7 +37,8 @@ export default function AppRoutes() {
       <Routes>
       {/* Player routes */}
       <Route path="/" element={<HomePage />} />
-      <Route path="/singleplayer" element={<SinglePlayerPage />} />
+      <Route path="/profiles" element={<ProfilePickerPage />} />
+      <Route path="/singleplayer"element={<SinglePlayerPage />} />
       <Route path="/multiplayer" element={<MultiplayerPage />} />
       <Route path="/settings" element={<SettingsPage />} />
       <Route path="/credits" element={<CreditsPage />} />
