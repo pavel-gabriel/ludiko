@@ -43,6 +43,16 @@ export interface GameSettings {
   rounds: number;
   timePerRound: number;
   shapeMode?: ShapeMode;
+  /**
+   * v2: skills (src/engine registry ids, e.g. "mat.add.nocarry.20") to practise. When present and
+   * non-empty the game runs on shared `Item`s generated for these skills (docs/PLAN.md §7);
+   * `gameType` then only picks the mode (memoryGame = memory pairs, anything else = race/sprint).
+   * When absent (every room created before v2), the v1 generators are used (see src/services/itemGame.ts).
+   * Never store `undefined` here: RTDB rejects it.
+   */
+  skillIds?: string[];
+  /** v2: subject the skills were picked from (informational: shown in the lobby) */
+  subject?: string;
 }
 
 /** Kind of numeric question — 'math' when absent (backward compatible) */
@@ -89,7 +99,10 @@ export interface ShapeOption {
 export interface MemoryCard {
   id: string;
   pairId: string;
+  /** Card face. An emoji in v1; for item-based memory (v2) the text of the face (see `isText`) */
   emoji: string;
+  /** v2: the face is text (e.g. "3 + 4" or "7"), not an emoji: shown smaller and wrapped */
+  isText?: boolean;
   flipped: boolean;
   matched: boolean;
 }

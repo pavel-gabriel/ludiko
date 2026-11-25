@@ -2,9 +2,8 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
-import { generateNumericQuestion } from '@/services/gameEngine';
+import { initRoomGame } from '@/services/roomGame';
 import {
-  initMathGameState,
   listenToGameState,
   recordCorrectAnswer,
   recordPlayerFinished,
@@ -12,15 +11,15 @@ import {
   type RTDBGameState,
 } from '@/services/gameSession';
 import { replayRoom, deleteRoom, removePlayer, listenToRoom } from '@/services/roomManager';
-import type { Question } from '@/utils/types';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import RaceTrack from './RaceTrack';
 import QuestionCard from './QuestionCard';
 import CountdownOverlay from './CountdownOverlay';
 import GameResults from '@/components/leaderboard/GameResults';
+import ItemQuestionCard from '@/components/games/shared/ItemQuestionCard';
 
-/** Large question pool for Timed Sprint so players don't run out */
-const SPRINT_POOL_SIZE = 100;
+/** Sprint answers are confirmed quickly: the clock is running */
+const SPRINT_FEEDBACK_MS = 350;
 
 export default function MathRacePage() {
   const { t } = useTranslation();
@@ -41,8 +40,9 @@ export default function MathRacePage() {
   const settings = room?.settings;
   const isSprint = settings?.gameMode === 'timedSprint';
 
-  /* For display and scoring in Race mode */
-  const displayTotal = settings?.rounds ?? 10;
+  /* For display and scoring in Race mode. Item games (v2) can hold fewer items than rounds asked for */
+  const itemCount = gameState?.items?.length;
+  const displayTotal = itemCount ? Math.min(settings?.rounds ?? 10, itemCount) : (settings?.rounds ?? 10);
 
   const handleExit = useCallback(() => {
     if (isHost && room) deleteRoom(room.id);
@@ -71,18 +71,11 @@ export default function MathRacePage() {
     return () => unsub();
   }, [room?.id]);
 
-  /* ----- STEP 1: Host generates questions and pushes game state ----- */
+  /* ----- STEP 1: Host generates questions (v1) or items (v2, settings.skillIds) and pushes game state ----- */
   useEffect(() => {
     if (!room || !isHost || !settings) return;
-
-    const count = isSprint ? SPRINT_POOL_SIZE : displayTotal;
-    const questions: Question[] = [];
-    for (let i = 0; i < count; i++) {
-      questions.push(generateNumericQuestion(settings.gameType, settings.difficulty, settings.operations));
-    }
-
     const playerIds = room.players.map((p) => p.id);
-    initMathGameState(room.id, questions, playerIds, settings.gameType);
+    initRoomGame(room.id, settings, playerIds);
   }, [room?.id, isHost]);
 
   /* ----- STEP 2: Subscribe to game state from RTDB ----- */
@@ -209,6 +202,19 @@ export default function MathRacePage() {
     [gameState, room, currentPlayer, localIndex],
   );
 
+  /* ----- Handle answer to an item (v2): one point per correct item ----- */
+  const handleItemResult = useCallback(
+    async (correct: boolean) => {
+      if (!gameState || !room || !currentPlayer) return;
+      if (correct) {
+        const newCount = (gameState.progress[currentPlayer.id] ?? 0) + 1;
+        await recordCorrectAnswer(room.id, currentPlayer.id, newCount);
+      }
+      setLocalIndex((prev) => prev + 1);
+    },
+    [gameState, room, currentPlayer],
+  );
+
   /* ----- Navigation guards ----- */
   if (!room || !currentPlayer) {
     return <Navigate to="/" replace />;
@@ -231,15 +237,8 @@ export default function MathRacePage() {
         finishedRef.current = false;
         setShowCountdown(true);
         setCountdown(COUNTDOWN_SECONDS);
-        /* Re-generate questions and re-init game state */
-        if (settings) {
-          const count = isSprint ? SPRINT_POOL_SIZE : displayTotal;
-          const newQuestions: Question[] = [];
-          for (let i = 0; i < count; i++) {
-            newQuestions.push(generateNumericQuestion(settings.gameType, settings.difficulty, settings.operations));
-          }
-          await initMathGameState(room.id, newQuestions, [currentPlayer.id], settings.gameType);
-        }
+        /* Re-generate questions/items and re-init game state */
+        if (settings) await initRoomGame(room.id, settings, [currentPlayer.id]);
       } else {
         await replayRoom(room.id);
         navigate('/lobby');
@@ -261,7 +260,7 @@ export default function MathRacePage() {
     );
   }
 
-  if (!gameState || !gameState.questions?.length) {
+  if (!gameState || !(gameState.questions?.length || gameState.items?.length)) {
     return (
       <div className="page">
         <p className="text-lg text-gray-500">{t('game.getReady')}</p>
@@ -293,7 +292,8 @@ export default function MathRacePage() {
     );
   }
 
-  const currentQuestion = gameState.questions[localIndex];
+  const currentQuestion = gameState.questions?.[localIndex];
+  const currentItem = gameState.items?.[localIndex];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-ludiko-blue/10 to-ludiko-purple/10 px-4 py-6 flex flex-col items-center justify-center">
@@ -333,6 +333,18 @@ export default function MathRacePage() {
             </span>
           </div>
         ) : null}
+
+        {currentItem && (
+          <ItemQuestionCard
+            key={`${localIndex}:${currentItem.id}`}
+            item={currentItem}
+            questionNumber={localIndex + 1}
+            totalQuestions={displayTotal}
+            timeRemaining={isSprint ? undefined : timeRemaining}
+            feedbackMs={isSprint ? SPRINT_FEEDBACK_MS : undefined}
+            onResult={handleItemResult}
+          />
+        )}
 
         {currentQuestion && (
           <QuestionCard

@@ -726,5 +726,54 @@
     "failed": "We could not save the setting. Check your internet connection and try again.",
     "needsInstallTitle": "First, add Ludiko to the Home Screen",
     "needsInstall": "On iPhone and iPad, notifications only work from the app added to the Home Screen. Tap Share, then \"Add to Home Screen\", open Ludiko from there and come back here."
+  },
+  "play": {
+    "title": "What shall we practise?",
+    "hint": "Pick up to {{max}} skills, or leave empty for the classic game.",
+    "presets": "Quick picks",
+    "preset": {
+      "addTo20": "Addition up to 20",
+      "subTo20": "Subtraction up to 20",
+      "mulTable": "Multiplication tables",
+      "divTable": "Division tables",
+      "syllables": "Syllables",
+      "letters": "Letters and sounds",
+      "wordPictures": "Words and pictures",
+      "clock": "The clock"
+    },
+    "chosen": "Chosen: {{n}}/{{max}}",
+    "remove": "Remove: {{name}}",
+    "clear": "Clear choice",
+    "pickYourself": "Pick the skills yourself",
+    "hidePicker": "Hide the list",
+    "subject": "Subject",
+    "grade": "Grade",
+    "subjects": {
+      "mat": "Maths",
+      "rom": "Romanian",
+      "stiinte": "Science",
+      "ist": "History",
+      "geo": "Geography",
+      "civ": "Civics",
+      "logic": "Logic"
+    },
+    "grades": {
+      "0": "Prep",
+      "1": "I",
+      "2": "II",
+      "3": "III",
+      "4": "IV",
+      "5": "V",
+      "6": "VI",
+      "7": "VII",
+      "8": "VIII"
+    },
+    "maxReached": "You already picked {{max}} skills. Remove one to add another.",
+    "notPlayable": "does not work in this game",
+    "noSkills": "There are no skills in this grade.",
+    "modeTitle": "How shall we play?",
+    "modeRace": "Race",
+    "modeMemory": "Memory",
+    "unplayable": "These do not work in this game: {{names}}. Remove them or change the game."
   }
 }

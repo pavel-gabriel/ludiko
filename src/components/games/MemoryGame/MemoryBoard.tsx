@@ -26,6 +26,12 @@ function getEmojiSize(cardCount: number): string {
   return 'text-lg sm:text-xl';
 }
 
+/** Text faces (item-based memory: "3 + 4", "ve-ve-ri-ță") are smaller than emoji and may wrap */
+function textFaceClass(text: string, cardCount: number): string {
+  const small = cardCount > 24 || text.length > 9;
+  return `${small ? 'text-xs sm:text-sm' : 'text-base sm:text-lg'} font-extrabold leading-tight text-ludiko-text break-words text-center px-0.5`;
+}
+
 export default function MemoryBoard({
   cards,
   flippedIndices,
@@ -64,7 +70,7 @@ export default function MemoryBoard({
             `}
           >
             {showFace ? (
-              <span className={emojiSize}>{card.emoji}</span>
+              <span className={card.isText ? textFaceClass(card.emoji, cards.length) : emojiSize}>{card.emoji}</span>
             ) : (
               <span className={`${isLarge ? 'text-lg' : 'text-2xl'} text-white/60`}>?</span>
             )}

@@ -9,10 +9,15 @@ import { ensureAnonymousAuth } from '@/services/authService';
 import type { Difficulty, Operation, GameType, ShapeMode } from '@/utils/types';
 import { DEFAULT_GAME_SETTINGS, usesOperations } from '@/utils/constants';
 import GameTypePicker from '@/components/ui/GameTypePicker';
+import SkillPicker from '@/components/play/SkillPicker';
+import PlayModePicker from '@/components/play/PlayModePicker';
+import { effectiveGameType, skillSettings } from '@/components/play/presets';
+import { skillUsable, type ItemGameKind } from '@/services/itemGame';
+import { resolveSkillNames } from '@/components/play/skillNames';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function InteractiveSetupPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const { setRoom, setCurrentPlayer } = useRoomStore();
 
@@ -31,6 +36,7 @@ export default function InteractiveSetupPage() {
   const [timePerRound, setTimePerRound] = useState(DEFAULT_GAME_SETTINGS.timePerRound);
   const [operations, setOperations] = useState<Operation[]>(DEFAULT_GAME_SETTINGS.operations);
   const [shapeMode, setShapeMode] = useState<ShapeMode>('image');
+  const [skillIds, setSkillIds] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
 
   const toggleOperation = (op: Operation) => {
@@ -39,24 +45,30 @@ export default function InteractiveSetupPage() {
     );
   };
 
-  const isMath = usesOperations(gameType);
-  const isShapeMatch = gameType === 'shapeMatch';
-  const isMemory = gameType === 'memoryGame';
+  /** With skills chosen the duel runs on items: the game type only picks race vs memory */
+  const itemMode = skillIds.length > 0;
+  const roomGameType = effectiveGameType(skillIds, gameType);
+  const isMath = !itemMode && usesOperations(gameType);
+  const isShapeMatch = !itemMode && gameType === 'shapeMatch';
+  const isMemory = roomGameType === 'memoryGame';
+  const itemKind: ItemGameKind = isMemory ? 'memory' : 'race';
+  const unplayable = itemMode ? skillIds.filter((id) => !skillUsable(id, itemKind)) : [];
 
   const handleStart = async () => {
-    if (!name1.trim() || !name2.trim() || loading) return;
+    if (!name1.trim() || !name2.trim() || loading || unplayable.length > 0) return;
     if (isMath && operations.length === 0) return;
     setLoading(true);
     try {
       await ensureAnonymousAuth();
       const room = buildRoom(name1.trim(), {
-        gameType,
+        gameType: roomGameType,
         gameMode: 'raceToFinish',
         difficulty,
         operations: isMath ? operations : ['+'],
         rounds,
         timePerRound,
         ...(isShapeMatch && { shapeMode }),
+        ...skillSettings(skillIds),
       }, avatar1);
 
       /* Add player 2 to the room */
@@ -79,7 +91,8 @@ export default function InteractiveSetupPage() {
     name1.trim() &&
     name2.trim() &&
     avatar1 !== avatar2 &&
-    (!isMath || operations.length > 0);
+    (!isMath || operations.length > 0) &&
+    unplayable.length === 0;
 
   return (
     <div className="page">
@@ -125,10 +138,19 @@ export default function InteractiveSetupPage() {
           </div>
         </div>
 
-        {/* Game type selector */}
+        {/* What to practise (v2: skills from the registry) */}
+        <SkillPicker value={skillIds} onChange={setSkillIds} kind={itemKind} />
+
+        {/* Game type selector (v1) or, with skills chosen, just the mode */}
         <div className="block mb-4">
-          <span className="text-sm font-semibold">{t('create.gameType')}</span>
-          <GameTypePicker value={gameType} onChange={setGameType} />
+          {itemMode ? (
+            <PlayModePicker value={gameType} onChange={setGameType} />
+          ) : (
+            <>
+              <span className="text-sm font-semibold">{t('create.gameType')}</span>
+              <GameTypePicker value={gameType} onChange={setGameType} />
+            </>
+          )}
         </div>
 
         {/* Shape mode toggle */}
@@ -248,6 +270,12 @@ export default function InteractiveSetupPage() {
         {avatar1 === avatar2 && (
           <p className="text-xs text-red-500 mb-2 text-center" role="alert" aria-live="polite">
             {t('interactive.differentAvatars')}
+          </p>
+        )}
+
+        {unplayable.length > 0 && (
+          <p role="alert" className="mb-3 text-sm font-semibold text-red-600">
+            {t('play.unplayable', { names: resolveSkillNames(unplayable, i18n.language) })}
           </p>
         )}
 

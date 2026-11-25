@@ -9,10 +9,15 @@ import { ensureAnonymousAuth } from '@/services/authService';
 import type { Difficulty, Operation, GameType, GameMode, ShapeMode } from '@/utils/types';
 import { DEFAULT_GAME_SETTINGS, usesOperations } from '@/utils/constants';
 import GameTypePicker from '@/components/ui/GameTypePicker';
+import SkillPicker from '@/components/play/SkillPicker';
+import PlayModePicker from '@/components/play/PlayModePicker';
+import { effectiveGameType, skillSettings } from '@/components/play/presets';
+import { skillUsable, type ItemGameKind } from '@/services/itemGame';
+import { resolveSkillNames } from '@/components/play/skillNames';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function CreateRoom() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const { setRoom, setCurrentPlayer } = useRoomStore();
 
@@ -25,6 +30,7 @@ export default function CreateRoom() {
   const [timePerRound, setTimePerRound] = useState(DEFAULT_GAME_SETTINGS.timePerRound);
   const [operations, setOperations] = useState<Operation[]>(DEFAULT_GAME_SETTINGS.operations);
   const [shapeMode, setShapeMode] = useState<ShapeMode>('image');
+  const [skillIds, setSkillIds] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
 
   const toggleOperation = (op: Operation) => {
@@ -34,27 +40,33 @@ export default function CreateRoom() {
   };
 
   /** Math Race needs operations; Shape Match & Memory don't */
-  const showMathOptions = usesOperations(gameType);
-  const isShapeMatch = gameType === 'shapeMatch';
+  /** With skills chosen the room runs on items: the game type only picks race vs memory */
+  const itemMode = skillIds.length > 0;
+  const roomGameType = effectiveGameType(skillIds, gameType);
+  const showMathOptions = !itemMode && usesOperations(gameType);
+  const isShapeMatch = !itemMode && gameType === 'shapeMatch';
   /** All game types support mode selection */
   const showModeSelector = true;
   /** Memory game uses "pairs" instead of "rounds" */
-  const isMemory = gameType === 'memoryGame';
+  const isMemory = roomGameType === 'memoryGame';
+  const itemKind: ItemGameKind = isMemory ? 'memory' : gameMode === 'timedSprint' ? 'sprint' : 'race';
+  const unplayable = itemMode ? skillIds.filter((id) => !skillUsable(id, itemKind)) : [];
 
   const handleCreate = async () => {
-    if (!name.trim() || loading) return;
+    if (!name.trim() || loading || unplayable.length > 0) return;
     if (showMathOptions && operations.length === 0) return;
     setLoading(true);
     try {
       await ensureAnonymousAuth();
       const room = buildRoom(name.trim(), {
-        gameType,
+        gameType: roomGameType,
         gameMode,
         difficulty,
         operations: showMathOptions ? operations : ['+'],
         rounds,
         timePerRound,
         ...(isShapeMatch && { shapeMode }),
+        ...skillSettings(skillIds),
       }, avatar);
       await createRoomInDB(room);
       registerDisconnectCleanup(room.id, true);
@@ -89,10 +101,19 @@ export default function CreateRoom() {
           <EmojiPicker selected={avatar} onChange={setAvatar} />
         </div>
 
-        {/* Game type selector */}
+        {/* What to practise (v2: skills from the registry) */}
+        <SkillPicker value={skillIds} onChange={setSkillIds} kind={itemKind} />
+
+        {/* Game type selector (v1) or, with skills chosen, just the mode */}
         <div className="block mb-4">
-          <span className="text-sm font-semibold">{t('create.gameType')}</span>
-          <GameTypePicker value={gameType} onChange={setGameType} />
+          {itemMode ? (
+            <PlayModePicker value={gameType} onChange={setGameType} />
+          ) : (
+            <>
+              <span className="text-sm font-semibold">{t('create.gameType')}</span>
+              <GameTypePicker value={gameType} onChange={setGameType} />
+            </>
+          )}
         </div>
 
         {/* Shape mode toggle (Shape Match only) */}
@@ -230,12 +251,18 @@ export default function CreateRoom() {
           </label>
         </div>
 
+        {unplayable.length > 0 && (
+          <p role="alert" className="mb-3 text-sm font-semibold text-red-600">
+            {t('play.unplayable', { names: resolveSkillNames(unplayable, i18n.language) })}
+          </p>
+        )}
+
         <Button
           variant="green"
           size="lg"
           className="w-full"
           onClick={handleCreate}
-          disabled={!name.trim() || (showMathOptions && operations.length === 0)}
+          disabled={!name.trim() || (showMathOptions && operations.length === 0) || unplayable.length > 0}
         >
           {t('create.create')}
         </Button>
