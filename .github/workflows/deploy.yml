@@ -38,6 +38,9 @@ jobs:
           VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}
           VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
 
+      # Performance budget: initial JS < 250 KB gzipped (docs/PLAN.md §10)
+      - run: npm run check:size
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import Providers from '@/app/providers';
 import AppRoutes from '@/app/AppRoutes';
 import ErrorBoundary from '@/components/ui/ErrorBoundary';
-import { onAuthChange } from '@/services/authService';
-import { getTeacherProfile } from '@/services/teacherService';
+import OfflineBanner from '@/components/ui/OfflineBanner';
+import PwaToast from '@/components/ui/PwaToast';
 import { useAuthStore } from '@/store/authStore';
 import { useSettingsStore } from '@/store/settingsStore';
 
@@ -25,28 +25,44 @@ export default function App() {
 
   /* Restore auth state on app mount / page refresh */
   useEffect(() => {
-    const unsub = onAuthChange(async (user) => {
-      if (user && !user.isAnonymous) {
-        setUid(user.uid);
-        try {
-          const profile = await getTeacherProfile(user.uid);
-          if (profile) setTeacherProfile(profile);
-        } catch {
-          /* Firestore may be unreachable — still set uid so navigation works */
+    // Firebase is loaded lazily so the home page doesn't pay for it upfront
+    // (initial-JS budget). Auth state is restored as soon as the chunk arrives.
+    let unsub: (() => void) | undefined;
+    let cancelled = false;
+    (async () => {
+      const [{ onAuthChange }, { getTeacherProfile }] = await Promise.all([
+        import('@/services/authService'),
+        import('@/services/teacherService'),
+      ]);
+      if (cancelled) return;
+      unsub = onAuthChange(async (user) => {
+        if (user && !user.isAnonymous) {
+          setUid(user.uid);
+          try {
+            const profile = await getTeacherProfile(user.uid);
+            if (profile) setTeacherProfile(profile);
+          } catch {
+            /* Firestore may be unreachable — still set uid so navigation works */
+          }
+        } else {
+          setUid(null);
+          setTeacherProfile(null);
         }
-      } else {
-        setUid(null);
-        setTeacherProfile(null);
-      }
-      setLoading(false);
-    });
-    return () => unsub();
+        setLoading(false);
+      });
+    })().catch(() => setLoading(false));
+    return () => {
+      cancelled = true;
+      unsub?.();
+    };
   }, []);
 
   return (
     <ErrorBoundary>
       <Providers>
+        <OfflineBanner />
         <AppRoutes />
+        <PwaToast />
       </Providers>
     </ErrorBoundary>
   );

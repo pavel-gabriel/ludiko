@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
-import PersistentLeaderboard from '@/components/leaderboard/PersistentLeaderboard';
+const PersistentLeaderboard = lazy(() => import('@/components/leaderboard/PersistentLeaderboard'));
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -60,7 +60,11 @@ export default function HomePage() {
         </Button>
       </div>
 
-      {showLeaderboard && <PersistentLeaderboard onClose={() => setShowLeaderboard(false)} />}
+      {showLeaderboard && (
+        <Suspense fallback={null}>
+          <PersistentLeaderboard onClose={() => setShowLeaderboard(false)} />
+        </Suspense>
+      )}
     </div>
   );
 }

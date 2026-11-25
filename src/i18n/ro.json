@@ -252,5 +252,13 @@
     "modified": "modificat de Ludiko",
     "ownContent": "Toate întrebările, explicațiile, ilustrațiile și sunetele care nu apar aici sunt create de Ludiko.",
     "rightsContact": "Deținătorii de drepturi ne pot contacta la"
+  },
+  "pwa": {
+    "loading": "Se încarcă…",
+    "offline": "Ești offline — poți exersa în continuare",
+    "updateAvailable": "Versiune nouă disponibilă",
+    "update": "Actualizează",
+    "offlineReady": "Gata! Ludiko funcționează și fără internet.",
+    "dismiss": "Închide"
   }
 }

@@ -252,5 +252,13 @@
     "modified": "modified by Ludiko",
     "ownContent": "All questions, explanations, illustrations and sounds not listed here are original Ludiko work.",
     "rightsContact": "Rights holders can contact us at"
+  },
+  "pwa": {
+    "loading": "Loading…",
+    "offline": "You're offline — you can keep practising",
+    "updateAvailable": "New version available",
+    "update": "Update",
+    "offlineReady": "All set! Ludiko now works without internet.",
+    "dismiss": "Close"
   }
 }

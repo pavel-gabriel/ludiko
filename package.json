@@ -9,6 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
+    "check:size": "node scripts/check-bundle-size.mjs",
+    "icons": "node scripts/generate-icons.mjs",
     "lint": "eslint src --ext .ts,.tsx"
   },
   "dependencies": {
@@ -35,6 +37,7 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
     "vite": "^6.1.0",
+    "vite-plugin-pwa": "^2.0.0",
     "vitest": "^3.0.5"
   }
 }
