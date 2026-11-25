@@ -50,7 +50,11 @@ export default function Visual({ spec, size = 'md', showLabels = true, className
       svg = <Money amounts={spec.amounts} label={label} />
       break
     case 'objects':
-      svg = <Objects icon={spec.icon} count={spec.count} groups={spec.groups} label={label} />
+      svg = (
+        <Objects icon={spec.icon} count={spec.count} groups={spec.groups} label={label}
+          /* Small (answer-card) visuals never enlarge icons, so options stay comparable */
+          maxScale={size === 'sm' ? 1 : undefined} />
+      )
       break
     case 'fraction':
       svg = <FractionVisual numerator={spec.numerator} denominator={spec.denominator} shape={spec.shape} label={label} showText={showLabels} />

@@ -6,10 +6,14 @@ interface Props {
   count: number
   groups?: number
   label: string
+  /** Upper bound on enlargement when there is spare room (default MAX_SCALE) */
+  maxScale?: number
 }
 
-const W = 360
 const CELL = 31
+const PAD = 6
+/** Never enlarge icons more than this when the drawing has spare room */
+const MAX_SCALE = 1.6
 const MAX_OBJECTS = 100
 
 function gridCols(n: number): number {
@@ -19,7 +23,7 @@ function gridCols(n: number): number {
 }
 
 /** An emoji/icon repeated `count` times, optionally split into visible group boxes. */
-export default function Objects({ icon, count, groups, label }: Props) {
+export default function Objects({ icon, count, groups, label, maxScale = MAX_SCALE }: Props) {
   const total = clampCount(count, MAX_OBJECTS)
   const g = groups && groups > 1 ? Math.min(Math.floor(groups), 20) : 0
 
@@ -34,9 +38,12 @@ export default function Objects({ icon, count, groups, label }: Props) {
     const rows = Math.max(1, Math.ceil(total / cols))
     const gridW = cols * CELL
     const H = rows * CELL + 12
-    const ox = (W - gridW) / 2
+    /* Canvas fits the content, so the drawing stays legible inside small answer cards */
+    const W = gridW + PAD * 2
+    const ox = PAD
     return (
-      <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={label} style={{ display: 'block' }}>
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={label}
+        style={{ display: 'block', maxWidth: W * maxScale, margin: '0 auto' }}>
         {Array.from({ length: total }, (_, i) =>
           renderIcon(ox + (i % cols) * CELL + CELL / 2, 6 + Math.floor(i / cols) * CELL + CELL / 2, i),
         )}
@@ -50,12 +57,14 @@ export default function Objects({ icon, count, groups, label }: Props) {
     const cols = Math.max(1, Math.ceil(n / rows))
     return { n, cols, rows, w: cols * CELL + 16, h: rows * CELL + 16 }
   })
-  const layout = flowLayout(boxes, W - 4, 10, 12)
+  const layout = flowLayout(boxes, 356, 10, 12)
   const H = layout.height + 16
-  const ox = (W - layout.width) / 2
+  const W = layout.width + PAD * 2
+  const ox = PAD
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={label} style={{ display: 'block' }}>
+    <svg viewBox={`0 0 ${W} ${H}`} width="100%" role="img" aria-label={label}
+      style={{ display: 'block', maxWidth: W * maxScale, margin: '0 auto' }}>
       {boxes.map((b, k) => {
         const pos = layout.positions[k]
         const x = ox + pos.x

@@ -10,6 +10,7 @@ import RouteFallback from '@/components/ui/RouteFallback';
  *   const MyPage = lazy(() => import('@/components/.../MyPage'));
  * (default export; import the file directly, not a barrel index).
  */
+const ItemsPreviewPage = lazy(() => import('@/ui/items/ItemsPreviewPage'));
 const FramesPreviewPage = lazy(() => import('@/ui/frames/FramesPreviewPage'));
 const ProfilePickerPage = lazy(() => import('@/components/profiles/ProfilePickerPage'));
 const SinglePlayerPage = lazy(() => import('@/components/lobby/SinglePlayerPage'));
@@ -52,6 +53,7 @@ export default function AppRoutes() {
 
           {/* Dev previews (Phase 0) */}
           <Route path="/dev/frames" element={<FramesPreviewPage />} />
+          <Route path="/dev/items" element={<ItemsPreviewPage />} />
           <Route path="/singleplayer" element={<SinglePlayerPage />} />
           <Route path="/multiplayer" element={<MultiplayerPage />} />
           <Route path="/settings" element={<SettingsPage />} />
