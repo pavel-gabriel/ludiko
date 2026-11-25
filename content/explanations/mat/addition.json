@@ -1,0 +1,97 @@
+[
+  {
+    "id": "exp.add.carry.20",
+    "skillId": "mat.add.carry.20",
+    "title": {
+      "ro": "Adunarea cu trecere peste ordin: 8 + 5",
+      "en": "Adding across ten: 8 + 5"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vrem să aflăm 8 + 5. Pornim de la 8 pe axa numerelor.",
+          "en": "We want 8 + 5. Start at 8 on the number line."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            8
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai întâi completăm până la 10: 8 + 2 = 10.",
+          "en": "First fill up to 10: 8 + 2 = 10."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            8,
+            10
+          ],
+          "jumps": [
+            {
+              "from": 8,
+              "to": 10
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Din 5 am folosit 2, deci mai rămân 3. Sărim încă 3: 10 + 3 = 13.",
+          "en": "We used 2 of the 5, so 3 are left. Jump 3 more: 10 + 3 = 13."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 20,
+          "step": 1,
+          "marks": [
+            8,
+            10,
+            13
+          ],
+          "jumps": [
+            {
+              "from": 8,
+              "to": 10
+            },
+            {
+              "from": 10,
+              "to": 13
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Rezultat: 13 înseamnă o zece și 3 unități. Deci 8 + 5 = 13.",
+          "en": "Result: 13 is one ten and 3 ones. So 8 + 5 = 13."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "tens": 1,
+          "ones": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.add.carry.20",
+      "kind": "explanation",
+      "title": "Adding across ten: 8 + 5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  }
+]

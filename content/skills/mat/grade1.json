@@ -1,0 +1,343 @@
+[
+  {
+    "id": "mat.count.20",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Numărarea până la 20",
+      "en": "Counting to 20"
+    },
+    "prerequisites": [
+      "mat.count.10"
+    ],
+    "itemSources": [
+      {
+        "generator": "counting",
+        "params": {
+          "max": 20
+        }
+      }
+    ],
+    "explanations": [],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.count.20",
+      "kind": "data",
+      "title": "Skill mat.count.20",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.add.nocarry.20",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Adunarea până la 20, fără trecere peste ordin",
+      "en": "Addition to 20 without crossing ten"
+    },
+    "prerequisites": [
+      "mat.add.10",
+      "mat.count.20"
+    ],
+    "itemSources": [
+      {
+        "generator": "addition",
+        "params": {
+          "max": 20,
+          "carry": false
+        }
+      }
+    ],
+    "explanations": [],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.add.nocarry.20",
+      "kind": "data",
+      "title": "Skill mat.add.nocarry.20",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.sub.noborrow.20",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Scăderea până la 20, fără trecere peste ordin",
+      "en": "Subtraction within 20 without crossing ten"
+    },
+    "prerequisites": [
+      "mat.sub.10",
+      "mat.count.20"
+    ],
+    "itemSources": [
+      {
+        "generator": "subtraction",
+        "params": {
+          "max": 20,
+          "borrow": false
+        }
+      }
+    ],
+    "explanations": [],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.sub.noborrow.20",
+      "kind": "data",
+      "title": "Skill mat.sub.noborrow.20",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.count.100",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Numărarea până la 100",
+      "en": "Counting to 100"
+    },
+    "prerequisites": [
+      "mat.count.20"
+    ],
+    "itemSources": [
+      {
+        "generator": "counting",
+        "params": {
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.count.100",
+      "kind": "data",
+      "title": "Skill mat.count.100",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.placevalue.100",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "1.3"
+      }
+    ],
+    "title": {
+      "ro": "Zeci și unități, până la 100",
+      "en": "Tens and units up to 100"
+    },
+    "prerequisites": [
+      "mat.count.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "place-value",
+        "params": {
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.placevalue.100",
+      "kind": "data",
+      "title": "Skill mat.placevalue.100",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.add.carry.20",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Adunarea până la 20, cu trecere peste ordin",
+      "en": "Addition to 20 crossing ten"
+    },
+    "prerequisites": [
+      "mat.add.nocarry.20"
+    ],
+    "itemSources": [
+      {
+        "generator": "addition",
+        "params": {
+          "max": 20,
+          "carry": true
+        }
+      }
+    ],
+    "explanations": [
+      "exp.add.carry.20"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.add.carry.20",
+      "kind": "data",
+      "title": "Skill mat.add.carry.20",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.sub.borrow.20",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Scăderea până la 20, cu trecere peste ordin",
+      "en": "Subtraction within 20 crossing ten"
+    },
+    "prerequisites": [
+      "mat.sub.noborrow.20"
+    ],
+    "itemSources": [
+      {
+        "generator": "subtraction",
+        "params": {
+          "max": 20,
+          "borrow": true
+        }
+      }
+    ],
+    "explanations": [],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.sub.borrow.20",
+      "kind": "data",
+      "title": "Skill mat.sub.borrow.20",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.wordproblem.20",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "5.1"
+      }
+    ],
+    "title": {
+      "ro": "Probleme simple cu adunare și scădere, până la 20",
+      "en": "Simple word problems to 20"
+    },
+    "prerequisites": [
+      "mat.add.carry.20",
+      "mat.sub.borrow.20"
+    ],
+    "itemSources": [
+      {
+        "generator": "word-problem",
+        "params": {
+          "max": 20,
+          "ops": [
+            "+",
+            "-"
+          ]
+        }
+      }
+    ],
+    "explanations": [],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.wordproblem.20",
+      "kind": "data",
+      "title": "Skill mat.wordproblem.20",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  }
+]

@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ludiko/content/schema/item.schema.json",
+  "title": "Item",
+  "description": "A question/exercise, discriminated by \"type\" (docs/PLAN.md section 5.3). Mirrors Item in src/engine/types.ts. Cross-field rules (correctId among options, order is a permutation, one {{gap}}, regions 0-100...) are enforced by src/engine/content/validate.ts.",
+  "oneOf": [
+    { "$ref": "#/$defs/choice" },
+    { "$ref": "#/$defs/pictureChoice" },
+    { "$ref": "#/$defs/trueFalse" },
+    { "$ref": "#/$defs/numberInput" },
+    { "$ref": "#/$defs/fillGap" },
+    { "$ref": "#/$defs/order" },
+    { "$ref": "#/$defs/sort" },
+    { "$ref": "#/$defs/match" },
+    { "$ref": "#/$defs/hotspot" },
+    { "$ref": "#/$defs/readAndAnswer" },
+    { "$ref": "#/$defs/listenAndAnswer" }
+  ],
+  "$defs": {
+    "localizedText": { "$ref": "explanation.schema.json#/$defs/localizedText" },
+    "mediaRef": { "$ref": "explanation.schema.json#/$defs/mediaRef" },
+    "visualSpec": { "$ref": "explanation.schema.json#/$defs/visualSpec" },
+    "id": { "type": "string", "minLength": 1 },
+    "cardContent": {
+      "type": "object",
+      "required": ["id"],
+      "anyOf": [{ "required": ["text"] }, { "required": ["visual"] }],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "$ref": "#/$defs/localizedText" },
+        "visual": { "$ref": "#/$defs/visualSpec" }
+      }
+    },
+    "visualCard": {
+      "type": "object",
+      "required": ["id", "visual"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "text": { "$ref": "#/$defs/localizedText" },
+        "visual": { "$ref": "#/$defs/visualSpec" }
+      }
+    },
+    "base": {
+      "type": "object",
+      "required": ["id", "type", "skillId", "difficulty", "prompt", "reviewStatus", "provenance"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "skillId": { "$ref": "#/$defs/id" },
+        "difficulty": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "prompt": { "$ref": "#/$defs/localizedText" },
+        "visual": { "$ref": "#/$defs/visualSpec" },
+        "audio": { "$ref": "#/$defs/mediaRef" },
+        "explanationId": { "$ref": "#/$defs/id" },
+        "reviewStatus": { "enum": ["auto-checked", "beta", "reviewed"] },
+        "provenance": { "$ref": "provenance.schema.json" }
+      }
+    },
+    "choice": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["options", "correctId"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "choice" },
+        "options": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/cardContent" } },
+        "correctId": { "$ref": "#/$defs/id" }
+      }
+    },
+    "pictureChoice": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["options", "correctId"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "picture-choice" },
+        "options": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/visualCard" } },
+        "correctId": { "$ref": "#/$defs/id" }
+      }
+    },
+    "trueFalse": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["correct"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "true-false" },
+        "correct": { "type": "boolean" }
+      }
+    },
+    "numberInput": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["correct"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "number-input" },
+        "correct": { "type": "number" }
+      }
+    },
+    "fillGap": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["template", "correct"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "fill-gap" },
+        "template": { "$ref": "#/$defs/localizedText" },
+        "options": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "correct": { "type": "string", "minLength": 1 }
+      }
+    },
+    "order": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["cards", "correctOrder"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "order" },
+        "cards": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/cardContent" } },
+        "correctOrder": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/id" }, "uniqueItems": true }
+      }
+    },
+    "sort": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["categories", "cards"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "sort" },
+        "categories": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["id", "label"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "label": { "$ref": "#/$defs/localizedText" }
+            }
+          }
+        },
+        "cards": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["id", "categoryId"],
+            "anyOf": [{ "required": ["text"] }, { "required": ["visual"] }],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "text": { "$ref": "#/$defs/localizedText" },
+              "visual": { "$ref": "#/$defs/visualSpec" },
+              "categoryId": { "$ref": "#/$defs/id" }
+            }
+          }
+        }
+      }
+    },
+    "match": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["pairs"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "match" },
+        "pairs": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["left", "right"],
+            "additionalProperties": false,
+            "properties": {
+              "left": { "$ref": "#/$defs/cardContent" },
+              "right": { "$ref": "#/$defs/cardContent" }
+            }
+          }
+        }
+      }
+    },
+    "hotspot": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["image", "regions", "correctId"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "hotspot" },
+        "image": { "$ref": "#/$defs/mediaRef" },
+        "regions": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["id", "x", "y", "r"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "$ref": "#/$defs/id" },
+              "x": { "type": "number", "minimum": 0, "maximum": 100 },
+              "y": { "type": "number", "minimum": 0, "maximum": 100 },
+              "r": { "type": "number", "exclusiveMinimum": 0, "maximum": 100 },
+              "label": { "$ref": "#/$defs/localizedText" }
+            }
+          }
+        },
+        "correctId": { "$ref": "#/$defs/id" }
+      }
+    },
+    "readAndAnswer": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["passage", "questions"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "read-and-answer" },
+        "passage": { "$ref": "#/$defs/localizedText" },
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "oneOf": [{ "$ref": "#/$defs/choice" }, { "$ref": "#/$defs/trueFalse" }] }
+        }
+      }
+    },
+    "listenAndAnswer": {
+      "allOf": [{ "$ref": "#/$defs/base" }],
+      "required": ["audio", "options", "correctId"],
+      "unevaluatedProperties": false,
+      "properties": {
+        "type": { "const": "listen-and-answer" },
+        "options": { "type": "array", "minItems": 2, "items": { "$ref": "#/$defs/cardContent" } },
+        "correctId": { "$ref": "#/$defs/id" }
+      }
+    }
+  }
+}
