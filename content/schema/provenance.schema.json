@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ludiko/content/schema/provenance.schema.json",
+  "title": "Provenance",
+  "description": "Origin and licence of an asset or content record. Policy: docs/LEGAL_CONTENT_POLICY.md. Enforced by tests/contentPolicy.test.ts.",
+  "type": "object",
+  "required": ["id", "kind", "title", "author", "source", "licence"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "kind": { "enum": ["image", "audio", "font", "text", "item", "explanation", "library", "data"] },
+    "title": { "type": "string", "minLength": 1 },
+    "author": { "type": "string", "minLength": 1 },
+    "source": { "enum": ["own", "generated", "ai-draft", "official-text", "public-domain", "open-licence"] },
+    "licence": {
+      "enum": ["OWN", "RO-OFFICIAL-TEXT", "PD", "CC0-1.0", "CC-BY-3.0", "CC-BY-4.0", "CC-BY-SA-3.0", "CC-BY-SA-4.0", "OFL-1.1", "MIT", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Apache-2.0"]
+    },
+    "url": { "type": "string", "pattern": "^https?://" },
+    "licenceUrl": { "type": "string", "pattern": "^https?://" },
+    "retrieved": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "version": { "type": "string" },
+    "modified": { "type": "boolean" },
+    "basis": { "type": "string", "minLength": 1 },
+    "notes": { "type": "string" }
+  }
+}

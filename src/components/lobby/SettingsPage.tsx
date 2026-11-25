@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import CloseButton from '@/components/ui/CloseButton';
 import { useSettingsStore } from '@/store/settingsStore';
 
@@ -73,6 +74,13 @@ export default function SettingsPage() {
           </button>
         </div>
 
+        {/* Credits & licences */}
+        <Link
+          to="/credits"
+          className="block mt-4 text-center text-sm font-semibold text-ludiko-purple hover:underline"
+        >
+          {t('credits.title')}
+        </Link>
       </div>
     </div>
   );

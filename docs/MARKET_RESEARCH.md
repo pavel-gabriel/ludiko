@@ -85,4 +85,4 @@ Sources: [Edupedu — Digitaliada](https://www.edupedu.ro/teste-de-antrenament-p
 
 - GDPR-K: parental consent for a child's data where consent is the legal basis; national age threshold 13–16. COPPA 2025 amendments (compliance April 2026) require separate consent for third-party sharing. ([PRIVO](https://www.privo.com/blog/2026-readiness), [Foley Hoag](https://foleyhoag.com/news-and-insights/blogs/security-privacy-and-the-law/2026/july/the-amended-children-s-online-privacy-protection-act-(coppa)-regulations-what-your-business-needs/), [Epic](https://www.epicgames.com/help/c-202300000001627/c-202300000001697/a202300000011411?lang=en-US))
 - Ludiko stance: no ads, no third-party trackers, no child email, data minimisation, local-first.
-- Official texts (programa, EN papers) are likely outside copyright under Law 8/1996 art. 9 ⚠️ — verify before republishing items verbatim.
+- Only official texts of a legislative/administrative nature are outside copyright (Law 8/1996 art. 9 ⚠️ verify wording). Exam papers and textbooks are authored works: format reference only. Rules: [`LEGAL_CONTENT_POLICY.md`](./LEGAL_CONTENT_POLICY.md).

@@ -108,7 +108,7 @@ The **skill graph** is a directed acyclic graph of prerequisites that crosses gr
 | `read-and-answer` | **Reading comprehension** | Short illustrated text + questions |
 | `listen-and-answer` | Pre-readers, grade 0–I | Audio prompt + picture options |
 
-Every item has: `difficulty`, `media` (image/audio refs), `explanationRef`, `source` (generated / official-EN / authored / ai-draft), `reviewStatus` (`auto-checked` / `beta` / `reviewed`), and `programa` tags.
+Every item has: `difficulty`, `media` (image/audio refs), `explanationRef`, a **`provenance`** record (source, licence, author, title, url; see [`LEGAL_CONTENT_POLICY.md`](./LEGAL_CONTENT_POLICY.md)), `reviewStatus` (`auto-checked` / `beta` / `reviewed`), and `programa` tags. Official exam papers are a **format reference only**; items are always original.
 
 ### 5.4 Explanations ("frames")
 
@@ -171,7 +171,7 @@ Fluency modes (Race, Sprint) are offered only for skills that are already `pract
 
 ## 9. Content pipeline (no human reviewer yet)
 
-1. **Base sources:** the official programa (competence list and contents) and past EN II/IV/VI/VIII papers. These are likely official texts outside copyright (Law 8/1996 art. 9 ⚠️ verify). Open-licence media: OpenMoji, Wikimedia Commons (with attribution), plus our own SVGs.
+1. **Base sources:** the official programa (competence list and contents: official text). Past EN II/IV/VI/VIII papers and textbooks are **format reference only**, never copied. Media: our own SVGs first; open-licence media only under CC0 / CC BY / CC BY-SA (never NC/ND), with attribution. **All rules: [`LEGAL_CONTENT_POLICY.md`](./LEGAL_CONTENT_POLICY.md), enforced in CI.**
 2. **AI drafting:** skills, items and explanations are drafted from the programa and tagged with competence codes.
 3. **Automatic checks:**
    - Schema validation in CI.
@@ -235,6 +235,7 @@ src/
 Each phase ships something usable. Order follows the agreed priorities: **math + reading comprehension first**, then sciences, history, geography and civic education; grades 0–IV before V–VIII; Romania first with English UI, international later.
 
 ### Phase 0 — Foundations
+- [x] Provenance schema + CI licence check + `/credits` page (content & IP policy)
 - [ ] Content schemas + CI validation; `content/` structure
 - [ ] Item model + renderers: choice, picture-choice, true-false, number-input, fill-gap, order, sort, match
 - [ ] Local child profiles (IndexedDB), recovery code, multi-profile per device
@@ -324,3 +325,4 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 | 9 | Subject order: Math + Romanian reading → Sciences/MEM → History & Geography (IV) → Civic education | 2026-11-25 |
 | 10 | PWA now, designed to be wrapped for app stores later | 2026-11-25 |
 | 11 | Existing games rebuilt as modes on the new item model; v1 stays live until replaced | 2026-11-25 |
+| 12 | Content & IP policy: only own, CC0/BY/BY-SA, public-domain or official-text material; no copying of textbooks/exam papers; provenance on every asset, checked in CI; lawyer review before paid plans | 2026-11-26 |

@@ -235,6 +235,22 @@
     "templateNamePlaceholder": "Template name",
     "saveTemplate": "Save Template",
     "duplicateTemplateName": "A template with this name already exists",
-    "saveError": "Failed to save. Please try again."
+    "saveError": "Failed to save. Please try again.",
+    "customQuestionsOwnWork": "Write your own questions — please don't copy exercises from textbooks, workbooks or exam papers."
+  },
+  "credits": {
+    "title": "Credits & licences",
+    "intro": "Ludiko is built with these open works. Thank you to their authors!",
+    "kind": {
+      "image": "Images",
+      "audio": "Audio",
+      "text": "Texts",
+      "font": "Fonts",
+      "library": "Software libraries",
+      "data": "Data"
+    },
+    "modified": "modified by Ludiko",
+    "ownContent": "All questions, explanations, illustrations and sounds not listed here are original Ludiko work.",
+    "rightsContact": "Rights holders can contact us at"
   }
 }
