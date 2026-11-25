@@ -15,13 +15,14 @@ vi.mock('@/profiles/profileService', async (importOriginal) => {
   const real = await importOriginal<typeof import('@/profiles/profileService')>()
   return {
     ...real,
-    recordAttempt: vi.fn(async () => ({})),
     addStars: vi.fn(async () => ({})),
     addSticker: vi.fn(async () => ({})),
     getProgress: vi.fn(async () => ({ profileId: 'p1', skills: {}, stars: 0, stickers: ['🦊'], playDays: [] })),
   }
 })
+vi.mock('@/learner', () => ({ learnerService: { recordItemResult: vi.fn(async () => {}) } }))
 import * as svc from '@/profiles/profileService'
+import { learnerService } from '@/learner'
 
 beforeAll(async () => {
   // jsdom has no matchMedia (Confetti reads prefers-reduced-motion)
@@ -118,9 +119,13 @@ describe('useSessionProgress', () => {
       hook.current.onAttempt(result(true), item, { retry: false })
       hook.current.onAttempt(result(false), item, { retry: true })
     })
-    await waitFor(() => expect(svc.recordAttempt).toHaveBeenCalledTimes(2))
-    expect(svc.recordAttempt).toHaveBeenNthCalledWith(1, 'p1', 'skill.a', true)
-    expect(svc.recordAttempt).toHaveBeenNthCalledWith(2, 'p1', 'skill.a', false)
+    await waitFor(() => expect(learnerService.recordItemResult).toHaveBeenCalledTimes(2))
+    const calls = vi.mocked(learnerService.recordItemResult).mock.calls
+    expect(calls[0].slice(0, 2)).toEqual(['p1', item])
+    expect(calls[0][2].correct).toBe(true)
+    expect(calls[0][3]).toEqual({ retry: false, mode: 'practice' })
+    expect(calls[1][2].correct).toBe(false)
+    expect(calls[1][3]).toEqual({ retry: true, mode: 'practice' })
 
     act(() => hook.current.onFinish(summary({ stars: 3 })))
     await waitFor(() => expect(hook.current.reward).not.toBeNull())
@@ -154,7 +159,7 @@ describe('useSessionProgress', () => {
     act(() => hook.current.onAttempt(result(true), item, { retry: false }))
     act(() => hook.current.onFinish(summary({ stars: 3 })))
     await waitFor(() => expect(hook.current.reward).not.toBeNull())
-    expect(svc.recordAttempt).not.toHaveBeenCalled()
+    expect(learnerService.recordItemResult).not.toHaveBeenCalled()
     expect(svc.addStars).not.toHaveBeenCalled()
     expect(svc.addSticker).not.toHaveBeenCalled()
     expect(hook.current.reward).toMatchObject({ saved: false, stars: 3 })

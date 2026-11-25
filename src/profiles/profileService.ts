@@ -2,11 +2,13 @@ import type { Grade } from '@/engine/types'
 import { dbDelete, dbGet, dbGetAll, dbPut } from './db'
 import { generateRecoveryCode, isValidRecoveryCode } from './recoveryCode'
 import {
+  MISSIONS_KEPT,
   NICKNAME_MAX,
   type ChildProfile,
   type ProfileBackup,
   type ProfileLanguage,
   type ProfileProgress,
+  type SkillProgress,
 } from './types'
 
 export { generateRecoveryCode, isValidRecoveryCode } from './recoveryCode'
@@ -119,14 +121,40 @@ export function toDayString(ts: number): string {
   return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`
 }
 
-/** Record one attempt on a skill: attempts/correct/lastSeen/playDays only (no mastery maths). */
-export async function recordAttempt(
-  profileId: string,
-  skillId: string,
-  correct: boolean,
-  now: number = Date.now(),
-): Promise<ProfileProgress> {
-  const progress = await getProgress(profileId)
+const progressLocks = new Map<string, Promise<unknown>>()
+
+/**
+ * Serialised read-modify-write on one profile's progress: every writer goes through here so
+ * concurrent callers (session attempts, mission bookkeeping, stars) never overwrite each other.
+ * `fn` may mutate the progress it gets (and must return the result); it is saved afterwards.
+ */
+export function updateProgress<T>(profileId: string, fn: (progress: ProfileProgress) => T | Promise<T>): Promise<T> {
+  const prev = progressLocks.get(profileId) ?? Promise.resolve()
+  const run = prev
+    .catch(() => {})
+    .then(async () => {
+      const progress = await getProgress(profileId)
+      const result = await fn(progress)
+      await saveProgress(progress)
+      return result
+    })
+  const tail = run.catch(() => {})
+  progressLocks.set(profileId, tail)
+  void tail.then(() => {
+    if (progressLocks.get(profileId) === tail) progressLocks.delete(profileId)
+  })
+  return run
+}
+
+/** Add `now`'s local day to playDays (sorted, unique). */
+export function markPlayDay(progress: ProfileProgress, now: number): void {
+  const day = toDayString(now)
+  if (!progress.playDays.includes(day)) progress.playDays.push(day)
+  progress.playDays.sort()
+}
+
+/** Counters only (attempts/correct/lastSeen) on one skill record; no mastery maths. Mutates `progress`. */
+export function applyAttemptCounters(progress: ProfileProgress, skillId: string, correct: boolean, now: number): SkillProgress {
   const prev = progress.skills[skillId] ?? {
     state: 'unknown' as const,
     pMastery: 0,
@@ -134,31 +162,42 @@ export async function recordAttempt(
     correct: 0,
     lastSeen: now,
   }
-  progress.skills[skillId] = {
+  const next: SkillProgress = {
     ...prev,
     attempts: prev.attempts + 1,
     correct: prev.correct + (correct ? 1 : 0),
     lastSeen: now,
   }
-  const day = toDayString(now)
-  if (!progress.playDays.includes(day)) progress.playDays.push(day)
-  progress.playDays.sort()
-  await saveProgress(progress)
-  return progress
+  progress.skills[skillId] = next
+  return next
+}
+
+/** Record one attempt on a skill: attempts/correct/lastSeen/playDays only (no mastery maths). */
+export async function recordAttempt(
+  profileId: string,
+  skillId: string,
+  correct: boolean,
+  now: number = Date.now(),
+): Promise<ProfileProgress> {
+  return updateProgress(profileId, (progress) => {
+    applyAttemptCounters(progress, skillId, correct, now)
+    markPlayDay(progress, now)
+    return progress
+  })
 }
 
 export async function addStars(profileId: string, n: number): Promise<ProfileProgress> {
-  const progress = await getProgress(profileId)
-  progress.stars = Math.max(0, progress.stars + n)
-  await saveProgress(progress)
-  return progress
+  return updateProgress(profileId, (progress) => {
+    progress.stars = Math.max(0, progress.stars + n)
+    return progress
+  })
 }
 
 export async function addSticker(profileId: string, sticker: string): Promise<ProfileProgress> {
-  const progress = await getProgress(profileId)
-  if (!progress.stickers.includes(sticker)) progress.stickers.push(sticker)
-  await saveProgress(progress)
-  return progress
+  return updateProgress(profileId, (progress) => {
+    if (!progress.stickers.includes(sticker)) progress.stickers.push(sticker)
+    return progress
+  })
 }
 
 // ---------- backup ----------
@@ -229,12 +268,18 @@ export async function importProfile(text: string): Promise<ChildProfile> {
     updatedAt: Date.now(),
   }
   await dbPut('profiles', profile)
+  const g = b.progress
+  const isObj = (v: unknown): v is Record<string, unknown> => typeof v === 'object' && v !== null && !Array.isArray(v)
+  // Optional wave-3 fields: absent in older backups (still version 1), kept when present
   await dbPut('progress', {
     profileId: profile.id,
-    skills: b.progress.skills,
-    stars: Number(b.progress.stars) || 0,
-    stickers: b.progress.stickers,
-    playDays: b.progress.playDays,
+    skills: g.skills,
+    stars: Number(g.stars) || 0,
+    stickers: g.stickers,
+    playDays: g.playDays,
+    ...(isObj(g.placements) ? { placements: g.placements } : {}),
+    ...(isObj(g.levelHistory) ? { levelHistory: g.levelHistory } : {}),
+    ...(Array.isArray(g.missions) ? { missions: g.missions.slice(-MISSIONS_KEPT) } : {}),
   } satisfies ProfileProgress)
   return profile
 }

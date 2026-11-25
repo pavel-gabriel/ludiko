@@ -1,4 +1,5 @@
-import type { Grade, SkillState } from '@/engine/types'
+import type { Grade, SkillState, SubjectId } from '@/engine/types'
+import type { LevelHistoryEntry, Mission, PlacementRecord } from '@/learner/contract'
 
 export type ProfileLanguage = 'ro' | 'en'
 
@@ -21,6 +22,12 @@ export interface SkillProgress {
   correct: number
   lastSeen: number
   nextReview?: number
+  /** Index into the spaced-review ladder (engine MasteryRecord.reviewStep) */
+  reviewStep?: number
+  /** epoch ms of the last failed mastery check — the planner waits 2 days before offering another */
+  checkFailedAt?: number
+  /** epoch ms when `state` last changed (not set by placement seeding) — feeds "improved this week" */
+  stateChangedAt?: number
 }
 
 export interface ProfileProgress {
@@ -30,7 +37,15 @@ export interface ProfileProgress {
   stickers: string[]
   /** YYYY-MM-DD, for the gentle streak */
   playDays: string[]
+  /** Saved placements ("Verifică-te") per subject; absent in data written before wave 3 */
+  placements?: Partial<Record<SubjectId, PlacementRecord>>
+  /** One entry per completed placement, oldest first */
+  levelHistory?: Partial<Record<SubjectId, LevelHistoryEntry[]>>
+  /** Daily missions, oldest first; only the last MISSIONS_KEPT are kept */
+  missions?: Mission[]
 }
+
+export const MISSIONS_KEPT = 14
 
 export interface ProfileBackup {
   app: 'ludiko'

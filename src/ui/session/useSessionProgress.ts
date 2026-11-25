@@ -1,19 +1,25 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { Item, ItemResult } from '@/engine/types'
-import { addStars, addSticker, getProgress, recordAttempt } from '@/profiles/profileService'
+import { learnerService } from '@/learner'
+import { addStars, addSticker, getProgress } from '@/profiles/profileService'
 import { useProfileStore } from '@/store/profileStore'
 import { pickSticker, STICKER_MIN_STARS } from './stickers'
+import type { AttemptMeta as LearnerAttemptMeta } from '@/learner'
 import type { AttemptMeta, SessionReward, SessionSummary } from './types'
 
 /**
  * Connects a session to the active child profile (IndexedDB, offline, no Firebase):
- *  - onAttempt  -> recordAttempt(profileId, item.skillId, correct)
+ *  - onAttempt  -> learnerService.recordItemResult (counters, play days and, unless it is a retry,
+ *                  the mastery update)
  *  - onFinish   -> addStars / addSticker, then exposes `reward` for the results screen
  * With no active profile the child can still play as a guest: nothing is saved,
  * but the results screen still shows what they earned (`reward.saved === false`).
  * Storage errors never break the session.
  */
-export function useSessionProgress() {
+export function useSessionProgress(options: { mode?: LearnerAttemptMeta['mode'] } = {}) {
+  const mode = options.mode ?? 'practice'
+  const modeRef = useRef(mode)
+  modeRef.current = mode
   const activeProfile = useProfileStore((s) => s.activeProfile)
   const loaded = useProfileStore((s) => s.loaded)
   const load = useProfileStore((s) => s.load)
@@ -26,12 +32,13 @@ export function useSessionProgress() {
     if (!loaded) void load().catch(() => {})
   }, [loaded, load])
 
-  const onAttempt = useCallback((result: ItemResult, item: Item, _meta?: AttemptMeta) => {
+  const onAttempt = useCallback((result: ItemResult, item: Item, meta?: AttemptMeta) => {
     const profile = profileRef.current
     if (!profile) return
-    // serialise writes: each recordAttempt is a read-modify-write on the same record
+    // serialise writes: each recordItemResult is a read-modify-write on the same record
+    const attemptMeta: LearnerAttemptMeta = { retry: meta?.retry ?? false, mode: modeRef.current }
     pending.current = pending.current
-      .then(() => recordAttempt(profile.id, item.skillId, result.correct))
+      .then(() => learnerService.recordItemResult(profile.id, item, result, attemptMeta))
       .catch(() => {})
   }, [])
 
