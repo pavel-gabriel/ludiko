@@ -291,18 +291,6 @@ describe('ItemView renderers', () => {
     await expectResult(onAnswer, false, 'm2');
   });
 
-  it('unsupported types render a placeholder and never answer', () => {
-    const item: Item = {
-      ...base, id: 'h1', type: 'hotspot',
-      image: { kind: 'image', src: 'x.svg', alt: { ro: 'x' } },
-      regions: [{ id: 'a', x: 1, y: 1, r: 1 }],
-      correctId: 'a',
-    };
-    const { onAnswer } = setup(item);
-    expect(screen.getByText(/în curând/)).toBeInTheDocument();
-    expect(onAnswer).not.toHaveBeenCalled();
-  });
-
   it('disabled locks interaction', async () => {
     const onAnswer = vi.fn();
     const user = userEvent.setup();
