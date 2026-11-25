@@ -263,7 +263,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 
 ### Phase 1C — Parents & teachers
 - [ ] Optional parent account, sync, weekly plain-language summary
-- [ ] Teacher class view: competence heatmap, groups, assign missions, PDF export
+- [x] Teacher class view: competence heatmap, groups, class-wide assignments, CSV export, seats + join codes (docs/CLASSROOM.md; PDF export and per-group assignments still open)
 - [ ] Live class modes rebuilt on items: Boss battle, Class goal, Race
 
 ### Phase 1D — Other primary subjects

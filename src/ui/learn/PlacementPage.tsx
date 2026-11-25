@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { getSkill } from '@/engine/content/registry'
 import type { Item, SubjectId } from '@/engine/types'
+import { triggerClassSync } from '@/classroom/syncGate'
 import { learnerService } from '@/learner'
 import type { ChildProfile } from '@/profiles/types'
 import { getSessionItems } from '@/ui/session/itemSource'
@@ -81,6 +82,7 @@ function Placement({ profile, subject }: { profile: ChildProfile; subject: Subje
           progressStore.onFinish(COMPLETION_SUMMARY)
         }
         setProgress(1)
+        triggerClassSync(profile.id)
         setPhase({ name: 'done' })
         return
       }

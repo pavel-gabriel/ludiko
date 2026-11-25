@@ -3,6 +3,15 @@ import type { LevelHistoryEntry, Mission, PlacementRecord } from '@/learner/cont
 
 export type ProfileLanguage = 'ro' | 'en'
 
+/** Link to a teacher's class (docs/CLASSROOM.md): set after joining with a seat's join code. */
+export interface ClassLink {
+  classId: string
+  /** Same as joinCode (the seat's document id) */
+  seatId: string
+  joinCode: string
+  className: string
+}
+
 /** Data-minimised child profile: no real name, email or birth date. */
 export interface ChildProfile {
   id: string
@@ -13,6 +22,8 @@ export interface ChildProfile {
   createdAt: number
   updatedAt: number
   recoveryCode: string
+  /** Present once the device joined a class; the progress summary is synced to it */
+  classLink?: ClassLink
 }
 
 export interface SkillProgress {

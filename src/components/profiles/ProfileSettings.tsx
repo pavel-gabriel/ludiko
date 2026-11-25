@@ -4,6 +4,7 @@ import Button from '@/components/ui/Button'
 import { useProfileStore } from '@/store/profileStore'
 import { downloadBackup, exportProfile } from '@/profiles/profileService'
 import type { ChildProfile } from '@/profiles/types'
+import ClassLinkSection from './ClassLinkSection'
 
 interface Props {
   profile: ChildProfile
@@ -46,6 +47,8 @@ export default function ProfileSettings({ profile, onEdit, onClose }: Props) {
       </div>
 
       <Button variant="blue" onClick={onEdit}>{t('profiles.edit')}</Button>
+
+      <ClassLinkSection profile={profile} />
 
       <div>
         <Button variant="green" className="w-full" onClick={doExport}>{t('profiles.export')}</Button>

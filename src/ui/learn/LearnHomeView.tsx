@@ -3,6 +3,8 @@ import type { TFunction } from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import type { SubjectId } from '@/engine/types'
+import type { AssignmentBit } from '@/learner'
+import AssignmentCard from './AssignmentCard'
 import BitTiles, { type HomeBit } from './BitTiles'
 import ProgressBar from './ProgressBar'
 import { subjectEmoji } from './subjects'
@@ -21,6 +23,8 @@ export interface LearnHomeViewProps {
   stars: number
   playDays: number
   subjects: SubjectHome[]
+  /** Assignments from the child's class (docs/CLASSROOM.md), shown as an extra bit; absent without a class link */
+  assignments?: AssignmentBit[]
 }
 
 /** "N zile de joacă" with the language's own plural form; zero is an invitation, never a reset message */
@@ -44,7 +48,7 @@ function BigCard({ to, tone, icon, children, testId }: { to: string; tone: strin
 }
 
 /** The learner's front door: greeting, stars, gentle streak, and one big card per thing to do */
-export default function LearnHomeView({ profile, stars, playDays, subjects }: LearnHomeViewProps) {
+export default function LearnHomeView({ profile, stars, playDays, subjects, assignments }: LearnHomeViewProps) {
   const { t, i18n } = useTranslation()
   const streak = streakText(t, i18n.language, playDays)
   const multi = subjects.length > 1
@@ -73,6 +77,8 @@ export default function LearnHomeView({ profile, stars, playDays, subjects }: Le
           {streak}
         </span>
       </div>
+
+      {assignments && assignments.length > 0 && <AssignmentCard assignments={assignments} />}
 
       {subjects.map((s) => (
         <section key={s.subject} className="flex flex-col gap-3" aria-label={t(`learn.subject.${s.subject}`)}>
