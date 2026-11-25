@@ -27,6 +27,7 @@ import {
   TemplatesPage,
 } from '@/components/teacher';
 import AdminDashboard from '@/components/admin/AdminDashboard';
+import ItemsPreviewPage from '@/ui/items/ItemsPreviewPage';
 
 /** All application routes — add new pages here */
 export default function AppRoutes() {
@@ -46,6 +47,7 @@ export default function AppRoutes() {
       <Route path="/interactive" element={<InteractiveSetupPage />} />
       <Route path="/game" element={<GameRouter />} />
       <Route path="/game/interactive" element={<InteractiveGamePage />} />
+      <Route path="/dev/items" element={<ItemsPreviewPage />} />
 
       {/* Admin route — PIN-protected, owner only */}
       <Route path="/admin" element={<AdminDashboard />} />
