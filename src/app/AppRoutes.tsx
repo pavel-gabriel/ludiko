@@ -12,6 +12,8 @@ import RouteFallback from '@/components/ui/RouteFallback';
  */
 const ItemsPreviewPage = lazy(() => import('@/ui/items/ItemsPreviewPage'));
 const FramesPreviewPage = lazy(() => import('@/ui/frames/FramesPreviewPage'));
+const PracticeListPage = lazy(() => import('@/ui/session/PracticeListPage'));
+const PracticePage = lazy(() => import('@/ui/session/PracticePage'));
 const ProfilePickerPage = lazy(() => import('@/components/profiles/ProfilePickerPage'));
 const SinglePlayerPage = lazy(() => import('@/components/lobby/SinglePlayerPage'));
 const MultiplayerPage = lazy(() => import('@/components/lobby/MultiplayerPage'));
@@ -50,6 +52,10 @@ export default function AppRoutes() {
           {/* Player routes */}
           <Route path="/" element={<HomePage />} />
           <Route path="/profiles" element={<ProfilePickerPage />} />
+
+          {/* Practice sessions (Phase 1A) */}
+          <Route path="/practice" element={<PracticeListPage />} />
+          <Route path="/practice/:skillId" element={<PracticePage />} />
 
           {/* Dev previews (Phase 0) */}
           <Route path="/dev/frames" element={<FramesPreviewPage />} />

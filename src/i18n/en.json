@@ -459,5 +459,72 @@
       "fraction": "fraction: {{n}}/{{d}}",
       "image": "image"
     }
+  },
+  "session": {
+    "mode": {
+      "practice": "Practise",
+      "sprint": "Sprint",
+      "check": "Check"
+    },
+    "pickMode": "How do you want to practise?",
+    "practiceDesc": "One exercise at a time, at your own pace. If you slip, we show you how it works.",
+    "sprintDesc": "Answer as fast as you can while the clock runs.",
+    "sprintReady": "Ready?",
+    "sprintRules": "You have {{n}} seconds. Answer as many as you can!",
+    "sprintCount": "Correct answers: {{n}}",
+    "start": "Start!",
+    "timeLeft": "{{n}} seconds left",
+    "progress": "Exercise {{current}} of {{total}}",
+    "retryBadge": "One more try",
+    "explainIntro": "No problem! We'll try this one again a little later.",
+    "skipExplanation": "Skip",
+    "exit": "Leave the exercise",
+    "pauseTitle": "Take a break?",
+    "pauseBody": "Your answers so far are kept.",
+    "keepGoing": "Keep going",
+    "leave": "That's enough for today",
+    "empty": "We're still preparing exercises for this skill. Come back soon!",
+    "back": "Back",
+    "skillMissing": "We couldn't find this skill.",
+    "playingAs": "Playing as {{name}}",
+    "guestNote": "You're playing as a guest, so stars are not saved.",
+    "pickProfile": "Choose a profile",
+    "list": {
+      "title": "What shall we practise today?",
+      "subtitle": "Pick a skill and let's begin.",
+      "items": "Exercises: {{n}}",
+      "soon": "coming soon"
+    },
+    "results": {
+      "starsLabel": "{{n}} out of 3 stars",
+      "timeUp": "Time's up!",
+      "three": {
+        "title": "Wonderful!",
+        "body": "That went really well. You're ready for the next step!"
+      },
+      "two": {
+        "title": "Very good!",
+        "body": "You're on the right track. A little more practice and it will be perfect."
+      },
+      "one": {
+        "title": "Well done for trying!",
+        "body": "Every exercise helps you grow. Next time will be even easier."
+      },
+      "none": {
+        "title": "No worries!",
+        "body": "We'll try again when you're ready."
+      },
+      "score": "Right on the first try: {{correct}} out of {{total}}",
+      "sprintScore": "Correct answers: {{correct}} out of {{total}}",
+      "stickerTitle": "You unlocked a sticker!",
+      "stickerOwned": "You already have this sticker",
+      "stickerBody": "We added it to your collection.",
+      "stickerGuest": "Choose a profile to keep it next time.",
+      "reviewTitle": "To practise more",
+      "reviewHint": "You can try these once more:",
+      "reviewNone": "Nothing to repeat. Excellent!",
+      "again": "Once more",
+      "done": "That's enough for today"
+    }
   }
 }
