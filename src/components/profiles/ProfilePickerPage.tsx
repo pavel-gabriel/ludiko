@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import Button from '@/components/ui/Button'
+import FamilyImportPrompt from '@/components/family/FamilyImportPrompt'
+import { familyAvailable } from '@/family/api'
+import { useFamilySession } from '@/family/useFamilySession'
 import ProfileForm from './ProfileForm'
 import ProfileSettings from './ProfileSettings'
 import { useProfileStore } from '@/store/profileStore'
@@ -21,6 +25,7 @@ export default function ProfilePickerPage() {
   const { profiles, activeProfile, loaded, load, create, update, setActive } = useProfileStore()
   const [view, setView] = useState<View>({ name: 'pick' })
   const [managing, setManaging] = useState(false)
+  const family = useFamilySession()
 
   useEffect(() => {
     if (!loaded) void load()
@@ -100,6 +105,7 @@ export default function ProfilePickerPage() {
           </p>
         )}
         {profiles.length === 0 && loaded && <p className="text-center opacity-80">{t('profiles.empty')}</p>}
+        {family && !family.accepted && <FamilyImportPrompt className="w-full" />}
         <div className="grid grid-cols-2 gap-4 w-full">
           {profiles.map((p) => (
             <button
@@ -107,10 +113,21 @@ export default function ProfilePickerPage() {
               type="button"
               onClick={() => choose(p)}
               aria-pressed={activeProfile?.id === p.id}
-              className={`bg-white rounded-3xl shadow-md p-4 flex flex-col items-center gap-1 min-h-[9rem] active:scale-95 transition-transform ${
+              className={`relative bg-white rounded-3xl shadow-md p-4 flex flex-col items-center gap-1 min-h-[9rem] active:scale-95 transition-transform ${
                 activeProfile?.id === p.id ? 'ring-4 ring-ludiko-purple' : ''
               }`}
             >
+              {family?.syncedIds.includes(p.id) && (
+                <span
+                  role="img"
+                  aria-label={t('family.badge')}
+                  title={t('family.badge')}
+                  data-testid={`cloud-badge-${p.id}`}
+                  className="absolute right-3 top-2 text-xl leading-none"
+                >
+                  ☁️
+                </span>
+              )}
               <span className="text-6xl" aria-hidden="true">{p.avatar}</span>
               <span className="font-extrabold text-lg max-w-full truncate">{p.nickname}</span>
               <span className="text-xs opacity-70">{t(`profiles.gradeLabels.${p.grade}`)}</span>
@@ -129,6 +146,12 @@ export default function ProfilePickerPage() {
           {t('profiles.manage')}
         </Button>
         <p className="text-xs opacity-60 text-center">{t('profiles.privacy')}</p>
+        {/* a brand-new device: a parent can sign in to bring the children over (no account UI otherwise) */}
+        {profiles.length === 0 && loaded && !family && familyAvailable() && (
+          <Link to="/learn/account" className="min-h-[44px] text-sm font-bold underline text-center" data-testid="family-profiles-link">
+            {t('family.profilesLink')}
+          </Link>
+        )}
       </div>
     )
   }
