@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import type { Explanation, MediaRef } from '@/engine/types'
 import { localize } from '@/engine/types'
 import Visual from '@/ui/visuals/Visual'
+import ReadAloudButton from '@/ui/speech/ReadAloudButton'
 import { resolveMediaSrc } from '@/ui/visuals/ImageVisual'
 import './frames.css'
 
@@ -176,6 +177,10 @@ function Player({ explanation, onDone }: Props) {
           )}
           <p className="text-center text-xl font-bold leading-snug text-ludiko-text sm:text-2xl">{localize(frame.text, lang)}</p>
         </div>
+      </div>
+
+      <div className="mt-3 flex justify-center empty:hidden">
+        <ReadAloudButton key={index} text={localize(frame.text, lang)} />
       </div>
 
       {frame.audio && (

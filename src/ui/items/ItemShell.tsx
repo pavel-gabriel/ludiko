@@ -1,6 +1,7 @@
 import { useEffect, useId, useRef, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { localize, type CardContent, type Item, type ItemResult } from '@/engine/types';
+import ReadAloudButton from '@/ui/speech/ReadAloudButton';
 import VisualSlot from './VisualSlot';
 
 /** Text + optional visual of one card/option */
@@ -48,11 +49,13 @@ interface ItemShellProps {
   correctAnswer: ReactNode;
   /** Short how-to line under the prompt (for multi-step types) */
   hint?: string;
+  /** Skip the small narration button (the renderer provides its own big one) */
+  hideAudio?: boolean;
   children: ReactNode;
 }
 
 /** Card frame: prompt, optional visual/audio, the interaction, and the feedback panel */
-export default function ItemShell({ item, result, onContinue, correctAnswer, hint, children }: ItemShellProps) {
+export default function ItemShell({ item, result, onContinue, correctAnswer, hint, hideAudio, children }: ItemShellProps) {
   const { t, i18n } = useTranslation();
   const promptId = useId();
   const continueRef = useRef<HTMLButtonElement>(null);
@@ -73,8 +76,9 @@ export default function ItemShell({ item, result, onContinue, correctAnswer, hin
           <h2 id={promptId} className="text-xl font-extrabold leading-snug text-ludiko-text sm:text-2xl">
             {localize(item.prompt, i18n.language)}
           </h2>
-          {item.audio && <AudioButton src={item.audio.src} />}
+          {item.audio && !hideAudio && <AudioButton src={item.audio.src} />}
         </div>
+        <ReadAloudButton text={localize(item.prompt, i18n.language)} />
         {item.visual && <VisualSlot spec={item.visual} />}
         {hint && <p className="text-sm font-semibold text-gray-500">{hint}</p>}
       </div>

@@ -6,6 +6,9 @@ import NumberInputItemView from './NumberInputItemView';
 import OrderItemView from './OrderItemView';
 import SortItemView from './SortItemView';
 import TrueFalseItemView from './TrueFalseItemView';
+import HotspotItemView from './HotspotItemView';
+import ListenAndAnswerItemView from './ListenAndAnswerItemView';
+import ReadAndAnswerItemView from './ReadAndAnswerItemView';
 import UnsupportedItemView from './UnsupportedItemView';
 
 export interface ItemViewProps {
@@ -36,7 +39,16 @@ export default function ItemView({ item, onAnswer, disabled, feedbackMs }: ItemV
       return <SortItemView key={item.id} item={item} {...common} />;
     case 'match':
       return <MatchItemView key={item.id} item={item} {...common} />;
-    default:
-      return <UnsupportedItemView key={item.id} item={item} />;
+    case 'hotspot':
+      return <HotspotItemView key={item.id} item={item} {...common} />;
+    case 'read-and-answer':
+      return <ReadAndAnswerItemView key={item.id} item={item} {...common} />;
+    case 'listen-and-answer':
+      return <ListenAndAnswerItemView key={item.id} item={item} {...common} />;
+    default: {
+      // Exhaustive today; kept as a safety net for item types added to the model later
+      const unknown = item as Item;
+      return <UnsupportedItemView key={unknown.id} item={unknown} />;
+    }
   }
 }
