@@ -1,5 +1,7 @@
 # 🎮 Ludiko — Finalized Requirements Document
 
+> ⚠️ **v1 document.** Product direction is superseded by [`docs/PLAN.md`](docs/PLAN.md) (v2: gap-finding tutor). Kept for reference on the existing v1 features.
+
 > **Version:** 1.0 — Finalized after structured requirements interview
 > **Last updated:** February 2026
 
