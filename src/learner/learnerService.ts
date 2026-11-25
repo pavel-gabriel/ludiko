@@ -18,6 +18,8 @@ import {
 } from '@/profiles/profileService';
 import type { ChildProfile } from '@/profiles/types';
 import type { LearnerService, Mission } from './contract';
+import { readCachedAssignments } from '@/classroom/assignmentCache';
+import { deriveAssignmentBits } from './assignmentOps';
 import { deriveBits } from './bitOps';
 import { masteryAfterItem, stampStateChange, withPrior } from './masteryOps';
 import { findMission, planDay, storeMission } from './missionOps';
@@ -137,5 +139,14 @@ export const learnerService: LearnerService = {
   async getParentSummary(profileId, now = Date.now()) {
     const profile = await requireProfile(profileId);
     return buildParentSummary(await getProgress(profileId), profile, now);
+  },
+
+  async getClassAssignments(profileId, now = Date.now()) {
+    const profile = await getProfile(profileId);
+    if (!profile?.classLink) return [];
+    const cached = readCachedAssignments(profile.classLink.classId);
+    if (cached.length === 0) return [];
+    const progress = await getProgress(profileId);
+    return deriveAssignmentBits(cached, (id) => progress.skills[id]?.state, now);
   },
 };

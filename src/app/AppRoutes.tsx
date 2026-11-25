@@ -42,6 +42,12 @@ const SessionDetail = lazy(() => import('@/components/teacher/SessionDetail'));
 const TeacherLiveDashboard = lazy(() => import('@/components/teacher/TeacherLiveDashboard'));
 const SessionResults = lazy(() => import('@/components/teacher/SessionResults'));
 const TemplatesPage = lazy(() => import('@/components/teacher/TemplatesPage'));
+// Classroom (docs/CLASSROOM.md): classes, heatmap, assignments; the child's class assignment page
+const ClassesPage = lazy(() => import('@/components/teacher/classes/ClassesPage'));
+const ClassPage = lazy(() => import('@/components/teacher/classes/ClassPage'));
+const ClassCodesPage = lazy(() => import('@/components/teacher/classes/ClassCodesPage'));
+const ClassAssignmentPage = lazy(() => import('@/ui/learn/ClassAssignmentPage'));
+const DevClassroomPage = lazy(() => import('@/classroom/dev/DevClassroomPage'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -71,9 +77,11 @@ export default function AppRoutes() {
           <Route path="/learn/bit/:subject/:index" element={<BitPage />} />
           <Route path="/learn/map/:subject" element={<SkillMapPage />} />
           <Route path="/learn/parent" element={<ParentPage />} />
+          <Route path="/learn/class/:assignmentId" element={<ClassAssignmentPage />} />
 
           {/* Dev previews (Phase 0) */}
           <Route path="/dev/learn" element={<LearnPreviewPage />} />
+          <Route path="/dev/classroom" element={<DevClassroomPage />} />
           <Route path="/dev/frames" element={<FramesPreviewPage />} />
           <Route path="/dev/items" element={<ItemsPreviewPage />} />
           <Route path="/singleplayer" element={<SinglePlayerPage />} />
@@ -99,6 +107,9 @@ export default function AppRoutes() {
           <Route path="/teacher/live/:sessionId" element={<TeacherLiveDashboard />} />
           <Route path="/teacher/results/:sessionId" element={<SessionResults />} />
           <Route path="/teacher/templates" element={<TemplatesPage />} />
+          <Route path="/teacher/classes" element={<ClassesPage />} />
+          <Route path="/teacher/classes/:classId" element={<ClassPage />} />
+          <Route path="/teacher/classes/:classId/codes" element={<ClassCodesPage />} />
         </Routes>
       </Suspense>
     </>

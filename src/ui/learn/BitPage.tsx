@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { getSkill } from '@/engine/content/registry'
 import { localize, type Item, type SubjectId } from '@/engine/types'
+import { triggerClassSync } from '@/classroom/syncGate'
 import { learnerService, type Bit } from '@/learner'
 import type { ChildProfile } from '@/profiles/types'
 import { hasPushSubscription } from '@/services/pushAvailability'
@@ -117,6 +118,7 @@ function BitRunner({ profile, subject, index }: { profile: ChildProfile; subject
       const pending = bits.filter((b) => !b.done && b.index !== bit.index)
       const nextIndex = (pending.find((b) => b.index > bit.index) ?? pending[0])?.index
       reportPlayedToday()
+      triggerClassSync(profile.id)
       setView({
         name: 'done',
         stars: averageStars(earned.current),

@@ -1,6 +1,7 @@
 import { vi } from 'vitest'
 import { deriveBits } from '@/learner/bitOps'
 import type {
+  AssignmentBit,
   LearnerService,
   LevelHistoryEntry,
   Mission,
@@ -42,6 +43,8 @@ export interface FakeState {
   history: LevelHistoryEntry[]
   /** What applyMasteryCheck answers */
   checkPassed: boolean
+  /** Class assignments getClassAssignments returns */
+  assignments: AssignmentBit[]
 }
 
 export function freshState(): FakeState {
@@ -67,6 +70,7 @@ export function freshState(): FakeState {
     },
     history: [],
     checkPassed: true,
+    assignments: [],
   }
 }
 
@@ -114,6 +118,7 @@ export const fakeLearner = {
   getSkillMap: vi.fn(async () => clone(state.map)),
   getLevelHistory: vi.fn(async () => clone(state.history)),
   getParentSummary: vi.fn(async () => clone(state.summary)),
+  getClassAssignments: vi.fn(async () => clone(state.assignments)),
 } satisfies LearnerService
 
 /** Reset scripted data and call history between tests */

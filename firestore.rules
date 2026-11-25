@@ -132,5 +132,162 @@ service cloud.firestore {
       allow update, delete: if request.auth != null
                             && resource.data.teacherUid == request.auth.uid;
     }
+
+    // ===== BEGIN Classroom (docs/CLASSROOM.md §2-§3): classes, seats, progress, assignments, joinCodes =====
+    //
+    // Seat-join approach: seat id == join code (6 chars, globally unique). A device that knows a code
+    //  1. reads `joinCodes/{code}` (get only, `list` is denied, so codes cannot be enumerated) to learn
+    //     the classId and class name, then
+    //  2. flips its seat once from linked=false to linked=true (nothing else may change), and
+    //  3. may then write `classes/{classId}/progress/{code}` while that seat is linked.
+    // Possession of the code is the capability; a teacher "unlink" deletes the seat and issues a new code.
+    // Known limits (rules cannot loop): values inside `subjects.*.skills` are checked as a set, not per key,
+    // and skillIds elements of an assignment are not type-checked individually.
+
+    function isTeacherOf(classId) {
+      return request.auth != null
+          && get(/databases/$(database)/documents/classes/$(classId)).data.teacherUid == request.auth.uid;
+    }
+
+    function validJoinCode(code) {
+      return code.matches('^[A-HJKMNP-Z2-9]{6}$');
+    }
+
+    match /classes/{classId} {
+      function validClass(d) {
+        return d.keys().hasAll(['teacherUid', 'name', 'grade', 'createdAt'])
+            && d.keys().hasOnly(['teacherUid', 'name', 'grade', 'createdAt'])
+            && d.teacherUid is string
+            && d.name is string && d.name.size() >= 1 && d.name.size() <= 60
+            && d.grade is int && d.grade >= 0 && d.grade <= 8
+            && d.createdAt is number;
+      }
+
+      // Only the teacher sees the class document; children get the class name from joinCodes/{code}.
+      allow get: if request.auth != null
+                 && (resource == null || resource.data.teacherUid == request.auth.uid);
+      allow list: if request.auth != null && resource.data.teacherUid == request.auth.uid;
+      // Real (non-anonymous) accounts only: a child's anonymous session cannot create classes.
+      allow create: if request.auth != null
+                    && request.auth.token.firebase.sign_in_provider != 'anonymous'
+                    && request.resource.data.teacherUid == request.auth.uid
+                    && validClass(request.resource.data);
+      allow update: if request.auth != null
+                    && resource.data.teacherUid == request.auth.uid
+                    && request.resource.data.teacherUid == resource.data.teacherUid
+                    && validClass(request.resource.data);
+      allow delete: if request.auth != null && resource.data.teacherUid == request.auth.uid;
+
+      match /seats/{seatId} {
+        function validSeat(d) {
+          return d.keys().hasAll(['label', 'joinCode', 'linked'])
+              && d.keys().hasOnly(['label', 'joinCode', 'linked', 'linkedAt'])
+              && d.label is string && d.label.size() >= 1 && d.label.size() <= 20
+              && validJoinCode(seatId)
+              && d.joinCode == seatId
+              && d.linked is bool
+              && (!('linkedAt' in d) || d.linkedAt is number);
+        }
+
+        allow read: if isTeacherOf(classId);
+        allow create: if isTeacherOf(classId)
+                      && validSeat(request.resource.data)
+                      && request.resource.data.linked == false
+                      && !('linkedAt' in request.resource.data);
+        allow update: if (isTeacherOf(classId)
+                          && validSeat(request.resource.data)
+                          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['label']))
+                      // the join: any signed-in device, once, linked false -> true, nothing else changes
+                      || (request.auth != null
+                          && validSeat(request.resource.data)
+                          && resource.data.linked == false
+                          && request.resource.data.linked == true
+                          && request.resource.data.linkedAt is number
+                          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['linked', 'linkedAt']));
+        allow delete: if isTeacherOf(classId);
+      }
+
+      // The skill-state summary a linked device shares. Never: nickname, avatar, recovery code, answers.
+      match /progress/{seatId} {
+        function seatIsLinked() {
+          return get(/databases/$(database)/documents/classes/$(classId)/seats/$(seatId)).data.linked == true;
+        }
+
+        function validSubjectProgress(s) {
+          return s is map
+              && s.keys().hasAll(['skills'])
+              && s.keys().hasOnly(['level', 'missingCount', 'skills'])
+              && s.skills is map
+              && s.skills.size() <= 400
+              && s.skills.values().hasOnly(['unknown', 'gap', 'learning', 'practised', 'mastered'])
+              && (!('level' in s)
+                  || (s.level is map
+                      && s.level.keys().hasOnly(['grade', 'semester'])
+                      && s.level.keys().hasAll(['grade', 'semester'])
+                      && s.level.grade is int && s.level.grade >= 0 && s.level.grade <= 8
+                      && s.level.semester in [1, 2]))
+              && (!('missingCount' in s)
+                  || (s.missingCount is int && s.missingCount >= 0 && s.missingCount <= 1000));
+        }
+
+        function validProgress(d) {
+          return d.keys().hasAll(['subjects', 'playDaysThisWeek', 'updatedAt'])
+              && d.keys().hasOnly(['subjects', 'playDaysThisWeek', 'updatedAt'])
+              && d.subjects is map
+              && d.subjects.keys().hasOnly(['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'])
+              && (!('mat' in d.subjects) || validSubjectProgress(d.subjects.mat))
+              && (!('rom' in d.subjects) || validSubjectProgress(d.subjects.rom))
+              && (!('stiinte' in d.subjects) || validSubjectProgress(d.subjects.stiinte))
+              && (!('ist' in d.subjects) || validSubjectProgress(d.subjects.ist))
+              && (!('geo' in d.subjects) || validSubjectProgress(d.subjects.geo))
+              && (!('civ' in d.subjects) || validSubjectProgress(d.subjects.civ))
+              && (!('logic' in d.subjects) || validSubjectProgress(d.subjects.logic))
+              && d.playDaysThisWeek is int && d.playDaysThisWeek >= 0 && d.playDaysThisWeek <= 7
+              && d.updatedAt is number;
+        }
+
+        allow read: if isTeacherOf(classId);
+        allow create, update: if request.auth != null
+                              && validJoinCode(seatId)
+                              && seatIsLinked()
+                              && validProgress(request.resource.data);
+        // the teacher clears it; a child can erase their own summary when leaving the class
+        allow delete: if isTeacherOf(classId)
+                      || (request.auth != null && exists(/databases/$(database)/documents/classes/$(classId)/seats/$(seatId)));
+      }
+
+      match /assignments/{assignmentId} {
+        function validAssignment(d) {
+          return d.keys().hasAll(['subject', 'skillIds', 'title', 'dueDay', 'createdAt'])
+              && d.keys().hasOnly(['subject', 'skillIds', 'title', 'dueDay', 'createdAt'])
+              && d.subject in ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic']
+              && d.skillIds is list && d.skillIds.size() >= 1 && d.skillIds.size() <= 10
+              && d.title is string && d.title.size() >= 1 && d.title.size() <= 60
+              && d.dueDay is string && d.dueDay.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')
+              && d.createdAt is number;
+        }
+
+        // a linked device reads by classId (an unguessable id it got from the join); no personal data in here
+        allow read: if request.auth != null;
+        allow create, update: if isTeacherOf(classId) && validAssignment(request.resource.data);
+        allow delete: if isTeacherOf(classId);
+      }
+    }
+
+    // Index used to join: get by code only. No list, no update (a taken code makes the batch fail and a new code is drawn).
+    match /joinCodes/{code} {
+      allow get: if request.auth != null && validJoinCode(code);
+      allow list: if false;
+      allow create: if validJoinCode(code)
+                    && request.resource.data.keys().hasAll(['classId', 'className'])
+                    && request.resource.data.keys().hasOnly(['classId', 'className'])
+                    && request.resource.data.classId is string
+                    && request.resource.data.className is string
+                    && request.resource.data.className.size() <= 60
+                    && isTeacherOf(request.resource.data.classId);
+      allow update: if false;
+      allow delete: if resource == null || isTeacherOf(resource.data.classId);
+    }
+    // ===== END Classroom =====
   }
 }
