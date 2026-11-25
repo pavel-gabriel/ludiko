@@ -1,0 +1,112 @@
+[
+  {
+    "id": "font-opendyslexic",
+    "kind": "font",
+    "title": "OpenDyslexic",
+    "author": "Abbie Gonzalez",
+    "source": "open-licence",
+    "licence": "OFL-1.1",
+    "url": "https://fontsource.org/fonts/opendyslexic",
+    "licenceUrl": "https://openfontlicense.org/open-font-license-official-text/",
+    "retrieved": "2026-11-25",
+    "version": "5.2.5",
+    "modified": false,
+    "notes": "Reserved Font Name \"OpenDyslexic\". Distributed via the @fontsource/opendyslexic package."
+  },
+  {
+    "id": "lib-react",
+    "kind": "library",
+    "title": "React",
+    "author": "Meta Platforms, Inc. and affiliates",
+    "source": "open-licence",
+    "licence": "MIT",
+    "url": "https://react.dev/",
+    "licenceUrl": "https://github.com/facebook/react/blob/main/LICENSE",
+    "retrieved": "2026-11-25",
+    "version": "19.2.4"
+  },
+  {
+    "id": "lib-react-dom",
+    "kind": "library",
+    "title": "React DOM",
+    "author": "Meta Platforms, Inc. and affiliates",
+    "source": "open-licence",
+    "licence": "MIT",
+    "url": "https://react.dev/",
+    "licenceUrl": "https://github.com/facebook/react/blob/main/LICENSE",
+    "retrieved": "2026-11-25",
+    "version": "19.2.4"
+  },
+  {
+    "id": "lib-react-router",
+    "kind": "library",
+    "title": "React Router",
+    "author": "React Training LLC, Remix Software Inc., Shopify Inc.",
+    "source": "open-licence",
+    "licence": "MIT",
+    "url": "https://reactrouter.com/",
+    "licenceUrl": "https://github.com/remix-run/react-router/blob/main/LICENSE.md",
+    "retrieved": "2026-11-25",
+    "version": "7.13.0"
+  },
+  {
+    "id": "lib-i18next",
+    "kind": "library",
+    "title": "i18next",
+    "author": "i18next",
+    "source": "open-licence",
+    "licence": "MIT",
+    "url": "https://www.i18next.com",
+    "licenceUrl": "https://github.com/i18next/i18next/blob/master/LICENSE",
+    "retrieved": "2026-11-25",
+    "version": "24.2.3"
+  },
+  {
+    "id": "lib-react-i18next",
+    "kind": "library",
+    "title": "react-i18next",
+    "author": "i18next",
+    "source": "open-licence",
+    "licence": "MIT",
+    "url": "https://github.com/i18next/react-i18next",
+    "licenceUrl": "https://github.com/i18next/react-i18next/blob/master/LICENSE",
+    "retrieved": "2026-11-25",
+    "version": "15.7.4"
+  },
+  {
+    "id": "lib-i18next-detector",
+    "kind": "library",
+    "title": "i18next-browser-languagedetector",
+    "author": "i18next",
+    "source": "open-licence",
+    "licence": "MIT",
+    "url": "https://github.com/i18next/i18next-browser-languageDetector",
+    "licenceUrl": "https://github.com/i18next/i18next-browser-languageDetector/blob/master/LICENSE",
+    "retrieved": "2026-11-25",
+    "version": "8.2.1"
+  },
+  {
+    "id": "lib-zustand",
+    "kind": "library",
+    "title": "Zustand",
+    "author": "Paul Henschel",
+    "source": "open-licence",
+    "licence": "MIT",
+    "url": "https://github.com/pmndrs/zustand",
+    "licenceUrl": "https://github.com/pmndrs/zustand/blob/main/LICENSE",
+    "retrieved": "2026-11-25",
+    "version": "5.0.11"
+  },
+  {
+    "id": "lib-firebase",
+    "kind": "library",
+    "title": "Firebase JavaScript SDK",
+    "author": "Google LLC",
+    "source": "open-licence",
+    "licence": "Apache-2.0",
+    "url": "https://firebase.google.com/",
+    "licenceUrl": "https://github.com/firebase/firebase-js-sdk/blob/main/LICENSE",
+    "retrieved": "2026-11-25",
+    "version": "11.10.0"
+  }
+]

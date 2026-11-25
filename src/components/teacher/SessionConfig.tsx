@@ -402,6 +402,7 @@ export default function SessionConfig() {
               + {t('teacher.addQuestion')}
             </button>
           </div>
+          <p className="text-xs text-gray-500 mb-2">{t('teacher.customQuestionsOwnWork')}</p>
           {customQuestions.length === 0 && (
             <p className="text-xs text-gray-400">{t('teacher.noCustomQuestions')}</p>
           )}

@@ -82,3 +82,9 @@ export const MEMORY_EMOJIS = [
 
 /** Timed Sprint total duration in seconds */
 export const TIMED_SPRINT_DURATION = 60;
+
+/**
+ * Public contact for copyright / rights-holder requests, shown on /credits.
+ * Consider a dedicated address before public launch (docs/LEGAL_CONTENT_POLICY.md §9).
+ */
+export const RIGHTS_CONTACT = 'pavel.gabriell@yahoo.com';

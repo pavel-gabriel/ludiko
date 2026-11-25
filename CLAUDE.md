@@ -11,6 +11,10 @@
 - **Read `docs/PLAN.md` first** — Ludiko is becoming a free tutor that checks a child's level, finds gaps
   (skill graph across grades, tagged with RO programa competences) and fixes them through play; offline-first PWA.
 - Evidence/market: `docs/MARKET_RESEARCH.md`. Track roadmap progress via the checkboxes in `docs/PLAN.md` §13.
+- **Content & IP rules are mandatory: `docs/LEGAL_CONTENT_POLICY.md`.** Never copy textbook/workbook/exam
+  text or images; only own, CC0/CC BY/CC BY-SA, public-domain or official-text material (no NC/ND, no GPL in
+  the bundle). Every third-party asset/library goes in `content/credits.json`; `provenance` on content records;
+  enforced by `tests/contentPolicy.test.ts` (runs before deploy).
 - Current code below is v1; games will be rebuilt as modes over a shared item model.
 
 ## Architecture

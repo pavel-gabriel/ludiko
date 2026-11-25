@@ -235,6 +235,22 @@
     "templateNamePlaceholder": "Numele șablonului",
     "saveTemplate": "Salvează Șablon",
     "duplicateTemplateName": "Există deja un șablon cu acest nume",
-    "saveError": "Salvarea a eșuat. Încearcă din nou."
+    "saveError": "Salvarea a eșuat. Încearcă din nou.",
+    "customQuestionsOwnWork": "Scrieți întrebări proprii — vă rugăm să nu copiați exerciții din manuale, culegeri sau subiecte de examen."
+  },
+  "credits": {
+    "title": "Credite și licențe",
+    "intro": "Ludiko folosește aceste lucrări deschise. Mulțumim autorilor lor!",
+    "kind": {
+      "image": "Imagini",
+      "audio": "Sunete",
+      "text": "Texte",
+      "font": "Fonturi",
+      "library": "Biblioteci software",
+      "data": "Date"
+    },
+    "modified": "modificat de Ludiko",
+    "ownContent": "Toate întrebările, explicațiile, ilustrațiile și sunetele care nu apar aici sunt create de Ludiko.",
+    "rightsContact": "Deținătorii de drepturi ne pot contacta la"
   }
 }
