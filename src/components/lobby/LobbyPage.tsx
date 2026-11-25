@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import CloseButton from '@/components/ui/CloseButton';
@@ -47,8 +47,7 @@ export default function LobbyPage() {
   }, [room?.id]);
 
   if (!room || !currentPlayer) {
-    navigate('/');
-    return null;
+    return <Navigate to="/" replace />;
   }
 
   const isHost = currentPlayer.isHost;

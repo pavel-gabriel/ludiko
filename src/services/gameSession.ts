@@ -35,14 +35,15 @@ function buildProgress(playerIds: string[]): Record<string, number> {
   return progress;
 }
 
-/** Write the initial game state for Math Race */
+/** Write the initial game state for numeric games (Math Race, Counting, Sequence) */
 export async function initMathGameState(
   roomId: string,
   questions: Question[],
   playerIds: string[],
+  gameType: GameType = 'mathRace',
 ): Promise<void> {
   const gameState: RTDBGameState = {
-    gameType: 'mathRace',
+    gameType,
     questions,
     currentIndex: 0,
     progress: buildProgress(playerIds),

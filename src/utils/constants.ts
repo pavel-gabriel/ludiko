@@ -1,4 +1,4 @@
-import type { Difficulty, GameSettings, GameType } from './types';
+import type { Difficulty, GameCategory, GameSettings, GameType } from './types';
 
 export const APP_NAME = 'Ludiko';
 
@@ -25,12 +25,37 @@ export const DEFAULT_GAME_SETTINGS: GameSettings = {
 
 export const COUNTDOWN_SECONDS = 3;
 
-/** Available game types with their emoji + i18n keys */
-export const GAME_TYPES: { type: GameType; emoji: string; labelKey: string }[] = [
-  { type: 'mathRace', emoji: '🏎️', labelKey: 'create.gameTypeMathRace' },
-  { type: 'shapeMatch', emoji: '🔷', labelKey: 'create.gameTypeShapeMatch' },
-  { type: 'memoryGame', emoji: '🃏', labelKey: 'create.gameTypeMemoryGame' },
+/** Available game types with their emoji, i18n key and picker category */
+export const GAME_TYPES: {
+  type: GameType;
+  emoji: string;
+  labelKey: string;
+  category: GameCategory;
+}[] = [
+  { type: 'mathRace', emoji: '🏎️', labelKey: 'create.gameTypeMathRace', category: 'math' },
+  { type: 'equations', emoji: '🧮', labelKey: 'create.gameTypeEquations', category: 'math' },
+  { type: 'countingGame', emoji: '🍎', labelKey: 'create.gameTypeCountingGame', category: 'math' },
+  { type: 'numberSequence', emoji: '🔢', labelKey: 'create.gameTypeNumberSequence', category: 'math' },
+  { type: 'shapeMatch', emoji: '🔷', labelKey: 'create.gameTypeShapeMatch', category: 'other' },
+  { type: 'memoryGame', emoji: '🃏', labelKey: 'create.gameTypeMemoryGame', category: 'other' },
 ];
+
+/** Game categories in display order, with i18n keys */
+export const GAME_CATEGORIES: { category: GameCategory; labelKey: string }[] = [
+  { category: 'math', labelKey: 'create.categoryMath' },
+  { category: 'other', labelKey: 'create.categoryOther' },
+];
+
+/** True for game types where the +, −, ×, ÷ operations setting applies */
+export function usesOperations(gameType: GameType): boolean {
+  return gameType === 'mathRace' || gameType === 'equations';
+}
+
+/** Letter shown for the unknown number in equation questions (e.g. "a + 7 = 15") */
+export const EQUATION_VARIABLE = 'a';
+
+/** Countable emojis for the Counting game (single-codepoint, kid-friendly) */
+export const COUNTING_EMOJIS = ['🍎', '⭐', '🎈', '🐟', '🌸', '🦆', '🍪', '🐞', '🍄', '🐢'];
 
 /** Shapes used in Shape Match game — SVG path names + i18n keys */
 export const SHAPES = [

@@ -7,7 +7,8 @@ import { useRoomStore } from '@/store/roomStore';
 import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
 import type { Difficulty, Operation, GameType, ShapeMode } from '@/utils/types';
-import { DEFAULT_GAME_SETTINGS, GAME_TYPES } from '@/utils/constants';
+import { DEFAULT_GAME_SETTINGS, usesOperations } from '@/utils/constants';
+import GameTypePicker from '@/components/ui/GameTypePicker';
 import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
 
 export default function SinglePlayerPage() {
@@ -31,7 +32,7 @@ export default function SinglePlayerPage() {
     );
   };
 
-  const showMathOptions = gameType === 'mathRace';
+  const showMathOptions = usesOperations(gameType);
   const isShapeMatch = gameType === 'shapeMatch';
   const isMemory = gameType === 'memoryGame';
 
@@ -67,46 +68,28 @@ export default function SinglePlayerPage() {
         <CloseButton />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('home.singlePlayer')}</h2>
 
-        {/* Name */}
-        <label className="block mb-2">
-          <span className="text-sm font-semibold">{t('create.yourName')}</span>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder={t('create.namePlaceholder')}
-            className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
-            maxLength={20}
-            aria-label={t('create.yourName')}
-          />
-        </label>
-
-        {/* Avatar picker */}
-        <div className="mb-4">
-          <span className="text-sm font-semibold">{t('create.avatar')}</span>
+        {/* Name + Avatar */}
+        <div className="flex flex-wrap gap-x-3 gap-y-2 items-end mb-4">
+          <label className="block flex-1 min-w-[60%]">
+            <span className="text-sm font-semibold">{t('create.yourName')}</span>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder={t('create.namePlaceholder')}
+              className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
+              maxLength={20}
+              aria-label={t('create.yourName')}
+            />
+          </label>
           <EmojiPicker selected={avatar} onChange={setAvatar} />
         </div>
 
         {/* Game type selector */}
-        <label className="block mb-4">
+        <div className="block mb-4">
           <span className="text-sm font-semibold">{t('create.gameType')}</span>
-          <div className="flex gap-2 mt-1">
-            {GAME_TYPES.map(({ type, emoji, labelKey }) => (
-              <button
-                key={type}
-                onClick={() => setGameType(type)}
-                aria-pressed={gameType === type}
-                className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
-                  gameType === type
-                    ? 'bg-ludiko-purple text-white'
-                    : 'bg-gray-100 hover:bg-gray-200'
-                }`}
-              >
-                {emoji} {t(labelKey)}
-              </button>
-            ))}
-          </div>
-        </label>
+          <GameTypePicker value={gameType} onChange={setGameType} />
+        </div>
 
         {/* Shape mode toggle (Shape Match only) */}
         {isShapeMatch && (
@@ -125,6 +108,29 @@ export default function SinglePlayerPage() {
                   }`}
                 >
                   {t(`create.shapeMode${mode.charAt(0).toUpperCase() + mode.slice(1)}`)}
+                </button>
+              ))}
+            </div>
+          </label>
+        )}
+
+        {/* Operations (math only) */}
+        {showMathOptions && (
+          <label className="block mb-4">
+            <span className="text-sm font-semibold">{t('create.operations')}</span>
+            <div className="flex gap-2 mt-1">
+              {(['+', '-', '×', '÷'] as Operation[]).map((op) => (
+                <button
+                  key={op}
+                  onClick={() => toggleOperation(op)}
+                  aria-pressed={operations.includes(op)}
+                  className={`flex-1 py-2 rounded-xl font-bold text-xl transition-colors ${
+                    operations.includes(op)
+                      ? 'bg-ludiko-green text-ludiko-text'
+                      : 'bg-gray-100 hover:bg-gray-200'
+                  }`}
+                >
+                  {op}
                 </button>
               ))}
             </div>
@@ -151,29 +157,6 @@ export default function SinglePlayerPage() {
             ))}
           </div>
         </label>
-
-        {/* Operations (math only) */}
-        {showMathOptions && (
-          <label className="block mb-4">
-            <span className="text-sm font-semibold">{t('create.operations')}</span>
-            <div className="flex gap-2 mt-1">
-              {(['+', '-', '×', '÷'] as Operation[]).map((op) => (
-                <button
-                  key={op}
-                  onClick={() => toggleOperation(op)}
-                  aria-pressed={operations.includes(op)}
-                  className={`flex-1 py-2 rounded-xl font-bold text-xl transition-colors ${
-                    operations.includes(op)
-                      ? 'bg-ludiko-green text-ludiko-text'
-                      : 'bg-gray-100 hover:bg-gray-200'
-                  }`}
-                >
-                  {op}
-                </button>
-              ))}
-            </div>
-          </label>
-        )}
 
         {/* Rounds / Pairs + Time */}
         <div className="grid grid-cols-2 gap-4 mb-6">

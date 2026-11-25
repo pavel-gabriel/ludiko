@@ -20,7 +20,7 @@ import {
   initShapeGameState,
   initMemoryGameState,
 } from '@/services/gameSession';
-import { generateQuestion, generateShapeQuestion, generateMemoryCards } from '@/services/gameEngine';
+import { generateNumericQuestion, generateShapeQuestion, generateMemoryCards } from '@/services/gameEngine';
 import type { RTDBGameState } from '@/services/gameSession';
 import type { ClassroomSession, Room, StudentSessionResult } from '@/utils/types';
 
@@ -87,14 +87,7 @@ export default function TeacherLiveDashboard() {
     const { settings } = session;
     const playerIds = room.players.map((p) => p.id);
 
-    if (settings.gameType === 'mathRace') {
-      const count = settings.gameMode === 'timedSprint' ? 100 : settings.rounds;
-      const questions = [];
-      for (let i = 0; i < count; i++) {
-        questions.push(generateQuestion(settings.difficulty, settings.operations));
-      }
-      await initMathGameState(session.roomId, questions, playerIds);
-    } else if (settings.gameType === 'shapeMatch') {
+    if (settings.gameType === 'shapeMatch') {
       const count = settings.gameMode === 'timedSprint' ? 100 : settings.rounds;
       const questions = [];
       for (let i = 0; i < count; i++) {
@@ -104,6 +97,14 @@ export default function TeacherLiveDashboard() {
     } else if (settings.gameType === 'memoryGame') {
       const cards = generateMemoryCards(settings.rounds);
       await initMemoryGameState(session.roomId, cards, playerIds);
+    } else {
+      /* Numeric games: mathRace, countingGame, numberSequence */
+      const count = settings.gameMode === 'timedSprint' ? 100 : settings.rounds;
+      const questions = [];
+      for (let i = 0; i < count; i++) {
+        questions.push(generateNumericQuestion(settings.gameType, settings.difficulty, settings.operations));
+      }
+      await initMathGameState(session.roomId, questions, playerIds, settings.gameType);
     }
 
     await updateRoomStatus(session.roomId, 'playing');
@@ -120,13 +121,17 @@ export default function TeacherLiveDashboard() {
   /* Export results as CSV */
   const handleExport = () => {
     if (!session || !room || !gameState) return;
+    /* settings.rounds is the real per-student target for every game type:
+       question count (race), rounds played (sprint — the pool holds 100),
+       pairs (memory — memoryCards.length would be 2× pairs) */
+    const totalPerStudent = session.settings.rounds;
     const results: StudentSessionResult[] = room.players
       .filter((p) => !p.isHost)
       .map((player) => ({
         studentCode: player.name,
         studentLabel: player.name,
         score: gameState.progress[player.id] ?? 0,
-        totalQuestions: gameState.questions?.length ?? gameState.shapeQuestions?.length ?? 0,
+        totalQuestions: totalPerStudent,
         accuracy: 0,
         timeTaken: 0,
         answers: [],
@@ -152,10 +157,9 @@ export default function TeacherLiveDashboard() {
     );
   }
 
-  const totalQuestions = gameState?.questions?.length
-    ?? gameState?.shapeQuestions?.length
-    ?? gameState?.memoryCards?.length
-    ?? 0;
+  /* Per-student target — not the pool size (sprint pools 100 questions)
+     and not the card count (memory cards = 2× pairs) */
+  const totalQuestions = session?.settings.rounds ?? 0;
   const students = room?.players.filter((p) => !p.isHost) ?? [];
   const isTeacherControlled = session.classroomMode === 'teacherControlled';
   const isPlaying = gameState?.phase === 'playing';

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
+import CloseButton from '@/components/ui/CloseButton';
 import { useAuthStore } from '@/store/authStore';
 import { getTeacherTemplates, deleteTemplate } from '@/services/teacherService';
 import type { SessionTemplate } from '@/utils/types';
@@ -28,7 +29,8 @@ export default function TemplatesPage() {
 
   return (
     <div className="page">
-      <div className="card w-full max-w-lg" role="main">
+      <div className="card w-full max-w-lg relative" role="main">
+        <CloseButton onClick={() => navigate('/teacher')} />
         <h2 className="text-2xl font-bold mb-4 text-center">{t('teacher.templates')}</h2>
 
         {loading ? (

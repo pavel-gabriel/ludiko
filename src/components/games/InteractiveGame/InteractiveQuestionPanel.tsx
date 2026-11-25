@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Question } from '@/utils/types';
 import { playCorrect, playWrong } from '@/utils/sounds';
+import EquationExpression from '@/components/games/MathRace/EquationExpression';
 
 interface InteractiveQuestionPanelProps {
   question: Question;
@@ -71,9 +72,33 @@ export default function InteractiveQuestionPanel({
 
       {/* Question */}
       <div className="text-center mb-2">
-        <p className="text-3xl sm:text-4xl font-extrabold text-ludiko-text">
-          {question.a} {question.operation} {question.b}
-        </p>
+        {question.kind === 'counting' ? (
+          <>
+            <p className="text-sm font-bold text-ludiko-purple mb-1">
+              {t('game.howMany')} {question.targetEmoji}?
+            </p>
+            <div className="flex flex-wrap justify-center gap-1 text-2xl" aria-hidden="true">
+              {question.emojis?.map((emoji, i) => (
+                <span key={i}>{emoji}</span>
+              ))}
+            </div>
+          </>
+        ) : question.kind === 'equation' ? (
+          <EquationExpression question={question} className="text-2xl sm:text-4xl" showHint={false} />
+        ) : question.kind === 'sequence' ? (
+          <>
+            <p className="text-sm font-bold text-ludiko-purple mb-1">
+              {t('game.findMissing')}
+            </p>
+            <p className="text-xl sm:text-2xl font-extrabold text-ludiko-text">
+              {question.prompt}
+            </p>
+          </>
+        ) : (
+          <p className="text-3xl sm:text-4xl font-extrabold text-ludiko-text">
+            {question.a} {question.operation} {question.b}
+          </p>
+        )}
       </div>
 
       {/* Answer grid */}

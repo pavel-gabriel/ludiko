@@ -21,18 +21,17 @@ export default function JoinRoom() {
   const [loading, setLoading] = useState(false);
   const [takenAvatars, setTakenAvatars] = useState<string[]>([]);
   const [isClassroom, setIsClassroom] = useState(false);
-  const [validCodes, setValidCodes] = useState<string[]>([]);
 
   /* When the code reaches 6 chars, look up the room to find taken avatars and check if classroom */
   useEffect(() => {
     if (code.length < 6) {
       setTakenAvatars([]);
       setIsClassroom(false);
-      setValidCodes([]);
       return;
     }
     let cancelled = false;
-    lookupRoomByCode(code).then(async (room) => {
+    /* RTDB reads require auth — sign in anonymously before the lookup */
+    ensureAnonymousAuth().then(() => lookupRoomByCode(code)).then(async (room) => {
       if (cancelled || !room) return;
       const taken = room.players.map((p) => p.avatar);
       setTakenAvatars(taken);
@@ -41,19 +40,9 @@ export default function JoinRoom() {
         const firstAvailable = EMOJI_OPTIONS.find((e) => !taken.includes(e));
         if (firstAvailable) setAvatar(firstAvailable);
       }
-      /* Check if this is a classroom session — enforce student code entry */
-      if (room.classroomSessionId) {
-        setIsClassroom(true);
-        try {
-          const session = await getSession(room.classroomSessionId);
-          if (session && !cancelled) {
-            setValidCodes(session.studentCodes.map((sc) => sc.code));
-          }
-        } catch {}
-      } else {
-        setIsClassroom(false);
-        setValidCodes([]);
-      }
+      /* Show the student-code UI when this is a classroom session
+         (authoritative validation happens in handleJoin) */
+      setIsClassroom(Boolean(room.classroomSessionId));
     }).catch(() => {});
     return () => { cancelled = true; };
   }, [code]);
@@ -61,20 +50,25 @@ export default function JoinRoom() {
   const handleJoin = async () => {
     if (!name.trim() || !code.trim() || loading) return;
 
-    /* For classroom sessions, validate the student code */
-    if (isClassroom && validCodes.length > 0) {
-      if (!validCodes.includes(name.trim().toUpperCase())) {
-        setError(t('join.invalidStudentCode'));
-        return;
-      }
-    }
-
     setLoading(true);
     setError('');
 
     try {
-      /* Anonymous sign-in before any RTDB write (no PII, GDPR safe) */
+      /* Anonymous sign-in before any RTDB access (no PII, GDPR safe) */
       await ensureAnonymousAuth();
+
+      /* Authoritative classroom check — the pre-flight effect is only for
+         UI hints and can be skipped/raced, so validate again here */
+      const targetRoom = await lookupRoomByCode(code);
+      if (targetRoom?.classroomSessionId) {
+        const session = await getSession(targetRoom.classroomSessionId);
+        const codes = session?.studentCodes.map((sc) => sc.code) ?? [];
+        if (!codes.includes(name.trim().toUpperCase())) {
+          setError(t('join.invalidStudentCode'));
+          return;
+        }
+      }
+
       const result = await joinRoomByCode(code.toUpperCase(), name.trim(), avatar);
       if (!result) {
         setError(t('join.invalidCode'));

@@ -7,13 +7,22 @@
 - **Path alias**: `@/` = `src/` (configured in vite.config.ts + tsconfig.json)
 - **Base URL**: `/ludiko/` (GitHub Pages subpath)
 
+## Product Direction (v2)
+- **Read `docs/PLAN.md` first** — Ludiko is becoming a free tutor that checks a child's level, finds gaps
+  (skill graph across grades, tagged with RO programa competences) and fixes them through play; offline-first PWA.
+- Evidence/market: `docs/MARKET_RESEARCH.md`. Track roadmap progress via the checkboxes in `docs/PLAN.md` §13.
+- Current code below is v1; games will be rebuilt as modes over a shared item model.
+
 ## Architecture
 
 ### Routes (src/app/AppRoutes.tsx)
 `/` HomePage | `/create` CreateRoom | `/join` JoinRoom | `/lobby` LobbyPage | `/game` GameRouter
 
 ### Game Types (src/components/games/)
-- **MathRace/** — Math questions, Race to Finish or Timed Sprint modes
+- **MathRace/** — Math questions, Race to Finish or Timed Sprint modes. Also serves the
+  numeric games via `generateNumericQuestion()` + `Question.kind`: **Equations**
+  (`equations`, find the missing number e.g. `a + 7 = 15` for + − × ÷, rendered by
+  `EquationExpression.tsx`), **Counting**, **Number Sequence**
 - **ShapeMatch/** — Tap the correct shape, Race to Finish only
 - **MemoryGame/** — Card flip matching pairs
 
@@ -21,7 +30,8 @@
 1. Host creates room → RTDB `rooms/{id}` with code, players, settings
 2. Others join by 6-char code → `joinRoomByCode` queries RTDB `orderByChild('code')`
 3. Host clicks Start → status='playing' → all navigate to `/game`
-4. GameRouter picks component by `room.settings.gameType`
+4. GameRouter picks component by `room.settings.gameType` (pickers group types into
+   Math / Other via `GAME_TYPES[].category` + `GameTypePicker`; `usesOperations()` gates the +−×÷ setting)
 5. Each player tracks own question via `localIndex` (local state)
 6. Only correct answers call `recordCorrectAnswer` (RTDB progress)
 7. Game ends when host finishes all questions (Race) or timer expires (Sprint)

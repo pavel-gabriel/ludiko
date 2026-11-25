@@ -44,13 +44,12 @@ export default function GameResults({
   scores,
   totalQuestions,
   finishTimes,
-  gameMode,
   startedAt,
   onPlayAgain,
   onNewGame,
 }: GameResultsProps) {
   const { t } = useTranslation();
-  const { room } = useRoomStore();
+  const { room, currentPlayer } = useRoomStore();
   const savedRef = useRef(false);
 
   useEffect(() => { playFinish(); }, []);
@@ -60,26 +59,24 @@ export default function GameResults({
     const scoreA = scores[a.id] ?? 0;
     const scoreB = scores[b.id] ?? 0;
 
-    if (gameMode === 'timedSprint' && finishTimes) {
-      /* Timed sprint: rank by most correct answers, then by fastest finish */
-      if (scoreA !== scoreB) return scoreB - scoreA;
-      const timeA = finishTimes[a.id] ?? Infinity;
-      const timeB = finishTimes[b.id] ?? Infinity;
-      return timeA - timeB;
-    }
-
-    /* Race to finish / default: rank by most correct, then by fastest finish */
+    /* Rank by most correct answers, then by fastest finish.
+       Players without a finish time sort after those with one. */
     if (scoreA !== scoreB) return scoreB - scoreA;
     if (finishTimes) {
-      const timeA = finishTimes[a.id] ?? Infinity;
-      const timeB = finishTimes[b.id] ?? Infinity;
-      return timeA - timeB;
+      const timeA = finishTimes[a.id];
+      const timeB = finishTimes[b.id];
+      if (timeA != null && timeB != null) return timeA - timeB;
+      if (timeA != null) return -1;
+      if (timeB != null) return 1;
     }
     return 0;
   });
 
   useEffect(() => {
     if (savedRef.current || !room) return;
+    /* Only the host writes history — otherwise every client in an N-player
+       game saves a duplicate doc and inflates the leaderboard N times */
+    if (currentPlayer && !currentPlayer.isHost) return;
     savedRef.current = true;
 
     const results: PlayerResult[] = ranked.map((player, idx) => {

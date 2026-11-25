@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { Question } from '@/utils/types';
 import { playCorrect, playWrong } from '@/utils/sounds';
+import EquationExpression from './EquationExpression';
 
 interface QuestionCardProps {
   question: Question;
@@ -71,9 +72,33 @@ export default function QuestionCard({
       </div>
 
       <div className="text-center mb-6">
-        <p className="text-5xl font-extrabold text-ludiko-text" aria-live="polite">
-          {question.a} {question.operation} {question.b}
-        </p>
+        {question.kind === 'counting' ? (
+          <>
+            <p className="text-lg font-bold text-ludiko-purple mb-3" aria-live="polite">
+              {t('game.howMany')} {question.targetEmoji}?
+            </p>
+            <div className="flex flex-wrap justify-center gap-1.5 text-4xl" aria-hidden="true">
+              {question.emojis?.map((emoji, i) => (
+                <span key={i}>{emoji}</span>
+              ))}
+            </div>
+          </>
+        ) : question.kind === 'equation' ? (
+          <EquationExpression question={question} className="text-4xl sm:text-5xl" />
+        ) : question.kind === 'sequence' ? (
+          <>
+            <p className="text-lg font-bold text-ludiko-purple mb-3" aria-live="polite">
+              {t('game.findMissing')}
+            </p>
+            <p className="text-4xl font-extrabold text-ludiko-text tracking-wide">
+              {question.prompt}
+            </p>
+          </>
+        ) : (
+          <p className="text-5xl font-extrabold text-ludiko-text" aria-live="polite">
+            {question.a} {question.operation} {question.b}
+          </p>
+        )}
       </div>
 
       <div className="grid grid-cols-2 gap-3 mb-4">

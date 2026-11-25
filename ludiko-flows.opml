@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Ludiko - Application Flows</title>
+    <expansionState>0,1,2,3,4,5,6,7,8,9,10</expansionState>
+  </head>
+  <body>
+    <outline text="Ludiko">
+
+      <!-- ===== NAVIGATION / ROUTES ===== -->
+      <outline text="Routes &amp; Navigation">
+        <outline text="/ - HomePage">
+          <outline text="Main landing page" />
+          <outline text="Singleplayer button -> /singleplayer" />
+          <outline text="Multiplayer button -> /multiplayer" />
+          <outline text="Teacher Mode button -> /teacher/login" />
+          <outline text="Leaderboard modal (trophy icon)" />
+          <outline text="Settings button -> /settings" />
+        </outline>
+        <outline text="/singleplayer - SinglePlayerPage" />
+        <outline text="/multiplayer - MultiplayerPage">
+          <outline text="Create Room -> /create" />
+          <outline text="Join Room -> /join" />
+          <outline text="Interactive Mode -> /interactive" />
+        </outline>
+        <outline text="/settings - SettingsPage" />
+        <outline text="/create - CreateRoom" />
+        <outline text="/join - JoinRoom" />
+        <outline text="/lobby - LobbyPage" />
+        <outline text="/game - GameRouter" />
+        <outline text="/interactive - InteractiveSetupPage" />
+        <outline text="/game/interactive - InteractiveGamePage" />
+        <outline text="/admin - AdminDashboard" />
+        <outline text="Teacher Routes">
+          <outline text="/teacher/login - TeacherLogin" />
+          <outline text="/teacher - TeacherDashboard" />
+          <outline text="/teacher/session/new - SessionConfig" />
+          <outline text="/teacher/session/:id/edit - SessionConfig (edit)" />
+          <outline text="/teacher/session/:id - SessionDetail" />
+          <outline text="/teacher/live/:id - TeacherLiveDashboard" />
+          <outline text="/teacher/results/:id - SessionResults" />
+          <outline text="/teacher/templates - TemplatesPage" />
+        </outline>
+      </outline>
+
+      <!-- ===== SINGLE PLAYER FLOW ===== -->
+      <outline text="Single Player Flow">
+        <outline text="1. HomePage">
+          <outline text="Click Singleplayer" />
+        </outline>
+        <outline text="2. SinglePlayerPage">
+          <outline text="Enter player name" />
+          <outline text="Select avatar (EmojiPicker)" />
+          <outline text="Choose game type">
+            <outline text="MathRace" />
+            <outline text="ShapeMatch" />
+            <outline text="MemoryGame" />
+          </outline>
+          <outline text="Configure settings">
+            <outline text="Difficulty (easy / medium / hard)" />
+            <outline text="Operations (+, -, x, /)" />
+            <outline text="Number of rounds" />
+            <outline text="Time per round" />
+            <outline text="Shape mode (image / word) - ShapeMatch only" />
+          </outline>
+          <outline text="Click Play" />
+        </outline>
+        <outline text="3. Behind the scenes">
+          <outline text="ensureAnonymousAuth()" />
+          <outline text="roomManager.buildRoom() -> RTDB rooms/{id}" />
+          <outline text="Room created with status: playing (skips lobby)" />
+          <outline text="Navigate to /game" />
+        </outline>
+        <outline text="4. GameRouter">
+          <outline text="Routes to MathRacePage / ShapeMatchPage / MemoryGamePage" />
+        </outline>
+        <outline text="5. Game plays (see Game Types)" />
+        <outline text="6. GameResults">
+          <outline text="Score + accuracy shown" />
+          <outline text="History saved to Firestore" />
+          <outline text="Play Again (replay same config)" />
+          <outline text="New Game (back to home)" />
+        </outline>
+      </outline>
+
+      <!-- ===== MULTIPLAYER FLOW ===== -->
+      <outline text="Multiplayer Flow">
+        <outline text="Host: Create Room">
+          <outline text="1. HomePage -> Multiplayer -> Create Room" />
+          <outline text="2. CreateRoom page">
+            <outline text="Enter name + select avatar" />
+            <outline text="Choose game type" />
+            <outline text="Choose game mode">
+              <outline text="Race to Finish" />
+              <outline text="Timed Sprint" />
+            </outline>
+            <outline text="Configure difficulty, operations, rounds, time" />
+            <outline text="Click Create" />
+          </outline>
+          <outline text="3. Room created in RTDB">
+            <outline text="6-char room code generated" />
+            <outline text="Host added as first player" />
+            <outline text="onDisconnect cleanup registered" />
+          </outline>
+          <outline text="4. Navigate to /lobby" />
+        </outline>
+        <outline text="Player: Join Room">
+          <outline text="1. HomePage -> Multiplayer -> Join Room" />
+          <outline text="2. JoinRoom page">
+            <outline text="Enter name + select avatar" />
+            <outline text="Enter 6-char room code" />
+            <outline text="Auto-detects classroom sessions" />
+            <outline text="Already-taken avatars excluded" />
+            <outline text="Click Join" />
+          </outline>
+          <outline text="3. joinRoomByCode() queries RTDB">
+            <outline text="orderByChild('code') + equalTo(code)" />
+            <outline text="Player added to room.players array" />
+          </outline>
+          <outline text="4. Navigate to /lobby" />
+        </outline>
+        <outline text="Lobby Phase">
+          <outline text="Real-time room updates via listenToRoom()" />
+          <outline text="Room code displayed (click to copy)" />
+          <outline text="Player list with ready status" />
+          <outline text="Non-host: toggle Ready button" />
+          <outline text="Host: Start Game (enabled when all ready)">
+            <outline text="Sets room.status -> playing in RTDB" />
+          </outline>
+          <outline text="Host leaves -> room deleted" />
+          <outline text="Player leaves -> removed from players" />
+          <outline text="All navigate to /game when status = playing" />
+        </outline>
+        <outline text="Game Phase (see Game Types)" />
+        <outline text="Results Phase">
+          <outline text="GameResults with podium (1st/2nd/3rd)" />
+          <outline text="Confetti animation" />
+          <outline text="Replay -> resets room to waiting" />
+          <outline text="New Game -> back to home" />
+        </outline>
+      </outline>
+
+      <!-- ===== INTERACTIVE 2-PLAYER FLOW ===== -->
+      <outline text="Interactive 2-Player Flow">
+        <outline text="1. MultiplayerPage -> Interactive Mode" />
+        <outline text="2. InteractiveSetupPage">
+          <outline text="Player 1: name + avatar" />
+          <outline text="Player 2: name + avatar (different from P1)" />
+          <outline text="Game configuration (same as CreateRoom)" />
+          <outline text="Click Start" />
+        </outline>
+        <outline text="3. Room created with both players, status: playing" />
+        <outline text="4. Navigate to /game/interactive" />
+        <outline text="5. InteractiveGamePage">
+          <outline text="Split-screen: blue (left) vs pink (right)" />
+          <outline text="Each player has own panel">
+            <outline text="InteractiveQuestionPanel (MathRace)" />
+            <outline text="InteractiveShapePanel (ShapeMatch)" />
+            <outline text="InteractiveMemoryPanel (MemoryGame)" />
+          </outline>
+          <outline text="RaceTrack at top shows both players" />
+          <outline text="Global timer display" />
+          <outline text="Game ends when first player finishes" />
+        </outline>
+        <outline text="6. GameResults" />
+      </outline>
+
+      <!-- ===== GAME TYPES ===== -->
+      <outline text="Game Types">
+        <outline text="MathRace">
+          <outline text="Question Generation (gameEngine)">
+            <outline text="Random operation from selected ops" />
+            <outline text="Operands based on difficulty range" />
+            <outline text="1 correct + 3 wrong answers, shuffled" />
+          </outline>
+          <outline text="Host Initialization">
+            <outline text="Race mode: settings.rounds questions" />
+            <outline text="Sprint mode: 100 questions" />
+            <outline text="initMathGameState() -> RTDB rooms/{id}/game" />
+          </outline>
+          <outline text="Phase: Countdown (3-2-1-Go)">
+            <outline text="CountdownOverlay with sounds" />
+            <outline text="Host sets phase -> playing" />
+          </outline>
+          <outline text="Phase: Playing">
+            <outline text="QuestionCard shows question + 4 options" />
+            <outline text="Each player tracks own localIndex (local state)" />
+            <outline text="Correct answer -> recordCorrectAnswer() to RTDB" />
+            <outline text="Always advance to next question" />
+            <outline text="Race mode: per-question timer resets" />
+            <outline text="Sprint mode: single global countdown" />
+            <outline text="RaceTrack shows progress (multiplayer)" />
+          </outline>
+          <outline text="Phase: Finished">
+            <outline text="Race: any player finishes all questions" />
+            <outline text="Sprint: timer expires or all finish" />
+            <outline text="setGamePhase(finished)" />
+          </outline>
+        </outline>
+        <outline text="ShapeMatch">
+          <outline text="Same phase structure as MathRace" />
+          <outline text="Shape modes">
+            <outline text="Image mode: see word, tap correct shape" />
+            <outline text="Word mode: see shape, tap correct word" />
+          </outline>
+          <outline text="ShapeCard with SVG shapes">
+            <outline text="circle, square, triangle, star" />
+            <outline text="heart, diamond, hexagon, oval" />
+          </outline>
+          <outline text="Difficulty controls shape pool size">
+            <outline text="Easy: 4 shapes" />
+            <outline text="Medium: 6 shapes" />
+            <outline text="Hard: all shapes" />
+          </outline>
+          <outline text="Race to Finish mode only" />
+        </outline>
+        <outline text="MemoryGame">
+          <outline text="Card Generation">
+            <outline text="generateMemoryCards(pairCount)" />
+            <outline text="Emoji pairs shuffled on grid" />
+          </outline>
+          <outline text="Gameplay">
+            <outline text="Tap to flip card (reveal emoji)" />
+            <outline text="2 cards flipped -> check match" />
+            <outline text="Match: cards stay face-up, score +1" />
+            <outline text="No match: cards flip back (800ms delay)" />
+            <outline text="MemoryBoard renders grid" />
+          </outline>
+          <outline text="Scoring">
+            <outline text="Score = pairs matched" />
+            <outline text="Tries counter" />
+          </outline>
+          <outline text="End condition">
+            <outline text="All pairs matched" />
+            <outline text="Or global timer expires" />
+          </outline>
+        </outline>
+      </outline>
+
+      <!-- ===== TEACHER / CLASSROOM FLOW ===== -->
+      <outline text="Teacher / Classroom Flow">
+        <outline text="Authentication">
+          <outline text="TeacherLogin page">
+            <outline text="Google OAuth (popup)" />
+            <outline text="Email + Password login" />
+            <outline text="Email + Password registration" />
+          </outline>
+          <outline text="On success">
+            <outline text="upsertTeacherProfile() -> Firestore teachers/{uid}" />
+            <outline text="authStore.setUid() + setTeacherProfile()" />
+            <outline text="Navigate to /teacher" />
+          </outline>
+        </outline>
+        <outline text="Teacher Dashboard">
+          <outline text="Lists all sessions (draft / active / finished)" />
+          <outline text="Actions per session">
+            <outline text="Draft -> Open (SessionDetail)" />
+            <outline text="Active -> Monitor (TeacherLiveDashboard)" />
+            <outline text="Finished -> Results (SessionResults)" />
+            <outline text="Delete session" />
+          </outline>
+          <outline text="New Session -> /teacher/session/new" />
+          <outline text="Templates -> /teacher/templates" />
+          <outline text="Interactive -> /interactive" />
+          <outline text="Logout" />
+        </outline>
+        <outline text="Session Configuration">
+          <outline text="Session title" />
+          <outline text="Game type + difficulty + operations" />
+          <outline text="Rounds + time settings" />
+          <outline text="Classroom mode">
+            <outline text="Self-paced: students go at own speed" />
+            <outline text="Teacher-controlled: teacher advances questions" />
+          </outline>
+          <outline text="Global timer (0 = unlimited)" />
+          <outline text="Student count -> auto-generate codes">
+            <outline text="Animal-based codes (LION-42, BEAR-87)" />
+          </outline>
+          <outline text="Custom questions (optional)" />
+          <outline text="Load / save templates" />
+          <outline text="Save -> Firestore sessions/{id}, status: draft" />
+        </outline>
+        <outline text="Session Detail (Pre-Game)">
+          <outline text="Shows config summary" />
+          <outline text="Student codes list with copy buttons" />
+          <outline text="Copy All codes button" />
+          <outline text="Start Session">
+            <outline text="Creates RTDB room with classroom flags" />
+            <outline text="room.classroomSessionId, classroomMode, globalTimer" />
+            <outline text="Updates Firestore session: status -> active" />
+            <outline text="Navigate to /teacher/live/{id}" />
+          </outline>
+        </outline>
+        <outline text="Teacher Live Dashboard">
+          <outline text="Real-time subscriptions (room + game state)" />
+          <outline text="Displays room code for students" />
+          <outline text="Student progress table with progress bars" />
+          <outline text="Global timer countdown" />
+          <outline text="Start Game button" />
+          <outline text="Teacher-controlled mode: Next Question button" />
+          <outline text="End Session button" />
+          <outline text="Export CSV (after game finishes)" />
+        </outline>
+        <outline text="Session Results">
+          <outline text="Per-student results table">
+            <outline text="Student code, name, score" />
+            <outline text="Accuracy % (color-coded)" />
+            <outline text="Time taken" />
+          </outline>
+          <outline text="Summary stats (avg accuracy, pass count)" />
+          <outline text="Export to CSV download" />
+        </outline>
+        <outline text="Student Joining (from student perspective)">
+          <outline text="Go to /join" />
+          <outline text="Enter student code as name" />
+          <outline text="Enter room code from teacher" />
+          <outline text="System validates student code" />
+          <outline text="Joins lobby -> game starts when teacher clicks Start" />
+        </outline>
+      </outline>
+
+      <!-- ===== ADMIN FLOW ===== -->
+      <outline text="Admin Flow">
+        <outline text="1. Navigate to /admin" />
+        <outline text="2. PIN Gate">
+          <outline text="Enter admin PIN" />
+          <outline text="Verified against VITE_ADMIN_PIN env var" />
+          <outline text="Default: 'admin' in dev" />
+        </outline>
+        <outline text="3. Admin Dashboard">
+          <outline text="Stats overview">
+            <outline text="Total teachers" />
+            <outline text="Total sessions (active / finished / draft)" />
+            <outline text="Total student results" />
+          </outline>
+          <outline text="Sessions by game type breakdown" />
+          <outline text="5 most recent sessions table" />
+        </outline>
+      </outline>
+
+      <!-- ===== AUTH FLOW ===== -->
+      <outline text="Authentication Flow">
+        <outline text="Anonymous Auth (Children / Players)">
+          <outline text="ensureAnonymousAuth() called before any RTDB write" />
+          <outline text="Triggered on: CreateRoom, JoinRoom, SinglePlayer start" />
+          <outline text="Firebase anonymous sign-in (no PII)" />
+          <outline text="Guarded by firebaseEnabled flag" />
+        </outline>
+        <outline text="Teacher Auth">
+          <outline text="Google OAuth via Firebase popup" />
+          <outline text="Email/Password registration &amp; login" />
+          <outline text="Profile stored in Firestore teachers/{uid}" />
+          <outline text="authStore persists uid + teacherProfile" />
+        </outline>
+        <outline text="Auth Restoration (App Mount)">
+          <outline text="onAuthChange() listener fires" />
+          <outline text="If user exists and not anonymous:">
+            <outline text="setUid(user.uid)" />
+            <outline text="getTeacherProfile(uid) from Firestore" />
+            <outline text="setTeacherProfile(profile)" />
+          </outline>
+          <outline text="setLoading(false)" />
+        </outline>
+        <outline text="Route Guards">
+          <outline text="Teacher routes check uid in useEffect" />
+          <outline text="No uid + not loading -> redirect to /teacher/login" />
+          <outline text="Game routes check room -> redirect to / if missing" />
+        </outline>
+      </outline>
+
+      <!-- ===== SETTINGS FLOW ===== -->
+      <outline text="Settings Flow">
+        <outline text="SettingsPage (/settings)">
+          <outline text="Language toggle (Romanian / English)" />
+          <outline text="Sound toggle (on / off)" />
+          <outline text="Dyslexic font toggle (OpenDyslexic)" />
+        </outline>
+        <outline text="Persistence (settingsStore - Zustand)">
+          <outline text="Persisted to localStorage: ludiko-settings" />
+          <outline text="language (ro | en), default: ro" />
+          <outline text="soundEnabled (boolean), default: true" />
+          <outline text="dyslexicFont (boolean), default: false" />
+        </outline>
+        <outline text="i18n System">
+          <outline text="Detection: localStorage -> navigator language" />
+          <outline text="Languages: ro.json (Romanian) + en.json (English)" />
+          <outline text="Page title updates dynamically" />
+          <outline text="Components use useTranslation() hook" />
+        </outline>
+        <outline text="Effects">
+          <outline text="Language: i18n re-renders all text" />
+          <outline text="Sound: affects playCorrect/playWrong/playCountdownBeep" />
+          <outline text="Dyslexic: adds dyslexic-mode class to html element" />
+        </outline>
+      </outline>
+
+      <!-- ===== DATA ARCHITECTURE ===== -->
+      <outline text="Data Architecture">
+        <outline text="Firebase Realtime Database (RTDB)">
+          <outline text="Purpose: Live room state, real-time sync" />
+          <outline text="rooms/{id}">
+            <outline text="id, code (6-char), hostId" />
+            <outline text="players[] (id, name, avatar, score, isHost, isReady)" />
+            <outline text="status (waiting | playing | finished)" />
+            <outline text="settings (gameType, gameMode, difficulty, operations, rounds, timePerRound)" />
+            <outline text="Classroom fields: classroomSessionId, classroomMode, globalTimer" />
+          </outline>
+          <outline text="rooms/{id}/game (RTDBGameState)">
+            <outline text="gameType, phase (countdown | playing | finished)" />
+            <outline text="questions[] / shapeQuestions[] / memoryCards[]" />
+            <outline text="currentIndex" />
+            <outline text="progress { playerId: score }" />
+            <outline text="questionStartedAt, startedAt" />
+            <outline text="finishTimes { playerId: timestamp }" />
+          </outline>
+          <outline text="Listeners">
+            <outline text="listenToRoom(roomId, callback)" />
+            <outline text="listenToGameState(roomId, callback)" />
+          </outline>
+          <outline text="Disconnect Cleanup">
+            <outline text="Host disconnect: room.remove()" />
+            <outline text="Player disconnect: player slot removed" />
+          </outline>
+        </outline>
+        <outline text="Cloud Firestore">
+          <outline text="Purpose: Persistent data, history, profiles" />
+          <outline text="teachers/{uid}">
+            <outline text="uid, email, displayName, createdAt" />
+          </outline>
+          <outline text="sessions/{id}">
+            <outline text="teacherUid, title, status (draft | active | finished)" />
+            <outline text="settings, classroomMode, globalTimer" />
+            <outline text="studentCodes [{ code, label }]" />
+            <outline text="roomId, createdAt" />
+          </outline>
+          <outline text="sessionResults/{sessionId}">
+            <outline text="results[] (studentCode, score, accuracy, timeTaken, answers[])" />
+            <outline text="savedAt" />
+          </outline>
+          <outline text="templates/{id}">
+            <outline text="teacherUid, name, settings" />
+            <outline text="classroomMode, globalTimer, customQuestions" />
+          </outline>
+          <outline text="gameHistory/{docId}">
+            <outline text="Game history for persistent leaderboard" />
+          </outline>
+        </outline>
+        <outline text="Local State (Zustand Stores)">
+          <outline text="roomStore: room, currentPlayer" />
+          <outline text="authStore: uid, teacherProfile, loading" />
+          <outline text="settingsStore: language, dyslexicFont, soundEnabled (persisted)" />
+          <outline text="gameStore: session, question, score, timeRemaining" />
+        </outline>
+      </outline>
+
+      <!-- ===== COMPONENT TREE ===== -->
+      <outline text="Component Tree">
+        <outline text="App">
+          <outline text="ErrorBoundary" />
+          <outline text="Providers (Router, i18n)" />
+          <outline text="AppRoutes" />
+        </outline>
+        <outline text="Pages">
+          <outline text="HomePage" />
+          <outline text="SinglePlayerPage" />
+          <outline text="MultiplayerPage" />
+          <outline text="SettingsPage" />
+          <outline text="CreateRoom" />
+          <outline text="JoinRoom" />
+          <outline text="LobbyPage" />
+          <outline text="InteractiveSetupPage" />
+        </outline>
+        <outline text="Game Components">
+          <outline text="GameRouter">
+            <outline text="MathRacePage">
+              <outline text="CountdownOverlay" />
+              <outline text="RaceTrack" />
+              <outline text="QuestionCard" />
+              <outline text="GameResults" />
+            </outline>
+            <outline text="ShapeMatchPage">
+              <outline text="CountdownOverlay" />
+              <outline text="RaceTrack" />
+              <outline text="ShapeCard -> ShapeSVG" />
+              <outline text="GameResults" />
+            </outline>
+            <outline text="MemoryGamePage">
+              <outline text="CountdownOverlay" />
+              <outline text="MemoryBoard" />
+              <outline text="GameResults" />
+            </outline>
+          </outline>
+          <outline text="InteractiveGamePage">
+            <outline text="CountdownOverlay" />
+            <outline text="RaceTrack" />
+            <outline text="InteractiveQuestionPanel" />
+            <outline text="InteractiveShapePanel -> ShapeSVG" />
+            <outline text="InteractiveMemoryPanel" />
+            <outline text="GameResults" />
+          </outline>
+        </outline>
+        <outline text="Teacher Components">
+          <outline text="TeacherLogin" />
+          <outline text="TeacherDashboard" />
+          <outline text="SessionConfig" />
+          <outline text="SessionDetail" />
+          <outline text="TeacherLiveDashboard" />
+          <outline text="SessionResults" />
+          <outline text="TemplatesPage" />
+        </outline>
+        <outline text="Admin Components">
+          <outline text="AdminDashboard (PinGate + Stats)" />
+        </outline>
+        <outline text="Shared UI">
+          <outline text="Button (variants: pink, blue, green, yellow, purple, orange)" />
+          <outline text="CloseButton" />
+          <outline text="EmojiPicker (16 animal emojis)" />
+          <outline text="Confetti" />
+          <outline text="ErrorBoundary" />
+          <outline text="DyslexiaToggle" />
+          <outline text="LanguageToggle" />
+          <outline text="SoundToggle" />
+        </outline>
+        <outline text="Leaderboard Components">
+          <outline text="GameResults (podium + scores)" />
+          <outline text="PersistentLeaderboard (historical)" />
+          <outline text="LiveLeaderboard (during game)" />
+        </outline>
+      </outline>
+
+      <!-- ===== SERVICES ===== -->
+      <outline text="Services Layer">
+        <outline text="firebase.ts">
+          <outline text="Lazy Firebase init" />
+          <outline text="firebaseEnabled flag (guards all calls)" />
+          <outline text="Exports: db (Firestore), rtdb (RTDB), auth" />
+        </outline>
+        <outline text="authService.ts">
+          <outline text="ensureAnonymousAuth()" />
+          <outline text="signInWithGoogle()" />
+          <outline text="signInWithEmail() / registerWithEmail()" />
+          <outline text="logOut()" />
+          <outline text="onAuthChange() listener" />
+        </outline>
+        <outline text="roomManager.ts">
+          <outline text="buildRoom() - construct room object" />
+          <outline text="createRoomInDB() - push to RTDB" />
+          <outline text="joinRoomByCode() - query + add player" />
+          <outline text="listenToRoom() - real-time listener" />
+          <outline text="updateRoomStatus() - change room status" />
+          <outline text="deleteRoom() / removePlayer()" />
+          <outline text="replayRoom() - reset room to waiting" />
+          <outline text="setPlayerReady() - toggle ready state" />
+          <outline text="onDisconnect cleanup" />
+        </outline>
+        <outline text="gameSession.ts">
+          <outline text="initMathGameState() / initShapeGameState() / initMemoryGameState()" />
+          <outline text="listenToGameState() - real-time listener" />
+          <outline text="recordCorrectAnswer() - increment progress" />
+          <outline text="recordPlayerFinished() - save finish time" />
+          <outline text="setGamePhase() - countdown / playing / finished" />
+          <outline text="advanceQuestion() - teacher-controlled mode" />
+        </outline>
+        <outline text="gameEngine.ts (Pure Functions)">
+          <outline text="generateQuestion(difficulty, operations)" />
+          <outline text="generateShapeQuestion(difficulty)" />
+          <outline text="generateMemoryCards(pairCount)" />
+        </outline>
+        <outline text="teacherService.ts">
+          <outline text="upsertTeacherProfile() / getTeacherProfile()" />
+          <outline text="createSession() / getSession() / updateSession() / deleteSession()" />
+          <outline text="getTeacherSessions() - list all" />
+          <outline text="generateStudentCodes() - animal codes" />
+          <outline text="saveSessionResults() / getSessionResults()" />
+          <outline text="exportResultsToCSV() / downloadCSV()" />
+          <outline text="getTeacherTemplates() / saveTemplate()" />
+        </outline>
+        <outline text="historyService.ts">
+          <outline text="saveGameHistory() - Firestore" />
+          <outline text="fetchRecentHistory()" />
+          <outline text="computeLeaderboard()" />
+        </outline>
+        <outline text="adminService.ts">
+          <outline text="verifyAdminPin()" />
+          <outline text="getAdminStats() - aggregate platform stats" />
+        </outline>
+        <outline text="sounds.ts (Web Audio)">
+          <outline text="playCorrect() / playWrong()" />
+          <outline text="playCountdownBeep() / playGo()" />
+          <outline text="Respects settingsStore.soundEnabled" />
+        </outline>
+      </outline>
+
+    </outline>
+  </body>
+</opml>

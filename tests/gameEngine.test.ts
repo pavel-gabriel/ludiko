@@ -1,5 +1,16 @@
 import { describe, it, expect } from 'vitest';
-import { generateQuestion, checkAnswer, generateShapeQuestion, generateMemoryCards } from '../src/services/gameEngine';
+import {
+  generateQuestion,
+  checkAnswer,
+  generateShapeQuestion,
+  generateMemoryCards,
+  generateCountingQuestion,
+  generateSequenceQuestion,
+  generateNumericQuestion,
+  generateEquationQuestion,
+  isEquationValid,
+} from '../src/services/gameEngine';
+import { usesOperations, GAME_TYPES } from '../src/utils/constants';
 import type { Difficulty, Operation } from '../src/utils/types';
 
 describe('gameEngine', () => {
@@ -172,6 +183,170 @@ describe('gameEngine', () => {
       const cards = generateMemoryCards(10);
       const ids = cards.map((c) => c.id);
       expect(new Set(ids).size).toBe(ids.length);
+    });
+  });
+
+  describe('generateCountingQuestion', () => {
+    it('generates 4 unique options including the correct count', () => {
+      for (let i = 0; i < 30; i++) {
+        const q = generateCountingQuestion('medium');
+        expect(q.options).toHaveLength(4);
+        expect(new Set(q.options).size).toBe(4);
+        expect(q.options).toContain(q.correctAnswer);
+      }
+    });
+
+    it('correct answer equals number of target emojis displayed', () => {
+      const difficulties: Difficulty[] = ['easy', 'medium', 'hard'];
+      for (const d of difficulties) {
+        for (let i = 0; i < 20; i++) {
+          const q = generateCountingQuestion(d);
+          const targetCount = q.emojis!.filter((e) => e === q.targetEmoji).length;
+          expect(q.correctAnswer).toBe(targetCount);
+        }
+      }
+    });
+
+    it('easy mode uses a single emoji type with 1-5 items', () => {
+      for (let i = 0; i < 20; i++) {
+        const q = generateCountingQuestion('easy');
+        expect(new Set(q.emojis).size).toBe(1);
+        expect(q.correctAnswer).toBeGreaterThanOrEqual(1);
+        expect(q.correctAnswer).toBeLessThanOrEqual(5);
+      }
+    });
+
+    it('hard mode mixes in distractor emojis', () => {
+      for (let i = 0; i < 20; i++) {
+        const q = generateCountingQuestion('hard');
+        expect(new Set(q.emojis).size).toBe(2);
+        expect(q.emojis!.length).toBeGreaterThan(q.correctAnswer);
+      }
+    });
+
+    it('all options are non-negative', () => {
+      for (let i = 0; i < 30; i++) {
+        const q = generateCountingQuestion('easy');
+        for (const opt of q.options) expect(opt).toBeGreaterThanOrEqual(0);
+      }
+    });
+
+    it('has kind counting', () => {
+      expect(generateCountingQuestion('easy').kind).toBe('counting');
+    });
+  });
+
+  describe('generateSequenceQuestion', () => {
+    it('generates 4 unique options including the correct answer', () => {
+      for (let i = 0; i < 30; i++) {
+        const q = generateSequenceQuestion('medium');
+        expect(q.options).toHaveLength(4);
+        expect(new Set(q.options).size).toBe(4);
+        expect(q.options).toContain(q.correctAnswer);
+      }
+    });
+
+    it('the missing term fits the arithmetic sequence in the prompt', () => {
+      const difficulties: Difficulty[] = ['easy', 'medium', 'hard'];
+      for (const d of difficulties) {
+        for (let i = 0; i < 30; i++) {
+          const q = generateSequenceQuestion(d);
+          const terms = q.prompt!.split(', ').map((s) => (s === '?' ? q.correctAnswer : Number(s)));
+          const step = terms[1] - terms[0];
+          for (let j = 1; j < terms.length; j++) {
+            expect(terms[j] - terms[j - 1]).toBe(step);
+          }
+        }
+      }
+    });
+
+    it('prompt contains exactly one missing marker', () => {
+      for (let i = 0; i < 20; i++) {
+        const q = generateSequenceQuestion('hard');
+        expect(q.prompt!.split('?').length - 1).toBe(1);
+      }
+    });
+
+    it('all terms are non-negative', () => {
+      for (let i = 0; i < 30; i++) {
+        const q = generateSequenceQuestion('hard');
+        const nums = q.prompt!.split(', ').filter((s) => s !== '?').map(Number);
+        for (const n of nums) expect(n).toBeGreaterThanOrEqual(0);
+      }
+    });
+
+    it('has kind sequence', () => {
+      expect(generateSequenceQuestion('easy').kind).toBe('sequence');
+    });
+  });
+
+  describe('generateNumericQuestion', () => {
+    it('dispatches to the right generator per game type', () => {
+      expect(generateNumericQuestion('countingGame', 'easy', ['+']).kind).toBe('counting');
+      expect(generateNumericQuestion('numberSequence', 'easy', ['+']).kind).toBe('sequence');
+      expect(generateNumericQuestion('mathRace', 'easy', ['+']).kind).toBeUndefined();
+    });
+  });
+
+  describe('generateEquationQuestion', () => {
+    const ops: Operation[] = ['+', '-', '×', '÷'];
+    const difficulties: Difficulty[] = ['easy', 'medium', 'hard'];
+
+    for (const op of ops) {
+      for (const d of difficulties) {
+        it(`builds valid ${op} equations on ${d}`, () => {
+          for (let i = 0; i < 200; i++) {
+            const q = generateEquationQuestion(d, [op]);
+            expect(q.kind).toBe('equation');
+            expect(q.operation).toBe(op);
+            expect(['a', 'b']).toContain(q.unknown);
+            expect(isEquationValid(q)).toBe(true);
+            expect(q.correctAnswer).toBe(q.unknown === 'a' ? q.a : q.b);
+            expect(Number.isInteger(q.correctAnswer)).toBe(true);
+            expect(q.correctAnswer).toBeGreaterThanOrEqual(0);
+            expect(q.result!).toBeGreaterThanOrEqual(0);
+            expect(q.options).toHaveLength(4);
+            expect(new Set(q.options).size).toBe(4);
+            expect(q.options).toContain(q.correctAnswer);
+            if (op === '×' || op === '÷') {
+              expect(q.correctAnswer).toBeGreaterThanOrEqual(1);
+              expect(Math.min(...q.options)).toBeGreaterThanOrEqual(1);
+            }
+            if (op === '÷') expect(q.a % q.b).toBe(0);
+          }
+        });
+      }
+    }
+
+    it('hides both the left and right operand over many questions', () => {
+      const seen = new Set<string>();
+      for (let i = 0; i < 100; i++) seen.add(generateEquationQuestion('easy', ['+']).unknown!);
+      expect(seen).toEqual(new Set(['a', 'b']));
+    });
+
+    it('is routed by generateNumericQuestion for the equations game', () => {
+      const q = generateNumericQuestion('equations', 'easy', ['×']);
+      expect(q.kind).toBe('equation');
+      expect(q.operation).toBe('×');
+    });
+
+    it('checkAnswer works for equations', () => {
+      const q = generateEquationQuestion('medium', ['-']);
+      expect(checkAnswer(q, q.correctAnswer)).toBe(true);
+      expect(checkAnswer(q, q.correctAnswer + 1)).toBe(false);
+    });
+  });
+
+  describe('game type metadata', () => {
+    it('only Math Race and Equations use operations', () => {
+      expect(GAME_TYPES.filter((g) => usesOperations(g.type)).map((g) => g.type)).toEqual([
+        'mathRace',
+        'equations',
+      ]);
+    });
+
+    it('every game type has a category', () => {
+      for (const g of GAME_TYPES) expect(['math', 'other']).toContain(g.category);
     });
   });
 });

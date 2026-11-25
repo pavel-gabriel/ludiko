@@ -216,6 +216,18 @@ export async function deleteTemplate(templateId: string): Promise<void> {
 /*  CSV export                                                        */
 /* ------------------------------------------------------------------ */
 
+/**
+ * Escape a CSV field: quote fields containing separators/quotes/newlines
+ * and neutralize leading formula characters (=, +, -, @) so exported
+ * files can't inject spreadsheet formulas.
+ */
+function csvEscape(value: string | number): string {
+  let s = String(value);
+  if (/^[=+\-@]/.test(s)) s = `'${s}`;
+  if (/[",\n\r]/.test(s)) s = `"${s.replace(/"/g, '""')}"`;
+  return s;
+}
+
 /** Generate CSV string from session results */
 export function exportResultsToCSV(
   sessionTitle: string,
@@ -223,10 +235,12 @@ export function exportResultsToCSV(
 ): string {
   const header = 'Student Code,Label,Score,Total Questions,Accuracy (%),Time (s)';
   const rows = results.map((r) =>
-    `${r.studentCode},${r.studentLabel},${r.score},${r.totalQuestions},${r.accuracy},${r.timeTaken}`,
+    [r.studentCode, r.studentLabel, r.score, r.totalQuestions, r.accuracy, r.timeTaken]
+      .map(csvEscape)
+      .join(','),
   );
   return [
-    `# ${sessionTitle}`,
+    `# ${csvEscape(sessionTitle)}`,
     `# Exported ${new Date().toISOString()}`,
     '',
     header,

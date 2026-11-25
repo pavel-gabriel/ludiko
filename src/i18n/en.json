@@ -21,8 +21,11 @@
     "avatar": "Your avatar",
     "gameType": "Game",
     "gameTypeMathRace": "Math Race",
+    "gameTypeEquations": "Equations",
     "gameTypeShapeMatch": "Shape Match",
     "gameTypeMemoryGame": "Memory Game",
+    "gameTypeCountingGame": "Counting",
+    "gameTypeNumberSequence": "Sequences",
     "gameMode": "Mode",
     "gameModeRaceToFinish": "Race to Finish",
     "gameModeTimedSprint": "Timed Sprint",
@@ -39,7 +42,9 @@
     "shapeModeImage": "Find shape",
     "shapeModeWord": "Find word",
     "create": "Create",
-    "back": "Back"
+    "back": "Back",
+    "categoryMath": "Math games",
+    "categoryOther": "Other games"
   },
   "join": {
     "title": "Join Room",
@@ -78,6 +83,8 @@
     "tryAgain": "Try again!",
     "timeUp": "Time's up!",
     "getReady": "Get ready!",
+    "howMany": "How many",
+    "findMissing": "Find the missing number",
     "go": "Go!",
     "tapTheShape": "Tap the",
     "findTheWord": "Find the word for",
@@ -87,7 +94,9 @@
     "score": "Score",
     "exitGame": "Exit",
     "finished": "Finished!",
-    "waitingForOthers": "Waiting for other players..."
+    "waitingForOthers": "Waiting for other players...",
+    "findValue": "Find the value of {{variable}}",
+    "unknownValue": "unknown number {{variable}}"
   },
   "results": {
     "title": "Results",
