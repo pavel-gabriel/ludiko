@@ -9,6 +9,8 @@ import Money from './Money'
 import Objects from './Objects'
 import FractionVisual from './FractionVisual'
 import ImageVisual from './ImageVisual'
+import Shape from './Shape'
+import Ruler from './Ruler'
 import { visualLabel } from './labels'
 
 export type VisualSize = 'sm' | 'md' | 'lg'
@@ -62,10 +64,14 @@ export default function Visual({ spec, size = 'md', showLabels = true, className
     case 'image':
       svg = <ImageVisual src={spec.media.src} alt={localize(spec.media.alt, lang)} label={label} />
       break
-    /* TEMPORARY text fallback until the shape/ruler SVG components land */
     case 'shape':
+      svg = <Shape shape={spec.shape} sides={spec.sides} unit={spec.unit} hideSide={spec.hideSide} label={label} lang={lang} />
+      break
     case 'ruler':
-      svg = <p role="img" aria-label={label} className="text-center font-bold">{label}</p>
+      svg = (
+        <Ruler to={spec.to} unit={spec.unit} from={spec.from} objectEnd={spec.objectEnd}
+          objectLabel={spec.objectLabel ? localize(spec.objectLabel, lang) : undefined} label={label} lang={lang} />
+      )
       break
   }
 

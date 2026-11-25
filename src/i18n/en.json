@@ -411,7 +411,17 @@
       "objectsGroupsUneven": "{{count}} × {{icon}}, shared into {{groups}} groups",
       "fraction": "Fraction {{numerator}} out of {{denominator}}: {{numerator}} of {{denominator}} equal parts are coloured",
       "fractionWholes": "Fraction {{numerator}} out of {{denominator}}: {{numerator}} parts coloured, each whole has {{denominator}} equal parts",
-      "image": "Picture"
+      "image": "Picture",
+      "shape_triangle": "Triangle",
+      "shape_square": "Square",
+      "shape_rectangle": "Rectangle",
+      "shape_circle": "Circle",
+      "shapeSides": "{{name}} with sides {{list}}",
+      "shapeSide": "{{name}} with side {{list}}",
+      "shapeUnknown": "{{name}} with an unknown side",
+      "shapeOneUnknown": "one side unknown",
+      "ruler": "Ruler from 0 to {{to}} {{unit}}",
+      "rulerObject": "an object on the ruler"
     },
     "preview": {
       "title": "Visuals and explanations gallery",
@@ -427,6 +437,8 @@
       "objects": "Objects",
       "fraction": "Fractions",
       "image": "Image",
+      "shape": "Shapes",
+      "ruler": "Ruler",
       "again": "Play again",
       "finished": "Done! You reached the end."
     }
