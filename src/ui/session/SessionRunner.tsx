@@ -280,7 +280,7 @@ export default function SessionRunner({
             <MascotSvg mood="encourage" size={48} className="shrink-0" decorative />
             <span>{t('session.explainIntro')}</span>
           </p>
-          <FramesPlayer explanation={explanation} onDone={() => advance(queue)} />
+          <FramesPlayer explanation={explanation} onDone={() => advance(queue)} hideMascot />
           <button
             type="button"
             onClick={() => advance(queue)}
