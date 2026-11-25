@@ -397,12 +397,12 @@ describe('content on disk', () => {
     ];
     expect(errors).toEqual([]);
   });
-  it('seed skills follow the content policy (own, OWN, Ludiko, MEM-2013)', () => {
+  it('seed skills follow the content policy (own, OWN, Ludiko, MEM-2013 or MAT-III-IV-2014)', () => {
     for (const x of skills) {
       expect(x.provenance.source).toBe('own');
       expect(x.provenance.licence).toBe('OWN');
       expect(x.provenance.author).toBe('Ludiko');
-      expect(x.competences.every((c) => c.programa === 'MEM-2013')).toBe(true);
+      expect(x.competences.every((c) => ['MEM-2013', 'MAT-III-IV-2014'].includes(c.programa))).toBe(true);
       expect(x.title.en).toBeTruthy();
     }
   });

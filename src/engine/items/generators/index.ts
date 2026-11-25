@@ -16,6 +16,13 @@ import { placeValue } from './placeValue';
 import { getGenerator, registerGenerator } from './registry';
 import { mulberry32, randInt, shuffle } from './util';
 import { wordProblem } from './wordProblem';
+// grade III-IV generators: each module registers itself
+import './division';
+import './equation';
+import './multiplication';
+import './numberReading';
+import './orderOfOps';
+import './rounding';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

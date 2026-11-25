@@ -9,7 +9,8 @@ import type { Item, ItemResponse, Skill } from '../src/engine/types';
 
 const SEED = 20240611;
 const COUNT = 200;
-const skills: Skill[] = getSkillsBySubject('mat');
+// grades 0-II: the generic checks below assume small numbers; grades III-IV are covered by tests/generators.grade34.test.ts
+const skills: Skill[] = getSkillsBySubject('mat').filter((s) => s.grade <= 2);
 
 /** The response a perfect child would give */
 function correctResponse(item: Item): ItemResponse {

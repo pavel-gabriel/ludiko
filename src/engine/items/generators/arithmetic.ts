@@ -1,10 +1,14 @@
 /**
  * `addition` (params: max, carry?) and `subtraction` (params: max, borrow?) generators.
  *
- * Operand pairs are enumerated once per (max, flag) so the carry/borrow constraint is exact:
+ * Up to max=100 the operand pairs are enumerated once per (max, flag) and the flag is about the ones digits:
  *  - carry:false  => ones digits sum to < 10;   carry:true  => ones digits sum to >= 10
  *  - borrow:false => ones(a) >= ones(b);        borrow:true => ones(a) < ones(b)
- * and the result always stays within [0, max].
+ * Above 100 (grades III-IV, up to 1 000 000) pairs are SAMPLED column by column (no enumeration), with the
+ * exact multi-digit semantics:
+ *  - carry:false => no column sums to >= 10;    carry:true => at least one column does
+ *  - borrow:false => every digit of a >= the digit of b;  borrow:true => at least one digit of a < that of b
+ * The result always stays within [0, max].
  *
  * Item types: choice, number-input, fill-gap (3 gap positions), true-false, and "read the jumps"
  * (choice among calculations). Number-line scaffolds never reveal the answer.
@@ -12,9 +16,10 @@
 import type { ChoiceItem, FillGapItem, Item, LocalizedText, NumberInputItem, TrueFalseItem, VisualSpec } from '../../types';
 import type { GeneratorFn, GeneratorContext } from './registry';
 import {
-  baseFields, ceilTen, chance, floorTen, numberCards, numberOptions, optionCount, paramBool, paramInt, pick,
-  shuffle, weighted,
+  baseFields, ceilTen, chance, floorTen, numberOptions, optionCount, paramBool, paramInt, pick,
+  randInt, shuffle, weighted, type Rng,
 } from './util';
+import { digitAt, fmt, fmtCards, numDigits, pow10 } from './numfmt';
 
 interface Pair {
   a: number;
@@ -26,10 +31,16 @@ interface Op {
   sym: '+' | '−';
   result: (a: number, b: number) => number;
   pairs: (max: number, flag: boolean | undefined) => Pair[];
+  /** Multi-digit sampler (max > ENUMERATE_MAX) */
+  sample: (rng: Rng, max: number, d: number, flag: boolean | undefined) => Pair;
+  /** Does (a, b) satisfy the skill's constraints? (distractor expressions must obey them too) */
+  allows: (max: number, flag: boolean | undefined, a: number, b: number) => boolean;
   /** Size used to pick easier pairs at low difficulty */
   size: (p: Pair) => number;
   /** Plausible wrong results */
   wrongResults: (a: number, b: number, flagged: boolean) => number[];
+  /** Multi-digit wrong results (max > ENUMERATE_MAX) */
+  wrongBig: (a: number, b: number, flagged: boolean) => number[];
 }
 
 const cache = new Map<string, Pair[]>();
@@ -43,6 +54,112 @@ function memo(key: string, build: () => Pair[]): Pair[] {
 export const addCarries = (a: number, b: number): boolean => (a % 10) + (b % 10) >= 10;
 export const subBorrows = (a: number, b: number): boolean => a % 10 < b % 10;
 
+/** Multi-digit: does ANY column of a + b carry? (the first column with digit sum >= 10 carries) */
+export function addCarriesAny(a: number, b: number): boolean {
+  for (; a > 0 || b > 0; a = Math.floor(a / 10), b = Math.floor(b / 10)) if ((a % 10) + (b % 10) >= 10) return true;
+  return false;
+}
+/** Multi-digit (a >= b): does ANY column of a - b borrow? (the first column with a digit < b digit borrows) */
+export function subBorrowsAny(a: number, b: number): boolean {
+  for (; b > 0; a = Math.floor(a / 10), b = Math.floor(b / 10)) if (a % 10 < b % 10) return true;
+  return false;
+}
+
+/** Above this max operands are sampled instead of enumerated */
+export const ENUMERATE_MAX = 100;
+const RETRIES = 80;
+
+/** Share of the range used at a difficulty (same curve as the enumerated path) */
+const limitFor = (max: number, d: number): number => Math.max(20, Math.min(max, Math.floor(max * (0.35 + 0.13 * d))));
+
+/** Digit count for an operand: usually the full width of `top`, sometimes a bit narrower. */
+function widthFor(rng: Rng, top: number, minW = 1): number {
+  const full = numDigits(top);
+  const lo = Math.max(minW, full - 3);
+  return rng() < 0.8 ? full : randInt(rng, Math.min(lo, full), full);
+}
+
+/** a random number with exactly w digits, not above `top` */
+function withDigits(rng: Rng, w: number, top: number): number {
+  const lo = w === 1 ? 1 : pow10(w - 1);
+  const hi = Math.min(pow10(w) - 1, top);
+  return hi < lo ? lo : randInt(rng, lo, hi);
+}
+
+/** Addends a, b >= 1 with a + b <= max (soft bound `limit`), honouring the multi-digit carry flag. */
+export function sampleAddPair(rng: Rng, max: number, d: number, carry: boolean | undefined): Pair {
+  const limit = limitFor(max, d);
+  for (let t = 0; t < RETRIES; t++) {
+    const bound = t < RETRIES / 2 ? limit : max;
+    const wa = widthFor(rng, bound - 1, 2);
+    const a = withDigits(rng, wa, bound - 1);
+    const wbMax = Math.min(wa, numDigits(bound - a));
+    const wb = rng() < 0.6 ? Math.max(1, wbMax - randInt(rng, 0, 1)) : randInt(rng, 1, wbMax);
+    const forced = carry === true ? randInt(rng, 0, wb - 1) : -1;
+    let b = 0;
+    for (let i = 0; i < wb; i++) {
+      const ai = digitAt(a, i);
+      let lo = i === wb - 1 && wb > 1 ? 1 : 0;
+      let hi = 9;
+      if (carry === false) hi = 9 - ai;
+      if (i === forced) lo = Math.max(lo, 10 - ai);
+      if (hi < lo) {
+        b = -1;
+        break;
+      }
+      b += randInt(rng, lo, hi) * pow10(i);
+    }
+    if (b < 1 || a + b > bound) continue;
+    if (carry !== undefined && addCarriesAny(a, b) !== carry) continue;
+    return { a, b };
+  }
+  return carry ? { a: 9, b: 2 } : { a: 1, b: 1 };
+}
+
+/** Minuend a and subtrahend 1 <= b < a (a <= max, soft bound `limit`), honouring the multi-digit borrow flag. */
+export function sampleSubPair(rng: Rng, max: number, d: number, borrow: boolean | undefined): Pair {
+  const limit = limitFor(max, d);
+  for (let t = 0; t < RETRIES; t++) {
+    const bound = t < RETRIES / 2 ? limit : max;
+    const wa = widthFor(rng, bound, 2);
+    const a = withDigits(rng, Math.max(2, wa), bound);
+    const wb = rng() < 0.6 ? Math.max(1, numDigits(a) - randInt(rng, 0, 1)) : randInt(rng, 1, numDigits(a));
+    const forced = borrow === true ? randInt(rng, 0, wb - 1) : -1;
+    let b = 0;
+    for (let i = 0; i < wb; i++) {
+      const ai = digitAt(a, i);
+      let lo = i === wb - 1 && wb > 1 ? 1 : 0;
+      let hi = i < forced ? 9 : ai; // below the forced column anything goes; elsewhere never above a's digit
+      if (borrow === true && i === forced) {
+        lo = Math.max(lo, ai + 1);
+        hi = 9;
+      }
+      if (hi < lo) {
+        b = -1;
+        break;
+      }
+      b += randInt(rng, lo, hi) * pow10(i);
+    }
+    if (b < 1 || b >= a) continue;
+    if (borrow !== undefined && subBorrowsAny(a, b) !== borrow) continue;
+    return { a, b };
+  }
+  return borrow ? { a: 21, b: 9 } : { a: 25, b: 13 };
+}
+
+/** Digit-column slips for wrong answers: "no carry" and "smaller digit from larger" results */
+const noCarrySum = (a: number, b: number): number => {
+  let r = 0;
+  for (let i = 0; a > 0 || b > 0; i++, a = Math.floor(a / 10), b = Math.floor(b / 10)) r += (((a % 10) + (b % 10)) % 10) * pow10(i);
+  return r;
+};
+const smallerFromLarger = (a: number, b: number): number => {
+  let r = 0;
+  for (let i = 0; a > 0 || b > 0; i++, a = Math.floor(a / 10), b = Math.floor(b / 10)) r += Math.abs((a % 10) - (b % 10)) * pow10(i);
+  return r;
+};
+const slips = (r: number): number[] => [r + 1, r - 1, r + 10, r - 10, r + 100, r - 100, r + 1000, r - 1000];
+
 const ADD: Op = {
   sym: '+',
   result: (a, b) => a + b,
@@ -53,6 +170,13 @@ const ADD: Op = {
         for (let b = 1; a + b <= max; b++) if (carry === undefined || addCarries(a, b) === carry) out.push({ a, b });
       return out;
     }),
+  sample: sampleAddPair,
+  allows: (max, flag, a, b) =>
+    a >= 1 && b >= 1 && a + b <= max && (flag === undefined || (max > ENUMERATE_MAX ? addCarriesAny(a, b) : addCarries(a, b)) === flag),
+  wrongBig: (a, b, carry) => {
+    const r = a + b;
+    return [...slips(r), Math.abs(a - b), carry ? noCarrySum(a, b) : r + 10, r + (a % 10)];
+  },
   size: (p) => p.a + p.b,
   wrongResults: (a, b, carry) => {
     const r = a + b;
@@ -70,6 +194,13 @@ const SUB: Op = {
         for (let b = 1; b <= a; b++) if (borrow === undefined || subBorrows(a, b) === borrow) out.push({ a, b });
       return out;
     }),
+  sample: sampleSubPair,
+  allows: (max, flag, a, b) =>
+    a >= 2 && b >= 1 && b <= a && a <= max && (flag === undefined || (max > ENUMERATE_MAX ? subBorrowsAny(a, b) : subBorrows(a, b)) === flag),
+  wrongBig: (a, b, borrow) => {
+    const r = a - b;
+    return [...slips(r), a + b, borrow ? smallerFromLarger(a, b) : r + 2];
+  },
   size: (p) => p.a,
   wrongResults: (a, b, borrow) => {
     const r = a - b;
@@ -79,7 +210,9 @@ const SUB: Op = {
   },
 };
 
-function choosePair(ctx: GeneratorContext, pairs: Pair[], op: Op, max: number): Pair {
+function choosePair(ctx: GeneratorContext, flag: boolean | undefined, op: Op, max: number): Pair {
+  if (max > ENUMERATE_MAX) return op.sample(ctx.rng, max, ctx.difficulty, flag);
+  const pairs = op.pairs(max, flag);
   if (pairs.length === 0) throw new Error(`${op.sym}: no operand pair fits max=${max} with the requested flag`);
   const limit = max * (0.35 + 0.13 * ctx.difficulty);
   let pool = pairs.filter((p) => op.size(p) <= limit);
@@ -87,7 +220,7 @@ function choosePair(ctx: GeneratorContext, pairs: Pair[], op: Op, max: number): 
   return pool[Math.floor(ctx.rng() * pool.length)];
 }
 
-const expr = (op: Op, a: number, b: number): string => `${a} ${op.sym} ${b}`;
+const expr = (op: Op, a: number, b: number): string => `${fmt(a)} ${op.sym} ${fmt(b)}`;
 
 /** Number-line window around the calculation (never wider than 30), or undefined when it would be unreadable. */
 function lineWindow(max: number, a: number, r: number): { from: number; to: number } | undefined {
@@ -132,10 +265,11 @@ function build(op: Op, name: 'addition' | 'subtraction'): GeneratorFn {
     const { rng, difficulty: d } = ctx;
     const max = Math.max(4, paramInt(params, 'max', 10));
     const flag = paramBool(params, name === 'addition' ? 'carry' : 'borrow');
-    const { a, b } = choosePair(ctx, op.pairs(max, flag), op, max);
+    const { a, b } = choosePair(ctx, flag, op, max);
     const r = op.result(a, b);
-    const flagged = name === 'addition' ? addCarries(a, b) : subBorrows(a, b);
-    const wrong = op.wrongResults(a, b, flagged);
+    const big = max > ENUMERATE_MAX;
+    const flagged = name === 'addition' ? (big ? addCarriesAny(a, b) : addCarries(a, b)) : big ? subBorrowsAny(a, b) : subBorrows(a, b);
+    const wrong = big ? op.wrongBig(a, b, flagged) : op.wrongResults(a, b, flagged);
     const total = optionCount(d);
 
     const canJumps = fullJumps(op, max, a, b) !== undefined && d >= 2;
@@ -152,7 +286,7 @@ function build(op: Op, name: 'addition' | 'subtraction'): GeneratorFn {
             useScaffold ? scaffold(op, max, a, r) : undefined,
           ),
           type: 'choice',
-          options: numberCards(values),
+          options: fmtCards(values),
           correctId: `n${r}`,
         };
         return item;
@@ -174,9 +308,9 @@ function build(op: Op, name: 'addition' | 'subtraction'): GeneratorFn {
         const sym = op.sym;
         const gapValue = pos === 'result' ? r : pos === 'second' ? b : a;
         const template =
-          pos === 'result' ? `${a} ${sym} ${b} = {{gap}}`
-          : pos === 'second' ? `${a} ${sym} {{gap}} = ${r}`
-          : `{{gap}} ${sym} ${b} = ${r}`;
+          pos === 'result' ? `${fmt(a)} ${sym} ${fmt(b)} = {{gap}}`
+          : pos === 'second' ? `${fmt(a)} ${sym} {{gap}} = ${fmt(r)}`
+          : `{{gap}} ${sym} ${fmt(b)} = ${fmt(r)}`;
         const cands =
           pos === 'result'
             ? wrong
@@ -184,7 +318,7 @@ function build(op: Op, name: 'addition' | 'subtraction'): GeneratorFn {
               ? [b + 1, b - 1, b + 2, b - 2, r, a, b + 10, b - 10]
               : [a + 1, a - 1, a + 2, a - 2, r, b, a + 10, a - 10];
         const prompt: LocalizedText = { ro: 'Completează cu numărul care lipsește.', en: 'Fill in the missing number.' };
-        const typed = chance(rng, 0.35);
+        const typed = chance(rng, 0.35) || max >= 10000;
         const item: FillGapItem = {
           ...baseFields(ctx, prompt, pos === 'second' && useScaffold ? scaffold(op, max, a, r) : undefined),
           type: 'fill-gap',
@@ -197,7 +331,7 @@ function build(op: Op, name: 'addition' | 'subtraction'): GeneratorFn {
       case 'trueFalse': {
         const truth = chance(rng, 0.5);
         const shown = truth ? r : pick(rng, wrong.filter((v) => v >= 0 && v !== r));
-        const stmt = `${a} ${op.sym} ${b} = ${shown}`;
+        const stmt = `${fmt(a)} ${op.sym} ${fmt(b)} = ${fmt(shown)}`;
         const item: TrueFalseItem = {
           ...baseFields(ctx, { ro: `Adevărat sau fals: ${stmt}`, en: `True or false: ${stmt}` }),
           type: 'true-false',
@@ -207,10 +341,9 @@ function build(op: Op, name: 'addition' | 'subtraction'): GeneratorFn {
       }
       case 'jumps': {
         // distractors: same operation with a nearby operand (only pairs that obey the skill's flag), or the other operation
-        const allowed = new Set(op.pairs(max, flag).map((p) => `${p.a}|${p.b}`));
         const exprs = new Set<string>();
         for (const [x, y] of [[a, b + 1], [a, b - 1], [a + 1, b], [a - 1, b]]) {
-          if (allowed.has(`${x}|${y}`)) exprs.add(expr(op, x, y));
+          if (op.allows(max, flag, x, y)) exprs.add(expr(op, x, y));
         }
         exprs.add(op === ADD ? expr(SUB, Math.max(a, b), Math.min(a, b)) : expr(ADD, a, b));
         const distractors = shuffle(rng, [...exprs]).slice(0, total - 1);

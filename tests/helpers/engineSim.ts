@@ -2,7 +2,8 @@ import { getSkillsBySubject } from '../../src/engine/content/registry';
 import { createPlacement, nextProbe, recordProbe, type PlacementState } from '../../src/engine/diagnostic';
 import type { Grade, Semester, Skill } from '../../src/engine/types';
 
-export const mathSkills = (): Skill[] => getSkillsBySubject('mat');
+/** The engine tests are calibrated on the seed graph (grades 0-II); later grades are covered by the content/generator tests. */
+export const mathSkills = (): Skill[] => getSkillsBySubject('mat').filter((s) => s.grade <= 2);
 
 /** Deterministic PRNG (mulberry32) */
 export function rng(seed: number): () => number {
