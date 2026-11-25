@@ -664,5 +664,61 @@
       "redoYes": "Da, o refacem",
       "redoNo": "Nu, las-o așa"
     }
+  },
+  "bits": {
+    "title": "Biții de azi",
+    "subtitle": "Câte puțin în fiecare zi. Faci un bit sau mai mulți, cum vrei tu.",
+    "minutes": "~3 min",
+    "kinds": {
+      "warmup": "Încălzirea",
+      "island": "Insula zilei",
+      "challenge": "Provocarea"
+    },
+    "hints": {
+      "warmup": "Ne amintim ce știm",
+      "island": "Ceva de explorat",
+      "challenge": "O mică provocare"
+    },
+    "state": {
+      "done": "Gata",
+      "todo": "De făcut"
+    },
+    "tile": "{{kind}}, {{state}}, aproximativ 3 minute",
+    "allDone": "Biții de azi sunt gata! Bravo!",
+    "fullMission": "Misiunea întreagă, pas cu pas",
+    "preparing": "Pregătim biții de azi…",
+    "sessionTitle": "{{kind}}: {{title}}",
+    "doneTitle": "Bit terminat!",
+    "doneBody": "Încă un pas mic, dar important. Bravo!",
+    "allDoneBody": "Ai făcut toți biții de azi. Ne vedem mâine!",
+    "another": "Încă un bit?",
+    "anotherCta": "Da, încă unul!",
+    "stop": "Gata pe azi",
+    "empty": "Încă pregătim exercițiile pentru acest bit. Îl sărim deocamdată.",
+    "skip": "Mergem mai departe",
+    "notFound": "Nu am găsit acest bit. Hai înapoi, la biții de azi!",
+    "needCheckTitle": "Mai întâi, hai să vedem ce știi!",
+    "needCheckBody": "Facem o scurtă aventură de început, apoi ți-am pregătit biții.",
+    "needCheckCta": "Verifică-te!"
+  },
+  "push": {
+    "title": "Mementouri zilnice",
+    "intro": "O notificare blândă pe zi, la ora pe care o alegi, ca să vă amintiți de cele 3 minute de joacă.",
+    "consent": "Dacă pornești mementourile, păstrăm pe serverul Ludiko doar: adresa tehnică a acestui dispozitiv pentru notificări, ora aleasă, fusul orar, limba și data ultimei zile de joacă. Nu păstrăm numele, clasa sau progresul copilului. Folosim aceste date doar ca să trimitem cel mult o notificare pe zi, și niciuna dacă copilul s-a jucat deja. Le poți opri oricând: când oprești mementourile, ștergem tot ce am păstrat.",
+    "toggle": "Mementouri zilnice",
+    "hour": "Ora mementoului",
+    "hourOption": "{{h}}:00",
+    "pause": "Pune pe pauză",
+    "resume": "Reia mementourile",
+    "status": {
+      "off": "Oprit. Nu trimitem nicio notificare.",
+      "on": "Pornit: cel mult un memento pe zi, la {{hour}}:00, doar dacă nu v-ați jucat deja.",
+      "paused": "Pe pauză. Nu trimitem notificări până le reiei."
+    },
+    "busy": "Se salvează…",
+    "denied": "Notificările sunt blocate în browser. Le poți permite din setările site-ului, apoi încearcă din nou.",
+    "failed": "Nu am putut salva setarea. Verifică conexiunea la internet și încearcă din nou.",
+    "needsInstallTitle": "Mai întâi, adaugă Ludiko pe ecranul principal",
+    "needsInstall": "Pe iPhone și iPad, notificările merg doar din aplicația adăugată pe ecranul principal. Apasă Partajează, apoi „Adaugă pe ecranul principal”, deschide Ludiko de acolo și revino aici."
   }
 }

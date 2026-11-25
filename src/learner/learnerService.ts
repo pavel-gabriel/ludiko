@@ -18,6 +18,7 @@ import {
 } from '@/profiles/profileService';
 import type { ChildProfile } from '@/profiles/types';
 import type { LearnerService, Mission } from './contract';
+import { deriveBits } from './bitOps';
 import { masteryAfterItem, stampStateChange, withPrior } from './masteryOps';
 import { findMission, planDay, storeMission } from './missionOps';
 import { advancePlacement, recordPlacementProbe } from './placementOps';
@@ -103,6 +104,11 @@ export const learnerService: LearnerService = {
       storeMission(progress, mission);
       return clone(mission);
     });
+  },
+
+  async getTodayBits(profileId, subject, now = Date.now()) {
+    const mission = await learnerService.getTodayMission(profileId, subject, now);
+    return mission && deriveBits(mission);
   },
 
   async completeMissionStep(profileId, subject: SubjectId, day, stepIndex, accuracy) {

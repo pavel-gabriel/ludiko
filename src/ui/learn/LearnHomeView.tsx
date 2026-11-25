@@ -3,12 +3,15 @@ import type { TFunction } from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import type { SubjectId } from '@/engine/types'
+import BitTiles, { type HomeBit } from './BitTiles'
 import ProgressBar from './ProgressBar'
 import { subjectEmoji } from './subjects'
 
 export interface SubjectHome {
   subject: SubjectId
   placement: 'none' | 'inProgress' | 'done'
+  /** Today's bits (a slice of the mission), once the placement is done */
+  bits?: HomeBit[]
   /** Today's mission, once the placement is done */
   mission?: { done: number; total: number; minutes: number; complete: boolean }
 }
@@ -81,36 +84,28 @@ export default function LearnHomeView({ profile, stars, playDays, subjects }: Le
           )}
 
           {s.placement === 'done' ? (
-            <BigCard to={`/learn/mission/${s.subject}`} tone="bg-ludiko-green" icon="🗺️" testId="card-mission">
-              {s.mission?.complete ? (
-                <>
-                  <span className="block text-xl font-extrabold text-ludiko-text">{t('learn.home.missionDoneTitle')}</span>
-                  <span className="block text-sm font-semibold text-ludiko-text/80">{t('learn.home.missionDoneBody')}</span>
-                </>
-              ) : (
-                <>
-                  <span className="block text-xl font-extrabold text-ludiko-text">{t('learn.home.missionTitle')}</span>
-                  <span className="block text-sm font-semibold text-ludiko-text/80">
-                    {s.mission ? t('learn.home.missionBody', { min: s.mission.minutes }) : t('learn.home.missionPreparing')}
-                  </span>
-                  {s.mission && s.mission.done > 0 && (
-                    <>
-                      <span className="mt-1 block text-sm font-bold text-ludiko-text">
-                        {t('learn.home.missionProgress', { done: s.mission.done, total: s.mission.total })}
-                      </span>
-                      <ProgressBar
-                        className="mt-1"
-                        value={s.mission.total ? s.mission.done / s.mission.total : 0}
-                        label={t('learn.home.missionProgress', { done: s.mission.done, total: s.mission.total })}
-                      />
-                    </>
-                  )}
-                  <span className="mt-2 inline-block rounded-full bg-white px-4 py-1 text-sm font-extrabold text-ludiko-text">
-                    {s.mission && s.mission.done > 0 ? t('learn.home.missionContinue') : t('learn.home.missionCta')}
-                  </span>
-                </>
-              )}
-            </BigCard>
+            s.bits && s.bits.length > 0 ? (
+              <BitTiles subject={s.subject} bits={s.bits} />
+            ) : (
+              <BigCard to={`/learn/mission/${s.subject}`} tone="bg-ludiko-green" icon="🗺️" testId="card-mission">
+                <span className="block text-xl font-extrabold text-ludiko-text">{t('learn.home.missionTitle')}</span>
+                <span className="block text-sm font-semibold text-ludiko-text/80">
+                  {s.mission ? t('learn.home.missionBody', { min: s.mission.minutes }) : t('learn.home.missionPreparing')}
+                </span>
+                {s.mission && s.mission.done > 0 && (
+                  <>
+                    <span className="mt-1 block text-sm font-bold text-ludiko-text">
+                      {t('learn.home.missionProgress', { done: s.mission.done, total: s.mission.total })}
+                    </span>
+                    <ProgressBar
+                      className="mt-1"
+                      value={s.mission.total ? s.mission.done / s.mission.total : 0}
+                      label={t('learn.home.missionProgress', { done: s.mission.done, total: s.mission.total })}
+                    />
+                  </>
+                )}
+              </BigCard>
+            )
           ) : (
             <BigCard to={`/learn/check/${s.subject}`} tone="bg-ludiko-yellow ring-2 ring-ludiko-orange" icon="🧭" testId="card-check">
               <span className="block text-xl font-extrabold text-ludiko-text">{t('learn.home.checkTitle')}</span>

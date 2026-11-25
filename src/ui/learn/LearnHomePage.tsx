@@ -15,9 +15,11 @@ async function loadSubject(profileId: string, subject: SubjectHome['subject']): 
   const status: SubjectHome['placement'] = finished ? 'done' : placement ? 'inProgress' : 'none'
   if (!finished) return { subject, placement: status }
   const mission = await learnerService.getTodayMission(profileId, subject).catch(() => undefined)
+  const bits = await learnerService.getTodayBits(profileId, subject).catch(() => undefined)
   return {
     subject,
     placement: status,
+    bits: bits?.map((b) => ({ index: b.index, kind: b.kind, done: b.done })),
     mission: mission && {
       done: mission.steps.filter((s) => s.done).length,
       total: mission.steps.length,
