@@ -23,7 +23,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.count.10"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -64,7 +66,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.numrec.10"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -105,7 +109,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.compare.10"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -146,7 +152,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.add.10"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
@@ -187,7 +195,9 @@
         }
       }
     ],
-    "explanations": [],
+    "explanations": [
+      "exp.sub.10"
+    ],
     "masteryCheck": {
       "items": 5,
       "minCorrect": 4
