@@ -168,13 +168,23 @@ describe('stickers and itemSource', () => {
     expect(pickSticker([...STICKERS], 3)).toBeUndefined()
   })
 
-  it('pads a small bank by repeating items with unique ids, and returns [] for an empty bank', () => {
-    const skills = getAllSkills()
-    const withItems = skills.find((s) => getSessionItems(s, 1).length > 0)
-    expect(withItems).toBeDefined()
-    const items = getSessionItems(withItems!, 8)
+  it('serves generated items for skills with a generator', () => {
+    const skill = getAllSkills().find((s) => s.itemSources.some((src) => 'generator' in src))!
+    const items = getSessionItems(skill, 8)
     expect(items).toHaveLength(8)
     expect(new Set(items.map((i) => i.id)).size).toBe(8)
-    expect(getSessionItems({ ...withItems!, id: 'skill.without.items' }, 8)).toEqual([])
+    expect(items.every((i) => i.skillId === skill.id)).toBe(true)
+  })
+
+  it('pads a small static bank by repeating items with unique ids, and returns [] for an empty bank', () => {
+    /* Static-only path: strip generator sources so only content/items is used */
+    const withBank = getAllSkills()
+      .map((s) => ({ ...s, itemSources: [] }))
+      .find((s) => getSessionItems(s, 1).length > 0)
+    expect(withBank).toBeDefined()
+    const items = getSessionItems(withBank!, 8)
+    expect(items).toHaveLength(8)
+    expect(new Set(items.map((i) => i.id)).size).toBe(8)
+    expect(getSessionItems({ ...withBank!, id: 'skill.without.items' }, 8)).toEqual([])
   })
 })

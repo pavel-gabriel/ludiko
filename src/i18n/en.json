@@ -493,7 +493,8 @@
       "title": "What shall we practise today?",
       "subtitle": "Pick a skill and let's begin.",
       "items": "Exercises: {{n}}",
-      "soon": "coming soon"
+      "soon": "coming soon",
+      "ready": "Play"
     },
     "results": {
       "starsLabel": "{{n}} out of 3 stars",

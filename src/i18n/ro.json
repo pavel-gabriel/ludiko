@@ -499,7 +499,8 @@
       "title": "Ce exersăm azi?",
       "subtitle": "Alege o abilitate și începem.",
       "items": "Exerciții: {{n}}",
-      "soon": "în curând"
+      "soon": "în curând",
+      "ready": "Joacă"
     },
     "results": {
       "starsLabel": "{{n}} din 3 stele",

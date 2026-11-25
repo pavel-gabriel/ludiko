@@ -2,7 +2,8 @@ import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import LanguageToggle from '@/components/ui/LanguageToggle'
-import { getAllSkills, getItemsForSkill } from '@/engine/content/registry'
+import { getAllSkills } from '@/engine/content/registry'
+import { skillHasItems } from './itemSource'
 import { localize, type Grade, type Skill } from '@/engine/types'
 
 /** /practice — every skill in the registry, grouped by grade. A dev-friendly door into sessions. */
@@ -43,7 +44,7 @@ export default function PracticeListPage() {
             </h2>
             <ul className="flex flex-col gap-2">
               {skills.map((skill) => {
-                const n = getItemsForSkill(skill.id).length
+                const ready = skillHasItems(skill)
                 return (
                   <li key={skill.id}>
                     <Link
@@ -55,10 +56,10 @@ export default function PracticeListPage() {
                       </span>
                       <span
                         className={`shrink-0 rounded-full px-3 py-1 text-xs font-bold ${
-                          n > 0 ? 'bg-ludiko-green' : 'bg-gray-100 text-ludiko-text/70'
+                          ready ? 'bg-ludiko-green' : 'bg-gray-100 text-ludiko-text/70'
                         }`}
                       >
-                        {n > 0 ? t('session.list.items', { n }) : t('session.list.soon')}
+                        {ready ? t('session.list.ready') : t('session.list.soon')}
                       </span>
                     </Link>
                   </li>

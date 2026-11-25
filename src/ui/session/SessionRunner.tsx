@@ -73,6 +73,8 @@ export default function SessionRunner({
   const attempts = useRef<SessionAttempt[]>([])
   const startedAt = useRef(Date.now())
   const finished = useRef(false)
+  /* Each explanation plays at most once per session — repeating it after every slip feels like a punishment */
+  const shownExplanations = useRef(new Set<string>())
   const serial = useRef(0)
   const cycle = useRef(0)
 
@@ -152,7 +154,8 @@ export default function SessionRunner({
       nextQueue = requeue(queue, index, item, serial.current)
       setQueue(nextQueue)
       const found = getExplanation?.(item.explanationId ?? item.skillId)
-      if (found) {
+      if (found && !shownExplanations.current.has(found.id)) {
+        shownExplanations.current.add(found.id)
         setExplanation(found)
         setPhase('explain')
         return

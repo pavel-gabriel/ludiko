@@ -141,6 +141,18 @@ describe('SessionRunner: practice', () => {
     expect(meta2).toEqual({ retry: true })
   })
 
+  it('plays each explanation only once per session', () => {
+    const getExplanation = vi.fn((): Explanation | undefined => addingCrossingTen)
+    setup({ items: choices(3), getExplanation })
+    answerWrong() // item 1: explanation plays
+    expect(screen.getByText(addingCrossingTen.frames[0].text.ro)).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Sari peste' }))
+    expect(prompt(2)).toBeInTheDocument()
+    answerWrong() // item 2: same explanation, not shown again
+    expect(screen.queryByText(addingCrossingTen.frames[0].text.ro)).not.toBeInTheDocument()
+    expect(prompt(3)).toBeInTheDocument()
+  })
+
   it('falls back to the skill id when an item has no explanationId', () => {
     const getExplanation = vi.fn((): Explanation | undefined => undefined)
     setup({ items: choices(2), getExplanation })

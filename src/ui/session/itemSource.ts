@@ -2,11 +2,17 @@
  * THE seam between sessions and item production.
  *
  * Everything in src/ui/session gets its items from `getSessionItems` and nowhere else.
- * Today it serves the static bank (content/items) from the registry; the integrator
- * switches the body to the generators module (src/engine/items) without touching any UI.
+ * Skills with generator sources get fresh procedural items (which also mix in static bank
+ * items); skills with only a static bank are served from content/items.
  */
 import { getItemsForSkill } from '@/engine/content/registry'
+import { generateItems } from '@/engine/items/generators'
 import type { Item, Skill } from '@/engine/types'
+
+/** True when the skill can produce items (generator or static bank) */
+export function skillHasItems(skill: Skill): boolean {
+  return skill.itemSources.some((s) => 'generator' in s) || getItemsForSkill(skill.id).length > 0
+}
 
 /** Fisher–Yates on a copy */
 function shuffled<T>(arr: readonly T[], rnd: () => number = Math.random): T[] {
@@ -25,6 +31,9 @@ function shuffled<T>(arr: readonly T[], rnd: () => number = Math.random): T[] {
  * Returns [] when the skill has no items at all.
  */
 export function getSessionItems(skill: Skill, count: number, rnd: () => number = Math.random): Item[] {
+  if (count > 0 && skill.itemSources.some((s) => 'generator' in s)) {
+    return generateItems(skill, count, { seed: Math.floor(rnd() * 2 ** 31) })
+  }
   const bank = getItemsForSkill(skill.id)
   if (bank.length === 0 || count <= 0) return []
   const out: Item[] = []
