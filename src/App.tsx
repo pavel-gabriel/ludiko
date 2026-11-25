@@ -7,6 +7,7 @@ import { onAuthChange } from '@/services/authService';
 import { getTeacherProfile } from '@/services/teacherService';
 import { useAuthStore } from '@/store/authStore';
 import { useSettingsStore } from '@/store/settingsStore';
+import { flushQueuedReports } from '@/services/reportService';
 
 export default function App() {
   const { t, i18n } = useTranslation();
@@ -22,6 +23,14 @@ export default function App() {
   useEffect(() => {
     document.documentElement.classList.toggle('dyslexic-mode', dyslexicFont);
   }, [dyslexicFont]);
+
+  /* Send content reports that were queued while offline (on start + when back online) */
+  useEffect(() => {
+    const flush = () => { flushQueuedReports().catch(() => {}); };
+    flush();
+    window.addEventListener('online', flush);
+    return () => window.removeEventListener('online', flush);
+  }, []);
 
   /* Restore auth state on app mount / page refresh */
   useEffect(() => {
