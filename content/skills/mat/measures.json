@@ -1,0 +1,1040 @@
+[
+  {
+    "id": "mat.clock.hour",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Ceasul: citim orele fixe",
+      "en": "The clock: reading full hours"
+    },
+    "prerequisites": [
+      "mat.count.20"
+    ],
+    "itemSources": [
+      {
+        "generator": "clock",
+        "params": {
+          "minutes": [
+            0
+          ],
+          "deltas": [
+            60,
+            120,
+            180
+          ],
+          "max": 12
+        }
+      }
+    ],
+    "explanations": [
+      "exp.clock.hour"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.clock.hour",
+      "kind": "data",
+      "title": "Skill mat.clock.hour",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.clock.half",
+    "subject": "mat",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Ceasul: ore fixe și jumătăți de oră",
+      "en": "The clock: full and half hours"
+    },
+    "prerequisites": [
+      "mat.clock.hour"
+    ],
+    "itemSources": [
+      {
+        "generator": "clock",
+        "params": {
+          "minutes": [
+            0,
+            30
+          ],
+          "deltas": [
+            30,
+            60
+          ],
+          "max": 12
+        }
+      }
+    ],
+    "explanations": [
+      "exp.clock.half"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.clock.half",
+      "kind": "data",
+      "title": "Skill mat.clock.half",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.clock.quarter",
+    "subject": "mat",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Ceasul: sferturi de oră",
+      "en": "The clock: quarters of an hour"
+    },
+    "prerequisites": [
+      "mat.clock.half"
+    ],
+    "itemSources": [
+      {
+        "generator": "clock",
+        "params": {
+          "minutes": [
+            0,
+            15,
+            30,
+            45
+          ],
+          "deltas": [
+            15,
+            30,
+            45,
+            60
+          ],
+          "max": 12
+        }
+      }
+    ],
+    "explanations": [
+      "exp.clock.quarter"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.clock.quarter",
+      "kind": "data",
+      "title": "Skill mat.clock.quarter",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.clock.minutes",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Ceasul: minutele și timpul care trece",
+      "en": "The clock: minutes and elapsed time"
+    },
+    "prerequisites": [
+      "mat.clock.quarter",
+      "mat.count.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "clock",
+        "params": {
+          "minutes": [
+            0,
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45,
+            50,
+            55
+          ],
+          "deltas": [
+            10,
+            20,
+            25,
+            30,
+            40,
+            45,
+            60,
+            120
+          ],
+          "max": 12
+        }
+      }
+    ],
+    "explanations": [
+      "exp.clock.minutes"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.clock.minutes",
+      "kind": "data",
+      "title": "Skill mat.clock.minutes",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.time.calendar",
+    "subject": "mat",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Zi, săptămână, lună, an",
+      "en": "Day, week, month, year"
+    },
+    "prerequisites": [
+      "mat.count.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "time-units",
+        "params": {
+          "topic": "calendar",
+          "max": 60
+        }
+      }
+    ],
+    "explanations": [
+      "exp.time.calendar"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.time.calendar",
+      "kind": "data",
+      "title": "Skill mat.time.calendar",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.time.hm",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Ore și minute",
+      "en": "Hours and minutes"
+    },
+    "prerequisites": [
+      "mat.clock.minutes",
+      "mat.time.calendar"
+    ],
+    "itemSources": [
+      {
+        "generator": "time-units",
+        "params": {
+          "topic": "hm",
+          "max": 300
+        }
+      }
+    ],
+    "explanations": [
+      "exp.time.hm"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.time.hm",
+      "kind": "data",
+      "title": "Skill mat.time.hm",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.money.recognise",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Banii: lei și bani, câți sunt?",
+      "en": "Money: lei and bani, how much?"
+    },
+    "prerequisites": [
+      "mat.count.20",
+      "mat.add.nocarry.20"
+    ],
+    "itemSources": [
+      {
+        "generator": "money",
+        "params": {
+          "kinds": [
+            "total",
+            "pay",
+            "compare"
+          ],
+          "maxLei": 20,
+          "coins": true,
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.money.recognise"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.money.recognise",
+      "kind": "data",
+      "title": "Skill mat.money.recognise",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.money.add",
+    "subject": "mat",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Banii: adunăm sume în lei",
+      "en": "Money: adding amounts in lei"
+    },
+    "prerequisites": [
+      "mat.money.recognise",
+      "mat.add.nocarry.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "money",
+        "params": {
+          "kinds": [
+            "total",
+            "sum",
+            "pay",
+            "compare"
+          ],
+          "maxLei": 100,
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.money.add"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.money.add",
+      "kind": "data",
+      "title": "Skill mat.money.add",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.money.change",
+    "subject": "mat",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Banii: restul",
+      "en": "Money: giving change"
+    },
+    "prerequisites": [
+      "mat.money.add",
+      "mat.sub.noborrow.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "money",
+        "params": {
+          "kinds": [
+            "change",
+            "pay",
+            "sum",
+            "total"
+          ],
+          "maxLei": 100,
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.money.change"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.money.change",
+      "kind": "data",
+      "title": "Skill mat.money.change",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.money.bani",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Banii: lei și bani împreună",
+      "en": "Money: lei and bani together"
+    },
+    "prerequisites": [
+      "mat.money.change",
+      "mat.sub.borrow.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "money",
+        "params": {
+          "kinds": [
+            "convert",
+            "total",
+            "change",
+            "compare",
+            "pay",
+            "sum"
+          ],
+          "maxLei": 20,
+          "bani": true,
+          "coins": true,
+          "max": 1000
+        }
+      }
+    ],
+    "explanations": [
+      "exp.money.bani"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.money.bani",
+      "kind": "data",
+      "title": "Skill mat.money.bani",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.length.cm",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Lungimea: măsurăm în cm cu rigla",
+      "en": "Length: measuring in cm with a ruler"
+    },
+    "prerequisites": [
+      "mat.count.20",
+      "mat.compare.10"
+    ],
+    "itemSources": [
+      {
+        "generator": "measure",
+        "params": {
+          "units": [
+            "cm"
+          ],
+          "kinds": [
+            "ruler",
+            "compare",
+            "add",
+            "tf"
+          ],
+          "maxVal": 20,
+          "max": 20
+        }
+      }
+    ],
+    "explanations": [
+      "exp.length.cm"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.length.cm",
+      "kind": "data",
+      "title": "Skill mat.length.cm",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.length.m",
+    "subject": "mat",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Lungimea: metrul și centimetrul",
+      "en": "Length: metres and centimetres"
+    },
+    "prerequisites": [
+      "mat.length.cm",
+      "mat.count.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "measure",
+        "params": {
+          "units": [
+            "cm",
+            "m"
+          ],
+          "pairs": [
+            "m-cm"
+          ],
+          "kinds": [
+            "ruler",
+            "compare",
+            "convert",
+            "add",
+            "unit",
+            "tf"
+          ],
+          "maxVal": 100,
+          "max": 1000
+        }
+      }
+    ],
+    "explanations": [
+      "exp.length.m"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.length.m",
+      "kind": "data",
+      "title": "Skill mat.length.m",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.measure.mass.capacity",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Masa și capacitatea: kg și l",
+      "en": "Mass and capacity: kg and l"
+    },
+    "prerequisites": [
+      "mat.add.carry.100",
+      "mat.sub.borrow.100",
+      "mat.length.m"
+    ],
+    "itemSources": [
+      {
+        "generator": "measure",
+        "params": {
+          "units": [
+            "kg",
+            "l"
+          ],
+          "unitNames": [
+            "kg",
+            "g",
+            "l",
+            "ml"
+          ],
+          "kinds": [
+            "compare",
+            "add",
+            "unit",
+            "tf"
+          ],
+          "maxVal": 30,
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.measure.mass.capacity"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.measure.mass.capacity",
+      "kind": "data",
+      "title": "Skill mat.measure.mass.capacity",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.measure.convert",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Transformări între unități de măsură",
+      "en": "Converting between units of measure"
+    },
+    "prerequisites": [
+      "mat.length.m",
+      "mat.measure.mass.capacity"
+    ],
+    "itemSources": [
+      {
+        "generator": "measure",
+        "params": {
+          "units": [
+            "m",
+            "kg",
+            "l"
+          ],
+          "unitNames": [
+            "km",
+            "m",
+            "cm",
+            "kg",
+            "g",
+            "l",
+            "ml"
+          ],
+          "pairs": [
+            "m-cm",
+            "km-m",
+            "kg-g",
+            "l-ml"
+          ],
+          "kinds": [
+            "convert",
+            "convert",
+            "compare",
+            "add",
+            "unit",
+            "tf"
+          ],
+          "maxVal": 30,
+          "max": 10000
+        }
+      }
+    ],
+    "explanations": [
+      "exp.measure.convert"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.measure.convert",
+      "kind": "data",
+      "title": "Skill mat.measure.convert",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.fraction.half",
+    "subject": "mat",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "1.3"
+      }
+    ],
+    "title": {
+      "ro": "Fracții: jumătate și sfert",
+      "en": "Fractions: halves and quarters"
+    },
+    "prerequisites": [
+      "mat.count.20",
+      "mat.sub.noborrow.20"
+    ],
+    "itemSources": [
+      {
+        "generator": "fraction",
+        "params": {
+          "denoms": [
+            2,
+            4
+          ],
+          "named": true,
+          "kinds": [
+            "read",
+            "pick",
+            "tf",
+            "setOf"
+          ],
+          "maxSet": 20,
+          "max": 20
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fraction.half"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.fraction.half",
+      "kind": "data",
+      "title": "Skill mat.fraction.half",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.fraction.set",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "1.3"
+      }
+    ],
+    "title": {
+      "ro": "Fracții dintr-o mulțime de obiecte",
+      "en": "Fractions of a set of objects"
+    },
+    "prerequisites": [
+      "mat.fraction.half",
+      "mat.count.100",
+      "mat.add.carry.100"
+    ],
+    "itemSources": [
+      {
+        "generator": "fraction",
+        "params": {
+          "denoms": [
+            2,
+            3,
+            4,
+            5,
+            10
+          ],
+          "kinds": [
+            "setOf",
+            "setFill",
+            "whole",
+            "read",
+            "tf"
+          ],
+          "maxSet": 50,
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fraction.set"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.fraction.set",
+      "kind": "data",
+      "title": "Skill mat.fraction.set",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.fraction.compare",
+    "subject": "mat",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "1.3"
+      }
+    ],
+    "title": {
+      "ro": "Compararea fracțiilor cu același numitor",
+      "en": "Comparing fractions with the same denominator"
+    },
+    "prerequisites": [
+      "mat.fraction.set"
+    ],
+    "itemSources": [
+      {
+        "generator": "fraction",
+        "params": {
+          "denoms": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12
+          ],
+          "kinds": [
+            "cmp",
+            "cmpSym",
+            "cmpOrder",
+            "cmpPic",
+            "read"
+          ],
+          "max": 20
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fraction.compare"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.fraction.compare",
+      "kind": "data",
+      "title": "Skill mat.fraction.compare",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.geom.shapes",
+    "subject": "mat",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "1.4"
+      }
+    ],
+    "title": {
+      "ro": "Figuri geometrice: triunghi, pătrat, dreptunghi, cerc",
+      "en": "Shapes: triangle, square, rectangle, circle"
+    },
+    "prerequisites": [
+      "mat.count.10"
+    ],
+    "itemSources": [
+      {
+        "generator": "shapes",
+        "params": {
+          "topic": "names",
+          "max": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.geom.shapes"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.geom.shapes",
+      "kind": "data",
+      "title": "Skill mat.geom.shapes",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.geom.perimeter",
+    "subject": "mat",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-III-IV-2014",
+        "code": "1.4"
+      }
+    ],
+    "title": {
+      "ro": "Perimetrul: adunăm laturile",
+      "en": "Perimeter: adding the sides"
+    },
+    "prerequisites": [
+      "mat.geom.shapes",
+      "mat.add.carry.100",
+      "mat.length.m"
+    ],
+    "itemSources": [
+      {
+        "generator": "shapes",
+        "params": {
+          "topic": "perimeter",
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.geom.perimeter"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.geom.perimeter",
+      "kind": "data",
+      "title": "Skill mat.geom.perimeter",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa"
+    }
+  }
+]

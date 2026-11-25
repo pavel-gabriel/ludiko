@@ -1,8 +1,13 @@
 import { getSkillsBySubject } from '../../src/engine/content/registry';
 import { createPlacement, nextProbe, recordProbe, type PlacementState } from '../../src/engine/diagnostic';
 import type { Grade, Semester, Skill } from '../../src/engine/types';
+import grade0 from '../../content/skills/mat/grade0.json';
+import grade1 from '../../content/skills/mat/grade1.json';
+import grade2 from '../../content/skills/mat/grade2.json';
 
-export const mathSkills = (): Skill[] => getSkillsBySubject('mat');
+/** The original grade 0-II counting/arithmetic graph (18 skills) that the engine tests are pinned to. */
+const CORE_IDS = new Set([...grade0, ...grade1, ...grade2].map((s) => s.id));
+export const mathSkills = (): Skill[] => getSkillsBySubject('mat').filter((s) => CORE_IDS.has(s.id));
 
 /** Deterministic PRNG (mulberry32) */
 export function rng(seed: number): () => number {
