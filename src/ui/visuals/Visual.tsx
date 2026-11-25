@@ -62,6 +62,11 @@ export default function Visual({ spec, size = 'md', showLabels = true, className
     case 'image':
       svg = <ImageVisual src={spec.media.src} alt={localize(spec.media.alt, lang)} label={label} />
       break
+    /* TEMPORARY text fallback until the shape/ruler SVG components land */
+    case 'shape':
+    case 'ruler':
+      svg = <p role="img" aria-label={label} className="text-center font-bold">{label}</p>
+      break
   }
 
   return (

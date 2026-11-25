@@ -83,5 +83,10 @@ export function visualLabel(spec: VisualSpec, t: TFunction, lang: string): strin
     }
     case 'image':
       return localize(spec.media.alt, lang) || t('frames.visual.image')
+    /* TEMPORARY until the shape/ruler visuals land: plain-text description */
+    case 'shape':
+      return `${spec.shape}${spec.sides ? ` ${spec.sides.join(', ')} ${spec.unit ?? ''}` : ''}`.trim()
+    case 'ruler':
+      return `0–${spec.to} ${spec.unit}`
   }
 }
