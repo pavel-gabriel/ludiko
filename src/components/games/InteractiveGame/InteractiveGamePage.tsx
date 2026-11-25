@@ -91,16 +91,17 @@ export default function InteractiveGamePage() {
   /* Countdown */
   useEffect(() => {
     if (!showCountdown) return;
+    /* Tick count kept locally: side effects run once in the interval, never inside a state updater */
+    let left = countdown;
     const interval = setInterval(() => {
-      setCountdown((prev) => {
-        if (prev <= 0) {
-          clearInterval(interval);
-          setShowCountdown(false);
-          if (room) setGamePhase(room.id, 'playing');
-          return 0;
-        }
-        return prev - 1;
-      });
+      if (left <= 0) {
+        clearInterval(interval);
+        setShowCountdown(false);
+        if (room) setGamePhase(room.id, 'playing');
+        return;
+      }
+      left -= 1;
+      setCountdown(left);
     }, 1000);
     return () => clearInterval(interval);
   }, [showCountdown, room?.id]);
@@ -111,17 +112,18 @@ export default function InteractiveGamePage() {
 
     if (isMemory) {
       /* Global countdown timer for memory */
-      setTimeRemaining(settings.timePerRound);
+      let globalLeft = settings.timePerRound;
+      setTimeRemaining(globalLeft);
       if (timerRef.current) clearInterval(timerRef.current);
       timerRef.current = setInterval(() => {
-        setTimeRemaining((prev) => {
-          if (prev <= 1) {
-            clearInterval(timerRef.current!);
-            if (room) setGamePhase(room.id, 'finished');
-            return 0;
-          }
-          return prev - 1;
-        });
+        if (globalLeft <= 1) {
+          clearInterval(timerRef.current!);
+          setTimeRemaining(0);
+          if (room) setGamePhase(room.id, 'finished');
+          return;
+        }
+        globalLeft -= 1;
+        setTimeRemaining(globalLeft);
       }, 1000);
       return () => { if (timerRef.current) clearInterval(timerRef.current); };
     }
@@ -130,19 +132,20 @@ export default function InteractiveGamePage() {
     const minIndex = Math.min(localIndex1, localIndex2);
     if (minIndex >= displayTotal) return;
 
-    setTimeRemaining(settings.timePerRound);
+    let questionLeft = settings.timePerRound;
+    setTimeRemaining(questionLeft);
     if (timerRef.current) clearInterval(timerRef.current);
 
     timerRef.current = setInterval(() => {
-      setTimeRemaining((prev) => {
-        if (prev <= 1) {
-          clearInterval(timerRef.current!);
-          setLocalIndex1((i) => (i < displayTotal ? i + 1 : i));
-          setLocalIndex2((i) => (i < displayTotal ? i + 1 : i));
-          return 0;
-        }
-        return prev - 1;
-      });
+      if (questionLeft <= 1) {
+        clearInterval(timerRef.current!);
+        setTimeRemaining(0);
+        setLocalIndex1((i) => (i < displayTotal ? i + 1 : i));
+        setLocalIndex2((i) => (i < displayTotal ? i + 1 : i));
+        return;
+      }
+      questionLeft -= 1;
+      setTimeRemaining(questionLeft);
     }, 1000);
 
     return () => { if (timerRef.current) clearInterval(timerRef.current); };

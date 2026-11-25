@@ -88,16 +88,17 @@ export default function MathRacePage() {
   /* ----- STEP 3: Countdown timer (3-2-1-Go!) ----- */
   useEffect(() => {
     if (!showCountdown) return;
+    /* Tick count kept locally: side effects run once in the interval, never inside a state updater */
+    let left = countdown;
     const interval = setInterval(() => {
-      setCountdown((prev) => {
-        if (prev <= 0) {
-          clearInterval(interval);
-          setShowCountdown(false);
-          if (isHost && room) setGamePhase(room.id, 'playing');
-          return 0;
-        }
-        return prev - 1;
-      });
+      if (left <= 0) {
+        clearInterval(interval);
+        setShowCountdown(false);
+        if (isHost && room) setGamePhase(room.id, 'playing');
+        return;
+      }
+      left -= 1;
+      setCountdown(left);
     }, 1000);
     return () => clearInterval(interval);
   }, [showCountdown, isHost, room?.id]);
@@ -108,19 +109,21 @@ export default function MathRacePage() {
     if (!gameState || gameState.phase !== 'playing' || !settings) return;
     if (localIndex >= displayTotal) return;
 
-    setTimeRemaining(settings.timePerRound);
+    /* Clock kept locally: expiry side effects run once, never inside a state updater */
+    let remaining = settings.timePerRound;
+    setTimeRemaining(remaining);
     if (timerRef.current) clearInterval(timerRef.current);
 
     timerRef.current = setInterval(() => {
-      setTimeRemaining((prev) => {
-        if (prev <= 1) {
-          clearInterval(timerRef.current!);
-          /* Auto-skip question when time expires (counts as wrong) */
-          setLocalIndex((i) => i + 1);
-          return 0;
-        }
-        return prev - 1;
-      });
+      if (remaining <= 1) {
+        clearInterval(timerRef.current!);
+        setTimeRemaining(0);
+        /* Auto-skip question when time expires (counts as wrong) */
+        setLocalIndex((i) => i + 1);
+        return;
+      }
+      remaining -= 1;
+      setTimeRemaining(remaining);
     }, 1000);
 
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
@@ -131,18 +134,20 @@ export default function MathRacePage() {
     if (!isSprint) return;
     if (!gameState || gameState.phase !== 'playing' || !settings) return;
 
-    setTimeRemaining(settings.timePerRound);
+    /* Clock kept locally: expiry side effects run once, never inside a state updater */
+    let remaining = settings.timePerRound;
+    setTimeRemaining(remaining);
     if (timerRef.current) clearInterval(timerRef.current);
 
     timerRef.current = setInterval(() => {
-      setTimeRemaining((prev) => {
-        if (prev <= 1) {
-          clearInterval(timerRef.current!);
-          if (isHost && room) setGamePhase(room.id, 'finished');
-          return 0;
-        }
-        return prev - 1;
-      });
+      if (remaining <= 1) {
+        clearInterval(timerRef.current!);
+        setTimeRemaining(0);
+        if (isHost && room) setGamePhase(room.id, 'finished');
+        return;
+      }
+      remaining -= 1;
+      setTimeRemaining(remaining);
     }, 1000);
 
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
