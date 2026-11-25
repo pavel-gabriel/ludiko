@@ -95,7 +95,7 @@ Every third-party asset is listed in [`content/credits.json`](../content/credits
 ## 9. Takedown and review
 
 - **Report:** every item will have a "Raportează o greșeală" (report a mistake) button (Plan Phase 0) that also accepts rights complaints. Rights complaints hide the item immediately until resolved.
-- **Contact:** a public contact address for rights holders, to be set by the owner (**TODO**), shown on the Credits page.
+- **Contact:** the rights-holder address in `RIGHTS_CONTACT` (`src/utils/constants.ts`), shown on the Credits page.
 - **Audit:** review `content/credits.json` and run a spot-check for copied content before each phase release.
 - **Before any paid plan:**
   1. A Romanian IP lawyer reviews this policy and the content inventory.

@@ -85,6 +85,6 @@ export const TIMED_SPRINT_DURATION = 60;
 
 /**
  * Public contact for copyright / rights-holder requests, shown on /credits.
- * TODO(owner): set a dedicated address before public launch (docs/LEGAL_CONTENT_POLICY.md §9).
+ * Consider a dedicated address before public launch (docs/LEGAL_CONTENT_POLICY.md §9).
  */
-export const RIGHTS_CONTACT = '';
+export const RIGHTS_CONTACT = 'pavel.gabriell@yahoo.com';
