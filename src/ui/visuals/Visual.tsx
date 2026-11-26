@@ -11,6 +11,7 @@ import FractionVisual from './FractionVisual'
 import ImageVisual from './ImageVisual'
 import Shape from './Shape'
 import Ruler from './Ruler'
+import Grid from './Grid'
 import { visualLabel } from './labels'
 
 export type VisualSize = 'sm' | 'md' | 'lg'
@@ -66,6 +67,9 @@ export default function Visual({ spec, size = 'md', showLabels = true, className
       break
     case 'shape':
       svg = <Shape shape={spec.shape} sides={spec.sides} unit={spec.unit} hideSide={spec.hideSide} label={label} lang={lang} />
+      break
+    case 'grid':
+      svg = <Grid rows={spec.rows} cols={spec.cols} cells={spec.cells} highlight={spec.highlight} label={label} />
       break
     case 'ruler':
       svg = (

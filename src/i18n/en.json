@@ -421,7 +421,10 @@
       "shapeUnknown": "{{name}} with an unknown side",
       "shapeOneUnknown": "one side unknown",
       "ruler": "Ruler from 0 to {{to}} {{unit}}",
-      "rulerObject": "an object on the ruler"
+      "rulerObject": "an object on the ruler",
+      "grid": "Grid with {{rows}} rows and {{cols}} columns: {{cells}}",
+      "gridStrip": "Strip of {{cols}} squares: {{cells}}",
+      "gridEmptyCell": "empty"
     },
     "preview": {
       "title": "Visuals and explanations gallery",
@@ -585,7 +588,8 @@
       "stiinte": "Science",
       "civ": "Civic education",
       "ist": "History",
-      "geo": "Geography"
+      "geo": "Geography",
+      "logic": "Logic puzzles"
     },
     "home": {
       "missionTitle": "Today's mission",

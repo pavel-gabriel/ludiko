@@ -41,6 +41,13 @@ import './stiinte';
 import './istGenerators';
 // Geography (geo) generators
 import './geoDirections';
+// Logic puzzles (patterns, odd-one-out, analogies, mini-sudoku, robot path, who-lives-where)
+import './logicPatterns';
+import './logicOddOne';
+import './logicAnalogy';
+import './logicSudoku';
+import './logicRobot';
+import './logicWhere';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

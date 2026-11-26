@@ -1,0 +1,147 @@
+[
+  {
+    "id": "exp.logic.pattern.number.4",
+    "skillId": "logic.pattern.number.4",
+    "title": {
+      "ro": "Înmulțire, pași mai mari și pași care cresc",
+      "en": "Multiplying, bigger steps and growing steps"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Verifică întâi dacă numerele se dublează sau se triplează: 2, 4, 8, 16 înseamnă ×2.",
+          "en": "First check if the numbers double or triple: 2, 4, 8, 16 means ×2."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 4,
+          "cells": [
+            "2",
+            "4",
+            "8",
+            "16"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă nu, scrie diferențele: la 1, 2, 4, 7, 11 diferențele sunt 1, 2, 3, 4 și cresc cu 1.",
+          "en": "If not, write the differences: for 1, 2, 4, 7, 11 the differences are 1, 2, 3, 4 and grow by 1."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 5,
+          "cells": [
+            "1",
+            "2",
+            "4",
+            "7",
+            "11"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Următoarea diferență este 5, deci după 11 vine 16. Verifică regula pe tot șirul înainte să răspunzi.",
+          "en": "The next difference is 5, so after 11 comes 16. Check the rule on the whole row before you answer."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 6,
+          "cells": [
+            "1",
+            "2",
+            "4",
+            "7",
+            "11",
+            "16"
+          ]
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.logic.pattern.number.4",
+      "kind": "explanation",
+      "title": "Explanation exp.logic.pattern.number.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the puzzle skill; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.logic.where.4",
+    "skillId": "logic.where.4",
+    "title": {
+      "ro": "Indicii cu mai mulți prieteni",
+      "en": "Clues with more friends"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Cu patru case ai mai multe posibilități. Fă un tabel în minte: fiecare prieten, fiecare casă.",
+          "en": "With four houses there are more possibilities. Make a table in your mind: each friend, each house."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 4,
+          "cells": [
+            "🏠",
+            "🏠",
+            "🏠",
+            "🏠"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "„Stă lângă” înseamnă casa dinainte sau cea de după. „Mai în stânga” poate fi oriunde la stânga.",
+          "en": "\"Lives next to\" means the house before or after. \"To the left\" can be anywhere on the left."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 4,
+          "cells": [
+            "🐶",
+            "🐱",
+            "🏠",
+            "🏠"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Combină indiciile: când un prieten are un singur loc posibil, pune-l acolo și taie locul pentru ceilalți.",
+          "en": "Combine the clues: when a friend has only one possible place, put them there and cross it out for the others."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 4,
+          "cells": [
+            "🐶",
+            "🐱",
+            "🐰",
+            "🐸"
+          ]
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.logic.where.4",
+      "kind": "explanation",
+      "title": "Explanation exp.logic.where.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the puzzle skill; awaiting human review"
+    }
+  }
+]

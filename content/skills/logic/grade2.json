@@ -1,0 +1,85 @@
+[
+  {
+    "id": "logic.analogy.2",
+    "subject": "logic",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LUDIKO-LOGIC",
+        "code": "A1"
+      }
+    ],
+    "title": {
+      "ro": "Perechi care se potrivesc (pisică : pisoi = câine : ?)",
+      "en": "Matching pairs (cat : kitten = dog : ?)"
+    },
+    "prerequisites": [
+      "logic.oddone.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "logic-analogy"
+      }
+    ],
+    "explanations": [
+      "exp.logic.analogy.2"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.logic.analogy.2",
+      "kind": "data",
+      "title": "Skill logic.analogy.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "LUDIKO-LOGIC is Ludi's own framework (no official programa covers logic puzzles); codes are internal. Puzzle types are generic; all content is original; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "logic.sudoku4.2",
+    "subject": "logic",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LUDIKO-LOGIC",
+        "code": "S1"
+      }
+    ],
+    "title": {
+      "ro": "Mini-sudoku 4×4: o căsuță goală",
+      "en": "Mini sudoku 4×4: one empty square"
+    },
+    "prerequisites": [
+      "logic.pattern.abc.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "logic-sudoku4",
+        "params": {
+          "empty": 1
+        }
+      }
+    ],
+    "explanations": [
+      "exp.logic.sudoku4.2"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.logic.sudoku4.2",
+      "kind": "data",
+      "title": "Skill logic.sudoku4.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "LUDIKO-LOGIC is Ludi's own framework (no official programa covers logic puzzles); codes are internal. Puzzle types are generic; all content is original; reading level aimed at the grade"
+    }
+  }
+]

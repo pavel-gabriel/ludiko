@@ -1,0 +1,256 @@
+[
+  {
+    "id": "exp.logic.pattern.number.3",
+    "skillId": "logic.pattern.number.3",
+    "title": {
+      "ro": "Găsește pasul dintre numere",
+      "en": "Find the step between numbers"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Scade sau adună: vezi cu cât se schimbă numărul de la un loc la următorul.",
+          "en": "Subtract or add: see by how much the number changes from one place to the next."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 4,
+          "cells": [
+            "3",
+            "6",
+            "9",
+            "12"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "De la 3 la 6 sunt 3, de la 6 la 9 tot 3. Pasul este +3 de fiecare dată.",
+          "en": "From 3 to 6 is 3, from 6 to 9 is again 3. The step is +3 every time."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 6,
+          "cells": [
+            "3",
+            "6",
+            "9",
+            "12",
+            "15",
+            null
+          ],
+          "highlight": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă pasul se schimbă pe rând (+2, +4, +2, +4…), repetă regula și pe aceea. După 12 vine 15.",
+          "en": "If the step changes in turns (+2, +4, +2, +4…), repeat that rule too. After 12 comes 15."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 5,
+          "cells": [
+            "3",
+            "6",
+            "9",
+            "12",
+            "15"
+          ]
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.logic.pattern.number.3",
+      "kind": "explanation",
+      "title": "Explanation exp.logic.pattern.number.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the puzzle skill; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.logic.sudoku4.3",
+    "skillId": "logic.sudoku4.3",
+    "title": {
+      "ro": "Sudoku cu mai multe goluri",
+      "en": "Sudoku with more gaps"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Începe cu golul care are cele mai multe numere în jurul lui: pe rând, pe coloană și în pătrat.",
+          "en": "Start with the gap that has the most numbers around it: in its row, column and square."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 4,
+          "cells": [
+            "1",
+            null,
+            "3",
+            "4",
+            "3",
+            "4",
+            "1",
+            "2",
+            "2",
+            "1",
+            "4",
+            "3",
+            null,
+            "3",
+            "2",
+            "1"
+          ],
+          "highlight": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Rândul de sus are 1, 3, 4, deci lipsește 2. Scrie-l în minte.",
+          "en": "The top row has 1, 3, 4, so 2 is missing. Write it down in your mind."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 4,
+          "cells": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "3",
+            "4",
+            "1",
+            "2",
+            "2",
+            "1",
+            "4",
+            "3",
+            null,
+            "3",
+            "2",
+            "1"
+          ],
+          "highlight": 12
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi celălalt gol se rezolvă mai ușor: pe rând are 3, 2, 1, deci lipsește 4.",
+          "en": "Then the other gap is easier: its row has 3, 2, 1, so 4 is missing."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 4,
+          "cells": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "3",
+            "4",
+            "1",
+            "2",
+            "2",
+            "1",
+            "4",
+            "3",
+            "4",
+            "3",
+            "2",
+            "1"
+          ],
+          "highlight": 12
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.logic.sudoku4.3",
+      "kind": "explanation",
+      "title": "Explanation exp.logic.sudoku4.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the puzzle skill; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.logic.where.3",
+    "skillId": "logic.where.3",
+    "title": {
+      "ro": "Rezolvă ghicitoarea cu indicii",
+      "en": "Solve the riddle with clues"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Desenează în minte casele în rând: stânga, mijloc, dreapta. Indiciile spun cine nu poate sta într-un loc.",
+          "en": "Picture the houses in a row: left, middle, right. Clues tell you who cannot live in a place."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 3,
+          "cells": [
+            "🏠",
+            "🏠",
+            "🏠"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Începe cu indiciul cel mai sigur, de exemplu „stă în ultima casă”. Pune acolo prietenul.",
+          "en": "Start with the surest clue, for example \"lives in the last house\". Put that friend there."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 3,
+          "cells": [
+            "🏠",
+            "🏠",
+            "🐱"
+          ],
+          "highlight": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Taie ce nu mai poate fi adevărat și continuă cu celelalte indicii, pe rând, până rămâne un singur loc.",
+          "en": "Cross out what can no longer be true and go on with the other clues, one at a time, until one place is left."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 3,
+          "cells": [
+            "🐶",
+            "🐰",
+            "🐱"
+          ]
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.logic.where.3",
+      "kind": "explanation",
+      "title": "Explanation exp.logic.where.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the puzzle skill; awaiting human review"
+    }
+  }
+]

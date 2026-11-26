@@ -1,0 +1,149 @@
+[
+  {
+    "id": "exp.logic.pattern.ab.0",
+    "skillId": "logic.pattern.ab.0",
+    "title": {
+      "ro": "Cum găsești ce urmează într-un șir",
+      "en": "How to find what comes next in a row"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Un șir are o regulă care se repetă. Uită-te la desene de la stânga la dreapta.",
+          "en": "A row follows a rule that repeats. Look at the pictures from left to right."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 4,
+          "cells": [
+            "🍎",
+            "🍌",
+            "🍎",
+            "🍌"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Aici regula este: măr, banană, măr, banană. Perechea 🍎🍌 se tot repetă.",
+          "en": "Here the rule is: apple, banana, apple, banana. The pair 🍎🍌 keeps repeating."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 6,
+          "cells": [
+            "🍎",
+            "🍌",
+            "🍎",
+            "🍌",
+            "🍎",
+            "🍌"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "După banană vine iar un măr. Continuă regula și ai găsit desenul lipsă!",
+          "en": "After the banana comes an apple again. Keep going with the rule and you have found the missing picture!"
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 6,
+          "cells": [
+            "🍎",
+            "🍌",
+            "🍎",
+            "🍌",
+            "🍎",
+            null
+          ],
+          "highlight": 5
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.logic.pattern.ab.0",
+      "kind": "explanation",
+      "title": "Explanation exp.logic.pattern.ab.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the puzzle skill; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.logic.oddone.0",
+    "skillId": "logic.oddone.0",
+    "title": {
+      "ro": "Găsește desenul străin",
+      "en": "Find the odd picture"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Uită-te la toate desenele. Unele sunt la fel în ceva: sunt tot fructe sau tot animale.",
+          "en": "Look at all the pictures. Some are alike: they are all fruits or all animals."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 3,
+          "cells": [
+            "🍎",
+            "🍌",
+            "🍇"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Spune cu voce tare ce sunt cele mai multe desene. Aici sunt trei fructe.",
+          "en": "Say out loud what most of the pictures are. Here there are three fruits."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 4,
+          "cells": [
+            "🍎",
+            "🍌",
+            "🍇",
+            "🐶"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Câinele nu este fruct. Este desenul care nu se potrivește cu celelalte!",
+          "en": "The dog is not a fruit. It is the picture that does not fit with the others!"
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 4,
+          "cells": [
+            "🍎",
+            "🍌",
+            "🍇",
+            "🐶"
+          ],
+          "highlight": 3
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.logic.oddone.0",
+      "kind": "explanation",
+      "title": "Explanation exp.logic.oddone.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the puzzle skill; awaiting human review"
+    }
+  }
+]

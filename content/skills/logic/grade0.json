@@ -1,0 +1,90 @@
+[
+  {
+    "id": "logic.pattern.ab.0",
+    "subject": "logic",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LUDIKO-LOGIC",
+        "code": "P1"
+      }
+    ],
+    "title": {
+      "ro": "Șiruri cu desene: ce urmează?",
+      "en": "Picture patterns: what comes next?"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "logic-pattern",
+        "params": {
+          "units": [
+            "AB"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.logic.pattern.ab.0"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.logic.pattern.ab.0",
+      "kind": "data",
+      "title": "Skill logic.pattern.ab.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "LUDIKO-LOGIC is Ludi's own framework (no official programa covers logic puzzles); codes are internal. Puzzle types are generic; all content is original; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "logic.oddone.0",
+    "subject": "logic",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LUDIKO-LOGIC",
+        "code": "O1"
+      }
+    ],
+    "title": {
+      "ro": "Care nu se potrivește?",
+      "en": "Which one does not fit?"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "logic-odd-one",
+        "params": {
+          "sets": [
+            "fruits",
+            "animals",
+            "shapes"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.logic.oddone.0"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.logic.oddone.0",
+      "kind": "data",
+      "title": "Skill logic.oddone.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "LUDIKO-LOGIC is Ludi's own framework (no official programa covers logic puzzles); codes are internal. Puzzle types are generic; all content is original; reading level aimed at the grade"
+    }
+  }
+]
