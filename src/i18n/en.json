@@ -581,7 +581,8 @@
     },
     "subject": {
       "mat": "Maths",
-      "rom": "Romanian"
+      "rom": "Romanian",
+      "geo": "Geography"
     },
     "home": {
       "missionTitle": "Today's mission",

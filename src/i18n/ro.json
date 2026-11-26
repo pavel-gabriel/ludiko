@@ -588,7 +588,8 @@
     },
     "subject": {
       "mat": "Matematică",
-      "rom": "Limba română"
+      "rom": "Limba română",
+      "geo": "Geografie"
     },
     "home": {
       "missionTitle": "Misiunea de azi",

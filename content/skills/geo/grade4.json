@@ -1,0 +1,608 @@
+[
+  {
+    "id": "geo.orient.cardinal.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Punctele cardinale și orientarea",
+      "en": "Cardinal points and finding your way"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "geo-directions"
+      },
+      {
+        "bank": "geo/orientation.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.orient.cardinal.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.orient.cardinal.4",
+      "kind": "data",
+      "title": "Skill skill.geo.orient.cardinal.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.orient.map.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "Planul, harta, legenda și scara",
+      "en": "Plan, map, legend and scale"
+    },
+    "prerequisites": [
+      "geo.orient.cardinal.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/orientation.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.orient.map.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.orient.map.4",
+      "kind": "data",
+      "title": "Skill skill.geo.orient.map.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.romania.position.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "România pe hartă: poziție, vecini, granițe",
+      "en": "Romania on the map: position, neighbours, borders"
+    },
+    "prerequisites": [
+      "geo.orient.map.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/society.json"
+      },
+      {
+        "bank": "geo/map-hotspots.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.romania.position.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.romania.position.4",
+      "kind": "data",
+      "title": "Skill skill.geo.romania.position.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.relief.units.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Formele de relief: munți, dealuri, podișuri, câmpii",
+      "en": "Landforms: mountains, hills, plateaus, plains"
+    },
+    "prerequisites": [
+      "geo.romania.position.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/relief.json"
+      },
+      {
+        "bank": "geo/map-hotspots.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.relief.units.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.relief.units.4",
+      "kind": "data",
+      "title": "Skill skill.geo.relief.units.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.relief.carpathians.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Carpații: Orientali, Meridionali, Occidentali",
+      "en": "The Carpathians: Eastern, Southern, Western"
+    },
+    "prerequisites": [
+      "geo.relief.units.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/relief.json"
+      },
+      {
+        "bank": "geo/map-hotspots.json"
+      },
+      {
+        "bank": "geo/texts.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.relief.carpathians.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.relief.carpathians.4",
+      "kind": "data",
+      "title": "Skill skill.geo.relief.carpathians.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.relief.lowlands.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Dealuri, podișuri și câmpii ale României",
+      "en": "Hills, plateaus and plains of Romania"
+    },
+    "prerequisites": [
+      "geo.relief.units.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/relief.json"
+      },
+      {
+        "bank": "geo/map-hotspots.json"
+      },
+      {
+        "bank": "geo/texts.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.relief.lowlands.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.relief.lowlands.4",
+      "kind": "data",
+      "title": "Skill skill.geo.relief.lowlands.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.rivers.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Râurile României: Mureș, Olt, Siret, Prut, Jiu, Argeș, Someș",
+      "en": "Rivers of Romania"
+    },
+    "prerequisites": [
+      "geo.romania.position.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/waters.json"
+      },
+      {
+        "bank": "geo/map-hotspots.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.rivers.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.rivers.4",
+      "kind": "data",
+      "title": "Skill skill.geo.rivers.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.danube.delta.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Dunărea și Delta Dunării",
+      "en": "The Danube and the Danube Delta"
+    },
+    "prerequisites": [
+      "geo.rivers.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/waters.json"
+      },
+      {
+        "bank": "geo/map-hotspots.json"
+      },
+      {
+        "bank": "geo/texts.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.danube.delta.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.danube.delta.4",
+      "kind": "data",
+      "title": "Skill skill.geo.danube.delta.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.blacksea.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Marea Neagră și litoralul",
+      "en": "The Black Sea and the coast"
+    },
+    "prerequisites": [
+      "geo.romania.position.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/waters.json"
+      },
+      {
+        "bank": "geo/map-hotspots.json"
+      },
+      {
+        "bank": "geo/texts.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.blacksea.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.blacksea.4",
+      "kind": "data",
+      "title": "Skill skill.geo.blacksea.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.climate.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "2.4"
+      }
+    ],
+    "title": {
+      "ro": "Clima și anotimpurile",
+      "en": "Climate and seasons"
+    },
+    "prerequisites": [
+      "geo.romania.position.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/climate-nature.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.climate.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.climate.4",
+      "kind": "data",
+      "title": "Skill skill.geo.climate.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.nature.zones.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "2.5"
+      }
+    ],
+    "title": {
+      "ro": "Vegetația și fauna pe zone de relief",
+      "en": "Plants and animals by relief zone"
+    },
+    "prerequisites": [
+      "geo.relief.lowlands.4",
+      "geo.relief.carpathians.4",
+      "geo.climate.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/climate-nature.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.nature.zones.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.nature.zones.4",
+      "kind": "data",
+      "title": "Skill skill.geo.nature.zones.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.people.settlements.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Populația și localitățile: sat și oraș",
+      "en": "People and settlements: village and city"
+    },
+    "prerequisites": [
+      "geo.romania.position.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/society.json"
+      },
+      {
+        "bank": "geo/texts.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.people.settlements.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.people.settlements.4",
+      "kind": "data",
+      "title": "Skill skill.geo.people.settlements.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.counties.capital.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Județele și capitala",
+      "en": "Counties and the capital"
+    },
+    "prerequisites": [
+      "geo.romania.position.4",
+      "geo.people.settlements.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/society.json"
+      },
+      {
+        "bank": "geo/map-hotspots.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.counties.capital.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.counties.capital.4",
+      "kind": "data",
+      "title": "Skill skill.geo.counties.capital.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  },
+  {
+    "id": "geo.environment.protected.4",
+    "subject": "geo",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "GEO-IV-2014",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Mediul și ariile protejate",
+      "en": "Environment and protected areas"
+    },
+    "prerequisites": [
+      "geo.nature.zones.4"
+    ],
+    "itemSources": [
+      {
+        "bank": "geo/climate-nature.json"
+      },
+      {
+        "bank": "geo/texts.json"
+      }
+    ],
+    "explanations": [
+      "exp.geo.environment.protected.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.geo.environment.protected.4",
+      "kind": "data",
+      "title": "Skill skill.geo.environment.protected.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Geografie, clasa a IV-a); content in our own words"
+    }
+  }
+]

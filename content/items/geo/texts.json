@@ -1,0 +1,658 @@
+[
+  {
+    "id": "item.geo.danube.delta.4.14",
+    "type": "read-and-answer",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește și răspunde.",
+      "en": "Read and answer."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.14",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.14",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "passage": {
+      "ro": "Dunărea este un fluviu lung, care străbate zece țări. Ea izvorăște din Germania și curge spre est. Pe malul ei sunt orașe mari. La granița cu Serbia, fluviul se strecoară printr-un defileu îngust, numit Porțile de Fier. Apoi curge printre România și Bulgaria. Aproape de mare, Dunărea se desparte în trei brațe: Chilia, Sulina și Sfântu Gheorghe. Între ele se întinde Delta Dunării, un tărâm cu stuf, nuferi și mii de păsări. Dunărea se varsă în Marea Neagră."
+    },
+    "questions": [
+      {
+        "id": "item.geo.danube.delta.4.14.q1",
+        "skillId": "geo.danube.delta.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Din ce țară izvorăște Dunărea?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.danube.delta.4.14.q1",
+          "kind": "item",
+          "title": "Item item.geo.danube.delta.4.14.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Din Germania"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Din Bulgaria"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Din Serbia"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.geo.danube.delta.4.14.q2",
+        "skillId": "geo.danube.delta.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "În ce se varsă Dunărea?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.danube.delta.4.14.q2",
+          "kind": "item",
+          "title": "Item item.geo.danube.delta.4.14.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "În Marea Baltică"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "În Marea Neagră"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "În Mureș"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.geo.danube.delta.4.14.q3",
+        "skillId": "geo.danube.delta.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Fluviul se desparte în trei brațe aproape de mare."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.danube.delta.4.14.q3",
+          "kind": "item",
+          "title": "Item item.geo.danube.delta.4.14.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.13",
+    "type": "read-and-answer",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește și răspunde.",
+      "en": "Read and answer."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.13",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.13",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "passage": {
+      "ro": "Maria și bunicul ei au urcat pe un munte din Carpații Meridionali. Poteca trecea mai întâi printr-o pădure de brazi și molizi. Mai sus, copacii s-au rărit și au apărut pajiști cu flori mici. Vântul era rece, iar vârfurile aveau încă zăpadă. Bunicul i-a spus că vârful Moldoveanu este cel mai înalt din România și are 2544 de metri. De sus, Maria a văzut norii sub ea. Seara, în cabană, a băut un ceai fierbinte."
+    },
+    "questions": [
+      {
+        "id": "item.geo.relief.carpathians.4.13.q1",
+        "skillId": "geo.relief.carpathians.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce pădure a întâlnit Maria la început?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.relief.carpathians.4.13.q1",
+          "kind": "item",
+          "title": "Item item.geo.relief.carpathians.4.13.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "De nuferi"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "De brazi și molizi"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "De stejari"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.geo.relief.carpathians.4.13.q2",
+        "skillId": "geo.relief.carpathians.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Vârful Moldoveanu este cel mai înalt din România."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.relief.carpathians.4.13.q2",
+          "kind": "item",
+          "title": "Item item.geo.relief.carpathians.4.13.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": true
+      },
+      {
+        "id": "item.geo.relief.carpathians.4.13.q3",
+        "skillId": "geo.relief.carpathians.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Maria a urcat pe un munte din Carpații Occidentali."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.relief.carpathians.4.13.q3",
+          "kind": "item",
+          "title": "Item item.geo.relief.carpathians.4.13.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.16",
+    "type": "read-and-answer",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește și răspunde.",
+      "en": "Read and answer."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.16",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.16",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "passage": {
+      "ro": "Vara, Câmpia Română este un ocean de aur. Lanurile de grâu se leagănă în vânt, iar mai târziu porumbul crește mai înalt decât un copil. Pământul este plat și foarte bun pentru agricultură. Satele sunt departe unele de altele, iar drumurile par fără sfârșit. Iarna, aici bate Crivățul, un vânt rece. La sud, câmpia se oprește la Dunăre."
+    },
+    "questions": [
+      {
+        "id": "item.geo.relief.lowlands.4.16.q1",
+        "skillId": "geo.relief.lowlands.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce se cultivă în Câmpia Română, după text?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.relief.lowlands.4.16.q1",
+          "kind": "item",
+          "title": "Item item.geo.relief.lowlands.4.16.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Cafea"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Grâu și porumb"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Ananas"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.geo.relief.lowlands.4.16.q2",
+        "skillId": "geo.relief.lowlands.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "La sud, câmpia se oprește la Dunăre."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.relief.lowlands.4.16.q2",
+          "kind": "item",
+          "title": "Item item.geo.relief.lowlands.4.16.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": true
+      },
+      {
+        "id": "item.geo.relief.lowlands.4.16.q3",
+        "skillId": "geo.relief.lowlands.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Pământul din câmpie este foarte muntos."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.relief.lowlands.4.16.q3",
+          "kind": "item",
+          "title": "Item item.geo.relief.lowlands.4.16.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "item.geo.blacksea.4.12",
+    "type": "read-and-answer",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Citește și răspunde.",
+      "en": "Read and answer."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.12",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.12",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "passage": {
+      "ro": "Familia lui Andrei a plecat în vacanță la Marea Neagră. Au ajuns la Constanța, cel mai mare port al țării. Acolo au văzut nave mari cu containere. Apoi au mers la Mamaia, o stațiune cu plajă lungă și nisip fin. Andrei a observat că apa mării este sărată. Seara, farurile au aprins luminile, iar valurile se auzeau la țărm."
+    },
+    "questions": [
+      {
+        "id": "item.geo.blacksea.4.12.q1",
+        "skillId": "geo.blacksea.4",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Care este cel mai mare port al țării, după text?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.blacksea.4.12.q1",
+          "kind": "item",
+          "title": "Item item.geo.blacksea.4.12.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Mamaia"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Constanța"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Tulcea"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.geo.blacksea.4.12.q2",
+        "skillId": "geo.blacksea.4",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Apa Mării Negre este sărată."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.blacksea.4.12.q2",
+          "kind": "item",
+          "title": "Item item.geo.blacksea.4.12.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": true
+      },
+      {
+        "id": "item.geo.blacksea.4.12.q3",
+        "skillId": "geo.blacksea.4",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Familia lui Andrei a mers în vacanță la munte."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.blacksea.4.12.q3",
+          "kind": "item",
+          "title": "Item item.geo.blacksea.4.12.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "item.geo.people.settlements.4.10",
+    "type": "read-and-answer",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Citește și răspunde.",
+      "en": "Read and answer."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.10",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "passage": {
+      "ro": "Ioana locuiește într-un sat de la poalele unui deal. Bunicii ei au o grădină cu legume, doi cai și mulți pui. Dimineața, Ioana aude cocoșul. Vara, ea merge la oraș, la mătușa ei. Acolo sunt blocuri înalte, magazine și tramvaie. Mătușa Ioanei lucrează într-o fabrică. Ioanei îi plac amândouă locurile, dar spune că în sat este mai liniște."
+    },
+    "questions": [
+      {
+        "id": "item.geo.people.settlements.4.10.q1",
+        "skillId": "geo.people.settlements.4",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Unde locuiește Ioana?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.people.settlements.4.10.q1",
+          "kind": "item",
+          "title": "Item item.geo.people.settlements.4.10.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Într-un sat"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Într-un oraș mare"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Pe un vapor"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.geo.people.settlements.4.10.q2",
+        "skillId": "geo.people.settlements.4",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Mătușa Ioanei locuiește în oraș."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.people.settlements.4.10.q2",
+          "kind": "item",
+          "title": "Item item.geo.people.settlements.4.10.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": true
+      },
+      {
+        "id": "item.geo.people.settlements.4.10.q3",
+        "skillId": "geo.people.settlements.4",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "În sat sunt blocuri înalte și tramvaie."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.people.settlements.4.10.q3",
+          "kind": "item",
+          "title": "Item item.geo.people.settlements.4.10.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "item.geo.environment.protected.4.11",
+    "type": "read-and-answer",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește și răspunde.",
+      "en": "Read and answer."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.11",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "passage": {
+      "ro": "Clasa lui Radu a făcut o excursie într-un parc național din munți. Ghidul i-a rugat pe copii să rămână pe poteci. El a explicat că florile rare nu se culeg și că gunoiul se ia acasă. Într-un luminiș, copiii au văzut urme de urs. Radu a înțeles că parcul este casa multor animale. La plecare, clasa a numărat toate pachetele goale și le-a pus în coșul potrivit."
+    },
+    "questions": [
+      {
+        "id": "item.geo.environment.protected.4.11.q1",
+        "skillId": "geo.environment.protected.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce i-a rugat ghidul pe copii?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.environment.protected.4.11.q1",
+          "kind": "item",
+          "title": "Item item.geo.environment.protected.4.11.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Să facă focuri"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Să culeagă flori rare"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Să rămână pe poteci"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.geo.environment.protected.4.11.q2",
+        "skillId": "geo.environment.protected.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Parcul este casa multor animale."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.environment.protected.4.11.q2",
+          "kind": "item",
+          "title": "Item item.geo.environment.protected.4.11.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": true
+      },
+      {
+        "id": "item.geo.environment.protected.4.11.q3",
+        "skillId": "geo.environment.protected.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Copiii au lăsat gunoiul în pădure."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.geo.environment.protected.4.11.q3",
+          "kind": "item",
+          "title": "Item item.geo.environment.protected.4.11.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "question about an original text drafted for the competence"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ]
+  }
+]

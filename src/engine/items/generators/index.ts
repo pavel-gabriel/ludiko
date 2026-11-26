@@ -35,6 +35,8 @@ import './romSyllables';
 import './romWordPicture';
 import './romSentences';
 import './romVocab';
+// Geography (geo) generators
+import './geoDirections';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

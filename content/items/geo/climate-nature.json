@@ -1,0 +1,1485 @@
+[
+  {
+    "id": "item.geo.climate.4.01",
+    "type": "choice",
+    "skillId": "geo.climate.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce fel de climă are România?",
+      "en": "What kind of climate does Romania have?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.01",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Polară"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Ecuatorială"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Temperat-continentală"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Tropicală"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.climate.4.02",
+    "type": "number-input",
+    "skillId": "geo.climate.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Câte anotimpuri are un an?",
+      "en": "How many seasons are in a year?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.02",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": 4
+  },
+  {
+    "id": "item.geo.climate.4.03",
+    "type": "order",
+    "skillId": "geo.climate.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Pune anotimpurile în ordine, începând cu primăvara.",
+      "en": "Order the seasons, starting with spring."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.03",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "cards": [
+      {
+        "id": "c4",
+        "text": {
+          "ro": "iarna"
+        }
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "primăvara"
+        }
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "vara"
+        }
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "toamna"
+        }
+      }
+    ],
+    "correctOrder": [
+      "c1",
+      "c2",
+      "c3",
+      "c4"
+    ]
+  },
+  {
+    "id": "item.geo.climate.4.04",
+    "type": "match",
+    "skillId": "geo.climate.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Potrivește anotimpul cu o lună din el.",
+      "en": "Match each season with one of its months."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.04",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "iarna"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "ianuarie"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "primăvara"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "aprilie"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "vara"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "iulie"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "toamna"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "octombrie"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.climate.4.05",
+    "type": "sort",
+    "skillId": "geo.climate.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Iarnă sau vară? Sortează.",
+      "en": "Winter or summer? Sort."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.05",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "categories": [
+      {
+        "id": "k1",
+        "label": {
+          "ro": "Iarna"
+        }
+      },
+      {
+        "id": "k2",
+        "label": {
+          "ro": "Vara"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c5",
+        "text": {
+          "ro": "fulgi de nea"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "derdeluș"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "vacanța mare"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "ger și zăpadă"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "caniculă"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "înot la mare"
+        },
+        "categoryId": "k2"
+      }
+    ]
+  },
+  {
+    "id": "item.geo.climate.4.06",
+    "type": "choice",
+    "skillId": "geo.climate.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Care regiune primește cele mai puține ploi din țară?",
+      "en": "Which region gets the least rain?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.06",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Munții Apuseni"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Dobrogea"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Carpații Orientali"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Munții Făgăraș"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.climate.4.07",
+    "type": "choice",
+    "skillId": "geo.climate.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Cum se numește vântul rece și uscat care bate iarna în estul țării?",
+      "en": "What is the cold, dry winter wind of eastern Romania called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.07",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Austrul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Alizeul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Crivățul"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Briza"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.climate.4.08",
+    "type": "choice",
+    "skillId": "geo.climate.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce instrument măsoară temperatura aerului?",
+      "en": "Which instrument measures air temperature?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.08",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Busola"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Cronometrul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Termometrul"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Rigla"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.climate.4.09",
+    "type": "choice",
+    "skillId": "geo.climate.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Starea aerului într-o anumită zi (soare, ploaie, vânt) se numește...",
+      "en": "The state of the air on a given day (sun, rain, wind) is called..."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.09",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "anotimp"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "relief"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "climă"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "vreme"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.climate.4.10",
+    "type": "true-false",
+    "skillId": "geo.climate.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Pe vârfurile munților este mai frig decât în câmpie.",
+      "en": "It is colder on mountain peaks than in the plains."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.10",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.climate.4.11",
+    "type": "true-false",
+    "skillId": "geo.climate.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Munții primesc mai multe precipitații decât Dobrogea.",
+      "en": "Mountains get more precipitation than Dobruja."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.11",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.climate.4.12",
+    "type": "true-false",
+    "skillId": "geo.climate.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "În România iarna are loc în lunile decembrie, ianuarie și februarie.",
+      "en": "In Romania winter is in December, January and February."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.climate.4",
+    "provenance": {
+      "id": "prov.item.geo.climate.4.12",
+      "kind": "item",
+      "title": "Item item.geo.climate.4.12",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.nature.zones.4.01",
+    "type": "sort",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Unde trăiește sau crește? Sortează pe zone.",
+      "en": "Where does it live or grow? Sort by zone."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.01",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "categories": [
+      {
+        "id": "k1",
+        "label": {
+          "ro": "Munte"
+        }
+      },
+      {
+        "id": "k2",
+        "label": {
+          "ro": "Câmpie"
+        }
+      },
+      {
+        "id": "k3",
+        "label": {
+          "ro": "Deltă"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c5",
+        "text": {
+          "ro": "pelicanul"
+        },
+        "categoryId": "k3"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "popândăul"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "iepurele de câmp"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "capra neagră"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "stuful"
+        },
+        "categoryId": "k3"
+      },
+      {
+        "id": "c7",
+        "text": {
+          "ro": "ursul brun"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "floarea-de-colț"
+        },
+        "categoryId": "k1"
+      }
+    ]
+  },
+  {
+    "id": "item.geo.nature.zones.4.02",
+    "type": "sort",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Copaci cu ace sau cu frunze late? Sortează.",
+      "en": "Trees with needles or with broad leaves? Sort."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.02",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "categories": [
+      {
+        "id": "k1",
+        "label": {
+          "ro": "Conifere (molid, brad)"
+        }
+      },
+      {
+        "id": "k2",
+        "label": {
+          "ro": "Foioase (fag, stejar)"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c2",
+        "text": {
+          "ro": "bradul"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "fagul"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "molidul"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "stejarul"
+        },
+        "categoryId": "k2"
+      }
+    ]
+  },
+  {
+    "id": "item.geo.nature.zones.4.03",
+    "type": "choice",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce copac crește în păduri de munte și are ace și conuri?",
+      "en": "Which mountain tree has needles and cones?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.03",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Salcia"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Molidul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Teiul"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Nucul"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.nature.zones.4.04",
+    "type": "choice",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Care plantă rară crește pe stâncile munților înalți?",
+      "en": "Which rare plant grows on high mountain rocks?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.04",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Nufărul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Grâul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Floarea-soarelui"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Floarea-de-colț"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.nature.zones.4.05",
+    "type": "choice",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Care dintre aceste păsări trăiește în Delta Dunării?",
+      "en": "Which of these birds lives in the Danube Delta?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.05",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Pelicanul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Pinguinul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Cocoșul-de-munte"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Papagalul"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.nature.zones.4.06",
+    "type": "choice",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce animal trăiește în pădurile Carpaților?",
+      "en": "Which animal lives in the Carpathian forests?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.06",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Girafa"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Ursul brun"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Elefantul"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Cămila"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.nature.zones.4.07",
+    "type": "match",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Potrivește animalul cu locul unde trăiește.",
+      "en": "Match each animal with its home."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.07",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "capra neagră"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "munții înalți"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "pelicanul"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Delta Dunării"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "popândăul"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "stepa din câmpie"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "ursul brun"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "pădurile Carpaților"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.nature.zones.4.08",
+    "type": "true-false",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Pe munte, mai sus de păduri, sunt pajiști alpine.",
+      "en": "On mountains, above the forests, there are alpine meadows."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.08",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.nature.zones.4.09",
+    "type": "true-false",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Fagul și stejarul sunt copaci foioși.",
+      "en": "Beech and oak are broad-leaved trees."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.09",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.nature.zones.4.10",
+    "type": "true-false",
+    "skillId": "geo.nature.zones.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Stuful crește în Delta Dunării.",
+      "en": "Reed grows in the Danube Delta."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.nature.zones.4",
+    "provenance": {
+      "id": "prov.item.geo.nature.zones.4.10",
+      "kind": "item",
+      "title": "Item item.geo.nature.zones.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.environment.protected.4.01",
+    "type": "choice",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Care este primul parc național din România, înființat în 1935?",
+      "en": "Which is Romania's first national park, set up in 1935?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.01",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Ceahlău"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Cozia"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Retezat"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Piatra Craiului"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.environment.protected.4.02",
+    "type": "choice",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce este o arie protejată?",
+      "en": "What is a protected area?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.02",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Un loc unde se construiesc blocuri"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Un loc fără plante"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Un loc unde natura este ocrotită prin lege"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Un loc unde se taie pădurea"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.environment.protected.4.03",
+    "type": "choice",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce este un pericol pentru păduri?",
+      "en": "What is a danger to forests?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.03",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Tăierea abuzivă a copacilor"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Plantarea de puieți"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Ploaia"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Zăpada"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.environment.protected.4.04",
+    "type": "choice",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cum ne purtăm într-un parc național?",
+      "en": "How do we behave in a national park?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.04",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Aprindem focuri oriunde"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Rămânem pe poteci și luăm gunoiul cu noi"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Hrănim ursul"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Culegem florile rare"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.environment.protected.4.05",
+    "type": "choice",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Care este o sursă de energie care nu se termină?",
+      "en": "Which energy source never runs out?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.05",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Gazul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Petrolul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Cărbunele"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Vântul"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.environment.protected.4.06",
+    "type": "sort",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Bine sau rău pentru mediu? Sortează.",
+      "en": "Good or bad for the environment? Sort."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.06",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "categories": [
+      {
+        "id": "k1",
+        "label": {
+          "ro": "Bine pentru mediu"
+        }
+      },
+      {
+        "id": "k2",
+        "label": {
+          "ro": "Rău pentru mediu"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c2",
+        "text": {
+          "ro": "colectăm selectiv deșeurile"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "ardem plasticul"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "lăsăm apa să curgă degeaba"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "aruncăm gunoiul la munte"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "reciclăm hârtia"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "plantăm copaci"
+        },
+        "categoryId": "k1"
+      }
+    ]
+  },
+  {
+    "id": "item.geo.environment.protected.4.07",
+    "type": "match",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Potrivește animalul ocrotit cu locul lui.",
+      "en": "Match each protected animal with its home."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.07",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "capra neagră"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "stâncile munților"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "pelicanul"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Delta Dunării"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "râsul"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "pădurile Carpaților"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.environment.protected.4.08",
+    "type": "true-false",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Delta Dunării este o zonă protejată.",
+      "en": "The Danube Delta is a protected area."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.08",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.environment.protected.4.09",
+    "type": "true-false",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Floarea-de-colț este ocrotită: nu o culegem.",
+      "en": "The edelweiss is protected: we do not pick it."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.09",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.environment.protected.4.10",
+    "type": "true-false",
+    "skillId": "geo.environment.protected.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "La colectarea selectivă, hârtia se pune de obicei în containerul albastru.",
+      "en": "In separate collection paper usually goes into the blue container."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.environment.protected.4",
+    "provenance": {
+      "id": "prov.item.geo.environment.protected.4.10",
+      "kind": "item",
+      "title": "Item item.geo.environment.protected.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  }
+]

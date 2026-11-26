@@ -1,0 +1,25 @@
+{
+  "provenance": {
+    "id": "prov.data.geo.cities",
+    "kind": "data",
+    "title": "Ludiko list of Romanian cities with approximate coordinates (direction questions)",
+    "author": "Ludiko",
+    "source": "own",
+    "licence": "OWN",
+    "notes": "Approximate city centre coordinates (facts, not protected) used by the geo-directions generator to compute compass directions. To be reviewed by a geography teacher."
+  },
+  "cities": [
+    { "id": "bucuresti", "ro": "București", "en": "Bucharest", "lon": 26.10, "lat": 44.43 },
+    { "id": "cluj-napoca", "ro": "Cluj-Napoca", "en": "Cluj-Napoca", "lon": 23.59, "lat": 46.77 },
+    { "id": "iasi", "ro": "Iași", "en": "Iași", "lon": 27.59, "lat": 47.16 },
+    { "id": "timisoara", "ro": "Timișoara", "en": "Timișoara", "lon": 21.23, "lat": 45.75 },
+    { "id": "constanta", "ro": "Constanța", "en": "Constanța", "lon": 28.65, "lat": 44.18 },
+    { "id": "brasov", "ro": "Brașov", "en": "Brașov", "lon": 25.60, "lat": 45.65 },
+    { "id": "craiova", "ro": "Craiova", "en": "Craiova", "lon": 23.80, "lat": 44.33 },
+    { "id": "oradea", "ro": "Oradea", "en": "Oradea", "lon": 21.92, "lat": 47.05 },
+    { "id": "suceava", "ro": "Suceava", "en": "Suceava", "lon": 26.25, "lat": 47.65 },
+    { "id": "galati", "ro": "Galați", "en": "Galați", "lon": 28.05, "lat": 45.44 },
+    { "id": "sibiu", "ro": "Sibiu", "en": "Sibiu", "lon": 24.15, "lat": 45.80 },
+    { "id": "satu-mare", "ro": "Satu Mare", "en": "Satu Mare", "lon": 22.88, "lat": 47.79 }
+  ]
+}
