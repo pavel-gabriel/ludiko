@@ -1,22 +1,53 @@
 name: Deploy to GitHub Pages
 
+# One workflow for the site AND Firebase upkeep (rules, reminders, privacy cleanups).
+# Kept in this already-registered file on purpose: new workflow files merged by the
+# Claude GitHub app were not being registered by GitHub (see docs/NOTIFICATIONS.md §6).
+#
+#   push to main      → build + deploy the site; deploy Firebase rules if a rules file changed
+#   hourly schedule   → send daily reminders (scripts/send-daily-reminders.mjs)
+#   Run workflow (manual) → pick a task below; "dry_run" validates / counts without changing anything
+
 on:
-  workflow_dispatch:
   push:
     branches: [main]
+  schedule:
+    - cron: '7 * * * *'
+  workflow_dispatch:
+    inputs:
+      task:
+        description: 'What to run'
+        type: choice
+        default: deploy-site
+        options:
+          - deploy-site
+          - deploy-rules
+          - send-reminders
+          - delete-game-history
+          - cleanup-reports
+          - cleanup-rooms
+      dry_run:
+        description: 'Dry run (rules: validate only; scripts: count only, no writes)'
+        type: boolean
+        default: true
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: true
+env:
+  FIREBASE_PROJECT: ludiko-2e197
+  FIREBASE_TOOLS: firebase-tools@15.35.0
 
 jobs:
+  # ---------------------------------------------------------------- site
   build:
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.task == 'deploy-site')
     runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: true
     steps:
       - uses: actions/checkout@v4
 
@@ -50,9 +81,123 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # ---------------------------------------------------------------- Firebase rules
+  # Automatic on push when firestore.rules / database.rules.json / firebase.json changed,
+  # or manually with task = deploy-rules. Needs the FIREBASE_DEPLOY_SERVICE_ACCOUNT secret.
+  firebase-rules:
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.task == 'deploy-rules')
+    runs-on: ubuntu-latest
+    concurrency:
+      group: firebase-rules
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Did a rules file change?
+        id: changed
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          if [ "$EVENT" != "push" ]; then echo "deploy=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if ! files=$(git diff --name-only "$BEFORE" "$AFTER" 2>/dev/null); then
+            echo "Could not diff ($BEFORE..$AFTER); deploying rules to be safe."
+            echo "deploy=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if echo "$files" | grep -qE '^(firestore\.rules|database\.rules\.json|firebase\.json|firestore\.indexes\.json)$'; then
+            echo "Rules changed:"; echo "$files" | grep -E 'rules|firebase\.json|indexes'
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No rules file changed; nothing to deploy."
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy Firestore + Realtime Database rules
+        if: steps.changed.outputs.deploy == 'true'
+        env:
+          SA: ${{ secrets.FIREBASE_DEPLOY_SERVICE_ACCOUNT }}
+          DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+        run: |
+          if [ -z "$SA" ]; then
+            echo "::warning::FIREBASE_DEPLOY_SERVICE_ACCOUNT secret is missing — rules NOT deployed. See OWNER_TODO.md."
+            exit 0
+          fi
+          umask 077
+          printf '%s' "$SA" > "$RUNNER_TEMP/sa.json"
+          export GOOGLE_APPLICATION_CREDENTIALS="$RUNNER_TEMP/sa.json"
+          EXTRA=""
+          if [ "$DRY" = "true" ]; then EXTRA="--dry-run"; echo "Dry run: validating rules only."; fi
+          npx --yes "$FIREBASE_TOOLS" deploy --only firestore:rules,database \
+            --project "$FIREBASE_PROJECT" --non-interactive $EXTRA
+          rm -f "$RUNNER_TEMP/sa.json"
+
+  # ---------------------------------------------------------------- daily reminders
+  # Hourly; each subscription is only due at its own local hour (docs/NOTIFICATIONS.md §4).
+  reminders:
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.task == 'send-reminders')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: daily-reminders
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Send due reminders
+        env:
+          DRY: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run }}
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          VAPID_SUBJECT: ${{ secrets.VAPID_SUBJECT }}
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          if [ "$DRY" = "true" ]; then
+            node scripts/send-daily-reminders.mjs --dry-run
+          else
+            node scripts/send-daily-reminders.mjs
+          fi
+
+  # ---------------------------------------------------------------- privacy cleanups (manual)
+  maintenance:
+    if: github.event_name == 'workflow_dispatch' && contains(fromJSON('["delete-game-history","cleanup-reports","cleanup-rooms"]'), inputs.task)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: firebase-maintenance
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Run ${{ inputs.task }}
+        env:
+          TASK: ${{ inputs.task }}
+          DRY: ${{ inputs.dry_run }}
+          # The deploy account also has Realtime Database access (needed by cleanup-rooms);
+          # falls back to the Firestore-only reminders account.
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_DEPLOY_SERVICE_ACCOUNT || secrets.FIREBASE_SERVICE_ACCOUNT }}
+          FIREBASE_DATABASE_URL: ${{ secrets.VITE_FIREBASE_DATABASE_URL }}
+        run: |
+          FLAG=""
+          if [ "$DRY" = "true" ]; then FLAG="--dry-run"; fi
+          node "scripts/privacy/$TASK.mjs" $FLAG
