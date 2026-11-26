@@ -2,6 +2,7 @@
 import {
   createPlacement,
   evaluate,
+  levelKey,
   levelStatement,
   nextProbe,
   placementResult,
@@ -12,9 +13,10 @@ import {
 } from '@/engine/diagnostic';
 import { getSkillsBySubject } from '@/engine/content/registry';
 import type { SubjectId } from '@/engine/types';
+import { isSubjectAvailable, subjectMinGrade } from './availability';
 import type { ChildProfile, ProfileProgress } from '@/profiles/types';
-import type { Level, PlacementDone, PlacementRecord, PlacementSummary, ProbeRequest } from './contract';
-import { placementTarget } from './time';
+import type { Level, PlacementDone, PlacementRecord, PlacementSummary, PlacementUnavailable, ProbeRequest } from './contract';
+import { currentLevel, placementTarget } from './time';
 
 const FIRST_LEVEL: Level = { grade: 0, semester: 1 };
 
@@ -23,9 +25,23 @@ function isEngineState(s: unknown): s is PlacementState {
   return !!st && st.version === 1 && typeof st.graph === 'object' && Array.isArray(st.history) && Array.isArray(st.anchors);
 }
 
-/** Create a fresh placement record against the profile's target level (see placementTarget). */
-export function newPlacementRecord(profile: ChildProfile, subject: SubjectId, now: number): PlacementRecord {
-  const target = placementTarget(profile.grade, now);
+/**
+ * The level a placement for `subject` checks the child against, or null when there is nothing to check:
+ * the subject starts above the child's grade, or has no skills at or below the level. Normally
+ * placementTarget; early in a semester that can fall below the subject's first skill (grade IV geography
+ * in September), so the current level is the fallback. Never a placement over zero skills.
+ */
+export function placementLevelFor(profile: ChildProfile, subject: SubjectId, now: number): Level | null {
+  if (!isSubjectAvailable(subject, profile.grade)) return null;
+  const skills = getSkillsBySubject(subject);
+  for (const level of [placementTarget(profile.grade, now), currentLevel(profile.grade, now)]) {
+    if (skills.some((s) => levelKey(s) <= levelKey(level))) return level;
+  }
+  return null;
+}
+
+/** Create a fresh placement record against `target` (see placementLevelFor). */
+export function newPlacementRecord(subject: SubjectId, target: Level, now: number): PlacementRecord {
   const state = createPlacement(getSkillsBySubject(subject), { grade: target.grade, semester: target.semester, subject });
   return { subject, target, state, startedAt: now, updatedAt: now };
 }
@@ -77,11 +93,15 @@ export function advancePlacement(
   profile: ChildProfile,
   subject: SubjectId,
   now: number,
-): ProbeRequest | PlacementDone {
+): ProbeRequest | PlacementDone | PlacementUnavailable {
+  const existing = progress.placements?.[subject];
+  if (existing?.completedAt !== undefined && existing.summary) return { done: true, summary: existing.summary };
+  // nothing to check at this child's level: no record is created, nothing is "completed"
+  const target = placementLevelFor(profile, subject, now);
+  if (!target) return { done: false, unavailable: true, minGrade: subjectMinGrade(subject) };
   const placements = (progress.placements ??= {});
   let rec = placements[subject];
-  if (rec?.completedAt !== undefined && rec.summary) return { done: true, summary: rec.summary };
-  if (!rec || !isEngineState(rec.state)) rec = placements[subject] = newPlacementRecord(profile, subject, now);
+  if (!rec || !isEngineState(rec.state)) rec = placements[subject] = newPlacementRecord(subject, target, now);
 
   const state = rec.state as PlacementState;
   const next = nextProbe(state);
@@ -98,6 +118,11 @@ export function advancePlacement(
   rec.completedAt = now;
   rec.updatedAt = now;
   return { done: true, summary };
+}
+
+/** Probes answered so far in a stored placement (0 when none) */
+export function placementProbeCount(rec: PlacementRecord | undefined): number {
+  return rec && isEngineState(rec.state) ? rec.state.history.length : 0;
 }
 
 export function recordPlacementProbe(

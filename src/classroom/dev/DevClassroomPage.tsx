@@ -69,7 +69,11 @@ function ChildFixture() {
         profile={profile}
         stars={12}
         playDays={3}
-        subjects={[{ subject: 'mat', placement: 'done', bits: [{ index: 0, kind: 'warmup', done: true }, { index: 1, kind: 'island', done: false }] }]}
+        subjects={[{ subject: 'mat', placement: 'done' }]}
+        plan={[
+          { index: 0, kind: 'warmup', day: '2026-03-20', steps: [], itemCount: 5, done: true, subject: 'mat', source: 'mission', bitIndex: 0 },
+          { index: 1, kind: 'island', day: '2026-03-20', steps: [], itemCount: 5, done: false, subject: 'rom', source: 'placement' },
+        ]}
         assignments={assignments}
       />
     </div>

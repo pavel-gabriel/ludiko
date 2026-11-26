@@ -119,10 +119,17 @@ afterEach(() => {
 })
 
 describe('/learn home', () => {
-  it('without a placement offers "Verifică-te!" as an adventure and no mission card', async () => {
+  it('without a placement the plan offers a short check, and "Toate materiile" has "Verifică-te!" and the map', async () => {
     renderAt('/learn')
     await settle()
     expect(screen.getByText('Salut, Matei!')).toBeInTheDocument()
+    const chunk = screen.getByTestId('plan-bit-0')
+    expect(chunk).toHaveAttribute('data-source', 'placement')
+    expect(chunk).toHaveTextContent('Ce știi?')
+    expect(chunk).toHaveAttribute('href', '/learn/check/mat?plan=1')
+    // the per-subject cards live under "Toate materiile", collapsed until asked for
+    expect(screen.queryByTestId('card-check')).toBeNull()
+    fireEvent.click(screen.getByTestId('toggle-subjects'))
     const check = screen.getByTestId('card-check')
     expect(check).toHaveTextContent('Verifică-te!')
     expect(check).toHaveAttribute('href', '/learn/check/mat')
@@ -135,19 +142,22 @@ describe('/learn home', () => {
     state.placement = { subject: 'mat', target: { grade: 2, semester: 1 }, state: {}, startedAt: 1, updatedAt: 1 }
     renderAt('/learn')
     await settle()
+    fireEvent.click(screen.getByTestId('toggle-subjects'))
     expect(screen.getByTestId('card-check')).toHaveTextContent('Continuăm aventura')
   })
 
-  it('with a placement shows today\'s mission, stars and the gentle streak', async () => {
+  it("with a placement shows today's plan, the mission under \"Toate materiile\", stars and the gentle streak", async () => {
     state.placement = { subject: 'mat', target: { grade: 2, semester: 1 }, state: {}, startedAt: 1, updatedAt: 1, completedAt: 2, summary: SUMMARY }
     state.mission = mission({ steps: [{ ...mission().steps[0], done: true }, mission().steps[1]] })
     state.summary.playDaysThisWeek = 3
     renderAt('/learn')
     await settle()
-    const card = screen.getByTestId('card-bits')
+    const card = screen.getByTestId('card-plan')
     expect(card).toHaveTextContent('Biții de azi')
-    expect(screen.getByTestId('bit-0')).toHaveAttribute('href', '/learn/bit/mat/0')
-    expect(screen.getByTestId('link-mission')).toHaveAttribute('href', '/learn/mission/mat')
+    expect(screen.getByTestId('plan-bit-0')).toHaveAttribute('href', '/learn/bit/mat/0?plan=1')
+    expect(screen.queryByTestId('card-check')).toBeNull()
+    fireEvent.click(screen.getByTestId('toggle-subjects'))
+    expect(screen.getByTestId('card-mission')).toHaveAttribute('href', '/learn/mission/mat')
     expect(screen.queryByTestId('card-check')).toBeNull()
     expect(screen.getByTestId('streak')).toHaveTextContent('3 zile de joacă')
     expect(screen.getByTestId('link-parents')).toHaveAttribute('href', '/learn/parent')
@@ -268,6 +278,47 @@ describe('/learn/check/:subject (placement)', () => {
     fireEvent.click(screen.getByRole('button', { name: /Gata pentru azi\. Continuăm mâine/ }))
     await settle()
     expect(screen.getByTestId('where')).toHaveTextContent('/learn')
+  })
+})
+
+describe('/learn/check/:subject?plan=1 (a placement chunk as a bit of the plan)', () => {
+  it('is introduced as "Hai să vedem ce știi la Matematică!" and ends in a bit celebration with the next plan bit', async () => {
+    state.probes = [probe('mat.count.10', 0.2), probe('mat.add.10', 0.6)]
+    state.plan = {
+      day: '2026-11-25',
+      bits: [
+        { index: 0, kind: 'island', day: '2026-11-25', steps: [], itemCount: 6, done: true, subject: 'mat', source: 'placement' },
+        { index: 1, kind: 'island', day: '2026-11-25', steps: [], itemCount: 6, done: false, subject: 'rom', source: 'placement' },
+      ],
+    }
+    renderAt('/learn/check/mat?plan=1')
+    await settle()
+    expect(screen.getByRole('heading', { name: 'Hai să vedem ce știi la Matematică!' })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Să începem!' }))
+    await settle()
+    await answerAll(2)
+    // the chunk is done: recorded, celebrated, and the next bit of the plan is offered (not the whole placement)
+    expect(fakeLearner.placementRecord).toHaveBeenCalledWith('p1', 'mat', 'mat.count.10', [true, true])
+    expect(screen.getByTestId('bit-done')).toBeInTheDocument()
+    expect(fakeLearner.placementNext).toHaveBeenCalledTimes(1)
+    fireEvent.click(screen.getByTestId('bit-another'))
+    await settle()
+    expect(screen.getByTestId('where')).toHaveTextContent('/learn/check/rom')
+  })
+
+  it('keeps asking until the chunk is done', async () => {
+    state.probes = [probe('mat.count.10', 0.2), probe('mat.add.10', 0.6), probe('mat.sub.10', 0.8)]
+    state.plan = {
+      day: '2026-11-25',
+      bits: [{ index: 0, kind: 'island', day: '2026-11-25', steps: [], itemCount: 6, done: false, subject: 'mat', source: 'placement' }],
+    }
+    renderAt('/learn/check/mat?plan=1')
+    await settle()
+    fireEvent.click(screen.getByRole('button', { name: 'Să începem!' }))
+    await settle()
+    await answerAll(2)
+    expect(screen.queryByTestId('bit-done')).toBeNull()
+    expect(fakeLearner.placementNext).toHaveBeenCalledTimes(2)
   })
 })
 

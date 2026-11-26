@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { getSkillsBySubject } from '@/engine/content/registry'
 import { localize, type SkillState } from '@/engine/types'
-import type { ParentSummary } from '@/learner'
+import type { ParentSummary, PlanBit } from '@/learner'
 import BitDone from './BitDone'
 import BreakOffer from './BreakOffer'
 import LearnHomeView from './LearnHomeView'
@@ -17,6 +17,23 @@ import TreasurePath from './TreasurePath'
 
 const noop = () => {}
 const profile = { nickname: 'Matei', avatar: '🦊' }
+
+/** A plan of three bits (Matematică, Limba română, Științe) with the given done flags; `check` makes them placement chunks */
+function planFixture(done: boolean[], check = false): PlanBit[] {
+  const subjects = ['mat', 'rom', 'stiinte'] as const
+  const kinds = ['warmup', 'island', 'challenge'] as const
+  return done.map((d, index) => ({
+    index,
+    kind: kinds[index],
+    day: '2026-03-20',
+    steps: [],
+    itemCount: 5,
+    done: d,
+    subject: subjects[index],
+    source: check ? 'placement' : 'mission',
+    ...(check ? {} : { bitIndex: 0 }),
+  }))
+}
 
 function Frame({ id, title, children }: { id: string; title: string; children: ReactNode }) {
   return (
@@ -89,14 +106,16 @@ export default function LearnPreviewPage() {
       <Link to="/" className="text-sm font-bold underline">← Ludiko</Link>
 
       <Frame id="home-new" title="Learner home: no placement yet">
-        <LearnHomeView profile={profile} stars={12} playDays={0} subjects={[{ subject: 'mat', placement: 'none' }]} />
+        <LearnHomeView profile={profile} stars={12} playDays={0} subjects={[{ subject: 'mat', placement: 'none' }]} plan={planFixture([false, false, false], true)} />
       </Frame>
       <Frame id="home-mission" title="Learner home: placement done, mission in progress">
         <LearnHomeView
           profile={profile}
           stars={48}
           playDays={3}
-          subjects={[{ subject: 'mat', placement: 'done', mission: { done: 1, total: 4, minutes: 9, complete: false }, bits: [{ index: 0, kind: 'warmup', done: true }, { index: 1, kind: 'island', done: false }, { index: 2, kind: 'challenge', done: false }] }]}
+          subjects={[{ subject: 'mat', placement: 'done' }, { subject: 'rom', placement: 'none' }]}
+          plan={planFixture([true, false, false])}
+          locked={[{ subject: 'ist', minGrade: 4 }, { subject: 'geo', minGrade: 4 }]}
         />
       </Frame>
       <Frame id="home-done" title="Learner home: mission complete">
@@ -104,7 +123,8 @@ export default function LearnPreviewPage() {
           profile={profile}
           stars={60}
           playDays={5}
-          subjects={[{ subject: 'mat', placement: 'done', mission: { done: 4, total: 4, minutes: 9, complete: true }, bits: [{ index: 0, kind: 'warmup', done: true }, { index: 1, kind: 'island', done: true }, { index: 2, kind: 'challenge', done: true }] }]}
+          subjects={[{ subject: 'mat', placement: 'done' }, { subject: 'rom', placement: 'done' }]}
+          plan={planFixture([true, true, true])}
         />
       </Frame>
       <Frame id="check-intro" title="Check: intro">

@@ -84,6 +84,17 @@ export interface PlacementDone {
   summary: PlacementSummary;
 }
 
+/**
+ * placementNext answer for a subject with nothing to check at the child's grade (e.g. geography for a
+ * grade I child: its content starts in grade IV). No placement is created or completed.
+ */
+export interface PlacementUnavailable {
+  done: false;
+  unavailable: true;
+  /** Grade the subject's content starts at (undefined: no content at all) */
+  minGrade: Grade | undefined;
+}
+
 export interface SkillMapNode {
   skillId: string;
   grade: Grade;
@@ -179,7 +190,43 @@ export interface AssignmentBit {
   overdue: boolean;
 }
 
+/* --- daily plan across subjects ("Biții de azi", docs/NOTIFICATIONS.md §1) --- */
+
+/** Items of one placement chunk, as shown to the child (2 probes of ~3 items = about 3 minutes) */
+export const PLAN_CHECK_ITEMS = 6;
+
+/**
+ * One bit of today's plan. `index` is the position in the plan (0-based). For `source: 'mission'` the rest
+ * is the subject's own Bit (steps, kind, done) and `bitIndex` is its position in getTodayBits(subject), so
+ * the route is /learn/bit/:subject/:bitIndex?plan=1 and completion is completeMissionStep as usual.
+ * For `source: 'placement'` the subject has no finished placement yet: the bit is a short chunk of it
+ * ("Hai să vedem ce știi!", 2 probes), played at /learn/check/:subject?plan=1; `kind` is a placeholder
+ * ('island'), `steps` is empty and `done` means the chunk (or the whole placement) is finished.
+ */
+export type PlanBit = Bit & {
+  subject: SubjectId;
+  source: 'mission' | 'placement';
+  bitIndex?: number;
+};
+
+/** The child's plan for one local day: about 3 bits (Matematică, Limba română, a rotating subject) */
+export interface TodayPlan {
+  /** YYYY-MM-DD (local) */
+  day: string;
+  bits: PlanBit[];
+}
+
 export interface LearnerService {
+  /**
+   * Today's plan across subjects: Bit 1 Matematică, Bit 2 Limba română, Bit 3 a subject that rotates by day
+   * from the child's available others (stiinte, logic, ist, geo, civ), preferring one with a placement still
+   * to do, due reviews or gaps. Only subjects at or below the child's grade appear. Each bit is a slice of
+   * that subject's stored mission, or a placement chunk when the subject has no finished placement. Composed
+   * once per day and stored on this device, so re-reads give the same bits; `done` is derived from the
+   * mission steps / placement probes, never stored. Offline, no network.
+   */
+  getTodayPlan(profileId: string, now?: number): Promise<TodayPlan>;
+
   /**
    * Today's bits (1–3), derived from the stored mission: stable for the day, offline too.
    * Completing a bit = completeMissionStep for each of its steps. undefined if no placement yet.
@@ -209,7 +256,11 @@ export interface LearnerService {
   /* --- placement ("Verifică-te"), resumable across days --- */
   getPlacement(profileId: string, subject: SubjectId): Promise<PlacementRecord | undefined>;
   /** Start (or resume if one is in progress) and return the next probe or the final result */
-  placementNext(profileId: string, subject: SubjectId, now?: number): Promise<ProbeRequest | PlacementDone>;
+  placementNext(
+    profileId: string,
+    subject: SubjectId,
+    now?: number,
+  ): Promise<ProbeRequest | PlacementDone | PlacementUnavailable>;
   /** Record the answers for one probe (true = correct, in order) */
   placementRecord(profileId: string, subject: SubjectId, skillId: string, results: boolean[]): Promise<void>;
   /** Discard a placement so it can be redone */

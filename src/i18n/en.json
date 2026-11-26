@@ -741,6 +741,20 @@
       "redoBody": "The current check result is deleted and your child will take it again, in short games.",
       "redoYes": "Yes, redo it",
       "redoNo": "No, keep it"
+    },
+    "locked": {
+      "note": "{{subject}} starts in {{grade}}. Until then, let's discover something else!",
+      "teaser": "{{subjects}}: from {{grade}}",
+      "grades": {
+        "1": "grade I",
+        "2": "grade II",
+        "3": "grade III",
+        "4": "grade IV",
+        "5": "grade V",
+        "6": "grade VI",
+        "7": "grade VII",
+        "8": "grade VIII"
+      }
     }
   },
   "bits": {
@@ -777,7 +791,13 @@
     "notFound": "We could not find this bit. Let's go back to today's bits!",
     "needCheckTitle": "First, let's see what you know!",
     "needCheckBody": "We start with a short adventure, then your bits are ready.",
-    "needCheckCta": "Check yourself!"
+    "needCheckCta": "Check yourself!",
+    "plan": {
+      "check": "What do you know?",
+      "checkTitle": "Let's see what you know in {{subject}}!",
+      "checkBody": "A few short questions, no rush. We continue tomorrow, where we stop.",
+      "allSubjects": "All subjects"
+    }
   },
   "legal": {
     "draftBanner": "Draft — under legal review",
