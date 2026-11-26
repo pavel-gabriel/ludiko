@@ -1,491 +1,427 @@
-import { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import CloseButton from '@/components/ui/CloseButton';
 import { useAuthStore } from '@/store/authStore';
+import { useRoomStore } from '@/store/roomStore';
+import { createSession, getSession, updateSession } from '@/services/teacherService';
+import { startClassroomSession } from '@/services/classroomStart';
+import type { Grade } from '@/engine/types';
+import type { ClassroomMode, ClassroomSession } from '@/utils/types';
+import OptionCard from '@/components/setup/OptionCard';
+import StepDots from '@/components/setup/StepDots';
+import PracticeStep from '@/components/setup/PracticeStep';
+import AdvancedSettings from '@/components/setup/AdvancedSettings';
+import { Row } from '@/components/setup/ReadyStep';
+import { MODE_EMOJI, MODE_TONE } from '@/components/setup/modes';
+import { PLAY_PRESETS } from '@/components/play/presets';
+import { resolveSkillNames } from '@/components/play/skillNames';
+import { GAME_TYPES } from '@/utils/constants';
 import {
-  createSession,
-  getSession,
-  updateSession,
-  generateStudentCodes,
-  getTeacherTemplates,
-  saveTemplate,
-} from '@/services/teacherService';
-import { DEFAULT_GAME_SETTINGS, usesOperations } from '@/utils/constants';
-import GameTypePicker from '@/components/ui/GameTypePicker';
-import type {
-  GameType,
-  Difficulty,
-  Operation,
-  ClassroomMode,
-  ShapeMode,
-  SessionTemplate,
-  CustomQuestion,
-} from '@/utils/types';
+  isCustomSelection,
+  isMemory,
+  modesFor,
+  practiceIssue,
+  withMode,
+  type SetupChoices,
+} from '@/components/setup/setupModel';
+import {
+  MAX_LABEL,
+  MAX_STUDENTS,
+  MAX_TITLE,
+  classIssue,
+  draftFromSession,
+  draftToSession,
+  firstBlockedTeacherStep,
+  newDraft,
+  repeatDraft,
+  resizeCodes,
+  teacherStepsFor,
+  type SessionDraft,
+  type TeacherStep,
+} from './sessionDraft';
 
+const GRADES: Grade[] = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+const GRADE_KEY = 'ludiko.teacher.classGrade';
+
+function loadGrade(): Grade | null {
+  try {
+    const v = Number(localStorage.getItem(GRADE_KEY));
+    return localStorage.getItem(GRADE_KEY) !== null && GRADES.includes(v as Grade) ? (v as Grade) : null;
+  } catch {
+    return null;
+  }
+}
+
+function saveGrade(g: Grade | null): void {
+  try {
+    if (g === null) localStorage.removeItem(GRADE_KEY);
+    else localStorage.setItem(GRADE_KEY, String(g));
+  } catch {
+    /* private mode / blocked storage: the wizard works without it */
+  }
+}
+
+const numberOnly = (text: string): number => {
+  const v = parseInt(text.replace(/\D/g, ''), 10);
+  return isNaN(v) ? 0 : v;
+};
+
+/**
+ * The teacher's session wizard (/teacher/session/new, /teacher/session/:id/edit, and
+ * /teacher/session/new?from=:id to repeat a past session): "Ce jucăm?" -> "Ce exersăm?" (not for memory)
+ * -> "Clasa" -> "Gata?", built from the same blocks as the game setup wizard.
+ */
 export default function SessionConfig() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const { sessionId } = useParams<{ sessionId: string }>();
+  const [params] = useSearchParams();
+  const fromId = params.get('from');
   const { uid, loading: authLoading } = useAuthStore();
+  const { setRoom, setCurrentPlayer } = useRoomStore();
   const isNew = !sessionId;
 
-  const [title, setTitle] = useState('');
-  const [gameType, setGameType] = useState<GameType>(DEFAULT_GAME_SETTINGS.gameType);
-  const [difficulty, setDifficulty] = useState<Difficulty>(DEFAULT_GAME_SETTINGS.difficulty);
-  const [operations, setOperations] = useState<Operation[]>(DEFAULT_GAME_SETTINGS.operations);
-  const [rounds, setRounds] = useState(DEFAULT_GAME_SETTINGS.rounds);
-  const [timePerRound, setTimePerRound] = useState(DEFAULT_GAME_SETTINGS.timePerRound);
-  const [shapeMode, setShapeMode] = useState<ShapeMode>('image');
-  const [classroomMode, setClassroomMode] = useState<ClassroomMode>('selfPaced');
-  const [globalTimer, setGlobalTimer] = useState(300);
-  const [studentCount, setStudentCount] = useState(10);
-  const [customQuestions, setCustomQuestions] = useState<CustomQuestion[]>([]);
-  const [templates, setTemplates] = useState<SessionTemplate[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [draft, setDraft] = useState<SessionDraft>(newDraft);
+  /* status of the session being edited (only a draft can be started) */
+  const [status, setStatus] = useState<ClassroomSession['status'] | null>(null);
+  const [grade, setGradeState] = useState<Grade | null>(loadGrade);
+  const [stepIndex, setStepIndex] = useState(0);
+  const [showAllPresets, setShowAllPresets] = useState(false);
+  const [picking, setPicking] = useState(false);
+  const [advanced, setAdvanced] = useState(false);
+  const [busy, setBusy] = useState<'save' | 'start' | null>(null);
   const [error, setError] = useState('');
-  const [templateName, setTemplateName] = useState('');
+  const [loaded, setLoaded] = useState(!sessionId && !fromId);
+  const [countText, setCountText] = useState(String(draft.studentCodes.length));
+  const headingRef = useRef<HTMLHeadingElement>(null);
 
-  /* Load existing session if editing */
+  const { choices } = draft;
+  const steps = teacherStepsFor(choices.mode);
+  const step: TeacherStep = steps[Math.min(stepIndex, steps.length - 1)];
+  const last = stepIndex === steps.length - 1;
+  const memory = isMemory(choices);
+
+  const setGrade = (g: Grade | null) => {
+    setGradeState(g);
+    saveGrade(g);
+  };
+  const updateChoices = (patch: Partial<SetupChoices>) => setDraft((d) => ({ ...d, choices: { ...d.choices, ...patch } }));
+  const update = (patch: Partial<SessionDraft>) => setDraft((d) => ({ ...d, ...patch }));
+
+  /* Load the session being edited, or the one being repeated */
   useEffect(() => {
     if (authLoading) return;
     if (!uid) { navigate('/teacher/login'); return; }
-    if (!isNew && sessionId) {
-      getSession(sessionId).then((s) => {
-        if (!s) { navigate('/teacher'); return; }
-        setTitle(s.title);
-        setGameType(s.settings.gameType);
-        setDifficulty(s.settings.difficulty);
-        setOperations(s.settings.operations);
-        setRounds(s.settings.rounds);
-        setTimePerRound(s.settings.timePerRound);
-        if (s.settings.shapeMode) setShapeMode(s.settings.shapeMode);
-        setClassroomMode(s.classroomMode);
-        setGlobalTimer(s.globalTimer);
-        setStudentCount(s.studentCodes.length);
-      });
-    }
-    getTeacherTemplates(uid).then(setTemplates);
-  }, [uid, sessionId, authLoading]);
+    const id = sessionId ?? fromId;
+    if (!id) return;
+    getSession(id).then((s) => {
+      if (!s) { navigate('/teacher'); return; }
+      const d = sessionId ? draftFromSession(s) : repeatDraft(s);
+      setDraft(d);
+      setCountText(String(d.studentCodes.length));
+      setPicking(isCustomSelection(d.choices));
+      if (sessionId) setStatus(s.status);
+      setLoaded(true);
+    });
+  }, [uid, sessionId, fromId, authLoading]);
 
-  const showMathOptions = usesOperations(gameType);
-  const isShapeMatch = gameType === 'shapeMatch';
-  const isMemory = gameType === 'memoryGame';
+  useEffect(() => {
+    if (stepIndex > 0) headingRef.current?.focus();
+  }, [stepIndex]);
 
-  const toggleOperation = (op: Operation) => {
-    setOperations((prev) =>
-      prev.includes(op) ? prev.filter((o) => o !== op) : [...prev, op],
-    );
+  /* What stops "Înainte" on this step */
+  const blocked = step === 'practice' ? practiceIssue(choices) !== null : step === 'class' ? classIssue(draft) !== null : false;
+  const blockedStep = firstBlockedTeacherStep(draft);
+  const canStart = isNew || status === 'draft';
+
+  const go = (s: TeacherStep) => setStepIndex(Math.max(0, steps.indexOf(s)));
+  const next = () => {
+    if (!blocked && !last) setStepIndex((i) => i + 1);
+  };
+  const back = () => setStepIndex((i) => Math.max(0, i - 1));
+
+  const setCount = (text: string) => {
+    const clean = text.replace(/\D/g, '');
+    setCountText(clean);
+    const n = numberOnly(clean);
+    if (n >= 1) setDraft((d) => ({ ...d, studentCodes: resizeCodes(d.studentCodes, Math.min(n, MAX_STUDENTS)) }));
   };
 
-  const applyTemplate = (tmpl: SessionTemplate) => {
-    setGameType(tmpl.settings.gameType);
-    setDifficulty(tmpl.settings.difficulty);
-    setOperations(tmpl.settings.operations);
-    setRounds(tmpl.settings.rounds);
-    setTimePerRound(tmpl.settings.timePerRound);
-    if (tmpl.settings.shapeMode) setShapeMode(tmpl.settings.shapeMode);
-    setClassroomMode(tmpl.classroomMode);
-    setGlobalTimer(tmpl.globalTimer);
-    if (tmpl.customQuestions) setCustomQuestions(tmpl.customQuestions);
-  };
-
-  /* Add a new custom question */
-  const addCustomQuestion = () => {
-    setCustomQuestions((prev) => [
-      ...prev,
-      {
-        id: Math.random().toString(36).substring(2, 8),
-        text: '',
-        options: ['', '', '', ''],
-        correctIndex: 0,
-      },
-    ]);
-  };
-
-  const updateCustomQuestion = (index: number, field: string, value: string | number) => {
-    setCustomQuestions((prev) => prev.map((q, i) => {
-      if (i !== index) return q;
-      if (field === 'text') return { ...q, text: value as string };
-      if (field === 'correctIndex') return { ...q, correctIndex: value as number };
-      return q;
-    }));
-  };
-
-  const updateCustomOption = (qIndex: number, oIndex: number, value: string) => {
-    setCustomQuestions((prev) => prev.map((q, i) => {
-      if (i !== qIndex) return q;
-      const options = [...q.options];
-      options[oIndex] = value;
-      return { ...q, options };
-    }));
-  };
-
-  const removeCustomQuestion = (index: number) => {
-    setCustomQuestions((prev) => prev.filter((_, i) => i !== index));
-  };
-
-  const handleSaveTemplate = async () => {
-    if (!uid || !templateName.trim()) return;
-    const trimmedName = templateName.trim();
-    /* Check for duplicate template name */
-    if (templates.some((tmpl) => tmpl.name.toLowerCase() === trimmedName.toLowerCase())) {
-      setError(t('teacher.duplicateTemplateName'));
-      return;
-    }
-    setError('');
-    const settings = {
-      gameType,
-      gameMode: 'raceToFinish' as const,
-      difficulty,
-      operations: showMathOptions ? operations : ['+' as Operation],
-      rounds,
-      timePerRound,
-      ...(isShapeMatch && { shapeMode }),
-    };
-    try {
-      await saveTemplate(uid, trimmedName, settings, classroomMode, globalTimer, customQuestions.length > 0 ? customQuestions : undefined);
-      setTemplateName('');
-      /* Refresh templates */
-      getTeacherTemplates(uid).then(setTemplates);
-    } catch (err: unknown) {
-      setError((err as Error).message || t('teacher.saveError'));
-    }
-  };
-
-  const handleSave = async () => {
-    if (!uid || !title.trim() || loading) return;
-    setLoading(true);
+  /** Saves (creates or updates) and, with `thenStart`, opens the room and goes to the live dashboard */
+  const save = async (thenStart: boolean) => {
+    if (!uid || busy) return;
+    if (blockedStep) { go(blockedStep); return; }
+    setBusy(thenStart ? 'start' : 'save');
     setError('');
     try {
-      const settings = {
-        gameType,
-        gameMode: 'raceToFinish' as const,
-        difficulty,
-        operations: showMathOptions ? operations : ['+' as Operation],
-        rounds,
-        timePerRound,
-        ...(isShapeMatch && { shapeMode }),
-      };
-      const codes = generateStudentCodes(studentCount);
-
+      const payload = draftToSession(draft);
+      let id = sessionId ?? '';
       if (isNew) {
-        const id = await createSession(uid, title.trim(), settings, classroomMode, globalTimer, codes);
-        navigate(`/teacher/session/${id}`);
-      } else if (sessionId) {
-        await updateSession(sessionId, {
-          title: title.trim(),
-          settings,
-          classroomMode,
-          globalTimer,
-        });
-        navigate('/teacher');
+        id = await createSession(uid, payload.title, payload.settings, payload.classroomMode, payload.globalTimer, payload.studentCodes);
+      } else {
+        await updateSession(id, payload);
+      }
+      if (thenStart) {
+        const session: ClassroomSession = { id, teacherUid: uid, ...payload, status: 'draft', createdAt: Date.now() };
+        const room = await startClassroomSession(session, t('teacher.teacher'));
+        setRoom(room);
+        setCurrentPlayer(room.players[0]);
+        navigate(`/teacher/live/${id}`);
+      } else {
+        navigate(isNew ? `/teacher/session/${id}` : '/teacher');
       }
     } catch (err: unknown) {
       setError((err as Error).message || t('teacher.saveError'));
     } finally {
-      setLoading(false);
+      setBusy(null);
     }
   };
 
-  return (
-    <div className="page">
-      <div className="card w-full max-w-lg relative" role="main">
-        <CloseButton onClick={() => navigate('/teacher')} />
-        <h2 className="text-2xl font-bold mb-4 text-center">
-          {isNew ? t('teacher.newSession') : t('teacher.editSession')}
-        </h2>
+  if (!loaded) {
+    return (
+      <div className="page">
+        <p className="text-gray-400">{t('teacher.loading')}</p>
+      </div>
+    );
+  }
 
+  /* What we practise, in words */
+  let practice: string;
+  if (choices.skillIds.length > 0) {
+    const preset = PLAY_PRESETS.find((p) => p.skillIds.length === choices.skillIds.length && p.skillIds.every((id) => choices.skillIds.includes(id)));
+    practice = preset ? t(preset.labelKey) : resolveSkillNames(choices.skillIds, i18n.language);
+  } else {
+    const game = GAME_TYPES.find((g) => g.type === choices.classicType);
+    practice = game ? `${t('setup.practice.classic')}: ${t(game.labelKey)}` : t('setup.practice.classic');
+  }
+
+  const stepTitle = step === 'class' ? t('teacher.wizard.classStep') : t(`setup.step.${step}`);
+  const issue = classIssue(draft);
+
+  return (
+    <div className="relative mx-auto flex min-h-screen w-full max-w-md flex-col px-4 pt-4" role="main">
+      <CloseButton onClick={() => navigate('/teacher')} />
+
+      <header className="pr-10">
+        <p className="text-xs font-bold uppercase tracking-wide text-purple-600">
+          {isNew ? t('teacher.newSession') : t('teacher.editSession')}
+        </p>
+        <div className="mt-1.5">
+          <StepDots index={stepIndex} total={steps.length} />
+        </div>
+        <h2 ref={headingRef} tabIndex={-1} className="mt-4 text-3xl font-extrabold leading-tight text-ludiko-text focus:outline-none">
+          {stepTitle}
+        </h2>
+      </header>
+
+      <div className="mt-4 flex-1 pb-6">
         {error && (
-          <div
-            className="bg-red-100 text-red-700 rounded-xl px-4 py-2 mb-4 text-sm"
-            role="alert"
-            aria-live="assertive"
-          >
+          <div className="mb-4 rounded-xl bg-red-100 px-4 py-2 text-sm text-red-700" role="alert" aria-live="assertive">
             {error}
           </div>
         )}
 
-        {/* Template selector */}
-        {templates.length > 0 && (
-          <div className="mb-4">
-            <span className="text-sm font-semibold">{t('teacher.loadTemplate')}</span>
-            <div className="flex flex-wrap gap-2 mt-1">
-              {templates.map((tmpl) => (
-                <button
-                  key={tmpl.id}
-                  onClick={() => applyTemplate(tmpl)}
-                  className="px-3 py-1 rounded-xl bg-gray-100 hover:bg-ludiko-blue/20 text-sm font-bold transition-colors"
-                >
-                  {tmpl.name}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Session title */}
-        <label className="block mb-3">
-          <span className="text-sm font-semibold">{t('teacher.sessionTitle')}</span>
-          <input
-            type="text"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder={t('teacher.sessionTitlePlaceholder')}
-            className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
-            maxLength={60}
-          />
-        </label>
-
-        {/* Game type */}
-        <div className="block mb-3">
-          <span className="text-sm font-semibold">{t('create.gameType')}</span>
-          <GameTypePicker value={gameType} onChange={setGameType} />
-        </div>
-
-        {/* Classroom mode */}
-        <label className="block mb-3">
-          <span className="text-sm font-semibold">{t('teacher.classroomMode')}</span>
-          <div className="flex gap-2 mt-1">
-            {(['selfPaced', 'teacherControlled'] as ClassroomMode[]).map((mode) => (
-              <button
-                key={mode}
-                onClick={() => setClassroomMode(mode)}
-                aria-pressed={classroomMode === mode}
-                className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
-                  classroomMode === mode
-                    ? 'bg-ludiko-blue text-white'
-                    : 'bg-gray-100 hover:bg-gray-200'
-                }`}
-              >
-                {t(`teacher.mode.${mode}`)}
-              </button>
+        {step === 'mode' && (
+          <div className="space-y-3" role="group" aria-label={t('setup.step.mode')}>
+            {modesFor('room').map((m) => (
+              <OptionCard
+                key={m}
+                emoji={MODE_EMOJI[m]}
+                title={t(`setup.mode.${m}.title`)}
+                sub={t(`setup.mode.${m}.sub`)}
+                tone={MODE_TONE[m]}
+                selected={choices.mode === m}
+                onClick={() => setDraft((d) => ({ ...d, choices: withMode('room', d.choices, m) }))}
+              />
             ))}
           </div>
-        </label>
-
-        {/* Shape mode (Shape Match only) */}
-        {isShapeMatch && (
-          <label className="block mb-3">
-            <span className="text-sm font-semibold">{t('create.shapeMode')}</span>
-            <div className="flex gap-2 mt-1">
-              {(['image', 'word'] as ShapeMode[]).map((mode) => (
-                <button
-                  key={mode}
-                  onClick={() => setShapeMode(mode)}
-                  aria-pressed={shapeMode === mode}
-                  className={`flex-1 py-2 rounded-xl font-bold text-sm transition-colors ${
-                    shapeMode === mode
-                      ? 'bg-ludiko-green text-ludiko-text'
-                      : 'bg-gray-100 hover:bg-gray-200'
-                  }`}
-                >
-                  {t(`create.shapeMode${mode.charAt(0).toUpperCase() + mode.slice(1)}`)}
-                </button>
-              ))}
-            </div>
-          </label>
         )}
 
-        {/* Operations (math only) */}
-        {showMathOptions && (
-          <label className="block mb-3">
-            <span className="text-sm font-semibold">{t('create.operations')}</span>
-            <div className="flex gap-2 mt-1">
-              {(['+', '-', '×', '÷'] as Operation[]).map((op) => (
-                <button
-                  key={op}
-                  onClick={() => toggleOperation(op)}
-                  aria-pressed={operations.includes(op)}
-                  className={`flex-1 py-2 rounded-xl font-bold text-xl transition-colors ${
-                    operations.includes(op)
-                      ? 'bg-ludiko-green text-ludiko-text'
-                      : 'bg-gray-100 hover:bg-gray-200'
-                  }`}
-                >
-                  {op}
-                </button>
-              ))}
-            </div>
-          </label>
-        )}
-
-        {/* Difficulty */}
-        <label className="block mb-3">
-          <span className="text-sm font-semibold">{t('create.difficulty')}</span>
-          <div className="flex gap-2 mt-1">
-            {(['easy', 'medium', 'hard'] as Difficulty[]).map((d) => (
-              <button
-                key={d}
-                onClick={() => setDifficulty(d)}
-                aria-pressed={difficulty === d}
-                className={`flex-1 py-2 rounded-xl font-bold transition-colors ${
-                  difficulty === d
-                    ? 'bg-ludiko-purple text-white'
-                    : 'bg-gray-100 hover:bg-gray-200'
-                }`}
-              >
-                {t(`create.${d}`)}
-              </button>
-            ))}
-          </div>
-        </label>
-
-        {/* Rounds + Time + Students + Global Timer */}
-        <div className="grid grid-cols-2 gap-3 mb-4">
-          <label className="block">
-            <span className="text-sm font-semibold">
-              {isMemory ? t('create.pairs') : t('create.rounds')}
-            </span>
-            <input
-              type="text"
-              inputMode="numeric"
-              value={rounds}
-              onChange={(e) => {
-                const v = parseInt(e.target.value.replace(/\D/g, ''), 10);
-                setRounds(isNaN(v) ? 0 : v);
-              }}
-              className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none"
-            />
-          </label>
-          <label className="block">
-            <span className="text-sm font-semibold">{t('create.timePerRound')}</span>
-            <input
-              type="text"
-              inputMode="numeric"
-              value={timePerRound}
-              onChange={(e) => {
-                const v = parseInt(e.target.value.replace(/\D/g, ''), 10);
-                setTimePerRound(isNaN(v) ? 0 : v);
-              }}
-              className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none"
-            />
-          </label>
-          <label className="block">
-            <span className="text-sm font-semibold">{t('teacher.studentCount')}</span>
-            <input
-              type="text"
-              inputMode="numeric"
-              value={studentCount}
-              onChange={(e) => {
-                const v = parseInt(e.target.value.replace(/\D/g, ''), 10);
-                setStudentCount(isNaN(v) ? 0 : Math.min(v, 30));
-              }}
-              className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none"
-            />
-          </label>
-          <label className="block">
-            <span className="text-sm font-semibold">{t('teacher.globalTimer')}</span>
-            <input
-              type="text"
-              inputMode="numeric"
-              value={globalTimer}
-              onChange={(e) => {
-                const v = parseInt(e.target.value.replace(/\D/g, ''), 10);
-                setGlobalTimer(isNaN(v) ? 0 : v);
-              }}
-              className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none"
-            />
-          </label>
-        </div>
-
-        {/* Custom questions section */}
-        <div className="mb-4">
-          <div className="flex items-center justify-between mb-2">
-            <span className="text-sm font-semibold">{t('teacher.customQuestions')}</span>
-            <button
-              onClick={addCustomQuestion}
-              className="text-xs bg-ludiko-blue/20 hover:bg-ludiko-blue/40 px-3 py-1 rounded-lg font-bold text-ludiko-purple transition-colors"
-              aria-label={t('teacher.addQuestion')}
-            >
-              + {t('teacher.addQuestion')}
-            </button>
-          </div>
-          <p className="text-xs text-gray-500 mb-2">{t('teacher.customQuestionsOwnWork')}</p>
-          {customQuestions.length === 0 && (
-            <p className="text-xs text-gray-400">{t('teacher.noCustomQuestions')}</p>
-          )}
-          {customQuestions.map((q, qi) => (
-            <div key={q.id} className="bg-gray-50 rounded-xl p-3 mb-2">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-xs font-bold text-gray-400">Q{qi + 1}</span>
-                <input
-                  type="text"
-                  value={q.text}
-                  onChange={(e) => updateCustomQuestion(qi, 'text', e.target.value)}
-                  placeholder={t('teacher.questionText')}
-                  className="flex-1 px-3 py-1 rounded-lg border border-gray-200 text-sm"
-                />
-                <button
-                  onClick={() => removeCustomQuestion(qi)}
-                  className="text-red-400 hover:text-red-600 font-bold"
-                  aria-label={`${t('teacher.delete')} Q${qi + 1}`}
-                >
-                  &times;
-                </button>
-              </div>
-              <div className="grid grid-cols-2 gap-2">
-                {q.options.map((opt, oi) => (
-                  <div key={oi} className="flex items-center gap-1">
-                    <input
-                      type="radio"
-                      name={`correct-${q.id}`}
-                      checked={q.correctIndex === oi}
-                      onChange={() => updateCustomQuestion(qi, 'correctIndex', oi)}
-                      className="accent-ludiko-green"
-                    />
-                    <input
-                      type="text"
-                      value={opt}
-                      onChange={(e) => updateCustomOption(qi, oi, e.target.value)}
-                      placeholder={`${t('teacher.option')} ${oi + 1}`}
-                      className="flex-1 px-2 py-1 rounded-lg border border-gray-200 text-sm"
-                    />
-                  </div>
+        {step === 'practice' && (
+          <div className="space-y-4">
+            {/* The class grade: presets show this grade +-1 */}
+            <div role="group" aria-label={t('teacher.wizard.classGrade')}>
+              <span className="text-sm font-semibold">{t('teacher.wizard.classGrade')}</span>
+              <div className="mt-1 flex flex-wrap gap-2">
+                {GRADES.map((g) => (
+                  <button
+                    key={g}
+                    type="button"
+                    aria-pressed={grade === g}
+                    onClick={() => setGrade(grade === g ? null : g)}
+                    className={`min-h-[2.75rem] min-w-[2.75rem] rounded-xl px-3 text-base font-bold transition-colors ${
+                      grade === g ? 'bg-ludiko-purple text-ludiko-text' : 'bg-white shadow hover:bg-gray-100'
+                    }`}
+                  >
+                    {t(`profiles.gradeShort.${g}`)}
+                  </button>
                 ))}
               </div>
             </div>
-          ))}
-        </div>
+            <PracticeStep
+              choices={choices}
+              onChange={updateChoices}
+              grade={grade}
+              showAll={showAllPresets}
+              onShowAll={setShowAllPresets}
+              picking={picking}
+              onPicking={setPicking}
+            />
+          </div>
+        )}
 
-        {/* Save as template */}
-        <div className="flex gap-2 mb-4">
-          <input
-            type="text"
-            value={templateName}
-            onChange={(e) => setTemplateName(e.target.value)}
-            placeholder={t('teacher.templateNamePlaceholder')}
-            aria-label={t('teacher.templateNamePlaceholder')}
-            className="flex-1 px-3 py-2 rounded-xl border-2 border-gray-200 text-sm focus:outline-none focus:border-ludiko-purple"
-            maxLength={40}
-          />
-          <Button
-            variant="purple"
-            size="sm"
-            onClick={handleSaveTemplate}
-            disabled={!templateName.trim()}
-          >
-            {t('teacher.saveTemplate')}
-          </Button>
-        </div>
+        {step === 'class' && (
+          <div className="space-y-4">
+            <label className="block">
+              <span className="text-sm font-semibold">{t('teacher.sessionTitle')}</span>
+              <input
+                type="text"
+                value={draft.title}
+                onChange={(e) => update({ title: e.target.value })}
+                placeholder={t('teacher.sessionTitlePlaceholder')}
+                maxLength={MAX_TITLE}
+                className="mt-1 min-h-[3rem] w-full rounded-xl border-2 border-ludiko-blue bg-white px-4 py-2 text-lg focus:outline-none focus:border-ludiko-purple"
+              />
+            </label>
 
-        {/* Actions */}
-        <div className="flex gap-3">
-          <Button variant="orange" size="md" onClick={() => navigate('/teacher')}>
-            {t('teacher.back')}
-          </Button>
-          <Button
-            variant="green"
-            size="md"
-            className="flex-1"
-            onClick={handleSave}
-            disabled={!title.trim() || loading}
-          >
-            {isNew ? t('teacher.createSession') : t('teacher.saveSession')}
-          </Button>
-        </div>
+            <div role="group" aria-label={t('teacher.classroomMode')}>
+              <span className="text-sm font-semibold">{t('teacher.classroomMode')}</span>
+              <div className="mt-1 grid grid-cols-2 gap-2">
+                {(['selfPaced', 'teacherControlled'] as ClassroomMode[]).map((m) => (
+                  <button
+                    key={m}
+                    type="button"
+                    onClick={() => update({ classroomMode: m })}
+                    aria-pressed={draft.classroomMode === m}
+                    className={`min-h-[3rem] rounded-xl px-2 py-2 text-sm font-bold transition-colors ${
+                      draft.classroomMode === m ? 'bg-ludiko-purple text-ludiko-text' : 'bg-white shadow hover:bg-gray-100'
+                    }`}
+                  >
+                    {t(`teacher.mode.${m}`)}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-3">
+              <label className="block">
+                <span className="text-sm font-semibold">{t('teacher.globalTimer')}</span>
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  value={draft.globalTimer}
+                  onChange={(e) => update({ globalTimer: numberOnly(e.target.value) })}
+                  className="mt-1 min-h-[3rem] w-full rounded-xl border-2 border-ludiko-blue bg-white px-4 py-2 text-lg focus:outline-none focus:border-ludiko-purple"
+                />
+                <span className="mt-0.5 block text-xs text-gray-500">{t('teacher.wizard.noLimit')}</span>
+              </label>
+              <label className="block">
+                <span className="text-sm font-semibold">{t('teacher.studentCount')}</span>
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  value={countText}
+                  onChange={(e) => setCount(e.target.value)}
+                  onBlur={() => setCountText(String(draft.studentCodes.length))}
+                  className="mt-1 min-h-[3rem] w-full rounded-xl border-2 border-ludiko-blue bg-white px-4 py-2 text-lg focus:outline-none focus:border-ludiko-purple"
+                />
+                <span className="mt-0.5 block text-xs text-gray-500">{t('teacher.wizard.maxStudents', { max: MAX_STUDENTS })}</span>
+              </label>
+            </div>
+
+            {/* Student codes and the labels only the teacher sees */}
+            <div className="rounded-2xl bg-white p-3 shadow">
+              <h3 className="text-sm font-bold">{t('teacher.studentCodes')} ({draft.studentCodes.length})</h3>
+              <p className="mt-1 text-xs text-gray-600">{t('teacher.wizard.labelHint')}</p>
+              <ul className="mt-2 max-h-72 space-y-2 overflow-y-auto">
+                {draft.studentCodes.map((sc, i) => (
+                  <li key={sc.code} className="flex items-center gap-2">
+                    <span className="w-20 shrink-0 font-mono text-sm font-bold">{sc.code}</span>
+                    <input
+                      type="text"
+                      value={sc.label}
+                      maxLength={MAX_LABEL}
+                      aria-label={t('teacher.wizard.labelFor', { code: sc.code })}
+                      onChange={(e) =>
+                        setDraft((d) => ({
+                          ...d,
+                          studentCodes: d.studentCodes.map((c, j) => (j === i ? { ...c, label: e.target.value } : c)),
+                        }))
+                      }
+                      className="min-h-[2.75rem] min-w-0 flex-1 rounded-xl border-2 border-gray-200 px-3 py-1 text-sm focus:outline-none focus:border-ludiko-purple"
+                    />
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {issue && (
+              <p role="alert" className="text-sm font-semibold text-red-600">
+                {t(issue === 'title' ? 'teacher.wizard.titleNeeded' : 'teacher.wizard.studentsNeeded')}
+              </p>
+            )}
+          </div>
+        )}
+
+        {step === 'ready' && (
+          <div className="space-y-4">
+            <ul className="divide-y divide-gray-100 rounded-2xl bg-white px-4 shadow" aria-label={t('setup.step.ready')}>
+              <Row label={t('setup.summary.game')} onEdit={() => go('mode')}>
+                <span aria-hidden="true">{MODE_EMOJI[choices.mode]} </span>
+                {t(`setup.mode.${choices.mode}.title`)}
+              </Row>
+              {!memory && (
+                <Row label={t('setup.summary.practice')} onEdit={() => go('practice')}>
+                  <span className="line-clamp-2">{practice}</span>
+                </Row>
+              )}
+              <Row label={t('teacher.wizard.classStep')} onEdit={() => go('class')}>
+                <span className="block truncate">{draft.title.trim() || '—'}</span>
+                <span className="block text-sm font-semibold text-gray-600">
+                  {t(`teacher.mode.${draft.classroomMode}`)} &middot; {draft.studentCodes.length} {t('teacher.students')}
+                  {' '}&middot; {draft.globalTimer > 0 ? `${draft.globalTimer}s` : t('teacher.wizard.noTimer')}
+                </span>
+              </Row>
+            </ul>
+
+            <AdvancedSettings context="room" choices={choices} onChange={updateChoices} open={advanced} onToggle={setAdvanced} />
+          </div>
+        )}
       </div>
+
+      {/* Back / Next (Save / Start on the last step), always at the bottom where thumbs are */}
+      <footer className="sticky bottom-0 -mx-4 space-y-2 border-t border-black/5 bg-ludiko-bg/95 px-4 py-3 backdrop-blur">
+        {last && canStart && (
+          <Button variant="green" size="lg" className="w-full" onClick={() => save(true)} disabled={blockedStep !== null || busy !== null} data-testid="teacher-start">
+            {busy === 'start' ? t('teacher.starting') : t('teacher.startSession')}
+          </Button>
+        )}
+        <div className="flex gap-3">
+          {stepIndex > 0 && (
+            <Button variant="yellow" size="lg" onClick={back} className="shrink-0 !px-5">
+              <span aria-hidden="true">←</span> <span>{t('setup.back')}</span>
+            </Button>
+          )}
+          {last ? (
+            <Button
+              variant={canStart ? 'blue' : 'green'}
+              size="lg"
+              className="flex-1"
+              onClick={() => save(false)}
+              disabled={blockedStep !== null || busy !== null}
+              data-testid="teacher-save"
+            >
+              {t('teacher.saveSession')}
+            </Button>
+          ) : (
+            <Button variant="green" size="lg" onClick={next} disabled={blocked} className="flex-1" data-testid="setup-next">
+              {t('setup.next')} <span aria-hidden="true">→</span>
+            </Button>
+          )}
+        </div>
+      </footer>
     </div>
   );
 }
