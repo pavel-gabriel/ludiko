@@ -7,10 +7,15 @@ import {
   type ReportReason,
   type SubmitResult,
 } from '@/services/reportService';
+import { buildReportSnapshot, type ReportContext } from '@/services/reportSnapshot';
+import type { Item } from '@/engine/types';
 
 interface ReportButtonProps {
   itemId: string;
   skillId?: string;
+  /** The full item: lets the admin see exactly what the child saw. Optional (older callers). */
+  item?: Item;
+  context?: ReportContext;
 }
 
 type Phase = 'form' | 'sending' | 'done';
@@ -18,7 +23,7 @@ type Phase = 'form' | 'sending' | 'done';
 const FOCUSABLE = 'button:not([disabled]), textarea:not([disabled])';
 
 /** Small, unobtrusive "report a mistake" flag for item screens. */
-export default function ReportButton({ itemId, skillId }: ReportButtonProps) {
+export default function ReportButton({ itemId, skillId, item, context }: ReportButtonProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [phase, setPhase] = useState<Phase>('form');
@@ -54,9 +59,10 @@ export default function ReportButton({ itemId, skillId }: ReportButtonProps) {
     setPhase('sending');
     const outcome = await submitReport({
       itemId,
-      skillId,
+      skillId: skillId ?? item?.skillId,
       reason,
       comment: comment.trim() || undefined,
+      snapshot: item ? buildReportSnapshot(item, context) : undefined,
     });
     setResult(outcome);
     if (outcome === 'sent' || outcome === 'queued') {

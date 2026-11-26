@@ -1,15 +1,80 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { getSkill } from '@/engine/content/registry';
+import { localize } from '@/engine/types';
 import Button from '@/components/ui/Button';
 import {
   groupOpenReports,
   listReports,
   setReportStatus,
   type ContentReport,
+  type ReportGroup,
+  type ReportSnapshot,
   type ReportStatus,
 } from '@/services/reportService';
+import { reconstructSnapshot } from './reconstructItem';
 
 const MAX_COMMENTS_SHOWN = 3;
+
+/** The question as the child saw it, with the correct option marked. */
+function ItemDetails({ g }: { g: ReportGroup }) {
+  const { t } = useTranslation();
+  const rebuilt = useMemo(
+    () => (g.snapshot ? undefined : reconstructSnapshot(g.itemId, g.skillId)),
+    [g.snapshot, g.itemId, g.skillId],
+  );
+  const snap: ReportSnapshot | undefined = g.snapshot ?? rebuilt;
+  const skillId = snap?.skillId ?? g.skillId;
+  const skill = skillId ? getSkill(skillId) : undefined;
+
+  if (!snap) {
+    return <p className="text-xs text-gray-500 italic mb-2">{t('report.admin.noDetails')}</p>;
+  }
+
+  const gradeLabel =
+    snap.grade === 0 ? t('report.admin.gradeZero') : t('report.admin.grade', { n: snap.grade });
+  const meta = [
+    skill ? localize(skill.title, 'ro') : snap.skillId,
+    t(`report.admin.subjects.${snap.subject}`),
+    gradeLabel,
+    ...(g.snapshot ? [t(`report.admin.contexts.${snap.context}`)] : []),
+  ].join(' · ');
+
+  return (
+    <div className="bg-white rounded-lg px-3 py-2 mb-2 text-sm" data-testid="report-item-details">
+      <p className="text-xs text-gray-600 mb-1">
+        {meta}
+        {!g.snapshot && (
+          <span className="ml-2 px-1.5 py-0.5 rounded bg-yellow-100 text-yellow-800 font-bold">
+            {t('report.admin.reconstructed')}
+          </span>
+        )}
+      </p>
+      <p className="font-semibold break-words mb-1" aria-label={t('report.admin.question')}>
+        {snap.prompt}
+      </p>
+      {snap.options && snap.options.length > 0 && (
+        <ul className="list-disc pl-5 mb-1">
+          {snap.options.map((o, i) => (
+            <li key={i} className={`break-words ${o === snap.correct ? 'font-bold text-green-700' : ''}`}>
+              {o}
+              {o === snap.correct && <span className="ml-1 text-xs">({t('report.admin.correctMark')})</span>}
+            </li>
+          ))}
+        </ul>
+      )}
+      <p className="text-xs text-gray-600 break-words">
+        <span className="font-semibold">{t('report.admin.correctLabel')}:</span> {snap.correct}
+      </p>
+      {skillId && (
+        <Link to={`/practice/${skillId}`} className="text-xs font-semibold text-blue-600 underline">
+          {t('report.admin.openExercise')}
+        </Link>
+      )}
+    </div>
+  );
+}
 
 /** Admin queue: open content reports grouped by item, with resolve / dismiss. */
 export default function ContentReportsSection() {
@@ -95,6 +160,8 @@ export default function ContentReportsSection() {
                   </span>
                 )}
               </div>
+
+              <ItemDetails g={g} />
 
               <p className="text-xs text-gray-600 mb-1">
                 <span className="font-semibold">{t('report.admin.reasonsLabel')}:</span>{' '}

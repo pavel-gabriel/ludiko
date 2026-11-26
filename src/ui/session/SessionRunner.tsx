@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import ReportButton from '@/components/ui/ReportButton'
+import type { ReportContext } from '@/services/reportSnapshot'
 import type { Explanation, Item, ItemResult } from '@/engine/types'
 import FramesPlayer from '@/ui/frames/FramesPlayer'
 import { MascotSvg } from '@/ui/mascot/Mascot'
@@ -37,6 +38,8 @@ export interface SessionRunnerProps {
   onFinish: (summary: SessionSummary) => void
   /** Leaving early. If omitted, leaving calls `onFinish` with `completed: false` */
   onExit?: () => void
+  /** Where the item is shown, for content reports. Default: derived from the page route. */
+  reportContext?: ReportContext
 }
 
 type Phase = 'intro' | 'question' | 'explain'
@@ -56,6 +59,7 @@ export default function SessionRunner({
   onAttempt,
   onFinish,
   onExit,
+  reportContext,
 }: SessionRunnerProps) {
   const { t } = useTranslation()
   const isSprint = mode === 'sprint'
@@ -266,7 +270,12 @@ export default function SessionRunner({
             disabled={confirmExit}
           />
           <div className="flex justify-end">
-            <ReportButton itemId={entry.item.id.replace(/~\d+$/, '')} skillId={entry.item.skillId} />
+            <ReportButton
+              itemId={entry.item.id.replace(/~\d+$/, '')}
+              skillId={entry.item.skillId}
+              item={entry.item}
+              context={reportContext}
+            />
           </div>
         </div>
       )}

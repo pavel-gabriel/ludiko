@@ -9,6 +9,9 @@ import {
   type DocumentData,
 } from 'firebase/firestore';
 import { db, firebaseEnabled } from '@/services/firebase';
+import { sanitizeSnapshot, type ReportSnapshot } from '@/services/reportSnapshot';
+
+export type { ReportSnapshot } from '@/services/reportSnapshot';
 
 /* ------------------------------------------------------------------ */
 /*  Types & constants                                                  */
@@ -51,6 +54,8 @@ export interface ContentReport {
   createdAt: number;
   status: ReportStatus;
   appVersion?: string;
+  /** The question as the child saw it. Absent on old reports. */
+  snapshot?: ReportSnapshot;
 }
 
 /** What the child submits. No personal data: no names, emails or profile ids. */
@@ -59,6 +64,7 @@ export interface ReportInput {
   skillId?: string;
   reason: ReportReason;
   comment?: string;
+  snapshot?: ReportSnapshot;
 }
 
 /** The document written to Firestore (or queued locally). */
@@ -70,6 +76,7 @@ export interface NewReportDoc {
   createdAt: number;
   status: 'open';
   appVersion?: string;
+  snapshot?: ReportSnapshot;
 }
 
 export type ReportValidationField = 'itemId' | 'skillId' | 'reason' | 'comment';
@@ -117,6 +124,9 @@ export function validateReportInput(input: ReportInput): ReportValidation {
     return { ok: false, field: 'comment' };
   }
 
+  // A bad snapshot is dropped, it never blocks the report.
+  const snapshot = input.snapshot === undefined ? undefined : sanitizeSnapshot(input.snapshot);
+
   const value: NewReportDoc = {
     itemId,
     reason: input.reason,
@@ -125,6 +135,7 @@ export function validateReportInput(input: ReportInput): ReportValidation {
     // Optional fields are omitted rather than set to undefined (Firestore rejects undefined).
     ...(skillId ? { skillId } : {}),
     ...(comment ? { comment } : {}),
+    ...(snapshot ? { snapshot } : {}),
     ...(readAppVersion() ? { appVersion: readAppVersion() } : {}),
   };
   return { ok: true, value };
@@ -283,6 +294,8 @@ export interface ReportGroup {
   reportIds: string[];
   hidden: boolean;
   latestAt: number;
+  skillId?: string;
+  snapshot?: ReportSnapshot;
 }
 
 /** Group open reports by item, most-reported first. Pure. */
@@ -308,6 +321,8 @@ export function groupOpenReports(reports: ContentReport[]): ReportGroup[] {
     if (r.comment) g.comments.push(r.comment);
     g.reportIds.push(r.id);
     g.latestAt = Math.max(g.latestAt, r.createdAt);
+    if (!g.skillId && r.skillId) g.skillId = r.skillId;
+    if (!g.snapshot && r.snapshot) g.snapshot = r.snapshot;
   }
   const list = [...groups.values()];
   for (const g of list) g.hidden = isItemHidden(reports, g.itemId);

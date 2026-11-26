@@ -297,7 +297,32 @@
       "resolve": "Rezolvat",
       "dismiss": "Respinge",
       "loadError": "Nu am putut încărca rapoartele.",
-      "actionError": "Nu am putut actualiza raportul."
+      "actionError": "Nu am putut actualiza raportul.",
+      "question": "Întrebarea văzută de copil",
+      "correctMark": "răspuns corect",
+      "correctLabel": "Răspuns corect",
+      "reconstructed": "reconstruit",
+      "noDetails": "fără detalii",
+      "openExercise": "Deschide exercițiul",
+      "grade": "clasa {{n}}",
+      "gradeZero": "clasa pregătitoare",
+      "contexts": {
+        "practice": "Exersare",
+        "bit": "Bit de învățare",
+        "mission": "Misiune",
+        "exam": "Examen",
+        "game": "Joc",
+        "placement": "Verificare nivel"
+      },
+      "subjects": {
+        "mat": "Matematică",
+        "rom": "Română",
+        "stiinte": "Științe",
+        "ist": "Istorie",
+        "geo": "Geografie",
+        "civ": "Educație civică",
+        "logic": "Logică"
+      }
     }
   },
   "pwa": {

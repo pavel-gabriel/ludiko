@@ -297,7 +297,32 @@
       "resolve": "Resolved",
       "dismiss": "Dismiss",
       "loadError": "Could not load reports.",
-      "actionError": "Could not update the report."
+      "actionError": "Could not update the report.",
+      "question": "The question as the child saw it",
+      "correctMark": "correct answer",
+      "correctLabel": "Correct answer",
+      "reconstructed": "reconstructed",
+      "noDetails": "no details",
+      "openExercise": "Open the exercise",
+      "grade": "grade {{n}}",
+      "gradeZero": "preparatory grade",
+      "contexts": {
+        "practice": "Practice",
+        "bit": "Learning bit",
+        "mission": "Mission",
+        "exam": "Exam",
+        "game": "Game",
+        "placement": "Level check"
+      },
+      "subjects": {
+        "mat": "Maths",
+        "rom": "Romanian",
+        "stiinte": "Science",
+        "ist": "History",
+        "geo": "Geography",
+        "civ": "Civics",
+        "logic": "Logic"
+      }
     }
   },
   "pwa": {
