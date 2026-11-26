@@ -133,3 +133,19 @@ export function pickMessage(lang, day) {
   const body = list[dayOfYear(day) % list.length];
   return { title: TITLE[code], body, url: REMINDER_URL, tag: REMINDER_TAG };
 }
+
+/**
+ * Normalise the VAPID subject. web-push requires a URL: `mailto:…` or `https://…`.
+ * Owners often paste a bare email, or a value with stray spaces/quotes/newlines — fix those.
+ * Returns null when the value cannot be turned into a valid subject.
+ */
+export function normalizeVapidSubject(raw) {
+  if (typeof raw !== 'string') return null;
+  let s = raw.trim().replace(/^["']+|["']+$/g, '').trim();
+  if (!s) return null;
+  if (/^mailto:/i.test(s)) s = 'mailto:' + s.slice(7).trim();
+  else if (/^https:\/\//i.test(s)) return s;
+  else if (/^[^\s@:]+@[^\s@]+\.[^\s@]+$/.test(s)) s = 'mailto:' + s;
+  else return null;
+  return /^mailto:[^\s@]+@[^\s@]+\.[^\s@]+$/i.test(s) ? s : null;
+}

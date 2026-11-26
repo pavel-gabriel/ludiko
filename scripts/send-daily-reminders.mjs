@@ -13,6 +13,7 @@ import {
   isSubscriptionExpired,
   pickMessage,
   subscriptionExpiryCutoff,
+  normalizeVapidSubject,
 } from './reminders/logic.mjs';
 
 export const PAGE_SIZE = 500;
@@ -152,7 +153,12 @@ export async function runReminders({
   try {
     const { db, FieldPath } = await deps.firebase(JSON.stringify(serviceAccount));
     const webpush = await deps.webPush();
-    webpush.setVapidDetails(env.VAPID_SUBJECT, env.VAPID_PUBLIC_KEY, env.VAPID_PRIVATE_KEY);
+    const subject = normalizeVapidSubject(env.VAPID_SUBJECT);
+    if (!subject) {
+      error('VAPID_SUBJECT must be an email (e.g. you@example.com or mailto:you@example.com) or an https:// URL');
+      return { exitCode: 1, summary: null };
+    }
+    webpush.setVapidDetails(subject, env.VAPID_PUBLIC_KEY.trim(), env.VAPID_PRIVATE_KEY.trim());
 
     for await (const docs of activeSubscriptionPages(db, FieldPath)) {
       summary.checked += docs.length;
