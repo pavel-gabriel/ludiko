@@ -141,14 +141,6 @@ export default function TeacherDashboard() {
           >
             {t('teacher.newSession')}
           </Button>
-          <Button
-            variant="blue"
-            size="md"
-            className="flex-1"
-            onClick={() => navigate('/teacher/templates')}
-          >
-            {t('teacher.templates')}
-          </Button>
         </div>
         <div className="mb-3">
           <Button
@@ -225,6 +217,14 @@ export default function TeacherDashboard() {
                       {t('teacher.results')}
                     </Button>
                   )}
+                  <button
+                    onClick={() => navigate(`/teacher/session/new?from=${session.id}`)}
+                    className="min-h-[2rem] px-2 text-lg font-bold text-ludiko-purple hover:text-purple-800"
+                    title={t('teacher.repeatSession')}
+                    aria-label={`${t('teacher.repeatSession')}: ${session.title}`}
+                  >
+                    <span aria-hidden="true">↻</span>
+                  </button>
                   <button
                     onClick={() => handleDelete(session.id)}
                     className="text-red-400 hover:text-red-600 px-2 text-sm font-bold"

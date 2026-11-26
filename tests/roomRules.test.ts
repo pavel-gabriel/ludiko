@@ -110,6 +110,12 @@ describe('firestore.rules: v1 teacher sessions (F3)', () => {
     }
   })
 
+  it('templates (legacy): the owner can read and delete old documents, nobody can create or update', () => {
+    const s = section('templates')
+    expect(s).toMatch(/allow delete: if request\.auth != null && resource\.data\.teacherUid == request\.auth\.uid;/)
+    expect(s).not.toMatch(/allow[^;\n]*\b(create|update|write)\b/)
+  })
+
   it('sessionResults: only the session teacher reads (get() on sessions); students never read', () => {
     const s = section('sessionResults')
     expect(fs).toMatch(/function isSessionTeacher\(sessionId\)[\s\S]*get\(\/databases\/\$\(database\)\/documents\/sessions\/\$\(sessionId\)\)\.data\.teacherUid == request\.auth\.uid/)

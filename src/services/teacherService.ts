@@ -16,12 +16,10 @@ import { db, firebaseEnabled } from '@/services/firebase';
 import type {
   TeacherProfile,
   ClassroomSession,
-  SessionTemplate,
   StudentCode,
   StudentSessionResult,
   GameSettings,
   ClassroomMode,
-  CustomQuestion,
 } from '@/utils/types';
 
 /* ------------------------------------------------------------------ */
@@ -244,45 +242,18 @@ export async function getSessionResults(
 }
 
 /* ------------------------------------------------------------------ */
-/*  Templates                                                         */
+/*  Legacy templates (no new ones are created; kept so they can be deleted)  */
 /* ------------------------------------------------------------------ */
 
-/** Save a session template */
-export async function saveTemplate(
-  teacherUid: string,
-  name: string,
-  settings: GameSettings,
-  classroomMode: ClassroomMode,
-  globalTimer: number,
-  customQuestions?: CustomQuestion[],
-): Promise<string> {
-  if (!firebaseEnabled) return '';
-  const template = stripUndefined({
-    teacherUid,
-    name,
-    settings,
-    classroomMode,
-    globalTimer,
-    ...(customQuestions && customQuestions.length > 0 && { customQuestions }),
-    createdAt: Date.now(),
-  });
-  const ref = await addDoc(collection(db, 'templates'), template);
-  return ref.id;
-}
-
-/** Fetch all templates for a teacher */
-export async function getTeacherTemplates(teacherUid: string): Promise<SessionTemplate[]> {
+/** Ids of the templates an old version saved for a teacher (listed only to delete them with the account) */
+export async function getTeacherTemplates(teacherUid: string): Promise<Array<{ id: string }>> {
   if (!firebaseEnabled) return [];
-  const q = query(
-    collection(db, 'templates'),
-    where('teacherUid', '==', teacherUid),
-    orderBy('createdAt', 'desc'),
-  );
+  const q = query(collection(db, 'templates'), where('teacherUid', '==', teacherUid));
   const snap = await getDocs(q);
-  return snap.docs.map((d) => ({ id: d.id, ...d.data() } as SessionTemplate));
+  return snap.docs.map((d) => ({ id: d.id }));
 }
 
-/** Delete a template */
+/** Delete a legacy template */
 export async function deleteTemplate(templateId: string): Promise<void> {
   if (!firebaseEnabled) return;
   await deleteDoc(doc(db, 'templates', templateId));

@@ -48,7 +48,6 @@ export default function PracticeStep({ choices, onChange, grade, showAll, onShow
   const canToggle = base.length > PRESETS_SHOWN || base.length < PLAY_PRESETS.length;
   const issue = practiceIssue(choices);
   const unplayable = unplayableSkills(choices);
-  const memory = choices.mode === 'memory';
 
   const toggleOp = (op: Operation) =>
     onChange({
@@ -122,7 +121,7 @@ export default function PracticeStep({ choices, onChange, grade, showAll, onShow
       <OptionCard
         emoji="🎮"
         title={t('setup.practice.classic')}
-        sub={memory ? t('setup.practice.classicSubMemory') : t('setup.practice.classicSub')}
+        sub={t('setup.practice.classicSub')}
         tone="yellow"
         selected={choices.classic}
         onClick={() => {
@@ -130,7 +129,7 @@ export default function PracticeStep({ choices, onChange, grade, showAll, onShow
           onChange(choices.classic ? { classic: false } : { classic: true, skillIds: [] });
         }}
       />
-      {choices.classic && !memory && (
+      {choices.classic && (
         <div className="space-y-3 rounded-2xl bg-white p-3 shadow">
           <div role="group" aria-label={t('setup.practice.classicGame')}>
             <span className="text-sm font-semibold">{t('setup.practice.classicGame')}</span>

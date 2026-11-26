@@ -34,6 +34,7 @@ import {
   firstBlockedStep,
   loadChoices,
   modesFor,
+  stepsFor,
   practiceIssue,
   presetGrades,
   presetsForGrade,
@@ -98,6 +99,14 @@ describe('setup model', () => {
     expect(modesFor('duel')).toEqual(['race', 'memory'])
   })
 
+  it('memory skips the practice step and never blocks on it', () => {
+    expect(stepsFor('race')).toEqual(['mode', 'practice', 'who', 'ready'])
+    expect(stepsFor('sprint')).toEqual(['mode', 'practice', 'who', 'ready'])
+    expect(stepsFor('memory')).toEqual(['mode', 'who', 'ready'])
+    expect(practiceIssue(base({ mode: 'memory' }))).toBeNull()
+    expect(firstBlockedStep('single', base({ mode: 'memory' }))).toBeNull()
+  })
+
   it('presets are filtered to the grade +-1, closest first, and fall back to all', () => {
     const ids = (g: Grade | null) => presetsForGrade(g).map((p) => p.id)
     expect(ids(null)).toHaveLength(PLAY_PRESETS.length)
@@ -153,7 +162,16 @@ describe('setup model', () => {
     expect(toRoomSettings('single', base({ classic: true, classicType: 'countingGame' }))).not.toHaveProperty('shapeMode')
     const skills = toRoomSettings('single', base({ skillIds: ['rom.syll.count.0', 'rom.syll.split.1'], classicType: 'equations' }))
     expect(skills).toMatchObject({ gameType: 'mathRace', skillIds: ['rom.syll.count.0', 'rom.syll.split.1'], subject: 'rom', operations: ['+'] })
-    expect(toRoomSettings('single', base({ skillIds: ['mat.add.nocarry.20'], mode: 'memory' })).gameType).toBe('memoryGame')
+    /* memory = pictures: skills never reach the room settings */
+    const mem = toRoomSettings('single', base({ skillIds: ['mat.add.nocarry.20'], mode: 'memory' }))
+    expect(mem.gameType).toBe('memoryGame')
+    expect(mem).not.toHaveProperty('skillIds')
+    expect(mem).not.toHaveProperty('subject')
+    for (const ctx of ['room', 'duel'] as const) {
+      const m = toRoomSettings(ctx, base({ skillIds: ['mat.add.nocarry.20'], mode: 'memory' }))
+      expect(m.gameType).toBe('memoryGame')
+      expect(m).not.toHaveProperty('skillIds')
+    }
     expect(toRoomSettings('single', base({ classic: true })).skillIds).toBeUndefined()
   })
 
@@ -165,9 +183,12 @@ describe('setup model', () => {
   })
 
   it('remembers choices, checks them on load, and survives broken storage', () => {
-    const mine = base({ mode: 'memory', skillIds: ['mat.add.nocarry.20'], rounds: 8 })
+    const mine = base({ mode: 'memory', rounds: 8 })
     saveChoices('single', mine)
-    expect(loadChoices('single', base())).toMatchObject({ mode: 'memory', skillIds: ['mat.add.nocarry.20'], rounds: 8 })
+    expect(loadChoices('single', base())).toMatchObject({ mode: 'memory', skillIds: [], rounds: 8 })
+    /* skills remembered from before memory became pictures-only are dropped */
+    localStorage.setItem('ludiko.setup.v1.single', JSON.stringify({ mode: 'memory', skillIds: ['mat.add.nocarry.20'] }))
+    expect(loadChoices('single', base()).skillIds).toEqual([])
     /* per screen */
     expect(loadChoices('room', base()).mode).toBe('race')
     /* sprint is not allowed for single player; unknown skills and wild numbers are dropped */
@@ -232,15 +253,47 @@ describe('setup wizard navigation', () => {
 
   it('the Ready step summarises the choices and each row jumps back to its step', () => {
     renderPage(<SinglePlayerPage />)
-    fireEvent.click(screen.getByRole('button', { name: /Memorie/ }))
+    fireEvent.click(screen.getByRole('button', { name: /Cursă/ }))
     next()
     pickPreset(/Silabe/)
     next(); next()
     const summary = screen.getByRole('list', { name: 'Gata?' })
-    expect(within(summary).getByText(/Memorie/)).toBeInTheDocument()
+    expect(within(summary).getByText(/Cursă/)).toBeInTheDocument()
     expect(within(summary).getByText('Silabe')).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: /Schimbă: Exersăm/ }))
     expect(heading()).toBe('Ce exersăm?')
+  })
+
+  it('memory goes mode -> who -> ready: no "Ce exersăm?" step, no skills in the summary', () => {
+    renderPage(<SinglePlayerPage />)
+    fireEvent.click(screen.getByRole('button', { name: /Memorie/ }))
+    next()
+    expect(heading()).toBe('Cine ești?')
+    expect(screen.getAllByTestId('step-dot')).toHaveLength(3)
+    expect(screen.getByText('Pasul 2 din 3')).toBeInTheDocument()
+    next()
+    expect(heading()).toBe('Gata?')
+    const summary = screen.getByRole('list', { name: 'Gata?' })
+    expect(within(summary).getByText(/Memorie/)).toBeInTheDocument()
+    expect(screen.queryByRole('button', { name: /Schimbă: Exersăm/ })).toBeNull()
+    expect(screen.getByTestId('setup-start')).toBeEnabled()
+    /* advanced: pairs + total time only (no difficulty) */
+    fireEvent.click(screen.getByRole('button', { name: /Setări avansate/ }))
+    expect(screen.getByText('Perechi')).toBeInTheDocument()
+    expect(screen.queryByText('Dificultate')).toBeNull()
+    back(); back()
+    expect(heading()).toBe('Ce jucăm?')
+  })
+
+  it('memory single player starts a picture room (no skillIds)', async () => {
+    renderPage(<SinglePlayerPage />)
+    fireEvent.click(screen.getByRole('button', { name: /Memorie/ }))
+    next(); next()
+    fireEvent.click(screen.getByTestId('setup-start'))
+    await waitFor(() => expect(rm.createRoomInDB).toHaveBeenCalled())
+    const settings = rm.buildRoom.mock.calls.at(-1)![1] as Record<string, unknown>
+    expect(settings.gameType).toBe('memoryGame')
+    expect(settings).not.toHaveProperty('skillIds')
   })
 
   it('advanced settings are collapsed until asked for', () => {
@@ -336,15 +389,6 @@ describe('setup wizard: what to practise', () => {
     next()
     expect(nextBtn()).toBeDisabled()
     expect(screen.getByRole('alert')).toHaveTextContent(/Nu merg în acest joc/)
-  })
-
-  it('presets without playable skills are disabled in memory mode', () => {
-    renderPage(<SinglePlayerPage />)
-    fireEvent.click(screen.getByRole('button', { name: /Memorie/ }))
-    next()
-    fireEvent.click(screen.getByRole('button', { name: 'Arată toate' }))
-    expect(preset(/Ceasul/)).toBeDisabled()
-    expect(preset(/Adunare până la 20/)).toBeEnabled()
   })
 })
 

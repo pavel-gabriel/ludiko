@@ -159,27 +159,6 @@ export interface ClassroomSession {
   createdAt: number;
 }
 
-/** A reusable template saved by a teacher */
-export interface SessionTemplate {
-  id: string;
-  teacherUid: string;
-  name: string;
-  settings: GameSettings;
-  classroomMode: ClassroomMode;
-  globalTimer: number;
-  /** Custom questions (optional) */
-  customQuestions?: CustomQuestion[];
-  createdAt: number;
-}
-
-/** A custom question created by a teacher */
-export interface CustomQuestion {
-  id: string;
-  text: string;
-  options: string[];
-  correctIndex: number;
-}
-
 /** Per-student result in a classroom session */
 export interface StudentSessionResult {
   studentCode: string;

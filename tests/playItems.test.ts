@@ -9,13 +9,10 @@ import {
   MAX_SKILLS,
   allowedTypes,
   buildGameItems,
-  buildItemMemoryCards,
   gameKind,
   isItemGame,
-  memoryPairsFromItems,
   normalizeItems,
   sanitizeForRtdb,
-  shortPrompt,
   skillUsable,
 } from '../src/services/itemGame';
 import { buildRoom } from '../src/services/roomManager';
@@ -69,10 +66,8 @@ describe('item generation for races', () => {
   it('text-comprehension skills (read-and-answer) produce nothing for games and are not offered', () => {
     expect(buildGameItems([TEXT_SKILL], { count: 5, kind: 'race', seed: 1 })).toEqual([]);
     expect(skillUsable(TEXT_SKILL, 'race')).toBe(false);
-    expect(skillUsable(TEXT_SKILL, 'memory')).toBe(false);
     expect(skillUsable(ADD20, 'race')).toBe(true);
     expect(skillUsable(ADD20, 'sprint')).toBe(true);
-    expect(skillUsable(ADD20, 'memory')).toBe(true);
   });
 
   it('works for a Romanian reading skill and a math III skill', () => {
@@ -159,94 +154,6 @@ describe('RTDB-safe item JSON', () => {
   });
 });
 
-describe('memory pairs from items', () => {
-  it('builds a board where every pair has two distinct short faces', () => {
-    const cards = buildItemMemoryCards([ADD20], 6, { seed: 7 })!;
-    expect(cards).toHaveLength(12);
-    const byPair = new Map<string, string[]>();
-    for (const c of cards) byPair.set(c.pairId, [...(byPair.get(c.pairId) ?? []), c.emoji]);
-    expect(byPair.size).toBe(6);
-    for (const faces of byPair.values()) {
-      expect(faces).toHaveLength(2);
-      expect(faces[0]).not.toBe(faces[1]);
-      faces.forEach((f) => expect(f.length).toBeLessThanOrEqual(18));
-    }
-    expect(new Set(cards.map((c) => c.id)).size).toBe(12);
-    expect(cards.every((c) => !c.flipped && !c.matched)).toBe(true);
-  });
-
-  it('operation <-> result pairs are arithmetically right', () => {
-    const calc = (e: string) => Function(`return (${e.replace(/×/g, '*').replace(/−/g, '-')})`)() as number;
-    for (const skill of ['mat.add.carry.20', 'mat.mul.table.small']) {
-      const cards = buildItemMemoryCards([skill], 8, { seed: 3 })!;
-      const byPair = new Map<string, string[]>();
-      for (const c of cards) byPair.set(c.pairId, [...(byPair.get(c.pairId) ?? []), c.emoji]);
-      expect(byPair.size).toBe(8);
-      for (const [a, b] of byPair.values()) {
-        const [expr, other] = /[+×−-]/.test(a) ? [a, b] : [b, a];
-        if (expr.includes('=')) {
-          // "6 + ? = 12" <-> "6": the answer fills the gap
-          const [l, r] = expr.replace('?', other).split('=');
-          expect(calc(l), `${a} / ${b}`).toBe(calc(r));
-        } else {
-          expect(calc(expr), `${a} / ${b}`).toBe(Number(other));
-        }
-      }
-    }
-  });
-
-  it('letter pairs may differ only by case (A <-> a)', () => {
-    const cards = buildItemMemoryCards(['rom.letters.case.0'], 5, { seed: 4 })!;
-    expect(cards).toHaveLength(10);
-    const byPair = new Map<string, string[]>();
-    for (const c of cards) byPair.set(c.pairId, [...(byPair.get(c.pairId) ?? []), c.emoji]);
-    for (const [a, b] of byPair.values()) expect(a.toLowerCase()).toBe(b.toLowerCase());
-  });
-
-  it('word <-> syllables pairs rebuild the word', () => {
-    const cards = buildItemMemoryCards([SYLL], 5, { seed: 8 })!;
-    const byPair = new Map<string, string[]>();
-    for (const c of cards) byPair.set(c.pairId, [...(byPair.get(c.pairId) ?? []), c.emoji]);
-    for (const [a, b] of byPair.values()) {
-      const [word, split] = a.includes('-') ? [b, a] : [a, b];
-      expect(split.replace(/-/g, '')).toBe(word);
-    }
-  });
-
-  it('word <-> picture: match items give a text face and an emoji face (only the text face is marked as text)', () => {
-    const cards = buildItemMemoryCards(['rom.word.picture.0'], 5, { seed: 2 })!;
-    expect(cards.length).toBe(10);
-    expect(cards.filter((c) => c.isText)).toHaveLength(5);
-    expect(cards.filter((c) => !c.isText)).toHaveLength(5);
-  });
-
-  it('mixes the chosen skills', () => {
-    const cards = buildItemMemoryCards([ADD20, SYLL], 6, { seed: 1 })!;
-    const faces = cards.map((c) => c.emoji);
-    expect(faces.some((f) => f.includes('+') || /^\d+$/.test(f))).toBe(true);
-    expect(faces.some((f) => /[a-zăâîșț]{3,}/i.test(f))).toBe(true);
-  });
-
-  it('returns null when a skill cannot make pairs (the host then falls back to the emoji board)', () => {
-    expect(buildItemMemoryCards([TEXT_SKILL], 6)).toBeNull();
-    expect(buildItemMemoryCards(['no.such.skill'], 6)).toBeNull();
-  });
-
-  it('shortPrompt extracts the card text', () => {
-    expect(shortPrompt('Cât face 7 + 2?')).toBe('7 + 2');
-    expect(shortPrompt('Află numărul necunoscut: ? − 487 = 36')).toBe('? − 487 = 36');
-    expect(shortPrompt('Care imagine se potrivește cu cuvântul „pară”?')).toBe('pară');
-    expect(shortPrompt('Cum se desparte în silabe cuvântul „veveriță”?')).toBe('veveriță');
-    expect(shortPrompt('O propoziție mult prea lungă ca să încapă pe un card de memorie')).toBeNull();
-  });
-
-  it('memoryPairsFromItems skips ambiguous duplicates', () => {
-    const one = generateItems(getSkill(ADD20)!, 1, { seed: 1 })[0];
-    const pairs = memoryPairsFromItems([one, { ...one, id: 'copy' }]);
-    expect(pairs.length).toBeLessThanOrEqual(1);
-  });
-});
-
 describe('settings: backward compatibility', () => {
   const v1: GameSettings = {
     gameType: 'mathRace',
@@ -283,9 +190,8 @@ describe('settings: backward compatibility', () => {
   });
 
   it('gameKind', () => {
-    expect(gameKind({ gameType: 'mathRace', gameMode: 'raceToFinish' })).toBe('race');
-    expect(gameKind({ gameType: 'mathRace', gameMode: 'timedSprint' })).toBe('sprint');
-    expect(gameKind({ gameType: 'memoryGame', gameMode: 'timedSprint' })).toBe('memory');
+    expect(gameKind({ gameMode: 'raceToFinish' })).toBe('race');
+    expect(gameKind({ gameMode: 'timedSprint' })).toBe('sprint');
   });
 });
 
@@ -329,12 +235,20 @@ describe('initRoomGame (host)', () => {
     expect(writers.initItemGameState.mock.calls[0][1].length).toBeGreaterThanOrEqual(60);
   });
 
-  it('memory with skills: item-based board', async () => {
+  it('memory is always picture pairs, even when the room still carries skillIds (old rooms)', async () => {
     const { initRoomGame } = await import('../src/services/roomGame');
     await initRoomGame('r', { ...base, gameType: 'memoryGame', rounds: 5, skillIds: [ADD20] }, ['p1']);
     const cards = writers.initMemoryGameState.mock.calls[0][1];
     expect(cards).toHaveLength(10);
-    expect(cards.every((c: { isText?: boolean }) => c.isText)).toBe(true);
+    expect(cards.some((c: { isText?: boolean }) => c.isText)).toBe(false);
+    expect(writers.initItemGameState).not.toHaveBeenCalled();
+  });
+
+  it('buildRoomMemoryCards ignores skills (single, room and duel all go through it)', async () => {
+    const { buildRoomMemoryCards } = await import('../src/services/roomGame');
+    const cards = buildRoomMemoryCards({ ...base, gameType: 'memoryGame', rounds: 6, skillIds: [ADD20, SYLL] });
+    expect(cards).toHaveLength(12);
+    expect(cards.some((c) => c.isText)).toBe(false);
   });
 
   it('old settings (no skillIds): the v1 generators, exactly as before', async () => {

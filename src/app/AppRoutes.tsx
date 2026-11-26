@@ -49,7 +49,6 @@ const SessionConfig = lazy(() => import('@/components/teacher/SessionConfig'));
 const SessionDetail = lazy(() => import('@/components/teacher/SessionDetail'));
 const TeacherLiveDashboard = lazy(() => import('@/components/teacher/TeacherLiveDashboard'));
 const SessionResults = lazy(() => import('@/components/teacher/SessionResults'));
-const TemplatesPage = lazy(() => import('@/components/teacher/TemplatesPage'));
 // Classroom (docs/CLASSROOM.md): classes, heatmap, assignments; the child's class assignment page
 const ClassesPage = lazy(() => import('@/components/teacher/classes/ClassesPage'));
 const ClassPage = lazy(() => import('@/components/teacher/classes/ClassPage'));
@@ -123,7 +122,6 @@ export default function AppRoutes() {
           <Route path="/teacher/session/:sessionId" element={<SessionDetail />} />
           <Route path="/teacher/live/:sessionId" element={<TeacherLiveDashboard />} />
           <Route path="/teacher/results/:sessionId" element={<SessionResults />} />
-          <Route path="/teacher/templates" element={<TemplatesPage />} />
           <Route path="/teacher/classes" element={<ClassesPage />} />
           <Route path="/teacher/classes/:classId" element={<ClassPage />} />
           <Route path="/teacher/classes/:classId/codes" element={<ClassCodesPage />} />
