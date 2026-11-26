@@ -402,6 +402,7 @@ describe('content on disk', () => {
       mat: ['MEM-2013', 'MAT-III-IV-2014'],
       rom: ['CLR-2013', 'LLR-III-IV-2014'],
       stiinte: ['STI-III-IV-2014'],
+      civ: ['CIV-III-IV-2014'],
     };
     for (const x of skills) {
       expect(x.provenance.source).toBe('own');
@@ -423,6 +424,8 @@ describe('content registry', () => {
   it('looks up skills, grades, items and explanations', () => {
     expect(getSkill('mat.add.carry.20')?.grade).toBe(1);
     expect(getSkill('nope')).toBeUndefined();
+    expect(getSkillsBySubject('mat').every((s) => s.subject === 'mat')).toBe(true);
+    expect(getSkillsBySubject('rom').every((s) => s.subject === 'rom')).toBe(true);
     expect(getSkillsBySubject('mat').length + getSkillsBySubject('rom').length).toBeLessThanOrEqual(getAllSkills().length);
     expect(getSkillsBySubject('mat', 0).every((s) => s.grade === 0)).toBe(true);
     expect(getSkillsBySubject('rom').length).toBeGreaterThanOrEqual(18);

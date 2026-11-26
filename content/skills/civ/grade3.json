@@ -1,0 +1,401 @@
+[
+  {
+    "id": "civ.person.self.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Eu și ceilalți: ce ne face deosebiți",
+      "en": "Me and others: what makes us different"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.person.self.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.person.self.3",
+      "kind": "data",
+      "title": "Skill civ.person.self.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.person.family.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "Familia: roluri și grijă una pentru alta",
+      "en": "Family: roles and caring for each other"
+    },
+    "prerequisites": [
+      "civ.person.self.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.person.family.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.person.family.3",
+      "kind": "data",
+      "title": "Skill civ.person.family.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.person.friends.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Prieteni și colegi",
+      "en": "Friends and classmates"
+    },
+    "prerequisites": [
+      "civ.person.self.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.person.friends.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.person.friends.3",
+      "kind": "data",
+      "title": "Skill civ.person.friends.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.rules.home.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Reguli acasă și la școală",
+      "en": "Rules at home and at school"
+    },
+    "prerequisites": [
+      "civ.person.self.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.rules.home.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.rules.home.3",
+      "kind": "data",
+      "title": "Skill civ.rules.home.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.emotions.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "1.3"
+      }
+    ],
+    "title": {
+      "ro": "Emoțiile mele și ale celorlalți",
+      "en": "My feelings and other people's feelings"
+    },
+    "prerequisites": [
+      "civ.person.self.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.emotions.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.emotions.3",
+      "kind": "data",
+      "title": "Skill civ.emotions.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.safety.road.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Siguranța în circulație",
+      "en": "Road safety"
+    },
+    "prerequisites": [
+      "civ.rules.home.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.safety.road.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.safety.road.3",
+      "kind": "data",
+      "title": "Skill civ.safety.road.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.care.common.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Grija pentru lucrurile comune",
+      "en": "Taking care of shared things"
+    },
+    "prerequisites": [
+      "civ.rules.home.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.care.common.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.care.common.3",
+      "kind": "data",
+      "title": "Skill civ.care.common.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.community.local.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Localitatea mea și oamenii ei",
+      "en": "My town or village and its people"
+    },
+    "prerequisites": [
+      "civ.person.family.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.community.local.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.community.local.3",
+      "kind": "data",
+      "title": "Skill civ.community.local.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.rights.child.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Drepturile copilului",
+      "en": "Children's rights"
+    },
+    "prerequisites": [
+      "civ.rules.home.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.rights.child.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.rights.child.3",
+      "kind": "data",
+      "title": "Skill civ.rights.child.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.respect.diversity.3",
+    "subject": "civ",
+    "grade": 3,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "2.4"
+      }
+    ],
+    "title": {
+      "ro": "Respect pentru diferențe",
+      "en": "Respect for differences"
+    },
+    "prerequisites": [
+      "civ.person.friends.3",
+      "civ.emotions.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade3.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.respect.diversity.3"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.respect.diversity.3",
+      "kind": "data",
+      "title": "Skill civ.respect.diversity.3",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  }
+]

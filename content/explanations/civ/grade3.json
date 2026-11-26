@@ -1,0 +1,532 @@
+[
+  {
+    "id": "exp.civ.person.self.3",
+    "skillId": "civ.person.self.3",
+    "title": {
+      "ro": "Eu și ceilalți: ce ne face deosebiți",
+      "en": "Me and others: what makes us different"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fiecare copil este unic: are un nume, o față, gusturi și lucruri la care se pricepe.",
+          "en": "Every child is unique: a name, a face, tastes and things they are good at."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧒",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Unul desenează frumos, altul aleargă repede, altul are grijă de animale. Nu suntem la fel, și asta e bine.",
+          "en": "One draws well, another runs fast, another cares for animals. We are not all the same, and that is good."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎨",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Când ne ajutăm între noi, folosim ce știe fiecare. Greșelile ne ajută să învățăm.",
+          "en": "When we help each other we use what each one knows. Mistakes help us learn."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🤝",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.person.self.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.person.self.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.person.family.3",
+    "skillId": "civ.person.family.3",
+    "title": {
+      "ro": "Familia: roluri și grijă una pentru alta",
+      "en": "Family: roles and caring for each other"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Familiile sunt diferite: unele sunt mari, altele mici. Într-o familie oamenii țin unii la alții.",
+          "en": "Families are different: some are big, some small. In a family people care about each other."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare are rolul lui: adulții se ocupă de copii și de casă, iar copiii ajută cu ce pot, de exemplu își strâng jucăriile.",
+          "en": "Everyone has a role: adults look after the children and the home, and children help as they can, for example by tidying their toys."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧹",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Familia se bucură împreună, se ajută la greu și își spune cuvinte frumoase: mulțumesc, te rog, te iubesc.",
+          "en": "A family enjoys things together, helps in hard times and says kind words: thank you, please, I love you."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💛",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.person.family.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.person.family.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.person.friends.3",
+    "skillId": "civ.person.friends.3",
+    "title": {
+      "ro": "Prieteni și colegi",
+      "en": "Friends and classmates"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un prieten este cineva cu care te înțelegi bine, care te ascultă și te ajută.",
+          "en": "A friend is someone you get along with, who listens and helps."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧑‍🤝‍🧑",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Un prieten bun este sincer, împarte jucăriile și nu te lasă singur când ești trist.",
+          "en": "A good friend is honest, shares toys and does not leave you alone when you are sad."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚽",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Colegii nu sunt toți prieteni apropiați, dar îi tratăm cu politețe și îi primim în joc.",
+          "en": "Classmates are not all close friends, but we treat them politely and welcome them into the game."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎒",
+          "count": 4
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.person.friends.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.person.friends.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.rules.home.3",
+    "skillId": "civ.rules.home.3",
+    "title": {
+      "ro": "Reguli acasă și la școală",
+      "en": "Rules at home and at school"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Regulile ne ajută să ne simțim bine și în siguranță: acasă, la școală, la joacă.",
+          "en": "Rules help us feel good and safe: at home, at school, at play."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "La școală ridicăm mâna ca să vorbim, ascultăm când vorbește altcineva și venim la timp.",
+          "en": "At school we raise a hand to speak, listen when someone else speaks and arrive on time."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "✋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă toți respectăm regulile, e mai liniște și mai multă veselie. Dacă nu înțelegi o regulă, întrebi de ce există.",
+          "en": "If everyone follows the rules it is calmer and happier. If you do not understand a rule, you can ask why it exists."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏫",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.rules.home.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.rules.home.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.emotions.3",
+    "skillId": "civ.emotions.3",
+    "title": {
+      "ro": "Emoțiile mele și ale celorlalți",
+      "en": "My feelings and other people's feelings"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Bucuria, tristețea, furia și frica sunt emoții. Toți le simțim, și e în regulă.",
+          "en": "Joy, sadness, anger and fear are feelings. Everyone has them, and that is okay."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "😊",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Putem recunoaște emoțiile după față, voce și gesturi. Un copil care stă singur poate fi trist.",
+          "en": "We can notice feelings from a face, a voice and gestures. A child sitting alone may be sad."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "😢",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Empatia înseamnă să încerci să înțelegi ce simte celălalt. Poți întreba: „Ești bine? Te pot ajuta?”",
+          "en": "Empathy means trying to understand what the other person feels. You can ask: \"Are you okay? Can I help?\""
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫂",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.emotions.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.emotions.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.safety.road.3",
+    "skillId": "civ.safety.road.3",
+    "title": {
+      "ro": "Siguranța în circulație",
+      "en": "Road safety"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pe stradă traversăm pe la trecerea de pietoni. Ne oprim, ne uităm la stânga, la dreapta și iar la stânga.",
+          "en": "On the street we cross at the pedestrian crossing. We stop and look left, right and left again."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚸",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Semaforul ne ajută: roșu pentru pietoni înseamnă stai, verde înseamnă că poți traversa, după ce te asiguri că mașinile s-au oprit.",
+          "en": "The traffic light helps: red for pedestrians means stop, green means you may cross once you check the cars have stopped."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚦",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă nu este trotuar, mergem pe marginea drumului, cu fața spre mașinile care vin. Mereu cu un adult când suntem mici.",
+          "en": "If there is no pavement we walk at the edge of the road, facing the oncoming cars. Always with an adult when we are small."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚗",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.safety.road.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.safety.road.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.care.common.3",
+    "skillId": "civ.care.common.3",
+    "title": {
+      "ro": "Grija pentru lucrurile comune",
+      "en": "Taking care of shared things"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Unele lucruri sunt ale tuturor: bancile din clasă, parcul, fântâna, autobuzul, biblioteca.",
+          "en": "Some things belong to everyone: classroom desks, the park, the well, the bus, the library."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă le păstrăm curate și întregi, putem să ne bucurăm de ele mai mult timp și alți copii le pot folosi.",
+          "en": "If we keep them clean and whole we can enjoy them longer and other children can use them."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪑",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Când vezi gunoi, îl pui la coș. Când vezi ceva stricat, spui unui adult. Așa avem grijă împreună.",
+          "en": "When you see litter, put it in the bin. When you see something broken, tell an adult. That is caring together."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗑️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.care.common.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.care.common.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.community.local.3",
+    "skillId": "civ.community.local.3",
+    "title": {
+      "ro": "Localitatea mea și oamenii ei",
+      "en": "My town or village and its people"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Locuim într-o localitate: sat, comună sau oraș. Acolo trăiesc vecinii, prietenii și multe familii.",
+          "en": "We live in a place: a village, a commune or a town. Neighbours, friends and many families live there."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏘️",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "În localitate sunt locuri pentru toți: școala, biserica sau alte locuri de rugăciune, dispensarul sau spitalul, magazinul, parcul.",
+          "en": "A place has spots for everyone: school, church or other places of worship, the clinic or hospital, the shop, the park."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏫",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Oamenii muncesc în meserii diferite: învățător, medic, fermier, brutar, șofer. Fiecare ajută comunitatea.",
+          "en": "People work in different jobs: teacher, doctor, farmer, baker, driver. Each one helps the community."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👩‍🌾",
+          "count": 4
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.community.local.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.community.local.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.rights.child.3",
+    "skillId": "civ.rights.child.3",
+    "title": {
+      "ro": "Drepturile copilului",
+      "en": "Children's rights"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Toți copiii au drepturi, adică lucruri care li se cuvin: să aibă un nume, o familie, să meargă la școală, să se joace.",
+          "en": "All children have rights, things they are entitled to: a name, a family, school, play."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Au dreptul să fie ocrotiți, să primească îngrijire medicală și să spună ce gândesc despre lucrurile care îi privesc.",
+          "en": "They have the right to be protected, to receive health care and to say what they think about matters that concern them."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🩺",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Drepturile merg împreună cu responsabilitățile: ai dreptul la școală și ai responsabilitatea să înveți și să respecți regulile.",
+          "en": "Rights go together with responsibilities: you have the right to school and the responsibility to learn and follow the rules."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.rights.child.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.rights.child.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.respect.diversity.3",
+    "skillId": "civ.respect.diversity.3",
+    "title": {
+      "ro": "Respect pentru diferențe",
+      "en": "Respect for differences"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Oamenii sunt diferiți: vorbesc limbi diferite, au obiceiuri, haine, mâncăruri și credințe diferite.",
+          "en": "People are different: they speak different languages and have different customs, clothes, foods and beliefs."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Diferențele sunt normale. Nu râdem de nimeni pentru cum arată, cum vorbește sau cum trăiește.",
+          "en": "Differences are normal. We do not laugh at anyone for how they look, speak or live."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧑‍🤝‍🧑",
+          "count": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Respectul înseamnă să asculți, să-l primești pe celălalt în joc și să înveți din ce e nou. Nimeni nu e mai puțin important.",
+          "en": "Respect means listening, welcoming the other into the game and learning from what is new. No one is less important."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🤝",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.respect.diversity.3",
+      "kind": "explanation",
+      "title": "Explanation for civ.respect.diversity.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

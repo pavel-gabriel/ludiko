@@ -1,0 +1,2817 @@
+[
+  {
+    "id": "item.civ.emotions.conflict.4.01",
+    "type": "choice",
+    "skillId": "civ.emotions.conflict.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Doi colegi se ceartă pentru aceeași minge. Ce ar fi bine să facă?",
+      "en": "Two classmates argue over the same ball. What would be good for them to do?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.emotions.conflict.4",
+    "provenance": {
+      "id": "prov.item.civ.emotions.conflict.4.01",
+      "kind": "item",
+      "title": "Item civ.emotions.conflict.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Să se lovească până câștigă unul."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Să vorbească pe rând și să găsească o soluție, de exemplu să se joace pe rând."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Să nu-și mai vorbească niciodată."
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.emotions.conflict.4.02",
+    "type": "true-false",
+    "skillId": "civ.emotions.conflict.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Un conflict se rezolvă mai bine dacă ne ascultăm unul pe altul.",
+      "en": "True or false? A conflict is solved better when we listen to each other."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.emotions.conflict.4",
+    "provenance": {
+      "id": "prov.item.civ.emotions.conflict.4.02",
+      "kind": "item",
+      "title": "Item civ.emotions.conflict.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.emotions.conflict.4.03",
+    "type": "sort",
+    "skillId": "civ.emotions.conflict.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Cum rezolvăm un conflict? Pune fiecare card unde se potrivește.",
+      "en": "How do we solve a conflict? Put each card where it fits."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.emotions.conflict.4",
+    "provenance": {
+      "id": "prov.item.civ.emotions.conflict.4.03",
+      "kind": "item",
+      "title": "Item civ.emotions.conflict.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "categories": [
+      {
+        "id": "pasnic",
+        "label": {
+          "ro": "Pașnic",
+          "en": "Peaceful"
+        }
+      },
+      {
+        "id": "nu",
+        "label": {
+          "ro": "Nepotrivit",
+          "en": "Unsuitable"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c1",
+        "text": {
+          "ro": "respir adânc și mă liniștesc"
+        },
+        "categoryId": "pasnic"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "spun ce simt, fără să jignesc"
+        },
+        "categoryId": "pasnic"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "propun o soluție pentru amândoi"
+        },
+        "categoryId": "pasnic"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "țip și jignesc"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "lovesc"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "răspândesc zvonuri"
+        },
+        "categoryId": "nu"
+      }
+    ]
+  },
+  {
+    "id": "item.civ.emotions.conflict.4.04",
+    "type": "choice",
+    "skillId": "civ.emotions.conflict.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ai vrut să te joci cu un coleg, dar el a spus că nu acum. Te-ai supărat. Ce e bine să faci?",
+      "en": "You wanted to play with a classmate but he said not now. You got upset. What is good to do?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.emotions.conflict.4",
+    "provenance": {
+      "id": "prov.item.civ.emotions.conflict.4.04",
+      "kind": "item",
+      "title": "Item civ.emotions.conflict.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Să-l împingi."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Să-i strici desenul."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Să-i spui calm că ești supărat și să întrebi când v-ați putea juca."
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.civ.emotions.conflict.4.05",
+    "type": "read-and-answer",
+    "skillId": "civ.emotions.conflict.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește povestea și răspunde la întrebări.",
+      "en": "Read the story and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.emotions.conflict.4",
+    "provenance": {
+      "id": "prov.item.civ.emotions.conflict.4.05",
+      "kind": "item",
+      "title": "Item civ.emotions.conflict.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "passage": {
+      "ro": "Sofia și Luca fac un afiș pentru ziua clasei. Sofia vrea să deseneze un brad, iar Luca o casă cu horn. Se ceartă și fiecare trage de coala de hârtie. Doamna învățătoare se uită de departe. Sofia ia o pauză, respiră adânc și spune: „Sunt supărată, dar vreau să terminăm afișul.” Luca îi propune să deseneze amândouă lucrurile. Rezultatul a ieșit foarte bine.",
+      "en": "Sofia and Luca are making a poster for class day. Sofia wants to draw a fir tree and Luca wants a house with a chimney. They argue and each pulls at the sheet of paper. The teacher watches from a distance. Sofia takes a break, breathes deeply and says: \"I am upset, but I want us to finish the poster.\" Luca suggests drawing both things. The result turned out very well."
+    },
+    "questions": [
+      {
+        "id": "item.civ.emotions.conflict.4.05.q1",
+        "skillId": "civ.emotions.conflict.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce a făcut Sofia ca să se liniștească?",
+          "en": "What did Sofia do to calm down?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.emotions.conflict.4.05.q1",
+          "kind": "item",
+          "title": "Question item.civ.emotions.conflict.4.05.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "A rupt hârtia."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "A respirat adânc și a spus ce simte."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "A plecat supărată acasă."
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.civ.emotions.conflict.4.05.q2",
+        "skillId": "civ.emotions.conflict.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce soluție a propus Luca?",
+          "en": "What solution did Luca suggest?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.emotions.conflict.4.05.q2",
+          "kind": "item",
+          "title": "Question item.civ.emotions.conflict.4.05.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Să deseneze doar casa lui."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Să nu mai facă afișul."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Să deseneze amândouă lucrurile pe afiș."
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.civ.emotions.conflict.4.05.q3",
+        "skillId": "civ.emotions.conflict.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Sofia și Luca au găsit o soluție împreună.",
+          "en": "True or false? Sofia and Luca found a solution together."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.emotions.conflict.4.05.q3",
+          "kind": "item",
+          "title": "Question item.civ.emotions.conflict.4.05.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "item.civ.rights.responsibilities.4.01",
+    "type": "sort",
+    "skillId": "civ.rights.responsibilities.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Alege ce este drept și ce este responsabilitate.",
+      "en": "Choose what is a right and what is a responsibility."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rights.responsibilities.4",
+    "provenance": {
+      "id": "prov.item.civ.rights.responsibilities.4.01",
+      "kind": "item",
+      "title": "Item civ.rights.responsibilities.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "categories": [
+      {
+        "id": "drept",
+        "label": {
+          "ro": "Drept",
+          "en": "Right"
+        }
+      },
+      {
+        "id": "resp",
+        "label": {
+          "ro": "Responsabilitate",
+          "en": "Responsibility"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c1",
+        "text": {
+          "ro": "să fiu ascultat"
+        },
+        "categoryId": "drept"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "să fiu ocrotit"
+        },
+        "categoryId": "drept"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "să primesc îngrijire medicală"
+        },
+        "categoryId": "drept"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "să-i ascult pe ceilalți"
+        },
+        "categoryId": "resp"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "să nu-i jignesc pe alții"
+        },
+        "categoryId": "resp"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "să-mi fac temele"
+        },
+        "categoryId": "resp"
+      }
+    ]
+  },
+  {
+    "id": "item.civ.rights.responsibilities.4.02",
+    "type": "match",
+    "skillId": "civ.rights.responsibilities.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Potrivește dreptul cu responsabilitatea lui pereche.",
+      "en": "Match each right to its paired responsibility."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rights.responsibilities.4",
+    "provenance": {
+      "id": "prov.item.civ.rights.responsibilities.4.02",
+      "kind": "item",
+      "title": "Item civ.rights.responsibilities.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Dreptul la educație"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Să învăț și să vin la școală"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Dreptul de a fi ascultat"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Să-i ascult și eu pe ceilalți"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Dreptul la un mediu curat"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Să nu arunc gunoaie"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Dreptul de a fi respectat"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Să-i respect pe ceilalți"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.civ.rights.responsibilities.4.03",
+    "type": "choice",
+    "skillId": "civ.rights.responsibilities.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Dan spune: „Am dreptul să mă joc, deci nu mai strâng jucăriile.” Ce ai răspunde?",
+      "en": "Dan says: \"I have the right to play, so I will not tidy my toys.\" What would you reply?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rights.responsibilities.4",
+    "provenance": {
+      "id": "prov.item.civ.rights.responsibilities.4.03",
+      "kind": "item",
+      "title": "Item civ.rights.responsibilities.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Ai dreptate, nu trebuie să strângi."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Ai dreptul să te joci și ai și responsabilitatea să strângi după tine."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Nu ai dreptul să te joci."
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.rights.responsibilities.4.04",
+    "type": "true-false",
+    "skillId": "civ.rights.responsibilities.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Responsabilitățile sunt lucruri pe care avem de făcut, nu pedepse.",
+      "en": "True or false? Responsibilities are things we have to do, not punishments."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rights.responsibilities.4",
+    "provenance": {
+      "id": "prov.item.civ.rights.responsibilities.4.04",
+      "kind": "item",
+      "title": "Item civ.rights.responsibilities.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.rights.responsibilities.4.05",
+    "type": "choice",
+    "skillId": "civ.rights.responsibilities.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ioana are dreptul să-și spună părerea în clasă. Ce responsabilitate vine împreună cu acest drept?",
+      "en": "Ioana has the right to say her opinion in class. Which responsibility comes with this right?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rights.responsibilities.4",
+    "provenance": {
+      "id": "prov.item.civ.rights.responsibilities.4.05",
+      "kind": "item",
+      "title": "Item civ.rights.responsibilities.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Să vorbească mereu doar ea."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Să nu mai vină la școală."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Să-i asculte și pe colegii ei."
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.civ.rules.community.4.01",
+    "type": "choice",
+    "skillId": "civ.rules.community.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ești la magazin și sunt mai mulți oameni la casă. Ce faci?",
+      "en": "You are at the shop and several people are at the till. What do you do?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rules.community.4",
+    "provenance": {
+      "id": "prov.item.civ.rules.community.4.01",
+      "kind": "item",
+      "title": "Item civ.rules.community.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Te strecori în față."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Stai la rând și aștepți."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Strigi la cei din fața ta."
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.rules.community.4.02",
+    "type": "true-false",
+    "skillId": "civ.rules.community.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Legile sunt făcute ca oamenii să fie în siguranță și tratați corect.",
+      "en": "True or false? Laws are made so that people are safe and treated fairly."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rules.community.4",
+    "provenance": {
+      "id": "prov.item.civ.rules.community.4.02",
+      "kind": "item",
+      "title": "Item civ.rules.community.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.rules.community.4.03",
+    "type": "sort",
+    "skillId": "civ.rules.community.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce se potrivește cu regulile din comunitate?",
+      "en": "What fits the rules of the community?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rules.community.4",
+    "provenance": {
+      "id": "prov.item.civ.rules.community.4.03",
+      "kind": "item",
+      "title": "Item civ.rules.community.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "categories": [
+      {
+        "id": "pot",
+        "label": {
+          "ro": "Potrivit",
+          "en": "Suitable"
+        }
+      },
+      {
+        "id": "nu",
+        "label": {
+          "ro": "Nepotrivit",
+          "en": "Unsuitable"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c1",
+        "text": {
+          "ro": "cedez locul în autobuz unui om în vârstă"
+        },
+        "categoryId": "pot"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "stau la rând"
+        },
+        "categoryId": "pot"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "las liniște în bibliotecă"
+        },
+        "categoryId": "pot"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "țip în spital"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "calc iarba din parcul cu flori"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "trec prin fața altora la coadă"
+        },
+        "categoryId": "nu"
+      }
+    ]
+  },
+  {
+    "id": "item.civ.rules.community.4.04",
+    "type": "match",
+    "skillId": "civ.rules.community.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Potrivește locul cu regula potrivită.",
+      "en": "Match each place to a suitable rule."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rules.community.4",
+    "provenance": {
+      "id": "prov.item.civ.rules.community.4.04",
+      "kind": "item",
+      "title": "Item civ.rules.community.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Biblioteca"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Vorbim încet"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Autobuzul"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Cedăm locul celor care au nevoie"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Parcul"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Aruncăm gunoiul la coș"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Magazinul"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Stăm la rând"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.civ.rules.community.4.05",
+    "type": "choice",
+    "skillId": "civ.rules.community.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "De ce respectăm regulile și când nu ne vede nimeni?",
+      "en": "Why do we follow rules even when no one is watching?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.rules.community.4",
+    "provenance": {
+      "id": "prov.item.civ.rules.community.4.05",
+      "kind": "item",
+      "title": "Item civ.rules.community.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Ca să nu mai avem prieteni."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Pentru că altfel ne ceartă mereu."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Pentru că ele ajută pe toată lumea."
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.civ.safety.internet.4.01",
+    "type": "choice",
+    "skillId": "civ.safety.internet.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cineva necunoscut îți scrie pe un joc online și îți cere adresa ta. Ce faci?",
+      "en": "Someone you do not know writes to you in an online game and asks for your address. What do you do?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.internet.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.internet.4.01",
+      "kind": "item",
+      "title": "Item civ.safety.internet.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Îi dai adresa, ca să fie prieten cu tine."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Nu răspunzi cu datele tale și îi spui unui adult de încredere."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Îi trimiți și numărul de telefon, ca să te sune."
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.safety.internet.4.02",
+    "type": "true-false",
+    "skillId": "civ.safety.internet.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Parola ta rămâne secretă, chiar și față de colegi.",
+      "en": "True or false? Your password stays secret, even from classmates."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.internet.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.internet.4.02",
+      "kind": "item",
+      "title": "Item civ.safety.internet.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.safety.internet.4.03",
+    "type": "sort",
+    "skillId": "civ.safety.internet.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce poți spune unui necunoscut pe internet și ce nu?",
+      "en": "What may you tell a stranger online and what may you not?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.internet.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.internet.4.03",
+      "kind": "item",
+      "title": "Item civ.safety.internet.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "categories": [
+      {
+        "id": "nu",
+        "label": {
+          "ro": "Nu dau niciodată",
+          "en": "I never give"
+        }
+      },
+      {
+        "id": "ok",
+        "label": {
+          "ro": "Pot vorbi despre",
+          "en": "I may talk about"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c1",
+        "text": {
+          "ro": "adresa mea"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "parola"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "poze cu mine"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "numele școlii mele"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "ce desen animat îmi place"
+        },
+        "categoryId": "ok"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "ce culoare îmi place"
+        },
+        "categoryId": "ok"
+      }
+    ]
+  },
+  {
+    "id": "item.civ.safety.internet.4.04",
+    "type": "read-and-answer",
+    "skillId": "civ.safety.internet.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește povestea și răspunde la întrebări.",
+      "en": "Read the story and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.internet.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.internet.4.04",
+      "kind": "item",
+      "title": "Item civ.safety.internet.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "passage": {
+      "ro": "Andrei joacă un joc pe tabletă. Un utilizator cu numele „PrietenulTău” îi scrie: „Salut! Câți ani ai? Unde stai? Trimite-mi o poză cu tine și îți dau bani în joc.” Andrei simte că ceva nu e în regulă. Nu răspunde și oprește jocul. Apoi merge la mama și îi arată mesajul. Mama îi spune că a făcut foarte bine și blochează utilizatorul.",
+      "en": "Andrei is playing a game on a tablet. A user called \"YourFriend\" writes: \"Hi! How old are you? Where do you live? Send me a photo of yourself and I will give you game money.\" Andrei feels something is wrong. He does not reply and stops the game. Then he goes to his mother and shows her the message. His mother tells him he did very well and blocks the user."
+    },
+    "questions": [
+      {
+        "id": "item.civ.safety.internet.4.04.q1",
+        "skillId": "civ.safety.internet.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce a făcut Andrei după ce a primit mesajul?",
+          "en": "What did Andrei do after getting the message?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.safety.internet.4.04.q1",
+          "kind": "item",
+          "title": "Question item.civ.safety.internet.4.04.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "I-a trimis poza."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Nu a răspuns și i-a arătat mesajul mamei."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "I-a spus unde locuiește."
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.civ.safety.internet.4.04.q2",
+        "skillId": "civ.safety.internet.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "De ce nu e bine să trimiți poze necunoscuților?",
+          "en": "Why is it not good to send photos to strangers?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.safety.internet.4.04.q2",
+          "kind": "item",
+          "title": "Question item.civ.safety.internet.4.04.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Pentru că pozele ocupă memorie."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Pentru că nu ești fotogenic."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Pentru că nu știi cine este de partea cealaltă și ce face cu ele."
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.civ.safety.internet.4.04.q3",
+        "skillId": "civ.safety.internet.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Andrei a greșit pentru că i-a spus mamei.",
+          "en": "True or false? Andrei made a mistake by telling his mother."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.safety.internet.4.04.q3",
+          "kind": "item",
+          "title": "Question item.civ.safety.internet.4.04.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "item.civ.safety.internet.4.05",
+    "type": "choice",
+    "skillId": "civ.safety.internet.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Primești un mesaj care spune: „Ai câștigat! Dă-ne parola ca să-ți trimitem premiul.” Ce faci?",
+      "en": "You get a message saying: \"You won! Give us your password so we can send your prize.\" What do you do?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.internet.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.internet.4.05",
+      "kind": "item",
+      "title": "Item civ.safety.internet.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Dai parola, ca să primești premiul."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Răspunzi cu toate datele tale."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Nu dai parola și îi arăți mesajul unui adult."
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.civ.safety.bullying.4.01",
+    "type": "choice",
+    "skillId": "civ.safety.bullying.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Un coleg e împins și jignit în fiecare zi de alți copii. Ce ar fi bine să faci?",
+      "en": "A classmate is pushed and insulted every day by other children. What would be good to do?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.bullying.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.bullying.4.01",
+      "kind": "item",
+      "title": "Item civ.safety.bullying.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Să râzi împreună cu ceilalți."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Să fii alături de el și să anunți un adult de încredere."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Să te prefaci că nu vezi nimic."
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.safety.bullying.4.02",
+    "type": "true-false",
+    "skillId": "civ.safety.bullying.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Dacă cineva te agresează, nu e vina ta.",
+      "en": "True or false? If someone bullies you, it is not your fault."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.bullying.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.bullying.4.02",
+      "kind": "item",
+      "title": "Item civ.safety.bullying.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.safety.bullying.4.03",
+    "type": "match",
+    "skillId": "civ.safety.bullying.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Potrivește situația cu adultul de încredere căruia poți să-i spui.",
+      "en": "Match each situation to a trusted adult you could tell."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.bullying.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.bullying.4.03",
+      "kind": "item",
+      "title": "Item civ.safety.bullying.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Cineva mă jignește mereu la școală"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Doamna învățătoare sau consilierul școlar"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Cineva mă sperie pe internet"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Mama, tata sau bunicii"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Un coleg e lovit în pauză"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Cadrul didactic de serviciu"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Mă simt trist și nu vreau să mai merg la școală"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Un părinte sau un adult de încredere"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.civ.safety.bullying.4.04",
+    "type": "read-and-answer",
+    "skillId": "civ.safety.bullying.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește povestea și răspunde la întrebări.",
+      "en": "Read the story and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.bullying.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.bullying.4.04",
+      "kind": "item",
+      "title": "Item civ.safety.bullying.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "passage": {
+      "ro": "Pe drumul spre școală, într-un sat de lângă Dunăre, Vlad era strigat „Fricosule!” de câțiva băieți. Vlad se făcea tot mai trist. Colega lui, Alina, a văzut și a spus băieților: „Nu e frumos ce faceți.” Apoi i-a spus lui Vlad să vorbească cu doamna învățătoare. Împreună au povestit totul. Doamna învățătoare a discutat cu băieții și cu părinții lor, iar strigările au încetat.",
+      "en": "On the way to school, in a village by the Danube, Vlad was being called a scaredy-cat by a few boys. Vlad grew sadder and sadder. His classmate Alina saw it and told the boys: \"What you are doing is not nice.\" Then she suggested to Vlad to talk to the teacher. Together they told everything. The teacher talked to the boys and their parents, and the name-calling stopped."
+    },
+    "questions": [
+      {
+        "id": "item.civ.safety.bullying.4.04.q1",
+        "skillId": "civ.safety.bullying.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce a făcut Alina când a văzut?",
+          "en": "What did Alina do when she saw it?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.safety.bullying.4.04.q1",
+          "kind": "item",
+          "title": "Question item.civ.safety.bullying.4.04.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "A râs cu băieții."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "I-a spus băieților că nu e frumos și l-a ajutat pe Vlad să ceară ajutor."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "S-a prefăcut că nu vede."
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.civ.safety.bullying.4.04.q2",
+        "skillId": "civ.safety.bullying.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cui au spus Vlad și Alina ce se întâmplă?",
+          "en": "Whom did Vlad and Alina tell what was happening?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.safety.bullying.4.04.q2",
+          "kind": "item",
+          "title": "Question item.civ.safety.bullying.4.04.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Unui necunoscut de pe stradă."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Nimănui."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Doamnei învățătoare."
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.civ.safety.bullying.4.04.q3",
+        "skillId": "civ.safety.bullying.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Spunând unui adult, situația s-a îmbunătățit.",
+          "en": "True or false? By telling an adult, the situation got better."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.safety.bullying.4.04.q3",
+          "kind": "item",
+          "title": "Question item.civ.safety.bullying.4.04.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "item.civ.safety.bullying.4.05",
+    "type": "choice",
+    "skillId": "civ.safety.bullying.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce este bullying?",
+      "en": "What is bullying?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.safety.bullying.4",
+    "provenance": {
+      "id": "prov.item.civ.safety.bullying.4.05",
+      "kind": "item",
+      "title": "Item civ.safety.bullying.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "O ceartă o singură dată între prieteni care apoi se împacă."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "O joacă în care toți râd împreună."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Când cineva te jignește sau te lovește intenționat, iar și iar."
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.civ.respect.tolerance.4.01",
+    "type": "choice",
+    "skillId": "civ.respect.tolerance.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce înseamnă să fii tolerant?",
+      "en": "What does it mean to be tolerant?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.respect.tolerance.4",
+    "provenance": {
+      "id": "prov.item.civ.respect.tolerance.4.01",
+      "kind": "item",
+      "title": "Item civ.respect.tolerance.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Să fii de acord cu orice."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Să respecți oamenii chiar dacă sunt diferiți de tine."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Să te joci doar cu cei la fel ca tine."
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.respect.tolerance.4.02",
+    "type": "true-false",
+    "skillId": "civ.respect.tolerance.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Fetele și băieții au aceleași drepturi și șanse.",
+      "en": "True or false? Girls and boys have the same rights and chances."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.respect.tolerance.4",
+    "provenance": {
+      "id": "prov.item.civ.respect.tolerance.4.02",
+      "kind": "item",
+      "title": "Item civ.respect.tolerance.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.respect.tolerance.4.03",
+    "type": "true-false",
+    "skillId": "civ.respect.tolerance.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Un băiat poate plânge atunci când e trist, la fel ca o fată.",
+      "en": "True or false? A boy can cry when he is sad, just like a girl."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.respect.tolerance.4",
+    "provenance": {
+      "id": "prov.item.civ.respect.tolerance.4.03",
+      "kind": "item",
+      "title": "Item civ.respect.tolerance.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.respect.tolerance.4.04",
+    "type": "sort",
+    "skillId": "civ.respect.tolerance.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce arată toleranță și ce nu?",
+      "en": "What shows tolerance and what does not?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.respect.tolerance.4",
+    "provenance": {
+      "id": "prov.item.civ.respect.tolerance.4.04",
+      "kind": "item",
+      "title": "Item civ.respect.tolerance.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "categories": [
+      {
+        "id": "tol",
+        "label": {
+          "ro": "Arată toleranță",
+          "en": "Shows tolerance"
+        }
+      },
+      {
+        "id": "nu",
+        "label": {
+          "ro": "Nu arată toleranță",
+          "en": "Does not show tolerance"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c1",
+        "text": {
+          "ro": "ascult părerea altuia"
+        },
+        "categoryId": "tol"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "primesc în joc un copil dintr-o altă țară"
+        },
+        "categoryId": "tol"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "judec fiecare om după fapte, nu după grup"
+        },
+        "categoryId": "tol"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "spun că toți dintr-un grup sunt la fel"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "exclud pe cineva pentru limba lui"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "fac glume pe seama credinței cuiva"
+        },
+        "categoryId": "nu"
+      }
+    ]
+  },
+  {
+    "id": "item.civ.respect.tolerance.4.05",
+    "type": "choice",
+    "skillId": "civ.respect.tolerance.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cineva spune: „Toți copiii din satul acela sunt neserioși.” Ce răspuns este corect?",
+      "en": "Someone says: \"All the children from that village are unserious.\" What answer is correct?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.respect.tolerance.4",
+    "provenance": {
+      "id": "prov.item.civ.respect.tolerance.4.05",
+      "kind": "item",
+      "title": "Item civ.respect.tolerance.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Da, e adevărat pentru toți."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Hai să nu ne mai jucăm cu niciunul."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Fiecare copil este o persoană; nu putem judeca pe toți la fel."
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.civ.institutions.4.01",
+    "type": "match",
+    "skillId": "civ.institutions.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Potrivește instituția cu ce face.",
+      "en": "Match each institution to what it does."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.institutions.4",
+    "provenance": {
+      "id": "prov.item.civ.institutions.4.01",
+      "kind": "item",
+      "title": "Item civ.institutions.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Primăria"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Se ocupă de treburile localității, acte, străzi și parcuri"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Școala"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Îi învață pe copii"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Poliția"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Ajută la siguranță și ordine"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Spitalul"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Îngrijește oamenii bolnavi"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.civ.institutions.4.02",
+    "type": "choice",
+    "skillId": "civ.institutions.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce număr formezi în caz de urgență, de exemplu un incendiu sau un accident?",
+      "en": "What number do you dial in an emergency, for example a fire or an accident?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.institutions.4",
+    "provenance": {
+      "id": "prov.item.civ.institutions.4.02",
+      "kind": "item",
+      "title": "Item civ.institutions.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "123"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "112"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "321"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.institutions.4.03",
+    "type": "true-false",
+    "skillId": "civ.institutions.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Numărul de urgență este 112.",
+      "en": "True or false? The emergency number is 112."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.institutions.4",
+    "provenance": {
+      "id": "prov.item.civ.institutions.4.03",
+      "kind": "item",
+      "title": "Item civ.institutions.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.institutions.4.04",
+    "type": "choice",
+    "skillId": "civ.institutions.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Dacă vezi un accident și ești singur, ce ar fi bine să faci?",
+      "en": "If you see an accident and you are alone, what would be good to do?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.institutions.4",
+    "provenance": {
+      "id": "prov.item.civ.institutions.4.04",
+      "kind": "item",
+      "title": "Item civ.institutions.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Să te apropii și să încerci să muți singur răniții."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Să pleci repede și să nu spui nimănui."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Să suni la 112 și să spui calm ce s-a întâmplat."
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.civ.institutions.4.05",
+    "type": "read-and-answer",
+    "skillId": "civ.institutions.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește povestea și răspunde la întrebări.",
+      "en": "Read the story and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.institutions.4",
+    "provenance": {
+      "id": "prov.item.civ.institutions.4.05",
+      "kind": "item",
+      "title": "Item civ.institutions.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "passage": {
+      "ro": "În satul lui Tudor a izbucnit un foc la un șopron. Tudor era singur cu fratele mic. A rămas calm, a luat telefonul și a sunat la 112. A spus: „Este un foc la șopronul din curtea vecinului. Sunt în satul Valea Mare.” Operatorul i-a spus să rămână în siguranță, departe de foc. În câteva minute au venit pompierii și au stins focul. Nimeni nu a fost rănit.",
+      "en": "In Tudor's village a fire broke out in a shed. Tudor was alone with his little brother. He stayed calm, took the phone and called 112. He said: \"There is a fire at the neighbour's shed. I am in the village of Valea Mare.\" The operator told him to stay safe, away from the fire. Within minutes firefighters arrived and put out the fire. No one was hurt."
+    },
+    "questions": [
+      {
+        "id": "item.civ.institutions.4.05.q1",
+        "skillId": "civ.institutions.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce număr a format Tudor?",
+          "en": "Which number did Tudor dial?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.institutions.4.05.q1",
+          "kind": "item",
+          "title": "Question item.civ.institutions.4.05.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "123"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "112"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "321"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.civ.institutions.4.05.q2",
+        "skillId": "civ.institutions.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Unde a rămas Tudor după apel?",
+          "en": "Where did Tudor stay after the call?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.institutions.4.05.q2",
+          "kind": "item",
+          "title": "Question item.civ.institutions.4.05.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Aproape de foc, ca să vadă mai bine."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Pe drum, să oprească mașinile."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Într-un loc sigur, departe de foc."
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.civ.institutions.4.05.q3",
+        "skillId": "civ.institutions.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Tudor a spus operatorului ce s-a întâmplat și unde.",
+          "en": "True or false? Tudor told the operator what happened and where."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.institutions.4.05.q3",
+          "kind": "item",
+          "title": "Question item.civ.institutions.4.05.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "item.civ.symbols.4.01",
+    "type": "choice",
+    "skillId": "civ.symbols.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care sunt culorile drapelului României?",
+      "en": "What are the colours of the Romanian flag?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.symbols.4",
+    "provenance": {
+      "id": "prov.item.civ.symbols.4.01",
+      "kind": "item",
+      "title": "Item civ.symbols.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Verde, alb și negru."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Albastru, galben și roșu."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Roz, violet și gri."
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.symbols.4.02",
+    "type": "true-false",
+    "skillId": "civ.symbols.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Ziua Națională a României se sărbătorește pe 1 Decembrie.",
+      "en": "True or false? Romania's National Day is celebrated on 1 December."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.symbols.4",
+    "provenance": {
+      "id": "prov.item.civ.symbols.4.02",
+      "kind": "item",
+      "title": "Item civ.symbols.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.symbols.4.03",
+    "type": "choice",
+    "skillId": "civ.symbols.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cum se numește imnul național al României?",
+      "en": "What is the national anthem of Romania called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.symbols.4",
+    "provenance": {
+      "id": "prov.item.civ.symbols.4.03",
+      "kind": "item",
+      "title": "Item civ.symbols.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "„La mulți ani!”"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "„Sus pe-un munte”."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "„Deșteaptă-te, române!”"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.civ.symbols.4.04",
+    "type": "match",
+    "skillId": "civ.symbols.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Potrivește simbolul cu ce este.",
+      "en": "Match each symbol to what it is."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.symbols.4",
+    "provenance": {
+      "id": "prov.item.civ.symbols.4.04",
+      "kind": "item",
+      "title": "Item civ.symbols.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Drapelul"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Pânza cu trei culori"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Imnul"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Cântecul țării"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Stema"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Semnul oficial al țării"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Ziua Națională"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Sărbătoarea țării"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.civ.symbols.4.05",
+    "type": "choice",
+    "skillId": "civ.symbols.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Se cântă imnul la o sărbătoare. Cum e frumos să ne purtăm?",
+      "en": "The anthem is sung at a celebration. How is it kind to behave?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.symbols.4",
+    "provenance": {
+      "id": "prov.item.civ.symbols.4.05",
+      "kind": "item",
+      "title": "Item civ.symbols.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Ascultăm cu atenție și cu respect."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Vorbim tare între noi."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Râdem și ne jucăm."
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.civ.volunteer.4.01",
+    "type": "choice",
+    "skillId": "civ.volunteer.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce face un voluntar?",
+      "en": "What does a volunteer do?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.volunteer.4",
+    "provenance": {
+      "id": "prov.item.civ.volunteer.4.01",
+      "kind": "item",
+      "title": "Item civ.volunteer.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Muncește doar pentru bani."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Ajută pe alții din proprie voință, fără plată."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Ajută doar dacă i se cere."
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.volunteer.4.02",
+    "type": "true-false",
+    "skillId": "civ.volunteer.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Și copiii pot face fapte bune pentru comunitate.",
+      "en": "True or false? Children can also do good deeds for the community."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.volunteer.4",
+    "provenance": {
+      "id": "prov.item.civ.volunteer.4.02",
+      "kind": "item",
+      "title": "Item civ.volunteer.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.volunteer.4.03",
+    "type": "sort",
+    "skillId": "civ.volunteer.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce este voluntariat și ce nu?",
+      "en": "What is volunteering and what is not?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.volunteer.4",
+    "provenance": {
+      "id": "prov.item.civ.volunteer.4.03",
+      "kind": "item",
+      "title": "Item civ.volunteer.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "categories": [
+      {
+        "id": "vol",
+        "label": {
+          "ro": "Voluntariat",
+          "en": "Volunteering"
+        }
+      },
+      {
+        "id": "nu",
+        "label": {
+          "ro": "Nu este voluntariat",
+          "en": "Not volunteering"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c1",
+        "text": {
+          "ro": "strâng haine pentru cei care au nevoie"
+        },
+        "categoryId": "vol"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "ajut la plantat copaci în comunitate"
+        },
+        "categoryId": "vol"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "citesc povești unei vecine în vârstă"
+        },
+        "categoryId": "vol"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "muncesc contra plată într-un magazin"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "îmi fac singur lecțiile"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "mă joc pe tabletă"
+        },
+        "categoryId": "nu"
+      }
+    ]
+  },
+  {
+    "id": "item.civ.volunteer.4.04",
+    "type": "read-and-answer",
+    "skillId": "civ.volunteer.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește povestea și răspunde la întrebări.",
+      "en": "Read the story and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.volunteer.4",
+    "provenance": {
+      "id": "prov.item.civ.volunteer.4.04",
+      "kind": "item",
+      "title": "Item civ.volunteer.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "passage": {
+      "ro": "La școala din cătunul lui Mihai s-a anunțat o acțiune: clasa a IV-a va strânge cărți vechi pentru biblioteca satului. Mihai a adus cărțile pe care nu le mai citea, iar colega lui, Elena, a făcut un afiș. Mama lui Mihai a ajutat cu o cutie mare. După două săptămâni, au dus cărțile la bibliotecă. Bibliotecara le-a mulțumit, iar mai mulți copii au început să vină la citit.",
+      "en": "At the school in Mihai's hamlet an action was announced: the fourth grade will collect old books for the village library. Mihai brought the books he no longer read, and his classmate Elena made a poster. Mihai's mother helped with a big box. After two weeks they took the books to the library. The librarian thanked them, and more children started coming to read."
+    },
+    "questions": [
+      {
+        "id": "item.civ.volunteer.4.04.q1",
+        "skillId": "civ.volunteer.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce au strâns copiii?",
+          "en": "What did the children collect?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.volunteer.4.04.q1",
+          "kind": "item",
+          "title": "Question item.civ.volunteer.4.04.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Haine pentru iarnă."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "Cărți vechi pentru biblioteca satului."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "Bani pentru excursie."
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.civ.volunteer.4.04.q2",
+        "skillId": "civ.volunteer.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Cu ce a ajutat Elena?",
+          "en": "How did Elena help?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.volunteer.4.04.q2",
+          "kind": "item",
+          "title": "Question item.civ.volunteer.4.04.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "A dus cutia singură."
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "A scris cărți."
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "A făcut un afiș."
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.civ.volunteer.4.04.q3",
+        "skillId": "civ.volunteer.4",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Acțiunea a ajutat mai mulți copii să citească.",
+          "en": "True or false? The action helped more children to read."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.civ.volunteer.4.04.q3",
+          "kind": "item",
+          "title": "Question item.civ.volunteer.4.04.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original story and questions drafted for the competence; awaiting human review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "item.civ.volunteer.4.05",
+    "type": "choice",
+    "skillId": "civ.volunteer.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Vrei să faci o faptă bună pentru un vecin în vârstă. Ce ar fi potrivit?",
+      "en": "You want to do a good deed for an elderly neighbour. What would be suitable?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.volunteer.4",
+    "provenance": {
+      "id": "prov.item.civ.volunteer.4.05",
+      "kind": "item",
+      "title": "Item civ.volunteer.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Să intri în casa lui fără să-l întrebi."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Să-i ceri bani pentru ajutor."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Să-l întrebi dacă are nevoie de ajutor, de exemplu să-i duci coșul de la magazin."
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.civ.environment.4.01",
+    "type": "choice",
+    "skillId": "civ.environment.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce faci cu o sticlă de plastic goală, dacă în apropiere este un coș de colectare selectivă?",
+      "en": "What do you do with an empty plastic bottle if there is a recycling bin nearby?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.environment.4",
+    "provenance": {
+      "id": "prov.item.civ.environment.4.01",
+      "kind": "item",
+      "title": "Item civ.environment.4 01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "O arunci în râu."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "O pui în coșul galben pentru plastic."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "O lași pe iarbă."
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.civ.environment.4.02",
+    "type": "true-false",
+    "skillId": "civ.environment.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Stingând lumina când ieșim din cameră, economisim energie.",
+      "en": "True or false? By switching off the light when leaving a room, we save energy."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.environment.4",
+    "provenance": {
+      "id": "prov.item.civ.environment.4.02",
+      "kind": "item",
+      "title": "Item civ.environment.4 02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.civ.environment.4.03",
+    "type": "match",
+    "skillId": "civ.environment.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Potrivește deșeul cu coșul în care îl punem.",
+      "en": "Match each waste item to the bin where it goes."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.environment.4",
+    "provenance": {
+      "id": "prov.item.civ.environment.4.03",
+      "kind": "item",
+      "title": "Item civ.environment.4 03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Hârtie și carton"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Coș albastru"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Plastic și metal"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Coș galben"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Sticlă"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Coș verde"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Resturi de mâncare"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Compost sau coș pentru deșeuri obișnuite"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.civ.environment.4.04",
+    "type": "sort",
+    "skillId": "civ.environment.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce ajută mediul și ce nu?",
+      "en": "What helps the environment and what does not?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.environment.4",
+    "provenance": {
+      "id": "prov.item.civ.environment.4.04",
+      "kind": "item",
+      "title": "Item civ.environment.4 04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "categories": [
+      {
+        "id": "ajuta",
+        "label": {
+          "ro": "Ajută mediul",
+          "en": "Helps"
+        }
+      },
+      {
+        "id": "nu",
+        "label": {
+          "ro": "Nu ajută mediul",
+          "en": "Does not help"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c1",
+        "text": {
+          "ro": "sortez deșeurile"
+        },
+        "categoryId": "ajuta"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "plantez un copac"
+        },
+        "categoryId": "ajuta"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "închid robinetul când mă spăl pe dinți"
+        },
+        "categoryId": "ajuta"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "arunc gunoiul în pădure"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "las apa să curgă degeaba"
+        },
+        "categoryId": "nu"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "las lumina aprinsă în camera goală"
+        },
+        "categoryId": "nu"
+      }
+    ]
+  },
+  {
+    "id": "item.civ.environment.4.05",
+    "type": "choice",
+    "skillId": "civ.environment.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Clasa ta merge în excursie la lac. După picnic, ce este bine să faci cu gunoaiele?",
+      "en": "Your class goes on a trip to a lake. After the picnic, what is good to do with the litter?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.civ.environment.4",
+    "provenance": {
+      "id": "prov.item.civ.environment.4.05",
+      "kind": "item",
+      "title": "Item civ.environment.4 05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original scenario drafted for the competence; awaiting human review"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Să le lași pe iarbă, că le strânge altcineva."
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Să le arunci în apă."
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Să le strângi în saci și să le duci la un coș."
+        }
+      }
+    ],
+    "correctId": "c"
+  }
+]

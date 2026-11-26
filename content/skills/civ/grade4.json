@@ -1,0 +1,405 @@
+[
+  {
+    "id": "civ.emotions.conflict.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "2.5"
+      }
+    ],
+    "title": {
+      "ro": "Rezolvarea pașnică a conflictelor",
+      "en": "Solving conflicts peacefully"
+    },
+    "prerequisites": [
+      "civ.emotions.3",
+      "civ.person.friends.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.emotions.conflict.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.emotions.conflict.4",
+      "kind": "data",
+      "title": "Skill civ.emotions.conflict.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.rights.responsibilities.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "2.6"
+      }
+    ],
+    "title": {
+      "ro": "Drepturi și responsabilități",
+      "en": "Rights and responsibilities"
+    },
+    "prerequisites": [
+      "civ.rights.child.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.rights.responsibilities.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.rights.responsibilities.4",
+      "kind": "data",
+      "title": "Skill civ.rights.responsibilities.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.rules.community.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Reguli în comunitate",
+      "en": "Rules in the community"
+    },
+    "prerequisites": [
+      "civ.rules.home.3",
+      "civ.community.local.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.rules.community.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.rules.community.4",
+      "kind": "data",
+      "title": "Skill civ.rules.community.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.safety.internet.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Siguranța pe internet",
+      "en": "Staying safe online"
+    },
+    "prerequisites": [
+      "civ.safety.road.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.safety.internet.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.safety.internet.4",
+      "kind": "data",
+      "title": "Skill civ.safety.internet.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.safety.bullying.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "3.5"
+      }
+    ],
+    "title": {
+      "ro": "Bullying: cui spun și ce fac",
+      "en": "Bullying: who to tell and what to do"
+    },
+    "prerequisites": [
+      "civ.emotions.3",
+      "civ.respect.diversity.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.safety.bullying.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.safety.bullying.4",
+      "kind": "data",
+      "title": "Skill civ.safety.bullying.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.respect.tolerance.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "2.7"
+      }
+    ],
+    "title": {
+      "ro": "Toleranță și egalitate",
+      "en": "Tolerance and equality"
+    },
+    "prerequisites": [
+      "civ.respect.diversity.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.respect.tolerance.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.respect.tolerance.4",
+      "kind": "data",
+      "title": "Skill civ.respect.tolerance.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.institutions.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "4.2"
+      }
+    ],
+    "title": {
+      "ro": "Instituții: primăria, poliția, spitalul, școala",
+      "en": "Institutions: town hall, police, hospital, school"
+    },
+    "prerequisites": [
+      "civ.community.local.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.institutions.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.institutions.4",
+      "kind": "data",
+      "title": "Skill civ.institutions.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.symbols.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "4.3"
+      }
+    ],
+    "title": {
+      "ro": "Simboluri naționale și valori",
+      "en": "National symbols and values"
+    },
+    "prerequisites": [
+      "civ.community.local.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.symbols.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.symbols.4",
+      "kind": "data",
+      "title": "Skill civ.symbols.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.volunteer.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "4.4"
+      }
+    ],
+    "title": {
+      "ro": "Voluntariat și fapte bune",
+      "en": "Volunteering and good deeds"
+    },
+    "prerequisites": [
+      "civ.care.common.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.volunteer.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.volunteer.4",
+      "kind": "data",
+      "title": "Skill civ.volunteer.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  },
+  {
+    "id": "civ.environment.4",
+    "subject": "civ",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CIV-III-IV-2014",
+        "code": "4.5"
+      }
+    ],
+    "title": {
+      "ro": "Grija pentru mediu",
+      "en": "Caring for the environment"
+    },
+    "prerequisites": [
+      "civ.care.common.3"
+    ],
+    "itemSources": [
+      {
+        "bank": "civ/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.civ.environment.4"
+    ],
+    "masteryCheck": {
+      "items": 3,
+      "minCorrect": 2
+    },
+    "provenance": {
+      "id": "prov.data.skill.civ.environment.4",
+      "kind": "data",
+      "title": "Skill civ.environment.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; scenarios from rural and urban life, inclusive tone"
+    }
+  }
+]
