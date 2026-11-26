@@ -18,6 +18,17 @@
             redeploy them again, or creating an account and syncing children will fail with "permission denied".
       - [ ] Parent accounts also need Firebase console → Authentication → **Email/Password** enabled (the same
             switch as for the admin account below). Until then "Cont de părinte" cannot create or sign in.
+- [ ] **Redeploy BOTH rule sets for the privacy fixes F2 + F3** (`docs/PRIVACY_DATA_MAP.md`). Until you do, the new app
+      cannot create or join multiplayer rooms (the old rules allowed it, the new client uses `roomCodes/*` and
+      `rooms/*/players/{uid}`) and teacher sessions / student codes keep the old, open rules:
+      ```bash
+      firebase deploy --only firestore:rules,database --project ludiko-2e197
+      ```
+      - [ ] Optional, once after deploying: in the Realtime Database console delete the old `rooms` node (old-format rooms no longer work).
+      - [ ] Optional: test the rules in the Firebase Emulator Suite / Rules Playground (the repo tests only check their text).
+      - [ ] Optional: delete forgotten rooms now and then (the app already deletes its own and refuses rooms older than 6 hours):
+            `FIREBASE_SERVICE_ACCOUNT="$(cat key.json)" FIREBASE_DATABASE_URL=https://<your-db>.firebasedatabase.app node scripts/privacy/cleanup-rooms.mjs --dry-run`
+            (drop `--dry-run` to delete rooms older than 24 h; `--max-age-hours=N` to change the age). Needs a service-account key; never commit it.
 - [ ] **Admin account** (`docs/ADMIN.md`):
   - [ ] Firebase console → Authentication → enable **Email/Password**.
   - [ ] Add your admin user and copy its **UID**.
@@ -88,14 +99,31 @@
         with the "no child personal data" promise and the policy currently has to admit them:
     - [ ] **F1 (high)** Multiplayer names typed by kids go to Firestore `gameHistory` forever and show in the public
           leaderboard. Suggested: remove the cloud leaderboard, or store avatar + score only with a TTL, then delete the old documents.
+    - [x] F1 is fixed in code (cloud leaderboard removed). Owner steps still open:
+      - [ ] Redeploy Firestore rules (`firebase deploy --only firestore:rules`): `gameHistory` is now denied.
+      - [ ] Run `scripts/privacy/delete-game-history.mjs` once (`FIREBASE_SERVICE_ACCOUNT='<json>' node scripts/privacy/delete-game-history.mjs --dry-run`, then without `--dry-run`).
     - [ ] **F2 (high)** Realtime Database `rooms` are readable and writable by any anonymous session (names visible).
           Suggested: exact-key code index + per-room rules, random names, room expiry.
     - [ ] **F3** v1 teacher sessions: `sessionResults` (student names) readable and writable by any signed-in device.
-    - [ ] **F4** Google Fonts (Nunito) loaded from Google: self-host it and add it to `content/credits.json`.
-    - [ ] **F5** Free-text nicknames and teacher seat labels: add the "use a nickname" hint everywhere; decide how to treat
+    - [x] **F4** Google Fonts (Nunito) replaced by a self-hosted copy (`@fontsource/nunito`, OFL-1.1, in `content/credits.json`).
+          Done in code; takes effect with the next GitHub Pages deploy. Nothing to run.
+    - [x] **F5** Nickname and teacher-label hints added (profile form, seat labels). Still open: decide how to treat
           schools (teacher terms or data-processing agreement).
-    - [ ] F6 report-comment hint and retention, F7 push-subscription expiry, F8 one "delete everything" action, F9 teacher
-          account deletion.
+    - [x] **F6** Report-comment hint added and retention script written. Run it once, then yearly:
+          ```bash
+          # the same service-account JSON as the FIREBASE_SERVICE_ACCOUNT GitHub secret; never commit it
+          FIREBASE_SERVICE_ACCOUNT="$(cat ~/keys/ludiko-sa.json)" node scripts/privacy/cleanup-reports.mjs --dry-run
+          FIREBASE_SERVICE_ACCOUNT="$(cat ~/keys/ludiko-sa.json)" node scripts/privacy/cleanup-reports.mjs
+          ```
+          It deletes resolved/dismissed reports older than 12 months and any report older than 24 months.
+    - [x] **F7** Push subscriptions not updated for 12 months are deleted by the daily sender. Nothing to run: check the
+          next "Daily reminders" run log for `expired=`.
+    - [ ] F8 one "delete everything" action (not done).
+    - [x] **F9** In-app "Șterge contul de profesor" on the teacher dashboard (password or Google re-confirmation). Deletes
+          classes, sessions, results, templates and the profile, then the Auth user. No Firestore rules were changed.
+          Test it once with a throwaway teacher account on a phone.
+    - [ ] **Privacy text** (`src/legal/privacy.ts`): still says Nunito is loaded from Google Fonts and that it will be hosted
+          locally, and does not mention the teacher deletion or report retention yet. Update with the lawyer review.
 - [ ] Optionally use a **dedicated contact email** instead of your personal one (shown on the Credits page
       and in `LICENSE`).
 

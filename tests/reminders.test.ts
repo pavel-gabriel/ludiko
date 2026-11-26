@@ -8,11 +8,14 @@ import {
   dayOfYear,
   pickMessage,
   DEFAULT_TIMEZONE,
+  isSubscriptionExpired,
+  subscriptionExpiryCutoff,
 } from '../scripts/reminders/logic.mjs';
 import {
   runReminders,
   activeSubscriptionPages,
   mapWithConcurrency,
+  expireStaleSubscriptions,
 } from '../scripts/send-daily-reminders.mjs';
 
 const ROOT = join(__dirname, '..');
@@ -260,15 +263,19 @@ function fakeFirestore(rows: Array<{ id: string; data: Record<string, unknown> }
     };
   };
 
-  function query(filters: Array<{ field: string; value: unknown }>, limit = Infinity, after: string | null = null) {
+  type Filter = { field: string; op: string; value: unknown };
+  const matches = (actual: unknown, { op, value }: Filter) =>
+    op === '<' ? typeof actual === 'number' && actual < (value as number) : actual === value;
+
+  function query(filters: Filter[], limit = Infinity, after: string | null = null) {
     return {
-      where: (field: string, _op: string, value: unknown) => query([...filters, { field, value }], limit, after),
+      where: (field: string, op: string, value: unknown) => query([...filters, { field, op, value }], limit, after),
       orderBy: () => query(filters, limit, after),
       limit: (n: number) => query(filters, n, after),
       startAfter: (snap: { id: string }) => query(filters, limit, snap.id),
       get: async () => {
         let ids = [...store.values()]
-          .filter((r) => filters.every((f) => r.data[f.field] === f.value))
+          .filter((r) => filters.every((f) => matches(r.data[f.field], f)))
           .map((r) => r.id)
           .sort();
         if (after !== null) ids = ids.filter((id) => id > after);
@@ -279,7 +286,7 @@ function fakeFirestore(rows: Array<{ id: string; data: Record<string, unknown> }
   }
 
   return {
-    db: { collection: () => query([{ field: 'active', value: true }]) },
+    db: { collection: () => query([]) },
     FieldPath,
     calls,
     store,
@@ -379,7 +386,7 @@ describe('runReminders', () => {
 
     expect(exitCode).toBe(0);
     // 7 active docs (paused excluded by the query); 5 due; ok sent; 2 removed; boom (500) and badUrl failed
-    expect(summary).toEqual({ checked: 7, due: 5, sent: 1, removed: 2, failed: 2 });
+    expect(summary).toEqual({ checked: 7, due: 5, sent: 1, removed: 2, failed: 2, expired: 0 });
     expect(t.setVapidDetails).toHaveBeenCalledWith('mailto:owner@example.org', 'BPublicKeyForTests', 'PrivateKeyForTests');
 
     // Due subscriptions are sent to (ok, gone410, gone404, boom); badUrl is rejected before sending
@@ -424,7 +431,7 @@ describe('runReminders', () => {
     const t = setup(behaviour);
     const { exitCode, summary } = await t.run(['--dry-run']);
     expect(exitCode).toBe(0);
-    expect(summary).toEqual({ checked: 7, due: 5, sent: 0, removed: 0, failed: 0 });
+    expect(summary).toEqual({ checked: 7, due: 5, sent: 0, removed: 0, failed: 0, expired: 0 });
     expect(t.sendNotification).not.toHaveBeenCalled();
     expect(t.fake.calls.updates).toHaveLength(0);
     expect(t.fake.calls.deletes).toHaveLength(0);
@@ -456,5 +463,126 @@ describe('runReminders', () => {
     });
     expect(result.exitCode).toBe(1);
     expect(t.firebase).not.toHaveBeenCalled();
+  });
+});
+
+// F7: subscriptions not updated for 12 months are deleted (docs/PRIVACY_DATA_MAP.md).
+const DAY = 24 * 60 * 60 * 1000;
+const monthsBefore = (now: Date, months: number) => {
+  const d = new Date(now.getTime());
+  d.setUTCMonth(d.getUTCMonth() - months);
+  return d.getTime();
+};
+
+describe('subscription expiry (F7) decision', () => {
+  it('cutoff is exactly 12 calendar months before now (UTC)', () => {
+    expect(subscriptionExpiryCutoff(SUMMER_EVENING)).toBe(Date.UTC(2025, 6, 1, 15, 30));
+  });
+
+  it('is expired when updatedAt is older than 12 months', () => {
+    expect(isSubscriptionExpired({ updatedAt: monthsBefore(SUMMER_EVENING, 13) }, SUMMER_EVENING)).toBe(true);
+    expect(isSubscriptionExpired({ updatedAt: SUMMER_EVENING.getTime() - 400 * DAY }, SUMMER_EVENING)).toBe(true);
+  });
+
+  it('is kept when updatedAt is within the last 12 months', () => {
+    expect(isSubscriptionExpired({ updatedAt: monthsBefore(SUMMER_EVENING, 11) }, SUMMER_EVENING)).toBe(false);
+    expect(isSubscriptionExpired({ updatedAt: SUMMER_EVENING.getTime() }, SUMMER_EVENING)).toBe(false);
+  });
+
+  it('treats the exact cutoff instant as not yet expired', () => {
+    const cutoff = subscriptionExpiryCutoff(SUMMER_EVENING);
+    expect(isSubscriptionExpired({ updatedAt: cutoff }, SUMMER_EVENING)).toBe(false);
+    expect(isSubscriptionExpired({ updatedAt: cutoff - 1 }, SUMMER_EVENING)).toBe(true);
+  });
+
+  it('is defensive: missing, malformed or non-numeric updatedAt is never expired', () => {
+    expect(isSubscriptionExpired({}, SUMMER_EVENING)).toBe(false);
+    expect(isSubscriptionExpired({ updatedAt: '2020-01-01' }, SUMMER_EVENING)).toBe(false);
+    expect(isSubscriptionExpired({ updatedAt: Number.NaN }, SUMMER_EVENING)).toBe(false);
+    expect(isSubscriptionExpired(null, SUMMER_EVENING)).toBe(false);
+    expect(isSubscriptionExpired({ updatedAt: 1 }, new Date('not a date'))).toBe(false);
+  });
+});
+
+describe('expireStaleSubscriptions (F7) sweep', () => {
+  const old = monthsBefore(SUMMER_EVENING, 13);
+  const recent = monthsBefore(SUMMER_EVENING, 2);
+  // hour 3 is never due, so the send loop does not rewrite updatedAt during these tests
+  const fakeSub = (name: string, extra: Record<string, unknown> = {}) => ({
+    active: true,
+    endpoint: `https://push.example.test/${name}`,
+    keys: { p256dh: `p256-${name}`, auth: `auth-${name}` },
+    hour: 3,
+    timezone: 'Europe/Bucharest',
+    lang: 'en',
+    ...extra,
+  });
+
+  function rows() {
+    return [
+      // Old and inactive: the reminder query would never see it, the expiry sweep must.
+      { id: 'oldPaused', data: fakeSub('oldPaused', { active: false, updatedAt: old }) },
+      { id: 'oldActive', data: fakeSub('oldActive', { updatedAt: old }) },
+      { id: 'recent', data: fakeSub('recent', { updatedAt: recent }) },
+      { id: 'noStamp', data: fakeSub('noStamp') },
+    ];
+  }
+
+  it('deletes only documents older than 12 months, including inactive ones', async () => {
+    const fake = fakeFirestore(rows());
+    const expired = await expireStaleSubscriptions(fake.db, fake.FieldPath, SUMMER_EVENING);
+    expect(expired).toBe(2);
+    expect(fake.calls.deletes.sort()).toEqual(['oldActive', 'oldPaused']);
+    expect([...fake.store.keys()].sort()).toEqual(['noStamp', 'recent']);
+  });
+
+  it('dry run counts the same documents and deletes nothing', async () => {
+    const fake = fakeFirestore(rows());
+    const expired = await expireStaleSubscriptions(fake.db, fake.FieldPath, SUMMER_EVENING, { dryRun: true });
+    expect(expired).toBe(2);
+    expect(fake.calls.deletes).toEqual([]);
+    expect(fake.store.size).toBe(4);
+  });
+
+  it('pages through many expired documents', async () => {
+    const many = Array.from({ length: 1203 }, (_, i) => ({
+      id: `old${String(i).padStart(4, '0')}`,
+      data: { active: i % 2 === 0, endpoint: `https://push.example.test/old${i}`, hour: 3, timezone: 'Europe/Bucharest', lang: 'en', updatedAt: old },
+    }));
+    const fake = fakeFirestore(many);
+    const expired = await expireStaleSubscriptions(fake.db, fake.FieldPath, SUMMER_EVENING);
+    expect(expired).toBe(1203);
+    expect(fake.store.size).toBe(0);
+  });
+
+  it('runReminders reports expired in the summary and deletes them on a real run only', async () => {
+    const env = {
+      VAPID_PUBLIC_KEY: 'BPublicKeyForTests',
+      VAPID_PRIVATE_KEY: 'PrivateKeyForTests',
+      VAPID_SUBJECT: 'mailto:owner@example.org',
+      FIREBASE_SERVICE_ACCOUNT: '{"project_id":"test"}',
+    };
+    const run = async (argv: string[]) => {
+      const fake = fakeFirestore(rows());
+      const deps = {
+        firebase: vi.fn(async () => ({ db: fake.db, FieldPath: fake.FieldPath })),
+        webPush: vi.fn(async () => ({ sendNotification: vi.fn(), setVapidDetails: vi.fn() })),
+      };
+      const logs: string[] = [];
+      const result = await runReminders({ env, argv, now: SUMMER_EVENING, log: (m) => logs.push(m), error: () => {}, deps });
+      return { ...result, fake, logs };
+    };
+
+    const dry = await run(['--dry-run']);
+    expect(dry.exitCode).toBe(0);
+    expect(dry.summary?.expired).toBe(2);
+    expect(dry.fake.calls.deletes).toEqual([]);
+    expect(dry.logs.join('\n')).toContain('expired=2 (dry run, not deleted)');
+
+    const real = await run([]);
+    expect(real.summary?.expired).toBe(2);
+    expect(real.fake.calls.deletes.sort()).toEqual(['oldActive', 'oldPaused']);
+    expect(real.logs.join('\n')).toContain('expired=2');
+    expect(real.logs.join('\n')).not.toContain('dry run');
   });
 });

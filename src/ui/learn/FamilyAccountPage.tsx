@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import FamilyAccountCard from '@/components/family/FamilyAccountCard'
+import EraseAllCard from '@/components/privacy/EraseAllCard'
 import LearnShell from './LearnShell'
 
 /**
@@ -11,6 +12,9 @@ export default function FamilyAccountPage() {
   return (
     <LearnShell title={t('family.title')} backTo="/profiles" backLabel={t('family.back')}>
       <FamilyAccountCard showUnavailable />
+      <div className="mt-4">
+        <EraseAllCard />
+      </div>
     </LearnShell>
   )
 }

@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import FamilyAccountCard from '@/components/family/FamilyAccountCard'
+import EraseAllCard from '@/components/privacy/EraseAllCard'
 import { getSkill } from '@/engine/content/registry'
 import { localize } from '@/engine/types'
 import { learnerService } from '@/learner'
@@ -40,6 +41,9 @@ function Parent({ profile }: { profile: ChildProfile }) {
       {/* "Cont de părinte": the parent area only, never on child screens */}
       <div className="mt-4">
         <FamilyAccountCard />
+      </div>
+      <div className="mt-4">
+        <EraseAllCard />
       </div>
     </LearnShell>
   )

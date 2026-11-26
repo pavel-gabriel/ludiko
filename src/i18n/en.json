@@ -1275,5 +1275,64 @@
       }
     },
     "error": "Something went wrong. Please try again."
+  },
+  "privacyTools": {
+    "title": "Delete everything",
+    "intro": "Deletes the parent cloud account, the class link, reminders and, if you choose, the profiles on this device.",
+    "button": "Delete everything",
+    "willDo": "What will be deleted:",
+    "localCheckbox": "Also delete all child profiles and progress on this device",
+    "password": "Parent account password (if asked)",
+    "confirm": "Yes, delete everything",
+    "cancel": "Cancel",
+    "working": "Deleting...",
+    "resultTitle": "Result",
+    "retry": "Whatever could not be deleted (for example while offline) can be retried later.",
+    "steps": {
+      "family": "Parent account in the cloud",
+      "classes": "Progress sent to the class",
+      "push": "Daily reminders",
+      "local": "Profiles on this device",
+      "signout": "Signing out"
+    },
+    "status": {
+      "done": "Done",
+      "skipped": "Nothing to do",
+      "partial": "Partly",
+      "failed": "Failed"
+    },
+    "detail": {
+      "offline": "offline",
+      "reauth-required": "enter your password and try again",
+      "failed": "error"
+    }
+  },
+  "privacyHints": {
+    "nickname": "Use a nickname or initials, not your real name",
+    "teacherLabel": "Write initials or numbers, not the pupil's real name.",
+    "reportComment": "Do not write names or personal details",
+    "teacherDelete": {
+      "button": "Delete teacher account",
+      "title": "Delete your teacher account?",
+      "body": "This permanently deletes your classes (with their seats, join codes and pupil progress), your sessions, their results and your templates, then the account. It cannot be undone.",
+      "passwordLabel": "Confirm with your account password",
+      "cancel": "Cancel",
+      "confirm": "Delete permanently",
+      "deleting": "Deleting…",
+      "reauthFailed": "We could not confirm your identity (wrong password?). Nothing was deleted.",
+      "partial": "We could not delete everything. Your account was kept so you can try again. Not deleted: {{items}}.",
+      "steps": {
+        "classes": "classes",
+        "sessions": "sessions",
+        "templates": "templates",
+        "profile": "profile",
+        "account": "account"
+      }
+    }
+  },
+  "rooms": {
+    "yourName": "Your animal name",
+    "shuffle": "New name",
+    "hint": "The name comes from our list: never type your real name."
   }
 }

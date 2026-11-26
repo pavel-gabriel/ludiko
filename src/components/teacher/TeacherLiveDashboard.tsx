@@ -10,6 +10,7 @@ import {
   saveSessionResults,
   exportResultsToCSV,
   downloadCSV,
+  labelForStudentCode,
 } from '@/services/teacherService';
 import { listenToRoom, updateRoomStatus } from '@/services/roomManager';
 import {
@@ -109,7 +110,8 @@ export default function TeacherLiveDashboard() {
       .filter((p) => !p.isHost)
       .map((player) => ({
         studentCode: player.name,
-        studentLabel: player.name,
+        /* the label the TEACHER assigned to this code, never text typed by the child */
+        studentLabel: labelForStudentCode(session.studentCodes, player.name),
         score: gameState.progress[player.id] ?? 0,
         totalQuestions: totalPerStudent,
         accuracy: 0,
@@ -214,7 +216,14 @@ export default function TeacherLiveDashboard() {
                     >
                       <span className="text-xl">{student.avatar}</span>
                       <div className="flex-1 min-w-0">
-                        <p className="font-bold text-sm truncate">{student.name}</p>
+                        <p className="font-bold text-sm truncate">
+                          {student.name}
+                          {labelForStudentCode(session.studentCodes, student.name) !== student.name && (
+                            <span className="text-gray-400 font-normal ml-1">
+                              ({labelForStudentCode(session.studentCodes, student.name)})
+                            </span>
+                          )}
+                        </p>
                         <div className="w-full bg-gray-200 rounded-full h-2 mt-1">
                           <div
                             className={`h-2 rounded-full transition-all duration-500 ${

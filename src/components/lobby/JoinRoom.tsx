@@ -6,16 +6,21 @@ import CloseButton from '@/components/ui/CloseButton';
 import { useRoomStore } from '@/store/roomStore';
 import { joinRoomByCode, lookupRoomByCode, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
-import { getSession } from '@/services/teacherService';
-import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
+import { isStudentCodeValid } from '@/services/teacherService';
+import AnimalNamePicker from '@/components/ui/AnimalNamePicker';
+import EmojiPicker from '@/components/ui/EmojiPicker';
+import { identityAvatar, identityName, identityWithAvatar, randomIdentity } from '@/utils/animalNames';
 
 export default function JoinRoom() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const { setRoom, setCurrentPlayer } = useRoomStore();
 
-  const [name, setName] = useState('');
-  const [avatar, setAvatar] = useState(EMOJI_OPTIONS[Math.floor(Math.random() * EMOJI_OPTIONS.length)]);
+  /* A child never types a name: an animal name is picked (it is also the avatar). In a classroom room the
+     only text field is the student code the teacher handed out; it is checked against the teacher's list. */
+  const [identity, setIdentity] = useState(() => randomIdentity());
+  const [studentCode, setStudentCode] = useState('');
+  const avatar = identityAvatar(identity);
   const [code, setCode] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -35,11 +40,8 @@ export default function JoinRoom() {
       if (cancelled || !room) return;
       const taken = room.players.map((p) => p.avatar);
       setTakenAvatars(taken);
-      /* If current avatar is taken, auto-switch to first available */
-      if (taken.includes(avatar)) {
-        const firstAvailable = EMOJI_OPTIONS.find((e) => !taken.includes(e));
-        if (firstAvailable) setAvatar(firstAvailable);
-      }
+      /* If the current animal is taken, switch to a free one */
+      setIdentity((cur) => (taken.includes(identityAvatar(cur)) ? randomIdentity(taken) : cur));
       /* Show the student-code UI when this is a classroom session
          (authoritative validation happens in handleJoin) */
       setIsClassroom(Boolean(room.classroomSessionId));
@@ -48,7 +50,7 @@ export default function JoinRoom() {
   }, [code]);
 
   const handleJoin = async () => {
-    if (!name.trim() || !code.trim() || loading) return;
+    if (!code.trim() || loading || (isClassroom && !studentCode.trim())) return;
 
     setLoading(true);
     setError('');
@@ -60,22 +62,27 @@ export default function JoinRoom() {
       /* Authoritative classroom check — the pre-flight effect is only for
          UI hints and can be skipped/raced, so validate again here */
       const targetRoom = await lookupRoomByCode(code);
-      if (targetRoom?.classroomSessionId) {
-        const session = await getSession(targetRoom.classroomSessionId);
-        const codes = session?.studentCodes.map((sc) => sc.code) ?? [];
-        if (!codes.includes(name.trim().toUpperCase())) {
+      if (!targetRoom) {
+        setError(t('join.invalidCode'));
+        return;
+      }
+      let playerName = identityName(identity, i18n.language);
+      if (targetRoom.classroomSessionId) {
+        /* exact-key read of the teacher's code index: students cannot read the session itself */
+        const wanted = studentCode.trim().toUpperCase();
+        if (!(await isStudentCodeValid(targetRoom.classroomSessionId, wanted))) {
           setError(t('join.invalidStudentCode'));
           return;
         }
+        playerName = wanted;
       }
 
-      const result = await joinRoomByCode(code.toUpperCase(), name.trim(), avatar);
+      const result = await joinRoomByCode(code.toUpperCase(), playerName, avatar);
       if (!result) {
         setError(t('join.invalidCode'));
         return;
       }
-      const playerIdx = result.room.players.findIndex((p) => p.id === result.player.id);
-      registerDisconnectCleanup(result.room.id, false, playerIdx);
+      registerDisconnectCleanup(result.room.id, false, result.player.id);
       setRoom(result.room);
       setCurrentPlayer(result.player);
       navigate('/lobby');
@@ -92,28 +99,36 @@ export default function JoinRoom() {
         <CloseButton />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('join.title')}</h2>
 
-        <label className="block mb-2">
-          <span className="text-sm font-semibold">
-            {isClassroom ? t('join.studentCode') : t('join.yourName')}
-          </span>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder={isClassroom ? t('join.studentCodePlaceholder') : t('join.namePlaceholder')}
-            className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
-            maxLength={20}
-          />
-          {isClassroom && (
-            <p className="text-xs text-ludiko-purple mt-1">{t('join.classroomHint')}</p>
-          )}
-        </label>
-
-        {/* Avatar picker */}
-        <div className="mb-4">
-          <span className="text-sm font-semibold">{t('create.avatar')}</span>
-          <EmojiPicker selected={avatar} onChange={setAvatar} exclude={takenAvatars} />
-        </div>
+        {isClassroom ? (
+          <>
+            <label className="block mb-2">
+              <span className="text-sm font-semibold">{t('join.studentCode')}</span>
+              <input
+                type="text"
+                value={studentCode}
+                onChange={(e) => setStudentCode(e.target.value.toUpperCase())}
+                placeholder={t('join.studentCodePlaceholder')}
+                className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple uppercase"
+                maxLength={20}
+                autoComplete="off"
+              />
+              <p className="text-xs text-ludiko-purple mt-1">{t('join.classroomHint')}</p>
+            </label>
+            {/* Avatar picker (a classroom player is shown by the teacher's code, not by an animal name) */}
+            <div className="mb-4">
+              <span className="text-sm font-semibold">{t('create.avatar')}</span>
+              <div className="flex flex-wrap gap-2 mt-1">
+                <EmojiPicker
+                  selected={avatar}
+                  onChange={(emoji) => setIdentity((cur) => identityWithAvatar(cur, emoji))}
+                  exclude={takenAvatars}
+                />
+              </div>
+            </div>
+          </>
+        ) : (
+          <AnimalNamePicker value={identity} onChange={setIdentity} exclude={takenAvatars} />
+        )}
 
         <label className="block mb-4">
           <span className="text-sm font-semibold">{t('join.roomCode')}</span>
@@ -140,7 +155,7 @@ export default function JoinRoom() {
           size="lg"
           className="w-full"
           onClick={handleJoin}
-          disabled={!name.trim() || code.length < 6 || loading}
+          disabled={code.length < 6 || loading || (isClassroom && !studentCode.trim())}
         >
           {t('join.join')}
         </Button>
