@@ -31,6 +31,9 @@ const SinglePlayerPage = lazy(() => import('@/components/lobby/SinglePlayerPage'
 const MultiplayerPage = lazy(() => import('@/components/lobby/MultiplayerPage'));
 const SettingsPage = lazy(() => import('@/components/lobby/SettingsPage'));
 const CreditsPage = lazy(() => import('@/components/lobby/CreditsPage'));
+// Legal pages (DRAFT pending lawyer review): text in src/legal/*
+const PrivacyPage = lazy(() => import('@/components/legal/PrivacyPage'));
+const TermsPage = lazy(() => import('@/components/legal/TermsPage'));
 const CreateRoom = lazy(() => import('@/components/lobby/CreateRoom'));
 const JoinRoom = lazy(() => import('@/components/lobby/JoinRoom'));
 const LobbyPage = lazy(() => import('@/components/lobby/LobbyPage'));
@@ -100,6 +103,8 @@ export default function AppRoutes() {
           <Route path="/multiplayer" element={<MultiplayerPage />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/credits" element={<CreditsPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
           <Route path="/create" element={<CreateRoom />} />
           <Route path="/join" element={<JoinRoom />} />
           <Route path="/lobby" element={<LobbyPage />} />

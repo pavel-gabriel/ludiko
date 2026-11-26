@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import LegalLink from '@/components/legal/LegalLink';
 import CloseButton from '@/components/ui/CloseButton';
 import { useSettingsStore } from '@/store/settingsStore';
 
@@ -81,6 +82,10 @@ export default function SettingsPage() {
         >
           {t('credits.title')}
         </Link>
+        <p className="mt-2 flex flex-wrap justify-center gap-x-4 text-center text-sm font-semibold text-ludiko-purple">
+          <LegalLink to="privacy" className="min-h-[44px] hover:underline">{t('legal.privacyLink')}</LegalLink>
+          <LegalLink to="terms" className="min-h-[44px] hover:underline">{t('legal.termsLink')}</LegalLink>
+        </p>
       </div>
     </div>
   );

@@ -1,0 +1,141 @@
+[
+  {
+    "id": "logic.pattern.abc.1",
+    "subject": "logic",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LUDIKO-LOGIC",
+        "code": "P2"
+      }
+    ],
+    "title": {
+      "ro": "Șiruri mai lungi: AAB, ABB, ABC",
+      "en": "Longer patterns: AAB, ABB, ABC"
+    },
+    "prerequisites": [
+      "logic.pattern.ab.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "logic-pattern",
+        "params": {
+          "units": [
+            "AAB",
+            "ABB",
+            "ABC",
+            "AABB"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.logic.pattern.abc.1"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.logic.pattern.abc.1",
+      "kind": "data",
+      "title": "Skill logic.pattern.abc.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "LUDIKO-LOGIC is Ludi's own framework (no official programa covers logic puzzles); codes are internal. Puzzle types are generic; all content is original; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "logic.oddone.1",
+    "subject": "logic",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LUDIKO-LOGIC",
+        "code": "O2"
+      }
+    ],
+    "title": {
+      "ro": "Intrusul: numere pare și impare, grupe apropiate",
+      "en": "Odd one out: even and odd numbers, close groups"
+    },
+    "prerequisites": [
+      "logic.oddone.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "logic-odd-one",
+        "params": {
+          "sets": [
+            "parity",
+            "vehicles",
+            "food",
+            "fly"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.logic.oddone.1"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.logic.oddone.1",
+      "kind": "data",
+      "title": "Skill logic.oddone.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "LUDIKO-LOGIC is Ludi's own framework (no official programa covers logic puzzles); codes are internal. Puzzle types are generic; all content is original; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "logic.robot.1",
+    "subject": "logic",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LUDIKO-LOGIC",
+        "code": "C1"
+      }
+    ],
+    "title": {
+      "ro": "Robotul pe hartă: urmează săgețile",
+      "en": "The robot on the map: follow the arrows"
+    },
+    "prerequisites": [
+      "logic.pattern.ab.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "logic-robot",
+        "params": {
+          "size": 3
+        }
+      }
+    ],
+    "explanations": [
+      "exp.logic.robot.1"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.logic.robot.1",
+      "kind": "data",
+      "title": "Skill logic.robot.1",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "LUDIKO-LOGIC is Ludi's own framework (no official programa covers logic puzzles); codes are internal. Puzzle types are generic; all content is original; reading level aimed at the grade"
+    }
+  }
+]

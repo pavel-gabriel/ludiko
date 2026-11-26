@@ -1,0 +1,373 @@
+[
+  {
+    "id": "exp.stiinte.g2.living",
+    "skillId": "stiinte.g2.living",
+    "title": {
+      "ro": "De ce au nevoie ființele vii",
+      "en": "What living things need"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ființele vii cresc și au nevoie de hrană, apă și aer.",
+          "en": "Living things grow and need food, water and air."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Planta are nevoie de apă, lumină, aer și pământ.",
+          "en": "A plant needs water, light, air and soil."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Piatra și mingea nu sunt vii și nu au nevoie de hrană.",
+          "en": "A stone and a ball are not alive and need no food."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪨",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g2.living",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g2.living",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g2.lifecycle",
+    "skillId": "stiinte.g2.lifecycle",
+    "title": {
+      "ro": "Ciclul vieții",
+      "en": "The life cycle"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Din oul găinii iese puiul. Puiul crește și devine găină.",
+          "en": "A chick hatches from a hen’s egg. The chick grows into a hen."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥚",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Fluturele trece prin patru etape: ou, omidă, pupă, fluture.",
+          "en": "A butterfly goes through four stages: egg, caterpillar, pupa, butterfly."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Sămânța încolțește, planta crește, înflorește și face fructe cu semințe.",
+          "en": "A seed sprouts, the plant grows, flowers and makes fruit with seeds."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g2.lifecycle",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g2.lifecycle",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g2.habitat",
+    "skillId": "stiinte.g2.habitat",
+    "title": {
+      "ro": "Mediul de viață",
+      "en": "Where animals live"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Mediul de viață este locul unde trăiește o ființă.",
+          "en": "A habitat is the place where a living thing lives."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌲",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Peștele trăiește în apă. Ursul și veverița trăiesc în pădure.",
+          "en": "A fish lives in water. A bear and a squirrel live in the forest."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐟",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Vaca, oaia și găina trăiesc la fermă, lângă oameni.",
+          "en": "A cow, a sheep and a hen live on the farm, near people."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g2.habitat",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g2.habitat",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g2.forces",
+    "skillId": "stiinte.g2.forces",
+    "title": {
+      "ro": "Împingem și tragem",
+      "en": "Pushing and pulling"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ca să mișcăm un lucru, îl împingem sau îl tragem.",
+          "en": "To move something, we push it or pull it."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚽",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Când lovim mingea sau apăsăm un buton, împingem.",
+          "en": "When we kick a ball or press a button, we push."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔘",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Când ducem sania cu sfoara, tragem.",
+          "en": "When we take a sledge along by its rope, we pull."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🛷",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g2.forces",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g2.forces",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g2.light",
+    "skillId": "stiinte.g2.light",
+    "title": {
+      "ro": "Lumină și umbră",
+      "en": "Light and shadow"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Soarele, becul aprins și lumânarea aprinsă dau lumină proprie.",
+          "en": "The Sun, a lit bulb and a lit candle make their own light."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Un copac, un om sau un carton opresc lumina și fac umbră.",
+          "en": "A tree, a person or a piece of cardboard stop light and make a shadow."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Prin geamul curat lumina trece și umbra aproape nu se vede.",
+          "en": "Light goes through a clean window, so there is hardly any shadow."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪟",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g2.light",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g2.light",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g2.skysun",
+    "skillId": "stiinte.g2.skysun",
+    "title": {
+      "ro": "Pământul, Soarele și Luna",
+      "en": "The Earth, the Sun and the Moon"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pământul este planeta pe care trăim noi.",
+          "en": "The Earth is the planet we live on."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Soarele ne dă lumină și căldură. El are lumină proprie.",
+          "en": "The Sun gives us light and warmth. It has its own light."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Luna se vede noaptea pe cer. Ea nu are lumină proprie: este luminată de Soare.",
+          "en": "The Moon is seen in the night sky. It has no light of its own: the Sun lights it."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌙",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g2.skysun",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g2.skysun",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g2.protect",
+    "skillId": "stiinte.g2.protect",
+    "title": {
+      "ro": "Protejăm mediul",
+      "en": "We protect the environment"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Aruncăm gunoiul la coș și ducem hârtia, plasticul și sticla la reciclat.",
+          "en": "We put rubbish in the bin and take paper, plastic and glass to be recycled."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♻️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Închidem robinetul și stingem lumina când nu avem nevoie.",
+          "en": "We turn off the tap and the light when we do not need them."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚰",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Plantăm pomi și nu rupem florile. Așa ajutăm natura.",
+          "en": "We plant trees and do not pick flowers. That is how we help nature."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g2.protect",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g2.protect",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  }
+]

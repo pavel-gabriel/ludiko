@@ -1,0 +1,329 @@
+[
+  {
+    "id": "stiinte.g1.plants",
+    "subject": "stiinte",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.1"
+      }
+    ],
+    "title": {
+      "ro": "Plantele: ce parte mâncăm?",
+      "en": "Plants: which part do we eat?"
+    },
+    "prerequisites": [
+      "stiinte.g0.nature"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "plant-eaten",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "plant-eaten"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "plant-eaten"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g1.plants"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g1.plants",
+      "kind": "data",
+      "title": "Skill stiinte.g1.plants",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g1.animals",
+    "subject": "stiinte",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.1"
+      }
+    ],
+    "title": {
+      "ro": "Animale domestice și animale sălbatice",
+      "en": "Domestic and wild animals"
+    },
+    "prerequisites": [
+      "stiinte.g0.nature"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "domestic-wild",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "domestic-wild"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "domestic-wild"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g1.animals"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g1.animals",
+      "kind": "data",
+      "title": "Skill stiinte.g1.animals",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g1.young",
+    "subject": "stiinte",
+    "grade": 1,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.1"
+      }
+    ],
+    "title": {
+      "ro": "Animalele și puii lor",
+      "en": "Animals and their young"
+    },
+    "prerequisites": [
+      "stiinte.g1.animals"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-relation",
+        "params": {
+          "set": "young-easy",
+          "options": 3
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g1.young"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g1.young",
+      "kind": "data",
+      "title": "Skill stiinte.g1.young",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g1.food",
+    "subject": "stiinte",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.3"
+      }
+    ],
+    "title": {
+      "ro": "Hrana sănătoasă",
+      "en": "Healthy food"
+    },
+    "prerequisites": [
+      "stiinte.g0.body"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "healthy-food",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "healthy-food"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "healthy-food"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g1.food"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g1.food",
+      "kind": "data",
+      "title": "Skill stiinte.g1.food",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g1.materials",
+    "subject": "stiinte",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.4"
+      }
+    ],
+    "title": {
+      "ro": "Materialele: lemn, metal, plastic, sticlă",
+      "en": "Materials: wood, metal, plastic, glass"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "material",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "material",
+          "cats": [
+            "lemn",
+            "metal",
+            "plastic"
+          ]
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "material"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g1.materials"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g1.materials",
+      "kind": "data",
+      "title": "Skill stiinte.g1.materials",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g1.water",
+    "subject": "stiinte",
+    "grade": 1,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.4"
+      }
+    ],
+    "title": {
+      "ro": "Apa în natură",
+      "en": "Water in nature"
+    },
+    "prerequisites": [
+      "stiinte.g0.weather"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "water-form",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "water-form"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "water-form"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g1.water"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g1.water",
+      "kind": "data",
+      "title": "Skill stiinte.g1.water",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  }
+]

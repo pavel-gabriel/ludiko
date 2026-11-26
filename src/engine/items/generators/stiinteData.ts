@@ -1,5 +1,5 @@
 /**
- * Own curated fact tables for the science generators (subject "stiinte", grades III-IV).
+ * Own curated fact tables for the science generators (subject "stiinte", grades 0-IV).
  * Facts are common scientific knowledge written in our own words; every classification is
  * unambiguous (a thing belongs to exactly one category of its set). Tested in tests/stiinteContent.test.ts.
  */
@@ -274,9 +274,261 @@ const WASTE: ClassSet = {
   ],
 };
 
+/* ---------------- sets for the youngest levels (grades 0-II, MEM strand "explorarea mediului") ---------------- */
+/* Singular nouns only, so that the generated true/false sentences ("{d} {pred}") stay grammatical. */
+
+const PLANT_ANIMAL: ClassSet = {
+  id: 'plant-animal',
+  qSort: { ro: 'Plantă sau animal?', en: 'Plant or animal?' },
+  what: (t) => ({ ro: `Ce este ${t.d}?`, en: `What is the ${t.en}?` }),
+  cats: [
+    cat('planta', 'o plantă', 'a plant', 'este o plantă', 'is a plant', [
+      T('copac', 'copacul', 'tree', '🌳'), T('floare', 'floarea', 'flower', '🌷'), T('iarbă', 'iarba', 'grass', '🌱'),
+      T('trandafir', 'trandafirul', 'rose', '🌹'), T('cactus', 'cactusul', 'cactus', '🌵'), T('brad', 'bradul', 'fir tree', '🌲'),
+    ]),
+    cat('animal', 'un animal', 'an animal', 'este un animal', 'is an animal', [
+      T('câine', 'câinele', 'dog', '🐕'), T('pisică', 'pisica', 'cat', '🐈'), T('pasăre', 'pasărea', 'bird', '🐦'),
+      T('pește', 'peștele', 'fish', '🐟'), T('fluture', 'fluturele', 'butterfly', '🦋'), T('albină', 'albina', 'bee', '🐝'),
+      T('vacă', 'vaca', 'cow', '🐄'), T('broască', 'broasca', 'frog', '🐸'),
+    ]),
+  ],
+};
+
+const SEASON: ClassSet = {
+  id: 'season',
+  qSort: { ro: 'Ce se potrivește cu fiecare anotimp?', en: 'What goes with each season?' },
+  what: (t) => ({ ro: `Cu ce anotimp se potrivește ${t.d}?`, en: `Which season does the ${t.en} go with?` }),
+  cats: [
+    cat('primavara', 'primăvara', 'spring', 'se potrivește cu primăvara', 'goes with spring', [
+      T('pom înflorit', 'pomul înflorit', 'blossoming tree', '🌸'), T('lalea', 'laleaua', 'tulip', '🌷'), T('ghiocel', 'ghiocelul', 'snowdrop', '🌼'),
+    ]),
+    cat('vara', 'vara', 'summer', 'se potrivește cu vara', 'goes with summer', [
+      T('plajă', 'plaja', 'beach', '🏖️'), T('pepene roșu', 'pepenele roșu', 'watermelon', '🍉'), T('înot în mare', 'înotul în mare', 'swimming in the sea', '🏊'),
+    ]),
+    cat('toamna', 'toamna', 'autumn', 'se potrivește cu toamna', 'goes with autumn', [
+      T('frunză galbenă', 'frunza galbenă', 'yellow leaf', '🍂'), T('ciorchine de struguri', 'ciorchinele de struguri', 'bunch of grapes', '🍇'),
+      T('dovleac', 'dovleacul', 'pumpkin', '🎃'), T('început de școală', 'începutul de școală', 'start of school', '🎒'),
+    ]),
+    cat('iarna', 'iarna', 'winter', 'se potrivește cu iarna', 'goes with winter', [
+      T('om de zăpadă', 'omul de zăpadă', 'snowman', '⛄'), T('sanie', 'sania', 'sledge', '🛷'),
+      T('fulg de zăpadă', 'fulgul de zăpadă', 'snowflake', '❄️'), T('brad de Crăciun', 'bradul de Crăciun', 'Christmas tree', '🎄'),
+    ]),
+  ],
+};
+
+const DAY_NIGHT: ClassSet = {
+  id: 'day-night',
+  qSort: { ro: 'Zi sau noapte?', en: 'Day or night?' },
+  what: (t) => ({ ro: `Cu ce se potrivește ${t.d}?`, en: `Does the ${t.en} go with the day or the night?` }),
+  cats: [
+    cat('zi', 'ziua', 'day', 'se potrivește cu ziua', 'goes with the day', [
+      T('Soare', 'Soarele', 'Sun', '☀️'), T('joacă în parc', 'joaca în parc', 'playing in the park', '🛝'),
+      T('curcubeu', 'curcubeul', 'rainbow', '🌈'), T('mic dejun', 'micul dejun', 'breakfast', '🥞'),
+    ]),
+    cat('noapte', 'noaptea', 'night', 'se potrivește cu noaptea', 'goes with the night', [
+      T('Lună', 'Luna', 'Moon', '🌙'), T('stea', 'steaua', 'star', '⭐'), T('somn', 'somnul', 'sleep', '😴'), T('bufniță', 'bufnița', 'owl', '🦉'),
+    ]),
+  ],
+};
+
+const WEATHER_WEAR: ClassSet = {
+  id: 'weather-wear',
+  qSort: { ro: 'Ce ne trebuie în fiecare fel de vreme?', en: 'What do we need in each kind of weather?' },
+  what: (t) => ({ ro: `Când ne trebuie ${t.d}?`, en: `When do we need the ${t.en}?` }),
+  cats: [
+    cat('ploaie', 'când plouă', 'when it rains', 'ne trebuie când plouă', 'is for rainy weather', [
+      T('umbrelă', 'umbrela', 'umbrella', '☂️'), T('cizme de cauciuc', 'cizmele de cauciuc', 'rubber boots', '👢'), T('pelerină de ploaie', 'pelerina de ploaie', 'raincoat'),
+    ]),
+    cat('soare', 'când e soare și cald', 'when it is sunny and hot', 'ne trebuie când e soare și cald', 'is for sunny, hot weather', [
+      T('pălărie de soare', 'pălăria de soare', 'sun hat', '👒'), T('ochelari de soare', 'ochelarii de soare', 'sunglasses', '🕶️'),
+      T('cremă de soare', 'crema de soare', 'sun cream', '🧴'), T('sandale', 'sandalele', 'sandals', '🩴'),
+    ]),
+    cat('frig', 'când e frig', 'when it is cold', 'ne trebuie când e frig', 'is for cold weather', [
+      T('fular', 'fularul', 'scarf', '🧣'), T('mănuși groase', 'mănușile groase', 'thick gloves', '🧤'),
+      T('geacă groasă', 'geaca groasă', 'warm coat', '🧥'), T('căciulă', 'căciula', 'woolly hat'),
+    ]),
+  ],
+};
+
+const PLANT_EATEN: ClassSet = {
+  id: 'plant-eaten',
+  qSort: { ro: 'Ce parte a plantei mâncăm?', en: 'Which part of the plant do we eat?' },
+  what: (t) => ({ ro: `Ce parte a plantei mâncăm când mâncăm ${t.d}?`, en: `Which part of a plant do we eat when we eat the ${t.en}?` }),
+  cats: [
+    cat('radacina', 'rădăcina', 'the root', 'este rădăcina unei plante', 'is the root of a plant', [
+      T('morcov', 'morcovul', 'carrot', '🥕'), T('ridiche', 'ridichea', 'radish'), T('sfeclă roșie', 'sfecla roșie', 'beetroot'),
+    ]),
+    cat('frunza', 'frunza', 'the leaf', 'este frunza unei plante', 'is the leaf of a plant', [
+      T('salată verde', 'salata verde', 'lettuce', '🥬'), T('spanac', 'spanacul', 'spinach'), T('pătrunjel', 'pătrunjelul', 'parsley', '🌿'),
+    ]),
+    cat('fructul', 'fructul', 'the fruit', 'este fructul unei plante', 'is the fruit of a plant', [
+      T('măr', 'mărul', 'apple', '🍎'), T('pară', 'para', 'pear', '🍐'), T('cireașă', 'cireașa', 'cherry', '🍒'),
+      T('banană', 'banana', 'banana', '🍌'), T('portocală', 'portocala', 'orange', '🍊'),
+    ]),
+  ],
+};
+
+const DOMESTIC_WILD: ClassSet = {
+  id: 'domestic-wild',
+  qSort: { ro: 'Animal domestic sau animal sălbatic?', en: 'Farm/pet animal or wild animal?' },
+  what: (t) => ({ ro: `Cum este ${t.d}?`, en: `What kind of animal is the ${t.en}?` }),
+  cats: [
+    cat('domestic', 'un animal domestic', 'a domestic animal', 'este un animal domestic', 'is a domestic animal', [
+      T('câine', 'câinele', 'dog', '🐕'), T('pisică', 'pisica', 'cat', '🐈'), T('vacă', 'vaca', 'cow', '🐄'), T('oaie', 'oaia', 'sheep', '🐑'),
+      T('găină', 'găina', 'hen', '🐔'), T('cal', 'calul', 'horse', '🐎'), T('porc', 'porcul', 'pig', '🐖'), T('rață', 'rața', 'duck', '🦆'),
+    ]),
+    cat('salbatic', 'un animal sălbatic', 'a wild animal', 'este un animal sălbatic', 'is a wild animal', [
+      T('lup', 'lupul', 'wolf', '🐺'), T('urs', 'ursul', 'bear', '🐻'), T('leu', 'leul', 'lion', '🦁'), T('cerb', 'cerbul', 'deer', '🦌'),
+      T('vulpe', 'vulpea', 'fox', '🦊'), T('elefant', 'elefantul', 'elephant', '🐘'), T('girafă', 'girafa', 'giraffe', '🦒'), T('tigru', 'tigrul', 'tiger', '🐅'),
+    ]),
+  ],
+};
+
+const HEALTHY_FOOD: ClassSet = {
+  id: 'healthy-food',
+  qSort: { ro: 'Hrană sănătoasă sau de mâncat rar?', en: 'Healthy food or an occasional treat?' },
+  what: (t) => ({ ro: `Cum este ${t.d} pentru corp?`, en: `How is the ${t.en} for the body?` }),
+  cats: [
+    cat('sanatos', 'hrană sănătoasă', 'healthy food', 'este hrană sănătoasă', 'is healthy food', [
+      T('măr', 'mărul', 'apple', '🍎'), T('morcov', 'morcovul', 'carrot', '🥕'), T('banană', 'banana', 'banana', '🍌'),
+      T('ou', 'oul', 'egg', '🥚'), T('lapte', 'laptele', 'milk', '🥛'), T('broccoli', 'broccoli', 'broccoli', '🥦'),
+    ]),
+    cat('rar', 'de mâncat rar', 'an occasional treat', 'este de mâncat rar', 'is an occasional treat', [
+      T('bomboană', 'bomboana', 'sweet', '🍬'), T('ciocolată', 'ciocolata', 'chocolate bar', '🍫'), T('prăjitură', 'prăjitura', 'cake', '🍰'),
+      T('acadea', 'acadeaua', 'lollipop', '🍭'), T('înghețată', 'înghețata', 'ice cream', '🍦'), T('cartofi prăjiți', 'cartofii prăjiți', 'chips', '🍟'),
+    ]),
+  ],
+};
+
+const MATERIAL: ClassSet = {
+  id: 'material',
+  qSort: { ro: 'Din ce material este făcut fiecare lucru?', en: 'What material is each thing made of?' },
+  what: (t) => ({ ro: `Din ce material este făcut ${t.d}?`, en: `What is the ${t.en} made of?` }),
+  cats: [
+    cat('lemn', 'lemn', 'wood', 'este făcut din lemn', 'is made of wood', [
+      T('butuc de lemn', 'butucul de lemn', 'wooden log', '🪵'), T('lingură de lemn', 'lingura de lemn', 'wooden spoon'),
+      T('cub de lemn', 'cubul de lemn', 'wooden block'), T('jucărie de lemn', 'jucăria de lemn', 'wooden toy'),
+    ]),
+    cat('metal', 'metal', 'metal', 'este făcut din metal', 'is made of metal', [
+      T('cheie de metal', 'cheia de metal', 'metal key', '🔑'), T('monedă de metal', 'moneda de metal', 'metal coin', '🪙'),
+      T('cui de metal', 'cuiul de metal', 'metal nail', '🔩'), T('lingură de metal', 'lingura de metal', 'metal spoon', '🥄'),
+    ]),
+    cat('plastic', 'plastic', 'plastic', 'este făcut din plastic', 'is made of plastic', [
+      T('găleată de plastic', 'găleata de plastic', 'plastic bucket', '🪣'), T('sticlă de plastic', 'sticla de plastic', 'plastic bottle', '🧴'),
+      T('pieptene de plastic', 'pieptenele de plastic', 'plastic comb'), T('jucărie de plastic', 'jucăria de plastic', 'plastic toy'),
+    ]),
+    cat('sticla', 'sticlă', 'glass', 'este făcut din sticlă', 'is made of glass', [
+      T('pahar de sticlă', 'paharul de sticlă', 'glass cup', '🥛'), T('geam de sticlă', 'geamul de sticlă', 'glass window pane', '🪟'),
+      T('borcan de sticlă', 'borcanul de sticlă', 'glass jar', '🫙'), T('vază de sticlă', 'vaza de sticlă', 'glass vase'),
+    ]),
+  ],
+};
+
+const WATER_FORM: ClassSet = {
+  id: 'water-form',
+  qSort: { ro: 'Apă lichidă sau apă înghețată?', en: 'Liquid water or frozen water?' },
+  what: (t) => ({ ro: `Cum este apa din ${t.d}?`, en: `What is the water like in the ${t.en}?` }),
+  cats: [
+    cat('lichida', 'lichidă', 'liquid', 'este apă lichidă', 'is liquid water', [
+      T('ploaie', 'ploaia', 'rain', '🌧️'), T('râu', 'râul', 'river', '🏞️'), T('mare', 'marea', 'sea', '🌊'),
+      T('lac', 'lacul', 'lake'), T('picătură de apă', 'picătura de apă', 'drop of water', '💧'),
+    ]),
+    cat('inghetata', 'înghețată', 'frozen', 'este apă înghețată', 'is frozen water', [
+      T('gheață', 'gheața', 'ice', '🧊'), T('zăpadă', 'zăpada', 'snow', '❄️'), T('țurțure', 'țurțurele', 'icicle'), T('grindină', 'grindina', 'hail'),
+    ]),
+  ],
+};
+
+const HABITAT_SIMPLE: ClassSet = {
+  id: 'habitat-simple',
+  qSort: { ro: 'Unde trăiește fiecare animal?', en: 'Where does each animal live?' },
+  what: (t) => ({ ro: `Unde trăiește ${t.d}?`, en: `Where does the ${t.en} live?` }),
+  cats: [
+    cat('padure', 'în pădure', 'in the forest', 'trăiește în pădure', 'lives in the forest', [
+      T('urs', 'ursul', 'bear', '🐻'), T('cerb', 'cerbul', 'deer', '🦌'), T('veveriță', 'veverița', 'squirrel', '🐿️'), T('lup', 'lupul', 'wolf', '🐺'),
+    ]),
+    cat('apa', 'în apă', 'in water', 'trăiește în apă', 'lives in water', [
+      T('crap', 'crapul', 'carp', '🐟'), T('delfin', 'delfinul', 'dolphin', '🐬'), T('rechin', 'rechinul', 'shark', '🦈'), T('caracatiță', 'caracatița', 'octopus', '🐙'),
+    ]),
+    cat('ferma', 'la fermă', 'on the farm', 'trăiește la fermă', 'lives on the farm', [
+      T('vacă', 'vaca', 'cow', '🐄'), T('oaie', 'oaia', 'sheep', '🐑'), T('găină', 'găina', 'hen', '🐔'), T('porc', 'porcul', 'pig', '🐖'), T('cal', 'calul', 'horse', '🐎'),
+    ]),
+  ],
+};
+
+const PUSH_PULL: ClassSet = {
+  id: 'push-pull',
+  qSort: { ro: 'Împingere sau tragere?', en: 'A push or a pull?' },
+  what: (t) => ({ ro: `Ce fel de mișcare este ${t.d}?`, en: `What kind of movement is ${t.en}?` }),
+  cats: [
+    cat('impinge', 'o împingere', 'a push', 'este o împingere', 'is a push', [
+      T('a lovi mingea cu piciorul', 'lovirea mingii cu piciorul', 'kicking a ball', '⚽'), T('a închide un sertar', 'închiderea unui sertar', 'closing a drawer'),
+      T('a apăsa un buton', 'apăsarea unui buton', 'pressing a button', '🔘'), T('a da drumul unei mașinuțe de jucărie', 'darea drumului unei mașinuțe de jucărie', 'sending a toy car off', '🚗'),
+    ]),
+    cat('trage', 'o tragere', 'a pull', 'este o tragere', 'is a pull', [
+      T('a duce sania după noi cu o sfoară', 'ducerea saniei după noi cu o sfoară', 'pulling a sledge with a rope', '🛷'),
+      T('a deschide un sertar', 'deschiderea unui sertar', 'opening a drawer'),
+      T('a scoate găleata din fântână cu o sfoară', 'scoaterea găleții din fântână cu o sfoară', 'hauling a bucket up a well with a rope', '🪣'),
+      T('a trage de capătul unei sfori', 'tragerea de capătul unei sfori', 'tugging the end of a rope', '🪢'),
+    ]),
+  ],
+};
+
+const SHADOW: ClassSet = {
+  id: 'shadow',
+  qSort: { ro: 'Face umbră sau nu?', en: 'Does it make a shadow?' },
+  cats: [
+    cat('umbra', 'face umbră', 'makes a shadow', 'face umbră', 'makes a shadow', [
+      T('copac', 'copacul', 'tree', '🌳'), T('om', 'omul', 'person', '🧍'), T('cărămidă', 'cărămida', 'brick', '🧱'),
+      T('carton', 'cartonul', 'cardboard', '📦'), T('umbrelă', 'umbrela', 'umbrella', '☂️'),
+    ]),
+    cat('nu', 'nu face umbră', 'makes no shadow', 'nu face umbră', 'makes no shadow', [
+      T('geam curat', 'geamul curat', 'clean window pane', '🪟'), T('apă curată într-un pahar', 'apa curată dintr-un pahar', 'clean water in a glass', '💧'),
+      T('folie transparentă', 'folia transparentă', 'clear plastic film'),
+    ]),
+  ],
+};
+
+const PLANT_NEEDS: ClassSet = {
+  id: 'plant-needs',
+  qSort: { ro: 'De ce are nevoie o plantă ca să crească?', en: 'What does a plant need to grow?' },
+  cats: [
+    cat('trebuie', 'are nevoie de el', 'it needs this', 'ajută o plantă să crească', 'helps a plant grow', [
+      T('apă', 'apa', 'water', '💧'), T('lumină', 'lumina Soarelui', 'sunlight', '☀️'), T('aer', 'aerul', 'air', '💨'), T('pământ bun', 'pământul bun', 'good soil', '🌱'),
+    ]),
+    cat('nu', 'nu are nevoie de el', 'it does not need this', 'nu ajută o plantă să crească', 'does not help a plant grow', [
+      T('bomboană', 'bomboana', 'sweet', '🍬'), T('televizor', 'televizorul', 'television', '📺'),
+      T('ciocolată', 'ciocolata', 'chocolate bar', '🍫'), T('mașinuță de jucărie', 'mașinuța de jucărie', 'toy car', '🚗'),
+    ]),
+  ],
+};
+
+const ECO_ACTIONS: ClassSet = {
+  id: 'eco-actions',
+  qSort: { ro: 'Ajută natura sau o strică?', en: 'Does it help nature or harm it?' },
+  what: (t) => ({ ro: `Ce face pentru natură: ${t.ro}?`, en: `What does it do for nature: ${t.en}?` }),
+  cats: [
+    cat('bine', 'ajută natura', 'helps nature', 'ajută natura', 'helps nature', [
+      T('a închide robinetul', 'închiderea robinetului', 'turning off the tap', '🚰'), T('a arunca gunoiul la coș', 'aruncarea gunoiului la coș', 'putting rubbish in the bin', '🗑️'),
+      T('a planta un pom', 'plantarea unui pom', 'planting a tree', '🌳'), T('a duce hârtia la reciclat', 'ducerea hârtiei la reciclat', 'taking paper to be recycled', '♻️'),
+      T('a stinge lumina când ieșim din cameră', 'stingerea luminii când ieșim din cameră', 'switching off the light when leaving a room', '💡'),
+    ]),
+    cat('rau', 'strică natura', 'harms nature', 'strică natura', 'harms nature', [
+      T('a arunca hârtii pe jos', 'aruncarea hârtiilor pe jos', 'dropping paper on the ground'), T('a lăsa apa să curgă degeaba', 'lăsarea apei să curgă degeaba', 'letting water run for nothing'),
+      T('a rupe florile din parc', 'ruperea florilor din parc', 'picking the flowers in the park'), T('a lăsa un foc aprins în pădure', 'lăsarea unui foc aprins în pădure', 'leaving a fire burning in the forest'),
+      T('a lăsa lumina aprinsă degeaba', 'lăsarea luminii aprinse degeaba', 'leaving the light on for nothing'),
+    ]),
+  ],
+};
+
 export const CLASS_SETS: Record<string, ClassSet> = Object.fromEntries(
-  [ANIMAL_GROUP, VERTEBRATE, LIVING, DIET, MATTER, HABITAT, MAGNET, FLOAT, LIGHT, TRANSPARENCY, WASTE].map((s) => [s.id, s]),
+  [
+    ANIMAL_GROUP, VERTEBRATE, LIVING, DIET, MATTER, HABITAT, MAGNET, FLOAT, LIGHT, TRANSPARENCY, WASTE,
+    PLANT_ANIMAL, SEASON, DAY_NIGHT, WEATHER_WEAR, PLANT_EATEN, DOMESTIC_WILD, HEALTHY_FOOD, MATERIAL, WATER_FORM,
+    HABITAT_SIMPLE, PUSH_PULL, SHADOW, PLANT_NEEDS, ECO_ACTIONS,
+  ].map((s) => [s.id, s]),
 );
+
 
 /* ---------------- relations (pairs) ---------------- */
 
@@ -357,6 +609,42 @@ export const RELATIONS: Record<string, Relation> = {
     ],
     askK: (p) => ({ ro: `${cap(p.v.ro)} este puiul cărui animal?`, en: `The ${p.v.en} is the young of which animal?` }),
     askV: (p) => ({ ro: `Cum se numește puiul de ${p.x?.ro}?`, en: `What is a young ${p.x?.en} called?` }),
+  },
+  'body-easy': {
+    id: 'body-easy',
+    pairs: [
+      P('ochii', 'the eyes', 'vedem', 'we see', '👀'),
+      P('urechile', 'the ears', 'auzim', 'we hear', '👂'),
+      P('nasul', 'the nose', 'mirosim', 'we smell', '👃'),
+      P('limba', 'the tongue', 'simțim gustul', 'we taste', '👅'),
+      P('mâinile', 'the hands', 'apucăm lucrurile', 'we pick things up', '🤲'),
+      P('picioarele', 'the legs and feet', 'mergem', 'we walk', '🦶'),
+    ],
+    askK: (p) => ({ ro: `Cu ce ${p.v.ro}?`, en: `What do we use to ${p.v.en.replace(/^we /, '')}?` }),
+    askV: (p) => ({ ro: `Ce facem cu ${p.k.ro}?`, en: `What do we do with ${p.k.en}?` }),
+  },
+  'young-easy': {
+    id: 'young-easy',
+    pairs: [
+      P('oaia', 'sheep', 'mielul', 'lamb', '🐑', ['oaie', 'sheep']),
+      P('vaca', 'cow', 'vițelul', 'calf', '🐄', ['vacă', 'cow']),
+      P('pisica', 'cat', 'pisoiul', 'kitten', '🐈', ['pisică', 'cat']),
+      P('câinele', 'dog', 'cățelul', 'puppy', '🐕', ['câine', 'dog']),
+      P('calul', 'horse', 'mânzul', 'foal', '🐎', ['cal', 'horse']),
+    ],
+    askK: (p) => ({ ro: `${cap(p.v.ro)} este puiul cărui animal?`, en: `The ${p.v.en} is the young of which animal?` }),
+    askV: (p) => ({ ro: `Cum se numește puiul de ${p.x?.ro}?`, en: `What is a young ${p.x?.en} called?` }),
+  },
+  sky: {
+    id: 'sky',
+    pairs: [
+      P('Soarele', 'the Sun', 'dă Pământului lumină și căldură', 'gives the Earth light and warmth', '☀️', ['Soare', 'the Sun']),
+      P('Luna', 'the Moon', 'se vede pe cerul nopții și nu are lumină proprie', 'is seen in the night sky and has no light of its own', '🌙', ['Lună', 'the Moon']),
+      P('Pământul', 'the Earth', 'este planeta pe care trăim', 'is the planet we live on', '🌍', ['Pământ', 'the Earth']),
+      P('norul', 'a cloud', 'poate aduce ploaia', 'can bring the rain', '☁️', ['nor', 'a cloud']),
+    ],
+    askK: (p) => ({ ro: `Care dintre acestea ${p.v.ro}?`, en: `Which of these ${p.v.en}?` }),
+    askV: (p) => ({ ro: `Ce știm despre ${p.x?.ro}?`, en: `What do we know about ${p.x?.en}?` }),
   },
   instrument: {
     id: 'instrument',
@@ -448,6 +736,16 @@ export const SEQUENCES: Record<string, Sequence> = {
     id: 'seasons',
     prompt: { ro: 'Pune anotimpurile în ordine, începând cu primăvara.', en: 'Put the seasons in order, starting with spring.' },
     steps: [S('primăvara', 'spring', '🌸'), S('vara', 'summer', '☀️'), S('toamna', 'autumn', '🍂'), S('iarna', 'winter', '❄️')],
+  },
+  day: {
+    id: 'day',
+    prompt: { ro: 'Pune în ordine momentele zilei.', en: 'Put the parts of the day in order.' },
+    steps: [S('dimineața', 'morning', '🌅'), S('amiaza', 'midday', '☀️'), S('seara', 'evening', '🌇'), S('noaptea', 'night', '🌙')],
+  },
+  'human-life': {
+    id: 'human-life',
+    prompt: { ro: 'Pune în ordine vârstele omului, de la cel mai mic.', en: 'Put the ages of a person in order, youngest first.' },
+    steps: [S('bebelușul', 'baby', '👶'), S('copilul', 'child', '🧒'), S('adultul', 'adult', '🧑'), S('bunicul', 'grandfather', '👴')],
   },
   digestion: {
     id: 'digestion',

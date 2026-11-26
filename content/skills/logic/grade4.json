@@ -1,0 +1,88 @@
+[
+  {
+    "id": "logic.pattern.number.4",
+    "subject": "logic",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LUDIKO-LOGIC",
+        "code": "P4"
+      }
+    ],
+    "title": {
+      "ro": "Șiruri care cresc tot mai repede",
+      "en": "Patterns that grow faster and faster"
+    },
+    "prerequisites": [
+      "logic.pattern.number.3"
+    ],
+    "itemSources": [
+      {
+        "generator": "logic-number-pattern",
+        "params": {
+          "level": 4
+        }
+      }
+    ],
+    "explanations": [
+      "exp.logic.pattern.number.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.logic.pattern.number.4",
+      "kind": "data",
+      "title": "Skill logic.pattern.number.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "LUDIKO-LOGIC is Ludi's own framework (no official programa covers logic puzzles); codes are internal. Puzzle types are generic; all content is original; reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "logic.where.4",
+    "subject": "logic",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LUDIKO-LOGIC",
+        "code": "L2"
+      }
+    ],
+    "title": {
+      "ro": "Cine stă unde? (4 prieteni, indicii)",
+      "en": "Who lives where? (4 friends, clues)"
+    },
+    "prerequisites": [
+      "logic.where.3"
+    ],
+    "itemSources": [
+      {
+        "generator": "logic-where",
+        "params": {
+          "people": 4
+        }
+      }
+    ],
+    "explanations": [
+      "exp.logic.where.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.logic.where.4",
+      "kind": "data",
+      "title": "Skill logic.where.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "LUDIKO-LOGIC is Ludi's own framework (no official programa covers logic puzzles); codes are internal. Puzzle types are generic; all content is original; reading level aimed at the grade"
+    }
+  }
+]

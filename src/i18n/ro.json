@@ -427,6 +427,9 @@
       "shapeOneUnknown": "o latură necunoscută",
       "ruler": "Riglă de la 0 la {{to}} {{unit}}",
       "rulerObject": "obiect pe riglă",
+      "grid": "Grilă cu {{rows}} rânduri și {{cols}} coloane: {{cells}}",
+      "gridStrip": "Șir de {{cols}} căsuțe: {{cells}}",
+      "gridEmptyCell": "gol",
       "image": "Imagine"
     },
     "preview": {
@@ -592,7 +595,8 @@
       "stiinte": "Științe",
       "civ": "Educație civică",
       "ist": "Istorie",
-      "geo": "Geografie"
+      "geo": "Geografie",
+      "logic": "Jocuri de logică"
     },
     "home": {
       "missionTitle": "Misiunea de azi",
@@ -742,6 +746,14 @@
     "needCheckBody": "Facem o scurtă aventură de început, apoi ți-am pregătit biții.",
     "needCheckCta": "Verifică-te!"
   },
+  "legal": {
+    "draftBanner": "Ciornă — în curs de verificare juridică",
+    "language": "Limba textului",
+    "contents": "Cuprins",
+    "version": "Versiunea {{version}}, actualizat la {{date}}",
+    "privacyLink": "Politica de confidențialitate",
+    "termsLink": "Termeni de utilizare"
+  },
   "push": {
     "title": "Mementouri zilnice",
     "intro": "O notificare blândă pe zi, la ora pe care o alegi, ca să vă amintiți de cele 3 minute de joacă.",
@@ -827,7 +839,7 @@
       "neverTitle": "Nu salvăm niciodată:",
       "never": "numele real, data nașterii, fotografii, emailul copilului, răspunsurile la fiecare exercițiu, locația.",
       "checkbox": "Am citit și sunt de acord să salvez aceste date în contul meu de părinte. Pot șterge contul oricând.",
-      "privacy": "Politica de confidențialitate (în curând)",
+      "privacy": "Politica de confidențialitate",
       "howDelete": "Cum ștergi contul: din această pagină, cu butonul „Șterge contul din cloud”.",
       "needsTitle": "Mai este un pas",
       "needsBody": "Contul tău nu are încă acordul pentru salvarea datelor. Citește ce salvăm și bifează căsuța ca să pornești sincronizarea.",

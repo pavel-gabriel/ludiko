@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useId, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
+import LegalLink from '@/components/legal/LegalLink'
 import type { SubjectId } from '@/engine/types'
 import type { ParentSummary } from '@/learner'
 import { isPushSupported, needsInstall } from '@/services/pushAvailability'
@@ -179,6 +180,11 @@ export default function ParentView({ profileName, profileGrade, summary, titleOf
         </h3>
         <p className="mt-1 text-base font-bold text-ludiko-text" data-testid="tip">{pick(summary.tip)}</p>
       </div>
+
+      <p className="flex flex-wrap justify-center gap-x-4 text-sm text-ludiko-text">
+        <LegalLink to="privacy" className="inline-flex min-h-[44px] items-center font-bold underline">{t('legal.privacyLink')}</LegalLink>
+        <LegalLink to="terms" className="inline-flex min-h-[44px] items-center font-bold underline">{t('legal.termsLink')}</LegalLink>
+      </p>
 
       {confirm && (
         <ConfirmRedo

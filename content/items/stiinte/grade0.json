@@ -1,0 +1,696 @@
+[
+  {
+    "id": "item.stiinte.g0.body.1",
+    "skillId": "stiinte.g0.body",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cu ce vedem?",
+      "en": "What do we see with?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.body",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.body.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.body.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "ochii"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👀",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "urechile"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👂",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "nasul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👃",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g0.body.2",
+    "skillId": "stiinte.g0.body",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cu ce auzim?",
+      "en": "What do we hear with?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.body",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.body.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.body.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "ochii"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👀",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "urechile"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👂",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "picioarele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦶",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g0.body.3",
+    "skillId": "stiinte.g0.body",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Mirosim cu nasul.",
+      "en": "True or false? We smell with our nose."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.body",
+    "visual": {
+      "kind": "objects",
+      "icon": "👃",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g0.body.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.body.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g0.nature.1",
+    "skillId": "stiinte.g0.nature",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care este o plantă?",
+      "en": "Which one is a plant?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.nature",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.nature.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.nature.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "floarea"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌷",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "câinele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "mingea"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚽",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g0.nature.2",
+    "skillId": "stiinte.g0.nature",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care este un animal?",
+      "en": "Which one is an animal?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.nature",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.nature.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.nature.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "copacul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "pisica"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐈",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "iarba"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g0.nature.3",
+    "skillId": "stiinte.g0.nature",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Peștele este o plantă.",
+      "en": "True or false? A fish is a plant."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.nature",
+    "visual": {
+      "kind": "objects",
+      "icon": "🐟",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g0.nature.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.nature.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.g0.seasons.1",
+    "skillId": "stiinte.g0.seasons",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "În ce anotimp ninge de obicei?",
+      "en": "In which season does it usually snow?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.seasons",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.seasons.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.seasons.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "iarna"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "❄️",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "vara"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "primăvara"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌸",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g0.seasons.2",
+    "skillId": "stiinte.g0.seasons",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce anotimp vine după iarnă?",
+      "en": "Which season comes after winter?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.seasons",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.seasons.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.seasons.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "vara"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "primăvara"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌸",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "toamna"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍂",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g0.seasons.3",
+    "skillId": "stiinte.g0.seasons",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Vara este frig și ninge.",
+      "en": "True or false? In summer it is cold and it snows."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.seasons",
+    "visual": {
+      "kind": "objects",
+      "icon": "☀️",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g0.seasons.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.seasons.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.g0.daynight.1",
+    "skillId": "stiinte.g0.daynight",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce vedem pe cer noaptea?",
+      "en": "What do we see in the sky at night?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.daynight",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.daynight.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.daynight.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Luna"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌙",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Soarele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "curcubeul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌈",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g0.daynight.2",
+    "skillId": "stiinte.g0.daynight",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Când dormim de obicei?",
+      "en": "When do we usually sleep?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.daynight",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.daynight.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.daynight.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "ziua"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "noaptea"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌙",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g0.daynight.3",
+    "skillId": "stiinte.g0.daynight",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Soarele strălucește ziua.",
+      "en": "True or false? The Sun shines in the day."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.daynight",
+    "visual": {
+      "kind": "objects",
+      "icon": "☀️",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g0.daynight.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.daynight.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g0.weather.1",
+    "skillId": "stiinte.g0.weather",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce luăm când plouă?",
+      "en": "What do we take when it rains?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.weather",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.weather.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.weather.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "umbrela"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☂️",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "ochelarii de soare"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🕶️",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "sandalele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🩴",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g0.weather.2",
+    "skillId": "stiinte.g0.weather",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce purtăm când e foarte frig?",
+      "en": "What do we wear when it is very cold?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.weather",
+    "provenance": {
+      "id": "prov.item.stiinte.g0.weather.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.weather.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "sandalele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🩴",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "mănușile"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧤",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "pălăria de soare"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👒",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g0.weather.3",
+    "skillId": "stiinte.g0.weather",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Când e cald și soare, purtăm mănuși groase.",
+      "en": "True or false? When it is hot and sunny, we wear thick gloves."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g0.weather",
+    "visual": {
+      "kind": "objects",
+      "icon": "🧤",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g0.weather.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g0.weather.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  }
+]

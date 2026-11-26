@@ -5,11 +5,13 @@
  *   sci-tf        true/false statement about one thing          params: { set }
  *   sci-relation  pair questions (organ-function, young ...)    params: { set }
  *   sci-order     put the stages of a process in order          params: { sequences?: string[] }
+ * Optional params for the youngest levels (grades 0-II): `cats` (string[]: keep only those categories of a set)
+ * and `options` (max answer options for sci-which / sci-relation, default 3-4 by difficulty).
  */
 import type { CardContent, ChoiceItem, Item, OrderItem, SortItem, TrueFalseItem, VisualSpec } from '../../types';
 import { registerGenerator, type GeneratorFn } from './registry';
 import { CLASS_SETS, RELATIONS, SEQUENCES, cap, type Cat, type ClassSet, type Thing } from './stiinteData';
-import { baseFields, optionCount, paramStrings, pick, shuffle } from './util';
+import { baseFields, optionCount, paramInt, paramStrings, pick, shuffle } from './util';
 
 const vis = (emoji?: string): VisualSpec | undefined => (emoji ? { kind: 'objects', icon: emoji, count: 1 } : undefined);
 const slug = (s: string): string => s.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
@@ -17,8 +19,12 @@ const slug = (s: string): string => s.toLowerCase().replace(/[^a-z0-9]+/g, '_').
 function getSet(params: Record<string, unknown>): ClassSet {
   const set = CLASS_SETS[String(params.set)];
   if (!set) throw new Error(`Unknown science set "${String(params.set)}"`);
-  return set;
+  const keep = paramStrings(params, 'cats', []);
+  return keep.length > 0 ? { ...set, cats: set.cats.filter((c) => keep.includes(c.id)) } : set;
 }
+
+/** Answer options for a question: `params.options` (2-6) or the difficulty default */
+const optionsFor = (params: Record<string, unknown>, d: number): number => Math.max(2, Math.min(6, paramInt(params, 'options', optionCount(d))));
 
 function thingCard(t: Thing): CardContent {
   const v = vis(t.emoji);
@@ -58,7 +64,7 @@ export const sciWhich: GeneratorFn = (params, ctx): Item => {
   if (useWhat && set.what) {
     const pool = set.cats.flatMap((c) => c.things.map((t) => ({ t, c })));
     const { t, c } = pick(rng, pool);
-    const others = shuffle(rng, set.cats.filter((x) => x.id !== c.id)).slice(0, optionCount(d) - 1);
+    const others = shuffle(rng, set.cats.filter((x) => x.id !== c.id)).slice(0, optionsFor(params, d) - 1);
     const item: ChoiceItem = {
       ...baseFields(ctx, set.what(t), vis(t.emoji)),
       type: 'choice',
@@ -72,7 +78,7 @@ export const sciWhich: GeneratorFn = (params, ctx): Item => {
   const right = pick(rng, c.things);
   const wrong: Thing[] = [];
   for (const t of shuffle(rng, outsiders(set, c))) {
-    if (wrong.length >= optionCount(d) - 1) break;
+    if (wrong.length >= optionsFor(params, d) - 1) break;
     if (t.en !== right.en && !wrong.some((w) => w.en === t.en)) wrong.push(t);
   }
   const item: ChoiceItem = {
@@ -119,7 +125,7 @@ export const sciRelation: GeneratorFn = (params, ctx): Item => {
   if (!rel) throw new Error(`Unknown science relation "${String(params.set)}"`);
   const p = pick(rng, rel.pairs);
   const askKey = rng() < 0.5;
-  const n = Math.min(optionCount(d), rel.pairs.length);
+  const n = Math.min(optionsFor(params, d), rel.pairs.length);
   const others = shuffle(rng, rel.pairs.filter((x) => x !== p)).slice(0, n - 1);
   const all = shuffle(rng, [p, ...others]);
   const idx = (x: typeof p) => `r${rel.pairs.indexOf(x)}`;

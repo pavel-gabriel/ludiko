@@ -14,7 +14,9 @@
       "ro": "Ființe vii și lucruri care nu sunt vii",
       "en": "Living and non-living things"
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "stiinte.g2.living"
+    ],
     "itemSources": [
       {
         "generator": "sci-sort",
@@ -68,7 +70,8 @@
       "en": "Parts of a plant and their jobs"
     },
     "prerequisites": [
-      "stiinte.living"
+      "stiinte.living",
+      "stiinte.g1.plants"
     ],
     "itemSources": [
       {
@@ -154,7 +157,8 @@
       "en": "Animal groups: mammals, birds, fish, reptiles, amphibians, insects"
     },
     "prerequisites": [
-      "stiinte.living"
+      "stiinte.living",
+      "stiinte.g1.animals"
     ],
     "itemSources": [
       {
@@ -212,7 +216,8 @@
       "en": "Young of farm and pet animals"
     },
     "prerequisites": [
-      "stiinte.animals.groups"
+      "stiinte.animals.groups",
+      "stiinte.g1.young"
     ],
     "itemSources": [
       {
@@ -258,7 +263,8 @@
       "en": "Where animals live: forest, water, desert"
     },
     "prerequisites": [
-      "stiinte.animals.groups"
+      "stiinte.animals.groups",
+      "stiinte.g2.habitat"
     ],
     "itemSources": [
       {
@@ -316,7 +322,8 @@
       "en": "The sense organs"
     },
     "prerequisites": [
-      "stiinte.living"
+      "stiinte.living",
+      "stiinte.g0.body"
     ],
     "itemSources": [
       {
@@ -362,7 +369,8 @@
       "en": "Hygiene and a healthy body"
     },
     "prerequisites": [
-      "stiinte.body.senses"
+      "stiinte.body.senses",
+      "stiinte.g1.food"
     ],
     "itemSources": [
       {
@@ -401,7 +409,10 @@
       "ro": "Solid, lichid, gaz",
       "en": "Solid, liquid, gas"
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "stiinte.g1.materials",
+      "stiinte.g1.water"
+    ],
     "itemSources": [
       {
         "generator": "sci-sort",
@@ -505,7 +516,9 @@
       "ro": "Soarele, Pământul și Luna; ziua și noaptea",
       "en": "The Sun, Earth and Moon; day and night"
     },
-    "prerequisites": [],
+    "prerequisites": [
+      "stiinte.g2.skysun"
+    ],
     "itemSources": [
       {
         "bank": "stiinte/grade3.json"
@@ -544,7 +557,8 @@
       "en": "Weather and natural phenomena"
     },
     "prerequisites": [
-      "stiinte.water.cycle"
+      "stiinte.water.cycle",
+      "stiinte.g0.weather"
     ],
     "itemSources": [
       {
@@ -584,7 +598,8 @@
       "en": "Sorting waste and caring for nature"
     },
     "prerequisites": [
-      "stiinte.living"
+      "stiinte.living",
+      "stiinte.g2.protect"
     ],
     "itemSources": [
       {

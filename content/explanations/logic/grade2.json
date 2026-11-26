@@ -1,0 +1,181 @@
+[
+  {
+    "id": "exp.logic.analogy.2",
+    "skillId": "logic.analogy.2",
+    "title": {
+      "ro": "Ce legătură este între două cuvinte?",
+      "en": "What links two words?"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Prima pereche îți arată o legătură. Pisoi este puiul pisicii.",
+          "en": "The first pair shows a link. A kitten is the baby of a cat."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 3,
+          "cells": [
+            "🐱",
+            "➡️",
+            "🐈"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Spune legătura în cuvinte: „... este puiul lui ...”. Apoi aplic-o la al doilea cuvânt.",
+          "en": "Say the link in words: \"... is the baby of ...\". Then use it on the second word."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 3,
+          "cells": [
+            "🐶",
+            "➡️",
+            null
+          ],
+          "highlight": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Puiul câinelui este cățelul. Aceeași legătură, alt animal!",
+          "en": "The baby of a dog is a puppy. The same link, another animal!"
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 3,
+          "cells": [
+            "🐶",
+            "➡️",
+            "🐕"
+          ]
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.logic.analogy.2",
+      "kind": "explanation",
+      "title": "Explanation exp.logic.analogy.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the puzzle skill; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.logic.sudoku4.2",
+    "skillId": "logic.sudoku4.2",
+    "title": {
+      "ro": "Cum se joacă mini-sudoku",
+      "en": "How to play mini sudoku"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Pe fiecare rând trebuie să fie 1, 2, 3 și 4, fiecare o singură dată.",
+          "en": "Every row must hold 1, 2, 3 and 4, each exactly once."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 4,
+          "cells": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "3",
+            "4",
+            "1",
+            "2",
+            "2",
+            "1",
+            "4",
+            "3",
+            "4",
+            "3",
+            null,
+            "1"
+          ],
+          "highlight": 14
+        }
+      },
+      {
+        "text": {
+          "ro": "La fel pe fiecare coloană și în fiecare pătrat mare de 2×2 (cele colorate cu linie groasă).",
+          "en": "The same goes for every column and every big 2×2 square (the ones with the thick line)."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 4,
+          "cells": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "3",
+            "4",
+            "1",
+            "2",
+            "2",
+            "1",
+            "4",
+            "3",
+            "4",
+            "3",
+            null,
+            "1"
+          ],
+          "highlight": 14
+        }
+      },
+      {
+        "text": {
+          "ro": "Pe rândul de jos sunt 4, 3 și 1. Lipsește 2, deci căsuța aurie este 2.",
+          "en": "The bottom row has 4, 3 and 1. The 2 is missing, so the golden square is 2."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 4,
+          "cells": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "3",
+            "4",
+            "1",
+            "2",
+            "2",
+            "1",
+            "4",
+            "3",
+            "4",
+            "3",
+            "2",
+            "1"
+          ],
+          "highlight": 14
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.logic.sudoku4.2",
+      "kind": "explanation",
+      "title": "Explanation exp.logic.sudoku4.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the puzzle skill; awaiting human review"
+    }
+  }
+]

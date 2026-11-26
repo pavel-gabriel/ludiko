@@ -2,7 +2,7 @@
 
 > Kept up to date by Claude at the end of each work wave. Tick items as you finish them
 > (`- [x]`), or tell Claude in chat and it will tick them for you.
-> Last updated: 2026-11-26.
+> Last updated: 2026-11-26 (privacy policy draft added).
 
 ## 🔴 Needed for features that are already live
 
@@ -75,9 +75,27 @@
 - [ ] Consider registering the **"Ludiko" trademark** (OSIM in Romania, EUIPO for the EU).
 - [ ] Before any **paid plan**: have a Romanian IP lawyer review `docs/LEGAL_CONTENT_POLICY.md`, and
       verify Law 8/1996 art. 9 / art. 33 in the official text.
-- [ ] **Privacy policy & terms** page for parents (GDPR-K): what is stored locally vs. in the cloud
-      (classes summary, push subscription, parent account), and how to delete it. Claude can draft
-      it; it needs your review and, ideally, a lawyer's.
+- [ ] **Privacy policy & terms** (GDPR-K): a **draft is live at `/privacy` and `/terms`** (ro + en, with a
+      "Ciornă — în curs de verificare juridică" banner), linked from Settings, Credits, the parent view, the
+      reminders card, the class join and the parent-account consent. Sources: `src/legal/{privacy,terms}.ts`;
+      the audit behind it is `docs/PRIVACY_DATA_MAP.md`.
+  - [ ] **Lawyer review** of both texts (look for the `[TODO ...]` markers), then remove the draft banner
+        (`legal.draftBanner`) and the "ciornă / draft" sentences in `src/legal/*.ts`.
+  - [ ] Fill the `[TODO owner]` gaps: your full name and address as operator (Ludiko is not a legal entity yet),
+        and the **Firestore / Realtime Database region** (Firebase console; prefer EU; see F10).
+  - [ ] Bump `CONSENT_VERSION` in `src/family/types.ts` once the text is final (F11).
+  - [ ] **Decide on these FINDINGS** (details and suggested fixes in `docs/PRIVACY_DATA_MAP.md` §4). They conflict
+        with the "no child personal data" promise and the policy currently has to admit them:
+    - [ ] **F1 (high)** Multiplayer names typed by kids go to Firestore `gameHistory` forever and show in the public
+          leaderboard. Suggested: remove the cloud leaderboard, or store avatar + score only with a TTL, then delete the old documents.
+    - [ ] **F2 (high)** Realtime Database `rooms` are readable and writable by any anonymous session (names visible).
+          Suggested: exact-key code index + per-room rules, random names, room expiry.
+    - [ ] **F3** v1 teacher sessions: `sessionResults` (student names) readable and writable by any signed-in device.
+    - [ ] **F4** Google Fonts (Nunito) loaded from Google: self-host it and add it to `content/credits.json`.
+    - [ ] **F5** Free-text nicknames and teacher seat labels: add the "use a nickname" hint everywhere; decide how to treat
+          schools (teacher terms or data-processing agreement).
+    - [ ] F6 report-comment hint and retention, F7 push-subscription expiry, F8 one "delete everything" action, F9 teacher
+          account deletion.
 - [ ] Optionally use a **dedicated contact email** instead of your personal one (shown on the Credits page
       and in `LICENSE`).
 

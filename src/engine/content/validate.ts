@@ -23,7 +23,7 @@ export const ITEM_TYPES = [
 
 export const SUBJECT_IDS = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'] as const;
 export const REVIEW_STATUSES = ['auto-checked', 'beta', 'reviewed'] as const;
-export const VISUAL_KINDS = ['number-line', 'base10-blocks', 'clock', 'money', 'objects', 'fraction', 'shape', 'ruler', 'image'] as const;
+export const VISUAL_KINDS = ['number-line', 'base10-blocks', 'clock', 'money', 'objects', 'fraction', 'shape', 'ruler', 'grid', 'image'] as const;
 
 const SHAPE_SIDE_COUNTS: Record<string, number[]> = { triangle: [3], square: [1, 4], rectangle: [2, 4], circle: [] };
 
@@ -179,6 +179,24 @@ export function validateVisual(v: unknown, where: string): string[] {
         }
       } else if (v.from !== undefined) errors.push(`${where}: "from" needs "objectEnd"`);
       if (v.objectLabel !== undefined) errors.push(...validateLocalizedText(v.objectLabel, `${where}.objectLabel`));
+      break;
+    }
+    case 'grid': {
+      fields(['rows', 'cols', 'cells', 'highlight']);
+      const ok = isInt(v.rows) && v.rows >= 1 && v.rows <= 10 && isInt(v.cols) && v.cols >= 1 && v.cols <= 10;
+      if (!ok) {
+        errors.push(`${where}: "rows" and "cols" must be integers 1-10`);
+        break;
+      }
+      const n = (v.rows as number) * (v.cols as number);
+      if (!Array.isArray(v.cells) || v.cells.length !== n) {
+        errors.push(`${where}: "cells" must be an array of rows*cols = ${n} entries`);
+      } else if (!v.cells.every((c) => c === null || (typeof c === 'string' && c.trim().length > 0 && c.length <= 8))) {
+        errors.push(`${where}: every cell must be a short non-empty string or null`);
+      }
+      if (v.highlight !== undefined && !(isInt(v.highlight) && v.highlight >= 0 && v.highlight < n)) {
+        errors.push(`${where}: "highlight" must be a cell index 0-${n - 1}`);
+      }
       break;
     }
     case 'image':

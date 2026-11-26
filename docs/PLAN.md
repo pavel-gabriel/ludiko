@@ -200,6 +200,7 @@ Fluency modes (Race, Sprint) are offered only for skills that are already `pract
 - **Parent account (optional, email):** links children, syncs across devices, receives the weekly summary; will hold subscriptions later.
 - **Teacher account (email):** classes, join codes, reports.
 - **Privacy:** no ads, ever. No third-party trackers. Data minimisation. Parental consent flow for sync (GDPR-K). Data export and delete.
+- **Privacy policy & terms** (draft, pending lawyer review): `/privacy`, `/terms` (`src/legal/*`); the audit of every data item is `docs/PRIVACY_DATA_MAP.md`, including findings where existing code stores kid-typed names.
 - **Business:** the core (check → gaps → missions → reports) is **free forever**. Later: a school/teacher plan (advanced reports, LMS export), then optional family plans for *extras* (more avatar worlds, offline audio packs for older grades, printed worksheets). **Diagnosis and remediation are never paywalled.**
 
 ## 12. Architecture
@@ -273,7 +274,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 - [x] Istorie (IV): 16 skills, centuries/timelines/rulers/legend-or-fact generators
 - [x] Geografie (IV): 14 skills, Natural Earth–based map of Romania with hotspots, compass generator
 - [x] Educație civică (III–IV): 20 skills, scenario-based, 112-only safety content
-- [ ] Logic puzzles (patterns, mini-sudoku, odd-one-out), framed as puzzles, not "brain training"
+- [x] Logic puzzles (patterns, mini-sudoku, odd-one-out), framed as puzzles, not "brain training" (12 skills 0-IV, subject `logic`, programa LUDIKO-LOGIC = own framework; spatial mirror/rotation skipped)
 - [x] EN II and EN IV practice in the official format (calificative); EN II science section waits for grade I–II science content — see [`EXAM_PRACTICE.md`](./EXAM_PRACTICE.md)
 
 ### Phase 2 — Grades V–VIII
