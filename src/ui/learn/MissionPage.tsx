@@ -12,7 +12,7 @@ import { useSessionProgress } from '@/ui/session/useSessionProgress'
 import { explanationFor } from './explanations'
 import LearnShell, { LearnError, LearnLoading } from './LearnShell'
 import MissionComplete from './MissionComplete'
-import RequireProfile from './RequireProfile'
+import RequireSubject from './RequireSubject'
 import StepCelebration from './StepCelebration'
 import TreasurePath from './TreasurePath'
 import { parseSubject } from './subjects'
@@ -207,5 +207,5 @@ export default function MissionPage() {
   const { subject: raw } = useParams()
   const subject = parseSubject(raw)
   if (!subject) return <Navigate to="/learn" replace />
-  return <RequireProfile>{(profile) => <Mission profile={profile} subject={subject} />}</RequireProfile>
+  return <RequireSubject subject={subject}>{(profile) => <Mission profile={profile} subject={subject} />}</RequireSubject>
 }

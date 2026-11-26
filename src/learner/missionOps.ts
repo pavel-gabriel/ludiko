@@ -67,3 +67,13 @@ export function findMission(progress: ProfileProgress, subject: SubjectId, day: 
 export function storeMission(progress: ProfileProgress, mission: Mission): void {
   progress.missions = [...(progress.missions ?? []), mission].slice(-MISSIONS_KEPT);
 }
+
+/** Today's stored mission for `subject`, planned and stored first if it does not exist yet. Works inside updateProgress. */
+export function ensureMission(progress: ProfileProgress, profile: ChildProfile, subject: SubjectId, now: number): Mission {
+  const day = toDayString(now);
+  const stored = findMission(progress, subject, day);
+  if (stored) return stored;
+  const mission = planDay(progress, profile, subject, now);
+  storeMission(progress, mission);
+  return mission;
+}

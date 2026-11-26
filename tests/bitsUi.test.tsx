@@ -118,33 +118,32 @@ afterEach(() => {
 })
 
 describe('/learn: Biții de azi', () => {
-  it('shows a tile per bit with the kind name, "~3 min" and a tick on the finished ones', async () => {
+  it('shows a tile per plan bit with the subject, the kind name, "~3 min" and a tick on the finished ones', async () => {
     state.mission = mission({
       steps: mission().steps.map((s) => (s.kind === 'review' || s.kind === 'practice' ? { ...s, done: true } : s)),
     })
     renderAt('/learn')
     await settle()
-    const card = screen.getByTestId('card-bits')
+    const card = screen.getByTestId('card-plan')
     expect(card).toHaveTextContent('Biții de azi')
     expect(screen.queryByTestId('card-mission')).toBeNull()
 
-    const tiles = [0, 1, 2].map((i) => screen.getByTestId(`bit-${i}`))
+    const tiles = [0, 1, 2].map((i) => screen.getByTestId(`plan-bit-${i}`))
     expect(tiles.map((t) => t.textContent)).toEqual([
       expect.stringContaining('Încălzirea'),
       expect.stringContaining('Insula zilei'),
       expect.stringContaining('Provocarea'),
     ])
     tiles.forEach((t, i) => {
+      expect(t).toHaveTextContent('Matematică')
       expect(t).toHaveTextContent('~3 min')
-      expect(t).toHaveAttribute('href', `/learn/bit/mat/${i}`)
+      expect(t).toHaveAttribute('href', `/learn/bit/mat/${i}?plan=1`)
     })
-    expect(screen.getByTestId('bit-0-tick')).toBeInTheDocument() // warm-up done
-    expect(screen.queryByTestId('bit-1-tick')).toBeNull()
-    expect(screen.queryByTestId('bit-2-tick')).toBeNull()
-    expect(tiles[0]).toHaveAccessibleName(/Încălzirea, Gata/)
-    expect(tiles[1]).toHaveAccessibleName(/Insula zilei, De făcut/)
-    // the full mission path stays reachable
-    expect(within(card).getByTestId('link-mission')).toHaveAttribute('href', '/learn/mission/mat')
+    expect(screen.getByTestId('plan-bit-0-tick')).toBeInTheDocument() // warm-up done
+    expect(screen.queryByTestId('plan-bit-1-tick')).toBeNull()
+    expect(screen.queryByTestId('plan-bit-2-tick')).toBeNull()
+    expect(tiles[0]).toHaveAccessibleName(/Matematică, Încălzirea, Gata/)
+    expect(tiles[1]).toHaveAccessibleName(/Matematică, Insula zilei, De făcut/)
   })
 
   it('shows only the bits there are (2 tiles) and celebrates when all are done', async () => {
@@ -157,10 +156,30 @@ describe('/learn: Biții de azi', () => {
     })
     renderAt('/learn')
     await settle()
-    expect(screen.getByTestId('card-bits')).toHaveTextContent('Biții de azi sunt gata! Bravo!')
-    expect(screen.getAllByTestId(/^bit-\d$/)).toHaveLength(2)
-    expect(screen.getByTestId('bit-0-tick')).toBeInTheDocument()
-    expect(screen.getByTestId('bit-1-tick')).toBeInTheDocument()
+    expect(screen.getByTestId('card-plan')).toHaveTextContent('Biții de azi sunt gata! Bravo!')
+    expect(screen.getByTestId('card-plan')).toHaveAttribute('data-all-done', 'true')
+    expect(screen.getAllByTestId(/^plan-bit-\d$/)).toHaveLength(2)
+    expect(screen.getByTestId('plan-bit-0-tick')).toBeInTheDocument()
+    expect(screen.getByTestId('plan-bit-1-tick')).toBeInTheDocument()
+  })
+
+  it('a plan with a placement chunk and bits of other subjects links each to its own screen', async () => {
+    state.plan = {
+      day: '2026-11-25',
+      bits: [
+        { index: 0, kind: 'warmup', day: '2026-11-25', steps: [], itemCount: 5, done: true, subject: 'mat', source: 'mission', bitIndex: 0 },
+        { index: 1, kind: 'island', day: '2026-11-25', steps: [], itemCount: 5, done: false, subject: 'rom', source: 'mission', bitIndex: 1 },
+        { index: 2, kind: 'island', day: '2026-11-25', steps: [], itemCount: 6, done: false, subject: 'stiinte', source: 'placement' },
+      ],
+    }
+    renderAt('/learn')
+    await settle()
+    expect(screen.getByTestId('plan-bit-1')).toHaveAttribute('href', '/learn/bit/rom/1?plan=1')
+    expect(screen.getByTestId('plan-bit-1')).toHaveTextContent('Limba română')
+    expect(screen.getByTestId('plan-bit-2')).toHaveAttribute('href', '/learn/check/stiinte?plan=1')
+    expect(screen.getByTestId('plan-bit-2')).toHaveTextContent('Științe')
+    expect(screen.getByTestId('plan-bit-2')).toHaveTextContent('Ce știi?')
+    expect(screen.getByTestId('card-plan')).toHaveAttribute('data-all-done', 'false')
   })
 })
 
@@ -209,6 +228,37 @@ describe('/learn/bit/:subject/:index', () => {
     fireEvent.click(screen.getByTestId('bit-stop'))
     await settle()
     expect(screen.getAllByTestId('where').at(-1)).toHaveTextContent('/learn')
+  })
+
+  it('opened from the plan, "Încă un bit?" goes to the next bit of the plan, in any subject', async () => {
+    state.plan = {
+      day: '2026-11-25',
+      bits: [
+        { index: 0, kind: 'island', day: '2026-11-25', steps: [], itemCount: 6, done: false, subject: 'mat', source: 'mission', bitIndex: 1 },
+        { index: 1, kind: 'island', day: '2026-11-25', steps: [], itemCount: 6, done: false, subject: 'rom', source: 'placement' },
+      ],
+    }
+    renderAt('/learn/bit/mat/1?plan=1')
+    await settle()
+    await answerAll(6)
+    fireEvent.click(screen.getByTestId('bit-another'))
+    await settle()
+    expect(screen.getByTestId('where')).toHaveTextContent('/learn/check/rom')
+  })
+
+  it('opened from the plan, finishing the last bit of the plan says the day is done', async () => {
+    state.plan = {
+      day: '2026-11-25',
+      bits: [
+        { index: 0, kind: 'island', day: '2026-11-25', steps: [], itemCount: 6, done: true, subject: 'rom', source: 'placement' },
+        { index: 1, kind: 'island', day: '2026-11-25', steps: [], itemCount: 6, done: true, subject: 'mat', source: 'mission', bitIndex: 1 },
+      ],
+    }
+    renderAt('/learn/bit/mat/1?plan=1')
+    await settle()
+    await answerAll(6)
+    expect(screen.getByTestId('bit-done')).toHaveTextContent('Ai făcut toți biții de azi')
+    expect(screen.queryByTestId('bit-another')).toBeNull()
   })
 
   it('runs a mastery check bit in check mode and applies the check before completing the step', async () => {

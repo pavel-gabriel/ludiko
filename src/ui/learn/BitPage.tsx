@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { getSkill } from '@/engine/content/registry'
 import { localize, type Item, type SubjectId } from '@/engine/types'
 import { triggerClassSync } from '@/classroom/syncGate'
@@ -14,7 +14,8 @@ import { useSessionProgress } from '@/ui/session/useSessionProgress'
 import BitDone from './BitDone'
 import { explanationFor } from './explanations'
 import LearnShell, { LearnError, LearnLoading } from './LearnShell'
-import RequireProfile from './RequireProfile'
+import RequireSubject from './RequireSubject'
+import { nextPlanBit, planBitPath } from './planRoutes'
 import { parseSubject } from './subjects'
 import { useAttemptRecorder } from './useAttemptRecorder'
 
@@ -25,7 +26,7 @@ type View =
   | { name: 'play'; pos: number; items: Item[]; runId: number }
   | { name: 'empty'; pos: number }
   | { name: 'saving' }
-  | { name: 'done'; passed?: boolean; stars: number; allDone: boolean; nextIndex?: number }
+  | { name: 'done'; passed?: boolean; stars: number; allDone: boolean; nextPath?: string }
   | { name: 'error' }
 
 /** A finished bit counts as a play day for the push reminders: tell the sender (only when this device subscribed) */
@@ -36,7 +37,8 @@ function reportPlayedToday() {
 
 const averageStars = (stars: number[]) => (stars.length ? Math.max(1, Math.round(stars.reduce((a, b) => a + b, 0) / stars.length)) : 1)
 
-function BitRunner({ profile, subject, index }: { profile: ChildProfile; subject: SubjectId; index: number }) {
+/** `plan`: opened from today's plan, so "another bit" means the next bit of the plan (any subject) */
+function BitRunner({ profile, subject, index, plan }: { profile: ChildProfile; subject: SubjectId; index: number; plan: boolean }) {
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()
   const progressStore = useSessionProgress()
@@ -120,12 +122,24 @@ function BitRunner({ profile, subject, index }: { profile: ChildProfile; subject
       if (bits.every((b) => b.done) && !bit.done) progressStore.onMissionComplete()
       reportPlayedToday()
       triggerClassSync(profile.id)
+      let allDone = bits.every((b) => b.done)
+      let nextPath = nextIndex === undefined ? undefined : `/learn/bit/${subject}/${nextIndex}`
+      if (plan) {
+        // from today's plan: "another bit" and "all done" are about the whole plan, across subjects
+        const today = await learnerService.getTodayPlan(profile.id).catch(() => undefined)
+        if (today) {
+          const here = today.bits.find((b) => b.subject === subject && b.bitIndex === bit.index)
+          const next = nextPlanBit(today.bits, here?.index ?? -1)
+          allDone = today.bits.every((b) => b.done)
+          nextPath = next && planBitPath(next)
+        }
+      }
       setView({
         name: 'done',
         stars: averageStars(earned.current),
         passed: checkResult.current,
-        allDone: bits.every((b) => b.done),
-        nextIndex,
+        allDone,
+        nextPath,
       })
     } catch {
       setView({ name: 'error' })
@@ -196,8 +210,8 @@ function BitRunner({ profile, subject, index }: { profile: ChildProfile; subject
             passed={view.passed}
             reward={progressStore.reward}
             allDone={view.allDone}
-            hasNext={view.nextIndex !== undefined}
-            onNext={() => navigate(`/learn/bit/${subject}/${view.nextIndex}`)}
+            hasNext={view.nextPath !== undefined}
+            onNext={() => view.nextPath && navigate(view.nextPath)}
             onStop={() => navigate('/learn')}
           />
         </LearnShell>
@@ -228,11 +242,13 @@ function BitRunner({ profile, subject, index }: { profile: ChildProfile; subject
 export default function BitPage() {
   const { subject: raw, index: rawIndex } = useParams()
   const subject = parseSubject(raw)
+  const [params] = useSearchParams()
+  const plan = params.get('plan') === '1'
   const index = Number(rawIndex)
   if (!subject || !Number.isInteger(index) || index < 0) return <Navigate to="/learn" replace />
   return (
-    <RequireProfile>
-      {(profile) => <BitRunner key={`${subject}-${index}`} profile={profile} subject={subject} index={index} />}
-    </RequireProfile>
+    <RequireSubject subject={subject}>
+      {(profile) => <BitRunner key={`${subject}-${index}`} profile={profile} subject={subject} index={index} plan={plan} />}
+    </RequireSubject>
   )
 }

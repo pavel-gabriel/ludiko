@@ -130,7 +130,7 @@ describe('/learn: "Tema de la clasă"', () => {
     expect(second).toHaveAttribute('href', '/learn/class/a1')
     expect(within(card).queryByTestId('assignment-a1-tick')).toBeNull()
     // the daily bits stay where they are: the assignment is an extra card, not a replacement
-    expect(screen.getByTestId('card-map')).toBeInTheDocument()
+    expect(screen.getByTestId('card-plan')).toBeInTheDocument()
   })
 
   it('when everything is done it shows the finished one with a tick and a friendly line', async () => {

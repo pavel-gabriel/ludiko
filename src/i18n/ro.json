@@ -708,6 +708,20 @@
       "redoBody": "Rezultatul verificării de acum se șterge și copilul o va lua de la capăt, în jocuri scurte.",
       "redoYes": "Da, o refacem",
       "redoNo": "Nu, las-o așa"
+    },
+    "locked": {
+      "note": "{{subject}} începe de la {{grade}}. Până atunci, hai să descoperim altceva!",
+      "teaser": "{{subjects}}: de la {{grade}}",
+      "grades": {
+        "1": "clasa I",
+        "2": "clasa a II-a",
+        "3": "clasa a III-a",
+        "4": "clasa a IV-a",
+        "5": "clasa a V-a",
+        "6": "clasa a VI-a",
+        "7": "clasa a VII-a",
+        "8": "clasa a VIII-a"
+      }
     }
   },
   "bits": {
@@ -744,7 +758,13 @@
     "notFound": "Nu am găsit acest bit. Hai înapoi, la biții de azi!",
     "needCheckTitle": "Mai întâi, hai să vedem ce știi!",
     "needCheckBody": "Facem o scurtă aventură de început, apoi ți-am pregătit biții.",
-    "needCheckCta": "Verifică-te!"
+    "needCheckCta": "Verifică-te!",
+    "plan": {
+      "check": "Ce știi?",
+      "checkTitle": "Hai să vedem ce știi la {{subject}}!",
+      "checkBody": "Câteva întrebări scurte, fără grabă. Continuăm mâine, de unde rămânem.",
+      "allSubjects": "Toate materiile"
+    }
   },
   "legal": {
     "draftBanner": "Ciornă — în curs de verificare juridică",
