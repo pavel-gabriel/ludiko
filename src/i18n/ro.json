@@ -590,7 +590,8 @@
       "mat": "Matematică",
       "rom": "Limba română",
       "stiinte": "Științe",
-      "civ": "Educație civică"
+      "civ": "Educație civică",
+      "ist": "Istorie"
     },
     "home": {
       "missionTitle": "Misiunea de azi",

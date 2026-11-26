@@ -583,7 +583,8 @@
       "mat": "Maths",
       "rom": "Romanian",
       "stiinte": "Science",
-      "civ": "Civic education"
+      "civ": "Civic education",
+      "ist": "History"
     },
     "home": {
       "missionTitle": "Today's mission",

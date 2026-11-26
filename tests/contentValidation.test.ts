@@ -9,6 +9,7 @@ import {
   validateSkill,
   validateSkillGraph,
   validateSkills,
+  SUBJECT_IDS,
 } from '../src/engine/content/validate';
 import { validateProvenanceTree } from '../src/engine/content/provenance';
 import { getAllSkills, getExplanation, getItemsForSkill, getSkill, getSkillsBySubject } from '../src/engine/content/registry';
@@ -403,6 +404,7 @@ describe('content on disk', () => {
       rom: ['CLR-2013', 'LLR-III-IV-2014'],
       stiinte: ['STI-III-IV-2014'],
       civ: ['CIV-III-IV-2014'],
+      ist: ['IST-IV-2014'],
     };
     for (const x of skills) {
       expect(x.provenance.source).toBe('own');
@@ -426,7 +428,7 @@ describe('content registry', () => {
     expect(getSkill('nope')).toBeUndefined();
     expect(getSkillsBySubject('mat').every((s) => s.subject === 'mat')).toBe(true);
     expect(getSkillsBySubject('rom').every((s) => s.subject === 'rom')).toBe(true);
-    expect(getSkillsBySubject('mat').length + getSkillsBySubject('rom').length).toBeLessThanOrEqual(getAllSkills().length);
+    expect(SUBJECT_IDS.reduce((n, s) => n + getSkillsBySubject(s).length, 0)).toBe(getAllSkills().length);
     expect(getSkillsBySubject('mat', 0).every((s) => s.grade === 0)).toBe(true);
     expect(getSkillsBySubject('rom').length).toBeGreaterThanOrEqual(18);
     expect(getItemsForSkill('mat.count.20').map((i) => i.type)).toContain('sort');
