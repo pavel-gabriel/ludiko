@@ -39,6 +39,8 @@ import './romVocab';
 import './stiinte';
 // history (grade IV) generators
 import './istGenerators';
+// Geography (geo) generators
+import './geoDirections';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

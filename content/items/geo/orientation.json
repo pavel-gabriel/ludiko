@@ -1,0 +1,725 @@
+[
+  {
+    "id": "item.geo.orient.cardinal.4.01",
+    "type": "true-false",
+    "skillId": "geo.orient.cardinal.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Steaua Polară ne arată direcția nord.",
+      "en": "The Pole Star shows us the direction north."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.cardinal.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.cardinal.4.01",
+      "kind": "item",
+      "title": "Item item.geo.orient.cardinal.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.orient.cardinal.4.02",
+    "type": "true-false",
+    "skillId": "geo.orient.cardinal.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Soarele apune în partea de est.",
+      "en": "The sun sets in the east."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.cardinal.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.cardinal.4.02",
+      "kind": "item",
+      "title": "Item item.geo.orient.cardinal.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": false
+  },
+  {
+    "id": "item.geo.orient.cardinal.4.03",
+    "type": "true-false",
+    "skillId": "geo.orient.cardinal.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Sudul este direcția opusă nordului.",
+      "en": "South is the opposite of north."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.cardinal.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.cardinal.4.03",
+      "kind": "item",
+      "title": "Item item.geo.orient.cardinal.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.orient.cardinal.4.04",
+    "type": "choice",
+    "skillId": "geo.orient.cardinal.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cu ce instrument aflăm punctele cardinale?",
+      "en": "Which instrument shows the cardinal points?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.cardinal.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.cardinal.4.04",
+      "kind": "item",
+      "title": "Item item.geo.orient.cardinal.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Cu termometrul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Cu rigla"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Cu cântarul"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Cu busola"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.orient.cardinal.4.05",
+    "type": "choice",
+    "skillId": "geo.orient.cardinal.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Cum se numește desenul cu punctele cardinale și cele intermediare?",
+      "en": "What is the drawing with the cardinal and intermediate points called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.cardinal.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.cardinal.4.05",
+      "kind": "item",
+      "title": "Item item.geo.orient.cardinal.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Scara hărții"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Legenda"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Roza vânturilor"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Planul"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.orient.cardinal.4.06",
+    "type": "match",
+    "skillId": "geo.orient.cardinal.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Potrivește punctul cardinal cu prescurtarea lui.",
+      "en": "Match each cardinal point with its short form."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.cardinal.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.cardinal.4.06",
+      "kind": "item",
+      "title": "Item item.geo.orient.cardinal.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "nord"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "N"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "sud"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "S"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "est"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "E"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "vest"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "V"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.orient.cardinal.4.07",
+    "type": "order",
+    "skillId": "geo.orient.cardinal.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Pune punctele cardinale în ordine, în sensul acelor de ceasornic, începând cu nordul.",
+      "en": "Put the cardinal points in clockwise order, starting at north."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.cardinal.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.cardinal.4.07",
+      "kind": "item",
+      "title": "Item item.geo.orient.cardinal.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "cards": [
+      {
+        "id": "c4",
+        "text": {
+          "ro": "vest"
+        }
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "est"
+        }
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "nord"
+        }
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "sud"
+        }
+      }
+    ],
+    "correctOrder": [
+      "c1",
+      "c2",
+      "c3",
+      "c4"
+    ]
+  },
+  {
+    "id": "item.geo.orient.cardinal.4.08",
+    "type": "choice",
+    "skillId": "geo.orient.cardinal.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Între sud și vest se află direcția...",
+      "en": "Between south and west lies..."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.cardinal.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.cardinal.4.08",
+      "kind": "item",
+      "title": "Item item.geo.orient.cardinal.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "nord-est"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "nord-vest"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "sud-vest"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "sud-est"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.orient.map.4.01",
+    "type": "choice",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce ne arată legenda unei hărți?",
+      "en": "What does the legend of a map show us?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.01",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Cât de mare este țara"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Ce înseamnă semnele de pe hartă"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "În ce an a fost desenată harta"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Câți locuitori are țara"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.orient.map.4.02",
+    "type": "choice",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Ce arată scara unei hărți?",
+      "en": "What does the scale of a map show?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.02",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Unde este nordul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "De câte ori sunt micșorate distanțele din realitate"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Cât de înalt este un munte"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Care este capitala țării"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.orient.map.4.03",
+    "type": "choice",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce desen arată o suprafață foarte mică, de exemplu sala de clasă?",
+      "en": "Which drawing shows a very small area, like a classroom?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.03",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Harta Europei"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Harta lumii"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Globul pământesc"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Planul"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.orient.map.4.04",
+    "type": "choice",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Pe harta fizică, apele (râurile, lacurile, marea) sunt desenate de obicei cu culoarea...",
+      "en": "On a physical map, waters are usually drawn in..."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.04",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "neagră"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "violet"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "roșie"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "albastră"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.orient.map.4.05",
+    "type": "true-false",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Semnele convenționale de pe hartă sunt explicate în legendă.",
+      "en": "The signs on a map are explained in the legend."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.05",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.orient.map.4.06",
+    "type": "true-false",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Globul pământesc este un model al Pământului.",
+      "en": "The globe is a model of the Earth."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.06",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.orient.map.4.07",
+    "type": "number-input",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Pe o hartă, 1 cm înseamnă 10 km în realitate. Două orașe sunt la 4 cm pe hartă. Câți kilometri sunt între ele?",
+      "en": "On a map 1 cm means 10 km. Two towns are 4 cm apart on the map. How many kilometres apart are they?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.07",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": 40
+  },
+  {
+    "id": "item.geo.orient.map.4.08",
+    "type": "number-input",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Pe o hartă, 1 cm înseamnă 5 km în realitate. Distanța dintre două localități pe hartă este de 6 cm. Câți kilometri sunt în realitate?",
+      "en": "On a map 1 cm means 5 km. Two villages are 6 cm apart on the map. How many kilometres is that in reality?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.08",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": 30
+  },
+  {
+    "id": "item.geo.orient.map.4.09",
+    "type": "number-input",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Pe o hartă, 1 cm înseamnă 20 km. Două orașe sunt la 100 km unul de altul. Câți centimetri sunt între ele pe hartă?",
+      "en": "On a map 1 cm means 20 km. Two cities are 100 km apart. How many centimetres apart are they on the map?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.09",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": 5
+  },
+  {
+    "id": "item.geo.orient.map.4.10",
+    "type": "sort",
+    "skillId": "geo.orient.map.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Plan sau hartă? Pune fiecare desen în grupa potrivită.",
+      "en": "Plan or map? Sort each drawing."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.orient.map.4",
+    "provenance": {
+      "id": "prov.item.geo.orient.map.4.10",
+      "kind": "item",
+      "title": "Item item.geo.orient.map.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "categories": [
+      {
+        "id": "k1",
+        "label": {
+          "ro": "Plan"
+        }
+      },
+      {
+        "id": "k2",
+        "label": {
+          "ro": "Hartă"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c6",
+        "text": {
+          "ro": "Marea Neagră"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "curtea școlii"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "Europa"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "camera mea"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "sala de clasă"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "România"
+        },
+        "categoryId": "k2"
+      }
+    ]
+  }
+]

@@ -584,7 +584,8 @@
       "rom": "Romanian",
       "stiinte": "Science",
       "civ": "Civic education",
-      "ist": "History"
+      "ist": "History",
+      "geo": "Geography"
     },
     "home": {
       "missionTitle": "Today's mission",

@@ -121,5 +121,19 @@
     "retrieved": "2026-11-25",
     "version": "7.4.1",
     "notes": "Shipped inside the generated service worker (precaching, routing, strategies), built via vite-plugin-pwa (MIT, build-time only)."
+  },
+  {
+    "id": "data-natural-earth",
+    "kind": "data",
+    "title": "Natural Earth 1:10m vector data: Admin 0 Countries, Rivers + Lake Centerlines, Rivers Europe (outline of Romania, borders and main rivers used in the simplified map of Romania)",
+    "author": "Natural Earth (Nathaniel Vaughn Kelso and the Natural Earth contributors)",
+    "source": "public-domain",
+    "licence": "PD",
+    "url": "https://www.naturalearthdata.com/",
+    "licenceUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "retrieved": "2026-11-26",
+    "modified": true,
+    "basis": "Natural Earth states that all its vector and raster map data are in the public domain and may be used for any purpose without permission or attribution.",
+    "notes": "Simplified and projected by scripts/geo/build-romania-map.mjs into public/content/media/geo/romania.svg and romania-blank.svg; the relief units, labels and tap targets are Ludiko's own drawing. The Someș course below Dej is an own-drawn continuation. Credit given as a courtesy."
   }
 ]

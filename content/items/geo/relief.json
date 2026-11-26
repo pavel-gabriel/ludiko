@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "item.geo.relief.units.4.02",
+    "type": "choice",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care formă de relief este cea mai înaltă?",
+      "en": "Which landform is the highest?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.02",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Văile"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Munții"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Câmpiile"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Dealurile"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.relief.units.4.03",
+    "type": "choice",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care formă de relief este joasă și aproape plană?",
+      "en": "Which landform is low and almost flat?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.03",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Muntele"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Câmpia"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Dealul"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Vârful"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.relief.units.4.04",
+    "type": "choice",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cum se numește partea cea mai înaltă a unui munte?",
+      "en": "What is the highest part of a mountain called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.04",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Vârf"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Vale"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Câmpie"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Poală"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.relief.units.4.05",
+    "type": "choice",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Ce formă de relief are partea de sus aproape plană și este mai înaltă decât câmpia?",
+      "en": "Which landform is almost flat on top and higher than a plain?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.05",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Podișul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Delta"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Câmpia"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Valea"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.relief.units.4.06",
+    "type": "true-false",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "În România există munți, dealuri, podișuri și câmpii.",
+      "en": "Romania has mountains, hills, plateaus and plains."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.06",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.relief.units.4.07",
+    "type": "true-false",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Relieful României este împărțit aproape în părți egale între munți, dealuri și podișuri, și câmpii.",
+      "en": "Romania's relief is split almost equally between mountains, hills and plateaus, and plains."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.07",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.relief.units.4.08",
+    "type": "order",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Pune formele de relief de la cea mai joasă la cea mai înaltă.",
+      "en": "Order the landforms from the lowest to the highest."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.08",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "cards": [
+      {
+        "id": "c2",
+        "text": {
+          "ro": "dealul"
+        }
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "muntele"
+        }
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "câmpia"
+        }
+      }
+    ],
+    "correctOrder": [
+      "c1",
+      "c2",
+      "c3"
+    ]
+  },
+  {
+    "id": "item.geo.relief.units.4.09",
+    "type": "match",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Potrivește unitatea de relief cu tipul ei.",
+      "en": "Match each relief unit with its type."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.09",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Carpații Meridionali"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "munți"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Podișul Moldovei"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "podiș"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Câmpia Română"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "câmpie"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Subcarpații"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "dealuri"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.relief.units.4.10",
+    "type": "sort",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Pune fiecare unitate de relief în grupa potrivită.",
+      "en": "Sort each relief unit into its group."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.10",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "categories": [
+      {
+        "id": "k1",
+        "label": {
+          "ro": "Munți"
+        }
+      },
+      {
+        "id": "k2",
+        "label": {
+          "ro": "Podișuri"
+        }
+      },
+      {
+        "id": "k3",
+        "label": {
+          "ro": "Câmpii"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c5",
+        "text": {
+          "ro": "Câmpia Română"
+        },
+        "categoryId": "k3"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "Câmpia de Vest"
+        },
+        "categoryId": "k3"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "Podișul Transilvaniei"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c4",
+        "text": {
+          "ro": "Podișul Dobrogei"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "Carpații Occidentali"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "Carpații Orientali"
+        },
+        "categoryId": "k1"
+      }
+    ]
+  },
+  {
+    "id": "item.geo.relief.units.4.11",
+    "type": "sort",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Munte, podiș sau câmpie? Sortează.",
+      "en": "Mountain, plateau or plain? Sort."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.11",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "categories": [
+      {
+        "id": "k1",
+        "label": {
+          "ro": "Munți"
+        }
+      },
+      {
+        "id": "k2",
+        "label": {
+          "ro": "Podișuri"
+        }
+      },
+      {
+        "id": "k3",
+        "label": {
+          "ro": "Câmpii"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c4",
+        "text": {
+          "ro": "Câmpia de Vest"
+        },
+        "categoryId": "k3"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "Câmpia Română"
+        },
+        "categoryId": "k3"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "Podișul Moldovei"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "Carpații Orientali"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "Podișul Transilvaniei"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "Carpații Meridionali"
+        },
+        "categoryId": "k1"
+      }
+    ]
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.04",
+    "type": "choice",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "În ce parte a Carpaților se află vârful Moldoveanu, cel mai înalt din România?",
+      "en": "In which part of the Carpathians is Moldoveanu, Romania's highest peak?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.04",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Carpații Meridionali"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Carpații Orientali"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Carpații Occidentali"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Subcarpați"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.05",
+    "type": "choice",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Care este înălțimea vârfului Moldoveanu, cel mai înalt din România?",
+      "en": "How high is Moldoveanu, Romania's highest peak?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.05",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "800 m"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "2544 m"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "3200 m"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "1907 m"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.06",
+    "type": "choice",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Munții Apuseni fac parte din...",
+      "en": "The Apuseni Mountains belong to..."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.06",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Carpații Occidentali"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Carpații Meridionali"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Carpații Orientali"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Munții Măcin"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.07",
+    "type": "match",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Potrivește muntele cu lanțul Carpaților din care face parte.",
+      "en": "Match each mountain range with its part of the Carpathians."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.07",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Ceahlău"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Carpații Orientali"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Făgăraș"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Carpații Meridionali"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Apuseni"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Carpații Occidentali"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.08",
+    "type": "match",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Potrivește muntele cu lanțul Carpaților din care face parte.",
+      "en": "Match each mountain range with its part of the Carpathians."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.08",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Rodna"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Carpații Orientali"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Retezat"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Carpații Meridionali"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Semenic"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Carpații Occidentali"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.09",
+    "type": "true-false",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Carpații formează în România un arc mare.",
+      "en": "The Carpathians form a big arc in Romania."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.09",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.10",
+    "type": "true-false",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Cei mai înalți munți din România sunt Carpații Meridionali.",
+      "en": "Romania's highest mountains are the Southern Carpathians."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.10",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.11",
+    "type": "true-false",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Munții Apuseni fac parte din Carpații Orientali.",
+      "en": "The Apuseni Mountains are part of the Eastern Carpathians."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.11",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": false
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.12",
+    "type": "true-false",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Vârful Omu se află în munții Bucegi.",
+      "en": "The Omu peak is in the Bucegi Mountains."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.12",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.12",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.06",
+    "type": "choice",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Unde se află Podișul Transilvaniei?",
+      "en": "Where is the Transylvanian Plateau?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.06",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "În sudul țării, lângă Dunăre"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "La granița cu Ungaria"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "În interiorul arcului Carpaților"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Între Dunăre și Marea Neagră"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.07",
+    "type": "choice",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Care este cea mai întinsă câmpie din România?",
+      "en": "Which is the largest plain in Romania?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.07",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Câmpia de Vest"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Câmpia Siretului"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Câmpia Română"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Câmpia Moldovei"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.08",
+    "type": "choice",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Câmpia Română se întinde între Subcarpați și...",
+      "en": "The Romanian Plain stretches between the Subcarpathians and..."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.08",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Someș"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Mureș"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Dunăre"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Prut"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.09",
+    "type": "choice",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Subcarpații sunt dealuri așezate...",
+      "en": "The Subcarpathians are hills lying..."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.09",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "în Delta Dunării"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "la poalele Carpaților"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "lângă granița cu Serbia"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "pe malul mării"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.10",
+    "type": "choice",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce se cultivă mult în câmpii?",
+      "en": "What is grown a lot in plains?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.10",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Cacao"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Banane"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Cafea"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Grâu și porumb"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.11",
+    "type": "true-false",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Podișul Dobrogei se află între Dunăre și Marea Neagră.",
+      "en": "The Dobruja Plateau lies between the Danube and the Black Sea."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.11",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.12",
+    "type": "true-false",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Podișul Moldovei se află în estul țării.",
+      "en": "The Moldavian Plateau is in the east of the country."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.12",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.12",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.13",
+    "type": "true-false",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Câmpia de Vest se află lângă granița cu Ungaria și Serbia.",
+      "en": "The Western Plain is near the border with Hungary and Serbia."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.13",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.13",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.14",
+    "type": "true-false",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Munții Măcin se află în Dobrogea.",
+      "en": "The Măcin Mountains are in Dobruja."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.14",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.14",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.15",
+    "type": "match",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Potrivește unitatea de relief cu locul ei în țară.",
+      "en": "Match each relief unit with its place in the country."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.15",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.15",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Podișul Moldovei"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "est"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Câmpia de Vest"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "vest"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Podișul Dobrogei"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "sud-est"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Podișul Transilvaniei"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "centru"
+          }
+        }
+      }
+    ]
+  }
+]
