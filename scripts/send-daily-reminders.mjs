@@ -212,5 +212,6 @@ export async function runReminders({
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const { exitCode } = await runReminders();
-  process.exitCode = exitCode;
+  /* Firebase clients keep sockets open; exit explicitly so the CI job ends */
+  process.exit(exitCode);
 }
