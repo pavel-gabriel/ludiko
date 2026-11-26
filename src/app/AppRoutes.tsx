@@ -19,6 +19,8 @@ const PlacementPage = lazy(() => import('@/ui/learn/PlacementPage'));
 const MissionPage = lazy(() => import('@/ui/learn/MissionPage'));
 const BitPage = lazy(() => import('@/ui/learn/BitPage'));
 const SkillMapPage = lazy(() => import('@/ui/learn/SkillMapPage'));
+const ExamPickerPage = lazy(() => import('@/ui/exam/ExamPickerPage'));
+const ExamRunPage = lazy(() => import('@/ui/exam/ExamRunPage'));
 const ParentPage = lazy(() => import('@/ui/learn/ParentPage'));
 const AlbumPage = lazy(() => import('@/ui/album/AlbumPage'));
 const MascotPreviewPage = lazy(() => import('@/ui/mascot/MascotPreviewPage'));
@@ -81,6 +83,8 @@ export default function AppRoutes() {
           <Route path="/learn/bit/:subject/:index" element={<BitPage />} />
           <Route path="/learn/map/:subject" element={<SkillMapPage />} />
           <Route path="/learn/parent" element={<ParentPage />} />
+          <Route path="/learn/exam" element={<ExamPickerPage />} />
+          <Route path="/learn/exam/:exam/:test" element={<ExamRunPage />} />
           <Route path="/learn/album" element={<AlbumPage />} />
           <Route path="/learn/account" element={<FamilyAccountPage />} />
           <Route path="/learn/class/:assignmentId" element={<ClassAssignmentPage />} />

@@ -54,6 +54,17 @@ export const learnerService: LearnerService = {
     });
   },
 
+  async recordExamResults(profileId, entries) {
+    if (entries.length === 0) return;
+    const now = Date.now();
+    await updateProgress(profileId, (progress) => {
+      markPlayDay(progress, now);
+      for (const { item, correct } of entries) {
+        progress.skills[item.skillId] = masteryAfterItem(progress.skills[item.skillId], item, correct, now);
+      }
+    });
+  },
+
   async applyMasteryCheck(profileId, skillId, results, itemType) {
     const skill = getSkill(skillId);
     if (!skill) throw new Error(`unknown skill: ${skillId}`);

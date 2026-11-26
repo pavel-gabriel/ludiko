@@ -90,6 +90,7 @@ const clone = <T>(v: T): T => JSON.parse(JSON.stringify(v)) as T
 export const fakeLearner = {
   schoolSemester: vi.fn(() => 1 as const),
   recordItemResult: vi.fn(async () => {}),
+  recordExamResults: vi.fn(async () => {}),
   applyMasteryCheck: vi.fn(async () => ({ passed: state.checkPassed })),
   getPlacement: vi.fn(async () => (state.placement ? clone(state.placement) : undefined)),
   placementNext: vi.fn(async (): Promise<ProbeRequest | PlacementDone> => {

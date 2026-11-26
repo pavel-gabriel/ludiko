@@ -1144,5 +1144,120 @@
       "medal": "Medal",
       "trophy": "Trophy"
     }
+  },
+  "exam": {
+    "title": "National exam practice",
+    "back": "Back",
+    "entry": {
+      "title": "National exam practice",
+      "body_en2": "We practise how it feels in grade II, to get used to it. No stress!",
+      "body_en4": "We practise how it feels in grade IV, to get used to it. No stress!",
+      "cta": "Let's try"
+    },
+    "exams": {
+      "en2": {
+        "name": "National evaluation, grade II",
+        "short": "Grade II exam",
+        "emoji": "🌱"
+      },
+      "en4": {
+        "name": "National evaluation, grade IV",
+        "short": "Grade IV exam",
+        "emoji": "🚀"
+      }
+    },
+    "picker": {
+      "intro": "Pick a practice test. You can do as many as you like, any time.",
+      "parentTitle": "For parents",
+      "parentNote": "This is a practice simulation, not an official grade. Ludiko builds the tests like the real papers (parts, kinds of questions, time) but with original questions. The result is an estimate to show what is still worth practising.",
+      "test": "Test {{n}}",
+      "testMeta": "{{count}} questions · {{min}} minutes",
+      "recommended": "For your grade",
+      "otherExam": "Also see the tests for {{name}}",
+      "unavailable": "This test is not ready yet.",
+      "optionalNote": "When the science lessons are ready, questions from them will appear here too."
+    },
+    "start": {
+      "title": "Ready to start?",
+      "body": "You answer the questions one by one. You will not see whether you got one wrong during the test, just like in a real exam. At the end we make a practice plan together.",
+      "meta": "{{count}} questions · {{min}} minutes · {{sections}} parts",
+      "showTimer": "Show the clock",
+      "timerHint": "The clock is only a helper. If time runs out, you can carry on calmly.",
+      "go": "Let's start!",
+      "empty": "We could not prepare the test right now. Try again later."
+    },
+    "runner": {
+      "exit": "Leave the test",
+      "sectionOf": "Part {{current}} of {{total}}",
+      "sectionGo": "Start this part",
+      "progress": "Question {{current}} of {{total}}",
+      "pause": "Pause",
+      "timer": "Time left: {{time}}",
+      "timerOver": "The simulation time is over",
+      "hideTimer": "Hide the clock",
+      "showTimerBtn": "Show the clock",
+      "pausedTitle": "Pause",
+      "pausedBody": "Take a deep breath. The clock is stopped. We carry on when you are ready.",
+      "resume": "Continue",
+      "timeUpTitle": "The simulation time is over",
+      "timeUpBody": "No rush: you can work a little longer or see the results now.",
+      "timeUpKeep": "Work a bit more",
+      "timeUpFinish": "Show me the results",
+      "exitTitle": "Leave the test?",
+      "exitBody": "If you leave now the test is not saved. You can start a new one any time.",
+      "exitStay": "Stay in the test",
+      "exitLeave": "Leave",
+      "sectionCount": "{{count}} questions in this part"
+    },
+    "results": {
+      "title": "You finished the test!",
+      "body": "You worked like a true champion. Thank you for trying!",
+      "starsLabel": "{{n}} stars earned",
+      "stickerTitle": "You got a new sticker!",
+      "parentToggle": "For parents: see the details",
+      "parentHide": "Hide the details",
+      "toPractice": "Let's practise together",
+      "again": "Another test",
+      "home": "Back home",
+      "parent": {
+        "title": "For parents",
+        "disclaimer": "Practice simulation, not an official grade. The calificativ below is a Ludiko estimate made with the rules in the table.",
+        "scoreLabel": "Estimated result",
+        "score": "{{correct}} of {{total}} answers correct",
+        "unanswered": "{{n}} questions were left unanswered.",
+        "overtime": "Your child went over the recommended time; this did not count against the result.",
+        "sections": "By part",
+        "practiceTitle": "What we practise",
+        "practiceBody": "These topics had wrong or unanswered questions. Each button starts a short practice game.",
+        "practiceItem": "{{wrong}} of {{total}}",
+        "practiceNone": "Every answer was correct. Nothing to practise right now, well done!",
+        "practiceGo": "Practise",
+        "thresholds": "How we estimate: Foarte bine from {{fb}}%, Bine from {{b}}%, Suficient from {{s}}%, below {{s}}% Insuficient.",
+        "skipped": "Parts with science questions were left out because those lessons are not available yet.",
+        "saved": "The answers were added to your child's progress.",
+        "guest": "Without a child profile the results are not saved.",
+        "practiceMore": "Show all {{n}} topics",
+        "practiceLess": "Show fewer"
+      }
+    },
+    "descriptor": {
+      "fb": {
+        "label": "Foarte bine (Very good)",
+        "text": "Your child has a very good grip on what was checked."
+      },
+      "b": {
+        "label": "Bine (Good)",
+        "text": "Your child is doing well; a few topics are worth repeating."
+      },
+      "s": {
+        "label": "Suficient (Sufficient)",
+        "text": "The base is there. A little regular practice will lift the result quickly."
+      },
+      "i": {
+        "label": "Insuficient (Insufficient)",
+        "text": "Several topics need strengthening. That is normal: this is why we simulate before the exam, not after."
+      }
+    },
+    "error": "Something went wrong. Please try again."
   }
 }
