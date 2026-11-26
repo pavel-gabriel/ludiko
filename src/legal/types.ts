@@ -27,7 +27,7 @@ export interface LegalDocument {
 export type LegalTexts = Record<LegalLang, LegalDocument>
 
 /** Bump on every change of either document, and `LEGAL_UPDATED` with it */
-export const LEGAL_VERSION = '2026-11-draft-1'
+export const LEGAL_VERSION = '2026-11-draft-2'
 /** ISO date of the last change */
 export const LEGAL_UPDATED = '2026-11-26'
 
