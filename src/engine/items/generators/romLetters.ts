@@ -43,6 +43,11 @@ const CONFUSABLE: readonly (readonly string[])[] = [
   ['a', 'ă', 'â'], ['i', 'î', 'â'], ['s', 'ș', 'z'], ['t', 'ț', 'd'], ['b', 'd', 'p'], ['m', 'n'], ['c', 'g'], ['f', 'v'],
 ];
 
+/** Words safe for "how many vowels" questions (see the vowel-count case) */
+const UNAMBIGUOUS_VOWEL_WORDS = PICTURE_WORDS.filter(
+  (w) => !/[aeiouăâî]{2}/.test(w.w) && !/[^aeiouăâî]i$/.test(w.w),
+);
+
 const letterCard = (l: string): CardContent => ({ id: `l_${l}`, text: { ro: l } });
 const upper = (l: string): string => l.toLocaleUpperCase('ro');
 
@@ -199,7 +204,10 @@ export const letters: GeneratorFn = (params, ctx): Item => {
     }
 
     case 'vowel-count': {
-      const w = pick(rng, PICTURE_WORDS);
+      /* Only words where every vowel letter is clearly its own sound: no adjacent vowels
+         (diphthongs like oa, ia, ie make the count ambiguous for a child) and no final
+         short "i" after a consonant (azi, ochi). */
+      const w = pick(rng, UNAMBIGUOUS_VOWEL_WORDS);
       const n = [...w.w].filter(isVowel).length;
       const values = numberOptions(rng, n, [n - 1, n + 1, n + 2, n - 2], optionCount(d), 0, 8);
       const item: ChoiceItem = {

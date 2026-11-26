@@ -178,15 +178,17 @@ function hyphenationViolations(word: string, hyphenated: string): string[] {
     starts.add(consumed);
   }
   const u = units(word);
-  const vow = (x: string) => x.length === 1 && isVowel(x);
+  /* A final "i" after a consonant (azi, ochi, ieri) is a short, non-syllabic i: not a vowel here */
+  const shortFinalI = u.length >= 2 && u[u.length - 1] === 'i' && !isVowel(u[u.length - 2]);
+  const vow = (x: string, k = -1) => x.length === 1 && isVowel(x) && !(shortFinalI && k === u.length - 1);
   let i = 0;
   while (i < u.length) {
-    if (vow(u[i])) {
+    if (vow(u[i], i)) {
       i++;
       continue;
     }
     let j = i;
-    while (j < u.length && !vow(u[j])) j++;
+    while (j < u.length && !vow(u[j], j)) j++;
     const run = j - i;
     if (i > 0 && j < u.length && run <= 3) {
       let expected = i; // one consonant goes with the next vowel
@@ -638,5 +640,15 @@ describe('Romanian typography in rom content', () => {
 
   it('has no leftover placeholders', () => {
     for (const f of romFiles) expect(readFileSync(f, 'utf8'), relative(ROOT, f)).not.toMatch(/TODO|lorem|XXX/i);
+  });
+});
+
+describe('owner-reported fixes', () => {
+  it('azi, ochi and ieri are single syllables (final short i)', () => {
+    for (const w of ['azi', 'ochi', 'ieri']) {
+      const entry = ROM_WORDS.find((x) => x.w === w)!;
+      expect(entry.s, w).toBe(w);
+      expect(entry.syl.length, w).toBe(1);
+    }
   });
 });
