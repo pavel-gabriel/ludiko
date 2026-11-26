@@ -55,11 +55,15 @@ async function main() {
   const app = initializeApp({ credential: cert(JSON.parse(FIREBASE_SERVICE_ACCOUNT)), databaseURL: FIREBASE_DATABASE_URL });
   const result = await cleanupRooms(getDatabase(app), { dryRun, maxAgeMs });
   console.log(`${dryRun ? '[dry run] would delete' : 'Deleted'} ${result.staleRooms} of ${result.rooms} rooms and ${result.staleCodes} of ${result.codes} room codes.`);
+  /* The Realtime Database client keeps a socket open; close it so the job ends */
+  await app.delete();
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  main().catch((err) => {
-    console.error(err instanceof Error ? err.message : String(err));
-    process.exit(1);
-  });
+  main()
+    .then(() => process.exit(0))
+    .catch((err) => {
+      console.error(err instanceof Error ? err.message : String(err));
+      process.exit(1);
+    });
 }

@@ -133,5 +133,6 @@ export async function runCleanupReports({
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const { exitCode } = await runCleanupReports();
-  process.exitCode = exitCode;
+  /* Firebase clients keep sockets open; exit explicitly so the CI job ends */
+  process.exit(exitCode);
 }
