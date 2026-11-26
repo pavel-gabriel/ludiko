@@ -735,6 +735,14 @@
     "needCheckBody": "We start with a short adventure, then your bits are ready.",
     "needCheckCta": "Check yourself!"
   },
+  "legal": {
+    "draftBanner": "Draft — under legal review",
+    "language": "Text language",
+    "contents": "Contents",
+    "version": "Version {{version}}, updated {{date}}",
+    "privacyLink": "Privacy policy",
+    "termsLink": "Terms of use"
+  },
   "push": {
     "title": "Daily reminders",
     "intro": "One gentle notification a day, at the hour you choose, so you don't forget the 3 minutes of play.",
@@ -820,7 +828,7 @@
       "neverTitle": "We never save:",
       "never": "real names, birth dates, photos, the child's email, answers to individual exercises, location.",
       "checkbox": "I have read this and agree to save this data in my parent account. I can delete the account at any time.",
-      "privacy": "Privacy policy (coming soon)",
+      "privacy": "Privacy policy",
       "howDelete": "How to delete the account: on this page, with the \"Delete cloud account\" button.",
       "needsTitle": "One more step",
       "needsBody": "Your account does not have consent for saving data yet. Read what we save and tick the box to start syncing.",

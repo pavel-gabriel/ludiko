@@ -200,6 +200,7 @@ Fluency modes (Race, Sprint) are offered only for skills that are already `pract
 - **Parent account (optional, email):** links children, syncs across devices, receives the weekly summary; will hold subscriptions later.
 - **Teacher account (email):** classes, join codes, reports.
 - **Privacy:** no ads, ever. No third-party trackers. Data minimisation. Parental consent flow for sync (GDPR-K). Data export and delete.
+- **Privacy policy & terms** (draft, pending lawyer review): `/privacy`, `/terms` (`src/legal/*`); the audit of every data item is `docs/PRIVACY_DATA_MAP.md`, including findings where existing code stores kid-typed names.
 - **Business:** the core (check → gaps → missions → reports) is **free forever**. Later: a school/teacher plan (advanced reports, LMS export), then optional family plans for *extras* (more avatar worlds, offline audio packs for older grades, printed worksheets). **Diagnosis and remediation are never paywalled.**
 
 ## 12. Architecture

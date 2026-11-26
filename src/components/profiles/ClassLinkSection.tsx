@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { getClassroomApi } from '@/classroom/api'
 import { JOIN_CODE_LENGTH, normalizeJoinCode } from '@/classroom/joinCode'
 import { ClassroomError } from '@/classroom/types'
+import LegalLink from '@/components/legal/LegalLink'
 import Button from '@/components/ui/Button'
 import type { ChildProfile } from '@/profiles/types'
 import { useProfileStore } from '@/store/profileStore'
@@ -76,7 +77,10 @@ export default function ClassLinkSection({ profile }: { profile: ChildProfile })
             if (normalizeJoinCode(code).length === JOIN_CODE_LENGTH && !busy) void join()
           }}
         >
-          <p className="text-sm opacity-80">{t('classroom.child.help')}</p>
+          <p className="text-sm opacity-80">
+            {t('classroom.child.help')}{' '}
+            <LegalLink to="privacy">{t('legal.privacyLink')}</LegalLink>
+          </p>
           <label className="text-sm font-bold" htmlFor="class-code">{t('classroom.child.codeLabel')}</label>
           <input
             id="class-code"
