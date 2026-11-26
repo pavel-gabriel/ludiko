@@ -7,6 +7,8 @@ interface EmojiPickerProps {
   onChange: (emoji: string) => void;
   /** Avatars that are already taken and should be hidden */
   exclude?: string[];
+  /** Extra classes for the expanded grid (e.g. `order-last` inside a flex row) */
+  gridClassName?: string;
 }
 
 /**
@@ -19,7 +21,7 @@ interface EmojiPickerProps {
  * Place inside a `flex flex-wrap` container so the trigger sits
  * inline with other elements while the grid wraps to the next line.
  */
-export default function EmojiPicker({ selected, onChange, exclude = [] }: EmojiPickerProps) {
+export default function EmojiPicker({ selected, onChange, exclude = [], gridClassName = '' }: EmojiPickerProps) {
   const [expanded, setExpanded] = useState(false);
   const available = EMOJI_OPTIONS.filter((e) => !exclude.includes(e));
 
@@ -39,7 +41,7 @@ export default function EmojiPicker({ selected, onChange, exclude = [] }: EmojiP
       </button>
       {expanded && (
         <div
-          className="flex flex-wrap gap-2 w-full"
+          className={`flex flex-wrap gap-2 w-full ${gridClassName}`}
           role="listbox"
           aria-label="Choose an avatar"
         >

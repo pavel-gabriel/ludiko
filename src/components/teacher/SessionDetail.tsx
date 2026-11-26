@@ -8,6 +8,7 @@ import { useRoomStore } from '@/store/roomStore';
 import {
   getSession,
   updateSession,
+  publishStudentCodes,
 } from '@/services/teacherService';
 import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
@@ -51,6 +52,8 @@ export default function SessionDetail() {
     setStarting(true);
     try {
       await ensureAnonymousAuth();
+      /* Make sure students' devices can validate their codes (also for sessions created before the index existed) */
+      await publishStudentCodes(sessionId, session.teacherUid, session.studentCodes);
       /* Create a special room for this classroom session */
       const room = buildRoom(t('teacher.teacher'), session.settings, '👩‍🏫');
       /* Tag the room as a classroom session */
@@ -59,7 +62,7 @@ export default function SessionDetail() {
       room.globalTimer = session.globalTimer;
 
       await createRoomInDB(room);
-      registerDisconnectCleanup(room.id, true);
+      registerDisconnectCleanup(room.id, true, undefined, room.code);
 
       /* Link the RTDB room to the Firestore session */
       await updateSession(sessionId, { status: 'active', roomId: room.id });

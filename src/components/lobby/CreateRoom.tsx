@@ -14,15 +14,16 @@ import PlayModePicker from '@/components/play/PlayModePicker';
 import { effectiveGameType, skillSettings } from '@/components/play/presets';
 import { skillUsable, type ItemGameKind } from '@/services/itemGame';
 import { resolveSkillNames } from '@/components/play/skillNames';
-import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
+import AnimalNamePicker from '@/components/ui/AnimalNamePicker';
+import { identityAvatar, identityName, randomIdentity } from '@/utils/animalNames';
 
 export default function CreateRoom() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const { setRoom, setCurrentPlayer } = useRoomStore();
 
-  const [name, setName] = useState('');
-  const [avatar, setAvatar] = useState(EMOJI_OPTIONS[Math.floor(Math.random() * EMOJI_OPTIONS.length)]);
+  /* The child picks an animal name (no free text): the animal is also the avatar */
+  const [identity, setIdentity] = useState(() => randomIdentity());
   const [gameType, setGameType] = useState<GameType>(DEFAULT_GAME_SETTINGS.gameType);
   const [gameMode, setGameMode] = useState<GameMode>(DEFAULT_GAME_SETTINGS.gameMode);
   const [difficulty, setDifficulty] = useState<Difficulty>(DEFAULT_GAME_SETTINGS.difficulty);
@@ -53,12 +54,12 @@ export default function CreateRoom() {
   const unplayable = itemMode ? skillIds.filter((id) => !skillUsable(id, itemKind)) : [];
 
   const handleCreate = async () => {
-    if (!name.trim() || loading || unplayable.length > 0) return;
+    if (loading || unplayable.length > 0) return;
     if (showMathOptions && operations.length === 0) return;
     setLoading(true);
     try {
       await ensureAnonymousAuth();
-      const room = buildRoom(name.trim(), {
+      const room = buildRoom(identityName(identity, i18n.language), {
         gameType: roomGameType,
         gameMode,
         difficulty,
@@ -67,9 +68,9 @@ export default function CreateRoom() {
         timePerRound,
         ...(isShapeMatch && { shapeMode }),
         ...skillSettings(skillIds),
-      }, avatar);
+      }, identityAvatar(identity));
       await createRoomInDB(room);
-      registerDisconnectCleanup(room.id, true);
+      registerDisconnectCleanup(room.id, true, undefined, room.code);
       setRoom(room);
       setCurrentPlayer(room.players[0]);
       navigate('/lobby');
@@ -84,22 +85,8 @@ export default function CreateRoom() {
         <CloseButton />
         <h2 className="text-2xl font-bold mb-6 text-center">{t('create.title')}</h2>
 
-        {/* Name + Avatar */}
-        <div className="flex flex-wrap gap-x-3 gap-y-2 items-end mb-4">
-          <label className="block flex-1 min-w-[60%]">
-            <span className="text-sm font-semibold">{t('create.yourName')}</span>
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder={t('create.namePlaceholder')}
-              className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
-              maxLength={20}
-              aria-label={t('create.yourName')}
-            />
-          </label>
-          <EmojiPicker selected={avatar} onChange={setAvatar} />
-        </div>
+        {/* Animal name + avatar (no free-text name) */}
+        <AnimalNamePicker value={identity} onChange={setIdentity} />
 
         {/* What to practise (v2: skills from the registry) */}
         <SkillPicker value={skillIds} onChange={setSkillIds} kind={itemKind} />
@@ -262,7 +249,7 @@ export default function CreateRoom() {
           size="lg"
           className="w-full"
           onClick={handleCreate}
-          disabled={!name.trim() || (showMathOptions && operations.length === 0) || unplayable.length > 0}
+          disabled={(showMathOptions && operations.length === 0) || unplayable.length > 0}
         >
           {t('create.create')}
         </Button>

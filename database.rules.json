@@ -1,29 +1,123 @@
 {
   "rules": {
+    /*
+      Realtime Database rules for Ludiko multiplayer rooms (docs/PRIVACY_DATA_MAP.md, F2).
+
+      - NOTHING can be listed: there is no .read at /rooms or /roomCodes. A room is readable by a signed-in
+        device that knows its (unguessable, 20 character) id; the id is found through the exact-key index
+        roomCodes/{CODE}.
+      - The host (uid == hostId) controls settings, status and game. A player writes only their own player entry
+        (key == auth.uid, or `{uid}_2` for a second local player such as the duel) and their own progress and
+        finish time. A guest may also set the status back to "waiting" (replay), finish the game and clear
+        the game state, nothing else.
+      - Rooms can only be joined for 6 hours after creation (createdAt) and while the status is "waiting".
+      - Shapes and sizes are validated; unknown keys are rejected where the shape is fixed.
+      Known limit: rules cannot check that a name is an "animal name" (the client picks it); the length is capped.
+    */
     "rooms": {
-      /* Index on 'code' for efficient room lookup by join code */
-      ".indexOn": ["code"],
-      /* Allow authenticated users to query rooms (needed for join-by-code) */
-      ".read": "auth != null",
+      /* index for the owner-run cleanup script (scripts/privacy/cleanup-rooms.mjs); clients cannot list */
+      ".indexOn": ["createdAt"],
       "$roomId": {
-        /* Only authenticated users can create a room */
-        ".write": "auth != null",
+        ".read": "auth != null",
+
+        /* the host: create (hostId must be the creator), update, delete */
+        ".write": "auth != null && ((!data.exists() && newData.child('hostId').val() == auth.uid) || (data.exists() && data.child('hostId').val() == auth.uid))",
+
+        ".validate": "newData.hasChildren(['code', 'hostId', 'status', 'settings', 'createdAt', 'players'])",
+
+        "code": {
+          ".validate": "newData.isString() && newData.val().matches(/^[A-HJ-NP-Z2-9]{6}$/)"
+        },
+        "hostId": {
+          ".validate": "newData.isString() && newData.val() == auth.uid"
+        },
+        "status": {
+          /* replay: any member may send the room back to "waiting" */
+          ".write": "auth != null && newData.val() == 'waiting' && root.child('rooms').child($roomId).child('players').child(auth.uid).exists()",
+          ".validate": "newData.isString() && (newData.val() == 'waiting' || newData.val() == 'playing' || newData.val() == 'finished')"
+        },
+        "createdAt": {
+          ".validate": "newData.isNumber()"
+        },
+        "settings": {
+          ".validate": "newData.hasChildren(['gameType', 'gameMode', 'difficulty', 'rounds', 'timePerRound'])",
+          "gameType": { ".validate": "newData.isString() && newData.val().length <= 30" },
+          "gameMode": { ".validate": "newData.isString() && newData.val().length <= 30" },
+          "difficulty": { ".validate": "newData.isString() && newData.val().length <= 10" },
+          "operations": { ".validate": "newData.hasChildren() && newData.numChildren() <= 4" },
+          "rounds": { ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 100" },
+          "timePerRound": { ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 600" },
+          "shapeMode": { ".validate": "newData.isString() && newData.val().length <= 10" },
+          "skillIds": { ".validate": "newData.hasChildren() && newData.numChildren() <= 40" },
+          "subject": { ".validate": "newData.isString() && newData.val().length <= 30" },
+          "$other": { ".validate": false }
+        },
+
+        /* classroom rooms (opened by a signed-in teacher) */
+        "classroomSessionId": {
+          ".validate": "newData.isString() && newData.val().length <= 40"
+        },
+        "classroomMode": {
+          ".validate": "newData.isString() && (newData.val() == 'selfPaced' || newData.val() == 'teacherControlled')"
+        },
+        "globalTimer": {
+          ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 7200"
+        },
+
         "players": {
-          "$playerIndex": {
-            /* Players can update their own fields (e.g. isReady, score) */
-            ".write": "auth != null"
+          /* a player writes only their own entry: key == uid (or `{uid}_2`) */
+          "$playerId": {
+            ".write": "auth != null && ($playerId == auth.uid || $playerId.beginsWith(auth.uid + '_')) && (!newData.exists() || newData.child('isHost').val() == false) && (data.exists() || (root.child('rooms').child($roomId).child('status').val() == 'waiting' && root.child('rooms').child($roomId).child('createdAt').val() > now - 21600000 && root.child('rooms').child($roomId).child('players').numChildren() < 60))",
+            ".validate": "newData.hasChildren(['id', 'name', 'avatar', 'score', 'isHost', 'isReady']) && newData.child('id').val() == $playerId",
+            "id": { ".validate": "newData.isString()" },
+            "name": { ".validate": "newData.isString() && newData.val().length >= 1 && newData.val().length <= 30" },
+            "avatar": { ".validate": "newData.isString() && newData.val().length >= 1 && newData.val().length <= 16" },
+            "score": { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1000" },
+            "isHost": { ".validate": "newData.isBoolean()" },
+            "isReady": { ".validate": "newData.isBoolean()" },
+            "joinedAt": { ".validate": "newData.isNumber()" },
+            "$other": { ".validate": false }
           }
         },
+
         "game": {
-          /* All authenticated players can write (record answers, advance) */
-          ".write": "auth != null",
+          /* the host writes the game; a member may clear it (replay) */
+          ".write": "auth != null && !newData.exists() && root.child('rooms').child($roomId).child('players').child(auth.uid).exists()",
+          "phase": {
+            /* any member may end the game (the first finisher in a race does) */
+            ".write": "auth != null && newData.val() == 'finished' && root.child('rooms').child($roomId).child('players').child(auth.uid).exists()"
+          },
           "progress": {
             "$playerId": {
-              /* Any authenticated user can update progress */
-              ".write": "auth != null"
+              ".write": "auth != null && ($playerId == auth.uid || $playerId.beginsWith(auth.uid + '_')) && root.child('rooms').child($roomId).child('players').child($playerId).exists()",
+              ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1000"
+            }
+          },
+          "finishTimes": {
+            "$playerId": {
+              ".write": "auth != null && ($playerId == auth.uid || $playerId.beginsWith(auth.uid + '_')) && root.child('rooms').child($roomId).child('players').child($playerId).exists()",
+              ".validate": "newData.isNumber()"
             }
           }
-        }
+        },
+
+        "$other": { ".validate": false }
+      }
+    },
+
+    /*
+      Exact-key index: roomCodes/{CODE} -> { roomId, hostId, createdAt }. Read by key only (no list).
+      Written by the host; a code of a room older than 6 hours can be taken over.
+    */
+    "roomCodes": {
+      "$code": {
+        ".read": "auth != null",
+        ".write": "auth != null && $code.matches(/^[A-HJ-NP-Z2-9]{6}$/) && (!data.exists() || data.child('hostId').val() == auth.uid || data.child('createdAt').val() < now - 21600000) && (!newData.exists() || newData.child('hostId').val() == auth.uid)",
+        ".validate": "newData.hasChildren(['roomId', 'hostId', 'createdAt'])",
+        "roomId": { ".validate": "newData.isString() && newData.val().length >= 8 && newData.val().length <= 40" },
+        "hostId": { ".validate": "newData.isString() && newData.val() == auth.uid" },
+        "createdAt": { ".validate": "newData.isNumber()" },
+        "$other": { ".validate": false }
       }
     }
   }

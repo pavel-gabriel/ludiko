@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import CloseButton from '@/components/ui/CloseButton';
 import { useRoomStore } from '@/store/roomStore';
-import { buildRoom, buildPlayer, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
+import { buildRoom, buildPlayer, coPlayerId, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
 import { ensureAnonymousAuth } from '@/services/authService';
 import type { Difficulty, Operation, GameType, ShapeMode } from '@/utils/types';
 import { DEFAULT_GAME_SETTINGS, usesOperations } from '@/utils/constants';
@@ -14,7 +14,8 @@ import PlayModePicker from '@/components/play/PlayModePicker';
 import { effectiveGameType, skillSettings } from '@/components/play/presets';
 import { skillUsable, type ItemGameKind } from '@/services/itemGame';
 import { resolveSkillNames } from '@/components/play/skillNames';
-import EmojiPicker, { EMOJI_OPTIONS } from '@/components/ui/EmojiPicker';
+import AnimalNamePicker from '@/components/ui/AnimalNamePicker';
+import { identityAvatar, identityName, randomIdentity } from '@/utils/animalNames';
 
 export default function InteractiveSetupPage() {
   const { t, i18n } = useTranslation();
@@ -22,12 +23,12 @@ export default function InteractiveSetupPage() {
   const { setRoom, setCurrentPlayer } = useRoomStore();
 
   /* Player 1 */
-  const [name1, setName1] = useState('');
-  const [avatar1, setAvatar1] = useState(EMOJI_OPTIONS[0]);
+  const [identity1, setIdentity1] = useState(() => randomIdentity());
 
   /* Player 2 */
-  const [name2, setName2] = useState('');
-  const [avatar2, setAvatar2] = useState(EMOJI_OPTIONS[1]);
+  const [identity2, setIdentity2] = useState(() => randomIdentity([identityAvatar(identity1)]));
+  const avatar1 = identityAvatar(identity1);
+  const avatar2 = identityAvatar(identity2);
 
   /* Game settings */
   const [gameType, setGameType] = useState<GameType>(DEFAULT_GAME_SETTINGS.gameType);
@@ -55,12 +56,12 @@ export default function InteractiveSetupPage() {
   const unplayable = itemMode ? skillIds.filter((id) => !skillUsable(id, itemKind)) : [];
 
   const handleStart = async () => {
-    if (!name1.trim() || !name2.trim() || loading || unplayable.length > 0) return;
+    if (loading || unplayable.length > 0 || avatar1 === avatar2) return;
     if (isMath && operations.length === 0) return;
     setLoading(true);
     try {
       await ensureAnonymousAuth();
-      const room = buildRoom(name1.trim(), {
+      const room = buildRoom(identityName(identity1, i18n.language), {
         gameType: roomGameType,
         gameMode: 'raceToFinish',
         difficulty,
@@ -72,13 +73,13 @@ export default function InteractiveSetupPage() {
       }, avatar1);
 
       /* Add player 2 to the room */
-      const player2 = buildPlayer(name2.trim(), 1, avatar2);
+      const player2 = buildPlayer(identityName(identity2, i18n.language), 1, avatar2, coPlayerId(room.hostId));
       player2.isReady = true;
       room.players.push(player2);
       room.status = 'playing';
 
       await createRoomInDB(room);
-      registerDisconnectCleanup(room.id, true);
+      registerDisconnectCleanup(room.id, true, undefined, room.code);
       setRoom(room);
       setCurrentPlayer(room.players[0]);
       navigate('/game/interactive');
@@ -88,8 +89,6 @@ export default function InteractiveSetupPage() {
   };
 
   const canStart =
-    name1.trim() &&
-    name2.trim() &&
     avatar1 !== avatar2 &&
     (!isMath || operations.length > 0) &&
     unplayable.length === 0;
@@ -103,39 +102,27 @@ export default function InteractiveSetupPage() {
         {/* Player 1 */}
         <div className="border border-gray-200 rounded-xl p-3 mb-4" role="group" aria-label={t('interactive.player1')}>
           <h3 className="text-sm font-bold text-ludiko-purple mb-2">{t('interactive.player1')}</h3>
-          <div className="flex flex-wrap gap-x-3 gap-y-2 items-end">
-            <label className="block flex-1 min-w-[60%]">
-              <span className="text-sm font-semibold">{t('create.yourName')}</span>
-              <input
-                type="text"
-                value={name1}
-                onChange={(e) => setName1(e.target.value)}
-                placeholder={t('create.namePlaceholder')}
-                className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-blue focus:outline-none focus:border-ludiko-purple"
-                maxLength={20}
-              />
-            </label>
-            <EmojiPicker selected={avatar1} onChange={setAvatar1} exclude={[avatar2]} />
-          </div>
+          <AnimalNamePicker
+            value={identity1}
+            onChange={setIdentity1}
+            exclude={[avatar2]}
+            accent="blue"
+            label={t('rooms.yourName')}
+            className=""
+          />
         </div>
 
         {/* Player 2 */}
         <div className="border border-gray-200 rounded-xl p-3 mb-4" role="group" aria-label={t('interactive.player2')}>
           <h3 className="text-sm font-bold text-ludiko-pink mb-2">{t('interactive.player2')}</h3>
-          <div className="flex flex-wrap gap-x-3 gap-y-2 items-end">
-            <label className="block flex-1 min-w-[60%]">
-              <span className="text-sm font-semibold">{t('create.yourName')}</span>
-              <input
-                type="text"
-                value={name2}
-                onChange={(e) => setName2(e.target.value)}
-                placeholder={t('create.namePlaceholder')}
-                className="mt-1 w-full px-4 py-2 rounded-xl border-2 border-ludiko-pink focus:outline-none focus:border-ludiko-purple"
-                maxLength={20}
-              />
-            </label>
-            <EmojiPicker selected={avatar2} onChange={setAvatar2} exclude={[avatar1]} />
-          </div>
+          <AnimalNamePicker
+            value={identity2}
+            onChange={setIdentity2}
+            exclude={[avatar1]}
+            accent="pink"
+            label={t('rooms.yourName')}
+            className=""
+          />
         </div>
 
         {/* What to practise (v2: skills from the registry) */}
