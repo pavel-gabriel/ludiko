@@ -1288,5 +1288,36 @@
       }
     },
     "error": "Ceva nu a mers. Încearcă din nou."
+  },
+  "privacyTools": {
+    "title": "Șterge tot",
+    "intro": "Șterge contul de părinte din cloud, legătura cu clasa, notificările și, dacă vrei, profilele de pe acest dispozitiv.",
+    "button": "Șterge tot",
+    "willDo": "Ce se va șterge:",
+    "localCheckbox": "Șterge și toate profilele și progresul copiilor de pe acest dispozitiv",
+    "password": "Parola contului de părinte (dacă ți se cere)",
+    "confirm": "Da, șterge tot",
+    "cancel": "Anulează",
+    "working": "Se șterge...",
+    "resultTitle": "Rezultat",
+    "retry": "Ce nu s-a putut șterge (de exemplu fără internet) poți încerca din nou mai târziu.",
+    "steps": {
+      "family": "Contul de părinte din cloud",
+      "classes": "Progresul trimis la clasă",
+      "push": "Notificările zilnice",
+      "local": "Profilele de pe acest dispozitiv",
+      "signout": "Deconectarea"
+    },
+    "status": {
+      "done": "Gata",
+      "skipped": "Nu era nimic de făcut",
+      "partial": "Parțial",
+      "failed": "Nu a reușit"
+    },
+    "detail": {
+      "offline": "fără internet",
+      "reauth-required": "introdu parola și încearcă din nou",
+      "failed": "eroare"
+    }
   }
 }

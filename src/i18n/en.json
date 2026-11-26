@@ -1275,5 +1275,36 @@
       }
     },
     "error": "Something went wrong. Please try again."
+  },
+  "privacyTools": {
+    "title": "Delete everything",
+    "intro": "Deletes the parent cloud account, the class link, reminders and, if you choose, the profiles on this device.",
+    "button": "Delete everything",
+    "willDo": "What will be deleted:",
+    "localCheckbox": "Also delete all child profiles and progress on this device",
+    "password": "Parent account password (if asked)",
+    "confirm": "Yes, delete everything",
+    "cancel": "Cancel",
+    "working": "Deleting...",
+    "resultTitle": "Result",
+    "retry": "Whatever could not be deleted (for example while offline) can be retried later.",
+    "steps": {
+      "family": "Parent account in the cloud",
+      "classes": "Progress sent to the class",
+      "push": "Daily reminders",
+      "local": "Profiles on this device",
+      "signout": "Signing out"
+    },
+    "status": {
+      "done": "Done",
+      "skipped": "Nothing to do",
+      "partial": "Partly",
+      "failed": "Failed"
+    },
+    "detail": {
+      "offline": "offline",
+      "reauth-required": "enter your password and try again",
+      "failed": "error"
+    }
   }
 }

@@ -72,7 +72,7 @@ or teacher with email.
 | C12 | `sessions/{id}` | v1 classroom session: `teacherUid`, `title`, game settings, `studentCodes[{code,label}]` (default label "Student N", editable), status | **any signed-in device** (F3) | until the teacher deletes it | teacher: contract | `teacherService.ts` |
 | C13 | `sessionResults/{sessionId}` | per student: `studentCode`, `studentLabel` (**the name the child typed when joining**), score, accuracy | **any signed-in device can read AND write** (F3) | no deletion policy | teacher: contract; child data: unclear (F3) | `TeacherLiveDashboard.tsx`, `teacherService.ts` |
 | C14 | `templates/{id}` | teacher's saved session templates (settings, optional custom questions) | any signed-in device (read), teacher (write) | until the teacher deletes it | contract | `teacherService.ts` |
-| C15 | `gameHistory/{id}` | **FINDING F1.** After each multiplayer game, the host's device stores: room code, game type/mode/difficulty, player count and **per player the name the child typed, avatar, score, accuracy, rank**, server timestamp | **any signed-in (anonymous) device** (shown as the public "Clasament" on the home page) | **kept forever**, no deletion path, no uid stored so entries cannot be tied to a person | none clear: contradicts the "no child personal data" promise | `src/services/historyService.ts`, `src/components/leaderboard/GameResults.tsx`, `PersistentLeaderboard.tsx` |
+| C15 | `gameHistory/{id}` | **FINDING F1.** After each multiplayer game, the host's device stores: room code, game type/mode/difficulty, player count and **per player the name the child typed, avatar, score, accuracy, rank**, server timestamp | **any signed-in (anonymous) device** (shown as the public "Clasament" on the home page) | **FIXED: collection removed, rules deny all client access, one-off cleanup script** (was: kept forever, no deletion path) | none clear: contradicts the "no child personal data" promise | `src/services/historyService.ts`, `src/components/leaderboard/GameResults.tsx`, `PersistentLeaderboard.tsx` |
 | C16 | `admins/{uid}` | existence of the owner's admin uid | the owner (own doc only) | owner decision | legitimate interest | `docs/ADMIN.md`, `src/services/adminService.ts` |
 
 ### 2b. Realtime Database (`database.rules.json`)
@@ -107,7 +107,8 @@ Not used: advertising networks, analytics, tag managers, social widgets, error t
 Nothing below was changed in this branch (scope: privacy documents only). Each needs an owner decision.
 Priority: **H** high, **M** medium, **L** low.
 
-### F1 (H): multiplayer names and a public leaderboard live in Firestore forever
+### F1 (H): multiplayer names and a public leaderboard live in Firestore forever — FIXED
+- **FIXED (owner decision: remove the cloud leaderboard).** `saveGameHistory`, `historyService.ts`, `PersistentLeaderboard.tsx` and the home-page trophy button are gone; `GameResults.tsx` no longer writes anything (the in-game podium and `LiveLeaderboard` use room state only). `firestore.rules`: `gameHistory` is `allow read, write: if false`. Existing documents: owner runs `scripts/privacy/delete-game-history.mjs` once (`--dry-run` first). Tests: `tests/privacyF1F8.test.ts`.
 - `GameResults.tsx` makes the host's device call `saveGameHistory`, writing the name each child typed (max 20,
   free text, so it may be a real name), avatar and score into `gameHistory`. `PersistentLeaderboard.tsx`
   (trophy button on the home page) shows them to every visitor.
@@ -160,7 +161,8 @@ Priority: **H** high, **M** medium, **L** low.
 - A subscription stays until the user turns reminders off or the push service answers 404/410. **Fix:** in `scripts/send-daily-reminders.mjs` also delete
   documents whose `updatedAt` is older than 12 months (the client updates it whenever a bit is finished).
 
-### F8 (L): erasure is split across systems
+### F8 (L): erasure is split across systems — FIXED
+- **FIXED.** "Șterge tot" card (`src/components/privacy/EraseAllCard.tsx`, on `/learn/parent` and `/learn/account`) runs `src/privacy/eraseAll.ts` (lazy): leave class per profile, unsubscribe push + delete `pushSubscriptions` doc, delete parent cloud account, optionally wipe local profiles, sign out; shows a per-step result list and reports what could not be done offline (nothing is queued).
 - Deleting the parent account (C1-C3) does **not** delete: the class progress summary (C7), the push subscription (C4), or anonymous-auth data (A1).
   `leaveClass` deletes C7 only best-effort (fails offline). The policy says so, but a single "delete everything" button would be cleaner.
 

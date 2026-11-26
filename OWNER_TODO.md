@@ -88,6 +88,9 @@
         with the "no child personal data" promise and the policy currently has to admit them:
     - [ ] **F1 (high)** Multiplayer names typed by kids go to Firestore `gameHistory` forever and show in the public
           leaderboard. Suggested: remove the cloud leaderboard, or store avatar + score only with a TTL, then delete the old documents.
+    - [x] F1 is fixed in code (cloud leaderboard removed). Owner steps still open:
+      - [ ] Redeploy Firestore rules (`firebase deploy --only firestore:rules`): `gameHistory` is now denied.
+      - [ ] Run `scripts/privacy/delete-game-history.mjs` once (`FIREBASE_SERVICE_ACCOUNT='<json>' node scripts/privacy/delete-game-history.mjs --dry-run`, then without `--dry-run`).
     - [ ] **F2 (high)** Realtime Database `rooms` are readable and writable by any anonymous session (names visible).
           Suggested: exact-key code index + per-room rules, random names, room expiry.
     - [ ] **F3** v1 teacher sessions: `sessionResults` (student names) readable and writable by any signed-in device.

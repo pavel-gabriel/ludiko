@@ -24,10 +24,11 @@ service cloud.firestore {
     }
     // ===== ADMIN AUTH (end) =====
 
-    // Game history: any authenticated user can create entries and read all history
+    // Game history: REMOVED (privacy finding F1). The cloud leaderboard stored names typed by children
+    // forever. No client reads or writes it any more; existing documents are removed with
+    // scripts/privacy/delete-game-history.mjs (firebase-admin bypasses these rules).
     match /gameHistory/{docId} {
-      allow read: if request.auth != null;
-      allow create: if request.auth != null;
+      allow read, write: if false;
     }
 
     // Teacher profiles: teachers can read/write their own profile.

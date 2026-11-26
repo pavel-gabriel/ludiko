@@ -1,10 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
-import { useRoomStore } from '@/store/roomStore';
-import { saveGameHistory, type PlayerResult } from '@/services/historyService';
 import type { Player, GameMode } from '@/utils/types';
-import { serverTimestamp } from 'firebase/firestore';
 import { playFinish } from '@/utils/sounds';
 import Confetti from '@/components/ui/Confetti';
 import CloseButton from '@/components/ui/CloseButton';
@@ -49,8 +46,6 @@ export default function GameResults({
   onNewGame,
 }: GameResultsProps) {
   const { t } = useTranslation();
-  const { room, currentPlayer } = useRoomStore();
-  const savedRef = useRef(false);
 
   useEffect(() => { playFinish(); }, []);
 
@@ -71,36 +66,6 @@ export default function GameResults({
     }
     return 0;
   });
-
-  useEffect(() => {
-    if (savedRef.current || !room) return;
-    /* Only the host writes history — otherwise every client in an N-player
-       game saves a duplicate doc and inflates the leaderboard N times */
-    if (currentPlayer && !currentPlayer.isHost) return;
-    savedRef.current = true;
-
-    const results: PlayerResult[] = ranked.map((player, idx) => {
-      const score = scores[player.id] ?? 0;
-      return {
-        name: player.name,
-        avatar: player.avatar,
-        score,
-        totalQuestions,
-        accuracy: totalQuestions > 0 ? Math.round((score / totalQuestions) * 100) : 0,
-        rank: idx + 1,
-      };
-    });
-
-    saveGameHistory({
-      roomCode: room.code,
-      gameType: room.settings.gameType,
-      gameMode: room.settings.gameMode,
-      difficulty: room.settings.difficulty,
-      playerCount: players.length,
-      results,
-      createdAt: serverTimestamp(),
-    }).catch(() => {});
-  }, []);
 
   const podiumPlayers = ranked.slice(0, 3);
   const restPlayers = ranked.slice(3);
