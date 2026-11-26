@@ -44,11 +44,11 @@
           "gameType": { ".validate": "newData.isString() && newData.val().length <= 30" },
           "gameMode": { ".validate": "newData.isString() && newData.val().length <= 30" },
           "difficulty": { ".validate": "newData.isString() && newData.val().length <= 10" },
-          "operations": { ".validate": "newData.hasChildren() && newData.numChildren() <= 4" },
+          "operations": { ".validate": "newData.hasChildren()", "$i": { ".validate": "$i.matches(/^[0-3]$/) && newData.isString() && newData.val().length <= 3" } },
           "rounds": { ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 100" },
           "timePerRound": { ".validate": "newData.isNumber() && newData.val() >= 1 && newData.val() <= 600" },
           "shapeMode": { ".validate": "newData.isString() && newData.val().length <= 10" },
-          "skillIds": { ".validate": "newData.hasChildren() && newData.numChildren() <= 40" },
+          "skillIds": { ".validate": "newData.hasChildren()", "$i": { ".validate": "$i.matches(/^([0-9]|[1-3][0-9])$/) && newData.isString() && newData.val().length <= 80" } },
           "subject": { ".validate": "newData.isString() && newData.val().length <= 30" },
           "$other": { ".validate": false }
         },
@@ -67,7 +67,7 @@
         "players": {
           /* a player writes only their own entry: key == uid (or `{uid}_2`) */
           "$playerId": {
-            ".write": "auth != null && ($playerId == auth.uid || $playerId.beginsWith(auth.uid + '_')) && (!newData.exists() || newData.child('isHost').val() == false) && (data.exists() || (root.child('rooms').child($roomId).child('status').val() == 'waiting' && root.child('rooms').child($roomId).child('createdAt').val() > now - 21600000 && root.child('rooms').child($roomId).child('players').numChildren() < 60))",
+            ".write": "auth != null && ($playerId == auth.uid || $playerId.beginsWith(auth.uid + '_')) && (!newData.exists() || newData.child('isHost').val() == false) && (data.exists() || (root.child('rooms').child($roomId).child('status').val() == 'waiting' && root.child('rooms').child($roomId).child('createdAt').val() > now - 21600000))",
             ".validate": "newData.hasChildren(['id', 'name', 'avatar', 'score', 'isHost', 'isReady']) && newData.child('id').val() == $playerId",
             "id": { ".validate": "newData.isString()" },
             "name": { ".validate": "newData.isString() && newData.val().length >= 1 && newData.val().length <= 30" },

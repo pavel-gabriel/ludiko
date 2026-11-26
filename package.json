@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "check:size": "node scripts/check-bundle-size.mjs",
     "icons": "node scripts/generate-icons.mjs",
-    "lint": "eslint src --ext .ts,.tsx"
+    "lint": "eslint src --ext .ts,.tsx",
+    "rules:check": "npx --yes firebase-tools@15.35.0 emulators:exec --only firestore,database --project demo-ludiko \"echo rules OK\""
   },
   "dependencies": {
     "@fontsource/nunito": "^5.3.0",

@@ -12,9 +12,28 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - run: npm ci
       - run: npm run test
       - run: npm run build
+
+  # Compile firestore.rules and database.rules.json with the real Firebase emulators, so invalid rules
+  # (e.g. an RTDB-only method in Firestore rules, or numChildren() in RTDB rules) never reach main.
+  rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Compile Firebase rules in the emulators
+        run: npx --yes firebase-tools@15.35.0 emulators:exec --only firestore,database --project demo-ludiko "echo rules OK"
