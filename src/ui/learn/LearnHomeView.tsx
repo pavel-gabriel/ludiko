@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import type { SubjectId } from '@/engine/types'
 import type { AssignmentBit } from '@/learner'
 import { MascotSvg } from '@/ui/mascot/Mascot'
+import ExamEntryCard from '@/ui/exam/ExamEntryCard'
 import AssignmentCard from './AssignmentCard'
 import BitTiles, { type HomeBit } from './BitTiles'
 import ProgressBar from './ProgressBar'
@@ -20,7 +21,7 @@ export interface SubjectHome {
 }
 
 export interface LearnHomeViewProps {
-  profile: { nickname: string; avatar: string }
+  profile: { nickname: string; avatar: string; grade?: number }
   stars: number
   playDays: number
   subjects: SubjectHome[]
@@ -143,6 +144,8 @@ export default function LearnHomeView({ profile, stars, playDays, subjects, assi
           </BigCard>
         </section>
       ))}
+
+      <ExamEntryCard grade={profile.grade} />
 
       <Link
         to="/learn/parent"

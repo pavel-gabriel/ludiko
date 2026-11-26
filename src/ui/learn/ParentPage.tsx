@@ -27,6 +27,7 @@ function Parent({ profile }: { profile: ChildProfile }) {
     <LearnShell title={t('learn.parent.title')} backTo="/learn">
       <ParentView
         profileName={profile.nickname}
+        profileGrade={profile.grade}
         summary={data}
         titleOf={titleOf}
         onRedo={(subject) => {

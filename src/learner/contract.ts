@@ -192,6 +192,12 @@ export interface LearnerService {
   /** Record one answered item: counters, playDays, and (unless retry/placement) the mastery update */
   recordItemResult(profileId: string, item: Item, result: ItemResult, meta: AttemptMeta): Promise<void>;
 
+  /**
+   * A finished exam simulation (src/exam): feeds every answered item into mastery in ONE write, as if
+   * practised once (docs/EXAM_PRACTICE.md §5). Per-item calls with mode 'check' only keep the play-day streak.
+   */
+  recordExamResults(profileId: string, entries: { item: Item; correct: boolean }[]): Promise<void>;
+
   /** Apply a finished mastery check for a skill; returns whether it was passed */
   applyMasteryCheck(
     profileId: string,

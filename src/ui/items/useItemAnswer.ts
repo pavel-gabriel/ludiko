@@ -1,7 +1,8 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useContext, useEffect, useRef, useState } from 'react';
 import { checkResponse } from '@/engine/items/check';
 import type { Item, ItemResponse, ItemResult } from '@/engine/types';
 import { playCorrect } from '@/utils/sounds';
+import { ItemFeedbackContext } from './itemFeedback';
 
 export interface ItemRendererProps<T extends Item = Item> {
   item: T;
@@ -19,6 +20,7 @@ export interface ItemRendererProps<T extends Item = Item> {
  * Wrong answers wait for the child ("Mai departe") so the correct answer can be read in peace.
  */
 export function useItemAnswer(item: Item, onAnswer: (r: ItemResult) => void, feedbackMs = 900) {
+  const neutral = useContext(ItemFeedbackContext) === 'neutral';
   const startedAt = useRef<number>(performance.now());
   const answered = useRef(false);
   const reported = useRef(false);
@@ -53,13 +55,18 @@ export function useItemAnswer(item: Item, onAnswer: (r: ItemResult) => void, fee
         timeMs: Math.max(0, Math.round(performance.now() - startedAt.current)),
       };
       resultRef.current = r;
+      if (neutral) {
+        // exam: no verdict on screen, the paper simply moves on
+        report(r);
+        return;
+      }
       setResult(r);
       if (correct) {
         playCorrect();
         timer.current = setTimeout(() => report(r), feedbackMs);
       }
     },
-    [item, feedbackMs, report],
+    [item, feedbackMs, report, neutral],
   );
 
   /** Wrong answers: the child taps "Mai departe" */

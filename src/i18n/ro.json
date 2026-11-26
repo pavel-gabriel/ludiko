@@ -1160,5 +1160,120 @@
       "medal": "Medalie",
       "trophy": "Trofeu"
     }
+  },
+  "exam": {
+    "title": "Simulare Evaluare Națională",
+    "back": "Înapoi",
+    "entry": {
+      "title": "Antrenament pentru Evaluarea Națională",
+      "body_en2": "Exersăm cum e la clasa a II-a, ca să te obișnuiești. Fără emoții!",
+      "body_en4": "Exersăm cum e la clasa a IV-a, ca să te obișnuiești. Fără emoții!",
+      "cta": "Hai să încercăm"
+    },
+    "exams": {
+      "en2": {
+        "name": "Evaluarea Națională, clasa a II-a",
+        "short": "EN clasa a II-a",
+        "emoji": "🌱"
+      },
+      "en4": {
+        "name": "Evaluarea Națională, clasa a IV-a",
+        "short": "EN clasa a IV-a",
+        "emoji": "🚀"
+      }
+    },
+    "picker": {
+      "intro": "Alege un test de antrenament. Poți face câte vrei, oricând.",
+      "parentTitle": "Pentru părinți",
+      "parentNote": "Aceasta este o simulare de antrenament, nu o notă oficială. Testele sunt făcute de Ludiko, în același fel ca lucrările reale (părți, tipuri de întrebări, timp), dar cu întrebări originale. Rezultatul este o estimare, ca să vedeți ce mai e de exersat.",
+      "test": "Testul {{n}}",
+      "testMeta": "{{count}} întrebări · {{min}} minute",
+      "recommended": "Pentru clasa ta",
+      "otherExam": "Vezi și testele pentru {{name}}",
+      "unavailable": "Acest test nu este pregătit încă.",
+      "optionalNote": "Când vor fi gata lecțiile de științe, apar aici și întrebări din ele."
+    },
+    "start": {
+      "title": "Gata de start?",
+      "body": "Răspunzi pe rând la întrebări. Nu vei vedea dacă ai greșit în timpul testului, așa e la examen. La final facem împreună un plan de exersat.",
+      "meta": "{{count}} întrebări · {{min}} minute · {{sections}} părți",
+      "showTimer": "Arată ceasul",
+      "timerHint": "Ceasul este doar un ajutor. Dacă se termină timpul, poți continua liniștit.",
+      "go": "Începem!",
+      "empty": "Nu am putut pregăti testul acum. Încearcă mai târziu."
+    },
+    "runner": {
+      "exit": "Ieși din test",
+      "sectionOf": "Partea {{current}} din {{total}}",
+      "sectionGo": "Începem partea",
+      "progress": "Întrebarea {{current}} din {{total}}",
+      "pause": "Pauză",
+      "timer": "Timp rămas: {{time}}",
+      "timerOver": "Timpul de simulare a trecut",
+      "hideTimer": "Ascunde ceasul",
+      "showTimerBtn": "Arată ceasul",
+      "pausedTitle": "Pauză",
+      "pausedBody": "Respiră adânc. Ceasul stă pe loc. Continuăm când ești gata.",
+      "resume": "Continuăm",
+      "timeUpTitle": "Timpul simulării a trecut",
+      "timeUpBody": "Nicio grabă: poți mai lucra puțin sau poți vedea rezultatele acum.",
+      "timeUpKeep": "Mai lucrez puțin",
+      "timeUpFinish": "Vreau să văd rezultatele",
+      "exitTitle": "Ieșim din test?",
+      "exitBody": "Dacă ieși acum, testul nu se salvează. Poți începe oricând unul nou.",
+      "exitStay": "Rămân în test",
+      "exitLeave": "Ies",
+      "sectionCount": "{{count}} întrebări în această parte"
+    },
+    "results": {
+      "title": "Ai terminat testul!",
+      "body": "Ai lucrat ca un adevărat campion. Mulțumesc că ai încercat!",
+      "starsLabel": "{{n}} stele câștigate",
+      "stickerTitle": "Ai primit un autocolant nou!",
+      "parentToggle": "Pentru părinți: vezi detaliile",
+      "parentHide": "Ascunde detaliile",
+      "toPractice": "Exersăm împreună",
+      "again": "Alt test",
+      "home": "Înapoi acasă",
+      "parent": {
+        "title": "Pentru părinți",
+        "disclaimer": "Simulare de antrenament, nu notă oficială. Calificativul de mai jos este o estimare Ludiko, făcută după regulile din tabel.",
+        "scoreLabel": "Rezultat estimat",
+        "score": "{{correct}} din {{total}} răspunsuri corecte",
+        "unanswered": "{{n}} întrebări au rămas fără răspuns.",
+        "overtime": "Copilul a depășit timpul recomandat; nu a contat în rezultat.",
+        "sections": "Pe părți",
+        "practiceTitle": "Ce exersăm",
+        "practiceBody": "Aceste teme au avut întrebări greșite sau lăsate fără răspuns. Fiecare buton pornește un joc scurt de exersare.",
+        "practiceItem": "{{wrong}} din {{total}}",
+        "practiceNone": "Toate răspunsurile au fost corecte. Nu e nimic de exersat acum, bravo!",
+        "practiceGo": "Exersăm",
+        "thresholds": "Cum estimăm: Foarte bine de la {{fb}}%, Bine de la {{b}}%, Suficient de la {{s}}%, sub {{s}}% Insuficient.",
+        "skipped": "Părțile cu întrebări din științe nu au fost incluse, pentru că lecțiile nu sunt încă disponibile.",
+        "saved": "Răspunsurile au fost adăugate la progresul copilului.",
+        "guest": "Fără profil de copil, rezultatele nu se salvează.",
+        "practiceMore": "Arată toate cele {{n}} teme",
+        "practiceLess": "Arată mai puține"
+      }
+    },
+    "descriptor": {
+      "fb": {
+        "label": "Foarte bine",
+        "text": "Copilul stăpânește foarte bine ce a fost verificat."
+      },
+      "b": {
+        "label": "Bine",
+        "text": "Copilul se descurcă bine; câteva teme merită repetate."
+      },
+      "s": {
+        "label": "Suficient",
+        "text": "Baza există. Cu puțin exercițiu regulat, rezultatul crește repede."
+      },
+      "i": {
+        "label": "Insuficient",
+        "text": "Sunt mai multe teme de întărit. E normal: de asta facem simularea înainte, nu după examen."
+      }
+    },
+    "error": "Ceva nu a mers. Încearcă din nou."
   }
 }

@@ -274,7 +274,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 - [ ] Geografie (IV): map of Romania (`hotspot`), landforms, waters
 - [ ] Educație civică (III–IV)
 - [ ] Logic puzzles (patterns, mini-sudoku, odd-one-out), framed as puzzles, not "brain training"
-- [ ] EN II and EN IV practice in the official format (calificative)
+- [x] EN II and EN IV practice in the official format (calificative) — see [`EXAM_PRACTICE.md`](./EXAM_PRACTICE.md)
 
 ### Phase 2 — Grades V–VIII
 - [ ] Extend the skill graphs (math, Romanian) and diagnostics through grade VIII
