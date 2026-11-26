@@ -1,4 +1,4 @@
-// Daily push reminders sender (docs/NOTIFICATIONS.md §4). CI-only: run by .github/workflows/daily-reminders.yml.
+// Daily push reminders sender (docs/NOTIFICATIONS.md §4). CI-only: run by the `reminders` job in .github/workflows/deploy.yml.
 // Usage: node scripts/send-daily-reminders.mjs [--dry-run]
 //
 // Required env: VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY, VAPID_SUBJECT, FIREBASE_SERVICE_ACCOUNT (JSON).

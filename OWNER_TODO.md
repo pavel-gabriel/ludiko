@@ -2,7 +2,29 @@
 
 > Kept up to date by Claude at the end of each work wave. Tick items as you finish them
 > (`- [x]`), or tell Claude in chat and it will tick them for you.
-> Last updated: 2026-11-26 (privacy policy draft added).
+> Last updated: 2026-11-26 (Firebase automation added).
+
+## ⚙️ Automate Firebase (do this once, then the rule deploys below happen by themselves)
+
+The **"Deploy to GitHub Pages"** workflow now also: deploys the Firestore + Realtime Database **rules automatically**
+whenever a rules file changes on `main`; sends the **daily reminders** every hour; and runs the **privacy cleanups**
+on demand. It only needs one more secret.
+
+- [ ] **Create a deploy service account** (Google Cloud console → project `ludiko-2e197` → IAM & Admin →
+      Service accounts → *Create*), name e.g. `ludiko-deployer`, with these roles:
+      **Firebase Rules Admin**, **Firebase Realtime Database Admin**, **Cloud Datastore User**, **Service Usage Consumer**.
+      (If a deploy later fails with a permission error, give it **Firebase Admin** instead.)
+      Then *Keys → Add key → JSON*, copy the whole file into a GitHub secret named
+      **`FIREBASE_DEPLOY_SERVICE_ACCOUNT`** (repo → Settings → Secrets and variables → Actions), and delete the local file.
+- [ ] **Deploy the pending rules now:** GitHub → Actions → **Deploy to GitHub Pages** → *Run workflow* →
+      task **`deploy-rules`**, first with *dry run* ticked (validates), then again with it unticked.
+      This replaces the three manual `firebase deploy` items below.
+- [ ] **Reminders check:** *Run workflow* → task **`send-reminders`**, dry run → the log says how many subscriptions it
+      found (or which secret is missing). After that it runs hourly by itself.
+- [ ] **One-time cleanups** (each: dry run first, then real): tasks **`delete-game-history`**, **`cleanup-reports`**,
+      **`cleanup-rooms`**.
+- From now on: any change to `firestore.rules` / `database.rules.json` merged to `main` is deployed automatically
+  (if the secret is missing the job just warns and skips).
 
 ## 🔴 Needed for features that are already live
 

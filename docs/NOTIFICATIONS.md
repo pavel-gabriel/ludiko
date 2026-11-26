@@ -122,7 +122,7 @@ Examples:
 ## 6. Push reminders setup (owner)
 
 One-time steps. The sender is `scripts/send-daily-reminders.mjs` (logic in `scripts/reminders/logic.mjs`),
-run hourly by `.github/workflows/daily-reminders.yml`. Until the secrets exist, the job exits 0 and does nothing.
+run hourly by the `reminders` job in `.github/workflows/deploy.yml`. Until the secrets exist, the job exits 0 and does nothing.
 
 1. **Generate VAPID keys** on your own computer (not in CI), after `npm ci`:
    ```sh
@@ -140,7 +140,7 @@ run hourly by `.github/workflows/daily-reminders.yml`. Until the secrets exist, 
    Service Accounts → create `ludiko-reminders`. Grant only the role **Cloud Datastore User** (`roles/datastore.user`),
    which covers Firestore reads and writes and nothing else. Create a JSON key for it and paste the file content into
    the `FIREBASE_SERVICE_ACCOUNT` secret. Then delete the local file. The Admin SDK bypasses Firestore rules, so no rule change is needed.
-5. **Check it works.** Run the workflow manually (Actions → Daily reminders → Run workflow) with `dry_run` ticked.
+5. **Check it works.** Run it manually (Actions → "Deploy to GitHub Pages" → Run workflow → task `send-reminders`) with `dry_run` ticked.
    The log shows the counts without sending or writing anything. Then run it without `dry_run` when you are ready.
 
 Logs never contain endpoints, keys or child data: only counts, endpoint hosts and HTTP status codes.
