@@ -31,3 +31,20 @@ describe('deploy workflow (site + Firebase upkeep)', () => {
     expect(existsSync(join(ROOT, '.github/workflows/daily-reminders.yml'))).toBe(false);
   });
 });
+
+describe('Firebase rules sanity', () => {
+  it('RTDB rules use no client-SDK-only methods (numChildren is not available in rules)', () => {
+    const rtdb = readFileSync(join(ROOT, 'database.rules.json'), 'utf8');
+    expect(rtdb).not.toMatch(/numChildren|\.size\(\)|\.keys\(\)|hasOnly|request\.auth/);
+  });
+  it('the PR workflow compiles the rules in the emulators', () => {
+    const t = readFileSync(join(ROOT, '.github/workflows/test.yml'), 'utf8');
+    expect(t).toContain('emulators:exec --only firestore,database');
+  });
+  it('all workflows use Node 22 (firebase-admin and @google-cloud/firestore require >=22)', () => {
+    for (const f of ['deploy.yml', 'test.yml']) {
+      const y = readFileSync(join(ROOT, '.github/workflows', f), 'utf8');
+      expect(y, f).not.toContain('node-version: 20');
+    }
+  });
+});
