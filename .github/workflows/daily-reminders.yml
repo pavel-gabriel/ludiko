@@ -2,7 +2,7 @@ name: Daily reminders
 
 # Sends at most one push reminder per child device per day, at the parent's chosen local hour.
 # See docs/NOTIFICATIONS.md §4. Without the secrets the job is a no-op (exits 0).
-# Runs hourly at minute 7 (UTC); each subscription is only due at its own local hour.
+# Runs hourly at minute 7 (UTC); each subscription is only due at its own local hour. 
 
 on:
   schedule:
