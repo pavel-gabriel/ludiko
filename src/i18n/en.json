@@ -581,7 +581,8 @@
     },
     "subject": {
       "mat": "Maths",
-      "rom": "Romanian"
+      "rom": "Romanian",
+      "ist": "History"
     },
     "home": {
       "missionTitle": "Today's mission",

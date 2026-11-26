@@ -35,6 +35,8 @@ import './romSyllables';
 import './romWordPicture';
 import './romSentences';
 import './romVocab';
+// history (grade IV) generators
+import './istGenerators';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

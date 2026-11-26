@@ -1,0 +1,974 @@
+[
+  {
+    "id": "exp.ist.source.4",
+    "skillId": "ist.source.4",
+    "title": {
+      "ro": "Istoria și izvoarele istorice",
+      "en": "History and historical sources"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Istoria este știința care studiază trecutul oamenilor. Ca să aflăm ce s-a întâmplat demult, căutăm dovezi.",
+          "en": "History is the science that studies the past of people. To find out what happened long ago, we look for evidence."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📜",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dovezile se numesc izvoare istorice: acte și cronici scrise, monede și unelte vechi, clădiri, hărți, fotografii.",
+          "en": "The evidence is called historical sources: written records and chronicles, old coins and tools, buildings, maps, photographs."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏺",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Arheologii caută izvoare în pământ, iar muzeele le păstrează. Un desen animat poate fi frumos, dar nu este dovadă despre trecut.",
+          "en": "Archaeologists look for sources in the ground, and museums keep them. A cartoon can be nice, but it is not evidence about the past."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏛️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.source.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.source.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.time.units.4",
+    "skillId": "ist.time.units.4",
+    "title": {
+      "ro": "An, deceniu, secol, mileniu",
+      "en": "Year, decade, century, millennium"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Timpul se măsoară în ani. Zece ani formează un deceniu.",
+          "en": "Time is measured in years. Ten years make a decade."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 100,
+          "step": 10,
+          "marks": [
+            10
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Zece decenii, adică 100 de ani, formează un secol.",
+          "en": "Ten decades, that is 100 years, make a century."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 100,
+          "step": 10,
+          "marks": [
+            100
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Zece secole, adică 1000 de ani, formează un mileniu.",
+          "en": "Ten centuries, that is 1000 years, make a millennium."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 1000,
+          "step": 100,
+          "marks": [
+            1000
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.time.units.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.time.units.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.time.century.4",
+    "skillId": "ist.time.century.4",
+    "title": {
+      "ro": "Secolele: în ce secol este un an",
+      "en": "Centuries: which century a year belongs to"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Secolul al XIX-lea cuprinde anii de la 1801 la 1900. Anul 1859 se află în acest secol.",
+          "en": "The 19th century covers the years 1801 to 1900. The year 1859 is in this century."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1800,
+          "to": 1900,
+          "step": 10,
+          "marks": [
+            1859
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Regula: la anul 1859 iei sutele (18) și adaugi 1. Obții secolul 19. Dacă anul se termină cu 00, rămâi în secolul dinainte: 1900 este în secolul al XIX-lea, iar 2000 în secolul al XX-lea.",
+          "en": "The rule: for the year 1859 take the hundreds (18) and add 1. You get the 19th century. If a year ends in 00, you stay in the earlier century: 1900 is in the 19th century and 2000 is in the 20th."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1890,
+          "to": 2010,
+          "step": 10,
+          "marks": [
+            1900,
+            2000
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Secolele se scriu cu cifre romane: I = 1, V = 5, X = 10. XIX înseamnă 10 + 9 = 19. Mai departe: XV = 15, XVI = 16, XX = 20, XXI = 21.",
+          "en": "Centuries are written with Roman numerals: I = 1, V = 5, X = 10. XIX means 10 + 9 = 19. Then XV = 15, XVI = 16, XX = 20, XXI = 21."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 10,
+          "to": 21,
+          "step": 1,
+          "marks": [
+            19
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.time.century.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.time.century.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.time.timeline.4",
+    "skillId": "ist.time.timeline.4",
+    "title": {
+      "ro": "Linia timpului și ordinea evenimentelor",
+      "en": "The timeline and the order of events"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pe linia timpului, evenimentele mai vechi stau în stânga, cele mai noi în dreapta. Anii dinainte de Hristos (î.Hr.) se numără înapoi: 82 î.Hr. este mai vechi decât 44 î.Hr.",
+          "en": "On a timeline, older events stand on the left and newer ones on the right. Years before Christ (BC) count backwards: 82 BC is older than 44 BC."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -90,
+          "to": -40,
+          "step": 10,
+          "marks": [
+            -82,
+            -44
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Ca să afli câți ani au trecut între două evenimente, scazi anii: 1877 − 1859 = 18 ani între Unirea Principatelor și proclamarea independenței.",
+          "en": "To find how many years passed between two events, subtract the years: 1877 − 1859 = 18 years between the Union of the Principalities and the proclamation of independence."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1859,
+          "to": 1877,
+          "marks": [
+            1859,
+            1877
+          ],
+          "jumps": [
+            {
+              "from": 1859,
+              "to": 1877
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Ca să pui evenimente în ordine, compară anii: 1859 vine înaintea lui 1877, iar 1877 înaintea lui 1918.",
+          "en": "To put events in order, compare the years: 1859 comes before 1877, and 1877 before 1918."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1859,
+          "to": 1918,
+          "marks": [
+            1859,
+            1877,
+            1918
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.time.timeline.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.time.timeline.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.family.local.4",
+    "skillId": "ist.family.local.4",
+    "title": {
+      "ro": "Istoria familiei și a comunității locale",
+      "en": "Family history and the local community"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Familia ta are o istorie. Poți afla despre ea din poveștile bunicilor, din fotografii vechi, din scrisori și din obiecte păstrate.",
+          "en": "Your family has a history. You can learn about it from your grandparents' stories, old photographs, letters and kept objects."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📷",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Arborele genealogic arată cine îți sunt rudele: părinți, bunici, străbunici, frați. Fiecare generație este un rând nou în arbore.",
+          "en": "A family tree shows who your relatives are: parents, grandparents, great-grandparents, siblings. Each generation is a new row in the tree."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Comunitatea locală are și ea istorie: monumente, biserici, școli, sărbători și tradiții. Le poți afla vizitând muzeul sau întrebând oamenii mai în vârstă.",
+          "en": "The local community has a history too: monuments, churches, schools, festivals and traditions. You can learn about them by visiting the museum or asking older people."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏘️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.family.local.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.family.local.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.dacians.4",
+    "skillId": "ist.dacians.4",
+    "title": {
+      "ro": "Geto-dacii: Burebista și Decebal",
+      "en": "The Geto-Dacians: Burebista and Decebal"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Geto-dacii au trăit pe teritoriul de azi al României cu mult înainte de romani. Trăiau din agricultură, creșterea animalelor, meșteșuguri și comerț.",
+          "en": "The Geto-Dacians lived on the territory of today's Romania long before the Romans. They lived from farming, herding, crafts and trade."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌾",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Burebista a fost un rege dac din secolul I î.Hr., în jurul anilor 82–44 î.Hr. El a unit triburile dace într-un stat puternic.",
+          "en": "Burebista was a Dacian king of the 1st century BC, around the years 82–44 BC. He united the Dacian tribes into a strong state."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -90,
+          "to": -40,
+          "marks": [
+            -82,
+            -44
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Decebal a fost ultimul rege al dacilor liberi, în vremea împăratului roman Traian. Capitala dacilor, Sarmizegetusa Regia, era în munții Orăștiei.",
+          "en": "Decebal was the last king of the free Dacians, in the time of the Roman emperor Trajan. The Dacian capital, Sarmizegetusa Regia, was in the Orăștie Mountains."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏰",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.dacians.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.dacians.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.romans.4",
+    "skillId": "ist.romans.4",
+    "title": {
+      "ro": "Romanii și războaiele cu dacii",
+      "en": "The Romans and the wars with the Dacians"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "La începutul secolului al II-lea d.Hr., împăratul roman Traian a purtat două războaie cu dacii, între anii 101–102 și 105–106.",
+          "en": "At the start of the 2nd century AD, the Roman emperor Trajan fought two wars against the Dacians, in 101–102 and 105–106."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 100,
+          "to": 107,
+          "marks": [
+            101,
+            106
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "În anul 106, o mare parte din Dacia a devenit provincie romană. Romanii au adus drumuri, orașe și limba latină. Un pod peste Dunăre a fost proiectat de Apolodor din Damasc.",
+          "en": "In the year 106, a large part of Dacia became a Roman province. The Romans brought roads, towns and the Latin language. A bridge over the Danube was designed by Apollodorus of Damascus."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌉",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Columna lui Traian din Roma, inaugurată în anul 113, are scene sculptate în piatră din aceste războaie. Este un izvor istoric important.",
+          "en": "Trajan's Column in Rome, inaugurated in the year 113, has scenes carved in stone from these wars. It is an important historical source."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 100,
+          "to": 115,
+          "marks": [
+            106,
+            113
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.romans.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.romans.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.formation.4",
+    "skillId": "ist.formation.4",
+    "title": {
+      "ro": "Formarea poporului și a limbii române",
+      "en": "The formation of the Romanian people and language"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În Dacia romană au trăit împreună daci și romani. Din întâlnirea lor s-a format, încet, poporul român.",
+          "en": "In Roman Dacia, Dacians and Romans lived together. From their meeting the Romanian people slowly formed."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🤝",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Limba română vine din latină. Cuvinte ca „pâine”, „apă” și „om” au rămas de la romani. Româna este înrudită cu italiana, franceza și spaniola.",
+          "en": "The Romanian language comes from Latin. Words such as “pâine”, “apă” and “om” stayed from the Romans. Romanian is related to Italian, French and Spanish."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗣️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "După ce armata și administrația romană au plecat, oamenii au rămas pe aceste meleaguri. Treptat, s-a răspândit și creștinismul.",
+          "en": "After the Roman army and administration left, the people stayed on these lands. Gradually, Christianity also spread."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⛪",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.formation.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.formation.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.medieval.states.4",
+    "skillId": "ist.medieval.states.4",
+    "title": {
+      "ro": "Țările românești în Evul Mediu: Basarab I, Bogdan I, Mircea cel Bătrân",
+      "en": "The Romanian lands in the Middle Ages: Basarab I, Bogdan I, Mircea the Elder"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În Evul Mediu, românii au trăit în trei mari regiuni: Țara Românească, Moldova și Transilvania. Țările erau conduse de domni sau de voievozi.",
+          "en": "In the Middle Ages, Romanians lived in three great regions: Wallachia, Moldavia and Transylvania. The lands were ruled by princes or voivodes."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗺️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Basarab I, voievodul Țării Românești, a învins la Posada, în 1330, armata regelui Ungariei. Bogdan I, din Maramureș, a întemeiat Moldova independentă, în jurul anului 1359.",
+          "en": "Basarab I, voivode of Wallachia, defeated the army of the King of Hungary at Posada in 1330. Bogdan I, from Maramureș, founded independent Moldavia around the year 1359."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1320,
+          "to": 1360,
+          "marks": [
+            1330,
+            1359
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Mircea cel Bătrân a fost domnul Țării Românești între 1386 și 1418, adică 32 de ani. El a stăpânit și Dobrogea.",
+          "en": "Mircea the Elder ruled Wallachia between 1386 and 1418, that is 32 years. He also held Dobruja."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1386,
+          "to": 1418,
+          "marks": [
+            1386,
+            1418
+          ],
+          "jumps": [
+            {
+              "from": 1386,
+              "to": 1418
+            }
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.medieval.states.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.medieval.states.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.medieval.heroes.4",
+    "skillId": "ist.medieval.heroes.4",
+    "title": {
+      "ro": "Iancu de Hunedoara, Vlad Țepeș, Ștefan cel Mare",
+      "en": "John Hunyadi, Vlad Țepeș, Stephen the Great"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Iancu de Hunedoara a fost voievodul Transilvaniei. În 1456 a apărat cetatea Belgradului, în secolul al XV-lea.",
+          "en": "John Hunyadi was the voivode of Transylvania. In 1456 he defended the fortress of Belgrade, in the 15th century."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1450,
+          "to": 1460,
+          "marks": [
+            1456
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Vlad Țepeș a fost domnul Țării Românești între 1456 și 1462. Într-un document din vremea lui, din 1459, apare pentru prima dată numele Bucureștiului.",
+          "en": "Vlad Țepeș was the ruler of Wallachia between 1456 and 1462. In a document from his time, from 1459, the name of Bucharest appears for the first time."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1456,
+          "to": 1462,
+          "marks": [
+            1456,
+            1459,
+            1462
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Ștefan cel Mare a condus Moldova 47 de ani, din 1457 până în 1504. A ridicat multe biserici și mănăstiri, între care Putna, iar în 1475 a câștigat bătălia de la Vaslui.",
+          "en": "Stephen the Great ruled Moldavia for 47 years, from 1457 to 1504. He built many churches and monasteries, among them Putna, and in 1475 he won the Battle of Vaslui."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1457,
+          "to": 1504,
+          "marks": [
+            1457,
+            1475,
+            1504
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.medieval.heroes.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.medieval.heroes.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.mihai.4",
+    "skillId": "ist.mihai.4",
+    "title": {
+      "ro": "Mihai Viteazul și unirea din 1600",
+      "en": "Michael the Brave and the union of 1600"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Mihai Viteazul a devenit domnul Țării Românești în 1593. În 1595 a avut loc bătălia de la Călugăreni.",
+          "en": "Michael the Brave became ruler of Wallachia in 1593. In 1595 the Battle of Călugăreni took place."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1593,
+          "to": 1601,
+          "marks": [
+            1593,
+            1595
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "În 1600, Mihai Viteazul a unit pentru scurt timp Țara Românească, Transilvania și Moldova. Era prima dată când cele trei țări aveau același conducător.",
+          "en": "In 1600, Michael the Brave briefly united Wallachia, Transylvania and Moldavia. It was the first time the three lands had the same ruler."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1593,
+          "to": 1601,
+          "marks": [
+            1600
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Mihai Viteazul a murit în 1601, iar unirea s-a destrămat. Amintirea ei a rămas și i-a inspirat mai târziu pe cei care au visat o țară unită.",
+          "en": "Michael the Brave died in 1601 and the union fell apart. The memory of it remained and later inspired those who dreamed of a united country."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1593,
+          "to": 1601,
+          "marks": [
+            1601
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.mihai.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.mihai.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.union1859.4",
+    "skillId": "ist.union1859.4",
+    "title": {
+      "ro": "Unirea Principatelor (1859) și Alexandru Ioan Cuza",
+      "en": "The Union of the Principalities (1859) and Alexandru Ioan Cuza"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În 1859, Moldova și Țara Românească erau două țări separate. Pe 5 ianuarie, Alexandru Ioan Cuza a fost ales domn al Moldovei.",
+          "en": "In 1859, Moldavia and Wallachia were two separate lands. On 5 January, Alexandru Ioan Cuza was elected ruler of Moldavia."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗳️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pe 24 ianuarie 1859, Cuza a fost ales domn și al Țării Românești. Astfel, cele două țări s-au unit sub același domn: este Unirea Principatelor.",
+          "en": "On 24 January 1859, Cuza was also elected ruler of Wallachia. So the two lands united under the same ruler: this is the Union of the Principalities."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1859,
+          "to": 1866,
+          "marks": [
+            1859
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Cuza a domnit între 1859 și 1866. În 1862, capitala statului unit a devenit București, iar țara a primit numele România. În 1864 s-a făcut o reformă agrară.",
+          "en": "Cuza ruled between 1859 and 1866. In 1862, Bucharest became the capital of the united state, and the country was named Romania. In 1864 an agrarian reform was made."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1859,
+          "to": 1866,
+          "marks": [
+            1859,
+            1862,
+            1864,
+            1866
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.union1859.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.union1859.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.independence.4",
+    "skillId": "ist.independence.4",
+    "title": {
+      "ro": "Independența de stat (1877)",
+      "en": "Independence (1877)"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În 1877, România era condusă de domnitorul Carol I, dar nu era încă un stat complet independent. Pe 9 mai 1877, Mihail Kogălniceanu a rostit în Parlament declarația de independență.",
+          "en": "In 1877, Romania was ruled by Prince Carol I, but it was not yet a fully independent state. On 9 May 1877, Mihail Kogălniceanu read the declaration of independence in Parliament."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1859,
+          "to": 1877,
+          "marks": [
+            1859,
+            1877
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Independența a fost proclamată în mai 1877. Războiul de independență s-a purtat în 1877–1878, iar armata română a luptat alături de armata rusă.",
+          "en": "Independence was proclaimed in May 1877. The War of Independence was fought in 1877–1878, and the Romanian army fought alongside the Russian army."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1877,
+          "to": 1878,
+          "marks": [
+            1877,
+            1878
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "În 1878, independența a fost recunoscută, iar Dobrogea a intrat în România. În 1881, România a devenit regat, iar Carol I a fost încoronat rege.",
+          "en": "In 1878, independence was recognised and Dobruja became part of Romania. In 1881, Romania became a kingdom and Carol I was crowned king."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1877,
+          "to": 1881,
+          "marks": [
+            1877,
+            1878,
+            1881
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.independence.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.independence.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.union1918.4",
+    "skillId": "ist.union1918.4",
+    "title": {
+      "ro": "Marea Unire (1 decembrie 1918)",
+      "en": "The Great Union (1 December 1918)"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În 1918, Basarabia, Bucovina și Transilvania au hotărât să se unească cu România. Basarabia a hotărât pe 27 martie, Bucovina pe 28 noiembrie.",
+          "en": "In 1918, Bessarabia, Bukovina and Transylvania decided to unite with Romania. Bessarabia decided on 27 March, Bukovina on 28 November."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1917,
+          "to": 1919,
+          "step": 1,
+          "marks": [
+            1918
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Pe 1 decembrie 1918, la Alba Iulia, reprezentanții românilor din Transilvania au hotărât unirea cu România. Este Marea Unire.",
+          "en": "On 1 December 1918, at Alba Iulia, the representatives of the Romanians of Transylvania decided on union with Romania. This is the Great Union."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏛️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Regele Ferdinand și regina Maria au condus țara în acești ani. Au fost încoronați la Alba Iulia în 1922. Țara unită se numește România Mare.",
+          "en": "King Ferdinand and Queen Marie led the country in those years. They were crowned at Alba Iulia in 1922. The united country is called Greater Romania."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1918,
+          "to": 1922,
+          "marks": [
+            1918,
+            1922
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.union1918.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.union1918.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.symbols.4",
+    "skillId": "ist.symbols.4",
+    "title": {
+      "ro": "Simbolurile naționale și 1 Decembrie",
+      "en": "National symbols and 1 December"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Simbolurile naționale sunt drapelul, stema și imnul. Ele ne amintesc de țara noastră.",
+          "en": "The national symbols are the flag, the coat of arms and the anthem. They remind us of our country."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚩",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Drapelul României are trei culori așezate vertical: albastru, galben, roșu. Pe stemă este o acvilă cu o cruce în cioc.",
+          "en": "The Romanian flag has three colours arranged vertically: blue, yellow, red. The coat of arms shows an eagle with a cross in its beak."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦅",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Imnul național este „Deșteaptă-te, române!”, cu versuri de Andrei Mureșanu. Din 1990, Ziua Națională este 1 Decembrie, ziua Marii Uniri din 1918.",
+          "en": "The national anthem is “Deșteaptă-te, române!”, with words by Andrei Mureșanu. Since 1990, the National Day is 1 December, the day of the Great Union of 1918."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎶",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.symbols.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.symbols.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ist.legend.fact.4",
+    "skillId": "ist.legend.fact.4",
+    "title": {
+      "ro": "Legendă sau fapt istoric",
+      "en": "Legend or historical fact"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "O legendă este o poveste transmisă de oameni, cu întâmplări minunate sau inventate. Ea poate fi frumoasă, dar nu este dovadă istorică.",
+          "en": "A legend is a story passed on by people, with wonderful or invented events. It can be beautiful, but it is not historical evidence."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📖",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Un fapt istoric are dovezi: documente, monede, clădiri, scrieri vechi. Un document din 1459 arată că Bucureștiul exista; povestea ciobanului Bucur este o legendă.",
+          "en": "A historical fact has evidence: documents, coins, buildings, old writings. A document from 1459 shows that Bucharest existed; the story of the shepherd Bucur is a legend."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📜",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ca să deosebești legenda de fapt, întreabă-te: există o dovadă? Apar în poveste zmei, zâne sau animale care vorbesc? Atunci este o poveste, nu istorie.",
+          "en": "To tell a legend from a fact, ask yourself: is there evidence? Do dragons, fairies or talking animals appear in the story? Then it is a story, not history."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐉",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ist.legend.fact.4",
+      "kind": "explanation",
+      "title": "Explanation for ist.legend.fact.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+    }
+  }
+]

@@ -1,0 +1,1570 @@
+{
+ "provenance": {
+  "id": "prov.data.ist.history",
+  "kind": "data",
+  "title": "Ludiko history facts: events, rulers, true/false statements and legend-or-fact statements (grade IV)",
+  "author": "Ludiko",
+  "source": "own",
+  "licence": "OWN",
+  "notes": "Own wording; historical facts only (dates and names double-checked against standard reference works, to be reviewed by a history teacher). No textbook text."
+ },
+ "events": [
+  {
+   "id": "burebista-start",
+   "year": -82,
+   "approx": true,
+   "topic": "dacians",
+   "ro": "Burebista începe să conducă dacii",
+   "en": "Burebista begins to rule the Dacians",
+   "stemRo": "Burebista a început să conducă dacii în jurul anului",
+   "stemEn": "Burebista began to rule the Dacians around the year"
+  },
+  {
+   "id": "burebista-end",
+   "year": -44,
+   "approx": true,
+   "topic": "dacians",
+   "ro": "Se încheie domnia lui Burebista",
+   "en": "The rule of Burebista ends",
+   "stemRo": "Domnia lui Burebista s-a încheiat în jurul anului",
+   "stemEn": "The rule of Burebista ended around the year"
+  },
+  {
+   "id": "war1",
+   "year": 101,
+   "approx": false,
+   "topic": "romans",
+   "ro": "Începe primul război dintre daci și romani",
+   "en": "The first war between Dacians and Romans begins",
+   "stemRo": "Primul război dintre daci și romani a început în anul",
+   "stemEn": "The first war between Dacians and Romans began in the year"
+  },
+  {
+   "id": "province",
+   "year": 106,
+   "approx": false,
+   "topic": "romans",
+   "ro": "Dacia devine provincie romană",
+   "en": "Dacia becomes a Roman province",
+   "stemRo": "Dacia a devenit provincie romană în anul",
+   "stemEn": "Dacia became a Roman province in the year"
+  },
+  {
+   "id": "column",
+   "year": 113,
+   "approx": false,
+   "topic": "romans",
+   "ro": "Columna lui Traian este inaugurată la Roma",
+   "en": "Trajan's Column is inaugurated in Rome",
+   "stemRo": "Columna lui Traian a fost inaugurată la Roma în anul",
+   "stemEn": "Trajan's Column was inaugurated in Rome in the year"
+  },
+  {
+   "id": "posada",
+   "year": 1330,
+   "approx": false,
+   "topic": "medieval",
+   "ro": "Bătălia de la Posada",
+   "en": "The Battle of Posada",
+   "stemRo": "Bătălia de la Posada a avut loc în anul",
+   "stemEn": "The Battle of Posada took place in the year"
+  },
+  {
+   "id": "bogdan",
+   "year": 1359,
+   "approx": true,
+   "topic": "medieval",
+   "ro": "Bogdan I întemeiază Moldova independentă",
+   "en": "Bogdan I founds independent Moldavia",
+   "stemRo": "Moldova a devenit stat independent, sub Bogdan I, în jurul anului",
+   "stemEn": "Moldavia became an independent state, under Bogdan I, around the year"
+  },
+  {
+   "id": "mircea-start",
+   "year": 1386,
+   "approx": false,
+   "topic": "medieval",
+   "ro": "Mircea cel Bătrân devine domn",
+   "en": "Mircea the Elder becomes ruler",
+   "stemRo": "Mircea cel Bătrân a devenit domn al Țării Românești în anul",
+   "stemEn": "Mircea the Elder became ruler of Wallachia in the year"
+  },
+  {
+   "id": "mircea-end",
+   "year": 1418,
+   "approx": false,
+   "topic": "medieval",
+   "ro": "Se încheie domnia lui Mircea cel Bătrân",
+   "en": "The rule of Mircea the Elder ends",
+   "stemRo": "Mircea cel Bătrân a murit în anul",
+   "stemEn": "Mircea the Elder died in the year"
+  },
+  {
+   "id": "belgrad",
+   "year": 1456,
+   "approx": false,
+   "topic": "heroes",
+   "ro": "Iancu de Hunedoara apără Belgradul",
+   "en": "John Hunyadi defends Belgrade",
+   "stemRo": "Iancu de Hunedoara a apărat Belgradul în anul",
+   "stemEn": "John Hunyadi defended Belgrade in the year"
+  },
+  {
+   "id": "stefan-start",
+   "year": 1457,
+   "approx": false,
+   "topic": "heroes",
+   "ro": "Ștefan cel Mare devine domn al Moldovei",
+   "en": "Stephen the Great becomes ruler of Moldavia",
+   "stemRo": "Ștefan cel Mare a devenit domn al Moldovei în anul",
+   "stemEn": "Stephen the Great became ruler of Moldavia in the year"
+  },
+  {
+   "id": "bucuresti",
+   "year": 1459,
+   "approx": false,
+   "topic": "heroes",
+   "ro": "București este amintit pentru prima dată într-un document",
+   "en": "Bucharest is mentioned in a document for the first time",
+   "stemRo": "Bucureștiul este amintit pentru prima dată într-un document din anul",
+   "stemEn": "Bucharest is first mentioned in a document from the year"
+  },
+  {
+   "id": "vaslui",
+   "year": 1475,
+   "approx": false,
+   "topic": "heroes",
+   "ro": "Bătălia de la Vaslui",
+   "en": "The Battle of Vaslui",
+   "stemRo": "Bătălia de la Vaslui a avut loc în anul",
+   "stemEn": "The Battle of Vaslui took place in the year"
+  },
+  {
+   "id": "stefan-end",
+   "year": 1504,
+   "approx": false,
+   "topic": "heroes",
+   "ro": "Moare Ștefan cel Mare",
+   "en": "Stephen the Great dies",
+   "stemRo": "Ștefan cel Mare a murit în anul",
+   "stemEn": "Stephen the Great died in the year"
+  },
+  {
+   "id": "mihai-start",
+   "year": 1593,
+   "approx": false,
+   "topic": "mihai",
+   "ro": "Mihai Viteazul devine domn al Țării Românești",
+   "en": "Michael the Brave becomes ruler of Wallachia",
+   "stemRo": "Mihai Viteazul a devenit domn al Țării Românești în anul",
+   "stemEn": "Michael the Brave became ruler of Wallachia in the year"
+  },
+  {
+   "id": "calugareni",
+   "year": 1595,
+   "approx": false,
+   "topic": "mihai",
+   "ro": "Bătălia de la Călugăreni",
+   "en": "The Battle of Călugăreni",
+   "stemRo": "Bătălia de la Călugăreni a avut loc în anul",
+   "stemEn": "The Battle of Călugăreni took place in the year"
+  },
+  {
+   "id": "mihai-union",
+   "year": 1600,
+   "approx": false,
+   "topic": "mihai",
+   "ro": "Mihai Viteazul unește cele trei țări românești",
+   "en": "Michael the Brave unites the three Romanian lands",
+   "stemRo": "Mihai Viteazul a unit pentru scurt timp cele trei țări românești în anul",
+   "stemEn": "Michael the Brave briefly united the three Romanian lands in the year"
+  },
+  {
+   "id": "mihai-end",
+   "year": 1601,
+   "approx": false,
+   "topic": "mihai",
+   "ro": "Moare Mihai Viteazul",
+   "en": "Michael the Brave dies",
+   "stemRo": "Mihai Viteazul a murit în anul",
+   "stemEn": "Michael the Brave died in the year"
+  },
+  {
+   "id": "union1859",
+   "year": 1859,
+   "approx": false,
+   "topic": "union1859",
+   "ro": "Unirea Principatelor Române",
+   "en": "The Union of the Romanian Principalities",
+   "stemRo": "Unirea Principatelor Române a avut loc în anul",
+   "stemEn": "The Union of the Romanian Principalities took place in the year"
+  },
+  {
+   "id": "romania1862",
+   "year": 1862,
+   "approx": false,
+   "topic": "union1859",
+   "ro": "Statul unit primește numele România, cu capitala la București",
+   "en": "The united state is named Romania, with Bucharest as its capital",
+   "stemRo": "Statul unit a primit numele România, cu capitala la București, în anul",
+   "stemEn": "The united state was named Romania, with Bucharest as its capital, in the year"
+  },
+  {
+   "id": "carol1866",
+   "year": 1866,
+   "approx": false,
+   "topic": "union1859",
+   "ro": "Carol I devine domnitor al României",
+   "en": "Carol I becomes prince of Romania",
+   "stemRo": "Carol I a devenit domnitor al României în anul",
+   "stemEn": "Carol I became prince of Romania in the year"
+  },
+  {
+   "id": "independence",
+   "year": 1877,
+   "approx": false,
+   "topic": "independence",
+   "ro": "România își proclamă independența",
+   "en": "Romania proclaims its independence",
+   "stemRo": "România și-a proclamat independența de stat în anul",
+   "stemEn": "Romania proclaimed its independence in the year"
+  },
+  {
+   "id": "berlin",
+   "year": 1878,
+   "approx": false,
+   "topic": "independence",
+   "ro": "Independența României este recunoscută; Dobrogea revine României",
+   "en": "Romania's independence is recognised; Dobruja joins Romania",
+   "stemRo": "Independența României a fost recunoscută, iar Dobrogea a revenit României, în anul",
+   "stemEn": "Romania's independence was recognised, and Dobruja joined Romania, in the year"
+  },
+  {
+   "id": "kingdom",
+   "year": 1881,
+   "approx": false,
+   "topic": "independence",
+   "ro": "România devine regat",
+   "en": "Romania becomes a kingdom",
+   "stemRo": "România a devenit regat în anul",
+   "stemEn": "Romania became a kingdom in the year"
+  },
+  {
+   "id": "union1918",
+   "year": 1918,
+   "approx": false,
+   "topic": "union1918",
+   "ro": "Marea Unire de la Alba Iulia",
+   "en": "The Great Union at Alba Iulia",
+   "stemRo": "Marea Unire de la Alba Iulia a avut loc în anul",
+   "stemEn": "The Great Union at Alba Iulia took place in the year"
+  },
+  {
+   "id": "coronation",
+   "year": 1922,
+   "approx": false,
+   "topic": "union1918",
+   "ro": "Regele Ferdinand și regina Maria sunt încoronați la Alba Iulia",
+   "en": "King Ferdinand and Queen Marie are crowned at Alba Iulia",
+   "stemRo": "Regele Ferdinand și regina Maria au fost încoronați la Alba Iulia în anul",
+   "stemEn": "King Ferdinand and Queen Marie were crowned at Alba Iulia in the year"
+  },
+  {
+   "id": "nationalday",
+   "year": 1990,
+   "approx": false,
+   "topic": "symbols",
+   "ro": "1 Decembrie devine Ziua Națională a României",
+   "en": "1 December becomes Romania's National Day",
+   "stemRo": "1 Decembrie a devenit Ziua Națională a României în anul",
+   "stemEn": "1 December became Romania's National Day in the year"
+  },
+  {
+   "id": "eu",
+   "year": 2007,
+   "approx": false,
+   "topic": "other",
+   "ro": "România intră în Uniunea Europeană",
+   "en": "Romania joins the European Union",
+   "stemRo": "România a intrat în Uniunea Europeană în anul",
+   "stemEn": "Romania joined the European Union in the year"
+  }
+ ],
+ "rulers": [
+  {
+   "id": "burebista",
+   "era": "ancient",
+   "topics": [
+    "dacians"
+   ],
+   "ro": "Burebista",
+   "en": "Burebista",
+   "achRo": "regele care a unit triburile dace într-un stat puternic",
+   "achEn": "the king who united the Dacian tribes into a strong state"
+  },
+  {
+   "id": "decebal",
+   "era": "ancient",
+   "topics": [
+    "dacians",
+    "romans"
+   ],
+   "ro": "Decebal",
+   "en": "Decebal",
+   "achRo": "ultimul rege al dacilor liberi",
+   "achEn": "the last king of the free Dacians"
+  },
+  {
+   "id": "traian",
+   "era": "ancient",
+   "topics": [
+    "romans"
+   ],
+   "ro": "Traian",
+   "en": "Trajan",
+   "achRo": "împăratul roman al cărui nume îl poartă o coloană din Roma, cu scene din războaiele cu dacii",
+   "achEn": "the Roman emperor whose name is borne by a column in Rome, with scenes from the wars against the Dacians"
+  },
+  {
+   "id": "basarab",
+   "era": "medieval",
+   "topics": [
+    "medieval"
+   ],
+   "ro": "Basarab I",
+   "en": "Basarab I",
+   "achRo": "voievodul care a învins armata regelui Ungariei la Posada, în 1330",
+   "achEn": "the voivode who defeated the army of the King of Hungary at Posada, in 1330"
+  },
+  {
+   "id": "bogdan",
+   "era": "medieval",
+   "topics": [
+    "medieval"
+   ],
+   "ro": "Bogdan I",
+   "en": "Bogdan I",
+   "achRo": "voievodul din Maramureș care a întemeiat Moldova independentă",
+   "achEn": "the voivode from Maramureș who founded independent Moldavia"
+  },
+  {
+   "id": "mircea",
+   "era": "medieval",
+   "topics": [
+    "medieval"
+   ],
+   "ro": "Mircea cel Bătrân",
+   "en": "Mircea the Elder",
+   "achRo": "domnul Țării Românești între 1386 și 1418, care a stăpânit și Dobrogea",
+   "achEn": "the ruler of Wallachia between 1386 and 1418, who also held Dobruja",
+   "reign": [
+    1386,
+    1418
+   ]
+  },
+  {
+   "id": "iancu",
+   "era": "medieval",
+   "topics": [
+    "heroes"
+   ],
+   "ro": "Iancu de Hunedoara",
+   "en": "John Hunyadi",
+   "achRo": "voievodul Transilvaniei care a apărat Belgradul în 1456",
+   "achEn": "the voivode of Transylvania who defended Belgrade in 1456"
+  },
+  {
+   "id": "vlad",
+   "era": "medieval",
+   "topics": [
+    "heroes"
+   ],
+   "ro": "Vlad Țepeș",
+   "en": "Vlad Țepeș",
+   "achRo": "domnul Țării Românești din anii 1456–1462, în vremea căruia apare prima oară numele Bucureștiului într-un document",
+   "achEn": "the ruler of Wallachia in 1456–1462, in whose time the name of Bucharest first appears in a document",
+   "reign": [
+    1456,
+    1462
+   ]
+  },
+  {
+   "id": "stefan",
+   "era": "medieval",
+   "topics": [
+    "heroes"
+   ],
+   "ro": "Ștefan cel Mare",
+   "en": "Stephen the Great",
+   "achRo": "domnul Moldovei timp de 47 de ani, ctitor de biserici și mănăstiri",
+   "achEn": "the ruler of Moldavia for 47 years, builder of churches and monasteries",
+   "reign": [
+    1457,
+    1504
+   ]
+  },
+  {
+   "id": "mihai",
+   "era": "medieval",
+   "topics": [
+    "mihai"
+   ],
+   "ro": "Mihai Viteazul",
+   "en": "Michael the Brave",
+   "achRo": "domnul care a unit în 1600, pentru scurt timp, Țara Românească, Transilvania și Moldova",
+   "achEn": "the ruler who briefly united Wallachia, Transylvania and Moldavia in 1600",
+   "reign": [
+    1593,
+    1601
+   ]
+  },
+  {
+   "id": "cuza",
+   "era": "modern",
+   "topics": [
+    "union1859"
+   ],
+   "ro": "Alexandru Ioan Cuza",
+   "en": "Alexandru Ioan Cuza",
+   "achRo": "domnitorul ales în 1859 atât în Moldova, cât și în Țara Românească",
+   "achEn": "the prince elected in 1859 in both Moldavia and Wallachia",
+   "reign": [
+    1859,
+    1866
+   ]
+  },
+  {
+   "id": "kogalniceanu",
+   "era": "modern",
+   "topics": [
+    "independence"
+   ],
+   "ro": "Mihail Kogălniceanu",
+   "en": "Mihail Kogălniceanu",
+   "achRo": "omul politic care a rostit în Parlament declarația de independență, în 1877",
+   "achEn": "the statesman who read the declaration of independence in Parliament in 1877"
+  },
+  {
+   "id": "carol",
+   "era": "modern",
+   "topics": [
+    "independence",
+    "union1859"
+   ],
+   "ro": "Carol I",
+   "en": "Carol I",
+   "achRo": "domnitor din 1866 și primul rege al României, încoronat în 1881",
+   "achEn": "prince from 1866 and the first king of Romania, crowned in 1881",
+   "reign": [
+    1866,
+    1914
+   ]
+  },
+  {
+   "id": "ferdinand",
+   "era": "modern",
+   "topics": [
+    "union1918"
+   ],
+   "ro": "Regele Ferdinand",
+   "en": "King Ferdinand",
+   "achRo": "regele României în anul Marii Uniri, 1918",
+   "achEn": "the king of Romania in the year of the Great Union, 1918"
+  },
+  {
+   "id": "maria",
+   "era": "modern",
+   "topics": [
+    "union1918"
+   ],
+   "ro": "Regina Maria",
+   "en": "Queen Marie",
+   "achRo": "regina României din timpul Primului Război Mondial, care a sprijinit răniții",
+   "achEn": "the queen of Romania during the First World War, who helped the wounded"
+  }
+ ],
+ "facts": [
+  {
+   "topic": "source",
+   "ok": true,
+   "ro": "O monedă veche găsită în pământ este un izvor istoric.",
+   "en": "An old coin found in the ground is a historical source."
+  },
+  {
+   "topic": "source",
+   "ok": true,
+   "ro": "Documentele scrise, cum sunt actele vechi și cronicile, sunt izvoare istorice.",
+   "en": "Written records, such as old deeds and chronicles, are historical sources."
+  },
+  {
+   "topic": "source",
+   "ok": true,
+   "ro": "Cetățile și bisericile vechi ne spun lucruri despre trecut.",
+   "en": "Old fortresses and churches tell us things about the past."
+  },
+  {
+   "topic": "source",
+   "ok": false,
+   "ro": "Un film de desene animate despre cavaleri este cel mai sigur izvor despre trecut.",
+   "en": "A cartoon about knights is the most reliable source about the past."
+  },
+  {
+   "topic": "source",
+   "ok": true,
+   "ro": "Arheologii descoperă urmele oamenilor din trecut săpând cu grijă în pământ.",
+   "en": "Archaeologists find traces of people from the past by digging carefully in the ground."
+  },
+  {
+   "topic": "source",
+   "ok": false,
+   "ro": "Arheologii studiază stelele și planetele.",
+   "en": "Archaeologists study stars and planets."
+  },
+  {
+   "topic": "source",
+   "ok": true,
+   "ro": "Muzeul păstrează obiecte vechi pentru ca oamenii să afle despre trecut.",
+   "en": "A museum keeps old objects so that people can learn about the past."
+  },
+  {
+   "topic": "source",
+   "ok": true,
+   "ro": "O fotografie veche de familie poate fi un izvor istoric.",
+   "en": "An old family photograph can be a historical source."
+  },
+  {
+   "topic": "source",
+   "ok": false,
+   "ro": "Istoria studiază doar ce se va întâmpla în viitor.",
+   "en": "History studies only what will happen in the future."
+  },
+  {
+   "topic": "source",
+   "ok": true,
+   "ro": "Istoricii studiază trecutul oamenilor.",
+   "en": "Historians study the past of people."
+  },
+  {
+   "topic": "source",
+   "ok": false,
+   "ro": "Istoricii nu au nevoie de dovezi.",
+   "en": "Historians do not need evidence."
+  },
+  {
+   "topic": "source",
+   "ok": true,
+   "ro": "Cronicile sunt scrieri în care cineva a povestit întâmplări din timpul său sau de dinainte.",
+   "en": "Chronicles are writings in which someone told of events from their own time or earlier."
+  },
+  {
+   "topic": "source",
+   "ok": true,
+   "ro": "O hartă veche poate fi un izvor istoric.",
+   "en": "An old map can be a historical source."
+  },
+  {
+   "topic": "source",
+   "ok": false,
+   "ro": "Un obiect este izvor istoric numai dacă este nou.",
+   "en": "An object is a historical source only if it is new."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Un deceniu are 10 ani.",
+   "en": "A decade has 10 years."
+  },
+  {
+   "topic": "time",
+   "ok": false,
+   "ro": "Un deceniu are 100 de ani.",
+   "en": "A decade has 100 years."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Un secol are 100 de ani.",
+   "en": "A century has 100 years."
+  },
+  {
+   "topic": "time",
+   "ok": false,
+   "ro": "Un secol are 10 ani.",
+   "en": "A century has 10 years."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Un mileniu are 1000 de ani.",
+   "en": "A millennium has 1000 years."
+  },
+  {
+   "topic": "time",
+   "ok": false,
+   "ro": "Un mileniu are 100 de ani.",
+   "en": "A millennium has 100 years."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Un mileniu are 10 secole.",
+   "en": "A millennium has 10 centuries."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Anii dinainte de nașterea lui Hristos se notează cu „î.Hr.”.",
+   "en": "Years before the birth of Christ are marked “î.Hr.” (BC)."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Pe linia timpului, evenimentele mai vechi se așază mai în stânga.",
+   "en": "On a timeline, older events are placed further to the left."
+  },
+  {
+   "topic": "time",
+   "ok": false,
+   "ro": "Anul 100 î.Hr. este mai recent decât anul 50 î.Hr.",
+   "en": "The year 100 BC is more recent than the year 50 BC."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Anul 44 î.Hr. este mai recent decât anul 82 î.Hr.",
+   "en": "The year 44 BC is more recent than the year 82 BC."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Anul 1900 face parte din secolul al XIX-lea.",
+   "en": "The year 1900 belongs to the 19th century."
+  },
+  {
+   "topic": "time",
+   "ok": false,
+   "ro": "Anul 1900 face parte din secolul al XX-lea.",
+   "en": "The year 1900 belongs to the 20th century."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Secolul al XXI-lea a început în anul 2001.",
+   "en": "The 21st century began in the year 2001."
+  },
+  {
+   "topic": "time",
+   "ok": true,
+   "ro": "Anul 2000 este ultimul an din secolul al XX-lea.",
+   "en": "The year 2000 is the last year of the 20th century."
+  },
+  {
+   "topic": "time",
+   "ok": false,
+   "ro": "Anul 1800 face parte din secolul al XIX-lea.",
+   "en": "The year 1800 belongs to the 19th century."
+  },
+  {
+   "topic": "family",
+   "ok": true,
+   "ro": "Arborele genealogic arată rudele unei familii: părinți, bunici, frați.",
+   "en": "A family tree shows the relatives of a family: parents, grandparents, siblings."
+  },
+  {
+   "topic": "family",
+   "ok": true,
+   "ro": "Poveștile bunicilor despre copilăria lor ne ajută să aflăm istoria familiei.",
+   "en": "Grandparents' stories about their childhood help us learn the history of the family."
+  },
+  {
+   "topic": "family",
+   "ok": false,
+   "ro": "Istoria unei familii începe numai în ziua în care te naști.",
+   "en": "The history of a family begins only on the day you are born."
+  },
+  {
+   "topic": "family",
+   "ok": true,
+   "ro": "Comunitatea locală este formată din oamenii care trăiesc în același sat, oraș sau cartier.",
+   "en": "The local community is made up of the people who live in the same village, town or neighbourhood."
+  },
+  {
+   "topic": "family",
+   "ok": true,
+   "ro": "O sărbătoare a satului face parte din tradițiile comunității.",
+   "en": "A village festival is part of the traditions of the community."
+  },
+  {
+   "topic": "family",
+   "ok": true,
+   "ro": "Un monument din localitate amintește de o persoană sau de o întâmplare importantă.",
+   "en": "A monument in a town reminds us of an important person or event."
+  },
+  {
+   "topic": "family",
+   "ok": false,
+   "ro": "Toate familiile au exact aceleași tradiții.",
+   "en": "All families have exactly the same traditions."
+  },
+  {
+   "topic": "family",
+   "ok": true,
+   "ro": "Fiecare localitate are istoria ei.",
+   "en": "Every place has its own history."
+  },
+  {
+   "topic": "family",
+   "ok": true,
+   "ro": "Fotografiile, scrisorile și obiectele păstrate de familie ne arată cum se trăia în trecut.",
+   "en": "Photographs, letters and objects kept by a family show us how people lived in the past."
+  },
+  {
+   "topic": "dacians",
+   "ok": true,
+   "ro": "Geto-dacii au trăit pe teritoriul de azi al României cu mult înainte de romani.",
+   "en": "The Geto-Dacians lived on the territory of today's Romania long before the Romans."
+  },
+  {
+   "topic": "dacians",
+   "ok": true,
+   "ro": "Burebista a fost rege al dacilor.",
+   "en": "Burebista was a king of the Dacians."
+  },
+  {
+   "topic": "dacians",
+   "ok": true,
+   "ro": "Burebista a trăit în secolul I î.Hr.",
+   "en": "Burebista lived in the 1st century BC."
+  },
+  {
+   "topic": "dacians",
+   "ok": false,
+   "ro": "Burebista a trăit în secolul al XV-lea.",
+   "en": "Burebista lived in the 15th century."
+  },
+  {
+   "topic": "dacians",
+   "ok": false,
+   "ro": "Burebista a trăit în aceeași vreme cu împăratul Traian.",
+   "en": "Burebista lived at the same time as Emperor Trajan."
+  },
+  {
+   "topic": "dacians",
+   "ok": true,
+   "ro": "Decebal a fost regele dacilor în vremea împăratului Traian.",
+   "en": "Decebal was king of the Dacians in the time of Emperor Trajan."
+  },
+  {
+   "topic": "dacians",
+   "ok": false,
+   "ro": "Decebal a fost împărat roman.",
+   "en": "Decebal was a Roman emperor."
+  },
+  {
+   "topic": "dacians",
+   "ok": true,
+   "ro": "Capitala dacilor din munții Orăștiei se numea Sarmizegetusa Regia.",
+   "en": "The Dacian capital in the Orăștie Mountains was called Sarmizegetusa Regia."
+  },
+  {
+   "topic": "dacians",
+   "ok": false,
+   "ro": "Dacii nu au avut nicio cetate.",
+   "en": "The Dacians had no fortresses at all."
+  },
+  {
+   "topic": "dacians",
+   "ok": true,
+   "ro": "Dacii trăiau din agricultură, creșterea animalelor, meșteșuguri și comerț.",
+   "en": "The Dacians made a living from farming, herding, crafts and trade."
+  },
+  {
+   "topic": "dacians",
+   "ok": true,
+   "ro": "Dacii credeau în zeul Zalmoxis.",
+   "en": "The Dacians believed in the god Zalmoxis."
+  },
+  {
+   "topic": "dacians",
+   "ok": false,
+   "ro": "Dacii vorbeau limba latină înainte să vină romanii.",
+   "en": "The Dacians spoke Latin before the Romans came."
+  },
+  {
+   "topic": "dacians",
+   "ok": true,
+   "ro": "Regatul lui Burebista s-a întins pe un teritoriu foarte mare.",
+   "en": "The kingdom of Burebista covered a very large territory."
+  },
+  {
+   "topic": "romans",
+   "ok": true,
+   "ro": "Împăratul Traian a condus armata romană în războaiele cu dacii.",
+   "en": "Emperor Trajan led the Roman army in the wars against the Dacians."
+  },
+  {
+   "topic": "romans",
+   "ok": true,
+   "ro": "Războaiele dintre daci și romani au avut loc la începutul secolului al II-lea d.Hr.",
+   "en": "The wars between Dacians and Romans took place at the beginning of the 2nd century AD."
+  },
+  {
+   "topic": "romans",
+   "ok": true,
+   "ro": "În anul 106, o mare parte din Dacia a devenit provincie romană.",
+   "en": "In the year 106, a large part of Dacia became a Roman province."
+  },
+  {
+   "topic": "romans",
+   "ok": false,
+   "ro": "Dacia a devenit provincie romană în secolul al V-lea.",
+   "en": "Dacia became a Roman province in the 5th century."
+  },
+  {
+   "topic": "romans",
+   "ok": true,
+   "ro": "Arhitectul Apolodor din Damasc a construit un pod mare peste Dunăre, pentru armata romană.",
+   "en": "The architect Apollodorus of Damascus built a great bridge over the Danube for the Roman army."
+  },
+  {
+   "topic": "romans",
+   "ok": true,
+   "ro": "Columna lui Traian este un monument din Roma, cu imagini din războaiele cu dacii.",
+   "en": "Trajan's Column is a monument in Rome, with scenes from the wars against the Dacians."
+  },
+  {
+   "topic": "romans",
+   "ok": false,
+   "ro": "Columna lui Traian se află la Sarmizegetusa Regia.",
+   "en": "Trajan's Column stands at Sarmizegetusa Regia."
+  },
+  {
+   "topic": "romans",
+   "ok": true,
+   "ro": "Romanii au adus în Dacia drumuri, orașe și limba latină.",
+   "en": "The Romans brought roads, towns and the Latin language to Dacia."
+  },
+  {
+   "topic": "romans",
+   "ok": false,
+   "ro": "Stăpânirea romană în Dacia a durat 1000 de ani.",
+   "en": "Roman rule in Dacia lasted 1000 years."
+  },
+  {
+   "topic": "romans",
+   "ok": true,
+   "ro": "Stăpânirea romană în Dacia a durat mai puțin de două secole.",
+   "en": "Roman rule in Dacia lasted less than two centuries."
+  },
+  {
+   "topic": "romans",
+   "ok": true,
+   "ro": "În Dacia romană au trăit împreună daci și romani.",
+   "en": "In Roman Dacia, Dacians and Romans lived together."
+  },
+  {
+   "topic": "formation",
+   "ok": true,
+   "ro": "Poporul român s-a format din întâlnirea dintre daci și romani.",
+   "en": "The Romanian people formed from the meeting of Dacians and Romans."
+  },
+  {
+   "topic": "formation",
+   "ok": true,
+   "ro": "Limba română vine din limba latină.",
+   "en": "The Romanian language comes from Latin."
+  },
+  {
+   "topic": "formation",
+   "ok": false,
+   "ro": "Limba română vine din limba chineză.",
+   "en": "The Romanian language comes from Chinese."
+  },
+  {
+   "topic": "formation",
+   "ok": true,
+   "ro": "Cuvintele „pâine”, „apă” și „om” vin din latină.",
+   "en": "The words “pâine”, “apă” and “om” come from Latin."
+  },
+  {
+   "topic": "formation",
+   "ok": true,
+   "ro": "Româna este o limbă romanică, înrudită cu italiana, franceza și spaniola.",
+   "en": "Romanian is a Romance language, related to Italian, French and Spanish."
+  },
+  {
+   "topic": "formation",
+   "ok": false,
+   "ro": "Limba română este o limbă slavă, la fel ca rusa.",
+   "en": "Romanian is a Slavic language, just like Russian."
+  },
+  {
+   "topic": "formation",
+   "ok": true,
+   "ro": "Creștinismul s-a răspândit treptat printre strămoșii noștri, în primele secole d.Hr.",
+   "en": "Christianity spread gradually among our ancestors in the first centuries AD."
+  },
+  {
+   "topic": "formation",
+   "ok": true,
+   "ro": "După retragerea armatei și administrației romane, localnicii au rămas pe aceste meleaguri.",
+   "en": "After the Roman army and administration withdrew, the local people stayed on these lands."
+  },
+  {
+   "topic": "formation",
+   "ok": true,
+   "ro": "Numele „român” vine de la numele „roman”.",
+   "en": "The name “român” comes from the name “roman”."
+  },
+  {
+   "topic": "formation",
+   "ok": true,
+   "ro": "Pe teritoriul țării noastre au trecut sau s-au așezat și alte popoare, de exemplu slavii.",
+   "en": "Other peoples also passed through or settled on the territory of our country, for example the Slavs."
+  },
+  {
+   "topic": "medieval",
+   "ok": true,
+   "ro": "Basarab I a fost voievod al Țării Românești.",
+   "en": "Basarab I was a voivode of Wallachia."
+  },
+  {
+   "topic": "medieval",
+   "ok": true,
+   "ro": "Bătălia de la Posada a avut loc în 1330.",
+   "en": "The Battle of Posada took place in 1330."
+  },
+  {
+   "topic": "medieval",
+   "ok": false,
+   "ro": "Bătălia de la Posada a avut loc în 1859.",
+   "en": "The Battle of Posada took place in 1859."
+  },
+  {
+   "topic": "medieval",
+   "ok": true,
+   "ro": "Bogdan I este socotit întemeietorul Moldovei independente.",
+   "en": "Bogdan I is regarded as the founder of independent Moldavia."
+  },
+  {
+   "topic": "medieval",
+   "ok": true,
+   "ro": "Mircea cel Bătrân a fost domn al Țării Românești.",
+   "en": "Mircea the Elder was the ruler of Wallachia."
+  },
+  {
+   "topic": "medieval",
+   "ok": true,
+   "ro": "Mircea cel Bătrân a domnit între 1386 și 1418.",
+   "en": "Mircea the Elder ruled between 1386 and 1418."
+  },
+  {
+   "topic": "medieval",
+   "ok": false,
+   "ro": "Mircea cel Bătrân a fost domn al Moldovei.",
+   "en": "Mircea the Elder was the ruler of Moldavia."
+  },
+  {
+   "topic": "medieval",
+   "ok": false,
+   "ro": "Basarab I a trăit în secolul al XVIII-lea.",
+   "en": "Basarab I lived in the 18th century."
+  },
+  {
+   "topic": "medieval",
+   "ok": true,
+   "ro": "Țara Românească, Moldova și Transilvania sunt trei mari regiuni istorice locuite de români.",
+   "en": "Wallachia, Moldavia and Transylvania are three great historical regions inhabited by Romanians."
+  },
+  {
+   "topic": "medieval",
+   "ok": true,
+   "ro": "În Evul Mediu, o țară românească era condusă de un domn sau de un voievod.",
+   "en": "In the Middle Ages, a Romanian land was ruled by a prince or a voivode."
+  },
+  {
+   "topic": "medieval",
+   "ok": true,
+   "ro": "Suceava a fost mult timp capitala Moldovei.",
+   "en": "Suceava was the capital of Moldavia for a long time."
+  },
+  {
+   "topic": "medieval",
+   "ok": true,
+   "ro": "Evul Mediu este o perioadă lungă dintre antichitate și epoca modernă.",
+   "en": "The Middle Ages are a long period between antiquity and the modern age."
+  },
+  {
+   "topic": "medieval",
+   "ok": false,
+   "ro": "Evul Mediu a fost înainte de vremea dacilor.",
+   "en": "The Middle Ages came before the time of the Dacians."
+  },
+  {
+   "topic": "heroes",
+   "ok": true,
+   "ro": "Iancu de Hunedoara a fost voievod al Transilvaniei.",
+   "en": "John Hunyadi was a voivode of Transylvania."
+  },
+  {
+   "topic": "heroes",
+   "ok": true,
+   "ro": "Iancu de Hunedoara a apărat Belgradul în 1456.",
+   "en": "John Hunyadi defended Belgrade in 1456."
+  },
+  {
+   "topic": "heroes",
+   "ok": true,
+   "ro": "Iancu de Hunedoara a trăit în secolul al XV-lea.",
+   "en": "John Hunyadi lived in the 15th century."
+  },
+  {
+   "topic": "heroes",
+   "ok": true,
+   "ro": "Vlad Țepeș a fost domn al Țării Românești.",
+   "en": "Vlad Țepeș was a ruler of Wallachia."
+  },
+  {
+   "topic": "heroes",
+   "ok": false,
+   "ro": "Vlad Țepeș a fost domn al Moldovei.",
+   "en": "Vlad Țepeș was a ruler of Moldavia."
+  },
+  {
+   "topic": "heroes",
+   "ok": true,
+   "ro": "Ștefan cel Mare a domnit în Moldova între 1457 și 1504.",
+   "en": "Stephen the Great ruled in Moldavia between 1457 and 1504."
+  },
+  {
+   "topic": "heroes",
+   "ok": true,
+   "ro": "Ștefan cel Mare a domnit 47 de ani.",
+   "en": "Stephen the Great ruled for 47 years."
+  },
+  {
+   "topic": "heroes",
+   "ok": false,
+   "ro": "Ștefan cel Mare a domnit 10 ani.",
+   "en": "Stephen the Great ruled for 10 years."
+  },
+  {
+   "topic": "heroes",
+   "ok": false,
+   "ro": "Ștefan cel Mare a trăit în secolul al XIX-lea.",
+   "en": "Stephen the Great lived in the 19th century."
+  },
+  {
+   "topic": "heroes",
+   "ok": true,
+   "ro": "Ștefan cel Mare a ridicat multe biserici și mănăstiri, printre care Putna.",
+   "en": "Stephen the Great built many churches and monasteries, among them Putna."
+  },
+  {
+   "topic": "heroes",
+   "ok": true,
+   "ro": "La Vaslui, în 1475, oastea lui Ștefan cel Mare a învins o armată otomană.",
+   "en": "At Vaslui, in 1475, the army of Stephen the Great defeated an Ottoman army."
+  },
+  {
+   "topic": "heroes",
+   "ok": false,
+   "ro": "Bătălia de la Vaslui a avut loc în 1600.",
+   "en": "The Battle of Vaslui took place in 1600."
+  },
+  {
+   "topic": "heroes",
+   "ok": true,
+   "ro": "Cel mai vechi document care amintește Bucureștiul este din vremea lui Vlad Țepeș, din 1459.",
+   "en": "The oldest document that mentions Bucharest is from the time of Vlad Țepeș, from 1459."
+  },
+  {
+   "topic": "heroes",
+   "ok": false,
+   "ro": "Bucureștiul este amintit într-un document încă din secolul I î.Hr.",
+   "en": "Bucharest is mentioned in a document as early as the 1st century BC."
+  },
+  {
+   "topic": "mihai",
+   "ok": true,
+   "ro": "Mihai Viteazul a fost domn al Țării Românești.",
+   "en": "Michael the Brave was a ruler of Wallachia."
+  },
+  {
+   "topic": "mihai",
+   "ok": true,
+   "ro": "În 1600, Mihai Viteazul a unit pentru scurt timp Țara Românească, Transilvania și Moldova.",
+   "en": "In 1600, Michael the Brave briefly united Wallachia, Transylvania and Moldavia."
+  },
+  {
+   "topic": "mihai",
+   "ok": false,
+   "ro": "Mihai Viteazul a unit cele trei țări românești în 1877.",
+   "en": "Michael the Brave united the three Romanian lands in 1877."
+  },
+  {
+   "topic": "mihai",
+   "ok": true,
+   "ro": "Mihai Viteazul a trăit în secolele XVI–XVII.",
+   "en": "Michael the Brave lived in the 16th–17th centuries."
+  },
+  {
+   "topic": "mihai",
+   "ok": true,
+   "ro": "Bătălia de la Călugăreni a avut loc în 1595.",
+   "en": "The Battle of Călugăreni took place in 1595."
+  },
+  {
+   "topic": "mihai",
+   "ok": true,
+   "ro": "Unirea din 1600 a durat puțin timp.",
+   "en": "The union of 1600 lasted only a short time."
+  },
+  {
+   "topic": "mihai",
+   "ok": false,
+   "ro": "Mihai Viteazul a fost primul rege al României.",
+   "en": "Michael the Brave was the first king of Romania."
+  },
+  {
+   "topic": "mihai",
+   "ok": true,
+   "ro": "Mihai Viteazul a devenit domn al Țării Românești în 1593.",
+   "en": "Michael the Brave became ruler of Wallachia in 1593."
+  },
+  {
+   "topic": "mihai",
+   "ok": false,
+   "ro": "Mihai Viteazul a trăit în aceeași vreme cu Burebista.",
+   "en": "Michael the Brave lived at the same time as Burebista."
+  },
+  {
+   "topic": "mihai",
+   "ok": true,
+   "ro": "Mihai Viteazul a murit în 1601.",
+   "en": "Michael the Brave died in 1601."
+  },
+  {
+   "topic": "union1859",
+   "ok": true,
+   "ro": "Alexandru Ioan Cuza a fost ales domn al Moldovei la 5 ianuarie 1859.",
+   "en": "Alexandru Ioan Cuza was elected ruler of Moldavia on 5 January 1859."
+  },
+  {
+   "topic": "union1859",
+   "ok": true,
+   "ro": "La 24 ianuarie 1859, Cuza a fost ales domn și al Țării Românești.",
+   "en": "On 24 January 1859, Cuza was also elected ruler of Wallachia."
+  },
+  {
+   "topic": "union1859",
+   "ok": true,
+   "ro": "Prin alegerea lui Cuza în ambele țări, Moldova și Țara Românească s-au unit.",
+   "en": "By electing Cuza in both lands, Moldavia and Wallachia united."
+  },
+  {
+   "topic": "union1859",
+   "ok": false,
+   "ro": "Unirea Principatelor a avut loc în 1918.",
+   "en": "The Union of the Principalities took place in 1918."
+  },
+  {
+   "topic": "union1859",
+   "ok": false,
+   "ro": "Cuza a fost ales domn al Transilvaniei în 1859.",
+   "en": "Cuza was elected ruler of Transylvania in 1859."
+  },
+  {
+   "topic": "union1859",
+   "ok": true,
+   "ro": "Unirea din 1859 este numită uneori „Mica Unire”.",
+   "en": "The union of 1859 is sometimes called the “Small Union”."
+  },
+  {
+   "topic": "union1859",
+   "ok": true,
+   "ro": "Alexandru Ioan Cuza a domnit între 1859 și 1866.",
+   "en": "Alexandru Ioan Cuza ruled between 1859 and 1866."
+  },
+  {
+   "topic": "union1859",
+   "ok": true,
+   "ro": "În 1862, capitala statului unit a devenit București.",
+   "en": "In 1862, Bucharest became the capital of the united state."
+  },
+  {
+   "topic": "union1859",
+   "ok": true,
+   "ro": "În timpul lui Cuza s-a făcut o reformă agrară, în 1864.",
+   "en": "In Cuza's time an agrarian reform was made, in 1864."
+  },
+  {
+   "topic": "union1859",
+   "ok": false,
+   "ro": "Alexandru Ioan Cuza a fost primul rege al României.",
+   "en": "Alexandru Ioan Cuza was the first king of Romania."
+  },
+  {
+   "topic": "union1859",
+   "ok": true,
+   "ro": "Carol I a devenit domnitor al României în 1866.",
+   "en": "Carol I became prince of Romania in 1866."
+  },
+  {
+   "topic": "union1859",
+   "ok": true,
+   "ro": "În 1866, Cuza a părăsit tronul.",
+   "en": "In 1866, Cuza left the throne."
+  },
+  {
+   "topic": "independence",
+   "ok": true,
+   "ro": "România și-a proclamat independența de stat în mai 1877.",
+   "en": "Romania proclaimed its independence in May 1877."
+  },
+  {
+   "topic": "independence",
+   "ok": true,
+   "ro": "Mihail Kogălniceanu a rostit declarația de independență în Parlament, la 9 mai 1877.",
+   "en": "Mihail Kogălniceanu read the declaration of independence in Parliament on 9 May 1877."
+  },
+  {
+   "topic": "independence",
+   "ok": true,
+   "ro": "Ziua de 10 Mai a fost multă vreme sărbătoarea națională a României.",
+   "en": "10 May was Romania's national holiday for a long time."
+  },
+  {
+   "topic": "independence",
+   "ok": true,
+   "ro": "Independența României a fost recunoscută în 1878.",
+   "en": "Romania's independence was recognised in 1878."
+  },
+  {
+   "topic": "independence",
+   "ok": true,
+   "ro": "Prin hotărârile din 1878, Dobrogea a intrat în componența României.",
+   "en": "By the decisions of 1878, Dobruja became part of Romania."
+  },
+  {
+   "topic": "independence",
+   "ok": false,
+   "ro": "România și-a proclamat independența în 1600.",
+   "en": "Romania proclaimed its independence in 1600."
+  },
+  {
+   "topic": "independence",
+   "ok": true,
+   "ro": "Carol I a devenit rege în 1881.",
+   "en": "Carol I became king in 1881."
+  },
+  {
+   "topic": "independence",
+   "ok": false,
+   "ro": "România a devenit regat în 1918.",
+   "en": "Romania became a kingdom in 1918."
+  },
+  {
+   "topic": "independence",
+   "ok": true,
+   "ro": "Războiul de independență a avut loc în anii 1877–1878.",
+   "en": "The War of Independence took place in the years 1877–1878."
+  },
+  {
+   "topic": "independence",
+   "ok": true,
+   "ro": "În războiul de independență, armata română a luptat alături de armata rusă.",
+   "en": "In the War of Independence, the Romanian army fought alongside the Russian army."
+  },
+  {
+   "topic": "independence",
+   "ok": true,
+   "ro": "Prima Constituție a României a fost adoptată în 1866.",
+   "en": "Romania's first Constitution was adopted in 1866."
+  },
+  {
+   "topic": "union1918",
+   "ok": true,
+   "ro": "Marea Unire a avut loc la 1 decembrie 1918, la Alba Iulia.",
+   "en": "The Great Union took place on 1 December 1918, at Alba Iulia."
+  },
+  {
+   "topic": "union1918",
+   "ok": true,
+   "ro": "La Alba Iulia, reprezentanții românilor din Transilvania au hotărât unirea cu România.",
+   "en": "At Alba Iulia, the representatives of the Romanians of Transylvania decided on union with Romania."
+  },
+  {
+   "topic": "union1918",
+   "ok": true,
+   "ro": "Prin Marea Unire din 1918, Transilvania s-a unit cu România.",
+   "en": "Through the Great Union of 1918, Transylvania united with Romania."
+  },
+  {
+   "topic": "union1918",
+   "ok": true,
+   "ro": "Basarabia a hotărât unirea cu România la 27 martie 1918.",
+   "en": "Bessarabia decided on union with Romania on 27 March 1918."
+  },
+  {
+   "topic": "union1918",
+   "ok": true,
+   "ro": "Bucovina a hotărât unirea cu România la 28 noiembrie 1918.",
+   "en": "Bukovina decided on union with Romania on 28 November 1918."
+  },
+  {
+   "topic": "union1918",
+   "ok": false,
+   "ro": "Marea Unire a avut loc în 1859.",
+   "en": "The Great Union took place in 1859."
+  },
+  {
+   "topic": "union1918",
+   "ok": false,
+   "ro": "Marea Unire din 1918 a fost proclamată la Iași.",
+   "en": "The Great Union of 1918 was proclaimed in Iași."
+  },
+  {
+   "topic": "union1918",
+   "ok": true,
+   "ro": "Regele României în 1918 era Ferdinand.",
+   "en": "The king of Romania in 1918 was Ferdinand."
+  },
+  {
+   "topic": "union1918",
+   "ok": true,
+   "ro": "România Mare este numele dat țării după Marea Unire.",
+   "en": "“Greater Romania” is the name given to the country after the Great Union."
+  },
+  {
+   "topic": "union1918",
+   "ok": true,
+   "ro": "În 1922, la Alba Iulia, au fost încoronați regele Ferdinand și regina Maria.",
+   "en": "In 1922, at Alba Iulia, King Ferdinand and Queen Marie were crowned."
+  },
+  {
+   "topic": "union1918",
+   "ok": false,
+   "ro": "Regina Maria a fost soția regelui Carol I.",
+   "en": "Queen Marie was the wife of King Carol I."
+  },
+  {
+   "topic": "symbols",
+   "ok": true,
+   "ro": "Drapelul României are culorile albastru, galben și roșu.",
+   "en": "The flag of Romania has the colours blue, yellow and red."
+  },
+  {
+   "topic": "symbols",
+   "ok": true,
+   "ro": "Pe drapelul României, culorile sunt așezate vertical: albastru, galben, roșu.",
+   "en": "On the Romanian flag the colours are arranged vertically: blue, yellow, red."
+  },
+  {
+   "topic": "symbols",
+   "ok": false,
+   "ro": "Drapelul României are trei dungi orizontale: roșu, alb și verde.",
+   "en": "The Romanian flag has three horizontal stripes: red, white and green."
+  },
+  {
+   "topic": "symbols",
+   "ok": true,
+   "ro": "Pe stema României apare o acvilă cu o cruce în cioc.",
+   "en": "On the coat of arms of Romania there is an eagle with a cross in its beak."
+  },
+  {
+   "topic": "symbols",
+   "ok": true,
+   "ro": "Imnul național al României se numește „Deșteaptă-te, române!”.",
+   "en": "The national anthem of Romania is called “Deșteaptă-te, române!”."
+  },
+  {
+   "topic": "symbols",
+   "ok": false,
+   "ro": "Imnul național al României se numește „Hora Unirii”.",
+   "en": "The national anthem of Romania is called “Hora Unirii”."
+  },
+  {
+   "topic": "symbols",
+   "ok": true,
+   "ro": "Versurile imnului „Deșteaptă-te, române!” au fost scrise de Andrei Mureșanu.",
+   "en": "The words of the anthem “Deșteaptă-te, române!” were written by Andrei Mureșanu."
+  },
+  {
+   "topic": "symbols",
+   "ok": true,
+   "ro": "„Hora Unirii” este un cântec despre Unirea Principatelor, cu versuri de Vasile Alecsandri.",
+   "en": "“Hora Unirii” is a song about the Union of the Principalities, with words by Vasile Alecsandri."
+  },
+  {
+   "topic": "symbols",
+   "ok": true,
+   "ro": "1 Decembrie este Ziua Națională a României din 1990.",
+   "en": "1 December has been Romania's National Day since 1990."
+  },
+  {
+   "topic": "symbols",
+   "ok": true,
+   "ro": "Drapelul, stema și imnul sunt simboluri naționale.",
+   "en": "The flag, the coat of arms and the anthem are national symbols."
+  },
+  {
+   "topic": "symbols",
+   "ok": false,
+   "ro": "Ziua Națională a României este pe 24 ianuarie.",
+   "en": "Romania's National Day is on 24 January."
+  },
+  {
+   "topic": "symbols",
+   "ok": true,
+   "ro": "Pe 24 ianuarie sărbătorim Ziua Unirii Principatelor Române.",
+   "en": "On 24 January we celebrate the Day of the Union of the Romanian Principalities."
+  }
+ ],
+ "legends": [
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Zidurile mănăstirii meșterului Manole se prăbușeau în fiecare noapte.",
+   "en": "The walls of Master Manole's monastery collapsed every night."
+  },
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Baba Dochia s-a prefăcut în stâncă pe munte.",
+   "en": "Old Dochia turned into a rock on the mountain."
+  },
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Negru Vodă a coborât de la Făgăraș și a întemeiat Țara Românească.",
+   "en": "Negru Vodă came down from Făgăraș and founded Wallachia."
+  },
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Dragoș, urmărind un zimbru, a descoperit Moldova.",
+   "en": "Dragoș, chasing a wild bull, discovered Moldavia."
+  },
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Ciobanul Bucur a întemeiat orașul București.",
+   "en": "The shepherd Bucur founded the city of Bucharest."
+  },
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Vlad Țepeș a fost un vampir care ieșea noaptea din castel.",
+   "en": "Vlad Țepeș was a vampire who came out of his castle at night."
+  },
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Dochia, fiica regelui Decebal, a fugit de Traian și s-a prefăcut în stâncă.",
+   "en": "Dochia, the daughter of King Decebal, ran away from Trajan and turned into a rock."
+  },
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Un zmeu a ascuns Soarele într-un palat, iar un flăcău l-a eliberat.",
+   "en": "A dragon hid the Sun in a palace, and a young man set it free."
+  },
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Ileana Cosânzeana era o domniță cu părul de aur care locuia într-un castel de cleștar.",
+   "en": "Ileana Cosânzeana was a princess with golden hair who lived in a crystal castle."
+  },
+  {
+   "topic": "legend",
+   "kind": "L",
+   "ro": "Făt-Frumos a călătorit pe un cal care vorbea.",
+   "en": "Făt-Frumos travelled on a horse that could talk."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Burebista a fost rege al dacilor în secolul I î.Hr.",
+   "en": "Burebista was a king of the Dacians in the 1st century BC."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Sarmizegetusa Regia a fost un important centru al dacilor, în munții Orăștiei.",
+   "en": "Sarmizegetusa Regia was an important Dacian centre in the Orăștie Mountains."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Apolodor din Damasc a proiectat un pod peste Dunăre pentru armata romană.",
+   "en": "Apollodorus of Damascus designed a bridge over the Danube for the Roman army."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Columna lui Traian a fost ridicată la Roma și are scene sculptate în piatră.",
+   "en": "Trajan's Column was raised in Rome and has scenes carved in stone."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Ștefan cel Mare a ridicat Mănăstirea Putna.",
+   "en": "Stephen the Great built Putna Monastery."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Bucureștiul apare pentru prima dată într-un document din 1459.",
+   "en": "Bucharest appears for the first time in a document from 1459."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Alexandru Ioan Cuza a fost ales domn al Moldovei și al Țării Românești în 1859.",
+   "en": "Alexandru Ioan Cuza was elected ruler of Moldavia and Wallachia in 1859."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "La 1 decembrie 1918, la Alba Iulia, s-a hotărât unirea Transilvaniei cu România.",
+   "en": "On 1 December 1918, at Alba Iulia, the union of Transylvania with Romania was decided."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Mihail Kogălniceanu a rostit în Parlament, în 1877, declarația de independență.",
+   "en": "In 1877, Mihail Kogălniceanu read the declaration of independence in Parliament."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Suceava a fost reședința domnilor Moldovei.",
+   "en": "Suceava was the seat of the rulers of Moldavia."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Mihai Viteazul a fost domn al Țării Românești între 1593 și 1601.",
+   "en": "Michael the Brave was ruler of Wallachia between 1593 and 1601."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Versurile imnului „Deșteaptă-te, române!” au fost scrise de Andrei Mureșanu.",
+   "en": "The words of the anthem “Deșteaptă-te, române!” were written by Andrei Mureșanu."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Iancu de Hunedoara a fost voievod al Transilvaniei.",
+   "en": "John Hunyadi was a voivode of Transylvania."
+  },
+  {
+   "topic": "legend",
+   "kind": "F",
+   "ro": "Mircea cel Bătrân a condus Țara Românească între 1386 și 1418.",
+   "en": "Mircea the Elder ruled Wallachia between 1386 and 1418."
+  }
+ ]
+}
