@@ -46,7 +46,7 @@ const MAMIFERE: Thing[] = [
   T('leu', 'leul', 'lion', '🦁'), T('lup', 'lupul', 'wolf', '🐺'), T('cerb', 'cerbul', 'deer', '🦌'),
 ];
 const PASARI: Thing[] = [
-  T('găină', 'găina', 'hen', '🐔'), T('rață', 'rața', 'duck', '🦆'), T('vultur', 'vulturul', 'eagle', '🦅'),
+  T('găină', 'găina', 'hen', '🐔'), T('rață', 'rața', 'duck', '🦆'), T('acvilă', 'acvila', 'eagle', '🦅'),
   T('bufniță', 'bufnița', 'owl', '🦉'), T('pinguin', 'pinguinul', 'penguin', '🐧'), T('lebădă', 'lebăda', 'swan', '🦢'),
   T('porumbel', 'porumbelul', 'pigeon', '🕊️'), T('papagal', 'papagalul', 'parrot', '🦜'), T('curcan', 'curcanul', 'turkey', '🦃'),
   T('flamingo', 'flamingo', 'flamingo', '🦩'),
@@ -139,7 +139,7 @@ const DIET: ClassSet = {
     cat('carnivor', 'în special carne', 'mostly meat', 'mănâncă în special carne', 'eats mostly meat', [
       T('leu', 'leul', 'lion', '🦁'), T('lup', 'lupul', 'wolf', '🐺'), T('tigru', 'tigrul', 'tiger', '🐅'),
       T('pisică', 'pisica', 'cat', '🐈'), T('rechin', 'rechinul', 'shark', '🦈'), T('crocodil', 'crocodilul', 'crocodile', '🐊'),
-      T('vultur', 'vulturul', 'eagle', '🦅'),
+      T('acvilă', 'acvila', 'eagle', '🦅'),
     ]),
     cat('omnivor', 'și plante, și carne', 'both plants and meat', 'mănâncă și plante, și carne', 'eats both plants and meat', [
       T('urs', 'ursul', 'bear', '🐻'), T('porc', 'porcul', 'pig', '🐖'), T('mistreț', 'mistrețul', 'wild boar', '🐗'),
