@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import LegalLink from '@/components/legal/LegalLink';
 import CloseButton from '@/components/ui/CloseButton';
 import type { Provenance } from '@/engine/content/provenance';
 import { RIGHTS_CONTACT } from '@/utils/constants';
@@ -72,6 +73,10 @@ export default function CreditsPage() {
               </a>
             </>
           )}
+          <span className="mt-2 flex flex-wrap gap-x-4">
+            <LegalLink to="privacy" className="min-h-[44px] text-ludiko-purple hover:underline">{t('legal.privacyLink')}</LegalLink>
+            <LegalLink to="terms" className="min-h-[44px] text-ludiko-purple hover:underline">{t('legal.termsLink')}</LegalLink>
+          </span>
         </p>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useId, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import LegalLink from '@/components/legal/LegalLink'
 import {
   PUSH_DEFAULT_HOUR,
   PUSH_HOUR_MAX,
@@ -88,7 +89,8 @@ export default function RemindersCard() {
       </h3>
       <p className="mt-1 text-base font-semibold text-ludiko-text/80">{t('push.intro')}</p>
       <p className="mt-2 rounded-xl bg-ludiko-bg p-3 text-sm font-semibold leading-snug text-ludiko-text/80" data-testid="reminders-consent">
-        {t('push.consent')}
+        {t('push.consent')}{' '}
+        <LegalLink to="privacy">{t('legal.privacyLink')}</LegalLink>
       </p>
 
       <div className="mt-3 flex items-center justify-between gap-3">

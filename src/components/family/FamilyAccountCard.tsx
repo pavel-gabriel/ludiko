@@ -4,6 +4,7 @@ import { familyAvailable, getFamilyApi } from '@/family/api'
 import { FamilyError, type FamilyApi } from '@/family/types'
 import { useFamilySession } from '@/family/useFamilySession'
 import { useProfileStore } from '@/store/profileStore'
+import LegalLink from '@/components/legal/LegalLink'
 import FamilyImportPrompt from './FamilyImportPrompt'
 
 type Mode = 'home' | 'create' | 'signin' | 'forgot'
@@ -48,7 +49,9 @@ function ConsentBlock({ checked, onChange }: { checked: boolean; onChange: (v: b
         <p>
           <strong>{t('family.consent.neverTitle')}</strong> {t('family.consent.never')}
         </p>
-        <p className="text-xs font-bold text-ludiko-text/70">{t('family.consent.privacy')}</p>
+        <p className="text-xs font-bold text-ludiko-text/70">
+          <LegalLink to="privacy">{t('family.consent.privacy')}</LegalLink>
+        </p>
         <p className="text-xs font-bold text-ludiko-text/70">{t('family.consent.howDelete')}</p>
       </div>
       <label htmlFor={id} className="flex min-h-[48px] cursor-pointer items-start gap-3 rounded-xl bg-ludiko-yellow/60 p-3">
