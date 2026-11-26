@@ -1,0 +1,691 @@
+[
+  {
+    "id": "exp.stiinte.animals.vertebrates",
+    "skillId": "stiinte.animals.vertebrates",
+    "title": {
+      "ro": "Vertebrate și nevertebrate",
+      "en": "Vertebrates and invertebrates"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vertebratele au coloană vertebrală: mamifere, păsări, pești, reptile, amfibieni.",
+          "en": "Vertebrates have a backbone: mammals, birds, fish, reptiles, amphibians."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Nevertebratele nu au coloană vertebrală: insectele, melcul, râma, păianjenul.",
+          "en": "Invertebrates have no backbone: insects, snails, worms, spiders."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐌",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Păianjenul are opt picioare și nu este insectă, dar este nevertebrat.",
+          "en": "A spider has eight legs and is not an insect, but it is an invertebrate."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🕷️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.animals.vertebrates",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.animals.vertebrates",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.animals.diet",
+    "skillId": "stiinte.animals.diet",
+    "title": {
+      "ro": "Ce mănâncă animalele",
+      "en": "What animals eat"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Erbivorele mănâncă doar plante: vaca, iepurele, calul.",
+          "en": "Herbivores eat only plants: the cow, the rabbit, the horse."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Carnivorele mănâncă în special carne: leul, lupul, rechinul.",
+          "en": "Carnivores eat mostly meat: the lion, the wolf, the shark."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦁",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Omnivorele mănâncă și plante, și carne: ursul, porcul.",
+          "en": "Omnivores eat both plants and meat: the bear, the pig."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐻",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.animals.diet",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.animals.diet",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.foodchain",
+    "skillId": "stiinte.foodchain",
+    "title": {
+      "ro": "Lanțul trofic",
+      "en": "Food chains"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Plantele își fac singure hrana. Ele sunt începutul lanțului.",
+          "en": "Plants make their own food. They are the start of the chain."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Un erbivor mănâncă planta: iepurele mănâncă iarbă.",
+          "en": "A herbivore eats the plant: the hare eats grass."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐇",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Un carnivor mănâncă erbivorul: lupul mănâncă iepurele. Iarbă, iepure, lup.",
+          "en": "A carnivore eats the herbivore: the wolf eats the hare. Grass, hare, wolf."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐺",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.foodchain",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.foodchain",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.lifecycle",
+    "skillId": "stiinte.lifecycle",
+    "title": {
+      "ro": "Cum cresc viețuitoarele",
+      "en": "How living things grow"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fluturele: ou, omidă, pupă, fluture.",
+          "en": "Butterfly: egg, caterpillar, pupa, butterfly."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Broasca: icre, mormoloc, mormoloc cu picioare, broască adultă.",
+          "en": "Frog: eggs, tadpole, tadpole with legs, adult frog."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐸",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Planta: sămânță, încolțire, plantă tânără, floare, fruct cu semințe.",
+          "en": "Plant: seed, sprout, young plant, flower, fruit with seeds."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.lifecycle",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.lifecycle",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.body.systems",
+    "skillId": "stiinte.body.systems",
+    "title": {
+      "ro": "Organele și rolul lor",
+      "en": "Organs and their jobs"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Inima pompează sângele. Plămânii ne ajută să respirăm.",
+          "en": "The heart pumps blood. The lungs help us breathe."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫀",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Creierul comandă corpul. Oasele îl susțin.",
+          "en": "The brain controls the body. The bones hold it up."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mâncarea merge prin gură, esofag, stomac și intestine.",
+          "en": "Food goes through the mouth, oesophagus, stomach and intestines."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.body.systems",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.body.systems",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.body.health",
+    "skillId": "stiinte.body.health",
+    "title": {
+      "ro": "Mâncăm sănătos",
+      "en": "Eating healthily"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Corpul are nevoie de fructe, legume, pâine, lapte și carne sau fasole.",
+          "en": "The body needs fruit, vegetables, bread, milk and meat or beans."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥦",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dulciurile se mănâncă puține, nu în loc de masă.",
+          "en": "Sweets are for small amounts, not instead of meals."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍬",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mișcarea în fiecare zi ne face mușchii și inima puternice.",
+          "en": "Moving every day makes our muscles and heart strong."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚽",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.body.health",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.body.health",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.matter.properties",
+    "skillId": "stiinte.matter.properties",
+    "title": {
+      "ro": "Proprietățile materialelor",
+      "en": "Properties of materials"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Materialele au proprietăți: tari sau moi, flexibile sau rigide.",
+          "en": "Materials have properties: hard or soft, flexible or stiff."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪨",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Lemnul, frunza și pana plutesc pe apă.",
+          "en": "Wood, a leaf and a feather float on water."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪵",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Piatra, moneda și cuiul se scufundă.",
+          "en": "A stone, a coin and a nail sink."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪙",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.matter.properties",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.matter.properties",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.light.sound",
+    "skillId": "stiinte.light.sound",
+    "title": {
+      "ro": "Lumină, umbră, sunet",
+      "en": "Light, shadow, sound"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Soarele, becul aprins și lumânarea produc lumină. Luna doar o reflectă.",
+          "en": "The Sun, a lit bulb and a candle make light. The Moon only reflects it."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💡",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Geamul lasă lumina să treacă. Lemnul și cartonul o opresc: se formează umbră.",
+          "en": "Glass lets light pass. Wood and cardboard block it: a shadow forms."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪟",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Sunetul se produce prin vibrații.",
+          "en": "Sound is made by vibrations."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔔",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.light.sound",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.light.sound",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.magnets",
+    "skillId": "stiinte.magnets",
+    "title": {
+      "ro": "Magnetul",
+      "en": "Magnets"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Magnetul atrage obiecte din fier și oțel, ca un cui sau o agrafă.",
+          "en": "A magnet attracts objects made of iron and steel, like a nail or paper clip."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧲",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Lemnul, hârtia, plasticul și aluminiul nu sunt atrase.",
+          "en": "Wood, paper, plastic and aluminium are not attracted."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪵",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Magnetul are doi poli. Polii diferiți se atrag, cei la fel se resping.",
+          "en": "A magnet has two poles. Different poles attract, same poles push away."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧲",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.magnets",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.magnets",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.electricity",
+    "skillId": "stiinte.electricity",
+    "title": {
+      "ro": "Circuitul electric și siguranța",
+      "en": "Electric circuits and safety"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un circuit simplu are baterie, fire și bec. Becul se aprinde dacă drumul este închis.",
+          "en": "A simple circuit has a battery, wires and a bulb. The bulb lights when the path is closed."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Metalele conduc curentul. Lemnul uscat și plasticul nu.",
+          "en": "Metals conduct electricity. Dry wood and plastic do not."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💡",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Siguranța: nu atingem prize și fire, nu folosim aparate cu mâinile ude. Cerem ajutorul unui adult.",
+          "en": "Safety: we do not touch sockets and wires, and do not use devices with wet hands. We ask an adult."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚠️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.electricity",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.electricity",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.seasons",
+    "skillId": "stiinte.seasons",
+    "title": {
+      "ro": "Anul și anotimpurile",
+      "en": "The year and the seasons"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un an are 12 luni și patru anotimpuri.",
+          "en": "A year has 12 months and four seasons."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📅",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ordinea: primăvara, vara, toamna, iarna.",
+          "en": "The order: spring, summer, autumn, winter."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌸",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pământul face un ocol complet în jurul Soarelui într-un an.",
+          "en": "The Earth goes once around the Sun in a year."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.seasons",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.seasons",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.environment.protect",
+    "skillId": "stiinte.environment.protect",
+    "title": {
+      "ro": "Protejăm mediul",
+      "en": "We protect the environment"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fumul și gunoaiele poluează aerul, apa și solul.",
+          "en": "Smoke and rubbish pollute the air, water and soil."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏭",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Reciclăm: din lucruri folosite facem lucruri noi.",
+          "en": "We recycle: we make new things from used ones."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♻️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Plantăm copaci și folosim energia vântului sau a Soarelui, care nu produc fum.",
+          "en": "We plant trees and use wind or solar energy, which make no smoke."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.environment.protect",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.environment.protect",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.instruments",
+    "skillId": "stiinte.instruments",
+    "title": {
+      "ro": "Instrumente de măsură",
+      "en": "Measuring instruments"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Termometrul măsoară temperatura. Cântarul măsoară masa.",
+          "en": "A thermometer measures temperature. Scales measure mass."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌡️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Rigla măsoară lungimea. Ceasul măsoară timpul.",
+          "en": "A ruler measures length. A clock measures time."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📏",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cana gradată măsoară cât lichid avem.",
+          "en": "A measuring jug measures how much liquid we have."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥛",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.instruments",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.instruments",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  }
+]

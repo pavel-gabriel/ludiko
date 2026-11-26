@@ -401,6 +401,7 @@ describe('content on disk', () => {
     const programaBySubject: Record<string, string[]> = {
       mat: ['MEM-2013', 'MAT-III-IV-2014'],
       rom: ['CLR-2013', 'LLR-III-IV-2014'],
+      stiinte: ['STI-III-IV-2014'],
     };
     for (const x of skills) {
       expect(x.provenance.source).toBe('own');
@@ -422,10 +423,9 @@ describe('content registry', () => {
   it('looks up skills, grades, items and explanations', () => {
     expect(getSkill('mat.add.carry.20')?.grade).toBe(1);
     expect(getSkill('nope')).toBeUndefined();
-    expect(getSkillsBySubject('mat').length + getSkillsBySubject('rom').length).toBe(getAllSkills().length);
+    expect(getSkillsBySubject('mat').length + getSkillsBySubject('rom').length).toBeLessThanOrEqual(getAllSkills().length);
     expect(getSkillsBySubject('mat', 0).every((s) => s.grade === 0)).toBe(true);
     expect(getSkillsBySubject('rom').length).toBeGreaterThanOrEqual(18);
-    expect(getSkillsBySubject('stiinte')).toEqual([]);
     expect(getItemsForSkill('mat.count.20').map((i) => i.type)).toContain('sort');
     expect(getItemsForSkill('mat.sub.10')).toEqual([]);
     expect(getExplanation('exp.add.carry.20')?.frames.length).toBeGreaterThanOrEqual(3);

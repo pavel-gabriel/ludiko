@@ -1,0 +1,658 @@
+[
+  {
+    "id": "stiinte.animals.vertebrates",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Animale vertebrate și nevertebrate",
+      "en": "Vertebrate and invertebrate animals"
+    },
+    "prerequisites": [
+      "stiinte.animals.groups"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "vertebrate"
+        }
+      },
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "vertebrate"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "vertebrate"
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.animals.vertebrates"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.animals.vertebrates",
+      "kind": "data",
+      "title": "Skill stiinte.animals.vertebrates",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.animals.diet",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "Erbivore, carnivore, omnivore",
+      "en": "Herbivores, carnivores, omnivores"
+    },
+    "prerequisites": [
+      "stiinte.animals.groups"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "diet"
+        }
+      },
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "diet"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "diet"
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.animals.diet"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.animals.diet",
+      "kind": "data",
+      "title": "Skill stiinte.animals.diet",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.foodchain",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Lanțul trofic",
+      "en": "Food chains"
+    },
+    "prerequisites": [
+      "stiinte.animals.diet",
+      "stiinte.plants.needs"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-order",
+        "params": {
+          "sequences": [
+            "chain-hare",
+            "chain-deer",
+            "chain-owl",
+            "chain-snake"
+          ]
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.foodchain"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.foodchain",
+      "kind": "data",
+      "title": "Skill stiinte.foodchain",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.lifecycle",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Ciclul vieții: fluture, broască, găină, plantă",
+      "en": "Life cycles: butterfly, frog, hen, plant"
+    },
+    "prerequisites": [
+      "stiinte.animals.groups",
+      "stiinte.plants.parts"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-order",
+        "params": {
+          "sequences": [
+            "butterfly",
+            "frog",
+            "hen",
+            "plant"
+          ]
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.lifecycle"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.lifecycle",
+      "kind": "data",
+      "title": "Skill stiinte.lifecycle",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.body.systems",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "1.3"
+      }
+    ],
+    "title": {
+      "ro": "Organe și rolul lor în corp",
+      "en": "Organs and their jobs in the body"
+    },
+    "prerequisites": [
+      "stiinte.body.senses"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-relation",
+        "params": {
+          "set": "organ"
+        }
+      },
+      {
+        "generator": "sci-order",
+        "params": {
+          "sequences": [
+            "digestion"
+          ]
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.body.systems"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.body.systems",
+      "kind": "data",
+      "title": "Skill stiinte.body.systems",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.body.health",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Alimentație sănătoasă și mișcare",
+      "en": "Healthy eating and exercise"
+    },
+    "prerequisites": [
+      "stiinte.body.hygiene"
+    ],
+    "itemSources": [
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.body.health"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.body.health",
+      "kind": "data",
+      "title": "Skill stiinte.body.health",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.matter.properties",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "1.4"
+      }
+    ],
+    "title": {
+      "ro": "Proprietățile materialelor: plutește sau se scufundă",
+      "en": "Properties of materials: float or sink"
+    },
+    "prerequisites": [
+      "stiinte.matter.states"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "float"
+        }
+      },
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "float"
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.matter.properties"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.matter.properties",
+      "kind": "data",
+      "title": "Skill stiinte.matter.properties",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.light.sound",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "1.5"
+      }
+    ],
+    "title": {
+      "ro": "Lumina, umbra și sunetul",
+      "en": "Light, shadows and sound"
+    },
+    "prerequisites": [
+      "stiinte.earth.sunmoon"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "light-source"
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "transparency"
+        }
+      },
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "light-source"
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.light.sound"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.light.sound",
+      "kind": "data",
+      "title": "Skill stiinte.light.sound",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.magnets",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "1.6"
+      }
+    ],
+    "title": {
+      "ro": "Magnetul și ce atrage el",
+      "en": "Magnets and what they attract"
+    },
+    "prerequisites": [
+      "stiinte.matter.properties"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "magnet"
+        }
+      },
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "magnet"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "magnet"
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.magnets"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.magnets",
+      "kind": "data",
+      "title": "Skill stiinte.magnets",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.electricity",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "1.7"
+      }
+    ],
+    "title": {
+      "ro": "Circuitul electric simplu și siguranța",
+      "en": "A simple electric circuit and safety"
+    },
+    "prerequisites": [
+      "stiinte.matter.properties"
+    ],
+    "itemSources": [
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.electricity"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.electricity",
+      "kind": "data",
+      "title": "Skill stiinte.electricity",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.seasons",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Anul, lunile și anotimpurile",
+      "en": "The year, months and seasons"
+    },
+    "prerequisites": [
+      "stiinte.earth.sunmoon"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-order",
+        "params": {
+          "sequences": [
+            "seasons"
+          ]
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.seasons"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.seasons",
+      "kind": "data",
+      "title": "Skill stiinte.seasons",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.environment.protect",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Poluarea și protejarea mediului",
+      "en": "Pollution and protecting the environment"
+    },
+    "prerequisites": [
+      "stiinte.environment"
+    ],
+    "itemSources": [
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.environment.protect"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.environment.protect",
+      "kind": "data",
+      "title": "Skill stiinte.environment.protect",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  },
+  {
+    "id": "stiinte.instruments",
+    "subject": "stiinte",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "STI-III-IV-2014",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Instrumente de măsură",
+      "en": "Measuring instruments"
+    },
+    "prerequisites": [
+      "stiinte.matter.properties"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-relation",
+        "params": {
+          "set": "instrument"
+        }
+      },
+      {
+        "bank": "stiinte/grade4.json"
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.instruments"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.instruments",
+      "kind": "data",
+      "title": "Skill stiinte.instruments",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Științe ale naturii III-IV); reading level aimed at the grade"
+    }
+  }
+]

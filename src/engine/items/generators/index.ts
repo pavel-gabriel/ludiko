@@ -35,6 +35,8 @@ import './romSyllables';
 import './romWordPicture';
 import './romSentences';
 import './romVocab';
+// science generators (sci-sort, sci-which, sci-tf, sci-relation, sci-order)
+import './stiinte';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';
