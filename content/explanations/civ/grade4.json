@@ -1,0 +1,532 @@
+[
+  {
+    "id": "exp.civ.emotions.conflict.4",
+    "skillId": "civ.emotions.conflict.4",
+    "title": {
+      "ro": "Rezolvarea pașnică a conflictelor",
+      "en": "Solving conflicts peacefully"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Conflictele apar între oameni care gândesc sau vor lucruri diferite. Nu e rău să fim în dezacord, dar contează cum rezolvăm.",
+          "en": "Conflicts happen between people who think or want different things. Disagreeing is not bad, but how we solve it matters."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗣️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Pașii buni: te liniștești, spui ce simți fără să jignești, îl asculți pe celălalt și căutați împreună o soluție.",
+          "en": "Good steps: calm down, say what you feel without insulting, listen to the other and look for a solution together."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🕊️",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă nu reușiți singuri, cereți ajutorul unui adult. Loviturile și strigătele nu rezolvă nimic.",
+          "en": "If you cannot manage alone, ask a trusted adult. Hitting and shouting solve nothing."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧑‍🏫",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.emotions.conflict.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.emotions.conflict.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.rights.responsibilities.4",
+    "skillId": "civ.rights.responsibilities.4",
+    "title": {
+      "ro": "Drepturi și responsabilități",
+      "en": "Rights and responsibilities"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un drept este ceva ce ți se cuvine. O responsabilitate este ceva ce tu ai de făcut.",
+          "en": "A right is something you are entitled to. A responsibility is something you have to do."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Dreptul la educație are ca pereche responsabilitatea de a învăța. Dreptul de a fi ascultat are ca pereche responsabilitatea de a-i asculta pe alții.",
+          "en": "The right to education pairs with the responsibility to learn. The right to be heard pairs with the responsibility to listen to others."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📚",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Când toți ne respectăm drepturile și ne facem responsabilitățile, ne simțim bine împreună.",
+          "en": "When everyone respects each other's rights and does their part, we feel good together."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🤝",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.rights.responsibilities.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.rights.responsibilities.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.rules.community.4",
+    "skillId": "civ.rules.community.4",
+    "title": {
+      "ro": "Reguli în comunitate",
+      "en": "Rules in the community"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Și în comunitate sunt reguli: la magazin stăm la rând, în autobuz cedăm locul, în parc nu aruncăm gunoaie.",
+          "en": "The community has rules too: we queue at the shop, give up our seat on the bus, do not litter in the park."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚌",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Unele reguli sunt scrise în legi. Legile sunt făcute ca toți oamenii să fie în siguranță și tratați corect.",
+          "en": "Some rules are written in laws. Laws are made so that all people are safe and treated fairly."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📜",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Respectăm regulile și când nu ne vede nimeni, pentru că ele ajută pe toată lumea, nu doar să nu fim certați.",
+          "en": "We follow rules even when no one sees us, because they help everyone, not just to avoid being told off."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏘️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.rules.community.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.rules.community.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.safety.internet.4",
+    "skillId": "civ.safety.internet.4",
+    "title": {
+      "ro": "Siguranța pe internet",
+      "en": "Staying safe online"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pe internet nu știi mereu cine este de cealaltă parte. O persoană poate spune că e copil și să nu fie.",
+          "en": "Online you do not always know who is on the other side. A person may say they are a child and not be."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💻",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Nu dai niciodată unui necunoscut adresa, numărul de telefon, parola, școala sau poze cu tine. Parola rămâne secretă.",
+          "en": "You never give a stranger your address, phone number, password, school or photos of yourself. A password stays secret."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔒",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă ceva te sperie sau te face să te simți prost, nu ești vinovat: oprește-te și spune unui adult de încredere.",
+          "en": "If something frightens you or makes you feel bad, it is not your fault: stop and tell a trusted adult."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧑‍🧒",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.safety.internet.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.safety.internet.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.safety.bullying.4",
+    "skillId": "civ.safety.bullying.4",
+    "title": {
+      "ro": "Bullying: cui spun și ce fac",
+      "en": "Bullying: who to tell and what to do"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Bullying înseamnă că cineva te jignește, te lovește sau te exclude din nou și din nou, intenționat.",
+          "en": "Bullying means someone insults, hits or leaves you out again and again, on purpose."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🛑",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Nu e vina ta și nu trebuie să rezolvi singur. Spune imediat unui adult de încredere: părinte, bunic, învățătoare, consilier școlar.",
+          "en": "It is not your fault and you do not have to solve it alone. Tell a trusted adult right away: a parent, grandparent, teacher, school counsellor."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧑‍🏫",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă vezi că cineva e agresat, nu râde și nu te alătura. Ajută-l, fii alături de el și anunță un adult.",
+          "en": "If you see someone being bullied, do not laugh or join in. Help them, stand by them and tell an adult."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫂",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.safety.bullying.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.safety.bullying.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.respect.tolerance.4",
+    "skillId": "civ.respect.tolerance.4",
+    "title": {
+      "ro": "Toleranță și egalitate",
+      "en": "Tolerance and equality"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "A fi tolerant înseamnă să accepți că oamenii sunt diferiți și să-i tratezi cu respect, chiar dacă nu gândesc sau nu trăiesc ca tine.",
+          "en": "Being tolerant means accepting that people are different and treating them with respect, even if they do not think or live as you do."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌈",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Toți oamenii au aceeași valoare. Nu putem spune că toți copiii dintr-un grup sunt la fel: fiecare este o persoană.",
+          "en": "All people have equal worth. We cannot say that all the children in a group are the same: each is a person."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧑‍🤝‍🧑",
+          "count": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Egalitatea înseamnă șanse egale pentru fete și băieți, pentru copii din sat sau din oraș, indiferent de limbă sau credință.",
+          "en": "Equality means equal chances for girls and boys, for children from villages or towns, whatever language or belief."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.respect.tolerance.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.respect.tolerance.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.institutions.4",
+    "skillId": "civ.institutions.4",
+    "title": {
+      "ro": "Instituții: primăria, poliția, spitalul, școala",
+      "en": "Institutions: town hall, police, hospital, school"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Instituțiile sunt locuri unde oamenii lucrează pentru toți: primăria, școala, poliția, spitalul, poșta.",
+          "en": "Institutions are places where people work for everyone: the town hall, school, police, hospital, post office."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏛️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Primăria se ocupă de lucrurile localității: străzi, parcuri, acte. Poliția ajută la siguranță, spitalul ocrotește sănătatea, școala învață copiii.",
+          "en": "The town hall looks after local matters: streets, parks, documents. The police help with safety, the hospital protects health, the school teaches children."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏫",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "În caz de pericol mare, de exemplu foc, accident sau cineva grav bolnav, un adult sună la 112. Dacă ești singur, cere ajutor unui adult sau sună tu la 112 și spune calm ce s-a întâmplat.",
+          "en": "In a serious emergency, such as a fire, an accident or someone seriously ill, an adult calls 112. If you are alone, ask an adult or call 112 yourself and calmly say what happened."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚑",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.institutions.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.institutions.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.symbols.4",
+    "skillId": "civ.symbols.4",
+    "title": {
+      "ro": "Simboluri naționale și valori",
+      "en": "National symbols and values"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "România are simboluri: drapelul cu albastru, galben și roșu, stema țării și imnul „Deșteaptă-te, române!”.",
+          "en": "Romania has symbols: the flag with blue, yellow and red, the coat of arms and the anthem \"Deșteaptă-te, române!\"."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🇷🇴",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ziua Națională este pe 1 Decembrie. În acea zi oamenii se adună, cântă imnul și își amintesc că aparțin aceleiași țări.",
+          "en": "National Day is on 1 December. On that day people gather, sing the anthem and remember that they belong to the same country."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎉",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Simbolurile se tratează cu respect: ascultăm imnul cu atenție și avem grijă de drapel. Valorile noastre sunt cinstea, respectul și ajutorul dat altora.",
+          "en": "Symbols are treated with respect: we listen to the anthem attentively and take care of the flag. Our values are honesty, respect and helping others."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🤝",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.symbols.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.symbols.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.volunteer.4",
+    "skillId": "civ.volunteer.4",
+    "title": {
+      "ro": "Voluntariat și fapte bune",
+      "en": "Volunteering and good deeds"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un voluntar ajută pe alții sau comunitatea din proprie voință, fără să primească bani.",
+          "en": "A volunteer helps others or the community of their own free will, without being paid."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🙋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Copiii pot fi voluntari: strâng haine pentru cei care au nevoie, plantează copaci, citesc povești unor vecini în vârstă.",
+          "en": "Children can be volunteers: collecting clothes for people in need, planting trees, reading stories to older neighbours."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Faptele bune nu trebuie să fie mari. Un zâmbet, un ajutor mic și un „mulțumesc” fac lumea mai caldă.",
+          "en": "Good deeds do not have to be big. A smile, a small help and a thank-you make the world warmer."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💛",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.volunteer.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.volunteer.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.civ.environment.4",
+    "skillId": "civ.environment.4",
+    "title": {
+      "ro": "Grija pentru mediu",
+      "en": "Caring for the environment"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Mediul înseamnă aer, apă, pământ, plante și animale. Noi depindem de ele, deci avem grijă de ele.",
+          "en": "The environment is air, water, soil, plants and animals. We depend on them, so we look after them."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Gestul mic contează: stingem lumina, nu risipim apa, nu aruncăm gunoiul în natură și sortăm deșeurile.",
+          "en": "Small actions matter: switch off lights, do not waste water, do not litter in nature and sort waste."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♻️",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Hârtia merge la coșul albastru, plasticul și metalul la cel galben, sticla la cel verde. Dacă nu ai coșuri, strânge deșeurile și du-le unde se colectează.",
+          "en": "Paper goes to the blue bin, plastic and metal to the yellow one, glass to the green one. If there are no bins, keep your waste and take it where it is collected."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗑️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.explanation.civ.environment.4",
+      "kind": "explanation",
+      "title": "Explanation for civ.environment.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

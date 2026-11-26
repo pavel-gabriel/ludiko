@@ -588,7 +588,8 @@
     },
     "subject": {
       "mat": "Matematică",
-      "rom": "Limba română"
+      "rom": "Limba română",
+      "civ": "Educație civică"
     },
     "home": {
       "missionTitle": "Misiunea de azi",
