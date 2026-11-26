@@ -1,0 +1,282 @@
+[
+  {
+    "id": "stiinte.g0.body",
+    "subject": "stiinte",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.1"
+      }
+    ],
+    "title": {
+      "ro": "Corpul meu și simțurile",
+      "en": "My body and my senses"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "sci-relation",
+        "params": {
+          "set": "body-easy",
+          "options": 3
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g0.body"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g0.body",
+      "kind": "data",
+      "title": "Skill stiinte.g0.body",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g0.nature",
+    "subject": "stiinte",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.1"
+      }
+    ],
+    "title": {
+      "ro": "Plante și animale din jurul nostru",
+      "en": "Plants and animals around us"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "plant-animal",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "plant-animal"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "plant-animal"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g0.nature"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g0.nature",
+      "kind": "data",
+      "title": "Skill stiinte.g0.nature",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g0.seasons",
+    "subject": "stiinte",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.2"
+      }
+    ],
+    "title": {
+      "ro": "Anotimpurile",
+      "en": "The seasons"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "season",
+          "cats": [
+            "vara",
+            "iarna"
+          ]
+        }
+      },
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "season",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "season"
+        }
+      },
+      {
+        "generator": "sci-order",
+        "params": {
+          "sequences": [
+            "seasons"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g0.seasons"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g0.seasons",
+      "kind": "data",
+      "title": "Skill stiinte.g0.seasons",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g0.daynight",
+    "subject": "stiinte",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.2"
+      }
+    ],
+    "title": {
+      "ro": "Ziua și noaptea",
+      "en": "Day and night"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "day-night",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "day-night"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "day-night"
+        }
+      },
+      {
+        "generator": "sci-order",
+        "params": {
+          "sequences": [
+            "day"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g0.daynight"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g0.daynight",
+      "kind": "data",
+      "title": "Skill stiinte.g0.daynight",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g0.weather",
+    "subject": "stiinte",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.2"
+      }
+    ],
+    "title": {
+      "ro": "Vremea și ce purtăm",
+      "en": "The weather and what we wear"
+    },
+    "prerequisites": [
+      "stiinte.g0.seasons"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "weather-wear",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "weather-wear"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "weather-wear"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g0.weather"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g0.weather",
+      "kind": "data",
+      "title": "Skill stiinte.g0.weather",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  }
+]

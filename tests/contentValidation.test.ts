@@ -402,7 +402,7 @@ describe('content on disk', () => {
     const programaBySubject: Record<string, string[]> = {
       mat: ['MEM-2013', 'MAT-III-IV-2014'],
       rom: ['CLR-2013', 'LLR-III-IV-2014'],
-      stiinte: ['STI-III-IV-2014'],
+      stiinte: ['MEM-2013', 'STI-III-IV-2014'],
       civ: ['CIV-III-IV-2014'],
       ist: ['IST-IV-2014'],
       geo: ['GEO-IV-2014'],

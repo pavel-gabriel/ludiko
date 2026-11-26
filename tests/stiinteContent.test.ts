@@ -3,7 +3,9 @@ import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { validateExplanation, validateItem, validateSkillGraph, validateSkills } from '../src/engine/content/validate';
 import { validateProvenance } from '../src/engine/content/provenance';
-import { getAllSkills, getExplanation, getItemsForSkill, getSkillsBySubject } from '../src/engine/content/registry';
+import { getAllSkills, getExplanation, getItemsForSkill, getSkill, getSkillsBySubject } from '../src/engine/content/registry';
+import { assembleTest, resolveSkills } from '../src/exam/assemble';
+import { EN2_MATH } from '../src/exam/blueprints';
 import { checkResponse } from '../src/engine/items/check';
 import { generateItems, getGenerator } from '../src/engine/items/generators';
 import { CLASS_SETS, RELATIONS, SEQUENCES } from '../src/engine/items/generators/stiinteData';
@@ -39,10 +41,14 @@ function correctResponse(item: Item): ItemResponse {
 }
 
 describe('stiinte skill graph', () => {
-  it('has 20-30 valid skills in grades III and IV', () => {
-    expect(skills.length).toBeGreaterThanOrEqual(20);
-    expect(skills.length).toBeLessThanOrEqual(30);
-    expect(new Set(skills.map((s) => s.grade))).toEqual(new Set([3, 4]));
+  it('has valid skills in grades 0-IV (5-7 per grade 0-II, 10+ per grade III-IV)', () => {
+    expect(skills.length).toBeGreaterThanOrEqual(40);
+    expect(new Set(skills.map((s) => s.grade))).toEqual(new Set([0, 1, 2, 3, 4]));
+    for (const g of [0, 1, 2]) {
+      const n = getSkillsBySubject('stiinte', g as 0 | 1 | 2).length;
+      expect(n, `grade ${g}`).toBeGreaterThanOrEqual(5);
+      expect(n, `grade ${g}`).toBeLessThanOrEqual(7);
+    }
     for (const g of [3, 4]) expect(getSkillsBySubject('stiinte', g as 3 | 4).length).toBeGreaterThanOrEqual(10);
     const errors = jsonFiles(join(CONTENT, 'skills', 'stiinte')).flatMap((f) => validateSkills(readJson(f), relative(ROOT, f)));
     expect(errors).toEqual([]);
@@ -56,9 +62,46 @@ describe('stiinte skill graph', () => {
     expect(crossing.length).toBeGreaterThanOrEqual(6);
   });
 
-  it('uses STI-III-IV-2014 (codes to verify), own provenance, English titles', () => {
+  it('grades 0-II chain into the grade III-IV graph (cross-grade links)', () => {
+    const byId = new Map(skills.map((s) => [s.id, s]));
+    const younger = new Set(skills.filter((s) => s.grade <= 2).map((s) => s.id));
+    // prerequisites of the youngest grades never point forward
+    for (const s of skills.filter((x) => x.grade <= 2)) {
+      for (const p of s.prerequisites) expect((byId.get(p) as Skill).grade, `${s.id} -> ${p}`).toBeLessThanOrEqual(s.grade);
+    }
+    const links = (id: string) => (byId.get(id) as Skill).prerequisites.filter((p) => younger.has(p));
+    expect(links('stiinte.living')).toEqual(['stiinte.g2.living']);
+    expect(links('stiinte.plants.parts')).toEqual(['stiinte.g1.plants']);
+    expect(links('stiinte.animals.groups')).toEqual(['stiinte.g1.animals']);
+    expect(links('stiinte.animals.young')).toEqual(['stiinte.g1.young']);
+    expect(links('stiinte.habitat')).toEqual(['stiinte.g2.habitat']);
+    expect(links('stiinte.body.senses')).toEqual(['stiinte.g0.body']);
+    expect(links('stiinte.body.hygiene')).toEqual(['stiinte.g1.food']);
+    expect(links('stiinte.matter.states')).toEqual(['stiinte.g1.materials', 'stiinte.g1.water']);
+    expect(links('stiinte.earth.sunmoon')).toEqual(['stiinte.g2.skysun']);
+    expect(links('stiinte.weather')).toEqual(['stiinte.g0.weather']);
+    expect(links('stiinte.environment')).toEqual(['stiinte.g2.protect']);
+    expect(links('stiinte.lifecycle')).toEqual(['stiinte.g2.lifecycle']);
+    expect(links('stiinte.light.sound')).toEqual(['stiinte.g2.light']);
+    expect(links('stiinte.magnets')).toEqual(['stiinte.g2.forces']);
+    // every grade 0-II skill feeds (directly or not) a grade III-IV skill: nothing is a dead end
+    const upstream = new Set<string>();
+    const walk = (id: string) => {
+      for (const p of (byId.get(id) as Skill).prerequisites) if (!upstream.has(p)) { upstream.add(p); walk(p); }
+    };
+    for (const s of skills.filter((x) => x.grade >= 3)) walk(s.id);
+    for (const id of younger) expect(upstream.has(id), id).toBe(true);
+    // grade 0 skills are the roots of the whole subject
+    for (const s of skills.filter((x) => x.grade === 0)) {
+      expect(s.prerequisites.every((p) => (byId.get(p) as Skill).grade === 0), s.id).toBe(true);
+    }
+  });
+
+  it('uses MEM-2013 for grades 0-II and STI-III-IV-2014 above (codes to verify), own provenance, English titles', () => {
     for (const s of skills) {
-      expect(s.competences.every((c) => c.programa === 'STI-III-IV-2014'), s.id).toBe(true);
+      const programa = s.grade <= 2 ? 'MEM-2013' : 'STI-III-IV-2014';
+      expect(s.competences.length, s.id).toBeGreaterThan(0);
+      expect(s.competences.every((c) => c.programa === programa), s.id).toBe(true);
       expect(s.provenance.source).toBe('own');
       expect(s.provenance.licence).toBe('OWN');
       expect(s.provenance.notes).toMatch(/verify/);
@@ -131,11 +174,60 @@ describe('stiinte static banks', () => {
   });
 });
 
+describe('stiinte grades 0-II banks', () => {
+  const young = new Set(skills.filter((s) => s.grade <= 2).map((s) => s.id));
+  const items = jsonFiles(join(CONTENT, 'items', 'stiinte'))
+    .filter((f) => /grade[012]\.json$/.test(f))
+    .flatMap((f) => readJson(f) as Item[]);
+
+  it('has 50+ valid items on grade 0-II skills, with grade II read-and-answer texts', () => {
+    expect(items.length).toBeGreaterThanOrEqual(50);
+    for (const it of items) {
+      expect(young.has(it.skillId), it.id).toBe(true);
+      expect(validateItem(it), it.id).toEqual([]);
+    }
+    const reads = items.filter((i) => i.type === 'read-and-answer');
+    expect(reads.length).toBeGreaterThanOrEqual(3);
+    for (const r of reads) expect(getSkill(r.skillId)?.grade).toBe(2);
+  });
+
+  it('every grade 0-II skill has at least 3 bank items', () => {
+    for (const id of young) expect(items.filter((i) => i.skillId === id).length, id).toBeGreaterThanOrEqual(3);
+  });
+
+  it('the pre-reader level is picture-led: grade 0 choice options carry an emoji visual', () => {
+    const g0 = items.filter((i) => getSkill(i.skillId)?.grade === 0 && i.type === 'choice');
+    expect(g0.length).toBeGreaterThanOrEqual(8);
+    for (const it of g0) if (it.type === 'choice') expect(it.options.every((o) => o.visual), it.id).toBe(true);
+  });
+});
+
+describe('EN II test 2 environment section', () => {
+  it('selects grade 1-2 stiinte skills and is no longer skipped', () => {
+    const part = EN2_MATH.sections.find((s) => s.id === 'environment')?.parts[0];
+    expect(part).toBeDefined();
+    const selected = resolveSkills((part as NonNullable<typeof part>).skills);
+    expect(selected.length).toBeGreaterThanOrEqual(10);
+    expect(new Set(selected.map((s) => s.grade))).toEqual(new Set([1, 2]));
+    for (const seed of [1, 2, 3, 4, 5]) {
+      const env = assembleTest(EN2_MATH, { seed }).sections.find((s) => s.id === 'environment');
+      expect(env, `seed ${seed}`).toBeDefined();
+      expect((env as NonNullable<typeof env>).items.length).toBe(4);
+      for (const it of (env as NonNullable<typeof env>).items) {
+        expect(getSkill(it.skillId)?.subject).toBe('stiinte');
+        expect([1, 2]).toContain(getSkill(it.skillId)?.grade);
+        expect(EN2_MATH.allowedTypes).toContain(it.type);
+      }
+    }
+  });
+});
+
 describe('stiinte generators', () => {
   const genSkills = skills.filter((s) => s.itemSources.some((x) => 'generator' in x));
 
-  it('most skills use generators', () => {
-    expect(genSkills.length).toBeGreaterThanOrEqual(15);
+  it('most skills use generators (all of grades 0-II)', () => {
+    expect(genSkills.length).toBeGreaterThanOrEqual(33);
+    for (const s of skills.filter((x) => x.grade <= 2)) expect(genSkills.includes(s), s.id).toBe(true);
   });
 
   for (const s of genSkills) {
@@ -256,6 +348,34 @@ describe('stiinte fact tables', () => {
     expect(SEQUENCES.butterfly.steps.map((s) => s.en)).toEqual(['egg', 'caterpillar', 'pupa (chrysalis)', 'butterfly']);
     expect(SEQUENCES.frog.steps[0].en).toMatch(/eggs/);
     expect(SEQUENCES.seasons.steps[0].en).toBe('spring');
+  });
+
+  it('grades 0-II facts: unambiguous and correct', () => {
+    const cases: [string, string, string][] = [
+      ['plant-animal', 'butterfly', 'animal'], ['plant-animal', 'cactus', 'planta'],
+      ['season', 'snowman', 'iarna'], ['season', 'watermelon', 'vara'], ['season', 'yellow leaf', 'toamna'], ['season', 'tulip', 'primavara'],
+      ['day-night', 'Sun', 'zi'], ['day-night', 'star', 'noapte'],
+      ['weather-wear', 'umbrella', 'ploaie'], ['weather-wear', 'sunglasses', 'soare'], ['weather-wear', 'scarf', 'frig'],
+      ['plant-eaten', 'carrot', 'radacina'], ['plant-eaten', 'lettuce', 'frunza'], ['plant-eaten', 'apple', 'fructul'],
+      ['domestic-wild', 'cow', 'domestic'], ['domestic-wild', 'wolf', 'salbatic'],
+      ['healthy-food', 'apple', 'sanatos'], ['healthy-food', 'lollipop', 'rar'],
+      ['material', 'metal key', 'metal'], ['material', 'glass jar', 'sticla'], ['material', 'wooden spoon', 'lemn'], ['material', 'plastic bucket', 'plastic'],
+      ['water-form', 'ice', 'inghetata'], ['water-form', 'river', 'lichida'],
+      ['habitat-simple', 'carp', 'apa'], ['habitat-simple', 'hen', 'ferma'], ['habitat-simple', 'squirrel', 'padure'],
+      ['push-pull', 'kicking a ball', 'impinge'], ['push-pull', 'closing a drawer', 'impinge'], ['push-pull', 'opening a drawer', 'trage'],
+      ['shadow', 'tree', 'umbra'], ['shadow', 'clean window pane', 'nu'],
+      ['plant-needs', 'water', 'trebuie'], ['plant-needs', 'television', 'nu'],
+      ['eco-actions', 'planting a tree', 'bine'], ['eco-actions', 'letting water run for nothing', 'rau'],
+    ];
+    for (const [set, en, cat] of cases) expect(catOf(set, en), `${set}/${en}`).toBe(cat);
+    const young = Object.fromEntries(RELATIONS['young-easy'].pairs.map((p) => [p.k.ro, p.v.ro]));
+    expect(young).toMatchObject({ oaia: 'mielul', vaca: 'vițelul', pisica: 'pisoiul', câinele: 'cățelul', calul: 'mânzul' });
+    const body = Object.fromEntries(RELATIONS['body-easy'].pairs.map((p) => [p.k.ro, p.v.ro]));
+    expect(body).toMatchObject({ ochii: 'vedem', urechile: 'auzim', nasul: 'mirosim', picioarele: 'mergem' });
+    expect(RELATIONS.sky.pairs.find((p) => p.k.ro === 'Soarele')?.v.ro).toMatch(/lumină și căldură/);
+    expect(RELATIONS.sky.pairs.find((p) => p.k.ro === 'Luna')?.v.ro).toMatch(/nu are lumină proprie/);
+    expect(SEQUENCES.day.steps.map((s) => s.en)).toEqual(['morning', 'midday', 'evening', 'night']);
+    expect(SEQUENCES['human-life'].steps.map((s) => s.en)).toEqual(['baby', 'child', 'adult', 'grandfather']);
   });
 
   it('chains start with a plant and end with a carnivore', () => {

@@ -1,0 +1,1289 @@
+[
+  {
+    "id": "item.stiinte.g2.living.1",
+    "skillId": "stiinte.g2.living",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "De ce are nevoie o plantă ca să crească?",
+      "en": "What does a plant need to grow?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.living",
+    "visual": {
+      "kind": "objects",
+      "icon": "🌱",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.living.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.living.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "de apă și lumină"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "de bomboane"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "de televizor"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g2.living.2",
+    "skillId": "stiinte.g2.living",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care este o ființă vie?",
+      "en": "Which one is a living thing?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.living",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.living.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.living.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "piatra"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪨",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "fluturele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦋",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "mingea"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚽",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g2.living.3",
+    "skillId": "stiinte.g2.living",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Animalele au nevoie de hrană și apă.",
+      "en": "True or false? Animals need food and water."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.living",
+    "visual": {
+      "kind": "objects",
+      "icon": "🐄",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.living.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.living.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g2.lifecycle.1",
+    "skillId": "stiinte.g2.lifecycle",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce iese din oul fluturelui?",
+      "en": "What hatches from a butterfly’s egg?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.lifecycle",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.lifecycle.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.lifecycle.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "omida"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐛",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "fluturele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦋",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "pupa"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g2.lifecycle.2",
+    "skillId": "stiinte.g2.lifecycle",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce apare prima dată când sămânța încolțește?",
+      "en": "What appears first when a seed sprouts?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.lifecycle",
+    "visual": {
+      "kind": "objects",
+      "icon": "🌱",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.lifecycle.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.lifecycle.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "floarea"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "rădăcina"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "fructul"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g2.lifecycle.3",
+    "skillId": "stiinte.g2.lifecycle",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Puiul de găină iese dintr-un ou.",
+      "en": "True or false? A chick hatches from an egg."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.lifecycle",
+    "visual": {
+      "kind": "objects",
+      "icon": "🥚",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.lifecycle.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.lifecycle.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g2.lifecycle.4",
+    "skillId": "stiinte.g2.lifecycle",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.lifecycle",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.lifecycle.4",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.lifecycle.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "passage": {
+      "ro": "Într-o primăvară, mama găină a clocit zece ouă. După trei săptămâni, din ouă au ieșit pui galbeni și pufoși. Puii au crescut și au devenit găini și cocoși."
+    },
+    "type": "read-and-answer",
+    "questions": [
+      {
+        "id": "item.stiinte.g2.lifecycle.4.q1",
+        "skillId": "stiinte.g2.lifecycle",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Din ce au ieșit puii?",
+          "en": "What did the chicks hatch from?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.g2.lifecycle.4.q1",
+          "kind": "item",
+          "title": "Item item.stiinte.g2.lifecycle.4.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "din semințe"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "din ouă"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "din pământ"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.stiinte.g2.lifecycle.4.q2",
+        "skillId": "stiinte.g2.lifecycle",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Cum erau puii la început?",
+          "en": "What were the chicks like at first?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.g2.lifecycle.4.q2",
+          "kind": "item",
+          "title": "Item item.stiinte.g2.lifecycle.4.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "mari și negri"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "fără pene și mari"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "galbeni și pufoși"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.stiinte.g2.lifecycle.4.q3",
+        "skillId": "stiinte.g2.lifecycle",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Adevărat sau fals? Puii au rămas mici toată viața.",
+          "en": "True or false? The chicks stayed small all their lives."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.g2.lifecycle.4.q3",
+          "kind": "item",
+          "title": "Item item.stiinte.g2.lifecycle.4.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "item.stiinte.g2.habitat.1",
+    "skillId": "stiinte.g2.habitat",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Unde trăiește peștele?",
+      "en": "Where does a fish live?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.habitat",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.habitat.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.habitat.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "în apă"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "în pădure"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌲",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "la fermă"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚜",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g2.habitat.2",
+    "skillId": "stiinte.g2.habitat",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care animal trăiește în pădure?",
+      "en": "Which animal lives in the forest?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.habitat",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.habitat.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.habitat.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "crapul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐟",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "ursul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐻",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "vaca"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g2.habitat.3",
+    "skillId": "stiinte.g2.habitat",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Cămila trăiește în deșert.",
+      "en": "True or false? A camel lives in the desert."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.habitat",
+    "visual": {
+      "kind": "objects",
+      "icon": "🐫",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.habitat.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.habitat.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g2.habitat.4",
+    "skillId": "stiinte.g2.habitat",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.habitat",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.habitat.4",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.habitat.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "passage": {
+      "ro": "Pe malul lacului este o pădure mare. În lac înoată pești și rațe. În pădure trăiesc veverițe, cerbi și lupi. Veverița își face cuib într-un copac."
+    },
+    "type": "read-and-answer",
+    "questions": [
+      {
+        "id": "item.stiinte.g2.habitat.4.q1",
+        "skillId": "stiinte.g2.habitat",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Unde înoată peștii?",
+          "en": "Where do the fish swim?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.g2.habitat.4.q1",
+          "kind": "item",
+          "title": "Item item.stiinte.g2.habitat.4.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "în pădure"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "în lac"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "într-un copac"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.stiinte.g2.habitat.4.q2",
+        "skillId": "stiinte.g2.habitat",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Care animal trăiește în pădure?",
+          "en": "Which animal lives in the forest?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.g2.habitat.4.q2",
+          "kind": "item",
+          "title": "Item item.stiinte.g2.habitat.4.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "crapul"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "rața"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "veverița"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.stiinte.g2.habitat.4.q3",
+        "skillId": "stiinte.g2.habitat",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Adevărat sau fals? Cerbii trăiesc în lac.",
+          "en": "True or false? The deer live in the lake."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.g2.habitat.4.q3",
+          "kind": "item",
+          "title": "Item item.stiinte.g2.habitat.4.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "item.stiinte.g2.forces.1",
+    "skillId": "stiinte.g2.forces",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Când lovești mingea cu piciorul, ce faci?",
+      "en": "When you kick a ball, what do you do?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.forces",
+    "visual": {
+      "kind": "objects",
+      "icon": "⚽",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.forces.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.forces.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "o împingi"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "o tragi"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g2.forces.2",
+    "skillId": "stiinte.g2.forces",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cum duci sania după tine, cu o sfoară?",
+      "en": "How do you take a sledge along with a rope?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.forces",
+    "visual": {
+      "kind": "objects",
+      "icon": "🛷",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.forces.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.forces.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "o împingi"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "o tragi"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g2.forces.3",
+    "skillId": "stiinte.g2.forces",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Când apăsăm un buton, îl împingem.",
+      "en": "True or false? When we press a button, we push it."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.forces",
+    "visual": {
+      "kind": "objects",
+      "icon": "🔘",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.forces.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.forces.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g2.light.1",
+    "skillId": "stiinte.g2.light",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Care produce lumină proprie?",
+      "en": "Which one makes its own light?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.light",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.light.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.light.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Soarele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Luna"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌙",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "oglinda"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪞",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g2.light.2",
+    "skillId": "stiinte.g2.light",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce se vede pe jos în spatele unui copac, când Soarele îl luminează?",
+      "en": "What can be seen on the ground behind a tree when the Sun shines on it?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.light",
+    "visual": {
+      "kind": "objects",
+      "icon": "🌳",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.light.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.light.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "un curcubeu"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "umbra copacului"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "ploaia"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g2.light.3",
+    "skillId": "stiinte.g2.light",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Prin geamul curat trece lumina.",
+      "en": "True or false? Light goes through a clean window pane."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.light",
+    "visual": {
+      "kind": "objects",
+      "icon": "🪟",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.light.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.light.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g2.skysun.1",
+    "skillId": "stiinte.g2.skysun",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce ne dă lumină și căldură ziua?",
+      "en": "What gives us light and warmth in the day?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.skysun",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.skysun.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.skysun.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Soarele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Luna"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌙",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "norul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☁️",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g2.skysun.2",
+    "skillId": "stiinte.g2.skysun",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Unde trăim noi, oamenii?",
+      "en": "Where do we people live?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.skysun",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.skysun.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.skysun.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "pe Lună"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌙",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "pe Pământ"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "pe Soare"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g2.skysun.3",
+    "skillId": "stiinte.g2.skysun",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Adevărat sau fals? Luna are lumină proprie, ca Soarele.",
+      "en": "True or false? The Moon has its own light, like the Sun."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.skysun",
+    "visual": {
+      "kind": "objects",
+      "icon": "🌙",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.skysun.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.skysun.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.g2.protect.1",
+    "skillId": "stiinte.g2.protect",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce facem cu o hârtie folosită?",
+      "en": "What do we do with used paper?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.protect",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.protect.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.protect.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "o ducem la reciclat"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♻️",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "o aruncăm pe jos"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "o ardem în pădure"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g2.protect.2",
+    "skillId": "stiinte.g2.protect",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce ajută natura?",
+      "en": "What helps nature?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.protect",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.protect.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.protect.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "rupem florile din parc"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "plantăm un pom"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "aruncăm gunoiul în râu"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g2.protect.3",
+    "skillId": "stiinte.g2.protect",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Este bine să lăsăm robinetul deschis tot timpul.",
+      "en": "True or false? It is good to leave the tap running all the time."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.protect",
+    "visual": {
+      "kind": "objects",
+      "icon": "🚰",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g2.protect.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.protect.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.g2.protect.4",
+    "skillId": "stiinte.g2.protect",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g2.protect",
+    "provenance": {
+      "id": "prov.item.stiinte.g2.protect.4",
+      "kind": "item",
+      "title": "Item item.stiinte.g2.protect.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "passage": {
+      "ro": "Clasa a II-a a făcut o excursie în parc. Copiii au adunat sticle de plastic de pe iarbă și le-au pus în container. Apoi au plantat un copăcel. Învățătoarea a spus că parcul trebuie să rămână curat pentru toți."
+    },
+    "type": "read-and-answer",
+    "questions": [
+      {
+        "id": "item.stiinte.g2.protect.4.q1",
+        "skillId": "stiinte.g2.protect",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Ce au adunat copiii?",
+          "en": "What did the children collect?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.g2.protect.4.q1",
+          "kind": "item",
+          "title": "Item item.stiinte.g2.protect.4.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "frunze uscate"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "sticle de plastic"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "pietre"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.stiinte.g2.protect.4.q2",
+        "skillId": "stiinte.g2.protect",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Ce au plantat copiii?",
+          "en": "What did the children plant?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.g2.protect.4.q2",
+          "kind": "item",
+          "title": "Item item.stiinte.g2.protect.4.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "o floare de plastic"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "iarbă artificială"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "un copăcel"
+            }
+          }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "item.stiinte.g2.protect.4.q3",
+        "skillId": "stiinte.g2.protect",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Adevărat sau fals? Copiii au aruncat gunoi pe iarbă.",
+          "en": "True or false? The children threw rubbish on the grass."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.g2.protect.4.q3",
+          "kind": "item",
+          "title": "Item item.stiinte.g2.protect.4.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "true-false",
+        "correct": false
+      }
+    ]
+  }
+]

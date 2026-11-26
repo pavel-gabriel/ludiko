@@ -1,0 +1,267 @@
+[
+  {
+    "id": "exp.stiinte.g0.body",
+    "skillId": "stiinte.g0.body",
+    "title": {
+      "ro": "Corpul meu și simțurile",
+      "en": "My body and my senses"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cu ochii vedem. Cu urechile auzim.",
+          "en": "We see with our eyes. We hear with our ears."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👀",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu nasul mirosim. Cu limba simțim gustul.",
+          "en": "We smell with our nose. We taste with our tongue."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👃",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu mâinile apucăm. Cu picioarele mergem.",
+          "en": "We pick things up with our hands. We walk with our legs and feet."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🤲",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g0.body",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g0.body",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g0.nature",
+    "skillId": "stiinte.g0.nature",
+    "title": {
+      "ro": "Plante și animale",
+      "en": "Plants and animals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Plantele cresc în pământ: floarea, iarba, copacul.",
+          "en": "Plants grow in the ground: a flower, grass, a tree."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌷",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Animalele se mișcă și mănâncă: câinele, pasărea, peștele.",
+          "en": "Animals move and eat: a dog, a bird, a fish."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Și plantele, și animalele sunt vii.",
+          "en": "Plants and animals are both alive."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g0.nature",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g0.nature",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g0.seasons",
+    "skillId": "stiinte.g0.seasons",
+    "title": {
+      "ro": "Cele patru anotimpuri",
+      "en": "The four seasons"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Anul are patru anotimpuri: primăvara, vara, toamna și iarna.",
+          "en": "A year has four seasons: spring, summer, autumn and winter."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌸",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Vara este cald și soare. Iarna este frig și ninge.",
+          "en": "Summer is warm and sunny. Winter is cold and it snows."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Toamna cad frunzele. Primăvara înfloresc florile.",
+          "en": "In autumn leaves fall. In spring flowers bloom."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍂",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g0.seasons",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g0.seasons",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g0.daynight",
+    "skillId": "stiinte.g0.daynight",
+    "title": {
+      "ro": "Ziua și noaptea",
+      "en": "Day and night"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ziua vedem Soarele. Este lumină.",
+          "en": "In the day we see the Sun. It is light."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Noaptea vedem Luna și stelele. Este întuneric.",
+          "en": "At night we see the Moon and stars. It is dark."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌙",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ziua ne jucăm. Noaptea dormim.",
+          "en": "In the day we play. At night we sleep."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "😴",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g0.daynight",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g0.daynight",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g0.weather",
+    "skillId": "stiinte.g0.weather",
+    "title": {
+      "ro": "Vremea și hainele",
+      "en": "The weather and clothes"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Când plouă, luăm umbrela și cizmele.",
+          "en": "When it rains, we take an umbrella and boots."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☂️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Când e soare și cald, punem pălăria și ochelarii de soare.",
+          "en": "When it is sunny and hot, we put on a hat and sunglasses."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👒",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Când e frig, purtăm fular, mănuși și geacă groasă.",
+          "en": "When it is cold, we wear a scarf, gloves and a warm coat."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧣",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g0.weather",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g0.weather",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  }
+]

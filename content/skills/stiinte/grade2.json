@@ -1,0 +1,392 @@
+[
+  {
+    "id": "stiinte.g2.living",
+    "subject": "stiinte",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.1"
+      }
+    ],
+    "title": {
+      "ro": "Ființe vii: ce le trebuie ca să trăiască",
+      "en": "Living things: what they need to live"
+    },
+    "prerequisites": [
+      "stiinte.g1.plants",
+      "stiinte.g1.animals"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "living"
+        }
+      },
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "living",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "plant-needs"
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "plant-needs"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g2.living"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g2.living",
+      "kind": "data",
+      "title": "Skill stiinte.g2.living",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g2.lifecycle",
+    "subject": "stiinte",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.1"
+      }
+    ],
+    "title": {
+      "ro": "Ciclul vieții: de la ou sau sămânță la adult",
+      "en": "Life cycle: from egg or seed to adult"
+    },
+    "prerequisites": [
+      "stiinte.g2.living",
+      "stiinte.g1.young"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-order",
+        "params": {
+          "sequences": [
+            "hen",
+            "butterfly",
+            "plant",
+            "human-life"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g2.lifecycle"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g2.lifecycle",
+      "kind": "data",
+      "title": "Skill stiinte.g2.lifecycle",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g2.habitat",
+    "subject": "stiinte",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.1"
+      }
+    ],
+    "title": {
+      "ro": "Unde trăiesc animalele",
+      "en": "Where animals live"
+    },
+    "prerequisites": [
+      "stiinte.g1.animals"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "habitat-simple",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "habitat-simple"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "habitat-simple"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g2.habitat"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g2.habitat",
+      "kind": "data",
+      "title": "Skill stiinte.g2.habitat",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g2.forces",
+    "subject": "stiinte",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.5"
+      }
+    ],
+    "title": {
+      "ro": "Împingem și tragem",
+      "en": "Pushing and pulling"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "push-pull",
+          "options": 2
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "push-pull"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "push-pull"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g2.forces"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g2.forces",
+      "kind": "data",
+      "title": "Skill stiinte.g2.forces",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g2.light",
+    "subject": "stiinte",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.5"
+      }
+    ],
+    "title": {
+      "ro": "Lumină și umbră",
+      "en": "Light and shadow"
+    },
+    "prerequisites": [
+      "stiinte.g0.daynight"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "light-source",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "light-source"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "shadow"
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "shadow"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g2.light"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g2.light",
+      "kind": "data",
+      "title": "Skill stiinte.g2.light",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g2.skysun",
+    "subject": "stiinte",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.2"
+      }
+    ],
+    "title": {
+      "ro": "Pământul, Soarele și Luna",
+      "en": "The Earth, the Sun and the Moon"
+    },
+    "prerequisites": [
+      "stiinte.g0.daynight"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-relation",
+        "params": {
+          "set": "sky",
+          "options": 3
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "day-night"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g2.skysun"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g2.skysun",
+      "kind": "data",
+      "title": "Skill stiinte.g2.skysun",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  },
+  {
+    "id": "stiinte.g2.protect",
+    "subject": "stiinte",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MEM-2013",
+        "code": "EM.6"
+      }
+    ],
+    "title": {
+      "ro": "Protejăm mediul",
+      "en": "We protect the environment"
+    },
+    "prerequisites": [
+      "stiinte.g2.living"
+    ],
+    "itemSources": [
+      {
+        "generator": "sci-which",
+        "params": {
+          "set": "eco-actions",
+          "options": 2
+        }
+      },
+      {
+        "generator": "sci-sort",
+        "params": {
+          "set": "eco-actions"
+        }
+      },
+      {
+        "generator": "sci-tf",
+        "params": {
+          "set": "eco-actions"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stiinte.g2.protect"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.stiinte.g2.protect",
+      "kind": "data",
+      "title": "Skill stiinte.g2.protect",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa (Matematică și explorarea mediului 0-II, strand explorarea mediului); very short, picture-led prompts for the pre-reader levels"
+    }
+  }
+]

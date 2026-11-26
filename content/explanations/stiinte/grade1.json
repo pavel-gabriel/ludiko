@@ -1,0 +1,320 @@
+[
+  {
+    "id": "exp.stiinte.g1.plants",
+    "skillId": "stiinte.g1.plants",
+    "title": {
+      "ro": "Părțile plantei pe care le mâncăm",
+      "en": "Plant parts we eat"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Planta are rădăcină, frunze și fructe. Mâncăm unele dintre ele.",
+          "en": "A plant has roots, leaves and fruit. We eat some of them."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Morcovul este rădăcină. Salata este frunză.",
+          "en": "A carrot is a root. Lettuce is a leaf."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥕",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mărul și para sunt fructe.",
+          "en": "An apple and a pear are fruits."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g1.plants",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g1.plants",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g1.animals",
+    "skillId": "stiinte.g1.animals",
+    "title": {
+      "ro": "Animale domestice și sălbatice",
+      "en": "Domestic and wild animals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Animalele domestice trăiesc lângă oameni: câinele, vaca, găina.",
+          "en": "Domestic animals live near people: the dog, the cow, the hen."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Animalele sălbatice trăiesc singure în natură: lupul, ursul, leul.",
+          "en": "Wild animals live in nature on their own: the wolf, the bear, the lion."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐺",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Oamenii au grijă de animalele domestice.",
+          "en": "People look after domestic animals."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g1.animals",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g1.animals",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g1.young",
+    "skillId": "stiinte.g1.young",
+    "title": {
+      "ro": "Puii animalelor",
+      "en": "Young animals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fiecare animal are un pui cu nume al lui.",
+          "en": "Each animal has a young one with its own name."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐑",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Puiul oii este mielul. Puiul vacii este vițelul.",
+          "en": "A sheep’s young is a lamb. A cow’s young is a calf."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Puiul pisicii este pisoiul. Puiul câinelui este cățelul.",
+          "en": "A cat’s young is a kitten. A dog’s young is a puppy."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐈",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g1.young",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g1.young",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g1.food",
+    "skillId": "stiinte.g1.food",
+    "title": {
+      "ro": "Hrana sănătoasă",
+      "en": "Healthy food"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fructele, legumele, ouăle și laptele ne ajută să creștem sănătoși.",
+          "en": "Fruit, vegetables, eggs and milk help us grow up healthy."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Bomboanele și prăjiturile sunt bune doar din când în când.",
+          "en": "Sweets and cakes are fine only now and then."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍬",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Bem apă și ne spălăm pe mâini înainte de masă.",
+          "en": "We drink water and wash our hands before a meal."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g1.food",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g1.food",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g1.materials",
+    "skillId": "stiinte.g1.materials",
+    "title": {
+      "ro": "Din ce sunt făcute lucrurile",
+      "en": "What things are made of"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Lucrurile sunt făcute din materiale: lemn, metal, plastic, sticlă.",
+          "en": "Things are made of materials: wood, metal, plastic, glass."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪵",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cheia și moneda sunt din metal. Geamul și paharul pot fi din sticlă.",
+          "en": "A key and a coin are made of metal. A window and a cup can be made of glass."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔑",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Găleata și multe jucării sunt din plastic.",
+          "en": "A bucket and many toys are made of plastic."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪣",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g1.materials",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g1.materials",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.g1.water",
+    "skillId": "stiinte.g1.water",
+    "title": {
+      "ro": "Apa în natură",
+      "en": "Water in nature"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Apa lichidă curge: ploaia, râul, marea.",
+          "en": "Liquid water flows: rain, a river, the sea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌧️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Când e foarte frig, apa îngheață și devine gheață.",
+          "en": "When it is very cold, water freezes and becomes ice."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧊",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Zăpada și gheața sunt apă înghețată.",
+          "en": "Snow and ice are frozen water."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "❄️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.g1.water",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.g1.water",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  }
+]

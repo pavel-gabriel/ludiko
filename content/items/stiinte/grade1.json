@@ -1,0 +1,868 @@
+[
+  {
+    "id": "item.stiinte.g1.plants.1",
+    "skillId": "stiinte.g1.plants",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care parte a plantei este în pământ?",
+      "en": "Which part of a plant is in the soil?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.plants",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.plants.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.plants.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "rădăcina"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥕",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "frunza"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍃",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "floarea"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌷",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g1.plants.2",
+    "skillId": "stiinte.g1.plants",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce parte a plantei mâncăm când mâncăm un morcov?",
+      "en": "Which part of the plant do we eat when we eat a carrot?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.plants",
+    "visual": {
+      "kind": "objects",
+      "icon": "🥕",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g1.plants.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.plants.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "frunza"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "rădăcina"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "fructul"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g1.plants.3",
+    "skillId": "stiinte.g1.plants",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Mărul este fructul unui pom.",
+      "en": "True or false? An apple is the fruit of a tree."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.plants",
+    "visual": {
+      "kind": "objects",
+      "icon": "🍎",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g1.plants.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.plants.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g1.animals.1",
+    "skillId": "stiinte.g1.animals",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care este un animal domestic?",
+      "en": "Which one is a domestic animal?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.animals",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.animals.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.animals.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "vaca"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "lupul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐺",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "ursul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐻",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g1.animals.2",
+    "skillId": "stiinte.g1.animals",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care este un animal sălbatic?",
+      "en": "Which one is a wild animal?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.animals",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.animals.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.animals.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "câinele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "leul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦁",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "oaia"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐑",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g1.animals.3",
+    "skillId": "stiinte.g1.animals",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Găina este un animal sălbatic.",
+      "en": "True or false? A hen is a wild animal."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.animals",
+    "visual": {
+      "kind": "objects",
+      "icon": "🐔",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g1.animals.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.animals.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.g1.young.1",
+    "skillId": "stiinte.g1.young",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cum se numește puiul pisicii?",
+      "en": "What is a young cat called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.young",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.young.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.young.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "pisoiul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐈",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "cățelul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "mielul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐑",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g1.young.2",
+    "skillId": "stiinte.g1.young",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cum se numește puiul oii?",
+      "en": "What is a young sheep called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.young",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.young.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.young.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "vițelul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "mielul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐑",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "pisoiul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐈",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g1.young.3",
+    "skillId": "stiinte.g1.young",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Vițelul este puiul cărui animal?",
+      "en": "The calf is the young of which animal?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.young",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.young.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.young.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "calul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐎",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "oaia"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐑",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "vaca"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.stiinte.g1.food.1",
+    "skillId": "stiinte.g1.food",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care este hrană sănătoasă?",
+      "en": "Which one is healthy food?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.food",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.food.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.food.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "mărul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "bomboanele"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍬",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "ciocolata"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍫",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g1.food.2",
+    "skillId": "stiinte.g1.food",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce este bine să mâncăm doar rar?",
+      "en": "Which should we eat only rarely?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.food",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.food.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.food.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "morcovul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥕",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "prăjitura"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍰",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "mărul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g1.food.3",
+    "skillId": "stiinte.g1.food",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Ne spălăm pe mâini înainte de masă.",
+      "en": "True or false? We wash our hands before a meal."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.food",
+    "visual": {
+      "kind": "objects",
+      "icon": "🧼",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g1.food.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.food.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g1.materials.1",
+    "skillId": "stiinte.g1.materials",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Din ce material este făcută o cheie?",
+      "en": "What is a key made of?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.materials",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.materials.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.materials.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "metal"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔑",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "lemn"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪵",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "sticlă"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪟",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g1.materials.2",
+    "skillId": "stiinte.g1.materials",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care obiect este făcut din lemn?",
+      "en": "Which object is made of wood?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.materials",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.materials.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.materials.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "paharul de sticlă"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥛",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "butucul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪵",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "găleata de plastic"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪣",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g1.materials.3",
+    "skillId": "stiinte.g1.materials",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Geamul este făcut din sticlă.",
+      "en": "True or false? A window pane is made of glass."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.materials",
+    "visual": {
+      "kind": "objects",
+      "icon": "🪟",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g1.materials.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.materials.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.g1.water.1",
+    "skillId": "stiinte.g1.water",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care este apă înghețată?",
+      "en": "Which one is frozen water?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.water",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.water.1",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.water.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "gheața"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧊",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "ploaia"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌧️",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "râul"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏞️",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.g1.water.2",
+    "skillId": "stiinte.g1.water",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce cade din nori când plouă?",
+      "en": "What falls from the clouds when it rains?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.water",
+    "provenance": {
+      "id": "prov.item.stiinte.g1.water.2",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.water.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "pietre"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪨",
+          "count": 1
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "picături de apă"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 1
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "frunze"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍂",
+          "count": 1
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.g1.water.3",
+    "skillId": "stiinte.g1.water",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Zăpada este apă înghețată.",
+      "en": "True or false? Snow is frozen water."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.g1.water",
+    "visual": {
+      "kind": "objects",
+      "icon": "❄️",
+      "count": 1
+    },
+    "provenance": {
+      "id": "prov.item.stiinte.g1.water.3",
+      "kind": "item",
+      "title": "Item item.stiinte.g1.water.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  }
+]
