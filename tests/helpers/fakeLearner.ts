@@ -9,8 +9,11 @@ import type {
   PlacementDone,
   PlacementRecord,
   PlacementSummary,
+  PlacementUnavailable,
+  PlanBit,
   ProbeRequest,
   SkillMapNode,
+  TodayPlan,
 } from '@/learner'
 
 /**
@@ -45,6 +48,10 @@ export interface FakeState {
   checkPassed: boolean
   /** Class assignments getClassAssignments returns */
   assignments: AssignmentBit[]
+  /** What getTodayPlan returns; when unset it is derived from `mission` (math bits) or `placement` (a math check chunk) */
+  plan: TodayPlan | undefined
+  /** Subjects placementNext answers "unavailable" for */
+  unavailable: string[]
 }
 
 export function freshState(): FakeState {
@@ -71,6 +78,8 @@ export function freshState(): FakeState {
     history: [],
     checkPassed: true,
     assignments: [],
+    plan: undefined,
+    unavailable: [],
   }
 }
 
@@ -93,7 +102,8 @@ export const fakeLearner = {
   recordExamResults: vi.fn(async () => {}),
   applyMasteryCheck: vi.fn(async () => ({ passed: state.checkPassed })),
   getPlacement: vi.fn(async () => (state.placement ? clone(state.placement) : undefined)),
-  placementNext: vi.fn(async (): Promise<ProbeRequest | PlacementDone> => {
+  placementNext: vi.fn(async (_p?: string, subject?: string): Promise<ProbeRequest | PlacementDone | PlacementUnavailable> => {
+    if (subject && state.unavailable.includes(subject)) return { done: false, unavailable: true, minGrade: 4 }
     const next = state.probes.shift()
     if (next) {
       state.placement ??= record(false)
@@ -109,6 +119,16 @@ export const fakeLearner = {
     state.placement = undefined
   }),
   getTodayMission: vi.fn(async () => (state.mission ? clone(state.mission) : undefined)),
+  getTodayPlan: vi.fn(async (): Promise<TodayPlan> => {
+    if (state.plan) return clone(state.plan)
+    const day = '2026-03-20'
+    if (state.mission) {
+      const bits: PlanBit[] = deriveBits(clone(state.mission)).map((b) => ({ ...b, subject: 'mat', source: 'mission', bitIndex: b.index }))
+      return { day, bits }
+    }
+    const done = state.placement?.completedAt !== undefined
+    return { day, bits: [{ index: 0, kind: 'island', day, steps: [], itemCount: 6, done, subject: 'mat', source: 'placement' }] }
+  }),
   getTodayBits: vi.fn(async () => (state.mission ? deriveBits(clone(state.mission)) : undefined)),
   completeMissionStep: vi.fn(async (_p: string, _s: string, _day: string, index: number, accuracy: number) => {
     const m = state.mission!

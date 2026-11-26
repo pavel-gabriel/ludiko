@@ -126,7 +126,7 @@ service cloud.firestore {
       allow read: if isAdmin();
       allow create: if request.auth != null
                     && request.resource.data.keys().hasOnly(
-                         ['itemId', 'skillId', 'reason', 'comment', 'createdAt', 'status', 'appVersion'])
+                         ['itemId', 'skillId', 'reason', 'comment', 'createdAt', 'status', 'appVersion', 'snapshot'])
                     && request.resource.data.keys().hasAll(
                          ['itemId', 'reason', 'createdAt', 'status'])
                     && request.resource.data.itemId is string
@@ -144,7 +144,38 @@ service cloud.firestore {
                             && request.resource.data.comment.size() <= 300))
                     && (!('appVersion' in request.resource.data)
                         || (request.resource.data.appVersion is string
-                            && request.resource.data.appVersion.size() <= 20));
+                            && request.resource.data.appVersion.size() <= 20))
+                    // Snapshot of the item as the child saw it (no personal data, never the child's answer).
+                    && (!('snapshot' in request.resource.data)
+                        || (request.resource.data.snapshot is map
+                            && request.resource.data.snapshot.keys().hasOnly(
+                                 ['type', 'prompt', 'options', 'correct', 'visualKind',
+                                  'skillId', 'subject', 'grade', 'context', 'route'])
+                            && request.resource.data.snapshot.keys().hasAll(
+                                 ['type', 'prompt', 'correct', 'skillId', 'subject', 'grade', 'context', 'route'])
+                            && request.resource.data.snapshot.type is string
+                            && request.resource.data.snapshot.type.size() <= 40
+                            && request.resource.data.snapshot.prompt is string
+                            && request.resource.data.snapshot.prompt.size() <= 500
+                            && request.resource.data.snapshot.correct is string
+                            && request.resource.data.snapshot.correct.size() <= 200
+                            && request.resource.data.snapshot.skillId is string
+                            && request.resource.data.snapshot.skillId.size() <= 100
+                            && request.resource.data.snapshot.subject in
+                                 ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic']
+                            && request.resource.data.snapshot.grade is number
+                            && request.resource.data.snapshot.grade >= 0
+                            && request.resource.data.snapshot.grade <= 8
+                            && request.resource.data.snapshot.context in
+                                 ['practice', 'bit', 'mission', 'exam', 'game', 'placement']
+                            && request.resource.data.snapshot.route is string
+                            && request.resource.data.snapshot.route.size() <= 100
+                            && (!('visualKind' in request.resource.data.snapshot)
+                                || (request.resource.data.snapshot.visualKind is string
+                                    && request.resource.data.snapshot.visualKind.size() <= 40))
+                            && (!('options' in request.resource.data.snapshot)
+                                || (request.resource.data.snapshot.options is list
+                                    && request.resource.data.snapshot.options.size() <= 10))));
       allow update: if isAdmin()
                     && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
                     && request.resource.data.status in ['open', 'resolved', 'dismissed'];

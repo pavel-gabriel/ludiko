@@ -20,6 +20,37 @@ Rules: each bit is 4–6 items; a child can stop after any bit, and each finishe
 A day counts as a play day after **one** bit. Bits are derived from the stored mission, so they are
 stable for the day, offline too.
 
+### Daily plan across subjects ("Biții de azi")
+
+The learner home (`/learn`) shows ONE plan for the child's grade, not one set of bits per subject:
+`learnerService.getTodayPlan(profileId, now?)` returns `{ day, bits: PlanBit[] }` (a `PlanBit` is a `Bit`
+plus `subject`, `source: 'mission' | 'placement'` and `bitIndex`). **The reminder's `/learn` URL points to
+this plan.**
+
+| Bit | Subject | Content |
+|---|---|---|
+| 1 | Matematică | a slice of today's mission (`getTodayBits`), or a placement chunk if no placement yet |
+| 2 | Limba română | same |
+| 3 | rotating: stiinte, logic, ist, geo, civ | same; only subjects the child's grade has content for |
+
+Rules:
+- **Availability:** a subject's minimum grade is derived from the content registry (`src/learner/availability.ts`);
+  subjects above the child's grade are never planned, never playable, and show on `/learn` as a "De la clasa a
+  IV-a" teaser. Their routes redirect to `/learn?locked=<subject>` with a friendly note, and
+  `placementNext` answers `{ unavailable: true }` without creating a placement.
+- **Rotation:** by local day number among the available others, preferring subjects with a placement still to do,
+  due reviews or gaps (a fully known subject sits out). Within a subject the bit rotates through the bits still
+  to do (warm-up / island / challenge), so new material, reviews and checks all get their turn.
+- **Placement chunk** (no finished placement): "Hai să vedem ce știi la Științe!", two probes (~3 items each,
+  about 3 minutes), resumable; done after 2 probes or when the placement finishes. It plays at
+  `/learn/check/:subject?plan=1`; mission bits play at `/learn/bit/:subject/:index?plan=1` (`?plan=1` makes
+  "Încă un bit?" go to the next bit of the plan, across subjects).
+- **Persistence:** the composition (which subject / which bit) is stored per day and profile on the device
+  (`localStorage`, `src/learner/planStore.ts`), so re-reads are stable. Done-ness is never stored: it is derived
+  from the mission steps (`completeMissionStep`) or the placement probes, so it syncs with the progress.
+- All bits done = celebration on the home. The per-subject cards (check, mission, map) stay under "Toate materiile".
+- "Tema de la clasă" (class assignments) stays an extra card; the exam card stays for grades II–IV only.
+
 ## 2. Push reminders: architecture
 
 - **Standard Web Push with VAPID** (`PushManager.subscribe`). No Firebase Messaging SDK in the app bundle.

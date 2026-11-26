@@ -1,21 +1,24 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Navigate, useNavigate, useParams } from 'react-router-dom'
+import { Navigate, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { getSkill } from '@/engine/content/registry'
 import type { Item, SubjectId } from '@/engine/types'
 import { triggerClassSync } from '@/classroom/syncGate'
-import { learnerService } from '@/learner'
+import { learnerService, type PlanBit } from '@/learner'
 import type { ChildProfile } from '@/profiles/types'
 import { getSessionItems } from '@/ui/session/itemSource'
 import SessionRunner from '@/ui/session/SessionRunner'
 import type { SessionSummary } from '@/ui/session/types'
 import { useSessionProgress } from '@/ui/session/useSessionProgress'
+import BitDone from './BitDone'
 import BreakOffer from './BreakOffer'
 import LearnShell, { LearnError, LearnLoading } from './LearnShell'
 import PlacementCelebration from './PlacementCelebration'
 import PlacementIntro from './PlacementIntro'
 import ProgressBar from './ProgressBar'
-import RequireProfile from './RequireProfile'
+import RequireSubject from './RequireSubject'
+import { lockedPath } from './RequireSubject'
+import { nextPlanBit, planBitPath } from './planRoutes'
 import { parseSubject } from './subjects'
 import { useAttemptRecorder } from './useAttemptRecorder'
 
@@ -29,6 +32,7 @@ type Phase =
   | { name: 'probe'; skillId: string; items: Item[]; runId: number }
   | { name: 'break' }
   | { name: 'done' }
+  | { name: 'chunkDone'; next?: PlanBit; allDone: boolean }
   | { name: 'unavailable' }
   | { name: 'error' }
 
@@ -45,7 +49,8 @@ const COMPLETION_SUMMARY: SessionSummary = {
   durationMs: 0,
 }
 
-function Placement({ profile, subject }: { profile: ChildProfile; subject: SubjectId }) {
+/** `plan`: played as one bit of today's plan (a short chunk of the check, then back to the plan) */
+function Placement({ profile, subject, plan }: { profile: ChildProfile; subject: SubjectId; plan: boolean }) {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const progressStore = useSessionProgress()
@@ -76,6 +81,10 @@ function Placement({ profile, subject }: { profile: ChildProfile; subject: Subje
     setPhase({ name: 'busy' })
     try {
       const next = await learnerService.placementNext(profile.id, subject)
+      if ('unavailable' in next) {
+        navigate(lockedPath(subject), { replace: true }) // nothing to check at this grade: say so, never 'done'
+        return
+      }
       if (next.done) {
         if (!rewarded.current) {
           rewarded.current = true
@@ -100,7 +109,7 @@ function Placement({ profile, subject }: { profile: ChildProfile; subject: Subje
     }
     // progressStore.onFinish is stable (useCallback with no deps)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [profile.id, subject, progressStore.onFinish])
+  }, [profile.id, subject, navigate, progressStore.onFinish])
 
   const start = () => {
     biteStart.current = Date.now()
@@ -122,6 +131,19 @@ function Placement({ profile, subject }: { profile: ChildProfile; subject: Subje
       setPhase({ name: 'error' })
       return
     }
+    if (plan) {
+      // a chunk of the check is one bit of today's plan: when it is done, celebrate and offer the next bit
+      try {
+        const today = await learnerService.getTodayPlan(profile.id)
+        const mine = today.bits.find((b) => b.subject === subject && b.source === 'placement')
+        if (mine?.done) {
+          setPhase({ name: 'chunkDone', next: nextPlanBit(today.bits, mine.index), allDone: today.bits.every((b) => b.done) })
+          return
+        }
+      } catch {
+        /* the plan is a nicety here: keep checking */
+      }
+    }
     if (Date.now() - biteStart.current >= BITE_MS) setPhase({ name: 'break' })
     else await loadNext()
   }
@@ -137,7 +159,21 @@ function Placement({ profile, subject }: { profile: ChildProfile; subject: Subje
     case 'intro':
       return (
         <LearnShell backTo="/learn">
-          <PlacementIntro resuming={phase.resuming} onStart={start} />
+          <PlacementIntro resuming={phase.resuming} onStart={start} subjectName={plan ? t(`learn.subject.${subject}`) : undefined} />
+        </LearnShell>
+      )
+    case 'chunkDone':
+      return (
+        <LearnShell>
+          <BitDone
+            kind="island"
+            stars={2}
+            reward={null}
+            allDone={phase.allDone}
+            hasNext={phase.next !== undefined}
+            onNext={() => phase.next && navigate(planBitPath(phase.next))}
+            onStop={() => navigate('/learn')}
+          />
         </LearnShell>
       )
     case 'break':
@@ -196,7 +232,11 @@ function Placement({ profile, subject }: { profile: ChildProfile; subject: Subje
 /** /learn/check/:subject — "Verifică-te!": the placement as a resumable adventure in short bites */
 export default function PlacementPage() {
   const { subject: raw } = useParams()
+  const [params] = useSearchParams()
   const subject = parseSubject(raw)
   if (!subject) return <Navigate to="/learn" replace />
-  return <RequireProfile>{(profile) => <Placement profile={profile} subject={subject} />}</RequireProfile>
+  const plan = params.get('plan') === '1'
+  return (
+    <RequireSubject subject={subject}>{(profile) => <Placement profile={profile} subject={subject} plan={plan} />}</RequireSubject>
+  )
 }

@@ -257,6 +257,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 
 ### Daily bits & reminders
 - [x] Daily bits (≈3-minute groups from the mission) + parent opt-in Web Push reminders (`docs/NOTIFICATIONS.md`); sender active once secrets are set
+- [x] Daily plan across subjects ("Biții de azi": Matematică + Limba română + a rotating subject, grade-aware, placement chunks where unchecked) and subject availability by grade (`docs/NOTIFICATIONS.md` §1)
 
 ### Phase 1B — Romanian 0–IV: reading comprehension
 - [x] Skill graph: sounds/letters → syllables → words → sentences → short texts → comprehension (literal → inferential) — **23 skills `rom.*`, grades 0–IV (`content/skills/rom/`); CLR-2013 / LLR-III-IV-2014 codes to verify**

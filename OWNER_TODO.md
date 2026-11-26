@@ -18,6 +18,12 @@
             redeploy them again, or creating an account and syncing children will fail with "permission denied".
       - [ ] Parent accounts also need Firebase console → Authentication → **Email/Password** enabled (the same
             switch as for the admin account below). Until then "Cont de părinte" cannot create or sign in.
+- [ ] **Redeploy Firestore rules for the content-report snapshot.** New reports carry a `snapshot` (the question as the
+      child saw it) so the admin queue shows the exact exercise. Until the rules are deployed, new reports are rejected
+      and stay in the child's offline queue:
+      ```bash
+      firebase deploy --only firestore:rules --project ludiko-2e197
+      ```
 - [ ] **Redeploy BOTH rule sets for the privacy fixes F2 + F3** (`docs/PRIVACY_DATA_MAP.md`). Until you do, the new app
       cannot create or join multiplayer rooms (the old rules allowed it, the new client uses `roomCodes/*` and
       `rooms/*/players/{uid}`) and teacher sessions / student codes keep the old, open rules:

@@ -12,7 +12,22 @@
     "teacherMode": "Mod Profesor",
     "settings": "Setări",
     "play": "Joacă",
-    "tagline": "Învață jucându-te!"
+    "tagline": "Învață jucându-te!",
+    "learnSub": "Misiunea ta de azi te așteaptă",
+    "soloTitle": "Singur",
+    "soloSub": "Joc scurt, în ritmul tău",
+    "friendsTitle": "Cu prietenii",
+    "friendsSub": "Cameră cu cod, pe telefoane diferite",
+    "duoTitle": "Doi pe același telefon",
+    "duoSub": "Întrecere față în față",
+    "adults": "Pentru adulți",
+    "teacher": "Profesor",
+    "parents": "Părinți",
+    "multiplayerSub": "Jucați împreună, fiecare pe telefonul lui",
+    "createRoomTitle": "Creează camera",
+    "createRoomSub": "Tu alegi jocul, ceilalți intră cu un cod",
+    "joinRoomTitle": "Intră cu un cod",
+    "joinRoomSub": "Ai primit un cod de la un prieten sau profesor"
   },
   "create": {
     "title": "Cameră Nouă",
@@ -297,7 +312,32 @@
       "resolve": "Rezolvat",
       "dismiss": "Respinge",
       "loadError": "Nu am putut încărca rapoartele.",
-      "actionError": "Nu am putut actualiza raportul."
+      "actionError": "Nu am putut actualiza raportul.",
+      "question": "Întrebarea văzută de copil",
+      "correctMark": "răspuns corect",
+      "correctLabel": "Răspuns corect",
+      "reconstructed": "reconstruit",
+      "noDetails": "fără detalii",
+      "openExercise": "Deschide exercițiul",
+      "grade": "clasa {{n}}",
+      "gradeZero": "clasa pregătitoare",
+      "contexts": {
+        "practice": "Exersare",
+        "bit": "Bit de învățare",
+        "mission": "Misiune",
+        "exam": "Examen",
+        "game": "Joc",
+        "placement": "Verificare nivel"
+      },
+      "subjects": {
+        "mat": "Matematică",
+        "rom": "Română",
+        "stiinte": "Științe",
+        "ist": "Istorie",
+        "geo": "Geografie",
+        "civ": "Educație civică",
+        "logic": "Logică"
+      }
     }
   },
   "pwa": {
@@ -708,6 +748,20 @@
       "redoBody": "Rezultatul verificării de acum se șterge și copilul o va lua de la capăt, în jocuri scurte.",
       "redoYes": "Da, o refacem",
       "redoNo": "Nu, las-o așa"
+    },
+    "locked": {
+      "note": "{{subject}} începe de la {{grade}}. Până atunci, hai să descoperim altceva!",
+      "teaser": "{{subjects}}: de la {{grade}}",
+      "grades": {
+        "1": "clasa I",
+        "2": "clasa a II-a",
+        "3": "clasa a III-a",
+        "4": "clasa a IV-a",
+        "5": "clasa a V-a",
+        "6": "clasa a VI-a",
+        "7": "clasa a VII-a",
+        "8": "clasa a VIII-a"
+      }
     }
   },
   "bits": {
@@ -744,7 +798,13 @@
     "notFound": "Nu am găsit acest bit. Hai înapoi, la biții de azi!",
     "needCheckTitle": "Mai întâi, hai să vedem ce știi!",
     "needCheckBody": "Facem o scurtă aventură de început, apoi ți-am pregătit biții.",
-    "needCheckCta": "Verifică-te!"
+    "needCheckCta": "Verifică-te!",
+    "plan": {
+      "check": "Ce știi?",
+      "checkTitle": "Hai să vedem ce știi la {{subject}}!",
+      "checkBody": "Câteva întrebări scurte, fără grabă. Continuăm mâine, de unde rămânem.",
+      "allSubjects": "Toate materiile"
+    }
   },
   "legal": {
     "draftBanner": "Ciornă — în curs de verificare juridică",
@@ -1347,5 +1407,66 @@
     "yourName": "Numele tău de animal",
     "shuffle": "Alt nume",
     "hint": "Numele este ales din lista noastră: nu scrie numele tău real."
+  },
+  "setup": {
+    "contexts": {
+      "single": "Joc singur",
+      "room": "Cameră nouă",
+      "duel": "Doi pe același telefon"
+    },
+    "progress": "Pasul {{n}} din {{total}}",
+    "next": "Înainte",
+    "back": "Înapoi",
+    "change": "Schimbă",
+    "step": {
+      "mode": "Ce jucăm?",
+      "practice": "Ce exersăm?",
+      "who": "Cine ești?",
+      "whoDuel": "Cine joacă?",
+      "ready": "Gata?"
+    },
+    "mode": {
+      "race": {
+        "title": "Cursă",
+        "sub": "Răspunzi la întrebări și ajungi primul la finish"
+      },
+      "sprint": {
+        "title": "Sprint",
+        "sub": "Cât mai multe răspunsuri, cât ține timpul"
+      },
+      "memory": {
+        "title": "Memorie",
+        "sub": "Întoarce cărțile și găsește perechile"
+      }
+    },
+    "practice": {
+      "forGrade": "Potrivite pentru: {{grade}}",
+      "allPresets": "Toate alegerile rapide",
+      "showAll": "Arată toate",
+      "onlyMine": "Doar pentru clasa mea",
+      "pick": "Alege singur",
+      "pickSub": "Materia, clasa și abilitățile",
+      "classic": "Jocul clasic",
+      "classicSub": "Întrebări de matematică, forme, șiruri…",
+      "classicSubMemory": "Cărți cu desene, fără abilități",
+      "classicGame": "Ce joc clasic?",
+      "operationsNeeded": "Alege cel puțin o operație.",
+      "chooseOne": "Alege ce exersăm ca să mergi mai departe.",
+      "fewer": "Mai puține"
+    },
+    "summary": {
+      "game": "Jocul",
+      "practice": "Exersăm",
+      "player": "Jucătorul",
+      "players": "Jucătorii"
+    },
+    "advanced": "Setări avansate",
+    "preset": {
+      "addTo100": "Adunare până la 100",
+      "subTo100": "Scădere până la 100",
+      "addTo1000": "Adunare până la 1000",
+      "mulBig": "Înmulțiri cu 1 și 2 cifre",
+      "fractions": "Fracții"
+    }
   }
 }

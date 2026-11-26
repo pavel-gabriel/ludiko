@@ -40,7 +40,7 @@ describe('presets', () => {
   it('every preset is playable as a race (and has an i18n label)', () => {
     for (const p of PLAY_PRESETS) {
       expect(p.skillIds.some((id) => skillUsable(id, 'race')), p.id).toBe(true);
-      expect(p.labelKey).toMatch(/^play\.preset\./);
+      expect(p.labelKey).toMatch(/^(play|setup)\.preset\./);
     }
   });
 });

@@ -22,9 +22,11 @@ import { readCachedAssignments } from '@/classroom/assignmentCache';
 import { deriveAssignmentBits } from './assignmentOps';
 import { deriveBits } from './bitOps';
 import { masteryAfterItem, stampStateChange, withPrior } from './masteryOps';
-import { findMission, planDay, storeMission } from './missionOps';
+import { ensureMission, findMission } from './missionOps';
 import { advancePlacement, recordPlacementProbe } from './placementOps';
 import { buildParentSummary, buildSkillMap } from './readModels';
+import { readStoredPlan, writeStoredPlan } from './planStore';
+import { resolvePlan } from './planOps';
 import { schoolSemester } from './time';
 
 async function requireProfile(profileId: string): Promise<ChildProfile> {
@@ -110,13 +112,18 @@ export const learnerService: LearnerService = {
     const profile = await requireProfile(profileId);
     return updateProgress(profileId, (progress): Mission | undefined => {
       if (progress.placements?.[subject]?.completedAt === undefined) return undefined;
-      const day = toDayString(now);
-      const stored = findMission(progress, subject, day);
-      if (stored) return clone(stored);
-      const mission = planDay(progress, profile, subject, now);
-      storeMission(progress, mission);
-      return clone(mission);
+      return clone(ensureMission(progress, profile, subject, now));
     });
+  },
+
+  async getTodayPlan(profileId, now = Date.now()) {
+    const profile = await requireProfile(profileId);
+    const stored = readStoredPlan(profileId);
+    const { plan, composed } = await updateProgress(profileId, (progress) =>
+      resolvePlan(progress, profile, stored?.day === toDayString(now) ? stored : undefined, now),
+    );
+    if (composed) writeStoredPlan(profileId, composed);
+    return plan;
   },
 
   async getTodayBits(profileId, subject, now = Date.now()) {

@@ -4,23 +4,25 @@ import Mascot from './Mascot'
 interface PlacementIntroProps {
   resuming: boolean
   onStart: () => void
+  /** Set when the check is one bit of the daily plan: "Hai să vedem ce știi la <subject>!" */
+  subjectName?: string
 }
 
 /** Start of "Verifică-te": a friendly adventure invitation, never the word "test" */
-export default function PlacementIntro({ resuming, onStart }: PlacementIntroProps) {
+export default function PlacementIntro({ resuming, onStart, subjectName }: PlacementIntroProps) {
   const { t } = useTranslation()
   return (
     <section className="flex flex-col gap-5" aria-labelledby="check-intro-title">
       <Mascot mood="wave">
         <h1 id="check-intro-title" className="text-2xl font-extrabold leading-snug text-ludiko-text">
-          {resuming ? t('learn.check.resumeTitle') : t('learn.check.introTitle')}
+          {subjectName ? t('bits.plan.checkTitle', { subject: subjectName }) : resuming ? t('learn.check.resumeTitle') : t('learn.check.introTitle')}
         </h1>
         <p className="mt-2 text-base font-semibold text-ludiko-text/80">
-          {resuming ? t('learn.check.resumeBody') : t('learn.check.introBody')}
+          {subjectName ? t('bits.plan.checkBody') : resuming ? t('learn.check.resumeBody') : t('learn.check.introBody')}
         </p>
       </Mascot>
 
-      {!resuming && (
+      {!resuming && !subjectName && (
         <ul className="flex flex-col gap-2">
           {(['introPoint1', 'introPoint2', 'introPoint3'] as const).map((k, i) => (
             <li key={k} className="flex items-center gap-3 rounded-2xl bg-white px-4 py-3 text-base font-bold text-ludiko-text shadow-sm">

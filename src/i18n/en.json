@@ -12,7 +12,22 @@
     "teacherMode": "Teacher Mode",
     "settings": "Settings",
     "play": "Play",
-    "tagline": "Learn by playing!"
+    "tagline": "Learn by playing!",
+    "learnSub": "Today's mission is waiting for you",
+    "soloTitle": "Solo",
+    "soloSub": "A short game at your own pace",
+    "friendsTitle": "With friends",
+    "friendsSub": "A room with a code, on different phones",
+    "duoTitle": "Two on one phone",
+    "duoSub": "A face-to-face contest",
+    "adults": "For adults",
+    "teacher": "Teacher",
+    "parents": "Parents",
+    "multiplayerSub": "Play together, each on their own phone",
+    "createRoomTitle": "Create a room",
+    "createRoomSub": "You pick the game, the others join with a code",
+    "joinRoomTitle": "Join with a code",
+    "joinRoomSub": "You got a code from a friend or a teacher"
   },
   "create": {
     "title": "New Room",
@@ -297,7 +312,32 @@
       "resolve": "Resolved",
       "dismiss": "Dismiss",
       "loadError": "Could not load reports.",
-      "actionError": "Could not update the report."
+      "actionError": "Could not update the report.",
+      "question": "The question as the child saw it",
+      "correctMark": "correct answer",
+      "correctLabel": "Correct answer",
+      "reconstructed": "reconstructed",
+      "noDetails": "no details",
+      "openExercise": "Open the exercise",
+      "grade": "grade {{n}}",
+      "gradeZero": "preparatory grade",
+      "contexts": {
+        "practice": "Practice",
+        "bit": "Learning bit",
+        "mission": "Mission",
+        "exam": "Exam",
+        "game": "Game",
+        "placement": "Level check"
+      },
+      "subjects": {
+        "mat": "Maths",
+        "rom": "Romanian",
+        "stiinte": "Science",
+        "ist": "History",
+        "geo": "Geography",
+        "civ": "Civics",
+        "logic": "Logic"
+      }
     }
   },
   "pwa": {
@@ -701,6 +741,20 @@
       "redoBody": "The current check result is deleted and your child will take it again, in short games.",
       "redoYes": "Yes, redo it",
       "redoNo": "No, keep it"
+    },
+    "locked": {
+      "note": "{{subject}} starts in {{grade}}. Until then, let's discover something else!",
+      "teaser": "{{subjects}}: from {{grade}}",
+      "grades": {
+        "1": "grade I",
+        "2": "grade II",
+        "3": "grade III",
+        "4": "grade IV",
+        "5": "grade V",
+        "6": "grade VI",
+        "7": "grade VII",
+        "8": "grade VIII"
+      }
     }
   },
   "bits": {
@@ -737,7 +791,13 @@
     "notFound": "We could not find this bit. Let's go back to today's bits!",
     "needCheckTitle": "First, let's see what you know!",
     "needCheckBody": "We start with a short adventure, then your bits are ready.",
-    "needCheckCta": "Check yourself!"
+    "needCheckCta": "Check yourself!",
+    "plan": {
+      "check": "What do you know?",
+      "checkTitle": "Let's see what you know in {{subject}}!",
+      "checkBody": "A few short questions, no rush. We continue tomorrow, where we stop.",
+      "allSubjects": "All subjects"
+    }
   },
   "legal": {
     "draftBanner": "Draft — under legal review",
@@ -1334,5 +1394,66 @@
     "yourName": "Your animal name",
     "shuffle": "New name",
     "hint": "The name comes from our list: never type your real name."
+  },
+  "setup": {
+    "contexts": {
+      "single": "Solo game",
+      "room": "New room",
+      "duel": "Two on one phone"
+    },
+    "progress": "Step {{n}} of {{total}}",
+    "next": "Next",
+    "back": "Back",
+    "change": "Change",
+    "step": {
+      "mode": "What shall we play?",
+      "practice": "What shall we practise?",
+      "who": "Who are you?",
+      "whoDuel": "Who is playing?",
+      "ready": "Ready?"
+    },
+    "mode": {
+      "race": {
+        "title": "Race",
+        "sub": "Answer questions and be first to the finish"
+      },
+      "sprint": {
+        "title": "Sprint",
+        "sub": "As many answers as you can before time runs out"
+      },
+      "memory": {
+        "title": "Memory",
+        "sub": "Flip the cards and find the pairs"
+      }
+    },
+    "practice": {
+      "forGrade": "Picked for: {{grade}}",
+      "allPresets": "All quick picks",
+      "showAll": "Show all",
+      "onlyMine": "Only for my grade",
+      "pick": "Pick yourself",
+      "pickSub": "Subject, grade and skills",
+      "classic": "Classic game",
+      "classicSub": "Maths questions, shapes, sequences…",
+      "classicSubMemory": "Picture cards, no skills",
+      "classicGame": "Which classic game?",
+      "operationsNeeded": "Pick at least one operation.",
+      "chooseOne": "Choose what to practise to go on.",
+      "fewer": "Fewer"
+    },
+    "summary": {
+      "game": "Game",
+      "practice": "Practising",
+      "player": "Player",
+      "players": "Players"
+    },
+    "advanced": "Advanced settings",
+    "preset": {
+      "addTo100": "Addition up to 100",
+      "subTo100": "Subtraction up to 100",
+      "addTo1000": "Addition up to 1000",
+      "mulBig": "Multiplying by 1 and 2 digits",
+      "fractions": "Fractions"
+    }
   }
 }

@@ -5,7 +5,7 @@ import { localize, type SubjectId } from '@/engine/types'
 import { learnerService } from '@/learner'
 import type { ChildProfile } from '@/profiles/types'
 import LearnShell, { LearnError, LearnLoading } from './LearnShell'
-import RequireProfile from './RequireProfile'
+import RequireSubject from './RequireSubject'
 import SkillMapView, { type MapIsland } from './SkillMapView'
 import { parseSubject } from './subjects'
 import { useAsync } from './useAsync'
@@ -36,5 +36,5 @@ export default function SkillMapPage() {
   const { subject: raw } = useParams()
   const subject = parseSubject(raw)
   if (!subject) return <Navigate to="/learn" replace />
-  return <RequireProfile>{(profile) => <SkillMap profile={profile} subject={subject} />}</RequireProfile>
+  return <RequireSubject subject={subject}>{(profile) => <SkillMap profile={profile} subject={subject} />}</RequireSubject>
 }
