@@ -586,3 +586,19 @@ describe('expireStaleSubscriptions (F7) sweep', () => {
     expect(real.logs.join('\n')).not.toContain('dry run');
   });
 });
+
+describe('normalizeVapidSubject (owner pasted a bare email)', async () => {
+  const { normalizeVapidSubject } = await import('../scripts/reminders/logic.mjs');
+  it('accepts mailto and https as-is', () => {
+    expect(normalizeVapidSubject('mailto:a@b.ro')).toBe('mailto:a@b.ro');
+    expect(normalizeVapidSubject('https://ludiko.ro')).toBe('https://ludiko.ro');
+  });
+  it('adds mailto: to a bare email and trims spaces, quotes and newlines', () => {
+    expect(normalizeVapidSubject('a@b.ro')).toBe('mailto:a@b.ro');
+    expect(normalizeVapidSubject('  "a@b.ro"\n')).toBe('mailto:a@b.ro');
+    expect(normalizeVapidSubject('mailto: a@b.ro ')).toBe('mailto:a@b.ro');
+  });
+  it('rejects values that are not an email or https URL', () => {
+    for (const bad of ['', '   ', 'hello', 'http://x.ro', 'mailto:', undefined]) expect(normalizeVapidSubject(bad as never)).toBeNull();
+  });
+});
