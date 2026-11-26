@@ -1288,5 +1288,28 @@
       }
     },
     "error": "Ceva nu a mers. Încearcă din nou."
+  },
+  "privacyHints": {
+    "nickname": "Folosește o poreclă sau inițiale, nu numele real",
+    "teacherLabel": "Scrie inițiale sau numere, nu numele real al elevului.",
+    "reportComment": "Nu scrie nume sau date personale",
+    "teacherDelete": {
+      "button": "Șterge contul de profesor",
+      "title": "Ștergi contul de profesor?",
+      "body": "Se șterg definitiv clasele tale (cu locurile, codurile și progresul elevilor), sesiunile, rezultatele și șabloanele tale, apoi contul. Nu se poate anula.",
+      "passwordLabel": "Confirmă cu parola contului",
+      "cancel": "Renunță",
+      "confirm": "Șterge definitiv",
+      "deleting": "Se șterge…",
+      "reauthFailed": "Nu am putut confirma identitatea (parola nu este corectă?). Nimic nu a fost șters.",
+      "partial": "Nu am putut șterge tot. Contul a rămas, ca să poți încerca din nou. Nu s-a șters: {{items}}.",
+      "steps": {
+        "classes": "clasele",
+        "sessions": "sesiunile",
+        "templates": "șabloanele",
+        "profile": "profilul",
+        "account": "contul"
+      }
+    }
   }
 }

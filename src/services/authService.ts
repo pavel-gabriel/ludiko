@@ -5,6 +5,10 @@ import {
   createUserWithEmailAndPassword,
   updateProfile,
   GoogleAuthProvider,
+  EmailAuthProvider,
+  reauthenticateWithCredential,
+  reauthenticateWithPopup,
+  deleteUser,
   signOut,
   onAuthStateChanged,
   type User,
@@ -53,6 +57,34 @@ export async function registerWithEmail(
   const result = await createUserWithEmailAndPassword(auth, email, password);
   await updateProfile(result.user, { displayName });
   return result.user;
+}
+
+/**
+ * Re-confirm the signed-in teacher before deleting the account (Firebase requires a recent sign-in).
+ * Password accounts pass their password; Google accounts confirm in a popup. Throws on a wrong password.
+ */
+export async function reauthenticateTeacher(password?: string): Promise<void> {
+  if (!firebaseEnabled || !auth.currentUser) throw new Error('not-signed-in');
+  const user = auth.currentUser;
+  const hasPassword = user.providerData.some((p) => p.providerId === 'password');
+  if (hasPassword) {
+    if (!user.email || !password) throw new Error('password-required');
+    await reauthenticateWithCredential(user, EmailAuthProvider.credential(user.email, password));
+    return;
+  }
+  await reauthenticateWithPopup(user, googleProvider);
+}
+
+/** True when the signed-in teacher has an email + password account (so deletion asks for the password). */
+export function currentTeacherUsesPassword(): boolean {
+  if (!firebaseEnabled || !auth.currentUser) return false;
+  return auth.currentUser.providerData.some((p) => p.providerId === 'password');
+}
+
+/** Delete the Firebase Auth user of the signed-in teacher. Call only after the teacher's data is gone. */
+export async function deleteTeacherAuthUser(): Promise<void> {
+  if (!firebaseEnabled || !auth.currentUser) throw new Error('not-signed-in');
+  await deleteUser(auth.currentUser);
 }
 
 /** Sign out the current user */

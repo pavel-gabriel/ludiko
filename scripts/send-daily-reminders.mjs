@@ -4,9 +4,16 @@
 // Required env: VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY, VAPID_SUBJECT, FIREBASE_SERVICE_ACCOUNT (JSON).
 // If any is missing the script logs a notice and exits 0 without touching Firebase.
 // Never logs endpoints, keys or personal data: only the endpoint host and HTTP status codes.
+// Also deletes subscriptions whose updatedAt is older than 12 months (F7; counted only with --dry-run).
 
 import { fileURLToPath } from 'node:url';
-import { localDayAndHour, isDue, pickMessage } from './reminders/logic.mjs';
+import {
+  localDayAndHour,
+  isDue,
+  isSubscriptionExpired,
+  pickMessage,
+  subscriptionExpiryCutoff,
+} from './reminders/logic.mjs';
 
 export const PAGE_SIZE = 500;
 export const CONCURRENCY = 20;
@@ -43,6 +50,46 @@ export async function* activeSubscriptionPages(db, FieldPath, pageSize = PAGE_SI
     if (snap.size < pageSize) return;
     cursor = snap.docs[snap.docs.length - 1];
   }
+}
+
+/**
+ * Async generator over subscriptions whose `updatedAt` is before `cutoff` (any `active` value), PAGE_SIZE per query.
+ * Ordered by updatedAt then document id, so the cursor is stable while documents are deleted.
+ */
+export async function* expiredSubscriptionPages(db, FieldPath, cutoff, pageSize = PAGE_SIZE) {
+  let cursor = null;
+  for (;;) {
+    let query = db
+      .collection(COLLECTION)
+      .where('updatedAt', '<', cutoff)
+      .orderBy('updatedAt')
+      .orderBy(FieldPath.documentId())
+      .limit(pageSize);
+    if (cursor) query = query.startAfter(cursor);
+    const snap = await query.get();
+    if (snap.empty) return;
+    yield snap.docs;
+    if (snap.size < pageSize) return;
+    cursor = snap.docs[snap.docs.length - 1];
+  }
+}
+
+/**
+ * Deletes subscriptions not updated for SUBSCRIPTION_RETENTION_MONTHS (F7). Dry run only counts them.
+ * Returns the number of expired documents found (deleted, or that would be deleted in a dry run).
+ */
+export async function expireStaleSubscriptions(db, FieldPath, now, { dryRun = false } = {}) {
+  const cutoff = subscriptionExpiryCutoff(now);
+  let expired = 0;
+  for await (const docs of expiredSubscriptionPages(db, FieldPath, cutoff)) {
+    const stale = docs.filter((doc) => isSubscriptionExpired(doc.data(), now));
+    expired += stale.length;
+    if (dryRun) continue;
+    await mapWithConcurrency(stale, CONCURRENCY, async (doc) => {
+      await doc.ref.delete();
+    });
+  }
+  return expired;
 }
 
 /** Runs `worker` over `items` with at most `limit` in flight. */
@@ -99,7 +146,7 @@ export async function runReminders({
     return { exitCode: 1, summary: null };
   }
 
-  const summary = { checked: 0, due: 0, sent: 0, removed: 0, failed: 0 };
+  const summary = { checked: 0, due: 0, sent: 0, removed: 0, failed: 0, expired: 0 };
   log(dryRun ? 'daily reminders: dry run (no sends, no writes)' : 'daily reminders: sending');
 
   try {
@@ -142,6 +189,8 @@ export async function runReminders({
         }
       });
     }
+
+    summary.expired = await expireStaleSubscriptions(db, FieldPath, now, { dryRun });
   } catch (err) {
     error(`daily reminders aborted: ${err?.message ?? err}`);
     return { exitCode: 1, summary };
@@ -149,7 +198,8 @@ export async function runReminders({
 
   log(
     `summary: checked=${summary.checked} due=${summary.due} sent=${summary.sent} ` +
-      `removed=${summary.removed} failed=${summary.failed}`,
+      `removed=${summary.removed} failed=${summary.failed} ` +
+      `expired=${summary.expired}${dryRun ? ' (dry run, not deleted)' : ''}`,
   );
   return { exitCode: 0, summary };
 }

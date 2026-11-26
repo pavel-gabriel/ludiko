@@ -71,6 +71,7 @@ export default function SeatsPanel({ classId, seats, onAdd, onUnlink, onRemove }
           className="rounded-xl border border-gray-300 p-3 text-base"
           data-testid="seat-labels"
         />
+        <p className="text-sm text-gray-600" data-testid="seat-labels-privacy">{t('privacyHints.teacherLabel')}</p>
         <button
           type="submit"
           disabled={!labels.length || busy}

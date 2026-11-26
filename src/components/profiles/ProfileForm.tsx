@@ -56,7 +56,7 @@ export default function ProfileForm({ initial, defaultLanguage, onSubmit, onCanc
             className="flex-1 min-w-0 px-4 py-3 text-lg rounded-xl border-2 border-gray-200 focus:border-ludiko-purple outline-none"
           />
         </div>
-        <p className="text-sm opacity-70 mt-1">{t('profiles.nicknameHint')}</p>
+        <p className="text-sm opacity-70 mt-1">{t('privacyHints.nickname')}</p>
       </div>
 
       <div>

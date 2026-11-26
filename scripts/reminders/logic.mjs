@@ -88,6 +88,31 @@ export function isDue(sub, now) {
   return true;
 }
 
+/** Subscriptions not updated for this long are deleted (F7, docs/PRIVACY_DATA_MAP.md). */
+export const SUBSCRIPTION_RETENTION_MONTHS = 12;
+
+/**
+ * Epoch milliseconds before which a subscription's `updatedAt` means "expired".
+ * Calendar months, in UTC (for example, 2026-11-26 gives 2025-11-26 at the same time of day).
+ */
+export function subscriptionExpiryCutoff(now) {
+  const d = new Date(now.getTime());
+  d.setUTCMonth(d.getUTCMonth() - SUBSCRIPTION_RETENTION_MONTHS);
+  return d.getTime();
+}
+
+/**
+ * Whether a `pushSubscriptions` document has expired: its numeric `updatedAt` (epoch ms, written by
+ * the client on every change and by the sender on every send) is older than the retention cutoff.
+ * A document without a numeric `updatedAt` is never treated as expired by this rule.
+ */
+export function isSubscriptionExpired(sub, now) {
+  if (!sub || typeof sub !== 'object') return false;
+  if (!(now instanceof Date) || Number.isNaN(now.getTime())) return false;
+  if (typeof sub.updatedAt !== 'number' || !Number.isFinite(sub.updatedAt)) return false;
+  return sub.updatedAt < subscriptionExpiryCutoff(now);
+}
+
 /** Day of the year (1-366) for a 'YYYY-MM-DD' string; 0 when malformed. */
 export function dayOfYear(day) {
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(typeof day === 'string' ? day : '');

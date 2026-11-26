@@ -3,11 +3,21 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
 import { useAuthStore } from '@/store/authStore';
-import { logOut } from '@/services/authService';
+import {
+  logOut,
+  reauthenticateTeacher,
+  deleteTeacherAuthUser,
+  currentTeacherUsesPassword,
+} from '@/services/authService';
 import {
   getTeacherSessions,
+  getTeacherTemplates,
   deleteSession,
+  deleteSessionResults,
+  deleteTemplate,
+  deleteTeacherProfile,
 } from '@/services/teacherService';
+import { deleteTeacherAccount } from '@/services/teacherAccountDeletion';
 import type { ClassroomSession } from '@/utils/types';
 
 export default function TeacherDashboard() {
@@ -16,6 +26,11 @@ export default function TeacherDashboard() {
   const { uid, teacherProfile, loading: authLoading, reset } = useAuthStore();
   const [sessions, setSessions] = useState<ClassroomSession[]>([]);
   const [loading, setLoading] = useState(true);
+  const [confirmingDelete, setConfirmingDelete] = useState(false);
+  const [usesPassword, setUsesPassword] = useState(false);
+  const [password, setPassword] = useState('');
+  const [deleting, setDeleting] = useState(false);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
 
   useEffect(() => {
     if (authLoading) return;
@@ -35,6 +50,52 @@ export default function TeacherDashboard() {
   const handleDelete = async (sessionId: string) => {
     await deleteSession(sessionId);
     setSessions((prev) => prev.filter((s) => s.id !== sessionId));
+  };
+
+  const startDeleteAccount = () => {
+    setPassword('');
+    setDeleteError(null);
+    setUsesPassword(currentTeacherUsesPassword());
+    setConfirmingDelete(true);
+  };
+
+  /** F9: deletes the teacher's own data, then the account. Classroom code is loaded only when needed. */
+  const handleDeleteAccount = async () => {
+    if (!uid || deleting) return;
+    setDeleting(true);
+    setDeleteError(null);
+    try {
+      const classroom = await import('@/classroom/classroomService');
+      const outcome = await deleteTeacherAccount(uid, {
+        reauthenticate: () => reauthenticateTeacher(usesPassword ? password : undefined),
+        listClasses: async (id) => (await classroom.listClasses(id)).map((c) => ({ id: c.id })),
+        deleteClass: (id) => classroom.deleteClass(id),
+        listSessions: async (id) => (await getTeacherSessions(id)).map((s) => ({ id: s.id })),
+        deleteSessionResults,
+        deleteSession,
+        listTemplates: async (id) => (await getTeacherTemplates(id)).map((tpl) => ({ id: tpl.id })),
+        deleteTemplate,
+        deleteProfile: deleteTeacherProfile,
+        deleteAuthUser: deleteTeacherAuthUser,
+      });
+      if (outcome.status === 'deleted') {
+        reset();
+        navigate('/teacher/login');
+        return;
+      }
+      if (outcome.status === 'reauth-failed') {
+        setDeleteError(t('privacyHints.teacherDelete.reauthFailed'));
+      } else {
+        setDeleteError(
+          t('privacyHints.teacherDelete.partial', {
+            items: outcome.failed.map((s) => t(`privacyHints.teacherDelete.steps.${s}`)).join(', '),
+          }),
+        );
+      }
+    } finally {
+      setDeleting(false);
+      setPassword('');
+    }
   };
 
   const statusColor = (status: ClassroomSession['status']) => {
@@ -177,6 +238,64 @@ export default function TeacherDashboard() {
             ))}
           </ul>
         )}
+
+        {/* Account deletion (F9): own data first, then the account; asks for the password again */}
+        <div className="mt-8 border-t pt-4">
+          {!confirmingDelete ? (
+            <div className="text-center">
+              <button
+                type="button"
+                onClick={startDeleteAccount}
+                className="text-sm font-bold text-red-600 hover:text-red-800 underline"
+              >
+                {t('privacyHints.teacherDelete.button')}
+              </button>
+            </div>
+          ) : (
+            <div role="alertdialog" aria-labelledby="teacher-delete-title" className="rounded-xl bg-red-50 p-4">
+              <h3 id="teacher-delete-title" className="font-extrabold mb-2">
+                {t('privacyHints.teacherDelete.title')}
+              </h3>
+              <p className="text-sm mb-3">{t('privacyHints.teacherDelete.body')}</p>
+              {usesPassword && (
+                <label className="block mb-3">
+                  <span className="text-sm font-semibold">{t('privacyHints.teacherDelete.passwordLabel')}</span>
+                  <input
+                    type="password"
+                    autoComplete="current-password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    disabled={deleting}
+                    className="input-field w-full mt-1"
+                  />
+                </label>
+              )}
+              {deleteError && (
+                <p role="alert" className="text-red-700 font-bold text-sm mb-3">
+                  {deleteError}
+                </p>
+              )}
+              <div className="flex gap-2 justify-end">
+                <button
+                  type="button"
+                  onClick={() => setConfirmingDelete(false)}
+                  disabled={deleting}
+                  className="bg-gray-100 hover:bg-gray-200 font-bold text-ludiko-text px-4 py-2 rounded-xl disabled:opacity-50"
+                >
+                  {t('privacyHints.teacherDelete.cancel')}
+                </button>
+                <button
+                  type="button"
+                  onClick={handleDeleteAccount}
+                  disabled={deleting || (usesPassword && password.length === 0)}
+                  className="bg-red-600 hover:bg-red-700 text-white font-bold px-4 py-2 rounded-xl disabled:opacity-50"
+                >
+                  {deleting ? t('privacyHints.teacherDelete.deleting') : t('privacyHints.teacherDelete.confirm')}
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
