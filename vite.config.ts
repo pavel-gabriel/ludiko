@@ -57,20 +57,6 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: ({ url }) => url.origin === 'https://fonts.googleapis.com',
-            handler: 'StaleWhileRevalidate',
-            options: { cacheName: 'ludiko-font-styles' },
-          },
-          {
-            urlPattern: ({ url }) => url.origin === 'https://fonts.gstatic.com',
-            handler: 'CacheFirst',
-            options: {
-              cacheName: 'ludiko-font-files',
-              expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 365 },
-              cacheableResponse: { statuses: [0, 200] },
-            },
-          },
-          {
             urlPattern: ({ url, sameOrigin }) => sameOrigin && url.pathname.startsWith(`${base}sounds/`),
             handler: 'CacheFirst',
             options: {

@@ -14,6 +14,20 @@
     "notes": "Reserved Font Name \"OpenDyslexic\". Distributed via the @fontsource/opendyslexic package."
   },
   {
+    "id": "font-nunito",
+    "kind": "font",
+    "title": "Nunito",
+    "author": "The Nunito Project Authors (https://github.com/googlefonts/nunito)",
+    "source": "open-licence",
+    "licence": "OFL-1.1",
+    "url": "https://fontsource.org/fonts/nunito",
+    "licenceUrl": "https://openfontlicense.org/open-font-license-official-text/",
+    "retrieved": "2026-11-26",
+    "version": "5.3.0",
+    "modified": false,
+    "notes": "Self-hosted since 2026-11-26 (previously loaded from Google Fonts). Distributed via the @fontsource/nunito package; weights 400, 600, 700, 800; latin and latin-ext subsets."
+  },
+  {
     "id": "lib-react",
     "kind": "library",
     "title": "React",

@@ -45,6 +45,12 @@ export async function upsertTeacherProfile(profile: TeacherProfile): Promise<voi
   await setDoc(doc(db, 'teachers', profile.uid), profile, { merge: true });
 }
 
+/** Delete a teacher profile (teachers/{uid}). Used by the in-app account deletion (F9). */
+export async function deleteTeacherProfile(uid: string): Promise<void> {
+  if (!firebaseEnabled) return;
+  await deleteDoc(doc(db, 'teachers', uid));
+}
+
 /** Fetch a teacher profile by UID */
 export async function getTeacherProfile(uid: string): Promise<TeacherProfile | null> {
   if (!firebaseEnabled) return null;
@@ -155,6 +161,12 @@ export async function saveSessionResults(
 ): Promise<void> {
   if (!firebaseEnabled) return;
   await setDoc(doc(db, 'sessionResults', sessionId), { results, savedAt: Date.now() });
+}
+
+/** Delete the saved results of a session (they contain the names children typed). Used by F9 account deletion. */
+export async function deleteSessionResults(sessionId: string): Promise<void> {
+  if (!firebaseEnabled) return;
+  await deleteDoc(doc(db, 'sessionResults', sessionId));
 }
 
 /** Fetch results for a classroom session */

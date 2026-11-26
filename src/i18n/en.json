@@ -1306,5 +1306,28 @@
       "reauth-required": "enter your password and try again",
       "failed": "error"
     }
+  },
+  "privacyHints": {
+    "nickname": "Use a nickname or initials, not your real name",
+    "teacherLabel": "Write initials or numbers, not the pupil's real name.",
+    "reportComment": "Do not write names or personal details",
+    "teacherDelete": {
+      "button": "Delete teacher account",
+      "title": "Delete your teacher account?",
+      "body": "This permanently deletes your classes (with their seats, join codes and pupil progress), your sessions, their results and your templates, then the account. It cannot be undone.",
+      "passwordLabel": "Confirm with your account password",
+      "cancel": "Cancel",
+      "confirm": "Delete permanently",
+      "deleting": "Deleting…",
+      "reauthFailed": "We could not confirm your identity (wrong password?). Nothing was deleted.",
+      "partial": "We could not delete everything. Your account was kept so you can try again. Not deleted: {{items}}.",
+      "steps": {
+        "classes": "classes",
+        "sessions": "sessions",
+        "templates": "templates",
+        "profile": "profile",
+        "account": "account"
+      }
+    }
   }
 }

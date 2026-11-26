@@ -177,8 +177,11 @@ export default function ReportButton({ itemId, skillId }: ReportButtonProps) {
                   disabled={sending}
                   className="input-field w-full mb-1"
                 />
-                <p className="text-xs text-gray-400 text-right mb-4" aria-live="polite">
+                <p className="text-xs text-gray-400 text-right mb-1" aria-live="polite">
                   {t('report.commentCount', { n: comment.length, max: MAX_COMMENT_LENGTH })}
+                </p>
+                <p className="text-xs text-gray-500 mb-4" data-testid="report-privacy-hint">
+                  {t('privacyHints.reportComment')}
                 </p>
 
                 {result === 'failed' || result === 'invalid' ? (
