@@ -1329,5 +1329,10 @@
         "account": "account"
       }
     }
+  },
+  "rooms": {
+    "yourName": "Your animal name",
+    "shuffle": "New name",
+    "hint": "The name comes from our list: never type your real name."
   }
 }

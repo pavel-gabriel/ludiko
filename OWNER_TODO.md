@@ -18,6 +18,17 @@
             redeploy them again, or creating an account and syncing children will fail with "permission denied".
       - [ ] Parent accounts also need Firebase console → Authentication → **Email/Password** enabled (the same
             switch as for the admin account below). Until then "Cont de părinte" cannot create or sign in.
+- [ ] **Redeploy BOTH rule sets for the privacy fixes F2 + F3** (`docs/PRIVACY_DATA_MAP.md`). Until you do, the new app
+      cannot create or join multiplayer rooms (the old rules allowed it, the new client uses `roomCodes/*` and
+      `rooms/*/players/{uid}`) and teacher sessions / student codes keep the old, open rules:
+      ```bash
+      firebase deploy --only firestore:rules,database --project ludiko-2e197
+      ```
+      - [ ] Optional, once after deploying: in the Realtime Database console delete the old `rooms` node (old-format rooms no longer work).
+      - [ ] Optional: test the rules in the Firebase Emulator Suite / Rules Playground (the repo tests only check their text).
+      - [ ] Optional: delete forgotten rooms now and then (the app already deletes its own and refuses rooms older than 6 hours):
+            `FIREBASE_SERVICE_ACCOUNT="$(cat key.json)" FIREBASE_DATABASE_URL=https://<your-db>.firebasedatabase.app node scripts/privacy/cleanup-rooms.mjs --dry-run`
+            (drop `--dry-run` to delete rooms older than 24 h; `--max-age-hours=N` to change the age). Needs a service-account key; never commit it.
 - [ ] **Admin account** (`docs/ADMIN.md`):
   - [ ] Firebase console → Authentication → enable **Email/Password**.
   - [ ] Add your admin user and copy its **UID**.

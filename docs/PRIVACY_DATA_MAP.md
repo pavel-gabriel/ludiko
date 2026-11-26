@@ -15,7 +15,7 @@
 |---|---|---|
 | **Device only** (IndexedDB + localStorage) | child profiles and learning progress, settings, caches | whoever uses the device |
 | **Firestore** (Google Firebase, project `ludiko-2e197`) | `families`, `classes`, `joinCodes`, `pushSubscriptions`, `contentReports`, `teachers`, `sessions`, `sessionResults`, `templates`, `gameHistory`, `admins` | see §2 (rules differ a lot) |
-| **Realtime Database** (Google Firebase) | multiplayer rooms (`rooms/*`): names, avatars, scores | **any** app session (anonymous auth) |
+| **Realtime Database** (Google Firebase) | multiplayer rooms (`rooms/*`, `roomCodes/*`): picked animal names, avatars, scores | a signed-in session that knows the room id; rooms cannot be listed (F2 fixed) |
 | **Firebase Auth** | anonymous uid per device; email for parents, teachers, admin | Google; the owner via the Firebase console |
 | **Third parties in transit** | GitHub Pages, web-push services (Google Fonts removed, F4 fixed) | see §3 |
 
@@ -69,9 +69,10 @@ or teacher with email.
 | C9 | `joinCodes/{code}` | `classId`, `className` (get by exact code only) | any signed-in device that knows the code | until unlink / class deletion | n/a | same |
 | C10 | `contentReports/{id}` | `itemId`, `skillId`, `reason`, free-text `comment` (max 300), `createdAt`, `status`, `appVersion`. No uid stored. The comment box shows "Nu scrie nume sau date personale" (F5/F6 FIXED, `src/components/ui/ReportButton.tsx`) | admin only | resolved/dismissed reports deleted after 12 months, any report after 24 months (F6 FIXED: `scripts/privacy/cleanup-reports.mjs`, run by the owner) | consent (the user sends it); legitimate interest (content quality) | `src/services/reportService.ts` |
 | C11 | `teachers/{uid}` | teacher **email**, `displayName` (from the form or the Google account), `createdAt` | the teacher; admin can list | deleted by the teacher in the app ("Șterge contul de profesor", F9 FIXED: `src/services/teacherAccountDeletion.ts`, which also removes the classes, sessions, results and templates and then the Auth user) | contract (teacher account) | `src/services/teacherService.ts`, `TeacherLogin.tsx`, `src/components/teacher/TeacherDashboard.tsx` |
-| C12 | `sessions/{id}` | v1 classroom session: `teacherUid`, `title`, game settings, `studentCodes[{code,label}]` (default label "Student N", editable), status | **any signed-in device** (F3) | until the teacher deletes it | teacher: contract | `teacherService.ts` |
-| C13 | `sessionResults/{sessionId}` | per student: `studentCode`, `studentLabel` (**the name the child typed when joining**), score, accuracy | **any signed-in device can read AND write** (F3) | no deletion policy | teacher: contract; child data: unclear (F3) | `TeacherLiveDashboard.tsx`, `teacherService.ts` |
-| C14 | `templates/{id}` | teacher's saved session templates (settings, optional custom questions) | any signed-in device (read), teacher (write) | until the teacher deletes it | contract | `teacherService.ts` |
+| C12 | `sessions/{id}` | v1 classroom session: `teacherUid`, `title`, game settings, `studentCodes[{code,label}]` (default label "Student N", editable; **a label may be a real name if the teacher types one**, F5), status | **only the owner teacher** (F3 fixed) | until the teacher deletes it | teacher: contract | `teacherService.ts` |
+| C12b | `sessionCodes/{sessionId}_{CODE}` | exact-key index so a student's device can check the code it was given: `sessionId`, `teacherUid`, `code`. **No label, no name** | any signed-in device by exact key (`get`; `list` denied); written by the owner teacher | removed with the session or when the code list changes | teacher: contract | `teacherService.ts` (`publishStudentCodes`, `isStudentCodeValid`) |
+| C13 | `sessionResults/{sessionId}` | per student: `studentCode`, `studentLabel` (**the label the teacher assigned to that code**, never typed by the child), score, accuracy. Also `sessionResults/{sessionId}_{CODE}`: a student's own result document (strict fields; only for a code in the index; no client writes it yet) | **only the session's teacher** (rules `get()` on `sessions/{id}.teacherUid`); students cannot read any result (F3 fixed) | until the teacher deletes the session/results; no automatic deletion | teacher: contract | `TeacherLiveDashboard.tsx`, `teacherService.ts` |
+| C14 | `templates/{id}` | teacher's saved session templates (settings, optional custom questions) | **only the owner teacher** (F3 fixed) | until the teacher deletes it | contract | `teacherService.ts` |
 | C15 | `gameHistory/{id}` | **FINDING F1.** After each multiplayer game, the host's device stores: room code, game type/mode/difficulty, player count and **per player the name the child typed, avatar, score, accuracy, rank**, server timestamp | **any signed-in (anonymous) device** (shown as the public "Clasament" on the home page) | **FIXED: collection removed, rules deny all client access, one-off cleanup script** (was: kept forever, no deletion path) | none clear: contradicts the "no child personal data" promise | `src/services/historyService.ts`, `src/components/leaderboard/GameResults.tsx`, `PersistentLeaderboard.tsx` |
 | C16 | `admins/{uid}` | existence of the owner's admin uid | the owner (own doc only) | owner decision | legitimate interest | `docs/ADMIN.md`, `src/services/adminService.ts` |
 
@@ -79,7 +80,8 @@ or teacher with email.
 
 | # | Path | Data item | Who can read | Retention / deletion | Legal basis (guess) | Source |
 |---|---|---|---|---|---|---|
-| R1 | `rooms/{roomId}` | multiplayer room: join `code`, host/player ids (random), **player name typed by the child (max 20)**, avatar, score, ready flag, game settings, generated questions, progress, finish times, `createdAt` | **any signed-in device** may list/read all rooms (`.read` on `/rooms`) and **write** any room (F2) | deleted when the host leaves (LobbyPage), or on host disconnect (`onDisconnect().remove()`). Rooms orphaned in other ways have **no expiry** | contract (service the user asked for); names: unclear (F2) | `src/services/roomManager.ts`, `gameSession.ts`, `database.rules.json` |
+| R1 | `rooms/{roomId}` | multiplayer room: join `code`, `hostId` (= the host's anonymous uid), `players/{uid}` (**a picked "animal name"** such as "Vulpea Veselă" or, in a teacher's session, the student code; avatar; score; ready flag; `joinedAt`), game settings, generated questions, progress, finish times, `createdAt` (F2 fixed) | a signed-in device that knows the 20-character room id. **No listing** (no `.read` on `/rooms`) | deleted when the host leaves (LobbyPage / game pages), on host disconnect (`onDisconnect().remove()`), and when the same device creates its next room. Cannot be joined after 6 hours (client + rules); optional owner script `scripts/privacy/cleanup-rooms.mjs` deletes rooms older than 24 h | contract (service the user asked for); no typed names | `src/services/roomManager.ts`, `gameSession.ts`, `database.rules.json` |
+| R2 | `roomCodes/{CODE}` | exact-key index `{roomId, hostId, createdAt}` used to join by code | any signed-in device by exact code (no listing); written/removed by the host | removed with the room; a code older than 6 hours can be reused | contract | `roomManager.ts`, `database.rules.json` |
 
 ### 2c. Firebase Auth
 
@@ -121,22 +123,45 @@ Priority: **H** high, **M** medium, **L** low.
   (b) or keep a leaderboard with avatar + score only (no name) and a Firestore TTL policy on a `expireAt` field (e.g. 30 days);
   (c) tighten rules to a strict field allowlist + size limits either way; (d) one-off: delete the existing `gameHistory` documents.
 
-### F2 (H): Realtime Database rooms are world-readable and world-writable to any anonymous session
-- `database.rules.json`: `.read: auth != null` on `/rooms` (needed for the code query, but it lets anyone download
-  every room with player names and avatars) and `.write: auth != null` per room, player and progress (anyone can edit or delete any room).
-- No expiry for rooms that are not removed by `onDisconnect`.
-- **Suggested fix:** do not read at `/rooms` level. Use a small index `roomCodes/{code} -> roomId` readable by exact key
-  (like `joinCodes` in `docs/CLASSROOM.md` §6), per-room read only for members, players write only their own node,
-  host-only writes for status/game; use the profile nickname or a random animal name instead of free text; clean up
-  stale rooms (scheduled job or `createdAt` check).
+### F2 (H) **FIXED**: Realtime Database rooms were world-readable and world-writable to any anonymous session
+- **Was:** `.read: auth != null` on `/rooms` (needed for the code query: anyone could download every room with player names and
+  avatars) and `.write: auth != null` per room, player and progress; free-text player names; no expiry.
+- **Fixed (code + `database.rules.json`, owner must redeploy the rules):**
+  - Join without listing: the host writes `roomCodes/{CODE} -> {roomId, hostId, createdAt}`; `JoinRoom` reads that one key, then
+    `rooms/{roomId}`. There is **no `.read` on `/rooms` or `/roomCodes`** and no `.indexOn: code`.
+  - Writes: the host (`hostId == auth.uid`, set at creation) controls settings, status and game. A player writes only
+    `rooms/{id}/players/{uid}` (the player id is now the Firebase uid; a second local duel player is `{uid}_2`), their own
+    `game/progress/{uid}` and `game/finishTimes/{uid}`. A guest may also set status back to `waiting` (replay), set
+    `game/phase = finished` (first finisher ends a race) and clear `game` (replay). Players cannot set `isHost`. Shapes and sizes validated, unknown keys rejected.
+  - Expiry: rooms carry `createdAt`; joins are refused after 6 hours (client `isRoomExpired` and the rules); the host deletes its room
+    on leave/disconnect and the device deletes the room it left behind when it creates the next one; the owner can run
+    `node scripts/privacy/cleanup-rooms.mjs --dry-run` (optional, deletes rooms older than 24 h).
+  - Names: kids no longer type a name in multiplayer, duel or single player: they pick an "animal name" (own ro/en list in
+    `src/utils/animalNames.ts`, 16 animals x 16 adjectives, the animal is the avatar) with a shuffle button. In a teacher's session the
+    player name is the teacher-issued student code (validated against the teacher's code index). Child profile nicknames (local) are unchanged.
+- **Remaining limits:** rules cannot prove a name came from the list, only cap it at 30 characters (a modified client can write any text,
+  only into its own player entry). Room codes are 6 characters of a 32-letter alphabet: a signed-in client could try codes one by one
+  (rate-limited by Firebase); the room id itself is random and 20 characters. Any signed-in device can create a room (spam) but not touch others'.
+  The rules are not run by tests (no emulator): test them in the Firebase Emulator Suite or the console Rules Playground before relying on them.
+- **Existing data:** rooms created before the change have the old shape (`players` array, no `hostId` uid) and stop working under the new rules;
+  they are transient. Delete `rooms` once in the console after deploying.
 
-### F3 (M): v1 teacher sessions: student names in Firestore, readable/writable by any signed-in device
-- `sessionResults`: `allow read, write: if request.auth != null` (any anonymous user can read or overwrite any
-  session's results). `TeacherLiveDashboard.tsx` saves `studentLabel: player.name` (what the child typed).
-  `sessions` and `templates` are readable by every signed-in device.
-- **Suggested fix:** restrict `sessionResults` read/write to the session's teacher (`get()` on `sessions`),
-  validate fields; let students validate codes through an exact-key index instead of reading all sessions;
-  show the teacher a warning to use codes/initials. Consider retiring v1 sessions in favour of `classes` (CLASSROOM.md).
+### F3 (M) **FIXED**: v1 teacher sessions were readable/writable by any signed-in device
+- **Was:** `sessionResults` `allow read, write: if request.auth != null`; `sessions`/`templates` readable by every signed-in device;
+  `studentLabel` was the name the child typed when joining.
+- **Fixed (code + `firestore.rules`, owner must redeploy the rules):**
+  - `sessions`, `templates`: read only by the owner teacher (`teacherUid == request.auth.uid`).
+  - `sessionResults`: read/write only by the session's teacher (rules `get()` on `sessions/{sessionId}.teacherUid`, field validation);
+    students can only create/update their own document `sessionResults/{sessionId}_{CODE}` (strict fields, code must exist in the index),
+    and cannot read any result. (No client writes the student document yet: the live RTDB progress is still the channel.)
+  - `sessionCodes/{sessionId}_{CODE}`: exact-key index (`get` only) that replaces students reading `sessions`. It holds only
+    `sessionId`, `teacherUid`, `code`: **no label**, because a label can be a real name. Maintained by `createSession`, `updateSession`,
+    `deleteSession` and re-published when a draft session is started (so sessions created earlier work).
+  - `studentLabel` is now looked up in the teacher's own `studentCodes` list (`labelForStudentCode`), never from what a child typed;
+    the teacher's live view and CSV show code + label.
+- **Not done here:** the teacher-facing "use codes or initials, not full names" notice (F5, `classroom.privacyNote`); retiring v1 sessions for `classes`.
+- **Existing data:** old `sessionResults/{sessionId}` documents stay and are readable by their teacher. A session in `draft` gets its code index
+  when the teacher presses Start. A session that was already `active` has a room in the old format that no longer works: the teacher creates a new session.
 
 ### F4 (M): Google Fonts loaded from Google's servers: **FIXED** (`src/main.tsx`, `index.html`, `vite.config.ts`, `content/credits.json`)
 - `index.html` preconnects and loads Nunito from `fonts.googleapis.com`; the service worker caches it. Every first visit sends the

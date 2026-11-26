@@ -1342,5 +1342,10 @@
         "account": "contul"
       }
     }
+  },
+  "rooms": {
+    "yourName": "Numele tău de animal",
+    "shuffle": "Alt nume",
+    "hint": "Numele este ales din lista noastră: nu scrie numele tău real."
   }
 }

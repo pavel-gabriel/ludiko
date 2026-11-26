@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '@/components/ui/Button';
@@ -17,6 +17,7 @@ export default function LobbyPage() {
   const navigate = useNavigate();
   const { room, currentPlayer, setRoom, setCurrentPlayer, reset } = useRoomStore();
   const [copied, setCopied] = useState(false);
+  const resetReadyRef = useRef(false);
 
   /* Subscribe to real-time room updates from RTDB */
   useEffect(() => {
@@ -34,7 +35,18 @@ export default function LobbyPage() {
       /* Keep currentPlayer in sync with RTDB (e.g. isReady changes) */
       if (currentPlayer) {
         const me = updatedRoom.players.find((p) => p.id === currentPlayer.id);
-        if (me) setCurrentPlayer(me);
+        if (me) {
+          /* Back in the lobby after a replay: a guest's ready flag from the last round is cleared once, by the
+             guest themselves (a player may only write their own entry) */
+          if (!resetReadyRef.current) {
+            resetReadyRef.current = true;
+            if (!me.isHost && me.isReady) {
+              setPlayerReady(updatedRoom.id, me.id, false).catch(() => {});
+              me.isReady = false;
+            }
+          }
+          setCurrentPlayer(me);
+        }
       }
 
       /* If room status changed to 'playing', navigate to game */
@@ -51,7 +63,6 @@ export default function LobbyPage() {
   }
 
   const isHost = currentPlayer.isHost;
-  const myIndex = room.players.findIndex((p) => p.id === currentPlayer.id);
 
   /* All non-host players must be ready for host to start */
   const allOthersReady = room.players
@@ -72,8 +83,8 @@ export default function LobbyPage() {
   };
 
   const handleReady = async () => {
-    if (myIndex < 0) return;
-    await setPlayerReady(room.id, myIndex, !currentPlayer.isReady);
+    if (!room.players.some((p) => p.id === currentPlayer.id)) return;
+    await setPlayerReady(room.id, currentPlayer.id, !currentPlayer.isReady);
   };
 
   const handleStart = async () => {

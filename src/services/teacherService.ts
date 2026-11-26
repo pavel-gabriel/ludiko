@@ -10,6 +10,7 @@ import {
   query,
   where,
   orderBy,
+  writeBatch,
 } from 'firebase/firestore';
 import { db, firebaseEnabled } from '@/services/firebase';
 import type {
@@ -83,7 +84,59 @@ export async function createSession(
     createdAt: Date.now(),
   });
   const ref = await addDoc(collection(db, 'sessions'), session);
+  await publishStudentCodes(ref.id, teacherUid, studentCodes);
   return ref.id;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Student-code index (sessionCodes): how a student's device validates a code            */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Students never read `sessions` (it holds the teacher's labels, which may be real names). To check the
+ * code a student types, the device reads ONE document of this index by its exact key. It contains no label.
+ */
+export function studentCodeKey(sessionId: string, code: string): string {
+  return `${sessionId}_${code.trim().toUpperCase()}`;
+}
+
+/** Make the index match `codes`: add the missing ones, remove the ones in `removeCodes` (idempotent) */
+export async function publishStudentCodes(
+  sessionId: string,
+  teacherUid: string,
+  codes: StudentCode[],
+  removeCodes: StudentCode[] = [],
+): Promise<void> {
+  if (!firebaseEnabled || !sessionId) return;
+  const batch = writeBatch(db);
+  for (const { code } of codes) {
+    batch.set(doc(db, 'sessionCodes', studentCodeKey(sessionId, code)), {
+      sessionId,
+      teacherUid,
+      code: code.trim().toUpperCase(),
+    });
+  }
+  const keep = new Set(codes.map((c) => c.code));
+  for (const { code } of removeCodes) {
+    if (!keep.has(code)) batch.delete(doc(db, 'sessionCodes', studentCodeKey(sessionId, code)));
+  }
+  await batch.commit();
+}
+
+/** True when `code` is one of the codes the teacher issued for this session (exact-key read) */
+export async function isStudentCodeValid(sessionId: string, code: string): Promise<boolean> {
+  if (!firebaseEnabled || !sessionId || !code.trim()) return false;
+  const snap = await getDoc(doc(db, 'sessionCodes', studentCodeKey(sessionId, code)));
+  return snap.exists();
+}
+
+/**
+ * The teacher-assigned label of a student code ("Student 3" by default, edited by the teacher), looked up
+ * in the teacher's own code list. Never the text a child typed: unknown codes get the code itself.
+ */
+export function labelForStudentCode(codes: StudentCode[], code: string): string {
+  const wanted = code.trim().toUpperCase();
+  return codes.find((c) => c.code.toUpperCase() === wanted)?.label ?? code;
 }
 
 /** Fetch all sessions for a teacher */
@@ -111,12 +164,23 @@ export async function updateSession(
   updates: Partial<ClassroomSession>,
 ): Promise<void> {
   if (!firebaseEnabled) return;
+  if (updates.studentCodes) {
+    /* keep the student-code index in step with the list (the previous list says which codes to remove) */
+    const before = await getSession(sessionId);
+    if (before) await publishStudentCodes(sessionId, before.teacherUid, updates.studentCodes, before.studentCodes);
+  }
   await updateDoc(doc(db, 'sessions', sessionId), stripUndefined(updates as Record<string, unknown>));
 }
 
 /** Delete a session */
 export async function deleteSession(sessionId: string): Promise<void> {
   if (!firebaseEnabled) return;
+  const before = await getSession(sessionId);
+  if (before) {
+    const batch = writeBatch(db);
+    for (const { code } of before.studentCodes ?? []) batch.delete(doc(db, 'sessionCodes', studentCodeKey(sessionId, code)));
+    await batch.commit();
+  }
   await deleteDoc(doc(db, 'sessions', sessionId));
 }
 
