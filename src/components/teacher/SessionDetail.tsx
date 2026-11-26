@@ -5,13 +5,8 @@ import Button from '@/components/ui/Button';
 import CloseButton from '@/components/ui/CloseButton';
 import { useAuthStore } from '@/store/authStore';
 import { useRoomStore } from '@/store/roomStore';
-import {
-  getSession,
-  updateSession,
-  publishStudentCodes,
-} from '@/services/teacherService';
-import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
-import { ensureAnonymousAuth } from '@/services/authService';
+import { getSession } from '@/services/teacherService';
+import { startClassroomSession } from '@/services/classroomStart';
 import type { ClassroomSession } from '@/utils/types';
 
 export default function SessionDetail() {
@@ -51,22 +46,7 @@ export default function SessionDetail() {
     if (!session || !sessionId || starting) return;
     setStarting(true);
     try {
-      await ensureAnonymousAuth();
-      /* Make sure students' devices can validate their codes (also for sessions created before the index existed) */
-      await publishStudentCodes(sessionId, session.teacherUid, session.studentCodes);
-      /* Create a special room for this classroom session */
-      const room = buildRoom(t('teacher.teacher'), session.settings, '👩‍🏫');
-      /* Tag the room as a classroom session */
-      room.classroomSessionId = sessionId;
-      room.classroomMode = session.classroomMode;
-      room.globalTimer = session.globalTimer;
-
-      await createRoomInDB(room);
-      registerDisconnectCleanup(room.id, true, undefined, room.code);
-
-      /* Link the RTDB room to the Firestore session */
-      await updateSession(sessionId, { status: 'active', roomId: room.id });
-
+      const room = await startClassroomSession({ ...session, id: sessionId }, t('teacher.teacher'));
       setRoom(room);
       setCurrentPlayer(room.players[0]);
 
@@ -138,7 +118,7 @@ export default function SessionDetail() {
         </div>
 
         {/* Actions */}
-        <div className="flex gap-3">
+        <div className="flex flex-wrap gap-3">
           <Button variant="orange" size="md" onClick={() => navigate('/teacher')}>
             {t('teacher.back')}
           </Button>
@@ -149,6 +129,15 @@ export default function SessionDetail() {
           >
             {t('teacher.edit')}
           </Button>
+          {session.status !== 'draft' && (
+            <Button
+              variant="purple"
+              size="md"
+              onClick={() => navigate(`/teacher/session/new?from=${sessionId}`)}
+            >
+              {t('teacher.repeatSession')}
+            </Button>
+          )}
           {session.status === 'draft' && (
             <Button
               variant="green"

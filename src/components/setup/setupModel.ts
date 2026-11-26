@@ -20,6 +20,11 @@ export type SetupStep = 'mode' | 'practice' | 'who' | 'ready';
 
 export const STEPS: readonly SetupStep[] = ['mode', 'practice', 'who', 'ready'];
 
+/** Memory is "finding pairs" with pictures: no "Ce exersăm?" step (no skills, no classic toggle) */
+export function stepsFor(mode: SetupMode): readonly SetupStep[] {
+  return mode === 'memory' ? ['mode', 'who', 'ready'] : STEPS;
+}
+
 /** Modes a screen can offer: the sprint is only for online rooms (duel and single player race to the finish) */
 export function modesFor(context: SetupContext): SetupMode[] {
   return context === 'room' ? ['race', 'sprint', 'memory'] : ['race', 'memory'];
@@ -52,7 +57,7 @@ export interface SetupResult {
   identity2: AnimalIdentity;
 }
 
-export const itemKindOf = (mode: SetupMode): ItemGameKind => (mode === 'memory' ? 'memory' : mode === 'sprint' ? 'sprint' : 'race');
+export const itemKindOf = (mode: SetupMode): ItemGameKind => (mode === 'sprint' ? 'sprint' : 'race');
 
 /** The game type that goes into the room: skills only pick race vs memory, the classic game picks its own */
 export function gameTypeOf(c: Pick<SetupChoices, 'mode' | 'skillIds' | 'classic' | 'classicType'>): GameType {
@@ -70,12 +75,14 @@ export const showsShapeMode = (c: Pick<SetupChoices, 'mode' | 'skillIds' | 'clas
 
 /** Skills chosen that cannot be played in the chosen mode (e.g. text comprehension in a race) */
 export function unplayableSkills(c: Pick<SetupChoices, 'mode' | 'skillIds'>): string[] {
+  if (c.mode === 'memory') return [];
   const kind = itemKindOf(c.mode);
   return c.skillIds.filter((id) => !skillUsable(id, kind));
 }
 
 /** Step 2 is done once skills or the classic game are chosen (and the choice works in this mode) */
 export function practiceIssue(c: SetupChoices): 'none' | 'unplayable' | 'operations' | null {
+  if (isMemory(c)) return null;
   if (c.skillIds.length === 0 && !c.classic) return 'none';
   if (unplayableSkills(c).length > 0) return 'unplayable';
   if (showsOperations(c) && c.operations.length === 0) return 'operations';
@@ -109,6 +116,29 @@ export function timeLimits(mode: SetupMode) {
 export const TIME_DEFAULT: Record<SetupMode, number> = { race: DEFAULT_GAME_SETTINGS.timePerRound, sprint: 60, memory: 90 };
 const clamp = (v: number, { min, max }: { min: number; max: number }) => (!v || v < min ? min : v > max ? max : v);
 
+/** The choices after switching to `mode`: a time still at the old mode's default follows, rounds stay in range, memory drops skills */
+export function withMode(context: SetupContext, c: SetupChoices, mode: SetupMode): SetupChoices {
+  const limits = roundsLimits(context, mode);
+  return {
+    ...c,
+    mode,
+    /* memory is pictures only: no skills, no classic toggle */
+    ...(mode === 'memory' && { skillIds: [], classic: false }),
+    timePerRound: c.timePerRound === TIME_DEFAULT[c.mode] ? TIME_DEFAULT[mode] : c.timePerRound,
+    rounds: Math.min(Math.max(c.rounds, limits.min), limits.max),
+  };
+}
+
+/** True when the chosen skills are not exactly one of the quick presets (the skill picker then opens by itself) */
+export function isCustomSelection(c: Pick<SetupChoices, 'mode' | 'skillIds'>): boolean {
+  if (c.skillIds.length === 0) return false;
+  const kind = itemKindOf(c.mode);
+  return !PLAY_PRESETS.some((p) => {
+    const ids = p.skillIds.filter((id) => skillUsable(id, kind));
+    return ids.length === c.skillIds.length && ids.every((id) => c.skillIds.includes(id));
+  });
+}
+
 /** The room settings a finished setup stands for (numbers clamped, nothing `undefined`) */
 export function toRoomSettings(context: SetupContext, c: SetupChoices): GameSettings {
   const mathy = showsOperations(c);
@@ -120,7 +150,8 @@ export function toRoomSettings(context: SetupContext, c: SetupChoices): GameSett
     rounds: clamp(c.rounds, roundsLimits(context, c.mode)),
     timePerRound: clamp(c.timePerRound, timeLimits(c.mode)),
     ...(showsShapeMode(c) && { shapeMode: c.shapeMode }),
-    ...skillSettings(c.skillIds),
+    /* memory = pictures: never skills */
+    ...(isMemory(c) ? {} : skillSettings(c.skillIds)),
   };
 }
 
@@ -195,6 +226,7 @@ export function loadChoices(context: SetupContext, defaults: SetupChoices): Setu
   if (Array.isArray(raw.skillIds)) {
     next.skillIds = raw.skillIds.filter((id): id is string => typeof id === 'string' && !!getSkill(id)).slice(0, 5);
   }
+  if (next.mode === 'memory') next.skillIds = [];
   if (typeof raw.classic === 'boolean') next.classic = raw.classic && next.skillIds.length === 0;
   if (raw.classicType && CLASSIC_TYPES.includes(raw.classicType)) next.classicType = raw.classicType;
   if (Array.isArray(raw.operations)) {

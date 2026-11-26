@@ -220,13 +220,11 @@ service cloud.firestore {
       allow delete: if request.auth != null;
     }
 
-    // Templates: teachers can CRUD their own templates
+    // Templates (legacy): the app no longer creates them (a session is repeated from a past session instead).
+    // The owner teacher can still list and delete the old documents (also done by account deletion).
     match /templates/{templateId} {
       allow read: if request.auth != null && resource.data.teacherUid == request.auth.uid;
-      allow create: if request.auth != null
-                    && request.resource.data.teacherUid == request.auth.uid;
-      allow update, delete: if request.auth != null
-                            && resource.data.teacherUid == request.auth.uid;
+      allow delete: if request.auth != null && resource.data.teacherUid == request.auth.uid;
     }
 
     // ===== BEGIN Classroom (docs/CLASSROOM.md §2-§3): classes, seats, progress, assignments, joinCodes =====

@@ -3,9 +3,7 @@ import { useState } from 'react';
 import { fireEvent, render, screen, within } from '@testing-library/react';
 import i18n from '../src/i18n/config';
 import SkillPicker from '../src/components/play/SkillPicker';
-import PlayModePicker from '../src/components/play/PlayModePicker';
 import { MAX_SKILLS, type ItemGameKind } from '../src/services/itemGame';
-import type { GameType } from '../src/utils/types';
 
 beforeAll(async () => {
   await i18n.changeLanguage('ro');
@@ -91,27 +89,5 @@ describe('SkillPicker ("Ce exersăm?")', () => {
     expect(within(text).getByText('nu merge în acest joc')).toBeInTheDocument();
     fireEvent.click(text);
     expect(value()).toEqual([]);
-  });
-
-  it('memory: presets without memory-friendly skills are not selectable', () => {
-    render(<Harness kind="memory" />);
-    // clock items are pictures only: no pairs
-    expect(screen.getByRole('button', { name: /Ceasul/ })).toBeDisabled();
-    expect(screen.getByRole('button', { name: /Adunare până la 20/ })).toBeEnabled();
-  });
-});
-
-describe('PlayModePicker', () => {
-  it('offers race and memory, and marks the current one', () => {
-    let picked: GameType = 'mathRace';
-    const { rerender } = render(<PlayModePicker value="mathRace" onChange={(t) => (picked = t)} />);
-    expect(screen.getByRole('button', { name: /Cursă/ })).toHaveAttribute('aria-pressed', 'true');
-    fireEvent.click(screen.getByRole('button', { name: /Memorie/ }));
-    expect(picked).toBe('memoryGame');
-    rerender(<PlayModePicker value="memoryGame" onChange={() => {}} />);
-    expect(screen.getByRole('button', { name: /Memorie/ })).toHaveAttribute('aria-pressed', 'true');
-    // any v1 type shown as the race
-    rerender(<PlayModePicker value="shapeMatch" onChange={() => {}} />);
-    expect(screen.getByRole('button', { name: /Cursă/ })).toHaveAttribute('aria-pressed', 'true');
   });
 });

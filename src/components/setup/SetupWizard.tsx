@@ -4,8 +4,6 @@ import Button from '@/components/ui/Button';
 import CloseButton from '@/components/ui/CloseButton';
 import AnimalNamePicker from '@/components/ui/AnimalNamePicker';
 import { useProfileStore } from '@/store/profileStore';
-import { PLAY_PRESETS } from '@/components/play/presets';
-import { skillUsable } from '@/services/itemGame';
 import { identityAvatar, randomIdentity } from '@/utils/animalNames';
 import OptionCard from './OptionCard';
 import StepDots from './StepDots';
@@ -13,18 +11,17 @@ import PracticeStep from './PracticeStep';
 import ReadyStep from './ReadyStep';
 import { MODE_EMOJI, MODE_TONE } from './modes';
 import {
-  STEPS,
-  TIME_DEFAULT,
   defaultChoices,
   firstBlockedStep,
-  itemKindOf,
+  isCustomSelection,
   loadChoices,
   modesFor,
   practiceIssue,
-  roundsLimits,
   saveChoices,
+  stepsFor,
   toRoomSettings,
   whoIssue,
+  withMode,
   type SetupChoices,
   type SetupContext,
   type SetupResult,
@@ -41,7 +38,7 @@ interface SetupWizardProps {
 
 /**
  * Game setup as a short wizard, one decision per screen:
- * "Ce jucăm?" -> "Ce exersăm?" -> "Cine ești?" -> "Gata?". Used by single player, new rooms and the duel.
+ * "Ce jucăm?" -> "Ce exersăm?" (not for memory) -> "Cine ești?" -> "Gata?". Used by single player, new rooms and the duel.
  * Remembers the last choices of each screen (localStorage, optional).
  */
 export default function SetupWizard({ context, startLabel, onStart }: SetupWizardProps) {
@@ -66,19 +63,14 @@ export default function SetupWizard({ context, startLabel, onStart }: SetupWizar
   const [stepIndex, setStepIndex] = useState(0);
   const [showAllPresets, setShowAllPresets] = useState(false);
   /* custom skills (not a preset) reopen the picker */
-  const [picking, setPicking] = useState(() => {
-    if (choices.skillIds.length === 0) return false;
-    const kind = itemKindOf(choices.mode);
-    return !PLAY_PRESETS.some((p) => {
-      const ids = p.skillIds.filter((id) => skillUsable(id, kind));
-      return ids.length === choices.skillIds.length && ids.every((id) => choices.skillIds.includes(id));
-    });
-  });
+  const [picking, setPicking] = useState(() => isCustomSelection(choices));
   const [advanced, setAdvanced] = useState(false);
   const [loading, setLoading] = useState(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
 
-  const step: SetupStep = STEPS[stepIndex];
+  /* memory (pictures) skips "Ce exersăm?" */
+  const steps = stepsFor(choices.mode)
+  const step: SetupStep = steps[stepIndex];
   const update = (patch: Partial<SetupChoices>) => setChoices((c) => ({ ...c, ...patch }));
 
   useEffect(() => saveChoices(context, choices), [context, choices]);
@@ -86,25 +78,15 @@ export default function SetupWizard({ context, startLabel, onStart }: SetupWizar
     if (stepIndex > 0) headingRef.current?.focus();
   }, [stepIndex]);
 
-  const setMode = (mode: SetupChoices['mode']) =>
-    setChoices((c) => {
-      const limits = roundsLimits(context, mode);
-      return {
-        ...c,
-        mode,
-        /* a time still at the old mode's default follows the new mode */
-        timePerRound: c.timePerRound === TIME_DEFAULT[c.mode] ? TIME_DEFAULT[mode] : c.timePerRound,
-        rounds: Math.min(Math.max(c.rounds, limits.min), limits.max),
-      };
-    });
+  const setMode = (mode: SetupChoices['mode']) => setChoices((c) => withMode(context, c, mode));
 
   /* Why "Înainte" is off on this step */
   const blocked =
     step === 'practice' ? practiceIssue(choices) !== null : step === 'who' ? whoIssue(context, choices) !== null : false;
   const canStart = firstBlockedStep(context, choices) === null && !loading;
-  const last = stepIndex === STEPS.length - 1;
+  const last = stepIndex === steps.length - 1;
 
-  const go = (s: SetupStep) => setStepIndex(STEPS.indexOf(s));
+  const go = (s: SetupStep) => setStepIndex(steps.indexOf(s));
   const next = () => {
     if (!blocked && !last) setStepIndex((i) => i + 1);
   };
@@ -135,7 +117,7 @@ export default function SetupWizard({ context, startLabel, onStart }: SetupWizar
       <header className="pr-10">
         <p className="text-xs font-bold uppercase tracking-wide text-purple-600">{t(`setup.contexts.${context}`)}</p>
         <div className="mt-1.5">
-          <StepDots index={stepIndex} total={STEPS.length} />
+          <StepDots index={stepIndex} total={steps.length} />
         </div>
         <h2
           ref={headingRef}
