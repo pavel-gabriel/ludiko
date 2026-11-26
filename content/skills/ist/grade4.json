@@ -1,0 +1,951 @@
+[
+  {
+    "id": "ist.source.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Istoria și izvoarele istorice",
+      "en": "History and historical sources"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "source"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem1.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.source.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.source.4",
+      "kind": "data",
+      "title": "Skill ist.source.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.time.units.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "An, deceniu, secol, mileniu",
+      "en": "Year, decade, century, millennium"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "ist-century",
+        "params": {
+          "mode": "units"
+        }
+      },
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "time"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem1.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.time.units.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.time.units.4",
+      "kind": "data",
+      "title": "Skill ist.time.units.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.time.century.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "Secolele: în ce secol este un an",
+      "en": "Centuries: which century a year belongs to"
+    },
+    "prerequisites": [
+      "ist.time.units.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-century",
+        "params": {
+          "mode": "century"
+        }
+      },
+      {
+        "bank": "ist/grade4-sem1.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.time.century.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.time.century.4",
+      "kind": "data",
+      "title": "Skill ist.time.century.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.time.timeline.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.2"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.3"
+      }
+    ],
+    "title": {
+      "ro": "Linia timpului și ordinea evenimentelor",
+      "en": "The timeline and the order of events"
+    },
+    "prerequisites": [
+      "ist.time.century.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-timeline",
+        "params": {
+          "topics": [
+            "dacians",
+            "romans",
+            "medieval"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem1.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.time.timeline.4"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.ist.time.timeline.4",
+      "kind": "data",
+      "title": "Skill ist.time.timeline.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.family.local.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Istoria familiei și a comunității locale",
+      "en": "Family history and the local community"
+    },
+    "prerequisites": [
+      "ist.source.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "family"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem1.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.family.local.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.family.local.4",
+      "kind": "data",
+      "title": "Skill ist.family.local.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.dacians.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Geto-dacii: Burebista și Decebal",
+      "en": "The Geto-Dacians: Burebista and Decebal"
+    },
+    "prerequisites": [
+      "ist.source.4",
+      "ist.time.century.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "dacians"
+          ]
+        }
+      },
+      {
+        "generator": "ist-ruler",
+        "params": {
+          "ids": [
+            "burebista",
+            "decebal",
+            "traian"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem1.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.dacians.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.dacians.4",
+      "kind": "data",
+      "title": "Skill ist.dacians.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.romans.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Romanii și războaiele cu dacii",
+      "en": "The Romans and the wars with the Dacians"
+    },
+    "prerequisites": [
+      "ist.dacians.4",
+      "ist.time.timeline.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "romans"
+          ]
+        }
+      },
+      {
+        "generator": "ist-ruler",
+        "params": {
+          "era": "ancient"
+        }
+      },
+      {
+        "generator": "ist-timeline",
+        "params": {
+          "topics": [
+            "dacians",
+            "romans"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem1.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.romans.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.romans.4",
+      "kind": "data",
+      "title": "Skill ist.romans.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.formation.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Formarea poporului și a limbii române",
+      "en": "The formation of the Romanian people and language"
+    },
+    "prerequisites": [
+      "ist.romans.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "formation"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem1.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.formation.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.formation.4",
+      "kind": "data",
+      "title": "Skill ist.formation.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.medieval.states.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Țările românești în Evul Mediu: Basarab I, Bogdan I, Mircea cel Bătrân",
+      "en": "The Romanian lands in the Middle Ages: Basarab I, Bogdan I, Mircea the Elder"
+    },
+    "prerequisites": [
+      "ist.formation.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "medieval"
+          ]
+        }
+      },
+      {
+        "generator": "ist-ruler",
+        "params": {
+          "ids": [
+            "basarab",
+            "bogdan",
+            "mircea"
+          ]
+        }
+      },
+      {
+        "generator": "ist-timeline",
+        "params": {
+          "topics": [
+            "medieval"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem2.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.medieval.states.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.medieval.states.4",
+      "kind": "data",
+      "title": "Skill ist.medieval.states.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.medieval.heroes.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Iancu de Hunedoara, Vlad Țepeș, Ștefan cel Mare",
+      "en": "John Hunyadi, Vlad Țepeș, Stephen the Great"
+    },
+    "prerequisites": [
+      "ist.medieval.states.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "heroes"
+          ]
+        }
+      },
+      {
+        "generator": "ist-ruler",
+        "params": {
+          "ids": [
+            "iancu",
+            "vlad",
+            "stefan"
+          ]
+        }
+      },
+      {
+        "generator": "ist-timeline",
+        "params": {
+          "topics": [
+            "heroes"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem2.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.medieval.heroes.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.medieval.heroes.4",
+      "kind": "data",
+      "title": "Skill ist.medieval.heroes.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.mihai.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Mihai Viteazul și unirea din 1600",
+      "en": "Michael the Brave and the union of 1600"
+    },
+    "prerequisites": [
+      "ist.medieval.heroes.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "mihai"
+          ]
+        }
+      },
+      {
+        "generator": "ist-timeline",
+        "params": {
+          "topics": [
+            "mihai"
+          ]
+        }
+      },
+      {
+        "generator": "ist-ruler",
+        "params": {
+          "ids": [
+            "mihai",
+            "mircea",
+            "stefan",
+            "vlad"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem2.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.mihai.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.mihai.4",
+      "kind": "data",
+      "title": "Skill ist.mihai.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.union1859.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Unirea Principatelor (1859) și Alexandru Ioan Cuza",
+      "en": "The Union of the Principalities (1859) and Alexandru Ioan Cuza"
+    },
+    "prerequisites": [
+      "ist.mihai.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "union1859"
+          ]
+        }
+      },
+      {
+        "generator": "ist-ruler",
+        "params": {
+          "era": "modern"
+        }
+      },
+      {
+        "generator": "ist-timeline",
+        "params": {
+          "topics": [
+            "union1859",
+            "independence"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem2.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.union1859.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.union1859.4",
+      "kind": "data",
+      "title": "Skill ist.union1859.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.independence.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Independența de stat (1877)",
+      "en": "Independence (1877)"
+    },
+    "prerequisites": [
+      "ist.union1859.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "independence"
+          ]
+        }
+      },
+      {
+        "generator": "ist-ruler",
+        "params": {
+          "era": "modern"
+        }
+      },
+      {
+        "generator": "ist-timeline",
+        "params": {
+          "topics": [
+            "union1859",
+            "independence"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem2.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.independence.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.independence.4",
+      "kind": "data",
+      "title": "Skill ist.independence.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.union1918.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Marea Unire (1 decembrie 1918)",
+      "en": "The Great Union (1 December 1918)"
+    },
+    "prerequisites": [
+      "ist.independence.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "union1918"
+          ]
+        }
+      },
+      {
+        "generator": "ist-ruler",
+        "params": {
+          "era": "modern"
+        }
+      },
+      {
+        "generator": "ist-timeline",
+        "params": {
+          "topics": [
+            "independence",
+            "union1918"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem2.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.union1918.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.union1918.4",
+      "kind": "data",
+      "title": "Skill ist.union1918.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.symbols.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "3.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Simbolurile naționale și 1 Decembrie",
+      "en": "National symbols and 1 December"
+    },
+    "prerequisites": [
+      "ist.union1859.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-fact",
+        "params": {
+          "topics": [
+            "symbols"
+          ]
+        }
+      },
+      {
+        "bank": "ist/grade4-sem2.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.symbols.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.symbols.4",
+      "kind": "data",
+      "title": "Skill ist.symbols.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  },
+  {
+    "id": "ist.legend.fact.4",
+    "subject": "ist",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "IST-IV-2014",
+        "code": "1.1"
+      },
+      {
+        "programa": "IST-IV-2014",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Legendă sau fapt istoric",
+      "en": "Legend or historical fact"
+    },
+    "prerequisites": [
+      "ist.source.4",
+      "ist.medieval.states.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "ist-legend"
+      },
+      {
+        "bank": "ist/grade4-sem2.json"
+      }
+    ],
+    "explanations": [
+      "exp.ist.legend.fact.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.ist.legend.fact.4",
+      "kind": "data",
+      "title": "Skill ist.legend.fact.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; facts in own words"
+    }
+  }
+]

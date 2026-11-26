@@ -1,0 +1,2589 @@
+[
+ {
+  "id": "item.ist.source.4.01",
+  "type": "choice",
+  "skillId": "ist.source.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Care dintre acestea este un izvor istoric?",
+   "en": "Which of these is a historical source?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.source.4",
+  "provenance": {
+   "id": "prov.ist.source.4.01",
+   "kind": "item",
+   "title": "Item ist.source.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "o monedă veche găsită de arheologi",
+     "en": "an old coin found by archaeologists"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "un desen animat nou",
+     "en": "a new cartoon"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "un joc pe telefon",
+     "en": "a phone game"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.source.4.02",
+  "type": "sort",
+  "skillId": "ist.source.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Pune fiecare lucru la locul lui.",
+   "en": "Put each thing where it belongs."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.source.4",
+  "provenance": {
+   "id": "prov.ist.source.4.02",
+   "kind": "item",
+   "title": "Item ist.source.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "categories": [
+   {
+    "id": "src",
+    "label": {
+     "ro": "Izvor istoric",
+     "en": "Historical source"
+    }
+   },
+   {
+    "id": "no",
+    "label": {
+     "ro": "Nu este izvor istoric",
+     "en": "Not a historical source"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "o cronică veche",
+     "en": "an old chronicle"
+    },
+    "categoryId": "src"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "o monedă romană",
+     "en": "a Roman coin"
+    },
+    "categoryId": "src"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "un desen animat despre pirați",
+     "en": "a cartoon about pirates"
+    },
+    "categoryId": "no"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "un joc pe calculator",
+     "en": "a computer game"
+    },
+    "categoryId": "no"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.source.4.03",
+  "type": "match",
+  "skillId": "ist.source.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Potrivește fiecare cuvânt cu ce înseamnă.",
+   "en": "Match each word with what it means."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.source.4",
+  "provenance": {
+   "id": "prov.ist.source.4.03",
+   "kind": "item",
+   "title": "Item ist.source.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "arheolog",
+      "en": "archaeologist"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "caută urme ale trecutului în pământ",
+      "en": "looks for traces of the past in the ground"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "istoric",
+      "en": "historian"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "studiază izvoarele și povestește trecutul",
+      "en": "studies the sources and tells about the past"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "muzeu",
+      "en": "museum"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "păstrează obiecte vechi",
+      "en": "keeps old objects"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "cronicar",
+      "en": "chronicler"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "scria întâmplările vremii sale",
+      "en": "wrote down the events of his time"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.source.4.04",
+  "type": "true-false",
+  "skillId": "ist.source.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Cronica este un izvor istoric scris.",
+   "en": "A chronicle is a written historical source."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.source.4",
+  "provenance": {
+   "id": "prov.ist.source.4.04",
+   "kind": "item",
+   "title": "Item ist.source.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.source.4.05",
+  "type": "fill-gap",
+  "skillId": "ist.source.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Completează propoziția.",
+   "en": "Complete the sentence."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.source.4",
+  "provenance": {
+   "id": "prov.ist.source.4.05",
+   "kind": "item",
+   "title": "Item ist.source.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "template": {
+   "ro": "Oamenii care caută urmele trecutului săpând în pământ se numesc {{gap}}.",
+   "en": "People who look for traces of the past by digging in the ground are called {{gap}}."
+  },
+  "options": [
+   "arheologi",
+   "meteorologi",
+   "bucătari"
+  ],
+  "correct": "arheologi"
+ },
+ {
+  "id": "item.ist.time.units.4.01",
+  "type": "number-input",
+  "skillId": "ist.time.units.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Câți ani are un secol?",
+   "en": "How many years are in a century?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.units.4",
+  "provenance": {
+   "id": "prov.ist.time.units.4.01",
+   "kind": "item",
+   "title": "Item ist.time.units.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": 100
+ },
+ {
+  "id": "item.ist.time.units.4.02",
+  "type": "choice",
+  "skillId": "ist.time.units.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Câte secole are un mileniu?",
+   "en": "How many centuries are in a millennium?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.units.4",
+  "provenance": {
+   "id": "prov.ist.time.units.4.02",
+   "kind": "item",
+   "title": "Item ist.time.units.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "100 de secole",
+     "en": "100 centuries"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "10 secole",
+     "en": "10 centuries"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1000 de secole",
+     "en": "1000 centuries"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.time.units.4.03",
+  "type": "fill-gap",
+  "skillId": "ist.time.units.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Completează propoziția.",
+   "en": "Complete the sentence."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.units.4",
+  "provenance": {
+   "id": "prov.ist.time.units.4.03",
+   "kind": "item",
+   "title": "Item ist.time.units.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "template": {
+   "ro": "Un deceniu are {{gap}} ani.",
+   "en": "A decade has {{gap}} years."
+  },
+  "options": [
+   "10",
+   "100",
+   "1000"
+  ],
+  "correct": "10"
+ },
+ {
+  "id": "item.ist.time.units.4.04",
+  "type": "number-input",
+  "skillId": "ist.time.units.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Câți ani au 3 decenii?",
+   "en": "How many years are 3 decades?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.units.4",
+  "provenance": {
+   "id": "prov.ist.time.units.4.04",
+   "kind": "item",
+   "title": "Item ist.time.units.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": 30
+ },
+ {
+  "id": "item.ist.time.units.4.05",
+  "type": "order",
+  "skillId": "ist.time.units.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Ordonează duratele de la cea mai scurtă la cea mai lungă.",
+   "en": "Order the lengths of time from the shortest to the longest."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.units.4",
+  "provenance": {
+   "id": "prov.ist.time.units.4.05",
+   "kind": "item",
+   "title": "Item ist.time.units.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "cards": [
+   {
+    "id": "e2",
+    "text": {
+     "ro": "un deceniu",
+     "en": "a decade"
+    }
+   },
+   {
+    "id": "e4",
+    "text": {
+     "ro": "un mileniu",
+     "en": "a millennium"
+    }
+   },
+   {
+    "id": "e1",
+    "text": {
+     "ro": "un an",
+     "en": "a year"
+    }
+   },
+   {
+    "id": "e3",
+    "text": {
+     "ro": "un secol",
+     "en": "a century"
+    }
+   }
+  ],
+  "correctOrder": [
+   "e1",
+   "e2",
+   "e3",
+   "e4"
+  ]
+ },
+ {
+  "id": "item.ist.time.century.4.01",
+  "type": "choice",
+  "skillId": "ist.time.century.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "În ce secol se află anul 1457?",
+   "en": "Which century does the year 1457 belong to?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.century.4",
+  "provenance": {
+   "id": "prov.ist.time.century.4.01",
+   "kind": "item",
+   "title": "Item ist.time.century.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "secolul al XIV-lea",
+     "en": "the 14th century"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "secolul al XVI-lea",
+     "en": "the 16th century"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "secolul al XV-lea",
+     "en": "the 15th century"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.time.century.4.02",
+  "type": "choice",
+  "skillId": "ist.time.century.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Anul 1600 face parte din...",
+   "en": "The year 1600 belongs to..."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.century.4",
+  "provenance": {
+   "id": "prov.ist.time.century.4.02",
+   "kind": "item",
+   "title": "Item ist.time.century.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "secolul al XVI-lea",
+     "en": "the 16th century"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "secolul al XVII-lea",
+     "en": "the 17th century"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "secolul al XV-lea",
+     "en": "the 15th century"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.time.century.4.03",
+  "type": "fill-gap",
+  "skillId": "ist.time.century.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Completează cu cifre romane.",
+   "en": "Complete with Roman numerals."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.century.4",
+  "provenance": {
+   "id": "prov.ist.time.century.4.03",
+   "kind": "item",
+   "title": "Item ist.time.century.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "template": {
+   "ro": "Anul 1859 aparține secolului al {{gap}}-lea.",
+   "en": "The year 1859 belongs to the {{gap}} century."
+  },
+  "options": [
+   "XVIII",
+   "XIX",
+   "XX"
+  ],
+  "correct": "XIX"
+ },
+ {
+  "id": "item.ist.time.century.4.04",
+  "type": "choice",
+  "skillId": "ist.time.century.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Care an face parte din secolul al XX-lea?",
+   "en": "Which year belongs to the 20th century?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.century.4",
+  "provenance": {
+   "id": "prov.ist.time.century.4.04",
+   "kind": "item",
+   "title": "Item ist.time.century.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1950"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1899"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1801"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "2005"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.time.century.4.05",
+  "type": "choice",
+  "skillId": "ist.time.century.4",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Anul 44 î.Hr. face parte din...",
+   "en": "The year 44 BC belongs to..."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.century.4",
+  "provenance": {
+   "id": "prov.ist.time.century.4.05",
+   "kind": "item",
+   "title": "Item ist.time.century.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "secolul I d.Hr.",
+     "en": "the 1st century AD"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "secolul I î.Hr.",
+     "en": "the 1st century BC"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "secolul al II-lea î.Hr.",
+     "en": "the 2nd century BC"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "secolul al II-lea d.Hr.",
+     "en": "the 2nd century AD"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.time.century.4.06",
+  "type": "true-false",
+  "skillId": "ist.time.century.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Anul 2001 este primul an din secolul al XXI-lea.",
+   "en": "The year 2001 is the first year of the 21st century."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.century.4",
+  "provenance": {
+   "id": "prov.ist.time.century.4.06",
+   "kind": "item",
+   "title": "Item ist.time.century.4.06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.time.century.4.07",
+  "type": "choice",
+  "skillId": "ist.time.century.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Care cifre romane arată numărul 18?",
+   "en": "Which Roman numerals show the number 18?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.century.4",
+  "provenance": {
+   "id": "prov.ist.time.century.4.07",
+   "kind": "item",
+   "title": "Item ist.time.century.4.07",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "XVIII"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "XVII"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "XIX"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.time.century.4.08",
+  "type": "choice",
+  "skillId": "ist.time.century.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Marea Unire a avut loc în 1918. În ce secol a avut loc?",
+   "en": "The Great Union took place in 1918. In which century?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.century.4",
+  "provenance": {
+   "id": "prov.ist.time.century.4.08",
+   "kind": "item",
+   "title": "Item ist.time.century.4.08",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "secolul al XIX-lea",
+     "en": "the 19th century"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "secolul al XX-lea",
+     "en": "the 20th century"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "secolul al XXI-lea",
+     "en": "the 21st century"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.time.timeline.4.01",
+  "type": "order",
+  "skillId": "ist.time.timeline.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Pune evenimentele în ordine cronologică, de la cel mai vechi la cel mai nou.",
+   "en": "Put the events in chronological order, from the oldest to the newest."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.timeline.4",
+  "provenance": {
+   "id": "prov.ist.time.timeline.4.01",
+   "kind": "item",
+   "title": "Item ist.time.timeline.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "cards": [
+   {
+    "id": "e2",
+    "text": {
+     "ro": "România își proclamă independența",
+     "en": "Romania proclaims its independence"
+    }
+   },
+   {
+    "id": "e1",
+    "text": {
+     "ro": "Unirea Principatelor Române",
+     "en": "The Union of the Romanian Principalities"
+    }
+   },
+   {
+    "id": "e3",
+    "text": {
+     "ro": "Marea Unire de la Alba Iulia",
+     "en": "The Great Union at Alba Iulia"
+    }
+   }
+  ],
+  "correctOrder": [
+   "e1",
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "id": "item.ist.time.timeline.4.02",
+  "type": "order",
+  "skillId": "ist.time.timeline.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Pune evenimentele în ordine cronologică, de la cel mai vechi la cel mai nou.",
+   "en": "Put the events in chronological order, from the oldest to the newest."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.timeline.4",
+  "provenance": {
+   "id": "prov.ist.time.timeline.4.02",
+   "kind": "item",
+   "title": "Item ist.time.timeline.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "cards": [
+   {
+    "id": "e2",
+    "text": {
+     "ro": "Bătălia de la Posada",
+     "en": "The Battle of Posada"
+    }
+   },
+   {
+    "id": "e4",
+    "text": {
+     "ro": "Unirea Principatelor Române",
+     "en": "The Union of the Romanian Principalities"
+    }
+   },
+   {
+    "id": "e1",
+    "text": {
+     "ro": "Dacia devine provincie romană",
+     "en": "Dacia becomes a Roman province"
+    }
+   },
+   {
+    "id": "e3",
+    "text": {
+     "ro": "Mihai Viteazul unește cele trei țări românești",
+     "en": "Michael the Brave unites the three Romanian lands"
+    }
+   }
+  ],
+  "correctOrder": [
+   "e1",
+   "e2",
+   "e3",
+   "e4"
+  ]
+ },
+ {
+  "id": "item.ist.time.timeline.4.03",
+  "type": "number-input",
+  "skillId": "ist.time.timeline.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Câți ani au trecut de la Unirea Principatelor (1859) până la Marea Unire (1918)?",
+   "en": "How many years passed from the Union of the Principalities (1859) to the Great Union (1918)?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.timeline.4",
+  "provenance": {
+   "id": "prov.ist.time.timeline.4.03",
+   "kind": "item",
+   "title": "Item ist.time.timeline.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": 59,
+  "visual": {
+   "kind": "number-line",
+   "from": 1859,
+   "to": 1918,
+   "marks": [
+    1859,
+    1918
+   ]
+  }
+ },
+ {
+  "id": "item.ist.time.timeline.4.04",
+  "type": "true-false",
+  "skillId": "ist.time.timeline.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Anul 82 î.Hr. este mai vechi decât anul 44 î.Hr.",
+   "en": "The year 82 BC is older than the year 44 BC."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.timeline.4",
+  "provenance": {
+   "id": "prov.ist.time.timeline.4.04",
+   "kind": "item",
+   "title": "Item ist.time.timeline.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.time.timeline.4.05",
+  "type": "choice",
+  "skillId": "ist.time.timeline.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Care dintre aceste evenimente s-a petrecut cel mai devreme?",
+   "en": "Which of these events happened the earliest?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.timeline.4",
+  "provenance": {
+   "id": "prov.ist.time.timeline.4.05",
+   "kind": "item",
+   "title": "Item ist.time.timeline.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Unirea Principatelor Române",
+     "en": "The Union of the Romanian Principalities"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Bătălia de la Posada",
+     "en": "The Battle of Posada"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Dacia devine provincie romană",
+     "en": "Dacia becomes a Roman province"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.time.timeline.4.06",
+  "type": "number-input",
+  "skillId": "ist.time.timeline.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Independența a fost proclamată în 1877, iar Marea Unire a avut loc în 1918. Câți ani sunt între ele?",
+   "en": "Independence was proclaimed in 1877 and the Great Union took place in 1918. How many years are between them?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.timeline.4",
+  "provenance": {
+   "id": "prov.ist.time.timeline.4.06",
+   "kind": "item",
+   "title": "Item ist.time.timeline.4.06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": 41,
+  "visual": {
+   "kind": "number-line",
+   "from": 1877,
+   "to": 1918,
+   "marks": [
+    1877,
+    1918
+   ]
+  }
+ },
+ {
+  "id": "item.ist.family.local.4.01",
+  "type": "choice",
+  "skillId": "ist.family.local.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Ce arată un arbore genealogic?",
+   "en": "What does a family tree show?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.family.local.4",
+  "provenance": {
+   "id": "prov.ist.family.local.4.01",
+   "kind": "item",
+   "title": "Item ist.family.local.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "rudele unei familii",
+     "en": "the relatives of a family"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "drumurile dintr-o pădure",
+     "en": "the paths in a forest"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "vârsta copacilor",
+     "en": "the age of trees"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.family.local.4.02",
+  "type": "true-false",
+  "skillId": "ist.family.local.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Fotografiile vechi de familie ne pot arăta cum se trăia în trecut.",
+   "en": "Old family photographs can show us how people lived in the past."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.family.local.4",
+  "provenance": {
+   "id": "prov.ist.family.local.4.02",
+   "kind": "item",
+   "title": "Item ist.family.local.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.family.local.4.03",
+  "type": "sort",
+  "skillId": "ist.family.local.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Pune fiecare lucru la locul lui.",
+   "en": "Put each thing where it belongs."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.family.local.4",
+  "provenance": {
+   "id": "prov.ist.family.local.4.03",
+   "kind": "item",
+   "title": "Item ist.family.local.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "categories": [
+   {
+    "id": "fam",
+    "label": {
+     "ro": "Istoria familiei",
+     "en": "Family history"
+    }
+   },
+   {
+    "id": "com",
+    "label": {
+     "ro": "Istoria comunității locale",
+     "en": "Local community history"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "arborele genealogic",
+     "en": "the family tree"
+    },
+    "categoryId": "fam"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "poveștile bunicilor",
+     "en": "grandparents' stories"
+    },
+    "categoryId": "fam"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "monumentul din centrul localității",
+     "en": "the monument in the town centre"
+    },
+    "categoryId": "com"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "muzeul din oraș",
+     "en": "the town museum"
+    },
+    "categoryId": "com"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.dacians.4.01",
+  "type": "choice",
+  "skillId": "ist.dacians.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Cine a fost Burebista?",
+   "en": "Who was Burebista?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.dacians.4",
+  "provenance": {
+   "id": "prov.ist.dacians.4.01",
+   "kind": "item",
+   "title": "Item ist.dacians.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "un împărat roman",
+     "en": "a Roman emperor"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "un rege al dacilor",
+     "en": "a king of the Dacians"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "un domn al Moldovei",
+     "en": "a ruler of Moldavia"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.dacians.4.02",
+  "type": "choice",
+  "skillId": "ist.dacians.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Cum se numea capitala dacilor din munții Orăștiei?",
+   "en": "What was the Dacian capital in the Orăștie Mountains called?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.dacians.4",
+  "provenance": {
+   "id": "prov.ist.dacians.4.02",
+   "kind": "item",
+   "title": "Item ist.dacians.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Suceava"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Târgoviște"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Sarmizegetusa Regia"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.dacians.4.03",
+  "type": "true-false",
+  "skillId": "ist.dacians.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Dacii vorbeau limba latină înainte de venirea romanilor.",
+   "en": "The Dacians spoke Latin before the Romans came."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.dacians.4",
+  "provenance": {
+   "id": "prov.ist.dacians.4.03",
+   "kind": "item",
+   "title": "Item ist.dacians.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": false
+ },
+ {
+  "id": "item.ist.dacians.4.04",
+  "type": "match",
+  "skillId": "ist.dacians.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Potrivește fiecare nume cu ce înseamnă.",
+   "en": "Match each name with what it means."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.dacians.4",
+  "provenance": {
+   "id": "prov.ist.dacians.4.04",
+   "kind": "item",
+   "title": "Item ist.dacians.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Sarmizegetusa Regia"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "capitala dacilor din munți",
+      "en": "the Dacian capital in the mountains"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Zalmoxis"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "zeul în care credeau dacii",
+      "en": "the god the Dacians believed in"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Burebista"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "rege dac din secolul I î.Hr.",
+      "en": "a Dacian king of the 1st century BC"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Traian"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "împărat roman",
+      "en": "a Roman emperor"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.dacians.4.05",
+  "type": "choice",
+  "skillId": "ist.dacians.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "În ce secol a trăit Burebista?",
+   "en": "In which century did Burebista live?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.dacians.4",
+  "provenance": {
+   "id": "prov.ist.dacians.4.05",
+   "kind": "item",
+   "title": "Item ist.dacians.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "secolul I î.Hr.",
+     "en": "the 1st century BC"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "secolul I d.Hr.",
+     "en": "the 1st century AD"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "secolul al II-lea î.Hr.",
+     "en": "the 2nd century BC"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.romans.4.01",
+  "type": "choice",
+  "skillId": "ist.romans.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Cine a condus armata romană în războaiele cu dacii?",
+   "en": "Who led the Roman army in the wars against the Dacians?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romans.4",
+  "provenance": {
+   "id": "prov.ist.romans.4.01",
+   "kind": "item",
+   "title": "Item ist.romans.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "regele Burebista",
+     "en": "King Burebista"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "împăratul Traian",
+     "en": "Emperor Trajan"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "domnul Ștefan cel Mare",
+     "en": "the ruler Stephen the Great"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.romans.4.02",
+  "type": "true-false",
+  "skillId": "ist.romans.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Dacia a devenit provincie romană în anul 106.",
+   "en": "Dacia became a Roman province in the year 106."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romans.4",
+  "provenance": {
+   "id": "prov.ist.romans.4.02",
+   "kind": "item",
+   "title": "Item ist.romans.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.romans.4.03",
+  "type": "choice",
+  "skillId": "ist.romans.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Ce monument din Roma arată scene din războaiele cu dacii?",
+   "en": "Which monument in Rome shows scenes from the wars against the Dacians?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romans.4",
+  "provenance": {
+   "id": "prov.ist.romans.4.03",
+   "kind": "item",
+   "title": "Item ist.romans.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Turnul Eiffel",
+     "en": "The Eiffel Tower"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Colosseumul",
+     "en": "The Colosseum"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Columna lui Traian",
+     "en": "Trajan's Column"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.romans.4.04",
+  "type": "order",
+  "skillId": "ist.romans.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Pune evenimentele în ordine cronologică, de la cel mai vechi la cel mai nou.",
+   "en": "Put the events in chronological order, from the oldest to the newest."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romans.4",
+  "provenance": {
+   "id": "prov.ist.romans.4.04",
+   "kind": "item",
+   "title": "Item ist.romans.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "cards": [
+   {
+    "id": "e2",
+    "text": {
+     "ro": "Începe primul război dintre daci și romani",
+     "en": "The first war between Dacians and Romans begins"
+    }
+   },
+   {
+    "id": "e4",
+    "text": {
+     "ro": "Columna lui Traian este inaugurată la Roma",
+     "en": "Trajan's Column is inaugurated in Rome"
+    }
+   },
+   {
+    "id": "e1",
+    "text": {
+     "ro": "Burebista începe să conducă dacii",
+     "en": "Burebista begins to rule the Dacians"
+    }
+   },
+   {
+    "id": "e3",
+    "text": {
+     "ro": "Dacia devine provincie romană",
+     "en": "Dacia becomes a Roman province"
+    }
+   }
+  ],
+  "correctOrder": [
+   "e1",
+   "e2",
+   "e3",
+   "e4"
+  ]
+ },
+ {
+  "id": "item.ist.romans.4.05",
+  "type": "choice",
+  "skillId": "ist.romans.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Cine a proiectat podul peste Dunăre pentru armata romană?",
+   "en": "Who designed the bridge over the Danube for the Roman army?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romans.4",
+  "provenance": {
+   "id": "prov.ist.romans.4.05",
+   "kind": "item",
+   "title": "Item ist.romans.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Apolodor din Damasc",
+     "en": "Apollodorus of Damascus"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Decebal"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Burebista"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.romans.4.06",
+  "type": "sort",
+  "skillId": "ist.romans.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Pune fiecare lucru la locul lui.",
+   "en": "Put each thing where it belongs."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romans.4",
+  "provenance": {
+   "id": "prov.ist.romans.4.06",
+   "kind": "item",
+   "title": "Item ist.romans.4.06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "categories": [
+   {
+    "id": "dac",
+    "label": {
+     "ro": "Daci",
+     "en": "Dacians"
+    }
+   },
+   {
+    "id": "rom",
+    "label": {
+     "ro": "Romani",
+     "en": "Romans"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Sarmizegetusa Regia"
+    },
+    "categoryId": "dac"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Zalmoxis"
+    },
+    "categoryId": "dac"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "limba latină",
+     "en": "the Latin language"
+    },
+    "categoryId": "rom"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Columna lui Traian",
+     "en": "Trajan's Column"
+    },
+    "categoryId": "rom"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.formation.4.01",
+  "type": "choice",
+  "skillId": "ist.formation.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Din ce limbă vine limba română?",
+   "en": "Which language does Romanian come from?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.formation.4",
+  "provenance": {
+   "id": "prov.ist.formation.4.01",
+   "kind": "item",
+   "title": "Item ist.formation.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "din chineză",
+     "en": "from Chinese"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "din latină",
+     "en": "from Latin"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "din engleză",
+     "en": "from English"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.formation.4.02",
+  "type": "true-false",
+  "skillId": "ist.formation.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Româna este înrudită cu italiana, franceza și spaniola.",
+   "en": "Romanian is related to Italian, French and Spanish."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.formation.4",
+  "provenance": {
+   "id": "prov.ist.formation.4.02",
+   "kind": "item",
+   "title": "Item ist.formation.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.formation.4.03",
+  "type": "fill-gap",
+  "skillId": "ist.formation.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Completează propoziția.",
+   "en": "Complete the sentence."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.formation.4",
+  "provenance": {
+   "id": "prov.ist.formation.4.03",
+   "kind": "item",
+   "title": "Item ist.formation.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "template": {
+   "ro": "Poporul român s-a format din daci și {{gap}}.",
+   "en": "The Romanian people formed from Dacians and {{gap}}."
+  },
+  "options": [
+   "romani",
+   "greci",
+   "mongoli"
+  ],
+  "correct": "romani"
+ },
+ {
+  "id": "item.ist.formation.4.04",
+  "type": "true-false",
+  "skillId": "ist.formation.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Numele „român” vine de la numele „roman”.",
+   "en": "The name “român” comes from the name “roman”."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.formation.4",
+  "provenance": {
+   "id": "prov.ist.formation.4.04",
+   "kind": "item",
+   "title": "Item ist.formation.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.source.4.t01",
+  "type": "read-and-answer",
+  "skillId": "ist.source.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.source.4",
+  "provenance": {
+   "id": "prov.ist.source.4.t01",
+   "kind": "item",
+   "title": "Text item.ist.source.4.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "Mara și clasa ei au vizitat muzeul orașului. Ghidul le-a arătat o monedă veche, găsită de arheologi într-o cetate. A mai arătat o scrisoare scrisă de mână și o hartă cu marginile îngălbenite. „Toate acestea sunt izvoare istorice”, a spus ghidul. „Cu ajutorul lor, istoricii află cum trăiau oamenii demult.” Mara a întrebat: „Dar o poveste cu zmei este izvor istoric?” Ghidul a zâmbit: „Povestea e frumoasă, dar nu ne dă dovezi despre ce s-a întâmplat cu adevărat.”",
+   "en": "Mara and her class visited the town museum. The guide showed them an old coin, found by archaeologists in a fortress. He also showed a handwritten letter and a map with yellowed edges. “All of these are historical sources,” said the guide. “With their help, historians find out how people lived long ago.” Mara asked: “But is a story with dragons a historical source?” The guide smiled: “The story is beautiful, but it gives us no proof of what really happened.”"
+  },
+  "questions": [
+   {
+    "id": "item.ist.source.4.t01.q1",
+    "skillId": "ist.source.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Unde au găsit arheologii moneda?",
+     "en": "Where did the archaeologists find the coin?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.source.4.t01.q1",
+     "kind": "item",
+     "title": "Question item.ist.source.4.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "într-un magazin",
+       "en": "in a shop"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "într-o cetate",
+       "en": "in a fortress"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "într-o școală nouă",
+       "en": "in a new school"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.ist.source.4.t01.q2",
+    "skillId": "ist.source.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Ghidul a spus că povestea cu zmei este un izvor istoric sigur.",
+     "en": "The guide said the story with dragons is a reliable historical source."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.source.4.t01.q2",
+     "kind": "item",
+     "title": "Question item.ist.source.4.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": false
+   },
+   {
+    "id": "item.ist.source.4.t01.q3",
+    "skillId": "ist.source.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "De ce folosesc istoricii izvoarele istorice?",
+     "en": "Why do historians use historical sources?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.source.4.t01.q3",
+     "kind": "item",
+     "title": "Question item.ist.source.4.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "ca să se joace în muzeu",
+       "en": "to play in the museum"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "ca să deseneze hărți noi",
+       "en": "to draw new maps"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "ca să afle cum trăiau oamenii demult",
+       "en": "to find out how people lived long ago"
+      }
+     }
+    ],
+    "correctId": "c"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.time.century.4.t02",
+  "type": "read-and-answer",
+  "skillId": "ist.time.century.4",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.century.4",
+  "provenance": {
+   "id": "prov.ist.time.century.4.t02",
+   "kind": "item",
+   "title": "Text item.ist.time.century.4.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "Pe peretele bisericii din satul lui Tudor este scris anul 1782. Învățătoarea i-a explicat că anul 1782 face parte din secolul al XVIII-lea, pentru că acest secol cuprinde anii de la 1701 la 1800. Tudor a găsit apoi în cimitir o piatră veche, cu anul 1699. „Aceasta este din secolul al XVII-lea”, a spus el. Învățătoarea a încuviințat: „Corect! Secolul al XVII-lea cuprinde anii de la 1601 la 1700.”",
+   "en": "On the wall of the church in Tudor's village the year 1782 is written. The teacher explained that the year 1782 belongs to the 18th century, because this century covers the years from 1701 to 1800. Then Tudor found an old stone in the cemetery with the year 1699. “This is from the 17th century,” he said. The teacher nodded: “Correct! The 17th century covers the years from 1601 to 1700.”"
+  },
+  "questions": [
+   {
+    "id": "item.ist.time.century.4.t02.q1",
+    "skillId": "ist.time.century.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "În ce secol se află anul 1782?",
+     "en": "Which century does the year 1782 belong to?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.time.century.4.t02.q1",
+     "kind": "item",
+     "title": "Question item.ist.time.century.4.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "secolul al XVIII-lea",
+       "en": "the 18th century"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "secolul al XVII-lea",
+       "en": "the 17th century"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "secolul al XIX-lea",
+       "en": "the 19th century"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.ist.time.century.4.t02.q2",
+    "skillId": "ist.time.century.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Anul 1699 face parte din secolul al XVII-lea.",
+     "en": "The year 1699 belongs to the 17th century."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.time.century.4.t02.q2",
+     "kind": "item",
+     "title": "Question item.ist.time.century.4.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": true
+   },
+   {
+    "id": "item.ist.time.century.4.t02.q3",
+    "skillId": "ist.time.century.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Ce ani cuprinde secolul al XVIII-lea?",
+     "en": "Which years does the 18th century cover?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.time.century.4.t02.q3",
+     "kind": "item",
+     "title": "Question item.ist.time.century.4.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "de la 1700 la 1799",
+       "en": "from 1700 to 1799"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "de la 1701 la 1800",
+       "en": "from 1701 to 1800"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "de la 1801 la 1900",
+       "en": "from 1801 to 1900"
+      }
+     }
+    ],
+    "correctId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.time.timeline.4.t03",
+  "type": "read-and-answer",
+  "skillId": "ist.time.timeline.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.timeline.4",
+  "provenance": {
+   "id": "prov.ist.time.timeline.4.t03",
+   "kind": "item",
+   "title": "Text item.ist.time.timeline.4.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "Irina a desenat o linie a timpului pe o foaie lungă. A scris la început anul 106, apoi 1330, 1600 și, la sfârșit, 1859. Sub fiecare an a lipit un bilet: „Dacia devine provincie romană”, „Bătălia de la Posada”, „Mihai Viteazul unește cele trei țări românești”, „Unirea Principatelor”. Irina a observat că evenimentele mai vechi sunt în stânga, iar cele mai noi în dreapta.",
+   "en": "Irina drew a timeline on a long sheet of paper. At the start she wrote the year 106, then 1330, 1600 and, at the end, 1859. Under each year she stuck a note: “Dacia becomes a Roman province”, “The Battle of Posada”, “Michael the Brave unites the three Romanian lands”, “The Union of the Principalities”. Irina noticed that the older events are on the left and the newest on the right."
+  },
+  "questions": [
+   {
+    "id": "item.ist.time.timeline.4.t03.q1",
+    "skillId": "ist.time.timeline.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Care este cel mai vechi eveniment de pe linia Irinei?",
+     "en": "Which is the oldest event on Irina's timeline?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.time.timeline.4.t03.q1",
+     "kind": "item",
+     "title": "Question item.ist.time.timeline.4.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Bătălia de la Posada",
+       "en": "The Battle of Posada"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "Unirea Principatelor",
+       "en": "The Union of the Principalities"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Dacia devine provincie romană",
+       "en": "Dacia becomes a Roman province"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.ist.time.timeline.4.t03.q2",
+    "skillId": "ist.time.timeline.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Bătălia de la Posada a avut loc după unirea lui Mihai Viteazul.",
+     "en": "The Battle of Posada took place after the union of Michael the Brave."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.time.timeline.4.t03.q2",
+     "kind": "item",
+     "title": "Question item.ist.time.timeline.4.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": false
+   },
+   {
+    "id": "item.ist.time.timeline.4.t03.q3",
+    "skillId": "ist.time.timeline.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Câți ani sunt între 1600 și 1859?",
+     "en": "How many years are between 1600 and 1859?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.time.timeline.4.t03.q3",
+     "kind": "item",
+     "title": "Question item.ist.time.timeline.4.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "259"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "159"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "359"
+      }
+     }
+    ],
+    "correctId": "a"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.family.local.4.t04",
+  "type": "read-and-answer",
+  "skillId": "ist.family.local.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.family.local.4",
+  "provenance": {
+   "id": "prov.ist.family.local.4.t04",
+   "kind": "item",
+   "title": "Text item.ist.family.local.4.t04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "Bunica Elena a scos din dulap o cutie cu fotografii. Într-una apărea bunicul ei, cu o căciulă de blană, în fața unei case din sat. „Acesta este străbunicul tău”, i-a spus ea lui Matei. Apoi i-a arătat un arbore genealogic desenat pe o coală mare: părinții, bunicii și străbunicii erau scriși pe rânduri, ca frunzele pe ramuri. Matei a hotărât să întrebe și vecinii mai în vârstă despre istoria satului.",
+   "en": "Grandmother Elena took a box of photographs out of the cupboard. In one of them her grandfather appeared, wearing a fur hat, in front of a house in the village. “This is your great-grandfather,” she told Matei. Then she showed him a family tree drawn on a large sheet: parents, grandparents and great-grandparents were written in rows, like leaves on branches. Matei decided to ask the older neighbours about the history of the village too."
+  },
+  "questions": [
+   {
+    "id": "item.ist.family.local.4.t04.q1",
+    "skillId": "ist.family.local.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Cine apărea în fotografia veche?",
+     "en": "Who appeared in the old photograph?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.family.local.4.t04.q1",
+     "kind": "item",
+     "title": "Question item.ist.family.local.4.t04.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "profesorul lui Matei",
+       "en": "Matei's teacher"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "străbunicul lui Matei",
+       "en": "Matei's great-grandfather"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "un vecin mai tânăr",
+       "en": "a younger neighbour"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.ist.family.local.4.t04.q2",
+    "skillId": "ist.family.local.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Arborele genealogic arăta rudele familiei.",
+     "en": "The family tree showed the relatives of the family."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.family.local.4.t04.q2",
+     "kind": "item",
+     "title": "Question item.ist.family.local.4.t04.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": true
+   },
+   {
+    "id": "item.ist.family.local.4.t04.q3",
+    "skillId": "ist.family.local.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Ce a hotărât Matei să facă?",
+     "en": "What did Matei decide to do?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.family.local.4.t04.q3",
+     "kind": "item",
+     "title": "Question item.ist.family.local.4.t04.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "să arunce fotografiile",
+       "en": "to throw away the photographs"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "să deseneze o hartă a lumii",
+       "en": "to draw a map of the world"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "să întrebe vecinii mai în vârstă despre istoria satului",
+       "en": "to ask the older neighbours about the history of the village"
+      }
+     }
+    ],
+    "correctId": "c"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.dacians.4.t05",
+  "type": "read-and-answer",
+  "skillId": "ist.dacians.4",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.dacians.4",
+  "provenance": {
+   "id": "prov.ist.dacians.4.t05",
+   "kind": "item",
+   "title": "Text item.ist.dacians.4.t05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "Pe vârfurile munților Orăștiei, dacii au construit cetăți din piatră. Cea mai importantă era Sarmizegetusa Regia, capitala lor. Acolo se aflau case, ateliere și locuri pentru sărbători. Dacii erau buni meșteșugari: lucrau fierul, argintul și aurul. Pe pământurile din vale cultivau grâu și creșteau oi și vite. Regele Burebista a unit triburile dace într-un stat puternic, în secolul I î.Hr.",
+   "en": "On the peaks of the Orăștie Mountains, the Dacians built fortresses of stone. The most important was Sarmizegetusa Regia, their capital. There were houses, workshops and places for festivals. The Dacians were skilled craftsmen: they worked iron, silver and gold. On the lands in the valley they grew wheat and raised sheep and cattle. King Burebista united the Dacian tribes into a strong state in the 1st century BC."
+  },
+  "questions": [
+   {
+    "id": "item.ist.dacians.4.t05.q1",
+    "skillId": "ist.dacians.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Unde se afla Sarmizegetusa Regia?",
+     "en": "Where was Sarmizegetusa Regia?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.dacians.4.t05.q1",
+     "kind": "item",
+     "title": "Question item.ist.dacians.4.t05.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "în munții Orăștiei",
+       "en": "in the Orăștie Mountains"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "lângă Marea Neagră",
+       "en": "near the Black Sea"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "în Delta Dunării",
+       "en": "in the Danube Delta"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.ist.dacians.4.t05.q2",
+    "skillId": "ist.dacians.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Ce metale lucrau dacii?",
+     "en": "Which metals did the Dacians work?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.dacians.4.t05.q2",
+     "kind": "item",
+     "title": "Question item.ist.dacians.4.t05.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "numai plumbul",
+       "en": "only lead"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "fierul, argintul și aurul",
+       "en": "iron, silver and gold"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "niciun metal",
+       "en": "no metal at all"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.ist.dacians.4.t05.q3",
+    "skillId": "ist.dacians.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Burebista a trăit în secolul I d.Hr.",
+     "en": "Burebista lived in the 1st century AD."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.dacians.4.t05.q3",
+     "kind": "item",
+     "title": "Question item.ist.dacians.4.t05.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "item.ist.romans.4.t06",
+  "type": "read-and-answer",
+  "skillId": "ist.romans.4",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romans.4",
+  "provenance": {
+   "id": "prov.ist.romans.4.t06",
+   "kind": "item",
+   "title": "Text item.ist.romans.4.t06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "În anul 106, o mare parte din Dacia a devenit provincie romană. Romanii au construit drumuri și orașe. Cel mai important oraș era Ulpia Traiana Sarmizegetusa. Soldații și coloniștii vorbeau latina, iar localnicii au învățat treptat limba latină. La Roma, împăratul Traian a pus să fie ridicată o coloană înaltă, cu scene sculptate din războaiele cu dacii. Astăzi, această coloană ne ajută să aflăm cum arătau armata romană și armele dacilor.",
+   "en": "In the year 106, a large part of Dacia became a Roman province. The Romans built roads and towns. The most important town was Ulpia Traiana Sarmizegetusa. Soldiers and colonists spoke Latin, and the local people gradually learned the Latin language. In Rome, Emperor Trajan had a tall column raised, with scenes carved from the wars against the Dacians. Today this column helps us learn what the Roman army and the Dacians' weapons looked like."
+  },
+  "questions": [
+   {
+    "id": "item.ist.romans.4.t06.q1",
+    "skillId": "ist.romans.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Ce au construit romanii în Dacia?",
+     "en": "What did the Romans build in Dacia?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.romans.4.t06.q1",
+     "kind": "item",
+     "title": "Question item.ist.romans.4.t06.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "numai biserici",
+       "en": "only churches"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "un canal până la Marea Baltică",
+       "en": "a canal to the Baltic Sea"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "drumuri și orașe",
+       "en": "roads and towns"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.ist.romans.4.t06.q2",
+    "skillId": "ist.romans.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Columna lui Traian se află la Sarmizegetusa.",
+     "en": "Trajan's Column stands at Sarmizegetusa."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.romans.4.t06.q2",
+     "kind": "item",
+     "title": "Question item.ist.romans.4.t06.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": false
+   },
+   {
+    "id": "item.ist.romans.4.t06.q3",
+    "skillId": "ist.romans.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "De ce este importantă coloana pentru istorici?",
+     "en": "Why is the column important for historians?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.romans.4.t06.q3",
+     "kind": "item",
+     "title": "Question item.ist.romans.4.t06.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "este un izvor care arată scene din războaie",
+       "en": "it is a source showing scenes from the wars"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "este o poveste cu zâne",
+       "en": "it is a story with fairies"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "este o monedă veche",
+       "en": "it is an old coin"
+      }
+     }
+    ],
+    "correctId": "a"
+   }
+  ]
+ }
+]

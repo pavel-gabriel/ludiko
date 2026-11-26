@@ -46,6 +46,19 @@
 
 - [ ] **Competence codes:** check the `competences` codes in `content/skills/**` against the official
       programa (MEM-2013, MAT-III-IV-2014, CLR-2013, LLR-III-IV-2014). All are marked "codes to verify".
+- [ ] **Phase 1D facts to review** (all *beta*):
+  - [ ] **Istorie IV:** check every date in `content/data/ist/history.json`. Especially: Burebista c. 82–44 î.Hr.,
+        Bogdan I c. 1359, the 1862 wording ("România" became official only with the 1866 Constitution),
+        Vlad Țepeș 1456–1462 only, and the legends (Negru Vodă, Dragoș and the aurochs, Bucur).
+  - [ ] **Geografie IV:** map relief zones (`public/content/media/geo/romania.svg`, simplified), Retezat
+        as the first national park in 1935, Crivățul description, recycling bin colours, the ~245 km
+        coastline, the ~19 million population.
+  - [ ] **Științe III–IV:** digestion order and wording, magnet and float/sink lists, shadow length,
+        animal groups/habitats in `src/engine/items/generators/stiinteData.ts`.
+  - [ ] **Educație civică:** read the Bucovina village story and the bullying story ("Fricosule!") for tone.
+  - [ ] **EN II/IV practice:** check the format (`docs/EXAM_PRACTICE.md`, built from press coverage
+        because edu.ro wasn't reachable) and the calificativ thresholds (Ludiko's own estimate, labelled
+        as practice).
 - [ ] **Romanian reading texts:** read the 40 texts in `content/items/rom/texts-grade*.json`. They should be
       original, natural and right for each grade.
 - [ ] **Syllable list** `content/data/rom/words.json`: spot-check the splits (pinguin is already fixed).

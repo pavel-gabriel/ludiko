@@ -1,0 +1,903 @@
+[
+  {
+    "id": "exp.geo.orient.cardinal.4",
+    "skillId": "geo.orient.cardinal.4",
+    "title": {
+      "ro": "Punctele cardinale",
+      "en": "Cardinal points"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Soarele răsare la est și apune la vest. Dacă stai cu brațul drept spre răsărit, în față ai nordul.",
+          "en": "The sun rises in the east and sets in the west. Stretch your right arm to the sunrise: north is in front of you."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌅",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cele patru puncte cardinale sunt nord, sud, est și vest. Nordul și sudul sunt opuse, la fel estul și vestul.",
+          "en": "The four cardinal points are north, south, east and west. North and south are opposite, and so are east and west."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧭",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Între ele sunt direcții intermediare: nord-est, sud-est, sud-vest și nord-vest. Busola ne arată nordul.",
+          "en": "Between them lie nord-est, sud-est, sud-vest and nord-vest. A compass shows us north."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧭",
+          "count": 1
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.orient.cardinal.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.orient.cardinal.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.orient.map.4",
+    "skillId": "geo.orient.map.4",
+    "title": {
+      "ro": "Plan, hartă, legendă, scară",
+      "en": "Plan, map, legend, scale"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Planul arată o suprafață mică, cum este sala de clasă. Harta arată o suprafață mare, cum este țara.",
+          "en": "A plan shows a small area, like a classroom. A map shows a large area, like a country."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗺️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Legenda explică semnele de pe hartă. Albastrul este pentru ape, iar maroul pentru munți.",
+          "en": "The legend explains the signs on the map. Blue is for water and brown for mountains."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Scara arată de câte ori e micșorată realitatea. Dacă 1 cm înseamnă 10 km, atunci 4 cm înseamnă 40 km.",
+          "en": "The scale tells how much smaller the map is than reality. If 1 cm means 10 km, then 4 cm means 40 km."
+        },
+        "visual": {
+          "kind": "ruler",
+          "to": 4,
+          "unit": "cm",
+          "objectEnd": 4,
+          "objectLabel": {
+            "ro": "4 cm = 40 km",
+            "en": "4 cm = 40 km"
+          }
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.orient.map.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.orient.map.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.romania.position.4",
+    "skillId": "geo.romania.position.4",
+    "title": {
+      "ro": "România pe hartă",
+      "en": "Romania on the map"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "România este o țară din Europa. Capitala ei este București.",
+          "en": "Romania is a country in Europe. Its capital is Bucharest."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Are cinci vecini: Ucraina la nord, Republica Moldova la est, Bulgaria la sud, Serbia la sud-vest și Ungaria la vest.",
+          "en": "It has five neighbours: Ukraine in the north, Moldova in the east, Bulgaria in the south, Serbia in the south-west and Hungary in the west."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Granița cu Republica Moldova urmează râul Prut, iar mare parte din granița cu Bulgaria este Dunărea. La est este Marea Neagră.",
+          "en": "The border with Moldova follows the Prut, and much of the border with Bulgaria is the Danube. The Black Sea is to the east."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.romania.position.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.romania.position.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.relief.units.4",
+    "skillId": "geo.relief.units.4",
+    "title": {
+      "ro": "Formele de relief",
+      "en": "Landforms"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Relieful înseamnă toate formele de la suprafața pământului: munți, dealuri, podișuri și câmpii.",
+          "en": "Relief means all the shapes of the land: mountains, hills, plateaus and plains."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⛰️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Munții sunt cei mai înalți și au vârfuri. Câmpiile sunt joase și aproape plane. Dealurile și podișurile sunt la mijloc.",
+          "en": "Mountains are the highest and have peaks. Plains are low and almost flat. Hills and plateaus are in between."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "În România, munții, dealurile și podișurile, și câmpiile ocupă aproape părți egale din țară.",
+          "en": "In Romania, mountains, hills and plateaus, and plains cover almost equal parts of the country."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.relief.units.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.relief.units.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.relief.carpathians.4",
+    "skillId": "geo.relief.carpathians.4",
+    "title": {
+      "ro": "Carpații",
+      "en": "The Carpathians"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Carpații formează un mare arc în mijlocul țării. Ei au trei părți: Orientali, Meridionali și Occidentali.",
+          "en": "The Carpathians form a big arc in the middle of the country. They have three parts: Eastern, Southern and Western."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Carpații Meridionali sunt cei mai înalți. Acolo este vârful Moldoveanu, cu 2544 m, cel mai înalt din România.",
+          "en": "The Southern Carpathians are the highest. There stands Moldoveanu, 2544 m, the highest peak in Romania."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Carpații Orientali sunt la est, iar Carpații Occidentali, cu Munții Apuseni, sunt la vest.",
+          "en": "The Eastern Carpathians are in the east, and the Western Carpathians, with the Apuseni, are in the west."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.relief.carpathians.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.relief.carpathians.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.relief.lowlands.4",
+    "skillId": "geo.relief.lowlands.4",
+    "title": {
+      "ro": "Dealuri, podișuri, câmpii",
+      "en": "Hills, plateaus, plains"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Subcarpații sunt dealuri la poalele Carpaților. Podișul Transilvaniei este în interiorul arcului Carpaților.",
+          "en": "The Subcarpathians are hills at the foot of the Carpathians. The Transylvanian Plateau lies inside the Carpathian arc."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Podișul Moldovei este în est, iar Podișul Dobrogei este între Dunăre și Marea Neagră.",
+          "en": "The Moldavian Plateau is in the east and the Dobruja Plateau is between the Danube and the Black Sea."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Câmpia Română este în sud, între Carpați și Dunăre. Câmpia de Vest este lângă granița cu Ungaria. Câmpiile dau grâu și porumb.",
+          "en": "The Romanian Plain is in the south, between the Carpathians and the Danube. The Western Plain is near Hungary. Plains give wheat and corn."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.relief.lowlands.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.relief.lowlands.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.rivers.4",
+    "skillId": "geo.rivers.4",
+    "title": {
+      "ro": "Râurile României",
+      "en": "Rivers of Romania"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Un râu începe la izvor, primește afluenți și se varsă într-un alt râu, într-un lac sau în mare.",
+          "en": "A river starts at its source, receives tributaries and flows into another river, a lake or the sea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Mureșul curge spre vest, iar Oltul și Argeșul curg spre sud. Siretul și Prutul curg spre sud-est.",
+          "en": "The Mureș flows west, the Olt and the Argeș flow south. The Siret and the Prut flow south-east."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Aproape toate râurile ajung în Dunăre. Oltul curge numai pe teritoriul României.",
+          "en": "Almost all rivers reach the Danube. The Olt flows only inside Romania."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.rivers.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.rivers.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.danube.delta.4",
+    "skillId": "geo.danube.delta.4",
+    "title": {
+      "ro": "Dunărea și Delta",
+      "en": "The Danube and the Delta"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Dunărea izvorăște din Germania și curge prin zece țări. În România ea formează granița cu Serbia și Bulgaria.",
+          "en": "The Danube rises in Germany and flows through ten countries. In Romania it forms the border with Serbia and Bulgaria."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "La Marea Neagră, Dunărea se desparte în trei brațe: Chilia, Sulina și Sfântu Gheorghe.",
+          "en": "At the Black Sea the Danube splits into three arms: Chilia, Sulina and Sfântu Gheorghe."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Între brațe se află Delta Dunării, o rezervație cu stuf, nuferi, pelicani și mulți pești.",
+          "en": "Between the arms lies the Danube Delta, a reserve with reeds, water lilies, pelicans and many fish."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦩",
+          "count": 1
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.danube.delta.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.danube.delta.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.blacksea.4",
+    "skillId": "geo.blacksea.4",
+    "title": {
+      "ro": "Marea Neagră",
+      "en": "The Black Sea"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Marea Neagră se află la est de România. Malul ei se numește litoral și are plaje cu nisip.",
+          "en": "The Black Sea lies east of Romania. Its shore is called the coast and has sandy beaches."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Cel mai mare port este Constanța. Aproape de el este stațiunea Mamaia.",
+          "en": "The biggest port is Constanța. Close to it is the resort Mamaia."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚓",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Litoralul este în Dobrogea. Apa mării este sărată, iar vara vin mulți turiști.",
+          "en": "The coast is in Dobruja. The sea water is salty, and many tourists come in summer."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏖️",
+          "count": 1
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.blacksea.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.blacksea.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.climate.4",
+    "skillId": "geo.climate.4",
+    "title": {
+      "ro": "Clima și anotimpurile",
+      "en": "Climate and seasons"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Vremea este starea aerului într-o zi. Clima este vremea obișnuită într-un loc, în mulți ani.",
+          "en": "Weather is the state of the air on a day. Climate is the usual weather of a place over many years."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "România are climă temperat-continentală și patru anotimpuri: primăvara, vara, toamna și iarna.",
+          "en": "Romania has a temperate-continental climate and four seasons: spring, summer, autumn and winter."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍂",
+          "count": 4
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu cât urcăm mai sus pe munte, cu atât este mai frig și plouă sau ninge mai mult. Dobrogea este cea mai secetoasă.",
+          "en": "The higher we climb, the colder it is and the more it rains or snows. Dobruja is the driest."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.climate.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.climate.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.nature.zones.4",
+    "skillId": "geo.nature.zones.4",
+    "title": {
+      "ro": "Plante și animale pe zone",
+      "en": "Plants and animals by zone"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "La munte, jos cresc păduri de fag, apoi de brad și molid. Sus sunt pajiști alpine cu floarea-de-colț.",
+          "en": "In the mountains, beech forests grow low, then fir and spruce. Higher up are alpine meadows with edelweiss."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌲",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "În pădurile Carpaților trăiesc ursul, lupul și cerbul. Pe stânci trăiește capra neagră.",
+          "en": "Bears, wolves and deer live in Carpathian forests. The chamois lives on the rocks."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐻",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "În câmpie sunt lanuri și stepă, cu iepuri și popândăi. În Deltă trăiesc pelicanii, printre stuf și nuferi.",
+          "en": "In the plains there are fields and steppe, with hares and ground squirrels. In the Delta pelicans live among reeds and water lilies."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦩",
+          "count": 1
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.nature.zones.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.nature.zones.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.people.settlements.4",
+    "skillId": "geo.people.settlements.4",
+    "title": {
+      "ro": "Sat și oraș",
+      "en": "Village and city"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "În România trăiesc aproximativ 19 milioane de oameni, în sate și în orașe.",
+          "en": "About 19 million people live in Romania, in villages and cities."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏘️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Satul are puține case cu grădini. Oamenii lucrează mai ales în agricultură, la păstorit sau pescuit.",
+          "en": "A village has few houses with gardens. People mostly work in farming, herding or fishing."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Orașul are blocuri, fabrici, magazine și școli. Orașele mari se numesc municipii.",
+          "en": "A city has blocks, factories, shops and schools. Large cities are called municipalities."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏙️",
+          "count": 1
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.people.settlements.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.people.settlements.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.counties.capital.4",
+    "skillId": "geo.counties.capital.4",
+    "title": {
+      "ro": "Județe și capitala",
+      "en": "Counties and the capital"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "România are 41 de județe. Fiecare județ are o reședință, orașul unde se află conducerea județului.",
+          "en": "Romania has 41 counties. Each county has a seat, the city where the county is run."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "București este capitala țării și cel mai mare oraș. El se află în sud, în Câmpia Română, pe râul Dâmbovița.",
+          "en": "Bucharest is the capital and the biggest city. It lies in the south, in the Romanian Plain, on the Dâmbovița river."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Cluj-Napoca, Iași, Timișoara, Constanța și Brașov sunt orașe mari, reședințe de județ.",
+          "en": "Cluj-Napoca, Iași, Timișoara, Constanța and Brașov are big cities and county seats."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.counties.capital.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.counties.capital.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geo.environment.protected.4",
+    "skillId": "geo.environment.protected.4",
+    "title": {
+      "ro": "Mediul și ariile protejate",
+      "en": "Environment and protected areas"
+    },
+    "frames": [
+      {
+        "text": {
+          "ro": "Mediul este natura din jurul nostru: aer, apă, pământ, plante și animale. Trebuie să îl ocrotim.",
+          "en": "The environment is the nature around us: air, water, soil, plants and animals. We must protect it."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ariile protejate sunt locuri ocrotite prin lege, ca parcurile naționale și Delta Dunării. Retezatul a fost primul parc național.",
+          "en": "Protected areas are places protected by law, like national parks and the Danube Delta. Retezat was the first national park."
+        },
+        "visual": {
+          "kind": "image",
+          "media": {
+            "kind": "image",
+            "src": "content/media/geo/romania.svg",
+            "alt": {
+              "ro": "Harta României cu relief, râuri, mare și vecini",
+              "en": "Map of Romania with relief, rivers, sea and neighbours"
+            },
+            "provenanceId": "data-natural-earth"
+          }
+        }
+      },
+      {
+        "text": {
+          "ro": "Noi ajutăm natura dacă nu aruncăm gunoi, colectăm selectiv, plantăm copaci și nu culegem florile rare.",
+          "en": "We help nature by not littering, sorting waste, planting trees and not picking rare flowers."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♻️",
+          "count": 1
+        }
+      }
+    ],
+    "reviewStatus": "beta",
+    "provenance": {
+      "id": "prov.exp.geo.environment.protected.4",
+      "kind": "explanation",
+      "title": "Explanation exp.geo.environment.protected.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

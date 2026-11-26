@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import type { SubjectId } from '@/engine/types'
 import type { ParentSummary } from '@/learner'
 import { isPushSupported, needsInstall } from '@/services/pushAvailability'
+import ExamEntryCard from '@/ui/exam/ExamEntryCard'
 import ProgressBar from './ProgressBar'
 import { subjectEmoji } from './subjects'
 
@@ -12,6 +13,8 @@ const RemindersCard = lazy(() => import('./RemindersCard'))
 
 interface ParentViewProps {
   profileName: string
+  /** Declared grade: II–IV profiles get the national-exam practice card */
+  profileGrade?: number
   summary: ParentSummary
   /** Kid-readable skill title for an id */
   titleOf: (skillId: string) => string
@@ -65,7 +68,7 @@ const section = 'rounded-2xl bg-white p-4 shadow-sm'
 const heading = 'text-sm font-extrabold uppercase tracking-wide text-ludiko-text/60'
 
 /** Plain-language weekly summary for adults: level statement, what improved, what is next, one tip. No charts. */
-export default function ParentView({ profileName, summary, titleOf, onRedo }: ParentViewProps) {
+export default function ParentView({ profileName, profileGrade, summary, titleOf, onRedo }: ParentViewProps) {
   const { t, i18n } = useTranslation()
   const [confirm, setConfirm] = useState<SubjectId | null>(null)
   const en = i18n.language.startsWith('en')
@@ -160,6 +163,8 @@ export default function ParentView({ profileName, summary, titleOf, onRedo }: Pa
           )}
         </section>
       ))}
+
+      <ExamEntryCard grade={profileGrade} compact />
 
       {(isPushSupported() || needsInstall()) && (
         <Suspense fallback={null}>

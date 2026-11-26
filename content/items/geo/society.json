@@ -1,0 +1,1363 @@
+[
+  {
+    "id": "item.geo.people.settlements.4.01",
+    "type": "choice",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cum se numesc localitățile mici de la țară?",
+      "en": "What are small places in the countryside called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.01",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Orașe"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Capitale"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Județe"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Sate"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.people.settlements.4.02",
+    "type": "choice",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cum se numește localitatea mare, cu blocuri, fabrici, magazine și multe școli?",
+      "en": "What is a large place with blocks, factories, shops and many schools called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.02",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Oraș"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Stână"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Sat"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Cătun"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.people.settlements.4.03",
+    "type": "choice",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Aproximativ câți locuitori are România?",
+      "en": "About how many people live in Romania?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.03",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "19 milioane"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "2 milioane"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "190 mii"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "190 milioane"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.people.settlements.4.04",
+    "type": "choice",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Care este ocupația de bază a multor oameni din sate?",
+      "en": "What is the main occupation of many village people?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.04",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Construcția de nave spațiale"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Minerit de diamante"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Agricultura"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Pescuitul în ocean"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.people.settlements.4.05",
+    "type": "choice",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Ce ocupație tradițională au mulți oameni din munți?",
+      "en": "Which traditional occupation do many mountain people have?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.05",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Cultivarea orezului"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Creșterea oilor"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Cultivarea bananelor"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Pescuitul pe mare"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.people.settlements.4.06",
+    "type": "choice",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Ce ocupație au mulți locuitori din Delta Dunării?",
+      "en": "Which occupation do many people in the Danube Delta have?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.06",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Pescuitul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Cultivarea ananasului"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Mineritul"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Creșterea oilor în munți"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.people.settlements.4.07",
+    "type": "sort",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Sat sau oraș? Sortează.",
+      "en": "Village or city? Sort."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.07",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "categories": [
+      {
+        "id": "k1",
+        "label": {
+          "ro": "Sat"
+        }
+      },
+      {
+        "id": "k2",
+        "label": {
+          "ro": "Oraș"
+        }
+      }
+    ],
+    "cards": [
+      {
+        "id": "c4",
+        "text": {
+          "ro": "puțini locuitori"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c3",
+        "text": {
+          "ro": "tramvai"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c1",
+        "text": {
+          "ro": "gospodării cu grădină și animale"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c5",
+        "text": {
+          "ro": "fabrici"
+        },
+        "categoryId": "k2"
+      },
+      {
+        "id": "c6",
+        "text": {
+          "ro": "fânețe și livezi"
+        },
+        "categoryId": "k1"
+      },
+      {
+        "id": "c2",
+        "text": {
+          "ro": "blocuri înalte"
+        },
+        "categoryId": "k2"
+      }
+    ]
+  },
+  {
+    "id": "item.geo.people.settlements.4.08",
+    "type": "true-false",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "O comună este formată din unul sau mai multe sate.",
+      "en": "A commune consists of one or more villages."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.08",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.people.settlements.4.09",
+    "type": "true-false",
+    "skillId": "geo.people.settlements.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Municipiile sunt orașe mari.",
+      "en": "A municipality is a large city."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.people.settlements.4",
+    "provenance": {
+      "id": "prov.item.geo.people.settlements.4.09",
+      "kind": "item",
+      "title": "Item item.geo.people.settlements.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.counties.capital.4.07",
+    "type": "choice",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care este capitala României?",
+      "en": "What is the capital of Romania?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.07",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Constanța"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Iași"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Cluj-Napoca"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "București"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.counties.capital.4.08",
+    "type": "number-input",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Câte județe are România (fără municipiul București)?",
+      "en": "How many counties does Romania have (not counting Bucharest)?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.08",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": 41
+  },
+  {
+    "id": "item.geo.counties.capital.4.09",
+    "type": "choice",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Care râu străbate București?",
+      "en": "Which river flows through Bucharest?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.09",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Someș"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Mureș"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Dâmbovița"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Prut"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.counties.capital.4.10",
+    "type": "choice",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Care este reședința județului Dolj?",
+      "en": "What is the seat of Dolj county?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.10",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Oradea"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Craiova"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Deva"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Pitești"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.counties.capital.4.11",
+    "type": "choice",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "În ce regiune istorică se află Timișoara?",
+      "en": "In which historical region is Timișoara?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.11",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Dobrogea"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Banat"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Moldova"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Oltenia"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.counties.capital.4.12",
+    "type": "true-false",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "București se află în sudul țării, în Câmpia Română.",
+      "en": "Bucharest is in the south of the country, in the Romanian Plain."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.12",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.12",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.counties.capital.4.13",
+    "type": "true-false",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "București se află pe malul Dunării.",
+      "en": "Bucharest lies on the bank of the Danube."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.13",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.13",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": false
+  },
+  {
+    "id": "item.geo.counties.capital.4.14",
+    "type": "match",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Potrivește județul cu reședința lui.",
+      "en": "Match each county with its seat."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.14",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.14",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Dolj"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Craiova"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Bihor"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Oradea"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Suceava"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Suceava"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Prahova"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Ploiești"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.counties.capital.4.15",
+    "type": "match",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Potrivește județul cu reședința lui.",
+      "en": "Match each county with its seat."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.15",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.15",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Argeș"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Pitești"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Mureș"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Târgu Mureș"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Neamț"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Piatra Neamț"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Maramureș"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Baia Mare"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.counties.capital.4.16",
+    "type": "match",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Potrivește orașul cu regiunea istorică.",
+      "en": "Match each city with its historical region."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.16",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.16",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Constanța"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Dobrogea"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Cluj-Napoca"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Transilvania"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Iași"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Moldova"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Craiova"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Oltenia"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.romania.position.4.02",
+    "type": "choice",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Pe ce continent se află România?",
+      "en": "On which continent is Romania?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.02",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Africa"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Europa"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "America de Nord"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Asia"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.romania.position.4.03",
+    "type": "choice",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Cu ce țară se învecinează România la nord?",
+      "en": "Which country is north of Romania?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.03",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Ungaria"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Bulgaria"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Ucraina"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Serbia"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.romania.position.4.04",
+    "type": "choice",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Cu ce țară se învecinează România la sud?",
+      "en": "Which country is south of Romania?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.04",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Bulgaria"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Serbia"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Ungaria"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Ucraina"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.romania.position.4.05",
+    "type": "choice",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Cu ce țară se învecinează România la vest?",
+      "en": "Which country is west of Romania?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.05",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Bulgaria"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Ucraina"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Republica Moldova"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Ungaria"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.romania.position.4.06",
+    "type": "choice",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Care dintre aceste țări NU se învecinează cu România?",
+      "en": "Which of these countries does NOT border Romania?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.06",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Ungaria"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Bulgaria"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Polonia"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Serbia"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.romania.position.4.07",
+    "type": "match",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Potrivește țara vecină cu direcția în care se află față de România.",
+      "en": "Match each neighbour with its direction."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.07",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Ucraina"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "nord"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Bulgaria"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "sud"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Ungaria"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "vest"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Republica Moldova"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "est"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.romania.position.4.08",
+    "type": "number-input",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Câți vecini la uscat are România?",
+      "en": "How many land neighbours does Romania have?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.08",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": 5
+  },
+  {
+    "id": "item.geo.romania.position.4.09",
+    "type": "choice",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Ce râu formează o mare parte din granița de sud a României?",
+      "en": "Which river forms much of Romania's southern border?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.09",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Oltul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Siretul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Dunărea"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Mureșul"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.romania.position.4.10",
+    "type": "true-false",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Granița României cu Republica Moldova urmează în mare parte râul Prut.",
+      "en": "The border with Moldova mostly follows the Prut."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.10",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.romania.position.4.11",
+    "type": "true-false",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Marea Neagră se află la vestul României.",
+      "en": "The Black Sea is west of Romania."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.11",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": false
+  },
+  {
+    "id": "item.geo.romania.position.4.12",
+    "type": "true-false",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "România este o țară din Europa.",
+      "en": "Romania is a country in Europe."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.12",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.12",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  }
+]

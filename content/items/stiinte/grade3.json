@@ -1,0 +1,2070 @@
+[
+  {
+    "id": "item.stiinte.plants.parts.1",
+    "skillId": "stiinte.plants.parts",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce parte a plantei absoarbe apa din pământ?",
+      "en": "Which part of a plant takes in water from the soil?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.plants.parts",
+    "provenance": {
+      "id": "prov.item.stiinte.plants.parts.1",
+      "kind": "item",
+      "title": "Item item.stiinte.plants.parts.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "rădăcina"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "frunza"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "floarea"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.plants.parts.2",
+    "skillId": "stiinte.plants.parts",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Tulpina susține planta.",
+      "en": "True or false? The stem holds the plant up."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.plants.parts",
+    "provenance": {
+      "id": "prov.item.stiinte.plants.parts.2",
+      "kind": "item",
+      "title": "Item item.stiinte.plants.parts.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.plants.parts.3",
+    "skillId": "stiinte.plants.parts",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Frunzele plantelor se află, de obicei, sub pământ.",
+      "en": "True or false? The leaves of plants are usually under the ground."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.plants.parts",
+    "provenance": {
+      "id": "prov.item.stiinte.plants.parts.3",
+      "kind": "item",
+      "title": "Item item.stiinte.plants.parts.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.plants.parts.4",
+    "skillId": "stiinte.plants.parts",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Din ce parte a plantei se formează fructul?",
+      "en": "Which part of a plant forms the fruit?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.plants.parts",
+    "provenance": {
+      "id": "prov.item.stiinte.plants.parts.4",
+      "kind": "item",
+      "title": "Item item.stiinte.plants.parts.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "din rădăcină"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "din floare"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "din tulpină"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.plants.needs.1",
+    "skillId": "stiinte.plants.needs",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce are nevoie o plantă ca să crească?",
+      "en": "What does a plant need to grow?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.plants.needs",
+    "provenance": {
+      "id": "prov.item.stiinte.plants.needs.1",
+      "kind": "item",
+      "title": "Item item.stiinte.plants.needs.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "apă, lumină, aer și căldură"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "doar lumină"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "doar apă"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.plants.needs.2",
+    "skillId": "stiinte.plants.needs",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? O plantă ținută mereu în întuneric crește sănătoasă.",
+      "en": "True or false? A plant kept in the dark all the time grows healthy."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.plants.needs",
+    "provenance": {
+      "id": "prov.item.stiinte.plants.needs.2",
+      "kind": "item",
+      "title": "Item item.stiinte.plants.needs.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.plants.needs.3",
+    "skillId": "stiinte.plants.needs",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Plantele au nevoie de apă.",
+      "en": "True or false? Plants need water."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.plants.needs",
+    "provenance": {
+      "id": "prov.item.stiinte.plants.needs.3",
+      "kind": "item",
+      "title": "Item item.stiinte.plants.needs.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.plants.needs.4",
+    "skillId": "stiinte.plants.needs",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce se întâmplă cu o floare care nu este udată mult timp?",
+      "en": "What happens to a flower that is not watered for a long time?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.plants.needs",
+    "provenance": {
+      "id": "prov.item.stiinte.plants.needs.4",
+      "kind": "item",
+      "title": "Item item.stiinte.plants.needs.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "crește mai mare"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "se ofilește"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "face mai multe flori"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.plants.needs.5",
+    "skillId": "stiinte.plants.needs",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.plants.needs",
+    "provenance": {
+      "id": "prov.item.stiinte.plants.needs.5",
+      "kind": "item",
+      "title": "Item item.stiinte.plants.needs.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "passage": {
+      "ro": "Ioana a pus o sămânță de fasole într-un borcan, pe un șervețel ud. Borcanul a stat pe pervaz, la lumină. După câteva zile, sămânța a crăpat și a apărut o rădăcină mică. Apoi a crescut un lăstar cu două frunzulițe. Ioana a udat planta în fiecare zi. Planta a crescut mare și verde."
+    },
+    "type": "read-and-answer",
+    "questions": [
+      {
+        "id": "item.stiinte.plants.needs.5.q1",
+        "skillId": "stiinte.plants.needs",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Unde a pus Ioana sămânța?",
+          "en": "Where did Ioana put the seed?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.plants.needs.5.q1",
+          "kind": "item",
+          "title": "Item item.stiinte.plants.needs.5.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "într-un borcan, pe un șervețel ud"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "direct în nisip uscat"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "într-un dulap"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.stiinte.plants.needs.5.q2",
+        "skillId": "stiinte.plants.needs",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Ce a apărut primul din sămânță?",
+          "en": "What appeared first from the seed?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.plants.needs.5.q2",
+          "kind": "item",
+          "title": "Item item.stiinte.plants.needs.5.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "floarea"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "rădăcina"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "fructul"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.stiinte.plants.needs.5.q3",
+        "skillId": "stiinte.plants.needs",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Adevărat sau fals? Ioana a ținut borcanul într-un dulap întunecos.",
+          "en": "True or false? Ioana kept the jar in a dark cupboard."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.plants.needs.5.q3",
+          "kind": "item",
+          "title": "Item item.stiinte.plants.needs.5.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "true-false",
+        "correct": false
+      },
+      {
+        "id": "item.stiinte.plants.needs.5.q4",
+        "skillId": "stiinte.plants.needs",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "De ce a crescut planta mare?",
+          "en": "Why did the plant grow big?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.plants.needs.5.q4",
+          "kind": "item",
+          "title": "Item item.stiinte.plants.needs.5.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "a primit apă și lumină"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "a stat în întuneric"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "nu a primit apă"
+            }
+          }
+        ],
+        "correctId": "a"
+      }
+    ]
+  },
+  {
+    "id": "item.stiinte.animals.groups.1",
+    "skillId": "stiinte.animals.groups",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Adevărat sau fals? Liliacul este o pasăre, pentru că zboară.",
+      "en": "True or false? The bat is a bird because it flies."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.animals.groups",
+    "provenance": {
+      "id": "prov.item.stiinte.animals.groups.1",
+      "kind": "item",
+      "title": "Item item.stiinte.animals.groups.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.animals.groups.2",
+    "skillId": "stiinte.animals.groups",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Adevărat sau fals? Balena este un pește.",
+      "en": "True or false? The whale is a fish."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.animals.groups",
+    "provenance": {
+      "id": "prov.item.stiinte.animals.groups.2",
+      "kind": "item",
+      "title": "Item item.stiinte.animals.groups.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.animals.groups.3",
+    "skillId": "stiinte.animals.groups",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce au toate păsările?",
+      "en": "What do all birds have?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.animals.groups",
+    "provenance": {
+      "id": "prov.item.stiinte.animals.groups.3",
+      "kind": "item",
+      "title": "Item item.stiinte.animals.groups.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "pene"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "blană"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "solzi"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.animals.groups.4",
+    "skillId": "stiinte.animals.groups",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce acoperă, de obicei, corpul unui pește?",
+      "en": "What usually covers the body of a fish?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.animals.groups",
+    "provenance": {
+      "id": "prov.item.stiinte.animals.groups.4",
+      "kind": "item",
+      "title": "Item item.stiinte.animals.groups.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "pene"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "solzi"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "blană"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.animals.groups.5",
+    "skillId": "stiinte.animals.groups",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Câte picioare are o insectă?",
+      "en": "How many legs does an insect have?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.animals.groups",
+    "provenance": {
+      "id": "prov.item.stiinte.animals.groups.5",
+      "kind": "item",
+      "title": "Item item.stiinte.animals.groups.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "number-input",
+    "correct": 6
+  },
+  {
+    "id": "item.stiinte.animals.young.1",
+    "skillId": "stiinte.animals.young",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Puii mamiferelor se hrănesc la început cu laptele mamei.",
+      "en": "True or false? Baby mammals first feed on their mother's milk."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.animals.young",
+    "provenance": {
+      "id": "prov.item.stiinte.animals.young.1",
+      "kind": "item",
+      "title": "Item item.stiinte.animals.young.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.animals.young.2",
+    "skillId": "stiinte.animals.young",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Puii de găină ies din ouă.",
+      "en": "True or false? Chicks hatch from eggs."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.animals.young",
+    "provenance": {
+      "id": "prov.item.stiinte.animals.young.2",
+      "kind": "item",
+      "title": "Item item.stiinte.animals.young.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.animals.young.3",
+    "skillId": "stiinte.animals.young",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Care animal NU iese dintr-un ou?",
+      "en": "Which animal does NOT hatch from an egg?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.animals.young",
+    "provenance": {
+      "id": "prov.item.stiinte.animals.young.3",
+      "kind": "item",
+      "title": "Item item.stiinte.animals.young.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "găina"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "rața"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "pisica"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.stiinte.habitat.1",
+    "skillId": "stiinte.habitat",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Adevărat sau fals? Cămila poate trece mai multe zile fără să bea apă.",
+      "en": "True or false? A camel can go several days without drinking."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.habitat",
+    "provenance": {
+      "id": "prov.item.stiinte.habitat.1",
+      "kind": "item",
+      "title": "Item item.stiinte.habitat.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.habitat.2",
+    "skillId": "stiinte.habitat",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Care animal trăiește în apă toată viața?",
+      "en": "Which animal lives in water all its life?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.habitat",
+    "provenance": {
+      "id": "prov.item.stiinte.habitat.2",
+      "kind": "item",
+      "title": "Item item.stiinte.habitat.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "peștele"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "cerbul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "ursul"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.habitat.3",
+    "skillId": "stiinte.habitat",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Ursul brun trăiește în pădure.",
+      "en": "True or false? The brown bear lives in the forest."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.habitat",
+    "provenance": {
+      "id": "prov.item.stiinte.habitat.3",
+      "kind": "item",
+      "title": "Item item.stiinte.habitat.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.body.senses.1",
+    "skillId": "stiinte.body.senses",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Cu ce simț recunoaștem mirosul unei flori?",
+      "en": "Which sense do we use to smell a flower?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.body.senses",
+    "provenance": {
+      "id": "prov.item.stiinte.body.senses.1",
+      "kind": "item",
+      "title": "Item item.stiinte.body.senses.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "cu văzul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "cu mirosul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "cu auzul"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.body.senses.2",
+    "skillId": "stiinte.body.senses",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Pielea ne ajută să simțim cald și rece.",
+      "en": "True or false? The skin helps us feel hot and cold."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.body.senses",
+    "provenance": {
+      "id": "prov.item.stiinte.body.senses.2",
+      "kind": "item",
+      "title": "Item item.stiinte.body.senses.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.body.senses.3",
+    "skillId": "stiinte.body.senses",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce simț folosim când ascultăm muzica?",
+      "en": "Which sense do we use to listen to music?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.body.senses",
+    "provenance": {
+      "id": "prov.item.stiinte.body.senses.3",
+      "kind": "item",
+      "title": "Item item.stiinte.body.senses.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "gustul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "auzul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "pipăitul"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.body.hygiene.1",
+    "skillId": "stiinte.body.hygiene",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Ne spălăm pe mâini înainte de masă.",
+      "en": "True or false? We wash our hands before a meal."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.body.hygiene",
+    "provenance": {
+      "id": "prov.item.stiinte.body.hygiene.1",
+      "kind": "item",
+      "title": "Item item.stiinte.body.hygiene.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.body.hygiene.2",
+    "skillId": "stiinte.body.hygiene",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Când este bine să ne spălăm pe dinți?",
+      "en": "When is it good to brush our teeth?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.body.hygiene",
+    "provenance": {
+      "id": "prov.item.stiinte.body.hygiene.2",
+      "kind": "item",
+      "title": "Item item.stiinte.body.hygiene.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "doar o dată pe săptămână"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "dimineața și seara"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "niciodată"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.body.hygiene.3",
+    "skillId": "stiinte.body.hygiene",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Somnul ajută corpul să se odihnească.",
+      "en": "True or false? Sleep helps the body rest."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.body.hygiene",
+    "provenance": {
+      "id": "prov.item.stiinte.body.hygiene.3",
+      "kind": "item",
+      "title": "Item item.stiinte.body.hygiene.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.body.hygiene.4",
+    "skillId": "stiinte.body.hygiene",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce facem după ce folosim toaleta?",
+      "en": "What do we do after using the toilet?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.body.hygiene",
+    "provenance": {
+      "id": "prov.item.stiinte.body.hygiene.4",
+      "kind": "item",
+      "title": "Item item.stiinte.body.hygiene.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "ne spălăm pe mâini cu apă și săpun"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "ne ștergem mâinile pe haine"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "nu facem nimic"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.body.hygiene.5",
+    "skillId": "stiinte.body.hygiene",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.body.hygiene",
+    "provenance": {
+      "id": "prov.item.stiinte.body.hygiene.5",
+      "kind": "item",
+      "title": "Item item.stiinte.body.hygiene.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "passage": {
+      "ro": "Dinții ne ajută să mușcăm și să mestecăm mâncarea. Copiii au întâi dinți de lapte. Mai târziu, aceștia cad și cresc dinți noi, definitivi. Dinții definitivi trebuie să ne țină toată viața. De aceea ne spălăm pe dinți de două ori pe zi, cu pastă și periuță. Mergem la dentist pentru control. Dulciurile multe strică dinții."
+    },
+    "type": "read-and-answer",
+    "questions": [
+      {
+        "id": "item.stiinte.body.hygiene.5.q1",
+        "skillId": "stiinte.body.hygiene",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Ce dinți apar primii la copii?",
+          "en": "Which teeth appear first in children?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.body.hygiene.5.q1",
+          "kind": "item",
+          "title": "Item item.stiinte.body.hygiene.5.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "dinții de lapte"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "dinții definitivi"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "niciunii"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.stiinte.body.hygiene.5.q2",
+        "skillId": "stiinte.body.hygiene",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Adevărat sau fals? Dinții definitivi cresc la loc de câte ori cad.",
+          "en": "True or false? Permanent teeth grow back every time they fall out."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.body.hygiene.5.q2",
+          "kind": "item",
+          "title": "Item item.stiinte.body.hygiene.5.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "true-false",
+        "correct": false
+      },
+      {
+        "id": "item.stiinte.body.hygiene.5.q3",
+        "skillId": "stiinte.body.hygiene",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "De câte ori pe zi ne spălăm pe dinți?",
+          "en": "How many times a day do we brush our teeth?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.body.hygiene.5.q3",
+          "kind": "item",
+          "title": "Item item.stiinte.body.hygiene.5.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "de două ori"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "o dată pe lună"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "de zece ori"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.stiinte.body.hygiene.5.q4",
+        "skillId": "stiinte.body.hygiene",
+        "difficulty": 2,
+        "prompt": {
+          "ro": "Adevărat sau fals? Dulciurile multe strică dinții.",
+          "en": "True or false? Too many sweets damage teeth."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.body.hygiene.5.q4",
+          "kind": "item",
+          "title": "Item item.stiinte.body.hygiene.5.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "true-false",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "id": "item.stiinte.matter.states.1",
+    "skillId": "stiinte.matter.states",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "În ce stare este apa dintr-un pahar?",
+      "en": "What state is the water in a glass?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.matter.states",
+    "provenance": {
+      "id": "prov.item.stiinte.matter.states.1",
+      "kind": "item",
+      "title": "Item item.stiinte.matter.states.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "solidă"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "lichidă"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "gazoasă"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.matter.states.2",
+    "skillId": "stiinte.matter.states",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Gheața este apă în stare solidă.",
+      "en": "True or false? Ice is water in a solid state."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.matter.states",
+    "provenance": {
+      "id": "prov.item.stiinte.matter.states.2",
+      "kind": "item",
+      "title": "Item item.stiinte.matter.states.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.matter.states.3",
+    "skillId": "stiinte.matter.states",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Aerul din jurul nostru este un lichid.",
+      "en": "True or false? The air around us is a liquid."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.matter.states",
+    "provenance": {
+      "id": "prov.item.stiinte.matter.states.3",
+      "kind": "item",
+      "title": "Item item.stiinte.matter.states.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.water.cycle.1",
+    "skillId": "stiinte.water.cycle",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce se întâmplă cu gheața când se topește?",
+      "en": "What happens to ice when it melts?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.water.cycle",
+    "provenance": {
+      "id": "prov.item.stiinte.water.cycle.1",
+      "kind": "item",
+      "title": "Item item.stiinte.water.cycle.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "devine apă"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "devine aer"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "devine piatră"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.water.cycle.2",
+    "skillId": "stiinte.water.cycle",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Cum se numește trecerea apei din lichid în vapori?",
+      "en": "What do we call water changing from liquid into vapour?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.water.cycle",
+    "provenance": {
+      "id": "prov.item.stiinte.water.cycle.2",
+      "kind": "item",
+      "title": "Item item.stiinte.water.cycle.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "evaporare"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "topire"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "îngheț"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.water.cycle.3",
+    "skillId": "stiinte.water.cycle",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Adevărat sau fals? Norii sunt făcuți din picături foarte mici de apă sau din cristale mici de gheață.",
+      "en": "True or false? Clouds are made of tiny drops of water or tiny ice crystals."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.water.cycle",
+    "provenance": {
+      "id": "prov.item.stiinte.water.cycle.3",
+      "kind": "item",
+      "title": "Item item.stiinte.water.cycle.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.water.cycle.4",
+    "skillId": "stiinte.water.cycle",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.water.cycle",
+    "provenance": {
+      "id": "prov.item.stiinte.water.cycle.4",
+      "kind": "item",
+      "title": "Item item.stiinte.water.cycle.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "passage": {
+      "ro": "Soarele încălzește apa din râuri, lacuri și mări. O parte din apă se transformă în vapori invizibili și urcă în aer. Sus, aerul este rece. Vaporii se răcesc și formează picături foarte mici. Multe picături la un loc fac un nor. Când picăturile devin grele, cad pe pământ ca ploaie. Apa se adună în râuri, iar drumul ei începe din nou."
+    },
+    "type": "read-and-answer",
+    "questions": [
+      {
+        "id": "item.stiinte.water.cycle.4.q1",
+        "skillId": "stiinte.water.cycle",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce încălzește apa din râuri și mări?",
+          "en": "What warms the water in rivers and seas?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.water.cycle.4.q1",
+          "kind": "item",
+          "title": "Item item.stiinte.water.cycle.4.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "Soarele"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "norii"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "vântul"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.stiinte.water.cycle.4.q2",
+        "skillId": "stiinte.water.cycle",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce fac multe picături mici la un loc?",
+          "en": "What do many tiny drops together make?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.water.cycle.4.q2",
+          "kind": "item",
+          "title": "Item item.stiinte.water.cycle.4.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "un râu"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "un nor"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "o piatră"
+            }
+          }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "item.stiinte.water.cycle.4.q3",
+        "skillId": "stiinte.water.cycle",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Vaporii de apă se văd mereu ca un fum alb.",
+          "en": "True or false? Water vapour can always be seen as white smoke."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.water.cycle.4.q3",
+          "kind": "item",
+          "title": "Item item.stiinte.water.cycle.4.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "true-false",
+        "correct": false
+      },
+      {
+        "id": "item.stiinte.water.cycle.4.q4",
+        "skillId": "stiinte.water.cycle",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce cade din nori când picăturile devin grele?",
+          "en": "What falls from the clouds when the drops get heavy?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.water.cycle.4.q4",
+          "kind": "item",
+          "title": "Item item.stiinte.water.cycle.4.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "ploaia"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "nisipul"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "frunzele"
+            }
+          }
+        ],
+        "correctId": "a"
+      }
+    ]
+  },
+  {
+    "id": "item.stiinte.earth.sunmoon.1",
+    "skillId": "stiinte.earth.sunmoon",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce este Soarele?",
+      "en": "What is the Sun?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.earth.sunmoon",
+    "provenance": {
+      "id": "prov.item.stiinte.earth.sunmoon.1",
+      "kind": "item",
+      "title": "Item item.stiinte.earth.sunmoon.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "o stea"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "o planetă"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "un nor"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.earth.sunmoon.2",
+    "skillId": "stiinte.earth.sunmoon",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "În jurul cărui corp se rotește Luna?",
+      "en": "Which body does the Moon go around?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.earth.sunmoon",
+    "provenance": {
+      "id": "prov.item.stiinte.earth.sunmoon.2",
+      "kind": "item",
+      "title": "Item item.stiinte.earth.sunmoon.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "în jurul Soarelui"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "în jurul Pământului"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "în jurul unui nor"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.stiinte.earth.sunmoon.3",
+    "skillId": "stiinte.earth.sunmoon",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Luna are lumină proprie.",
+      "en": "True or false? The Moon has its own light."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.earth.sunmoon",
+    "provenance": {
+      "id": "prov.item.stiinte.earth.sunmoon.3",
+      "kind": "item",
+      "title": "Item item.stiinte.earth.sunmoon.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.earth.sunmoon.4",
+    "skillId": "stiinte.earth.sunmoon",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Adevărat sau fals? Noaptea este pe partea Pământului care nu este luminată de Soare.",
+      "en": "True or false? Night is on the side of the Earth that the Sun does not light."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.earth.sunmoon",
+    "provenance": {
+      "id": "prov.item.stiinte.earth.sunmoon.4",
+      "kind": "item",
+      "title": "Item item.stiinte.earth.sunmoon.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.earth.sunmoon.5",
+    "skillId": "stiinte.earth.sunmoon",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Citește textul și răspunde la întrebări.",
+      "en": "Read the text and answer the questions."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.earth.sunmoon",
+    "provenance": {
+      "id": "prov.item.stiinte.earth.sunmoon.5",
+      "kind": "item",
+      "title": "Item item.stiinte.earth.sunmoon.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "passage": {
+      "ro": "Soarele este o stea uriașă. Este foarte fierbinte și ne dă lumină și căldură. Pământul se rotește în jurul său, ca un titirez. Când partea unde stăm este luminată de Soare, este zi. Pe cealaltă parte este noapte. Luna se rotește în jurul Pământului. Ea nu are lumină proprie. O vedem pentru că primește lumina Soarelui."
+    },
+    "type": "read-and-answer",
+    "questions": [
+      {
+        "id": "item.stiinte.earth.sunmoon.5.q1",
+        "skillId": "stiinte.earth.sunmoon",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Ce este Soarele?",
+          "en": "What is the Sun?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.earth.sunmoon.5.q1",
+          "kind": "item",
+          "title": "Item item.stiinte.earth.sunmoon.5.q1",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "o stea"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "o planetă"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "un satelit"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.stiinte.earth.sunmoon.5.q2",
+        "skillId": "stiinte.earth.sunmoon",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Adevărat sau fals? Luna are lumină proprie.",
+          "en": "True or false? The Moon has its own light."
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.earth.sunmoon.5.q2",
+          "kind": "item",
+          "title": "Item item.stiinte.earth.sunmoon.5.q2",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "true-false",
+        "correct": false
+      },
+      {
+        "id": "item.stiinte.earth.sunmoon.5.q3",
+        "skillId": "stiinte.earth.sunmoon",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "Când este noapte la noi?",
+          "en": "When is it night where we live?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.earth.sunmoon.5.q3",
+          "kind": "item",
+          "title": "Item item.stiinte.earth.sunmoon.5.q3",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "când partea noastră a Pământului nu e luminată de Soare"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "când Soarele se stinge"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "când Luna dispare"
+            }
+          }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "item.stiinte.earth.sunmoon.5.q4",
+        "skillId": "stiinte.earth.sunmoon",
+        "difficulty": 3,
+        "prompt": {
+          "ro": "În jurul cui se rotește Luna?",
+          "en": "What does the Moon go around?"
+        },
+        "reviewStatus": "beta",
+        "provenance": {
+          "id": "prov.item.stiinte.earth.sunmoon.5.q4",
+          "kind": "item",
+          "title": "Item item.stiinte.earth.sunmoon.5.q4",
+          "author": "Ludiko",
+          "source": "ai-draft",
+          "licence": "OWN",
+          "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+        },
+        "type": "choice",
+        "options": [
+          {
+            "id": "a",
+            "text": {
+              "ro": "al Pământului"
+            }
+          },
+          {
+            "id": "b",
+            "text": {
+              "ro": "al Soarelui"
+            }
+          },
+          {
+            "id": "c",
+            "text": {
+              "ro": "al unui nor"
+            }
+          }
+        ],
+        "correctId": "a"
+      }
+    ]
+  },
+  {
+    "id": "item.stiinte.weather.1",
+    "skillId": "stiinte.weather",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Din ce cade ploaia?",
+      "en": "What does rain fall from?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.weather",
+    "provenance": {
+      "id": "prov.item.stiinte.weather.1",
+      "kind": "item",
+      "title": "Item item.stiinte.weather.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "din nori"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "din pământ"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "din copaci"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.weather.2",
+    "skillId": "stiinte.weather",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Vântul este aer în mișcare.",
+      "en": "True or false? Wind is moving air."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.weather",
+    "provenance": {
+      "id": "prov.item.stiinte.weather.2",
+      "kind": "item",
+      "title": "Item item.stiinte.weather.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.weather.3",
+    "skillId": "stiinte.weather",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Ce poate apărea pe cer când bate Soarele și cad picături de ploaie?",
+      "en": "What can appear in the sky when the Sun shines and raindrops fall?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.weather",
+    "provenance": {
+      "id": "prov.item.stiinte.weather.3",
+      "kind": "item",
+      "title": "Item item.stiinte.weather.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "curcubeul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "zăpada"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "ceața deasă"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.weather.4",
+    "skillId": "stiinte.weather",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce măsurăm cu termometrul?",
+      "en": "What do we measure with a thermometer?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.weather",
+    "provenance": {
+      "id": "prov.item.stiinte.weather.4",
+      "kind": "item",
+      "title": "Item item.stiinte.weather.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "temperatura"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "timpul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "lungimea"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.environment.1",
+    "skillId": "stiinte.environment",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Putem refolosi un borcan de sticlă.",
+      "en": "True or false? We can reuse a glass jar."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.environment",
+    "provenance": {
+      "id": "prov.item.stiinte.environment.1",
+      "kind": "item",
+      "title": "Item item.stiinte.environment.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": true
+  },
+  {
+    "id": "item.stiinte.environment.2",
+    "skillId": "stiinte.environment",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce facem cu hârtia folosită?",
+      "en": "What do we do with used paper?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.environment",
+    "provenance": {
+      "id": "prov.item.stiinte.environment.2",
+      "kind": "item",
+      "title": "Item item.stiinte.environment.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "o punem la reciclat"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "o aruncăm în pădure"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "o ardem în curte"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.stiinte.environment.3",
+    "skillId": "stiinte.environment",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Adevărat sau fals? Este bine să aruncăm gunoiul oriunde, în pădure.",
+      "en": "True or false? It is fine to throw rubbish anywhere in the forest."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.environment",
+    "provenance": {
+      "id": "prov.item.stiinte.environment.3",
+      "kind": "item",
+      "title": "Item item.stiinte.environment.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "true-false",
+    "correct": false
+  },
+  {
+    "id": "item.stiinte.environment.4",
+    "skillId": "stiinte.environment",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Cum putem economisi apa?",
+      "en": "How can we save water?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.stiinte.environment",
+    "provenance": {
+      "id": "prov.item.stiinte.environment.4",
+      "kind": "item",
+      "title": "Item item.stiinte.environment.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original item drafted from common scientific knowledge; awaiting human fact review"
+    },
+    "type": "choice",
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "închidem robinetul când ne spălăm pe dinți"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "lăsăm robinetul deschis"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "spălăm mașina în fiecare zi"
+        }
+      }
+    ],
+    "correctId": "a"
+  }
+]

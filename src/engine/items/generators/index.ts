@@ -35,6 +35,12 @@ import './romSyllables';
 import './romWordPicture';
 import './romSentences';
 import './romVocab';
+// science generators (sci-sort, sci-which, sci-tf, sci-relation, sci-order)
+import './stiinte';
+// history (grade IV) generators
+import './istGenerators';
+// Geography (geo) generators
+import './geoDirections';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

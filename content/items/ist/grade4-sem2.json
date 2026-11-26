@@ -1,0 +1,2516 @@
+[
+ {
+  "id": "item.ist.medieval.states.4.01",
+  "type": "choice",
+  "skillId": "ist.medieval.states.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Cine a învins la Posada, în 1330, armata regelui Ungariei?",
+   "en": "Who defeated the army of the King of Hungary at Posada in 1330?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.states.4",
+  "provenance": {
+   "id": "prov.ist.medieval.states.4.01",
+   "kind": "item",
+   "title": "Item ist.medieval.states.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Bogdan I"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Mircea cel Bătrân",
+     "en": "Mircea the Elder"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Basarab I"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.medieval.states.4.02",
+  "type": "choice",
+  "skillId": "ist.medieval.states.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Cine este socotit întemeietorul Moldovei independente?",
+   "en": "Who is regarded as the founder of independent Moldavia?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.states.4",
+  "provenance": {
+   "id": "prov.ist.medieval.states.4.02",
+   "kind": "item",
+   "title": "Item ist.medieval.states.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Bogdan I"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Basarab I"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Mircea cel Bătrân",
+     "en": "Mircea the Elder"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.medieval.states.4.03",
+  "type": "fill-gap",
+  "skillId": "ist.medieval.states.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Completează propoziția.",
+   "en": "Complete the sentence."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.states.4",
+  "provenance": {
+   "id": "prov.ist.medieval.states.4.03",
+   "kind": "item",
+   "title": "Item ist.medieval.states.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "template": {
+   "ro": "Mircea cel Bătrân a fost domnul din {{gap}}.",
+   "en": "Mircea the Elder was the ruler of {{gap}}."
+  },
+  "options": [
+   "Țara Românească",
+   "Moldova",
+   "Transilvania"
+  ],
+  "correct": "Țara Românească"
+ },
+ {
+  "id": "item.ist.medieval.states.4.04",
+  "type": "order",
+  "skillId": "ist.medieval.states.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Pune evenimentele în ordine cronologică, de la cel mai vechi la cel mai nou.",
+   "en": "Put the events in chronological order, from the oldest to the newest."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.states.4",
+  "provenance": {
+   "id": "prov.ist.medieval.states.4.04",
+   "kind": "item",
+   "title": "Item ist.medieval.states.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "cards": [
+   {
+    "id": "e2",
+    "text": {
+     "ro": "Mircea cel Bătrân devine domn",
+     "en": "Mircea the Elder becomes ruler"
+    }
+   },
+   {
+    "id": "e1",
+    "text": {
+     "ro": "Bătălia de la Posada",
+     "en": "The Battle of Posada"
+    }
+   },
+   {
+    "id": "e3",
+    "text": {
+     "ro": "Ștefan cel Mare devine domn al Moldovei",
+     "en": "Stephen the Great becomes ruler of Moldavia"
+    }
+   }
+  ],
+  "correctOrder": [
+   "e1",
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "id": "item.ist.medieval.states.4.05",
+  "type": "true-false",
+  "skillId": "ist.medieval.states.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Evul Mediu este o perioadă lungă, între antichitate și epoca modernă.",
+   "en": "The Middle Ages are a long period between antiquity and the modern age."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.states.4",
+  "provenance": {
+   "id": "prov.ist.medieval.states.4.05",
+   "kind": "item",
+   "title": "Item ist.medieval.states.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.medieval.states.4.06",
+  "type": "sort",
+  "skillId": "ist.medieval.states.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Pune fiecare domn în țara lui.",
+   "en": "Put each ruler in his land."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.states.4",
+  "provenance": {
+   "id": "prov.ist.medieval.states.4.06",
+   "kind": "item",
+   "title": "Item ist.medieval.states.4.06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "categories": [
+   {
+    "id": "tr",
+    "label": {
+     "ro": "Țara Românească",
+     "en": "Wallachia"
+    }
+   },
+   {
+    "id": "md",
+    "label": {
+     "ro": "Moldova"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Basarab I"
+    },
+    "categoryId": "tr"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Mircea cel Bătrân",
+     "en": "Mircea the Elder"
+    },
+    "categoryId": "tr"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Bogdan I"
+    },
+    "categoryId": "md"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Ștefan cel Mare",
+     "en": "Stephen the Great"
+    },
+    "categoryId": "md"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.medieval.heroes.4.01",
+  "type": "choice",
+  "skillId": "ist.medieval.heroes.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Cine a apărat Belgradul în 1456?",
+   "en": "Who defended Belgrade in 1456?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.heroes.4",
+  "provenance": {
+   "id": "prov.ist.medieval.heroes.4.01",
+   "kind": "item",
+   "title": "Item ist.medieval.heroes.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Mircea cel Bătrân",
+     "en": "Mircea the Elder"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Iancu de Hunedoara",
+     "en": "John Hunyadi"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Mihai Viteazul",
+     "en": "Michael the Brave"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.medieval.heroes.4.02",
+  "type": "number-input",
+  "skillId": "ist.medieval.heroes.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Ștefan cel Mare a domnit din 1457 până în 1504. Câți ani a domnit?",
+   "en": "Stephen the Great ruled from 1457 to 1504. How many years did he rule?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.heroes.4",
+  "provenance": {
+   "id": "prov.ist.medieval.heroes.4.02",
+   "kind": "item",
+   "title": "Item ist.medieval.heroes.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": 47,
+  "visual": {
+   "kind": "number-line",
+   "from": 1457,
+   "to": 1504,
+   "marks": [
+    1457,
+    1504
+   ]
+  }
+ },
+ {
+  "id": "item.ist.medieval.heroes.4.03",
+  "type": "choice",
+  "skillId": "ist.medieval.heroes.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Care dintre aceste mănăstiri a fost ridicată de Ștefan cel Mare?",
+   "en": "Which of these monasteries was built by Stephen the Great?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.heroes.4",
+  "provenance": {
+   "id": "prov.ist.medieval.heroes.4.03",
+   "kind": "item",
+   "title": "Item ist.medieval.heroes.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Cozia"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Curtea de Argeș"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Putna"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.medieval.heroes.4.04",
+  "type": "choice",
+  "skillId": "ist.medieval.heroes.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Care domn a condus Țara Românească între 1456 și 1462?",
+   "en": "Which ruler led Wallachia between 1456 and 1462?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.heroes.4",
+  "provenance": {
+   "id": "prov.ist.medieval.heroes.4.04",
+   "kind": "item",
+   "title": "Item ist.medieval.heroes.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Vlad Țepeș",
+     "en": "Vlad Țepeș"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Ștefan cel Mare",
+     "en": "Stephen the Great"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Iancu de Hunedoara",
+     "en": "John Hunyadi"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.medieval.heroes.4.05",
+  "type": "choice",
+  "skillId": "ist.medieval.heroes.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "În ce an apare numele Bucureștiului într-un document din vremea lui Vlad Țepeș?",
+   "en": "In which year does the name of Bucharest appear in a document from the time of Vlad Țepeș?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.heroes.4",
+  "provenance": {
+   "id": "prov.ist.medieval.heroes.4.05",
+   "kind": "item",
+   "title": "Item ist.medieval.heroes.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1359"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1459"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1559"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.medieval.heroes.4.06",
+  "type": "match",
+  "skillId": "ist.medieval.heroes.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Potrivește fiecare personalitate cu țara lui.",
+   "en": "Match each historical figure with his land."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.heroes.4",
+  "provenance": {
+   "id": "prov.ist.medieval.heroes.4.06",
+   "kind": "item",
+   "title": "Item ist.medieval.heroes.4.06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Iancu de Hunedoara",
+      "en": "John Hunyadi"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Transilvania"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Vlad Țepeș",
+      "en": "Vlad Țepeș"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Țara Românească",
+      "en": "Wallachia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Ștefan cel Mare",
+      "en": "Stephen the Great"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Moldova"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.mihai.4.01",
+  "type": "choice",
+  "skillId": "ist.mihai.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Ce a făcut Mihai Viteazul în 1600?",
+   "en": "What did Michael the Brave do in 1600?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mihai.4",
+  "provenance": {
+   "id": "prov.ist.mihai.4.01",
+   "kind": "item",
+   "title": "Item ist.mihai.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "a proclamat independența României",
+     "en": "proclaimed the independence of Romania"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "a fost încoronat rege al României",
+     "en": "was crowned king of Romania"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "a unit pentru scurt timp cele trei țări românești",
+     "en": "briefly united the three Romanian lands"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.mihai.4.02",
+  "type": "order",
+  "skillId": "ist.mihai.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Pune evenimentele în ordine cronologică, de la cel mai vechi la cel mai nou.",
+   "en": "Put the events in chronological order, from the oldest to the newest."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mihai.4",
+  "provenance": {
+   "id": "prov.ist.mihai.4.02",
+   "kind": "item",
+   "title": "Item ist.mihai.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "cards": [
+   {
+    "id": "e2",
+    "text": {
+     "ro": "Bătălia de la Călugăreni",
+     "en": "The Battle of Călugăreni"
+    }
+   },
+   {
+    "id": "e4",
+    "text": {
+     "ro": "Moare Mihai Viteazul",
+     "en": "Michael the Brave dies"
+    }
+   },
+   {
+    "id": "e1",
+    "text": {
+     "ro": "Mihai Viteazul devine domn al Țării Românești",
+     "en": "Michael the Brave becomes ruler of Wallachia"
+    }
+   },
+   {
+    "id": "e3",
+    "text": {
+     "ro": "Mihai Viteazul unește cele trei țări românești",
+     "en": "Michael the Brave unites the three Romanian lands"
+    }
+   }
+  ],
+  "correctOrder": [
+   "e1",
+   "e2",
+   "e3",
+   "e4"
+  ]
+ },
+ {
+  "id": "item.ist.mihai.4.03",
+  "type": "fill-gap",
+  "skillId": "ist.mihai.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Completează propoziția.",
+   "en": "Complete the sentence."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mihai.4",
+  "provenance": {
+   "id": "prov.ist.mihai.4.03",
+   "kind": "item",
+   "title": "Item ist.mihai.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "template": {
+   "ro": "Mihai Viteazul a unit cele trei țări românești în anul {{gap}}.",
+   "en": "Michael the Brave united the three Romanian lands in the year {{gap}}."
+  },
+  "options": [
+   "1600",
+   "1859",
+   "1918"
+  ],
+  "correct": "1600"
+ },
+ {
+  "id": "item.ist.mihai.4.04",
+  "type": "true-false",
+  "skillId": "ist.mihai.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Mihai Viteazul a fost primul rege al României.",
+   "en": "Michael the Brave was the first king of Romania."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mihai.4",
+  "provenance": {
+   "id": "prov.ist.mihai.4.04",
+   "kind": "item",
+   "title": "Item ist.mihai.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": false
+ },
+ {
+  "id": "item.ist.mihai.4.05",
+  "type": "choice",
+  "skillId": "ist.mihai.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Care sunt cele trei țări românești unite de Mihai Viteazul?",
+   "en": "Which are the three Romanian lands united by Michael the Brave?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mihai.4",
+  "provenance": {
+   "id": "prov.ist.mihai.4.05",
+   "kind": "item",
+   "title": "Item ist.mihai.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Țara Românească, Transilvania și Moldova",
+     "en": "Wallachia, Transylvania and Moldavia"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Țara Românească, Bulgaria și Serbia",
+     "en": "Wallachia, Bulgaria and Serbia"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Moldova, Polonia și Ungaria",
+     "en": "Moldavia, Poland and Hungary"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.union1859.4.01",
+  "type": "choice",
+  "skillId": "ist.union1859.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Cine a fost ales domn în Moldova și în Țara Românească în 1859?",
+   "en": "Who was elected ruler in Moldavia and Wallachia in 1859?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1859.4",
+  "provenance": {
+   "id": "prov.ist.union1859.4.01",
+   "kind": "item",
+   "title": "Item ist.union1859.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Mihai Viteazul",
+     "en": "Michael the Brave"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Alexandru Ioan Cuza"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Carol I"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.union1859.4.02",
+  "type": "fill-gap",
+  "skillId": "ist.union1859.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Completează propoziția.",
+   "en": "Complete the sentence."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1859.4",
+  "provenance": {
+   "id": "prov.ist.union1859.4.02",
+   "kind": "item",
+   "title": "Item ist.union1859.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "template": {
+   "ro": "Unirea Principatelor a avut loc în anul {{gap}}.",
+   "en": "The Union of the Principalities took place in the year {{gap}}."
+  },
+  "options": [
+   "1859",
+   "1877",
+   "1918"
+  ],
+  "correct": "1859"
+ },
+ {
+  "id": "item.ist.union1859.4.03",
+  "type": "choice",
+  "skillId": "ist.union1859.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Ce zi sărbătorim pe 24 ianuarie?",
+   "en": "Which day do we celebrate on 24 January?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1859.4",
+  "provenance": {
+   "id": "prov.ist.union1859.4.03",
+   "kind": "item",
+   "title": "Item ist.union1859.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Ziua Națională a României",
+     "en": "Romania's National Day"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Ziua Independenței",
+     "en": "Independence Day"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Ziua Unirii Principatelor Române",
+     "en": "The Day of the Union of the Romanian Principalities"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.union1859.4.04",
+  "type": "choice",
+  "skillId": "ist.union1859.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Care două țări s-au unit în 1859?",
+   "en": "Which two lands united in 1859?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1859.4",
+  "provenance": {
+   "id": "prov.ist.union1859.4.04",
+   "kind": "item",
+   "title": "Item ist.union1859.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Moldova și Țara Românească",
+     "en": "Moldavia and Wallachia"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Moldova și Transilvania",
+     "en": "Moldavia and Transylvania"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Țara Românească și Transilvania",
+     "en": "Wallachia and Transylvania"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.union1859.4.05",
+  "type": "order",
+  "skillId": "ist.union1859.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Pune evenimentele în ordine cronologică, de la cel mai vechi la cel mai nou.",
+   "en": "Put the events in chronological order, from the oldest to the newest."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1859.4",
+  "provenance": {
+   "id": "prov.ist.union1859.4.05",
+   "kind": "item",
+   "title": "Item ist.union1859.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "cards": [
+   {
+    "id": "e2",
+    "text": {
+     "ro": "Statul unit primește numele România, cu capitala la București",
+     "en": "The united state is named Romania, with Bucharest as its capital"
+    }
+   },
+   {
+    "id": "e1",
+    "text": {
+     "ro": "Unirea Principatelor Române",
+     "en": "The Union of the Romanian Principalities"
+    }
+   },
+   {
+    "id": "e3",
+    "text": {
+     "ro": "Carol I devine domnitor al României",
+     "en": "Carol I becomes prince of Romania"
+    }
+   }
+  ],
+  "correctOrder": [
+   "e1",
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "id": "item.ist.union1859.4.06",
+  "type": "true-false",
+  "skillId": "ist.union1859.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Alexandru Ioan Cuza a fost primul rege al României.",
+   "en": "Alexandru Ioan Cuza was the first king of Romania."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1859.4",
+  "provenance": {
+   "id": "prov.ist.union1859.4.06",
+   "kind": "item",
+   "title": "Item ist.union1859.4.06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": false
+ },
+ {
+  "id": "item.ist.independence.4.01",
+  "type": "choice",
+  "skillId": "ist.independence.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "În ce an și-a proclamat România independența?",
+   "en": "In which year did Romania proclaim its independence?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.independence.4",
+  "provenance": {
+   "id": "prov.ist.independence.4.01",
+   "kind": "item",
+   "title": "Item ist.independence.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1859"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1877"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1918"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.independence.4.02",
+  "type": "choice",
+  "skillId": "ist.independence.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Cine a rostit în Parlament declarația de independență, în 1877?",
+   "en": "Who read the declaration of independence in Parliament in 1877?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.independence.4",
+  "provenance": {
+   "id": "prov.ist.independence.4.02",
+   "kind": "item",
+   "title": "Item ist.independence.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Alexandru Ioan Cuza"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Ștefan cel Mare",
+     "en": "Stephen the Great"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Mihail Kogălniceanu"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.independence.4.03",
+  "type": "number-input",
+  "skillId": "ist.independence.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Câți ani au trecut de la Unirea Principatelor (1859) până la proclamarea independenței (1877)?",
+   "en": "How many years passed from the Union of the Principalities (1859) to the proclamation of independence (1877)?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.independence.4",
+  "provenance": {
+   "id": "prov.ist.independence.4.03",
+   "kind": "item",
+   "title": "Item ist.independence.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": 18,
+  "visual": {
+   "kind": "number-line",
+   "from": 1859,
+   "to": 1877,
+   "marks": [
+    1859,
+    1877
+   ]
+  }
+ },
+ {
+  "id": "item.ist.independence.4.04",
+  "type": "choice",
+  "skillId": "ist.independence.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Cine a fost primul rege al României?",
+   "en": "Who was the first king of Romania?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.independence.4",
+  "provenance": {
+   "id": "prov.ist.independence.4.04",
+   "kind": "item",
+   "title": "Item ist.independence.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Carol I"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Alexandru Ioan Cuza"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Ferdinand"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.independence.4.05",
+  "type": "order",
+  "skillId": "ist.independence.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Pune evenimentele în ordine cronologică, de la cel mai vechi la cel mai nou.",
+   "en": "Put the events in chronological order, from the oldest to the newest."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.independence.4",
+  "provenance": {
+   "id": "prov.ist.independence.4.05",
+   "kind": "item",
+   "title": "Item ist.independence.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "cards": [
+   {
+    "id": "e2",
+    "text": {
+     "ro": "România își proclamă independența",
+     "en": "Romania proclaims its independence"
+    }
+   },
+   {
+    "id": "e1",
+    "text": {
+     "ro": "Unirea Principatelor Române",
+     "en": "The Union of the Romanian Principalities"
+    }
+   },
+   {
+    "id": "e3",
+    "text": {
+     "ro": "România devine regat",
+     "en": "Romania becomes a kingdom"
+    }
+   }
+  ],
+  "correctOrder": [
+   "e1",
+   "e2",
+   "e3"
+  ]
+ },
+ {
+  "id": "item.ist.independence.4.06",
+  "type": "true-false",
+  "skillId": "ist.independence.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "România a devenit regat în anul 1881.",
+   "en": "Romania became a kingdom in the year 1881."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.independence.4",
+  "provenance": {
+   "id": "prov.ist.independence.4.06",
+   "kind": "item",
+   "title": "Item ist.independence.4.06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.union1918.4.01",
+  "type": "choice",
+  "skillId": "ist.union1918.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Ce s-a hotărât la Alba Iulia, la 1 decembrie 1918?",
+   "en": "What was decided at Alba Iulia on 1 December 1918?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.4",
+  "provenance": {
+   "id": "prov.ist.union1918.4.01",
+   "kind": "item",
+   "title": "Item ist.union1918.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "independența României",
+     "en": "the independence of Romania"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "unirea Transilvaniei cu România",
+     "en": "the union of Transylvania with Romania"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "unirea Moldovei cu Țara Românească",
+     "en": "the union of Moldavia with Wallachia"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.union1918.4.02",
+  "type": "choice",
+  "skillId": "ist.union1918.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Care este în prezent Ziua Națională a României?",
+   "en": "What is Romania's National Day today?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.4",
+  "provenance": {
+   "id": "prov.ist.union1918.4.02",
+   "kind": "item",
+   "title": "Item ist.union1918.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "24 ianuarie",
+     "en": "24 January"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1 martie",
+     "en": "1 March"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1 Decembrie",
+     "en": "1 December"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.union1918.4.03",
+  "type": "fill-gap",
+  "skillId": "ist.union1918.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Completează propoziția.",
+   "en": "Complete the sentence."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.4",
+  "provenance": {
+   "id": "prov.ist.union1918.4.03",
+   "kind": "item",
+   "title": "Item ist.union1918.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "template": {
+   "ro": "Marea Unire a avut loc în anul {{gap}}.",
+   "en": "The Great Union took place in the year {{gap}}."
+  },
+  "options": [
+   "1859",
+   "1918",
+   "1877"
+  ],
+  "correct": "1918"
+ },
+ {
+  "id": "item.ist.union1918.4.04",
+  "type": "choice",
+  "skillId": "ist.union1918.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Cine era regele României în vremea Marii Uniri?",
+   "en": "Who was the king of Romania at the time of the Great Union?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.4",
+  "provenance": {
+   "id": "prov.ist.union1918.4.04",
+   "kind": "item",
+   "title": "Item ist.union1918.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Ferdinand"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Carol I"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Alexandru Ioan Cuza"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.union1918.4.05",
+  "type": "order",
+  "skillId": "ist.union1918.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Pune evenimentele în ordine cronologică, de la cel mai vechi la cel mai nou.",
+   "en": "Put the events in chronological order, from the oldest to the newest."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.4",
+  "provenance": {
+   "id": "prov.ist.union1918.4.05",
+   "kind": "item",
+   "title": "Item ist.union1918.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "cards": [
+   {
+    "id": "e2",
+    "text": {
+     "ro": "România devine regat",
+     "en": "Romania becomes a kingdom"
+    }
+   },
+   {
+    "id": "e4",
+    "text": {
+     "ro": "Regele Ferdinand și regina Maria sunt încoronați la Alba Iulia",
+     "en": "King Ferdinand and Queen Marie are crowned at Alba Iulia"
+    }
+   },
+   {
+    "id": "e1",
+    "text": {
+     "ro": "România își proclamă independența",
+     "en": "Romania proclaims its independence"
+    }
+   },
+   {
+    "id": "e3",
+    "text": {
+     "ro": "Marea Unire de la Alba Iulia",
+     "en": "The Great Union at Alba Iulia"
+    }
+   }
+  ],
+  "correctOrder": [
+   "e1",
+   "e2",
+   "e3",
+   "e4"
+  ]
+ },
+ {
+  "id": "item.ist.union1918.4.06",
+  "type": "true-false",
+  "skillId": "ist.union1918.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Marea Unire din 1918 a fost proclamată la Iași.",
+   "en": "The Great Union of 1918 was proclaimed in Iași."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.4",
+  "provenance": {
+   "id": "prov.ist.union1918.4.06",
+   "kind": "item",
+   "title": "Item ist.union1918.4.06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": false
+ },
+ {
+  "id": "item.ist.symbols.4.01",
+  "type": "choice",
+  "skillId": "ist.symbols.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Care sunt culorile drapelului României?",
+   "en": "What are the colours of the Romanian flag?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.symbols.4",
+  "provenance": {
+   "id": "prov.ist.symbols.4.01",
+   "kind": "item",
+   "title": "Item ist.symbols.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "roșu, alb, verde",
+     "en": "red, white, green"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "albastru, galben, roșu",
+     "en": "blue, yellow, red"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "verde, galben, albastru",
+     "en": "green, yellow, blue"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.symbols.4.02",
+  "type": "choice",
+  "skillId": "ist.symbols.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Cum se numește imnul național al României?",
+   "en": "What is the national anthem of Romania called?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.symbols.4",
+  "provenance": {
+   "id": "prov.ist.symbols.4.02",
+   "kind": "item",
+   "title": "Item ist.symbols.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "„Hora Unirii”"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "„Trei culori”"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "„Deșteaptă-te, române!”"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.symbols.4.03",
+  "type": "true-false",
+  "skillId": "ist.symbols.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Versurile imnului național au fost scrise de Andrei Mureșanu.",
+   "en": "The words of the national anthem were written by Andrei Mureșanu."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.symbols.4",
+  "provenance": {
+   "id": "prov.ist.symbols.4.03",
+   "kind": "item",
+   "title": "Item ist.symbols.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": true
+ },
+ {
+  "id": "item.ist.symbols.4.04",
+  "type": "sort",
+  "skillId": "ist.symbols.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Este simbol național sau nu?",
+   "en": "Is it a national symbol or not?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.symbols.4",
+  "provenance": {
+   "id": "prov.ist.symbols.4.04",
+   "kind": "item",
+   "title": "Item ist.symbols.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "categories": [
+   {
+    "id": "sim",
+    "label": {
+     "ro": "Simbol național",
+     "en": "National symbol"
+    }
+   },
+   {
+    "id": "no",
+    "label": {
+     "ro": "Nu este simbol național",
+     "en": "Not a national symbol"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "drapelul",
+     "en": "the flag"
+    },
+    "categoryId": "sim"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "stema",
+     "en": "the coat of arms"
+    },
+    "categoryId": "sim"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "imnul",
+     "en": "the anthem"
+    },
+    "categoryId": "sim"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "o mascotă sportivă",
+     "en": "a sports mascot"
+    },
+    "categoryId": "no"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.symbols.4.05",
+  "type": "choice",
+  "skillId": "ist.symbols.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Din ce an este 1 Decembrie Ziua Națională a României?",
+   "en": "Since which year has 1 December been Romania's National Day?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.symbols.4",
+  "provenance": {
+   "id": "prov.ist.symbols.4.05",
+   "kind": "item",
+   "title": "Item ist.symbols.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1990"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1859"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1918"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.symbols.4.06",
+  "type": "match",
+  "skillId": "ist.symbols.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Potrivește fiecare simbol cu ce înseamnă.",
+   "en": "Match each symbol with what it is."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.symbols.4",
+  "provenance": {
+   "id": "prov.ist.symbols.4.06",
+   "kind": "item",
+   "title": "Item ist.symbols.4.06",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "drapelul",
+      "en": "the flag"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "albastru, galben, roșu",
+      "en": "blue, yellow, red"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "imnul",
+      "en": "the anthem"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "„Deșteaptă-te, române!”"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "stema",
+      "en": "the coat of arms"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "o acvilă cu o cruce în cioc",
+      "en": "an eagle with a cross in its beak"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Ziua Națională",
+      "en": "National Day"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "1 Decembrie",
+      "en": "1 December"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.legend.fact.4.01",
+  "type": "choice",
+  "skillId": "ist.legend.fact.4",
+  "difficulty": 1,
+  "prompt": {
+   "ro": "Care dintre aceste enunțuri este o legendă?",
+   "en": "Which of these sentences is a legend?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.legend.fact.4",
+  "provenance": {
+   "id": "prov.ist.legend.fact.4.01",
+   "kind": "item",
+   "title": "Item ist.legend.fact.4.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Ștefan cel Mare a ridicat Mănăstirea Putna.",
+     "en": "Stephen the Great built Putna Monastery."
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Baba Dochia s-a prefăcut în stâncă.",
+     "en": "Old Dochia turned into a rock."
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Cuza a fost ales domn în 1859.",
+     "en": "Cuza was elected ruler in 1859."
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.ist.legend.fact.4.02",
+  "type": "choice",
+  "skillId": "ist.legend.fact.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Care dintre aceste enunțuri este un fapt istoric?",
+   "en": "Which of these sentences is a historical fact?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.legend.fact.4",
+  "provenance": {
+   "id": "prov.ist.legend.fact.4.02",
+   "kind": "item",
+   "title": "Item ist.legend.fact.4.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Un zmeu a ascuns Soarele într-un palat.",
+     "en": "A dragon hid the Sun in a palace."
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Făt-Frumos a călătorit pe un cal care vorbea.",
+     "en": "Făt-Frumos travelled on a horse that could talk."
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Unirea Principatelor a avut loc în 1859.",
+     "en": "The Union of the Principalities took place in 1859."
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.ist.legend.fact.4.03",
+  "type": "sort",
+  "skillId": "ist.legend.fact.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Legendă sau fapt istoric?",
+   "en": "Legend or historical fact?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.legend.fact.4",
+  "provenance": {
+   "id": "prov.ist.legend.fact.4.03",
+   "kind": "item",
+   "title": "Item ist.legend.fact.4.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "categories": [
+   {
+    "id": "legend",
+    "label": {
+     "ro": "Legendă sau poveste",
+     "en": "Legend or story"
+    }
+   },
+   {
+    "id": "fact",
+    "label": {
+     "ro": "Fapt istoric",
+     "en": "Historical fact"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Zidurile mănăstirii meșterului Manole se prăbușeau în fiecare noapte.",
+     "en": "The walls of Master Manole's monastery collapsed every night."
+    },
+    "categoryId": "legend"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Ciobanul Bucur a întemeiat orașul București.",
+     "en": "The shepherd Bucur founded the city of Bucharest."
+    },
+    "categoryId": "legend"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Columna lui Traian are scene sculptate în piatră.",
+     "en": "Trajan's Column has scenes carved in stone."
+    },
+    "categoryId": "fact"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Ștefan cel Mare a ridicat Mănăstirea Putna.",
+     "en": "Stephen the Great built Putna Monastery."
+    },
+    "categoryId": "fact"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.legend.fact.4.04",
+  "type": "true-false",
+  "skillId": "ist.legend.fact.4",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Dacă o poveste are zmei și zâne, ea este un fapt istoric.",
+   "en": "If a story has dragons and fairies, it is a historical fact."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.legend.fact.4",
+  "provenance": {
+   "id": "prov.ist.legend.fact.4.04",
+   "kind": "item",
+   "title": "Item ist.legend.fact.4.04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "correct": false
+ },
+ {
+  "id": "item.ist.legend.fact.4.05",
+  "type": "choice",
+  "skillId": "ist.legend.fact.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Ce ne arată că Bucureștiul exista în 1459?",
+   "en": "What shows us that Bucharest existed in 1459?"
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.legend.fact.4",
+  "provenance": {
+   "id": "prov.ist.legend.fact.4.05",
+   "kind": "item",
+   "title": "Item ist.legend.fact.4.05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "un document din vremea lui Vlad Țepeș",
+     "en": "a document from the time of Vlad Țepeș"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "povestea ciobanului Bucur",
+     "en": "the story of the shepherd Bucur"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "un desen animat",
+     "en": "a cartoon"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.medieval.heroes.4.t07",
+  "type": "read-and-answer",
+  "skillId": "ist.medieval.heroes.4",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.medieval.heroes.4",
+  "provenance": {
+   "id": "prov.ist.medieval.heroes.4.t07",
+   "kind": "item",
+   "title": "Text item.ist.medieval.heroes.4.t07",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "Ștefan cel Mare a fost domnul Moldovei timp de 47 de ani, între 1457 și 1504. În vremea lui s-au ridicat multe biserici și mănăstiri, între care Putna. În 1475, la Vaslui, oastea lui a câștigat o bătălie împotriva unei armate otomane. Astăzi, mănăstirile din vremea lui sunt izvoare istorice, iar oamenii le vizitează cu plăcere.",
+   "en": "Stephen the Great was the ruler of Moldavia for 47 years, between 1457 and 1504. In his time many churches and monasteries were built, among them Putna. In 1475, at Vaslui, his army won a battle against an Ottoman army. Today the monasteries from his time are historical sources, and people enjoy visiting them."
+  },
+  "questions": [
+   {
+    "id": "item.ist.medieval.heroes.4.t07.q1",
+    "skillId": "ist.medieval.heroes.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Cât timp a domnit Ștefan cel Mare?",
+     "en": "How long did Stephen the Great rule?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.medieval.heroes.4.t07.q1",
+     "kind": "item",
+     "title": "Question item.ist.medieval.heroes.4.t07.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "27 de ani",
+       "en": "27 years"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "47 de ani",
+       "en": "47 years"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "74 de ani",
+       "en": "74 years"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.ist.medieval.heroes.4.t07.q2",
+    "skillId": "ist.medieval.heroes.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Ștefan cel Mare a fost domn al Țării Românești.",
+     "en": "Stephen the Great was a ruler of Wallachia."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.medieval.heroes.4.t07.q2",
+     "kind": "item",
+     "title": "Question item.ist.medieval.heroes.4.t07.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": false
+   },
+   {
+    "id": "item.ist.medieval.heroes.4.t07.q3",
+    "skillId": "ist.medieval.heroes.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "În ce secol a murit Ștefan cel Mare, în 1504?",
+     "en": "In which century did Stephen the Great die, in 1504?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.medieval.heroes.4.t07.q3",
+     "kind": "item",
+     "title": "Question item.ist.medieval.heroes.4.t07.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "secolul al XV-lea",
+       "en": "the 15th century"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "secolul al XVII-lea",
+       "en": "the 17th century"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "secolul al XVI-lea",
+       "en": "the 16th century"
+      }
+     }
+    ],
+    "correctId": "c"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.union1859.4.t08",
+  "type": "read-and-answer",
+  "skillId": "ist.union1859.4",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1859.4",
+  "provenance": {
+   "id": "prov.ist.union1859.4.t08",
+   "kind": "item",
+   "title": "Text item.ist.union1859.4.t08",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "În ianuarie 1859, adunările din Moldova și din Țara Românească au avut de ales un domn. Pe 5 ianuarie, la Iași, a fost ales Alexandru Ioan Cuza. Pe 24 ianuarie, la București, a fost ales același om. Astfel, două țări au avut un singur domn. Mulți oameni au cântat „Hora Unirii”. Cuza a domnit până în 1866. Mai târziu, țara unită s-a numit România.",
+   "en": "In January 1859, the assemblies of Moldavia and Wallachia had to choose a ruler. On 5 January, in Iași, Alexandru Ioan Cuza was elected. On 24 January, in Bucharest, the same man was elected. So two lands had a single ruler. Many people sang “Hora Unirii”. Cuza ruled until 1866. Later the united country was named Romania."
+  },
+  "questions": [
+   {
+    "id": "item.ist.union1859.4.t08.q1",
+    "skillId": "ist.union1859.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Cine a fost ales domn în ambele țări?",
+     "en": "Who was elected ruler in both lands?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.union1859.4.t08.q1",
+     "kind": "item",
+     "title": "Question item.ist.union1859.4.t08.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Alexandru Ioan Cuza"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "Carol I"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Mihai Viteazul",
+       "en": "Michael the Brave"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.ist.union1859.4.t08.q2",
+    "skillId": "ist.union1859.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Unde a fost ales Cuza în Moldova?",
+     "en": "Where was Cuza elected in Moldavia?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.union1859.4.t08.q2",
+     "kind": "item",
+     "title": "Question item.ist.union1859.4.t08.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "la Alba Iulia",
+       "en": "in Alba Iulia"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "la Iași",
+       "en": "in Iași"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "la Constanța",
+       "en": "in Constanța"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.ist.union1859.4.t08.q3",
+    "skillId": "ist.union1859.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Cuza a domnit până în 1877.",
+     "en": "Cuza ruled until 1877."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.union1859.4.t08.q3",
+     "kind": "item",
+     "title": "Question item.ist.union1859.4.t08.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "item.ist.union1918.4.t09",
+  "type": "read-and-answer",
+  "skillId": "ist.union1918.4",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.4",
+  "provenance": {
+   "id": "prov.ist.union1918.4.t09",
+   "kind": "item",
+   "title": "Text item.ist.union1918.4.t09",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "Pe 1 decembrie 1918, la Alba Iulia, s-au adunat mii de oameni. Reprezentanții românilor din Transilvania au hotărât unirea cu România. Astăzi, drapelul României are trei culori așezate vertical: albastru, galben și roșu. De atunci, 1 Decembrie a rămas o zi importantă. Din 1990, este Ziua Națională a României.",
+   "en": "On 1 December 1918, at Alba Iulia, thousands of people gathered. The representatives of the Romanians of Transylvania decided on union with Romania. Today the flag of Romania has three colours arranged vertically: blue, yellow and red. Since then 1 December has remained an important day. Since 1990 it has been Romania's National Day."
+  },
+  "questions": [
+   {
+    "id": "item.ist.union1918.4.t09.q1",
+    "skillId": "ist.union1918.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Unde au hotărât reprezentanții românilor unirea?",
+     "en": "Where did the representatives of the Romanians decide on the union?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.union1918.4.t09.q1",
+     "kind": "item",
+     "title": "Question item.ist.union1918.4.t09.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "la Iași",
+       "en": "in Iași"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "la Suceava",
+       "en": "in Suceava"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "la Alba Iulia",
+       "en": "in Alba Iulia"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.ist.union1918.4.t09.q2",
+    "skillId": "ist.union1918.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Din 1990, 1 Decembrie este Ziua Națională a României.",
+     "en": "Since 1990, 1 December has been Romania's National Day."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.union1918.4.t09.q2",
+     "kind": "item",
+     "title": "Question item.ist.union1918.4.t09.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": true
+   },
+   {
+    "id": "item.ist.union1918.4.t09.q3",
+    "skillId": "ist.union1918.4",
+    "difficulty": 4,
+    "prompt": {
+     "ro": "Ce culoare este în mijlocul drapelului României?",
+     "en": "Which colour is in the middle of the Romanian flag?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.union1918.4.t09.q3",
+     "kind": "item",
+     "title": "Question item.ist.union1918.4.t09.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "galben",
+       "en": "yellow"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "albastru",
+       "en": "blue"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "roșu",
+       "en": "red"
+      }
+     }
+    ],
+    "correctId": "a"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.legend.fact.4.t10",
+  "type": "read-and-answer",
+  "skillId": "ist.legend.fact.4",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.legend.fact.4",
+  "provenance": {
+   "id": "prov.ist.legend.fact.4.t10",
+   "kind": "item",
+   "title": "Text item.ist.legend.fact.4.t10",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "passage": {
+   "ro": "Se povestește că baba Dochia a urcat cu oile pe munte și s-a prefăcut în stâncă. Oamenii spun că stâncile numite Babele din munți sunt povestea ei. Un istoric a spus însă: „Aceasta este o legendă. Nu avem niciun document care să arate că s-a întâmplat.” Un document scris în 1459 arată, în schimb, că Bucureștiul exista. Acesta este un fapt istoric.",
+   "en": "The story goes that old Dochia climbed the mountain with her sheep and turned into a rock. People say the rocks called Babele in the mountains are her story. A historian said, however: “This is a legend. We have no document showing that it happened.” A document written in 1459 shows, on the other hand, that Bucharest existed. This is a historical fact."
+  },
+  "questions": [
+   {
+    "id": "item.ist.legend.fact.4.t10.q1",
+    "skillId": "ist.legend.fact.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Ce s-a întâmplat cu baba Dochia, în poveste?",
+     "en": "What happened to old Dochia in the story?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.legend.fact.4.t10.q1",
+     "kind": "item",
+     "title": "Question item.ist.legend.fact.4.t10.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a devenit regină",
+       "en": "she became a queen"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "s-a prefăcut în stâncă",
+       "en": "she turned into a rock"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a construit o cetate",
+       "en": "she built a fortress"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.ist.legend.fact.4.t10.q2",
+    "skillId": "ist.legend.fact.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Istoricul a spus că povestea Dochiei este un fapt istoric sigur.",
+     "en": "The historian said that the story of Dochia is a certain historical fact."
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.legend.fact.4.t10.q2",
+     "kind": "item",
+     "title": "Question item.ist.legend.fact.4.t10.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "true-false",
+    "correct": false
+   },
+   {
+    "id": "item.ist.legend.fact.4.t10.q3",
+    "skillId": "ist.legend.fact.4",
+    "difficulty": 3,
+    "prompt": {
+     "ro": "Ce arată documentul din 1459?",
+     "en": "What does the document from 1459 show?"
+    },
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.ist.legend.fact.4.t10.q3",
+     "kind": "item",
+     "title": "Question item.ist.legend.fact.4.t10.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "că Dochia a fost regină",
+       "en": "that Dochia was a queen"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "că zmeii au existat",
+       "en": "that dragons existed"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "că Bucureștiul exista",
+       "en": "that Bucharest existed"
+      }
+     }
+    ],
+    "correctId": "c"
+   }
+  ]
+ }
+]

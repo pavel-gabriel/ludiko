@@ -1,0 +1,691 @@
+[
+  {
+    "id": "exp.stiinte.living",
+    "skillId": "stiinte.living",
+    "title": {
+      "ro": "Cum știm că ceva este viu?",
+      "en": "How do we know something is alive?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ființele vii cresc, se hrănesc, respiră și se înmulțesc. Câinele și floarea sunt vii.",
+          "en": "Living things grow, feed, breathe and have young. A dog and a flower are alive."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Lucrurile care nu sunt vii nu cresc și nu se hrănesc. Piatra și mingea nu sunt vii.",
+          "en": "Non-living things do not grow or feed. A stone and a ball are not alive."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪨",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Întreabă-te: crește? se hrănește? Dacă da, este o ființă vie.",
+          "en": "Ask yourself: does it grow? does it feed? If yes, it is a living thing."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.living",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.living",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.plants.parts",
+    "skillId": "stiinte.plants.parts",
+    "title": {
+      "ro": "Părțile unei plante",
+      "en": "The parts of a plant"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Rădăcina ține planta în pământ și absoarbe apa. Tulpina o susține.",
+          "en": "The root holds the plant in the soil and takes in water. The stem holds it up."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥕",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Frunzele folosesc lumina ca să facă hrana plantei.",
+          "en": "The leaves use light to make the plant's food."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍃",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Floarea formează fructul, iar fructul ține semințele.",
+          "en": "The flower makes the fruit, and the fruit holds the seeds."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌷",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.plants.parts",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.plants.parts",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.plants.needs",
+    "skillId": "stiinte.plants.needs",
+    "title": {
+      "ro": "Ce îi trebuie unei plante",
+      "en": "What a plant needs"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "O plantă are nevoie de apă. Fără apă se ofilește.",
+          "en": "A plant needs water. Without water it wilts."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Are nevoie și de lumină și de aer, ca să crească verde și sănătoasă.",
+          "en": "It also needs light and air to grow green and healthy."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai are nevoie de căldură și de sol bun. Fără acestea, planta nu crește bine.",
+          "en": "It also needs warmth and good soil. Without them the plant does not grow well."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.plants.needs",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.plants.needs",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.animals.groups",
+    "skillId": "stiinte.animals.groups",
+    "title": {
+      "ro": "Grupele de animale",
+      "en": "Animal groups"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Mamiferele au blană și își hrănesc puii cu lapte. Și balena, și liliacul sunt mamifere.",
+          "en": "Mammals have fur or hair and feed their young with milk. The whale and the bat are both mammals."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Păsările au pene și ouă. Peștii au solzi și branhii. Reptilele au piele cu solzi.",
+          "en": "Birds have feathers and lay eggs. Fish have scales and gills. Reptiles have scaly skin."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐧",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Insectele au șase picioare. Păianjenul are opt, deci nu este insectă.",
+          "en": "Insects have six legs. A spider has eight, so it is not an insect."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐝",
+          "count": 6
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.animals.groups",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.animals.groups",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.animals.young",
+    "skillId": "stiinte.animals.young",
+    "title": {
+      "ro": "Puii animalelor",
+      "en": "Baby animals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fiecare animal are un nume pentru pui: oaia are miel, vaca are vițel.",
+          "en": "Many animals have a special name for their young: a sheep has a lamb, a cow has a calf."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐑",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Calul are mânz, capra are ied, porcul are purcel.",
+          "en": "A horse has a foal, a goat has a kid, a pig has a piglet."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐎",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pisica are pisoi, câinele are cățel, iar rața are boboc.",
+          "en": "A cat has a kitten, a dog has a puppy, and a duck has a duckling."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐈",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.animals.young",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.animals.young",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.habitat",
+    "skillId": "stiinte.habitat",
+    "title": {
+      "ro": "Casa animalelor",
+      "en": "Where animals live"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Locul unde trăiește un animal se numește mediu de viață.",
+          "en": "The place where an animal lives is called its habitat."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ursul și cerbul trăiesc în pădure. Peștele și delfinul trăiesc în apă.",
+          "en": "The bear and the deer live in the forest. The fish and the dolphin live in water."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐻",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cămila trăiește în deșert și poate sta mult fără apă.",
+          "en": "The camel lives in the desert and can go a long time without water."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐫",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.habitat",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.habitat",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.body.senses",
+    "skillId": "stiinte.body.senses",
+    "title": {
+      "ro": "Cele cinci simțuri",
+      "en": "The five senses"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cu ochii vedem și cu urechile auzim.",
+          "en": "We see with our eyes and hear with our ears."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👀",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu nasul mirosim și cu limba simțim gustul.",
+          "en": "We smell with our nose and taste with our tongue."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👃",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu pielea simțim atingerea, căldura și frigul.",
+          "en": "We feel touch, warmth and cold with our skin."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "✋",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.body.senses",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.body.senses",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.body.hygiene",
+    "skillId": "stiinte.body.hygiene",
+    "title": {
+      "ro": "Igiena ne ține sănătoși",
+      "en": "Hygiene keeps us healthy"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ne spălăm pe mâini cu apă și săpun înainte de masă și după toaletă.",
+          "en": "We wash our hands with soap and water before meals and after the toilet."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧼",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ne spălăm pe dinți dimineața și seara.",
+          "en": "We brush our teeth in the morning and in the evening."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪥",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Somnul și apa ajută corpul să rămână sănătos.",
+          "en": "Sleep and water help the body stay healthy."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.body.hygiene",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.body.hygiene",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.matter.states",
+    "skillId": "stiinte.matter.states",
+    "title": {
+      "ro": "Solid, lichid, gaz",
+      "en": "Solid, liquid, gas"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Solidele au formă proprie: piatra, scaunul, gheața.",
+          "en": "Solids keep their own shape: a stone, a chair, ice."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪨",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Lichidele curg și iau forma vasului: apa, laptele.",
+          "en": "Liquids flow and take the shape of the container: water, milk."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥛",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Gazele sunt peste tot în jurul nostru, ca aerul. De obicei nu le vedem.",
+          "en": "Gases are all around us, like air. We usually cannot see them."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💨",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.matter.states",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.matter.states",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.water.cycle",
+    "skillId": "stiinte.water.cycle",
+    "title": {
+      "ro": "Drumul apei",
+      "en": "The journey of water"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Soarele încălzește apa și o parte se evaporă: devine vapori.",
+          "en": "The Sun warms the water and some of it evaporates into vapour."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Sus, vaporii se răcesc și formează nori.",
+          "en": "Up high the vapour cools and forms clouds."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☁️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Din nori cade ploaia. Apa ajunge în râuri și drumul ei începe din nou.",
+          "en": "Rain falls from the clouds. The water reaches rivers and starts its journey again."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌧️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.water.cycle",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.water.cycle",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.earth.sunmoon",
+    "skillId": "stiinte.earth.sunmoon",
+    "title": {
+      "ro": "Soarele, Pământul și Luna",
+      "en": "The Sun, Earth and Moon"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Soarele este o stea. Ne dă lumină și căldură.",
+          "en": "The Sun is a star. It gives us light and warmth."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pământul se rotește în jurul său. Unde e lumină, este zi; unde nu, este noapte.",
+          "en": "The Earth spins around. Where it is light it is day; where it is not, it is night."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Luna se rotește în jurul Pământului. Ea strălucește pentru că primește lumina Soarelui.",
+          "en": "The Moon goes around the Earth. It shines because it gets the Sun's light."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌙",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.earth.sunmoon",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.earth.sunmoon",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.weather",
+    "skillId": "stiinte.weather",
+    "title": {
+      "ro": "Vremea",
+      "en": "The weather"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vremea ne spune dacă e cald sau frig, senin sau noros.",
+          "en": "The weather tells us if it is warm or cold, clear or cloudy."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⛅",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ploaia cade din nori. Vântul este aer în mișcare.",
+          "en": "Rain falls from clouds. Wind is moving air."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌧️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu termometrul măsurăm temperatura.",
+          "en": "We measure temperature with a thermometer."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌡️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.weather",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.weather",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  },
+  {
+    "id": "exp.stiinte.environment",
+    "skillId": "stiinte.environment",
+    "title": {
+      "ro": "Avem grijă de natură",
+      "en": "Caring for nature"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Nu aruncăm gunoaie în natură. Le punem la coș.",
+          "en": "We do not throw rubbish in nature. We put it in a bin."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗑️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Sortăm: hârtia la hârtie, plasticul și metalul la plastic și metal, sticla la sticlă.",
+          "en": "We sort: paper with paper, plastic and metal together, glass with glass."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♻️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Economisim apa: închidem robinetul când nu o folosim.",
+          "en": "We save water: we turn the tap off when we do not use it."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚰",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stiinte.environment",
+      "kind": "explanation",
+      "title": "Explanation for stiinte.environment",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted from common scientific knowledge; awaiting human fact review"
+    }
+  }
+]

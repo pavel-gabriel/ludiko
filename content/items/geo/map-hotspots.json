@@ -1,0 +1,1337 @@
+[
+  {
+    "id": "item.geo.relief.carpathians.4.01",
+    "type": "hotspot",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Atinge Carpații Meridionali pe hartă.",
+      "en": "Tap Southern Carpathians on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.01",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "carpati-meridionali",
+        "x": 44.9,
+        "y": 55.8,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-moldovei",
+        "x": 68.4,
+        "y": 26.3,
+        "r": 7.5
+      },
+      {
+        "id": "carpati-occidentali",
+        "x": 29.5,
+        "y": 40.9,
+        "r": 7.5
+      }
+    ],
+    "correctId": "carpati-meridionali"
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.02",
+    "type": "hotspot",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge Carpații Orientali pe hartă.",
+      "en": "Tap Eastern Carpathians on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.02",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "podisul-dobrogei",
+        "x": 76.9,
+        "y": 76.3,
+        "r": 7.5
+      },
+      {
+        "id": "campia-de-vest",
+        "x": 17.1,
+        "y": 42.7,
+        "r": 7.5
+      },
+      {
+        "id": "campia-romana",
+        "x": 47.9,
+        "y": 78.1,
+        "r": 7.5
+      },
+      {
+        "id": "carpati-orientali",
+        "x": 56,
+        "y": 40,
+        "r": 7.5
+      }
+    ],
+    "correctId": "carpati-orientali"
+  },
+  {
+    "id": "item.geo.relief.carpathians.4.03",
+    "type": "hotspot",
+    "skillId": "geo.relief.carpathians.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge Carpații Occidentali pe hartă.",
+      "en": "Tap Western Carpathians on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.carpathians.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.carpathians.4.03",
+      "kind": "item",
+      "title": "Item item.geo.relief.carpathians.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "carpati-orientali",
+        "x": 56,
+        "y": 40,
+        "r": 7.5
+      },
+      {
+        "id": "campia-romana",
+        "x": 47.9,
+        "y": 78.1,
+        "r": 7.5
+      },
+      {
+        "id": "carpati-occidentali",
+        "x": 29.5,
+        "y": 40.9,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-dobrogei",
+        "x": 76.9,
+        "y": 76.3,
+        "r": 7.5
+      }
+    ],
+    "correctId": "carpati-occidentali"
+  },
+  {
+    "id": "item.geo.relief.units.4.01",
+    "type": "hotspot",
+    "skillId": "geo.relief.units.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Atinge Câmpia Română pe hartă.",
+      "en": "Tap Romanian Plain on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.units.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.units.4.01",
+      "kind": "item",
+      "title": "Item item.geo.relief.units.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "campia-de-vest",
+        "x": 17.1,
+        "y": 42.7,
+        "r": 7.5
+      },
+      {
+        "id": "campia-romana",
+        "x": 47.9,
+        "y": 78.1,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-moldovei",
+        "x": 68.4,
+        "y": 26.3,
+        "r": 7.5
+      }
+    ],
+    "correctId": "campia-romana"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.01",
+    "type": "hotspot",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge Podișul Transilvaniei pe hartă.",
+      "en": "Tap Transylvanian Plateau on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.01",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "podisul-moldovei",
+        "x": 68.4,
+        "y": 26.3,
+        "r": 7.5
+      },
+      {
+        "id": "campia-de-vest",
+        "x": 17.1,
+        "y": 42.7,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-transilvaniei",
+        "x": 42.7,
+        "y": 40,
+        "r": 7.5
+      },
+      {
+        "id": "campia-romana",
+        "x": 47.9,
+        "y": 78.1,
+        "r": 7.5
+      }
+    ],
+    "correctId": "podisul-transilvaniei"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.02",
+    "type": "hotspot",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge Podișul Moldovei pe hartă.",
+      "en": "Tap Moldavian Plateau on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.02",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "podisul-dobrogei",
+        "x": 76.9,
+        "y": 76.3,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-moldovei",
+        "x": 68.4,
+        "y": 26.3,
+        "r": 7.5
+      },
+      {
+        "id": "campia-romana",
+        "x": 47.9,
+        "y": 78.1,
+        "r": 7.5
+      },
+      {
+        "id": "campia-de-vest",
+        "x": 17.1,
+        "y": 42.7,
+        "r": 7.5
+      }
+    ],
+    "correctId": "podisul-moldovei"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.03",
+    "type": "hotspot",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge Podișul Dobrogei pe hartă.",
+      "en": "Tap Dobruja Plateau on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.03",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "carpati-meridionali",
+        "x": 44.9,
+        "y": 55.8,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-moldovei",
+        "x": 68.4,
+        "y": 26.3,
+        "r": 7.5
+      },
+      {
+        "id": "campia-de-vest",
+        "x": 17.1,
+        "y": 42.7,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-dobrogei",
+        "x": 76.9,
+        "y": 76.3,
+        "r": 7.5
+      }
+    ],
+    "correctId": "podisul-dobrogei"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.04",
+    "type": "hotspot",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Atinge Câmpia de Vest pe hartă.",
+      "en": "Tap Western Plain on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.04",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "campia-de-vest",
+        "x": 17.1,
+        "y": 42.7,
+        "r": 7.5
+      },
+      {
+        "id": "carpati-orientali",
+        "x": 56,
+        "y": 40,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-dobrogei",
+        "x": 76.9,
+        "y": 76.3,
+        "r": 7.5
+      }
+    ],
+    "correctId": "campia-de-vest"
+  },
+  {
+    "id": "item.geo.relief.lowlands.4.05",
+    "type": "hotspot",
+    "skillId": "geo.relief.lowlands.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Atinge Câmpia Română pe hartă.",
+      "en": "Tap Romanian Plain on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.relief.lowlands.4",
+    "provenance": {
+      "id": "prov.item.geo.relief.lowlands.4.05",
+      "kind": "item",
+      "title": "Item item.geo.relief.lowlands.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "carpati-occidentali",
+        "x": 29.5,
+        "y": 40.9,
+        "r": 7.5
+      },
+      {
+        "id": "campia-romana",
+        "x": 47.9,
+        "y": 78.1,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-moldovei",
+        "x": 68.4,
+        "y": 26.3,
+        "r": 7.5
+      }
+    ],
+    "correctId": "campia-romana"
+  },
+  {
+    "id": "item.geo.rivers.4.01",
+    "type": "hotspot",
+    "skillId": "geo.rivers.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge râul Mureș pe hartă.",
+      "en": "Tap the river Mureș on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.01",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "prutul",
+        "x": 73.1,
+        "y": 27.9,
+        "r": 7
+      },
+      {
+        "id": "muresul",
+        "x": 37.9,
+        "y": 43.8,
+        "r": 7
+      },
+      {
+        "id": "dunarea",
+        "x": 44.4,
+        "y": 88.1,
+        "r": 7
+      },
+      {
+        "id": "delta-dunarii",
+        "x": 84.6,
+        "y": 65.4,
+        "r": 7.5
+      }
+    ],
+    "correctId": "muresul"
+  },
+  {
+    "id": "item.geo.rivers.4.02",
+    "type": "hotspot",
+    "skillId": "geo.rivers.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge râul Oltul pe hartă.",
+      "en": "Tap the river Oltul on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.02",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "oltul",
+        "x": 42.8,
+        "y": 61,
+        "r": 7
+      },
+      {
+        "id": "siretul",
+        "x": 65.6,
+        "y": 40.5,
+        "r": 7
+      },
+      {
+        "id": "dunarea",
+        "x": 44.4,
+        "y": 88.1,
+        "r": 7
+      },
+      {
+        "id": "delta-dunarii",
+        "x": 84.6,
+        "y": 65.4,
+        "r": 7.5
+      }
+    ],
+    "correctId": "oltul"
+  },
+  {
+    "id": "item.geo.rivers.4.03",
+    "type": "hotspot",
+    "skillId": "geo.rivers.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge râul Siretul pe hartă.",
+      "en": "Tap the river Siretul on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.03",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "muresul",
+        "x": 37.9,
+        "y": 43.8,
+        "r": 7
+      },
+      {
+        "id": "dunarea",
+        "x": 44.4,
+        "y": 88.1,
+        "r": 7
+      },
+      {
+        "id": "siretul",
+        "x": 65.6,
+        "y": 40.5,
+        "r": 7
+      },
+      {
+        "id": "marea-neagra",
+        "x": 91.5,
+        "y": 79,
+        "r": 7.5
+      }
+    ],
+    "correctId": "siretul"
+  },
+  {
+    "id": "item.geo.rivers.4.04",
+    "type": "hotspot",
+    "skillId": "geo.rivers.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge râul Prutul pe hartă.",
+      "en": "Tap the river Prutul on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.04",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "prutul",
+        "x": 73.1,
+        "y": 27.9,
+        "r": 7
+      },
+      {
+        "id": "dunarea",
+        "x": 44.4,
+        "y": 88.1,
+        "r": 7
+      },
+      {
+        "id": "oltul",
+        "x": 42.8,
+        "y": 61,
+        "r": 7
+      },
+      {
+        "id": "delta-dunarii",
+        "x": 84.6,
+        "y": 65.4,
+        "r": 7.5
+      }
+    ],
+    "correctId": "prutul"
+  },
+  {
+    "id": "item.geo.danube.delta.4.01",
+    "type": "hotspot",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Atinge Dunărea pe hartă.",
+      "en": "Tap the Danube on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.01",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "siretul",
+        "x": 65.6,
+        "y": 40.5,
+        "r": 7
+      },
+      {
+        "id": "dunarea",
+        "x": 44.4,
+        "y": 88.1,
+        "r": 7
+      },
+      {
+        "id": "delta-dunarii",
+        "x": 84.6,
+        "y": 65.4,
+        "r": 7.5
+      }
+    ],
+    "correctId": "dunarea"
+  },
+  {
+    "id": "item.geo.danube.delta.4.02",
+    "type": "hotspot",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Atinge Delta Dunării pe hartă.",
+      "en": "Tap Danube Delta on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.02",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "siretul",
+        "x": 65.6,
+        "y": 40.5,
+        "r": 7
+      },
+      {
+        "id": "muresul",
+        "x": 37.9,
+        "y": 43.8,
+        "r": 7
+      },
+      {
+        "id": "delta-dunarii",
+        "x": 84.6,
+        "y": 65.4,
+        "r": 7.5
+      }
+    ],
+    "correctId": "delta-dunarii"
+  },
+  {
+    "id": "item.geo.danube.delta.4.03",
+    "type": "hotspot",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Atinge Delta Dunării pe hartă.",
+      "en": "Tap Danube Delta on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.03",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "campia-romana",
+        "x": 47.9,
+        "y": 78.1,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-moldovei",
+        "x": 68.4,
+        "y": 26.3,
+        "r": 7.5
+      },
+      {
+        "id": "delta-dunarii",
+        "x": 84.6,
+        "y": 65.4,
+        "r": 7.5
+      },
+      {
+        "id": "podisul-transilvaniei",
+        "x": 42.7,
+        "y": 40,
+        "r": 7.5
+      }
+    ],
+    "correctId": "delta-dunarii"
+  },
+  {
+    "id": "item.geo.blacksea.4.01",
+    "type": "hotspot",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Atinge Marea Neagră pe hartă.",
+      "en": "Tap the Black Sea on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.01",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "marea-neagra",
+        "x": 91.5,
+        "y": 79,
+        "r": 7.5
+      },
+      {
+        "id": "oltul",
+        "x": 42.8,
+        "y": 61,
+        "r": 7
+      },
+      {
+        "id": "siretul",
+        "x": 65.6,
+        "y": 40.5,
+        "r": 7
+      }
+    ],
+    "correctId": "marea-neagra"
+  },
+  {
+    "id": "item.geo.blacksea.4.02",
+    "type": "hotspot",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Arată orașul Constanța pe hartă.",
+      "en": "Show the city of Constanța on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.02",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "bucuresti",
+        "x": 58.1,
+        "y": 76.6,
+        "r": 7
+      },
+      {
+        "id": "brasov",
+        "x": 53.8,
+        "y": 54.5,
+        "r": 7
+      },
+      {
+        "id": "constanta",
+        "x": 79.9,
+        "y": 81.2,
+        "r": 7
+      }
+    ],
+    "correctId": "constanta"
+  },
+  {
+    "id": "item.geo.counties.capital.4.01",
+    "type": "hotspot",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Arată orașul București pe hartă.",
+      "en": "Show the city of Bucharest on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.01",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "iasi",
+        "x": 70.9,
+        "y": 27.1,
+        "r": 7
+      },
+      {
+        "id": "cluj-napoca",
+        "x": 36.7,
+        "y": 34.1,
+        "r": 7
+      },
+      {
+        "id": "bucuresti",
+        "x": 58.1,
+        "y": 76.6,
+        "r": 7
+      }
+    ],
+    "correctId": "bucuresti"
+  },
+  {
+    "id": "item.geo.counties.capital.4.02",
+    "type": "hotspot",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Arată orașul Cluj-Napoca pe hartă.",
+      "en": "Show the city of Cluj-Napoca on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.02",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.02",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "iasi",
+        "x": 70.9,
+        "y": 27.1,
+        "r": 7
+      },
+      {
+        "id": "bucuresti",
+        "x": 58.1,
+        "y": 76.6,
+        "r": 7
+      },
+      {
+        "id": "cluj-napoca",
+        "x": 36.7,
+        "y": 34.1,
+        "r": 7
+      }
+    ],
+    "correctId": "cluj-napoca"
+  },
+  {
+    "id": "item.geo.counties.capital.4.03",
+    "type": "hotspot",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Arată orașul Iași pe hartă.",
+      "en": "Show the city of Iași on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.03",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "iasi",
+        "x": 70.9,
+        "y": 27.1,
+        "r": 7
+      },
+      {
+        "id": "bucuresti",
+        "x": 58.1,
+        "y": 76.6,
+        "r": 7
+      },
+      {
+        "id": "brasov",
+        "x": 53.8,
+        "y": 54.5,
+        "r": 7
+      }
+    ],
+    "correctId": "iasi"
+  },
+  {
+    "id": "item.geo.counties.capital.4.04",
+    "type": "hotspot",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Arată orașul Timișoara pe hartă.",
+      "en": "Show the city of Timișoara on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.04",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "timisoara",
+        "x": 16.5,
+        "y": 52.7,
+        "r": 7
+      },
+      {
+        "id": "cluj-napoca",
+        "x": 36.7,
+        "y": 34.1,
+        "r": 7
+      },
+      {
+        "id": "bucuresti",
+        "x": 58.1,
+        "y": 76.6,
+        "r": 7
+      }
+    ],
+    "correctId": "timisoara"
+  },
+  {
+    "id": "item.geo.counties.capital.4.05",
+    "type": "hotspot",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Arată orașul Constanța pe hartă.",
+      "en": "Show the city of Constanța on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.05",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "brasov",
+        "x": 53.8,
+        "y": 54.5,
+        "r": 7
+      },
+      {
+        "id": "cluj-napoca",
+        "x": 36.7,
+        "y": 34.1,
+        "r": 7
+      },
+      {
+        "id": "constanta",
+        "x": 79.9,
+        "y": 81.2,
+        "r": 7
+      }
+    ],
+    "correctId": "constanta"
+  },
+  {
+    "id": "item.geo.counties.capital.4.06",
+    "type": "hotspot",
+    "skillId": "geo.counties.capital.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Arată orașul Brașov pe hartă.",
+      "en": "Show the city of Brașov on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.counties.capital.4",
+    "provenance": {
+      "id": "prov.item.geo.counties.capital.4.06",
+      "kind": "item",
+      "title": "Item item.geo.counties.capital.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "bucuresti",
+        "x": 58.1,
+        "y": 76.6,
+        "r": 7
+      },
+      {
+        "id": "constanta",
+        "x": 79.9,
+        "y": 81.2,
+        "r": 7
+      },
+      {
+        "id": "brasov",
+        "x": 53.8,
+        "y": 54.5,
+        "r": 7
+      }
+    ],
+    "correctId": "brasov"
+  },
+  {
+    "id": "item.geo.romania.position.4.01",
+    "type": "hotspot",
+    "skillId": "geo.romania.position.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Arată orașul București pe hartă.",
+      "en": "Show the city of Bucharest on the map."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.romania.position.4",
+    "provenance": {
+      "id": "prov.item.geo.romania.position.4.01",
+      "kind": "item",
+      "title": "Item item.geo.romania.position.4.01",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "image": {
+      "kind": "image",
+      "src": "content/media/geo/romania-blank.svg",
+      "alt": {
+        "ro": "Harta României, fără nume: relief, râuri și Marea Neagră",
+        "en": "Map of Romania without names: relief, rivers and the Black Sea"
+      },
+      "provenanceId": "data-natural-earth"
+    },
+    "regions": [
+      {
+        "id": "timisoara",
+        "x": 16.5,
+        "y": 52.7,
+        "r": 7
+      },
+      {
+        "id": "bucuresti",
+        "x": 58.1,
+        "y": 76.6,
+        "r": 7
+      },
+      {
+        "id": "iasi",
+        "x": 70.9,
+        "y": 27.1,
+        "r": 7
+      }
+    ],
+    "correctId": "bucuresti"
+  }
+]

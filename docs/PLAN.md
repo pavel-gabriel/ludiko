@@ -269,12 +269,12 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 - [ ] Live class modes rebuilt on items: Boss battle, Class goal, Race
 
 ### Phase 1D — Other primary subjects
-- [ ] MEM / Științele naturii (III–IV): picture-choice, sort, hotspot
-- [ ] Istorie (IV): timelines (`order`), people and places
-- [ ] Geografie (IV): map of Romania (`hotspot`), landforms, waters
-- [ ] Educație civică (III–IV)
+- [x] Științele naturii (III–IV): 26 skills, sort/order/relations generators, texts
+- [x] Istorie (IV): 16 skills, centuries/timelines/rulers/legend-or-fact generators
+- [x] Geografie (IV): 14 skills, Natural Earth–based map of Romania with hotspots, compass generator
+- [x] Educație civică (III–IV): 20 skills, scenario-based, 112-only safety content
 - [ ] Logic puzzles (patterns, mini-sudoku, odd-one-out), framed as puzzles, not "brain training"
-- [ ] EN II and EN IV practice in the official format (calificative)
+- [x] EN II and EN IV practice in the official format (calificative); EN II science section waits for grade I–II science content — see [`EXAM_PRACTICE.md`](./EXAM_PRACTICE.md)
 
 ### Phase 2 — Grades V–VIII
 - [ ] Extend the skill graphs (math, Romanian) and diagnostics through grade VIII

@@ -1,0 +1,1235 @@
+[
+  {
+    "id": "item.geo.rivers.4.05",
+    "type": "choice",
+    "skillId": "geo.rivers.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Pe malurile cărui râu se află orașul Arad?",
+      "en": "Which river flows through Arad?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.05",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Olt"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Prut"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Mureș"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Siret"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.rivers.4.06",
+    "type": "choice",
+    "skillId": "geo.rivers.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Care râu trece prin orașul Pitești?",
+      "en": "Which river flows through Pitești?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.06",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Prut"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Argeș"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Jiu"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Someș"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.rivers.4.07",
+    "type": "choice",
+    "skillId": "geo.rivers.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Care râu formează granița dintre România și Republica Moldova?",
+      "en": "Which river forms the border between Romania and Moldova?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.07",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Olt"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Siret"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Jiu"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Prut"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.rivers.4.08",
+    "type": "choice",
+    "skillId": "geo.rivers.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Care dintre aceste râuri curge numai pe teritoriul României?",
+      "en": "Which of these rivers flows only inside Romania?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.08",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Prutul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Mureșul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Dunărea"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Oltul"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.rivers.4.09",
+    "type": "choice",
+    "skillId": "geo.rivers.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Din ce munți izvorăște Oltul?",
+      "en": "In which mountains does the Olt rise?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.09",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Munții Măcin"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Munții Apuseni"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Munții Semenic"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Carpații Orientali"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.rivers.4.10",
+    "type": "choice",
+    "skillId": "geo.rivers.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Locul unde începe un râu se numește...",
+      "en": "The place where a river begins is called..."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.10",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "vărsare"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "afluent"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "mal"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "izvor"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.rivers.4.11",
+    "type": "choice",
+    "skillId": "geo.rivers.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Un râu mai mic care se varsă într-un râu mai mare se numește...",
+      "en": "A smaller river that flows into a bigger one is called..."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.11",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "afluent"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "vărsare"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "deltă"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "izvor"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.rivers.4.12",
+    "type": "match",
+    "skillId": "geo.rivers.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Potrivește râul cu un oraș de pe malul lui.",
+      "en": "Match each river with a city on its bank."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.12",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.12",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "pairs": [
+      {
+        "left": {
+          "id": "l1",
+          "text": {
+            "ro": "Mureș"
+          }
+        },
+        "right": {
+          "id": "r1",
+          "text": {
+            "ro": "Arad"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l2",
+          "text": {
+            "ro": "Olt"
+          }
+        },
+        "right": {
+          "id": "r2",
+          "text": {
+            "ro": "Slatina"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l3",
+          "text": {
+            "ro": "Argeș"
+          }
+        },
+        "right": {
+          "id": "r3",
+          "text": {
+            "ro": "Pitești"
+          }
+        }
+      },
+      {
+        "left": {
+          "id": "l4",
+          "text": {
+            "ro": "Jiu"
+          }
+        },
+        "right": {
+          "id": "r4",
+          "text": {
+            "ro": "Târgu Jiu"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "item.geo.rivers.4.13",
+    "type": "true-false",
+    "skillId": "geo.rivers.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Aproape toate râurile din România ajung în Dunăre.",
+      "en": "Almost all rivers of Romania end up in the Danube."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.13",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.13",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.rivers.4.14",
+    "type": "true-false",
+    "skillId": "geo.rivers.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Siretul și Prutul se varsă în Dunăre, lângă Galați.",
+      "en": "The Siret and the Prut flow into the Danube near Galați."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.14",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.14",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.rivers.4.15",
+    "type": "true-false",
+    "skillId": "geo.rivers.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Cluj-Napoca este traversat de Someșul Mic.",
+      "en": "The Someșul Mic flows through Cluj-Napoca."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.15",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.15",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.rivers.4.16",
+    "type": "true-false",
+    "skillId": "geo.rivers.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Râul Jiu izvorăște din Carpații Meridionali.",
+      "en": "The Jiu rises in the Southern Carpathians."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.rivers.4",
+    "provenance": {
+      "id": "prov.item.geo.rivers.4.16",
+      "kind": "item",
+      "title": "Item item.geo.rivers.4.16",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.danube.delta.4.04",
+    "type": "choice",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "În ce se varsă Dunărea?",
+      "en": "Where does the Danube flow into?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.04",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Marea Adriatică"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Marea Neagră"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Oceanul Atlantic"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Marea Baltică"
+        }
+      }
+    ],
+    "correctId": "b"
+  },
+  {
+    "id": "item.geo.danube.delta.4.05",
+    "type": "choice",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Cum se numesc cele trei brațe ale Dunării în Deltă?",
+      "en": "What are the three arms of the Danube in the Delta called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.05",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Bega, Timiș și Someș"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Olt, Mureș și Siret"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Prut, Jiu și Argeș"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Chilia, Sulina și Sfântu Gheorghe"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.danube.delta.4.06",
+    "type": "choice",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Care braț al Dunării este cel mai scurt și este folosit de nave?",
+      "en": "Which arm is the shortest and used by ships?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.06",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Sfântu Gheorghe"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Chilia"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Sulina"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Borcea"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.danube.delta.4.07",
+    "type": "choice",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "În ce județ se află cea mai mare parte a Deltei Dunării?",
+      "en": "In which county is most of the Danube Delta?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.07",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Cluj"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Dolj"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Brașov"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Tulcea"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.danube.delta.4.08",
+    "type": "choice",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Ce pasăre este un simbol al Deltei Dunării?",
+      "en": "Which bird is a symbol of the Danube Delta?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.08",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Pelicanul"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Papagalul"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Struțul"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Pinguinul"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.danube.delta.4.09",
+    "type": "choice",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Prin ce defileu trece Dunărea la granița cu Serbia?",
+      "en": "Through which gorge does the Danube pass on the border with Serbia?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.09",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Cheile Bicazului"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Defileul Oltului"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Porțile de Fier"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Cheile Turzii"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.danube.delta.4.10",
+    "type": "number-input",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Prin câte țări curge Dunărea, de la izvor până la vărsare?",
+      "en": "Through how many countries does the Danube flow?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.10",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": 10
+  },
+  {
+    "id": "item.geo.danube.delta.4.11",
+    "type": "true-false",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Delta Dunării este o rezervație a biosferei.",
+      "en": "The Danube Delta is a biosphere reserve."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.11",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.danube.delta.4.12",
+    "type": "true-false",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Delta s-a format din nisipul și mâlul aduse de Dunăre.",
+      "en": "The Delta was formed from the sand and mud brought by the Danube."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.12",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.12",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.danube.delta.4.13",
+    "type": "true-false",
+    "skillId": "geo.danube.delta.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "Dunărea izvorăște din Germania.",
+      "en": "The Danube rises in Germany."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.danube.delta.4",
+    "provenance": {
+      "id": "prov.item.geo.danube.delta.4.13",
+      "kind": "item",
+      "title": "Item item.geo.danube.delta.4.13",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.blacksea.4.03",
+    "type": "choice",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Care este cel mai mare port al României?",
+      "en": "Which is Romania's biggest port?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.03",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.03",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Mangalia"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Galați"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Tulcea"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Constanța"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.blacksea.4.04",
+    "type": "choice",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Cum se numește malul mării, cu plajele lui?",
+      "en": "What is the sea coast with its beaches called?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.04",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.04",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Podiș"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Defileu"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Deltă"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Litoral"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.blacksea.4.05",
+    "type": "choice",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Care dintre aceste locuri este stațiune la Marea Neagră?",
+      "en": "Which of these is a resort on the Black Sea?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.05",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.05",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Sinaia"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Vatra Dornei"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Predeal"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Mamaia"
+        }
+      }
+    ],
+    "correctId": "d"
+  },
+  {
+    "id": "item.geo.blacksea.4.06",
+    "type": "choice",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "Marea Neagră se află în ... față de România.",
+      "en": "The Black Sea lies ... of Romania."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.06",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.06",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "est"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "vest"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "sud-vest"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "nord"
+        }
+      }
+    ],
+    "correctId": "a"
+  },
+  {
+    "id": "item.geo.blacksea.4.07",
+    "type": "choice",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Ce lac sărat de lângă litoral este folosit pentru nămolul curativ?",
+      "en": "Which salty lake near the coast is used for healing mud?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.07",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.07",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Lacul Roșu"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Bâlea"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Techirghiol"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Snagov"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.blacksea.4.08",
+    "type": "choice",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 3,
+    "prompt": {
+      "ro": "În ce regiune istorică se află litoralul românesc?",
+      "en": "In which historical region is the Romanian coast?"
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.08",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.08",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "ro": "Oltenia"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "ro": "Maramureș"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "ro": "Dobrogea"
+        }
+      },
+      {
+        "id": "d",
+        "text": {
+          "ro": "Banat"
+        }
+      }
+    ],
+    "correctId": "c"
+  },
+  {
+    "id": "item.geo.blacksea.4.09",
+    "type": "true-false",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 1,
+    "prompt": {
+      "ro": "Apa Mării Negre este sărată.",
+      "en": "The water of the Black Sea is salty."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.09",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.09",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  },
+  {
+    "id": "item.geo.blacksea.4.10",
+    "type": "true-false",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 2,
+    "prompt": {
+      "ro": "România are ieșire la Oceanul Atlantic.",
+      "en": "Romania has a coast on the Atlantic Ocean."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.10",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": false
+  },
+  {
+    "id": "item.geo.blacksea.4.11",
+    "type": "true-false",
+    "skillId": "geo.blacksea.4",
+    "difficulty": 4,
+    "prompt": {
+      "ro": "Litoralul românesc al Mării Negre are aproximativ 245 km lungime.",
+      "en": "The Romanian coast of the Black Sea is about 245 km long."
+    },
+    "reviewStatus": "beta",
+    "explanationId": "exp.geo.blacksea.4",
+    "provenance": {
+      "id": "prov.item.geo.blacksea.4.11",
+      "kind": "item",
+      "title": "Item item.geo.blacksea.4.11",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+    },
+    "correct": true
+  }
+]
