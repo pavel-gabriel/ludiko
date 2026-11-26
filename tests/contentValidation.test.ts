@@ -406,6 +406,7 @@ describe('content on disk', () => {
       civ: ['CIV-III-IV-2014'],
       ist: ['IST-IV-2014'],
       geo: ['GEO-IV-2014'],
+      logic: ['LUDIKO-LOGIC'],
     };
     for (const x of skills) {
       expect(x.provenance.source).toBe('own');

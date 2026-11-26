@@ -60,6 +60,13 @@ export type VisualSpec =
    * (default 0) to `objectEnd`. Used for measuring length.
    */
   | { kind: 'ruler'; to: number; unit: 'cm' | 'm'; from?: number; objectEnd?: number; objectLabel?: LocalizedText }
+  /**
+   * A small grid of symbols drawn by us (logic puzzles: pattern strips, mini-sudoku, robot maps).
+   * `cells` is row-major, length rows*cols; each cell holds an emoji / digit / letter, or null = empty
+   * (drawn as a dashed "?" box). `highlight` (cell index) marks the cell being asked about.
+   * A 4x4 grid also draws the 2x2 box borders (sudoku). A 1-row grid is a "strip" (patterns).
+   */
+  | { kind: 'grid'; rows: number; cols: number; cells: (string | null)[]; highlight?: number }
   | { kind: 'image'; media: MediaRef };
 
 export interface MediaRef {

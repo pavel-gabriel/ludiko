@@ -99,6 +99,15 @@ export function visualLabel(spec: VisualSpec, t: TFunction, lang: string): strin
       const base = t(one ? 'frames.visual.shapeSide' : 'frames.visual.shapeSides', { name, list: known.join(', ') })
       return hideIdx !== undefined ? `${base}; ${t('frames.visual.shapeOneUnknown')}` : base
     }
+    case 'grid': {
+      const empty = t('frames.visual.gridEmptyCell')
+      const cell = (i: number) => spec.cells[i] ?? empty
+      const rowsText = Array.from({ length: spec.rows }, (_, r) =>
+        Array.from({ length: spec.cols }, (_, c) => cell(r * spec.cols + c)).join(', '),
+      )
+      if (spec.rows === 1) return t('frames.visual.gridStrip', { cols: spec.cols, cells: rowsText[0] })
+      return t('frames.visual.grid', { rows: spec.rows, cols: spec.cols, cells: rowsText.join('; ') })
+    }
     case 'ruler': {
       const label = spec.objectLabel ? localize(spec.objectLabel, lang) : ''
       const base = t('frames.visual.ruler', { to: formatNumber(spec.to, lang), unit: spec.unit })

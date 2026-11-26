@@ -427,6 +427,9 @@
       "shapeOneUnknown": "o latură necunoscută",
       "ruler": "Riglă de la 0 la {{to}} {{unit}}",
       "rulerObject": "obiect pe riglă",
+      "grid": "Grilă cu {{rows}} rânduri și {{cols}} coloane: {{cells}}",
+      "gridStrip": "Șir de {{cols}} căsuțe: {{cells}}",
+      "gridEmptyCell": "gol",
       "image": "Imagine"
     },
     "preview": {
@@ -592,7 +595,8 @@
       "stiinte": "Științe",
       "civ": "Educație civică",
       "ist": "Istorie",
-      "geo": "Geografie"
+      "geo": "Geografie",
+      "logic": "Jocuri de logică"
     },
     "home": {
       "missionTitle": "Misiunea de azi",

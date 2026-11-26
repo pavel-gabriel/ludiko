@@ -1,7 +1,7 @@
 import type { SubjectId } from '@/engine/types'
 
 /** Subjects offered in the learner area. Add an id here (plus `learn.subject.<id>` strings) to open another subject. */
-export const LEARN_SUBJECTS: readonly SubjectId[] = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ']
+export const LEARN_SUBJECTS: readonly SubjectId[] = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic']
 
 export const SUBJECT_EMOJI: Partial<Record<SubjectId, string>> = {
   mat: '🔢',
@@ -10,6 +10,7 @@ export const SUBJECT_EMOJI: Partial<Record<SubjectId, string>> = {
   civ: '🤝',
   ist: '🏰',
   geo: '🗺️',
+  logic: '🧩',
 }
 
 export function subjectEmoji(subject: SubjectId): string {
