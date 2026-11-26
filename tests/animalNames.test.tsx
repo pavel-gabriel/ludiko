@@ -43,7 +43,10 @@ beforeAll(async () => {
   window.matchMedia ??= ((q: string) => ({ matches: false, media: q, addEventListener() {}, removeEventListener() {} })) as unknown as typeof window.matchMedia
   await i18n.changeLanguage('ro')
 })
-beforeEach(() => vi.clearAllMocks())
+beforeEach(() => {
+  vi.clearAllMocks()
+  localStorage.clear() /* the setup wizard remembers its last choices */
+})
 
 describe('animal name list', () => {
   it('uses the same 16 emojis as the avatar picker, each exactly once', () => {
@@ -117,11 +120,21 @@ const noTextName = (container: HTMLElement) => {
   return inputs.filter((i) => i.inputMode !== 'numeric' && !i.className.includes('tracking-widest'))
 }
 
+/** Walk a setup wizard to "Cine ești?": mode -> pick the first quick preset -> who */
+function toWhoStep() {
+  fireEvent.click(screen.getByTestId('setup-next'))
+  const preset = screen.getByRole('button', { name: /Adunare până la 20/ })
+  if (preset.getAttribute('aria-pressed') !== 'true') fireEvent.click(preset) /* remembered from an earlier round */
+  fireEvent.click(screen.getByTestId('setup-next'))
+}
+
 describe('no free-text name for kids', () => {
   it('create room: animal name picker, room is created with that name and avatar', async () => {
     const { container } = render(<MemoryRouter><CreateRoom /></MemoryRouter>)
+    toWhoStep()
     expect(noTextName(container)).toHaveLength(0)
     const shown = screen.getByTestId('animal-name').textContent!
+    fireEvent.click(screen.getByTestId('setup-next')) /* -> Gata? */
     fireEvent.click(screen.getByRole('button', { name: /Creează|Create/ }))
     await waitFor(() => expect(rm.createRoomInDB).toHaveBeenCalled())
     expect(rm.buildRoom.mock.calls[0][0]).toBe(shown)
@@ -131,10 +144,12 @@ describe('no free-text name for kids', () => {
 
   it('single player and duel setup have no name inputs either', () => {
     const a = render(<MemoryRouter><SinglePlayerPage /></MemoryRouter>)
+    toWhoStep()
     expect(noTextName(a.container)).toHaveLength(0)
     expect(a.container.querySelectorAll('[data-testid="animal-name"]')).toHaveLength(1)
     a.unmount()
     const b = render(<MemoryRouter><InteractiveSetupPage /></MemoryRouter>)
+    toWhoStep()
     expect(noTextName(b.container)).toHaveLength(0)
     const names = b.container.querySelectorAll('[data-testid="animal-name"]')
     expect(names).toHaveLength(2)
@@ -144,6 +159,7 @@ describe('no free-text name for kids', () => {
   it('duel players start with different animals', () => {
     for (let i = 0; i < 15; i++) {
       const { unmount, container } = render(<MemoryRouter><InteractiveSetupPage /></MemoryRouter>)
+      toWhoStep()
       const triggers = Array.from(container.querySelectorAll('button[aria-label^="Selected avatar"]')).map((b) => b.textContent)
       expect(new Set(triggers.map((t) => t?.replace(/[▴▾]/g, '').trim())).size).toBe(2)
       unmount()

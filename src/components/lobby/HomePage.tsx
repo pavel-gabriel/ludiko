@@ -2,7 +2,52 @@ import { useEffect } from 'react';
 import { useProfileStore } from '@/store/profileStore';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Button from '@/components/ui/Button';
+
+type Tone = 'pink' | 'blue' | 'green' | 'yellow' | 'purple' | 'orange';
+const TONE: Record<Tone, string> = {
+  pink: 'bg-ludiko-pink',
+  blue: 'bg-ludiko-blue',
+  green: 'bg-ludiko-green',
+  yellow: 'bg-ludiko-yellow',
+  purple: 'bg-ludiko-purple',
+  orange: 'bg-ludiko-orange',
+};
+
+/** A "Joacă" card: big icon tile, a title and a one-line hint */
+function PlayCard({ emoji, tone, title, sub, onClick, testId }: { emoji: string; tone: Tone; title: string; sub: string; onClick: () => void; testId: string }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      data-testid={testId}
+      className="flex min-h-[4.5rem] w-full items-center gap-3 rounded-2xl bg-white px-3 py-2.5 text-left shadow transition-all hover:shadow-md active:scale-[0.97]"
+    >
+      <span aria-hidden="true" className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-3xl ${TONE[tone]}`}>
+        {emoji}
+      </span>
+      <span className="min-w-0 flex-1">
+        <span className="block text-lg font-extrabold leading-tight text-ludiko-text">{title}</span>
+        <span className="block text-xs leading-snug text-gray-500">{sub}</span>
+      </span>
+      <span aria-hidden="true" className="text-xl font-bold text-gray-300">›</span>
+    </button>
+  );
+}
+
+/** A small "Pentru adulți" button */
+function AdultButton({ emoji, label, onClick, testId }: { emoji: string; label: string; onClick: () => void; testId: string }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      data-testid={testId}
+      className="flex min-h-[3.75rem] flex-col items-center justify-center gap-0.5 rounded-xl bg-white/70 px-1 py-2 text-xs font-bold text-ludiko-text shadow-sm transition-all hover:bg-white active:scale-95"
+    >
+      <span aria-hidden="true" className="text-xl">{emoji}</span>
+      <span>{label}</span>
+    </button>
+  );
+}
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -15,66 +60,67 @@ export default function HomePage() {
   }, [profilesLoaded, loadProfiles]);
 
   return (
-    <div className="page relative">
+    <div className="page">
+      <div className="flex w-full max-w-sm flex-col items-center">
+        <div className="mb-4 text-center">
+          <h1 className="text-5xl font-extrabold text-ludiko-purple">{t('app.title')}</h1>
+          <p className="mt-1 text-lg text-ludiko-text opacity-75">{t('home.tagline')}</p>
+        </div>
 
-      {/* Settings gear — top right */}
-      <button
-        onClick={() => navigate('/settings')}
-        className="absolute top-4 right-4 w-10 h-10 rounded-full bg-white shadow flex items-center justify-center text-xl hover:bg-gray-50 transition-colors"
-        aria-label={t('home.settings')}
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-ludiko-text">
-          <circle cx="12" cy="12" r="3" />
-          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
-        </svg>
-      </button>
-
-      <div className="text-center mb-12">
-        <h1 className="text-6xl font-extrabold text-ludiko-purple mb-2">
-          {t('app.title')}
-        </h1>
-        <p className="text-xl text-ludiko-text opacity-75">
-          {t('home.tagline')}
-        </p>
-      </div>
-
-      <button
-        onClick={() => navigate('/profiles')}
-        className="mb-6 flex items-center gap-2 px-5 py-3 rounded-full bg-white shadow-md font-bold text-lg hover:bg-gray-50 active:scale-95 transition-all"
-      >
-        {activeProfile ? (
-          <>
-            <span className="text-3xl" aria-hidden="true">{activeProfile.avatar}</span>
-            <span className="max-w-[10rem] truncate">{activeProfile.nickname}</span>
-          </>
-        ) : (
-          <>
-            <span className="text-3xl" aria-hidden="true">👤</span>
-            <span>{t('profiles.switchPlayer')}</span>
-          </>
-        )}
-      </button>
-
-      <div className="flex flex-col gap-4 w-full max-w-xs">
-        <Button
-          variant="green"
-          size="lg"
-          onClick={() => navigate('/learn')}
-          className="w-full ring-4 ring-ludiko-yellow shadow-lg"
-          data-testid="learn-entry"
+        <button
+          onClick={() => navigate('/profiles')}
+          className="mb-5 flex min-h-[3rem] items-center gap-2 rounded-full bg-white px-5 py-2 text-lg font-bold shadow-md transition-all hover:bg-gray-50 active:scale-95"
         >
-          <span aria-hidden="true">🧭 </span>
-          {t('learn.title')}
-        </Button>
-        <Button variant="pink" size="lg" onClick={() => navigate('/singleplayer')}>
-          {t('home.singlePlayer')}
-        </Button>
-        <Button variant="blue" size="lg" onClick={() => navigate('/multiplayer')}>
-          {t('home.multiplayer')}
-        </Button>
-        <Button variant="purple" size="lg" onClick={() => navigate('/teacher/login')}>
-          {t('home.teacherMode')}
-        </Button>
+          {activeProfile ? (
+            <>
+              <span className="text-3xl" aria-hidden="true">{activeProfile.avatar}</span>
+              <span className="max-w-[10rem] truncate">{activeProfile.nickname}</span>
+            </>
+          ) : (
+            <>
+              <span className="text-3xl" aria-hidden="true">👤</span>
+              <span>{t('profiles.switchPlayer')}</span>
+            </>
+          )}
+        </button>
+
+        {/* The main thing: learn with Ludiko */}
+        <button
+          type="button"
+          onClick={() => navigate('/learn')}
+          data-testid="learn-entry"
+          className="flex w-full items-center gap-3 rounded-3xl bg-ludiko-green px-4 py-4 text-left shadow-lg ring-4 ring-ludiko-yellow transition-all hover:bg-green-300 active:scale-[0.97]"
+        >
+          <span aria-hidden="true" className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-white/70 text-4xl">🧭</span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-2xl font-extrabold leading-tight text-ludiko-text">{t('learn.title')}</span>
+            <span className="block text-sm leading-snug text-ludiko-text opacity-80">{t('home.learnSub')}</span>
+          </span>
+        </button>
+
+        {/* Play */}
+        <section className="mt-6 w-full" aria-labelledby="home-play">
+          <h2 id="home-play" className="mb-2 px-1 text-sm font-extrabold uppercase tracking-wide text-ludiko-text opacity-60">
+            {t('home.play')}
+          </h2>
+          <div className="flex flex-col gap-3">
+            <PlayCard testId="play-solo" emoji="🎮" tone="pink" title={t('home.soloTitle')} sub={t('home.soloSub')} onClick={() => navigate('/singleplayer')} />
+            <PlayCard testId="play-friends" emoji="👫" tone="blue" title={t('home.friendsTitle')} sub={t('home.friendsSub')} onClick={() => navigate('/multiplayer')} />
+            <PlayCard testId="play-duel" emoji="📱" tone="orange" title={t('home.duoTitle')} sub={t('home.duoSub')} onClick={() => navigate('/interactive')} />
+          </div>
+        </section>
+
+        {/* Adults */}
+        <section className="mt-6 w-full" aria-labelledby="home-adults">
+          <h2 id="home-adults" className="mb-2 px-1 text-xs font-extrabold uppercase tracking-wide text-ludiko-text opacity-50">
+            {t('home.adults')}
+          </h2>
+          <div className="grid grid-cols-3 gap-2">
+            <AdultButton testId="adult-teacher" emoji="🎓" label={t('home.teacher')} onClick={() => navigate('/teacher/login')} />
+            <AdultButton testId="adult-parents" emoji="👨‍👩‍👧" label={t('home.parents')} onClick={() => navigate('/learn/parent')} />
+            <AdultButton testId="adult-settings" emoji="⚙️" label={t('home.settings')} onClick={() => navigate('/settings')} />
+          </div>
+        </section>
       </div>
     </div>
   );

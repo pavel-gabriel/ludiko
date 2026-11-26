@@ -2,7 +2,7 @@ import { getSkill } from '@/engine/content/registry';
 import { MAX_SKILLS } from '@/services/itemGame';
 import type { GameSettings, GameType } from '@/utils/types';
 
-/** One-tap choices for the "Ce exersăm?" picker (skill ids from content/skills; checked by tests/playItems.test.ts) */
+/** One-tap choices for the "Ce exersăm?" step (skill ids from content/skills; checked by tests/playItems.test.ts; the wizard filters them by the child's grade) */
 export interface PlayPreset {
   id: string;
   emoji: string;
@@ -14,8 +14,13 @@ export interface PlayPreset {
 export const PLAY_PRESETS: PlayPreset[] = [
   { id: 'addTo20', emoji: '➕', labelKey: 'play.preset.addTo20', skillIds: ['mat.add.nocarry.20', 'mat.add.carry.20'] },
   { id: 'subTo20', emoji: '➖', labelKey: 'play.preset.subTo20', skillIds: ['mat.sub.noborrow.20', 'mat.sub.borrow.20'] },
+  { id: 'addTo100', emoji: '➕', labelKey: 'setup.preset.addTo100', skillIds: ['mat.add.nocarry.100', 'mat.add.carry.100'] },
+  { id: 'subTo100', emoji: '➖', labelKey: 'setup.preset.subTo100', skillIds: ['mat.sub.noborrow.100', 'mat.sub.borrow.100'] },
+  { id: 'addTo1000', emoji: '➕', labelKey: 'setup.preset.addTo1000', skillIds: ['mat.add.nocarry.1000', 'mat.add.carry.1000'] },
   { id: 'mulTable', emoji: '✖️', labelKey: 'play.preset.mulTable', skillIds: ['mat.mul.table.small', 'mat.mul.table.large'] },
+  { id: 'mulBig', emoji: '✖️', labelKey: 'setup.preset.mulBig', skillIds: ['mat.mul.1digit', 'mat.mul.2digit'] },
   { id: 'divTable', emoji: '➗', labelKey: 'play.preset.divTable', skillIds: ['mat.div.table'] },
+  { id: 'fractions', emoji: '🍕', labelKey: 'setup.preset.fractions', skillIds: ['mat.fraction.half', 'mat.fraction.set'] },
   { id: 'clock', emoji: '🕒', labelKey: 'play.preset.clock', skillIds: ['mat.clock.hour', 'mat.clock.half'] },
   { id: 'syllables', emoji: '🔤', labelKey: 'play.preset.syllables', skillIds: ['rom.syll.count.0', 'rom.syll.split.1'] },
   { id: 'letters', emoji: '🅰️', labelKey: 'play.preset.letters', skillIds: ['rom.letters.sound.0', 'rom.letters.vowel.0'] },

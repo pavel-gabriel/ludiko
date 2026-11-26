@@ -11,23 +11,31 @@ interface SkillPickerProps {
   onChange: (ids: string[]) => void;
   /** The game the skills will be played in: skills that make no sense there are disabled */
   kind: ItemGameKind;
+  /**
+   * Inside the setup wizard ("Alege singur"): only the chosen list and the subject -> grade -> skills
+   * lists, always open. The title and the quick presets are the wizard's own step then.
+   */
+  embedded?: boolean;
+  /** Grade list to open first (the child's grade); defaults to the first grade of the subject */
+  initialGrade?: Grade;
 }
 
 const SUBJECT_ORDER: SubjectId[] = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'];
 
 const chip = (on: boolean) =>
   `rounded-xl px-3 py-2 text-sm font-bold transition-colors ${
-    on ? 'bg-ludiko-purple text-white' : 'bg-gray-100 hover:bg-gray-200'
+    on ? 'bg-ludiko-purple text-ludiko-text' : 'bg-gray-100 hover:bg-gray-200'
   }`;
 
 /**
  * "Ce exersăm?": quick presets, or subject -> grade -> skills (multi-select, up to MAX_SKILLS).
  * Shared by the room, single-player and duel setup pages. Choosing nothing keeps the classic v1 game.
  */
-export default function SkillPicker({ value, onChange, kind }: SkillPickerProps) {
+export default function SkillPicker({ value, onChange, kind, embedded = false, initialGrade }: SkillPickerProps) {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
-  const [open, setOpen] = useState(false);
+  const [openState, setOpen] = useState(false);
+  const open = embedded || openState;
 
   const skills = useMemo(() => getAllSkills(), []);
   const subjects = useMemo(
@@ -39,7 +47,7 @@ export default function SkillPicker({ value, onChange, kind }: SkillPickerProps)
     () => [...new Set(skills.filter((s) => s.subject === subject).map((s) => s.grade))].sort((a, b) => a - b) as Grade[],
     [skills, subject],
   );
-  const [grade, setGrade] = useState<Grade>(grades[0] ?? 0);
+  const [grade, setGrade] = useState<Grade>(initialGrade ?? grades[0] ?? 0);
   const shownGrade = grades.includes(grade) ? grade : (grades[0] ?? 0);
   const list = useMemo(
     () => skills.filter((s) => s.subject === subject && s.grade === shownGrade),
@@ -56,11 +64,16 @@ export default function SkillPicker({ value, onChange, kind }: SkillPickerProps)
   };
 
   return (
-    <section aria-label={t('play.title')} className="mb-4">
-      <span className="text-sm font-semibold">{t('play.title')}</span>
-      <p className="text-xs text-gray-500 mt-0.5">{t('play.hint', { max: MAX_SKILLS })}</p>
+    <section aria-label={t('play.title')} className={embedded ? '' : 'mb-4'}>
+      {!embedded && (
+        <>
+          <span className="text-sm font-semibold">{t('play.title')}</span>
+          <p className="text-xs text-gray-500 mt-0.5">{t('play.hint', { max: MAX_SKILLS })}</p>
+        </>
+      )}
 
       {/* Quick presets */}
+      {!embedded && (
       <div className="mt-2">
         <span className="block text-xs font-semibold uppercase tracking-wide text-gray-400 mb-1">
           {t('play.presets')}
@@ -85,6 +98,7 @@ export default function SkillPicker({ value, onChange, kind }: SkillPickerProps)
           })}
         </div>
       </div>
+      )}
 
       {/* What is chosen */}
       {value.length > 0 && (
@@ -119,14 +133,16 @@ export default function SkillPicker({ value, onChange, kind }: SkillPickerProps)
       )}
 
       {/* Pick yourself: subject -> grade -> skills */}
-      <button
-        type="button"
-        onClick={() => setOpen((o) => !o)}
-        aria-expanded={open}
-        className="mt-3 w-full rounded-xl border-2 border-dashed border-ludiko-blue py-2 text-sm font-bold text-ludiko-text"
-      >
-        {open ? t('play.hidePicker') : t('play.pickYourself')} <span aria-hidden="true">{open ? '▴' : '▾'}</span>
-      </button>
+      {!embedded && (
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          aria-expanded={open}
+          className="mt-3 w-full rounded-xl border-2 border-dashed border-ludiko-blue py-2 text-sm font-bold text-ludiko-text"
+        >
+          {open ? t('play.hidePicker') : t('play.pickYourself')} <span aria-hidden="true">{open ? '▴' : '▾'}</span>
+        </button>
+      )}
 
       {open && (
         <div className="mt-3 space-y-3">
