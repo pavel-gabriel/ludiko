@@ -15,6 +15,9 @@ const SUBJECT_NAMES: Record<SubjectId, { ro: string; en: string }> = {
   geo: { ro: 'Geografie', en: 'Geography' },
   civ: { ro: 'Educație civică', en: 'Civics' },
   logic: { ro: 'Logică', en: 'Logic' },
+  bio: { ro: 'Biologie', en: 'Biology' },
+  fiz: { ro: 'Fizică', en: 'Physics' },
+  chim: { ro: 'Chimie', en: 'Chemistry' },
 };
 
 /** "clasa pregătitoare", "clasa I", "clasa a II-a", … "clasa a VIII-a" (en: "preparatory grade", "grade I", …) */

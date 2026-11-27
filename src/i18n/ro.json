@@ -633,7 +633,10 @@
       "civ": "Educație civică",
       "ist": "Istorie",
       "geo": "Geografie",
-      "logic": "Jocuri de logică"
+      "logic": "Jocuri de logică",
+      "bio": "Biologie",
+      "fiz": "Fizică",
+      "chim": "Chimie"
     },
     "home": {
       "missionTitle": "Misiunea de azi",

@@ -626,7 +626,10 @@
       "civ": "Civic education",
       "ist": "History",
       "geo": "Geography",
-      "logic": "Logic puzzles"
+      "logic": "Logic puzzles",
+      "bio": "Biology",
+      "fiz": "Physics",
+      "chim": "Chemistry"
     },
     "home": {
       "missionTitle": "Today's mission",

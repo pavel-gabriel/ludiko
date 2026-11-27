@@ -11,6 +11,9 @@ export const SUBJECT_EMOJI: Partial<Record<SubjectId, string>> = {
   ist: '🏰',
   geo: '🗺️',
   logic: '🧩',
+  bio: '🌿',
+  fiz: '⚡',
+  chim: '⚗️',
 }
 
 export function subjectEmoji(subject: SubjectId): string {
