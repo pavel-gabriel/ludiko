@@ -18,7 +18,7 @@ export type GimExamId = Extract<ExamId, 'en6' | 'en8'>
 export const GIM_EXAMS: readonly GimExamId[] = ['en6', 'en8']
 
 /** Competence groups shown in the per-competence feedback (Ludiko's grouping; labels in i18n `examGim.comp.*`) */
-export type GimCompetence = 'lectura' | 'limba' | 'lexic' | 'ortografie' | 'calc' | 'alg' | 'geom' | 'bio' | 'fiz' | 'geo'
+export type GimCompetence = 'lectura' | 'limba' | 'lexic' | 'ortografie' | 'calc' | 'alg' | 'geom' | 'bio' | 'fiz' | 'geo' | 'eng_read' | 'eng_lang' | 'eng_func'
 
 /** How many tests (variants) each paper has */
 export const GIM_VARIANTS: Record<GimExamId, Record<ExamTestNo, number>> = {
@@ -125,8 +125,9 @@ function en8Romanian(v: number): ExamBlueprint {
 }
 
 /* ------------------------------------------------------------------ */
-/*  EN VI · Limbă și comunicare (Romanian part), 90 min (approx.)       */
-/*  The modern-language part is NOT simulated: no English item source.  */
+/*  EN VI · Limbă și comunicare (Romanian + English parts), 120 min (approx.)       */
+/*  Modern-language part (English, approximate structure): reading 10 p,  */
+/*  vocabulary and grammar in context 8 x 2 p, functional language 2 x 3 p */
 /* ------------------------------------------------------------------ */
 
 const R6_LITERARY = ['rom.text.characters.6', 'rom.text.inference.6', 'rom.text.modes.5']
@@ -135,10 +136,14 @@ const R6_MORPH = ['rom.morph.verb.6', 'rom.morph.pos.6', 'rom.morph.mood.6']
 const R6_LEX = ['rom.vocab.lexfamily.6', 'rom.vocab.paronym.6', 'rom.vocab.synonym.5', 'rom.vocab.homonym.5']
 const R6_FIG = ['rom.fig.more.6', 'rom.fig.basic.5']
 const R6_ORTO = ['rom.spell.nai.6', 'rom.spell.la.6', 'rom.punct.comma.6', 'rom.spell.ia.5']
+const E6_READ = ['eng.read.short.5', 'eng.read.6', 'eng.read.short.5']
+const E6_GRAM = ['eng.grammar.present.5', 'eng.grammar.questions.5', 'eng.grammar.continuous.5', 'eng.grammar.plurals.5', 'eng.grammar.articles.5', 'eng.grammar.prep.5', 'eng.grammar.tobe.5', 'eng.grammar.past.6', 'eng.grammar.pastq.6', 'eng.grammar.compar.6', 'eng.grammar.future.6', 'eng.grammar.modals.6', 'eng.grammar.irregular.6', 'eng.grammar.pastcont.6']
+const E6_VOCAB = ['eng.vocab.topics.5', 'eng.vocab.topics.6']
+const E6_FUNC = ['eng.func.basic.5', 'eng.func.directions.6']
 
 function en6Romanian(v: number): ExamBlueprint {
   const i = v - 1
-  return make('en6', 1, v, { ro: `Limbă și comunicare · Testul ${v}`, en: `Language and communication · Test ${v}` }, 90, [
+  return make('en6', 1, v, { ro: `Limbă și comunicare · Testul ${v}`, en: `Language and communication · Test ${v}` }, 120, [
     sec('lit', 'Citim un text literar', 'Reading a literary text', 'Citește textul cu atenție, apoi răspunde la întrebări.', 'Read the text carefully, then answer the questions.', [
       part('lit', 'lectura', [R6_LITERARY[i]], 1, 3, 20),
     ]),
@@ -150,6 +155,16 @@ function en6Romanian(v: number): ExamBlueprint {
       part('lex', 'lexic', rot(R6_LEX, i).slice(0, 3), 3, 3, 2),
       part('fig', 'lexic', [rot(R6_FIG, i)[0]], 1, 3, 2),
       part('orto', 'ortografie', rot(R6_ORTO, i).slice(0, 4), 4, 3, 2),
+    ]),
+    sec('eng-read', 'Limba engleză · Citim un text', 'English · Reading a text', 'Citește textul în engleză, apoi răspunde. Nu e nevoie să înțelegi fiecare cuvânt.', 'Read the English text, then answer. You do not need to understand every word.', [
+      part('eng-read', 'eng_read', [E6_READ[i]], 1, 3, 10),
+    ]),
+    sec('eng-lang', 'Limba engleză · Vocabular și gramatică', 'English · Vocabulary and grammar', 'Cuvinte și structuri în propoziții scurte: alege sau completează.', 'Words and structures in short sentences: choose or fill in.', [
+      part('eng-vocab', 'eng_lang', rot(E6_VOCAB, i), 2, 2, 2),
+      part('eng-gram', 'eng_lang', rot(E6_GRAM, 4 * i).slice(0, 6), 6, 3, 2),
+    ]),
+    sec('eng-func', 'Limba engleză · Limbaj funcțional', 'English · Functional language', 'Ce spunem în situații de zi cu zi: saluturi, cumpărături, indicații.', 'What we say in everyday situations: greetings, shopping, directions.', [
+      part('eng-func', 'eng_func', rot(E6_FUNC, i), 2, 2, 3),
     ]),
   ])
 }

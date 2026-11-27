@@ -325,7 +325,8 @@
    "en": "Comparatives and superlatives"
   },
   "prerequisites": [
-   "eng.vocab.topics.5"
+   "eng.vocab.topics.5",
+   "eng.adjectives.4"
   ],
   "itemSources": [
    {

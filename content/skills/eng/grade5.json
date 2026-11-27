@@ -18,7 +18,9 @@
    "ro": "Vocabular: familie, școală, mâncare, casă, animale, corp, haine",
    "en": "Vocabulary: family, school, food, home, animals, body, clothes"
   },
-  "prerequisites": [],
+  "prerequisites": [
+   "eng.jobs.4"
+  ],
   "itemSources": [
    {
     "generator": "eng-gim-vocab",
@@ -71,7 +73,9 @@
    "ro": "Verbul to be, have got și there is/are",
    "en": "To be, have got and there is/are"
   },
-  "prerequisites": [],
+  "prerequisites": [
+   "eng.questions.4"
+  ],
   "itemSources": [
    {
     "generator": "eng-gim-quiz",
@@ -116,7 +120,10 @@
    "ro": "Present simple: afirmativ și persoana a III-a",
    "en": "Present simple: affirmative and third person -s"
   },
-  "prerequisites": [],
+  "prerequisites": [
+   "eng.present.4",
+   "eng.wordorder.4"
+  ],
   "itemSources": [
    {
     "generator": "eng-gim-verb",
@@ -220,7 +227,8 @@
    "en": "Present simple questions and negatives"
   },
   "prerequisites": [
-   "eng.grammar.present.5"
+   "eng.grammar.present.5",
+   "eng.questions.4"
   ],
   "itemSources": [
    {
@@ -285,7 +293,8 @@
    "en": "Present continuous"
   },
   "prerequisites": [
-   "eng.grammar.present.5"
+   "eng.grammar.present.5",
+   "eng.continuous.4"
   ],
   "itemSources": [
    {
@@ -480,7 +489,8 @@
   },
   "prerequisites": [
    "eng.grammar.present.5",
-   "eng.vocab.topics.5"
+   "eng.vocab.topics.5",
+   "eng.reading.4"
   ],
   "itemSources": [
    {

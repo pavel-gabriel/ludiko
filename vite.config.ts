@@ -39,6 +39,8 @@ export default defineConfig({
         // App shell + built assets. Dyslexic .woff fallbacks are skipped (woff2 is enough).
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,ico,webmanifest}'],
         globIgnores: ['404.html'],
+        // The content registry chunk (all skills, explanations and item banks) is about 2.2 MB and must be precached for offline use
+        maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         navigateFallback: `${base}index.html`,
         // Never serve the SPA shell for content bundles or Firebase endpoints
         navigateFallbackDenylist: [/^\/content\//, /^\/__\//, /^\/sounds\//],

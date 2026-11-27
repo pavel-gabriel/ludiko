@@ -255,7 +255,7 @@ function perfectVs(ctx: GeneratorContext): Item {
 
 function tenseMix(ctx: GeneratorContext): Item {
   const s = subjectFor(ctx);
-  const kind = pick(ctx.rng, ['present', 'continuous', 'past', 'perfect']);
+  const kind = pick(ctx.rng, ['present', 'continuous', 'past', 'perfect'] as const);
   const p = phraseFor(ctx, (v) => !STATIVE.has(v) && pastSimple(v) !== v && (kind !== 'perfect' || perfectVerbOk(v)));
   const v = p.v;
   const forms = {

@@ -13,7 +13,7 @@ import {
   ADJECTIVES, IRREGULAR, NOUNS, ORDER_SENTENCES, PHRASES, REGULAR, SUBJECTS, UNCOUNTABLE, VOCAB_TOPICS, articleForAdjective,
   haveForm, ingForm, naivePast, pastParticiple, pastSimple, thirdPerson, type Adjective, type IrregularVerb, type Noun, type VocabTopic,
 } from './engGimData';
-import { INSTR, L, choiceItem, gapItem, matchItem, orderItem, sortItem, tfItem } from './engGimKit';
+import { INSTR, L, choiceItem, matchItem, orderItem, sortItem, tfItem } from './engGimKit';
 import { blankItem } from './engGimVerbs';
 import { registerGenerator, type GeneratorContext, type GeneratorFn } from './registry';
 import { optionCount, pick, shuffle } from './util';
@@ -104,7 +104,7 @@ const PLURAL_FRAMES = ['There are three {{gap}} in the room. ({s})', 'I can see 
 
 /** Wrong plural spellings that are never accepted English plurals for the noun */
 function wrongPlurals(n: Noun): string[] {
-  const out = [`${n.s}s`, `${n.s}es`, `${n.s}en`];
+  const out = [`${n.s}s`, `${n.s}es`, `${n.s}en`, `${n.s}ies`];
   if (n.s.endsWith('y')) out.push(`${n.s.slice(0, -1)}ies`, `${n.s.slice(0, -1)}es`);
   if (n.s.endsWith('f')) out.push(`${n.s.slice(0, -1)}ves`);
   if (n.s.endsWith('fe')) out.push(`${n.s.slice(0, -2)}ves`);
@@ -147,7 +147,6 @@ function nounPlural(ctx: GeneratorContext): Item {
 function nounArticle(ctx: GeneratorContext): Item {
   const { rng, difficulty } = ctx;
   const n = pick(rng, NOUNS);
-  const other = n.art === 'a' ? 'an' : 'a';
   const mode = pick(rng, ['gap', 'gap', 'choice', 'tf']);
   const withAdj = difficulty >= 2 && rng() < 0.5;
   const adj = withAdj ? pick(rng, ADJECTIVES).b : '';

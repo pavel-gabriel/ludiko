@@ -144,3 +144,23 @@ between `«…»` (e.g. `ro: "Ascultă și alege imaginea: «cat»."`). `src/ui/
 skill, and the reading passage is read with an English voice. `useReadAloud('en')` / `<ReadAloudButton lang="en">` pick an
 English voice (en-GB first, then en-US) regardless of the UI language; without an argument nothing changes. The button is
 hidden when the device has no English voice.
+
+## English V–VIII (`eng.*.5` – `eng.*.8`)
+
+47 skills (11 / 12 / 12 / 12) following *Limba modernă 1, gimnaziu* (A1+ → A2/B1; competence codes `LM1-V-VIII-2017`, to verify):
+vocabulary by topic, present simple/continuous, past simple/continuous, present perfect, future forms, questions and
+negatives, articles, plurals, countable/uncountable, comparatives, modals, prepositions, pronouns, adverbs of frequency,
+conditionals 0/1, passive, reported speech (basics), phrasal verbs, word formation, verb patterns, reading and functional
+language (shopping, directions, invitations, opinions/phone/email). Grade V skills hang on the grade IV skills
+(`eng.present.4`, `eng.continuous.4`, `eng.questions.4`, `eng.jobs.4`, `eng.wordorder.4`, `eng.reading.4`, `eng.adjectives.4`).
+
+Generators (`src/engine/items/generators/engGim*.ts`, data in `content/data/eng/gim-*.json`, British spelling): `eng-gim-verb`
+(modes present, present-q, continuous, past, past-q, past-cont, future, perfect, perfect-vs, tense-mix; morphology rules in
+`engGimData.ts`), `eng-gim-irregular` (66 irregular verbs, sets A/B), `eng-gim-noun` (plural, article, countable),
+`eng-gim-adj`, `eng-gim-vocab` (23 topics), `eng-gim-order` (96 sentences), `eng-gim-quiz` (23 curated topics: gap entries
+double as choice and true/false), `eng-gim-passive`, `eng-gim-reported`, `eng-gim-wordform`. Instructions are bilingual
+(`Alege varianta corectă: <English>` / `Choose the correct option: <English>`); distractors are malformed or contradict the
+cue, and `tests/engGimnaziu.test.ts` checks every answer and every distractor with an independent grammar judge.
+Reading banks (`content/items/eng/gim5-8.json`): 20 original texts of 83–153 words (rising by grade), 4 questions each.
+Explanations (3 frames, ro + en) are in `content/explanations/eng/grade5-8.json` (no «…» listen markers yet).
+All content is ai-draft / beta and needs review by an English teacher.

@@ -270,7 +270,7 @@ describe('UI', () => {
     }
     expect(screen.getByTestId('test-en8.t2.v1')).toHaveTextContent('15 cerințe · 90 puncte · 120 minute')
     expect(screen.getByTestId('exam-parent-note')).toHaveTextContent('aproximare')
-    expect(screen.getByTestId('exam-parent-note')).toHaveTextContent('limbă modernă')
+    expect(screen.getByTestId('exam-parent-note')).toHaveTextContent('Redactarea')
     fireEvent.click(screen.getByTestId('tab-en6'))
     expect(screen.getByTestId('gim-mark-note')).toHaveTextContent('Fără notă oficială')
     expect(screen.getByTestId('test-en6.t2.v3')).toHaveAttribute('href', '/learn/exam/en6/2/3')

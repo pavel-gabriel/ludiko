@@ -1585,7 +1585,7 @@
       "mark": "You get an estimated mark (1–10).",
       "parentTitle": "About these simulations",
       "parentNote": "The structure (parts, number of tasks, points, duration) is an approximation based on the public description of the evaluations; it does not reproduce any real paper. All texts and tasks are original or generated. The result is a practice estimate, not an official mark.",
-      "todo": "The modern-language part of the grade VI evaluation and the Romanian writing task are not simulated yet."
+      "todo": "Writing tasks (Romanian composition, English writing) are not simulated yet. The English part of grade VI covers reading, vocabulary and grammar, and functional language."
     },
     "start": {
       "title": "Ready for the simulation?",
@@ -1612,7 +1612,7 @@
       "unanswered": "{{n}} tasks were left unanswered.",
       "overtime": "You went over the recommended time; it did not count in the result.",
       "saved": "The answers were added to your progress.",
-      "todo": "The modern-language part (grade VI) and the writing task (Romanian) are not included.",
+      "todo": "Writing tasks (Romanian composition, English writing) are not included.",
       "starsLabel": "{{n}} stars earned"
     },
     "comp": {
@@ -1626,6 +1626,9 @@
       "bio": "Biology",
       "fiz": "Physics",
       "geo": "Geography",
+      "eng_read": "English: reading",
+      "eng_lang": "English: vocabulary and grammar",
+      "eng_func": "English: functional language",
       "misc": "Other tasks"
     }
   },

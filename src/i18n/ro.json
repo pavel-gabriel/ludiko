@@ -1599,7 +1599,7 @@
       "mark": "Primești o notă estimativă (1–10).",
       "parentTitle": "Despre aceste simulări",
       "parentNote": "Structura (părți, număr de cerințe, punctaj, durată) este o aproximare făcută după descrierea publică a evaluărilor; nu reproduce nicio lucrare reală. Toate textele și cerințele sunt originale sau generate. Rezultatul este o estimare de antrenament, nu o notă oficială.",
-      "todo": "Partea de limbă modernă de la EN clasa a VI-a și redactarea de la Limba română nu sunt simulate încă."
+      "todo": "Redactarea (compunerea la română, scrisul în engleză) nu este simulată încă. Partea de engleză de la clasa a VI-a cuprinde citirea, vocabularul și gramatica, limbajul funcțional."
     },
     "start": {
       "title": "Gata de simulare?",
@@ -1626,7 +1626,7 @@
       "unanswered": "{{n}} cerințe au rămas fără răspuns.",
       "overtime": "Ai depășit timpul recomandat; nu a contat în rezultat.",
       "saved": "Răspunsurile au fost adăugate la progresul tău.",
-      "todo": "Partea de limbă modernă (EN clasa a VI-a) și redactarea (Limba română) nu sunt incluse.",
+      "todo": "Redactarea (compunerea la română, scrisul în engleză) nu este inclusă.",
       "starsLabel": "{{n}} stele câștigate"
     },
     "comp": {
@@ -1640,6 +1640,9 @@
       "bio": "Biologie",
       "fiz": "Fizică",
       "geo": "Geografie",
+      "eng_read": "Engleză: citire",
+      "eng_lang": "Engleză: vocabular și gramatică",
+      "eng_func": "Engleză: limbaj funcțional",
       "misc": "Alte cerințe"
     }
   },

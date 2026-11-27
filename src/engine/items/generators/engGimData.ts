@@ -34,7 +34,7 @@ export const ORDER_SENTENCES = sentencesFile.sentences as OrderSentence[];
 export const PHRASES = sentencesFile.phrases as Phrase[];
 export const PASSIVES = sentencesFile.passives as PassiveEntry[];
 export const WORD_FORMS = wordformFile.entries as WordFormEntry[];
-export const QUIZ_TOPICS = quizFile.topics as Record<string, QuizTopic>;
+export const QUIZ_TOPICS = quizFile.topics as unknown as Record<string, QuizTopic>;
 
 const irregularByBase = new Map(IRREGULAR.map((v) => [v.b, v]));
 export const irregularVerb = (b: string): IrregularVerb | undefined => irregularByBase.get(b);
