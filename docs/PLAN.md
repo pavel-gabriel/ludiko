@@ -254,6 +254,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 - [x] Mastery tracking + mission planner + spaced review (see `docs/ENGINE.md`)
 - [x] Adventure map + Treasure map mode + gentle streak (stickers awarded; sticker album screen to do)
 - [x] Math explanations (frames) for every skill (beta, AI-drafted — teacher review pending)
+- [x] Clear journey: "Hai să vedem ce știi" check card with per-subject progress on the landing page and `/learn`, a finished check leads into today's plan (or the next subject); the map is an ordered **island route** (prerequisites first, then grade/semester) whose next island is the planner's `new` step, placement-known islands read "Știi deja" (docs/ENGINE.md "Island route"); filter chips on long lists; first-run coach marks, per-item-type how-to lines and "Cum se joacă?" panels, toned per age band
 
 ### Daily bits & reminders
 - [x] Daily bits (≈3-minute groups from the mission) + parent opt-in Web Push reminders (`docs/NOTIFICATIONS.md`); sender active once secrets are set

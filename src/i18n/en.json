@@ -1628,5 +1628,166 @@
       "geo": "Geography",
       "misc": "Other tasks"
     }
+  },
+  "filters": {
+    "all": "All",
+    "todo": "To do",
+    "doing": "In progress",
+    "done": "Done",
+    "locked": "Hidden",
+    "known": "Already known",
+    "islands": "Which islands to show",
+    "showLocked": "Also show hidden islands",
+    "lockedHidden": "Hidden islands: {{n}}. They open along the way.",
+    "showThem": "Show them",
+    "subject": "Subject",
+    "grade": "Grade",
+    "state": "Progress",
+    "allSubjects": "All subjects",
+    "allGrades": "All grades",
+    "none": "Nothing here. Pick another filter.",
+    "count": "{{n}} of {{total}}"
+  },
+  "guide": {
+    "help": "How does it work?",
+    "next": "Next",
+    "done": "Got it!",
+    "skip": "Skip",
+    "stepOf": "{{n}} of {{total}}",
+    "learn": {
+      "check": {
+        "small": "Start here: let's find out together what you already know. It's a game!",
+        "big": "Start with the check: we find out what you already know."
+      },
+      "plan": {
+        "small": "This is today's plan. Tap the first bit to start!",
+        "big": "Today's plan: a few minutes per subject."
+      },
+      "subjects": {
+        "small": "Here you find every subject and its island map.",
+        "big": "Every subject, with its check and map."
+      },
+      "help": {
+        "small": "Forgot something? Tap the question mark and I'll show you again.",
+        "big": "The question mark opens this guide again."
+      }
+    },
+    "map": {
+      "next": {
+        "small": "Tap an island to play. Start with the next island!",
+        "big": "Tap an island to practise. Start with the next one."
+      },
+      "filters": {
+        "small": "Here you choose which islands to see: to do, in progress or done.",
+        "big": "Filter the islands by progress."
+      },
+      "route": "The island path",
+      "nextTitle": "Next island",
+      "go": "Let's go!",
+      "nextBadge": "Next",
+      "stateKnown": "Already known",
+      "progress": "Islands done: {{done}} of {{total}}",
+      "knownNote": "From the check: you already know {{n}}. We skip those.",
+      "stop": "Stop {{n}}",
+      "noNext": "You have explored everything open right now. Well done! Keep going with the islands in progress.",
+      "checkFirst": "Do the check first, so we know where you start on the path."
+    },
+    "check": {
+      "title": {
+        "small": "Let's see what you know!",
+        "big": "Check what you know"
+      },
+      "body": {
+        "small": "A few short games per subject and we find out where to start. No marks!",
+        "big": "A few short exercises per subject. We find out where you start."
+      },
+      "progress": "Checked: {{done}} of {{total}}",
+      "start": "Start with {{subject}}",
+      "resume": "Continue {{subject}}",
+      "status": {
+        "done": "done",
+        "inProgress": "started",
+        "none": "to check"
+      },
+      "subjectAria": "{{subject}}: {{status}}",
+      "afterPlan": "See today's plan",
+      "afterNext": "Now on to {{subject}}",
+      "allDone": "You have checked every subject. Today's plan is waiting!"
+    },
+    "welcome": {
+      "title": "Welcome to Ludiko!",
+      "body": "Make a profile and we'll find out together what you already know.",
+      "cta": "Start here"
+    },
+    "items": {
+      "choice": {
+        "small": "Tap the right answer.",
+        "big": "Pick the correct answer."
+      },
+      "picture-choice": {
+        "small": "Tap the matching picture.",
+        "big": "Pick the correct picture."
+      },
+      "true-false": {
+        "small": "Tap True or False.",
+        "big": "True or false?"
+      },
+      "number-input": {
+        "small": "Type the number and tap Done.",
+        "big": "Type the number, then Done."
+      },
+      "fill-gap": {
+        "small": "Fill in the gap, then tap Done.",
+        "big": "Fill the gap, then Done."
+      },
+      "order": {
+        "small": "Tap the cards one by one, in the right order. Then tap Done.",
+        "big": "Tap the cards in order, then Done."
+      },
+      "sort": {
+        "small": "Tap a card, then its group. At the end tap Done.",
+        "big": "Card, then its group. Then Done."
+      },
+      "match": {
+        "small": "Tap a card on the left, then its partner on the right.",
+        "big": "Left, then its partner on the right."
+      },
+      "hotspot": {
+        "small": "Tap the right spot on the picture.",
+        "big": "Tap the correct spot on the picture."
+      },
+      "read-and-answer": {
+        "small": "Read the text, then answer the questions.",
+        "big": "Read the text, then answer."
+      },
+      "listen-and-answer": {
+        "small": "Listen, then tap the right answer.",
+        "big": "Listen, then pick the answer."
+      }
+    },
+    "modes": {
+      "title": "How to play?",
+      "race": {
+        "small": "Answer the questions one by one. Every right answer takes you closer to the finish. First to the finish wins!",
+        "big": "Answer every question. First to the finish wins."
+      },
+      "sprint": {
+        "small": "The clock is ticking! Answer as many questions as you can before time runs out.",
+        "big": "Fixed time: as many correct answers as you can."
+      },
+      "memory": {
+        "small": "Flip two cards at a time. If they match, you keep them. Remember where they are!",
+        "big": "Flip two cards at a time and find the pairs."
+      },
+      "duel": {
+        "small": "Two players, one phone: each has their own half of the screen. Answer at the same time!",
+        "big": "Two players on one phone, each on their own half."
+      },
+      "friends": {
+        "small": "One of you creates the room and gets a code. The others tap “Join with a code” and type it. Then the host starts the game.",
+        "big": "The host creates a room and shares the code. The others join with it."
+      }
+    },
+    "readHint": "What do I do?"
   }
 }

@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { localize, type CardContent, type Item, type ItemResult } from '@/engine/types';
 import ReadAloudButton from '@/ui/speech/ReadAloudButton';
+import ItemTypeGuide, { useItemGuide } from '@/ui/guide/ItemTypeGuide';
 import VisualSlot from './VisualSlot';
 
 /** Text + optional visual of one card/option */
@@ -60,6 +61,8 @@ export default function ItemShell({ item, result, onContinue, correctAnswer, hin
   const promptId = useId();
   const continueRef = useRef<HTMLButtonElement>(null);
   const wrong = result !== null && !result.correct;
+  // the first few times a type is seen: a friendly "what do I do" line instead of the plain hint
+  const guide = useItemGuide(item.type, item.id);
 
   useEffect(() => {
     if (wrong) continueRef.current?.focus();
@@ -80,7 +83,7 @@ export default function ItemShell({ item, result, onContinue, correctAnswer, hin
         </div>
         <ReadAloudButton text={localize(item.prompt, i18n.language)} />
         {item.visual && <VisualSlot spec={item.visual} />}
-        {hint && <p className="text-sm font-semibold text-gray-500">{hint}</p>}
+        {guide ? <ItemTypeGuide type={item.type} /> : hint && <p className="text-sm font-semibold text-gray-500">{hint}</p>}
       </div>
 
       <div role="group" aria-labelledby={promptId}>

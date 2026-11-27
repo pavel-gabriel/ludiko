@@ -1,7 +1,10 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { useProfileStore } from '@/store/profileStore';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+
+/* Lazy: the check-progress card reads the content registry, which must stay out of the initial bundle */
+const LevelCheckCta = lazy(() => import('@/ui/learn/LevelCheckCta'));
 
 type Tone = 'pink' | 'blue' | 'green' | 'yellow' | 'purple' | 'orange';
 const TONE: Record<Tone, string> = {
@@ -54,6 +57,7 @@ export default function HomePage() {
   const navigate = useNavigate();
   const activeProfile = useProfileStore((s) => s.activeProfile);
   const profilesLoaded = useProfileStore((s) => s.loaded);
+  const profileCount = useProfileStore((s) => s.profiles.length);
   const loadProfiles = useProfileStore((s) => s.load);
   useEffect(() => {
     if (!profilesLoaded) void loadProfiles();
@@ -83,6 +87,32 @@ export default function HomePage() {
             </>
           )}
         </button>
+
+        {/* First visit: no profile yet. Making one is the way to "let's see what you know" */}
+        {profilesLoaded && profileCount === 0 && !activeProfile && (
+          <section className="mb-4 w-full rounded-3xl bg-ludiko-yellow p-4 text-center shadow-md ring-4 ring-ludiko-orange" data-testid="landing-welcome">
+            <h2 className="text-2xl font-extrabold text-ludiko-text">
+              <span aria-hidden="true">👋 </span>
+              {t('guide.welcome.title')}
+            </h2>
+            <p className="mt-1 text-base font-semibold text-ludiko-text/80">{t('guide.welcome.body')}</p>
+            <button
+              type="button"
+              onClick={() => navigate('/profiles')}
+              data-testid="landing-welcome-go"
+              className="mt-3 min-h-[60px] w-full rounded-2xl bg-ludiko-green px-4 text-xl font-extrabold text-ludiko-text shadow-md active:scale-95"
+            >
+              {t('guide.welcome.cta')} <span aria-hidden="true">→</span>
+            </button>
+          </section>
+        )}
+
+        {/* A profile with subjects still to check: "Hai să vedem ce știi!" comes first */}
+        {activeProfile && (
+          <Suspense fallback={null}>
+            <LevelCheckCta profile={activeProfile} />
+          </Suspense>
+        )}
 
         {/* The main thing: learn with Ludiko */}
         <button

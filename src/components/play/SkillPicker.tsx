@@ -4,6 +4,7 @@ import { getAllSkills } from '@/engine/content/registry';
 import { localize, type Grade, type Skill, type SubjectId } from '@/engine/types';
 import { MAX_SKILLS, skillUsable, type ItemGameKind } from '@/services/itemGame';
 import { PLAY_PRESETS } from './presets';
+import FilterChips from '@/ui/common/FilterChips';
 
 interface SkillPickerProps {
   /** Chosen skill ids (max MAX_SKILLS) */
@@ -146,21 +147,19 @@ export default function SkillPicker({ value, onChange, kind, embedded = false, i
 
       {open && (
         <div className="mt-3 space-y-3">
-          <div role="group" aria-label={t('play.subject')} className="flex flex-wrap gap-2">
-            {subjects.map((s) => (
-              <button key={s} type="button" aria-pressed={subject === s} onClick={() => setSubject(s)} className={chip(subject === s)}>
-                {t(`play.subjects.${s}`)}
-              </button>
-            ))}
-          </div>
+          <FilterChips
+            label={t('play.subject')}
+            options={subjects.map((s) => ({ value: s, label: t(`play.subjects.${s}`) }))}
+            value={subject}
+            onChange={setSubject}
+          />
 
-          <div role="group" aria-label={t('play.grade')} className="flex flex-wrap gap-2">
-            {grades.map((g) => (
-              <button key={g} type="button" aria-pressed={shownGrade === g} onClick={() => setGrade(g)} className={chip(shownGrade === g)}>
-                {t(`play.grades.${g}`)}
-              </button>
-            ))}
-          </div>
+          <FilterChips
+            label={t('play.grade')}
+            options={grades.map((g) => ({ value: String(g), label: t(`play.grades.${g}`) }))}
+            value={String(shownGrade)}
+            onChange={(g) => setGrade(Number(g) as Grade)}
+          />
 
           {full && <p className="text-xs font-semibold text-amber-700">{t('play.maxReached', { max: MAX_SKILLS })}</p>}
 
