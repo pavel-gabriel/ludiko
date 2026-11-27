@@ -1,0 +1,1400 @@
+[
+ {
+  "id": "item.geo.earth.universe.5.01",
+  "skillId": "geo.earth.universe.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.earth.universe.5",
+  "provenance": {
+   "id": "prov.item.geo.earth.universe.5.01",
+   "kind": "item",
+   "title": "Item item.geo.earth.universe.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează planetele începând cu cea mai apropiată de Soare."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Venus"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Pământ"
+    }
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Marte"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Mercur"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2",
+   "c3"
+  ]
+ },
+ {
+  "id": "item.geo.earth.universe.5.02",
+  "skillId": "geo.earth.universe.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.earth.universe.5",
+  "provenance": {
+   "id": "prov.item.geo.earth.universe.5.02",
+   "kind": "item",
+   "title": "Item item.geo.earth.universe.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Ce este Luna pentru Pământ?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "planetă"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "stea"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "satelit natural"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "cometă"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.geo.earth.universe.5.03",
+  "skillId": "geo.earth.universe.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.earth.universe.5",
+  "provenance": {
+   "id": "prov.item.geo.earth.universe.5.03",
+   "kind": "item",
+   "title": "Item item.geo.earth.universe.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Soarele este o stea."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.earth.motions.5.01",
+  "skillId": "geo.earth.motions.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.earth.motions.5",
+  "provenance": {
+   "id": "prov.item.geo.earth.motions.5.01",
+   "kind": "item",
+   "title": "Item item.geo.earth.motions.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Rotația Pământului în jurul axei durează aproximativ 24 de ore."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.earth.motions.5.02",
+  "skillId": "geo.earth.motions.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.earth.motions.5",
+  "provenance": {
+   "id": "prov.item.geo.earth.motions.5.02",
+   "kind": "item",
+   "title": "Item item.geo.earth.motions.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Mișcarea Pământului în jurul Soarelui se numește {{gap}}."
+  },
+  "options": [
+   "revoluție",
+   "rotație",
+   "eclipsă",
+   "oscilație"
+  ],
+  "correct": "revoluție"
+ },
+ {
+  "id": "item.geo.earth.motions.5.03",
+  "skillId": "geo.earth.motions.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.earth.motions.5",
+  "provenance": {
+   "id": "prov.item.geo.earth.motions.5.03",
+   "kind": "item",
+   "title": "Item item.geo.earth.motions.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare mișcare sau cauză cu efectul ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "rotația"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "alternanța zilei cu noaptea"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "revoluția"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "un an"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "înclinarea axei"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "anotimpurile"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.earth.continents.5.01",
+  "skillId": "geo.earth.continents.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.earth.continents.5",
+  "provenance": {
+   "id": "prov.item.geo.earth.continents.5.01",
+   "kind": "item",
+   "title": "Item item.geo.earth.continents.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Pe ce continent se află fiecare țară?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Europa"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Asia"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Italia"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Japonia"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Franța"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "China"
+    },
+    "categoryId": "k1"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.earth.continents.5.02",
+  "skillId": "geo.earth.continents.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.earth.continents.5",
+  "provenance": {
+   "id": "prov.item.geo.earth.continents.5.02",
+   "kind": "item",
+   "title": "Item item.geo.earth.continents.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează continentele de la cel mai mare la cel mai mic ca suprafață."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Africa"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Europa"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Asia"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ },
+ {
+  "id": "item.geo.earth.continents.5.03",
+  "skillId": "geo.earth.continents.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.earth.continents.5",
+  "provenance": {
+   "id": "prov.item.geo.earth.continents.5.03",
+   "kind": "item",
+   "title": "Item item.geo.earth.continents.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Pe ce continent trăiesc cei mai mulți oameni?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Europa"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Africa"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Australia"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Asia"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.map.coords.5.01",
+  "skillId": "geo.map.coords.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.coords.5",
+  "provenance": {
+   "id": "prov.item.geo.map.coords.5.01",
+   "kind": "item",
+   "title": "Item item.geo.map.coords.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Ecuatorul are latitudinea {{gap}}."
+  },
+  "options": [
+   "0°",
+   "90°",
+   "45°",
+   "180°"
+  ],
+  "correct": "0°"
+ },
+ {
+  "id": "item.geo.map.coords.5.02",
+  "skillId": "geo.map.coords.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.coords.5",
+  "provenance": {
+   "id": "prov.item.geo.map.coords.5.02",
+   "kind": "item",
+   "title": "Item item.geo.map.coords.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu înțelesul lui."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "latitudine"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "distanța față de Ecuator"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "longitudine"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "distanța față de meridianul zero"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "paralele"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "cercuri paralele cu Ecuatorul"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "meridiane"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "linii care unesc polii"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.map.coords.5.03",
+  "skillId": "geo.map.coords.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.coords.5",
+  "provenance": {
+   "id": "prov.item.geo.map.coords.5.03",
+   "kind": "item",
+   "title": "Item item.geo.map.coords.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Polul Sud are latitudinea 90° sud."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.map.read.5.01",
+  "skillId": "geo.map.read.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.read.5",
+  "provenance": {
+   "id": "prov.item.geo.map.read.5.01",
+   "kind": "item",
+   "title": "Item item.geo.map.read.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare element al hărții cu rolul lui."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "legenda"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "explică semnele și culorile"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "scara"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "arată cât s-a micșorat realitatea"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "curbele de nivel"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "unesc puncte cu aceeași altitudine"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.map.read.5.02",
+  "skillId": "geo.map.read.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.read.5",
+  "provenance": {
+   "id": "prov.item.geo.map.read.5.02",
+   "kind": "item",
+   "title": "Item item.geo.map.read.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Ce culoare arată, de obicei, apele pe o hartă?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "verde"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "maro"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "albastru"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "roșu"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.geo.map.read.5.03",
+  "skillId": "geo.map.read.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.read.5",
+  "provenance": {
+   "id": "prov.item.geo.map.read.5.03",
+   "kind": "item",
+   "title": "Item item.geo.map.read.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Curbele de nivel apropiate arată un teren abrupt."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.map.scale.5.01",
+  "skillId": "geo.map.scale.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.scale.5",
+  "provenance": {
+   "id": "prov.item.geo.map.scale.5.01",
+   "kind": "item",
+   "title": "Item item.geo.map.scale.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "La scara 1:100 000, 1 cm pe hartă reprezintă în realitate..."
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "10 km"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1 km"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "100 m"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "100 km"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.geo.map.scale.5.02",
+  "skillId": "geo.map.scale.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.scale.5",
+  "provenance": {
+   "id": "prov.item.geo.map.scale.5.02",
+   "kind": "item",
+   "title": "Item item.geo.map.scale.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "La scara 1:10 000, 1 cm pe hartă înseamnă {{gap}} m în realitate."
+  },
+  "options": [
+   "100",
+   "10",
+   "1000",
+   "1"
+  ],
+  "correct": "100"
+ },
+ {
+  "id": "item.geo.map.scale.5.03",
+  "skillId": "geo.map.scale.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.scale.5",
+  "provenance": {
+   "id": "prov.item.geo.map.scale.5.03",
+   "kind": "item",
+   "title": "Item item.geo.map.scale.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "O hartă la scara 1:50 000 arată mai multe detalii decât una la scara 1:500 000."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.relief.forms.5.01",
+  "skillId": "geo.relief.forms.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.relief.forms.5",
+  "provenance": {
+   "id": "prov.item.geo.relief.forms.5.01",
+   "kind": "item",
+   "title": "Item item.geo.relief.forms.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Din ce formă de relief face parte fiecare?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "munți"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "câmpii"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Făgăraș"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Bărăganul"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Retezat"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Câmpia Română"
+    },
+    "categoryId": "k1"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.relief.forms.5.02",
+  "skillId": "geo.relief.forms.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.relief.forms.5",
+  "provenance": {
+   "id": "prov.item.geo.relief.forms.5.02",
+   "kind": "item",
+   "title": "Item item.geo.relief.forms.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează formele de relief de la cea mai joasă la cea mai înaltă."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "dealul"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "muntele"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "câmpia"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ },
+ {
+  "id": "item.geo.relief.forms.5.03",
+  "skillId": "geo.relief.forms.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.relief.forms.5",
+  "provenance": {
+   "id": "prov.item.geo.relief.forms.5.03",
+   "kind": "item",
+   "title": "Item item.geo.relief.forms.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Din craterul unui vulcan poate ieși lavă."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.climate.general.5.01",
+  "skillId": "geo.climate.general.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.climate.general.5",
+  "provenance": {
+   "id": "prov.item.geo.climate.general.5.01",
+   "kind": "item",
+   "title": "Item item.geo.climate.general.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare instrument cu ce măsoară."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "termometru"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "temperatura aerului"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "pluviometru"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "cantitatea de precipitații"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "barometru"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "presiunea atmosferică"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "anemometru"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "viteza vântului"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.climate.general.5.02",
+  "skillId": "geo.climate.general.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.climate.general.5",
+  "provenance": {
+   "id": "prov.item.geo.climate.general.5.02",
+   "kind": "item",
+   "title": "Item item.geo.climate.general.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Vremea se poate schimba de la o zi la alta."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.climate.general.5.03",
+  "skillId": "geo.climate.general.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.climate.general.5",
+  "provenance": {
+   "id": "prov.item.geo.climate.general.5.03",
+   "kind": "item",
+   "title": "Item item.geo.climate.general.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Aerul care se mișcă pe orizontală se numește {{gap}}."
+  },
+  "options": [
+   "vânt",
+   "ceață",
+   "rouă",
+   "ploaie"
+  ],
+  "correct": "vânt"
+ },
+ {
+  "id": "item.geo.waters.world.5.01",
+  "skillId": "geo.waters.world.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.waters.world.5",
+  "provenance": {
+   "id": "prov.item.geo.waters.world.5.01",
+   "kind": "item",
+   "title": "Item item.geo.waters.world.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează oceanele de la cel mai mare la cel mai mic ca suprafață."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Oceanul Atlantic"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Oceanul Indian"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Oceanul Pacific"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ },
+ {
+  "id": "item.geo.waters.world.5.02",
+  "skillId": "geo.waters.world.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.waters.world.5",
+  "provenance": {
+   "id": "prov.item.geo.waters.world.5.02",
+   "kind": "item",
+   "title": "Item item.geo.waters.world.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu înțelesul lui."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "izvor"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "locul unde începe un râu"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "vărsare"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "locul unde un râu intră în mare"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "afluent"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "râu care se varsă într-un alt râu"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.waters.world.5.03",
+  "skillId": "geo.waters.world.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.waters.world.5",
+  "provenance": {
+   "id": "prov.item.geo.waters.world.5.03",
+   "kind": "item",
+   "title": "Item item.geo.waters.world.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Ce fel de apă au oceanele?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "dulce"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "distilată"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "înghețată"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "sărată"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.life.zones.5.01",
+  "skillId": "geo.life.zones.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.life.zones.5",
+  "provenance": {
+   "id": "prov.item.geo.life.zones.5.01",
+   "kind": "item",
+   "title": "Item item.geo.life.zones.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare zonă de vegetație cu un animal tipic."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "tundra"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "ren"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "savana"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "elefant"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "deșertul"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "cămilă"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.life.zones.5.02",
+  "skillId": "geo.life.zones.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.life.zones.5",
+  "provenance": {
+   "id": "prov.item.geo.life.zones.5.02",
+   "kind": "item",
+   "title": "Item item.geo.life.zones.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Cum se numește partea fertilă a solului, bogată în resturi de plante?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "nisipul"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "stânca"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "humusul"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "gheața"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.geo.life.zones.5.03",
+  "skillId": "geo.life.zones.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.life.zones.5",
+  "provenance": {
+   "id": "prov.item.geo.life.zones.5.03",
+   "kind": "item",
+   "title": "Item item.geo.life.zones.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "În deșert plouă foarte mult."
+  },
+  "correct": false
+ },
+ {
+  "id": "item.geo.population.5.01",
+  "skillId": "geo.population.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.population.5",
+  "provenance": {
+   "id": "prov.item.geo.population.5.01",
+   "kind": "item",
+   "title": "Item item.geo.population.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează așezările de la cea mai mică la cea mai mare."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "orașul"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "metropola"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "satul"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ },
+ {
+  "id": "item.geo.population.5.02",
+  "skillId": "geo.population.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.population.5",
+  "provenance": {
+   "id": "prov.item.geo.population.5.02",
+   "kind": "item",
+   "title": "Item item.geo.population.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Deșerturile și zonele polare sunt dens populate."
+  },
+  "correct": false
+ },
+ {
+  "id": "item.geo.population.5.03",
+  "skillId": "geo.population.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.population.5",
+  "provenance": {
+   "id": "prov.item.geo.population.5.03",
+   "kind": "item",
+   "title": "Item item.geo.population.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Numărul de locuitori de pe un km² se numește {{gap}} a populației."
+  },
+  "options": [
+   "densitate",
+   "natalitate",
+   "mortalitate",
+   "migrație"
+  ],
+  "correct": "densitate"
+ }
+]

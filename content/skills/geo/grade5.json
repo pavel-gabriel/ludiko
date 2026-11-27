@@ -1,0 +1,558 @@
+[
+ {
+  "id": "geo.earth.universe.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.1"
+   }
+  ],
+  "title": {
+   "ro": "Pământul în Univers: Soarele, planetele, Luna",
+   "en": "The Earth in the Universe: the Sun, planets and Moon"
+  },
+  "prerequisites": [
+   "geo.orient.cardinal.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "universe"
+    }
+   },
+   {
+    "generator": "geo-order",
+    "params": {
+     "set": "planets-sun"
+    }
+   },
+   {
+    "generator": "geo-order",
+    "params": {
+     "set": "planets-size"
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.earth.universe.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.earth.universe.5",
+   "kind": "data",
+   "title": "Skill geo.earth.universe.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.earth.motions.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.2"
+   }
+  ],
+  "title": {
+   "ro": "Mișcările Pământului: rotația și revoluția",
+   "en": "The Earth's movements: rotation and revolution"
+  },
+  "prerequisites": [
+   "geo.earth.universe.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "motions"
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.earth.motions.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.earth.motions.5",
+   "kind": "data",
+   "title": "Skill geo.earth.motions.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.earth.continents.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.3"
+   }
+  ],
+  "title": {
+   "ro": "Continentele și oceanele",
+   "en": "Continents and oceans"
+  },
+  "prerequisites": [
+   "geo.orient.map.4",
+   "geo.earth.universe.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "continents"
+    }
+   },
+   {
+    "generator": "geo-order",
+    "params": {
+     "set": "continents"
+    }
+   },
+   {
+    "generator": "geo-order",
+    "params": {
+     "set": "oceans"
+    }
+   },
+   {
+    "generator": "geo-sort",
+    "params": {
+     "kind": "continent",
+     "scope": [
+      "europa",
+      "asia",
+      "africa"
+     ]
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.earth.continents.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.earth.continents.5",
+   "kind": "data",
+   "title": "Skill geo.earth.continents.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.map.coords.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Coordonatele geografice: paralele, meridiane, latitudine, longitudine",
+   "en": "Geographic coordinates: parallels, meridians, latitude, longitude"
+  },
+  "prerequisites": [
+   "geo.earth.motions.5",
+   "geo.orient.map.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "coords"
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.map.coords.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.map.coords.5",
+   "kind": "data",
+   "title": "Skill geo.map.coords.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.map.read.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "2.2"
+   }
+  ],
+  "title": {
+   "ro": "Citim harta: legendă, culori, curbe de nivel",
+   "en": "Reading a map: legend, colours, contour lines"
+  },
+  "prerequisites": [
+   "geo.orient.map.4",
+   "geo.earth.continents.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "maps"
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.map.read.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.map.read.5",
+   "kind": "data",
+   "title": "Skill geo.map.read.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.map.scale.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "2.3"
+   }
+  ],
+  "title": {
+   "ro": "Scara hărții: de la centimetri pe hartă la distanța reală",
+   "en": "Map scale: from centimetres on the map to real distance"
+  },
+  "prerequisites": [
+   "geo.map.read.5",
+   "mat.dec.convert"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-scale",
+    "params": {
+     "level": 1
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.map.scale.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.map.scale.5",
+   "kind": "data",
+   "title": "Skill geo.map.scale.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.relief.forms.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.4"
+   }
+  ],
+  "title": {
+   "ro": "Relieful Pământului: forme și procese",
+   "en": "Earth's relief: landforms and processes"
+  },
+  "prerequisites": [
+   "geo.relief.units.4",
+   "geo.map.read.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "relief"
+    }
+   },
+   {
+    "generator": "geo-sort",
+    "params": {
+     "kind": "relief-form"
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.relief.forms.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.relief.forms.5",
+   "kind": "data",
+   "title": "Skill geo.relief.forms.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.climate.general.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.5"
+   }
+  ],
+  "title": {
+   "ro": "Atmosfera, vremea și clima",
+   "en": "The atmosphere, weather and climate"
+  },
+  "prerequisites": [
+   "geo.climate.4",
+   "geo.earth.motions.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "climate"
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.climate.general.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.climate.general.5",
+   "kind": "data",
+   "title": "Skill geo.climate.general.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.waters.world.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.6"
+   }
+  ],
+  "title": {
+   "ro": "Apele de pe Pământ: oceane, râuri, lacuri, ghețari",
+   "en": "The Earth's waters: oceans, rivers, lakes, glaciers"
+  },
+  "prerequisites": [
+   "geo.rivers.4",
+   "geo.earth.continents.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "waters"
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.waters.world.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.waters.world.5",
+   "kind": "data",
+   "title": "Skill geo.waters.world.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.life.zones.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.7"
+   }
+  ],
+  "title": {
+   "ro": "Învelișul viu: zone de vegetație, animale și soluri",
+   "en": "The living layer: vegetation zones, animals and soils"
+  },
+  "prerequisites": [
+   "geo.nature.zones.4",
+   "geo.climate.general.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "life"
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.life.zones.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.life.zones.5",
+   "kind": "data",
+   "title": "Skill geo.life.zones.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.population.5",
+  "subject": "geo",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Populația și așezările omenești",
+   "en": "People and human settlements"
+  },
+  "prerequisites": [
+   "geo.people.settlements.4",
+   "geo.earth.continents.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "population"
+    }
+   },
+   {
+    "bank": "geo/grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.population.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.population.5",
+   "kind": "data",
+   "title": "Skill geo.population.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ }
+]

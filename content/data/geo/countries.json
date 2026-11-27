@@ -1,0 +1,1227 @@
+{
+ "provenance": {
+  "id": "prov.data.geo.countries",
+  "kind": "data",
+  "title": "Ludiko list of European and major world countries with capitals",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Facts only (country, capital, continent, EU membership as of 2026 with 27 members, landlocked flag); no copied lists. Transcontinental or disputed cases (Turkey, Kazakhstan, Georgia, Azerbaijan, Armenia, Kosovo, Taiwan, Israel, Indonesia, South Africa, Tanzania, Sri Lanka, Bolivia, Vatican) deliberately left out. Awaiting review by a geography teacher."
+ },
+ "continents": {
+  "europa": {
+   "ro": "Europa",
+   "en": "Europe"
+  },
+  "asia": {
+   "ro": "Asia",
+   "en": "Asia"
+  },
+  "africa": {
+   "ro": "Africa",
+   "en": "Africa"
+  },
+  "america-nord": {
+   "ro": "America de Nord",
+   "en": "North America"
+  },
+  "america-sud": {
+   "ro": "America de Sud",
+   "en": "South America"
+  },
+  "oceania": {
+   "ro": "Australia și Oceania",
+   "en": "Australia and Oceania"
+  }
+ },
+ "countries": [
+  {
+   "id": "albania",
+   "ro": "Albania",
+   "en": "Albania",
+   "capital": {
+    "ro": "Tirana",
+    "en": "Tirana"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "andorra",
+   "ro": "Andorra",
+   "en": "Andorra",
+   "capital": {
+    "ro": "Andorra la Vella",
+    "en": "Andorra la Vella"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": true,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "austria",
+   "ro": "Austria",
+   "en": "Austria",
+   "capital": {
+    "ro": "Viena",
+    "en": "Vienna"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": true,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "belarus",
+   "ro": "Belarus",
+   "en": "Belarus",
+   "capital": {
+    "ro": "Minsk",
+    "en": "Minsk"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": true,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "belgia",
+   "ro": "Belgia",
+   "en": "Belgium",
+   "capital": {
+    "ro": "Bruxelles",
+    "en": "Brussels"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "bosnia",
+   "ro": "Bosnia și Herțegovina",
+   "en": "Bosnia and Herzegovina",
+   "capital": {
+    "ro": "Sarajevo",
+    "en": "Sarajevo"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "bulgaria",
+   "ro": "Bulgaria",
+   "en": "Bulgaria",
+   "capital": {
+    "ro": "Sofia",
+    "en": "Sofia"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": true
+  },
+  {
+   "id": "croatia",
+   "ro": "Croația",
+   "en": "Croatia",
+   "capital": {
+    "ro": "Zagreb",
+    "en": "Zagreb"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "cipru",
+   "ro": "Cipru",
+   "en": "Cyprus",
+   "capital": {
+    "ro": "Nicosia",
+    "en": "Nicosia"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "cehia",
+   "ro": "Cehia",
+   "en": "Czechia",
+   "capital": {
+    "ro": "Praga",
+    "en": "Prague"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": true,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "danemarca",
+   "ro": "Danemarca",
+   "en": "Denmark",
+   "capital": {
+    "ro": "Copenhaga",
+    "en": "Copenhagen"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "estonia",
+   "ro": "Estonia",
+   "en": "Estonia",
+   "capital": {
+    "ro": "Tallinn",
+    "en": "Tallinn"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "finlanda",
+   "ro": "Finlanda",
+   "en": "Finland",
+   "capital": {
+    "ro": "Helsinki",
+    "en": "Helsinki"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "franta",
+   "ro": "Franța",
+   "en": "France",
+   "capital": {
+    "ro": "Paris",
+    "en": "Paris"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "germania",
+   "ro": "Germania",
+   "en": "Germany",
+   "capital": {
+    "ro": "Berlin",
+    "en": "Berlin"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "grecia",
+   "ro": "Grecia",
+   "en": "Greece",
+   "capital": {
+    "ro": "Atena",
+    "en": "Athens"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "ungaria",
+   "ro": "Ungaria",
+   "en": "Hungary",
+   "capital": {
+    "ro": "Budapesta",
+    "en": "Budapest"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": true,
+   "core": true,
+   "borderRomania": true
+  },
+  {
+   "id": "islanda",
+   "ro": "Islanda",
+   "en": "Iceland",
+   "capital": {
+    "ro": "Reykjavik",
+    "en": "Reykjavik"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "irlanda",
+   "ro": "Irlanda",
+   "en": "Ireland",
+   "capital": {
+    "ro": "Dublin",
+    "en": "Dublin"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "italia",
+   "ro": "Italia",
+   "en": "Italy",
+   "capital": {
+    "ro": "Roma",
+    "en": "Rome"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "letonia",
+   "ro": "Letonia",
+   "en": "Latvia",
+   "capital": {
+    "ro": "Riga",
+    "en": "Riga"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "liechtenstein",
+   "ro": "Liechtenstein",
+   "en": "Liechtenstein",
+   "capital": {
+    "ro": "Vaduz",
+    "en": "Vaduz"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": true,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "lituania",
+   "ro": "Lituania",
+   "en": "Lithuania",
+   "capital": {
+    "ro": "Vilnius",
+    "en": "Vilnius"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "luxemburg",
+   "ro": "Luxemburg",
+   "en": "Luxembourg",
+   "capital": {
+    "ro": "Luxemburg",
+    "en": "Luxembourg City"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": true,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "malta",
+   "ro": "Malta",
+   "en": "Malta",
+   "capital": {
+    "ro": "La Valletta",
+    "en": "Valletta"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "moldova",
+   "ro": "Republica Moldova",
+   "en": "Moldova",
+   "capital": {
+    "ro": "Chișinău",
+    "en": "Chișinău"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": true,
+   "core": true,
+   "borderRomania": true
+  },
+  {
+   "id": "monaco",
+   "ro": "Monaco",
+   "en": "Monaco",
+   "capital": {
+    "ro": "Monaco",
+    "en": "Monaco"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "muntenegru",
+   "ro": "Muntenegru",
+   "en": "Montenegro",
+   "capital": {
+    "ro": "Podgorica",
+    "en": "Podgorica"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "olanda",
+   "ro": "Țările de Jos",
+   "en": "Netherlands",
+   "capital": {
+    "ro": "Amsterdam",
+    "en": "Amsterdam"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "macedonia",
+   "ro": "Macedonia de Nord",
+   "en": "North Macedonia",
+   "capital": {
+    "ro": "Skopje",
+    "en": "Skopje"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": true,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "norvegia",
+   "ro": "Norvegia",
+   "en": "Norway",
+   "capital": {
+    "ro": "Oslo",
+    "en": "Oslo"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "polonia",
+   "ro": "Polonia",
+   "en": "Poland",
+   "capital": {
+    "ro": "Varșovia",
+    "en": "Warsaw"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "portugalia",
+   "ro": "Portugalia",
+   "en": "Portugal",
+   "capital": {
+    "ro": "Lisabona",
+    "en": "Lisbon"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "romania",
+   "ro": "România",
+   "en": "Romania",
+   "capital": {
+    "ro": "București",
+    "en": "Bucharest"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "rusia",
+   "ro": "Rusia",
+   "en": "Russia",
+   "capital": {
+    "ro": "Moscova",
+    "en": "Moscow"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "san-marino",
+   "ro": "San Marino",
+   "en": "San Marino",
+   "capital": {
+    "ro": "San Marino",
+    "en": "San Marino"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": true,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "serbia",
+   "ro": "Serbia",
+   "en": "Serbia",
+   "capital": {
+    "ro": "Belgrad",
+    "en": "Belgrade"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": true,
+   "core": true,
+   "borderRomania": true
+  },
+  {
+   "id": "slovacia",
+   "ro": "Slovacia",
+   "en": "Slovakia",
+   "capital": {
+    "ro": "Bratislava",
+    "en": "Bratislava"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": true,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "slovenia",
+   "ro": "Slovenia",
+   "en": "Slovenia",
+   "capital": {
+    "ro": "Ljubljana",
+    "en": "Ljubljana"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": false,
+   "borderRomania": false
+  },
+  {
+   "id": "spania",
+   "ro": "Spania",
+   "en": "Spain",
+   "capital": {
+    "ro": "Madrid",
+    "en": "Madrid"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "suedia",
+   "ro": "Suedia",
+   "en": "Sweden",
+   "capital": {
+    "ro": "Stockholm",
+    "en": "Stockholm"
+   },
+   "continent": "europa",
+   "eu": true,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "elvetia",
+   "ro": "Elveția",
+   "en": "Switzerland",
+   "capital": {
+    "ro": "Berna",
+    "en": "Bern"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": true,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "ucraina",
+   "ro": "Ucraina",
+   "en": "Ukraine",
+   "capital": {
+    "ro": "Kiev",
+    "en": "Kyiv"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": true
+  },
+  {
+   "id": "regatul-unit",
+   "ro": "Regatul Unit",
+   "en": "United Kingdom",
+   "capital": {
+    "ro": "Londra",
+    "en": "London"
+   },
+   "continent": "europa",
+   "eu": false,
+   "landlocked": false,
+   "core": true,
+   "borderRomania": false
+  },
+  {
+   "id": "china",
+   "ro": "China",
+   "en": "China",
+   "capital": {
+    "ro": "Beijing",
+    "en": "Beijing"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "india",
+   "ro": "India",
+   "en": "India",
+   "capital": {
+    "ro": "New Delhi",
+    "en": "New Delhi"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "japonia",
+   "ro": "Japonia",
+   "en": "Japan",
+   "capital": {
+    "ro": "Tokyo",
+    "en": "Tokyo"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "coreea-sud",
+   "ro": "Coreea de Sud",
+   "en": "South Korea",
+   "capital": {
+    "ro": "Seul",
+    "en": "Seoul"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "vietnam",
+   "ro": "Vietnam",
+   "en": "Vietnam",
+   "capital": {
+    "ro": "Hanoi",
+    "en": "Hanoi"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "thailanda",
+   "ro": "Thailanda",
+   "en": "Thailand",
+   "capital": {
+    "ro": "Bangkok",
+    "en": "Bangkok"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "arabia-saudita",
+   "ro": "Arabia Saudită",
+   "en": "Saudi Arabia",
+   "capital": {
+    "ro": "Riad",
+    "en": "Riyadh"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "iran",
+   "ro": "Iran",
+   "en": "Iran",
+   "capital": {
+    "ro": "Teheran",
+    "en": "Tehran"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "mongolia",
+   "ro": "Mongolia",
+   "en": "Mongolia",
+   "capital": {
+    "ro": "Ulaanbaatar",
+    "en": "Ulaanbaatar"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "pakistan",
+   "ro": "Pakistan",
+   "en": "Pakistan",
+   "capital": {
+    "ro": "Islamabad",
+    "en": "Islamabad"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "filipine",
+   "ro": "Filipine",
+   "en": "Philippines",
+   "capital": {
+    "ro": "Manila",
+    "en": "Manila"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "nepal",
+   "ro": "Nepal",
+   "en": "Nepal",
+   "capital": {
+    "ro": "Katmandu",
+    "en": "Kathmandu"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "afganistan",
+   "ro": "Afganistan",
+   "en": "Afghanistan",
+   "capital": {
+    "ro": "Kabul",
+    "en": "Kabul"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "irak",
+   "ro": "Irak",
+   "en": "Iraq",
+   "capital": {
+    "ro": "Bagdad",
+    "en": "Baghdad"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "bangladesh",
+   "ro": "Bangladesh",
+   "en": "Bangladesh",
+   "capital": {
+    "ro": "Dhaka",
+    "en": "Dhaka"
+   },
+   "continent": "asia",
+   "eu": false
+  },
+  {
+   "id": "egipt",
+   "ro": "Egipt",
+   "en": "Egypt",
+   "capital": {
+    "ro": "Cairo",
+    "en": "Cairo"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "nigeria",
+   "ro": "Nigeria",
+   "en": "Nigeria",
+   "capital": {
+    "ro": "Abuja",
+    "en": "Abuja"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "kenya",
+   "ro": "Kenya",
+   "en": "Kenya",
+   "capital": {
+    "ro": "Nairobi",
+    "en": "Nairobi"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "etiopia",
+   "ro": "Etiopia",
+   "en": "Ethiopia",
+   "capital": {
+    "ro": "Addis Abeba",
+    "en": "Addis Ababa"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "maroc",
+   "ro": "Maroc",
+   "en": "Morocco",
+   "capital": {
+    "ro": "Rabat",
+    "en": "Rabat"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "algeria",
+   "ro": "Algeria",
+   "en": "Algeria",
+   "capital": {
+    "ro": "Alger",
+    "en": "Algiers"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "tunisia",
+   "ro": "Tunisia",
+   "en": "Tunisia",
+   "capital": {
+    "ro": "Tunis",
+    "en": "Tunis"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "libia",
+   "ro": "Libia",
+   "en": "Libya",
+   "capital": {
+    "ro": "Tripoli",
+    "en": "Tripoli"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "ghana",
+   "ro": "Ghana",
+   "en": "Ghana",
+   "capital": {
+    "ro": "Accra",
+    "en": "Accra"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "senegal",
+   "ro": "Senegal",
+   "en": "Senegal",
+   "capital": {
+    "ro": "Dakar",
+    "en": "Dakar"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "angola",
+   "ro": "Angola",
+   "en": "Angola",
+   "capital": {
+    "ro": "Luanda",
+    "en": "Luanda"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "madagascar",
+   "ro": "Madagascar",
+   "en": "Madagascar",
+   "capital": {
+    "ro": "Antananarivo",
+    "en": "Antananarivo"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "rd-congo",
+   "ro": "Republica Democrată Congo",
+   "en": "DR Congo",
+   "capital": {
+    "ro": "Kinshasa",
+    "en": "Kinshasa"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "sudan",
+   "ro": "Sudan",
+   "en": "Sudan",
+   "capital": {
+    "ro": "Khartoum",
+    "en": "Khartoum"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "uganda",
+   "ro": "Uganda",
+   "en": "Uganda",
+   "capital": {
+    "ro": "Kampala",
+    "en": "Kampala"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "mali",
+   "ro": "Mali",
+   "en": "Mali",
+   "capital": {
+    "ro": "Bamako",
+    "en": "Bamako"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "niger",
+   "ro": "Niger",
+   "en": "Niger",
+   "capital": {
+    "ro": "Niamey",
+    "en": "Niamey"
+   },
+   "continent": "africa",
+   "eu": false
+  },
+  {
+   "id": "sua",
+   "ro": "Statele Unite ale Americii",
+   "en": "United States",
+   "capital": {
+    "ro": "Washington",
+    "en": "Washington, D.C."
+   },
+   "continent": "america-nord",
+   "eu": false
+  },
+  {
+   "id": "canada",
+   "ro": "Canada",
+   "en": "Canada",
+   "capital": {
+    "ro": "Ottawa",
+    "en": "Ottawa"
+   },
+   "continent": "america-nord",
+   "eu": false
+  },
+  {
+   "id": "mexic",
+   "ro": "Mexic",
+   "en": "Mexico",
+   "capital": {
+    "ro": "Ciudad de México",
+    "en": "Mexico City"
+   },
+   "continent": "america-nord",
+   "eu": false
+  },
+  {
+   "id": "cuba",
+   "ro": "Cuba",
+   "en": "Cuba",
+   "capital": {
+    "ro": "Havana",
+    "en": "Havana"
+   },
+   "continent": "america-nord",
+   "eu": false
+  },
+  {
+   "id": "panama",
+   "ro": "Panama",
+   "en": "Panama",
+   "capital": {
+    "ro": "Panama",
+    "en": "Panama City"
+   },
+   "continent": "america-nord",
+   "eu": false
+  },
+  {
+   "id": "costa-rica",
+   "ro": "Costa Rica",
+   "en": "Costa Rica",
+   "capital": {
+    "ro": "San José",
+    "en": "San José"
+   },
+   "continent": "america-nord",
+   "eu": false
+  },
+  {
+   "id": "jamaica",
+   "ro": "Jamaica",
+   "en": "Jamaica",
+   "capital": {
+    "ro": "Kingston",
+    "en": "Kingston"
+   },
+   "continent": "america-nord",
+   "eu": false
+  },
+  {
+   "id": "brazilia",
+   "ro": "Brazilia",
+   "en": "Brazil",
+   "capital": {
+    "ro": "Brasilia",
+    "en": "Brasília"
+   },
+   "continent": "america-sud",
+   "eu": false
+  },
+  {
+   "id": "argentina",
+   "ro": "Argentina",
+   "en": "Argentina",
+   "capital": {
+    "ro": "Buenos Aires",
+    "en": "Buenos Aires"
+   },
+   "continent": "america-sud",
+   "eu": false
+  },
+  {
+   "id": "chile",
+   "ro": "Chile",
+   "en": "Chile",
+   "capital": {
+    "ro": "Santiago",
+    "en": "Santiago"
+   },
+   "continent": "america-sud",
+   "eu": false
+  },
+  {
+   "id": "peru",
+   "ro": "Peru",
+   "en": "Peru",
+   "capital": {
+    "ro": "Lima",
+    "en": "Lima"
+   },
+   "continent": "america-sud",
+   "eu": false
+  },
+  {
+   "id": "columbia",
+   "ro": "Columbia",
+   "en": "Colombia",
+   "capital": {
+    "ro": "Bogota",
+    "en": "Bogotá"
+   },
+   "continent": "america-sud",
+   "eu": false
+  },
+  {
+   "id": "venezuela",
+   "ro": "Venezuela",
+   "en": "Venezuela",
+   "capital": {
+    "ro": "Caracas",
+    "en": "Caracas"
+   },
+   "continent": "america-sud",
+   "eu": false
+  },
+  {
+   "id": "ecuador",
+   "ro": "Ecuador",
+   "en": "Ecuador",
+   "capital": {
+    "ro": "Quito",
+    "en": "Quito"
+   },
+   "continent": "america-sud",
+   "eu": false
+  },
+  {
+   "id": "uruguay",
+   "ro": "Uruguay",
+   "en": "Uruguay",
+   "capital": {
+    "ro": "Montevideo",
+    "en": "Montevideo"
+   },
+   "continent": "america-sud",
+   "eu": false
+  },
+  {
+   "id": "paraguay",
+   "ro": "Paraguay",
+   "en": "Paraguay",
+   "capital": {
+    "ro": "Asunción",
+    "en": "Asunción"
+   },
+   "continent": "america-sud",
+   "eu": false
+  },
+  {
+   "id": "australia",
+   "ro": "Australia",
+   "en": "Australia",
+   "capital": {
+    "ro": "Canberra",
+    "en": "Canberra"
+   },
+   "continent": "oceania",
+   "eu": false
+  },
+  {
+   "id": "noua-zeelanda",
+   "ro": "Noua Zeelandă",
+   "en": "New Zealand",
+   "capital": {
+    "ro": "Wellington",
+    "en": "Wellington"
+   },
+   "continent": "oceania",
+   "eu": false
+  },
+  {
+   "id": "papua",
+   "ro": "Papua Noua Guinee",
+   "en": "Papua New Guinea",
+   "capital": {
+    "ro": "Port Moresby",
+    "en": "Port Moresby"
+   },
+   "continent": "oceania",
+   "eu": false
+  },
+  {
+   "id": "fiji",
+   "ro": "Fiji",
+   "en": "Fiji",
+   "capital": {
+    "ro": "Suva",
+    "en": "Suva"
+   },
+   "continent": "oceania",
+   "eu": false
+  }
+ ]
+}

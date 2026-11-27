@@ -1,0 +1,1641 @@
+[
+ {
+  "id": "item.geo.asia.physical.7.01",
+  "skillId": "geo.asia.physical.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.asia.physical.7",
+  "provenance": {
+   "id": "prov.item.geo.asia.physical.7.01",
+   "kind": "item",
+   "title": "Item item.geo.asia.physical.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Pe ce continent se află Himalaya?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Africa"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Asia"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Europa"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "America"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.geo.asia.physical.7.02",
+  "skillId": "geo.asia.physical.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.asia.physical.7",
+  "provenance": {
+   "id": "prov.item.geo.asia.physical.7.02",
+   "kind": "item",
+   "title": "Item item.geo.asia.physical.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare element geografic cu locul lui."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Gobi"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "deșert în Asia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Baikal"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "cel mai adânc lac din lume"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Everest"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "cel mai înalt vârf din lume"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Yangtze"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "fluviu al Chinei"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.asia.physical.7.03",
+  "skillId": "geo.asia.physical.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.asia.physical.7",
+  "provenance": {
+   "id": "prov.item.geo.asia.physical.7.03",
+   "kind": "item",
+   "title": "Item item.geo.asia.physical.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Asia este cel mai mic continent."
+  },
+  "correct": false
+ },
+ {
+  "id": "item.geo.asia.human.7.01",
+  "skillId": "geo.asia.human.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.asia.human.7",
+  "provenance": {
+   "id": "prov.item.geo.asia.human.7.01",
+   "kind": "item",
+   "title": "Item item.geo.asia.human.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare țară cu capitala ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "China"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Beijing"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "India"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "New Delhi"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Japonia"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Tokyo"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Coreea de Sud"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Seul"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.asia.human.7.02",
+  "skillId": "geo.asia.human.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.asia.human.7",
+  "provenance": {
+   "id": "prov.item.geo.asia.human.7.02",
+   "kind": "item",
+   "title": "Item item.geo.asia.human.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Majoritatea populației lumii trăiește în Asia."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.asia.human.7.03",
+  "skillId": "geo.asia.human.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.asia.human.7",
+  "provenance": {
+   "id": "prov.item.geo.asia.human.7.03",
+   "kind": "item",
+   "title": "Item item.geo.asia.human.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Capitala Japoniei este {{gap}}."
+  },
+  "options": [
+   "Tokyo",
+   "Seul",
+   "Hanoi",
+   "Manila"
+  ],
+  "correct": "Tokyo"
+ },
+ {
+  "id": "item.geo.africa.7.01",
+  "skillId": "geo.africa.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.africa.7",
+  "provenance": {
+   "id": "prov.item.geo.africa.7.01",
+   "kind": "item",
+   "title": "Item item.geo.africa.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare țară africană cu capitala ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Egipt"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Cairo"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Maroc"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Rabat"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Kenya"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Nairobi"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Nigeria"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Abuja"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.africa.7.02",
+  "skillId": "geo.africa.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.africa.7",
+  "provenance": {
+   "id": "prov.item.geo.africa.7.02",
+   "kind": "item",
+   "title": "Item item.geo.africa.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Care este cel mai mare deșert cald din lume?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Gobi"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Atacama"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Sahara"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Namib"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.geo.africa.7.03",
+  "skillId": "geo.africa.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.africa.7",
+  "provenance": {
+   "id": "prov.item.geo.africa.7.03",
+   "kind": "item",
+   "title": "Item item.geo.africa.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Nilul se varsă în Marea Mediterană."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.world.relief.7.01",
+  "skillId": "geo.world.relief.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.relief.7",
+  "provenance": {
+   "id": "prov.item.geo.world.relief.7.01",
+   "kind": "item",
+   "title": "Item item.geo.world.relief.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Pe ce continent se află fiecare lanț muntos?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Europa"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Asia"
+    }
+   },
+   {
+    "id": "k2",
+    "label": {
+     "ro": "Africa"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Pirineii"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Karakoram"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Munții Drakensberg"
+    },
+    "categoryId": "k2"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Alpii"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c4",
+    "text": {
+     "ro": "Himalaya"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c5",
+    "text": {
+     "ro": "Munții Atlas"
+    },
+    "categoryId": "k2"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.world.relief.7.02",
+  "skillId": "geo.world.relief.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.relief.7",
+  "provenance": {
+   "id": "prov.item.geo.world.relief.7.02",
+   "kind": "item",
+   "title": "Item item.geo.world.relief.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează vârfurile de la cel mai înalt la cel mai jos."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Aconcagua"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Denali"
+    }
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Kilimanjaro"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Everest"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2",
+   "c3"
+  ]
+ },
+ {
+  "id": "item.geo.world.relief.7.03",
+  "skillId": "geo.world.relief.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.relief.7",
+  "provenance": {
+   "id": "prov.item.geo.world.relief.7.03",
+   "kind": "item",
+   "title": "Item item.geo.world.relief.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Care este cel mai înalt vârf al Africii?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Everest"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Denali"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Aconcagua"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Kilimanjaro"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.americas.north.7.01",
+  "skillId": "geo.americas.north.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.americas.north.7",
+  "provenance": {
+   "id": "prov.item.geo.americas.north.7.01",
+   "kind": "item",
+   "title": "Item item.geo.americas.north.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare țară cu capitala ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Canada"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Ottawa"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Statele Unite ale Americii"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Washington"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Mexic"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Ciudad de México"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Cuba"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Havana"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.americas.north.7.02",
+  "skillId": "geo.americas.north.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.americas.north.7",
+  "provenance": {
+   "id": "prov.item.geo.americas.north.7.02",
+   "kind": "item",
+   "title": "Item item.geo.americas.north.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Canalul {{gap}} leagă Oceanul Atlantic de Oceanul Pacific."
+  },
+  "options": [
+   "Panama",
+   "Suez",
+   "Mânecii",
+   "Kiel"
+  ],
+  "correct": "Panama"
+ },
+ {
+  "id": "item.geo.americas.north.7.03",
+  "skillId": "geo.americas.north.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.americas.north.7",
+  "provenance": {
+   "id": "prov.item.geo.americas.north.7.03",
+   "kind": "item",
+   "title": "Item item.geo.americas.north.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "New York este capitala Statelor Unite."
+  },
+  "correct": false
+ },
+ {
+  "id": "item.geo.americas.south.7.01",
+  "skillId": "geo.americas.south.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.americas.south.7",
+  "provenance": {
+   "id": "prov.item.geo.americas.south.7.01",
+   "kind": "item",
+   "title": "Item item.geo.americas.south.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Care fluviu străbate cea mai mare pădure ecuatorială?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Nilul"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Amazon"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Mississippi"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Gange"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.geo.americas.south.7.02",
+  "skillId": "geo.americas.south.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.americas.south.7",
+  "provenance": {
+   "id": "prov.item.geo.americas.south.7.02",
+   "kind": "item",
+   "title": "Item item.geo.americas.south.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare țară cu capitala ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Brazilia"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Brasilia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Argentina"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Buenos Aires"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Chile"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Santiago"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Peru"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Lima"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.americas.south.7.03",
+  "skillId": "geo.americas.south.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.americas.south.7",
+  "provenance": {
+   "id": "prov.item.geo.americas.south.7.03",
+   "kind": "item",
+   "title": "Item item.geo.americas.south.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "În Brazilia se vorbește spaniola."
+  },
+  "correct": false
+ },
+ {
+  "id": "item.geo.oceania.7.01",
+  "skillId": "geo.oceania.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.oceania.7",
+  "provenance": {
+   "id": "prov.item.geo.oceania.7.01",
+   "kind": "item",
+   "title": "Item item.geo.oceania.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Capitala Australiei este {{gap}}."
+  },
+  "options": [
+   "Canberra",
+   "Sydney",
+   "Melbourne",
+   "Perth"
+  ],
+  "correct": "Canberra"
+ },
+ {
+  "id": "item.geo.oceania.7.02",
+  "skillId": "geo.oceania.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.oceania.7",
+  "provenance": {
+   "id": "prov.item.geo.oceania.7.02",
+   "kind": "item",
+   "title": "Item item.geo.oceania.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Australia este cel mai mic continent."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.oceania.7.03",
+  "skillId": "geo.oceania.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.oceania.7",
+  "provenance": {
+   "id": "prov.item.geo.oceania.7.03",
+   "kind": "item",
+   "title": "Item item.geo.oceania.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare element cu locul lui."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Marea Barieră de Corali"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Australia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "kiwi"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Noua Zeelandă"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Wellington"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "capitala Noii Zeelande"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.antarctica.7.01",
+  "skillId": "geo.antarctica.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.antarctica.7",
+  "provenance": {
+   "id": "prov.item.geo.antarctica.7.01",
+   "kind": "item",
+   "title": "Item item.geo.antarctica.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Antarctica nu are populație permanentă."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.antarctica.7.02",
+  "skillId": "geo.antarctica.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.antarctica.7",
+  "provenance": {
+   "id": "prov.item.geo.antarctica.7.02",
+   "kind": "item",
+   "title": "Item item.geo.antarctica.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Cu ce este acoperită aproape toată Antarctica?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "pădure"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "nisip"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "gheață"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "iarbă"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.geo.antarctica.7.03",
+  "skillId": "geo.antarctica.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.antarctica.7",
+  "provenance": {
+   "id": "prov.item.geo.antarctica.7.03",
+   "kind": "item",
+   "title": "Item item.geo.antarctica.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Tratatul {{gap}} din 1959 păstrează continentul pentru știință și pace."
+  },
+  "options": [
+   "Antarctic",
+   "Atlantic",
+   "Polar Nord",
+   "de la Roma"
+  ],
+  "correct": "Antarctic"
+ },
+ {
+  "id": "item.geo.world.capitals.7.01",
+  "skillId": "geo.world.capitals.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.capitals.7",
+  "provenance": {
+   "id": "prov.item.geo.world.capitals.7.01",
+   "kind": "item",
+   "title": "Item item.geo.world.capitals.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Pe ce continent se află fiecare țară?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Asia"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Africa"
+    }
+   },
+   {
+    "id": "k2",
+    "label": {
+     "ro": "America de Sud"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Japonia"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Kenya"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Peru"
+    },
+    "categoryId": "k2"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "China"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c4",
+    "text": {
+     "ro": "Egipt"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c5",
+    "text": {
+     "ro": "Brazilia"
+    },
+    "categoryId": "k2"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.world.capitals.7.02",
+  "skillId": "geo.world.capitals.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.capitals.7",
+  "provenance": {
+   "id": "prov.item.geo.world.capitals.7.02",
+   "kind": "item",
+   "title": "Item item.geo.world.capitals.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare țară cu capitala ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Australia"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Canberra"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Canada"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Ottawa"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Egipt"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Cairo"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Japonia"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Tokyo"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.world.capitals.7.03",
+  "skillId": "geo.world.capitals.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.capitals.7",
+  "provenance": {
+   "id": "prov.item.geo.world.capitals.7.03",
+   "kind": "item",
+   "title": "Item item.geo.world.capitals.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Care este capitala Braziliei?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Rio de Janeiro"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "São Paulo"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Buenos Aires"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Brasilia"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.world.rivers.7.01",
+  "skillId": "geo.world.rivers.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.rivers.7",
+  "provenance": {
+   "id": "prov.item.geo.world.rivers.7.01",
+   "kind": "item",
+   "title": "Item item.geo.world.rivers.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare fluviu cu locul în care se varsă."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Nilul"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Marea Mediterană"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Mississippi"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Golful Mexic"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Gange"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Golful Bengal"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Volga"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Marea Caspică"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.world.rivers.7.02",
+  "skillId": "geo.world.rivers.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.rivers.7",
+  "provenance": {
+   "id": "prov.item.geo.world.rivers.7.02",
+   "kind": "item",
+   "title": "Item item.geo.world.rivers.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Pe ce continent curge fiecare fluviu?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Africa"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "America de Sud"
+    }
+   },
+   {
+    "id": "k2",
+    "label": {
+     "ro": "Asia"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Congo"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Yangtze"
+    },
+    "categoryId": "k2"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Nilul"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Amazon"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c4",
+    "text": {
+     "ro": "Gange"
+    },
+    "categoryId": "k2"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.world.rivers.7.03",
+  "skillId": "geo.world.rivers.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.rivers.7",
+  "provenance": {
+   "id": "prov.item.geo.world.rivers.7.03",
+   "kind": "item",
+   "title": "Item item.geo.world.rivers.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "În ce se varsă direct Amazonul?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Marea Caspică"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Golful Bengal"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Marea Neagră"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Oceanul Atlantic"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.world.issues.7.01",
+  "skillId": "geo.world.issues.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.issues.7",
+  "provenance": {
+   "id": "prov.item.geo.world.issues.7.01",
+   "kind": "item",
+   "title": "Item item.geo.world.issues.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Ce gaz, în exces în atmosferă, contribuie la încălzirea globală?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "oxigenul"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "dioxidul de carbon"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "azotul"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "heliul"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.geo.world.issues.7.02",
+  "skillId": "geo.world.issues.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.issues.7",
+  "provenance": {
+   "id": "prov.item.geo.world.issues.7.02",
+   "kind": "item",
+   "title": "Item item.geo.world.issues.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Energia eoliană este o energie regenerabilă."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.world.issues.7.03",
+  "skillId": "geo.world.issues.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.world.issues.7",
+  "provenance": {
+   "id": "prov.item.geo.world.issues.7.03",
+   "kind": "item",
+   "title": "Item item.geo.world.issues.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Care resurse sunt regenerabile și care nu?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Regenerabilă"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Neregenerabilă"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "energia eoliană"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "huila"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "energia solară"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "petrolul"
+    },
+    "categoryId": "k1"
+   }
+  ]
+ }
+]

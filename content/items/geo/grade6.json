@@ -1,0 +1,1591 @@
+[
+ {
+  "id": "item.geo.europe.position.6.01",
+  "skillId": "geo.europe.position.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.position.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.position.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.position.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Peninsula {{gap}} este locul unde se află Spania și Portugalia."
+  },
+  "options": [
+   "Iberică",
+   "Italică",
+   "Balcanică",
+   "Scandinavică"
+  ],
+  "correct": "Iberică"
+ },
+ {
+  "id": "item.geo.europe.position.6.02",
+  "skillId": "geo.europe.position.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.position.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.position.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.position.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare peninsulă cu țara sau țările de pe ea."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Peninsula Scandinavică"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Norvegia și Suedia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Peninsula Italică"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Italia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Peninsula Iberică"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Spania și Portugalia"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.position.6.03",
+  "skillId": "geo.europe.position.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.position.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.position.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.position.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Marea Britanie este o insulă."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.europe.relief.6.01",
+  "skillId": "geo.europe.relief.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.relief.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.relief.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.relief.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare lanț muntos cu locul lui."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Alpii"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Elveția și Austria"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Pirineii"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "între Franța și Spania"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Apeninii"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Italia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Munții Scandinaviei"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Norvegia și Suedia"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.relief.6.02",
+  "skillId": "geo.europe.relief.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.relief.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.relief.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.relief.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "În ce țară se află vulcanul Vezuviu?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Spania"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Grecia"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Italia"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Franța"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.geo.europe.relief.6.03",
+  "skillId": "geo.europe.relief.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.relief.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.relief.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.relief.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Carpații trec prin România."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.europe.climate.6.01",
+  "skillId": "geo.europe.climate.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.climate.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.climate.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.climate.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare regiune cu clima sau vegetația ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "sudul Europei"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "climă mediteraneană"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "vestul Europei"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "influență oceanică, blândă"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "nordul îndepărtat"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "tundră"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.climate.6.02",
+  "skillId": "geo.europe.climate.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.climate.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.climate.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.climate.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Iernile sunt mai blânde în vestul Europei decât în est, la aceeași latitudine."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.europe.climate.6.03",
+  "skillId": "geo.europe.climate.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.climate.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.climate.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.climate.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Ce plante cresc de obicei în climatul mediteraneean?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "mușchi și licheni"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "cactuși uriași de deșert"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "conifere de taiga"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "măslini și viță-de-vie"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.europe.waters.6.01",
+  "skillId": "geo.europe.waters.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.waters.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.waters.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.waters.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare râu cu marea în care se varsă."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Volga"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Marea Caspică"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Dunărea"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Marea Neagră"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Vistula"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Marea Baltică"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Rinul"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Marea Nordului"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.waters.6.02",
+  "skillId": "geo.europe.waters.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.waters.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.waters.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.waters.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează râurile de la cel mai lung la cel mai scurt."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Dunărea"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Rinul"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Volga"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ },
+ {
+  "id": "item.geo.europe.waters.6.03",
+  "skillId": "geo.europe.waters.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.waters.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.waters.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.waters.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Pe ce râu se află Parisul?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Tamisa"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Rinul"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Dunărea"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Sena"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.map.scale.6.01",
+  "skillId": "geo.map.scale.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.scale.6",
+  "provenance": {
+   "id": "prov.item.geo.map.scale.6.01",
+   "kind": "item",
+   "title": "Item item.geo.map.scale.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Pe o hartă, 3 cm reprezintă 6 km în realitate. Care este scara?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1:20 000"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1:200 000"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1:50 000"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "1:2 000 000"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.geo.map.scale.6.02",
+  "skillId": "geo.map.scale.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.scale.6",
+  "provenance": {
+   "id": "prov.item.geo.map.scale.6.02",
+   "kind": "item",
+   "title": "Item item.geo.map.scale.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează scările de la cea mai mare la cea mai mică."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "1:100 000"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "1:1 000 000"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "1:10 000"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2"
+  ]
+ },
+ {
+  "id": "item.geo.map.scale.6.03",
+  "skillId": "geo.map.scale.6",
+  "difficulty": 3,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.map.scale.6",
+  "provenance": {
+   "id": "prov.item.geo.map.scale.6.03",
+   "kind": "item",
+   "title": "Item item.geo.map.scale.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Pe o hartă la scara 1:200 000, 10 cm înseamnă {{gap}} km în realitate."
+  },
+  "options": [
+   "20",
+   "2",
+   "200",
+   "10"
+  ],
+  "correct": "20"
+ },
+ {
+  "id": "item.geo.europe.capitals.6.01",
+  "skillId": "geo.europe.capitals.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.capitals.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.capitals.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.capitals.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare țară cu capitala ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Franța"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Paris"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Germania"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Berlin"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Italia"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Roma"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Spania"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Madrid"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.capitals.6.02",
+  "skillId": "geo.europe.capitals.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.capitals.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.capitals.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.capitals.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Capitala Poloniei este {{gap}}."
+  },
+  "options": [
+   "Varșovia",
+   "Praga",
+   "Viena",
+   "Budapesta"
+  ],
+  "correct": "Varșovia"
+ },
+ {
+  "id": "item.geo.europe.capitals.6.03",
+  "skillId": "geo.europe.capitals.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.capitals.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.capitals.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.capitals.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Capitala Austriei este Viena."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.europe.countries.6.01",
+  "skillId": "geo.europe.countries.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.countries.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.countries.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.countries.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Care țări au și care nu au ieșire la mare?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Fără ieșire la mare"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Cu ieșire la mare"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Cehia"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Grecia"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Austria"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Franța"
+    },
+    "categoryId": "k1"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.countries.6.02",
+  "skillId": "geo.europe.countries.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.countries.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.countries.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.countries.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare țară cu capitala ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Țările de Jos"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Amsterdam"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Elveția"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Berna"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Serbia"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Belgrad"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Republica Moldova"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Chișinău"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.countries.6.03",
+  "skillId": "geo.europe.countries.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.countries.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.countries.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.countries.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Care este capitala Cehiei?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Viena"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Varșovia"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Bratislava"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Praga"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.europe.neighbours.6.01",
+  "skillId": "geo.europe.neighbours.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.neighbours.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.neighbours.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.neighbours.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Care țări se învecinează cu România?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Vecin al României"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Nu se învecinează cu România"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Bulgaria"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Austria"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Ungaria"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Polonia"
+    },
+    "categoryId": "k1"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.neighbours.6.02",
+  "skillId": "geo.europe.neighbours.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.neighbours.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.neighbours.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.neighbours.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Care dintre aceste țări este vecină cu România?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Polonia"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Austria"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Serbia"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Grecia"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.geo.europe.neighbours.6.03",
+  "skillId": "geo.europe.neighbours.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.neighbours.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.neighbours.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.neighbours.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare vecin al României cu capitala lui."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Ungaria"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Budapesta"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Bulgaria"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Sofia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Serbia"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Belgrad"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Ucraina"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Kiev"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.eu.6.01",
+  "skillId": "geo.europe.eu.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.eu.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.eu.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.eu.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Care țări sunt membre ale Uniunii Europene?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Stat membru UE"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Nu este membru UE"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Polonia"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Elveția"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Franța"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Norvegia"
+    },
+    "categoryId": "k1"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.eu.6.02",
+  "skillId": "geo.europe.eu.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.eu.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.eu.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.eu.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Steagul Uniunii Europene are {{gap}} stele galbene."
+  },
+  "options": [
+   "12",
+   "27",
+   "7",
+   "15"
+  ],
+  "correct": "12"
+ },
+ {
+  "id": "item.geo.europe.eu.6.03",
+  "skillId": "geo.europe.eu.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.eu.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.eu.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.eu.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "România este stat membru al Uniunii Europene."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.europe.population.6.01",
+  "skillId": "geo.europe.population.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.population.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.population.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.population.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare limbă cu familia ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "româna"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "limbi romanice"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "germana"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "limbi germanice"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "poloneza"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "limbi slave"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.population.6.02",
+  "skillId": "geo.europe.population.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.population.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.population.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.population.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Care este cel mai mic stat din Europa?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Monaco"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Malta"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Vatican"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Luxemburg"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.geo.europe.population.6.03",
+  "skillId": "geo.europe.population.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.population.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.population.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.population.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Majoritatea europenilor trăiesc în orașe."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.europe.economy.6.01",
+  "skillId": "geo.europe.economy.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.economy.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.economy.6.01",
+   "kind": "item",
+   "title": "Item item.geo.europe.economy.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare țară cu un lucru pentru care este cunoscută."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Elveția"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "ceasuri și ciocolată"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Germania"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "automobile"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Țările de Jos"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "portul Rotterdam"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Danemarca"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "energie eoliană"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.europe.economy.6.02",
+  "skillId": "geo.europe.economy.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.economy.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.economy.6.02",
+   "kind": "item",
+   "title": "Item item.geo.europe.economy.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Turismul este o activitate importantă în sudul Europei."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.europe.economy.6.03",
+  "skillId": "geo.europe.economy.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.europe.economy.6",
+  "provenance": {
+   "id": "prov.item.geo.europe.economy.6.03",
+   "kind": "item",
+   "title": "Item item.geo.europe.economy.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Ce resursă se extrage din Marea Nordului?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "diamante"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "aur"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "cafea"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "petrol și gaze"
+    }
+   }
+  ],
+  "correctId": "d"
+ }
+]

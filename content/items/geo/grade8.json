@@ -1,0 +1,1711 @@
+[
+ {
+  "id": "item.geo.ro.position.8.01",
+  "skillId": "geo.ro.position.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.position.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.position.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.position.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Cu câte țări se învecinează România?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "trei"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "cinci"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "șapte"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "două"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.geo.ro.position.8.02",
+  "skillId": "geo.ro.position.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.position.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.position.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.position.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Punctul extrem nordic al României este {{gap}}."
+  },
+  "options": [
+   "Horodiștea",
+   "Zimnicea",
+   "Beba Veche",
+   "Sulina"
+  ],
+  "correct": "Horodiștea"
+ },
+ {
+  "id": "item.geo.ro.position.8.03",
+  "skillId": "geo.ro.position.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.position.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.position.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.position.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "România are ieșire la Marea Neagră."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.ro.carpathians.8.01",
+  "skillId": "geo.ro.carpathians.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.carpathians.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.carpathians.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.carpathians.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează vârfurile de la cel mai înalt la cel mai jos."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Pietrosu Rodnei"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Toaca"
+    }
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Rarău"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Moldoveanu"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2",
+   "c3"
+  ]
+ },
+ {
+  "id": "item.geo.ro.carpathians.8.02",
+  "skillId": "geo.ro.carpathians.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.carpathians.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.carpathians.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.carpathians.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Din ce grup al Carpaților face parte fiecare masiv?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Carpații Orientali"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Carpații Meridionali"
+    }
+   },
+   {
+    "id": "k2",
+    "label": {
+     "ro": "Carpații Occidentali"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Ceahlău"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Retezat"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Semenic"
+    },
+    "categoryId": "k2"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Rodna"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c4",
+    "text": {
+     "ro": "Făgăraș"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c5",
+    "text": {
+     "ro": "Apuseni"
+    },
+    "categoryId": "k2"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.carpathians.8.03",
+  "skillId": "geo.ro.carpathians.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.carpathians.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.carpathians.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.carpathians.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "În ce masiv se află vârful Moldoveanu?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Bucegi"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Retezat"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Rodna"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Făgăraș"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.ro.relief.8.01",
+  "skillId": "geo.ro.relief.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.relief.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.relief.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.relief.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare unitate de relief cu locul ei."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Câmpia Română"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "în sudul țării"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Podișul Dobrogei"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "între Dunăre și Marea Neagră"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Podișul Transilvaniei"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "în interiorul arcului carpatic"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Delta Dunării"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "cea mai tânără unitate de relief"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.relief.8.02",
+  "skillId": "geo.ro.relief.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.relief.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.relief.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.relief.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Din ce formă de relief face parte fiecare unitate?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "munți"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "câmpii"
+    }
+   },
+   {
+    "id": "k2",
+    "label": {
+     "ro": "dealuri și podișuri"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Bucegi"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Câmpia Banatului"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Podișul Dobrogei"
+    },
+    "categoryId": "k2"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Apuseni"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c4",
+    "text": {
+     "ro": "Bărăganul"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c5",
+    "text": {
+     "ro": "Podișul Moldovei"
+    },
+    "categoryId": "k2"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.relief.8.03",
+  "skillId": "geo.ro.relief.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.relief.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.relief.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.relief.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Câmpia Română se află în nordul țării."
+  },
+  "correct": false
+ },
+ {
+  "id": "item.geo.ro.climate.8.01",
+  "skillId": "geo.ro.climate.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.climate.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.climate.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.climate.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Ce tip de climă are România?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "ecuatorială"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "temperat-continentală"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "polară"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "de deșert"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.geo.ro.climate.8.02",
+  "skillId": "geo.ro.climate.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.climate.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.climate.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.climate.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Pe vârfurile munților temperaturile sunt mai scăzute."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.ro.climate.8.03",
+  "skillId": "geo.ro.climate.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.climate.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.climate.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.climate.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Vântul rece de iarnă din estul țării se numește {{gap}}."
+  },
+  "options": [
+   "crivăț",
+   "alizeu",
+   "mistral",
+   "musson"
+  ],
+  "correct": "crivăț"
+ },
+ {
+  "id": "item.geo.ro.rivers.8.01",
+  "skillId": "geo.ro.rivers.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.rivers.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.rivers.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.rivers.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare râu cu locul în care se varsă direct."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Oltul"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Dunărea"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Mureșul"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Tisa"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Bistrița"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Siretul"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Dunărea"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Marea Neagră"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.rivers.8.02",
+  "skillId": "geo.ro.rivers.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.rivers.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.rivers.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.rivers.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "order",
+  "prompt": {
+   "ro": "Ordonează râurile de la cel mai lung la cel mai scurt."
+  },
+  "cards": [
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Mureșul"
+    }
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Oltul"
+    }
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Argeșul"
+    }
+   },
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Prutul"
+    }
+   }
+  ],
+  "correctOrder": [
+   "c0",
+   "c1",
+   "c2",
+   "c3"
+  ]
+ },
+ {
+  "id": "item.geo.ro.rivers.8.03",
+  "skillId": "geo.ro.rivers.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.rivers.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.rivers.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.rivers.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Pe ce râu se află orașul Timișoara?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Mureșul"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Oltul"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Jiul"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Bega"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.ro.danube.8.01",
+  "skillId": "geo.ro.danube.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.danube.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.danube.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.danube.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "În ce mare se varsă Dunărea?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Marea Adriatică"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Marea Neagră"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Marea Caspică"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Marea Baltică"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.geo.ro.danube.8.02",
+  "skillId": "geo.ro.danube.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.danube.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.danube.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.danube.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare lac cu ce îl face cunoscut."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Techirghiol"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "nămol terapeutic"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Sfânta Ana"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "crater vulcanic"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Izvorul Muntelui"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "lac artificial pe Bistrița"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.danube.8.03",
+  "skillId": "geo.ro.danube.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.danube.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.danube.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.danube.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Delta Dunării se află în județul Tulcea."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.ro.veg.8.01",
+  "skillId": "geo.ro.veg.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.veg.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.veg.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.veg.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare element cu locul lui."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "stuf"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Delta Dunării"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "molid"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "munți"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "cernoziom"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Câmpia Română"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "capră neagră"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "zone stâncoase din Carpați"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.veg.8.02",
+  "skillId": "geo.ro.veg.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.veg.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.veg.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.veg.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Pădurile acoperă aproximativ o treime din România."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.ro.veg.8.03",
+  "skillId": "geo.ro.veg.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.veg.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.veg.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.veg.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Ce este un parc național?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "o fabrică"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "un teren de fotbal"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "un oraș"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "o zonă protejată pentru natura sa"
+    }
+   }
+  ],
+  "correctId": "d"
+ },
+ {
+  "id": "item.geo.ro.resources.8.01",
+  "skillId": "geo.ro.resources.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.resources.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.resources.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.resources.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare resursă cu o zonă unde se extrage sau se produce."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "petrol"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Prahova"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "huilă"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Valea Jiului"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "lignit"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Oltenia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "sare"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Praid"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.resources.8.02",
+  "skillId": "geo.ro.resources.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.resources.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.resources.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.resources.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "Care resurse sunt regenerabile și care nu?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Regenerabilă"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Neregenerabilă"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "energia eoliană"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "gazele naturale"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "lemnul"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "petrolul"
+    },
+    "categoryId": "k1"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.resources.8.03",
+  "skillId": "geo.ro.resources.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.resources.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.resources.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.resources.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Energia nucleară se produce în România la Cernavodă."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.ro.population.8.01",
+  "skillId": "geo.ro.population.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.population.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.population.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.population.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Care este cel mai mare oraș al României?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Cluj-Napoca"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "București"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Iași"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Constanța"
+    }
+   }
+  ],
+  "correctId": "b"
+ },
+ {
+  "id": "item.geo.ro.population.8.02",
+  "skillId": "geo.ro.population.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.population.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.population.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.population.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "România are {{gap}} de județe, plus municipiul București."
+  },
+  "options": [
+   "41",
+   "30",
+   "50",
+   "10"
+  ],
+  "correct": "41"
+ },
+ {
+  "id": "item.geo.ro.population.8.03",
+  "skillId": "geo.ro.population.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.population.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.population.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.population.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Cluj-Napoca este capitala României."
+  },
+  "correct": false
+ },
+ {
+  "id": "item.geo.ro.counties.8.01",
+  "skillId": "geo.ro.counties.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.counties.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.counties.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.counties.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare județ cu reședința lui."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Argeș"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "Pitești"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Gorj"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "Târgu Jiu"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Covasna"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "Sfântu Gheorghe"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Dolj"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "Craiova"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.counties.8.02",
+  "skillId": "geo.ro.counties.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.counties.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.counties.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.counties.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "fill-gap",
+  "prompt": {
+   "ro": "Completează.",
+   "en": "Fill in the gap."
+  },
+  "template": {
+   "ro": "Reședința județului Harghita este {{gap}}."
+  },
+  "options": [
+   "Miercurea Ciuc",
+   "Sfântu Gheorghe",
+   "Târgu Mureș",
+   "Bistrița"
+  ],
+  "correct": "Miercurea Ciuc"
+ },
+ {
+  "id": "item.geo.ro.counties.8.03",
+  "skillId": "geo.ro.counties.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.counties.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.counties.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.counties.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Reședința județului Sibiu este Sibiu."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.ro.regions.8.01",
+  "skillId": "geo.ro.regions.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.regions.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.regions.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.regions.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "sort",
+  "prompt": {
+   "ro": "În ce regiune istorică se află fiecare județ?"
+  },
+  "categories": [
+   {
+    "id": "k0",
+    "label": {
+     "ro": "Muntenia"
+    }
+   },
+   {
+    "id": "k1",
+    "label": {
+     "ro": "Moldova"
+    }
+   },
+   {
+    "id": "k2",
+    "label": {
+     "ro": "Oltenia"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "c0",
+    "text": {
+     "ro": "Județul Argeș"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c1",
+    "text": {
+     "ro": "Județul Suceava"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c2",
+    "text": {
+     "ro": "Județul Gorj"
+    },
+    "categoryId": "k2"
+   },
+   {
+    "id": "c3",
+    "text": {
+     "ro": "Județul Prahova"
+    },
+    "categoryId": "k0"
+   },
+   {
+    "id": "c4",
+    "text": {
+     "ro": "Județul Iași"
+    },
+    "categoryId": "k1"
+   },
+   {
+    "id": "c5",
+    "text": {
+     "ro": "Județul Dolj"
+    },
+    "categoryId": "k2"
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.regions.8.02",
+  "skillId": "geo.ro.regions.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.regions.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.regions.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.regions.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "În ce regiune istorică se află județul Timiș?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Dobrogea"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Oltenia"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Banat"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "Muntenia"
+    }
+   }
+  ],
+  "correctId": "c"
+ },
+ {
+  "id": "item.geo.ro.regions.8.03",
+  "skillId": "geo.ro.regions.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.regions.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.regions.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.regions.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Județul Constanța se află în Dobrogea."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.ro.economy.8.01",
+  "skillId": "geo.ro.economy.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.economy.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.economy.8.01",
+   "kind": "item",
+   "title": "Item item.geo.ro.economy.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "match",
+  "prompt": {
+   "ro": "Potrivește fiecare oraș cu o activitate economică importantă."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l0",
+     "text": {
+      "ro": "Ploiești"
+     }
+    },
+    "right": {
+     "id": "r0",
+     "text": {
+      "ro": "industria petrochimică"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Galați"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "siderurgie"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Constanța"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "port la Marea Neagră"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Mioveni"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "automobile"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.geo.ro.economy.8.02",
+  "skillId": "geo.ro.economy.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.economy.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.economy.8.02",
+   "kind": "item",
+   "title": "Item item.geo.ro.economy.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "true-false",
+  "prompt": {
+   "ro": "Constanța este un port important la Marea Neagră."
+  },
+  "correct": true
+ },
+ {
+  "id": "item.geo.ro.economy.8.03",
+  "skillId": "geo.ro.economy.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.geo.ro.economy.8",
+  "provenance": {
+   "id": "prov.item.geo.ro.economy.8.03",
+   "kind": "item",
+   "title": "Item item.geo.ro.economy.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original geography item drafted from the programa topic; facts to be checked by a geography teacher"
+  },
+  "type": "choice",
+  "prompt": {
+   "ro": "Ce culturi se întâlnesc mult în Câmpia Română?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "banane și cafea"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "orez și ceai"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "măsline"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "grâu, porumb și floarea-soarelui"
+    }
+   }
+  ],
+  "correctId": "d"
+ }
+]
