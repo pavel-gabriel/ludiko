@@ -315,7 +315,10 @@
       "correctLabel": "Răspuns corect",
       "reconstructed": "reconstruit",
       "noDetails": "fără detalii",
-      "openExercise": "Deschide exercițiul",
+      "openExercise": "Deschide exact această întrebare",
+      "hideExercise": "Ascunde întrebarea",
+      "tryCorrect": "Răspuns considerat corect",
+      "tryWrong": "Răspuns considerat greșit",
       "grade": "clasa {{n}}",
       "gradeZero": "clasa pregătitoare",
       "contexts": {
@@ -333,7 +336,11 @@
         "ist": "Istorie",
         "geo": "Geografie",
         "civ": "Educație civică",
-        "logic": "Logică"
+        "logic": "Logică",
+        "bio": "Biologie",
+        "fiz": "Fizică",
+        "chim": "Chimie",
+        "eng": "Limba engleză"
       }
     }
   },
@@ -867,7 +874,11 @@
       "ist": "Istorie",
       "geo": "Geografie",
       "civ": "Educație civică",
-      "logic": "Logică"
+      "logic": "Logică",
+      "bio": "Biologie",
+      "fiz": "Fizică",
+      "chim": "Chimie",
+      "eng": "Limba engleză"
     },
     "grades": {
       "0": "Pregătitoare",

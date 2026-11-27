@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getSkill } from '@/engine/content/registry';
 import { localize } from '@/engine/types';
@@ -13,7 +12,9 @@ import {
   type ReportSnapshot,
   type ReportStatus,
 } from '@/services/reportService';
-import { reconstructSnapshot } from './reconstructItem';
+import ItemView from '@/ui/items/ItemView';
+import { buildReportSnapshot } from '@/services/reportSnapshot';
+import { reconstructItem, reconstructSnapshot } from './reconstructItem';
 
 const MAX_COMMENTS_SHOWN = 3;
 
@@ -25,6 +26,17 @@ function ItemDetails({ g }: { g: ReportGroup }) {
     [g.snapshot, g.itemId, g.skillId],
   );
   const snap: ReportSnapshot | undefined = g.snapshot ?? rebuilt;
+  const [tryOpen, setTryOpen] = useState(false);
+  const [tryRound, setTryRound] = useState(0);
+  const [tryResult, setTryResult] = useState<boolean | null>(null);
+  // The exact reported question (never a new one). If a snapshot exists, the rebuilt item must match it
+  // (generated items can differ when the session fixed a difficulty); otherwise no "try it" button.
+  const exact = useMemo(() => {
+    const item = reconstructItem(g.itemId, g.skillId ?? g.snapshot?.skillId);
+    if (!item) return undefined;
+    if (g.snapshot && buildReportSnapshot(item, 'practice', '/')?.prompt !== g.snapshot.prompt) return undefined;
+    return item;
+  }, [g.itemId, g.skillId, g.snapshot]);
   const skillId = snap?.skillId ?? g.skillId;
   const skill = skillId ? getSkill(skillId) : undefined;
 
@@ -67,10 +79,31 @@ function ItemDetails({ g }: { g: ReportGroup }) {
       <p className="text-xs text-gray-600 break-words">
         <span className="font-semibold">{t('report.admin.correctLabel')}:</span> {snap.correct}
       </p>
-      {skillId && (
-        <Link to={`/practice/${skillId}`} className="text-xs font-semibold text-blue-600 underline">
-          {t('report.admin.openExercise')}
-        </Link>
+      {exact && (
+        <div className="mt-2">
+          <button
+            type="button"
+            onClick={() => {
+              setTryOpen((o) => !o);
+              setTryResult(null);
+              setTryRound((r) => r + 1);
+            }}
+            aria-expanded={tryOpen}
+            className="text-xs font-semibold text-blue-600 underline min-h-[32px]"
+          >
+            {tryOpen ? t('report.admin.hideExercise') : t('report.admin.openExercise')}
+          </button>
+          {tryOpen && (
+            <div className="mt-2 rounded-xl bg-gray-50 p-2" data-testid="report-exact-item">
+              <ItemView key={`${exact.id}-${tryRound}`} item={exact} onAnswer={(r) => setTryResult(r.correct)} />
+              {tryResult !== null && (
+                <p className="mt-1 text-xs font-bold">
+                  {tryResult ? t('report.admin.tryCorrect') : t('report.admin.tryWrong')}
+                </p>
+              )}
+            </div>
+          )}
+        </div>
       )}
     </div>
   );

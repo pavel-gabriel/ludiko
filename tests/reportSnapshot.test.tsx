@@ -210,7 +210,9 @@ describe('ContentReportsSection', () => {
     expect(screen.getByText('(răspuns corect)')).toBeTruthy()
     expect(screen.queryByText('reconstruit')).toBeNull()
     expect(screen.getByTestId('report-item-details').textContent).toContain('Misiune')
-    expect(screen.getByRole('link', { name: 'Deschide exercițiul' }).getAttribute('href')).toBe(`/practice/${skill.id}`)
+    // never a link to a NEW practice session; this fixture item is not in the registry, so no exact preview
+    expect(screen.queryByRole('link', { name: /exerci/i })).toBeNull()
+    expect(screen.queryByRole('button', { name: 'Deschide exact această întrebare' })).toBeNull()
   })
 
   it('reconstructs an old generated report and marks it', async () => {
@@ -221,6 +223,9 @@ describe('ContentReportsSection', () => {
     expect(screen.getByTestId('report-item-details').textContent).toContain(
       buildReportSnapshot(target, 'practice', '/')!.prompt.slice(0, 20),
     )
+    // the admin can open exactly that question, inline
+    screen.getByRole('button', { name: 'Deschide exact această întrebare' }).click()
+    await waitFor(() => expect(screen.getByTestId('report-exact-item')).toBeTruthy())
   })
 
   it('falls back to "fără detalii"', async () => {
