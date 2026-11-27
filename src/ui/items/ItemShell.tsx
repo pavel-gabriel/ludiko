@@ -2,6 +2,8 @@ import { useEffect, useId, useRef, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { localize, type CardContent, type Item, type ItemResult } from '@/engine/types';
 import ReadAloudButton from '@/ui/speech/ReadAloudButton';
+import { useProfileStore } from '@/store/profileStore';
+import { ageBand } from '@/older/ageBand';
 import { itemEnglishSpeech } from '@/ui/speech/englishSpeech';
 import ItemTypeGuide, { useItemGuide } from '@/ui/guide/ItemTypeGuide';
 import VisualSlot from './VisualSlot';
@@ -60,6 +62,7 @@ interface ItemShellProps {
 export default function ItemShell({ item, result, onContinue, correctAnswer, hint, hideAudio, children }: ItemShellProps) {
   const { t, i18n } = useTranslation();
   const promptId = useId();
+  const band = ageBand(useProfileStore((s) => s.activeProfile?.grade));
   const continueRef = useRef<HTMLButtonElement>(null);
   const wrong = result !== null && !result.correct;
   // English subject, grades 0-II: «…» in the prompt are spoken with an English voice (docs/ENGINE.md)
@@ -84,8 +87,8 @@ export default function ItemShell({ item, result, onContinue, correctAnswer, hin
           </h2>
           {item.audio && !hideAudio && <AudioButton src={item.audio.src} />}
         </div>
-        <ReadAloudButton text={localize(item.prompt, i18n.language)} />
-        {englishText && <ReadAloudButton text={englishText} lang="en" />}
+        <ReadAloudButton text={localize(item.prompt, i18n.language)} band={band} />
+        {englishText && <ReadAloudButton text={englishText} lang="en" band={band} />}
         {item.visual && <VisualSlot spec={item.visual} />}
         {guide ? <ItemTypeGuide type={item.type} /> : hint && <p className="text-sm font-semibold text-gray-500">{hint}</p>}
       </div>
