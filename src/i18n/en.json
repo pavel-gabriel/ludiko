@@ -1948,5 +1948,11 @@
     "tipWindows": "Windows / Edge: in Edge pick an online \"Natural\" voice (Alina or Emil). It needs internet.",
     "tipIos": "iPhone / iPad: Settings > Accessibility > Spoken Content > Voices > Romanian > Ioana (Enhanced).",
     "tipNote": "After installing, reopen the app and pick the voice from the list."
+  },
+  "parentalGate": {
+    "title": "Ask an adult",
+    "body": "This link leaves Ludiko. Solve the sum to continue.",
+    "wrong": "Not quite. Try again or ask an adult for help.",
+    "cancel": "Stay in Ludiko"
   }
 }

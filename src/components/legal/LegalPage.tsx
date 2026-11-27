@@ -2,6 +2,7 @@ import { Fragment, useState, type ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import CloseButton from '@/components/ui/CloseButton'
+import GatedLink from '@/components/ui/GatedLink'
 import {
   LEGAL_UPDATED,
   LEGAL_VERSION,
@@ -29,9 +30,9 @@ function withContactLink(text: string): ReactNode {
     <Fragment key={i}>
       {part}
       {i < parts.length - 1 && (
-        <a href={`mailto:${RIGHTS_CONTACT}`} className="font-semibold text-ludiko-purple underline">
+        <GatedLink href={`mailto:${RIGHTS_CONTACT}`} className="font-semibold text-ludiko-purple underline">
           {RIGHTS_CONTACT}
-        </a>
+        </GatedLink>
       )}
     </Fragment>
   ))

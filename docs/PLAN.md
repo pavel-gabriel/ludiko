@@ -287,7 +287,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 
 ### Phase 3 — Sustainability & stores
 - [ ] School/teacher plan; optional family extras (never the core). Family extras built, free for now, grouped under "Extra pentru familie" (`src/ui/family`, `src/learner/historyModels.ts`, `extrasUnlocks.ts`): progress history + print, all-children overview, mascot looks and extra stickers earned by learning. No paywall.
-- [ ] Play Store (TWA) and App Store (Capacitor) builds
+- [ ] Play Store (TWA) and App Store (Capacitor) builds. Repo kit prepared in `store/` (TWA config + CI task `build-android`, Capacitor guide, listing texts, parental gate); not built or submitted yet, waiting on owner accounts and signing keys (`OWNER_TODO.md`).
 - [ ] Volunteer reviewer programme (pedagogy faculties)
 
 ### Phase 4 — International (TODO)

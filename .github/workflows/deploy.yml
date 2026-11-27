@@ -6,7 +6,7 @@ name: Deploy to GitHub Pages
 #
 #   push to main      → build + deploy the site; deploy Firebase rules if a rules file changed
 #   hourly schedule   → send daily reminders (scripts/send-daily-reminders.mjs)
-#   Run workflow (manual) → pick a task below; "dry_run" validates / counts without changing anything
+#   Run workflow (manual) → pick a task below (build-android: Play Store AAB, store/android/README.md); "dry_run" validates / counts without changing anything
 
 on:
   push:
@@ -26,6 +26,7 @@ on:
           - delete-game-history
           - cleanup-reports
           - cleanup-rooms
+          - build-android
       dry_run:
         description: 'Dry run (rules: validate only; scripts: count only, no writes)'
         type: boolean
@@ -39,6 +40,7 @@ permissions:
 env:
   FIREBASE_PROJECT: ludiko-2e197
   FIREBASE_TOOLS: firebase-tools@15.35.0
+  BUBBLEWRAP_CLI: '@bubblewrap/cli@1.28.0'
 
 jobs:
   # ---------------------------------------------------------------- site
@@ -201,3 +203,72 @@ jobs:
           FLAG=""
           if [ "$DRY" = "true" ]; then FLAG="--dry-run"; fi
           node "scripts/privacy/$TASK.mjs" $FLAG
+
+  # ---------------------------------------------------------------- Android app bundle (manual)
+  # Wraps the PWA (https://www.ludiko.ro) as a Trusted Web Activity with Bubblewrap and uploads the
+  # signed .aab as a workflow artifact. Needs the 4 ANDROID_* secrets (store/android/README.md);
+  # without them it only prints a warning and exits 0.
+  build-android:
+    if: github.event_name == 'workflow_dispatch' && inputs.task == 'build-android'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    concurrency:
+      group: build-android
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Signing secrets present?
+        id: secrets
+        env:
+          KS: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KS_PASS: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASS: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          if [ -z "$KS" ] || [ -z "$KS_PASS" ] || [ -z "$KEY_ALIAS" ] || [ -z "$KEY_PASS" ]; then
+            echo "::warning::ANDROID_KEYSTORE_BASE64 / ANDROID_KEYSTORE_PASSWORD / ANDROID_KEY_ALIAS / ANDROID_KEY_PASSWORD missing, Android bundle NOT built. See store/android/README.md and OWNER_TODO.md."
+            echo "build=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "build=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.secrets.outputs.build == 'true'
+        with:
+          node-version: 22
+
+      - uses: actions/setup-java@v4
+        if: steps.secrets.outputs.build == 'true'
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Build the signed AAB with Bubblewrap
+        if: steps.secrets.outputs.build == 'true'
+        working-directory: store/android
+        env:
+          KS: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          BUBBLEWRAP_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          BUBBLEWRAP_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          umask 077
+          printf '%s' "$KS" | base64 -d > android.keystore
+          # Bubblewrap config: use the runner's JDK and preinstalled Android SDK (no interactive download)
+          mkdir -p "$HOME/.bubblewrap"
+          printf '{"jdkPath":"%s","androidSdkPath":"%s"}' "$JAVA_HOME" "$ANDROID_HOME" > "$HOME/.bubblewrap/config.json"
+          sed -i "s/\"alias\": \"ludiko\"/\"alias\": \"$KEY_ALIAS\"/" twa-manifest.json
+          npx --yes "$BUBBLEWRAP_CLI" update --skipVersionUpgrade --manifest=twa-manifest.json
+          npx --yes "$BUBBLEWRAP_CLI" build --skipPwaValidation --manifest=twa-manifest.json
+          echo "SHA-256 of the upload key (use the Play App Signing one in assetlinks.json, see README):"
+          keytool -list -v -keystore android.keystore -alias "$KEY_ALIAS" -storepass "$BUBBLEWRAP_KEYSTORE_PASSWORD" | grep "SHA256:" || true
+          rm -f android.keystore
+
+      - uses: actions/upload-artifact@v4
+        if: steps.secrets.outputs.build == 'true'
+        with:
+          name: ludiko-android-aab
+          path: store/android/app-release-bundle.aab
+          if-no-files-found: error
+          retention-days: 14

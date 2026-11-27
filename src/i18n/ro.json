@@ -1975,5 +1975,11 @@
     "tipWindows": "Windows / Edge: alege în Edge o voce online „Natural” (Alina sau Emil) – funcționează cu internet.",
     "tipIos": "iPhone / iPad: Setări → Accesibilitate → Conținut vorbit → Voci → Română → Ioana (Enhanced).",
     "tipNote": "După instalare, redeschide aplicația și alege vocea din listă."
+  },
+  "parentalGate": {
+    "title": "Întreabă un adult",
+    "body": "Acest link iese din Ludiko. Rezolvă calculul ca să continui.",
+    "wrong": "Nu e corect. Încearcă din nou sau cere ajutor unui adult.",
+    "cancel": "Rămân în Ludiko"
   }
 }

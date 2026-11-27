@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import LegalLink from '@/components/legal/LegalLink';
 import CloseButton from '@/components/ui/CloseButton';
+import GatedLink from '@/components/ui/GatedLink';
 import type { Provenance } from '@/engine/content/provenance';
 import { RIGHTS_CONTACT } from '@/utils/constants';
 import credits from '../../../content/credits.json';
@@ -35,21 +36,20 @@ export default function CreditsPage() {
             <ul className="space-y-2">
               {items.map((c) => (
                 <li key={c.id} className="text-sm leading-snug">
-                  <a
-                    href={c.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-ludiko-purple hover:underline"
-                  >
-                    {c.title}
-                  </a>
+                  {c.url ? (
+                    <GatedLink href={c.url} className="font-semibold text-ludiko-purple hover:underline">
+                      {c.title}
+                    </GatedLink>
+                  ) : (
+                    <span className="font-semibold">{c.title}</span>
+                  )}
                   {c.version && <span className="text-gray-400"> {c.version}</span>}
                   <span className="text-gray-600"> — {c.author}</span>
                   <span className="block text-xs text-gray-500">
                     {c.licenceUrl ? (
-                      <a href={c.licenceUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      <GatedLink href={c.licenceUrl} className="hover:underline">
                         {c.licence}
-                      </a>
+                      </GatedLink>
                     ) : (
                       c.licence
                     )}
@@ -68,9 +68,9 @@ export default function CreditsPage() {
             <>
               {' '}
               {t('credits.rightsContact')}{' '}
-              <a href={`mailto:${RIGHTS_CONTACT}`} className="text-ludiko-purple hover:underline">
+              <GatedLink href={`mailto:${RIGHTS_CONTACT}`} className="text-ludiko-purple hover:underline">
                 {RIGHTS_CONTACT}
-              </a>
+              </GatedLink>
             </>
           )}
           <span className="mt-2 flex flex-wrap gap-x-4">
