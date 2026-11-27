@@ -1,0 +1,674 @@
+[
+ {
+  "id": "ist.mid.begin.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.1"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   }
+  ],
+  "title": {
+   "ro": "Începutul Evului Mediu: de la 476 la Carol cel Mare",
+   "en": "The early Middle Ages: from 476 to Charlemagne"
+  },
+  "prerequisites": [
+   "ist.rome.empire.5",
+   "ist.christianity.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "mid"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "mid"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.mid.begin.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.mid.begin.6",
+   "kind": "data",
+   "title": "Skill ist.mid.begin.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.feudal.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Feudalismul: seniori, vasali, cavaleri și orașe",
+   "en": "Feudalism: lords, vassals, knights and towns"
+  },
+  "prerequisites": [
+   "ist.mid.begin.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "feudal"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "feudal"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.feudal.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.feudal.6",
+   "kind": "data",
+   "title": "Skill ist.feudal.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.byzantium.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Imperiul Bizantin",
+   "en": "The Byzantine Empire"
+  },
+  "prerequisites": [
+   "ist.mid.begin.6",
+   "ist.christianity.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "byz"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "byz"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.byzantium.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.byzantium.6",
+   "kind": "data",
+   "title": "Skill ist.byzantium.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.islam.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Islamul și lumea arabă",
+   "en": "Islam and the Arab world"
+  },
+  "prerequisites": [
+   "ist.byzantium.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "islam"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "islam"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.islam.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.islam.6",
+   "kind": "data",
+   "title": "Skill ist.islam.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.crusades.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Cruciadele și legăturile cu Orientul",
+   "en": "The Crusades and the links with the East"
+  },
+  "prerequisites": [
+   "ist.feudal.6",
+   "ist.byzantium.6",
+   "ist.islam.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "crusades"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "crusades"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.crusades.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.crusades.6",
+   "kind": "data",
+   "title": "Skill ist.crusades.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.migrations.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Popoarele migratoare și românii",
+   "en": "Migrating peoples and the Romanians"
+  },
+  "prerequisites": [
+   "ist.formation.4",
+   "ist.mid.begin.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "migr"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "migr"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.migrations.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.migrations.6",
+   "kind": "data",
+   "title": "Skill ist.migrations.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.states.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Formarea statelor medievale românești",
+   "en": "The formation of the medieval Romanian states"
+  },
+  "prerequisites": [
+   "ist.medieval.states.4",
+   "ist.migrations.6",
+   "ist.feudal.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "states"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "states"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.states.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.states.6",
+   "kind": "data",
+   "title": "Skill ist.states.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.mircea.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Mircea cel Bătrân și apărarea Țării Românești",
+   "en": "Mircea the Elder and the defence of Wallachia"
+  },
+  "prerequisites": [
+   "ist.states.6",
+   "ist.medieval.heroes.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "mircea"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "mircea"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.mircea.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.mircea.6",
+   "kind": "data",
+   "title": "Skill ist.mircea.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.stefan.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Ștefan cel Mare, Vlad Țepeș, Iancu de Hunedoara",
+   "en": "Stephen the Great, Vlad the Impaler, John Hunyadi"
+  },
+  "prerequisites": [
+   "ist.mircea.6",
+   "ist.medieval.heroes.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "stefan"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "stefan"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.stefan.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.stefan.6",
+   "kind": "data",
+   "title": "Skill ist.stefan.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.ottoman.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Imperiul Otoman și Țările Române",
+   "en": "The Ottoman Empire and the Romanian Lands"
+  },
+  "prerequisites": [
+   "ist.byzantium.6",
+   "ist.mircea.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "ottoman"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "ottoman"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.ottoman.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.ottoman.6",
+   "kind": "data",
+   "title": "Skill ist.ottoman.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.mihai.6",
+  "subject": "ist",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Mihai Viteazul și prima unire",
+   "en": "Michael the Brave and the first union"
+  },
+  "prerequisites": [
+   "ist.stefan.6",
+   "ist.ottoman.6",
+   "ist.mihai.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "mihai"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "mihai"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.mihai.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.mihai.6",
+   "kind": "data",
+   "title": "Skill ist.mihai.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ }
+]

@@ -1,0 +1,9207 @@
+[
+ {
+  "id": "item.ist.time.bc.5.01",
+  "type": "choice",
+  "skillId": "ist.time.bc.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.bc.5",
+  "provenance": {
+   "id": "prov.ist.time.bc.5.01",
+   "kind": "item",
+   "title": "Item item.ist.time.bc.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Care dintre acești ani este cel mai vechi?",
+   "en": "Which of these years is the oldest?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "200 î.Hr.",
+     "en": "200 BC"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "50 î.Hr.",
+     "en": "50 BC"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "10 d.Hr.",
+     "en": "AD 10"
+    }
+   },
+   {
+    "id": "d",
+    "text": {
+     "ro": "300 d.Hr.",
+     "en": "AD 300"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.time.bc.5.02",
+  "type": "match",
+  "skillId": "ist.time.bc.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.bc.5",
+  "provenance": {
+   "id": "prov.ist.time.bc.5.02",
+   "kind": "item",
+   "title": "Item item.ist.time.bc.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "î.Hr.",
+      "en": "BC"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "înainte de punctul de referință al numărătorii anilor",
+      "en": "before the reference point of the year count"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "d.Hr.",
+      "en": "AD"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "după punctul de referință al numărătorii anilor",
+      "en": "after the reference point of the year count"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "mileniu",
+      "en": "millennium"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "o mie de ani",
+      "en": "one thousand years"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "cronologie",
+      "en": "chronology"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "înșiruirea evenimentelor în ordinea în care au avut loc",
+      "en": "events listed in the order in which they happened"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.time.bc.5.03",
+  "type": "sort",
+  "skillId": "ist.time.bc.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.time.bc.5",
+  "provenance": {
+   "id": "prov.ist.time.bc.5.03",
+   "kind": "item",
+   "title": "Item item.ist.time.bc.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare an în perioada potrivită.",
+   "en": "Put each year in the right period."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Înainte de Hristos (î.Hr.)",
+     "en": "Before Christ (BC)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După Hristos (d.Hr.)",
+     "en": "After Christ (AD)"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "490 î.Hr.",
+     "en": "490 BC"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "44 î.Hr.",
+     "en": "44 BC"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "776 î.Hr.",
+     "en": "776 BC"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "106 d.Hr.",
+     "en": "AD 106"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "476 d.Hr.",
+     "en": "AD 476"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "313 d.Hr.",
+     "en": "AD 313"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.prehistory.5.01",
+  "type": "choice",
+  "skillId": "ist.prehistory.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.prehistory.5",
+  "provenance": {
+   "id": "prov.ist.prehistory.5.01",
+   "kind": "item",
+   "title": "Item item.ist.prehistory.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce a schimbat cel mai mult viața oamenilor în neolitic?",
+   "en": "What changed people's lives the most in the Neolithic?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "agricultura și creșterea animalelor",
+     "en": "farming and keeping animals"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "scrierea cu litere",
+     "en": "writing with letters"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "folosirea mașinilor cu aburi",
+     "en": "the use of steam engines"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.prehistory.5.02",
+  "type": "match",
+  "skillId": "ist.prehistory.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.prehistory.5",
+  "provenance": {
+   "id": "prov.ist.prehistory.5.02",
+   "kind": "item",
+   "title": "Item item.ist.prehistory.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "paleolitic",
+      "en": "Palaeolithic"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "epoca pietrei cioplite, a vânătorilor și culegătorilor",
+      "en": "the age of chipped stone, hunters and gatherers"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "neolitic",
+      "en": "Neolithic"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "epoca pietrei șlefuite, a agriculturii și a satelor",
+      "en": "the age of polished stone, farming and villages"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "epoca bronzului",
+      "en": "Bronze Age"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "epoca în care se folosește aliajul de cupru și staniu",
+      "en": "the age of the copper and tin alloy"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "epoca fierului",
+      "en": "Iron Age"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "epoca în care uneltele și armele se fac tot mai mult din fier",
+      "en": "the age when tools and weapons are increasingly made of iron"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.prehistory.5.03",
+  "type": "sort",
+  "skillId": "ist.prehistory.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.prehistory.5",
+  "provenance": {
+   "id": "prov.ist.prehistory.5.03",
+   "kind": "item",
+   "title": "Item item.ist.prehistory.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare lucru în epoca potrivită.",
+   "en": "Put each thing in the right age."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Epoca pietrei",
+     "en": "Stone Age"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Epoca metalelor",
+     "en": "Age of metals"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "topor din piatră cioplită",
+     "en": "a chipped stone axe"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "vârf de săgeată din silex",
+     "en": "a flint arrowhead"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "unealtă din os",
+     "en": "a bone tool"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "sabie din bronz",
+     "en": "a bronze sword"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "podoabă din cupru",
+     "en": "a copper ornament"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "plug cu vârf de fier",
+     "en": "a plough with an iron tip"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.orient.5.01",
+  "type": "choice",
+  "skillId": "ist.orient.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.orient.5",
+  "provenance": {
+   "id": "prov.ist.orient.5.01",
+   "kind": "item",
+   "title": "Item item.ist.orient.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pe malurile cărui fluviu s-a dezvoltat Egiptul antic?",
+   "en": "Along which river did ancient Egypt develop?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Nil",
+     "en": "the Nile"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Dunărea",
+     "en": "the Danube"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Tibru",
+     "en": "the Tiber"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.orient.5.02",
+  "type": "match",
+  "skillId": "ist.orient.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.orient.5",
+  "provenance": {
+   "id": "prov.ist.orient.5.02",
+   "kind": "item",
+   "title": "Item item.ist.orient.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "faraon",
+      "en": "pharaoh"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "conducătorul Egiptului antic",
+      "en": "the ruler of ancient Egypt"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "hieroglife",
+      "en": "hieroglyphs"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "semne de scriere din Egiptul antic",
+      "en": "writing signs of ancient Egypt"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "cuneiform",
+      "en": "cuneiform"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "scriere cu semne în formă de pene pe tăblițe de lut",
+      "en": "writing with wedge-shaped marks on clay tablets"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "ziggurat",
+      "en": "ziggurat"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "templu în trepte din Mesopotamia",
+      "en": "a stepped temple of Mesopotamia"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.orient.5.03",
+  "type": "sort",
+  "skillId": "ist.orient.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.orient.5",
+  "provenance": {
+   "id": "prov.ist.orient.5.03",
+   "kind": "item",
+   "title": "Item item.ist.orient.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Egipt sau Mesopotamia? Pune fiecare lucru la locul lui.",
+   "en": "Egypt or Mesopotamia? Put each thing where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Egiptul antic",
+     "en": "Ancient Egypt"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Mesopotamia",
+     "en": "Mesopotamia"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "piramide",
+     "en": "pyramids"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "faraon",
+     "en": "pharaoh"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "hieroglife",
+     "en": "hieroglyphs"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "ziggurat",
+     "en": "ziggurat"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "tăblițe de lut cu cuneiform",
+     "en": "clay tablets with cuneiform"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Codul lui Hammurabi",
+     "en": "the Code of Hammurabi"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.greece.5.01",
+  "type": "choice",
+  "skillId": "ist.greece.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.greece.5",
+  "provenance": {
+   "id": "prov.ist.greece.5.01",
+   "kind": "item",
+   "title": "Item item.ist.greece.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce înseamnă cuvântul „democrație”?",
+   "en": "What does the word “democracy” mean?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "puterea poporului",
+     "en": "the power of the people"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "puterea unui singur rege",
+     "en": "the power of a single king"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "puterea armatei",
+     "en": "the power of the army"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.greece.5.02",
+  "type": "match",
+  "skillId": "ist.greece.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.greece.5",
+  "provenance": {
+   "id": "prov.ist.greece.5.02",
+   "kind": "item",
+   "title": "Item item.ist.greece.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "polis",
+      "en": "polis"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "cetate-stat grecească",
+      "en": "a Greek city-state"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "democrație",
+      "en": "democracy"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "conducere prin voința cetățenilor",
+      "en": "rule by the will of the citizens"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Acropole",
+      "en": "Acropolis"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "colina fortificată a Atenei cu temple",
+      "en": "the fortified hill of Athens with temples"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Olimpia",
+      "en": "Olympia"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "locul unde se țineau jocurile olimpice antice",
+      "en": "the place where the ancient Olympic Games were held"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.greece.5.03",
+  "type": "sort",
+  "skillId": "ist.greece.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.greece.5",
+  "provenance": {
+   "id": "prov.ist.greece.5.03",
+   "kind": "item",
+   "title": "Item item.ist.greece.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Atena sau Sparta? Pune fiecare caracteristică la locul ei.",
+   "en": "Athens or Sparta? Put each feature where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Atena",
+     "en": "Athens"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Sparta",
+     "en": "Sparta"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "democrație cu adunarea cetățenilor",
+     "en": "democracy with an assembly of citizens"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "teatru, filozofie și artă",
+     "en": "theatre, philosophy and art"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Acropola cu Partenonul",
+     "en": "the Acropolis with the Parthenon"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "educație militară din copilărie",
+     "en": "military education from childhood"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "viață simplă și disciplină aspră",
+     "en": "simple life and harsh discipline"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "armată puternică de soldați-cetățeni",
+     "en": "a strong army of citizen-soldiers"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.greece.wars.5.01",
+  "type": "choice",
+  "skillId": "ist.greece.wars.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.greece.wars.5",
+  "provenance": {
+   "id": "prov.ist.greece.wars.5.01",
+   "kind": "item",
+   "title": "Item item.ist.greece.wars.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cu ce popor s-au luptat grecii la Marathon?",
+   "en": "Which people did the Greeks fight at Marathon?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "perșii",
+     "en": "the Persians"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "romanii",
+     "en": "the Romans"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "dacii",
+     "en": "the Dacians"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.greece.wars.5.02",
+  "type": "match",
+  "skillId": "ist.greece.wars.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.greece.wars.5",
+  "provenance": {
+   "id": "prov.ist.greece.wars.5.02",
+   "kind": "item",
+   "title": "Item item.ist.greece.wars.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Alexandru cel Mare",
+      "en": "Alexander the Great"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "rege macedonean care a cucerit un imperiu întins",
+      "en": "a Macedonian king who conquered a vast empire"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Marathon",
+      "en": "Marathon"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "bătălie în care atenienii i-au învins pe perși",
+      "en": "a battle in which the Athenians defeated the Persians"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Partenon",
+      "en": "Parthenon"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "templu al zeiței Atena de pe Acropole",
+      "en": "the temple of goddess Athena on the Acropolis"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Salamina",
+      "en": "Salamis"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "bătălie navală câștigată de greci împotriva perșilor",
+      "en": "a naval battle won by the Greeks against the Persians"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.greece.wars.5.03",
+  "type": "sort",
+  "skillId": "ist.greece.wars.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.greece.wars.5",
+  "provenance": {
+   "id": "prov.ist.greece.wars.5.03",
+   "kind": "item",
+   "title": "Item item.ist.greece.wars.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare eveniment în secolul potrivit.",
+   "en": "Put each event in the right century."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Secolul V î.Hr.",
+     "en": "5th century BC"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Secolul IV î.Hr.",
+     "en": "4th century BC"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Bătălia de la Marathon (490 î.Hr.)",
+     "en": "The Battle of Marathon (490 BC)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Bătălia de la Salamina (480 î.Hr.)",
+     "en": "The Battle of Salamis (480 BC)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Începe construcția Partenonului (447 î.Hr.)",
+     "en": "Construction of the Parthenon begins (447 BC)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Alexandru devine rege (336 î.Hr.)",
+     "en": "Alexander becomes king (336 BC)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Moare Alexandru cel Mare (323 î.Hr.)",
+     "en": "Alexander the Great dies (323 BC)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Alexandru pornește campania în Persia (334 î.Hr.)",
+     "en": "Alexander begins the campaign in Persia (334 BC)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.rome.republic.5.01",
+  "type": "choice",
+  "skillId": "ist.rome.republic.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.rome.republic.5",
+  "provenance": {
+   "id": "prov.ist.rome.republic.5.01",
+   "kind": "item",
+   "title": "Item item.ist.rome.republic.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Care a fost forma de conducere a Romei înainte de imperiu?",
+   "en": "What form of government did Rome have before the empire?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "republica",
+     "en": "the republic"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "monarhia absolută modernă",
+     "en": "modern absolute monarchy"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "democrația digitală",
+     "en": "digital democracy"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.rome.republic.5.02",
+  "type": "match",
+  "skillId": "ist.rome.republic.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.rome.republic.5",
+  "provenance": {
+   "id": "prov.ist.rome.republic.5.02",
+   "kind": "item",
+   "title": "Item item.ist.rome.republic.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Senat",
+      "en": "Senate"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "sfatul fruntașilor Romei",
+      "en": "the council of Rome's leading men"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "consul",
+      "en": "consul"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "magistrat ales pentru un an, care conducea Roma",
+      "en": "a magistrate elected for one year who led Rome"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "legiune",
+      "en": "legion"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "unitate mare a armatei romane",
+      "en": "a large unit of the Roman army"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Cartagina",
+      "en": "Carthage"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "orașul rival al Romei, în Africa de Nord",
+      "en": "Rome's rival city in North Africa"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.rome.republic.5.03",
+  "type": "sort",
+  "skillId": "ist.rome.republic.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.rome.republic.5",
+  "provenance": {
+   "id": "prov.ist.rome.republic.5.03",
+   "kind": "item",
+   "title": "Item item.ist.rome.republic.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Republică sau imperiu? Pune fiecare lucru la locul lui.",
+   "en": "Republic or empire? Put each thing where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Republica Romană",
+     "en": "The Roman Republic"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Imperiul Roman",
+     "en": "The Roman Empire"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "doi consuli aleși pe un an",
+     "en": "two consuls elected for a year"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "războaiele punice",
+     "en": "the Punic Wars"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Hannibal trece Alpii",
+     "en": "Hannibal crosses the Alps"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "împăratul Augustus",
+     "en": "the emperor Augustus"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Colosseumul",
+     "en": "the Colosseum"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Columna lui Traian",
+     "en": "Trajan's Column"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.rome.empire.5.01",
+  "type": "choice",
+  "skillId": "ist.rome.empire.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.rome.empire.5",
+  "provenance": {
+   "id": "prov.ist.rome.empire.5.01",
+   "kind": "item",
+   "title": "Item item.ist.rome.empire.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine a fost primul împărat roman?",
+   "en": "Who was the first Roman emperor?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Augustus",
+     "en": "Augustus"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Iulius Cezar",
+     "en": "Julius Caesar"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Traian",
+     "en": "Trajan"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.rome.empire.5.02",
+  "type": "match",
+  "skillId": "ist.rome.empire.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.rome.empire.5",
+  "provenance": {
+   "id": "prov.ist.rome.empire.5.02",
+   "kind": "item",
+   "title": "Item item.ist.rome.empire.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "împărat",
+      "en": "emperor"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "conducătorul Imperiului Roman",
+      "en": "the ruler of the Roman Empire"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "apeduct",
+      "en": "aqueduct"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "construcție care aducea apă în oraș",
+      "en": "a structure that brought water into a city"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Pax Romana",
+      "en": "Pax Romana"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "perioadă lungă de pace și ordine în imperiu",
+      "en": "a long period of peace and order in the empire"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Colosseum",
+      "en": "Colosseum"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "mare arenă de spectacole din Roma",
+      "en": "a great arena for shows in Rome"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.rome.empire.5.03",
+  "type": "sort",
+  "skillId": "ist.rome.empire.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.rome.empire.5",
+  "provenance": {
+   "id": "prov.ist.rome.empire.5.03",
+   "kind": "item",
+   "title": "Item item.ist.rome.empire.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce aparține Romei antice? Pune fiecare lucru la locul lui.",
+   "en": "What belongs to ancient Rome? Put each thing where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Construit de romani",
+     "en": "Built by the Romans"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Nu este roman",
+     "en": "Not Roman"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Colosseumul",
+     "en": "the Colosseum"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "apeductele",
+     "en": "aqueducts"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "drumurile pavate",
+     "en": "paved roads"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "piramidele din Giza",
+     "en": "the pyramids of Giza"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Partenonul din Atena",
+     "en": "the Parthenon in Athens"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "zigguratul din Ur",
+     "en": "the ziggurat of Ur"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.dacians.5.01",
+  "type": "choice",
+  "skillId": "ist.dacians.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.dacians.5",
+  "provenance": {
+   "id": "prov.ist.dacians.5.01",
+   "kind": "item",
+   "title": "Item item.ist.dacians.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine a unit triburile dace într-un stat puternic?",
+   "en": "Who united the Dacian tribes into a strong state?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Burebista",
+     "en": "Burebista"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Traian",
+     "en": "Trajan"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Augustus",
+     "en": "Augustus"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.dacians.5.02",
+  "type": "match",
+  "skillId": "ist.dacians.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.dacians.5",
+  "provenance": {
+   "id": "prov.ist.dacians.5.02",
+   "kind": "item",
+   "title": "Item item.ist.dacians.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Burebista",
+      "en": "Burebista"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "rege care a unit triburile dace",
+      "en": "the king who united the Dacian tribes"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Decebal",
+      "en": "Decebalus"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "ultimul rege al Daciei independente",
+      "en": "the last king of independent Dacia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Sarmizegetusa Regia",
+      "en": "Sarmizegetusa Regia"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "capitala statului dac din munți",
+      "en": "the Dacian capital in the mountains"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Zamolxe",
+      "en": "Zalmoxis"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "zeul cel mai cunoscut al dacilor",
+      "en": "the best-known god of the Dacians"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.dacians.5.03",
+  "type": "sort",
+  "skillId": "ist.dacians.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.dacians.5",
+  "provenance": {
+   "id": "prov.ist.dacians.5.03",
+   "kind": "item",
+   "title": "Item item.ist.dacians.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Daci sau romani? Pune fiecare lucru la locul lui.",
+   "en": "Dacians or Romans? Put each thing where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Daci",
+     "en": "Dacians"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Romani",
+     "en": "Romans"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "regele Decebal",
+     "en": "king Decebalus"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Sarmizegetusa Regia",
+     "en": "Sarmizegetusa Regia"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "zeul Zamolxe",
+     "en": "the god Zalmoxis"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "împăratul Traian",
+     "en": "the emperor Trajan"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "legiunile romane",
+     "en": "the Roman legions"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "limba latină",
+     "en": "the Latin language"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.romanization.5.01",
+  "type": "choice",
+  "skillId": "ist.romanization.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romanization.5",
+  "provenance": {
+   "id": "prov.ist.romanization.5.01",
+   "kind": "item",
+   "title": "Item item.ist.romanization.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine a condus războaiele romane împotriva dacilor?",
+   "en": "Who led the Roman wars against the Dacians?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "împăratul Traian",
+     "en": "emperor Trajan"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Iulius Cezar",
+     "en": "Julius Caesar"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Alexandru cel Mare",
+     "en": "Alexander the Great"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.romanization.5.02",
+  "type": "match",
+  "skillId": "ist.romanization.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romanization.5",
+  "provenance": {
+   "id": "prov.ist.romanization.5.02",
+   "kind": "item",
+   "title": "Item item.ist.romanization.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "provincie romană",
+      "en": "Roman province"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "teritoriu stăpânit și administrat de Roma",
+      "en": "a territory ruled and administered by Rome"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "romanizare",
+      "en": "Romanization"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "adoptarea limbii și obiceiurilor romane",
+      "en": "the adoption of Roman language and customs"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Columna lui Traian",
+      "en": "Trajan's Column"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "monument de la Roma cu scene din războaiele dacice",
+      "en": "a monument in Rome with scenes of the Dacian wars"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "colonist",
+      "en": "colonist"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "om venit să se stabilească într-un teritoriu nou",
+      "en": "a person who came to settle in a new territory"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.romanization.5.03",
+  "type": "sort",
+  "skillId": "ist.romanization.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.romanization.5",
+  "provenance": {
+   "id": "prov.ist.romanization.5.03",
+   "kind": "item",
+   "title": "Item item.ist.romanization.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după 106? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after 106? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Până în 106 (inclusiv)",
+     "en": "Up to 106 (inclusive)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 106",
+     "en": "After 106"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Începe primul război dacic (101)",
+     "en": "The first Dacian war begins (101)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Începe al doilea război dacic (105)",
+     "en": "The second Dacian war begins (105)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Dacia devine provincie romană (106)",
+     "en": "Dacia becomes a Roman province (106)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Columna lui Traian este inaugurată (113)",
+     "en": "Trajan's Column is inaugurated (113)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Retragerea romană (aprox. 271)",
+     "en": "The Roman withdrawal (about 271)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Edictul de la Milano (313)",
+     "en": "The Edict of Milan (313)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.christianity.5.01",
+  "type": "choice",
+  "skillId": "ist.christianity.5",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.christianity.5",
+  "provenance": {
+   "id": "prov.ist.christianity.5.01",
+   "kind": "item",
+   "title": "Item item.ist.christianity.5.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce a stabilit Edictul de la Milano din anul 313?",
+   "en": "What did the Edict of Milan of 313 establish?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "libertatea religioasă în imperiu",
+     "en": "religious freedom in the empire"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "împărțirea imperiului în două",
+     "en": "splitting the empire in two"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "începutul Republicii",
+     "en": "the start of the Republic"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.christianity.5.02",
+  "type": "match",
+  "skillId": "ist.christianity.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.christianity.5",
+  "provenance": {
+   "id": "prov.ist.christianity.5.02",
+   "kind": "item",
+   "title": "Item item.ist.christianity.5.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "creștinism",
+      "en": "Christianity"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "religie care a apărut în provincia romană Iudeea",
+      "en": "a religion that began in the Roman province of Judea"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Edictul de la Milano",
+      "en": "Edict of Milan"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "act din 313 care a dat libertate religioasă",
+      "en": "the act of 313 that gave religious freedom"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Constantin cel Mare",
+      "en": "Constantine the Great"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "împăratul care a sprijinit creștinismul și a întemeiat Constantinopolul",
+      "en": "the emperor who supported Christianity and founded Constantinople"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "persecuție",
+      "en": "persecution"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "tratare dușmănoasă a unor oameni din cauza credinței lor",
+      "en": "hostile treatment of people because of their faith"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.christianity.5.03",
+  "type": "sort",
+  "skillId": "ist.christianity.5",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.christianity.5",
+  "provenance": {
+   "id": "prov.ist.christianity.5.03",
+   "kind": "item",
+   "title": "Item item.ist.christianity.5.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după Edictul de la Milano (313)? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after the Edict of Milan (313)? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Până în 313 (inclusiv)",
+     "en": "Up to 313 (inclusive)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 313",
+     "en": "After 313"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Marele incendiu din Roma (64)",
+     "en": "The Great Fire of Rome (64)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Încep persecuțiile lui Dioclețian (303)",
+     "en": "Diocletian's persecutions begin (303)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Edictul de la Milano (313)",
+     "en": "The Edict of Milan (313)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Conciliul de la Niceea (325)",
+     "en": "The Council of Nicaea (325)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Moare Constantin cel Mare (337)",
+     "en": "Constantine the Great dies (337)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Creștinismul devine religie oficială (380)",
+     "en": "Christianity becomes the official religion (380)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.mid.begin.6.01",
+  "type": "choice",
+  "skillId": "ist.mid.begin.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mid.begin.6",
+  "provenance": {
+   "id": "prov.ist.mid.begin.6.01",
+   "kind": "item",
+   "title": "Item item.ist.mid.begin.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Care an marchează, convențional, începutul Evului Mediu?",
+   "en": "Which year marks, by convention, the start of the Middle Ages?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "476",
+     "en": "476"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "106",
+     "en": "106"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1066",
+     "en": "1066"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.mid.begin.6.02",
+  "type": "match",
+  "skillId": "ist.mid.begin.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mid.begin.6",
+  "provenance": {
+   "id": "prov.ist.mid.begin.6.02",
+   "kind": "item",
+   "title": "Item item.ist.mid.begin.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Evul Mediu",
+      "en": "the Middle Ages"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "perioada dintre antichitate și epoca modernă",
+      "en": "the period between antiquity and the modern age"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "franci",
+      "en": "Franks"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "popor germanic care a format un regat puternic în Galia",
+      "en": "a Germanic people that built a strong kingdom in Gaul"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Carol cel Mare",
+      "en": "Charlemagne"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "rege al francilor încoronat împărat în anul 800",
+      "en": "king of the Franks crowned emperor in 800"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Sfântul Imperiu Roman",
+      "en": "Holy Roman Empire"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "stat din Europa centrală, condus de Otto I din 962",
+      "en": "a state in central Europe, led by Otto I from 962"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.mid.begin.6.03",
+  "type": "sort",
+  "skillId": "ist.mid.begin.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mid.begin.6",
+  "provenance": {
+   "id": "prov.ist.mid.begin.6.03",
+   "kind": "item",
+   "title": "Item item.ist.mid.begin.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Antichitate sau Evul Mediu? Pune fiecare lucru în epoca lui.",
+   "en": "Antiquity or the Middle Ages? Put each thing in its age."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Antichitate",
+     "en": "Antiquity"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Evul Mediu",
+     "en": "The Middle Ages"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Partenonul",
+     "en": "the Parthenon"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Iulius Cezar",
+     "en": "Julius Caesar"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Colosseumul",
+     "en": "the Colosseum"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Carol cel Mare",
+     "en": "Charlemagne"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "castelele feudale",
+     "en": "feudal castles"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "cruciadele",
+     "en": "the Crusades"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.feudal.6.01",
+  "type": "choice",
+  "skillId": "ist.feudal.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.feudal.6",
+  "provenance": {
+   "id": "prov.ist.feudal.6.01",
+   "kind": "item",
+   "title": "Item item.ist.feudal.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce primea un vasal de la senior?",
+   "en": "What did a vassal receive from his lord?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "pământ (feudă)",
+     "en": "land (a fief)"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "o coroană imperială",
+     "en": "an imperial crown"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "o flotă de corăbii",
+     "en": "a fleet of ships"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.feudal.6.02",
+  "type": "match",
+  "skillId": "ist.feudal.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.feudal.6",
+  "provenance": {
+   "id": "prov.ist.feudal.6.02",
+   "kind": "item",
+   "title": "Item item.ist.feudal.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "senior",
+      "en": "lord"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "nobil care dădea pământ în schimbul loialității",
+      "en": "a noble who gave land in return for loyalty"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "vasal",
+      "en": "vassal"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "nobil care primea pământ și jura credință seniorului",
+      "en": "a noble who received land and swore loyalty to the lord"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "breaslă",
+      "en": "guild"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "asociație a meșteșugarilor dintr-un oraș",
+      "en": "an association of craftsmen in a town"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "șerb",
+      "en": "serf"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "țăran legat de pământul seniorului",
+      "en": "a peasant tied to the lord's land"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.feudal.6.03",
+  "type": "sort",
+  "skillId": "ist.feudal.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.feudal.6",
+  "provenance": {
+   "id": "prov.ist.feudal.6.03",
+   "kind": "item",
+   "title": "Item item.ist.feudal.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine face parte din ce grup? Pune fiecare la locul lui.",
+   "en": "Who belongs to which group? Put each in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Nobilimea feudală",
+     "en": "Feudal nobility"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Oameni din popor",
+     "en": "Common people"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "senior",
+     "en": "lord"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "cavaler",
+     "en": "knight"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "vasal",
+     "en": "vassal"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "șerb",
+     "en": "serf"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "meșteșugar din oraș",
+     "en": "town craftsman"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "țăran",
+     "en": "peasant"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.byzantium.6.01",
+  "type": "choice",
+  "skillId": "ist.byzantium.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.byzantium.6",
+  "provenance": {
+   "id": "prov.ist.byzantium.6.01",
+   "kind": "item",
+   "title": "Item item.ist.byzantium.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Care era capitala Imperiului Bizantin?",
+   "en": "What was the capital of the Byzantine Empire?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Constantinopol",
+     "en": "Constantinople"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Roma",
+     "en": "Rome"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Atena",
+     "en": "Athens"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.byzantium.6.02",
+  "type": "match",
+  "skillId": "ist.byzantium.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.byzantium.6",
+  "provenance": {
+   "id": "prov.ist.byzantium.6.02",
+   "kind": "item",
+   "title": "Item item.ist.byzantium.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Constantinopol",
+      "en": "Constantinople"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "capitala Imperiului Bizantin",
+      "en": "the capital of the Byzantine Empire"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Iustinian",
+      "en": "Justinian"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "împărat bizantin sub care s-a ridicat Sfânta Sofia",
+      "en": "the Byzantine emperor under whom Hagia Sophia was built"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Sfânta Sofia",
+      "en": "Hagia Sophia"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "mare biserică din Constantinopol",
+      "en": "the great church of Constantinople"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Marea Schismă",
+      "en": "Great Schism"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "separarea Bisericii ortodoxe de cea catolică",
+      "en": "the separation of the Orthodox from the Catholic Church"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.byzantium.6.03",
+  "type": "sort",
+  "skillId": "ist.byzantium.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.byzantium.6",
+  "provenance": {
+   "id": "prov.ist.byzantium.6.03",
+   "kind": "item",
+   "title": "Item item.ist.byzantium.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Răsărit sau Apus? Pune fiecare lucru la locul lui.",
+   "en": "East or West? Put each thing where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Imperiul Bizantin (Răsărit)",
+     "en": "The Byzantine Empire (East)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Regatele din Europa Occidentală",
+     "en": "Kingdoms of Western Europe"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Constantinopol",
+     "en": "Constantinople"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "împăratul Iustinian",
+     "en": "Emperor Justinian"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "biserica Sfânta Sofia",
+     "en": "the church of Hagia Sophia"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Carol cel Mare",
+     "en": "Charlemagne"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "regatul francilor",
+     "en": "the kingdom of the Franks"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Magna Carta",
+     "en": "the Magna Carta"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.islam.6.01",
+  "type": "choice",
+  "skillId": "ist.islam.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.islam.6",
+  "provenance": {
+   "id": "prov.ist.islam.6.01",
+   "kind": "item",
+   "title": "Item item.ist.islam.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cum se numește cartea sfântă a musulmanilor?",
+   "en": "What is the holy book of Muslims called?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Coranul",
+     "en": "the Quran"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Biblia",
+     "en": "the Bible"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Iliada",
+     "en": "the Iliad"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.islam.6.02",
+  "type": "match",
+  "skillId": "ist.islam.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.islam.6",
+  "provenance": {
+   "id": "prov.ist.islam.6.02",
+   "kind": "item",
+   "title": "Item item.ist.islam.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Coran",
+      "en": "Quran"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "cartea sfântă a musulmanilor",
+      "en": "the holy book of Muslims"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "calif",
+      "en": "caliph"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "conducătorul comunității și al statului musulman",
+      "en": "the leader of the Muslim community and state"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "moschee",
+      "en": "mosque"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "locaș de rugăciune al musulmanilor",
+      "en": "the place of prayer of Muslims"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Mecca",
+      "en": "Mecca"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "oraș sfânt în care s-a născut Mahomed",
+      "en": "the holy city where Muhammad was born"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.islam.6.03",
+  "type": "sort",
+  "skillId": "ist.islam.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.islam.6",
+  "provenance": {
+   "id": "prov.ist.islam.6.03",
+   "kind": "item",
+   "title": "Item item.ist.islam.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce aparține lumii arabe medievale? Pune fiecare lucru la locul lui.",
+   "en": "What belongs to the medieval Arab world? Put each thing where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Lumea arabă",
+     "en": "The Arab world"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Europa creștină medievală",
+     "en": "Medieval Christian Europe"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "califat",
+     "en": "caliphate"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Coran",
+     "en": "Quran"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Bagdad",
+     "en": "Baghdad"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "castel feudal",
+     "en": "feudal castle"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "cavaler",
+     "en": "knight"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "breaslă de meșteșugari",
+     "en": "craftsmen's guild"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.crusades.6.01",
+  "type": "choice",
+  "skillId": "ist.crusades.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.crusades.6",
+  "provenance": {
+   "id": "prov.ist.crusades.6.01",
+   "kind": "item",
+   "title": "Item item.ist.crusades.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Spre ce regiune au pornit cruciadele?",
+   "en": "Towards which region did the Crusades set out?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Orientul Apropiat",
+     "en": "the Near East"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "America",
+     "en": "the Americas"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Scandinavia",
+     "en": "Scandinavia"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.crusades.6.02",
+  "type": "match",
+  "skillId": "ist.crusades.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.crusades.6",
+  "provenance": {
+   "id": "prov.ist.crusades.6.02",
+   "kind": "item",
+   "title": "Item item.ist.crusades.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "cruciadă",
+      "en": "crusade"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "expediție militară creștină spre Orientul Apropiat",
+      "en": "a Christian military expedition to the Near East"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "cruciat",
+      "en": "crusader"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "luptător care participa la o cruciadă",
+      "en": "a fighter who took part in a crusade"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Ierusalim",
+      "en": "Jerusalem"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "oraș sfânt pentru mai multe religii, țintă a cruciadelor",
+      "en": "a city holy to several religions, a goal of the Crusades"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Saladin",
+      "en": "Saladin"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "conducător musulman care a recucerit Ierusalimul în 1187",
+      "en": "the Muslim leader who recaptured Jerusalem in 1187"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.crusades.6.03",
+  "type": "sort",
+  "skillId": "ist.crusades.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.crusades.6",
+  "provenance": {
+   "id": "prov.ist.crusades.6.03",
+   "kind": "item",
+   "title": "Item item.ist.crusades.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce s-a întâmplat înainte și ce după anul 1100? Pune fiecare eveniment la locul lui.",
+   "en": "What happened before and what after the year 1100? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Înainte de 1100",
+     "en": "Before 1100"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 1100",
+     "en": "After 1100"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Carol cel Mare este încoronat împărat (800)",
+     "en": "Charlemagne is crowned emperor (800)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Începe prima cruciadă (1096)",
+     "en": "The First Crusade begins (1096)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Marea Schismă (1054)",
+     "en": "The Great Schism (1054)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Saladin recucerește Ierusalimul (1187)",
+     "en": "Saladin recaptures Jerusalem (1187)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Magna Carta (1215)",
+     "en": "The Magna Carta (1215)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Cade Acra (1291)",
+     "en": "Acre falls (1291)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.migrations.6.01",
+  "type": "choice",
+  "skillId": "ist.migrations.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.migrations.6",
+  "provenance": {
+   "id": "prov.ist.migrations.6.01",
+   "kind": "item",
+   "title": "Item item.ist.migrations.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce popor a invadat Europa de Est în anul 1241?",
+   "en": "Which people invaded Eastern Europe in the year 1241?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "tătarii",
+     "en": "the Tatars"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "romanii",
+     "en": "the Romans"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "grecii",
+     "en": "the Greeks"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.migrations.6.02",
+  "type": "match",
+  "skillId": "ist.migrations.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.migrations.6",
+  "provenance": {
+   "id": "prov.ist.migrations.6.02",
+   "kind": "item",
+   "title": "Item item.ist.migrations.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "huni",
+      "en": "Huns"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "popor nomad din stepele Asiei, înaintat spre Europa în secolul al IV-lea",
+      "en": "a nomadic people from the Asian steppes who advanced into Europe in the 4th century"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "slavi",
+      "en": "Slavs"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "popor stabilit treptat la nord de Dunăre în secolele VI–VII",
+      "en": "a people who gradually settled north of the Danube in the 6th–7th centuries"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "maghiari",
+      "en": "Hungarians"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "popor așezat în bazinul Carpatic în jurul anului 895",
+      "en": "a people who settled in the Carpathian Basin around 895"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "tătari",
+      "en": "Tatars"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "popor care a invadat Europa de Est în 1241",
+      "en": "a people who invaded Eastern Europe in 1241"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.migrations.6.03",
+  "type": "sort",
+  "skillId": "ist.migrations.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.migrations.6",
+  "provenance": {
+   "id": "prov.ist.migrations.6.03",
+   "kind": "item",
+   "title": "Item item.ist.migrations.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după anul 800? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after the year 800? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Înainte de 800",
+     "en": "Before 800"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 800",
+     "en": "After 800"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Hunii înaintează spre Europa (aprox. 375)",
+     "en": "The Huns advance into Europe (about 375)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Moare Attila (453)",
+     "en": "Attila dies (453)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Se întemeiază primul stat bulgar (681)",
+     "en": "The first Bulgarian state is founded (681)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Maghiarii se așază în bazinul Carpatic (aprox. 895)",
+     "en": "The Hungarians settle in the Carpathian Basin (about 895)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Invazia tătară (1241)",
+     "en": "The Tatar invasion (1241)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Bătălia de la Posada (1330)",
+     "en": "The Battle of Posada (1330)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.states.6.01",
+  "type": "choice",
+  "skillId": "ist.states.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.states.6",
+  "provenance": {
+   "id": "prov.ist.states.6.01",
+   "kind": "item",
+   "title": "Item item.ist.states.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine a învins armata regelui Ungariei la Posada?",
+   "en": "Who defeated the army of the King of Hungary at Posada?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Basarab I",
+     "en": "Basarab I"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Mircea cel Bătrân",
+     "en": "Mircea the Elder"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Mihai Viteazul",
+     "en": "Michael the Brave"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.states.6.02",
+  "type": "match",
+  "skillId": "ist.states.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.states.6",
+  "provenance": {
+   "id": "prov.ist.states.6.02",
+   "kind": "item",
+   "title": "Item item.ist.states.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "voievod",
+      "en": "voivode"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "conducător militar și politic al unei formațiuni românești",
+      "en": "the military and political leader of a Romanian formation"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "cnez",
+      "en": "knez"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "conducător al unei formațiuni politice mici, cnezatul",
+      "en": "the leader of a small political formation, a knezate"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Basarab I",
+      "en": "Basarab I"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "întemeietor al Țării Românești, învingător la Posada",
+      "en": "founder of Wallachia, the victor at Posada"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Bogdan I",
+      "en": "Bogdan I"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "întemeietorul Moldovei independente",
+      "en": "the founder of independent Moldavia"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.states.6.03",
+  "type": "sort",
+  "skillId": "ist.states.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.states.6",
+  "provenance": {
+   "id": "prov.ist.states.6.03",
+   "kind": "item",
+   "title": "Item item.ist.states.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Țara Românească sau Moldova? Pune fiecare lucru la locul lui.",
+   "en": "Wallachia or Moldavia? Put each thing where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Țara Românească",
+     "en": "Wallachia"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Moldova",
+     "en": "Moldavia"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Basarab I",
+     "en": "Basarab I"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Bătălia de la Posada",
+     "en": "the Battle of Posada"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Curtea de Argeș",
+     "en": "Curtea de Argeș"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Bogdan I",
+     "en": "Bogdan I"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Suceava",
+     "en": "Suceava"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Putna",
+     "en": "Putna"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.mircea.6.01",
+  "type": "choice",
+  "skillId": "ist.mircea.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mircea.6",
+  "provenance": {
+   "id": "prov.ist.mircea.6.01",
+   "kind": "item",
+   "title": "Item item.ist.mircea.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Care domn a condus Țara Românească între 1386 și 1418?",
+   "en": "Which ruler led Wallachia between 1386 and 1418?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Mircea cel Bătrân",
+     "en": "Mircea the Elder"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Ștefan cel Mare",
+     "en": "Stephen the Great"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Basarab I",
+     "en": "Basarab I"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.mircea.6.02",
+  "type": "match",
+  "skillId": "ist.mircea.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mircea.6",
+  "provenance": {
+   "id": "prov.ist.mircea.6.02",
+   "kind": "item",
+   "title": "Item item.ist.mircea.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Mircea cel Bătrân",
+      "en": "Mircea the Elder"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "domn al Țării Românești între 1386 și 1418",
+      "en": "ruler of Wallachia between 1386 and 1418"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Rovine",
+      "en": "Rovine"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "bătălie din 1395 împotriva armatei otomane",
+      "en": "a battle of 1395 against the Ottoman army"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Nicopole",
+      "en": "Nicopolis"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "cruciada din 1396 la care a participat și Mircea",
+      "en": "the crusade of 1396 in which Mircea also took part"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Dobrogea",
+      "en": "Dobruja"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "regiune între Dunăre și Marea Neagră, stăpânită de Mircea",
+      "en": "the region between the Danube and the Black Sea, held by Mircea"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.mircea.6.03",
+  "type": "sort",
+  "skillId": "ist.mircea.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mircea.6",
+  "provenance": {
+   "id": "prov.ist.mircea.6.03",
+   "kind": "item",
+   "title": "Item item.ist.mircea.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Mircea sau Ștefan? Pune fiecare lucru la locul lui.",
+   "en": "Mircea or Stephen? Put each thing where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Mircea cel Bătrân",
+     "en": "Mircea the Elder"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Ștefan cel Mare",
+     "en": "Stephen the Great"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Țara Românească",
+     "en": "Wallachia"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Bătălia de la Rovine",
+     "en": "the Battle of Rovine"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Cruciada de la Nicopole",
+     "en": "the Crusade of Nicopolis"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Moldova",
+     "en": "Moldavia"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Bătălia de la Vaslui",
+     "en": "the Battle of Vaslui"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "mănăstirea Putna",
+     "en": "Putna Monastery"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.stefan.6.01",
+  "type": "choice",
+  "skillId": "ist.stefan.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.stefan.6",
+  "provenance": {
+   "id": "prov.ist.stefan.6.01",
+   "kind": "item",
+   "title": "Item item.ist.stefan.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine a câștigat bătălia de la Vaslui din 1475?",
+   "en": "Who won the Battle of Vaslui in 1475?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Ștefan cel Mare",
+     "en": "Stephen the Great"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Mihai Viteazul",
+     "en": "Michael the Brave"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Mircea cel Bătrân",
+     "en": "Mircea the Elder"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.stefan.6.02",
+  "type": "match",
+  "skillId": "ist.stefan.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.stefan.6",
+  "provenance": {
+   "id": "prov.ist.stefan.6.02",
+   "kind": "item",
+   "title": "Item item.ist.stefan.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Ștefan cel Mare",
+      "en": "Stephen the Great"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "domnul Moldovei între 1457 și 1504, învingător la Vaslui",
+      "en": "ruler of Moldavia 1457–1504, the victor at Vaslui"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Vlad Țepeș",
+      "en": "Vlad the Impaler"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "domn al Țării Românești, cunoscut pentru disciplina strictă și lupta cu otomanii",
+      "en": "ruler of Wallachia, known for strict discipline and the fight against the Ottomans"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Iancu de Hunedoara",
+      "en": "John Hunyadi"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "voievod al Transilvaniei, apărător al Belgradului în 1456",
+      "en": "voivode of Transylvania, defender of Belgrade in 1456"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Putna",
+      "en": "Putna"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "mănăstire ridicată de Ștefan cel Mare",
+      "en": "the monastery built by Stephen the Great"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.stefan.6.03",
+  "type": "sort",
+  "skillId": "ist.stefan.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.stefan.6",
+  "provenance": {
+   "id": "prov.ist.stefan.6.03",
+   "kind": "item",
+   "title": "Item item.ist.stefan.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Care conducător aparține fiecărei țări? Pune fiecare nume la locul lui.",
+   "en": "Which ruler belongs to which country? Put each name in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Țara Românească",
+     "en": "Wallachia"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Moldova",
+     "en": "Moldavia"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Vlad Țepeș",
+     "en": "Vlad the Impaler"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Mircea cel Bătrân",
+     "en": "Mircea the Elder"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Mihai Viteazul (inițial)",
+     "en": "Michael the Brave (at first)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Ștefan cel Mare",
+     "en": "Stephen the Great"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Bogdan I",
+     "en": "Bogdan I"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Petru Rareș",
+     "en": "Petru Rareș"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.ottoman.6.01",
+  "type": "choice",
+  "skillId": "ist.ottoman.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ottoman.6",
+  "provenance": {
+   "id": "prov.ist.ottoman.6.01",
+   "kind": "item",
+   "title": "Item item.ist.ottoman.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce era haraciul?",
+   "en": "What was the haraci?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "tributul plătit sultanului",
+     "en": "the tribute paid to the sultan"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "o armată de elită",
+     "en": "an elite army"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "o monedă romană",
+     "en": "a Roman coin"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.ottoman.6.02",
+  "type": "match",
+  "skillId": "ist.ottoman.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ottoman.6",
+  "provenance": {
+   "id": "prov.ist.ottoman.6.02",
+   "kind": "item",
+   "title": "Item item.ist.ottoman.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "sultan",
+      "en": "sultan"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "conducătorul Imperiului Otoman",
+      "en": "the ruler of the Ottoman Empire"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "haraci",
+      "en": "haraci (tribute)"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "suma pe care o plăteau Țările Române sultanului",
+      "en": "the sum the Romanian Lands paid to the sultan"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "suzeranitate",
+      "en": "suzerainty"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "autoritate asupra unui stat care își păstrează conducerea internă",
+      "en": "authority over a state that keeps its internal government"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "ienicer",
+      "en": "janissary"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "soldat de elită al sultanului",
+      "en": "an elite soldier of the sultan"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.ottoman.6.03",
+  "type": "sort",
+  "skillId": "ist.ottoman.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ottoman.6",
+  "provenance": {
+   "id": "prov.ist.ottoman.6.03",
+   "kind": "item",
+   "title": "Item item.ist.ottoman.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Țările Române sau Imperiul Otoman? Pune fiecare lucru la locul lui.",
+   "en": "The Romanian Lands or the Ottoman Empire? Put each thing where it belongs."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Imperiul Otoman",
+     "en": "The Ottoman Empire"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Țările Române",
+     "en": "The Romanian Lands"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "sultan",
+     "en": "sultan"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "ieniceri",
+     "en": "janissaries"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "pașalâc",
+     "en": "pashalik"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "domn",
+     "en": "prince (domn)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "voievod",
+     "en": "voivode"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Moldova și Țara Românească",
+     "en": "Moldavia and Wallachia"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.mihai.6.01",
+  "type": "choice",
+  "skillId": "ist.mihai.6",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mihai.6",
+  "provenance": {
+   "id": "prov.ist.mihai.6.01",
+   "kind": "item",
+   "title": "Item item.ist.mihai.6.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "În ce an a ajuns Mihai Viteazul să conducă cele trei țări românești?",
+   "en": "In which year did Michael the Brave come to rule the three Romanian lands?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1600",
+     "en": "1600"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1475",
+     "en": "1475"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1859",
+     "en": "1859"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.mihai.6.02",
+  "type": "match",
+  "skillId": "ist.mihai.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mihai.6",
+  "provenance": {
+   "id": "prov.ist.mihai.6.02",
+   "kind": "item",
+   "title": "Item item.ist.mihai.6.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Mihai Viteazul",
+      "en": "Michael the Brave"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "domnul care a reunit pentru scurt timp cele trei țări românești",
+      "en": "the ruler who briefly joined the three Romanian lands"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Călugăreni",
+      "en": "Călugăreni"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "bătălie din 1595 împotriva armatei otomane",
+      "en": "a battle of 1595 against the Ottoman army"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Șelimbăr",
+      "en": "Șelimbăr"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "bătălie din 1599, în Transilvania",
+      "en": "a battle of 1599 in Transylvania"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Alba Iulia",
+      "en": "Alba Iulia"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "cetatea în care a intrat Mihai în 1599",
+      "en": "the fortress Michael entered in 1599"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.mihai.6.03",
+  "type": "sort",
+  "skillId": "ist.mihai.6",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.mihai.6",
+  "provenance": {
+   "id": "prov.ist.mihai.6.03",
+   "kind": "item",
+   "title": "Item item.ist.mihai.6.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare eveniment în secolul potrivit.",
+   "en": "Put each event in the right century."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Secolul XV",
+     "en": "15th century"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Secolul XVI",
+     "en": "16th century"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Bătălia de la Vaslui (1475)",
+     "en": "The Battle of Vaslui (1475)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Ștefan cel Mare devine domn (1457)",
+     "en": "Stephen the Great becomes ruler (1457)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Iancu de Hunedoara apără Belgradul (1456)",
+     "en": "John Hunyadi defends Belgrade (1456)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Bătălia de la Călugăreni (1595)",
+     "en": "The Battle of Călugăreni (1595)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Bătălia de la Șelimbăr (1599)",
+     "en": "The Battle of Șelimbăr (1599)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Mihai Viteazul conduce trei țări (1600)",
+     "en": "Michael the Brave rules three lands (1600)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.discoveries.7.01",
+  "type": "choice",
+  "skillId": "ist.discoveries.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.discoveries.7",
+  "provenance": {
+   "id": "prov.ist.discoveries.7.01",
+   "kind": "item",
+   "title": "Item item.ist.discoveries.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce an este asociat cu ajungerea lui Columb în America?",
+   "en": "Which year is linked to Columbus reaching the Americas?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1492",
+     "en": "1492"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1453",
+     "en": "1453"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1600",
+     "en": "1600"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.discoveries.7.02",
+  "type": "match",
+  "skillId": "ist.discoveries.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.discoveries.7",
+  "provenance": {
+   "id": "prov.ist.discoveries.7.02",
+   "kind": "item",
+   "title": "Item item.ist.discoveries.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Cristofor Columb",
+      "en": "Christopher Columbus"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "navigator care a pornit spre vest și a ajuns în America în 1492",
+      "en": "the navigator who sailed west and reached the Americas in 1492"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Vasco da Gama",
+      "en": "Vasco da Gama"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "navigator portughez care a ajuns pe mare în India",
+      "en": "the Portuguese navigator who reached India by sea"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Magellan",
+      "en": "Magellan"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "conducătorul expediției care a pornit în jurul lumii în 1519",
+      "en": "the leader of the expedition that set out around the world in 1519"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "busolă",
+      "en": "compass"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "instrument care arată direcția nordului",
+      "en": "an instrument that shows the direction of north"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.discoveries.7.03",
+  "type": "sort",
+  "skillId": "ist.discoveries.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.discoveries.7",
+  "provenance": {
+   "id": "prov.ist.discoveries.7.03",
+   "kind": "item",
+   "title": "Item item.ist.discoveries.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare lucru în perioada potrivită.",
+   "en": "Put each thing in the right period."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Evul Mediu timpuriu",
+     "en": "The early Middle Ages"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Epoca marilor descoperiri",
+     "en": "The Age of Discovery"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Carol cel Mare este încoronat (800)",
+     "en": "Charlemagne is crowned (800)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Începe prima cruciadă (1096)",
+     "en": "The First Crusade begins (1096)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Hunii înaintează spre Europa (aprox. 375)",
+     "en": "The Huns advance into Europe (about 375)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Columb ajunge în America (1492)",
+     "en": "Columbus reaches the Americas (1492)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Vasco da Gama ajunge în India (1498)",
+     "en": "Vasco da Gama reaches India (1498)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Expediția lui Magellan (1519)",
+     "en": "Magellan's expedition (1519)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.renaissance.7.01",
+  "type": "choice",
+  "skillId": "ist.renaissance.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.renaissance.7",
+  "provenance": {
+   "id": "prov.ist.renaissance.7.01",
+   "kind": "item",
+   "title": "Item item.ist.renaissance.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Unde a început Renașterea?",
+   "en": "Where did the Renaissance begin?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "în Italia",
+     "en": "in Italy"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "în Egipt",
+     "en": "in Egypt"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "în China",
+     "en": "in China"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.renaissance.7.02",
+  "type": "match",
+  "skillId": "ist.renaissance.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.renaissance.7",
+  "provenance": {
+   "id": "prov.ist.renaissance.7.02",
+   "kind": "item",
+   "title": "Item item.ist.renaissance.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Leonardo da Vinci",
+      "en": "Leonardo da Vinci"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "pictor și inventator, autorul Mona Lisei",
+      "en": "a painter and inventor, the author of the Mona Lisa"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Michelangelo",
+      "en": "Michelangelo"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "sculptor și pictor, autorul statuii David",
+      "en": "a sculptor and painter, the author of the statue David"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Copernic",
+      "en": "Copernicus"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "astronom care a pus Soarele în centrul sistemului",
+      "en": "the astronomer who put the Sun at the centre of the system"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Gutenberg",
+      "en": "Gutenberg"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "inventatorul tiparului cu litere mobile în Europa",
+      "en": "the inventor of movable-type printing in Europe"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.renaissance.7.03",
+  "type": "sort",
+  "skillId": "ist.renaissance.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.renaissance.7",
+  "provenance": {
+   "id": "prov.ist.renaissance.7.03",
+   "kind": "item",
+   "title": "Item item.ist.renaissance.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Artă sau știință? Pune fiecare nume la locul lui.",
+   "en": "Art or science? Put each name in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Artă",
+     "en": "Art"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Știință",
+     "en": "Science"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Michelangelo",
+     "en": "Michelangelo"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Leonardo da Vinci (pictor)",
+     "en": "Leonardo da Vinci (painter)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Capela Sixtină",
+     "en": "the Sistine Chapel"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Copernic",
+     "en": "Copernicus"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Galileo Galilei",
+     "en": "Galileo Galilei"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "telescopul",
+     "en": "the telescope"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.reformation.7.01",
+  "type": "choice",
+  "skillId": "ist.reformation.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.reformation.7",
+  "provenance": {
+   "id": "prov.ist.reformation.7.01",
+   "kind": "item",
+   "title": "Item item.ist.reformation.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine a publicat cele 95 de teze în 1517?",
+   "en": "Who published the 95 Theses in 1517?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Martin Luther",
+     "en": "Martin Luther"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Galileo Galilei",
+     "en": "Galileo Galilei"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Napoleon",
+     "en": "Napoleon"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.reformation.7.02",
+  "type": "match",
+  "skillId": "ist.reformation.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.reformation.7",
+  "provenance": {
+   "id": "prov.ist.reformation.7.02",
+   "kind": "item",
+   "title": "Item item.ist.reformation.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Martin Luther",
+      "en": "Martin Luther"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "teolog german care a început Reforma în 1517",
+      "en": "the German theologian who began the Reformation in 1517"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Ioan Calvin",
+      "en": "John Calvin"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "reformator care a publicat „Instituția religiei creștine”",
+      "en": "a reformer who published the “Institutes of the Christian Religion”"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "protestant",
+      "en": "Protestant"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "creștin care a urmat Reforma",
+      "en": "a Christian who followed the Reformation"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Contrareforma",
+      "en": "Counter-Reformation"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "răspunsul Bisericii Catolice la Reformă",
+      "en": "the Catholic Church's response to the Reformation"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.reformation.7.03",
+  "type": "sort",
+  "skillId": "ist.reformation.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.reformation.7",
+  "provenance": {
+   "id": "prov.ist.reformation.7.03",
+   "kind": "item",
+   "title": "Item item.ist.reformation.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare eveniment în secolul potrivit.",
+   "en": "Put each event in the right century."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Secolul XVI",
+     "en": "16th century"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Secolul XVII",
+     "en": "17th century"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Cele 95 de teze (1517)",
+     "en": "The 95 Theses (1517)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Pacea de la Augsburg (1555)",
+     "en": "The Peace of Augsburg (1555)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Începe Conciliul de la Trento (1545)",
+     "en": "The Council of Trent begins (1545)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Pacea de la Westfalia (1648)",
+     "en": "The Peace of Westphalia (1648)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Galileo observă cerul cu telescopul (1609)",
+     "en": "Galileo observes the sky with a telescope (1609)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Ludovic al XIV-lea devine rege (1643)",
+     "en": "Louis XIV becomes king (1643)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.enlightenment.7.01",
+  "type": "choice",
+  "skillId": "ist.enlightenment.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.enlightenment.7",
+  "provenance": {
+   "id": "prov.ist.enlightenment.7.01",
+   "kind": "item",
+   "title": "Item item.ist.enlightenment.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine a propus separarea puterilor în stat?",
+   "en": "Who proposed the separation of powers in the state?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Montesquieu",
+     "en": "Montesquieu"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Luther",
+     "en": "Luther"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Columb",
+     "en": "Columbus"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.enlightenment.7.02",
+  "type": "match",
+  "skillId": "ist.enlightenment.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.enlightenment.7",
+  "provenance": {
+   "id": "prov.ist.enlightenment.7.02",
+   "kind": "item",
+   "title": "Item item.ist.enlightenment.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "absolutism",
+      "en": "absolutism"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "formă de guvernare cu puterea concentrată la monarh",
+      "en": "a form of government with power concentrated in the monarch"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Iluminism",
+      "en": "the Enlightenment"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "mișcare care punea accent pe rațiune și cunoaștere",
+      "en": "a movement that stressed reason and knowledge"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Montesquieu",
+      "en": "Montesquieu"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "gânditor care a propus separarea puterilor în stat",
+      "en": "the thinker who proposed the separation of powers in the state"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Rousseau",
+      "en": "Rousseau"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "autorul „Contractului social”",
+      "en": "the author of “The Social Contract”"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.enlightenment.7.03",
+  "type": "sort",
+  "skillId": "ist.enlightenment.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.enlightenment.7",
+  "provenance": {
+   "id": "prov.ist.enlightenment.7.03",
+   "kind": "item",
+   "title": "Item item.ist.enlightenment.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Absolutism sau Iluminism? Pune fiecare idee la locul ei.",
+   "en": "Absolutism or Enlightenment? Put each idea in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Absolutism",
+     "en": "Absolutism"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Iluminism",
+     "en": "Enlightenment"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "puterea regelui nu are limite reale",
+     "en": "the king's power has no real limits"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "monarh care decide singur",
+     "en": "a monarch who decides alone"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "curte regală somptuoasă",
+     "en": "a splendid royal court"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "separarea puterilor în stat",
+     "en": "the separation of powers in the state"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "încredere în rațiune și în știință",
+     "en": "trust in reason and in science"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Enciclopedia",
+     "en": "the Encyclopédie"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.revolutions.7.01",
+  "type": "choice",
+  "skillId": "ist.revolutions.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.revolutions.7",
+  "provenance": {
+   "id": "prov.ist.revolutions.7.01",
+   "kind": "item",
+   "title": "Item item.ist.revolutions.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "În ce an a început Revoluția franceză?",
+   "en": "In which year did the French Revolution begin?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1789",
+     "en": "1789"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1776",
+     "en": "1776"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1815",
+     "en": "1815"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.revolutions.7.02",
+  "type": "match",
+  "skillId": "ist.revolutions.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.revolutions.7",
+  "provenance": {
+   "id": "prov.ist.revolutions.7.02",
+   "kind": "item",
+   "title": "Item item.ist.revolutions.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "George Washington",
+      "en": "George Washington"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "primul președinte al Statelor Unite",
+      "en": "the first president of the United States"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Bastilia",
+      "en": "the Bastille"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "fortăreață din Paris, simbol al începutului Revoluției franceze",
+      "en": "a fortress in Paris, symbol of the start of the French Revolution"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Napoleon",
+      "en": "Napoleon"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "general devenit împărat al francezilor în 1804",
+      "en": "a general who became Emperor of the French in 1804"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Waterloo",
+      "en": "Waterloo"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "locul înfrângerii lui Napoleon din 1815",
+      "en": "the place of Napoleon's defeat in 1815"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.revolutions.7.03",
+  "type": "sort",
+  "skillId": "ist.revolutions.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.revolutions.7",
+  "provenance": {
+   "id": "prov.ist.revolutions.7.03",
+   "kind": "item",
+   "title": "Item item.ist.revolutions.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "SUA sau Franța? Pune fiecare eveniment la locul lui.",
+   "en": "USA or France? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Revoluția americană",
+     "en": "The American Revolution"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Revoluția franceză",
+     "en": "The French Revolution"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Declarația de independență (1776)",
+     "en": "The Declaration of Independence (1776)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "George Washington",
+     "en": "George Washington"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Constituția din 1787",
+     "en": "The Constitution of 1787"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Bastilia",
+     "en": "the Bastille"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Declarația drepturilor omului și cetățeanului",
+     "en": "the Declaration of the Rights of Man and of the Citizen"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Napoleon Bonaparte",
+     "en": "Napoleon Bonaparte"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.industrial.7.01",
+  "type": "choice",
+  "skillId": "ist.industrial.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.industrial.7",
+  "provenance": {
+   "id": "prov.ist.industrial.7.01",
+   "kind": "item",
+   "title": "Item item.ist.industrial.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Unde a început Revoluția industrială?",
+   "en": "Where did the Industrial Revolution begin?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "în Marea Britanie",
+     "en": "in Great Britain"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "în Egipt",
+     "en": "in Egypt"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "în Dacia",
+     "en": "in Dacia"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.industrial.7.02",
+  "type": "match",
+  "skillId": "ist.industrial.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.industrial.7",
+  "provenance": {
+   "id": "prov.ist.industrial.7.02",
+   "kind": "item",
+   "title": "Item item.ist.industrial.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "James Watt",
+      "en": "James Watt"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "inginer care a perfecționat mașina cu abur",
+      "en": "an engineer who improved the steam engine"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Thomas Edison",
+      "en": "Thomas Edison"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "inventator care a realizat un bec practic",
+      "en": "an inventor who made a practical light bulb"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Alexander Graham Bell",
+      "en": "Alexander Graham Bell"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "inventatorul telefonului",
+      "en": "the inventor of the telephone"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "locomotivă",
+      "en": "locomotive"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "vehicul cu abur care trage vagoanele pe șine",
+      "en": "a steam vehicle that pulls carriages on rails"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.industrial.7.03",
+  "type": "sort",
+  "skillId": "ist.industrial.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.industrial.7",
+  "provenance": {
+   "id": "prov.ist.industrial.7.03",
+   "kind": "item",
+   "title": "Item item.ist.industrial.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după anul 1800? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after the year 1800? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Înainte de 1800",
+     "en": "Before 1800"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 1800",
+     "en": "After 1800"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Mașina cu abur a lui Watt (1769)",
+     "en": "Watt's steam engine (1769)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Mașina lui Newcomen (1712)",
+     "en": "Newcomen's engine (1712)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Începe Revoluția franceză (1789)",
+     "en": "The French Revolution begins (1789)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Prima cale ferată publică (1825)",
+     "en": "The first public railway (1825)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Telefonul (1876)",
+     "en": "The telephone (1876)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Becul practic (1879)",
+     "en": "The practical light bulb (1879)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.phanariot.7.01",
+  "type": "choice",
+  "skillId": "ist.phanariot.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.phanariot.7",
+  "provenance": {
+   "id": "prov.ist.phanariot.7.01",
+   "kind": "item",
+   "title": "Item item.ist.phanariot.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Care domn a ridicat mănăstirea Hurezi?",
+   "en": "Which ruler founded Hurezi Monastery?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Constantin Brâncoveanu",
+     "en": "Constantin Brâncoveanu"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Ștefan cel Mare",
+     "en": "Stephen the Great"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Mihai Viteazul",
+     "en": "Michael the Brave"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.phanariot.7.02",
+  "type": "match",
+  "skillId": "ist.phanariot.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.phanariot.7",
+  "provenance": {
+   "id": "prov.ist.phanariot.7.02",
+   "kind": "item",
+   "title": "Item item.ist.phanariot.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Constantin Brâncoveanu",
+      "en": "Constantin Brâncoveanu"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "domn al Țării Românești, ctitor al mănăstirii Hurezi",
+      "en": "ruler of Wallachia, founder of Hurezi Monastery"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Dimitrie Cantemir",
+      "en": "Dimitrie Cantemir"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "domn al Moldovei și învățat, autorul „Descrierii Moldovei”",
+      "en": "ruler of Moldavia and scholar, author of the “Description of Moldavia”"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "fanariot",
+      "en": "Phanariot"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "domn numit de sultan dintre elitele grecești din Fanar",
+      "en": "a prince appointed by the sultan from the Greek elite of the Phanar"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Horea",
+      "en": "Horea"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "conducătorul răscoalei țăranilor din Transilvania din 1784",
+      "en": "the leader of the 1784 peasants' uprising in Transylvania"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.phanariot.7.03",
+  "type": "sort",
+  "skillId": "ist.phanariot.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.phanariot.7",
+  "provenance": {
+   "id": "prov.ist.phanariot.7.03",
+   "kind": "item",
+   "title": "Item item.ist.phanariot.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare eveniment în secolul potrivit.",
+   "en": "Put each event in the right century."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Secolul XVIII",
+     "en": "18th century"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Secolul XIX",
+     "en": "19th century"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Începe epoca fanariotă în Moldova (1711)",
+     "en": "The Phanariot era begins in Moldavia (1711)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Bucovina este anexată (1775)",
+     "en": "Bukovina is annexed (1775)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Supplex Libellus Valachorum (1791)",
+     "en": "Supplex Libellus Valachorum (1791)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Mișcarea lui Tudor Vladimirescu (1821)",
+     "en": "The movement of Tudor Vladimirescu (1821)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Regulamentul Organic (1831)",
+     "en": "The Organic Regulation (1831)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Revoluția de la 1848",
+     "en": "The Revolution of 1848"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.1821.7.01",
+  "type": "choice",
+  "skillId": "ist.1821.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.1821.7",
+  "provenance": {
+   "id": "prov.ist.1821.7.01",
+   "kind": "item",
+   "title": "Item item.ist.1821.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine a condus mișcarea din 1821 din Țara Românească?",
+   "en": "Who led the 1821 movement in Wallachia?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Tudor Vladimirescu",
+     "en": "Tudor Vladimirescu"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Mihai Viteazul",
+     "en": "Michael the Brave"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Alexandru Ioan Cuza",
+     "en": "Alexandru Ioan Cuza"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.1821.7.02",
+  "type": "match",
+  "skillId": "ist.1821.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.1821.7",
+  "provenance": {
+   "id": "prov.ist.1821.7.02",
+   "kind": "item",
+   "title": "Item item.ist.1821.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Tudor Vladimirescu",
+      "en": "Tudor Vladimirescu"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "conducătorul mișcării din 1821 din Țara Românească",
+      "en": "the leader of the 1821 movement in Wallachia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Gheorghe Lazăr",
+      "en": "Gheorghe Lazăr"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "profesor care a deschis o școală în limba română la București în 1818",
+      "en": "a teacher who opened a Romanian-language school in Bucharest in 1818"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Regulamente Organice",
+      "en": "Organic Regulations"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "legi cu rol de constituție în Țările Române, din anii 1831–1832",
+      "en": "laws acting as a constitution in the Romanian Lands in 1831–1832"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "domn pământean",
+      "en": "native prince"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "domn ales dintre boierii țării, nu dintre fanarioți",
+      "en": "a prince chosen from the country's boyars, not from the Phanariots"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.1821.7.03",
+  "type": "sort",
+  "skillId": "ist.1821.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.1821.7",
+  "provenance": {
+   "id": "prov.ist.1821.7.03",
+   "kind": "item",
+   "title": "Item item.ist.1821.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după 1821? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after 1821? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Până în 1821 (inclusiv)",
+     "en": "Up to 1821 (inclusive)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 1821",
+     "en": "After 1821"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Școala lui Gheorghe Lazăr (1818)",
+     "en": "Gheorghe Lazăr's school (1818)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Supplex Libellus Valachorum (1791)",
+     "en": "Supplex Libellus Valachorum (1791)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Mișcarea lui Tudor Vladimirescu (1821)",
+     "en": "The movement of Tudor Vladimirescu (1821)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Pacea de la Adrianopol (1829)",
+     "en": "The Peace of Adrianople (1829)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Regulamentul Organic în Muntenia (1831)",
+     "en": "The Organic Regulation in Wallachia (1831)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Revoluția de la 1848",
+     "en": "The Revolution of 1848"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.1848.7.01",
+  "type": "choice",
+  "skillId": "ist.1848.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.1848.7",
+  "provenance": {
+   "id": "prov.ist.1848.7.01",
+   "kind": "item",
+   "title": "Item item.ist.1848.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce program a avut revoluția din Țara Românească în 1848?",
+   "en": "What programme did the revolution in Wallachia have in 1848?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Proclamația de la Islaz",
+     "en": "the Islaz Proclamation"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Edictul de la Milano",
+     "en": "the Edict of Milan"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Magna Carta",
+     "en": "the Magna Carta"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.1848.7.02",
+  "type": "match",
+  "skillId": "ist.1848.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.1848.7",
+  "provenance": {
+   "id": "prov.ist.1848.7.02",
+   "kind": "item",
+   "title": "Item item.ist.1848.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Nicolae Bălcescu",
+      "en": "Nicolae Bălcescu"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "revoluționar muntean, istoric și lider al revoluției din 1848",
+      "en": "a Wallachian revolutionary, historian and leader of the 1848 revolution"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Islaz",
+      "en": "Islaz"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "locul unde s-a proclamat programul revoluției din Țara Românească",
+      "en": "the place where the programme of the Wallachian revolution was proclaimed"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Blaj",
+      "en": "Blaj"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "oraș unde s-a ținut Adunarea națională a românilor din Transilvania",
+      "en": "the town where the national assembly of the Transylvanian Romanians was held"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Avram Iancu",
+      "en": "Avram Iancu"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "conducătorul românilor din Munții Apuseni în 1848",
+      "en": "the leader of the Romanians in the Apuseni Mountains in 1848"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.1848.7.03",
+  "type": "sort",
+  "skillId": "ist.1848.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.1848.7",
+  "provenance": {
+   "id": "prov.ist.1848.7.03",
+   "kind": "item",
+   "title": "Item item.ist.1848.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare eveniment în perioada potrivită.",
+   "en": "Put each event in the right period."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Înainte de 1848",
+     "en": "Before 1848"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 1848",
+     "en": "After 1848"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Frăția (1843)",
+     "en": "The Frăția society (1843)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Mișcarea lui Tudor Vladimirescu (1821)",
+     "en": "The movement of Tudor Vladimirescu (1821)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Regulamentul Organic (1831)",
+     "en": "The Organic Regulation (1831)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Convenția de la Balta Liman (1849)",
+     "en": "The Convention of Balta Liman (1849)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Pacea de la Paris (1856)",
+     "en": "The Peace of Paris (1856)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Unirea Principatelor (1859)",
+     "en": "The Union of the Principalities (1859)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.union.7.01",
+  "type": "choice",
+  "skillId": "ist.union.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union.7",
+  "provenance": {
+   "id": "prov.ist.union.7.01",
+   "kind": "item",
+   "title": "Item item.ist.union.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "În ce an a avut loc Unirea Principatelor?",
+   "en": "In which year did the Union of the Principalities take place?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1859",
+     "en": "1859"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1877",
+     "en": "1877"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1918",
+     "en": "1918"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.union.7.02",
+  "type": "match",
+  "skillId": "ist.union.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union.7",
+  "provenance": {
+   "id": "prov.ist.union.7.02",
+   "kind": "item",
+   "title": "Item item.ist.union.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Alexandru Ioan Cuza",
+      "en": "Alexandru Ioan Cuza"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "domnul ales în 1859 în ambele Principate",
+      "en": "the ruler elected in 1859 in both Principalities"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Divan ad-hoc",
+      "en": "Ad hoc Divan"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "adunare care a exprimat în 1857 dorința de unire",
+      "en": "an assembly that expressed the wish for union in 1857"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Mihail Kogălniceanu",
+      "en": "Mihail Kogălniceanu"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "om politic și istoric, apropiat de Cuza, autor de reforme",
+      "en": "a politician and historian, close to Cuza, author of reforms"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "secularizare",
+      "en": "secularisation"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "trecerea averilor mănăstirești în grija statului",
+      "en": "the transfer of monastery estates to the state"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.union.7.03",
+  "type": "sort",
+  "skillId": "ist.union.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union.7",
+  "provenance": {
+   "id": "prov.ist.union.7.03",
+   "kind": "item",
+   "title": "Item item.ist.union.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după Unirea din 1859? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after the Union of 1859? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Până în 1859 (inclusiv)",
+     "en": "Up to 1859 (inclusive)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 1859",
+     "en": "After 1859"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Revoluția de la 1848",
+     "en": "The Revolution of 1848"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Divanurile ad-hoc (1857)",
+     "en": "The Ad hoc Divans (1857)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Pacea de la Paris (1856)",
+     "en": "The Peace of Paris (1856)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Legea secularizării (1863)",
+     "en": "The secularisation law (1863)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Reforma agrară (1864)",
+     "en": "The land reform (1864)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Carol I devine domnitor (1866)",
+     "en": "Carol I becomes prince (1866)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.independence.7.01",
+  "type": "choice",
+  "skillId": "ist.independence.7",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.independence.7",
+  "provenance": {
+   "id": "prov.ist.independence.7.01",
+   "kind": "item",
+   "title": "Item item.ist.independence.7.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "În ce an și-a proclamat România independența?",
+   "en": "In which year did Romania proclaim its independence?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1877",
+     "en": "1877"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1859",
+     "en": "1859"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1918",
+     "en": "1918"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.independence.7.02",
+  "type": "match",
+  "skillId": "ist.independence.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.independence.7",
+  "provenance": {
+   "id": "prov.ist.independence.7.02",
+   "kind": "item",
+   "title": "Item item.ist.independence.7.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Carol I",
+      "en": "Carol I"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "domnitor din 1866 și primul rege al României",
+      "en": "prince from 1866 and the first king of Romania"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Plevna",
+      "en": "Plevna"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "locul unde a luptat armata română în 1877",
+      "en": "the place where the Romanian army fought in 1877"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Mihail Kogălniceanu",
+      "en": "Mihail Kogălniceanu"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "ministru de externe care a vorbit despre independență în Parlament în 1877",
+      "en": "the foreign minister who spoke about independence in Parliament in 1877"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Anghel Saligny",
+      "en": "Anghel Saligny"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "inginer care a proiectat podul de la Cernavodă",
+      "en": "the engineer who designed the Cernavodă bridge"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.independence.7.03",
+  "type": "sort",
+  "skillId": "ist.independence.7",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.independence.7",
+  "provenance": {
+   "id": "prov.ist.independence.7.03",
+   "kind": "item",
+   "title": "Item item.ist.independence.7.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Domnitor sau rege? Pune fiecare eveniment în perioada potrivită.",
+   "en": "Prince or king? Put each event in the right period."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Epoca domnitorului Carol I (1866–1881)",
+     "en": "The era of Prince Carol I (1866–1881)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Regatul (din 1881)",
+     "en": "The Kingdom (from 1881)"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Constituția din 1866",
+     "en": "The Constitution of 1866"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Proclamarea independenței (1877)",
+     "en": "The proclamation of independence (1877)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Congresul de la Berlin (1878)",
+     "en": "The Congress of Berlin (1878)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Proclamarea Regatului (1881)",
+     "en": "The proclamation of the Kingdom (1881)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Podul de la Cernavodă (1895)",
+     "en": "The Cernavodă bridge (1895)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Răscoala din 1907",
+     "en": "The revolt of 1907"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.ww1.8.01",
+  "type": "choice",
+  "skillId": "ist.ww1.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ww1.8",
+  "provenance": {
+   "id": "prov.ist.ww1.8.01",
+   "kind": "item",
+   "title": "Item item.ist.ww1.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "În ce an a început Primul Război Mondial?",
+   "en": "In which year did the First World War begin?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1914",
+     "en": "1914"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1939",
+     "en": "1939"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1877",
+     "en": "1877"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.ww1.8.02",
+  "type": "match",
+  "skillId": "ist.ww1.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ww1.8",
+  "provenance": {
+   "id": "prov.ist.ww1.8.02",
+   "kind": "item",
+   "title": "Item item.ist.ww1.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Antanta",
+      "en": "the Entente"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "alianța din care făceau parte Franța, Marea Britanie și Rusia",
+      "en": "the alliance that included France, Great Britain and Russia"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Puterile Centrale",
+      "en": "the Central Powers"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "alianța din care făceau parte Germania și Austro-Ungaria",
+      "en": "the alliance that included Germany and Austria-Hungary"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "armistițiu",
+      "en": "armistice"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "acord de încetare a luptelor",
+      "en": "an agreement to stop fighting"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Mărășești",
+      "en": "Mărășești"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "bătălie din 1917 în care armata română a rezistat",
+      "en": "a battle of 1917 in which the Romanian army held its ground"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.ww1.8.03",
+  "type": "sort",
+  "skillId": "ist.ww1.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ww1.8",
+  "provenance": {
+   "id": "prov.ist.ww1.8.03",
+   "kind": "item",
+   "title": "Item item.ist.ww1.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după 1916? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after 1916? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Până în 1916 (inclusiv)",
+     "en": "Up to 1916 (inclusive)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 1916",
+     "en": "After 1916"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Începe războiul (1914)",
+     "en": "The war begins (1914)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "România intră în război (1916)",
+     "en": "Romania enters the war (1916)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Independența României (1877)",
+     "en": "Romania's independence (1877)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Revoluția rusă (1917)",
+     "en": "The Russian Revolution (1917)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Armistițiul (1918)",
+     "en": "The armistice (1918)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Tratatul de la Versailles (1919)",
+     "en": "The Treaty of Versailles (1919)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.union1918.8.01",
+  "type": "choice",
+  "skillId": "ist.union1918.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.8",
+  "provenance": {
+   "id": "prov.ist.union1918.8.01",
+   "kind": "item",
+   "title": "Item item.ist.union1918.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce s-a hotărât la Alba Iulia la 1 decembrie 1918?",
+   "en": "What was decided at Alba Iulia on 1 December 1918?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "unirea Transilvaniei cu România",
+     "en": "the union of Transylvania with Romania"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "independența României",
+     "en": "Romania's independence"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "începutul Primului Război Mondial",
+     "en": "the start of the First World War"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.union1918.8.02",
+  "type": "match",
+  "skillId": "ist.union1918.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.8",
+  "provenance": {
+   "id": "prov.ist.union1918.8.02",
+   "kind": "item",
+   "title": "Item item.ist.union1918.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Alba Iulia",
+      "en": "Alba Iulia"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "orașul în care s-a hotărât unirea Transilvaniei cu România, la 1 decembrie 1918",
+      "en": "the city where the union of Transylvania with Romania was decided on 1 December 1918"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Ferdinand",
+      "en": "Ferdinand"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "rege al României în timpul Marii Uniri",
+      "en": "king of Romania during the Great Union"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "România Mare",
+      "en": "Greater Romania"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "statul român unit, cu granițele de după 1918",
+      "en": "the united Romanian state with its post-1918 borders"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Sfatul Țării",
+      "en": "Sfatul Țării"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "adunarea din Basarabia care a votat unirea în 1918",
+      "en": "the assembly in Bessarabia that voted for union in 1918"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.union1918.8.03",
+  "type": "sort",
+  "skillId": "ist.union1918.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.union1918.8",
+  "provenance": {
+   "id": "prov.ist.union1918.8.03",
+   "kind": "item",
+   "title": "Item item.ist.union1918.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare unire în anul potrivit.",
+   "en": "Put each union in the right year."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "1859",
+     "en": "1859"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "1918",
+     "en": "1918"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Alexandru Ioan Cuza este ales domn",
+     "en": "Alexandru Ioan Cuza is elected ruler"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Unirea Moldovei cu Țara Românească",
+     "en": "The union of Moldavia with Wallachia"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Divanurile ad-hoc cer unirea (1857)",
+     "en": "The Ad hoc Divans ask for union (1857)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Adunarea de la Alba Iulia",
+     "en": "The Assembly of Alba Iulia"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Unirea Basarabiei cu România",
+     "en": "The union of Bessarabia with Romania"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Unirea Bucovinei cu România",
+     "en": "The union of Bukovina with Romania"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.interwar.8.01",
+  "type": "choice",
+  "skillId": "ist.interwar.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.interwar.8",
+  "provenance": {
+   "id": "prov.ist.interwar.8.01",
+   "kind": "item",
+   "title": "Item item.ist.interwar.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce a început în 1929?",
+   "en": "What began in 1929?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Marea Criză economică",
+     "en": "the Great Depression"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Primul Război Mondial",
+     "en": "the First World War"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Războiul Rece",
+     "en": "the Cold War"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.interwar.8.02",
+  "type": "match",
+  "skillId": "ist.interwar.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.interwar.8",
+  "provenance": {
+   "id": "prov.ist.interwar.8.02",
+   "kind": "item",
+   "title": "Item item.ist.interwar.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Liga Națiunilor",
+      "en": "League of Nations"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "organizație internațională creată după Primul Război Mondial",
+      "en": "an international organisation created after the First World War"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Marea Criză",
+      "en": "Great Depression"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "criza economică mondială începută în 1929",
+      "en": "the world economic crisis that began in 1929"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Brâncuși",
+      "en": "Brâncuși"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "sculptor român al Coloanei Infinitului",
+      "en": "the Romanian sculptor of the Endless Column"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Carol al II-lea",
+      "en": "Carol II"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "rege al României din 1930",
+      "en": "king of Romania from 1930"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.interwar.8.03",
+  "type": "sort",
+  "skillId": "ist.interwar.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.interwar.8",
+  "provenance": {
+   "id": "prov.ist.interwar.8.03",
+   "kind": "item",
+   "title": "Item item.ist.interwar.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după 1925? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after 1925? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Înainte de 1925",
+     "en": "Before 1925"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 1925",
+     "en": "After 1925"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Liga Națiunilor (1920)",
+     "en": "The League of Nations (1920)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Constituția din 1923",
+     "en": "The Constitution of 1923"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Încoronarea de la Alba Iulia (1922)",
+     "en": "The coronation at Alba Iulia (1922)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Marea Criză (1929)",
+     "en": "The Great Depression (1929)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Radio România (1928)",
+     "en": "Romanian public radio (1928)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Carol al II-lea devine rege (1930)",
+     "en": "Carol II becomes king (1930)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.totalitarian.8.01",
+  "type": "choice",
+  "skillId": "ist.totalitarian.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.totalitarian.8",
+  "provenance": {
+   "id": "prov.ist.totalitarian.8.01",
+   "kind": "item",
+   "title": "Item item.ist.totalitarian.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce caracterizează un regim totalitar?",
+   "en": "What characterises a totalitarian regime?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "controlul statului asupra aproape întregii vieți",
+     "en": "state control over almost all of life"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "alegeri libere cu mai multe partide",
+     "en": "free elections with several parties"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "libertatea presei",
+     "en": "freedom of the press"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.totalitarian.8.02",
+  "type": "match",
+  "skillId": "ist.totalitarian.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.totalitarian.8",
+  "provenance": {
+   "id": "prov.ist.totalitarian.8.02",
+   "kind": "item",
+   "title": "Item item.ist.totalitarian.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "totalitarism",
+      "en": "totalitarianism"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "sistem în care statul controlează aproape toată viața",
+      "en": "a system in which the state controls almost all of life"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "partid unic",
+      "en": "single party"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "un singur partid are voie să conducă",
+      "en": "only one party is allowed to rule"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "propagandă",
+      "en": "propaganda"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "răspândirea de idei pentru a influența oamenii",
+      "en": "spreading ideas to influence people"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "cenzură",
+      "en": "censorship"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "controlul asupra a ceea ce se poate spune sau publica",
+      "en": "control over what may be said or published"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.totalitarian.8.03",
+  "type": "sort",
+  "skillId": "ist.totalitarian.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.totalitarian.8",
+  "provenance": {
+   "id": "prov.ist.totalitarian.8.03",
+   "kind": "item",
+   "title": "Item item.ist.totalitarian.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Democrație sau totalitarism? Pune fiecare trăsătură la locul ei.",
+   "en": "Democracy or totalitarianism? Put each feature in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Democrație",
+     "en": "Democracy"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Totalitarism",
+     "en": "Totalitarianism"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "alegeri libere",
+     "en": "free elections"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "mai multe partide",
+     "en": "several parties"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "presă liberă",
+     "en": "a free press"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "partid unic",
+     "en": "a single party"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "cenzură",
+     "en": "censorship"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "propagandă de stat",
+     "en": "state propaganda"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.ww2.8.01",
+  "type": "choice",
+  "skillId": "ist.ww2.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ww2.8",
+  "provenance": {
+   "id": "prov.ist.ww2.8.01",
+   "kind": "item",
+   "title": "Item item.ist.ww2.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "În ce an a început Al Doilea Război Mondial?",
+   "en": "In which year did the Second World War begin?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "1939",
+     "en": "1939"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "1914",
+     "en": "1914"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1945",
+     "en": "1945"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.ww2.8.02",
+  "type": "match",
+  "skillId": "ist.ww2.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ww2.8",
+  "provenance": {
+   "id": "prov.ist.ww2.8.02",
+   "kind": "item",
+   "title": "Item item.ist.ww2.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Aliații",
+      "en": "the Allies"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "coaliția care a învins Germania nazistă",
+      "en": "the coalition that defeated Nazi Germany"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Axa",
+      "en": "the Axis"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "alianța formată în principal din Germania, Italia și Japonia",
+      "en": "the alliance formed mainly by Germany, Italy and Japan"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "ONU",
+      "en": "the UN"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "organizația internațională creată în 1945 pentru pace",
+      "en": "the international organisation created in 1945 for peace"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Normandia",
+      "en": "Normandy"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "regiune a Franței unde au debarcat aliații în 1944",
+      "en": "the region of France where the Allies landed in 1944"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.ww2.8.03",
+  "type": "sort",
+  "skillId": "ist.ww2.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ww2.8",
+  "provenance": {
+   "id": "prov.ist.ww2.8.03",
+   "kind": "item",
+   "title": "Item item.ist.ww2.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Primul sau al Doilea Război Mondial? Pune fiecare eveniment la locul lui.",
+   "en": "First or Second World War? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Primul Război Mondial",
+     "en": "The First World War"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Al Doilea Război Mondial",
+     "en": "The Second World War"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Armistițiul din 1918",
+     "en": "The armistice of 1918"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Bătălia de la Mărășești",
+     "en": "The Battle of Mărășești"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Tratatul de la Versailles",
+     "en": "The Treaty of Versailles"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Debarcarea din Normandia",
+     "en": "The Normandy landing"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Atacul asupra Uniunii Sovietice (1941)",
+     "en": "The attack on the Soviet Union (1941)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Capitularea Franței (1940)",
+     "en": "The surrender of France (1940)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.ww2ro.8.01",
+  "type": "choice",
+  "skillId": "ist.ww2ro.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ww2ro.8",
+  "provenance": {
+   "id": "prov.ist.ww2ro.8.01",
+   "kind": "item",
+   "title": "Item item.ist.ww2ro.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Ce a hotărât Actul de la 23 august 1944?",
+   "en": "What did the act of 23 August 1944 decide?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "ieșirea din alianța cu Germania",
+     "en": "leaving the alliance with Germany"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "intrarea în Primul Război Mondial",
+     "en": "entering the First World War"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "unirea cu Basarabia",
+     "en": "union with Bessarabia"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.ww2ro.8.02",
+  "type": "match",
+  "skillId": "ist.ww2ro.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ww2ro.8",
+  "provenance": {
+   "id": "prov.ist.ww2ro.8.02",
+   "kind": "item",
+   "title": "Item item.ist.ww2ro.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Ion Antonescu",
+      "en": "Ion Antonescu"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "conducătorul României în perioada 1940–1944",
+      "en": "the leader of Romania in 1940–1944"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "regele Mihai",
+      "en": "King Michael"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "regele României la 23 august 1944",
+      "en": "the king of Romania on 23 August 1944"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Dictatul de la Viena",
+      "en": "Vienna Award"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "decizia din 1940 prin care nord-vestul Transilvaniei a trecut la Ungaria",
+      "en": "the 1940 decision that gave northwestern Transylvania to Hungary"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "23 august 1944",
+      "en": "23 August 1944"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "ieșirea României din alianța cu Germania",
+      "en": "Romania's exit from the alliance with Germany"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.ww2ro.8.03",
+  "type": "sort",
+  "skillId": "ist.ww2ro.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.ww2ro.8",
+  "provenance": {
+   "id": "prov.ist.ww2ro.8.03",
+   "kind": "item",
+   "title": "Item item.ist.ww2ro.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după 23 august 1944? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after 23 August 1944? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Până în 1944 (inclusiv)",
+     "en": "Up to 1944 (inclusive)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 1944",
+     "en": "After 1944"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Dictatul de la Viena (1940)",
+     "en": "The Vienna Award (1940)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "România intră în război (1941)",
+     "en": "Romania enters the war (1941)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Actul de la 23 august (1944)",
+     "en": "The act of 23 August (1944)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Guvernul Groza (1945)",
+     "en": "The Groza government (1945)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Tratatul de la Paris (1947)",
+     "en": "The Paris Peace Treaty (1947)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Regele Mihai abdică (1947)",
+     "en": "King Michael abdicates (1947)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.coldwar.8.01",
+  "type": "choice",
+  "skillId": "ist.coldwar.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.coldwar.8",
+  "provenance": {
+   "id": "prov.ist.coldwar.8.01",
+   "kind": "item",
+   "title": "Item item.ist.coldwar.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Între ce două mari puteri s-a purtat Războiul Rece?",
+   "en": "Between which two great powers was the Cold War fought?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "SUA și URSS",
+     "en": "the USA and the USSR"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Franța și Anglia",
+     "en": "France and England"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Romania și Ungaria",
+     "en": "Romania and Hungary"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.coldwar.8.02",
+  "type": "match",
+  "skillId": "ist.coldwar.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.coldwar.8",
+  "provenance": {
+   "id": "prov.ist.coldwar.8.02",
+   "kind": "item",
+   "title": "Item item.ist.coldwar.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "NATO",
+      "en": "NATO"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "alianță militară înființată în 1949 de state occidentale",
+      "en": "a military alliance founded in 1949 by Western states"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "Pactul de la Varșovia",
+      "en": "Warsaw Pact"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "alianța militară a URSS și a statelor aliate din Europa de Est",
+      "en": "the military alliance of the USSR and its allies in Eastern Europe"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Cortina de Fier",
+      "en": "Iron Curtain"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "granița ideologică dintre Europa de Est și de Vest",
+      "en": "the ideological border between Eastern and Western Europe"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Planul Marshall",
+      "en": "Marshall Plan"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "ajutor economic american pentru reconstrucția Europei",
+      "en": "American economic aid for rebuilding Europe"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.coldwar.8.03",
+  "type": "sort",
+  "skillId": "ist.coldwar.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.coldwar.8",
+  "provenance": {
+   "id": "prov.ist.coldwar.8.03",
+   "kind": "item",
+   "title": "Item item.ist.coldwar.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Blocul occidental sau blocul estic? Pune fiecare element la locul lui.",
+   "en": "Western bloc or Eastern bloc? Put each element in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Blocul occidental",
+     "en": "The Western bloc"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Blocul estic",
+     "en": "The Eastern bloc"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "NATO",
+     "en": "NATO"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Planul Marshall",
+     "en": "the Marshall Plan"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "SUA",
+     "en": "the USA"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Pactul de la Varșovia",
+     "en": "the Warsaw Pact"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "URSS",
+     "en": "the USSR"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "CAER",
+     "en": "Comecon"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.communism.8.01",
+  "type": "choice",
+  "skillId": "ist.communism.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.communism.8",
+  "provenance": {
+   "id": "prov.ist.communism.8.01",
+   "kind": "item",
+   "title": "Item item.ist.communism.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Cine a condus România din 1965 până în 1989?",
+   "en": "Who led Romania from 1965 to 1989?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Nicolae Ceaușescu",
+     "en": "Nicolae Ceaușescu"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Ion Antonescu",
+     "en": "Ion Antonescu"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Carol al II-lea",
+     "en": "Carol II"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.communism.8.02",
+  "type": "match",
+  "skillId": "ist.communism.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.communism.8",
+  "provenance": {
+   "id": "prov.ist.communism.8.02",
+   "kind": "item",
+   "title": "Item item.ist.communism.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "naționalizare",
+      "en": "nationalisation"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "trecerea întreprinderilor în proprietatea statului",
+      "en": "the transfer of enterprises into state ownership"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "colectivizare",
+      "en": "collectivisation"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "unirea pământurilor țăranilor în gospodării colective",
+      "en": "merging peasants' land into collective farms"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Securitate",
+      "en": "Securitate"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "poliția politică a regimului comunist",
+      "en": "the political police of the communist regime"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Gheorghe Gheorghiu-Dej",
+      "en": "Gheorghe Gheorghiu-Dej"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "conducătorul comunist al României până în 1965",
+      "en": "the communist leader of Romania until 1965"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.communism.8.03",
+  "type": "sort",
+  "skillId": "ist.communism.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.communism.8",
+  "provenance": {
+   "id": "prov.ist.communism.8.03",
+   "kind": "item",
+   "title": "Item item.ist.communism.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Democrație sau comunism? Pune fiecare trăsătură la locul ei.",
+   "en": "Democracy or communism? Put each feature in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Democrație",
+     "en": "Democracy"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "Regim comunist",
+     "en": "Communist regime"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "alegeri libere",
+     "en": "free elections"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "presă liberă",
+     "en": "a free press"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "proprietate privată",
+     "en": "private property"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "partid unic",
+     "en": "a single party"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "cenzură",
+     "en": "censorship"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "economie condusă de stat",
+     "en": "a state-run economy"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.rev1989.8.01",
+  "type": "choice",
+  "skillId": "ist.rev1989.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.rev1989.8",
+  "provenance": {
+   "id": "prov.ist.rev1989.8.01",
+   "kind": "item",
+   "title": "Item item.ist.rev1989.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "În ce oraș a început revoluția din decembrie 1989?",
+   "en": "In which city did the revolution of December 1989 begin?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "Timișoara",
+     "en": "Timișoara"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "Iași",
+     "en": "Iași"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "Constanța",
+     "en": "Constanța"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.rev1989.8.02",
+  "type": "match",
+  "skillId": "ist.rev1989.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.rev1989.8",
+  "provenance": {
+   "id": "prov.ist.rev1989.8.02",
+   "kind": "item",
+   "title": "Item item.ist.rev1989.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Timișoara",
+      "en": "Timișoara"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "orașul unde a început revoluția din decembrie 1989",
+      "en": "the city where the revolution of December 1989 began"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "pluripartidism",
+      "en": "multi-party system"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "sistem cu mai multe partide care se întrec în alegeri",
+      "en": "a system with several parties competing in elections"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "tranziție",
+      "en": "transition"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "trecerea de la comunism la democrație și economie de piață",
+      "en": "the passage from communism to democracy and a market economy"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "Constituția din 1991",
+      "en": "Constitution of 1991"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "legea fundamentală adoptată după revoluție",
+      "en": "the fundamental law adopted after the revolution"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.rev1989.8.03",
+  "type": "sort",
+  "skillId": "ist.rev1989.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.rev1989.8",
+  "provenance": {
+   "id": "prov.ist.rev1989.8.03",
+   "kind": "item",
+   "title": "Item item.ist.rev1989.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Înainte sau după 1989? Pune fiecare eveniment la locul lui.",
+   "en": "Before or after 1989? Put each event in its place."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Până în 1989 (inclusiv)",
+     "en": "Up to 1989 (inclusive)"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 1989",
+     "en": "After 1989"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Colectivizarea (începută în 1949)",
+     "en": "Collectivisation (begun in 1949)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Revolta din Brașov (1987)",
+     "en": "The Brașov revolt (1987)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "Cade Zidul Berlinului (1989)",
+     "en": "The Berlin Wall falls (1989)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "Primele alegeri libere (1990)",
+     "en": "The first free elections (1990)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "Constituția din 1991",
+     "en": "The Constitution of 1991"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Intrarea în NATO (2004)",
+     "en": "Joining NATO (2004)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ },
+ {
+  "id": "item.ist.eu.8.01",
+  "type": "choice",
+  "skillId": "ist.eu.8",
+  "difficulty": 1,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.eu.8",
+  "provenance": {
+   "id": "prov.ist.eu.8.01",
+   "kind": "item",
+   "title": "Item item.ist.eu.8.01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "În ce an a intrat România în Uniunea Europeană?",
+   "en": "In which year did Romania join the European Union?"
+  },
+  "options": [
+   {
+    "id": "a",
+    "text": {
+     "ro": "2007",
+     "en": "2007"
+    }
+   },
+   {
+    "id": "b",
+    "text": {
+     "ro": "2004",
+     "en": "2004"
+    }
+   },
+   {
+    "id": "c",
+    "text": {
+     "ro": "1993",
+     "en": "1993"
+    }
+   }
+  ],
+  "correctId": "a"
+ },
+ {
+  "id": "item.ist.eu.8.02",
+  "type": "match",
+  "skillId": "ist.eu.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.eu.8",
+  "provenance": {
+   "id": "prov.ist.eu.8.02",
+   "kind": "item",
+   "title": "Item item.ist.eu.8.02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Potrivește fiecare termen cu explicația lui.",
+   "en": "Match each term with its explanation."
+  },
+  "pairs": [
+   {
+    "left": {
+     "id": "l1",
+     "text": {
+      "ro": "Uniunea Europeană",
+      "en": "European Union"
+     }
+    },
+    "right": {
+     "id": "r1",
+     "text": {
+      "ro": "uniune politică și economică a unor state europene",
+      "en": "a political and economic union of European states"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l2",
+     "text": {
+      "ro": "NATO",
+      "en": "NATO"
+     }
+    },
+    "right": {
+     "id": "r2",
+     "text": {
+      "ro": "alianță militară de apărare comună",
+      "en": "a military alliance for common defence"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l3",
+     "text": {
+      "ro": "Consiliul Europei",
+      "en": "Council of Europe"
+     }
+    },
+    "right": {
+     "id": "r3",
+     "text": {
+      "ro": "organizație pentru drepturile omului și democrație",
+      "en": "an organisation for human rights and democracy"
+     }
+    }
+   },
+   {
+    "left": {
+     "id": "l4",
+     "text": {
+      "ro": "euro",
+      "en": "euro"
+     }
+    },
+    "right": {
+     "id": "r4",
+     "text": {
+      "ro": "moneda comună a multor state din Uniunea Europeană",
+      "en": "the common currency of many EU states"
+     }
+    }
+   }
+  ]
+ },
+ {
+  "id": "item.ist.eu.8.03",
+  "type": "sort",
+  "skillId": "ist.eu.8",
+  "difficulty": 2,
+  "reviewStatus": "beta",
+  "explanationId": "exp.ist.eu.8",
+  "provenance": {
+   "id": "prov.ist.eu.8.03",
+   "kind": "item",
+   "title": "Item item.ist.eu.8.03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original item drafted for the competence; dates double-checked; awaiting human review"
+  },
+  "prompt": {
+   "ro": "Pune fiecare eveniment în perioada potrivită.",
+   "en": "Put each event in the right period."
+  },
+  "categories": [
+   {
+    "id": "a",
+    "label": {
+     "ro": "Înainte de 2000",
+     "en": "Before 2000"
+    }
+   },
+   {
+    "id": "b",
+    "label": {
+     "ro": "După 2000",
+     "en": "After 2000"
+    }
+   }
+  ],
+  "cards": [
+   {
+    "id": "s1",
+    "text": {
+     "ro": "Tratatul de la Roma (1957)",
+     "en": "The Treaty of Rome (1957)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s2",
+    "text": {
+     "ro": "Tratatul de la Maastricht (1992)",
+     "en": "The Maastricht Treaty (1992)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s3",
+    "text": {
+     "ro": "România în Consiliul Europei (1993)",
+     "en": "Romania in the Council of Europe (1993)"
+    },
+    "categoryId": "a"
+   },
+   {
+    "id": "s4",
+    "text": {
+     "ro": "România în NATO (2004)",
+     "en": "Romania in NATO (2004)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s5",
+    "text": {
+     "ro": "România în UE (2007)",
+     "en": "Romania in the EU (2007)"
+    },
+    "categoryId": "b"
+   },
+   {
+    "id": "s6",
+    "text": {
+     "ro": "Tratatul de la Lisabona (2009)",
+     "en": "The Treaty of Lisbon (2009)"
+    },
+    "categoryId": "b"
+   }
+  ]
+ }
+]

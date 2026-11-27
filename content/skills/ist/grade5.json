@@ -1,0 +1,609 @@
+[
+ {
+  "id": "ist.time.bc.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.1"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   }
+  ],
+  "title": {
+   "ro": "Axa timpului: î.Hr. și d.Hr.",
+   "en": "The timeline: BC and AD"
+  },
+  "prerequisites": [
+   "ist.time.century.4",
+   "ist.time.timeline.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "time"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "time"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.time.bc.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.time.bc.5",
+   "kind": "data",
+   "title": "Skill ist.time.bc.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.prehistory.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.1"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Preistoria: de la piatră la metale",
+   "en": "Prehistory: from stone to metals"
+  },
+  "prerequisites": [
+   "ist.source.4",
+   "ist.time.bc.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "prehistory"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "prehistory"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.prehistory.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.prehistory.5",
+   "kind": "data",
+   "title": "Skill ist.prehistory.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.orient.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Orientul antic: Egipt și Mesopotamia",
+   "en": "The ancient Orient: Egypt and Mesopotamia"
+  },
+  "prerequisites": [
+   "ist.prehistory.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "orient"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "orient"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.orient.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.orient.5",
+   "kind": "data",
+   "title": "Skill ist.orient.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.greece.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Grecia antică: polisul, Atena și Sparta",
+   "en": "Ancient Greece: the polis, Athens and Sparta"
+  },
+  "prerequisites": [
+   "ist.orient.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "greece"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "greece"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.greece.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.greece.5",
+   "kind": "data",
+   "title": "Skill ist.greece.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.greece.wars.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Greci, perși și Alexandru cel Mare",
+   "en": "Greeks, Persians and Alexander the Great"
+  },
+  "prerequisites": [
+   "ist.greece.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "greece2"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "greece2"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.greece.wars.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.greece.wars.5",
+   "kind": "data",
+   "title": "Skill ist.greece.wars.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.rome.republic.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Roma antică: de la oraș la republică",
+   "en": "Ancient Rome: from city to republic"
+  },
+  "prerequisites": [
+   "ist.greece.5",
+   "ist.time.bc.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "rome"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "rome"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.rome.republic.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.rome.republic.5",
+   "kind": "data",
+   "title": "Skill ist.rome.republic.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.rome.empire.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Imperiul Roman și moștenirea lui",
+   "en": "The Roman Empire and its legacy"
+  },
+  "prerequisites": [
+   "ist.rome.republic.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "empire"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "empire"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.rome.empire.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.rome.empire.5",
+   "kind": "data",
+   "title": "Skill ist.rome.empire.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.dacians.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Geto-dacii: regi, cetăți, credințe",
+   "en": "The Geto-Dacians: kings, fortresses, beliefs"
+  },
+  "prerequisites": [
+   "ist.dacians.4",
+   "ist.time.bc.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "dacians"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "dacians"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.dacians.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.dacians.5",
+   "kind": "data",
+   "title": "Skill ist.dacians.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.romanization.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Războaiele dacice și romanizarea",
+   "en": "The Dacian Wars and Romanization"
+  },
+  "prerequisites": [
+   "ist.dacians.5",
+   "ist.rome.empire.5",
+   "ist.romans.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "romanization"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "romanization"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.romanization.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.romanization.5",
+   "kind": "data",
+   "title": "Skill ist.romanization.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.christianity.5",
+  "subject": "ist",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Creștinismul în lumea romană",
+   "en": "Christianity in the Roman world"
+  },
+  "prerequisites": [
+   "ist.rome.empire.5",
+   "ist.formation.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "christian"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "christian"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.christianity.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.christianity.5",
+   "kind": "data",
+   "title": "Skill ist.christianity.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ }
+]
