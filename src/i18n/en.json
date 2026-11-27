@@ -1284,7 +1284,8 @@
       "exitBody": "If you leave now the test is not saved. You can start a new one any time.",
       "exitStay": "Stay in the test",
       "exitLeave": "Leave",
-      "sectionCount": "{{count}} questions in this part"
+      "sectionCount_one": "{{count}} question in this part",
+      "sectionCount_other": "{{count}} questions in this part"
     },
     "results": {
       "title": "You finished the test!",

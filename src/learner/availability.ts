@@ -8,6 +8,7 @@ import { getAllSkills } from '@/engine/content/registry';
 import type { Grade, SubjectId } from '@/engine/types';
 
 let minGrades: Map<SubjectId, Grade> | null = null;
+let maxGrades: Map<SubjectId, Grade> | null = null;
 
 function table(): Map<SubjectId, Grade> {
   if (!minGrades) {
@@ -30,6 +31,28 @@ export function subjectMinGrade(subject: SubjectId): Grade | undefined {
 export function isSubjectAvailable(subject: SubjectId, grade: number): boolean {
   const min = subjectMinGrade(subject);
   return min !== undefined && min <= grade;
+}
+
+/** Highest grade with content for `subject`; undefined when the subject has no skills at all */
+export function subjectMaxGrade(subject: SubjectId): Grade | undefined {
+  if (!maxGrades) {
+    const map = new Map<SubjectId, Grade>();
+    for (const s of getAllSkills()) {
+      const seen = map.get(s.subject);
+      if (seen === undefined || s.grade > seen) map.set(s.subject, s.grade);
+    }
+    maxGrades = map;
+  }
+  return maxGrades.get(subject);
+}
+
+/**
+ * The subject still has content at the child's grade. Primary-only subjects (e.g. Științe, which grades V–VIII
+ * continue as Biologie/Fizică/Chimie) stay playable for older kids but leave the daily rotation.
+ */
+export function isSubjectCurrent(subject: SubjectId, grade: number): boolean {
+  const max = subjectMaxGrade(subject);
+  return isSubjectAvailable(subject, grade) && max !== undefined && max >= grade;
 }
 
 /** `subjects` that are playable at `grade`, in the given order */

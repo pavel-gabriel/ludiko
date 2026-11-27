@@ -1297,7 +1297,9 @@
       "exitBody": "Dacă ieși acum, testul nu se salvează. Poți începe oricând unul nou.",
       "exitStay": "Rămân în test",
       "exitLeave": "Ies",
-      "sectionCount": "{{count}} întrebări în această parte"
+      "sectionCount_one": "{{count}} întrebare în această parte",
+      "sectionCount_few": "{{count}} întrebări în această parte",
+      "sectionCount_other": "{{count}} de întrebări în această parte"
     },
     "results": {
       "title": "Ai terminat testul!",
