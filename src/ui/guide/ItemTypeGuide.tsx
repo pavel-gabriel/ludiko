@@ -40,7 +40,7 @@ export default function ItemTypeGuide({ type }: { type: string }) {
         <span aria-hidden="true">💡 </span>
         {text}
       </p>
-      {band !== 'big' && <ReadAloudButton text={text} label={t('guide.readHint')} className="!min-h-[44px] !text-xs" />}
+      {band !== 'big' && <ReadAloudButton band={band} text={text} label={t('guide.readHint')} className="!min-h-[44px] !text-xs" />}
     </div>
   )
 }

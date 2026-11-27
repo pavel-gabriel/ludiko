@@ -1803,5 +1803,24 @@
       }
     },
     "readHint": "Ce am de făcut?"
+  },
+  "voice": {
+    "title": "Voce pentru citit",
+    "pick": "Alege vocea",
+    "auto": "Automat (cea mai bună)",
+    "sample": "Ascultă exemplu",
+    "sample_ro": "Bună! Eu sunt vocea care îți citește exercițiile. Trei plus patru egal șapte.",
+    "sample_en": "Hello! I am the voice that reads to you. Three plus four equals seven.",
+    "speed": "Viteză",
+    "speedAuto": "Automată",
+    "speedReset": "Viteză automată",
+    "roVoices": "Română",
+    "enVoices": "Engleză",
+    "remote": "online",
+    "tipTitle": "Sfat pentru părinți: o voce mai bună",
+    "tipAndroid": "Android: Setări → Gestionare generală → Ieșire text-în-vorbire → Servicii vocale de la Google → Instalează date vocale → Română.",
+    "tipWindows": "Windows / Edge: alege în Edge o voce online „Natural” (Alina sau Emil) – funcționează cu internet.",
+    "tipIos": "iPhone / iPad: Setări → Accesibilitate → Conținut vorbit → Voci → Română → Ioana (Enhanced).",
+    "tipNote": "După instalare, redeschide aplicația și alege vocea din listă."
   }
 }

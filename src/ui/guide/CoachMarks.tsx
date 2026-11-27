@@ -119,7 +119,7 @@ export default function CoachMarks({ steps, band, onClose }: { steps: CoachStep[
             </p>
           </div>
         </div>
-        {band !== 'big' && <ReadAloudButton text={step.text} className="mt-2" />}
+        {band !== 'big' && <ReadAloudButton text={step.text} band={band} className="mt-2" />}
         <div className="mt-3 flex gap-2">
           <button
             type="button"

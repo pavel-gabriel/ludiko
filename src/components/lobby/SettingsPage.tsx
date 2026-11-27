@@ -2,7 +2,10 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import LegalLink from '@/components/legal/LegalLink';
 import CloseButton from '@/components/ui/CloseButton';
+import { lazy, Suspense } from 'react';
 import { useSettingsStore } from '@/store/settingsStore';
+
+const VoiceSettings = lazy(() => import('@/ui/speech/VoiceSettings'));
 
 export default function SettingsPage() {
   const { t, i18n } = useTranslation();
@@ -56,6 +59,10 @@ export default function SettingsPage() {
             ))}
           </div>
         </div>
+
+        <Suspense fallback={null}>
+          <VoiceSettings />
+        </Suspense>
 
         {/* Dyslexic font */}
         <div className="flex items-center justify-between py-3">

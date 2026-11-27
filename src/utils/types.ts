@@ -121,6 +121,11 @@ export interface UserPreferences {
   language: Language;
   dyslexicFont: boolean;
   soundEnabled: boolean;
+  /** voiceURI chosen for Romanian / English read-aloud (null = best on the device) */
+  voiceRo?: string | null;
+  voiceEn?: string | null;
+  /** read-aloud speed 0.8-1.1 (null = automatic per language and age) */
+  voiceRate?: number | null;
 }
 
 /* ------------------------------------------------------------------ */

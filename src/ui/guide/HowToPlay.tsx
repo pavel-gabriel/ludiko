@@ -39,7 +39,7 @@ export default function HowToPlay({ topic, duel = false, className = '' }: { top
               {line}
             </p>
           ))}
-          {band !== 'big' && <ReadAloudButton text={lines.join(' ')} label={t('guide.readHint')} className="self-start" />}
+          {band !== 'big' && <ReadAloudButton band={band} text={lines.join(' ')} label={t('guide.readHint')} className="self-start" />}
         </div>
       )}
     </section>
