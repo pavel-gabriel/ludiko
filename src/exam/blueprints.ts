@@ -7,7 +7,7 @@
 import type { ExamBlueprint, ExamId, ExamTestNo } from './types'
 
 /** Paper-style item types only: no audio prompts, no map/picture tapping */
-const PAPER_TYPES: ExamBlueprint['allowedTypes'] = [
+export const PAPER_TYPES: ExamBlueprint['allowedTypes'] = [
   'choice',
   'picture-choice',
   'true-false',

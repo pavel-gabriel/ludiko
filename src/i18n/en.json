@@ -1544,5 +1544,87 @@
       }
     },
     "streakZero": "No active days yet this week"
+  },
+  "examGim": {
+    "title": "National evaluation simulations",
+    "entry": {
+      "title": "National evaluation simulation",
+      "body_en6": "Train for grade VI: tests in the shape of the evaluation, with feedback per competence.",
+      "body_en8": "Train for grade VIII: tests in the shape of the evaluation, with an estimated mark."
+    },
+    "exams": {
+      "en6": {
+        "name": "National Evaluation, grade VI",
+        "short": "Grade VI exam",
+        "emoji": "🧭"
+      },
+      "en8": {
+        "name": "National Evaluation, grade VIII",
+        "short": "Grade VIII exam",
+        "emoji": "🎓"
+      }
+    },
+    "papers": {
+      "en6": {
+        "1": "Language and communication",
+        "2": "Maths and Sciences"
+      },
+      "en8": {
+        "1": "Romanian language and literature",
+        "2": "Maths"
+      }
+    },
+    "picker": {
+      "intro": "Pick a test. Each one has the same structure as a real paper (parts, points, time) but with original items.",
+      "recommended": "For your grade",
+      "test": "Test {{n}}",
+      "meta": "{{count}} tasks · {{points}} points · {{min}} minutes",
+      "noMark": "No official mark: you see the percentage and the competences.",
+      "mark": "You get an estimated mark (1–10).",
+      "parentTitle": "About these simulations",
+      "parentNote": "The structure (parts, number of tasks, points, duration) is an approximation based on the public description of the evaluations; it does not reproduce any real paper. All texts and tasks are original or generated. The result is a practice estimate, not an official mark.",
+      "todo": "The modern-language part of the grade VI evaluation and the Romanian writing task are not simulated yet."
+    },
+    "start": {
+      "title": "Ready for the simulation?",
+      "body": "You work through the tasks one by one, like in a real paper. You will not see whether you got one wrong until the end. You can hide the clock or take a break.",
+      "meta": "{{count}} tasks · {{points}} points · {{min}} minutes"
+    },
+    "results": {
+      "title": "Simulation finished",
+      "body": "You worked right to the end. Below you can see how it went and what is worth practising.",
+      "mark": "Estimated mark: {{mark}}",
+      "markNote": "Estimate — not an official mark. Formula: 1 + 9 × (points earned / total points).",
+      "noMark": "Result: {{percent}}%",
+      "noMarkNote": "The grade VI national evaluation gives no mark, only a results report. Here you see the percentage and the competences; it is a practice estimate.",
+      "points": "{{points}} of {{max}} points",
+      "sections": "By part",
+      "competences": "By competence",
+      "practiceTitle": "What to practise",
+      "practiceBody": "Topics where points were lost. Each button starts a short game.",
+      "practiceNone": "Every answer was right. Well done!",
+      "practiceItem": "{{wrong}} of {{total}}",
+      "toPractice": "Let's practise",
+      "again": "Another test",
+      "home": "Back home",
+      "unanswered": "{{n}} tasks were left unanswered.",
+      "overtime": "You went over the recommended time; it did not count in the result.",
+      "saved": "The answers were added to your progress.",
+      "todo": "The modern-language part (grade VI) and the writing task (Romanian) are not included.",
+      "starsLabel": "{{n}} stars earned"
+    },
+    "comp": {
+      "lectura": "Understanding the text",
+      "limba": "Grammar and syntax",
+      "lexic": "Vocabulary and figures of speech",
+      "ortografie": "Spelling and punctuation",
+      "calc": "Numerical calculation",
+      "alg": "Algebra, functions and ratios",
+      "geom": "Geometry and problems",
+      "bio": "Biology",
+      "fiz": "Physics",
+      "geo": "Geography",
+      "misc": "Other tasks"
+    }
   }
 }

@@ -1557,5 +1557,87 @@
       }
     },
     "streakZero": "Nicio zi activă încă săptămâna asta"
+  },
+  "examGim": {
+    "title": "Simulări Evaluare Națională",
+    "entry": {
+      "title": "Simulare de Evaluare Națională",
+      "body_en6": "Antrenează-te pentru clasa a VI-a: teste în formatul evaluării, cu feedback pe competențe.",
+      "body_en8": "Antrenează-te pentru clasa a VIII-a: teste în formatul evaluării, cu notă estimativă."
+    },
+    "exams": {
+      "en6": {
+        "name": "Evaluarea Națională, clasa a VI-a",
+        "short": "EN clasa a VI-a",
+        "emoji": "🧭"
+      },
+      "en8": {
+        "name": "Evaluarea Națională, clasa a VIII-a",
+        "short": "EN clasa a VIII-a",
+        "emoji": "🎓"
+      }
+    },
+    "papers": {
+      "en6": {
+        "1": "Limbă și comunicare",
+        "2": "Matematică și Științe"
+      },
+      "en8": {
+        "1": "Limba și literatura română",
+        "2": "Matematică"
+      }
+    },
+    "picker": {
+      "intro": "Alege un test. Fiecare test are aceeași structură ca o lucrare reală (părți, punctaj, timp), dar cu itemi originali.",
+      "recommended": "Pentru clasa ta",
+      "test": "Testul {{n}}",
+      "meta": "{{count}} cerințe · {{points}} puncte · {{min}} minute",
+      "noMark": "Fără notă oficială: vezi procentul și competențele.",
+      "mark": "Primești o notă estimativă (1–10).",
+      "parentTitle": "Despre aceste simulări",
+      "parentNote": "Structura (părți, număr de cerințe, punctaj, durată) este o aproximare făcută după descrierea publică a evaluărilor; nu reproduce nicio lucrare reală. Toate textele și cerințele sunt originale sau generate. Rezultatul este o estimare de antrenament, nu o notă oficială.",
+      "todo": "Partea de limbă modernă de la EN clasa a VI-a și redactarea de la Limba română nu sunt simulate încă."
+    },
+    "start": {
+      "title": "Gata de simulare?",
+      "body": "Lucrezi cerințele pe rând, ca la o lucrare reală. Nu vezi dacă ai greșit până la final. Poți ascunde ceasul sau face o pauză.",
+      "meta": "{{count}} cerințe · {{points}} puncte · {{min}} minute"
+    },
+    "results": {
+      "title": "Simularea s-a încheiat",
+      "body": "Ai lucrat până la capăt. Mai jos vezi cum a mers și ce merită exersat.",
+      "mark": "Nota estimată: {{mark}}",
+      "markNote": "Estimativă — nu e notă oficială. Formula: 1 + 9 × (puncte obținute / puncte totale).",
+      "noMark": "Rezultat: {{percent}}%",
+      "noMarkNote": "La Evaluarea Națională de clasa a VI-a nu se acordă notă, ci un raport de rezultate. Aici vezi procentul și competențele; este o estimare de antrenament.",
+      "points": "{{points}} din {{max}} puncte",
+      "sections": "Pe părți",
+      "competences": "Pe competențe",
+      "practiceTitle": "Ce exersăm",
+      "practiceBody": "Temele cu puncte pierdute. Fiecare buton pornește un joc scurt.",
+      "practiceNone": "Toate răspunsurile au fost corecte. Bravo!",
+      "practiceItem": "{{wrong}} din {{total}}",
+      "toPractice": "Exersăm împreună",
+      "again": "Alt test",
+      "home": "Înapoi acasă",
+      "unanswered": "{{n}} cerințe au rămas fără răspuns.",
+      "overtime": "Ai depășit timpul recomandat; nu a contat în rezultat.",
+      "saved": "Răspunsurile au fost adăugate la progresul tău.",
+      "todo": "Partea de limbă modernă (EN clasa a VI-a) și redactarea (Limba română) nu sunt incluse.",
+      "starsLabel": "{{n}} stele câștigate"
+    },
+    "comp": {
+      "lectura": "Înțelegerea textului",
+      "limba": "Gramatică și sintaxă",
+      "lexic": "Vocabular și figuri de stil",
+      "ortografie": "Ortografie și punctuație",
+      "calc": "Calcul numeric",
+      "alg": "Algebră, funcții și rapoarte",
+      "geom": "Geometrie și probleme",
+      "bio": "Biologie",
+      "fiz": "Fizică",
+      "geo": "Geografie",
+      "misc": "Alte cerințe"
+    }
   }
 }
