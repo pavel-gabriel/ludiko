@@ -4,6 +4,7 @@ import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { triggerClassSync } from '@/classroom/syncGate'
 import Confetti from '@/components/ui/Confetti'
 import { getSkill } from '@/engine/content/registry'
+import { ensureContentForSkills } from '@/engine/content/packs'
 import { localize, type Item } from '@/engine/types'
 import { learnerService, type AssignmentBit } from '@/learner'
 import type { ChildProfile } from '@/profiles/types'
@@ -44,8 +45,12 @@ function Runner({ profile, assignmentId }: { profile: ChildProfile; assignmentId
     return skill ? localize(skill.title, i18n.language) : skillId
   }
 
-  const findBit = async (): Promise<AssignmentBit | undefined> =>
-    (await learnerService.getClassAssignments(profile.id)).find((b) => b.assignmentId === assignmentId)
+  const findBit = async (): Promise<AssignmentBit | undefined> => {
+    const bit = (await learnerService.getClassAssignments(profile.id)).find((b) => b.assignmentId === assignmentId)
+    // Rounds generate items synchronously: load the assignment's content packs first
+    if (bit) await ensureContentForSkills(bit.skills.map((s) => s.skillId))
+    return bit
+  }
 
   useEffect(() => {
     let cancelled = false

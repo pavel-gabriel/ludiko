@@ -5,112 +5,22 @@
  *
  * Reads `skill.itemSources`: every `{ generator, params }` source is run through its registered
  * generator (round-robin), and static bank items (registry `getItemsForSkill`) are mixed in.
+ * The skill's content pack must be loaded first (src/engine/content/packs.ts).
  */
 import type { Difficulty, Item, Skill } from '../../types';
 import { getItemsForSkill } from '../../content/registry';
-import { addition, subtraction } from './arithmetic';
-import { clock } from './clock';
-import { compare } from './compare';
-import { counting } from './counting';
-import { fraction } from './fraction';
-import { measure } from './measure';
-import { money } from './money';
-import { numberRecognition } from './numberRecognition';
-import { placeValue } from './placeValue';
-import { getGenerator, registerGenerator } from './registry';
-import { shapes } from './shapes';
-import { timeUnits } from './timeUnits';
+import { getGenerator } from './registry';
 import { mulberry32, randInt, shuffle } from './util';
-import { wordProblem } from './wordProblem';
-// grade III-IV generators: each module registers itself
-import './division';
-import './equation';
-import './multiplication';
-import './numberReading';
-import './orderOfOps';
-import './rounding';
-// Romanian generators register themselves (letters, syllables, word-picture, sentence-order, punctuation, word-relations)
-import './romLetters';
-import './romSyllables';
-import './romWordPicture';
-import './romSentences';
-import './romVocab';
-// Romanian gimnaziu (V-VIII): spelling pairs, parts of speech, verb forms, syntax roles, figures of speech, curated quiz
-import './romSpelling';
-import './romPos';
-import './romVerbs';
-import './romSyntax';
-import './romFigures';
-import './romQuiz';
-// science generators (sci-sort, sci-which, sci-tf, sci-relation, sci-order)
-import './stiinte';
-// history (grade IV) generators
-import './istGenerators';
-// history gimnaziu (V-VIII): events-driven timelines + curated facts
-import './istGimnaziu';
-// Geography (geo) generators
-import './geoDirections';
-// Natural sciences gimnaziu (bio V-VIII, fiz VI-VIII, chim VII-VIII): curated quizzes + physics/chemistry/biology calculators
-import './natQuiz';
-import './natCalc';
-import './natChem';
-import './natBio';
-// Geography gimnaziu (V-VIII): curated quiz, capitals, sorting, EU, counties, rivers, peaks, orders, world, relief units, map scale
-import './geoGimnaziu';
-// Logic puzzles (patterns, odd-one-out, analogies, mini-sudoku, robot path, who-lives-where)
-import './logicPatterns';
-import './logicOddOne';
-import './logicAnalogy';
-import './logicSudoku';
-import './logicRobot';
-import './logicWhere';
-// Math grades V-VIII (fractions-ops, decimals, powers, divisibility, integers, percentages, proportions, linear-equation,
-// system-2x2, sqrt, pythagoras, areas-volumes, algebra, linear-function, probability, statistics, angles, segments-units)
-import './fractionsOps';
-import './decimals';
-import './powers';
-import './divisibility';
-import './integers';
-import './percentages';
-import './proportions';
-import './linearEquation';
-import './system2x2';
-import './sqrt';
-import './pythagoras';
-import './areasVolumes';
-import './algebra';
-import './linearFunction';
-import './probability';
-import './statistics';
-import './angles';
-import './segmentsUnits';
 
-// English as a foreign language, primary (eng.*.0-4): vocabulary, numbers, calendar, time, grammar banks, greetings, reading
-import './engPrimaryVocab';
-import './engPrimaryNumbers';
-import './engPrimaryGrammar';
-// English gimnaziu (eng.*.5-8): verb tenses, irregular verbs, nouns, adjectives, vocabulary, word order, curated quizzes, passive, reported speech, word formation
-import './engGimVerbs';
-import './engGimWords';
-import './engGimTransform';
+/*
+ * Generator modules register themselves on import. They are NOT imported here: each content pack
+ * (src/engine/content/packs/<packId>.ts) imports the generators its skills use, so a grade I child never
+ * downloads the grade VIII ones. Load a skill's pack (`ensureContentForSkills`) before `generateItems`.
+ */
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';
 export { mulberry32 } from './util';
-
-registerGenerator('counting', counting);
-registerGenerator('number-recognition', numberRecognition);
-registerGenerator('compare', compare);
-registerGenerator('addition', addition);
-registerGenerator('subtraction', subtraction);
-registerGenerator('place-value', placeValue);
-registerGenerator('word-problem', wordProblem);
-registerGenerator('clock', clock);
-registerGenerator('time-units', timeUnits);
-registerGenerator('money', money);
-registerGenerator('measure', measure);
-registerGenerator('fraction', fraction);
-registerGenerator('shapes', shapes);
 
 export interface GenerateOptions {
   /** Fixed difficulty for every item. Omitted: each item is 1-3 (mixed, easier-weighted). */
@@ -159,7 +69,9 @@ export function generateItems(skill: Skill, count: number, opts: GenerateOptions
 
   const sources = skill.itemSources.flatMap((s) => ('generator' in s ? [s] : []));
   for (const s of sources) {
-    if (!getGenerator(s.generator)) throw new Error(`Unknown generator "${s.generator}" (skill ${skill.id})`);
+    if (!getGenerator(s.generator)) {
+      throw new Error(`Unknown generator "${s.generator}" (skill ${skill.id}; is its content pack loaded?)`);
+    }
   }
 
   let pool = shuffle(master, staticPool(skill, opts.difficulty));

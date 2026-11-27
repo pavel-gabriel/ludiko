@@ -15,3 +15,12 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+/** Content packs generated at build time by scripts/contentPacksPlugin.ts (see src/engine/content/packs/) */
+declare module 'virtual:ludiko-pack/*' {
+  const data: {
+    items: import('./engine/types').Item[];
+    explanations: import('./engine/types').Explanation[];
+  };
+  export default data;
+}

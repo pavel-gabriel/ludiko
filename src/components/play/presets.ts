@@ -31,6 +31,9 @@ export const PLAY_PRESETS: PlayPreset[] = [
  * What a chosen set of skills adds to the room's settings (nothing when empty, so v1 rooms stay
  * byte-identical and RTDB never sees `undefined`).
  */
+/** Skill ids of every preset (their content packs are loaded by the pickers, so `skillUsable` is exact) */
+export const PRESET_SKILL_IDS: string[] = [...new Set(PLAY_PRESETS.flatMap((p) => p.skillIds))];
+
 export function skillSettings(skillIds: string[]): Partial<GameSettings> {
   const ids = skillIds.slice(0, MAX_SKILLS);
   if (ids.length === 0) return {};

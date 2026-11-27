@@ -14,16 +14,20 @@ import {
 } from '@/services/reportService';
 import ItemView from '@/ui/items/ItemView';
 import { buildReportSnapshot } from '@/services/reportSnapshot';
-import { reconstructItem, reconstructSnapshot } from './reconstructItem';
+import { packsForSkills } from '@/engine/content/packs';
+import { usePacks } from '@/ui/content/ContentGate';
+import { reconstructItem, reconstructSnapshot, snapshotSkillId } from './reconstructItem';
 
 const MAX_COMMENTS_SHOWN = 3;
 
 /** The question as the child saw it, with the correct option marked. */
 function ItemDetails({ g }: { g: ReportGroup }) {
   const { t } = useTranslation();
+  // Rebuilding (old reports) and the exact-question preview need the skill's content pack (generators + bank)
+  const { status } = usePacks(packsForSkills([g.snapshot?.skillId ?? snapshotSkillId(g.itemId, g.skillId)]));
   const rebuilt = useMemo(
-    () => (g.snapshot ? undefined : reconstructSnapshot(g.itemId, g.skillId)),
-    [g.snapshot, g.itemId, g.skillId],
+    () => (g.snapshot || status !== 'ready' ? undefined : reconstructSnapshot(g.itemId, g.skillId)),
+    [g.snapshot, g.itemId, g.skillId, status],
   );
   const snap: ReportSnapshot | undefined = g.snapshot ?? rebuilt;
   const [tryOpen, setTryOpen] = useState(false);
@@ -32,11 +36,12 @@ function ItemDetails({ g }: { g: ReportGroup }) {
   // The exact reported question (never a new one). If a snapshot exists, the rebuilt item must match it
   // (generated items can differ when the session fixed a difficulty); otherwise no "try it" button.
   const exact = useMemo(() => {
+    if (status !== 'ready') return undefined;
     const item = reconstructItem(g.itemId, g.skillId ?? g.snapshot?.skillId);
     if (!item) return undefined;
     if (g.snapshot && buildReportSnapshot(item, 'practice', '/')?.prompt !== g.snapshot.prompt) return undefined;
     return item;
-  }, [g.itemId, g.skillId, g.snapshot]);
+  }, [g.itemId, g.skillId, g.snapshot, status]);
   const skillId = snap?.skillId ?? g.skillId;
   const skill = skillId ? getSkill(skillId) : undefined;
 

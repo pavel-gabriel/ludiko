@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useNavigate } from 'react-router-dom'
 import { getAllSkills } from '@/engine/content/registry'
+import { ensureContentForSkills } from '@/engine/content/packs'
 import type { Item, SkillState } from '@/engine/types'
 import { CHALLENGE_ITEMS, pickChallengeSkills } from '@/older/challenge'
 import { markFromScore } from '@/older/marks'
@@ -29,6 +30,7 @@ async function buildChallenge(profile: ChildProfile): Promise<Item[]> {
   const playable = getAllSkills().filter(skillHasItems)
   const skills = pickChallengeSkills(playable, states, profile.grade, CHALLENGE_ITEMS)
   if (skills.length === 0) return []
+  await ensureContentForSkills(skills)
   const wanted = new Map<string, number>()
   for (let i = 0; i < CHALLENGE_ITEMS; i++) {
     const s = skills[i % skills.length]

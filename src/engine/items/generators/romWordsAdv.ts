@@ -7,7 +7,7 @@
  */
 import type { ChoiceItem, FillGapItem, Item } from '../../types';
 import type { GeneratorFn } from './registry';
-import { GIM_ANTONYMS, GIM_SYNONYMS, HOMONYMS, PARONYMS, capitalize, type WordPair } from './romGimnaziuData';
+import { GIM_ANTONYMS, GIM_SYNONYMS, HOMONYMS, PARONYMS, capitalize, type WordPair } from './romGimVocabData';
 import { baseFields, optionCount, pick, shuffle } from './util';
 
 /* ---- synonyms / antonyms (gimnaziu) -------------------------------- */
