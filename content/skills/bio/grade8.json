@@ -162,7 +162,7 @@
     },
     "prerequisites": [
       "bio.heredity.8",
-      "mat.fraction.set"
+      "mat.frac.equiv"
     ],
     "itemSources": [
       {

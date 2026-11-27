@@ -278,7 +278,7 @@
     },
     "prerequisites": [
       "fiz.current.8",
-      "mat.equation.big"
+      "mat.eq7.linear"
     ],
     "itemSources": [
       {
@@ -341,7 +341,7 @@
     },
     "prerequisites": [
       "fiz.ohm.8",
-      "mat.fraction.set"
+      "mat.frac6.ops"
     ],
     "itemSources": [
       {

@@ -454,8 +454,8 @@
     },
     "prerequisites": [
       "fiz.motion.6",
-      "mat.div.1digit.exact",
-      "mat.equation.big"
+      "mat.dec.ops",
+      "mat.ratio.basic"
     ],
     "itemSources": [
       {
@@ -509,7 +509,8 @@
     },
     "prerequisites": [
       "fiz.massvol.6",
-      "mat.div.1digit.exact"
+      "mat.dec.ops",
+      "mat.ratio.basic"
     ],
     "itemSources": [
       {

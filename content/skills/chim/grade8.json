@@ -459,7 +459,7 @@
     },
     "prerequisites": [
       "chim.water.8",
-      "mat.equation.big"
+      "mat.percent6"
     ],
     "itemSources": [
       {
