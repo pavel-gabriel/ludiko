@@ -22,7 +22,7 @@ import { readCachedAssignments } from '@/classroom/assignmentCache';
 import { deriveAssignmentBits } from './assignmentOps';
 import { deriveBits } from './bitOps';
 import { masteryAfterItem, stampStateChange, withPrior } from './masteryOps';
-import { ensureMission, findMission } from './missionOps';
+import { ensureMission, findMission, missionCeiling } from './missionOps';
 import { advancePlacement, recordPlacementProbe } from './placementOps';
 import { buildParentSummary, buildSkillMap } from './readModels';
 import { readStoredPlan, writeStoredPlan } from './planStore';
@@ -147,7 +147,10 @@ export const learnerService: LearnerService = {
   /* --- read models --- */
 
   async getSkillMap(profileId, subject, now = Date.now()) {
-    return buildSkillMap(await getProgress(profileId), subject, now);
+    const [progress, profile] = await Promise.all([getProgress(profileId), getProfile(profileId)]);
+    // the same ceiling as the planner, so the map's "next island" is the one the mission introduces
+    const ceiling = profile ? missionCeiling(profile, progress.placements?.[subject]?.target, now) : undefined;
+    return buildSkillMap(progress, subject, now, { ceiling });
   },
 
   async getLevelHistory(profileId, subject) {

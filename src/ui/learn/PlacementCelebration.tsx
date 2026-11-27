@@ -8,16 +8,19 @@ import { playFinish } from '@/utils/sounds'
 
 interface PlacementCelebrationProps {
   reward: SessionReward | null
-  onMission: () => void
+  /** Straight into today's plan (/learn) */
+  onPlan: () => void
   onMap: () => void
   onParents: () => void
+  /** Another subject still waits for its check: "Acum hai la <subject>" */
+  nextSubject?: { name: string; onGo: () => void }
 }
 
 /**
  * End of the first check, for the CHILD: stickers and "your islands are ready".
  * Deliberately no level, score or gap count here — that statement is for parents (docs/PLAN.md §6).
  */
-export default function PlacementCelebration({ reward, onMission, onMap, onParents }: PlacementCelebrationProps) {
+export default function PlacementCelebration({ reward, onPlan, onMap, onParents, nextSubject }: PlacementCelebrationProps) {
   const { t } = useTranslation()
   useEffect(() => {
     playFinish()
@@ -53,12 +56,24 @@ export default function PlacementCelebration({ reward, onMission, onMap, onParen
 
       <button
         type="button"
-        onClick={onMission}
+        onClick={onPlan}
+        data-testid="after-check-plan"
         className="min-h-[64px] w-full rounded-2xl bg-ludiko-green text-xl font-extrabold text-ludiko-text shadow-md active:scale-95"
       >
-        <span aria-hidden="true">🗺️ </span>
-        {t('learn.check.doneMission')}
+        <span aria-hidden="true">✨ </span>
+        {t('guide.check.afterPlan')}
       </button>
+      {nextSubject && (
+        <button
+          type="button"
+          onClick={nextSubject.onGo}
+          data-testid="after-check-next"
+          className="min-h-[56px] w-full rounded-2xl bg-ludiko-yellow text-lg font-extrabold text-ludiko-text shadow-md ring-2 ring-ludiko-orange active:scale-95"
+        >
+          <span aria-hidden="true">🧭 </span>
+          {t('guide.check.afterNext', { subject: nextSubject.name })}
+        </button>
+      )}
       <button
         type="button"
         onClick={onMap}

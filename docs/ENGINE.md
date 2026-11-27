@@ -2,7 +2,8 @@
 
 Pure, deterministic TypeScript in `src/engine/{mastery,diagnostic,planner}` — no UI, no clock,
 no randomness (callers pass `now`). Implements docs/PLAN.md §4 (core loop, level statement) and §6.
-Tests: `tests/engine.*.test.ts` (incl. an end-to-end learner simulation).
+Tests: `tests/engine.*.test.ts` (incl. an end-to-end learner simulation; route + next island in
+`tests/engine.route.test.ts`).
 
 ## Session flow (how the UI calls it)
 
@@ -84,8 +85,9 @@ answer moves 2 steps down. Passing a check moves one step up. All numbers live i
 `{ steps: { kind, skillId, itemCount }[], totalItems, estimatedSeconds }`.
 
 * **review**: up to 2 mastered skills whose review is due, most overdue first (3 items).
-* **new**: at most 1 — a `gap` (else never-seen, within `ceiling`) whose prerequisites are all
-  ≥ practised, foundations first (6 items + 60 s explanation).
+* **new**: at most 1 — **the next island on the route** (`route.ts`, below): a `gap` whose
+  prerequisites are all ≥ practised (gap repair, in route order), else the first never-seen skill on
+  the route whose prerequisites are all ≥ practised, within `ceiling` (6 items + 60 s explanation).
 * **check**: 1 skill ready for its mastery check (`masteryCheck.items`, never shrunk).
 * **practice**: 1–2 learning/practised skills (learning first, then due, then least recently seen).
 * Review/practice/check never pick a skill with a prerequisite in `gap`.
@@ -93,6 +95,31 @@ answer moves 2 steps down. Passing a check moves one step up. All numbers live i
   → review₂ → practice₂; leftover budget tops up practice/new steps (≤ 10 items each).
 * **Order shown**: review₁ (warm-up), check, new, practice₁, review₂, practice₂ — each skill once,
   so never the same skill twice in a row. Nothing to do ⇒ the earliest upcoming reviews.
+
+## Island route — `planner/route.ts`
+
+The child's map and the planner share ONE ordered path through a subject's skills, so islands are
+conquered one after another instead of "randomly".
+
+* `routeOrder(skills)`: Kahn's topological sort with a priority — among skills whose prerequisites are
+  already on the route, the lowest (grade, semester) first, then the order the skills are authored in
+  `content/skills/**` (registry order). Every prerequisite comes before its dependants; the route never
+  goes back to an earlier level (content validation keeps prerequisites at or below a skill's level).
+  Prerequisites outside the set are ignored; a cycle cannot loop. `routeIndex` = skillId → position.
+* `newCandidates(skills, progress, { ceiling })`: gaps with ready prerequisites (route order), then
+  never-seen skills with ready prerequisites within the ceiling (route order). `nextIsland` = the first.
+  The planner's `new` step takes it; a due review still opens the mission (warm-up) and a check /
+  practice still run, as before.
+* **Why it was "random" before:** `new` was sorted by *prerequisite depth* first (then level), so a
+  shallow grade I geometry skill (depth 1) came before grade 0 addition (depth 2), and grade III numbers
+  before grade I subtraction — while the map showed a grade/semester grid in alphabetical order with no
+  visible sequence, and placement-known skills were shown as "Cucerită" like real achievements.
+* Read model (`learner/readModels.buildSkillMap`, `getSkillMap`): nodes in route order with `route`
+  (position), `next` (the planner's next island, same ceiling as the mission) and `known` (mastered by
+  the level check and not practised since — placement seeding never stamps `stateChangedAt`). The map
+  shows numbered stops on a dotted path, the next island highlighted, known islands as "Știi deja"
+  (skipped), with filter chips (Toate / De făcut / În lucru / Gata / Ascunse) and a remembered toggle for
+  locked islands.
 
 ## Simulation (tests/engine.simulation.test.ts)
 

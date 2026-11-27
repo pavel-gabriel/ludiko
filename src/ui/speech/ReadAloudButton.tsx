@@ -4,12 +4,23 @@ import { useReadAloud } from './useReadAloud';
 /**
  * Small "Citește-mi" button. Renders nothing when no matching voice exists on this device.
  * `lang="en"` speaks `text` with an English voice and is labelled "Ascultă" (the English subject).
+ * `label` names it when a screen has more than one (e.g. "Ce am de făcut?" for a how-to line).
  */
-export default function ReadAloudButton({ text, className = '', lang }: { text: string; className?: string; lang?: 'en' }) {
+export default function ReadAloudButton({
+  text,
+  className = '',
+  lang,
+  label,
+}: {
+  text: string;
+  className?: string;
+  lang?: 'en';
+  label?: string;
+}) {
   const { t } = useTranslation();
   const { available, speaking, speak, stop } = useReadAloud(lang);
   if (!available || !text.trim()) return null;
-  const idleLabel = lang === 'en' ? t('items.listen') : t('items.readAloud');
+  const idleLabel = label ?? (lang === 'en' ? t('items.listen') : t('items.readAloud'));
   return (
     <button
       type="button"

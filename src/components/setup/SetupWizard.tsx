@@ -10,6 +10,7 @@ import StepDots from './StepDots';
 import PracticeStep from './PracticeStep';
 import ReadyStep from './ReadyStep';
 import { MODE_EMOJI, MODE_TONE } from './modes';
+import HowToPlay from '@/ui/guide/HowToPlay';
 import {
   defaultChoices,
   firstBlockedStep,
@@ -142,6 +143,7 @@ export default function SetupWizard({ context, startLabel, onStart }: SetupWizar
                 onClick={() => setMode(m)}
               />
             ))}
+            <HowToPlay topic={choices.mode} duel={context === 'duel'} />
           </div>
         )}
 
