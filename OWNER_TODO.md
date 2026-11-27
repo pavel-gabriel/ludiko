@@ -105,6 +105,16 @@ on demand. It only needs one more secret.
       answering wrong on purpose.
 - [ ] **Number words:** decide whether 21 000 should be "douăzeci și una de mii" (DOOM3, current) or
       "douăzeci și unu de mii".
+- [ ] **Phase 2 (grades V–VIII) content to review** (all *beta*, competence codes are guesses — check against the programa):
+  - Math V–VIII (`content/skills/mat/grade5-8`, generators `fractionsOps`, `algebra`, …): wording, grade placement.
+  - Romanian V–VIII: figures of speech (antithesis, inversion, metaphor), sentence-part/clause labels
+    (e.g. "Pare că…" as subjective clause), parts of speech edge cases ("toți", "fiecare", "întâi"),
+    paronyms/homonyms; reading texts are short (40–98 words) for VII–VIII.
+  - History V–VIII: approximate/traditional dates (flagged `approx` in `content/data/ist/events-gimnaziu.json`),
+    wording of WW2 / Holocaust / 1989 items.
+  - Biology/Physics/Chemistry: facts, grade placement of topics, school constants (g = 10 N/kg, c(apă) = 4200).
+- [ ] **Deploy rules** (task `deploy-rules`): Firestore rules now accept the subjects bio/fiz/chim — until deployed,
+      progress for those subjects is not synced to parent/class accounts.
 - [ ] Find a teacher or pedagogy students to review content. Each reviewed item can then move from `beta` to `reviewed`.
 
 ## 🟢 Legal & business
