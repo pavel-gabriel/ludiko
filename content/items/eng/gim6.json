@@ -1,0 +1,787 @@
+[
+ {
+  "id": "item.eng.read.6.t01",
+  "type": "read-and-answer",
+  "skillId": "eng.read.6",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.6",
+  "provenance": {
+   "id": "prov.item.eng.read.6.t01",
+   "kind": "item",
+   "title": "Item item.eng.read.6.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Last summer my family went to the seaside for a week. We travelled by train and the journey took six hours. The hotel was near the beach, so we went swimming every morning. One day my brother found a big shell and gave it to my mother. In the afternoon we visited an old lighthouse and climbed one hundred steps to the top. The view was fantastic! On the last evening we ate fish in a small restaurant and watched the sunset. I did not want to go home, but my school started the next week, so we left on Saturday.",
+   "en": "Last summer my family went to the seaside for a week. We travelled by train and the journey took six hours. The hotel was near the beach, so we went swimming every morning. One day my brother found a big shell and gave it to my mother. In the afternoon we visited an old lighthouse and climbed one hundred steps to the top. The view was fantastic! On the last evening we ate fish in a small restaurant and watched the sunset. I did not want to go home, but my school started the next week, so we left on Saturday."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.6.t01.q1",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t01.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: How did the family travel to the seaside?",
+     "en": "Choose the correct answer: How did the family travel to the seaside?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "by plane",
+       "en": "by plane"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "by train",
+       "en": "by train"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "by car",
+       "en": "by car"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.6.t01.q2",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t01.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What did the narrator's brother find?",
+     "en": "Choose the correct answer: What did the narrator's brother find?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a lighthouse",
+       "en": "a lighthouse"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a fish",
+       "en": "a fish"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a big shell",
+       "en": "a big shell"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.6.t01.q3",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t01.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The hotel was far from the beach.",
+     "en": "True or false? The hotel was far from the beach."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.6.t01.q4",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t01.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The family left on Saturday.",
+     "en": "True or false? The family left on Saturday."
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.6.t02",
+  "type": "read-and-answer",
+  "skillId": "eng.read.6",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.6",
+  "provenance": {
+   "id": "prov.item.eng.read.6.t02",
+   "kind": "item",
+   "title": "Item item.eng.read.6.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Yesterday our class went to the zoo. The bus left school at nine o'clock and we arrived at ten. First we saw the monkeys. They were very funny, and one of them stole a boy's hat! Then we watched the lions. They were sleeping under a tree, so we did not see much. At twelve o'clock we had a picnic near the lake. After lunch, our teacher, Mrs Pop, took us to the elephants. A baby elephant was playing with water and everybody laughed. We came back to school at four o'clock and we were all very tired but happy.",
+   "en": "Yesterday our class went to the zoo. The bus left school at nine o'clock and we arrived at ten. First we saw the monkeys. They were very funny, and one of them stole a boy's hat! Then we watched the lions. They were sleeping under a tree, so we did not see much. At twelve o'clock we had a picnic near the lake. After lunch, our teacher, Mrs Pop, took us to the elephants. A baby elephant was playing with water and everybody laughed. We came back to school at four o'clock and we were all very tired but happy."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.6.t02.q1",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t02.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What did the monkey take?",
+     "en": "Choose the correct answer: What did the monkey take?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a camera",
+       "en": "a camera"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a boy's hat",
+       "en": "a boy's hat"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a sandwich",
+       "en": "a sandwich"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.6.t02.q2",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t02.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What time did the bus leave school?",
+     "en": "Choose the correct answer: What time did the bus leave school?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "at ten o'clock",
+       "en": "at ten o'clock"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "at twelve o'clock",
+       "en": "at twelve o'clock"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "at nine o'clock",
+       "en": "at nine o'clock"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.6.t02.q3",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t02.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The lions were awake.",
+     "en": "True or false? The lions were awake."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.6.t02.q4",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t02.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The children had a picnic near the lake.",
+     "en": "True or false? The children had a picnic near the lake."
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.6.t03",
+  "type": "read-and-answer",
+  "skillId": "eng.read.6",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.6",
+  "provenance": {
+   "id": "prov.item.eng.read.6.t03",
+   "kind": "item",
+   "title": "Item item.eng.read.6.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "My grandmother lives in a small village in the mountains. I usually visit her in August. When I was little, I went there with my cousins, and we played in the river all day. Now I help my grandmother in the garden. She grows tomatoes, beans and flowers. Every morning she makes fresh bread in an old oven, and the whole house smells wonderful. In the evening we sit in front of the house and she tells me stories about her childhood. She says that long ago there was no electricity in the village. I love these summer holidays because everything is calm and beautiful.",
+   "en": "My grandmother lives in a small village in the mountains. I usually visit her in August. When I was little, I went there with my cousins, and we played in the river all day. Now I help my grandmother in the garden. She grows tomatoes, beans and flowers. Every morning she makes fresh bread in an old oven, and the whole house smells wonderful. In the evening we sit in front of the house and she tells me stories about her childhood. She says that long ago there was no electricity in the village. I love these summer holidays because everything is calm and beautiful."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.6.t03.q1",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t03.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: When does the narrator usually visit the grandmother?",
+     "en": "Choose the correct answer: When does the narrator usually visit the grandmother?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "at Christmas",
+       "en": "at Christmas"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "in August",
+       "en": "in August"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "in May",
+       "en": "in May"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.6.t03.q2",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t03.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What does the grandmother make every morning?",
+     "en": "Choose the correct answer: What does the grandmother make every morning?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "jam",
+       "en": "jam"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "soup",
+       "en": "soup"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "fresh bread",
+       "en": "fresh bread"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.6.t03.q3",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t03.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? There was electricity in the village long ago.",
+     "en": "True or false? There was electricity in the village long ago."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.6.t03.q4",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t03.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The narrator helps in the garden now.",
+     "en": "True or false? The narrator helps in the garden now."
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.6.t04",
+  "type": "read-and-answer",
+  "skillId": "eng.read.6",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.6",
+  "provenance": {
+   "id": "prov.item.eng.read.6.t04",
+   "kind": "item",
+   "title": "Item item.eng.read.6.t04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Last Friday was Sports Day at our school. It was sunny and warm, so we had the competitions outside. First there was a running race. Andrei was the fastest and he won a small gold medal. Then the girls played volleyball. My team was losing at first, but we played better in the second part and we won by two points! After that, the teachers played football against the older pupils. The teachers lost, but they were laughing all the time. At the end the headteacher gave prizes to everybody. I was very proud of our class.",
+   "en": "Last Friday was Sports Day at our school. It was sunny and warm, so we had the competitions outside. First there was a running race. Andrei was the fastest and he won a small gold medal. Then the girls played volleyball. My team was losing at first, but we played better in the second part and we won by two points! After that, the teachers played football against the older pupils. The teachers lost, but they were laughing all the time. At the end the headteacher gave prizes to everybody. I was very proud of our class."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.6.t04.q1",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t04.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t04.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What was the weather like on Sports Day?",
+     "en": "Choose the correct answer: What was the weather like on Sports Day?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "cold and windy",
+       "en": "cold and windy"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "sunny and warm",
+       "en": "sunny and warm"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "rainy",
+       "en": "rainy"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.6.t04.q2",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t04.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t04.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Who won the running race?",
+     "en": "Choose the correct answer: Who won the running race?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "the narrator",
+       "en": "the narrator"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a teacher",
+       "en": "a teacher"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Andrei",
+       "en": "Andrei"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.6.t04.q3",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t04.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t04.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The narrator's team lost the volleyball game.",
+     "en": "True or false? The narrator's team lost the volleyball game."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.6.t04.q4",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t04.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t04.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The teachers won the football match.",
+     "en": "True or false? The teachers won the football match."
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.6.t05",
+  "type": "read-and-answer",
+  "skillId": "eng.read.6",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.6",
+  "provenance": {
+   "id": "prov.item.eng.read.6.t05",
+   "kind": "item",
+   "title": "Item item.eng.read.6.t05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Last Sunday it was raining all day, so I stayed at home. At ten o'clock I was reading a book in my room when my little sister came in. She was holding a box of old photographs. We sat on the floor and looked at them together. There was a photo of our parents at a wedding and another one of our grandfather with his first car. While we were laughing at the funny clothes, my mum brought us hot chocolate. In the afternoon we made a pizza and watched a film. It was a lovely day, even without any sunshine.",
+   "en": "Last Sunday it was raining all day, so I stayed at home. At ten o'clock I was reading a book in my room when my little sister came in. She was holding a box of old photographs. We sat on the floor and looked at them together. There was a photo of our parents at a wedding and another one of our grandfather with his first car. While we were laughing at the funny clothes, my mum brought us hot chocolate. In the afternoon we made a pizza and watched a film. It was a lovely day, even without any sunshine."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.6.t05.q1",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t05.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t05.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What was the narrator doing at ten o'clock?",
+     "en": "Choose the correct answer: What was the narrator doing at ten o'clock?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "making a pizza",
+       "en": "making a pizza"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "reading a book",
+       "en": "reading a book"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "watching a film",
+       "en": "watching a film"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.6.t05.q2",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t05.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t05.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What was in the box?",
+     "en": "Choose the correct answer: What was in the box?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "toys",
+       "en": "toys"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "books",
+       "en": "books"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "old photographs",
+       "en": "old photographs"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.6.t05.q3",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t05.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t05.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? It was sunny on Sunday.",
+     "en": "True or false? It was sunny on Sunday."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.6.t05.q4",
+    "skillId": "eng.read.6",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.6.t05.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.6.t05.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The narrator and the sister drank hot chocolate.",
+     "en": "True or false? The narrator and the sister drank hot chocolate."
+    },
+    "correct": true
+   }
+  ]
+ }
+]

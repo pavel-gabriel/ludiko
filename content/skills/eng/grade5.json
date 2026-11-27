@@ -1,0 +1,564 @@
+[
+ {
+  "id": "eng.vocab.topics.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.1"
+   }
+  ],
+  "title": {
+   "ro": "Vocabular: familie, școală, mâncare, casă, animale, corp, haine",
+   "en": "Vocabulary: family, school, food, home, animals, body, clothes"
+  },
+  "prerequisites": [
+   "eng.jobs.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-vocab",
+    "params": {
+     "topics": [
+      "family",
+      "school",
+      "food",
+      "home",
+      "animals",
+      "body",
+      "clothes"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.vocab.topics.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.vocab.topics.5",
+   "kind": "data",
+   "title": "Skill eng.vocab.topics.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.tobe.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Verbul to be, have got și there is/are",
+   "en": "To be, have got and there is/are"
+  },
+  "prerequisites": [
+   "eng.questions.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "tobe"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.tobe.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.tobe.5",
+   "kind": "data",
+   "title": "Skill eng.grammar.tobe.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.present.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Present simple: afirmativ și persoana a III-a",
+   "en": "Present simple: affirmative and third person -s"
+  },
+  "prerequisites": [
+   "eng.present.4",
+   "eng.wordorder.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-verb",
+    "params": {
+     "mode": "present"
+    }
+   },
+   {
+    "generator": "eng-gim-order",
+    "params": {
+     "grades": [
+      5
+     ],
+     "kinds": [
+      "s"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.present.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.present.5",
+   "kind": "data",
+   "title": "Skill eng.grammar.present.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.pronouns.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Pronume personale, adjective posesive, this/these",
+   "en": "Personal pronouns, possessive adjectives, this/these"
+  },
+  "prerequisites": [
+   "eng.grammar.tobe.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "pronouns"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.pronouns.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.pronouns.5",
+   "kind": "data",
+   "title": "Skill eng.grammar.pronouns.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.questions.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Întrebări și negații la present simple",
+   "en": "Present simple questions and negatives"
+  },
+  "prerequisites": [
+   "eng.grammar.present.5",
+   "eng.questions.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-verb",
+    "params": {
+     "mode": "present-q"
+    }
+   },
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "qwords"
+    }
+   },
+   {
+    "generator": "eng-gim-order",
+    "params": {
+     "grades": [
+      5
+     ],
+     "kinds": [
+      "q",
+      "n"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.questions.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.questions.5",
+   "kind": "data",
+   "title": "Skill eng.grammar.questions.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.continuous.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Present continuous",
+   "en": "Present continuous"
+  },
+  "prerequisites": [
+   "eng.grammar.present.5",
+   "eng.continuous.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-verb",
+    "params": {
+     "mode": "continuous"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.continuous.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.continuous.5",
+   "kind": "data",
+   "title": "Skill eng.grammar.continuous.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.plurals.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Pluralul substantivelor",
+   "en": "Plural nouns"
+  },
+  "prerequisites": [
+   "eng.vocab.topics.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-noun",
+    "params": {
+     "mode": "plural"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.plurals.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.plurals.5",
+   "kind": "data",
+   "title": "Skill eng.grammar.plurals.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.articles.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Articolul a / an / the / some / any",
+   "en": "Articles a / an / the / some / any"
+  },
+  "prerequisites": [
+   "eng.grammar.plurals.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-noun",
+    "params": {
+     "mode": "article"
+    }
+   },
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "articles"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.articles.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.articles.5",
+   "kind": "data",
+   "title": "Skill eng.grammar.articles.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.prep.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Prepoziții de loc și de timp",
+   "en": "Prepositions of place and time"
+  },
+  "prerequisites": [
+   "eng.vocab.topics.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "prep"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.prep.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.prep.5",
+   "kind": "data",
+   "title": "Skill eng.grammar.prep.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.read.short.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Citim texte scurte (80-90 de cuvinte)",
+   "en": "Reading short texts (80-90 words)"
+  },
+  "prerequisites": [
+   "eng.grammar.present.5",
+   "eng.vocab.topics.5",
+   "eng.reading.4"
+  ],
+  "itemSources": [
+   {
+    "bank": "eng/gim5.json"
+   }
+  ],
+  "explanations": [
+   "exp.eng.read.short.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.read.short.5",
+   "kind": "data",
+   "title": "Skill eng.read.short.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.func.basic.5",
+  "subject": "eng",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "1.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Limbaj funcțional: saluturi, prezentări, cumpărături",
+   "en": "Functional language: greetings, introductions, shopping"
+  },
+  "prerequisites": [
+   "eng.grammar.tobe.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "func-basic"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.func.basic.5"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.func.basic.5",
+   "kind": "data",
+   "title": "Skill eng.func.basic.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ }
+]

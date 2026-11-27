@@ -1,0 +1,1531 @@
+{
+ "provenance": {
+  "id": "prov.data.eng.gim-vocab",
+  "kind": "data",
+  "title": "Ludiko English vocabulary lists by topic with Romanian glosses (grades V-VIII)",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Common words chosen by us for the topics of the programa (facts, British spelling and vocabulary: rubber, jumper, trousers, petrol, lorry, flat); Romanian glosses are our own. Awaiting review by an English teacher."
+ },
+ "topics": [
+  {
+   "id": "family",
+   "grade": 5,
+   "name": {
+    "ro": "Familia",
+    "en": "Family"
+   },
+   "words": [
+    {
+     "en": "mother",
+     "ro": "mamă"
+    },
+    {
+     "en": "father",
+     "ro": "tată"
+    },
+    {
+     "en": "sister",
+     "ro": "soră"
+    },
+    {
+     "en": "brother",
+     "ro": "frate"
+    },
+    {
+     "en": "grandmother",
+     "ro": "bunică"
+    },
+    {
+     "en": "grandfather",
+     "ro": "bunic"
+    },
+    {
+     "en": "uncle",
+     "ro": "unchi"
+    },
+    {
+     "en": "aunt",
+     "ro": "mătușă"
+    },
+    {
+     "en": "cousin",
+     "ro": "văr"
+    },
+    {
+     "en": "parents",
+     "ro": "părinți"
+    },
+    {
+     "en": "daughter",
+     "ro": "fiică"
+    },
+    {
+     "en": "son",
+     "ro": "fiu"
+    },
+    {
+     "en": "twins",
+     "ro": "gemeni"
+    },
+    {
+     "en": "neighbour",
+     "ro": "vecin"
+    }
+   ]
+  },
+  {
+   "id": "school",
+   "grade": 5,
+   "name": {
+    "ro": "Școala",
+    "en": "School"
+   },
+   "words": [
+    {
+     "en": "pencil",
+     "ro": "creion"
+    },
+    {
+     "en": "rubber",
+     "ro": "gumă de șters"
+    },
+    {
+     "en": "desk",
+     "ro": "bancă de școală"
+    },
+    {
+     "en": "blackboard",
+     "ro": "tablă"
+    },
+    {
+     "en": "notebook",
+     "ro": "caiet"
+    },
+    {
+     "en": "timetable",
+     "ro": "orar"
+    },
+    {
+     "en": "lesson",
+     "ro": "lecție"
+    },
+    {
+     "en": "break",
+     "ro": "pauză"
+    },
+    {
+     "en": "playground",
+     "ro": "curte de joacă"
+    },
+    {
+     "en": "library",
+     "ro": "bibliotecă"
+    },
+    {
+     "en": "subject",
+     "ro": "materie"
+    },
+    {
+     "en": "exam",
+     "ro": "examen"
+    },
+    {
+     "en": "headteacher",
+     "ro": "director"
+    },
+    {
+     "en": "classmate",
+     "ro": "coleg de clasă"
+    }
+   ]
+  },
+  {
+   "id": "food",
+   "grade": 5,
+   "name": {
+    "ro": "Mâncarea",
+    "en": "Food"
+   },
+   "words": [
+    {
+     "en": "chicken",
+     "ro": "pui"
+    },
+    {
+     "en": "soup",
+     "ro": "supă"
+    },
+    {
+     "en": "honey",
+     "ro": "miere"
+    },
+    {
+     "en": "biscuit",
+     "ro": "biscuit"
+    },
+    {
+     "en": "lemonade",
+     "ro": "limonadă"
+    },
+    {
+     "en": "sausage",
+     "ro": "cârnat"
+    },
+    {
+     "en": "strawberry",
+     "ro": "căpșună"
+    },
+    {
+     "en": "carrot",
+     "ro": "morcov"
+    },
+    {
+     "en": "onion",
+     "ro": "ceapă"
+    },
+    {
+     "en": "cucumber",
+     "ro": "castravete"
+    },
+    {
+     "en": "pasta",
+     "ro": "paste"
+    },
+    {
+     "en": "yoghurt",
+     "ro": "iaurt"
+    },
+    {
+     "en": "cake",
+     "ro": "tort"
+    },
+    {
+     "en": "pancake",
+     "ro": "clătită"
+    }
+   ]
+  },
+  {
+   "id": "home",
+   "grade": 5,
+   "name": {
+    "ro": "Casa",
+    "en": "Home"
+   },
+   "words": [
+    {
+     "en": "kitchen",
+     "ro": "bucătărie"
+    },
+    {
+     "en": "bedroom",
+     "ro": "dormitor"
+    },
+    {
+     "en": "bathroom",
+     "ro": "baie"
+    },
+    {
+     "en": "living room",
+     "ro": "sufragerie"
+    },
+    {
+     "en": "garden",
+     "ro": "grădină"
+    },
+    {
+     "en": "stairs",
+     "ro": "scări"
+    },
+    {
+     "en": "wardrobe",
+     "ro": "dulap de haine"
+    },
+    {
+     "en": "sofa",
+     "ro": "canapea"
+    },
+    {
+     "en": "carpet",
+     "ro": "covor"
+    },
+    {
+     "en": "curtain",
+     "ro": "perdea"
+    },
+    {
+     "en": "fridge",
+     "ro": "frigider"
+    },
+    {
+     "en": "lamp",
+     "ro": "lampă"
+    },
+    {
+     "en": "roof",
+     "ro": "acoperiș"
+    },
+    {
+     "en": "window",
+     "ro": "fereastră"
+    }
+   ]
+  },
+  {
+   "id": "animals",
+   "grade": 5,
+   "name": {
+    "ro": "Animalele",
+    "en": "Animals"
+   },
+   "words": [
+    {
+     "en": "horse",
+     "ro": "cal"
+    },
+    {
+     "en": "cow",
+     "ro": "vacă"
+    },
+    {
+     "en": "pig",
+     "ro": "porc"
+    },
+    {
+     "en": "rabbit",
+     "ro": "iepure"
+    },
+    {
+     "en": "duck",
+     "ro": "rață"
+    },
+    {
+     "en": "frog",
+     "ro": "broască"
+    },
+    {
+     "en": "snake",
+     "ro": "șarpe"
+    },
+    {
+     "en": "bear",
+     "ro": "urs"
+    },
+    {
+     "en": "lion",
+     "ro": "leu"
+    },
+    {
+     "en": "tiger",
+     "ro": "tigru"
+    },
+    {
+     "en": "giraffe",
+     "ro": "girafă"
+    },
+    {
+     "en": "butterfly",
+     "ro": "fluture"
+    },
+    {
+     "en": "spider",
+     "ro": "păianjen"
+    },
+    {
+     "en": "parrot",
+     "ro": "papagal"
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "grade": 5,
+   "name": {
+    "ro": "Corpul",
+    "en": "The body"
+   },
+   "words": [
+    {
+     "en": "head",
+     "ro": "cap"
+    },
+    {
+     "en": "hand",
+     "ro": "mână"
+    },
+    {
+     "en": "arm",
+     "ro": "braț"
+    },
+    {
+     "en": "leg",
+     "ro": "picior"
+    },
+    {
+     "en": "finger",
+     "ro": "deget"
+    },
+    {
+     "en": "knee",
+     "ro": "genunchi"
+    },
+    {
+     "en": "shoulder",
+     "ro": "umăr"
+    },
+    {
+     "en": "neck",
+     "ro": "gât"
+    },
+    {
+     "en": "back",
+     "ro": "spate"
+    },
+    {
+     "en": "stomach",
+     "ro": "stomac"
+    },
+    {
+     "en": "nose",
+     "ro": "nas"
+    },
+    {
+     "en": "ear",
+     "ro": "ureche"
+    },
+    {
+     "en": "mouth",
+     "ro": "gură"
+    },
+    {
+     "en": "eye",
+     "ro": "ochi"
+    }
+   ]
+  },
+  {
+   "id": "clothes",
+   "grade": 5,
+   "name": {
+    "ro": "Hainele",
+    "en": "Clothes"
+   },
+   "words": [
+    {
+     "en": "shirt",
+     "ro": "cămașă"
+    },
+    {
+     "en": "trousers",
+     "ro": "pantaloni"
+    },
+    {
+     "en": "jumper",
+     "ro": "pulover"
+    },
+    {
+     "en": "jacket",
+     "ro": "jachetă"
+    },
+    {
+     "en": "dress",
+     "ro": "rochie"
+    },
+    {
+     "en": "skirt",
+     "ro": "fustă"
+    },
+    {
+     "en": "socks",
+     "ro": "șosete"
+    },
+    {
+     "en": "boots",
+     "ro": "cizme"
+    },
+    {
+     "en": "scarf",
+     "ro": "fular"
+    },
+    {
+     "en": "gloves",
+     "ro": "mănuși"
+    },
+    {
+     "en": "hat",
+     "ro": "pălărie"
+    },
+    {
+     "en": "cap",
+     "ro": "șapcă"
+    },
+    {
+     "en": "coat",
+     "ro": "palton"
+    },
+    {
+     "en": "trainers",
+     "ro": "adidași"
+    }
+   ]
+  },
+  {
+   "id": "hobbies",
+   "grade": 6,
+   "name": {
+    "ro": "Hobby-uri",
+    "en": "Hobbies"
+   },
+   "words": [
+    {
+     "en": "painting",
+     "ro": "pictură"
+    },
+    {
+     "en": "swimming",
+     "ro": "înot"
+    },
+    {
+     "en": "cycling",
+     "ro": "ciclism"
+    },
+    {
+     "en": "dancing",
+     "ro": "dans"
+    },
+    {
+     "en": "chess",
+     "ro": "șah"
+    },
+    {
+     "en": "camping",
+     "ro": "drumeție cu cortul"
+    },
+    {
+     "en": "fishing",
+     "ro": "pescuit"
+    },
+    {
+     "en": "gardening",
+     "ro": "grădinărit"
+    },
+    {
+     "en": "singing",
+     "ro": "cântat"
+    },
+    {
+     "en": "skating",
+     "ro": "patinaj"
+    },
+    {
+     "en": "collecting",
+     "ro": "colecționat"
+    },
+    {
+     "en": "hiking",
+     "ro": "drumeții pe munte"
+    },
+    {
+     "en": "cooking",
+     "ro": "gătit"
+    },
+    {
+     "en": "knitting",
+     "ro": "tricotat"
+    }
+   ]
+  },
+  {
+   "id": "jobs",
+   "grade": 6,
+   "name": {
+    "ro": "Meserii",
+    "en": "Jobs"
+   },
+   "words": [
+    {
+     "en": "doctor",
+     "ro": "doctor"
+    },
+    {
+     "en": "nurse",
+     "ro": "asistentă medicală"
+    },
+    {
+     "en": "farmer",
+     "ro": "fermier"
+    },
+    {
+     "en": "driver",
+     "ro": "șofer"
+    },
+    {
+     "en": "pilot",
+     "ro": "pilot"
+    },
+    {
+     "en": "firefighter",
+     "ro": "pompier"
+    },
+    {
+     "en": "dentist",
+     "ro": "dentist"
+    },
+    {
+     "en": "engineer",
+     "ro": "inginer"
+    },
+    {
+     "en": "journalist",
+     "ro": "jurnalist"
+    },
+    {
+     "en": "chef",
+     "ro": "bucătar-șef"
+    },
+    {
+     "en": "vet",
+     "ro": "veterinar"
+    },
+    {
+     "en": "mechanic",
+     "ro": "mecanic"
+    },
+    {
+     "en": "lawyer",
+     "ro": "avocat"
+    },
+    {
+     "en": "postman",
+     "ro": "poștaș"
+    }
+   ]
+  },
+  {
+   "id": "town",
+   "grade": 6,
+   "name": {
+    "ro": "Orașul",
+    "en": "Town"
+   },
+   "words": [
+    {
+     "en": "bank",
+     "ro": "bancă"
+    },
+    {
+     "en": "post office",
+     "ro": "poștă"
+    },
+    {
+     "en": "hospital",
+     "ro": "spital"
+    },
+    {
+     "en": "museum",
+     "ro": "muzeu"
+    },
+    {
+     "en": "bridge",
+     "ro": "pod"
+    },
+    {
+     "en": "cinema",
+     "ro": "cinematograf"
+    },
+    {
+     "en": "supermarket",
+     "ro": "supermarket"
+    },
+    {
+     "en": "chemist's",
+     "ro": "farmacie"
+    },
+    {
+     "en": "market",
+     "ro": "piață (de legume)"
+    },
+    {
+     "en": "square",
+     "ro": "scuar"
+    },
+    {
+     "en": "theatre",
+     "ro": "teatru"
+    },
+    {
+     "en": "station",
+     "ro": "gară"
+    },
+    {
+     "en": "factory",
+     "ro": "fabrică"
+    },
+    {
+     "en": "castle",
+     "ro": "castel"
+    }
+   ]
+  },
+  {
+   "id": "transport",
+   "grade": 6,
+   "name": {
+    "ro": "Transportul",
+    "en": "Transport"
+   },
+   "words": [
+    {
+     "en": "train",
+     "ro": "tren"
+    },
+    {
+     "en": "tram",
+     "ro": "tramvai"
+    },
+    {
+     "en": "taxi",
+     "ro": "taxi"
+    },
+    {
+     "en": "plane",
+     "ro": "avion"
+    },
+    {
+     "en": "ship",
+     "ro": "vapor"
+    },
+    {
+     "en": "bicycle",
+     "ro": "bicicletă"
+    },
+    {
+     "en": "motorbike",
+     "ro": "motocicletă"
+    },
+    {
+     "en": "lorry",
+     "ro": "camion"
+    },
+    {
+     "en": "underground",
+     "ro": "metrou"
+    },
+    {
+     "en": "ticket",
+     "ro": "bilet"
+    },
+    {
+     "en": "platform",
+     "ro": "peron"
+    },
+    {
+     "en": "airport",
+     "ro": "aeroport"
+    },
+    {
+     "en": "harbour",
+     "ro": "port"
+    },
+    {
+     "en": "petrol",
+     "ro": "benzină"
+    }
+   ]
+  },
+  {
+   "id": "weather",
+   "grade": 6,
+   "name": {
+    "ro": "Vremea",
+    "en": "Weather"
+   },
+   "words": [
+    {
+     "en": "sunny",
+     "ro": "însorit"
+    },
+    {
+     "en": "cloudy",
+     "ro": "noros"
+    },
+    {
+     "en": "windy",
+     "ro": "cu vânt"
+    },
+    {
+     "en": "rainy",
+     "ro": "ploios"
+    },
+    {
+     "en": "foggy",
+     "ro": "cețos"
+    },
+    {
+     "en": "snowy",
+     "ro": "cu zăpadă"
+    },
+    {
+     "en": "storm",
+     "ro": "furtună"
+    },
+    {
+     "en": "thunder",
+     "ro": "tunete"
+    },
+    {
+     "en": "lightning",
+     "ro": "fulger"
+    },
+    {
+     "en": "rainbow",
+     "ro": "curcubeu"
+    },
+    {
+     "en": "temperature",
+     "ro": "temperatură"
+    },
+    {
+     "en": "freezing",
+     "ro": "foarte frig"
+    },
+    {
+     "en": "forecast",
+     "ro": "prognoză"
+    },
+    {
+     "en": "puddle",
+     "ro": "băltoacă"
+    }
+   ]
+  },
+  {
+   "id": "travel",
+   "grade": 6,
+   "name": {
+    "ro": "Călătoria",
+    "en": "Travel"
+   },
+   "words": [
+    {
+     "en": "passport",
+     "ro": "pașaport"
+    },
+    {
+     "en": "suitcase",
+     "ro": "valiză"
+    },
+    {
+     "en": "hotel",
+     "ro": "hotel"
+    },
+    {
+     "en": "tourist",
+     "ro": "turist"
+    },
+    {
+     "en": "map",
+     "ro": "hartă"
+    },
+    {
+     "en": "tent",
+     "ro": "cort"
+    },
+    {
+     "en": "souvenir",
+     "ro": "suvenir"
+    },
+    {
+     "en": "beach",
+     "ro": "plajă"
+    },
+    {
+     "en": "journey",
+     "ro": "călătorie"
+    },
+    {
+     "en": "guide",
+     "ro": "ghid"
+    },
+    {
+     "en": "sightseeing",
+     "ro": "vizitarea obiectivelor turistice"
+    },
+    {
+     "en": "destination",
+     "ro": "destinație"
+    },
+    {
+     "en": "customs",
+     "ro": "vamă"
+    },
+    {
+     "en": "reservation",
+     "ro": "rezervare"
+    }
+   ]
+  },
+  {
+   "id": "health",
+   "grade": 7,
+   "name": {
+    "ro": "Sănătatea",
+    "en": "Health"
+   },
+   "words": [
+    {
+     "en": "headache",
+     "ro": "durere de cap"
+    },
+    {
+     "en": "fever",
+     "ro": "febră"
+    },
+    {
+     "en": "cough",
+     "ro": "tuse"
+    },
+    {
+     "en": "cold",
+     "ro": "răceală"
+    },
+    {
+     "en": "medicine",
+     "ro": "medicament"
+    },
+    {
+     "en": "injection",
+     "ro": "injecție"
+    },
+    {
+     "en": "sore throat",
+     "ro": "durere în gât"
+    },
+    {
+     "en": "bandage",
+     "ro": "bandaj"
+    },
+    {
+     "en": "ambulance",
+     "ro": "ambulanță"
+    },
+    {
+     "en": "symptom",
+     "ro": "simptom"
+    },
+    {
+     "en": "patient",
+     "ro": "pacient"
+    },
+    {
+     "en": "recovery",
+     "ro": "însănătoșire"
+    },
+    {
+     "en": "allergy",
+     "ro": "alergie"
+    },
+    {
+     "en": "vitamin",
+     "ro": "vitamină"
+    }
+   ]
+  },
+  {
+   "id": "environment",
+   "grade": 7,
+   "name": {
+    "ro": "Mediul",
+    "en": "Environment"
+   },
+   "words": [
+    {
+     "en": "pollution",
+     "ro": "poluare"
+    },
+    {
+     "en": "recycling",
+     "ro": "reciclare"
+    },
+    {
+     "en": "rubbish",
+     "ro": "gunoi"
+    },
+    {
+     "en": "energy",
+     "ro": "energie"
+    },
+    {
+     "en": "forest",
+     "ro": "pădure"
+    },
+    {
+     "en": "climate",
+     "ro": "climă"
+    },
+    {
+     "en": "plastic",
+     "ro": "plastic"
+    },
+    {
+     "en": "wildlife",
+     "ro": "viață sălbatică"
+    },
+    {
+     "en": "global warming",
+     "ro": "încălzire globală"
+    },
+    {
+     "en": "solar panel",
+     "ro": "panou solar"
+    },
+    {
+     "en": "endangered",
+     "ro": "pe cale de dispariție"
+    },
+    {
+     "en": "fuel",
+     "ro": "combustibil"
+    },
+    {
+     "en": "waste",
+     "ro": "deșeuri"
+    },
+    {
+     "en": "planet",
+     "ro": "planetă"
+    }
+   ]
+  },
+  {
+   "id": "technology",
+   "grade": 7,
+   "name": {
+    "ro": "Tehnologia",
+    "en": "Technology"
+   },
+   "words": [
+    {
+     "en": "laptop",
+     "ro": "laptop"
+    },
+    {
+     "en": "keyboard",
+     "ro": "tastatură"
+    },
+    {
+     "en": "screen",
+     "ro": "ecran"
+    },
+    {
+     "en": "password",
+     "ro": "parolă"
+    },
+    {
+     "en": "website",
+     "ro": "site web"
+    },
+    {
+     "en": "download",
+     "ro": "a descărca"
+    },
+    {
+     "en": "charger",
+     "ro": "încărcător"
+    },
+    {
+     "en": "battery",
+     "ro": "baterie"
+    },
+    {
+     "en": "tablet",
+     "ro": "tabletă"
+    },
+    {
+     "en": "app",
+     "ro": "aplicație"
+    },
+    {
+     "en": "software",
+     "ro": "programe de calculator"
+    },
+    {
+     "en": "headphones",
+     "ro": "căști"
+    },
+    {
+     "en": "camera",
+     "ro": "aparat foto"
+    },
+    {
+     "en": "printer",
+     "ro": "imprimantă"
+    }
+   ]
+  },
+  {
+   "id": "shopping",
+   "grade": 7,
+   "name": {
+    "ro": "Cumpărături",
+    "en": "Shopping"
+   },
+   "words": [
+    {
+     "en": "receipt",
+     "ro": "bon fiscal"
+    },
+    {
+     "en": "discount",
+     "ro": "reducere"
+    },
+    {
+     "en": "cash",
+     "ro": "bani lichizi"
+    },
+    {
+     "en": "customer",
+     "ro": "client"
+    },
+    {
+     "en": "shop assistant",
+     "ro": "vânzător"
+    },
+    {
+     "en": "sale",
+     "ro": "reduceri de preț"
+    },
+    {
+     "en": "size",
+     "ro": "mărime"
+    },
+    {
+     "en": "queue",
+     "ro": "coadă"
+    },
+    {
+     "en": "basket",
+     "ro": "coș"
+    },
+    {
+     "en": "credit card",
+     "ro": "card de credit"
+    },
+    {
+     "en": "bargain",
+     "ro": "chilipir"
+    },
+    {
+     "en": "refund",
+     "ro": "returnare de bani"
+    },
+    {
+     "en": "trolley",
+     "ro": "cărucior"
+    },
+    {
+     "en": "price",
+     "ro": "preț"
+    }
+   ]
+  },
+  {
+   "id": "feelings",
+   "grade": 7,
+   "name": {
+    "ro": "Sentimente",
+    "en": "Feelings"
+   },
+   "words": [
+    {
+     "en": "excited",
+     "ro": "entuziasmat"
+    },
+    {
+     "en": "nervous",
+     "ro": "emoționat"
+    },
+    {
+     "en": "bored",
+     "ro": "plictisit"
+    },
+    {
+     "en": "proud",
+     "ro": "mândru"
+    },
+    {
+     "en": "jealous",
+     "ro": "gelos"
+    },
+    {
+     "en": "lonely",
+     "ro": "singuratic"
+    },
+    {
+     "en": "embarrassed",
+     "ro": "jenat"
+    },
+    {
+     "en": "worried",
+     "ro": "îngrijorat"
+    },
+    {
+     "en": "surprised",
+     "ro": "surprins"
+    },
+    {
+     "en": "tired",
+     "ro": "obosit"
+    },
+    {
+     "en": "grateful",
+     "ro": "recunoscător"
+    },
+    {
+     "en": "confident",
+     "ro": "încrezător"
+    },
+    {
+     "en": "disappointed",
+     "ro": "dezamăgit"
+    },
+    {
+     "en": "relieved",
+     "ro": "ușurat"
+    }
+   ]
+  },
+  {
+   "id": "media",
+   "grade": 8,
+   "name": {
+    "ro": "Mass-media",
+    "en": "Media"
+   },
+   "words": [
+    {
+     "en": "newspaper",
+     "ro": "ziar"
+    },
+    {
+     "en": "headline",
+     "ro": "titlu de presă"
+    },
+    {
+     "en": "article",
+     "ro": "articol"
+    },
+    {
+     "en": "magazine",
+     "ro": "revistă"
+    },
+    {
+     "en": "advertisement",
+     "ro": "reclamă"
+    },
+    {
+     "en": "channel",
+     "ro": "canal de televiziune"
+    },
+    {
+     "en": "broadcast",
+     "ro": "emisiune"
+    },
+    {
+     "en": "documentary",
+     "ro": "documentar"
+    },
+    {
+     "en": "interview",
+     "ro": "interviu"
+    },
+    {
+     "en": "blog",
+     "ro": "blog"
+    },
+    {
+     "en": "podcast",
+     "ro": "podcast"
+    },
+    {
+     "en": "viewer",
+     "ro": "telespectator"
+    },
+    {
+     "en": "reporter",
+     "ro": "reporter"
+    },
+    {
+     "en": "audience",
+     "ro": "public"
+    }
+   ]
+  },
+  {
+   "id": "careers",
+   "grade": 8,
+   "name": {
+    "ro": "Cariera",
+    "en": "Careers"
+   },
+   "words": [
+    {
+     "en": "career",
+     "ro": "carieră"
+    },
+    {
+     "en": "salary",
+     "ro": "salariu"
+    },
+    {
+     "en": "employee",
+     "ro": "angajat"
+    },
+    {
+     "en": "employer",
+     "ro": "angajator"
+    },
+    {
+     "en": "application",
+     "ro": "cerere de angajare"
+    },
+    {
+     "en": "qualification",
+     "ro": "calificare"
+    },
+    {
+     "en": "experience",
+     "ro": "experiență"
+    },
+    {
+     "en": "colleague",
+     "ro": "coleg de serviciu"
+    },
+    {
+     "en": "manager",
+     "ro": "manager"
+    },
+    {
+     "en": "profession",
+     "ro": "profesie"
+    },
+    {
+     "en": "unemployed",
+     "ro": "șomer"
+    },
+    {
+     "en": "part-time",
+     "ro": "cu jumătate de normă"
+    },
+    {
+     "en": "promotion",
+     "ro": "promovare"
+    },
+    {
+     "en": "deadline",
+     "ro": "termen limită"
+    }
+   ]
+  },
+  {
+   "id": "society",
+   "grade": 8,
+   "name": {
+    "ro": "Societatea",
+    "en": "Society"
+   },
+   "words": [
+    {
+     "en": "community",
+     "ro": "comunitate"
+    },
+    {
+     "en": "volunteer",
+     "ro": "voluntar"
+    },
+    {
+     "en": "charity",
+     "ro": "organizație caritabilă"
+    },
+    {
+     "en": "poverty",
+     "ro": "sărăcie"
+    },
+    {
+     "en": "equality",
+     "ro": "egalitate"
+    },
+    {
+     "en": "law",
+     "ro": "lege"
+    },
+    {
+     "en": "citizen",
+     "ro": "cetățean"
+    },
+    {
+     "en": "government",
+     "ro": "guvern"
+    },
+    {
+     "en": "election",
+     "ro": "alegeri"
+    },
+    {
+     "en": "tradition",
+     "ro": "tradiție"
+    },
+    {
+     "en": "culture",
+     "ro": "cultură"
+    },
+    {
+     "en": "minority",
+     "ro": "minoritate"
+    },
+    {
+     "en": "migration",
+     "ro": "migrație"
+    },
+    {
+     "en": "population",
+     "ro": "populație"
+    }
+   ]
+  },
+  {
+   "id": "science",
+   "grade": 8,
+   "name": {
+    "ro": "Știința",
+    "en": "Science"
+   },
+   "words": [
+    {
+     "en": "experiment",
+     "ro": "experiment"
+    },
+    {
+     "en": "scientist",
+     "ro": "om de știință"
+    },
+    {
+     "en": "laboratory",
+     "ro": "laborator"
+    },
+    {
+     "en": "invention",
+     "ro": "invenție"
+    },
+    {
+     "en": "discovery",
+     "ro": "descoperire"
+    },
+    {
+     "en": "microscope",
+     "ro": "microscop"
+    },
+    {
+     "en": "gravity",
+     "ro": "gravitație"
+    },
+    {
+     "en": "theory",
+     "ro": "teorie"
+    },
+    {
+     "en": "evidence",
+     "ro": "dovezi"
+    },
+    {
+     "en": "research",
+     "ro": "cercetare"
+    },
+    {
+     "en": "result",
+     "ro": "rezultat"
+    },
+    {
+     "en": "chemical",
+     "ro": "substanță chimică"
+    },
+    {
+     "en": "atom",
+     "ro": "atom"
+    },
+    {
+     "en": "telescope",
+     "ro": "telescop"
+    }
+   ]
+  },
+  {
+   "id": "arts",
+   "grade": 8,
+   "name": {
+    "ro": "Arta și cultura",
+    "en": "Arts"
+   },
+   "words": [
+    {
+     "en": "artist",
+     "ro": "artist"
+    },
+    {
+     "en": "exhibition",
+     "ro": "expoziție"
+    },
+    {
+     "en": "sculpture",
+     "ro": "sculptură"
+    },
+    {
+     "en": "orchestra",
+     "ro": "orchestră"
+    },
+    {
+     "en": "concert",
+     "ro": "concert"
+    },
+    {
+     "en": "novel",
+     "ro": "roman"
+    },
+    {
+     "en": "poem",
+     "ro": "poem"
+    },
+    {
+     "en": "author",
+     "ro": "autor"
+    },
+    {
+     "en": "performance",
+     "ro": "spectacol"
+    },
+    {
+     "en": "festival",
+     "ro": "festival"
+    },
+    {
+     "en": "gallery",
+     "ro": "galerie"
+    },
+    {
+     "en": "composer",
+     "ro": "compozitor"
+    },
+    {
+     "en": "stage",
+     "ro": "scenă"
+    },
+    {
+     "en": "painter",
+     "ro": "pictor"
+    }
+   ]
+  }
+ ]
+}

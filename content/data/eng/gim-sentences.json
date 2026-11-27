@@ -1,0 +1,927 @@
+{
+ "provenance": {
+  "id": "prov.data.eng.gim-sentences",
+  "kind": "data",
+  "title": "Ludiko English practice sentences (word order), verb phrases and passive/active pairs",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Short original sentences written by us for word-order, reported-speech and passive-voice items; no sentence is copied from a textbook or exam. Every sentence has distinct words so the order is unambiguous once the capital letter fixes the start. Awaiting review by an English teacher."
+ },
+ "sentences": [
+  {
+   "g": 5,
+   "k": "s",
+   "text": "I like pizza and ice cream."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "My sister plays the guitar every day."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "We have lunch at one o'clock."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "The cat is sleeping under my bed."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "They are playing football in the park."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "Tom goes to school by bus."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "There is a big tree in our garden."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "Anna and I are good friends."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "My father works in a hospital."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "She is wearing a red dress today."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "Maria drinks milk every morning."
+  },
+  {
+   "g": 5,
+   "k": "s",
+   "text": "Two children are reading in the library."
+  },
+  {
+   "g": 5,
+   "k": "n",
+   "text": "I do not like spiders."
+  },
+  {
+   "g": 5,
+   "k": "n",
+   "text": "He does not play chess."
+  },
+  {
+   "g": 5,
+   "k": "n",
+   "text": "We are not at home."
+  },
+  {
+   "g": 5,
+   "k": "n",
+   "text": "My mother does not drink coffee."
+  },
+  {
+   "g": 5,
+   "k": "n",
+   "text": "They do not have a car."
+  },
+  {
+   "g": 5,
+   "k": "n",
+   "text": "The shop is not open on Sundays."
+  },
+  {
+   "g": 5,
+   "k": "q",
+   "text": "Do you like chocolate?"
+  },
+  {
+   "g": 5,
+   "k": "q",
+   "text": "Where does your uncle live?"
+  },
+  {
+   "g": 5,
+   "k": "q",
+   "text": "Is she a good student?"
+  },
+  {
+   "g": 5,
+   "k": "q",
+   "text": "What are you doing now?"
+  },
+  {
+   "g": 5,
+   "k": "q",
+   "text": "How many brothers have you got?"
+  },
+  {
+   "g": 5,
+   "k": "q",
+   "text": "Does he walk to school?"
+  },
+  {
+   "g": 5,
+   "k": "q",
+   "text": "What time do you get up?"
+  },
+  {
+   "g": 5,
+   "k": "q",
+   "text": "Can you speak English?"
+  },
+  {
+   "g": 5,
+   "k": "q",
+   "text": "Are they playing in the garden?"
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "Yesterday I visited my grandparents."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "We went to the seaside last summer."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "She was reading a book when I called."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "My brother always plays football after school."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "Tom is taller than his sister."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "This is the best film ever."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "I am going to visit Paris next year."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "They will arrive at six o'clock."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "We bought some bread and cheese."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "He watched TV while his mother cooked dinner."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "My mother usually cooks dinner at seven."
+  },
+  {
+   "g": 6,
+   "k": "s",
+   "text": "There are some biscuits on the table."
+  },
+  {
+   "g": 6,
+   "k": "n",
+   "text": "I did not go to school yesterday."
+  },
+  {
+   "g": 6,
+   "k": "n",
+   "text": "She did not see the film."
+  },
+  {
+   "g": 6,
+   "k": "n",
+   "text": "We were not at home last night."
+  },
+  {
+   "g": 6,
+   "k": "n",
+   "text": "He is never late for school."
+  },
+  {
+   "g": 6,
+   "k": "n",
+   "text": "They did not buy any apples."
+  },
+  {
+   "g": 6,
+   "k": "n",
+   "text": "It will not rain tomorrow."
+  },
+  {
+   "g": 6,
+   "k": "q",
+   "text": "Did you watch the match yesterday?"
+  },
+  {
+   "g": 6,
+   "k": "q",
+   "text": "Where did they go on holiday?"
+  },
+  {
+   "g": 6,
+   "k": "q",
+   "text": "What were you doing at eight o'clock?"
+  },
+  {
+   "g": 6,
+   "k": "q",
+   "text": "How often do you play tennis?"
+  },
+  {
+   "g": 6,
+   "k": "q",
+   "text": "Are you going to buy a new bike?"
+  },
+  {
+   "g": 6,
+   "k": "q",
+   "text": "Is your cat bigger than my dog?"
+  },
+  {
+   "g": 6,
+   "k": "q",
+   "text": "Will you help me tomorrow?"
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "I have never been to London."
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "She has lived here since 2019."
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "We have just finished our homework."
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "He has already eaten his lunch."
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "They have been friends for five years."
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "You should drink more water."
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "We must not talk in the library."
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "I will help if you ask me."
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "My dad is going to repaint the kitchen."
+  },
+  {
+   "g": 7,
+   "k": "s",
+   "text": "The film was longer than I expected."
+  },
+  {
+   "g": 7,
+   "k": "n",
+   "text": "I have not finished my project yet."
+  },
+  {
+   "g": 7,
+   "k": "n",
+   "text": "She has not seen that film."
+  },
+  {
+   "g": 7,
+   "k": "n",
+   "text": "They have not arrived yet."
+  },
+  {
+   "g": 7,
+   "k": "n",
+   "text": "You must not use your phone here."
+  },
+  {
+   "g": 7,
+   "k": "n",
+   "text": "We do not have to wear a uniform."
+  },
+  {
+   "g": 7,
+   "k": "n",
+   "text": "He could not open the door."
+  },
+  {
+   "g": 7,
+   "k": "q",
+   "text": "Have you ever eaten sushi?"
+  },
+  {
+   "g": 7,
+   "k": "q",
+   "text": "How long have you lived here?"
+  },
+  {
+   "g": 7,
+   "k": "q",
+   "text": "Has she finished her homework yet?"
+  },
+  {
+   "g": 7,
+   "k": "q",
+   "text": "Could you open the window, please?"
+  },
+  {
+   "g": 7,
+   "k": "q",
+   "text": "What have you done with my keys?"
+  },
+  {
+   "g": 7,
+   "k": "q",
+   "text": "Why did he leave early?"
+  },
+  {
+   "g": 7,
+   "k": "q",
+   "text": "Who is your favourite singer?"
+  },
+  {
+   "g": 7,
+   "k": "q",
+   "text": "Should we take an umbrella?"
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "English is spoken all over the world."
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "The window was broken by a ball."
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "This bridge was built in 1980."
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "If it rains, we will stay at home."
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "She said that Maria was very tired."
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "The girl who lives next door is my cousin."
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "I used to play chess with my grandfather."
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "If you heat ice, it melts."
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "A man whose car was stolen called the police."
+  },
+  {
+   "g": 8,
+   "k": "s",
+   "text": "Dan told me that he would call later."
+  },
+  {
+   "g": 8,
+   "k": "n",
+   "text": "The homework was not done by Tom."
+  },
+  {
+   "g": 8,
+   "k": "n",
+   "text": "If it does not rain, we will go out."
+  },
+  {
+   "g": 8,
+   "k": "n",
+   "text": "Tom said that he did not know."
+  },
+  {
+   "g": 8,
+   "k": "n",
+   "text": "This book was not written by my teacher."
+  },
+  {
+   "g": 8,
+   "k": "q",
+   "text": "When was the telephone invented?"
+  },
+  {
+   "g": 8,
+   "k": "q",
+   "text": "Where were these photos taken?"
+  },
+  {
+   "g": 8,
+   "k": "q",
+   "text": "What will you do if it rains?"
+  },
+  {
+   "g": 8,
+   "k": "q",
+   "text": "Is English spoken in this country?"
+  },
+  {
+   "g": 8,
+   "k": "q",
+   "text": "How many languages are spoken in Switzerland?"
+  },
+  {
+   "g": 8,
+   "k": "q",
+   "text": "Did Mr Popa tell you the answer?"
+  }
+ ],
+ "phrases": [
+  {
+   "v": "play",
+   "rest": "football"
+  },
+  {
+   "v": "like",
+   "rest": "pizza"
+  },
+  {
+   "v": "live",
+   "rest": "in Cluj"
+  },
+  {
+   "v": "study",
+   "rest": "English"
+  },
+  {
+   "v": "have",
+   "rest": "a dog"
+  },
+  {
+   "v": "go",
+   "rest": "to school by bus"
+  },
+  {
+   "v": "watch",
+   "rest": "cartoons"
+  },
+  {
+   "v": "read",
+   "rest": "comics"
+  },
+  {
+   "v": "drink",
+   "rest": "tea"
+  },
+  {
+   "v": "speak",
+   "rest": "French"
+  },
+  {
+   "v": "work",
+   "rest": "in a shop"
+  },
+  {
+   "v": "eat",
+   "rest": "fruit"
+  },
+  {
+   "v": "write",
+   "rest": "stories"
+  },
+  {
+   "v": "sing",
+   "rest": "songs"
+  },
+  {
+   "v": "swim",
+   "rest": "in the lake"
+  },
+  {
+   "v": "know",
+   "rest": "the answer"
+  },
+  {
+   "v": "want",
+   "rest": "a new phone"
+  },
+  {
+   "v": "need",
+   "rest": "some help"
+  },
+  {
+   "v": "make",
+   "rest": "cakes"
+  },
+  {
+   "v": "walk",
+   "rest": "to work"
+  },
+  {
+   "v": "cook",
+   "rest": "dinner"
+  },
+  {
+   "v": "paint",
+   "rest": "pictures"
+  },
+  {
+   "v": "collect",
+   "rest": "stamps"
+  },
+  {
+   "v": "run",
+   "rest": "in the park"
+  },
+  {
+   "v": "sleep",
+   "rest": "late"
+  },
+  {
+   "v": "buy",
+   "rest": "fresh bread"
+  },
+  {
+   "v": "ride",
+   "rest": "a bike"
+  },
+  {
+   "v": "listen",
+   "rest": "to music"
+  },
+  {
+   "v": "visit",
+   "rest": "the museum"
+  },
+  {
+   "v": "dance",
+   "rest": "at the party"
+  },
+  {
+   "v": "carry",
+   "rest": "a heavy bag"
+  },
+  {
+   "v": "stop",
+   "rest": "at the corner"
+  },
+  {
+   "v": "plan",
+   "rest": "a trip"
+  },
+  {
+   "v": "try",
+   "rest": "a new game"
+  },
+  {
+   "v": "shop",
+   "rest": "at the market"
+  },
+  {
+   "v": "travel",
+   "rest": "by train"
+  },
+  {
+   "v": "enjoy",
+   "rest": "the film"
+  },
+  {
+   "v": "hurry",
+   "rest": "to school"
+  },
+  {
+   "v": "wash",
+   "rest": "the car"
+  },
+  {
+   "v": "fix",
+   "rest": "bikes"
+  },
+  {
+   "v": "teach",
+   "rest": "maths"
+  },
+  {
+   "v": "give",
+   "rest": "presents"
+  },
+  {
+   "v": "take",
+   "rest": "photos"
+  },
+  {
+   "v": "meet",
+   "rest": "friends"
+  },
+  {
+   "v": "hear",
+   "rest": "the news"
+  },
+  {
+   "v": "send",
+   "rest": "emails"
+  },
+  {
+   "v": "wear",
+   "rest": "a blue coat"
+  },
+  {
+   "v": "choose",
+   "rest": "a book"
+  },
+  {
+   "v": "do",
+   "rest": "the shopping"
+  }
+ ],
+ "passives": [
+  {
+   "s": "Farmers",
+   "a": "farmers",
+   "sp": true,
+   "v": "grow",
+   "o": "apples",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "Bakers",
+   "a": "bakers",
+   "sp": true,
+   "v": "make",
+   "o": "bread",
+   "pl": false,
+   "t": "b"
+  },
+  {
+   "s": "My mother",
+   "a": "my mother",
+   "sp": false,
+   "v": "cook",
+   "o": "dinner",
+   "pl": false,
+   "t": "b"
+  },
+  {
+   "s": "The teacher",
+   "a": "the teacher",
+   "sp": false,
+   "v": "write",
+   "o": "the exercises",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "Many people",
+   "a": "many people",
+   "sp": true,
+   "v": "speak",
+   "o": "English",
+   "pl": false,
+   "t": "b"
+  },
+  {
+   "s": "Workers",
+   "a": "workers",
+   "sp": true,
+   "v": "build",
+   "o": "houses",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "A thief",
+   "a": "a thief",
+   "sp": false,
+   "v": "steal",
+   "o": "the bike",
+   "pl": false,
+   "t": "p"
+  },
+  {
+   "s": "Students",
+   "a": "students",
+   "sp": true,
+   "v": "read",
+   "o": "books",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "Tom",
+   "a": "Tom",
+   "sp": false,
+   "v": "break",
+   "o": "the window",
+   "pl": false,
+   "t": "p"
+  },
+  {
+   "s": "The children",
+   "a": "the children",
+   "sp": true,
+   "v": "eat",
+   "o": "ice cream",
+   "pl": false,
+   "t": "b"
+  },
+  {
+   "s": "My grandfather",
+   "a": "my grandfather",
+   "sp": false,
+   "v": "grow",
+   "o": "tomatoes",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "A famous painter",
+   "a": "a famous painter",
+   "sp": false,
+   "v": "paint",
+   "o": "this picture",
+   "pl": false,
+   "t": "p"
+  },
+  {
+   "s": "Cats",
+   "a": "cats",
+   "sp": true,
+   "v": "catch",
+   "o": "mice",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "The company",
+   "a": "the company",
+   "sp": false,
+   "v": "sell",
+   "o": "computers",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "Maria",
+   "a": "Maria",
+   "sp": false,
+   "v": "write",
+   "o": "the letter",
+   "pl": false,
+   "t": "p"
+  },
+  {
+   "s": "The pupils",
+   "a": "the pupils",
+   "sp": true,
+   "v": "clean",
+   "o": "the classroom",
+   "pl": false,
+   "t": "b"
+  },
+  {
+   "s": "Bees",
+   "a": "bees",
+   "sp": true,
+   "v": "make",
+   "o": "honey",
+   "pl": false,
+   "t": "b"
+  },
+  {
+   "s": "The police",
+   "a": "the police",
+   "sp": true,
+   "v": "catch",
+   "o": "the thief",
+   "pl": false,
+   "t": "p"
+  },
+  {
+   "s": "A student",
+   "a": "a student",
+   "sp": false,
+   "v": "write",
+   "o": "this essay",
+   "pl": false,
+   "t": "p"
+  },
+  {
+   "s": "The mechanic",
+   "a": "the mechanic",
+   "sp": false,
+   "v": "fix",
+   "o": "the car",
+   "pl": false,
+   "t": "b"
+  },
+  {
+   "s": "The postman",
+   "a": "the postman",
+   "sp": false,
+   "v": "bring",
+   "o": "the letters",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "My aunt",
+   "a": "my aunt",
+   "sp": false,
+   "v": "send",
+   "o": "these postcards",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "Tourists",
+   "a": "tourists",
+   "sp": true,
+   "v": "visit",
+   "o": "the castle",
+   "pl": false,
+   "t": "b"
+  },
+  {
+   "s": "The guide",
+   "a": "the guide",
+   "sp": false,
+   "v": "open",
+   "o": "the museum",
+   "pl": false,
+   "t": "b"
+  },
+  {
+   "s": "My brother",
+   "a": "my brother",
+   "sp": false,
+   "v": "wash",
+   "o": "the dishes",
+   "pl": true,
+   "t": "b"
+  },
+  {
+   "s": "A boy",
+   "a": "a boy",
+   "sp": false,
+   "v": "find",
+   "o": "this wallet",
+   "pl": false,
+   "t": "p"
+  }
+ ]
+}

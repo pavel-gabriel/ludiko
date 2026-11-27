@@ -134,7 +134,7 @@ whether the 10 official points ("din oficiu") exist in the current methodology.
 |---|---|---|---|---|
 | EN VIII | Limba și literatura română | 4 | 120 min | Literary text (20), non-literary text (20), language: 10 items x 3 (30) = 70 |
 | EN VIII | Matematică | 4 | 120 min | I: 6 x 5 (calculations), II: 6 x 5 (algebra, functions), III: 3 x 10 (geometry, problems) = 90 |
-| EN VI | Limbă și comunicare (Romanian part) | 3 | 90 min | Literary text (20), non-literary text (20), language: 10 items x 2 (20) = 60 |
+| EN VI | Limbă și comunicare (Romanian + English parts) | 3 | 120 min | Romanian: literary text (20), non-literary text (20), language: 10 items x 2 (20) = 60; English: reading text (10), vocabulary and grammar in context 8 x 2 (16), functional language 2 x 3 (6) = 32; total 92 |
 | EN VI | Matematică și Științe | 3 | 90 min | Maths: 5 x 4 + 5 x 4 (40), sciences (bio 3, fiz 3, geo 2) x 3 (24) = 64 |
 
 - **Several fixed tests per paper.** Each test has a fixed seed (`ExamBlueprint.seed`), so "Testul 2" is always
@@ -162,12 +162,20 @@ whether the 10 official points ("din oficiu") exist in the current methodology.
   (`ExamEntryCard`); `/learn/exam` shows the EN VI / EN VIII picker for grades VI–VIII and the old II/IV picker
   otherwise.
 
+### The English part of EN VI (approximate)
+
+`Limbă și comunicare` now ends with three English sections, built from the grade V–VI `eng` skills (docs/ENGINE.md,
+English V–VIII): **Reading** (one original text of 80–105 words from `eng.read.short.5` / `eng.read.6`, partial credit per
+question, 10 p), **Vocabulary and grammar** (2 vocabulary items from `eng.vocab.topics.5/6` + 6 grammar items from the
+grade V–VI generators, 2 p each) and **Functional language** (2 items from `eng.func.basic.5` / `eng.func.directions.6`,
+3 p each). The structure, points and 120-minute total are Ludiko's approximation, not the real paper (the real EN VI
+modern-language paper may be separate; to verify). Per-competence feedback gains `eng_read`, `eng_lang`, `eng_func`
+(labels in `examGim.comp.*`). The three tests rotate the reading text and the grammar skills. Listening and writing
+are not simulated.
+
 ### Not simulated yet (TODO)
 
-- **Modern language (EN VI, *Limbă și comunicare*)**: there is no English (or other modern-language) item source
-  in the content registry, so that half of the paper is left out and the picker says so. Add it when an
-  English subject ships.
-- **Writing tasks** (redactare, EN VIII Română): needs free-text input and manual or AI marking. Not simulated;
+- **Writing tasks** (redactare, EN VIII Română; English writing in EN VI): needs free-text input and manual or AI marking. Not simulated;
   the Romanian paper is therefore out of 70, not 100.
 - **Longer reading passages** (150–300 words) for EN VIII Română: the existing grade VII–VIII text banks (3 passages
   per skill, 50–100 words) are reused; writing longer original passages needs human review and is left as a

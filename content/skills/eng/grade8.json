@@ -1,0 +1,600 @@
+[
+ {
+  "id": "eng.vocab.topics.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.1"
+   }
+  ],
+  "title": {
+   "ro": "Vocabular: media, carieră, societate, știință, artă",
+   "en": "Vocabulary: media, careers, society, science, arts"
+  },
+  "prerequisites": [
+   "eng.vocab.topics.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-vocab",
+    "params": {
+     "topics": [
+      "media",
+      "careers",
+      "society",
+      "science",
+      "arts"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.vocab.topics.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.vocab.topics.8",
+   "kind": "data",
+   "title": "Skill eng.vocab.topics.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.cond.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Condiționale tip 0 și 1",
+   "en": "Conditionals 0 and 1"
+  },
+  "prerequisites": [
+   "eng.grammar.futureforms.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "conditionals"
+    }
+   },
+   {
+    "generator": "eng-gim-order",
+    "params": {
+     "grades": [
+      8
+     ],
+     "kinds": [
+      "s",
+      "n"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.cond.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.cond.8",
+   "kind": "data",
+   "title": "Skill eng.grammar.cond.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.passive.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Diateza pasivă (present și past simple)",
+   "en": "The passive (simple present and past)"
+  },
+  "prerequisites": [
+   "eng.grammar.perfect.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-passive",
+    "params": {}
+   },
+   {
+    "generator": "eng-gim-order",
+    "params": {
+     "grades": [
+      8
+     ],
+     "kinds": [
+      "q"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.passive.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.passive.8",
+   "kind": "data",
+   "title": "Skill eng.grammar.passive.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.tenses.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Recapitulare: alegem timpul potrivit",
+   "en": "Tense review: choosing the right tense"
+  },
+  "prerequisites": [
+   "eng.grammar.perfectvs.7",
+   "eng.grammar.continuous.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-verb",
+    "params": {
+     "mode": "tense-mix"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.tenses.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.tenses.8",
+   "kind": "data",
+   "title": "Skill eng.grammar.tenses.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.relative.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Propoziții relative: who, which, that, where, whose",
+   "en": "Relative clauses: who, which, that, where, whose"
+  },
+  "prerequisites": [
+   "eng.grammar.wordorder.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "relative"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.relative.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.relative.8",
+   "kind": "data",
+   "title": "Skill eng.grammar.relative.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.patterns.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Construcții verbale: -ing sau to + verb",
+   "en": "Verb patterns: -ing or to + verb"
+  },
+  "prerequisites": [
+   "eng.grammar.modals.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "patterns"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.patterns.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.patterns.8",
+   "kind": "data",
+   "title": "Skill eng.grammar.patterns.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.reported.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Vorbirea indirectă (de bază)",
+   "en": "Reported speech (basics)"
+  },
+  "prerequisites": [
+   "eng.grammar.pastcont.6",
+   "eng.grammar.futureforms.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-reported",
+    "params": {}
+   },
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "reported"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.reported.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.reported.8",
+   "kind": "data",
+   "title": "Skill eng.grammar.reported.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.phrasal.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.1"
+   }
+  ],
+  "title": {
+   "ro": "Verbe frazale frecvente (II)",
+   "en": "Common phrasal verbs (II)"
+  },
+  "prerequisites": [
+   "eng.grammar.phrasal.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "phrasal-2"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.phrasal.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.phrasal.8",
+   "kind": "data",
+   "title": "Skill eng.grammar.phrasal.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.usedto.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Used to și verbe modale de probabilitate",
+   "en": "Used to and modals of probability"
+  },
+  "prerequisites": [
+   "eng.grammar.modals.7",
+   "eng.grammar.past.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "usedto"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.usedto.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.usedto.8",
+   "kind": "data",
+   "title": "Skill eng.grammar.usedto.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.wordform.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.1"
+   }
+  ],
+  "title": {
+   "ro": "Formarea cuvintelor: prefixe și sufixe",
+   "en": "Word formation: prefixes and suffixes"
+  },
+  "prerequisites": [
+   "eng.vocab.topics.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-wordform",
+    "params": {}
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.wordform.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.wordform.8",
+   "kind": "data",
+   "title": "Skill eng.grammar.wordform.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.read.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Citim texte (145-155 de cuvinte)",
+   "en": "Reading texts (145-155 words)"
+  },
+  "prerequisites": [
+   "eng.read.7",
+   "eng.grammar.tenses.8"
+  ],
+  "itemSources": [
+   {
+    "bank": "eng/gim8.json"
+   }
+  ],
+  "explanations": [
+   "exp.eng.read.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.read.8",
+   "kind": "data",
+   "title": "Skill eng.read.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.func.opinion.8",
+  "subject": "eng",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "1.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "2.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Limbaj funcțional: opinii, telefon, e-mail formal",
+   "en": "Functional language: opinions, phone calls, formal emails"
+  },
+  "prerequisites": [
+   "eng.func.invitations.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "opinion"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.func.opinion.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.func.opinion.8",
+   "kind": "data",
+   "title": "Skill eng.func.opinion.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ }
+]

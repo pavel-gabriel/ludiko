@@ -1,0 +1,787 @@
+[
+ {
+  "id": "item.eng.read.short.5.t01",
+  "type": "read-and-answer",
+  "skillId": "eng.read.short.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.short.5",
+  "provenance": {
+   "id": "prov.item.eng.read.short.5.t01",
+   "kind": "item",
+   "title": "Item item.eng.read.short.5.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "My name is Ana and I am eleven years old. I go to school in Brasov. My school is big and old. It has twenty classrooms and a small library. I get up at seven o'clock and I walk to school with my friend Maria. Our first lesson starts at eight. I like English and music, but I do not like maths. At twelve o'clock we have lunch in the canteen. After school I do my homework and play with my dog, Rex.",
+   "en": "My name is Ana and I am eleven years old. I go to school in Brasov. My school is big and old. It has twenty classrooms and a small library. I get up at seven o'clock and I walk to school with my friend Maria. Our first lesson starts at eight. I like English and music, but I do not like maths. At twelve o'clock we have lunch in the canteen. After school I do my homework and play with my dog, Rex."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.short.5.t01.q1",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t01.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: How old is Ana?",
+     "en": "Choose the correct answer: How old is Ana?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "eleven",
+       "en": "eleven"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "ten",
+       "en": "ten"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "twelve",
+       "en": "twelve"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.short.5.t01.q2",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t01.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: How does Ana go to school?",
+     "en": "Choose the correct answer: How does Ana go to school?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Her mother takes her by car.",
+       "en": "Her mother takes her by car."
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "She walks with her friend.",
+       "en": "She walks with her friend."
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "She goes by bus.",
+       "en": "She goes by bus."
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.short.5.t01.q3",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t01.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Ana likes maths.",
+     "en": "True or false? Ana likes maths."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.short.5.t01.q4",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t01.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Ana has lunch at school.",
+     "en": "True or false? Ana has lunch at school."
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.short.5.t02",
+  "type": "read-and-answer",
+  "skillId": "eng.read.short.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.short.5",
+  "provenance": {
+   "id": "prov.item.eng.read.short.5.t02",
+   "kind": "item",
+   "title": "Item item.eng.read.short.5.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "There are five people in my family: my mum, my dad, my brother, my grandmother and me. My dad is a driver and my mum is a nurse. My brother, Dan, is fifteen. He plays the guitar in a band. My grandmother lives with us. She is seventy years old and she cooks very well. On Sundays we all have lunch together. We eat soup, chicken and a big cake. After lunch my dad and I wash the dishes, and my brother plays some music for us.",
+   "en": "There are five people in my family: my mum, my dad, my brother, my grandmother and me. My dad is a driver and my mum is a nurse. My brother, Dan, is fifteen. He plays the guitar in a band. My grandmother lives with us. She is seventy years old and she cooks very well. On Sundays we all have lunch together. We eat soup, chicken and a big cake. After lunch my dad and I wash the dishes, and my brother plays some music for us."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.short.5.t02.q1",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t02.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: How many people are there in the family?",
+     "en": "Choose the correct answer: How many people are there in the family?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "five",
+       "en": "five"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "four",
+       "en": "four"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "six",
+       "en": "six"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.short.5.t02.q2",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t02.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What does the narrator's mum do?",
+     "en": "Choose the correct answer: What does the narrator's mum do?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "She is a teacher.",
+       "en": "She is a teacher."
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "She is a nurse.",
+       "en": "She is a nurse."
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "She is a driver.",
+       "en": "She is a driver."
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.short.5.t02.q3",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t02.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The narrator's brother plays football.",
+     "en": "True or false? The narrator's brother plays football."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.short.5.t02.q4",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t02.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The grandmother lives with the family.",
+     "en": "True or false? The grandmother lives with the family."
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.short.5.t03",
+  "type": "read-and-answer",
+  "skillId": "eng.read.short.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.short.5",
+  "provenance": {
+   "id": "prov.item.eng.read.short.5.t03",
+   "kind": "item",
+   "title": "Item item.eng.read.short.5.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "I have a cat. Her name is Misu and she is two years old. She is small and grey, and she has big green eyes. Misu sleeps on my bed at night. In the morning she is hungry and she wants her milk. She likes playing with a red ball, but she does not like water. When I come home from school, she sits at the door and waits for me. My little sister wants a dog, but my mum says our flat is too small for a dog.",
+   "en": "I have a cat. Her name is Misu and she is two years old. She is small and grey, and she has big green eyes. Misu sleeps on my bed at night. In the morning she is hungry and she wants her milk. She likes playing with a red ball, but she does not like water. When I come home from school, she sits at the door and waits for me. My little sister wants a dog, but my mum says our flat is too small for a dog."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.short.5.t03.q1",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t03.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What colour is Misu?",
+     "en": "Choose the correct answer: What colour is Misu?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "grey",
+       "en": "grey"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "black",
+       "en": "black"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "white",
+       "en": "white"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.short.5.t03.q2",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t03.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What does Misu not like?",
+     "en": "Choose the correct answer: What does Misu not like?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "the red ball",
+       "en": "the red ball"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "water",
+       "en": "water"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "milk",
+       "en": "milk"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.short.5.t03.q3",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t03.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Misu is five years old.",
+     "en": "True or false? Misu is five years old."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.short.5.t03.q4",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t03.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The narrator's sister wants a dog.",
+     "en": "True or false? The narrator's sister wants a dog."
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.short.5.t04",
+  "type": "read-and-answer",
+  "skillId": "eng.read.short.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.short.5",
+  "provenance": {
+   "id": "prov.item.eng.read.short.5.t04",
+   "kind": "item",
+   "title": "Item item.eng.read.short.5.t04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "On Saturday it is my birthday. I am twelve! My mum makes a chocolate cake and my dad buys balloons. Six friends come to my party at four o'clock. We play games in the garden and we listen to music. Tom gives me a book about animals and Elena gives me a blue scarf. At six o'clock we eat pizza and ice cream. Then we sing \"Happy Birthday\" and I blow out the candles. It is a very good day and I am very happy.",
+   "en": "On Saturday it is my birthday. I am twelve! My mum makes a chocolate cake and my dad buys balloons. Six friends come to my party at four o'clock. We play games in the garden and we listen to music. Tom gives me a book about animals and Elena gives me a blue scarf. At six o'clock we eat pizza and ice cream. Then we sing \"Happy Birthday\" and I blow out the candles. It is a very good day and I am very happy."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.short.5.t04.q1",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t04.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t04.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: How old is the narrator on Saturday?",
+     "en": "Choose the correct answer: How old is the narrator on Saturday?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "twelve",
+       "en": "twelve"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "eleven",
+       "en": "eleven"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "ten",
+       "en": "ten"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.short.5.t04.q2",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t04.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t04.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What does Elena give to the narrator?",
+     "en": "Choose the correct answer: What does Elena give to the narrator?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "balloons",
+       "en": "balloons"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a blue scarf",
+       "en": "a blue scarf"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a book about animals",
+       "en": "a book about animals"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.short.5.t04.q3",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t04.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t04.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The party is on Sunday.",
+     "en": "True or false? The party is on Sunday."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.short.5.t04.q4",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t04.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t04.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The friends eat pizza and ice cream.",
+     "en": "True or false? The friends eat pizza and ice cream."
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.short.5.t05",
+  "type": "read-and-answer",
+  "skillId": "eng.read.short.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.short.5",
+  "provenance": {
+   "id": "prov.item.eng.read.short.5.t05",
+   "kind": "item",
+   "title": "Item item.eng.read.short.5.t05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "At the weekend my family goes to the park near our house. There is a big lake with ducks, and a playground for children. My dad usually runs round the lake, and my mum reads a book on a bench. My little brother plays on the swings and I ride my bike. Sometimes we take a picnic with sandwiches and apples. It is not far from our home, so we walk there. We stay in the park for three hours. When it rains, we stay at home and play board games.",
+   "en": "At the weekend my family goes to the park near our house. There is a big lake with ducks, and a playground for children. My dad usually runs round the lake, and my mum reads a book on a bench. My little brother plays on the swings and I ride my bike. Sometimes we take a picnic with sandwiches and apples. It is not far from our home, so we walk there. We stay in the park for three hours. When it rains, we stay at home and play board games."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.short.5.t05.q1",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t05.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t05.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Where does the family go at the weekend?",
+     "en": "Choose the correct answer: Where does the family go at the weekend?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "to the park",
+       "en": "to the park"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "to the cinema",
+       "en": "to the cinema"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "to the seaside",
+       "en": "to the seaside"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.short.5.t05.q2",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t05.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t05.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What does the narrator do in the park?",
+     "en": "Choose the correct answer: What does the narrator do in the park?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "runs round the lake",
+       "en": "runs round the lake"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "rides a bike",
+       "en": "rides a bike"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "reads a book",
+       "en": "reads a book"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.short.5.t05.q3",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t05.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t05.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? There are ducks on the lake.",
+     "en": "True or false? There are ducks on the lake."
+    },
+    "correct": true
+   },
+   {
+    "id": "item.eng.read.short.5.t05.q4",
+    "skillId": "eng.read.short.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.short.5.t05.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.short.5.t05.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The family goes to the park by car.",
+     "en": "True or false? The family goes to the park by car."
+    },
+    "correct": false
+   }
+  ]
+ }
+]
