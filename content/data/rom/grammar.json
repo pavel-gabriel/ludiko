@@ -1,0 +1,2659 @@
+{
+ "provenance": {
+  "id": "prov.data.rom.grammar",
+  "kind": "data",
+  "title": "Ludiko grammar sets: parts of speech, verb forms, syntactic roles, figures of speech",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Original sentences drafted for the gimnaziu (V-VIII) Romanian curriculum; no textbook or exam material. Awaiting review by a Romanian teacher."
+ },
+ "pos": {
+  "labels": [
+   "substantiv",
+   "articol",
+   "adjectiv",
+   "pronume",
+   "numeral",
+   "verb",
+   "adverb",
+   "prepoziție",
+   "conjuncție",
+   "interjecție"
+  ],
+  "items": [
+   [
+    "Copilul citește o poveste în fiecare seară.",
+    "poveste",
+    "substantiv"
+   ],
+   [
+    "Pe masă stă o vază cu flori.",
+    "vază",
+    "substantiv"
+   ],
+   [
+    "Râul curge printre dealuri verzi.",
+    "dealuri",
+    "substantiv"
+   ],
+   [
+    "Mihai a cumpărat pâine de la brutărie.",
+    "brutărie",
+    "substantiv"
+   ],
+   [
+    "Fericirea se vede pe fața copiilor.",
+    "Fericirea",
+    "substantiv"
+   ],
+   [
+    "Pe cer apar primele stele.",
+    "stele",
+    "substantiv"
+   ],
+   [
+    "Bunica toarce lână lângă sobă.",
+    "lână",
+    "substantiv"
+   ],
+   [
+    "Vântul a răsturnat coșul de gunoi.",
+    "Vântul",
+    "substantiv"
+   ],
+   [
+    "Orașul se trezește dimineața.",
+    "Orașul",
+    "substantiv"
+   ],
+   [
+    "Elevii adună hârtie pentru reciclare.",
+    "hârtie",
+    "substantiv"
+   ],
+   [
+    "Curajul lui Ștefan i-a uimit pe toți.",
+    "Curajul",
+    "substantiv"
+   ],
+   [
+    "Ioana locuiește în Brașov.",
+    "Brașov",
+    "substantiv"
+   ],
+   [
+    "Sub copac stă un cățeluș adormit.",
+    "un",
+    "articol"
+   ],
+   [
+    "Ana a găsit o pisică pe stradă.",
+    "o",
+    "articol"
+   ],
+   [
+    "Pe raft stau niște cărți vechi.",
+    "niște",
+    "articol"
+   ],
+   [
+    "Căsuța din deal este a bunicului meu.",
+    "a",
+    "articol"
+   ],
+   [
+    "Caietul acesta este al Mariei.",
+    "al",
+    "articol"
+   ],
+   [
+    "Cărțile din ghiozdan sunt ale elevilor din clasa mea.",
+    "ale",
+    "articol"
+   ],
+   [
+    "Pantofii din hol sunt ai surorii mele.",
+    "ai",
+    "articol"
+   ],
+   [
+    "Vecinul ne-a adus o cutie cu mere.",
+    "o",
+    "articol"
+   ],
+   [
+    "Pe cărare am întâlnit niște copii veseli.",
+    "niște",
+    "articol"
+   ],
+   [
+    "Bicicleta roșie este a surorii mele.",
+    "a",
+    "articol"
+   ],
+   [
+    "Rucsacul albastru este al lui Radu.",
+    "al",
+    "articol"
+   ],
+   [
+    "Un vultur plana deasupra stâncilor.",
+    "Un",
+    "articol"
+   ],
+   [
+    "Copilul curajos a sărit în apă.",
+    "curajos",
+    "adjectiv"
+   ],
+   [
+    "Am primit o carte interesantă.",
+    "interesantă",
+    "adjectiv"
+   ],
+   [
+    "Casa albă din deal e a bunicilor.",
+    "albă",
+    "adjectiv"
+   ],
+   [
+    "Ziua de azi este însorită.",
+    "însorită",
+    "adjectiv"
+   ],
+   [
+    "Merele coapte miros frumos.",
+    "coapte",
+    "adjectiv"
+   ],
+   [
+    "Un câine fricos s-a ascuns după ușă.",
+    "fricos",
+    "adjectiv"
+   ],
+   [
+    "Pădurea deasă ascunde multe tainițe.",
+    "deasă",
+    "adjectiv"
+   ],
+   [
+    "Prietena mea este sinceră.",
+    "sinceră",
+    "adjectiv"
+   ],
+   [
+    "Pe masă era o supă fierbinte.",
+    "fierbinte",
+    "adjectiv"
+   ],
+   [
+    "Elevii harnici au terminat tema.",
+    "harnici",
+    "adjectiv"
+   ],
+   [
+    "Apa lacului este limpede.",
+    "limpede",
+    "adjectiv"
+   ],
+   [
+    "Băiatul înalt a prins mingea.",
+    "înalt",
+    "adjectiv"
+   ],
+   [
+    "Ea citește o carte în fiecare seară.",
+    "Ea",
+    "pronume"
+   ],
+   [
+    "Noi mergem mâine la bunici.",
+    "Noi",
+    "pronume"
+   ],
+   [
+    "Mama mă așteaptă la poartă.",
+    "mă",
+    "pronume"
+   ],
+   [
+    "Cartea aceasta este a mea.",
+    "mea",
+    "pronume"
+   ],
+   [
+    "Cine a spart vaza?",
+    "Cine",
+    "pronume"
+   ],
+   [
+    "Aceasta este școala unde învăț.",
+    "Aceasta",
+    "pronume"
+   ],
+   [
+    "Nimeni nu a auzit zgomotul.",
+    "Nimeni",
+    "pronume"
+   ],
+   [
+    "Am vorbit cu el despre excursie.",
+    "el",
+    "pronume"
+   ],
+   [
+    "Vecinul care locuiește sus este medic.",
+    "care",
+    "pronume"
+   ],
+   [
+    "Toți au aplaudat spectacolul.",
+    "Toți",
+    "pronume"
+   ],
+   [
+    "Tu ai desenat acest peisaj?",
+    "Tu",
+    "pronume"
+   ],
+   [
+    "Fiecare a primit câte o carte.",
+    "Fiecare",
+    "pronume"
+   ],
+   [
+    "Am cumpărat trei caiete noi.",
+    "trei",
+    "numeral"
+   ],
+   [
+    "Ion a ajuns primul la poartă.",
+    "primul",
+    "numeral"
+   ],
+   [
+    "În clasă sunt douăzeci de elevi.",
+    "douăzeci",
+    "numeral"
+   ],
+   [
+    "Mama a copt patru plăcinte.",
+    "patru",
+    "numeral"
+   ],
+   [
+    "Fratele meu este în clasa a treia.",
+    "treia",
+    "numeral"
+   ],
+   [
+    "Bunicul are optzeci de ani.",
+    "optzeci",
+    "numeral"
+   ],
+   [
+    "Cele două surori seamănă între ele.",
+    "două",
+    "numeral"
+   ],
+   [
+    "La etajul al cincilea locuiește o doamnă.",
+    "cincilea",
+    "numeral"
+   ],
+   [
+    "Pe masă sunt zece mere coapte.",
+    "zece",
+    "numeral"
+   ],
+   [
+    "Ea a obținut locul întâi la concurs.",
+    "întâi",
+    "numeral"
+   ],
+   [
+    "Au plecat amândoi la mare.",
+    "amândoi",
+    "numeral"
+   ],
+   [
+    "Un an are douăsprezece luni.",
+    "douăsprezece",
+    "numeral"
+   ],
+   [
+    "Copilul citește o poveste.",
+    "citește",
+    "verb"
+   ],
+   [
+    "Păsările zboară spre sud.",
+    "zboară",
+    "verb"
+   ],
+   [
+    "Bunica gătește o supă gustoasă.",
+    "gătește",
+    "verb"
+   ],
+   [
+    "Noi cântăm în cor.",
+    "cântăm",
+    "verb"
+   ],
+   [
+    "Ploaia cade pe acoperiș.",
+    "cade",
+    "verb"
+   ],
+   [
+    "Tu desenezi cu pasiune.",
+    "desenezi",
+    "verb"
+   ],
+   [
+    "Ei se joacă în curte.",
+    "joacă",
+    "verb"
+   ],
+   [
+    "Vreau să învăț poezia.",
+    "Vreau",
+    "verb"
+   ],
+   [
+    "Elevii scriu o compunere.",
+    "scriu",
+    "verb"
+   ],
+   [
+    "Soarele răsare dimineața.",
+    "răsare",
+    "verb"
+   ],
+   [
+    "Fratele meu doarme adânc.",
+    "doarme",
+    "verb"
+   ],
+   [
+    "Mama așteaptă autobuzul.",
+    "așteaptă",
+    "verb"
+   ],
+   [
+    "Copilul vorbește frumos.",
+    "frumos",
+    "adverb"
+   ],
+   [
+    "Mâine mergem la bunici.",
+    "Mâine",
+    "adverb"
+   ],
+   [
+    "Pisica doarme aici.",
+    "aici",
+    "adverb"
+   ],
+   [
+    "Ea aleargă repede.",
+    "repede",
+    "adverb"
+   ],
+   [
+    "Vorbește mult despre excursie.",
+    "mult",
+    "adverb"
+   ],
+   [
+    "Elevii lucrează atent.",
+    "atent",
+    "adverb"
+   ],
+   [
+    "Mașina se oprește departe de casă.",
+    "departe",
+    "adverb"
+   ],
+   [
+    "Mai citesc o pagină, apoi plec.",
+    "apoi",
+    "adverb"
+   ],
+   [
+    "Merg des la bibliotecă.",
+    "des",
+    "adverb"
+   ],
+   [
+    "Cântă bine la pian.",
+    "bine",
+    "adverb"
+   ],
+   [
+    "Acum plouă mărunt.",
+    "Acum",
+    "adverb"
+   ],
+   [
+    "Ieri a plouat tare.",
+    "Ieri",
+    "adverb"
+   ],
+   [
+    "Copiii merg la școală.",
+    "la",
+    "prepoziție"
+   ],
+   [
+    "Cartea este pe masă.",
+    "pe",
+    "prepoziție"
+   ],
+   [
+    "Pisica doarme sub pat.",
+    "sub",
+    "prepoziție"
+   ],
+   [
+    "Am primit un cadou de la bunici.",
+    "de",
+    "prepoziție"
+   ],
+   [
+    "Merg cu bicicleta în parc.",
+    "cu",
+    "prepoziție"
+   ],
+   [
+    "Cântă pentru prietenii lui.",
+    "pentru",
+    "prepoziție"
+   ],
+   [
+    "Păsările zboară deasupra pădurii.",
+    "deasupra",
+    "prepoziție"
+   ],
+   [
+    "Stau lângă fereastră.",
+    "lângă",
+    "prepoziție"
+   ],
+   [
+    "Mergem spre munte.",
+    "spre",
+    "prepoziție"
+   ],
+   [
+    "Cartea este despre animale.",
+    "despre",
+    "prepoziție"
+   ],
+   [
+    "Ne-am adăpostit printre copaci.",
+    "printre",
+    "prepoziție"
+   ],
+   [
+    "Lucrez până seara.",
+    "până",
+    "prepoziție"
+   ],
+   [
+    "Ana și Maria sunt prietene.",
+    "și",
+    "conjuncție"
+   ],
+   [
+    "Vreau să merg, dar plouă.",
+    "dar",
+    "conjuncție"
+   ],
+   [
+    "Vii azi sau mâine?",
+    "sau",
+    "conjuncție"
+   ],
+   [
+    "Știu că vei reuși.",
+    "că",
+    "conjuncție"
+   ],
+   [
+    "Dacă plouă, rămânem acasă.",
+    "Dacă",
+    "conjuncție"
+   ],
+   [
+    "Fiindcă era frig, am pus căciula.",
+    "Fiindcă",
+    "conjuncție"
+   ],
+   [
+    "Nu a venit, deoarece era bolnav.",
+    "deoarece",
+    "conjuncție"
+   ],
+   [
+    "Ea cântă, iar el desenează.",
+    "iar",
+    "conjuncție"
+   ],
+   [
+    "Citesc deși mi-e somn.",
+    "deși",
+    "conjuncție"
+   ],
+   [
+    "Mergem la film când se termină ora.",
+    "când",
+    "conjuncție"
+   ],
+   [
+    "Vom merge, însă mai întâi terminăm tema.",
+    "însă",
+    "conjuncție"
+   ],
+   [
+    "Tata zice că se întoarce mâine.",
+    "că",
+    "conjuncție"
+   ],
+   [
+    "Vai, ce frumoasă este grădina!",
+    "Vai",
+    "interjecție"
+   ],
+   [
+    "Hei, unde pleci așa repede?",
+    "Hei",
+    "interjecție"
+   ],
+   [
+    "Bravo, ai câștigat concursul!",
+    "Bravo",
+    "interjecție"
+   ],
+   [
+    "Aoleu, mi-am uitat caietul acasă!",
+    "Aoleu",
+    "interjecție"
+   ],
+   [
+    "Ah, ce parfum plăcut are floarea!",
+    "Ah",
+    "interjecție"
+   ],
+   [
+    "Uf, ce cald este în sală!",
+    "Uf",
+    "interjecție"
+   ],
+   [
+    "Hop, săriți peste șanț!",
+    "Hop",
+    "interjecție"
+   ],
+   [
+    "Pst, vorbiți mai încet!",
+    "Pst",
+    "interjecție"
+   ],
+   [
+    "Of, ce greu a fost examenul!",
+    "Of",
+    "interjecție"
+   ],
+   [
+    "Poc, s-a spart balonul!",
+    "Poc",
+    "interjecție"
+   ],
+   [
+    "Ura, am ajuns la mare!",
+    "Ura",
+    "interjecție"
+   ],
+   [
+    "Hm, nu știu ce să răspund.",
+    "Hm",
+    "interjecție"
+   ]
+  ]
+ },
+ "verbs": {
+  "tenses": [
+   "prezent",
+   "imperfect",
+   "perfect compus",
+   "perfect simplu",
+   "mai mult ca perfect",
+   "viitor"
+  ],
+  "moods": [
+   "indicativ",
+   "conjunctiv",
+   "condițional-optativ",
+   "imperativ",
+   "infinitiv",
+   "gerunziu",
+   "participiu",
+   "supin"
+  ],
+  "persons": [
+   "persoana I, singular",
+   "persoana a II-a, singular",
+   "persoana a III-a, singular",
+   "persoana I, plural",
+   "persoana a II-a, plural",
+   "persoana a III-a, plural"
+  ],
+  "items": [
+   [
+    "tense",
+    "Elevii scriu tema la masă.",
+    "scriu",
+    "prezent"
+   ],
+   [
+    "tense",
+    "Mama gătește supă de legume.",
+    "gătește",
+    "prezent"
+   ],
+   [
+    "tense",
+    "Eu citesc o carte despre Dunăre.",
+    "citesc",
+    "prezent"
+   ],
+   [
+    "tense",
+    "Noi mergem în parc după-amiază.",
+    "mergem",
+    "prezent"
+   ],
+   [
+    "tense",
+    "Păsările cântă în pomi.",
+    "cântă",
+    "prezent"
+   ],
+   [
+    "tense",
+    "Tu desenezi un peisaj.",
+    "desenezi",
+    "prezent"
+   ],
+   [
+    "tense",
+    "Pe când eram mic, mergeam des la bunici.",
+    "mergeam",
+    "imperfect"
+   ],
+   [
+    "tense",
+    "Soarele strălucea pe cer.",
+    "strălucea",
+    "imperfect"
+   ],
+   [
+    "tense",
+    "Copiii se jucau în curte.",
+    "jucau",
+    "imperfect"
+   ],
+   [
+    "tense",
+    "Bunicul povestea basme lângă sobă.",
+    "povestea",
+    "imperfect"
+   ],
+   [
+    "tense",
+    "Noi citeam seara, la lumina lămpii.",
+    "citeam",
+    "imperfect"
+   ],
+   [
+    "tense",
+    "Ploaia cădea fără încetare.",
+    "cădea",
+    "imperfect"
+   ],
+   [
+    "tense",
+    "Am citit o carte despre munți.",
+    "Am citit",
+    "perfect compus"
+   ],
+   [
+    "tense",
+    "Ea a desenat un cal.",
+    "a desenat",
+    "perfect compus"
+   ],
+   [
+    "tense",
+    "Copiii au mâncat înghețată.",
+    "au mâncat",
+    "perfect compus"
+   ],
+   [
+    "tense",
+    "Tu ai scris o scrisoare lungă.",
+    "ai scris",
+    "perfect compus"
+   ],
+   [
+    "tense",
+    "Noi am vizitat un muzeu.",
+    "am vizitat",
+    "perfect compus"
+   ],
+   [
+    "tense",
+    "Vecinii au plecat devreme.",
+    "au plecat",
+    "perfect compus"
+   ],
+   [
+    "tense",
+    "Soldații ajunseră la podul vechi.",
+    "ajunseră",
+    "perfect simplu"
+   ],
+   [
+    "tense",
+    "Copiii alergară spre poartă.",
+    "alergară",
+    "perfect simplu"
+   ],
+   [
+    "tense",
+    "Vecinii se întoarseră acasă.",
+    "întoarseră",
+    "perfect simplu"
+   ],
+   [
+    "tense",
+    "El deschise fereastra și privi afară.",
+    "deschise",
+    "perfect simplu"
+   ],
+   [
+    "tense",
+    "Păstorii adunară oile și plecară.",
+    "adunară",
+    "perfect simplu"
+   ],
+   [
+    "tense",
+    "Craiul zise o vorbă cu înțeles.",
+    "zise",
+    "perfect simplu"
+   ],
+   [
+    "tense",
+    "Plecasem de acasă înainte să înceapă ploaia.",
+    "Plecasem",
+    "mai mult ca perfect"
+   ],
+   [
+    "tense",
+    "Mama gătise deja când am ajuns.",
+    "gătise",
+    "mai mult ca perfect"
+   ],
+   [
+    "tense",
+    "Copiii terminaseră lecțiile până seara.",
+    "terminaseră",
+    "mai mult ca perfect"
+   ],
+   [
+    "tense",
+    "Eu citisem cartea înainte de film.",
+    "citisem",
+    "mai mult ca perfect"
+   ],
+   [
+    "tense",
+    "Ea uitase cheile acasă.",
+    "uitase",
+    "mai mult ca perfect"
+   ],
+   [
+    "tense",
+    "Vecinii se mutaseră în alt oraș.",
+    "mutaseră",
+    "mai mult ca perfect"
+   ],
+   [
+    "tense",
+    "Mâine voi merge la bunici.",
+    "voi merge",
+    "viitor"
+   ],
+   [
+    "tense",
+    "Ei vor veni la noi vara viitoare.",
+    "vor veni",
+    "viitor"
+   ],
+   [
+    "tense",
+    "Vom citi o poveste nouă.",
+    "Vom citi",
+    "viitor"
+   ],
+   [
+    "tense",
+    "Tu vei primi un cadou.",
+    "vei primi",
+    "viitor"
+   ],
+   [
+    "tense",
+    "Ea va pleca cu trenul de seară.",
+    "va pleca",
+    "viitor"
+   ],
+   [
+    "tense",
+    "Luna viitoare o să plec la munte.",
+    "o să plec",
+    "viitor"
+   ],
+   [
+    "person",
+    "Eu scriu o scrisoare.",
+    "scriu",
+    "persoana I, singular"
+   ],
+   [
+    "person",
+    "Eu merg la școală.",
+    "merg",
+    "persoana I, singular"
+   ],
+   [
+    "person",
+    "Eu desenez un soare.",
+    "desenez",
+    "persoana I, singular"
+   ],
+   [
+    "person",
+    "Eu citesc seara.",
+    "citesc",
+    "persoana I, singular"
+   ],
+   [
+    "person",
+    "Eu am o pisică.",
+    "am",
+    "persoana I, singular"
+   ],
+   [
+    "person",
+    "Eu cânt la chitară.",
+    "cânt",
+    "persoana I, singular"
+   ],
+   [
+    "person",
+    "Eu aud ploaia.",
+    "aud",
+    "persoana I, singular"
+   ],
+   [
+    "person",
+    "Eu învăț poezia.",
+    "învăț",
+    "persoana I, singular"
+   ],
+   [
+    "person",
+    "Tu scrii frumos.",
+    "scrii",
+    "persoana a II-a, singular"
+   ],
+   [
+    "person",
+    "Tu mergi cu noi?",
+    "mergi",
+    "persoana a II-a, singular"
+   ],
+   [
+    "person",
+    "Tu desenezi un cal.",
+    "desenezi",
+    "persoana a II-a, singular"
+   ],
+   [
+    "person",
+    "Tu citești mult.",
+    "citești",
+    "persoana a II-a, singular"
+   ],
+   [
+    "person",
+    "Tu ai o minge.",
+    "ai",
+    "persoana a II-a, singular"
+   ],
+   [
+    "person",
+    "Tu cânți bine.",
+    "cânți",
+    "persoana a II-a, singular"
+   ],
+   [
+    "person",
+    "Tu auzi ploaia?",
+    "auzi",
+    "persoana a II-a, singular"
+   ],
+   [
+    "person",
+    "Tu înveți poezia.",
+    "înveți",
+    "persoana a II-a, singular"
+   ],
+   [
+    "person",
+    "Ea scrie o scrisoare.",
+    "scrie",
+    "persoana a III-a, singular"
+   ],
+   [
+    "person",
+    "El merge la școală.",
+    "merge",
+    "persoana a III-a, singular"
+   ],
+   [
+    "person",
+    "Mama desenează un soare.",
+    "desenează",
+    "persoana a III-a, singular"
+   ],
+   [
+    "person",
+    "Fratele citește seara.",
+    "citește",
+    "persoana a III-a, singular"
+   ],
+   [
+    "person",
+    "Maria are o pisică.",
+    "are",
+    "persoana a III-a, singular"
+   ],
+   [
+    "person",
+    "Bunicul cântă la fluier.",
+    "cântă",
+    "persoana a III-a, singular"
+   ],
+   [
+    "person",
+    "Copilul aude ploaia.",
+    "aude",
+    "persoana a III-a, singular"
+   ],
+   [
+    "person",
+    "Elevul învață poezia.",
+    "învață",
+    "persoana a III-a, singular"
+   ],
+   [
+    "person",
+    "Noi scriem o scrisoare.",
+    "scriem",
+    "persoana I, plural"
+   ],
+   [
+    "person",
+    "Noi mergem la școală.",
+    "mergem",
+    "persoana I, plural"
+   ],
+   [
+    "person",
+    "Noi desenăm un soare.",
+    "desenăm",
+    "persoana I, plural"
+   ],
+   [
+    "person",
+    "Noi citim seara.",
+    "citim",
+    "persoana I, plural"
+   ],
+   [
+    "person",
+    "Noi avem o pisică.",
+    "avem",
+    "persoana I, plural"
+   ],
+   [
+    "person",
+    "Noi cântăm la chitară.",
+    "cântăm",
+    "persoana I, plural"
+   ],
+   [
+    "person",
+    "Noi auzim ploaia.",
+    "auzim",
+    "persoana I, plural"
+   ],
+   [
+    "person",
+    "Noi învățăm poezia.",
+    "învățăm",
+    "persoana I, plural"
+   ],
+   [
+    "person",
+    "Voi scrieți o scrisoare.",
+    "scrieți",
+    "persoana a II-a, plural"
+   ],
+   [
+    "person",
+    "Voi mergeți la școală.",
+    "mergeți",
+    "persoana a II-a, plural"
+   ],
+   [
+    "person",
+    "Voi desenați un soare.",
+    "desenați",
+    "persoana a II-a, plural"
+   ],
+   [
+    "person",
+    "Voi citiți seara.",
+    "citiți",
+    "persoana a II-a, plural"
+   ],
+   [
+    "person",
+    "Voi aveți o pisică.",
+    "aveți",
+    "persoana a II-a, plural"
+   ],
+   [
+    "person",
+    "Voi cântați la chitară.",
+    "cântați",
+    "persoana a II-a, plural"
+   ],
+   [
+    "person",
+    "Voi auziți ploaia.",
+    "auziți",
+    "persoana a II-a, plural"
+   ],
+   [
+    "person",
+    "Voi învățați poezia.",
+    "învățați",
+    "persoana a II-a, plural"
+   ],
+   [
+    "person",
+    "Ei scriu o scrisoare.",
+    "scriu",
+    "persoana a III-a, plural"
+   ],
+   [
+    "person",
+    "Ei merg la școală.",
+    "merg",
+    "persoana a III-a, plural"
+   ],
+   [
+    "person",
+    "Fetele desenează un soare.",
+    "desenează",
+    "persoana a III-a, plural"
+   ],
+   [
+    "person",
+    "Copiii citesc seara.",
+    "citesc",
+    "persoana a III-a, plural"
+   ],
+   [
+    "person",
+    "Ei au o pisică.",
+    "au",
+    "persoana a III-a, plural"
+   ],
+   [
+    "person",
+    "Păsările cântă dimineața.",
+    "cântă",
+    "persoana a III-a, plural"
+   ],
+   [
+    "person",
+    "Elevii aud ploaia.",
+    "aud",
+    "persoana a III-a, plural"
+   ],
+   [
+    "person",
+    "Ele învață poezia.",
+    "învață",
+    "persoana a III-a, plural"
+   ],
+   [
+    "mood",
+    "Copiii merg la școală.",
+    "merg",
+    "indicativ"
+   ],
+   [
+    "mood",
+    "Am citit o carte interesantă.",
+    "Am citit",
+    "indicativ"
+   ],
+   [
+    "mood",
+    "Vom pleca mâine dimineață.",
+    "Vom pleca",
+    "indicativ"
+   ],
+   [
+    "mood",
+    "Soarele strălucea deasupra câmpului.",
+    "strălucea",
+    "indicativ"
+   ],
+   [
+    "mood",
+    "Ea desenase un cal frumos.",
+    "desenase",
+    "indicativ"
+   ],
+   [
+    "mood",
+    "Tu scrii cu grijă.",
+    "scrii",
+    "indicativ"
+   ],
+   [
+    "mood",
+    "Vreau să citesc o carte.",
+    "să citesc",
+    "conjunctiv"
+   ],
+   [
+    "mood",
+    "Mama vrea să gătească o supă.",
+    "să gătească",
+    "conjunctiv"
+   ],
+   [
+    "mood",
+    "Trebuie să plecăm acum.",
+    "să plecăm",
+    "conjunctiv"
+   ],
+   [
+    "mood",
+    "Ți-am spus să vii devreme.",
+    "să vii",
+    "conjunctiv"
+   ],
+   [
+    "mood",
+    "Copiii încearcă să cânte.",
+    "să cânte",
+    "conjunctiv"
+   ],
+   [
+    "mood",
+    "Nu uita să scrii bunicii.",
+    "să scrii",
+    "conjunctiv"
+   ],
+   [
+    "mood",
+    "Aș merge la mare.",
+    "Aș merge",
+    "condițional-optativ"
+   ],
+   [
+    "mood",
+    "Ai citi mai mult dacă ai avea timp.",
+    "Ai citi",
+    "condițional-optativ"
+   ],
+   [
+    "mood",
+    "Ea ar desena un portret.",
+    "ar desena",
+    "condițional-optativ"
+   ],
+   [
+    "mood",
+    "Noi am cânta cu plăcere.",
+    "am cânta",
+    "condițional-optativ"
+   ],
+   [
+    "mood",
+    "Ei ar veni, dar plouă.",
+    "ar veni",
+    "condițional-optativ"
+   ],
+   [
+    "mood",
+    "Eu aș învăța încă o poezie.",
+    "aș învăța",
+    "condițional-optativ"
+   ],
+   [
+    "mood",
+    "Citește această carte!",
+    "Citește",
+    "imperativ"
+   ],
+   [
+    "mood",
+    "Închideți fereastra!",
+    "Închideți",
+    "imperativ"
+   ],
+   [
+    "mood",
+    "Ascultă cu atenție!",
+    "Ascultă",
+    "imperativ"
+   ],
+   [
+    "mood",
+    "Vino repede încoace!",
+    "Vino",
+    "imperativ"
+   ],
+   [
+    "mood",
+    "Stați liniștiți!",
+    "Stați",
+    "imperativ"
+   ],
+   [
+    "mood",
+    "Deschide caietul!",
+    "Deschide",
+    "imperativ"
+   ],
+   [
+    "mood",
+    "A învăța este o plăcere.",
+    "A învăța",
+    "infinitiv"
+   ],
+   [
+    "mood",
+    "Copilul știe a număra.",
+    "a număra",
+    "infinitiv"
+   ],
+   [
+    "mood",
+    "A merge pe jos este sănătos.",
+    "A merge",
+    "infinitiv"
+   ],
+   [
+    "mood",
+    "Plăcerea de a cânta l-a ajutat.",
+    "a cânta",
+    "infinitiv"
+   ],
+   [
+    "mood",
+    "A citi seara este un obicei bun.",
+    "A citi",
+    "infinitiv"
+   ],
+   [
+    "mood",
+    "A dormi mult te ajută să crești.",
+    "A dormi",
+    "infinitiv"
+   ],
+   [
+    "mood",
+    "Copiii intră cântând în sală.",
+    "cântând",
+    "gerunziu"
+   ],
+   [
+    "mood",
+    "Mergând pe stradă, am văzut un câine.",
+    "Mergând",
+    "gerunziu"
+   ],
+   [
+    "mood",
+    "Citind, timpul trece repede.",
+    "Citind",
+    "gerunziu"
+   ],
+   [
+    "mood",
+    "Ea a venit alergând.",
+    "alergând",
+    "gerunziu"
+   ],
+   [
+    "mood",
+    "Râzând, copiii au ieșit în curte.",
+    "Râzând",
+    "gerunziu"
+   ],
+   [
+    "mood",
+    "Bunicul stătea pe bancă privind norii.",
+    "privind",
+    "gerunziu"
+   ],
+   [
+    "mood",
+    "Tema scrisă este pe masă.",
+    "scrisă",
+    "participiu"
+   ],
+   [
+    "mood",
+    "Fereastra deschisă lasă aerul să intre.",
+    "deschisă",
+    "participiu"
+   ],
+   [
+    "mood",
+    "Fructele coapte sunt dulci.",
+    "coapte",
+    "participiu"
+   ],
+   [
+    "mood",
+    "Ușa închisă era încuiată.",
+    "închisă",
+    "participiu"
+   ],
+   [
+    "mood",
+    "Copilul adormit a fost dus în pat.",
+    "adormit",
+    "participiu"
+   ],
+   [
+    "mood",
+    "Lecția învățată te ajută la test.",
+    "învățată",
+    "participiu"
+   ],
+   [
+    "mood",
+    "Am o temă de scris.",
+    "de scris",
+    "supin"
+   ],
+   [
+    "mood",
+    "Ai o carte de citit pentru vacanță.",
+    "de citit",
+    "supin"
+   ],
+   [
+    "mood",
+    "Are multe lucruri de făcut.",
+    "de făcut",
+    "supin"
+   ],
+   [
+    "mood",
+    "Apa aceasta este bună de băut.",
+    "de băut",
+    "supin"
+   ],
+   [
+    "mood",
+    "Lecția este greu de învățat.",
+    "de învățat",
+    "supin"
+   ],
+   [
+    "mood",
+    "Avem mere de spălat.",
+    "de spălat",
+    "supin"
+   ]
+  ]
+ },
+ "syntax": {
+  "roles": [
+   "subiect",
+   "predicat verbal",
+   "predicat nominal",
+   "atribut",
+   "complement direct",
+   "complement indirect",
+   "complement circumstanțial de loc",
+   "complement circumstanțial de timp",
+   "complement circumstanțial de mod"
+  ],
+  "items": [
+   [
+    "Copiii cântă în cor.",
+    "Copiii",
+    "subiect"
+   ],
+   [
+    "Vântul a răsturnat gardul.",
+    "Vântul",
+    "subiect"
+   ],
+   [
+    "Pe cer apar stelele.",
+    "stelele",
+    "subiect"
+   ],
+   [
+    "Mama pregătește cina.",
+    "Mama",
+    "subiect"
+   ],
+   [
+    "Albinele adună nectar.",
+    "Albinele",
+    "subiect"
+   ],
+   [
+    "Dimineața a venit soarele.",
+    "soarele",
+    "subiect"
+   ],
+   [
+    "Trenul a ajuns la gară.",
+    "Trenul",
+    "subiect"
+   ],
+   [
+    "Elevul harnic a primit o diplomă.",
+    "Elevul",
+    "subiect"
+   ],
+   [
+    "Bunicul meu locuiește la țară.",
+    "Bunicul",
+    "subiect"
+   ],
+   [
+    "Pisica doarme pe fotoliu.",
+    "Pisica",
+    "subiect"
+   ],
+   [
+    "Ploaia a încetat.",
+    "Ploaia",
+    "subiect"
+   ],
+   [
+    "Cartea a fost scrisă de un autor român.",
+    "Cartea",
+    "subiect"
+   ],
+   [
+    "Copiii cântă în cor.",
+    "cântă",
+    "predicat verbal"
+   ],
+   [
+    "Vântul a răsturnat gardul.",
+    "a răsturnat",
+    "predicat verbal"
+   ],
+   [
+    "Mama pregătește cina.",
+    "pregătește",
+    "predicat verbal"
+   ],
+   [
+    "Albinele adună nectar.",
+    "adună",
+    "predicat verbal"
+   ],
+   [
+    "Trenul a ajuns la gară.",
+    "a ajuns",
+    "predicat verbal"
+   ],
+   [
+    "Pisica doarme pe fotoliu.",
+    "doarme",
+    "predicat verbal"
+   ],
+   [
+    "Ploaia a încetat.",
+    "a încetat",
+    "predicat verbal"
+   ],
+   [
+    "Elevii scriu compunerea.",
+    "scriu",
+    "predicat verbal"
+   ],
+   [
+    "Bunicul meu locuiește la țară.",
+    "locuiește",
+    "predicat verbal"
+   ],
+   [
+    "Soarele răsare la est.",
+    "răsare",
+    "predicat verbal"
+   ],
+   [
+    "Noi vom merge la munte.",
+    "vom merge",
+    "predicat verbal"
+   ],
+   [
+    "Râul curge printre dealuri.",
+    "curge",
+    "predicat verbal"
+   ],
+   [
+    "Fratele meu este medic.",
+    "este medic",
+    "predicat nominal"
+   ],
+   [
+    "Cerul era senin.",
+    "era senin",
+    "predicat nominal"
+   ],
+   [
+    "Ana a devenit pictoriță.",
+    "a devenit pictoriță",
+    "predicat nominal"
+   ],
+   [
+    "Mihai pare obosit.",
+    "pare obosit",
+    "predicat nominal"
+   ],
+   [
+    "Casa bunicilor este mare.",
+    "este mare",
+    "predicat nominal"
+   ],
+   [
+    "Vremea va fi frumoasă.",
+    "va fi frumoasă",
+    "predicat nominal"
+   ],
+   [
+    "Eu sunt cititor pasionat.",
+    "sunt cititor",
+    "predicat nominal"
+   ],
+   [
+    "Lacul este adânc.",
+    "este adânc",
+    "predicat nominal"
+   ],
+   [
+    "Mama este profesoară.",
+    "este profesoară",
+    "predicat nominal"
+   ],
+   [
+    "Seara devine rece.",
+    "devine rece",
+    "predicat nominal"
+   ],
+   [
+    "Dunărea este un fluviu.",
+    "este un fluviu",
+    "predicat nominal"
+   ],
+   [
+    "Prietena mea este sinceră.",
+    "este sinceră",
+    "predicat nominal"
+   ],
+   [
+    "Copilul curajos a sărit în apă.",
+    "curajos",
+    "atribut"
+   ],
+   [
+    "Casa bunicului este veche.",
+    "bunicului",
+    "atribut"
+   ],
+   [
+    "Am citit o carte interesantă.",
+    "interesantă",
+    "atribut"
+   ],
+   [
+    "Merele coapte sunt dulci.",
+    "coapte",
+    "atribut"
+   ],
+   [
+    "Ceasul de pe perete s-a oprit.",
+    "de pe perete",
+    "atribut"
+   ],
+   [
+    "Eleva din clasa a cincea a câștigat concursul.",
+    "din clasa a cincea",
+    "atribut"
+   ],
+   [
+    "Florile din grădină miros frumos.",
+    "din grădină",
+    "atribut"
+   ],
+   [
+    "Pisica neagră se ascunde.",
+    "neagră",
+    "atribut"
+   ],
+   [
+    "Prietenul meu a venit.",
+    "meu",
+    "atribut"
+   ],
+   [
+    "Cartea Mariei este pe masă.",
+    "Mariei",
+    "atribut"
+   ],
+   [
+    "Pădurea deasă ascunde multe tainițe.",
+    "deasă",
+    "atribut"
+   ],
+   [
+    "Am cumpărat patru caiete.",
+    "patru",
+    "atribut"
+   ],
+   [
+    "Mama pregătește cina.",
+    "cina",
+    "complement direct"
+   ],
+   [
+    "Copiii desenează un soare.",
+    "un soare",
+    "complement direct"
+   ],
+   [
+    "Elevul citește lecția.",
+    "lecția",
+    "complement direct"
+   ],
+   [
+    "Tata repară bicicleta.",
+    "bicicleta",
+    "complement direct"
+   ],
+   [
+    "Am văzut un film.",
+    "un film",
+    "complement direct"
+   ],
+   [
+    "Bunica coace plăcinte.",
+    "plăcinte",
+    "complement direct"
+   ],
+   [
+    "Ion îl cheamă pe Mihai.",
+    "pe Mihai",
+    "complement direct"
+   ],
+   [
+    "Copilul a găsit o monedă.",
+    "o monedă",
+    "complement direct"
+   ],
+   [
+    "Vecinul a tăiat copacul.",
+    "copacul",
+    "complement direct"
+   ],
+   [
+    "Ea scrie o scrisoare.",
+    "o scrisoare",
+    "complement direct"
+   ],
+   [
+    "I-am dat Mariei o carte.",
+    "Mariei",
+    "complement indirect"
+   ],
+   [
+    "Bunica le povestește nepoților un basm.",
+    "nepoților",
+    "complement indirect"
+   ],
+   [
+    "Profesorul a explicat elevilor lecția.",
+    "elevilor",
+    "complement indirect"
+   ],
+   [
+    "Am scris prietenului o scrisoare.",
+    "prietenului",
+    "complement indirect"
+   ],
+   [
+    "Copilul se gândește la vacanță.",
+    "la vacanță",
+    "complement indirect"
+   ],
+   [
+    "El se teme de câine.",
+    "de câine",
+    "complement indirect"
+   ],
+   [
+    "Tata i-a cumpărat surorii o păpușă.",
+    "surorii",
+    "complement indirect"
+   ],
+   [
+    "Mama a dăruit copilului un ceas.",
+    "copilului",
+    "complement indirect"
+   ],
+   [
+    "Ea vorbește despre excursie.",
+    "despre excursie",
+    "complement indirect"
+   ],
+   [
+    "Ne bucurăm de vacanță.",
+    "de vacanță",
+    "complement indirect"
+   ],
+   [
+    "Copiii se joacă în curte.",
+    "în curte",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Pisica doarme pe fotoliu.",
+    "pe fotoliu",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Trenul a ajuns la gară.",
+    "la gară",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Păsările zboară spre sud.",
+    "spre sud",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Locuiesc într-un sat.",
+    "într-un sat",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Cartea stă pe raft.",
+    "pe raft",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Elevii așteaptă în sala de clasă.",
+    "în sala de clasă",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Mergem la mare.",
+    "la mare",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Râul curge prin pădure.",
+    "prin pădure",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Câinele latră afară.",
+    "afară",
+    "complement circumstanțial de loc"
+   ],
+   [
+    "Dimineața am plecat de acasă.",
+    "Dimineața",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "Mâine mergem la bunici.",
+    "Mâine",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "Am sosit seara.",
+    "seara",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "Ieri a plouat.",
+    "Ieri",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "Vara mergem la mare.",
+    "Vara",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "Înainte de masă ne spălăm pe mâini.",
+    "Înainte de masă",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "Școala începe în septembrie.",
+    "în septembrie",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "După spectacol am mâncat înghețată.",
+    "După spectacol",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "Ne vedem luni.",
+    "luni",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "Bunicul se odihnește după-amiaza.",
+    "după-amiaza",
+    "complement circumstanțial de timp"
+   ],
+   [
+    "Ea cântă frumos.",
+    "frumos",
+    "complement circumstanțial de mod"
+   ],
+   [
+    "Copilul aleargă repede.",
+    "repede",
+    "complement circumstanțial de mod"
+   ],
+   [
+    "Vorbește încet.",
+    "încet",
+    "complement circumstanțial de mod"
+   ],
+   [
+    "Am lucrat cu atenție.",
+    "cu atenție",
+    "complement circumstanțial de mod"
+   ],
+   [
+    "El a răspuns fără grabă.",
+    "fără grabă",
+    "complement circumstanțial de mod"
+   ],
+   [
+    "Scrie citeț.",
+    "citeț",
+    "complement circumstanțial de mod"
+   ],
+   [
+    "Elevii ascultă atent.",
+    "atent",
+    "complement circumstanțial de mod"
+   ],
+   [
+    "Mergea cu pași mici.",
+    "cu pași mici",
+    "complement circumstanțial de mod"
+   ],
+   [
+    "Păsările cântă vesel.",
+    "vesel",
+    "complement circumstanțial de mod"
+   ],
+   [
+    "Bunicul vorbește rar.",
+    "rar",
+    "complement circumstanțial de mod"
+   ]
+  ],
+  "fraza": [
+   [
+    "Ploua mărunt și vântul bătea tare.",
+    "coordonare",
+    2
+   ],
+   [
+    "Am plecat devreme, dar am ajuns târziu.",
+    "coordonare",
+    2
+   ],
+   [
+    "Ana citește, iar Maria desenează.",
+    "coordonare",
+    2
+   ],
+   [
+    "Am ajuns acasă, am mâncat și m-am culcat.",
+    "coordonare",
+    3
+   ],
+   [
+    "Fie rămâi cu noi, fie pleci la bunici.",
+    "coordonare",
+    2
+   ],
+   [
+    "Soarele a răsărit, păsările au început să cânte, iar satul s-a trezit.",
+    "coordonare",
+    3
+   ],
+   [
+    "Nu am învățat, deci nu am luat notă bună.",
+    "coordonare",
+    2
+   ],
+   [
+    "Copiii se joacă în curte, dar mama îi strigă la masă.",
+    "coordonare",
+    2
+   ],
+   [
+    "Am venit, am văzut, am plecat.",
+    "coordonare",
+    3
+   ],
+   [
+    "Ori mergem la film, ori rămânem acasă.",
+    "coordonare",
+    2
+   ],
+   [
+    "Vântul se oprise și cerul se limpezise.",
+    "coordonare",
+    2
+   ],
+   [
+    "Ion deschide cartea, iar Maria își scoate caietul.",
+    "coordonare",
+    2
+   ],
+   [
+    "Știu că vei reuși.",
+    "subordonare",
+    2
+   ],
+   [
+    "Când sună clopoțelul, elevii intră în clasă.",
+    "subordonare",
+    2
+   ],
+   [
+    "Copilul care stă în prima bancă este atent.",
+    "subordonare",
+    2
+   ],
+   [
+    "Dacă plouă, rămânem acasă.",
+    "subordonare",
+    2
+   ],
+   [
+    "Mă bucur că ai venit la petrecere.",
+    "subordonare",
+    2
+   ],
+   [
+    "Am rămas acasă fiindcă ploua.",
+    "subordonare",
+    2
+   ],
+   [
+    "Spune-mi unde ai pus cheia.",
+    "subordonare",
+    2
+   ],
+   [
+    "Elevii învață ca să ia note bune.",
+    "subordonare",
+    2
+   ],
+   [
+    "Deși era obosit, Mihai a terminat lucrarea.",
+    "subordonare",
+    2
+   ],
+   [
+    "Cartea pe care am citit-o ieri este interesantă.",
+    "subordonare",
+    2
+   ],
+   [
+    "Bunicul spune că vara aceasta vom merge la munte, unde aerul este curat.",
+    "subordonare",
+    3
+   ],
+   [
+    "Am aflat că ai câștigat concursul pe care l-ai pregătit.",
+    "subordonare",
+    3
+   ]
+  ],
+  "subordinateLabels": [
+   "atributivă",
+   "circumstanțială concesivă",
+   "circumstanțială condițională",
+   "circumstanțială de cauză",
+   "circumstanțială de loc",
+   "circumstanțială de scop",
+   "circumstanțială de timp",
+   "completivă directă",
+   "subiectivă"
+  ],
+  "subordinate": [
+   [
+    "Se știe că Terra se învârte în jurul Soarelui.",
+    "că Terra se învârte în jurul Soarelui",
+    "subiectivă"
+   ],
+   [
+    "Este clar că echipa a muncit mult.",
+    "că echipa a muncit mult",
+    "subiectivă"
+   ],
+   [
+    "Cine a greșit trebuie să repare.",
+    "Cine a greșit",
+    "subiectivă"
+   ],
+   [
+    "Se vede că afară a înghețat.",
+    "că afară a înghețat",
+    "subiectivă"
+   ],
+   [
+    "Pare că va ploua în curând.",
+    "că va ploua în curând",
+    "subiectivă"
+   ],
+   [
+    "Copilul care stă în prima bancă este atent.",
+    "care stă în prima bancă",
+    "atributivă"
+   ],
+   [
+    "Cartea pe care am citit-o ieri este interesantă.",
+    "pe care am citit-o ieri",
+    "atributivă"
+   ],
+   [
+    "Vecinul al cărui câine latră tare este plecat.",
+    "al cărui câine latră tare",
+    "atributivă"
+   ],
+   [
+    "Casa unde m-am născut este mică.",
+    "unde m-am născut",
+    "atributivă"
+   ],
+   [
+    "Elevii care învață regulat iau note bune.",
+    "care învață regulat",
+    "atributivă"
+   ],
+   [
+    "Știu că vei reuși.",
+    "că vei reuși",
+    "completivă directă"
+   ],
+   [
+    "Am văzut cum se joacă puii.",
+    "cum se joacă puii",
+    "completivă directă"
+   ],
+   [
+    "Profesorul a spus că tema este ușoară.",
+    "că tema este ușoară",
+    "completivă directă"
+   ],
+   [
+    "Vreau să citesc o poveste.",
+    "să citesc o poveste",
+    "completivă directă"
+   ],
+   [
+    "Mama a întrebat cine a spart vaza.",
+    "cine a spart vaza",
+    "completivă directă"
+   ],
+   [
+    "Când ploua, am rămas acasă.",
+    "Când ploua",
+    "circumstanțială de timp"
+   ],
+   [
+    "Voi pleca după ce termin lecția.",
+    "după ce termin lecția",
+    "circumstanțială de timp"
+   ],
+   [
+    "Cât timp a plouat, am citit.",
+    "Cât timp a plouat",
+    "circumstanțială de timp"
+   ],
+   [
+    "Am sosit când se însera.",
+    "când se însera",
+    "circumstanțială de timp"
+   ],
+   [
+    "Înainte să plece, el a închis fereastra.",
+    "Înainte să plece",
+    "circumstanțială de timp"
+   ],
+   [
+    "Am rămas acolo unde ne-ai lăsat.",
+    "unde ne-ai lăsat",
+    "circumstanțială de loc"
+   ],
+   [
+    "Copiii s-au oprit unde se termina drumul.",
+    "unde se termina drumul",
+    "circumstanțială de loc"
+   ],
+   [
+    "Mergem oriunde ne duce poteca.",
+    "oriunde ne duce poteca",
+    "circumstanțială de loc"
+   ],
+   [
+    "Pleacă fiindcă este târziu.",
+    "fiindcă este târziu",
+    "circumstanțială de cauză"
+   ],
+   [
+    "Am înghețat pentru că era frig.",
+    "pentru că era frig",
+    "circumstanțială de cauză"
+   ],
+   [
+    "Nu a venit deoarece era bolnav.",
+    "deoarece era bolnav",
+    "circumstanțială de cauză"
+   ],
+   [
+    "Am rămas în casă, fiindcă ploua tare.",
+    "fiindcă ploua tare",
+    "circumstanțială de cauză"
+   ],
+   [
+    "Învață ca să ia o notă bună.",
+    "ca să ia o notă bună",
+    "circumstanțială de scop"
+   ],
+   [
+    "Am venit ca să te ajutăm.",
+    "ca să te ajutăm",
+    "circumstanțială de scop"
+   ],
+   [
+    "Ia umbrela ca să nu te uzi.",
+    "ca să nu te uzi",
+    "circumstanțială de scop"
+   ],
+   [
+    "Citește ca să afle mai multe.",
+    "ca să afle mai multe",
+    "circumstanțială de scop"
+   ],
+   [
+    "Dacă vei învăța, vei reuși.",
+    "Dacă vei învăța",
+    "circumstanțială condițională"
+   ],
+   [
+    "Mergem în parc dacă nu plouă.",
+    "dacă nu plouă",
+    "circumstanțială condițională"
+   ],
+   [
+    "Dacă ar ninge, am merge cu sania.",
+    "Dacă ar ninge",
+    "circumstanțială condițională"
+   ],
+   [
+    "Dacă termini tema, poți ieși la joacă.",
+    "Dacă termini tema",
+    "circumstanțială condițională"
+   ],
+   [
+    "Deși plouă, plecăm la plimbare.",
+    "Deși plouă",
+    "circumstanțială concesivă"
+   ],
+   [
+    "Ioan a venit, deși era obosit.",
+    "deși era obosit",
+    "circumstanțială concesivă"
+   ],
+   [
+    "Deși era târziu, nu mi-era somn.",
+    "Deși era târziu",
+    "circumstanțială concesivă"
+   ],
+   [
+    "Chiar dacă plouă, mergem la meci.",
+    "Chiar dacă plouă",
+    "circumstanțială concesivă"
+   ]
+  ]
+ },
+ "figures": {
+  "labels": [
+   "epitet",
+   "comparație",
+   "personificare",
+   "metaforă",
+   "enumerație",
+   "repetiție",
+   "hiperbolă",
+   "antiteză",
+   "inversiune"
+  ],
+  "items": [
+   [
+    "epitet",
+    "Stejarul falnic crește în poiană."
+   ],
+   [
+    "epitet",
+    "Pe cărare mergea o fată cu ochi albaștri și blânzi."
+   ],
+   [
+    "epitet",
+    "Pădurea deasă și întunecată ascundea poteca."
+   ],
+   [
+    "epitet",
+    "Primăvara aduce zile calde și luminoase."
+   ],
+   [
+    "epitet",
+    "Bunica avea mâini harnice și bune."
+   ],
+   [
+    "epitet",
+    "Marea nesfârșită se pierdea la orizont."
+   ],
+   [
+    "epitet",
+    "Un vânt rece și aspru bătea peste câmpie."
+   ],
+   [
+    "epitet",
+    "Cântecul duios al fluierului se auzea în vale."
+   ],
+   [
+    "epitet",
+    "Nopți lungi și geroase au venit peste sat."
+   ],
+   [
+    "epitet",
+    "Mirosul dulce al teilor umplea aerul."
+   ],
+   [
+    "comparație",
+    "Copilul alerga ușor ca vântul."
+   ],
+   [
+    "comparație",
+    "Fața ei era albă ca zăpada."
+   ],
+   [
+    "comparație",
+    "Lacul strălucea precum o oglindă."
+   ],
+   [
+    "comparație",
+    "Era iute ca fulgerul și blând ca un miel."
+   ],
+   [
+    "comparație",
+    "Cuvintele lui curgeau ca un râu limpede."
+   ],
+   [
+    "comparație",
+    "Pisoiul dormea moale ca o minge de lână."
+   ],
+   [
+    "comparație",
+    "Ochii ei străluceau ca două stele."
+   ],
+   [
+    "comparație",
+    "Bunicul era puternic ca un stejar."
+   ],
+   [
+    "comparație",
+    "Ploaia cădea ca un văl subțire."
+   ],
+   [
+    "comparație",
+    "Zâmbetul lui era cald ca o rază de soare."
+   ],
+   [
+    "personificare",
+    "Vântul șoptește povești printre crengi."
+   ],
+   [
+    "personificare",
+    "Luna veghează somnul orașului."
+   ],
+   [
+    "personificare",
+    "Floarea își pleacă fruntea sub razele soarelui."
+   ],
+   [
+    "personificare",
+    "Ploaia bate la geam, cerând să fie primită."
+   ],
+   [
+    "personificare",
+    "Soarele s-a trezit și a ieșit zâmbind peste dealuri."
+   ],
+   [
+    "personificare",
+    "Valurile se joacă de-a v-ați ascunselea pe mal."
+   ],
+   [
+    "personificare",
+    "Frunzele dansează în bătaia vântului."
+   ],
+   [
+    "personificare",
+    "Noaptea adoarme încet peste sat."
+   ],
+   [
+    "personificare",
+    "Stejarul ascultă cântecul păsărilor."
+   ],
+   [
+    "personificare",
+    "Pârâul râde printre pietre."
+   ],
+   [
+    "metaforă",
+    "Bunica este o comoară pentru toată familia."
+   ],
+   [
+    "metaforă",
+    "Cartea este o fereastră deschisă spre lume."
+   ],
+   [
+    "metaforă",
+    "Ochii ei sunt două luceferi."
+   ],
+   [
+    "metaforă",
+    "Școala este a doua noastră casă."
+   ],
+   [
+    "metaforă",
+    "Timpul este un hoț tăcut."
+   ],
+   [
+    "metaforă",
+    "Inima ei este un ocean de bunătate."
+   ],
+   [
+    "metaforă",
+    "Orașul este o junglă de beton."
+   ],
+   [
+    "metaforă",
+    "Copilăria este un cântec fără sfârșit."
+   ],
+   [
+    "metaforă",
+    "Cuvintele sunt săbii care rănesc."
+   ],
+   [
+    "metaforă",
+    "Cartea este o punte între oameni."
+   ],
+   [
+    "enumerație",
+    "În coș erau mere, pere, struguri, nuci și prune."
+   ],
+   [
+    "enumerație",
+    "Pe câmp înfloreau maci, albăstrele, mușețel și romanițe."
+   ],
+   [
+    "enumerație",
+    "În ghiozdan am pus caiete, cărți, creioane și o gumă."
+   ],
+   [
+    "enumerație",
+    "La piață se vindeau roșii, castraveți, ardei, ceapă și usturoi."
+   ],
+   [
+    "enumerație",
+    "În curte se jucau Ana, Radu, Ioana, Matei și Sorin."
+   ],
+   [
+    "enumerație",
+    "Primăvara aduce flori, soare, cântece, ploi calde și bucurie."
+   ],
+   [
+    "enumerație",
+    "Bunica a pregătit supă, friptură, salată și prăjituri."
+   ],
+   [
+    "enumerație",
+    "În pădure trăiesc urși, lupi, vulpi, căprioare și iepuri."
+   ],
+   [
+    "enumerație",
+    "În atelier am găsit ciocane, cuie, clești, șuruburi și funii."
+   ],
+   [
+    "enumerație",
+    "Pe masă erau pâine, brânză, ouă, măsline și ceai."
+   ],
+   [
+    "repetiție",
+    "Ninge, ninge, ninge peste sat."
+   ],
+   [
+    "repetiție",
+    "Am alergat, am alergat, am alergat până la poartă."
+   ],
+   [
+    "repetiție",
+    "Mult, mult de tot am așteptat această zi."
+   ],
+   [
+    "repetiție",
+    "Plouă, plouă și iar plouă de trei zile."
+   ],
+   [
+    "repetiție",
+    "Frumos e satul, frumos e și drumul spre el."
+   ],
+   [
+    "repetiție",
+    "Mă gândesc la tine, la tine, numai la tine."
+   ],
+   [
+    "repetiție",
+    "Cântă, mierlă, cântă, cântă fără oprire."
+   ],
+   [
+    "repetiție",
+    "Departe, departe, departe se vedea fumul."
+   ],
+   [
+    "repetiție",
+    "Bate vântul, bate tare, bate fără încetare."
+   ],
+   [
+    "repetiție",
+    "Așteptam și așteptam, iar ceasul tot nu se mișca."
+   ],
+   [
+    "hiperbolă",
+    "Am așteptat o veșnicie la poartă."
+   ],
+   [
+    "hiperbolă",
+    "Mi-e foame de mănânc și ghiozdanul."
+   ],
+   [
+    "hiperbolă",
+    "Ți-am spus de un milion de ori să nu uiți cheia."
+   ],
+   [
+    "hiperbolă",
+    "Râdea de se cutremura tot cartierul."
+   ],
+   [
+    "hiperbolă",
+    "Valiza era grea cât un munte."
+   ],
+   [
+    "hiperbolă",
+    "A plâns un râu de lacrimi."
+   ],
+   [
+    "hiperbolă",
+    "Strigătul lui s-a auzit până la capătul lumii."
+   ],
+   [
+    "hiperbolă",
+    "Dacă mai aștept puțin, îmbătrânesc aici."
+   ],
+   [
+    "hiperbolă",
+    "Casa lor este cât o țară."
+   ],
+   [
+    "hiperbolă",
+    "Mi-e atât de somn, încât dorm și în picioare."
+   ],
+   [
+    "antiteză",
+    "Ziua este lungă, iar noaptea este scurtă."
+   ],
+   [
+    "antiteză",
+    "Unii râdeau, alții plângeau."
+   ],
+   [
+    "antiteză",
+    "În sală era zgomot, iar în sufletul lui era liniște."
+   ],
+   [
+    "antiteză",
+    "Era mic la trup, dar mare la suflet."
+   ],
+   [
+    "antiteză",
+    "Vara satul este plin de viață, iarna este adormit."
+   ],
+   [
+    "antiteză",
+    "Dulce a fost începutul, amar a fost sfârșitul."
+   ],
+   [
+    "antiteză",
+    "El era bogat în cuvinte și sărac în fapte."
+   ],
+   [
+    "antiteză",
+    "Aici este lumină, dincolo este întuneric."
+   ],
+   [
+    "antiteză",
+    "Ea vorbea mult, el tăcea încăpățânat."
+   ],
+   [
+    "antiteză",
+    "Ce ieri era plin, azi este gol."
+   ],
+   [
+    "inversiune",
+    "Mare este grădina bunicului din deal."
+   ],
+   [
+    "inversiune",
+    "Frumoasă este țara mea!"
+   ],
+   [
+    "inversiune",
+    "Al pădurii cântec se aude de departe."
+   ],
+   [
+    "inversiune",
+    "Albă se făcu țarina de zăpadă."
+   ],
+   [
+    "inversiune",
+    "Frumoși sunt copiii în ziua de serbare."
+   ],
+   [
+    "inversiune",
+    "Cărți multe a citit în vacanță."
+   ],
+   [
+    "inversiune",
+    "Vechi este drumul spre satul bunicilor."
+   ],
+   [
+    "inversiune",
+    "Înalt este stejarul din poiană."
+   ],
+   [
+    "inversiune",
+    "Mici sunt casele din vale."
+   ],
+   [
+    "inversiune",
+    "Dulce este mierea albinelor."
+   ]
+  ]
+ }
+}

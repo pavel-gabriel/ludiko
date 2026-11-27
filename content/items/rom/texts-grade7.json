@@ -1,0 +1,1496 @@
+[
+ {
+  "id": "item.rom.text.intention.7.t01",
+  "type": "read-and-answer",
+  "skillId": "rom.text.intention.7",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.intention.7",
+  "passage": {
+   "ro": "Pe masa mea, o tabletă își aprinde ecranul la fiecare câteva secunde. Mesaje, jocuri, clipuri: toate cer atenție. Aseară am încercat un experiment. Am închis ecranul și am luat o carte veche din raft. După zece minute, gândurile mi s-au liniștit, iar după o oră am descoperit că timpul nu fugise. Poate nu trebuie să renunțăm la tehnologie, dar merită să ne întrebăm: cine conduce pe cine? Eu sau ecranul meu?"
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.intention.7.t01.q1",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t01.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce urmărește autorul prin acest text?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "să ne îndemne să ne gândim cum folosim tehnologia"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "să ne convingă să aruncăm tabletele"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "să prezinte o carte veche"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.intention.7.t01.q2",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t01.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce experiment a făcut naratorul?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a lăsat ecranul și a citit o carte"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a cumpărat o tabletă nouă"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a mers la plimbare"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.intention.7.t01.q3",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t01.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Cu ce scop apare întrebarea de la final?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "să ne facă să reflectăm"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "să ceară o informație exactă"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "să încheie o discuție"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.intention.7.t01.q4",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t01.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Autorul cere renunțarea totală la tehnologie."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.intention.7.t01",
+   "kind": "item",
+   "title": "Text item.rom.text.intention.7.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.intention.7.t02",
+  "type": "read-and-answer",
+  "skillId": "rom.text.intention.7",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.intention.7",
+  "passage": {
+   "ro": "Bunicul Nicu se lăuda mereu că nu pierde niciodată la șah. Într-o seară, nepotul lui, Dani, i-a propus o partidă. Bunicul a râs, și-a răsucit mustața și a mutat un pion. În zece mutări, regele lui rămăsese singur în mijlocul tablei. — Hm, a zis bunicul, scărpinându-se în cap. Ai noroc de începător. Dani n-a spus nimic. A pus doar un pion la loc pe tablă și a zâmbit așa cum zâmbește cineva care știe ce urmează."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.intention.7.t02.q1",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t02.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce intenție are autorul prin acest text?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "să amuze prezentând o situație neașteptată"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "să ne învețe regulile șahului"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "să ne avertizeze asupra pericolelor"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.intention.7.t02.q2",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t02.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Cum reacționează bunicul la înfrângere?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "recunoaște că a greșit"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "caută o scuză"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "se supără și pleacă"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.intention.7.t02.q3",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t02.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce sugerează zâmbetul lui Dani?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "că se plictisește"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "că știe că poate câștiga din nou"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "că se simte rușinat"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.intention.7.t02.q4",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t02.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Bunicul a câștigat partida."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.intention.7.t02",
+   "kind": "item",
+   "title": "Text item.rom.text.intention.7.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.intention.7.t03",
+  "type": "read-and-answer",
+  "skillId": "rom.text.intention.7",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.intention.7",
+  "passage": {
+   "ro": "Râul din satul nostru era odinioară atât de limpede, încât i se vedeau pietrele de pe fund. Acum, pe maluri zac sticle, pungi și anvelope aruncate de oameni fără griji. Peștii au dispărut, iar broaștele nu mai cântă seara. Nu s-a întâmplat dintr-odată. S-a întâmplat un gest mic după altul, făcut de cineva care credea că o singură pungă nu schimbă nimic. Dacă fiecare dintre noi ar gândi altfel, poate că râul ar mai fi o oglindă."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.intention.7.t03.q1",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t03.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce vrea autorul să transmită?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "că orice gest mic contează când protejăm natura"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "că râurile se curăță singure"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "că peștii pot trăi oriunde"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.intention.7.t03.q2",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t03.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce s-a schimbat la râu?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a devenit mai adânc"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a devenit murdar, iar peștii au dispărut"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a fost mutat din sat"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.intention.7.t03.q3",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t03.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce sugerează formula „un gest mic după altul”?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "că poluarea apare treptat"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "că oamenii construiesc ceva"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "că gesturile sunt întâmplătoare"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.intention.7.t03.q4",
+    "skillId": "rom.text.intention.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.intention.7.t03.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.intention.7.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Râul a fost poluat dintr-odată."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.intention.7.t03",
+   "kind": "item",
+   "title": "Text item.rom.text.intention.7.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.theme.7.t01",
+  "type": "read-and-answer",
+  "skillId": "rom.text.theme.7",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.theme.7",
+  "passage": {
+   "ro": "Pe câmpul din marginea satului, doi băieți își lansau zmeiele. Zmeul lui Radu era mare și roșu, cumpărat de la oraș. Al lui Sandu era mic, făcut din hârtie de ziar și ață de cusut. Vântul le ridica pe amândouă, dar zmeul de hârtie se urca mai sus. Radu s-a supărat și a început să-l ia în râs pe Sandu. Acesta nu a răspuns. Când vântul s-a întețit, ața zmeului roșu s-a rupt, iar zmeul a căzut în lanul de porumb. Sandu și-a legat zmeul de un par și a alergat împreună cu Radu să caute zmeul pierdut."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.theme.7.t01.q1",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t01.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care este tema textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "prietenia și generozitatea în fața invidiei"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "plimbările prin sat"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "concursul de zmeie"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.theme.7.t01.q2",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t01.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce mesaj se desprinde din text?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "cine are zmeul mai mare câștigă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "bunătatea contează mai mult decât valoarea lucrurilor"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "orașul oferă lucruri mai bune"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.theme.7.t01.q3",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t01.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce a făcut Sandu după ce zmeul lui Radu a căzut?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a alergat să-l ajute să-l caute"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a râs de el"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a plecat acasă"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.theme.7.t01.q4",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t01.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Zmeul roșu a căzut în lanul de porumb."
+    },
+    "type": "true-false",
+    "correct": true
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.theme.7.t01",
+   "kind": "item",
+   "title": "Text item.rom.text.theme.7.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.theme.7.t02",
+  "type": "read-and-answer",
+  "skillId": "rom.text.theme.7",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.theme.7",
+  "passage": {
+   "ro": "Moș Costache a plantat un măr în anul în care s-a născut nepoata lui, Ilinca. — Vei vedea, o să ne așteptăm unul pe altul, spunea el. Anii au trecut, pomul a crescut, iar moșul a îmbătrânit. Ilinca stătea după-amiezile sub crengi și îi citea bunicului povești. În toamna în care mărul a rodit pentru prima oară, moșul nu mai putea ieși din casă. Fetița a adus un măr roșu, l-a tăiat în două și i-a dat jumătate. — Ne-am așteptat unul pe altul, bunicule, a spus ea. Moșul a zâmbit, cu ochii în lacrimi."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.theme.7.t02.q1",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t02.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care este tema textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "legătura dintre generații și trecerea timpului"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "cultivarea pomilor fructiferi"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "lectura de seară"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.theme.7.t02.q2",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t02.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce simbolizează mărul din text?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "anii petrecuți împreună și iubirea dintre bunic și nepoată"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "o recoltă bogată"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "o mâncare preferată"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.theme.7.t02.q3",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t02.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Cum se simte moșul la final?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "furios"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "emoționat și fericit"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "plictisit"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.theme.7.t02.q4",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t02.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Moș Costache a plantat mărul înainte de nașterea Ilincăi."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.theme.7.t02",
+   "kind": "item",
+   "title": "Text item.rom.text.theme.7.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.theme.7.t03",
+  "type": "read-and-answer",
+  "skillId": "rom.text.theme.7",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.theme.7",
+  "passage": {
+   "ro": "Barca lui Tudor se legăna pe valuri ca o coajă de nucă. Cerul se întunecase brusc, iar vântul smulgea apa din lac și o arunca în fețe. Lângă el, sora lui, Iulia, strângea nervoasă vâslele. — Nu ne vom mai întoarce niciodată, a șoptit ea. Tudor a tras aer în piept. — Ba da. Numărăm vâslele împreună. Una, două, una, două. Au vâslit ritmic, cu mâinile amorțite, până când malul a început să se vadă prin ceață. Pe țărm, tatăl lor îi aștepta cu o pătură în brațe."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.theme.7.t03.q1",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t03.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care este tema textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "pescuitul pe lac"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "curajul și sprijinul reciproc în fața pericolului"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "relația cu tatăl"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.theme.7.t03.q2",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t03.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Cum o ajută Tudor pe sora lui?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "o încurajează și stabilește un ritm al vâslitului"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "o ceartă"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "o lasă să vâslească singură"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.theme.7.t03.q3",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t03.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce comparație apare la începutul textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "barca se legăna ca o coajă de nucă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "cerul era ca un zid"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "vântul era ca o furtună"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.theme.7.t03.q4",
+    "skillId": "rom.text.theme.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.theme.7.t03.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.theme.7.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Iulia era liniștită în timpul furtunii."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.theme.7.t03",
+   "kind": "item",
+   "title": "Text item.rom.text.theme.7.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.argument.7.t01",
+  "type": "read-and-answer",
+  "skillId": "rom.text.argument.7",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.argument.7",
+  "passage": {
+   "ro": "Se tot discută dacă elevii ar trebui să primească teme în fiecare zi. Susținătorii spun că temele consolidează ceea ce s-a învățat la școală și obișnuiesc copiii cu disciplina. Adversarii replică faptul că, după opt ore petrecute la școală, un elev are nevoie și de timp liber pentru joacă, sport sau lectură. Părerea mea este că soluția se află la mijloc: teme scurte și clare, date doar atunci când sunt cu adevărat utile. Astfel, învățăm fără să ne simțim copleșiți."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.argument.7.t01.q1",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t01.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care este opinia autorului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "temele trebuie interzise"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "temele trebuie să fie scurte și utile"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "temele trebuie să fie mai lungi"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.argument.7.t01.q2",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t01.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce argument aduc susținătorii temelor?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "consolidează lecțiile și formează disciplina"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "oferă timp liber"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "înlocuiesc lecțiile"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.argument.7.t01.q3",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t01.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce arată formula „Părerea mea este”?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "exprimarea unei opinii personale"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "citarea unui specialist"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "prezentarea unui fapt dovedit"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.argument.7.t01.q4",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t01.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Adversarii temelor spun că elevii nu trebuie să învețe deloc."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.argument.7.t01",
+   "kind": "item",
+   "title": "Text item.rom.text.argument.7.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.argument.7.t02",
+  "type": "read-and-answer",
+  "skillId": "rom.text.argument.7",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.argument.7",
+  "passage": {
+   "ro": "Somnul este esențial pentru dezvoltarea unui adolescent. Specialiștii recomandă între opt și zece ore de somn pe noapte. Lipsa somnului scade atenția, înrăutățește memoria și îi poate face pe copii mai irascibili. De aceea, medicii sugerează un program regulat: culcare la aceeași oră, fără telefon în pat și într-o cameră răcoroasă și liniștită. Un somn bun nu este un lux, ci o condiție a învățării."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.argument.7.t02.q1",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t02.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Câte ore de somn recomandă specialiștii?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "între patru și șase"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "între șase și opt"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "între opt și zece"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.rom.text.argument.7.t02.q2",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t02.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce efect are lipsa somnului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "scade atenția și afectează memoria"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "crește viteza de învățare"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "nu are niciun efect"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.argument.7.t02.q3",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t02.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care este ideea finală a textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "somnul bun este o condiție a învățării"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "telefonul ajută la somn"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "somnul trebuie evitat"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.argument.7.t02.q4",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t02.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Se recomandă folosirea telefonului în pat."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.argument.7.t02",
+   "kind": "item",
+   "title": "Text item.rom.text.argument.7.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.argument.7.t03",
+  "type": "read-and-answer",
+  "skillId": "rom.text.argument.7",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.argument.7",
+  "passage": {
+   "ro": "Domnule primar, vă scriem în numele elevilor clasei a VII-a pentru a vă ruga să amenajați o pistă pentru biciclete lângă școala noastră. Mulți dintre noi venim la școală pe bicicletă, dar drumul este aglomerat și periculos. O pistă ar scădea riscul accidentelor, ar reduce poluarea și ne-ar încuraja să facem mișcare. Sperăm că veți analiza cererea noastră și ne arătăm dispuși să ajutăm la amenajare. Cu stimă, elevii clasei a VII-a."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.argument.7.t03.q1",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t03.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce solicită elevii?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "o pistă pentru biciclete"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "un teren de fotbal"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "o parcare nouă"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.argument.7.t03.q2",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t03.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care este unul dintre argumentele lor?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "pista ar reduce riscul accidentelor"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "bicicletele sunt ieftine"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "școala este departe"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.argument.7.t03.q3",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t03.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce fel de text este acesta?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "o scrisoare oficială (cerere)"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "o poveste"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "o descriere"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.argument.7.t03.q4",
+    "skillId": "rom.text.argument.7",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.argument.7.t03.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.argument.7.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Elevii refuză să participe la amenajare."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.argument.7.t03",
+   "kind": "item",
+   "title": "Text item.rom.text.argument.7.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ }
+]

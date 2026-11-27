@@ -1,0 +1,1496 @@
+[
+ {
+  "id": "item.rom.text.literal.5.t01",
+  "type": "read-and-answer",
+  "skillId": "rom.text.literal.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.literal.5",
+  "passage": {
+   "ro": "Sâmbătă dimineață, Matei a plecat împreună cu bunicul spre izvorul din marginea pădurii. Bunicul purta o căldare de tablă, iar Matei ducea un coș cu pâine și brânză. Drumul urca printre fagi înalți, iar frunzele uscate foșneau sub bocanci. După o oră, s-au oprit lângă o stâncă acoperită cu mușchi. De sub ea țâșnea o apă limpede și rece. Matei și-a umplut căușul palmelor și a băut cu sete. — N-am gustat niciodată o apă mai bună! a spus el. Bunicul a zâmbit și a umplut căldarea."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.literal.5.t01.q1",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t01.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Cu cine a plecat Matei la izvor?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "cu tatăl său"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "cu bunicul"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "cu un prieten"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.literal.5.t01.q2",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t01.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce ducea Matei în mână?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "o căldare de tablă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "un rucsac cu cărți"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "un coș cu pâine și brânză"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.rom.text.literal.5.t01.q3",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t01.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Unde s-au oprit cei doi?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "lângă o stâncă acoperită cu mușchi"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "într-o poiană cu flori"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "pe malul unui râu"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.literal.5.t01.q4",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t01.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Drumul spre izvor cobora printre fagi."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.literal.5.t01",
+   "kind": "item",
+   "title": "Text item.rom.text.literal.5.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.literal.5.t02",
+  "type": "read-and-answer",
+  "skillId": "rom.text.literal.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.literal.5",
+  "passage": {
+   "ro": "ANUNȚ. Elevii claselor a V-a – a VIII-a sunt invitați sâmbătă, 12 octombrie, la o acțiune de curățenie în parcul din apropierea școlii. Întâlnirea este la ora 9:00, în fața școlii. Fiecare participant aduce mănuși de lucru și o sticlă cu apă. Sacii pentru gunoi sunt oferiți de organizatori. Activitatea se încheie la ora 12:00, iar la final toți participanții primesc o gustare. Înscrierile se fac la doamna diriginte, până joi."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.literal.5.t02.q1",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t02.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce fel de text este acesta?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "o poveste"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "un anunț"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "o poezie"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.literal.5.t02.q2",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t02.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "La ce oră se întâlnesc elevii?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "la ora 8:00"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "la ora 12:00"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "la ora 9:00"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.rom.text.literal.5.t02.q3",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t02.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce trebuie să aducă fiecare participant?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "mănuși de lucru și o sticlă cu apă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "saci pentru gunoi"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "o gustare pentru toți"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.literal.5.t02.q4",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t02.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Înscrierile se fac la directorul școlii."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.literal.5.t02",
+   "kind": "item",
+   "title": "Text item.rom.text.literal.5.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.literal.5.t03",
+  "type": "read-and-answer",
+  "skillId": "rom.text.literal.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.literal.5",
+  "passage": {
+   "ro": "La marginea satului, pe vârful unui deal, stă o casă veche de lemn. Pereții ei sunt vopsiți în albastru, iar ferestrele au obloane verzi. În fața casei se întinde o grădină cu flori de toate culorile: bujori, garoafe și mușcate. Pe prispă, un câine bătrân doarme la soare. Din horn se ridică un fum subțire, semn că cineva pregătește mâncare. În spatele casei începe pădurea, iar seara de acolo se aud cântecele păsărilor."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.literal.5.t03.q1",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t03.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Unde se află casa?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "într-un oraș mare"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "pe malul mării"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "pe vârful unui deal"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.rom.text.literal.5.t03.q2",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t03.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce culoare au pereții casei?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "albi"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "verzi"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "albaștri"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.rom.text.literal.5.t03.q3",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t03.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce face câinele de pe prispă?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "doarme"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "latră"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "aleargă"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.literal.5.t03.q4",
+    "skillId": "rom.text.literal.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.literal.5.t03.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.literal.5.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Fumul din horn arată că cineva pregătește mâncare."
+    },
+    "type": "true-false",
+    "correct": true
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.literal.5.t03",
+   "kind": "item",
+   "title": "Text item.rom.text.literal.5.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.modes.5.t01",
+  "type": "read-and-answer",
+  "skillId": "rom.text.modes.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.modes.5",
+  "passage": {
+   "ro": "Într-o seară, Ioana a observat că în curte plânge un pisoi. L-a luat în brațe și l-a dus în casă. I-a pus lapte într-o farfurie, iar pisoiul a băut cu grabă. Apoi s-a cuibărit într-un coș și a adormit. A doua zi, Ioana a lipit pe garduri mici anunțuri, dar nimeni nu și-a căutat pisoiul. Așa că a rămas la ea."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.modes.5.t01.q1",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t01.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce mod de expunere predomină în text?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "narațiunea"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "descrierea"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "dialogul"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.modes.5.t01.q2",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t01.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce arată expresiile „într-o seară”, „apoi”, „a doua zi”?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "culorile lucrurilor"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "ordinea întâmplărilor"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "sunetele din curte"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.modes.5.t01.q3",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t01.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce a făcut Ioana după ce a găsit pisoiul?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "l-a lăsat în curte"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "l-a dus la vecini"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "l-a dus în casă și i-a dat lapte"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.rom.text.modes.5.t01.q4",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t01.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Stăpânul pisoiului a venit a doua zi."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.modes.5.t01",
+   "kind": "item",
+   "title": "Text item.rom.text.modes.5.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.modes.5.t02",
+  "type": "read-and-answer",
+  "skillId": "rom.text.modes.5",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.modes.5",
+  "passage": {
+   "ro": "Pădurea de toamnă este un tablou în culori calde. Frunzele fagilor sunt galbene ca mierea, iar cele ale stejarilor sunt arămii. Printre copaci se ițesc ciuperci cu pălării maronii. Aerul este rece și miroase a pământ umed. Din când în când, o frunză se desprinde și coboară încet spre pământ. Totul pare liniștit și adormit."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.modes.5.t02.q1",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t02.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce mod de expunere predomină în text?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "narațiunea"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "dialogul"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "descrierea"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.rom.text.modes.5.t02.q2",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t02.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce culoare au frunzele fagilor?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "galbene"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "roșii"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "verzi"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.modes.5.t02.q3",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t02.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce simțuri sunt folosite în fraza „Aerul este rece și miroase a pământ umed”?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "gustul"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "pipăitul și mirosul"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "auzul"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.modes.5.t02.q4",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t02.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? În text se povestește o întâmplare cu mai multe personaje."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.modes.5.t02",
+   "kind": "item",
+   "title": "Text item.rom.text.modes.5.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.modes.5.t03",
+  "type": "read-and-answer",
+  "skillId": "rom.text.modes.5",
+  "difficulty": 2,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.modes.5",
+  "passage": {
+   "ro": "— Unde pleci așa de grăbit? l-a întrebat Radu pe Tudor. — Merg la bibliotecă, a răspuns Tudor. Vreau să împrumut o carte despre dinozauri. — Pot veni și eu? — Sigur! Dar trebuie să ne grăbim, pentru că biblioteca se închide la ora cinci. — Atunci hai! a spus Radu."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.modes.5.t03.q1",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t03.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce mod de expunere predomină în text?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "descrierea"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "dialogul"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "monologul"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.modes.5.t03.q2",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t03.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Unde merge Tudor?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "la bibliotecă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "la școală"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "în parc"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.modes.5.t03.q3",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t03.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce carte vrea să împrumute Tudor?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "una despre cai"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "una despre dinozauri"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "una despre stele"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.modes.5.t03.q4",
+    "skillId": "rom.text.modes.5",
+    "difficulty": 2,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.modes.5.t03.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.modes.5.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Biblioteca se închide la ora șase."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.modes.5.t03",
+   "kind": "item",
+   "title": "Text item.rom.text.modes.5.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.mainidea.5.t01",
+  "type": "read-and-answer",
+  "skillId": "rom.text.mainidea.5",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.mainidea.5",
+  "passage": {
+   "ro": "Albinele trăiesc în familii numeroase. Într-un stup sunt o regină, câteva sute de trântori și zeci de mii de lucrătoare. Fiecare lucrătoare are o sarcină: unele curăță stupul, altele hrănesc larvele, iar altele strâng nectar din flori. Din nectar, albinele fac miere, pe care o păstrează pentru iarnă. Fără munca lor, multe plante nu ar fi polenizate și nu ar mai face fructe."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.mainidea.5.t01.q1",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t01.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care este ideea principală a textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Albinele trăiesc în familii bine organizate, iar munca lor este foarte utilă."
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "Mierea este un aliment foarte dulce."
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Plantele cresc numai primăvara."
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.mainidea.5.t01.q2",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t01.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce titlu se potrivește cel mai bine textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Cum se face mierea"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "Familia harnică a albinelor"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Florile din grădină"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.mainidea.5.t01.q3",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t01.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce fac albinele cu mierea?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "o păstrează pentru iarnă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "o dau trântorilor"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "o duc în flori"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.mainidea.5.t01.q4",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t01.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Într-un stup trăiesc mai multe regine."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.mainidea.5.t01",
+   "kind": "item",
+   "title": "Text item.rom.text.mainidea.5.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.mainidea.5.t02",
+  "type": "read-and-answer",
+  "skillId": "rom.text.mainidea.5",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.mainidea.5",
+  "passage": {
+   "ro": "Andrei a ieșit de la școală cu pași grăbiți și a uitat ghiozdanul pe o bancă din parc. Seara, când a vrut să-și facă tema, a observat că îl lipsește. Mama l-a liniștit și au plecat împreună să-l caute. În parc, un bătrân stătea pe bancă, ținând ghiozdanul în brațe. — L-am păzit pentru stăpânul lui, a spus omul. Andrei i-a mulțumit și a primit înapoi caietele. De atunci, nu mai pleacă dintr-un loc fără să se uite în jur."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.mainidea.5.t02.q1",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t02.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care este ideea principală a textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Un băiat își uită ghiozdanul, dar îl recuperează datorită unui om cinstit."
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "Parcul este locul preferat al bătrânilor."
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Temele trebuie făcute dimineața."
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.mainidea.5.t02.q2",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t02.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce titlu se potrivește cel mai bine textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Ghiozdanul regăsit"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "Vacanța la munte"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Prietenul bătrân al parcului"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.mainidea.5.t02.q3",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t02.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Unde și-a uitat Andrei ghiozdanul?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "la școală"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "pe o bancă din parc"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "în autobuz"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.mainidea.5.t02.q4",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t02.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Ghiozdanul a fost găsit de mama lui Andrei."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.mainidea.5.t02",
+   "kind": "item",
+   "title": "Text item.rom.text.mainidea.5.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.mainidea.5.t03",
+  "type": "read-and-answer",
+  "skillId": "rom.text.mainidea.5",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.mainidea.5",
+  "passage": {
+   "ro": "Apa din natură nu dispare niciodată, ci își schimbă mereu forma. Soarele încălzește râurile și mările, iar apa se transformă în vapori care urcă spre cer. Acolo, vaporii se răcesc și formează nori. Din nori cade ploaie sau zăpadă, iar apa ajunge din nou în râuri și în mări. Acest drum al apei se numește circuitul apei în natură."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.mainidea.5.t03.q1",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t03.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care este ideea principală a textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Soarele este cel mai important astru."
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "Apa din natură se mișcă într-un circuit continuu."
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Zăpada cade doar iarna."
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.mainidea.5.t03.q2",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t03.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce titlu se potrivește cel mai bine textului?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Circuitul apei în natură"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "Norii de vară"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Marea de azi"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.mainidea.5.t03.q3",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t03.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce se întâmplă cu vaporii în înălțime?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "dispar"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "se răcesc și formează nori"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "se întorc în râuri"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.mainidea.5.t03.q4",
+    "skillId": "rom.text.mainidea.5",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.mainidea.5.t03.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.mainidea.5.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Apa dispare definitiv când se evaporă."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.mainidea.5.t03",
+   "kind": "item",
+   "title": "Text item.rom.text.mainidea.5.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ }
+]
