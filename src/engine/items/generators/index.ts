@@ -35,12 +35,26 @@ import './romSyllables';
 import './romWordPicture';
 import './romSentences';
 import './romVocab';
+// Romanian gimnaziu (V-VIII): spelling pairs, parts of speech, verb forms, syntax roles, figures of speech, curated quiz
+import './romSpelling';
+import './romPos';
+import './romVerbs';
+import './romSyntax';
+import './romFigures';
+import './romQuiz';
 // science generators (sci-sort, sci-which, sci-tf, sci-relation, sci-order)
 import './stiinte';
 // history (grade IV) generators
 import './istGenerators';
+// history gimnaziu (V-VIII): events-driven timelines + curated facts
+import './istGimnaziu';
 // Geography (geo) generators
 import './geoDirections';
+// Natural sciences gimnaziu (bio V-VIII, fiz VI-VIII, chim VII-VIII): curated quizzes + physics/chemistry/biology calculators
+import './natQuiz';
+import './natCalc';
+import './natChem';
+import './natBio';
 // Logic puzzles (patterns, odd-one-out, analogies, mini-sudoku, robot path, who-lives-where)
 import './logicPatterns';
 import './logicOddOne';
@@ -48,6 +62,26 @@ import './logicAnalogy';
 import './logicSudoku';
 import './logicRobot';
 import './logicWhere';
+// Math grades V-VIII (fractions-ops, decimals, powers, divisibility, integers, percentages, proportions, linear-equation,
+// system-2x2, sqrt, pythagoras, areas-volumes, algebra, linear-function, probability, statistics, angles, segments-units)
+import './fractionsOps';
+import './decimals';
+import './powers';
+import './divisibility';
+import './integers';
+import './percentages';
+import './proportions';
+import './linearEquation';
+import './system2x2';
+import './sqrt';
+import './pythagoras';
+import './areasVolumes';
+import './algebra';
+import './linearFunction';
+import './probability';
+import './statistics';
+import './angles';
+import './segmentsUnits';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

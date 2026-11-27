@@ -1,0 +1,2797 @@
+{
+ "provenance": {
+  "id": "prov.data.ist.events-gimnaziu",
+  "kind": "data",
+  "title": "Ludiko curated events for history grades V-VIII (year, label ro/en, grade, tags)",
+  "author": "Ludiko",
+  "source": "own",
+  "licence": "OWN",
+  "notes": "Own wording; historical facts only (dates double-checked against standard reference works, to be reviewed by a history teacher). reviewStatus beta. No textbook text."
+ },
+ "events": [
+  {
+   "id": "olimpiade-1",
+   "year": -776,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "greece",
+    "time"
+   ],
+   "ro": "Prima olimpiadă antică (data tradițională)",
+   "en": "The first ancient Olympic Games (traditional date)"
+  },
+  {
+   "id": "democratie",
+   "year": -508,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "greece"
+   ],
+   "ro": "Reformele lui Clistene la Atena (începutul democrației)",
+   "en": "The reforms of Cleisthenes in Athens (start of democracy)"
+  },
+  {
+   "id": "marathon",
+   "year": -490,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "greece",
+    "greece2",
+    "time"
+   ],
+   "ro": "Bătălia de la Marathon",
+   "en": "The Battle of Marathon"
+  },
+  {
+   "id": "salamina",
+   "year": -480,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "greece",
+    "greece2"
+   ],
+   "ro": "Bătălia navală de la Salamina",
+   "en": "The naval Battle of Salamis"
+  },
+  {
+   "id": "parthenon",
+   "year": -447,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "greece",
+    "greece2"
+   ],
+   "ro": "Începe construcția Partenonului la Atena",
+   "en": "Construction of the Parthenon begins in Athens"
+  },
+  {
+   "id": "peloponez",
+   "year": -431,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "greece",
+    "greece2"
+   ],
+   "ro": "Începe războiul dintre Atena și Sparta (războiul peloponesiac)",
+   "en": "The war between Athens and Sparta (the Peloponnesian War) begins"
+  },
+  {
+   "id": "alex-rege",
+   "year": -336,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "greece2"
+   ],
+   "ro": "Alexandru cel Mare devine rege al Macedoniei",
+   "en": "Alexander the Great becomes king of Macedonia"
+  },
+  {
+   "id": "alex-moarte",
+   "year": -323,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "greece2",
+    "time"
+   ],
+   "ro": "Moare Alexandru cel Mare",
+   "en": "Alexander the Great dies"
+  },
+  {
+   "id": "piatra-unelte",
+   "year": -2500000,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "prehistory"
+   ],
+   "ro": "Cele mai vechi unelte de piatră cioplită",
+   "en": "The oldest chipped stone tools"
+  },
+  {
+   "id": "foc",
+   "year": -800000,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "prehistory"
+   ],
+   "ro": "Oamenii încep să folosească focul",
+   "en": "People begin to use fire"
+  },
+  {
+   "id": "sapiens",
+   "year": -300000,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "prehistory"
+   ],
+   "ro": "Apare omul modern (Homo sapiens)",
+   "en": "Modern humans (Homo sapiens) appear"
+  },
+  {
+   "id": "lascaux",
+   "year": -17000,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "prehistory"
+   ],
+   "ro": "Picturile din peștera Lascaux",
+   "en": "The paintings in the Lascaux cave"
+  },
+  {
+   "id": "agricultura",
+   "year": -10000,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "prehistory"
+   ],
+   "ro": "Începe agricultura în Orientul Apropiat",
+   "en": "Farming begins in the Near East"
+  },
+  {
+   "id": "cupru",
+   "year": -5000,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "prehistory"
+   ],
+   "ro": "Primele unelte din cupru",
+   "en": "The first copper tools"
+  },
+  {
+   "id": "cuneiform",
+   "year": -3300,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "orient"
+   ],
+   "ro": "Apare scrierea cuneiformă în Mesopotamia",
+   "en": "Cuneiform writing appears in Mesopotamia"
+  },
+  {
+   "id": "egipt-unit",
+   "year": -3100,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "orient"
+   ],
+   "ro": "Egiptul este unit sub un singur faraon",
+   "en": "Egypt is united under a single pharaoh"
+  },
+  {
+   "id": "giza",
+   "year": -2560,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "orient"
+   ],
+   "ro": "Se construiește Marea Piramidă de la Giza",
+   "en": "The Great Pyramid of Giza is built"
+  },
+  {
+   "id": "ur",
+   "year": -2100,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "orient"
+   ],
+   "ro": "Se construiește zigguratul din Ur",
+   "en": "The ziggurat of Ur is built"
+  },
+  {
+   "id": "hammurabi",
+   "year": -1754,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "orient"
+   ],
+   "ro": "Codul de legi al lui Hammurabi",
+   "en": "The law code of Hammurabi"
+  },
+  {
+   "id": "champollion",
+   "year": 1822,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "orient"
+   ],
+   "ro": "Champollion descifrează hieroglifele egiptene",
+   "en": "Champollion deciphers Egyptian hieroglyphs"
+  },
+  {
+   "id": "tutankhamon",
+   "year": 1922,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "orient"
+   ],
+   "ro": "Este descoperit mormântul lui Tutankhamon",
+   "en": "The tomb of Tutankhamun is discovered"
+  },
+  {
+   "id": "roma-fond",
+   "year": -753,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "rome",
+    "time"
+   ],
+   "ro": "Fondarea Romei (data tradițională)",
+   "en": "The founding of Rome (traditional date)"
+  },
+  {
+   "id": "republica",
+   "year": -509,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "rome"
+   ],
+   "ro": "Începe Republica Romană (data tradițională)",
+   "en": "The Roman Republic begins (traditional date)"
+  },
+  {
+   "id": "punic1",
+   "year": -264,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "rome"
+   ],
+   "ro": "Începe primul război punic dintre Roma și Cartagina",
+   "en": "The first Punic War between Rome and Carthage begins"
+  },
+  {
+   "id": "hannibal",
+   "year": -218,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "rome"
+   ],
+   "ro": "Hannibal trece Alpii cu armata sa",
+   "en": "Hannibal crosses the Alps with his army"
+  },
+  {
+   "id": "cartagina",
+   "year": -146,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "rome"
+   ],
+   "ro": "Cartagina este distrusă de romani",
+   "en": "Carthage is destroyed by the Romans"
+  },
+  {
+   "id": "rubicon",
+   "year": -49,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "rome"
+   ],
+   "ro": "Iulius Cezar trece râul Rubicon",
+   "en": "Julius Caesar crosses the Rubicon river"
+  },
+  {
+   "id": "cezar",
+   "year": -44,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "rome",
+    "time"
+   ],
+   "ro": "Iulius Cezar este asasinat",
+   "en": "Julius Caesar is assassinated"
+  },
+  {
+   "id": "augustus",
+   "year": -27,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "rome",
+    "empire"
+   ],
+   "ro": "Octavian devine Augustus, primul împărat roman",
+   "en": "Octavian becomes Augustus, the first Roman emperor"
+  },
+  {
+   "id": "augustus-moarte",
+   "year": 14,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "empire"
+   ],
+   "ro": "Moare împăratul Augustus",
+   "en": "Emperor Augustus dies"
+  },
+  {
+   "id": "incendiu",
+   "year": 64,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "empire"
+   ],
+   "ro": "Marele incendiu din Roma",
+   "en": "The Great Fire of Rome"
+  },
+  {
+   "id": "colosseum",
+   "year": 80,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "empire"
+   ],
+   "ro": "Se inaugurează Colosseumul",
+   "en": "The Colosseum is inaugurated"
+  },
+  {
+   "id": "traian-max",
+   "year": 117,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "empire"
+   ],
+   "ro": "Imperiul Roman ajunge la cea mai mare întindere",
+   "en": "The Roman Empire reaches its greatest extent"
+  },
+  {
+   "id": "caracalla",
+   "year": 212,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "empire"
+   ],
+   "ro": "Edictul lui Caracalla: cetățenie romană pentru oamenii liberi din imperiu",
+   "en": "The Edict of Caracalla: Roman citizenship for the free people of the empire"
+  },
+  {
+   "id": "constantinopol",
+   "year": 330,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "empire",
+    "byz"
+   ],
+   "ro": "Constantinopolul devine capitala imperiului",
+   "en": "Constantinople becomes the capital of the empire"
+  },
+  {
+   "id": "impartire",
+   "year": 395,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "empire",
+    "christian",
+    "byz"
+   ],
+   "ro": "Imperiul Roman este împărțit în două",
+   "en": "The Roman Empire is split in two"
+  },
+  {
+   "id": "cadere",
+   "year": 476,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "empire",
+    "time",
+    "mid"
+   ],
+   "ro": "Se încheie Imperiul Roman de Apus",
+   "en": "The Western Roman Empire comes to an end"
+  },
+  {
+   "id": "dromichaites",
+   "year": -292,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "dacians"
+   ],
+   "ro": "Regele get Dromichaites îl învinge pe Lisimah",
+   "en": "The Getic king Dromichaites defeats Lysimachus"
+  },
+  {
+   "id": "burebista-start",
+   "year": -82,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "dacians",
+    "time"
+   ],
+   "ro": "Burebista începe să conducă dacii",
+   "en": "Burebista begins to rule the Dacians"
+  },
+  {
+   "id": "burebista-end",
+   "year": -44,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "dacians"
+   ],
+   "ro": "Se încheie domnia lui Burebista",
+   "en": "The rule of Burebista ends"
+  },
+  {
+   "id": "decebal",
+   "year": 87,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "dacians"
+   ],
+   "ro": "Decebal devine rege al dacilor",
+   "en": "Decebalus becomes king of the Dacians"
+  },
+  {
+   "id": "tapae",
+   "year": 88,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "dacians"
+   ],
+   "ro": "Bătălia de la Tapae dintre daci și romani",
+   "en": "The Battle of Tapae between Dacians and Romans"
+  },
+  {
+   "id": "razboi1",
+   "year": 101,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "dacians",
+    "romanization"
+   ],
+   "ro": "Începe primul război dintre daci și romani",
+   "en": "The first war between Dacians and Romans begins"
+  },
+  {
+   "id": "razboi2",
+   "year": 105,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "romanization"
+   ],
+   "ro": "Începe al doilea război dintre daci și romani",
+   "en": "The second war between Dacians and Romans begins"
+  },
+  {
+   "id": "provincie",
+   "year": 106,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "romanization",
+    "time"
+   ],
+   "ro": "Dacia devine provincie romană",
+   "en": "Dacia becomes a Roman province"
+  },
+  {
+   "id": "ulpia",
+   "year": 108,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "romanization"
+   ],
+   "ro": "Se întemeiază Ulpia Traiana Sarmizegetusa, capitala provinciei",
+   "en": "Ulpia Traiana Sarmizegetusa, the provincial capital, is founded"
+  },
+  {
+   "id": "columna",
+   "year": 113,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "romanization"
+   ],
+   "ro": "Columna lui Traian este inaugurată la Roma",
+   "en": "Trajan's Column is inaugurated in Rome"
+  },
+  {
+   "id": "retragere",
+   "year": 271,
+   "approx": true,
+   "grade": 5,
+   "tags": [
+    "romanization"
+   ],
+   "ro": "Armata și administrația romană se retrag din Dacia",
+   "en": "The Roman army and administration withdraw from Dacia"
+  },
+  {
+   "id": "persecutii",
+   "year": 303,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "christian"
+   ],
+   "ro": "Încep marile persecuții ale creștinilor sub Dioclețian",
+   "en": "The great persecutions of Christians under Diocletian begin"
+  },
+  {
+   "id": "milano",
+   "year": 313,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "christian"
+   ],
+   "ro": "Edictul de la Milano: libertate religioasă în imperiu",
+   "en": "The Edict of Milan: religious freedom in the empire"
+  },
+  {
+   "id": "niceea",
+   "year": 325,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "christian"
+   ],
+   "ro": "Primul conciliu ecumenic de la Niceea",
+   "en": "The First Council of Nicaea"
+  },
+  {
+   "id": "constantin-moarte",
+   "year": 337,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "christian"
+   ],
+   "ro": "Moare împăratul Constantin cel Mare",
+   "en": "Emperor Constantine the Great dies"
+  },
+  {
+   "id": "tesalonic",
+   "year": 380,
+   "approx": false,
+   "grade": 5,
+   "tags": [
+    "christian"
+   ],
+   "ro": "Creștinismul devine religia oficială a imperiului",
+   "en": "Christianity becomes the official religion of the empire"
+  },
+  {
+   "id": "clovis",
+   "year": 481,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mid"
+   ],
+   "ro": "Clovis devine rege al francilor",
+   "en": "Clovis becomes king of the Franks"
+  },
+  {
+   "id": "poitiers",
+   "year": 732,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mid"
+   ],
+   "ro": "Francii opresc înaintarea arabilor la Poitiers",
+   "en": "The Franks halt the Arab advance at Poitiers"
+  },
+  {
+   "id": "carol",
+   "year": 800,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mid"
+   ],
+   "ro": "Carol cel Mare este încoronat împărat",
+   "en": "Charlemagne is crowned emperor"
+  },
+  {
+   "id": "verdun",
+   "year": 843,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mid"
+   ],
+   "ro": "Tratatul de la Verdun împarte imperiul lui Carol cel Mare",
+   "en": "The Treaty of Verdun divides Charlemagne's empire"
+  },
+  {
+   "id": "otto",
+   "year": 962,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mid",
+    "feudal"
+   ],
+   "ro": "Otto I este încoronat împărat al Sfântului Imperiu Roman",
+   "en": "Otto I is crowned emperor of the Holy Roman Empire"
+  },
+  {
+   "id": "hastings",
+   "year": 1066,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "feudal"
+   ],
+   "ro": "Bătălia de la Hastings: normanzii cuceresc Anglia",
+   "en": "The Battle of Hastings: the Normans conquer England"
+  },
+  {
+   "id": "domesday",
+   "year": 1086,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "feudal"
+   ],
+   "ro": "Se întocmește Cartea Domesday în Anglia",
+   "en": "The Domesday Book is compiled in England"
+  },
+  {
+   "id": "magna-carta",
+   "year": 1215,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "feudal"
+   ],
+   "ro": "Regele Angliei semnează Magna Carta",
+   "en": "The King of England signs the Magna Carta"
+  },
+  {
+   "id": "razboi100",
+   "year": 1337,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "feudal"
+   ],
+   "ro": "Începe Războiul de o sută de ani dintre Anglia și Franța",
+   "en": "The Hundred Years' War between England and France begins"
+  },
+  {
+   "id": "ciuma",
+   "year": 1347,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "feudal"
+   ],
+   "ro": "Ciuma neagră ajunge în Europa",
+   "en": "The Black Death reaches Europe"
+  },
+  {
+   "id": "iustinian",
+   "year": 527,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "byz"
+   ],
+   "ro": "Iustinian devine împărat bizantin",
+   "en": "Justinian becomes Byzantine emperor"
+  },
+  {
+   "id": "sofia",
+   "year": 537,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "byz"
+   ],
+   "ro": "Este sfințită biserica Sfânta Sofia din Constantinopol",
+   "en": "The church of Hagia Sophia in Constantinople is consecrated"
+  },
+  {
+   "id": "iustinian-moarte",
+   "year": 565,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "byz"
+   ],
+   "ro": "Moare împăratul Iustinian",
+   "en": "Emperor Justinian dies"
+  },
+  {
+   "id": "schisma",
+   "year": 1054,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "byz",
+    "crusades"
+   ],
+   "ro": "Marea Schismă: separarea Bisericii ortodoxe de cea catolică",
+   "en": "The Great Schism: the Orthodox and Catholic Churches separate"
+  },
+  {
+   "id": "constantinopol-1204",
+   "year": 1204,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "byz",
+    "crusades"
+   ],
+   "ro": "Cruciații cuceresc Constantinopolul",
+   "en": "The Crusaders capture Constantinople"
+  },
+  {
+   "id": "constantinopol-1453",
+   "year": 1453,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "byz",
+    "ottoman"
+   ],
+   "ro": "Otomanii cuceresc Constantinopolul",
+   "en": "The Ottomans capture Constantinople"
+  },
+  {
+   "id": "mahomed-nastere",
+   "year": 570,
+   "approx": true,
+   "grade": 6,
+   "tags": [
+    "islam"
+   ],
+   "ro": "Se naște Mahomed",
+   "en": "Muhammad is born"
+  },
+  {
+   "id": "hegira",
+   "year": 622,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "islam"
+   ],
+   "ro": "Hegira: începutul calendarului musulman",
+   "en": "The Hijra: the start of the Muslim calendar"
+  },
+  {
+   "id": "mahomed-moarte",
+   "year": 632,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "islam"
+   ],
+   "ro": "Moare Mahomed",
+   "en": "Muhammad dies"
+  },
+  {
+   "id": "omeiazi",
+   "year": 661,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "islam"
+   ],
+   "ro": "Începe califatul Omeiazilor",
+   "en": "The Umayyad Caliphate begins"
+  },
+  {
+   "id": "iberia",
+   "year": 711,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "islam"
+   ],
+   "ro": "Armatele arabe trec în Peninsula Iberică",
+   "en": "Arab armies cross into the Iberian Peninsula"
+  },
+  {
+   "id": "abbasizi",
+   "year": 750,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "islam"
+   ],
+   "ro": "Începe califatul Abbasizilor",
+   "en": "The Abbasid Caliphate begins"
+  },
+  {
+   "id": "bagdad",
+   "year": 762,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "islam"
+   ],
+   "ro": "Se întemeiază Bagdadul",
+   "en": "Baghdad is founded"
+  },
+  {
+   "id": "cruciada1",
+   "year": 1096,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "crusades"
+   ],
+   "ro": "Începe prima cruciadă",
+   "en": "The First Crusade begins"
+  },
+  {
+   "id": "ierusalim-1099",
+   "year": 1099,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "crusades"
+   ],
+   "ro": "Cruciații cuceresc Ierusalimul",
+   "en": "The Crusaders capture Jerusalem"
+  },
+  {
+   "id": "saladin",
+   "year": 1187,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "crusades"
+   ],
+   "ro": "Saladin recucerește Ierusalimul",
+   "en": "Saladin recaptures Jerusalem"
+  },
+  {
+   "id": "marco-polo",
+   "year": 1271,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "crusades"
+   ],
+   "ro": "Marco Polo pornește spre Asia",
+   "en": "Marco Polo sets out for Asia"
+  },
+  {
+   "id": "acra",
+   "year": 1291,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "crusades"
+   ],
+   "ro": "Cade Acra, ultima mare cetate a cruciaților",
+   "en": "Acre, the last great Crusader stronghold, falls"
+  },
+  {
+   "id": "huni",
+   "year": 375,
+   "approx": true,
+   "grade": 6,
+   "tags": [
+    "migr"
+   ],
+   "ro": "Hunii încep să înainteze spre Europa",
+   "en": "The Huns begin to advance into Europe"
+  },
+  {
+   "id": "attila",
+   "year": 453,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "migr"
+   ],
+   "ro": "Moare Attila, conducătorul hunilor",
+   "en": "Attila, the leader of the Huns, dies"
+  },
+  {
+   "id": "slavi",
+   "year": 550,
+   "approx": true,
+   "grade": 6,
+   "tags": [
+    "migr"
+   ],
+   "ro": "Slavii se stabilesc treptat la nord de Dunăre",
+   "en": "The Slavs gradually settle north of the Danube"
+  },
+  {
+   "id": "bulgari",
+   "year": 681,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "migr"
+   ],
+   "ro": "Se întemeiază primul stat bulgar",
+   "en": "The first Bulgarian state is founded"
+  },
+  {
+   "id": "maghiari",
+   "year": 895,
+   "approx": true,
+   "grade": 6,
+   "tags": [
+    "migr"
+   ],
+   "ro": "Maghiarii se așază în bazinul Carpatic",
+   "en": "The Hungarians settle in the Carpathian Basin"
+  },
+  {
+   "id": "tatari",
+   "year": 1241,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "migr",
+    "states"
+   ],
+   "ro": "Invazia tătară în Europa de Est",
+   "en": "The Tatar invasion of Eastern Europe"
+  },
+  {
+   "id": "ioaniti",
+   "year": 1247,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "states"
+   ],
+   "ro": "Diploma cavalerilor ioaniți menționează cnezate și voievodate",
+   "en": "The Diploma of the Knights of St John mentions knezates and voivodeships"
+  },
+  {
+   "id": "posada",
+   "year": 1330,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "states"
+   ],
+   "ro": "Bătălia de la Posada",
+   "en": "The Battle of Posada"
+  },
+  {
+   "id": "basarab-moarte",
+   "year": 1352,
+   "approx": true,
+   "grade": 6,
+   "tags": [
+    "states"
+   ],
+   "ro": "Moare Basarab I, domnul Țării Românești",
+   "en": "Basarab I, ruler of Wallachia, dies"
+  },
+  {
+   "id": "bogdan",
+   "year": 1359,
+   "approx": true,
+   "grade": 6,
+   "tags": [
+    "states"
+   ],
+   "ro": "Bogdan I întemeiază Moldova independentă",
+   "en": "Bogdan I founds independent Moldavia"
+  },
+  {
+   "id": "mircea-start",
+   "year": 1386,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "states",
+    "mircea"
+   ],
+   "ro": "Mircea cel Bătrân devine domn al Țării Românești",
+   "en": "Mircea the Elder becomes ruler of Wallachia"
+  },
+  {
+   "id": "ankara",
+   "year": 1402,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mircea",
+    "ottoman"
+   ],
+   "ro": "Bătălia de la Ankara slăbește temporar Imperiul Otoman",
+   "en": "The Battle of Ankara temporarily weakens the Ottoman Empire"
+  },
+  {
+   "id": "rovine",
+   "year": 1395,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mircea"
+   ],
+   "ro": "Bătălia de la Rovine",
+   "en": "The Battle of Rovine"
+  },
+  {
+   "id": "nicopole",
+   "year": 1396,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mircea",
+    "ottoman"
+   ],
+   "ro": "Cruciada de la Nicopole",
+   "en": "The Crusade of Nicopolis"
+  },
+  {
+   "id": "dobrogea-1417",
+   "year": 1417,
+   "approx": true,
+   "grade": 6,
+   "tags": [
+    "mircea"
+   ],
+   "ro": "Dobrogea intră sub stăpânire otomană",
+   "en": "Dobruja comes under Ottoman rule"
+  },
+  {
+   "id": "mircea-end",
+   "year": 1418,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mircea"
+   ],
+   "ro": "Moare Mircea cel Bătrân",
+   "en": "Mircea the Elder dies"
+  },
+  {
+   "id": "varna",
+   "year": 1444,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "stefan"
+   ],
+   "ro": "Bătălia de la Varna",
+   "en": "The Battle of Varna"
+  },
+  {
+   "id": "belgrad",
+   "year": 1456,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "stefan",
+    "ottoman"
+   ],
+   "ro": "Iancu de Hunedoara apără Belgradul",
+   "en": "John Hunyadi defends Belgrade"
+  },
+  {
+   "id": "stefan-start",
+   "year": 1457,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "stefan"
+   ],
+   "ro": "Ștefan cel Mare devine domn al Moldovei",
+   "en": "Stephen the Great becomes ruler of Moldavia"
+  },
+  {
+   "id": "atac-noapte",
+   "year": 1462,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "stefan"
+   ],
+   "ro": "Vlad Țepeș atacă tabăra otomană în noaptea de la Târgoviște",
+   "en": "Vlad the Impaler raids the Ottoman camp in the night near Târgoviște"
+  },
+  {
+   "id": "putna",
+   "year": 1466,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "stefan"
+   ],
+   "ro": "Începe construcția mănăstirii Putna",
+   "en": "Construction of Putna Monastery begins"
+  },
+  {
+   "id": "vaslui",
+   "year": 1475,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "stefan"
+   ],
+   "ro": "Bătălia de la Vaslui",
+   "en": "The Battle of Vaslui"
+  },
+  {
+   "id": "vlad-moarte",
+   "year": 1476,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "stefan"
+   ],
+   "ro": "Moare Vlad Țepeș",
+   "en": "Vlad the Impaler dies"
+  },
+  {
+   "id": "chilia",
+   "year": 1484,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "stefan"
+   ],
+   "ro": "Chilia și Cetatea Albă intră sub stăpânire otomană",
+   "en": "Chilia and Cetatea Albă come under Ottoman rule"
+  },
+  {
+   "id": "stefan-end",
+   "year": 1504,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "stefan"
+   ],
+   "ro": "Moare Ștefan cel Mare",
+   "en": "Stephen the Great dies"
+  },
+  {
+   "id": "mohacs",
+   "year": 1526,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "ottoman"
+   ],
+   "ro": "Bătălia de la Mohács",
+   "en": "The Battle of Mohács"
+  },
+  {
+   "id": "viena",
+   "year": 1529,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "ottoman"
+   ],
+   "ro": "Otomanii asediază Viena",
+   "en": "The Ottomans besiege Vienna"
+  },
+  {
+   "id": "mihai-start",
+   "year": 1593,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mihai"
+   ],
+   "ro": "Mihai Viteazul devine domn al Țării Românești",
+   "en": "Michael the Brave becomes ruler of Wallachia"
+  },
+  {
+   "id": "liga",
+   "year": 1594,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mihai"
+   ],
+   "ro": "Mihai se alătură luptei antiotomane a Ligii Sfinte",
+   "en": "Michael joins the anti-Ottoman struggle of the Holy League"
+  },
+  {
+   "id": "calugareni",
+   "year": 1595,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mihai"
+   ],
+   "ro": "Bătălia de la Călugăreni",
+   "en": "The Battle of Călugăreni"
+  },
+  {
+   "id": "selimbar",
+   "year": 1599,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mihai"
+   ],
+   "ro": "Bătălia de la Șelimbăr",
+   "en": "The Battle of Șelimbăr"
+  },
+  {
+   "id": "unire-1600",
+   "year": 1600,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mihai"
+   ],
+   "ro": "Mihai Viteazul conduce Țara Românească, Transilvania și Moldova",
+   "en": "Michael the Brave rules Wallachia, Transylvania and Moldavia"
+  },
+  {
+   "id": "mihai-end",
+   "year": 1601,
+   "approx": false,
+   "grade": 6,
+   "tags": [
+    "mihai"
+   ],
+   "ro": "Moare Mihai Viteazul",
+   "en": "Michael the Brave dies"
+  },
+  {
+   "id": "gutenberg",
+   "year": 1450,
+   "approx": true,
+   "grade": 7,
+   "tags": [
+    "disc",
+    "ren"
+   ],
+   "ro": "Gutenberg pune la punct tiparul cu litere mobile",
+   "en": "Gutenberg develops printing with movable type"
+  },
+  {
+   "id": "dias",
+   "year": 1488,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "disc"
+   ],
+   "ro": "Bartolomeu Dias ocolește capătul sudic al Africii",
+   "en": "Bartolomeu Dias rounds the southern tip of Africa"
+  },
+  {
+   "id": "columb",
+   "year": 1492,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "disc"
+   ],
+   "ro": "Cristofor Columb ajunge în America",
+   "en": "Christopher Columbus reaches the Americas"
+  },
+  {
+   "id": "vasco",
+   "year": 1498,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "disc"
+   ],
+   "ro": "Vasco da Gama ajunge pe mare în India",
+   "en": "Vasco da Gama reaches India by sea"
+  },
+  {
+   "id": "magellan-start",
+   "year": 1519,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "disc"
+   ],
+   "ro": "Pornește expediția lui Magellan în jurul lumii",
+   "en": "Magellan's expedition around the world sets out"
+  },
+  {
+   "id": "magellan-end",
+   "year": 1522,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "disc"
+   ],
+   "ro": "Se încheie prima călătorie în jurul Pământului",
+   "en": "The first voyage around the Earth is completed"
+  },
+  {
+   "id": "brunelleschi",
+   "year": 1436,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ren"
+   ],
+   "ro": "Se termină domul catedralei din Florența",
+   "en": "The dome of Florence Cathedral is completed"
+  },
+  {
+   "id": "mona-lisa",
+   "year": 1503,
+   "approx": true,
+   "grade": 7,
+   "tags": [
+    "ren"
+   ],
+   "ro": "Leonardo da Vinci începe Mona Lisa",
+   "en": "Leonardo da Vinci begins the Mona Lisa"
+  },
+  {
+   "id": "david",
+   "year": 1504,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ren"
+   ],
+   "ro": "Michelangelo încheie statuia David",
+   "en": "Michelangelo completes the statue of David"
+  },
+  {
+   "id": "sixtina",
+   "year": 1508,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ren"
+   ],
+   "ro": "Michelangelo începe pictura tavanului Capelei Sixtine",
+   "en": "Michelangelo begins painting the ceiling of the Sistine Chapel"
+  },
+  {
+   "id": "copernic",
+   "year": 1543,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ren"
+   ],
+   "ro": "Copernic publică teoria cu Soarele în centru",
+   "en": "Copernicus publishes his Sun-centred theory"
+  },
+  {
+   "id": "galileo",
+   "year": 1609,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ren"
+   ],
+   "ro": "Galileo Galilei observă cerul cu telescopul",
+   "en": "Galileo Galilei observes the sky with a telescope"
+  },
+  {
+   "id": "teze",
+   "year": 1517,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ref"
+   ],
+   "ro": "Martin Luther publică cele 95 de teze",
+   "en": "Martin Luther publishes the 95 Theses"
+  },
+  {
+   "id": "worms",
+   "year": 1521,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ref"
+   ],
+   "ro": "Luther la Dieta de la Worms",
+   "en": "Luther at the Diet of Worms"
+  },
+  {
+   "id": "anglia-biserica",
+   "year": 1534,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ref"
+   ],
+   "ro": "Anglia își creează propria biserică națională",
+   "en": "England creates its own national church"
+  },
+  {
+   "id": "calvin",
+   "year": 1536,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ref"
+   ],
+   "ro": "Ioan Calvin publică „Instituția religiei creștine”",
+   "en": "John Calvin publishes “Institutes of the Christian Religion”"
+  },
+  {
+   "id": "trento",
+   "year": 1545,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ref"
+   ],
+   "ro": "Începe Conciliul de la Trento",
+   "en": "The Council of Trent begins"
+  },
+  {
+   "id": "augsburg",
+   "year": 1555,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ref"
+   ],
+   "ro": "Pacea de la Augsburg",
+   "en": "The Peace of Augsburg"
+  },
+  {
+   "id": "westfalia",
+   "year": 1648,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ref"
+   ],
+   "ro": "Pacea de la Westfalia încheie Războiul de Treizeci de Ani",
+   "en": "The Peace of Westphalia ends the Thirty Years' War"
+  },
+  {
+   "id": "ludovic",
+   "year": 1643,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "enl"
+   ],
+   "ro": "Ludovic al XIV-lea devine rege al Franței",
+   "en": "Louis XIV becomes King of France"
+  },
+  {
+   "id": "petersburg",
+   "year": 1703,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "enl"
+   ],
+   "ro": "Petru I întemeiază Sankt Petersburg",
+   "en": "Peter I founds Saint Petersburg"
+  },
+  {
+   "id": "maria-tereza",
+   "year": 1740,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "enl"
+   ],
+   "ro": "Maria Tereza ajunge pe tronul Habsburgilor",
+   "en": "Maria Theresa takes the Habsburg throne"
+  },
+  {
+   "id": "montesquieu",
+   "year": 1748,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "enl"
+   ],
+   "ro": "Montesquieu publică „Despre spiritul legilor”",
+   "en": "Montesquieu publishes “The Spirit of the Laws”"
+  },
+  {
+   "id": "enciclopedia",
+   "year": 1751,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "enl"
+   ],
+   "ro": "Apare primul volum al Enciclopediei",
+   "en": "The first volume of the Encyclopédie appears"
+  },
+  {
+   "id": "rousseau",
+   "year": 1762,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "enl"
+   ],
+   "ro": "Rousseau publică „Contractul social”",
+   "en": "Rousseau publishes “The Social Contract”"
+  },
+  {
+   "id": "iosif",
+   "year": 1780,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "enl"
+   ],
+   "ro": "Iosif al II-lea conduce singur Imperiul Habsburgic",
+   "en": "Joseph II rules the Habsburg Empire alone"
+  },
+  {
+   "id": "glorioasa",
+   "year": 1688,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "rev"
+   ],
+   "ro": "Revoluția glorioasă din Anglia",
+   "en": "The Glorious Revolution in England"
+  },
+  {
+   "id": "declaratia-sua",
+   "year": 1776,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "rev"
+   ],
+   "ro": "SUA își proclamă independența",
+   "en": "The United States declares independence"
+  },
+  {
+   "id": "paris-sua",
+   "year": 1783,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "rev"
+   ],
+   "ro": "Marea Britanie recunoaște independența SUA",
+   "en": "Great Britain recognises the independence of the USA"
+  },
+  {
+   "id": "constitutia-sua",
+   "year": 1787,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "rev"
+   ],
+   "ro": "Se adoptă Constituția Statelor Unite",
+   "en": "The Constitution of the United States is adopted"
+  },
+  {
+   "id": "bastilia",
+   "year": 1789,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "rev"
+   ],
+   "ro": "Începe Revoluția franceză",
+   "en": "The French Revolution begins"
+  },
+  {
+   "id": "napoleon",
+   "year": 1804,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "rev"
+   ],
+   "ro": "Napoleon Bonaparte devine împărat al francezilor",
+   "en": "Napoleon Bonaparte becomes Emperor of the French"
+  },
+  {
+   "id": "waterloo",
+   "year": 1815,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "rev"
+   ],
+   "ro": "Napoleon este învins la Waterloo",
+   "en": "Napoleon is defeated at Waterloo"
+  },
+  {
+   "id": "newcomen",
+   "year": 1712,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ind"
+   ],
+   "ro": "Thomas Newcomen construiește o mașină cu abur pentru mine",
+   "en": "Thomas Newcomen builds a steam engine for mines"
+  },
+  {
+   "id": "watt",
+   "year": 1769,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ind"
+   ],
+   "ro": "James Watt patentează o mașină cu abur perfecționată",
+   "en": "James Watt patents an improved steam engine"
+  },
+  {
+   "id": "cale-ferata",
+   "year": 1825,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ind"
+   ],
+   "ro": "Se deschide prima cale ferată publică cu locomotivă cu abur",
+   "en": "The first public steam railway opens"
+  },
+  {
+   "id": "telegraf",
+   "year": 1844,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ind"
+   ],
+   "ro": "Samuel Morse trimite primul mesaj telegrafic pe o linie lungă",
+   "en": "Samuel Morse sends the first telegraph message on a long line"
+  },
+  {
+   "id": "telefon",
+   "year": 1876,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ind"
+   ],
+   "ro": "Alexander Graham Bell brevetează telefonul",
+   "en": "Alexander Graham Bell patents the telephone"
+  },
+  {
+   "id": "bec",
+   "year": 1879,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "ind"
+   ],
+   "ro": "Thomas Edison realizează un bec practic cu incandescență",
+   "en": "Thomas Edison makes a practical incandescent light bulb"
+  },
+  {
+   "id": "automobil",
+   "year": 1885,
+   "approx": true,
+   "grade": 7,
+   "tags": [
+    "ind"
+   ],
+   "ro": "Karl Benz construiește automobilul cu motor cu ardere internă",
+   "en": "Karl Benz builds the internal-combustion automobile"
+  },
+  {
+   "id": "brancoveanu-start",
+   "year": 1688,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "phan"
+   ],
+   "ro": "Constantin Brâncoveanu devine domn al Țării Românești",
+   "en": "Constantin Brâncoveanu becomes ruler of Wallachia"
+  },
+  {
+   "id": "fanariot-moldova",
+   "year": 1711,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "phan"
+   ],
+   "ro": "Încep domniile fanariote în Moldova",
+   "en": "Phanariot reigns begin in Moldavia"
+  },
+  {
+   "id": "brancoveanu-end",
+   "year": 1714,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "phan"
+   ],
+   "ro": "Se încheie domnia lui Constantin Brâncoveanu",
+   "en": "The reign of Constantin Brâncoveanu ends"
+  },
+  {
+   "id": "fanariot-tr",
+   "year": 1716,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "phan"
+   ],
+   "ro": "Încep domniile fanariote în Țara Românească",
+   "en": "Phanariot reigns begin in Wallachia"
+  },
+  {
+   "id": "kainargi",
+   "year": 1774,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "phan"
+   ],
+   "ro": "Pacea de la Kuciuk-Kainargi dintre Rusia și Imperiul Otoman",
+   "en": "The Peace of Küçük Kaynarca between Russia and the Ottoman Empire"
+  },
+  {
+   "id": "bucovina",
+   "year": 1775,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "phan"
+   ],
+   "ro": "Bucovina este anexată de Imperiul Habsburgic",
+   "en": "Bukovina is annexed by the Habsburg Empire"
+  },
+  {
+   "id": "horea",
+   "year": 1784,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "phan"
+   ],
+   "ro": "Răscoala lui Horea, Cloșca și Crișan",
+   "en": "The uprising of Horea, Cloșca and Crișan"
+  },
+  {
+   "id": "supplex",
+   "year": 1791,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "phan"
+   ],
+   "ro": "Supplex Libellus Valachorum: petiția românilor din Transilvania",
+   "en": "Supplex Libellus Valachorum: the petition of the Romanians of Transylvania"
+  },
+  {
+   "id": "basarabia",
+   "year": 1812,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "phan"
+   ],
+   "ro": "Basarabia este anexată de Imperiul Rus",
+   "en": "Bessarabia is annexed by the Russian Empire"
+  },
+  {
+   "id": "lazar",
+   "year": 1818,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1821"
+   ],
+   "ro": "Gheorghe Lazăr deschide la București o școală în limba română",
+   "en": "Gheorghe Lazăr opens a Romanian-language school in Bucharest"
+  },
+  {
+   "id": "tudor",
+   "year": 1821,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1821"
+   ],
+   "ro": "Mișcarea condusă de Tudor Vladimirescu",
+   "en": "The movement led by Tudor Vladimirescu"
+  },
+  {
+   "id": "akkerman",
+   "year": 1826,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1821"
+   ],
+   "ro": "Convenția de la Akkerman",
+   "en": "The Convention of Akkerman"
+  },
+  {
+   "id": "adrianopol",
+   "year": 1829,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1821"
+   ],
+   "ro": "Pacea de la Adrianopol",
+   "en": "The Peace of Adrianople"
+  },
+  {
+   "id": "reg-org-tr",
+   "year": 1831,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1821"
+   ],
+   "ro": "Se aplică Regulamentul Organic în Țara Românească",
+   "en": "The Organic Regulation is applied in Wallachia"
+  },
+  {
+   "id": "reg-org-md",
+   "year": 1832,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1821"
+   ],
+   "ro": "Se aplică Regulamentul Organic în Moldova",
+   "en": "The Organic Regulation is applied in Moldavia"
+  },
+  {
+   "id": "filipescu",
+   "year": 1840,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1848"
+   ],
+   "ro": "Conspirația lui Mitiță Filipescu",
+   "en": "The conspiracy of Mitiță Filipescu"
+  },
+  {
+   "id": "fratia",
+   "year": 1843,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1848"
+   ],
+   "ro": "Se înființează societatea secretă „Frăția”",
+   "en": "The secret society “Frăția” is founded"
+  },
+  {
+   "id": "revolutia-1848",
+   "year": 1848,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1848"
+   ],
+   "ro": "Revoluția de la 1848 în Țările Române",
+   "en": "The Revolution of 1848 in the Romanian Lands"
+  },
+  {
+   "id": "balta-liman",
+   "year": 1849,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1848"
+   ],
+   "ro": "Convenția de la Balta Liman",
+   "en": "The Convention of Balta Liman"
+  },
+  {
+   "id": "robie",
+   "year": 1855,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1848"
+   ],
+   "ro": "Moldova desființează robia romilor",
+   "en": "Moldavia abolishes the enslavement of the Roma"
+  },
+  {
+   "id": "paris-1856",
+   "year": 1856,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "y1848",
+    "union"
+   ],
+   "ro": "Pacea de la Paris, după războiul Crimeii",
+   "en": "The Peace of Paris, after the Crimean War"
+  },
+  {
+   "id": "crimeea",
+   "year": 1853,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "union"
+   ],
+   "ro": "Începe războiul Crimeii",
+   "en": "The Crimean War begins"
+  },
+  {
+   "id": "divanuri",
+   "year": 1857,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "union"
+   ],
+   "ro": "Se întrunesc Divanurile ad-hoc",
+   "en": "The Ad hoc Divans meet"
+  },
+  {
+   "id": "unirea",
+   "year": 1859,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "union"
+   ],
+   "ro": "Alexandru Ioan Cuza este ales domn în ambele Principate",
+   "en": "Alexandru Ioan Cuza is elected ruler of both Principalities"
+  },
+  {
+   "id": "unirea-1862",
+   "year": 1862,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "union"
+   ],
+   "ro": "Se formează un singur guvern și o singură adunare pentru România",
+   "en": "A single government and assembly are formed for Romania"
+  },
+  {
+   "id": "secularizare",
+   "year": 1863,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "union"
+   ],
+   "ro": "Legea secularizării averilor mănăstirești",
+   "en": "The law on the secularisation of monastery estates"
+  },
+  {
+   "id": "agrara",
+   "year": 1864,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "union"
+   ],
+   "ro": "Reforma agrară împroprietărește țăranii",
+   "en": "The land reform gives peasants land of their own"
+  },
+  {
+   "id": "carol-1866",
+   "year": 1866,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "union",
+    "indep"
+   ],
+   "ro": "Carol I devine domnitor, iar România adoptă o constituție modernă",
+   "en": "Carol I becomes prince and Romania adopts a modern constitution"
+  },
+  {
+   "id": "independenta",
+   "year": 1877,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "indep"
+   ],
+   "ro": "România își proclamă independența",
+   "en": "Romania proclaims its independence"
+  },
+  {
+   "id": "berlin",
+   "year": 1878,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "indep"
+   ],
+   "ro": "Congresul de la Berlin recunoaște independența României",
+   "en": "The Congress of Berlin recognises Romania's independence"
+  },
+  {
+   "id": "regat",
+   "year": 1881,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "indep"
+   ],
+   "ro": "România devine regat",
+   "en": "Romania becomes a kingdom"
+  },
+  {
+   "id": "cernavoda",
+   "year": 1895,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "indep"
+   ],
+   "ro": "Se inaugurează podul de la Cernavodă",
+   "en": "The Cernavodă bridge is inaugurated"
+  },
+  {
+   "id": "rascoala-1907",
+   "year": 1907,
+   "approx": false,
+   "grade": 7,
+   "tags": [
+    "indep"
+   ],
+   "ro": "Marea răscoală a țăranilor din 1907",
+   "en": "The great peasants' revolt of 1907"
+  },
+  {
+   "id": "ww1-start",
+   "year": 1914,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww1",
+    "union18"
+   ],
+   "ro": "Începe Primul Război Mondial",
+   "en": "The First World War begins"
+  },
+  {
+   "id": "ro-razboi-1916",
+   "year": 1916,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww1"
+   ],
+   "ro": "România intră în Primul Război Mondial",
+   "en": "Romania enters the First World War"
+  },
+  {
+   "id": "revolutia-rusa",
+   "year": 1917,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww1",
+    "tot"
+   ],
+   "ro": "Revoluția rusă din octombrie",
+   "en": "The Russian Revolution of October"
+  },
+  {
+   "id": "marasti",
+   "year": 1917,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww1"
+   ],
+   "ro": "Bătăliile de la Mărăști, Mărășești și Oituz",
+   "en": "The battles of Mărăști, Mărășești and Oituz"
+  },
+  {
+   "id": "armistitiu-1918",
+   "year": 1918,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww1"
+   ],
+   "ro": "Armistițiul din 11 noiembrie încheie războiul",
+   "en": "The armistice of 11 November ends the war"
+  },
+  {
+   "id": "versailles",
+   "year": 1919,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww1"
+   ],
+   "ro": "Tratatul de pace de la Versailles",
+   "en": "The Treaty of Versailles"
+  },
+  {
+   "id": "basarabia-1918",
+   "year": 1918,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "union18"
+   ],
+   "ro": "Basarabia se unește cu România",
+   "en": "Bessarabia unites with Romania"
+  },
+  {
+   "id": "bucovina-1918",
+   "year": 1918,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "union18"
+   ],
+   "ro": "Bucovina se unește cu România",
+   "en": "Bukovina unites with Romania"
+  },
+  {
+   "id": "alba-iulia",
+   "year": 1918,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "union18"
+   ],
+   "ro": "Adunarea de la Alba Iulia: unirea Transilvaniei cu România",
+   "en": "The Assembly of Alba Iulia: Transylvania unites with Romania"
+  },
+  {
+   "id": "trianon",
+   "year": 1920,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "union18"
+   ],
+   "ro": "Tratatul de la Trianon",
+   "en": "The Treaty of Trianon"
+  },
+  {
+   "id": "agrara-1921",
+   "year": 1921,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "union18"
+   ],
+   "ro": "Reforma agrară din 1921",
+   "en": "The land reform of 1921"
+  },
+  {
+   "id": "incoronare",
+   "year": 1922,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "union18"
+   ],
+   "ro": "Încoronarea regelui Ferdinand la Alba Iulia",
+   "en": "The coronation of King Ferdinand at Alba Iulia"
+  },
+  {
+   "id": "constitutia-1923",
+   "year": 1923,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "union",
+    "interwar"
+   ],
+   "ro": "Se adoptă Constituția din 1923",
+   "en": "The Constitution of 1923 is adopted"
+  },
+  {
+   "id": "liga-natiunilor",
+   "year": 1920,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "interwar"
+   ],
+   "ro": "Se înființează Liga Națiunilor",
+   "en": "The League of Nations is founded"
+  },
+  {
+   "id": "ferdinand-moarte",
+   "year": 1927,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "interwar"
+   ],
+   "ro": "Moare regele Ferdinand",
+   "en": "King Ferdinand dies"
+  },
+  {
+   "id": "radio",
+   "year": 1928,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "interwar"
+   ],
+   "ro": "Începe radiodifuziunea publică în România",
+   "en": "Public radio broadcasting begins in Romania"
+  },
+  {
+   "id": "criza",
+   "year": 1929,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "interwar"
+   ],
+   "ro": "Începe Marea Criză economică",
+   "en": "The Great Depression begins"
+  },
+  {
+   "id": "carol2",
+   "year": 1930,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "interwar"
+   ],
+   "ro": "Carol al II-lea devine rege",
+   "en": "Carol II becomes king"
+  },
+  {
+   "id": "targu-jiu",
+   "year": 1938,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "interwar"
+   ],
+   "ro": "Se inaugurează ansamblul lui Brâncuși de la Târgu Jiu",
+   "en": "Brâncuși's ensemble at Târgu Jiu is inaugurated"
+  },
+  {
+   "id": "urss",
+   "year": 1922,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "tot"
+   ],
+   "ro": "Se întemeiază Uniunea Sovietică",
+   "en": "The Soviet Union is founded"
+  },
+  {
+   "id": "marsul-roma",
+   "year": 1922,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "tot"
+   ],
+   "ro": "Mussolini preia puterea în Italia",
+   "en": "Mussolini takes power in Italy"
+  },
+  {
+   "id": "hitler-putere",
+   "year": 1933,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "tot"
+   ],
+   "ro": "Hitler devine cancelar al Germaniei",
+   "en": "Hitler becomes Chancellor of Germany"
+  },
+  {
+   "id": "spania",
+   "year": 1936,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "tot"
+   ],
+   "ro": "Începe războiul civil din Spania",
+   "en": "The Spanish Civil War begins"
+  },
+  {
+   "id": "anschluss",
+   "year": 1938,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "tot"
+   ],
+   "ro": "Germania anexează Austria",
+   "en": "Germany annexes Austria"
+  },
+  {
+   "id": "ww2-start",
+   "year": 1939,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2"
+   ],
+   "ro": "Începe Al Doilea Război Mondial",
+   "en": "The Second World War begins"
+  },
+  {
+   "id": "franta",
+   "year": 1940,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2"
+   ],
+   "ro": "Franța capitulează în fața Germaniei",
+   "en": "France surrenders to Germany"
+  },
+  {
+   "id": "urss-atac",
+   "year": 1941,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2"
+   ],
+   "ro": "Germania atacă Uniunea Sovietică",
+   "en": "Germany attacks the Soviet Union"
+  },
+  {
+   "id": "dday",
+   "year": 1944,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2"
+   ],
+   "ro": "Debarcarea aliaților în Normandia",
+   "en": "The Allied landing in Normandy"
+  },
+  {
+   "id": "sfarsit-europa",
+   "year": 1945,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2"
+   ],
+   "ro": "Se încheie războiul în Europa",
+   "en": "The war in Europe ends"
+  },
+  {
+   "id": "pact",
+   "year": 1939,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2ro"
+   ],
+   "ro": "Pactul Molotov-Ribbentrop",
+   "en": "The Molotov-Ribbentrop Pact"
+  },
+  {
+   "id": "ultimatum",
+   "year": 1940,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2ro"
+   ],
+   "ro": "Ultimatumul sovietic cu privire la Basarabia și nordul Bucovinei",
+   "en": "The Soviet ultimatum concerning Bessarabia and northern Bukovina"
+  },
+  {
+   "id": "dictat-viena",
+   "year": 1940,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2ro"
+   ],
+   "ro": "Dictatul de la Viena",
+   "en": "The Vienna Award"
+  },
+  {
+   "id": "ro-razboi-1941",
+   "year": 1941,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2ro"
+   ],
+   "ro": "România intră în război alături de Germania",
+   "en": "Romania enters the war alongside Germany"
+  },
+  {
+   "id": "23-august",
+   "year": 1944,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2ro"
+   ],
+   "ro": "Actul de la 23 august: România se alătură Aliaților",
+   "en": "The act of 23 August: Romania joins the Allies"
+  },
+  {
+   "id": "groza",
+   "year": 1945,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2ro"
+   ],
+   "ro": "Se formează guvernul Petru Groza",
+   "en": "The Petru Groza government is formed"
+  },
+  {
+   "id": "paris-1947",
+   "year": 1947,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "ww2ro"
+   ],
+   "ro": "Tratatul de pace de la Paris",
+   "en": "The Paris Peace Treaty"
+  },
+  {
+   "id": "yalta",
+   "year": 1945,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "cold"
+   ],
+   "ro": "Conferința de la Ialta",
+   "en": "The Yalta Conference"
+  },
+  {
+   "id": "marshall",
+   "year": 1947,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "cold"
+   ],
+   "ro": "Planul Marshall",
+   "en": "The Marshall Plan"
+  },
+  {
+   "id": "nato",
+   "year": 1949,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "cold"
+   ],
+   "ro": "Se înființează NATO",
+   "en": "NATO is founded"
+  },
+  {
+   "id": "varsovia",
+   "year": 1955,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "cold"
+   ],
+   "ro": "Se înființează Pactul de la Varșovia",
+   "en": "The Warsaw Pact is founded"
+  },
+  {
+   "id": "sputnik",
+   "year": 1957,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "cold"
+   ],
+   "ro": "Uniunea Sovietică lansează Sputnik",
+   "en": "The Soviet Union launches Sputnik"
+  },
+  {
+   "id": "zid",
+   "year": 1961,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "cold"
+   ],
+   "ro": "Se construiește Zidul Berlinului",
+   "en": "The Berlin Wall is built"
+  },
+  {
+   "id": "luna",
+   "year": 1969,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "cold"
+   ],
+   "ro": "Primii oameni pe Lună",
+   "en": "The first humans on the Moon"
+  },
+  {
+   "id": "urss-sfarsit",
+   "year": 1991,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "cold",
+    "rev89"
+   ],
+   "ro": "Se destramă Uniunea Sovietică",
+   "en": "The Soviet Union breaks up"
+  },
+  {
+   "id": "republica-1947",
+   "year": 1947,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "comm"
+   ],
+   "ro": "Regele Mihai abdică și este proclamată republica",
+   "en": "King Michael abdicates and the republic is proclaimed"
+  },
+  {
+   "id": "nationalizare",
+   "year": 1948,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "comm"
+   ],
+   "ro": "Naționalizarea principalelor întreprinderi",
+   "en": "The nationalisation of the main enterprises"
+  },
+  {
+   "id": "colectivizare",
+   "year": 1949,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "comm"
+   ],
+   "ro": "Începe colectivizarea agriculturii",
+   "en": "The collectivisation of agriculture begins"
+  },
+  {
+   "id": "ceausescu",
+   "year": 1965,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "comm"
+   ],
+   "ro": "Nicolae Ceaușescu ajunge conducătorul partidului",
+   "en": "Nicolae Ceaușescu becomes leader of the party"
+  },
+  {
+   "id": "1968",
+   "year": 1968,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "comm"
+   ],
+   "ro": "Ceaușescu condamnă invadarea Cehoslovaciei",
+   "en": "Ceaușescu condemns the invasion of Czechoslovakia"
+  },
+  {
+   "id": "cutremur",
+   "year": 1977,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "comm"
+   ],
+   "ro": "Marele cutremur din București",
+   "en": "The great earthquake in Bucharest"
+  },
+  {
+   "id": "brasov",
+   "year": 1987,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "rev89"
+   ],
+   "ro": "Revolta muncitorilor din Brașov",
+   "en": "The workers' revolt in Brașov"
+  },
+  {
+   "id": "timisoara",
+   "year": 1989,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "rev89"
+   ],
+   "ro": "Revoluția română începe la Timișoara",
+   "en": "The Romanian Revolution begins in Timișoara"
+  },
+  {
+   "id": "zid-cade",
+   "year": 1989,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "rev89"
+   ],
+   "ro": "Cade Zidul Berlinului",
+   "en": "The Berlin Wall falls"
+  },
+  {
+   "id": "alegeri-1990",
+   "year": 1990,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "rev89"
+   ],
+   "ro": "Primele alegeri libere după comunism",
+   "en": "The first free elections after communism"
+  },
+  {
+   "id": "constitutia-1991",
+   "year": 1991,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "rev89"
+   ],
+   "ro": "Se adoptă Constituția României din 1991",
+   "en": "The Romanian Constitution of 1991 is adopted"
+  },
+  {
+   "id": "alternanta",
+   "year": 1996,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "rev89"
+   ],
+   "ro": "Prima schimbare pașnică a puterii prin alegeri",
+   "en": "The first peaceful change of power through elections"
+  },
+  {
+   "id": "roma-tratat",
+   "year": 1957,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "eu"
+   ],
+   "ro": "Tratatul de la Roma",
+   "en": "The Treaty of Rome"
+  },
+  {
+   "id": "maastricht",
+   "year": 1992,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "eu"
+   ],
+   "ro": "Se semnează Tratatul de la Maastricht",
+   "en": "The Maastricht Treaty is signed"
+  },
+  {
+   "id": "consiliul-europei",
+   "year": 1993,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "eu"
+   ],
+   "ro": "România intră în Consiliul Europei",
+   "en": "Romania joins the Council of Europe"
+  },
+  {
+   "id": "euro-bancnote",
+   "year": 2002,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "eu"
+   ],
+   "ro": "Euro intră în circulație sub formă de bancnote și monede",
+   "en": "The euro enters circulation as banknotes and coins"
+  },
+  {
+   "id": "nato-ro",
+   "year": 2004,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "eu"
+   ],
+   "ro": "România intră în NATO",
+   "en": "Romania joins NATO"
+  },
+  {
+   "id": "ue-ro",
+   "year": 2007,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "eu"
+   ],
+   "ro": "România intră în Uniunea Europeană",
+   "en": "Romania joins the European Union"
+  },
+  {
+   "id": "lisabona",
+   "year": 2009,
+   "approx": false,
+   "grade": 8,
+   "tags": [
+    "eu"
+   ],
+   "ro": "Intră în vigoare Tratatul de la Lisabona",
+   "en": "The Treaty of Lisbon enters into force"
+  }
+ ]
+}

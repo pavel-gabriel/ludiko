@@ -400,13 +400,16 @@ describe('content on disk', () => {
   });
   it('seed skills follow the content policy (own, OWN, Ludiko, known programa)', () => {
     const programaBySubject: Record<string, string[]> = {
-      mat: ['MEM-2013', 'MAT-III-IV-2014'],
-      rom: ['CLR-2013', 'LLR-III-IV-2014'],
+      mat: ['MEM-2013', 'MAT-III-IV-2014', 'MAT-V-VIII-2017'],
+      rom: ['CLR-2013', 'LLR-III-IV-2014', 'LLR-V-VIII-2017'],
       stiinte: ['MEM-2013', 'STI-III-IV-2014'],
       civ: ['CIV-III-IV-2014'],
-      ist: ['IST-IV-2014'],
+      ist: ['IST-IV-2014', 'IST-V-VIII-2017'],
       geo: ['GEO-IV-2014'],
       logic: ['LUDIKO-LOGIC'],
+      bio: ['BIO-V-VIII-2017'],
+      fiz: ['FIZ-VI-VIII-2017'],
+      chim: ['CHIM-VII-VIII-2017'],
     };
     for (const x of skills) {
       expect(x.provenance.source).toBe('own');

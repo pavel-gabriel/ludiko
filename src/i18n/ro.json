@@ -607,7 +607,9 @@
       "reviewHint": "La acestea mai poți încerca o dată:",
       "reviewNone": "Niciun exercițiu de repetat. Excelent!",
       "again": "Încă o dată",
-      "done": "Gata pe azi"
+      "done": "Gata pe azi",
+      "estimatedMark": "Nota estimată: {{mark}}",
+      "estimatedNote": "Estimativă — nu e notă oficială."
     }
   },
   "learn": {
@@ -633,7 +635,10 @@
       "civ": "Educație civică",
       "ist": "Istorie",
       "geo": "Geografie",
-      "logic": "Jocuri de logică"
+      "logic": "Jocuri de logică",
+      "bio": "Biologie",
+      "fiz": "Fizică",
+      "chim": "Chimie"
     },
     "home": {
       "missionTitle": "Misiunea de azi",
@@ -744,7 +749,9 @@
       "redoTitle": "Refacem verificarea?",
       "redoBody": "Rezultatul verificării de acum se șterge și copilul o va lua de la capăt, în jocuri scurte.",
       "redoYes": "Da, o refacem",
-      "redoNo": "Nu, las-o așa"
+      "redoNo": "Nu, las-o așa",
+      "estimatedMark": "Notă estimativă (după competențele stăpânite): {{mark}}",
+      "marksNote": "Pentru clasele V–VIII rezultatele sunt note estimative — nu sunt note oficiale."
     },
     "locked": {
       "note": "{{subject}} începe de la {{grade}}. Până atunci, hai să descoperim altceva!",
@@ -1320,7 +1327,9 @@
         "saved": "Răspunsurile au fost adăugate la progresul copilului.",
         "guest": "Fără profil de copil, rezultatele nu se salvează.",
         "practiceMore": "Arată toate cele {{n}} teme",
-        "practiceLess": "Arată mai puține"
+        "practiceLess": "Arată mai puține",
+        "mark": "Notă estimativă",
+        "markNote": "Estimativă — nu e notă oficială. Formula: 1 + 9 × (răspunsuri corecte / total)."
       }
     },
     "descriptor": {
@@ -1461,5 +1470,92 @@
       "mulBig": "Înmulțiri cu 1 și 2 cifre",
       "fractions": "Fracții"
     }
+  },
+  "older": {
+    "greeting": "Salut, {{name}}",
+    "greetingSub": "Ce vrei să lucrezi azi?",
+    "bitKinds": {
+      "warmup": "Recapitulare",
+      "island": "Capitol nou",
+      "challenge": "Test"
+    },
+    "bits": {
+      "title": "Planul de azi",
+      "subtitle": "Câteva sesiuni scurte, în ordinea pe care o alegi.",
+      "allDone": "Planul de azi e încheiat. Bine lucrat.",
+      "doneTitle": "Sesiune încheiată",
+      "doneBody": "Un pas în plus. Bine lucrat.",
+      "allDoneBody": "Ai încheiat planul de azi. Ne vedem mâine.",
+      "another": "Încă o sesiune?",
+      "anotherCta": "Da, încă una",
+      "stop": "Gata pe azi"
+    },
+    "mascot": {
+      "toggle": "Arată-l pe Ludi",
+      "on": "Ludi e afișat",
+      "off": "Ludi e ascuns"
+    },
+    "pick": {
+      "title": "Alege-ți singur",
+      "subtitle": "Alege materia și capitolul, apoi exersezi sau te testezi.",
+      "subject": "Materie",
+      "chapter": "Capitol",
+      "chooseChapter": "Alege un capitol",
+      "gradeSem": "{{grade}} · {{sem}}",
+      "practice": "Exersează",
+      "test": "Testează-te",
+      "practiceDesc": "8 exerciții cu explicații",
+      "testDesc": "10 întrebări, cu notă estimativă",
+      "none": "Pentru această materie nu sunt încă exerciții la nivelul tău."
+    },
+    "goal": {
+      "title": "Obiectivul săptămânii",
+      "body": "Alege câte sesiuni vrei să faci săptămâna asta.",
+      "option": "{{n}} sesiuni",
+      "progress": "{{done}} din {{goal}} sesiuni săptămâna asta",
+      "reached": "Obiectiv atins. Bine lucrat!",
+      "change": "Schimbă obiectivul",
+      "remove": "Fără obiectiv"
+    },
+    "challenge": {
+      "title": "Provocarea zilei",
+      "body": "5 întrebări din mai multe materii, din ce ai exersat deja.",
+      "cta": "Începe provocarea",
+      "timer": "Cu cronometru",
+      "timerHint": "Doar măsoară timpul; nu te grăbește nimeni.",
+      "best": "Cel mai bun din săptămână: {{mark}}",
+      "bestNone": "Încă nu ai încercat săptămâna asta.",
+      "resultTitle": "Provocarea zilei: gata",
+      "time": "Timp: {{time}}",
+      "newBest": "Cel mai bun rezultat al săptămânii.",
+      "again": "Încă o încercare",
+      "home": "Înapoi la planul de azi",
+      "empty": "Încă nu avem destule exerciții pentru o provocare la nivelul tău.",
+      "sessionTitle": "Provocarea zilei"
+    },
+    "mark": {
+      "label": "Nota estimată: {{mark}}",
+      "disclaimer": "Estimativă — nu e notă oficială.",
+      "short": "notă estimativă"
+    },
+    "results": {
+      "three": {
+        "title": "Rezultat foarte bun",
+        "body": "Stăpânești bine acest capitol."
+      },
+      "two": {
+        "title": "Rezultat bun",
+        "body": "Încă puțin exercițiu și îl stăpânești."
+      },
+      "one": {
+        "title": "Bun început",
+        "body": "Mai exersează puțin, apoi încearcă din nou."
+      },
+      "none": {
+        "title": "Sesiune încheiată",
+        "body": "Încearcă din nou când ești gata."
+      }
+    },
+    "streakZero": "Nicio zi activă încă săptămâna asta"
   }
 }

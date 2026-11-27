@@ -4,6 +4,7 @@
  */
 import type { Grade, SubjectId } from '../types';
 import type { PlacementResult } from './placement';
+import { formatMark, markFromScore } from '../../older/marks';
 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
 
@@ -15,6 +16,9 @@ const SUBJECT_NAMES: Record<SubjectId, { ro: string; en: string }> = {
   geo: { ro: 'Geografie', en: 'Geography' },
   civ: { ro: 'Educație civică', en: 'Civics' },
   logic: { ro: 'Logică', en: 'Logic' },
+  bio: { ro: 'Biologie', en: 'Biology' },
+  fiz: { ro: 'Fizică', en: 'Physics' },
+  chim: { ro: 'Chimie', en: 'Chemistry' },
 };
 
 /** "clasa pregătitoare", "clasa I", "clasa a II-a", … "clasa a VIII-a" (en: "preparatory grade", "grade I", …) */
@@ -69,6 +73,18 @@ export function levelStatement(result: PlacementResult, lang: string): string {
     parts.push(
       `${n === 1 ? 'Lipsește' : 'Lipsesc'} ${roCount(n, 'competență', 'competențe')} — estimat ${roCount(w, 'săptămână', 'săptămâni')} de misiuni.`,
     );
+  }
+  // grades V–VIII: the summary also carries an estimated mark (share of in-scope competences not placed as gaps)
+  if (result.declared.grade >= 5) {
+    const inScope = Object.keys(result.skillStates).length;
+    const mark = markFromScore(inScope - result.gaps.length - result.unknown.length, inScope);
+    if (mark !== null) {
+      parts.push(
+        en
+          ? `Estimated mark: ${formatMark(mark, 'en')} (an estimate — not an official mark).`
+          : `Nota estimată: ${formatMark(mark, 'ro')} (estimativă — nu e notă oficială).`,
+      );
+    }
   }
   if (!result.complete) parts.push(en ? "The check isn't finished yet." : 'Verificarea nu e încă completă.');
   return parts.join(' ');

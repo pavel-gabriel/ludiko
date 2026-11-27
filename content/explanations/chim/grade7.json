@@ -1,0 +1,502 @@
+[
+  {
+    "id": "exp.chim.matter.7",
+    "skillId": "chim.matter.7",
+    "title": {
+      "ro": "Substanțe și corpuri",
+      "en": "Substances and bodies"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Chimia studiază substanțele, proprietățile lor și transformările lor. Un corp are formă și volum, iar substanța este materialul din care e făcut corpul: cuiul este corp, fierul este substanța."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Proprietățile fizice se observă fără a schimba substanța: starea de agregare, culoarea, duritatea, densitatea, punctul de topire. Proprietățile chimice arată cum se transformă substanța în alte substanțe."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔩",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Substanțele pot fi simple (formate dintr-un singur fel de atomi, ca oxigenul) sau compuse (formate din atomi diferiți, ca apa)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.matter.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.matter.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.mixtures.7",
+    "skillId": "chim.mixtures.7",
+    "title": {
+      "ro": "Amestecuri și separarea lor",
+      "en": "Mixtures and their separation"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Amestecul este format din două sau mai multe substanțe care își păstrează proprietățile. Poate fi omogen (nu se văd componentele, ca sarea în apă) sau eterogen (se văd componentele, ca nisipul cu apă)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥣",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Metodele de separare depind de proprietăți: filtrarea separă un solid insolubil de lichid, decantarea separă lichidele sau solidele care se depun, magnetul separă fierul."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧂",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Distilarea separă lichidele cu puncte de fierbere diferite, iar evaporarea scoate sarea din apa sărată. Cristalizarea formează cristale dintr-o soluție."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧲",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.mixtures.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.mixtures.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.chemphys.7",
+    "skillId": "chim.chemphys.7",
+    "title": {
+      "ro": "Fenomene fizice și chimice",
+      "en": "Physical and chemical changes"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Într-un fenomen fizic substanța rămâne aceeași, doar își schimbă forma, starea sau dimensiunea: topirea gheții, ruperea hârtiei."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔥",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Într-un fenomen chimic se formează substanțe noi, cu alte proprietăți: arderea lemnului, ruginirea fierului, coacerea pâinii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧊",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Semne ale unui fenomen chimic: schimbarea culorii, apariția unui gaz sau a unui precipitat, degajare de căldură sau lumină, miros nou."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌫️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.chemphys.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.chemphys.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.atom.7",
+    "skillId": "chim.atom.7",
+    "title": {
+      "ro": "Structura atomului",
+      "en": "Atomic structure"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Atomul are nucleu, în care se află protonii (sarcină pozitivă) și neutronii (fără sarcină), și înveliș electronic, cu electroni (sarcină negativă) care se mișcă în jurul nucleului."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚛️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Numărul atomic Z este numărul de protoni. Atomul neutru are tot Z electroni. Numărul de masă este A = Z + N, unde N este numărul de neutroni."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔵",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Izotopii sunt atomi ai aceluiași element cu același Z, dar cu număr diferit de neutroni. Exemplu: sodiul are Z = 11 și A = 23, deci 12 neutroni."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔴",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.atom.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.atom.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.config.7",
+    "skillId": "chim.config.7",
+    "title": {
+      "ro": "Straturile electronice",
+      "en": "Electron shells"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Electronii se așază pe straturi în jurul nucleului: K, L, M, N. Pe stratul K încap cel mult 2 electroni, pe L cel mult 8, iar pe M, în primele elemente, 8."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧅",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Umplem straturile în ordine, începând cu K. Sodiul (Z = 11) are distribuția 2, 8, 1; clorul (Z = 17) are 2, 8, 7."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚛️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Numărul de straturi cu electroni este numărul perioadei, iar electronii de pe ultimul strat sunt cei care participă la reacții. Gazele nobile au stratul exterior complet."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔢",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.config.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.config.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.periodic.7",
+    "skillId": "chim.periodic.7",
+    "title": {
+      "ro": "Sistemul periodic",
+      "en": "The periodic table"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Sistemul periodic așază elementele în ordinea crescătoare a numărului atomic Z, în perioade (rânduri) și grupe (coloane)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗂️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Elementele din aceeași grupă principală au același număr de electroni pe ultimul strat și proprietăți asemănătoare. Elementele din aceeași perioadă au același număr de straturi."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔢",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Grupa 1: metale alcaline (Li, Na, K). Grupa 17: halogeni (F, Cl). Grupa 18: gaze nobile (He, Ne, Ar). Dmitri Mendeleev a alcătuit primul tabel periodic."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.periodic.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.periodic.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.symbols.7",
+    "skillId": "chim.symbols.7",
+    "title": {
+      "ro": "Simbolurile chimice",
+      "en": "Chemical symbols"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fiecare element are un simbol format din una sau două litere: prima majusculă, a doua mică. Exemple: H (hidrogen), O (oxigen), Na (sodiu), Ca (calciu)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔤",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Unele simboluri vin din denumiri latinești: Na de la natrium (sodiu), K de la kalium (potasiu), Fe de la ferrum (fier), Cu de la cuprum (cupru)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚗️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Simbolul unui element reprezintă un atom din acel element. Scriem corect: Cl, nu CL și nu cl."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.symbols.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.symbols.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.formula.7",
+    "skillId": "chim.formula.7",
+    "title": {
+      "ro": "Formule chimice",
+      "en": "Chemical formulas"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Formula chimică arată din ce atomi este făcută o moleculă și câți atomi sunt din fiecare. Indicele mic, scris jos, arată numărul de atomi: H2O are 2 atomi de H și 1 atom de O."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă nu scrie niciun indice, înseamnă 1. Coeficientul din fața formulei arată câte molecule sunt: 3 H2O sunt 3 molecule de apă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫧",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Când formula are paranteză, indicele de după ea înmulțește tot ce este înăuntru: Ca(OH)2 are 1 Ca, 2 O și 2 H, deci 5 atomi."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔢",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.formula.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.formula.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.valence.7",
+    "skillId": "chim.valence.7",
+    "title": {
+      "ro": "Valența și formula compușilor",
+      "en": "Valence and formulas of compounds"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Valența arată câte legături poate forma un atom. Hidrogenul are valența I, oxigenul II, clorul I. Valența se scrie cu cifre romane."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔗",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru a scrie formula unui compus binar folosim regula încrucișării: indicele unui element este valența celuilalt (după simplificare). Pentru aluminiu (III) și oxigen (II): Al2O3."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧩",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Verificăm: suma valențelor atomilor de un fel este egală cu suma valențelor atomilor de celălalt fel. În Al2O3: 2·3 = 6 și 3·2 = 6."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚗️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.valence.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.valence.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.molmass.7",
+    "skillId": "chim.molmass.7",
+    "title": {
+      "ro": "Masa moleculară și masa molară",
+      "en": "Molecular and molar mass"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Masa atomică relativă Ar arată de câte ori un atom este mai greu decât a doisprezecea parte din atomul de carbon. De exemplu: H = 1, C = 12, O = 16."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Masa moleculară se obține adunând masele atomice ale tuturor atomilor din moleculă, ținând cont de indici. M(H2O) = 2·1 + 16 = 18."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧮",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Masa molară (în g/mol) are aceeași valoare numerică: 18 g/mol pentru apă. De exemplu, M(CO2) = 12 + 2·16 = 44 g/mol."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.molmass.7",
+      "kind": "explanation",
+      "title": "Explanation for chim.molmass.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

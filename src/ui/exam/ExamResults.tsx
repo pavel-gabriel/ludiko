@@ -7,6 +7,8 @@ import type { AssembledTest, Descriptor, ExamScore } from '@/exam/types'
 import { localize } from '@/engine/types'
 import { AlbumLink } from '@/ui/album/BonusStickers'
 import ProgressBar from '@/ui/learn/ProgressBar'
+import { examGradeOf, formatMark } from '@/older/marks'
+import MarkCard from '@/ui/older/MarkCard'
 import { MascotSvg } from '@/ui/mascot/Mascot'
 import type { SessionReward } from '@/ui/session/types'
 import { playFinish } from '@/utils/sounds'
@@ -72,6 +74,7 @@ export default function ExamResults({ test, score, reward, overtime, guest, titl
             {'⭐'.repeat(score.stars)}
           </p>
         )}
+        {score.mark !== null && examGradeOf(test.exam) >= 5 && <MarkCard mark={score.mark} className="mt-3" />}
       </section>
 
       {reward?.sticker && (
@@ -141,6 +144,14 @@ export default function ExamResults({ test, score, reward, overtime, guest, titl
                 {t('exam.results.parent.scoreLabel')}
               </h3>
               <p className="mt-1 text-3xl font-extrabold text-ludiko-text">{t(`exam.descriptor.${score.descriptor}.label`)}</p>
+              {score.mark !== null && examGradeOf(test.exam) >= 5 && (
+                <div className="mt-2 rounded-xl bg-white/70 px-3 py-2" data-testid="exam-mark">
+                  <p className="text-xl font-extrabold text-ludiko-text">
+                    {t('exam.results.parent.mark')}: {formatMark(score.mark, lang)}
+                  </p>
+                  <p className="text-xs font-semibold text-ludiko-text/80">{t('exam.results.parent.markNote')}</p>
+                </div>
+              )}
               <p className="mt-1 text-base font-bold text-ludiko-text">
                 {t('exam.results.parent.score', { correct: score.correct, total: score.total })} ({pct(score.ratio)}%)
               </p>

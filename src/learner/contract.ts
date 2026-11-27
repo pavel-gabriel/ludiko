@@ -219,7 +219,7 @@ export interface TodayPlan {
 export interface LearnerService {
   /**
    * Today's plan across subjects: Bit 1 Matematică, Bit 2 Limba română, Bit 3 a subject that rotates by day
-   * from the child's available others (stiinte, logic, ist, geo, civ), preferring one with a placement still
+   * from the child's available others (stiinte, logic, ist, geo, civ, bio, fiz, chim), preferring one with a placement still
    * to do, due reviews or gaps. Only subjects at or below the child's grade appear. Each bit is a slice of
    * that subject's stored mission, or a placement chunk when the subject has no finished placement. Composed
    * once per day and stored on this device, so re-reads give the same bits; `done` is derived from the

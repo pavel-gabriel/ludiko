@@ -1,0 +1,492 @@
+[
+  {
+    "id": "chim.matter.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Substanțe și corpuri",
+      "en": "Substances and bodies"
+    },
+    "prerequisites": [
+      "stiinte.matter.properties"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.matter.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.matter.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.matter.7",
+      "kind": "data",
+      "title": "Skill chim.matter.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.mixtures.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Amestecuri și separarea lor",
+      "en": "Mixtures and their separation"
+    },
+    "prerequisites": [
+      "chim.matter.7",
+      "stiinte.matter.states"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.mixtures.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.mixtures.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.mixtures.7",
+      "kind": "data",
+      "title": "Skill chim.mixtures.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.chemphys.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Fenomene fizice și chimice",
+      "en": "Physical and chemical changes"
+    },
+    "prerequisites": [
+      "chim.matter.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.chemphys.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.chemphys.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.chemphys.7",
+      "kind": "data",
+      "title": "Skill chim.chemphys.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.atom.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Structura atomului",
+      "en": "Atomic structure"
+    },
+    "prerequisites": [
+      "chim.chemphys.7",
+      "mat.add.1m"
+    ],
+    "itemSources": [
+      {
+        "generator": "chim-atom"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.atom.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.atom.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.atom.7",
+      "kind": "data",
+      "title": "Skill chim.atom.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.config.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Straturile electronice",
+      "en": "Electron shells"
+    },
+    "prerequisites": [
+      "chim.atom.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "chim-config"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.config.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.config.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.config.7",
+      "kind": "data",
+      "title": "Skill chim.config.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.periodic.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Sistemul periodic",
+      "en": "The periodic table"
+    },
+    "prerequisites": [
+      "chim.config.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.periodic.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.periodic.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.periodic.7",
+      "kind": "data",
+      "title": "Skill chim.periodic.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.symbols.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Simbolurile chimice",
+      "en": "Chemical symbols"
+    },
+    "prerequisites": [
+      "chim.atom.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.symbols.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.symbols.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.symbols.7",
+      "kind": "data",
+      "title": "Skill chim.symbols.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.formula.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Formule chimice",
+      "en": "Chemical formulas"
+    },
+    "prerequisites": [
+      "chim.symbols.7",
+      "mat.mul.1digit"
+    ],
+    "itemSources": [
+      {
+        "generator": "chim-formula"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.formula.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.formula.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.formula.7",
+      "kind": "data",
+      "title": "Skill chim.formula.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.valence.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Valența și formula compușilor",
+      "en": "Valence and formulas of compounds"
+    },
+    "prerequisites": [
+      "chim.formula.7",
+      "chim.config.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "chim-valence"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.valence.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.valence.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.valence.7",
+      "kind": "data",
+      "title": "Skill chim.valence.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.molmass.7",
+    "subject": "chim",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Masa moleculară și masa molară",
+      "en": "Molecular and molar mass"
+    },
+    "prerequisites": [
+      "chim.formula.7",
+      "mat.mul.2digit"
+    ],
+    "itemSources": [
+      {
+        "generator": "chim-molmass"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.molmass.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.molmass.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.molmass.7",
+      "kind": "data",
+      "title": "Skill chim.molmass.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  }
+]

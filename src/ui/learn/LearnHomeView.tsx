@@ -4,7 +4,12 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import type { SubjectId } from '@/engine/types'
 import type { AssignmentBit, PlanBit } from '@/learner'
+import { isBig } from '@/older/ageBand'
+import { getShowMascot, setShowMascot } from '@/older/olderStore'
 import { MascotSvg } from '@/ui/mascot/Mascot'
+import ChallengeCard from '@/ui/older/ChallengeCard'
+import ChoosePanel from '@/ui/older/ChoosePanel'
+import WeeklyGoalCard from '@/ui/older/WeeklyGoalCard'
 import ExamEntryCard from '@/ui/exam/ExamEntryCard'
 import AssignmentCard from './AssignmentCard'
 import BitTiles from './BitTiles'
@@ -22,7 +27,7 @@ export interface LockedSubject {
 }
 
 export interface LearnHomeViewProps {
-  profile: { nickname: string; avatar: string; grade?: number }
+  profile: { id?: string; nickname: string; avatar: string; grade?: number }
   stars: number
   playDays: number
   /** Today's plan across subjects (Biții de azi); absent when it could not be prepared */
@@ -98,8 +103,12 @@ function SubjectRow({ s }: { s: SubjectHome }) {
 /** The learner's front door: greeting, stars, gentle streak, today's plan, and every subject below */
 export default function LearnHomeView({ profile, stars, playDays, plan, subjects, locked, lockedNote, assignments, stickerCount }: LearnHomeViewProps) {
   const { t, i18n } = useTranslation()
-  const streak = streakText(t, i18n.language, playDays)
   const [open, setOpen] = useState(false)
+  const big = isBig(profile.grade)
+  const pid = profile.id ?? ''
+  const [mascotOn, setMascotOn] = useState(() => (big && pid ? getShowMascot(pid) : true))
+  const showMascot = !big || mascotOn
+  const streak = big && playDays <= 0 ? t('older.streakZero') : streakText(t, i18n.language, playDays)
   // teaser rows: one per grade, "Istorie, Geografie — de la clasa a IV-a"
   const teasers = [...new Set((locked ?? []).map((l) => l.minGrade))].map((minGrade) => ({
     minGrade,
@@ -114,11 +123,11 @@ export default function LearnHomeView({ profile, stars, playDays, plan, subjects
         </span>
         <div className="min-w-0 flex-1">
           <h1 className="truncate text-2xl font-extrabold leading-tight text-ludiko-text">
-            {t('learn.greeting', { name: profile.nickname })}
+            {t(big ? 'older.greeting' : 'learn.greeting', { name: profile.nickname })}
           </h1>
-          <p className="text-sm font-semibold text-ludiko-text/70">{t('learn.greetingSub')}</p>
+          <p className="text-sm font-semibold text-ludiko-text/70">{t(big ? 'older.greetingSub' : 'learn.greetingSub')}</p>
         </div>
-        <MascotSvg mood="wave" size={72} className="-my-2 shrink-0" label={t('mascot.label.wave')} />
+        {showMascot && <MascotSvg mood="wave" size={big ? 56 : 72} className="-my-2 shrink-0" label={t('mascot.label.wave')} />}
       </header>
 
       {lockedNote && (
@@ -151,7 +160,15 @@ export default function LearnHomeView({ profile, stars, playDays, plan, subjects
         </Link>
       </div>
 
-      {plan && plan.length > 0 && <BitTiles bits={plan} />}
+      {plan && plan.length > 0 && <BitTiles bits={plan} big={big} mascot={showMascot} />}
+
+      {big && pid && (
+        <>
+          <ChoosePanel subjects={subjects.map((x) => x.subject)} grade={profile.grade ?? 5} />
+          <WeeklyGoalCard profileId={pid} />
+          <ChallengeCard profileId={pid} />
+        </>
+      )}
 
       {assignments && assignments.length > 0 && <AssignmentCard assignments={assignments} />}
 
@@ -188,6 +205,22 @@ export default function LearnHomeView({ profile, stars, playDays, plan, subjects
       </section>
 
       <ExamEntryCard grade={profile.grade} />
+
+      {big && pid && (
+        <label className="mx-auto flex min-h-[44px] items-center gap-3 text-sm font-bold text-ludiko-text">
+          <input
+            type="checkbox"
+            checked={mascotOn}
+            data-testid="toggle-mascot"
+            onChange={(e) => {
+              setShowMascot(pid, e.target.checked)
+              setMascotOn(e.target.checked)
+            }}
+            className="h-6 w-6"
+          />
+          {t('older.mascot.toggle')}
+        </label>
+      )}
 
       <Link
         to="/learn/parent"

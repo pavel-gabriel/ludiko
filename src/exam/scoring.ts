@@ -2,6 +2,7 @@
  * Scoring of an exam simulation. LUDIKO'S OWN PRACTICE ESTIMATE, not official grading:
  * the thresholds below are ours, documented in docs/EXAM_PRACTICE.md §4.
  */
+import { markFromScore } from '../older/marks'
 import type { Descriptor, ExamAnswers, ExamScore, AssembledTest, PracticeEntry, SectionScore } from './types'
 
 /** Lowest share of correct answers (0..1) for each calificativ; anything lower is "Insuficient" */
@@ -62,6 +63,7 @@ export function scoreExam(test: AssembledTest, answers: ExamAnswers): ExamScore 
     answered,
     ratio,
     descriptor: descriptorFor(ratio),
+    mark: markFromScore(correct, total),
     stars: starsFor(ratio, answered),
     sections,
     practice,

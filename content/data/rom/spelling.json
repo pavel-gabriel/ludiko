@@ -1,0 +1,827 @@
+{
+ "provenance": {
+  "id": "prov.data.rom.spelling",
+  "kind": "data",
+  "title": "Ludiko spelling pairs: hyphenated forms in original sentences",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Original sentences drafted for the gimnaziu (V-VIII) Romanian curriculum; no textbook or exam material. Awaiting review by a Romanian teacher."
+ },
+ "groups": {
+  "sa": [
+   "s-a",
+   "sa"
+  ],
+  "sau": [
+   "s-au",
+   "sau"
+  ],
+  "sa_au": [
+   "s-a",
+   "s-au"
+  ],
+  "ia": [
+   "i-a",
+   "ia"
+  ],
+  "iau": [
+   "i-au",
+   "iau"
+  ],
+  "nai": [
+   "n-ai",
+   "nai"
+  ],
+  "nea": [
+   "ne-a",
+   "nea"
+  ],
+  "la": [
+   "l-a",
+   "la"
+  ],
+  "intro": [
+   "într-o",
+   "intr-o"
+  ],
+  "untro": [
+   "într-o",
+   "într-un"
+  ],
+  "mai": [
+   "m-ai",
+   "mai"
+  ],
+  "miau": [
+   "mi-au",
+   "miau"
+  ],
+  "mi": [
+   "mi-a",
+   "mi-au"
+  ]
+ },
+ "items": [
+  [
+   "sa",
+   "Copilul {{gap}} spălat pe mâini înainte de masă.",
+   "s-a"
+  ],
+  [
+   "sa",
+   "Cerul {{gap}} înnorat și a început să plouă.",
+   "s-a"
+  ],
+  [
+   "sa",
+   "Ușa {{gap}} deschis încet, fără zgomot.",
+   "s-a"
+  ],
+  [
+   "sa",
+   "Mihai {{gap}} trezit devreme și a plecat la pescuit.",
+   "s-a"
+  ],
+  [
+   "sa",
+   "Pisica {{gap}} ascuns sub pat când a auzit tunetul.",
+   "s-a"
+  ],
+  [
+   "sa",
+   "Lumina {{gap}} stins în toată casa.",
+   "s-a"
+  ],
+  [
+   "sa",
+   "Fetița {{gap}} bucurat mult de scrisoarea primită.",
+   "s-a"
+  ],
+  [
+   "sa",
+   "Autobuzul {{gap}} oprit în fața școlii.",
+   "s-a"
+  ],
+  [
+   "sa",
+   "Elevul {{gap}} pregătit bine pentru test.",
+   "s-a"
+  ],
+  [
+   "sa",
+   "Bunicul își iubește grădina {{gap}} mai mult decât orice.",
+   "sa"
+  ],
+  [
+   "sa",
+   "Autorul și-a prezentat cartea {{gap}} în fața elevilor.",
+   "sa"
+  ],
+  [
+   "sa",
+   "Căpitanul își apără echipa {{gap}} cu mult curaj.",
+   "sa"
+  ],
+  [
+   "sa",
+   "Pictorița și-a expus lucrarea {{gap}} în sala mare.",
+   "sa"
+  ],
+  [
+   "sa",
+   "Regele a chemat-o pe fiica {{gap}} lângă tron.",
+   "sa"
+  ],
+  [
+   "sau",
+   "Copiii {{gap}} jucat toată după-amiaza în parc.",
+   "s-au"
+  ],
+  [
+   "sau",
+   "Frații {{gap}} certat din cauza unei mingi.",
+   "s-au"
+  ],
+  [
+   "sau",
+   "Florile {{gap}} ofilit din cauza secetei.",
+   "s-au"
+  ],
+  [
+   "sau",
+   "Vecinii {{gap}} mutat într-un oraș mare.",
+   "s-au"
+  ],
+  [
+   "sau",
+   "Elevii {{gap}} așezat în bănci și au deschis caietele.",
+   "s-au"
+  ],
+  [
+   "sau",
+   "Norii {{gap}} risipit și a ieșit soarele.",
+   "s-au"
+  ],
+  [
+   "sau",
+   "Prietenii {{gap}} întâlnit în fața cinematografului.",
+   "s-au"
+  ],
+  [
+   "sau",
+   "Vrei ciocolată {{gap}} înghețată?",
+   "sau"
+  ],
+  [
+   "sau",
+   "Mergem la munte {{gap}} la mare?",
+   "sau"
+  ],
+  [
+   "sau",
+   "Poți veni azi {{gap}} mâine, cum preferi.",
+   "sau"
+  ],
+  [
+   "sau",
+   "Citesc o carte {{gap}} desenez după-amiaza.",
+   "sau"
+  ],
+  [
+   "sau",
+   "Alegi mărul {{gap}} para?",
+   "sau"
+  ],
+  [
+   "sau",
+   "Pleci cu trenul {{gap}} cu autobuzul?",
+   "sau"
+  ],
+  [
+   "sau",
+   "Ne vedem sâmbătă {{gap}} duminică.",
+   "sau"
+  ],
+  [
+   "sa_au",
+   "Băiatul {{gap}} rătăcit în pădure.",
+   "s-a"
+  ],
+  [
+   "sa_au",
+   "Băieții {{gap}} rătăcit în pădure.",
+   "s-au"
+  ],
+  [
+   "sa_au",
+   "Păsările {{gap}} întors din țările calde.",
+   "s-au"
+  ],
+  [
+   "sa_au",
+   "Pasărea {{gap}} întors din țara caldă.",
+   "s-a"
+  ],
+  [
+   "sa_au",
+   "Echipa {{gap}} antrenat din greu toată luna.",
+   "s-a"
+  ],
+  [
+   "sa_au",
+   "Jucătorii {{gap}} antrenat din greu toată luna.",
+   "s-au"
+  ],
+  [
+   "sa_au",
+   "Porțile {{gap}} închis cu un scârțâit lung.",
+   "s-au"
+  ],
+  [
+   "sa_au",
+   "Poarta {{gap}} închis cu un scârțâit lung.",
+   "s-a"
+  ],
+  [
+   "sa_au",
+   "Soldații {{gap}} întors acasă după război.",
+   "s-au"
+  ],
+  [
+   "sa_au",
+   "Bunica {{gap}} așezat în fotoliul vechi.",
+   "s-a"
+  ],
+  [
+   "ia",
+   "Mama {{gap}} cumpărat un caiet nou.",
+   "i-a"
+  ],
+  [
+   "ia",
+   "Bunicul {{gap}} spus nepotului o poveste veche.",
+   "i-a"
+  ],
+  [
+   "ia",
+   "Profesoara {{gap}} explicat elevului lecția încă o dată.",
+   "i-a"
+  ],
+  [
+   "ia",
+   "Ana {{gap}} dat prietenei un cadou frumos.",
+   "i-a"
+  ],
+  [
+   "ia",
+   "Tatăl {{gap}} făcut fiului o căsuță din lemn.",
+   "i-a"
+  ],
+  [
+   "ia",
+   "Vecina {{gap}} adus bunicii o plasă cu mere.",
+   "i-a"
+  ],
+  [
+   "ia",
+   "Doctorul {{gap}} recomandat pacientului multă odihnă.",
+   "i-a"
+  ],
+  [
+   "ia",
+   "Ea {{gap}} autobuzul în fiecare dimineață.",
+   "ia"
+  ],
+  [
+   "ia",
+   "Dacă plouă, Maria {{gap}} umbrela cu ea.",
+   "ia"
+  ],
+  [
+   "ia",
+   "{{gap}} haina, afară e frig!",
+   "ia"
+  ],
+  [
+   "ia",
+   "Fratele meu {{gap}} note mari la matematică.",
+   "ia"
+  ],
+  [
+   "ia",
+   "Bunica poartă o {{gap}} cusută de mână la sărbători.",
+   "ia"
+  ],
+  [
+   "ia",
+   "Ion își {{gap}} geanta și pleacă la școală.",
+   "ia"
+  ],
+  [
+   "ia",
+   "Pe 1 iunie, mama {{gap}} copiii la o plimbare cu barca.",
+   "ia"
+  ],
+  [
+   "iau",
+   "Copiii {{gap}} adus bunicii flori de câmp.",
+   "i-au"
+  ],
+  [
+   "iau",
+   "Prietenii {{gap}} cântat Mariei un cântec de ziua ei.",
+   "i-au"
+  ],
+  [
+   "iau",
+   "Părinții {{gap}} promis fiului o excursie la mare.",
+   "i-au"
+  ],
+  [
+   "iau",
+   "Vecinii {{gap}} împrumutat Anei scara lor.",
+   "i-au"
+  ],
+  [
+   "iau",
+   "Colegii {{gap}} mulțumit profesorului pentru ajutor.",
+   "i-au"
+  ],
+  [
+   "iau",
+   "Elevii {{gap}} pus învățătoarei întrebări despre poveste.",
+   "i-au"
+  ],
+  [
+   "iau",
+   "Verii {{gap}} trimis bunicii o felicitare.",
+   "i-au"
+  ],
+  [
+   "iau",
+   "Eu {{gap}} autobuzul numărul zece.",
+   "iau"
+  ],
+  [
+   "iau",
+   "În fiecare seară {{gap}} o carte din bibliotecă.",
+   "iau"
+  ],
+  [
+   "iau",
+   "Copiii {{gap}} pâine de la magazinul din colț.",
+   "iau"
+  ],
+  [
+   "iau",
+   "Când plouă, noi {{gap}} umbrelele.",
+   "iau"
+  ],
+  [
+   "iau",
+   "Elevii {{gap}} note bune când învață regulat.",
+   "iau"
+  ],
+  [
+   "iau",
+   "Eu {{gap}} în fiecare dimineață un pahar cu lapte.",
+   "iau"
+  ],
+  [
+   "iau",
+   "Ei își {{gap}} rucsacurile și pleacă în excursie.",
+   "iau"
+  ],
+  [
+   "nai",
+   "Dacă {{gap}} învățat lecția, vei lua o notă mică.",
+   "n-ai"
+  ],
+  [
+   "nai",
+   "Tu {{gap}} văzut niciodată marea?",
+   "n-ai"
+  ],
+  [
+   "nai",
+   "De ce {{gap}} venit la întâlnire?",
+   "n-ai"
+  ],
+  [
+   "nai",
+   "Spui că {{gap}} timp pentru joacă.",
+   "n-ai"
+  ],
+  [
+   "nai",
+   "Tu {{gap}} nicio vină pentru ce s-a întâmplat.",
+   "n-ai"
+  ],
+  [
+   "nai",
+   "Dacă {{gap}} umbrelă, te vei uda.",
+   "n-ai"
+  ],
+  [
+   "nai",
+   "{{gap}} cum să știi dacă nu întrebi.",
+   "n-ai"
+  ],
+  [
+   "nai",
+   "Ionuț cântă la {{gap}} în orchestra școlii.",
+   "nai"
+  ],
+  [
+   "nai",
+   "Păstorul a făcut un {{gap}} din trestii.",
+   "nai"
+  ],
+  [
+   "nai",
+   "Bunicul meu a primit un {{gap}} de la un meșter popular.",
+   "nai"
+  ],
+  [
+   "nai",
+   "La concert, solista a cântat la {{gap}} o melodie veche.",
+   "nai"
+  ],
+  [
+   "nai",
+   "În orchestra populară, unul dintre instrumente este {{gap}}.",
+   "nai"
+  ],
+  [
+   "nea",
+   "Bunica {{gap}} povestit despre copilăria ei.",
+   "ne-a"
+  ],
+  [
+   "nea",
+   "Profesorul {{gap}} explicat tema pe tablă.",
+   "ne-a"
+  ],
+  [
+   "nea",
+   "Mama {{gap}} pregătit o surpriză.",
+   "ne-a"
+  ],
+  [
+   "nea",
+   "Vecinul {{gap}} ajutat să căram lemnele.",
+   "ne-a"
+  ],
+  [
+   "nea",
+   "Cine {{gap}} lăsat bilet pe masă?",
+   "ne-a"
+  ],
+  [
+   "nea",
+   "Dirigintele {{gap}} anunțat excursia de mâine.",
+   "ne-a"
+  ],
+  [
+   "nea",
+   "Cântecul {{gap}} încântat pe toți.",
+   "ne-a"
+  ],
+  [
+   "nea",
+   "Bunicul {{gap}} învățat să pescuim.",
+   "ne-a"
+  ],
+  [
+   "nea",
+   "Vecinul nostru, {{gap}} Costică, are o grădină mare.",
+   "nea"
+  ],
+  [
+   "nea",
+   "Bunica a primit vizita lui {{gap}} Ion, un vecin vechi.",
+   "nea"
+  ],
+  [
+   "nea",
+   "Satul îl știe bine pe {{gap}} Gheorghe, fierarul.",
+   "nea"
+  ],
+  [
+   "nea",
+   "Ieri ni l-a prezentat pe {{gap}} Mitică, un vecin glumeț.",
+   "nea"
+  ],
+  [
+   "la",
+   "Ion {{gap}} ajutat pe Mihai să-și repare bicicleta.",
+   "l-a"
+  ],
+  [
+   "la",
+   "Bunica {{gap}} strigat pe nepot din curte.",
+   "l-a"
+  ],
+  [
+   "la",
+   "Câinele {{gap}} urmărit pe băiat până acasă.",
+   "l-a"
+  ],
+  [
+   "la",
+   "Profesoara {{gap}} lăudat pe elev pentru efort.",
+   "l-a"
+  ],
+  [
+   "la",
+   "Cine {{gap}} văzut pe pisoi în curte?",
+   "l-a"
+  ],
+  [
+   "la",
+   "Tata {{gap}} condus pe fiul lui în gară.",
+   "l-a"
+  ],
+  [
+   "la",
+   "Ea {{gap}} întâlnit pe Andrei în bibliotecă.",
+   "l-a"
+  ],
+  [
+   "la",
+   "Copiii merg {{gap}} școală în fiecare zi.",
+   "la"
+  ],
+  [
+   "la",
+   "Mâine mergem {{gap}} bunici, în sat.",
+   "la"
+  ],
+  [
+   "la",
+   "Ne întâlnim {{gap}} ora cinci în fața parcului.",
+   "la"
+  ],
+  [
+   "la",
+   "Pisica doarme {{gap}} fereastră.",
+   "la"
+  ],
+  [
+   "la",
+   "Maria stă {{gap}} masă și scrie o temă.",
+   "la"
+  ],
+  [
+   "la",
+   "Am ajuns {{gap}} munte pe înserat.",
+   "la"
+  ],
+  [
+   "la",
+   "Fratele meu a venit {{gap}} mine cu o veste bună.",
+   "la"
+  ],
+  [
+   "intro",
+   "{{gap}} seară de vară, am ieșit la plimbare.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Pisica doarme {{gap}} cutie de carton.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Am găsit o scrisoare {{gap}} carte veche.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Au locuit {{gap}} casă mică, lângă pădure.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Ei s-au oprit {{gap}} poiană plină de flori.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Am pus fructele {{gap}} pungă de hârtie.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "{{gap}} dimineață rece, lacul era acoperit de gheață.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Bunicul a pus cheia {{gap}} cutie de lemn.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Mergem {{gap}} excursie de trei zile.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Ana a intrat {{gap}} librărie mare din centru.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Ioana a ascuns biletul {{gap}} carte groasă.",
+   "într-o"
+  ],
+  [
+   "intro",
+   "Ne-am odihnit {{gap}} cabană de lemn.",
+   "într-o"
+  ],
+  [
+   "untro",
+   "Trăiește {{gap}} oraș mare, la etajul zece.",
+   "într-un"
+  ],
+  [
+   "untro",
+   "Trăiește {{gap}} casă veche, cu grădină.",
+   "într-o"
+  ],
+  [
+   "untro",
+   "A pus mingea {{gap}} sac de plastic.",
+   "într-un"
+  ],
+  [
+   "untro",
+   "A pus pâinea {{gap}} pungă albă.",
+   "într-o"
+  ],
+  [
+   "untro",
+   "Ne-am ascuns {{gap}} pivniță rece.",
+   "într-o"
+  ],
+  [
+   "untro",
+   "Ne-am ascuns {{gap}} hambar vechi.",
+   "într-un"
+  ],
+  [
+   "untro",
+   "Peștele înoată {{gap}} lac adânc.",
+   "într-un"
+  ],
+  [
+   "untro",
+   "Ea locuiește {{gap}} cameră luminoasă.",
+   "într-o"
+  ],
+  [
+   "mai",
+   "Tu {{gap}} ajutat mult când am avut nevoie.",
+   "m-ai"
+  ],
+  [
+   "mai",
+   "De ce {{gap}} strigat în fața tuturor?",
+   "m-ai"
+  ],
+  [
+   "mai",
+   "Dacă {{gap}} chemat, vin imediat.",
+   "m-ai"
+  ],
+  [
+   "mai",
+   "Mulțumesc că {{gap}} așteptat la poartă.",
+   "m-ai"
+  ],
+  [
+   "mai",
+   "Tu {{gap}} înțeles greșit, nu asta am spus.",
+   "m-ai"
+  ],
+  [
+   "mai",
+   "{{gap}} văzut ieri în parc, dar nu ai venit să mă saluți.",
+   "m-ai"
+  ],
+  [
+   "mai",
+   "Vrei să mănânci {{gap}} multă supă?",
+   "mai"
+  ],
+  [
+   "mai",
+   "Cartea aceasta este {{gap}} interesantă decât cealaltă.",
+   "mai"
+  ],
+  [
+   "mai",
+   "Nu {{gap}} plouă de două zile.",
+   "mai"
+  ],
+  [
+   "mai",
+   "Mama a spus că {{gap}} avem zece minute.",
+   "mai"
+  ],
+  [
+   "mai",
+   "Pune {{gap}} o bucată de pâine pe masă, te rog.",
+   "mai"
+  ],
+  [
+   "mai",
+   "Fratele meu este {{gap}} înalt decât mine.",
+   "mai"
+  ],
+  [
+   "miau",
+   "Colegii {{gap}} dat caietele înapoi.",
+   "mi-au"
+  ],
+  [
+   "miau",
+   "Bunicii {{gap}} trimis un colet cu mere.",
+   "mi-au"
+  ],
+  [
+   "miau",
+   "Prietenii {{gap}} cântat un cântec de ziua mea.",
+   "mi-au"
+  ],
+  [
+   "miau",
+   "Vecinii {{gap}} adus o plasă cu nuci.",
+   "mi-au"
+  ],
+  [
+   "miau",
+   "Verii {{gap}} spus o glumă bună.",
+   "mi-au"
+  ],
+  [
+   "miau",
+   "Pisica a început să facă {{gap}} la ușă.",
+   "miau"
+  ],
+  [
+   "miau",
+   "Din pod se auzea un {{gap}} subțire.",
+   "miau"
+  ],
+  [
+   "miau",
+   "Pisoiul spune {{gap}} când îi este foame.",
+   "miau"
+  ],
+  [
+   "mi",
+   "Bunicul {{gap}} citit o poveste.",
+   "mi-a"
+  ],
+  [
+   "mi",
+   "Bunicii {{gap}} citit o poveste.",
+   "mi-au"
+  ],
+  [
+   "mi",
+   "Sora mea {{gap}} împrumutat o carte.",
+   "mi-a"
+  ],
+  [
+   "mi",
+   "Surorile mele {{gap}} împrumutat cărți.",
+   "mi-au"
+  ],
+  [
+   "mi",
+   "Profesorul {{gap}} lăudat lucrarea.",
+   "mi-a"
+  ],
+  [
+   "mi",
+   "Profesorii {{gap}} lăudat lucrarea.",
+   "mi-au"
+  ],
+  [
+   "mi",
+   "Colega {{gap}} dat un creion.",
+   "mi-a"
+  ],
+  [
+   "mi",
+   "Colegii {{gap}} dat creioane.",
+   "mi-au"
+  ]
+ ]
+}

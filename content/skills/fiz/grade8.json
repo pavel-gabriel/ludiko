@@ -1,0 +1,617 @@
+[
+  {
+    "id": "fiz.heat.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Căldura și energia termică",
+      "en": "Heat and thermal energy"
+    },
+    "prerequisites": [
+      "fiz.temp.6",
+      "fiz.states.6",
+      "fiz.energy.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "heat"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.heat.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.heat.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.heat.8",
+      "kind": "data",
+      "title": "Skill fiz.heat.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.expansion.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Dilatarea și propagarea căldurii",
+      "en": "Expansion and heat transfer"
+    },
+    "prerequisites": [
+      "fiz.temp.6",
+      "fiz.heat.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.expansion.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.expansion.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.expansion.8",
+      "kind": "data",
+      "title": "Skill fiz.expansion.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.statechange.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Schimbarea stării de agregare",
+      "en": "Changes of state"
+    },
+    "prerequisites": [
+      "fiz.states.6",
+      "fiz.heat.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.statechange.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.statechange.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.statechange.8",
+      "kind": "data",
+      "title": "Skill fiz.statechange.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.charge.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Sarcina electrică și electrizarea",
+      "en": "Electric charge and electrification"
+    },
+    "prerequisites": [
+      "stiinte.electricity"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.charge.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.charge.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.charge.8",
+      "kind": "data",
+      "title": "Skill fiz.charge.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.current.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Curentul electric și circuitul",
+      "en": "Electric current and the circuit"
+    },
+    "prerequisites": [
+      "fiz.charge.8",
+      "fiz.time.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "current"
+        }
+      },
+      {
+        "generator": "fiz-convert",
+        "params": {
+          "family": "current"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.current.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.current.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.current.8",
+      "kind": "data",
+      "title": "Skill fiz.current.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.ohm.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Tensiunea, rezistența și legea lui Ohm",
+      "en": "Voltage, resistance and Ohm's law"
+    },
+    "prerequisites": [
+      "fiz.current.8",
+      "mat.eq7.linear"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "ohm"
+        }
+      },
+      {
+        "generator": "fiz-convert",
+        "params": {
+          "family": [
+            "voltage",
+            "resistance"
+          ]
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.ohm.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.ohm.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.ohm.8",
+      "kind": "data",
+      "title": "Skill fiz.ohm.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.resistors.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Gruparea rezistoarelor",
+      "en": "Resistors in series and parallel"
+    },
+    "prerequisites": [
+      "fiz.ohm.8",
+      "mat.frac6.ops"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-resistors"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.resistors.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.resistors.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.resistors.8",
+      "kind": "data",
+      "title": "Skill fiz.resistors.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.elpower.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Puterea și energia electrică",
+      "en": "Electric power and energy"
+    },
+    "prerequisites": [
+      "fiz.ohm.8",
+      "fiz.power.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "elpower"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.elpower.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.elpower.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.elpower.8",
+      "kind": "data",
+      "title": "Skill fiz.elpower.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.magnet.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Magneți și electromagnetism",
+      "en": "Magnets and electromagnetism"
+    },
+    "prerequisites": [
+      "stiinte.magnets",
+      "fiz.current.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.magnet.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.magnet.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.magnet.8",
+      "kind": "data",
+      "title": "Skill fiz.magnet.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.light.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Propagarea luminii",
+      "en": "Propagation of light"
+    },
+    "prerequisites": [
+      "stiinte.light.sound"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.light.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.light.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.light.8",
+      "kind": "data",
+      "title": "Skill fiz.light.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.reflection.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Reflexia luminii",
+      "en": "Reflection of light"
+    },
+    "prerequisites": [
+      "fiz.light.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.reflection.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.reflection.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.reflection.8",
+      "kind": "data",
+      "title": "Skill fiz.reflection.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.lenses.8",
+    "subject": "fiz",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Refracția luminii și lentilele",
+      "en": "Refraction and lenses"
+    },
+    "prerequisites": [
+      "fiz.reflection.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.lenses.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.lenses.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.lenses.8",
+      "kind": "data",
+      "title": "Skill fiz.lenses.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  }
+]

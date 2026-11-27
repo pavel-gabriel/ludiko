@@ -110,6 +110,8 @@ export interface ExamScore {
   answered: number
   ratio: number
   descriptor: Descriptor
+  /** Estimated mark 1–10 (src/older/marks.ts); shown only when the exam is for grade V or above. Never an official mark. */
+  mark: number | null
   /** 1..3 for the child's celebration; never 0 once the child tried */
   stars: 0 | 1 | 2 | 3
   sections: SectionScore[]

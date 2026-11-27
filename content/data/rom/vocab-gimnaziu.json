@@ -1,0 +1,543 @@
+{
+ "provenance": {
+  "id": "prov.data.rom.vocab-gimnaziu",
+  "kind": "data",
+  "title": "Ludiko vocabulary sets for grades V-VIII: synonyms, antonyms, paronyms, homonyms",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Original sentences drafted for the gimnaziu (V-VIII) Romanian curriculum; no textbook or exam material. Awaiting review by a Romanian teacher."
+ },
+ "synonyms": [
+  [
+   "a ajuta",
+   "a sprijini"
+  ],
+  [
+   "a alege",
+   "a selecta"
+  ],
+  [
+   "a ascunde",
+   "a tăinui"
+  ],
+  [
+   "a construi",
+   "a clădi"
+  ],
+  [
+   "a crede",
+   "a socoti"
+  ],
+  [
+   "a dori",
+   "a năzui"
+  ],
+  [
+   "a explica",
+   "a lămuri"
+  ],
+  [
+   "a merge",
+   "a umbla"
+  ],
+  [
+   "a răspunde",
+   "a replica"
+  ],
+  [
+   "a vedea",
+   "a zări"
+  ],
+  [
+   "a tăcea",
+   "a amuți"
+  ],
+  [
+   "a strica",
+   "a deteriora"
+  ],
+  [
+   "frică",
+   "teamă"
+  ],
+  [
+   "hotar",
+   "graniță"
+  ],
+  [
+   "casă",
+   "locuință"
+  ],
+  [
+   "drum",
+   "cale"
+  ],
+  [
+   "prieten",
+   "amic"
+  ],
+  [
+   "dușman",
+   "adversar"
+  ],
+  [
+   "învățător",
+   "dascăl"
+  ],
+  [
+   "bucurie",
+   "veselie"
+  ],
+  [
+   "întuneric",
+   "beznă"
+  ],
+  [
+   "frumusețe",
+   "splendoare"
+  ],
+  [
+   "rapid",
+   "iute"
+  ],
+  [
+   "puternic",
+   "tare"
+  ],
+  [
+   "inteligent",
+   "isteț"
+  ],
+  [
+   "curajos",
+   "viteaz"
+  ],
+  [
+   "trist",
+   "mâhnit"
+  ],
+  [
+   "bogat",
+   "avut"
+  ],
+  [
+   "neobișnuit",
+   "ciudat"
+  ],
+  [
+   "strălucitor",
+   "luminos"
+  ]
+ ],
+ "antonyms": [
+  [
+   "a urca",
+   "a coborî"
+  ],
+  [
+   "a distruge",
+   "a clădi"
+  ],
+  [
+   "a câștiga",
+   "a pierde"
+  ],
+  [
+   "a aprinde",
+   "a stinge"
+  ],
+  [
+   "a deschide",
+   "a închide"
+  ],
+  [
+   "a iubi",
+   "a urî"
+  ],
+  [
+   "a găsi",
+   "a pierde"
+  ],
+  [
+   "a lăuda",
+   "a critica"
+  ],
+  [
+   "a păstra",
+   "a risipi"
+  ],
+  [
+   "a ajunge",
+   "a pleca"
+  ],
+  [
+   "bogat",
+   "sărac"
+  ],
+  [
+   "amabil",
+   "morocănos"
+  ],
+  [
+   "generos",
+   "zgârcit"
+  ],
+  [
+   "curajos",
+   "fricos"
+  ],
+  [
+   "vechi",
+   "nou"
+  ],
+  [
+   "adânc",
+   "superficial"
+  ],
+  [
+   "larg",
+   "îngust"
+  ],
+  [
+   "ușor",
+   "greu"
+  ],
+  [
+   "clar",
+   "confuz"
+  ],
+  [
+   "real",
+   "imaginar"
+  ],
+  [
+   "sincer",
+   "fals"
+  ],
+  [
+   "răbdător",
+   "nerăbdător"
+  ],
+  [
+   "harnic",
+   "leneș"
+  ],
+  [
+   "modest",
+   "îngâmfat"
+  ],
+  [
+   "frumusețe",
+   "urâțenie"
+  ],
+  [
+   "început",
+   "sfârșit"
+  ],
+  [
+   "victorie",
+   "înfrângere"
+  ],
+  [
+   "pace",
+   "război"
+  ],
+  [
+   "abundență",
+   "lipsă"
+  ],
+  [
+   "prezență",
+   "absență"
+  ]
+ ],
+ "paronyms": [
+  [
+   "Chipul acela îmi este {{gap}} de undeva.",
+   "familiar",
+   "familial"
+  ],
+  [
+   "La masa {{gap}} de duminică s-au adunat toți bunicii.",
+   "familială",
+   "familiară"
+  ],
+  [
+   "Elevul {{gap}} nu lasă nicio temă nefăcută.",
+   "conștiincios",
+   "conștient"
+  ],
+  [
+   "Era {{gap}} de greșeala sa și a cerut iertare.",
+   "conștient",
+   "conștiincios"
+  ],
+  [
+   "Familia vrea să {{gap}} un cățel de la adăpost.",
+   "adopte",
+   "adapteze"
+  ],
+  [
+   "Copilul trebuie să se {{gap}} la noul colectiv.",
+   "adapteze",
+   "adopte"
+  ],
+  [
+   "Profesorul va {{gap}} lucrările elevilor în această săptămână.",
+   "evalueze",
+   "evolueze"
+  ],
+  [
+   "Planta va {{gap}} încet, de la sămânță la floare.",
+   "evolueze",
+   "evalueze"
+  ],
+  [
+   "Pericolul este {{gap}}, așa că trebuie să plecăm imediat.",
+   "iminent",
+   "eminent"
+  ],
+  [
+   "Savantul {{gap}} a primit un premiu internațional.",
+   "eminent",
+   "iminent"
+  ],
+  [
+   "I-a făcut un {{gap}} frumos pentru rochia nouă.",
+   "compliment",
+   "complement"
+  ],
+  [
+   "În propoziția dată, cuvântul subliniat este {{gap}} direct.",
+   "complement",
+   "compliment"
+  ],
+  [
+   "Nu a înțeles {{gap}} ce a spus, era doar o glumă.",
+   "literal",
+   "literar"
+  ],
+  [
+   "Romanul a primit un premiu {{gap}} important.",
+   "literar",
+   "literal"
+  ],
+  [
+   "Elevii vor {{gap}} clasa a opta în iunie.",
+   "absolvi",
+   "absorbi"
+  ],
+  [
+   "Buretele poate {{gap}} multă apă.",
+   "absorbi",
+   "absolvi"
+  ],
+  [
+   "Ideea ta este foarte {{gap}}.",
+   "originală",
+   "originară"
+  ],
+  [
+   "Familia lui este {{gap}} din Sibiu.",
+   "originară",
+   "originală"
+  ],
+  [
+   "Cei care au {{gap}} în România vin din alte țări.",
+   "imigrat",
+   "emigrat"
+  ],
+  [
+   "Familia a {{gap}} din România, părăsindu-și țara natală.",
+   "emigrat",
+   "imigrat"
+  ],
+  [
+   "Elevii au {{gap}} la biblioteca școlii în fiecare zi.",
+   "acces",
+   "exces"
+  ],
+  [
+   "Un {{gap}} de dulciuri nu este bun pentru sănătate.",
+   "exces",
+   "acces"
+  ],
+  [
+   "Pictorul a desenat {{gap}} casei cu un creion negru.",
+   "conturul",
+   "contorul"
+  ],
+  [
+   "{{gap}} de apă arată câți metri cubi s-au consumat.",
+   "Contorul",
+   "Conturul"
+  ]
+ ],
+ "homonyms": [
+  {
+   "w": "lac",
+   "senses": [
+    [
+     "Pe lacul înghețat patinează copiii.",
+     "Rățuștele înoată liniștite pe lac."
+    ],
+    [
+     "Fata își dă cu lac pe unghii.",
+     "Mobila a fost acoperită cu lac transparent."
+    ]
+   ]
+  },
+  {
+   "w": "broască",
+   "senses": [
+    [
+     "O broască a sărit în baltă.",
+     "Broasca orăcăie seara lângă iaz."
+    ],
+    [
+     "Broasca de la ușă s-a stricat.",
+     "Meșterul a schimbat broasca ușii de la intrare."
+    ]
+   ]
+  },
+  {
+   "w": "corn",
+   "senses": [
+    [
+     "Am mâncat un corn cu ciocolată la gustare.",
+     "La brutărie, cornul cald miroase îmbietor."
+    ],
+    [
+     "Vânătorul a sunat din corn în pădure.",
+     "Sunetul cornului se auzea în vale."
+    ]
+   ]
+  },
+  {
+   "w": "cot",
+   "senses": [
+    [
+     "S-a lovit la cot de colțul mesei.",
+     "Își sprijină cotul pe bancă."
+    ],
+    [
+     "Drumul face un cot la marginea satului.",
+     "Râul face un cot și apoi se lărgește."
+    ]
+   ]
+  },
+  {
+   "w": "bancă",
+   "senses": [
+    [
+     "Ne așezăm pe bancă în parc.",
+     "Pe banca din fața școlii stau doi elevi."
+    ],
+    [
+     "Tata a depus banii la bancă.",
+     "Banca este deschisă până la ora patru."
+    ]
+   ]
+  },
+  {
+   "w": "ac",
+   "senses": [
+    [
+     "Bunica a înfilat ața în ac.",
+     "Cu acul și ața am cusut nasturele."
+    ],
+    [
+     "Bradul își păstrează acele și iarna.",
+     "Pe jos erau multe ace de pin uscate."
+    ],
+    [
+     "Acul mare al ceasului arată minutele.",
+     "Acul ceasornicului s-a oprit la miezul nopții."
+    ]
+   ]
+  },
+  {
+   "w": "mină",
+   "senses": [
+    [
+     "El avea o mină supărată când a plecat.",
+     "Pe chipul ei era o mină veselă."
+    ],
+    [
+     "Mina creionului s-a rupt în timp ce scriam.",
+     "Trebuie să schimb mina pixului."
+    ],
+    [
+     "Minerii coboară dimineața în mină.",
+     "Din mina de sare se scoate sare gemă."
+    ]
+   ]
+  },
+  {
+   "w": "lună",
+   "senses": [
+    [
+     "Luna strălucește pe cer în noaptea senină.",
+     "Astronauții au ajuns pe Lună."
+    ],
+    [
+     "Luna iunie este caldă și însorită.",
+     "Un an are douăsprezece luni."
+    ]
+   ]
+  },
+  {
+   "w": "port",
+   "senses": [
+    [
+     "Corabia a intrat în portul din Constanța.",
+     "În port se descarcă mărfuri din vapoare."
+    ],
+    [
+     "Fetele purtau portul popular la sărbătoare.",
+     "Portul bunicii era cusut cu fir roșu."
+    ]
+   ]
+  },
+  {
+   "w": "arc",
+   "senses": [
+    [
+     "Vânătorul a încordat arcul și a țintit.",
+     "Arcul și săgețile erau agățate în perete."
+    ],
+    [
+     "Ceasul are un arc mic care îl pune în mișcare.",
+     "Salteaua veche are arcurile rupte."
+    ]
+   ]
+  },
+  {
+   "w": "frunte",
+   "senses": [
+    [
+     "Și-a șters fruntea cu batista.",
+     "Mama i-a pus mâna pe frunte."
+    ],
+    [
+     "Echipa noastră este în fruntea clasamentului.",
+     "Directorul mergea în fruntea coloanei de elevi."
+    ]
+   ]
+  },
+  {
+   "w": "pupă",
+   "senses": [
+    [
+     "Fluturele a ieșit din pupă.",
+     "Din pupa aceasta se va naște un fluture."
+    ],
+    [
+     "Căpitanul stătea la pupa corabiei.",
+     "Pe pupa vasului flutura un steag."
+    ]
+   ]
+  }
+ ]
+}

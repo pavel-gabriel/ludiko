@@ -87,13 +87,17 @@ describe('/learn shows only the subjects of the child\'s grade', () => {
     expect(document.querySelector('a[href*="/geo"]')).toBeNull()
   })
 
-  it('grade IV: everything is playable and there is no teaser', async () => {
+  it('grade IV: every primary-school subject is playable; bio, fiz and chim are only teased', async () => {
     withGrade(4)
     renderAt('/learn')
     await settle()
     openAllSubjects()
     expect(subjectsListed()).toEqual(['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'].map((s) => `subject-${s}`))
-    expect(screen.queryByTestId('locked-teaser')).toBeNull()
+    for (const t of screen.getAllByTestId('locked-teaser')) expect(t.closest('a')).toBeNull()
+    const text = screen.getAllByTestId('locked-teaser').map((t) => t.textContent).join(' ')
+    expect(text).toMatch(/Biologie/)
+    expect(text).toMatch(/Fizic/)
+    expect(text).toMatch(/Chimie/)
   })
 
   it('the exam card is only for grades II–IV', async () => {

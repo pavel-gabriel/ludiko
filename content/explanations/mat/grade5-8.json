@@ -1,0 +1,2816 @@
+[
+  {
+    "id": "exp.nat.muldiv.big",
+    "skillId": "mat.nat.muldiv.big",
+    "title": {
+      "ro": "Cum înmulțim și împărțim numere mari: 235 · 14",
+      "en": "How to multiply and divide big numbers: 235 · 14"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pentru 235 · 14 descompunem 14 = 10 + 4 și înmulțim 235 pe rând cu 4 și cu 10.",
+          "en": "For 235 · 14 split 14 = 10 + 4 and multiply 235 by 4 and by 10."
+        },
+        "visual": {
+          "kind": "base10-blocks",
+          "hundreds": 2,
+          "tens": 3,
+          "ones": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "235 · 4 = 940, pentru că 4 · 5 = 20, 4 · 30 = 120 și 4 · 200 = 800; 20 + 120 + 800 = 940.",
+          "en": "235 · 4 = 940, because 4 · 5 = 20, 4 · 30 = 120 and 4 · 200 = 800; 20 + 120 + 800 = 940."
+        }
+      },
+      {
+        "text": {
+          "ro": "235 · 10 = 2350 (adăugăm un zero). Adunăm: 940 + 2350 = 3290.",
+          "en": "235 · 10 = 2350 (add a zero). Add: 940 + 2350 = 3290."
+        }
+      },
+      {
+        "text": {
+          "ro": "La împărțire verificăm prin înmulțire: 235 · 14 = 3290, deci 3290 : 14 = 235. Restul este mereu mai mic decât împărțitorul.",
+          "en": "For division check by multiplying: 235 · 14 = 3290, so 3290 : 14 = 235. The remainder is always smaller than the divisor."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.nat.muldiv.big",
+      "kind": "explanation",
+      "title": "How to multiply and divide big numbers: 235 · 14",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.nat.powers",
+    "skillId": "mat.nat.powers",
+    "title": {
+      "ro": "Ce înseamnă o putere: 2⁵",
+      "en": "What a power means: 2⁵"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "2⁵ se citește „doi la puterea a cincea”. Baza 2 apare ca factor de 5 ori: 2 · 2 · 2 · 2 · 2.",
+          "en": "2⁵ is read “two to the fifth power”. The base 2 is a factor 5 times: 2 · 2 · 2 · 2 · 2."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔹",
+          "count": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "2⁵ = 32. Nu este 2 · 5 = 10! Înmulțim baza cu ea însăși de atâtea ori cât arată exponentul.",
+          "en": "2⁵ = 32. It is not 2 · 5 = 10! Multiply the base by itself as many times as the exponent says."
+        }
+      },
+      {
+        "text": {
+          "ro": "Cazuri speciale: a¹ = a, a⁰ = 1 (pentru a ≠ 0). Puterile lui 10: 10³ = 1000, adică 1 urmat de 3 zerouri.",
+          "en": "Special cases: a¹ = a, a⁰ = 1 (for a ≠ 0). Powers of 10: 10³ = 1000, that is 1 followed by 3 zeros."
+        }
+      },
+      {
+        "text": {
+          "ro": "Pătrate și cuburi: 3² = 9, 4² = 16, 2³ = 8, 3³ = 27. Compară puterile calculând valorile: 2⁵ = 32 > 5² = 25.",
+          "en": "Squares and cubes: 3² = 9, 4² = 16, 2³ = 8, 3³ = 27. Compare powers by working out their values: 2⁵ = 32 > 5² = 25."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.nat.powers",
+      "kind": "explanation",
+      "title": "What a power means: 2⁵",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.nat.order.powers",
+    "skillId": "mat.nat.order.powers",
+    "title": {
+      "ro": "Ordinea operațiilor: 2 + 3² · 4",
+      "en": "Order of operations: 2 + 3² · 4"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ordinea este: 1) parantezele, 2) puterile, 3) înmulțirile și împărțirile, 4) adunările și scăderile.",
+          "en": "The order is: 1) brackets, 2) powers, 3) multiplications and divisions, 4) additions and subtractions."
+        }
+      },
+      {
+        "text": {
+          "ro": "În 2 + 3² · 4 întâi puterea: 3² = 9. Expresia devine 2 + 9 · 4.",
+          "en": "In 2 + 3² · 4 do the power first: 3² = 9. The expression becomes 2 + 9 · 4."
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi înmulțirea: 9 · 4 = 36. Rămâne 2 + 36 = 38. Nu (2 + 9) · 4 = 44!",
+          "en": "Then the multiplication: 9 · 4 = 36. What is left is 2 + 36 = 38. Not (2 + 9) · 4 = 44!"
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu paranteze: (7 − 4)² = 3² = 9. Parantezele se fac primele, apoi puterea.",
+          "en": "With brackets: (7 − 4)² = 3² = 9. Brackets first, then the power."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.nat.order.powers",
+      "kind": "explanation",
+      "title": "Order of operations: 2 + 3² · 4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.nat.equation",
+    "skillId": "mat.nat.equation",
+    "title": {
+      "ro": "Cum rezolvăm o ecuație: 3x + 5 = 20",
+      "en": "How to solve an equation: 3x + 5 = 20"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În 3x + 5 = 20 necunoscuta este x. Căutăm numărul care face egalitatea adevărată.",
+          "en": "In 3x + 5 = 20 the unknown is x. We look for the number that makes the equality true."
+        }
+      },
+      {
+        "text": {
+          "ro": "Desfacem operațiile de la ultima la prima. Scădem 5: 3x = 20 − 5 = 15.",
+          "en": "Undo the operations from the last to the first. Subtract 5: 3x = 20 − 5 = 15."
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi împărțim la 3: x = 15 : 3 = 5.",
+          "en": "Then divide by 3: x = 15 : 3 = 5."
+        }
+      },
+      {
+        "text": {
+          "ro": "Verificăm: 3 · 5 + 5 = 15 + 5 = 20. Egalitatea este adevărată, deci x = 5 este soluția.",
+          "en": "Check: 3 · 5 + 5 = 15 + 5 = 20. The equality is true, so x = 5 is the solution."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.nat.equation",
+      "kind": "explanation",
+      "title": "How to solve an equation: 3x + 5 = 20",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.divis.divisors",
+    "skillId": "mat.divis.divisors",
+    "title": {
+      "ro": "Divizori, multipli, numere prime",
+      "en": "Divisors, multiples, prime numbers"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Divizorii lui 12 sunt numerele care îl împart exact: 1, 2, 3, 4, 6, 12. Îi găsim în perechi: 1 · 12, 2 · 6, 3 · 4.",
+          "en": "The divisors of 12 are the numbers that divide it exactly: 1, 2, 3, 4, 6, 12. We find them in pairs: 1 · 12, 2 · 6, 3 · 4."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 6,
+          "cells": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "6",
+            "12"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Multiplii lui 7 se obțin înmulțind cu 0, 1, 2, 3...: 0, 7, 14, 21, 28, 35...",
+          "en": "Multiples of 7 come from multiplying by 0, 1, 2, 3...: 0, 7, 14, 21, 28, 35..."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 6,
+          "cells": [
+            "0",
+            "7",
+            "14",
+            "21",
+            "28",
+            "35"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Un număr prim are exact doi divizori: 1 și el însuși. Primele numere prime: 2, 3, 5, 7, 11, 13, 17, 19.",
+          "en": "A prime number has exactly two divisors: 1 and itself. The first primes: 2, 3, 5, 7, 11, 13, 17, 19."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 8,
+          "cells": [
+            "2",
+            "3",
+            "5",
+            "7",
+            "11",
+            "13",
+            "17",
+            "19"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "1 nu este prim. 2 este singurul prim par. Atenție: 9, 15, 21, 51, 91 sunt impare, dar compuse (9 = 3 · 3, 91 = 7 · 13).",
+          "en": "1 is not prime. 2 is the only even prime. Careful: 9, 15, 21, 51, 91 are odd but composite (9 = 3 · 3, 91 = 7 · 13)."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.divis.divisors",
+      "kind": "explanation",
+      "title": "Divisors, multiples, prime numbers",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.divis.criteria",
+    "skillId": "mat.divis.criteria",
+    "title": {
+      "ro": "Criterii de divizibilitate",
+      "en": "Divisibility criteria"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cu 2 se divid numerele cu ultima cifră pară (0, 2, 4, 6, 8). Cu 5: ultima cifră 0 sau 5. Cu 10: ultima cifră 0.",
+          "en": "Divisible by 2: the last digit is even (0, 2, 4, 6, 8). By 5: last digit 0 or 5. By 10: last digit 0."
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu 3 se divid numerele a căror sumă a cifrelor se divide cu 3. Pentru 1236: 1 + 2 + 3 + 6 = 12, iar 12 se divide cu 3.",
+          "en": "Divisible by 3: the sum of the digits is divisible by 3. For 1236: 1 + 2 + 3 + 6 = 12, and 12 is divisible by 3."
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu 9 se divid numerele cu suma cifrelor divizibilă cu 9. 1236 nu: 12 nu se divide cu 9. Dar 1233 se divide cu 9.",
+          "en": "Divisible by 9: the digit sum is divisible by 9. 1236 is not: 12 is not divisible by 9. But 1233 is."
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru 4□2 și 3: suma 4 + □ + 2 trebuie să fie multiplu de 3, deci □ ∈ {0, 3, 6, 9}. Cea mai mică cifră este 0. Un număr divizibil cu 9 este și divizibil cu 3, dar nu invers.",
+          "en": "For 4□2 and 3: the sum 4 + □ + 2 must be a multiple of 3, so □ ∈ {0, 3, 6, 9}. The smallest digit is 0. A number divisible by 9 is also divisible by 3, but not the other way round."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.divis.criteria",
+      "kind": "explanation",
+      "title": "Divisibility criteria",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.frac.equiv",
+    "skillId": "mat.frac.equiv",
+    "title": {
+      "ro": "Fracții echivalente: 1/2 = 2/4 = 3/6",
+      "en": "Equivalent fractions: 1/2 = 2/4 = 3/6"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "1/2 din bară este aceeași parte ca 2/4. Fracțiile care arată aceeași parte sunt echivalente.",
+          "en": "1/2 of the bar is the same part as 2/4. Fractions showing the same part are equivalent."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 2,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Amplificăm: înmulțim numărătorul și numitorul cu același număr. 1/2 = (1 · 2)/(2 · 2) = 2/4 = 3/6. Nu adunăm același număr!",
+          "en": "To expand, multiply numerator and denominator by the same number. 1/2 = (1 · 2)/(2 · 2) = 2/4 = 3/6. Do not add the same number!"
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 2,
+          "denominator": 4,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Simplificăm: împărțim la un divizor comun. 18/24 = 9/12 = 3/4. Fracția ireductibilă nu se mai simplifică (cmmdc = 1).",
+          "en": "To simplify, divide by a common divisor. 18/24 = 9/12 = 3/4. An irreducible fraction cannot be simplified further (gcd = 1)."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 3,
+          "denominator": 4,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru a compara 3/4 și 5/7 le aducem la același numitor: 21/28 și 20/28. Deci 3/4 > 5/7.",
+          "en": "To compare 3/4 and 5/7 give them the same denominator: 21/28 and 20/28. So 3/4 > 5/7."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.frac.equiv",
+      "kind": "explanation",
+      "title": "Equivalent fractions: 1/2 = 2/4 = 3/6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.frac.addsub",
+    "skillId": "mat.frac.addsub",
+    "title": {
+      "ro": "Adunarea fracțiilor: 1/2 + 1/3",
+      "en": "Adding fractions: 1/2 + 1/3"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cu același numitor adunăm numai numărătorii: 2/7 + 3/7 = 5/7. Numitorul rămâne 7.",
+          "en": "With the same denominator add only the numerators: 2/7 + 3/7 = 5/7. The denominator stays 7."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 5,
+          "denominator": 7,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu numitori diferiți căutăm un numitor comun. Pentru 1/2 + 1/3 luăm 6: 3/6 + 2/6 = 5/6. Nu 2/5!",
+          "en": "With different denominators find a common denominator. For 1/2 + 1/3 take 6: 3/6 + 2/6 = 5/6. Not 2/5!"
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 5,
+          "denominator": 6,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "La final simplificăm: 1/4 + 1/4 = 2/4 = 1/2.",
+          "en": "At the end simplify: 1/4 + 1/4 = 2/4 = 1/2."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 2,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Scăderea merge la fel: 3/4 − 1/4 = 2/4 = 1/2, iar 1/2 − 1/3 = 3/6 − 2/6 = 1/6.",
+          "en": "Subtraction works the same way: 3/4 − 1/4 = 2/4 = 1/2, and 1/2 − 1/3 = 3/6 − 2/6 = 1/6."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 6,
+          "shape": "bar"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.frac.addsub",
+      "kind": "explanation",
+      "title": "Adding fractions: 1/2 + 1/3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.frac.muldiv",
+    "skillId": "mat.frac.muldiv",
+    "title": {
+      "ro": "Fracții: 3/5 din 20 și 2/3 · 3/4",
+      "en": "Fractions: 3/5 of 20 and 2/3 · 3/4"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "3/5 din 20: împărțim la 5, apoi înmulțim cu 3. 20 : 5 = 4, iar 4 · 3 = 12.",
+          "en": "3/5 of 20: divide by 5, then multiply by 3. 20 : 5 = 4, and 4 · 3 = 12."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 3,
+          "denominator": 5,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Înmulțim numărătorii între ei și numitorii între ei: 2/3 · 3/4 = 6/12 = 1/2.",
+          "en": "Multiply the numerators together and the denominators together: 2/3 · 3/4 = 6/12 = 1/2."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 2,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Împărțirea înseamnă înmulțire cu inversa: 2/3 : 4/5 = 2/3 · 5/4 = 10/12 = 5/6. Inversăm a doua fracție, nu pe prima!",
+          "en": "Division means multiplying by the inverse: 2/3 : 4/5 = 2/3 · 5/4 = 10/12 = 5/6. Flip the second fraction, not the first!"
+        }
+      },
+      {
+        "text": {
+          "ro": "Simplificăm înainte de a înmulți: 4/9 · 3/8 = (4 · 3)/(9 · 8) = 1/6, tăind 4 cu 8 și 3 cu 9.",
+          "en": "Simplify before multiplying: 4/9 · 3/8 = (4 · 3)/(9 · 8) = 1/6, cancelling 4 with 8 and 3 with 9."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.frac.muldiv",
+      "kind": "explanation",
+      "title": "Fractions: 3/5 of 20 and 2/3 · 3/4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.dec.convert",
+    "skillId": "mat.dec.convert",
+    "title": {
+      "ro": "Numere zecimale: 2,4 și 3/4 = 0,75",
+      "en": "Decimal numbers: 2.4 and 3/4 = 0.75"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "2,4 se află între 2 și 3, la 4 zecimi după 2. Zecimile sunt zecimi: 0,1 = 1/10.",
+          "en": "2.4 lies between 2 and 3, 4 tenths after 2. The first decimal place is tenths: 0.1 = 1/10."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 2,
+          "to": 3,
+          "step": 0.1,
+          "marks": [
+            2.4
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "O fracție cu numitorul 10, 100... se scrie direct: 3/4 = 75/100 = 0,75.",
+          "en": "A fraction with denominator 10, 100... is written directly: 3/4 = 75/100 = 0.75."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 3,
+          "denominator": 4,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Comparăm 2,5 și 2,35: scriem 2,50 și 2,35. Cum 50 sutimi > 35 sutimi, 2,5 > 2,35. Numărul cu mai multe zecimale nu e neapărat mai mare!",
+          "en": "Compare 2.5 and 2.35: write 2.50 and 2.35. Since 50 hundredths > 35 hundredths, 2.5 > 2.35. More decimal places do not mean a bigger number!"
+        }
+      },
+      {
+        "text": {
+          "ro": "Rotunjim 3,476 la sutimi: ne uităm la cifra următoare, 6. Cum 6 ≥ 5, rotunjim în sus: 3,48.",
+          "en": "Round 3.476 to hundredths: look at the next digit, 6. Since 6 ≥ 5, round up: 3.48."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.dec.convert",
+      "kind": "explanation",
+      "title": "Decimal numbers: 2.4 and 3/4 = 0.75",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.dec.ops",
+    "skillId": "mat.dec.ops",
+    "title": {
+      "ro": "Adunarea, înmulțirea și împărțirea zecimalelor",
+      "en": "Adding, multiplying and dividing decimals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "La adunare și scădere aliniem virgulele: 3,5 + 2,75 → 3,50 + 2,75 = 6,25.",
+          "en": "For addition and subtraction line up the decimal commas: 3.5 + 2.75 → 3.50 + 2.75 = 6.25."
+        }
+      },
+      {
+        "text": {
+          "ro": "La înmulțire înmulțim ca la numerele naturale și punem virgula după atâtea zecimale câte au factorii împreună: 1,2 · 0,3 → 12 · 3 = 36 → 0,36.",
+          "en": "For multiplication multiply as whole numbers and put the comma after as many decimals as the factors have together: 1.2 · 0.3 → 12 · 3 = 36 → 0.36."
+        }
+      },
+      {
+        "text": {
+          "ro": "La împărțire: 7,5 : 5 = 1,5. Pentru 4,5 : 0,9 amplificăm cu 10: 45 : 9 = 5.",
+          "en": "For division: 7.5 : 5 = 1.5. For 4.5 : 0.9 multiply both by 10: 45 : 9 = 5."
+        }
+      },
+      {
+        "text": {
+          "ro": "Înmulțirea cu 10, 100, 1000 mută virgula la dreapta: 3,45 · 100 = 345. Împărțirea cu 10, 100 o mută la stânga.",
+          "en": "Multiplying by 10, 100, 1000 moves the comma right: 3.45 · 100 = 345. Dividing by 10, 100 moves it left."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.dec.ops",
+      "kind": "explanation",
+      "title": "Adding, multiplying and dividing decimals",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.percent.intro",
+    "skillId": "mat.percent.intro",
+    "title": {
+      "ro": "Ce este un procent: 25%",
+      "en": "What a percent is: 25%"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Procentul înseamnă „din o sută”: 25% = 25/100 = 1/4.",
+          "en": "Percent means “out of one hundred”: 25% = 25/100 = 1/4."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 4,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "50% = 1/2, 10% = 1/10, 75% = 3/4. Pentru 3/5 amplificăm la 100: 3/5 = 60/100 = 60%.",
+          "en": "50% = 1/2, 10% = 1/10, 75% = 3/4. For 3/5 expand to 100: 3/5 = 60/100 = 60%."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 2,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "p% din n = n · p : 100. Pentru 25% din 80: 80 : 100 · 25 = 20, sau mai simplu 80 : 4 = 20.",
+          "en": "p% of n = n · p : 100. For 25% of 80: 80 : 100 · 25 = 20, or simply 80 : 4 = 20."
+        }
+      },
+      {
+        "text": {
+          "ro": "Truc: 10% înseamnă împărțire la 10, iar 5% este jumătate din 10%. 10% din 240 = 24, deci 5% din 240 = 12.",
+          "en": "Trick: 10% means dividing by 10, and 5% is half of 10%. 10% of 240 = 24, so 5% of 240 = 12."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.percent.intro",
+      "kind": "explanation",
+      "title": "What a percent is: 25%",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geom5.segments",
+    "skillId": "mat.geom5.segments",
+    "title": {
+      "ro": "Segmente și unități",
+      "en": "Segments and units"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pe axa numerelor lungimea segmentului AB, cu A(2) și B(9), este 9 − 2 = 7 unități.",
+          "en": "On the number line the length of segment AB, with A(2) and B(9), is 9 − 2 = 7 units."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 0,
+          "to": 10,
+          "step": 1,
+          "marks": [
+            2,
+            9
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă B se află între A și C, atunci AC = AB + BC. Din AC = 12 și AB = 7 obținem BC = 12 − 7 = 5.",
+          "en": "If B lies between A and C, then AC = AB + BC. From AC = 12 and AB = 7 we get BC = 12 − 7 = 5."
+        }
+      },
+      {
+        "text": {
+          "ro": "Mijlocul M al segmentului AB îl împarte în două părți egale: AM = MB = AB : 2. Pentru AB = 18 cm, AM = 9 cm.",
+          "en": "The midpoint M of segment AB splits it into two equal parts: AM = MB = AB : 2. For AB = 18 cm, AM = 9 cm."
+        }
+      },
+      {
+        "text": {
+          "ro": "Unități: 1 km = 1000 m, 1 m = 100 cm. La arii pasul este 100 (1 m² = 100 dm²), nu 10; la volume pasul este 1000 (1 m³ = 1000 dm³).",
+          "en": "Units: 1 km = 1000 m, 1 m = 100 cm. For areas the step is 100 (1 m² = 100 dm²), not 10; for volumes the step is 1000 (1 m³ = 1000 dm³)."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.geom5.segments",
+      "kind": "explanation",
+      "title": "Segments and units",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geom5.angles",
+    "skillId": "mat.geom5.angles",
+    "title": {
+      "ro": "Unghiuri: ascuțit, drept, obtuz",
+      "en": "Angles: acute, right, obtuse"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un unghi este ascuțit dacă are mai puțin de 90°, drept dacă are exact 90°, obtuz între 90° și 180° și alungit la 180°.",
+          "en": "An angle is acute below 90°, right at exactly 90°, obtuse between 90° and 180°, and straight at 180°."
+        }
+      },
+      {
+        "text": {
+          "ro": "Unghiurile complementare au suma 90°, cele suplementare 180°. Complementul lui 35° este 90° − 35° = 55°.",
+          "en": "Complementary angles add up to 90°, supplementary ones to 180°. The complement of 35° is 90° − 35° = 55°."
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă B este în interiorul unghiului AOC, m(∠AOC) = m(∠AOB) + m(∠BOC). Cu 40° și 55° obținem 95°.",
+          "en": "If B lies inside angle AOC, m(∠AOC) = m(∠AOB) + m(∠BOC). With 40° and 55° we get 95°."
+        }
+      },
+      {
+        "text": {
+          "ro": "Bisectoarea împarte un unghi în două unghiuri egale. Pentru un unghi de 80°, fiecare parte are 80° : 2 = 40°.",
+          "en": "A bisector splits an angle into two equal angles. For an 80° angle each part is 80° : 2 = 40°."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.geom5.angles",
+      "kind": "explanation",
+      "title": "Angles: acute, right, obtuse",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.divis6.factor",
+    "skillId": "mat.divis6.factor",
+    "title": {
+      "ro": "Descompunerea în factori primi: 60",
+      "en": "Prime factorisation: 60"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Împărțim pe rând la numere prime: 60 : 2 = 30, 30 : 2 = 15, 15 : 3 = 5, 5 : 5 = 1.",
+          "en": "Divide by primes one after another: 60 : 2 = 30, 30 : 2 = 15, 15 : 3 = 5, 5 : 5 = 1."
+        }
+      },
+      {
+        "text": {
+          "ro": "Factorii folosiți sunt 2, 2, 3, 5, deci 60 = 2 · 2 · 3 · 5 = 2² · 3 · 5.",
+          "en": "The factors used are 2, 2, 3, 5, so 60 = 2 · 2 · 3 · 5 = 2² · 3 · 5."
+        }
+      },
+      {
+        "text": {
+          "ro": "Factorii care se repetă se scriu cu puteri. Toți factorii trebuie să fie primi: 4 · 3 · 5 nu este o descompunere completă.",
+          "en": "Repeated factors are written as powers. Every factor must be prime: 4 · 3 · 5 is not a complete factorisation."
+        }
+      },
+      {
+        "text": {
+          "ro": "Verificăm înmulțind: 4 · 3 · 5 = 60. Numărul 60 are 3 factori primi distincți: 2, 3 și 5.",
+          "en": "Check by multiplying: 4 · 3 · 5 = 60. The number 60 has 3 distinct prime factors: 2, 3 and 5."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.divis6.factor",
+      "kind": "explanation",
+      "title": "Prime factorisation: 60",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.divis6.gcdlcm",
+    "skillId": "mat.divis6.gcdlcm",
+    "title": {
+      "ro": "cmmdc și cmmmc: 12 și 18",
+      "en": "gcd and lcm: 12 and 18"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Descompunem: 12 = 2² · 3 și 18 = 2 · 3².",
+          "en": "Factorise: 12 = 2² · 3 and 18 = 2 · 3²."
+        }
+      },
+      {
+        "text": {
+          "ro": "cmmdc ia factorii comuni la puterea cea mai mică: 2 · 3 = 6.",
+          "en": "The gcd takes the common factors with the smallest power: 2 · 3 = 6."
+        }
+      },
+      {
+        "text": {
+          "ro": "cmmmc ia toți factorii la puterea cea mai mare: 2² · 3² = 36.",
+          "en": "The lcm takes all the factors with the largest power: 2² · 3² = 36."
+        }
+      },
+      {
+        "text": {
+          "ro": "Control: cmmdc · cmmmc = 6 · 36 = 216 = 12 · 18. Numerele cu cmmdc 1 sunt prime între ele (de exemplu 8 și 15).",
+          "en": "Check: gcd · lcm = 6 · 36 = 216 = 12 · 18. Numbers with gcd 1 are coprime (for example 8 and 15)."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.divis6.gcdlcm",
+      "kind": "explanation",
+      "title": "gcd and lcm: 12 and 18",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.pow6.rules",
+    "skillId": "mat.pow6.rules",
+    "title": {
+      "ro": "Reguli cu puteri: aᵐ · aⁿ",
+      "en": "Rules with powers: aᵐ · aⁿ"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "La înmulțire cu aceeași bază adunăm exponenții: 2³ · 2⁴ = 2 · 2 · 2 · 2 · 2 · 2 · 2 = 2⁷.",
+          "en": "Multiplying with the same base we add the exponents: 2³ · 2⁴ = 2 · 2 · 2 · 2 · 2 · 2 · 2 = 2⁷."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔹",
+          "count": 7
+        }
+      },
+      {
+        "text": {
+          "ro": "La împărțire scădem exponenții: 5⁹ : 5⁶ = 5³.",
+          "en": "Dividing we subtract the exponents: 5⁹ : 5⁶ = 5³."
+        }
+      },
+      {
+        "text": {
+          "ro": "La puterea unei puteri înmulțim exponenții: (3²)³ = 3⁶.",
+          "en": "For a power of a power we multiply the exponents: (3²)³ = 3⁶."
+        }
+      },
+      {
+        "text": {
+          "ro": "Atenție: baza rămâne aceeași! 2³ · 2⁴ = 2⁷, nu 4⁷, și nu 2¹² (exponenții se adună la produs).",
+          "en": "Careful: the base stays the same! 2³ · 2⁴ = 2⁷, not 4⁷ and not 2¹² (exponents add in a product)."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.pow6.rules",
+      "kind": "explanation",
+      "title": "Rules with powers: aᵐ · aⁿ",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.frac6.ops",
+    "skillId": "mat.frac6.ops",
+    "title": {
+      "ro": "Fracții și zecimale în același calcul",
+      "en": "Fractions and decimals in one calculation"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ordinea operațiilor rămâne aceeași: paranteze, apoi înmulțiri și împărțiri, apoi adunări și scăderi.",
+          "en": "The order of operations is the same: brackets, then multiplications and divisions, then additions and subtractions."
+        }
+      },
+      {
+        "text": {
+          "ro": "1/2 + 2/3 · 3/4: întâi înmulțirea, 2/3 · 3/4 = 1/2. Apoi 1/2 + 1/2 = 1.",
+          "en": "1/2 + 2/3 · 3/4: first the multiplication, 2/3 · 3/4 = 1/2. Then 1/2 + 1/2 = 1."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 2,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu paranteze: (1/2 + 1/3) : 5/6 = 5/6 : 5/6 = 1. Parantezele se fac primele.",
+          "en": "With brackets: (1/2 + 1/3) : 5/6 = 5/6 : 5/6 = 1. Brackets first."
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă apar zecimale, le transformăm în fracții (0,5 = 1/2) sau fracțiile în zecimale, apoi calculăm. Rezultatul final se simplifică.",
+          "en": "If decimals appear, turn them into fractions (0.5 = 1/2) or fractions into decimals, then calculate. Simplify the final result."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.frac6.ops",
+      "kind": "explanation",
+      "title": "Fractions and decimals in one calculation",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ratio.basic",
+    "skillId": "mat.ratio.basic",
+    "title": {
+      "ro": "Raport și proporție: 18 la 24",
+      "en": "Ratio and proportion: 18 to 24"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Raportul a două numere este câtul lor. Raportul lui 18 la 24 este 18/24 = 3/4, simplificat prin 6.",
+          "en": "The ratio of two numbers is their quotient. The ratio of 18 to 24 is 18/24 = 3/4, simplified by 6."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 3,
+          "denominator": 4,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "O proporție este o egalitate de rapoarte: a/b = c/d. De exemplu 3/4 = 9/12.",
+          "en": "A proportion is an equality of ratios: a/b = c/d. For example 3/4 = 9/12."
+        }
+      },
+      {
+        "text": {
+          "ro": "Proprietatea fundamentală: a · d = b · c (produsul extremilor este egal cu produsul mezilor). 3 · 12 = 4 · 9 = 36.",
+          "en": "The basic property: a · d = b · c (the product of the extremes equals the product of the means). 3 · 12 = 4 · 9 = 36."
+        }
+      },
+      {
+        "text": {
+          "ro": "Aflăm necunoscuta: x/6 = 10/15 ⇒ 15x = 60 ⇒ x = 4. Verificăm: 4/6 = 2/3 și 10/15 = 2/3.",
+          "en": "Find the unknown: x/6 = 10/15 ⇒ 15x = 60 ⇒ x = 4. Check: 4/6 = 2/3 and 10/15 = 2/3."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ratio.basic",
+      "kind": "explanation",
+      "title": "Ratio and proportion: 18 to 24",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ratio.proportional",
+    "skillId": "mat.ratio.proportional",
+    "title": {
+      "ro": "Direct sau invers proporțional?",
+      "en": "Directly or inversely proportional?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Direct proporțional: dacă o mărime se dublează, și cealaltă se dublează. 3 caiete costă 12 lei, deci 1 caiet costă 4 lei, iar 7 caiete costă 28 lei.",
+          "en": "Directly proportional: if one quantity doubles, so does the other. 3 notebooks cost 12 lei, so 1 notebook costs 4 lei and 7 notebooks cost 28 lei."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📓",
+          "count": 3
+        }
+      },
+      {
+        "text": {
+          "ro": "Invers proporțional: dacă una se dublează, cealaltă se înjumătățește. 4 muncitori fac lucrarea în 12 zile; produsul 4 · 12 = 48 rămâne constant.",
+          "en": "Inversely proportional: if one doubles, the other halves. 4 workers finish in 12 days; the product 4 · 12 = 48 stays constant."
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu 6 muncitori: 48 : 6 = 8 zile. Mai mulți muncitori înseamnă mai puține zile, deci nu 18 (acela ar fi calcul direct).",
+          "en": "With 6 workers: 48 : 6 = 8 days. More workers means fewer days, so not 18 (that would be the direct calculation)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Scara 1:50 000 înseamnă că 1 cm pe hartă este 50 000 cm = 500 m în realitate. Un număr se împarte proporțional cu 2 și 3: 45 = 2k + 3k, k = 9, părțile 18 și 27.",
+          "en": "Scale 1:50 000 means 1 cm on the map is 50 000 cm = 500 m in reality. A number split in the ratio 2 : 3: 45 = 2k + 3k, k = 9, the parts 18 and 27."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ratio.proportional",
+      "kind": "explanation",
+      "title": "Directly or inversely proportional?",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.percent6",
+    "skillId": "mat.percent6",
+    "title": {
+      "ro": "Probleme cu procente",
+      "en": "Percentage problems"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "p% din n = n · p : 100. 30% din 250 = 250 : 100 · 30 = 75.",
+          "en": "p% of n = n · p : 100. 30% of 250 = 250 : 100 · 30 = 75."
+        }
+      },
+      {
+        "text": {
+          "ro": "Ce procent este 18 din 72? 18/72 = 1/4 = 25/100 = 25%.",
+          "en": "What percent is 18 of 72? 18/72 = 1/4 = 25/100 = 25%."
+        },
+        "visual": {
+          "kind": "fraction",
+          "numerator": 1,
+          "denominator": 4,
+          "shape": "bar"
+        }
+      },
+      {
+        "text": {
+          "ro": "Despre 20% dintr-un număr știm că e 30: 20% înseamnă 1/5, deci numărul este 30 · 5 = 150.",
+          "en": "If 20% of a number is 30: 20% means 1/5, so the number is 30 · 5 = 150."
+        }
+      },
+      {
+        "text": {
+          "ro": "Mărire și micșorare: 200 + 10% = 200 + 20 = 220, iar 200 − 10% = 180. Atenție: +10% și apoi −10% dă 198, nu 200, pentru că a doua oară procentul se aplică la 220.",
+          "en": "Increase and decrease: 200 + 10% = 200 + 20 = 220 and 200 − 10% = 180. Careful: +10% and then −10% gives 198, not 200, because the second time the percent applies to 220."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.percent6",
+      "kind": "explanation",
+      "title": "Percentage problems",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.int.numberline",
+    "skillId": "mat.int.numberline",
+    "title": {
+      "ro": "Numerele întregi pe axă",
+      "en": "Integers on the number line"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Numerele întregi sunt ... −2, −1, 0, 1, 2 ... Pe axă, numerele negative sunt în stânga lui 0.",
+          "en": "The integers are ... −2, −1, 0, 1, 2 ... On the number line the negative numbers are to the left of 0."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -5,
+          "to": 5,
+          "step": 1,
+          "marks": [
+            -3
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Opusul lui −3 este 3. Modulul (distanța până la 0) este |−3| = 3 și |3| = 3.",
+          "en": "The opposite of −3 is 3. The absolute value (distance to 0) is |−3| = 3 and |3| = 3."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -5,
+          "to": 5,
+          "step": 1,
+          "marks": [
+            -3,
+            3
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Din două numere, cel din dreapta este mai mare: −5 < −3 < 0 < 2. Cu cât un număr negativ are modulul mai mare, cu atât este mai mic!",
+          "en": "Of two numbers, the one on the right is greater: −5 < −3 < 0 < 2. The bigger the absolute value of a negative number, the smaller it is!"
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -6,
+          "to": 6,
+          "step": 1,
+          "marks": [
+            -5,
+            -3
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă |x| = 5, atunci x = −5 sau x = 5. Distanța dintre A(−3) și B(4) este 4 − (−3) = 7.",
+          "en": "If |x| = 5, then x = −5 or x = 5. The distance between A(−3) and B(4) is 4 − (−3) = 7."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -4,
+          "to": 5,
+          "step": 1,
+          "marks": [
+            -3,
+            4
+          ]
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.int.numberline",
+      "kind": "explanation",
+      "title": "Integers on the number line",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.int.addsub",
+    "skillId": "mat.int.addsub",
+    "title": {
+      "ro": "Adunări și scăderi cu numere întregi",
+      "en": "Adding and subtracting integers"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "−3 + 5: pornim de la −3 și sărim 5 pași la dreapta. Ajungem la 2.",
+          "en": "−3 + 5: start at −3 and jump 5 steps to the right. We land on 2."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -4,
+          "to": 4,
+          "step": 1,
+          "jumps": [
+            {
+              "from": -3,
+              "to": 2
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "5 − 8: pornim de la 5 și sărim 8 pași la stânga. Ajungem la −3.",
+          "en": "5 − 8: start at 5 and jump 8 steps to the left. We land on −3."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -4,
+          "to": 6,
+          "step": 1,
+          "jumps": [
+            {
+              "from": 5,
+              "to": -3
+            }
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Scăderea unui număr negativ este adunare: 5 − (−3) = 5 + 3 = 8. Adunarea unui număr negativ este scădere: 5 + (−3) = 5 − 3 = 2.",
+          "en": "Subtracting a negative number is adding: 5 − (−3) = 5 + 3 = 8. Adding a negative number is subtracting: 5 + (−3) = 5 − 3 = 2."
+        }
+      },
+      {
+        "text": {
+          "ro": "Când semnele sunt diferite scădem modulele și păstrăm semnul numărului cu modulul mai mare: −7 + 12 = 5, −12 + 7 = −5.",
+          "en": "When the signs differ subtract the absolute values and keep the sign of the number with the larger absolute value: −7 + 12 = 5, −12 + 7 = −5."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.int.addsub",
+      "kind": "explanation",
+      "title": "Adding and subtracting integers",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.int.muldiv",
+    "skillId": "mat.int.muldiv",
+    "title": {
+      "ro": "Regula semnelor",
+      "en": "The sign rule"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Același semn dă plus, semne diferite dau minus: (+)(+) = +, (−)(−) = +, (+)(−) = −, (−)(+) = −.",
+          "en": "Same signs give plus, different signs give minus: (+)(+) = +, (−)(−) = +, (+)(−) = −, (−)(+) = −."
+        }
+      },
+      {
+        "text": {
+          "ro": "(−4) · 6 = −24 și (−4) · (−6) = 24. Mai întâi semnul, apoi produsul modulelor.",
+          "en": "(−4) · 6 = −24 and (−4) · (−6) = 24. First the sign, then the product of the absolute values."
+        }
+      },
+      {
+        "text": {
+          "ro": "La împărțire aceeași regulă: (−24) : 6 = −4 și (−24) : (−6) = 4.",
+          "en": "Division follows the same rule: (−24) : 6 = −4 and (−24) : (−6) = 4."
+        }
+      },
+      {
+        "text": {
+          "ro": "Ordinea operațiilor rămâne: −3 + 4 · (−2) = −3 + (−8) = −11. Nu (−3 + 4) · (−2) = −2!",
+          "en": "The order of operations stays: −3 + 4 · (−2) = −3 + (−8) = −11. Not (−3 + 4) · (−2) = −2!"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.int.muldiv",
+      "kind": "explanation",
+      "title": "The sign rule",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.angle6.pairs",
+    "skillId": "mat.angle6.pairs",
+    "title": {
+      "ro": "Perechi de unghiuri",
+      "en": "Pairs of angles"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Unghiuri complementare: suma 90°. Suplementare: suma 180°. Suplementul lui 135° este 45°.",
+          "en": "Complementary angles add up to 90°, supplementary ones to 180°. The supplement of 135° is 45°."
+        }
+      },
+      {
+        "text": {
+          "ro": "Două unghiuri adiacente care formează un unghi alungit sunt suplementare: dacă m(∠AOB) = 70°, atunci m(∠BOC) = 180° − 70° = 110°.",
+          "en": "Two adjacent angles forming a straight angle are supplementary: if m(∠AOB) = 70°, then m(∠BOC) = 180° − 70° = 110°."
+        }
+      },
+      {
+        "text": {
+          "ro": "Unghiurile opuse la vârf sunt egale: dacă m(∠AOB) = 72°, atunci m(∠COD) = 72°.",
+          "en": "Vertically opposite angles are equal: if m(∠AOB) = 72°, then m(∠COD) = 72°."
+        }
+      },
+      {
+        "text": {
+          "ro": "Bisectoarea unui unghi de 2h grade formează unghiuri de h grade. Două unghiuri suplementare, unul cu 20° mai mare: (180° − 20°) : 2 = 80° și 100°.",
+          "en": "The bisector of a 2h-degree angle forms angles of h degrees. Two supplementary angles, one 20° bigger: (180° − 20°) : 2 = 80° and 100°."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.angle6.pairs",
+      "kind": "explanation",
+      "title": "Pairs of angles",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.tri6.basics",
+    "skillId": "mat.tri6.basics",
+    "title": {
+      "ro": "Triunghiul",
+      "en": "The triangle"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Suma unghiurilor unui triunghi este 180°. Dacă două unghiuri au 50° și 60°, al treilea are 180° − 50° − 60° = 70°.",
+          "en": "The angles of a triangle add up to 180°. If two angles are 50° and 60°, the third is 180° − 50° − 60° = 70°."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            5,
+            6,
+            7
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Triunghi isoscel: unghiurile de la bază sunt egale. Cu unghiul de la vârf 40°, fiecare unghi de la bază este (180° − 40°) : 2 = 70°.",
+          "en": "Isosceles triangle: the base angles are equal. With an apex angle of 40°, each base angle is (180° − 40°) : 2 = 70°."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            5,
+            5,
+            6
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Unghiul exterior este egal cu suma celor două unghiuri interioare neadiacente: 50° + 60° = 110°. După laturi: echilateral, isoscel sau scalen.",
+          "en": "An exterior angle equals the sum of the two non-adjacent interior angles: 50° + 60° = 110°. By sides: equilateral, isosceles or scalene."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            4,
+            4,
+            4
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Inegalitatea triunghiului: o latură este mai mică decât suma celorlalte două. 3, 4, 5 formează triunghi (3 + 4 > 5), dar 3, 4, 9 nu (3 + 4 < 9).",
+          "en": "Triangle inequality: a side is shorter than the sum of the other two. 3, 4, 5 make a triangle (3 + 4 > 5), but 3, 4, 9 do not (3 + 4 < 9)."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            3,
+            4,
+            5
+          ],
+          "unit": "cm"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.tri6.basics",
+      "kind": "explanation",
+      "title": "The triangle",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.stat6",
+    "skillId": "mat.stat6",
+    "title": {
+      "ro": "Media aritmetică, modulul, amplitudinea",
+      "en": "Mean, mode, range"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Media aritmetică este suma valorilor împărțită la numărul lor: (7 + 9 + 4 + 8 + 7) : 5 = 35 : 5 = 7.",
+          "en": "The arithmetic mean is the sum of the values divided by how many there are: (7 + 9 + 4 + 8 + 7) : 5 = 35 : 5 = 7."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 5,
+          "cells": [
+            "7",
+            "9",
+            "4",
+            "8",
+            "7"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Modulul este valoarea care apare cel mai des: în 7, 9, 4, 8, 7 modulul este 7 (apare de două ori).",
+          "en": "The mode is the value that appears most often: in 7, 9, 4, 8, 7 the mode is 7 (it appears twice)."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 5,
+          "cells": [
+            "7",
+            "9",
+            "4",
+            "8",
+            "7"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Amplitudinea este diferența dintre cea mai mare și cea mai mică valoare: 9 − 4 = 5.",
+          "en": "The range is the difference between the largest and smallest value: 9 − 4 = 5."
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă știm media, aflăm o valoare lipsă din sumă: media a 4 numere este 8, deci suma este 32; cu 5, 9, 10 lipsește 32 − 24 = 8.",
+          "en": "If we know the mean we find a missing value from the sum: the mean of 4 numbers is 8, so the sum is 32; with 5, 9, 10 the missing one is 32 − 24 = 8."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stat6",
+      "kind": "explanation",
+      "title": "Mean, mode, range",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.sqrt7.perfect",
+    "skillId": "mat.sqrt7.perfect",
+    "title": {
+      "ro": "Rădăcina pătrată: √49",
+      "en": "Square root: √49"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "√49 = 7 pentru că 7² = 49. Un pătrat cu aria de 49 cm² are latura de 7 cm.",
+          "en": "√49 = 7 because 7² = 49. A square with area 49 cm² has a side of 7 cm."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "square",
+          "sides": [
+            7
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Produs și cât: √(36 · 4) = √36 · √4 = 6 · 2 = 12, iar √(9/16) = 3/4.",
+          "en": "Product and quotient: √(36 · 4) = √36 · √4 = 6 · 2 = 12, and √(9/16) = 3/4."
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă numărul nu este pătrat perfect, îl încadrăm: 49 < 50 < 64, deci √50 este între 7 și 8; mai aproape de 7, deci √50 ≈ 7.",
+          "en": "If the number is not a perfect square, bracket it: 49 < 50 < 64, so √50 lies between 7 and 8, closer to 7, so √50 ≈ 7."
+        }
+      },
+      {
+        "text": {
+          "ro": "Atenție: √(9 + 16) = √25 = 5, nu √9 + √16 = 3 + 4 = 7. Rădăcina unei sume nu este suma rădăcinilor.",
+          "en": "Careful: √(9 + 16) = √25 = 5, not √9 + √16 = 3 + 4 = 7. The root of a sum is not the sum of the roots."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.sqrt7.perfect",
+      "kind": "explanation",
+      "title": "Square root: √49",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.real7.irrational",
+    "skillId": "mat.real7.irrational",
+    "title": {
+      "ro": "Numere iraționale",
+      "en": "Irrational numbers"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "√2 = 1,41421... are zecimale infinite și neperiodice, deci este irațional. √16 = 4 este rațional.",
+          "en": "√2 = 1.41421... has infinitely many non-repeating decimals, so it is irrational. √16 = 4 is rational."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": 1,
+          "to": 2,
+          "step": 0.1,
+          "marks": [
+            1.4
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Rațional = fracție sau zecimală finită ori periodică (3/7, 0,25, 0,(3)). Iraționale: √n când n nu este pătrat perfect, și π.",
+          "en": "Rational = a fraction or a finite or repeating decimal (3/7, 0.25, 0.(3)). Irrational: √n when n is not a perfect square, and π."
+        }
+      },
+      {
+        "text": {
+          "ro": "Mulțimile sunt incluse una în alta: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. −5 ∈ ℤ, 3/4 ∈ ℚ, √7 ∈ ℝ, dar √7 ∉ ℚ.",
+          "en": "The sets are nested: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ. −5 ∈ ℤ, 3/4 ∈ ℚ, √7 ∈ ℝ, but √7 ∉ ℚ."
+        }
+      },
+      {
+        "text": {
+          "ro": "Comparăm √7 cu 2,6: ridicăm la pătrat, 2,6² = 6,76 < 7. Deci √7 > 2,6.",
+          "en": "Compare √7 with 2.6: square it, 2.6² = 6.76 < 7. So √7 > 2.6."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.real7.irrational",
+      "kind": "explanation",
+      "title": "Irrational numbers",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rat7.ops",
+    "skillId": "mat.rat7.ops",
+    "title": {
+      "ro": "Fracții negative",
+      "en": "Negative fractions"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Regulile de semn sunt cele de la întregi. −1/2 + 3/4 = −2/4 + 3/4 = 1/4.",
+          "en": "The sign rules are those of the integers. −1/2 + 3/4 = −2/4 + 3/4 = 1/4."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -1,
+          "to": 1,
+          "step": 0.25,
+          "marks": [
+            0.25
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Înmulțire: (−2/3) · (3/5) = −6/15 = −2/5. Semne diferite dau minus.",
+          "en": "Multiplication: (−2/3) · (3/5) = −6/15 = −2/5. Different signs give minus."
+        }
+      },
+      {
+        "text": {
+          "ro": "Împărțire: (−1/2) : (1/4) = (−1/2) · 4 = −2. Inversăm fracția a doua și păstrăm regula semnelor.",
+          "en": "Division: (−1/2) : (1/4) = (−1/2) · 4 = −2. Flip the second fraction and keep the sign rule."
+        }
+      },
+      {
+        "text": {
+          "ro": "La comparare, orice număr negativ este mai mic decât orice număr pozitiv, iar dintre două negative este mai mic cel cu modulul mai mare: −2/3 < −1/2.",
+          "en": "When comparing, every negative number is smaller than every positive one, and of two negatives the one with the larger absolute value is smaller: −2/3 < −1/2."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rat7.ops",
+      "kind": "explanation",
+      "title": "Negative fractions",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.rat7.powers",
+    "skillId": "mat.rat7.powers",
+    "title": {
+      "ro": "Puteri ale numerelor negative și exponent negativ",
+      "en": "Powers of negative numbers and negative exponents"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Puterea pară a unui număr negativ este pozitivă: (−2)⁴ = 16. Puterea impară este negativă: (−2)³ = −8.",
+          "en": "An even power of a negative number is positive: (−2)⁴ = 16. An odd power is negative: (−2)³ = −8."
+        }
+      },
+      {
+        "text": {
+          "ro": "Atenție la paranteze: −2⁴ = −(2⁴) = −16, dar (−2)⁴ = 16.",
+          "en": "Mind the brackets: −2⁴ = −(2⁴) = −16, but (−2)⁴ = 16."
+        }
+      },
+      {
+        "text": {
+          "ro": "Exponent negativ: a⁻ⁿ = 1/aⁿ. 2⁻³ = 1/2³ = 1/8, nu −8.",
+          "en": "Negative exponent: a⁻ⁿ = 1/aⁿ. 2⁻³ = 1/2³ = 1/8, not −8."
+        }
+      },
+      {
+        "text": {
+          "ro": "(1/2)⁻² = 2² = 4 (inversăm baza), iar 10⁻² = 1/100 = 0,01.",
+          "en": "(1/2)⁻² = 2² = 4 (flip the base), and 10⁻² = 1/100 = 0.01."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.rat7.powers",
+      "kind": "explanation",
+      "title": "Powers of negative numbers and negative exponents",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.eq7.linear",
+    "skillId": "mat.eq7.linear",
+    "title": {
+      "ro": "Ecuații: 3x + 4 = x + 10",
+      "en": "Equations: 3x + 4 = x + 10"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Strângem termenii cu x într-o parte și numerele în cealaltă, schimbând semnul când trecem peste „=”: 3x − x = 10 − 4.",
+          "en": "Collect the x terms on one side and the numbers on the other, changing the sign when crossing “=”: 3x − x = 10 − 4."
+        }
+      },
+      {
+        "text": {
+          "ro": "Reducem: 2x = 6, deci x = 3. Verificăm: 3 · 3 + 4 = 13 și 3 + 10 = 13.",
+          "en": "Simplify: 2x = 6, so x = 3. Check: 3 · 3 + 4 = 13 and 3 + 10 = 13."
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu paranteze: 2(x + 3) = 14. Împărțim la 2: x + 3 = 7, deci x = 4. Sau desfacem: 2x + 6 = 14.",
+          "en": "With brackets: 2(x + 3) = 14. Divide by 2: x + 3 = 7, so x = 4. Or expand: 2x + 6 = 14."
+        }
+      },
+      {
+        "text": {
+          "ro": "Soluția poate fi o fracție: 2x + 1 = 4 ⇒ 2x = 3 ⇒ x = 3/2. Scrie-o ireductibilă.",
+          "en": "The solution can be a fraction: 2x + 1 = 4 ⇒ 2x = 3 ⇒ x = 3/2. Write it in lowest terms."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eq7.linear",
+      "kind": "explanation",
+      "title": "Equations: 3x + 4 = x + 10",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.eq7.system",
+    "skillId": "mat.eq7.system",
+    "title": {
+      "ro": "Sisteme: x + y = 7 și x − y = 1",
+      "en": "Systems: x + y = 7 and x − y = 1"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un sistem are două ecuații și două necunoscute; căutăm perechea (x; y) care le verifică pe amândouă.",
+          "en": "A system has two equations and two unknowns; we look for the pair (x; y) that satisfies both."
+        }
+      },
+      {
+        "text": {
+          "ro": "Metoda reducerii: adunăm ecuațiile x + y = 7 și x − y = 1. Se reduce y: 2x = 8, deci x = 4.",
+          "en": "Elimination: add the equations x + y = 7 and x − y = 1. The y cancels: 2x = 8, so x = 4."
+        }
+      },
+      {
+        "text": {
+          "ro": "Înlocuim în prima ecuație: 4 + y = 7, deci y = 3. Soluția este (4; 3).",
+          "en": "Substitute into the first equation: 4 + y = 7, so y = 3. The solution is (4; 3)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Verificăm în AMBELE ecuații: 4 + 3 = 7 și 4 − 3 = 1. O pereche care verifică doar una nu este soluție.",
+          "en": "Check in BOTH equations: 4 + 3 = 7 and 4 − 3 = 1. A pair that satisfies only one is not a solution."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eq7.system",
+      "kind": "explanation",
+      "title": "Systems: x + y = 7 and x − y = 1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.eq7.problems",
+    "skillId": "mat.eq7.problems",
+    "title": {
+      "ro": "Din problemă în ecuație",
+      "en": "From a problem to an equation"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pasul 1: notăm necunoscuta cu x. „Un număr înmulțit cu 3 și mărit cu 4 dă 25” devine 3x + 4 = 25.",
+          "en": "Step 1: call the unknown x. “A number multiplied by 3 and increased by 4 gives 25” becomes 3x + 4 = 25."
+        }
+      },
+      {
+        "text": {
+          "ro": "Pasul 2: rezolvăm. 3x = 21, deci x = 7.",
+          "en": "Step 2: solve. 3x = 21, so x = 7."
+        }
+      },
+      {
+        "text": {
+          "ro": "Trei numere consecutive cu suma 48: x + (x + 1) + (x + 2) = 48, 3x + 3 = 48, x = 15. Numerele sunt 15, 16, 17.",
+          "en": "Three consecutive numbers with sum 48: x + (x + 1) + (x + 2) = 48, 3x + 3 = 48, x = 15. The numbers are 15, 16, 17."
+        }
+      },
+      {
+        "text": {
+          "ro": "Pasul 3: verificăm cerința și răspundem la ce se cere (poate fi cel mai mic număr, nu x însuși), cu unitatea de măsură.",
+          "en": "Step 3: check the condition and answer what is asked (it may be the smallest number, not x itself), with the unit."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eq7.problems",
+      "kind": "explanation",
+      "title": "From a problem to an equation",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.prop7.problems",
+    "skillId": "mat.prop7.problems",
+    "title": {
+      "ro": "Proporționalitate în probleme",
+      "en": "Proportionality in problems"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Direct proporțional: raportul este constant (preț : cantitate). Invers proporțional: produsul este constant (muncitori · zile).",
+          "en": "Directly proportional: the ratio is constant (price : amount). Inversely proportional: the product is constant (workers · days)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Împărțirea proporțională: 45 în raportul 2 : 3 înseamnă 2k + 3k = 45, deci k = 9, iar părțile sunt 18 și 27.",
+          "en": "Proportional sharing: 45 in the ratio 2 : 3 means 2k + 3k = 45, so k = 9 and the parts are 18 and 27."
+        }
+      },
+      {
+        "text": {
+          "ro": "Procente: o creștere cu 20% înmulțește cu 1,2, o scădere cu 20% înmulțește cu 0,8. Pentru 150 lei: 150 · 1,2 = 180 lei.",
+          "en": "Percent: an increase of 20% multiplies by 1.2, a decrease of 20% multiplies by 0.8. For 150 lei: 150 · 1.2 = 180 lei."
+        }
+      },
+      {
+        "text": {
+          "ro": "Creștere de 20% urmată de scădere de 20% nu readuce prețul: 100 → 120 → 96.",
+          "en": "A rise of 20% followed by a fall of 20% does not give back the price: 100 → 120 → 96."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.prop7.problems",
+      "kind": "explanation",
+      "title": "Proportionality in problems",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geom7.quad",
+    "skillId": "mat.geom7.quad",
+    "title": {
+      "ro": "Arii de patrulatere",
+      "en": "Areas of quadrilaterals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Dreptunghi: A = L · l, P = 2(L + l). Pătrat: A = l², P = 4l. Pentru 8 cm și 5 cm: A = 40 cm², P = 26 cm.",
+          "en": "Rectangle: A = L · w, P = 2(L + w). Square: A = s², P = 4s. For 8 cm and 5 cm: A = 40 cm², P = 26 cm."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "rectangle",
+          "sides": [
+            8,
+            5
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Paralelogram: A = b · h. Triunghi: A = b · h : 2. Trapez: A = (B + b) · h : 2. Romb: A = d₁ · d₂ : 2.",
+          "en": "Parallelogram: A = b · h. Triangle: A = b · h : 2. Trapezoid: A = (B + b) · h : 2. Rhombus: A = d₁ · d₂ : 2."
+        }
+      },
+      {
+        "text": {
+          "ro": "Înălțimea este perpendiculară pe bază: nu o confunda cu latura oblică. Aria cere întotdeauna înălțimea.",
+          "en": "The height is perpendicular to the base: do not confuse it with the slanted side. The area always needs the height."
+        }
+      },
+      {
+        "text": {
+          "ro": "Suma unghiurilor unui patrulater este 360°, iar a unui poligon cu n laturi este (n − 2) · 180°. Pentru n = 5: 3 · 180° = 540°.",
+          "en": "The angles of a quadrilateral add up to 360°, and those of a polygon with n sides to (n − 2) · 180°. For n = 5: 3 · 180° = 540°."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "square",
+          "sides": [
+            4
+          ],
+          "unit": "cm"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.geom7.quad",
+      "kind": "explanation",
+      "title": "Areas of quadrilaterals",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geom7.pyth",
+    "skillId": "mat.geom7.pyth",
+    "title": {
+      "ro": "Teorema lui Pitagora: 3, 4, 5",
+      "en": "The Pythagorean theorem: 3, 4, 5"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În triunghiul dreptunghic, pătratul ipotenuzei este egal cu suma pătratelor catetelor: c² = a² + b².",
+          "en": "In a right triangle the square of the hypotenuse equals the sum of the squares of the legs: c² = a² + b²."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            3,
+            4,
+            5
+          ],
+          "unit": "cm",
+          "hideSide": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Catete 3 și 4: c² = 9 + 16 = 25, deci c = √25 = 5. Nu 3 + 4 = 7 și nu 25!",
+          "en": "Legs 3 and 4: c² = 9 + 16 = 25, so c = √25 = 5. Not 3 + 4 = 7 and not 25!"
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru un catet scădem: ipotenuza 13, un catet 5: b² = 13² − 5² = 169 − 25 = 144, deci b = 12.",
+          "en": "For a leg we subtract: hypotenuse 13, one leg 5: b² = 13² − 5² = 169 − 25 = 144, so b = 12."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            5,
+            12,
+            13
+          ],
+          "unit": "cm",
+          "hideSide": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Tripletele pitagorice au numere întregi: (3, 4, 5), (5, 12, 13), (8, 15, 17), (7, 24, 25) și multiplii lor, de exemplu (6, 8, 10).",
+          "en": "Pythagorean triples consist of whole numbers: (3, 4, 5), (5, 12, 13), (8, 15, 17), (7, 24, 25) and their multiples, for example (6, 8, 10)."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.geom7.pyth",
+      "kind": "explanation",
+      "title": "The Pythagorean theorem: 3, 4, 5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geom7.pyth.converse",
+    "skillId": "mat.geom7.pyth.converse",
+    "title": {
+      "ro": "Este triunghiul dreptunghic?",
+      "en": "Is the triangle a right triangle?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Dacă a² + b² = c² (c cea mai mare latură), triunghiul este dreptunghic. Pentru 6, 8, 10: 36 + 64 = 100 ✓.",
+          "en": "If a² + b² = c² (c the longest side), the triangle is a right triangle. For 6, 8, 10: 36 + 64 = 100 ✓."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            6,
+            8,
+            10
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru 5, 6, 8: 25 + 36 = 61, dar 8² = 64. Nu sunt egale, deci nu este dreptunghic.",
+          "en": "For 5, 6, 8: 25 + 36 = 61, but 8² = 64. They are not equal, so it is not a right triangle."
+        }
+      },
+      {
+        "text": {
+          "ro": "Diagonala dreptunghiului 6 × 8 este ipotenuza unui triunghi dreptunghic: d = √(36 + 64) = 10.",
+          "en": "The diagonal of a 6 × 8 rectangle is the hypotenuse of a right triangle: d = √(36 + 64) = 10."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "rectangle",
+          "sides": [
+            6,
+            8
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Pătratul de latură a are diagonala a√2; triunghiul echilateral cu latura 2k are înălțimea k√3.",
+          "en": "A square of side a has diagonal a√2; an equilateral triangle with side 2k has height k√3."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.geom7.pyth.converse",
+      "kind": "explanation",
+      "title": "Is the triangle a right triangle?",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geom7.similar",
+    "skillId": "mat.geom7.similar",
+    "title": {
+      "ro": "Triunghiuri asemenea",
+      "en": "Similar triangles"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Două triunghiuri sunt asemenea dacă au unghiurile egale și laturile proporționale: AB/MN = BC/NP = CA/PM = k.",
+          "en": "Two triangles are similar if their angles are equal and their sides proportional: AB/MN = BC/NP = CA/PM = k."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            3,
+            4,
+            5
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă ABC are laturile 3, 4, 5 și în MNP avem MN = 9 (corespunde lui AB = 3), raportul este k = 9 : 3 = 3.",
+          "en": "If ABC has sides 3, 4, 5 and in MNP we have MN = 9 (corresponding to AB = 3), the ratio is k = 9 : 3 = 3."
+        }
+      },
+      {
+        "text": {
+          "ro": "Celelalte laturi se înmulțesc cu 3: NP = 4 · 3 = 12 și PM = 5 · 3 = 15. Nu adunăm 9 − 3 = 6 la fiecare latură!",
+          "en": "The other sides are multiplied by 3: NP = 4 · 3 = 12 and PM = 5 · 3 = 15. We do not add 9 − 3 = 6 to each side!"
+        }
+      },
+      {
+        "text": {
+          "ro": "Perimetrele sunt în raportul k, dar ariile sunt în raportul k²: aria mare = 9 · aria mică.",
+          "en": "Perimeters are in ratio k, but areas are in ratio k²: the big area = 9 · the small area."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.geom7.similar",
+      "kind": "explanation",
+      "title": "Similar triangles",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.geom7.parallel",
+    "skillId": "mat.geom7.parallel",
+    "title": {
+      "ro": "Unghiuri formate de paralele cu o secantă",
+      "en": "Angles formed by parallels and a transversal"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Două drepte paralele a și b tăiate de o secantă formează 8 unghiuri, doar cu două măsuri: α și 180° − α.",
+          "en": "Two parallel lines a and b cut by a transversal form 8 angles, with only two measures: α and 180° − α."
+        }
+      },
+      {
+        "text": {
+          "ro": "Unghiurile alterne interne sunt egale, la fel și cele corespondente. Dacă unul are 65°, celălalt are tot 65°.",
+          "en": "Alternate interior angles are equal, and so are corresponding angles. If one is 65°, the other is also 65°."
+        }
+      },
+      {
+        "text": {
+          "ro": "Unghiurile interne de aceeași parte a secantei sunt suplementare: 65° + 115° = 180°.",
+          "en": "Co-interior angles on the same side of the transversal are supplementary: 65° + 115° = 180°."
+        }
+      },
+      {
+        "text": {
+          "ro": "Această proprietate funcționează numai când dreptele sunt paralele. Nu confunda „egale” cu „suplementare”.",
+          "en": "This property works only when the lines are parallel. Do not mix up “equal” and “supplementary”."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.geom7.parallel",
+      "kind": "explanation",
+      "title": "Angles formed by parallels and a transversal",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.alg8.expand",
+    "skillId": "mat.alg8.expand",
+    "title": {
+      "ro": "Pătratul unei sume și diferența de pătrate",
+      "en": "Square of a sum and difference of squares"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "(a + b)² = a² + 2ab + b². De exemplu (x + 3)² = x² + 2 · x · 3 + 3² = x² + 6x + 9.",
+          "en": "(a + b)² = a² + 2ab + b². For example (x + 3)² = x² + 2 · x · 3 + 3² = x² + 6x + 9."
+        }
+      },
+      {
+        "text": {
+          "ro": "(a − b)² = a² − 2ab + b². De exemplu (x − 3)² = x² − 6x + 9: termenul din mijloc are semnul minus, dar b² rămâne plus.",
+          "en": "(a − b)² = a² − 2ab + b². For example (x − 3)² = x² − 6x + 9: the middle term takes the minus sign, but b² stays plus."
+        }
+      },
+      {
+        "text": {
+          "ro": "(a − b)(a + b) = a² − b². De exemplu (x − 3)(x + 3) = x² − 9, fără termen cu x.",
+          "en": "(a − b)(a + b) = a² − b². For example (x − 3)(x + 3) = x² − 9, with no x term."
+        }
+      },
+      {
+        "text": {
+          "ro": "Atenție: (x + 3)² nu este x² + 9 (lipsește 6x). Cu formulele calculăm ușor: 51² = (50 + 1)² = 2500 + 100 + 1 = 2601.",
+          "en": "Careful: (x + 3)² is not x² + 9 (the 6x is missing). The formulas make calculations easy: 51² = (50 + 1)² = 2500 + 100 + 1 = 2601."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.alg8.expand",
+      "kind": "explanation",
+      "title": "Square of a sum and difference of squares",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.alg8.factor",
+    "skillId": "mat.alg8.factor",
+    "title": {
+      "ro": "Descompunerea în factori: x² − 9",
+      "en": "Factorisation: x² − 9"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Factor comun: 6x + 9 = 3 · 2x + 3 · 3 = 3(2x + 3). Scoatem cel mai mare factor comun.",
+          "en": "Common factor: 6x + 9 = 3 · 2x + 3 · 3 = 3(2x + 3). Take out the greatest common factor."
+        }
+      },
+      {
+        "text": {
+          "ro": "Diferență de pătrate: x² − 9 = x² − 3² = (x − 3)(x + 3).",
+          "en": "Difference of squares: x² − 9 = x² − 3² = (x − 3)(x + 3)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Pătrat perfect: x² + 6x + 9 = (x + 3)² (6x = 2 · x · 3), iar x² − 6x + 9 = (x − 3)².",
+          "en": "Perfect square: x² + 6x + 9 = (x + 3)² (6x = 2 · x · 3), and x² − 6x + 9 = (x − 3)²."
+        }
+      },
+      {
+        "text": {
+          "ro": "Verificăm mereu înmulțind la loc factorii: (x − 3)(x + 3) = x² − 9 ✓. Semnele din paranteze contează!",
+          "en": "Always check by multiplying the factors back: (x − 3)(x + 3) = x² − 9 ✓. The signs in the brackets matter!"
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.alg8.factor",
+      "kind": "explanation",
+      "title": "Factorisation: x² − 9",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.alg8.simplify",
+    "skillId": "mat.alg8.simplify",
+    "title": {
+      "ro": "Reducerea termenilor asemenea",
+      "en": "Collecting like terms"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Termenii asemenea au aceeași parte literală: 3x + 5 − x + 2 = (3x − x) + (5 + 2) = 2x + 7.",
+          "en": "Like terms have the same variable part: 3x + 5 − x + 2 = (3x − x) + (5 + 2) = 2x + 7."
+        }
+      },
+      {
+        "text": {
+          "ro": "Înmulțim numărul din fața parantezei cu fiecare termen: 3(x + 2) = 3x + 6.",
+          "en": "Multiply the number in front of the bracket by every term: 3(x + 2) = 3x + 6."
+        }
+      },
+      {
+        "text": {
+          "ro": "Un minus în fața parantezei schimbă semnul fiecărui termen: 3(x + 2) − 2(x − 1) = 3x + 6 − 2x + 2 = x + 8.",
+          "en": "A minus in front of a bracket changes the sign of every term: 3(x + 2) − 2(x − 1) = 3x + 6 − 2x + 2 = x + 8."
+        }
+      },
+      {
+        "text": {
+          "ro": "Valoare numerică: pentru x = −2, x² + 3x = (−2)² + 3 · (−2) = 4 − 6 = −2. (−2)² = 4, nu −4.",
+          "en": "Numerical value: for x = −2, x² + 3x = (−2)² + 3 · (−2) = 4 − 6 = −2. (−2)² = 4, not −4."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.alg8.simplify",
+      "kind": "explanation",
+      "title": "Collecting like terms",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.real8.radicals",
+    "skillId": "mat.real8.radicals",
+    "title": {
+      "ro": "Scoaterea factorilor de sub radical",
+      "en": "Taking factors out of a radical"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Scoatem factorii pătrați perfecți: √72 = √(36 · 2) = √36 · √2 = 6√2.",
+          "en": "Take out perfect-square factors: √72 = √(36 · 2) = √36 · √2 = 6√2."
+        }
+      },
+      {
+        "text": {
+          "ro": "Adunăm doar radicalii asemenea: √12 + √27 = 2√3 + 3√3 = 5√3.",
+          "en": "We add only like radicals: √12 + √27 = 2√3 + 3√3 = 5√3."
+        }
+      },
+      {
+        "text": {
+          "ro": "Produs: √2 · √8 = √16 = 4, iar (√7)² = 7.",
+          "en": "Product: √2 · √8 = √16 = 4, and (√7)² = 7."
+        }
+      },
+      {
+        "text": {
+          "ro": "Atenție: √a + √b nu este √(a + b). De exemplu √9 + √16 = 7, dar √(9 + 16) = 5.",
+          "en": "Careful: √a + √b is not √(a + b). For example √9 + √16 = 7, but √(9 + 16) = 5."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.real8.radicals",
+      "kind": "explanation",
+      "title": "Taking factors out of a radical",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.eq8.linear",
+    "skillId": "mat.eq8.linear",
+    "title": {
+      "ro": "Ecuații mai complicate",
+      "en": "More complex equations"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Desfacem parantezele: 2(x + 3) + 4 = 18 devine 2x + 6 + 4 = 18, adică 2x + 10 = 18.",
+          "en": "Expand the brackets: 2(x + 3) + 4 = 18 becomes 2x + 6 + 4 = 18, that is 2x + 10 = 18."
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi 2x = 8 și x = 4. Verificăm: 2 · (4 + 3) + 4 = 18 ✓.",
+          "en": "Then 2x = 8 and x = 4. Check: 2 · (4 + 3) + 4 = 18 ✓."
+        }
+      },
+      {
+        "text": {
+          "ro": "Eliminăm numitorii: x/2 + x/3 = 10. Înmulțim cu 6: 3x + 2x = 60, deci x = 12.",
+          "en": "Clear the denominators: x/2 + x/3 = 10. Multiply by 6: 3x + 2x = 60, so x = 12."
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă soluția nu e număr întreg, o scriem ca fracție ireductibilă: 4x + 1 = 6 ⇒ x = 5/4.",
+          "en": "If the solution is not a whole number, write it as a fraction in lowest terms: 4x + 1 = 6 ⇒ x = 5/4."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eq8.linear",
+      "kind": "explanation",
+      "title": "More complex equations",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.ineq8",
+    "skillId": "mat.ineq8",
+    "title": {
+      "ro": "Inecuații și intervale",
+      "en": "Inequalities and intervals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Rezolvăm ca o ecuație: 3x − 5 ≤ 7 ⇒ 3x ≤ 12 ⇒ x ≤ 4. Soluția este mulțimea (−∞; 4].",
+          "en": "Solve like an equation: 3x − 5 ≤ 7 ⇒ 3x ≤ 12 ⇒ x ≤ 4. The solution is the set (−∞; 4]."
+        }
+      },
+      {
+        "text": {
+          "ro": "Paranteza rotundă înseamnă că numărul nu aparține intervalului (< sau >), cea pătrată că aparține (≤ sau ≥).",
+          "en": "A round bracket means the number is not in the interval (< or >), a square bracket that it is (≤ or ≥)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Când împărțim sau înmulțim cu un număr NEGATIV, sensul inegalității se schimbă: −2x < 6 ⇒ x > −3.",
+          "en": "When dividing or multiplying by a NEGATIVE number the direction of the inequality flips: −2x < 6 ⇒ x > −3."
+        },
+        "visual": {
+          "kind": "number-line",
+          "from": -5,
+          "to": 3,
+          "step": 1,
+          "marks": [
+            -3
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Verificăm cu un număr din interval: x = 0 în −2x < 6 dă 0 < 6 ✓, iar x = −5 dă 10 < 6 ✗.",
+          "en": "Check with a number from the interval: x = 0 in −2x < 6 gives 0 < 6 ✓, and x = −5 gives 10 < 6 ✗."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.ineq8",
+      "kind": "explanation",
+      "title": "Inequalities and intervals",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.func8.value",
+    "skillId": "mat.func8.value",
+    "title": {
+      "ro": "Funcția f(x) = ax + b",
+      "en": "The function f(x) = ax + b"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pentru f(x) = 2x − 3, valoarea în 4 este f(4) = 2 · 4 − 3 = 5. Înlocuim x cu 4 și calculăm.",
+          "en": "For f(x) = 2x − 3 the value at 4 is f(4) = 2 · 4 − 3 = 5. Replace x by 4 and calculate."
+        }
+      },
+      {
+        "text": {
+          "ro": "Punctul A(4; 5) aparține graficului pentru că f(4) = 5. Punctul B(4; 6) nu aparține: f(4) ≠ 6.",
+          "en": "Point A(4; 5) lies on the graph because f(4) = 5. Point B(4; 6) does not: f(4) ≠ 6."
+        }
+      },
+      {
+        "text": {
+          "ro": "Coordonatele se scriu în ordinea (x; y). Pentru P(2; m) pe grafic: m = f(2) = 2 · 2 − 3 = 1.",
+          "en": "Coordinates are written in the order (x; y). For P(2; m) on the graph: m = f(2) = 2 · 2 − 3 = 1."
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă a > 0 funcția este crescătoare, dacă a < 0 descrescătoare, iar pentru a = 0 este constantă.",
+          "en": "If a > 0 the function is increasing, if a < 0 decreasing, and for a = 0 it is constant."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.func8.value",
+      "kind": "explanation",
+      "title": "The function f(x) = ax + b",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.func8.graph",
+    "skillId": "mat.func8.graph",
+    "title": {
+      "ro": "Axele, panta și ecuația dreptei",
+      "en": "Axes, slope and equation of the line"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Intersecția cu Oy se află la x = 0: punctul (0; b). Pentru f(x) = 2x − 6 este (0; −6).",
+          "en": "The intersection with Oy is at x = 0: the point (0; b). For f(x) = 2x − 6 it is (0; −6)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Intersecția cu Ox se află la f(x) = 0: 2x − 6 = 0 ⇒ x = 3, punctul (3; 0).",
+          "en": "The intersection with Ox is where f(x) = 0: 2x − 6 = 0 ⇒ x = 3, the point (3; 0)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Panta prin A(1; 2) și B(3; 8) este m = (y₂ − y₁) : (x₂ − x₁) = (8 − 2) : (3 − 1) = 3. Nu inversăm raportul!",
+          "en": "The slope through A(1; 2) and B(3; 8) is m = (y₂ − y₁) : (x₂ − x₁) = (8 − 2) : (3 − 1) = 3. Do not flip the ratio!"
+        }
+      },
+      {
+        "text": {
+          "ro": "Ecuația dreptei: f(x) = mx + b. Cu m = 3 și punctul A(1; 2): 2 = 3 · 1 + b, deci b = −1 și f(x) = 3x − 1.",
+          "en": "Equation of the line: f(x) = mx + b. With m = 3 and point A(1; 2): 2 = 3 · 1 + b, so b = −1 and f(x) = 3x − 1."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.func8.graph",
+      "kind": "explanation",
+      "title": "Axes, slope and equation of the line",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.solid8.prism",
+    "skillId": "mat.solid8.prism",
+    "title": {
+      "ro": "Aria și volumul corpurilor cu fețe plane",
+      "en": "Area and volume of solids with flat faces"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cub cu muchia a: V = a³, A_t = 6a², A_l = 4a². Pentru a = 4: V = 64, A_t = 96, A_l = 64.",
+          "en": "Cube with edge a: V = a³, A_t = 6a², A_l = 4a². For a = 4: V = 64, A_t = 96, A_l = 64."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "square",
+          "sides": [
+            4
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Paralelipiped cu dimensiunile L, l, h: V = L · l · h și A_t = 2(Ll + Lh + lh). Diagonala: d = √(L² + l² + h²).",
+          "en": "Cuboid with dimensions L, w, h: V = L · w · h and A_t = 2(Lw + Lh + wh). Diagonal: d = √(L² + w² + h²)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Prismă dreaptă: V = A_b · h, A_l = P_b · h, A_t = A_l + 2A_b. Pentru baza triunghi dreptunghic cu catete 3 și 4: A_b = 6, P_b = 12.",
+          "en": "Right prism: V = A_b · h, A_l = P_b · h, A_t = A_l + 2A_b. For a right-triangle base with legs 3 and 4: A_b = 6, P_b = 12."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            3,
+            4,
+            5
+          ],
+          "unit": "cm"
+        }
+      },
+      {
+        "text": {
+          "ro": "Unitățile: aria în cm², volumul în cm³. Nu confunda aria laterală (fără baze) cu aria totală (cu baze).",
+          "en": "Units: area in cm², volume in cm³. Do not mix up the lateral area (without bases) with the total area (with bases)."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.solid8.prism",
+      "kind": "explanation",
+      "title": "Area and volume of solids with flat faces",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.solid8.pyramid",
+    "skillId": "mat.solid8.pyramid",
+    "title": {
+      "ro": "Piramida patrulateră regulată",
+      "en": "The regular square pyramid"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Volumul piramidei este o treime din volumul prismei cu aceeași bază și înălțime: V = A_b · h : 3. Fără împărțirea la 3 rezultatul e greșit!",
+          "en": "The volume of a pyramid is a third of the prism with the same base and height: V = A_b · h : 3. Without dividing by 3 the result is wrong!"
+        }
+      },
+      {
+        "text": {
+          "ro": "Apotema ap este înălțimea unei fețe laterale. Triunghiul dreptunghic (jumătate de latură, înălțimea piramidei, apotema) dă ap² = h² + (l : 2)².",
+          "en": "The apothem ap is the height of a lateral face. The right triangle (half the base side, the pyramid height, the apothem) gives ap² = h² + (s : 2)²."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            3,
+            4,
+            5
+          ],
+          "unit": "cm",
+          "hideSide": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Aria laterală: A_l = P_b · ap : 2. Pentru latura bazei 6 și ap = 5: 24 · 5 : 2 = 60.",
+          "en": "Lateral area: A_l = P_b · ap : 2. For base side 6 and ap = 5: 24 · 5 : 2 = 60."
+        }
+      },
+      {
+        "text": {
+          "ro": "Aria totală: A_t = A_l + A_b = 60 + 36 = 96. Pentru volum cu h = 4: V = 36 · 4 : 3 = 48.",
+          "en": "Total area: A_t = A_l + A_b = 60 + 36 = 96. For the volume with h = 4: V = 36 · 4 : 3 = 48."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.solid8.pyramid",
+      "kind": "explanation",
+      "title": "The regular square pyramid",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.solid8.round",
+    "skillId": "mat.solid8.round",
+    "title": {
+      "ro": "Corpuri rotunde, rezultate cu π",
+      "en": "Round solids, results with π"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cerc de rază r: lungimea L = 2πr, aria A = πr². Pentru r = 6 cm: L = 12π cm și A = 36π cm². Lăsăm π în răspuns.",
+          "en": "Circle of radius r: circumference C = 2πr, area A = πr². For r = 6 cm: C = 12π cm and A = 36π cm². We keep π in the answer."
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "circle"
+        }
+      },
+      {
+        "text": {
+          "ro": "Cilindru: V = πr²h, A_l = 2πrh, A_t = 2πr(r + h). Pentru r = 3, h = 5: V = 45π, A_l = 30π.",
+          "en": "Cylinder: V = πr²h, A_l = 2πrh, A_t = 2πr(r + h). For r = 3, h = 5: V = 45π, A_l = 30π."
+        }
+      },
+      {
+        "text": {
+          "ro": "Con: generatoarea g² = r² + h², V = πr²h : 3, A_l = πrg. Pentru r = 3, h = 4: g = 5, V = 12π, A_l = 15π. Nu înlocui g cu h!",
+          "en": "Cone: slant height g² = r² + h², V = πr²h : 3, A_l = πrg. For r = 3, h = 4: g = 5, V = 12π, A_l = 15π. Do not replace g by h!"
+        },
+        "visual": {
+          "kind": "shape",
+          "shape": "triangle",
+          "sides": [
+            3,
+            4,
+            5
+          ],
+          "unit": "cm",
+          "hideSide": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Sferă: A = 4πr², V = 4πr³ : 3. Pentru r = 3: A = 36π și V = 36π cm³.",
+          "en": "Sphere: A = 4πr², V = 4πr³ : 3. For r = 3: A = 36π and V = 36π cm³."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.solid8.round",
+      "kind": "explanation",
+      "title": "Round solids, results with π",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.prob8.simple",
+    "skillId": "mat.prob8.simple",
+    "title": {
+      "ro": "Probabilitatea unui eveniment",
+      "en": "The probability of an event"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Probabilitatea = numărul cazurilor favorabile : numărul cazurilor posibile. Într-o urnă cu 2 bile roșii și 4 albastre, P(roșie) = 2/6 = 1/3.",
+          "en": "Probability = number of favourable cases : number of possible cases. In an urn with 2 red and 4 blue balls, P(red) = 2/6 = 1/3."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 6,
+          "cells": [
+            "🔴",
+            "🔴",
+            "🔵",
+            "🔵",
+            "🔵",
+            "🔵"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "La un zar, „număr par” are 3 cazuri favorabile (2, 4, 6) din 6 posibile: P = 3/6 = 1/2.",
+          "en": "For a die, “an even number” has 3 favourable cases (2, 4, 6) out of 6 possible: P = 3/6 = 1/2."
+        }
+      },
+      {
+        "text": {
+          "ro": "Probabilitatea se scrie ca fracție ireductibilă între 0 și 1 (sau în procente). Evenimentul contrar: P(non-A) = 1 − P(A).",
+          "en": "Probability is written as a fraction in lowest terms between 0 and 1 (or as a percent). The opposite event: P(not A) = 1 − P(A)."
+        }
+      },
+      {
+        "text": {
+          "ro": "Nu confunda probabilitatea cu „șansele”: pentru roșie sunt 2 favorabile și 4 nefavorabile, dar P = 2/6, nu 2/4.",
+          "en": "Do not mix up probability with odds: for red there are 2 favourable and 4 unfavourable cases, but P = 2/6, not 2/4."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.prob8.simple",
+      "kind": "explanation",
+      "title": "The probability of an event",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.stat8",
+    "skillId": "mat.stat8",
+    "title": {
+      "ro": "Media, mediana și modulul",
+      "en": "Mean, median and mode"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Media = suma valorilor : numărul lor. Pentru 4, 8, 6, 10, 7 media este 35 : 5 = 7.",
+          "en": "Mean = sum of the values : how many. For 4, 8, 6, 10, 7 the mean is 35 : 5 = 7."
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 5,
+          "cells": [
+            "4",
+            "8",
+            "6",
+            "10",
+            "7"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "Mediana: ordonăm valorile (4, 6, 7, 8, 10) și luăm pe cea din mijloc: 7. Nu luăm valoarea din mijlocul șirului nesortat!",
+          "en": "Median: sort the values (4, 6, 7, 8, 10) and take the middle one: 7. Do not take the middle of the unsorted list!"
+        },
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 5,
+          "cells": [
+            "4",
+            "6",
+            "7",
+            "8",
+            "10"
+          ]
+        }
+      },
+      {
+        "text": {
+          "ro": "La număr par de valori, mediana este media celor două din mijloc: pentru 2, 4, 6, 9 este (4 + 6) : 2 = 5.",
+          "en": "With an even number of values the median is the mean of the two middle ones: for 2, 4, 6, 9 it is (4 + 6) : 2 = 5."
+        }
+      },
+      {
+        "text": {
+          "ro": "Media ponderată folosește frecvențele: 3 note de 7 și 1 notă de 9 dau (3 · 7 + 1 · 9) : 4 = 7,5. Modulul este valoarea cu frecvența cea mai mare.",
+          "en": "The weighted mean uses frequencies: three marks of 7 and one of 9 give (3 · 7 + 1 · 9) : 4 = 7.5. The mode is the value with the highest frequency."
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.stat8",
+      "kind": "explanation",
+      "title": "Mean, median and mode",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation; awaiting human review"
+    }
+  }
+]

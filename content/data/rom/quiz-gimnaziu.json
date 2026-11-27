@@ -1,0 +1,877 @@
+{
+ "provenance": {
+  "id": "prov.data.rom.quiz-gimnaziu",
+  "kind": "data",
+  "title": "Ludiko curated multiple-choice questions for grades V-VIII",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Original sentences drafted for the gimnaziu (V-VIII) Romanian curriculum; no textbook or exam material. Awaiting review by a Romanian teacher."
+ },
+ "topics": {
+  "noun": [
+   [
+    "Care dintre cuvinte este substantiv propriu?",
+    "Dunărea",
+    "râul",
+    "pădurea",
+    "orașul"
+   ],
+   [
+    "Care dintre cuvinte este substantiv comun?",
+    "pădure",
+    "Carpați",
+    "Mureș",
+    "Ioana"
+   ],
+   [
+    "Ce gen are substantivul „copac”?",
+    "masculin",
+    "feminin",
+    "neutru"
+   ],
+   [
+    "Ce gen are substantivul „scaun”?",
+    "neutru",
+    "masculin",
+    "feminin"
+   ],
+   [
+    "Ce gen are substantivul „floare”?",
+    "feminin",
+    "masculin",
+    "neutru"
+   ],
+   [
+    "Ce gen are substantivul „creion”?",
+    "neutru",
+    "masculin",
+    "feminin"
+   ],
+   [
+    "Ce număr are substantivul „păsări”?",
+    "plural",
+    "singular"
+   ],
+   [
+    "Ce număr are substantivul „fereastră”?",
+    "singular",
+    "plural"
+   ],
+   [
+    "Care este pluralul substantivului „copil”?",
+    "copii",
+    "copile",
+    "copiluri"
+   ],
+   [
+    "Care este pluralul substantivului „ochi”?",
+    "ochi",
+    "ochiuri",
+    "ochie"
+   ],
+   [
+    "Care este pluralul substantivului „fată”?",
+    "fete",
+    "fate",
+    "fetii"
+   ],
+   [
+    "Care este pluralul substantivului „lac”?",
+    "lacuri",
+    "laci",
+    "lace"
+   ],
+   [
+    "Care este pluralul substantivului „frate”?",
+    "frați",
+    "frate",
+    "fratei"
+   ],
+   [
+    "Care substantiv este abstract (nu poate fi atins)?",
+    "bunătate",
+    "stâncă",
+    "cățel",
+    "masă"
+   ],
+   [
+    "Care substantiv denumește un grup de ființe?",
+    "stol",
+    "pasăre",
+    "cuib",
+    "aripă"
+   ],
+   [
+    "Care dintre cuvinte este substantiv?",
+    "zâmbet",
+    "zâmbind",
+    "zâmbitor"
+   ]
+  ],
+  "caps": [
+   [
+    "Care variantă este scrisă corect?",
+    "Ioana locuiește în Cluj-Napoca.",
+    "ioana locuiește în cluj-napoca.",
+    "Ioana locuiește în cluj-napoca."
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "Luni mergem în excursie.",
+    "luni mergem în excursie.",
+    "Luni mergem în Excursie."
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "Mihai a citit o carte despre Dunăre.",
+    "mihai a citit o carte despre dunăre.",
+    "Mihai a citit o carte despre dunăre."
+   ],
+   [
+    "Care cuvânt se scrie cu literă mare în mijlocul unei propoziții?",
+    "Carpați",
+    "munte",
+    "iarna",
+    "marți"
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "Vara mergem la mare, în Constanța.",
+    "Vara mergem la Mare, în Constanța.",
+    "vara mergem la mare, în constanța."
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "În iulie plecăm la bunici.",
+    "În Iulie plecăm la bunici.",
+    "În iulie plecăm la Bunici."
+   ],
+   [
+    "Care titlu de carte este scris corect?",
+    "Povești de seară",
+    "Povești De Seară",
+    "povești de seară"
+   ],
+   [
+    "Care adresare este scrisă corect?",
+    "Dragă Maria,",
+    "dragă Maria,",
+    "Dragă maria,"
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "Doamna Popescu este profesoară.",
+    "doamna Popescu este profesoară.",
+    "Doamna popescu este Profesoară."
+   ],
+   [
+    "Cu ce fel de literă începem o propoziție nouă?",
+    "majusculă",
+    "literă mică",
+    "oricare literă"
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "Râul Olt izvorăște din Carpați.",
+    "Râul olt izvorăște din carpați.",
+    "râul Olt izvorăște din Carpați."
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "Bunica a spus: „Veniți la masă!”",
+    "Bunica a spus: „veniți la masă!”",
+    "bunica a spus: „Veniți la masă!”"
+   ]
+  ],
+  "punct": [
+   [
+    "Ce semn de punctuație punem la sfârșitul unei întrebări?",
+    "semnul întrebării",
+    "punctul",
+    "semnul exclamării"
+   ],
+   [
+    "Ce semn punem după un enunț care exprimă bucurie sau mirare?",
+    "semnul exclamării",
+    "punctul",
+    "virgula"
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Maria, vino la masă!",
+    "Maria vino, la masă!",
+    "Maria, vino la, masă!"
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Am cumpărat mere, pere și struguri.",
+    "Am cumpărat, mere pere și struguri.",
+    "Am cumpărat mere pere, și struguri."
+   ],
+   [
+    "Ce semn punem înaintea unei enumerații anunțate printr-o propoziție?",
+    "două puncte",
+    "punct",
+    "semnul întrebării"
+   ],
+   [
+    "Cu ce semne se scriu cuvintele spuse de cineva, citate în text?",
+    "ghilimele",
+    "paranteze",
+    "puncte de suspensie"
+   ],
+   [
+    "Ce semn punem după vocativ („Ioane, vino aici!”)?",
+    "virgula",
+    "punctul",
+    "două puncte"
+   ],
+   [
+    "Care mesaj este scris corect?",
+    "Ce frumos este afară!",
+    "Ce frumos este afară?",
+    "Ce frumos este afară."
+   ],
+   [
+    "Care întrebare este scrisă corect?",
+    "Unde ai pus cartea?",
+    "Unde ai pus cartea.",
+    "Unde ai pus cartea!"
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Ion, Ana și Maria au venit.",
+    "Ion Ana, și Maria au venit.",
+    "Ion, Ana, și, Maria au venit."
+   ],
+   [
+    "Ce semn arată că ideea nu este terminată?",
+    "punctele de suspensie",
+    "punctul",
+    "semnul întrebării"
+   ],
+   [
+    "Care scriere este corectă?",
+    "Spune-mi tot!",
+    "Spune mi tot!",
+    "Spunemi tot!"
+   ]
+  ],
+  "sense": [
+   [
+    "În care enunț cuvântul „mână” are sens figurat?",
+    "Bunicul este mâna dreaptă a primarului.",
+    "Mi-am rănit mâna la joacă.",
+    "Salută cu mâna stângă."
+   ],
+   [
+    "În care enunț cuvântul „rece” are sens figurat?",
+    "A primit o primire rece.",
+    "Apa din râu este rece.",
+    "Vântul rece bate de la nord."
+   ],
+   [
+    "În care enunț cuvântul „dulce” are sens propriu?",
+    "Mierea este dulce.",
+    "Are o voce dulce.",
+    "Au avut un somn dulce."
+   ],
+   [
+    "În care enunț cuvântul „curge” are sens figurat?",
+    "Timpul curge repede.",
+    "Apa curge la vale.",
+    "Râul curge lin."
+   ],
+   [
+    "Ce înseamnă expresia „a avea inima de piatră”?",
+    "a fi nemilos",
+    "a fi bolnav",
+    "a fi puternic"
+   ],
+   [
+    "În care enunț cuvântul „inimă” are sens propriu?",
+    "Doctorul a ascultat inima copilului.",
+    "Are o inimă de aur.",
+    "Inima pădurii este liniștită."
+   ],
+   [
+    "Ce înseamnă expresia „a fi cu capul în nori”?",
+    "a fi visător",
+    "a fi supărat",
+    "a fi înalt"
+   ],
+   [
+    "În care enunț cuvântul „coadă” înseamnă „parte a corpului unui animal”?",
+    "Câinele își mișcă coada.",
+    "Aștept la coadă la ghișeu.",
+    "Am prins tigaia de coadă."
+   ],
+   [
+    "În care enunț cuvântul „frunte” are sens figurat?",
+    "Echipa este în fruntea clasamentului.",
+    "S-a lovit în frunte.",
+    "Își șterge fruntea cu mâna."
+   ],
+   [
+    "Ce sens are verbul „a bate” în enunțul „Ceasul bate miezul nopții”?",
+    "a suna",
+    "a lovi",
+    "a învinge"
+   ],
+   [
+    "Ce sens are verbul „a bate” în enunțul „Echipa noastră i-a bătut pe adversari”?",
+    "a învinge",
+    "a lovi",
+    "a suna"
+   ],
+   [
+    "Un cuvânt cu mai multe sensuri se numește...",
+    "polisemantic",
+    "monosemantic",
+    "antonim"
+   ],
+   [
+    "Cuvântul „lumină” din „Cartea aduce lumină în minte” are sens...",
+    "figurat",
+    "propriu"
+   ],
+   [
+    "Cuvântul „piatră” din „Pe drum era o piatră mare” are sens...",
+    "propriu",
+    "figurat"
+   ]
+  ],
+  "lexfamily": [
+   [
+    "Care cuvânt face parte din familia lexicală a cuvântului „floare”?",
+    "florărie",
+    "fluier",
+    "fluture"
+   ],
+   [
+    "Care cuvânt face parte din familia lexicală a cuvântului „pădure”?",
+    "pădurar",
+    "părinte",
+    "pâlpâit"
+   ],
+   [
+    "Care cuvânt face parte din familia lexicală a cuvântului „munte”?",
+    "muntean",
+    "mulțime",
+    "muncitor"
+   ],
+   [
+    "Care cuvânt face parte din familia lexicală a cuvântului „drum”?",
+    "drumeț",
+    "drag",
+    "dromader"
+   ],
+   [
+    "Care cuvânt face parte din familia lexicală a cuvântului „carte”?",
+    "cărturar",
+    "cartof",
+    "cartier"
+   ],
+   [
+    "Cuvântul „nefericit” este format prin...",
+    "prefixare",
+    "sufixare",
+    "compunere"
+   ],
+   [
+    "Cuvântul „pădurar” este format prin...",
+    "sufixare",
+    "prefixare",
+    "compunere"
+   ],
+   [
+    "Cuvântul „necunoscut” este format prin...",
+    "prefixare",
+    "sufixare",
+    "compunere"
+   ],
+   [
+    "Cuvântul „copilărie” este format prin...",
+    "sufixare",
+    "prefixare",
+    "compunere"
+   ],
+   [
+    "Care este prefixul din cuvântul „dezordine”?",
+    "dez-",
+    "ordi-",
+    "-ine"
+   ],
+   [
+    "Care este sufixul din cuvântul „grădinar”?",
+    "-ar",
+    "gră-",
+    "-dina"
+   ],
+   [
+    "Care cuvânt NU face parte din familia lexicală a cuvântului „școală”?",
+    "șoarece",
+    "școlar",
+    "școlăresc",
+    "școlărime"
+   ],
+   [
+    "Care cuvânt NU face parte din familia lexicală a cuvântului „frunză”?",
+    "fruntaș",
+    "frunzar",
+    "frunzuliță"
+   ],
+   [
+    "Din verbul „a lucra” se formează prin derivare cuvântul...",
+    "lucrător",
+    "lăcrimă",
+    "luceafăr"
+   ]
+  ],
+  "compound": [
+   [
+    "Care cuvânt este format prin compunere?",
+    "floarea-soarelui",
+    "floricică",
+    "florărie"
+   ],
+   [
+    "Care cuvânt este format prin compunere?",
+    "bunăvoință",
+    "bunătate",
+    "bunicuț"
+   ],
+   [
+    "Care cuvânt este format prin compunere?",
+    "nu-mă-uita",
+    "necunoscut",
+    "neputincios"
+   ],
+   [
+    "În care enunț cuvântul „bine” este substantiv (conversiune)?",
+    "Binele trebuie răsplătit.",
+    "Cântă foarte bine.",
+    "Se simte bine azi."
+   ],
+   [
+    "În care enunț cuvântul „frumos” este adverb?",
+    "Ea cântă frumos.",
+    "Peisajul este frumos.",
+    "Frumosul este în jurul nostru."
+   ],
+   [
+    "Care cuvânt este format prin derivare cu prefix?",
+    "nevăzut",
+    "vedere",
+    "văzduh"
+   ],
+   [
+    "Care cuvânt este format prin derivare cu sufix?",
+    "floricică",
+    "desprins",
+    "bunăvoință"
+   ],
+   [
+    "Care cuvânt este format prin derivare cu prefix și sufix?",
+    "înflorire",
+    "florărie",
+    "floricică"
+   ],
+   [
+    "Care sunt mijloacele interne de îmbogățire a vocabularului?",
+    "derivarea, compunerea, conversiunea",
+    "împrumuturile din alte limbi",
+    "folosirea doar a cuvintelor vechi"
+   ],
+   [
+    "Cuvântul „weekend” este...",
+    "un împrumut din limba engleză",
+    "un cuvânt moștenit din latină",
+    "un cuvânt creat prin derivare"
+   ],
+   [
+    "Cuvântul „lume” provine din...",
+    "limba latină (cuvânt moștenit)",
+    "limba engleză",
+    "limba franceză"
+   ],
+   [
+    "În care enunț cuvântul „rău” este substantiv?",
+    "Răul trebuie învins.",
+    "Vremea este rea.",
+    "Se simte rău azi."
+   ]
+  ],
+  "comma": [
+   [
+    "Care propoziție este scrisă corect?",
+    "Ion, Maria și Andrei sunt prieteni.",
+    "Ion Maria, și Andrei sunt prieteni.",
+    "Ion, Maria, și Andrei, sunt prieteni."
+   ],
+   [
+    "Ce semn se pune după formula de adresare „Dragă Ana” într-o scrisoare?",
+    "virgulă",
+    "punct",
+    "semnul întrebării"
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Mamă, ai venit!",
+    "Mamă ai venit!",
+    "Mamă ai, venit!"
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Am cumpărat pâine, dar am uitat laptele.",
+    "Am cumpărat pâine dar, am uitat laptele.",
+    "Am cumpărat pâine dar am uitat laptele."
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Mihai, colegul meu, este campion.",
+    "Mihai colegul meu, este campion.",
+    "Mihai, colegul meu este campion."
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Dacă plouă, rămânem acasă.",
+    "Dacă plouă rămânem, acasă.",
+    "Dacă, plouă rămânem acasă."
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Citesc, desenez și mă joc.",
+    "Citesc desenez, și mă joc.",
+    "Citesc, desenez, și mă joc."
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Ploua, iar vântul bătea.",
+    "Ploua iar, vântul bătea.",
+    "Ploua, iar, vântul bătea."
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Bine, vin imediat.",
+    "Bine vin, imediat.",
+    "Bine vin imediat,"
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Voiam să plec, dar a început ploaia.",
+    "Voiam, să plec dar a început ploaia.",
+    "Voiam să plec dar, a început ploaia."
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Copii, veniți la masă!",
+    "Copii veniți la masă!",
+    "Copii veniți, la masă!"
+   ],
+   [
+    "Care propoziție este punctuată corect?",
+    "Maria, prietena mea, a venit.",
+    "Maria prietena mea a venit.",
+    "Maria, prietena mea a venit."
+   ]
+  ],
+  "dialog": [
+   [
+    "Cum se marchează începutul unei replici într-un dialog?",
+    "cu linie de dialog (—)",
+    "cu ghilimele",
+    "cu paranteze"
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "— Vii cu noi? a întrebat Ana.",
+    "— Vii cu noi, a întrebat Ana.",
+    "— Vii cu noi? A întrebat Ana."
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "— Nu știu, a răspuns Radu.",
+    "— Nu știu. a răspuns Radu.",
+    "— Nu știu a răspuns, Radu."
+   ],
+   [
+    "Care variantă este scrisă corect?",
+    "— Ajutor! a strigat copilul.",
+    "— Ajutor! A strigat copilul.",
+    "— Ajutor, a strigat copilul!"
+   ],
+   [
+    "Cu ce semn se marchează un citat în text?",
+    "ghilimele",
+    "linie de dialog",
+    "bară oblică"
+   ],
+   [
+    "Care variantă folosește corect ghilimelele?",
+    "Bunicul a spus: „Vine primăvara.”",
+    "Bunicul a spus: Vine primăvara.",
+    "Bunicul a spus: Vine „primăvara.”"
+   ],
+   [
+    "Cum se numește vorbirea în care cineva își spune singur gândurile?",
+    "monolog",
+    "dialog",
+    "descriere"
+   ],
+   [
+    "Cum se numește convorbirea dintre două sau mai multe personaje?",
+    "dialog",
+    "monolog",
+    "narațiune"
+   ],
+   [
+    "Cum se numește ceea ce spune un personaj, la rândul lui, într-un dialog?",
+    "replică",
+    "strofă",
+    "rimă"
+   ],
+   [
+    "În „— Hai la joacă! a strigat Ion.”, cuvintele „a strigat Ion” sunt:",
+    "cuvintele naratorului",
+    "replica",
+    "titlul"
+   ],
+   [
+    "Ce arată punctele de suspensie la finalul unei replici?",
+    "vorbirea rămâne neterminată",
+    "sfârșitul poveștii",
+    "o întrebare"
+   ]
+  ],
+  "phrase": [
+   [
+    "Care frază este punctuată corect?",
+    "Deși era obosit, a terminat lucrarea.",
+    "Deși era obosit a terminat, lucrarea.",
+    "Deși, era obosit a terminat lucrarea."
+   ],
+   [
+    "Care frază este punctuată corect?",
+    "Am aflat că ai câștigat concursul.",
+    "Am aflat, că ai câștigat concursul.",
+    "Am aflat că, ai câștigat concursul."
+   ],
+   [
+    "Care frază este punctuată corect?",
+    "Cartea pe care mi-ai dat-o este interesantă.",
+    "Cartea, pe care mi-ai dat-o este interesantă.",
+    "Cartea pe care mi-ai dat-o, este interesantă."
+   ],
+   [
+    "Care frază este punctuată corect?",
+    "Fratele meu, care locuiește la Cluj, a venit în vizită.",
+    "Fratele meu care locuiește la Cluj, a venit în vizită.",
+    "Fratele meu care locuiește, la Cluj a venit în vizită."
+   ],
+   [
+    "Care frază este punctuată corect?",
+    "Dacă termini tema, ieși la joacă.",
+    "Dacă termini tema ieși, la joacă.",
+    "Dacă termini, tema ieși la joacă."
+   ],
+   [
+    "Care frază este punctuată corect?",
+    "Când a sunat telefonul, mama era în grădină.",
+    "Când a sunat telefonul mama, era în grădină.",
+    "Când, a sunat telefonul mama era în grădină."
+   ],
+   [
+    "Care frază este punctuată corect?",
+    "Ploua, dar copiii se jucau afară.",
+    "Ploua dar, copiii se jucau afară.",
+    "Ploua dar copiii, se jucau afară."
+   ],
+   [
+    "Care frază este punctuată corect?",
+    "Ana citește, iar Mihai desenează.",
+    "Ana citește iar, Mihai desenează.",
+    "Ana, citește iar Mihai desenează."
+   ],
+   [
+    "Cum se punctuează propoziția subordonată așezată înaintea celei principale?",
+    "se desparte prin virgulă",
+    "nu se desparte",
+    "se desparte prin punct"
+   ],
+   [
+    "În „Ana a cumpărat mere și pere”, se pune virgulă înainte de „și”?",
+    "nu",
+    "da",
+    "numai în poezie"
+   ],
+   [
+    "Care frază este punctuată corect?",
+    "Vino, fiindcă te așteptăm.",
+    "Vino fiindcă, te așteptăm.",
+    "Vino, fiindcă, te așteptăm."
+   ]
+  ],
+  "verse": [
+   [
+    "Cum se numește potrivirea sunetelor de la sfârșitul versurilor?",
+    "rimă",
+    "strofă",
+    "ritm"
+   ],
+   [
+    "Cum se numește un grup de versuri separat de altul printr-un spațiu?",
+    "strofă",
+    "rimă",
+    "măsură"
+   ],
+   [
+    "Cum se numește un rând dintr-o poezie?",
+    "vers",
+    "strofă",
+    "replică"
+   ],
+   [
+    "Cum se numește numărul de silabe dintr-un vers?",
+    "măsură",
+    "rimă",
+    "strofă"
+   ],
+   [
+    "Câte silabe are versul „Luna pe cer a ieșit”?",
+    "7",
+    "6",
+    "8"
+   ],
+   [
+    "Care cuvânt rimează cu „floare”?",
+    "soare",
+    "stea",
+    "vânt"
+   ],
+   [
+    "Care cuvânt rimează cu „noapte”?",
+    "șoapte",
+    "noroc",
+    "nuc"
+   ],
+   [
+    "Care cuvânt rimează cu „mare”?",
+    "cărare",
+    "marinar",
+    "munte"
+   ],
+   [
+    "Cum se numește rima din schema aabb (versul 1 rimează cu 2, versul 3 cu 4)?",
+    "rimă împerecheată",
+    "rimă încrucișată",
+    "rimă îmbrățișată"
+   ],
+   [
+    "Cum se numește rima din schema abab?",
+    "rimă încrucișată",
+    "rimă împerecheată",
+    "rimă îmbrățișată"
+   ],
+   [
+    "Cum se numește rima din schema abba?",
+    "rimă îmbrățișată",
+    "rimă împerecheată",
+    "rimă încrucișată"
+   ],
+   [
+    "Câte versuri are un catren?",
+    "patru",
+    "două",
+    "șase"
+   ],
+   [
+    "Câte versuri are un distih?",
+    "două",
+    "trei",
+    "patru"
+   ],
+   [
+    "Cum se numește o strofă de trei versuri?",
+    "terțină",
+    "catren",
+    "distih"
+   ],
+   [
+    "Ritmul unei poezii este dat de...",
+    "alternanța silabelor accentuate și neaccentuate",
+    "numărul de strofe",
+    "titlul poeziei"
+   ]
+  ],
+  "verse2": [
+   [
+    "Textul liric exprimă...",
+    "sentimentele și gândurile autorului",
+    "întâmplări cu personaje",
+    "replici între personaje"
+   ],
+   [
+    "Eul liric este...",
+    "vocea care își exprimă sentimentele în poezie",
+    "autorul real al poeziei",
+    "personajul dintr-un roman"
+   ],
+   [
+    "Ce este tema unei poezii?",
+    "subiectul central pe care îl abordează",
+    "numărul de strofe",
+    "prima strofă"
+   ],
+   [
+    "Care este rolul comparației într-un text poetic?",
+    "face descrierea mai expresivă",
+    "numără versurile",
+    "stabilește titlul"
+   ],
+   [
+    "Repetiția unor cuvinte într-o poezie poate crea...",
+    "ritm și insistență asupra unei idei",
+    "un dialog",
+    "o descriere științifică"
+   ],
+   [
+    "Ce este mesajul unei poezii?",
+    "ideea sau învățătura pe care o desprindem",
+    "numele poetului",
+    "numărul silabelor"
+   ],
+   [
+    "Care este o caracteristică a textului liric?",
+    "versuri și strofe",
+    "replici marcate cu linie de dialog",
+    "acțiune povestită de un narator"
+   ],
+   [
+    "Care este o caracteristică a textului epic?",
+    "are narator și acțiune",
+    "are doar rimă",
+    "are doar monolog"
+   ],
+   [
+    "Cum se numește persoana care povestește într-un text epic?",
+    "narator",
+    "eu liric",
+    "cititor"
+   ],
+   [
+    "Expresia „frunzele aurii” creează o imagine...",
+    "vizuală",
+    "auditivă",
+    "gustativă"
+   ],
+   [
+    "Expresia „foșnetul frunzelor” creează o imagine...",
+    "auditivă",
+    "vizuală",
+    "olfactivă"
+   ]
+  ]
+ }
+}

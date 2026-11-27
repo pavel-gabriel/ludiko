@@ -1,0 +1,594 @@
+[
+  {
+    "id": "fiz.measure.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Mărimi fizice și instrumente de măsură",
+      "en": "Physical quantities and measuring instruments"
+    },
+    "prerequisites": [
+      "stiinte.instruments",
+      "mat.length.m"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-read",
+        "params": {
+          "kind": "ruler"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.measure.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.measure.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.measure.6",
+      "kind": "data",
+      "title": "Skill fiz.measure.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.length.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Lungimea și unitățile ei",
+      "en": "Length and its units"
+    },
+    "prerequisites": [
+      "fiz.measure.6",
+      "mat.measure.convert"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-convert",
+        "params": {
+          "family": "length"
+        }
+      },
+      {
+        "generator": "fiz-read",
+        "params": {
+          "kind": "ruler"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.length.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.length.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.length.6",
+      "kind": "data",
+      "title": "Skill fiz.length.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.massvol.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Masa și volumul",
+      "en": "Mass and volume"
+    },
+    "prerequisites": [
+      "fiz.length.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-convert",
+        "params": {
+          "family": [
+            "mass",
+            "volume"
+          ]
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.massvol.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.massvol.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.massvol.6",
+      "kind": "data",
+      "title": "Skill fiz.massvol.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.area.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Aria și volumul corpurilor",
+      "en": "Area and volume of bodies"
+    },
+    "prerequisites": [
+      "fiz.length.6",
+      "mat.geom.perimeter",
+      "mat.mul.2digit"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-read",
+        "params": {
+          "kind": "area"
+        }
+      },
+      {
+        "generator": "fiz-convert",
+        "params": {
+          "family": "area"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.area.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.area.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.area.6",
+      "kind": "data",
+      "title": "Skill fiz.area.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.time.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Timpul și unitățile lui",
+      "en": "Time and its units"
+    },
+    "prerequisites": [
+      "fiz.measure.6",
+      "mat.time.hm"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-convert",
+        "params": {
+          "family": "time"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.time.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.time.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.time.6",
+      "kind": "data",
+      "title": "Skill fiz.time.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.temp.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Temperatura și termometrul",
+      "en": "Temperature and the thermometer"
+    },
+    "prerequisites": [
+      "fiz.measure.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-read",
+        "params": {
+          "kind": "thermo"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.temp.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.temp.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.temp.6",
+      "kind": "data",
+      "title": "Skill fiz.temp.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.states.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Stările de agregare",
+      "en": "States of matter"
+    },
+    "prerequisites": [
+      "stiinte.matter.states",
+      "fiz.temp.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.states.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.states.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.states.6",
+      "kind": "data",
+      "title": "Skill fiz.states.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.motion.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Mișcarea și repausul",
+      "en": "Motion and rest"
+    },
+    "prerequisites": [
+      "stiinte.g2.forces",
+      "fiz.time.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.motion.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.motion.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.motion.6",
+      "kind": "data",
+      "title": "Skill fiz.motion.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.speed.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Viteza",
+      "en": "Speed"
+    },
+    "prerequisites": [
+      "fiz.motion.6",
+      "mat.dec.ops",
+      "mat.ratio.basic"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "speed"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.speed.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.speed.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.speed.6",
+      "kind": "data",
+      "title": "Skill fiz.speed.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.density.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Densitatea",
+      "en": "Density"
+    },
+    "prerequisites": [
+      "fiz.massvol.6",
+      "mat.dec.ops",
+      "mat.ratio.basic"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "density"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.density.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.density.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.density.6",
+      "kind": "data",
+      "title": "Skill fiz.density.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.force.intro.6",
+    "subject": "fiz",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Forța și efectele ei",
+      "en": "Force and its effects"
+    },
+    "prerequisites": [
+      "stiinte.magnets",
+      "fiz.motion.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.force.intro.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.force.intro.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.force.intro.6",
+      "kind": "data",
+      "title": "Skill fiz.force.intro.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  }
+]

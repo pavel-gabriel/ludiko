@@ -1,0 +1,2661 @@
+{
+ "provenance": {
+  "id": "prov.data.nat.bio",
+  "kind": "data",
+  "title": "Ludiko curated bio questions for gimnaziu",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Original questions drafted for the gimnaziu programa; no textbook or exam material. Awaiting review by a subject teacher."
+ },
+ "topics": {
+  "bio.living.5": {
+   "q": [
+    [
+     "Care dintre următoarele este o caracteristică a tuturor ființelor vii?",
+     "Se hrănesc",
+     "Sunt verzi",
+     "Au patru picioare",
+     "Trăiesc numai pe uscat"
+    ],
+    [
+     "Care dintre acestea este neînsuflețit?",
+     "Piatra",
+     "Ciuperca",
+     "Copacul",
+     "Furnica"
+    ],
+    [
+     "Ce înseamnă că ființele vii reacționează la mediu?",
+     "Răspund la schimbări, de exemplu își întorc frunzele spre lumină",
+     "Rămân mereu nemișcate",
+     "Nu au nevoie de hrană",
+     "Se transformă în piatră"
+    ],
+    [
+     "Cum se înmulțesc ființele vii?",
+     "Produc urmași asemănători cu ele",
+     "Se transformă în alte specii",
+     "Se înmulțesc doar în timpul iernii",
+     "Nu se înmulțesc niciodată"
+    ]
+   ],
+   "tf": [
+    [
+     "Toate ființele vii sunt alcătuite din celule.",
+     true
+    ],
+    [
+     "Un foc este o ființă vie pentru că se mișcă și „se hrănește” cu lemne.",
+     false
+    ],
+    [
+     "Plantele respiră, chiar dacă nu au plămâni.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare lucru în grupa potrivită.",
+     "Viu",
+     "Neînsuflețit",
+     [
+      "pisică",
+      "stejar",
+      "ciupercă",
+      "bacterie"
+     ],
+     [
+      "stâncă",
+      "apă",
+      "nisip",
+      "fier"
+     ]
+    ]
+   ]
+  },
+  "bio.cell.5": {
+   "q": [
+    [
+     "Care este unitatea de bază a ființelor vii?",
+     "Celula",
+     "Nucleul",
+     "Organul",
+     "Țesutul"
+    ],
+    [
+     "Ce parte a celulei conține informația și conduce activitatea ei?",
+     "Nucleul",
+     "Membrana",
+     "Citoplasma",
+     "Peretele celular"
+    ],
+    [
+     "Care dintre acestea se găsește numai în celula vegetală?",
+     "Cloroplastele",
+     "Nucleul",
+     "Membrana",
+     "Citoplasma"
+    ],
+    [
+     "Ce rol are membrana celulară?",
+     "Înconjoară celula și controlează ce intră și ce iese",
+     "Face hrana",
+     "Păstrează informația",
+     "Dă culoarea verde"
+    ]
+   ],
+   "tf": [
+    [
+     "Celula animală are perete celular.",
+     false
+    ],
+    [
+     "Bacteriile sunt formate dintr-o singură celulă.",
+     true
+    ],
+    [
+     "Citoplasma este lichidul din interiorul celulei.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "membrana",
+      "înconjoară celula"
+     ],
+     [
+      "nucleul",
+      "păstrează informația"
+     ],
+     [
+      "citoplasma",
+      "lichidul din celulă"
+     ],
+     [
+      "cloroplastele",
+      "fac hrana plantei"
+     ],
+     [
+      "peretele celular",
+      "dă formă celulei vegetale"
+     ]
+    ]
+   ]
+  },
+  "bio.microscope.5": {
+   "q": [
+    [
+     "Prin ce parte a microscopului privim preparatul?",
+     "Ocular",
+     "Obiectiv",
+     "Platină",
+     "Statuiv"
+    ],
+    [
+     "Pe ce parte a microscopului se așază preparatul?",
+     "Platină",
+     "Ocular",
+     "Obiectiv",
+     "Șurub micrometric"
+    ],
+    [
+     "Cum se calculează mărirea totală a microscopului?",
+     "Mărirea ocularului × mărirea obiectivului",
+     "Mărirea ocularului + mărirea obiectivului",
+     "Mărirea ocularului − mărirea obiectivului",
+     "Mărirea obiectivului ÷ mărirea ocularului"
+    ],
+    [
+     "Între ce se așază materialul pe care îl observăm la microscop?",
+     "Lamă și lamelă",
+     "Două oglinzi",
+     "Ocular și obiectiv",
+     "Platină și statuiv"
+    ]
+   ],
+   "tf": [
+    [
+     "Cu microscopul optic putem observa celule.",
+     true
+    ],
+    [
+     "Obiectivul este partea prin care privește ochiul.",
+     false
+    ]
+   ]
+  },
+  "bio.kingdoms.5": {
+   "q": [
+    [
+     "În ce regn se află ciuperca de pădure?",
+     "Ciuperci",
+     "Plante",
+     "Animale",
+     "Bacterii"
+    ],
+    [
+     "Ce regn cuprinde viețuitoarele care fac hrană prin fotosinteză?",
+     "Plante",
+     "Animale",
+     "Ciuperci",
+     "Bacterii"
+    ],
+    [
+     "Cu ce se deosebesc animalele de plante?",
+     "Nu pot produce singure hrană",
+     "Au clorofilă",
+     "Au perete celular rigid",
+     "Stau mereu fixate în sol"
+    ],
+    [
+     "Unde se încadrează un pește?",
+     "Regnul animal",
+     "Regnul plantelor",
+     "Regnul ciupercilor",
+     "Regnul mineral"
+    ]
+   ],
+   "tf": [
+    [
+     "Ciupercile fac fotosinteză ca plantele.",
+     false
+    ],
+    [
+     "Animalele nu pot produce singure hrană.",
+     true
+    ],
+    [
+     "Bacteriile sunt ființe vii.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare ființă în regnul potrivit.",
+     "Plante",
+     "Animale",
+     [
+      "stejar",
+      "trandafir",
+      "ferigă",
+      "mușchi"
+     ],
+     [
+      "vulpe",
+      "broască",
+      "albină",
+      "delfin"
+     ]
+    ]
+   ]
+  },
+  "bio.plant.groups.5": {
+   "q": [
+    [
+     "Ce plantă face conuri și are semințe neacoperite de fruct?",
+     "Bradul",
+     "Mărul",
+     "Feriga",
+     "Mușchiul"
+    ],
+    [
+     "Care grupă de plante face flori și fructe?",
+     "Angiospermele",
+     "Ferigile",
+     "Mușchii",
+     "Algele"
+    ],
+    [
+     "Cum se înmulțește feriga?",
+     "Prin spori",
+     "Prin semințe din fructe",
+     "Prin conuri",
+     "Prin ouă"
+    ],
+    [
+     "Care dintre acestea este o angiospermă?",
+     "Cireșul",
+     "Bradul",
+     "Feriga de pădure",
+     "Mușchiul de stâncă"
+    ]
+   ],
+   "tf": [
+    [
+     "Mușchii au flori frumos colorate.",
+     false
+    ],
+    [
+     "Bradul este o gimnospermă.",
+     true
+    ],
+    [
+     "Algele pot trăi în apă.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare plantă în grupa potrivită.",
+     "Cu flori și fructe",
+     "Fără flori",
+     [
+      "măr",
+      "grâu",
+      "lalea",
+      "floarea-soarelui"
+     ],
+     [
+      "ferigă",
+      "mușchi",
+      "brad",
+      "algă verde"
+     ]
+    ]
+   ]
+  },
+  "bio.animal.inv.5": {
+   "q": [
+    [
+     "Câte picioare are o insectă?",
+     "6",
+     "4",
+     "8",
+     "10"
+    ],
+    [
+     "Care animal NU este nevertebrat?",
+     "Broasca",
+     "Albina",
+     "Melcul",
+     "Râma"
+    ],
+    [
+     "În ce părți este împărțit corpul unei insecte?",
+     "Cap, torace, abdomen",
+     "Cap și trunchi",
+     "Cap, coadă, picioare",
+     "Torace și coadă"
+    ],
+    [
+     "Care animal are corpul alungit, format din inele?",
+     "Râma",
+     "Melcul",
+     "Albina",
+     "Racul"
+    ]
+   ],
+   "tf": [
+    [
+     "Păianjenul este o insectă.",
+     false
+    ],
+    [
+     "Melcul face parte din nevertebrate.",
+     true
+    ],
+    [
+     "Majoritatea animalelor de pe Pământ sunt nevertebrate.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare animal în grupa potrivită.",
+     "Nevertebrat",
+     "Vertebrat",
+     [
+      "albină",
+      "melc",
+      "râmă",
+      "păianjen"
+     ],
+     [
+      "pește",
+      "șopârlă",
+      "vrabie",
+      "pisică"
+     ]
+    ]
+   ]
+  },
+  "bio.animal.vert.5": {
+   "q": [
+    [
+     "Ce animale își hrănesc puii cu lapte?",
+     "Mamiferele",
+     "Păsările",
+     "Reptilele",
+     "Peștii"
+    ],
+    [
+     "Cu ce respiră peștii?",
+     "Branhii",
+     "Plămâni",
+     "Piele umedă",
+     "Trahee"
+    ],
+    [
+     "Din ce grupă face parte broasca?",
+     "Amfibieni",
+     "Reptile",
+     "Pești",
+     "Mamifere"
+    ],
+    [
+     "Care dintre acestea are corpul acoperit cu pene?",
+     "Barza",
+     "Liliacul",
+     "Crocodilul",
+     "Delfinul"
+    ]
+   ],
+   "tf": [
+    [
+     "Liliacul este o pasăre pentru că zboară.",
+     false
+    ],
+    [
+     "Reptilele au pielea acoperită cu solzi.",
+     true
+    ],
+    [
+     "Delfinul este un pește.",
+     false
+    ]
+   ],
+   "m": [
+    [
+     [
+      "pește",
+      "branhii și solzi"
+     ],
+     [
+      "amfibian",
+      "piele umedă"
+     ],
+     [
+      "reptilă",
+      "solzi uscați"
+     ],
+     [
+      "pasăre",
+      "pene"
+     ],
+     [
+      "mamifer",
+      "păr și lapte"
+     ]
+    ]
+   ]
+  },
+  "bio.ecosystem.5": {
+   "q": [
+    [
+     "Care dintre acestea este un ecosistem?",
+     "Lacul cu viețuitoarele lui",
+     "Un singur copac tăiat",
+     "Un bolovan",
+     "O ciupercă izolată"
+    ],
+    [
+     "Care dintre acestea face parte din partea neînsuflețită a ecosistemului?",
+     "Lumina soarelui",
+     "Veverița",
+     "Stejarul",
+     "Ciuperca"
+    ],
+    [
+     "De ce este important fiecare organism din ecosistem?",
+     "Ființele depind unele de altele",
+     "Doar plantele contează",
+     "Doar animalele mari contează",
+     "Nu contează, ecosistemul funcționează oricum"
+    ]
+   ],
+   "tf": [
+    [
+     "Pădurea este un ecosistem.",
+     true
+    ],
+    [
+     "Într-un ecosistem, ființele vii nu depind de mediul lor.",
+     false
+    ],
+    [
+     "Aerul și apa fac parte din ecosistem.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare element în partea potrivită a ecosistemului.",
+     "Parte vie",
+     "Parte neînsuflețită",
+     [
+      "iepure",
+      "mesteacăn",
+      "ciupercă",
+      "râmă"
+     ],
+     [
+      "apă",
+      "sol",
+      "lumină",
+      "aer"
+     ]
+    ]
+   ]
+  },
+  "bio.foodchain.5": {
+   "q": [
+    [
+     "Cu ce începe un lanț trofic?",
+     "Cu un producător, o plantă",
+     "Cu un carnivor",
+     "Cu un descompunător",
+     "Cu un animal mare"
+    ],
+    [
+     "Care este consumator de ordinul I?",
+     "Iepurele",
+     "Vulpea",
+     "Iarba",
+     "Ciuperca"
+    ],
+    [
+     "Ce rol au bacteriile și ciupercile de descompunere?",
+     "Descompun resturile organice",
+     "Fac fotosinteză",
+     "Vânează animale",
+     "Produc lumină"
+    ],
+    [
+     "Care lanț trofic este corect?",
+     "iarbă → iepure → vulpe",
+     "vulpe → iepure → iarbă",
+     "iepure → iarbă → vulpe",
+     "iarbă → vulpe → iepure"
+    ]
+   ],
+   "tf": [
+    [
+     "Plantele sunt producători.",
+     true
+    ],
+    [
+     "Un lanț trofic poate începe cu un lup.",
+     false
+    ],
+    [
+     "Lupul mănâncă iepuri, deci este consumator de ordinul II.",
+     true
+    ]
+   ],
+   "o": [
+    [
+     "Așază lanțul trofic în ordine, de la producător la ultimul consumator.",
+     "frunză de varză",
+     "omidă",
+     "pițigoi",
+     "uliu"
+    ],
+    [
+     "Așază lanțul trofic în ordine.",
+     "iarbă",
+     "lăcustă",
+     "broască",
+     "șarpe"
+    ],
+    [
+     "Așază lanțul trofic în ordine.",
+     "grâu",
+     "șoarece",
+     "bufniță"
+    ]
+   ]
+  },
+  "bio.adapt.5": {
+   "q": [
+    [
+     "Ce adaptare ajută ursul polar să reziste în frig?",
+     "Blana deasă și grăsimea",
+     "Aripile",
+     "Spinii",
+     "Branhiile"
+    ],
+    [
+     "Cum își păstrează cactusul apa?",
+     "Are tulpină groasă, care înmagazinează apă",
+     "Are frunze mari și subțiri",
+     "Are rădăcini scurte",
+     "Trăiește în apă"
+    ],
+    [
+     "Ce este camuflajul?",
+     "Asemănarea cu mediul, care ascunde animalul",
+     "Un zgomot puternic",
+     "Un mod de a mânca",
+     "Un fel de somn"
+    ],
+    [
+     "Care adaptare ajută peștele să înoate?",
+     "Corpul alungit și înotătoarele",
+     "Penele",
+     "Cornul",
+     "Spinii"
+    ]
+   ],
+   "tf": [
+    [
+     "Adaptările apar într-o singură zi.",
+     false
+    ],
+    [
+     "Cămila este adaptată vieții în deșert.",
+     true
+    ],
+    [
+     "Un animal adaptat la frig supraviețuiește ușor și în deșert.",
+     false
+    ]
+   ],
+   "m": [
+    [
+     [
+      "cactus",
+      "păstrează apa în tulpină"
+     ],
+     [
+      "urs polar",
+      "grăsime și blană deasă"
+     ],
+     [
+      "pește",
+      "înotătoare"
+     ],
+     [
+      "cameleon",
+      "își schimbă culoarea"
+     ],
+     [
+      "cămilă",
+      "rezistă mult fără apă"
+     ]
+    ]
+   ]
+  },
+  "bio.protect.5": {
+   "q": [
+    [
+     "Care este un exemplu de ocrotire a naturii?",
+     "Colectarea selectivă a deșeurilor",
+     "Defrișarea pădurii",
+     "Aruncarea gunoiului în râu",
+     "Vânatul animalelor rare"
+    ],
+    [
+     "Ce este o rezervație naturală?",
+     "O zonă în care natura și speciile sunt protejate",
+     "Un teren de fotbal",
+     "O fabrică",
+     "O piață"
+    ],
+    [
+     "Ce se întâmplă când se taie nemăsurat pădurile?",
+     "Dispar animale și crește riscul de inundații",
+     "Apar mai multe specii",
+     "Aerul devine mai curat",
+     "Nu se întâmplă nimic"
+    ],
+    [
+     "Care obicei economisește apa?",
+     "Închidem robinetul când ne spălăm pe dinți",
+     "Lăsăm robinetul deschis",
+     "Spălăm mașina zilnic",
+     "Udăm ploaia"
+    ]
+   ],
+   "tf": [
+    [
+     "Colectarea selectivă ajută la reciclare.",
+     true
+    ],
+    [
+     "Delta Dunării este o zonă protejată.",
+     true
+    ],
+    [
+     "Aruncatul gunoiului în natură nu face rău animalelor.",
+     false
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare faptă în grupa potrivită.",
+     "Ocrotește natura",
+     "Dăunează naturii",
+     [
+      "plantăm copaci",
+      "reciclăm hârtia",
+      "economisim apa",
+      "adunăm gunoiul după picnic"
+     ],
+     [
+      "aprindem focuri în pădure",
+      "aruncăm baterii la gunoi",
+      "rupem flori rare",
+      "lăsăm gunoaie pe malul apei"
+     ]
+    ]
+   ]
+  },
+  "bio.plant.root.6": {
+   "q": [
+    [
+     "Care este rolul principal al rădăcinii?",
+     "Fixează planta și absoarbe apa cu săruri minerale",
+     "Face fotosinteza",
+     "Produce semințe",
+     "Atrage insectele"
+    ],
+    [
+     "Prin ce parte a rădăcinii intră apa în plantă?",
+     "Perișorii absorbanți",
+     "Vârful tulpinii",
+     "Frunzele",
+     "Floarea"
+    ],
+    [
+     "Ce tip de rădăcină are grâul?",
+     "Firoasă",
+     "Pivotantă",
+     "Aeriană",
+     "Nu are rădăcină"
+    ],
+    [
+     "Care dintre acestea este o rădăcină păstrătoare de hrană?",
+     "Morcovul",
+     "Mărul",
+     "Frunza de salată",
+     "Floarea-soarelui"
+    ]
+   ],
+   "tf": [
+    [
+     "Rădăcina absoarbe apa și sărurile minerale din sol.",
+     true
+    ],
+    [
+     "Toate rădăcinile sunt subterane.",
+     false
+    ],
+    [
+     "Morcovul este o tulpină.",
+     false
+    ]
+   ]
+  },
+  "bio.plant.stem.6": {
+   "q": [
+    [
+     "Ce transportă tulpina?",
+     "Sevă brută și sevă elaborată",
+     "Doar aer",
+     "Doar lumină",
+     "Doar semințe"
+    ],
+    [
+     "Cum este tulpina stejarului?",
+     "Lemnoasă",
+     "Erbacee",
+     "Subterană",
+     "Foarte scurtă"
+    ],
+    [
+     "Ce arată inelele de creștere din trunchiul unui copac?",
+     "Vârsta copacului",
+     "Numărul de frunze",
+     "Culoarea florilor",
+     "Adâncimea rădăcinii"
+    ],
+    [
+     "Ce numim sevă brută?",
+     "Apa cu săruri minerale absorbită din sol",
+     "Hrana făcută în frunze",
+     "Un fruct dulce",
+     "Un tip de aer"
+    ]
+   ],
+   "tf": [
+    [
+     "Tulpina susține frunzele și florile.",
+     true
+    ],
+    [
+     "Sevă brută este făcută în frunze.",
+     false
+    ],
+    [
+     "La grâu tulpina se numește pai.",
+     true
+    ]
+   ]
+  },
+  "bio.plant.leaf.6": {
+   "q": [
+    [
+     "Cum se numește partea lățită a frunzei?",
+     "Limb",
+     "Pețiol",
+     "Nervură",
+     "Mugure"
+    ],
+    [
+     "Prin ce deschideri iau plantele aer?",
+     "Stomate",
+     "Nervuri",
+     "Rădăcini",
+     "Spini"
+    ],
+    [
+     "Ce substanță dă frunzelor culoarea verde?",
+     "Clorofila",
+     "Zahărul",
+     "Apa",
+     "Amidonul"
+    ],
+    [
+     "Ce se întâmplă toamna cu clorofila din frunze?",
+     "Se descompune și frunzele se colorează în galben sau roșu",
+     "Se înmulțește",
+     "Se transformă în fructe",
+     "Nu se schimbă"
+    ]
+   ],
+   "tf": [
+    [
+     "Frunza are pețiol, limb și nervuri.",
+     true
+    ],
+    [
+     "Stomatele sunt rădăcini mici.",
+     false
+    ],
+    [
+     "Frunzele conțin clorofilă.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "limb",
+      "partea lățită a frunzei"
+     ],
+     [
+      "pețiol",
+      "codița frunzei"
+     ],
+     [
+      "nervuri",
+      "prin ele circulă seva"
+     ],
+     [
+      "stomate",
+      "deschideri pentru gaze"
+     ]
+    ]
+   ]
+  },
+  "bio.plant.photo.6": {
+   "q": [
+    [
+     "Ce produc plantele prin fotosinteză?",
+     "Substanțe organice și oxigen",
+     "Doar apă",
+     "Dioxid de carbon și apă",
+     "Doar lumină"
+    ],
+    [
+     "Ce este necesar fotosintezei?",
+     "Lumină, apă și dioxid de carbon",
+     "Numai apă",
+     "Întuneric și oxigen",
+     "Numai sol"
+    ],
+    [
+     "În ce parte a celulei are loc fotosinteza?",
+     "În cloroplaste",
+     "În nucleu",
+     "În membrană",
+     "În peretele celular"
+    ],
+    [
+     "Când respiră plantele?",
+     "Zi și noapte",
+     "Numai ziua",
+     "Numai noaptea",
+     "Numai vara"
+    ]
+   ],
+   "tf": [
+    [
+     "Fotosinteza se desfășoară numai la lumină.",
+     true
+    ],
+    [
+     "Prin fotosinteză plantele consumă oxigen.",
+     false
+    ],
+    [
+     "Plantele respiră și noaptea.",
+     true
+    ]
+   ],
+   "o": [
+    [
+     "Așază în ordine pașii fotosintezei.",
+     "Frunzele primesc lumină",
+     "Clorofila folosește lumina",
+     "Din apă și dioxid de carbon se face zahăr",
+     "Planta eliberează oxigen"
+    ]
+   ]
+  },
+  "bio.plant.flower.6": {
+   "q": [
+    [
+     "Care este partea masculină a florii?",
+     "Staminele",
+     "Pistilul",
+     "Sepalele",
+     "Petalele"
+    ],
+    [
+     "Ce se formează din ovar după fecundare?",
+     "Fructul",
+     "Frunza",
+     "Rădăcina",
+     "Polenul"
+    ],
+    [
+     "Cum se numește transportul polenului pe pistil?",
+     "Polenizare",
+     "Germinare",
+     "Fotosinteză",
+     "Respirație"
+    ],
+    [
+     "Cine poate transporta polenul de la o floare la alta?",
+     "Albinele și vântul",
+     "Doar ploaia",
+     "Doar pietrele",
+     "Doar păsările de pradă"
+    ]
+   ],
+   "tf": [
+    [
+     "Petalele formează corola.",
+     true
+    ],
+    [
+     "Pistilul produce polen.",
+     false
+    ],
+    [
+     "Albinele ajută la polenizare.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "stamine",
+      "produc polen"
+     ],
+     [
+      "pistil",
+      "conține ovulele"
+     ],
+     [
+      "petale",
+      "formează corola"
+     ],
+     [
+      "sepale",
+      "formează caliciul"
+     ]
+    ]
+   ]
+  },
+  "bio.plant.fruit.6": {
+   "q": [
+    [
+     "De ce are nevoie o sămânță ca să germineze?",
+     "Apă, aer și căldură",
+     "Doar lumină",
+     "Doar sol bogat",
+     "Doar frig"
+    ],
+    [
+     "Ce iese prima dată din sămânța care germinează?",
+     "Radicula (viitoarea rădăcină)",
+     "Floarea",
+     "Fructul",
+     "Frunza mare"
+    ],
+    [
+     "Care este rolul fructului?",
+     "Protejează și ajută la răspândirea semințelor",
+     "Face fotosinteza",
+     "Absoarbe apa",
+     "Susține planta"
+    ],
+    [
+     "Cum se răspândesc semințele de păpădie?",
+     "Cu vântul",
+     "Prin apă",
+     "Prin spori",
+     "Se scutură în sol sub plantă"
+    ]
+   ],
+   "tf": [
+    [
+     "Sămânța conține embrionul unei plante noi.",
+     true
+    ],
+    [
+     "Germinația are loc fără apă.",
+     false
+    ],
+    [
+     "Fructul se formează din ovar.",
+     true
+    ]
+   ],
+   "o": [
+    [
+     "Așază în ordine etapele de dezvoltare a unei plante din sămânță.",
+     "sămânță",
+     "germinație",
+     "plantă tânără",
+     "floare",
+     "fruct"
+    ]
+   ]
+  },
+  "bio.plant.repro.6": {
+   "q": [
+    [
+     "Cum se înmulțește căpșunul în mod vegetativ?",
+     "Prin stoloni",
+     "Prin spori",
+     "Prin conuri",
+     "Prin ouă"
+    ],
+    [
+     "Cum se înmulțește cartoful vegetativ?",
+     "Prin tuberculi",
+     "Prin stoloni",
+     "Prin polen",
+     "Prin conuri"
+    ],
+    [
+     "Cum se înmulțesc ferigile?",
+     "Prin spori",
+     "Prin flori",
+     "Prin fructe",
+     "Prin butași"
+    ],
+    [
+     "Ce este un butaș?",
+     "O bucată de plantă care înrădăcinează și crește",
+     "O sămânță mare",
+     "O floare ofilită",
+     "Un fruct uscat"
+    ]
+   ],
+   "tf": [
+    [
+     "Plantele noi obținute vegetativ seamănă cu planta-mamă.",
+     true
+    ],
+    [
+     "Toate plantele se înmulțesc doar prin semințe.",
+     false
+    ],
+    [
+     "Salcia se poate înmulți prin butași.",
+     true
+    ]
+   ]
+  },
+  "bio.animal.feed.6": {
+   "q": [
+    [
+     "Care animal este omnivor?",
+     "Ursul",
+     "Vaca",
+     "Leul",
+     "Calul"
+    ],
+    [
+     "Ce mănâncă ierbivorele?",
+     "Plante",
+     "Alte animale",
+     "Numai insecte",
+     "Numai pești"
+    ],
+    [
+     "Ce fac rumegătoarele cu hrana?",
+     "O readuc în gură și o mestecă din nou",
+     "O depozitează în ghearele",
+     "O filtrează prin branhii",
+     "O înghit întreagă mereu"
+    ],
+    [
+     "Ce animal este carnivor?",
+     "Lupul",
+     "Oaia",
+     "Iepurele",
+     "Calul"
+    ]
+   ],
+   "tf": [
+    [
+     "Păsările au dinți cu care mestecă hrana.",
+     false
+    ],
+    [
+     "Vaca este rumegătoare.",
+     true
+    ],
+    [
+     "Digestia se termină în gură.",
+     false
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare animal după hrană.",
+     "Ierbivor",
+     "Carnivor",
+     [
+      "vaca",
+      "iepurele",
+      "calul",
+      "oaia"
+     ],
+     [
+      "leul",
+      "lupul",
+      "vulturul",
+      "rechinul"
+     ]
+    ]
+   ]
+  },
+  "bio.animal.move.6": {
+   "q": [
+    [
+     "Cu ce înoată peștii?",
+     "Înotătoare",
+     "Aripi",
+     "Picioare",
+     "Gheare"
+    ],
+    [
+     "Cum se deplasează șarpele?",
+     "Se târăște",
+     "Zboară",
+     "Înoată cu înotătoare",
+     "Sare"
+    ],
+    [
+     "De ce migrează unele păsări?",
+     "Caută condiții mai bune de hrană și temperatură",
+     "Vor să schimbe culoarea",
+     "Ca să doarmă mai mult",
+     "Pentru a nu mai zbura"
+    ],
+    [
+     "Care animal se deplasează prin sărituri?",
+     "Broasca",
+     "Șarpele",
+     "Peștele",
+     "Racul pe uscat"
+    ]
+   ],
+   "tf": [
+    [
+     "Berzele migrează toamna spre zone mai calde.",
+     true
+    ],
+    [
+     "Toate animalele se deplasează în același fel.",
+     false
+    ],
+    [
+     "Delfinul înoată cu înotătoare.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "pește",
+      "înoată"
+     ],
+     [
+      "pasăre",
+      "zboară"
+     ],
+     [
+      "șarpe",
+      "se târăște"
+     ],
+     [
+      "broască",
+      "sare"
+     ],
+     [
+      "leopard",
+      "aleargă"
+     ]
+    ]
+   ]
+  },
+  "bio.animal.breath.6": {
+   "q": [
+    [
+     "Cu ce organe respiră insectele?",
+     "Trahei",
+     "Branhii",
+     "Plămâni",
+     "Piele umedă numai"
+    ],
+    [
+     "Cu ce respiră peștii?",
+     "Branhii",
+     "Plămâni",
+     "Trahei",
+     "Spiracule"
+    ],
+    [
+     "Ce face sângele în corpul animalului?",
+     "Duce oxigen și hrană la celule",
+     "Face lumină",
+     "Digeră hrana",
+     "Susține corpul"
+    ],
+    [
+     "Prin ce respiră râma?",
+     "Prin pielea umedă",
+     "Prin branhii",
+     "Prin plămâni",
+     "Prin trahei"
+    ]
+   ],
+   "tf": [
+    [
+     "Mamiferele respiră cu plămâni.",
+     true
+    ],
+    [
+     "Peștii respiră cu plămâni, ca oamenii.",
+     false
+    ],
+    [
+     "Inima pompează sângele.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "pește",
+      "branhii"
+     ],
+     [
+      "insectă",
+      "trahei"
+     ],
+     [
+      "mamifer",
+      "plămâni"
+     ],
+     [
+      "râmă",
+      "piele umedă"
+     ]
+    ]
+   ]
+  },
+  "bio.animal.senses.6": {
+   "q": [
+    [
+     "Ce animal are mirosul foarte dezvoltat?",
+     "Câinele",
+     "Cârtița",
+     "Peștele de adâncuri",
+     "Broasca țestoasă"
+    ],
+    [
+     "Ce face sistemul nervos?",
+     "Primește informații și coordonează corpul",
+     "Digeră hrana",
+     "Pompează sângele",
+     "Absoarbe oxigenul"
+    ],
+    [
+     "Care animal se orientează după ecou?",
+     "Liliacul",
+     "Vaca",
+     "Calul",
+     "Iepurele"
+    ],
+    [
+     "Care este rolul organelor de simț?",
+     "Primesc informații din mediu",
+     "Fac hrană",
+     "Apără corpul de frig",
+     "Produc sânge"
+    ]
+   ],
+   "tf": [
+    [
+     "Creierul face parte din sistemul nervos.",
+     true
+    ],
+    [
+     "Toate animalele văd la fel de bine.",
+     false
+    ],
+    [
+     "Reflexul este o reacție rapidă și înnăscută.",
+     true
+    ]
+   ]
+  },
+  "bio.animal.repro.6": {
+   "q": [
+    [
+     "Ce înseamnă vivipar?",
+     "Naște pui vii",
+     "Depune ouă",
+     "Se înmulțește prin spori",
+     "Se înmulțește prin butași"
+    ],
+    [
+     "Care animal este ovipar?",
+     "Găina",
+     "Pisica",
+     "Vaca",
+     "Delfinul"
+    ],
+    [
+     "Cum se dezvoltă fluturele?",
+     "Ou, larvă, pupă, adult",
+     "Ou, adult",
+     "Pui, adult",
+     "Larvă, ou, pupă, adult"
+    ],
+    [
+     "Cum se numește puiul broaștei, care trăiește în apă?",
+     "Mormoloc",
+     "Larvă de albină",
+     "Pui de pește",
+     "Pupă"
+    ]
+   ],
+   "tf": [
+    [
+     "Majoritatea mamiferelor sunt vivipare.",
+     true
+    ],
+    [
+     "Fluturele are dezvoltare directă.",
+     false
+    ],
+    [
+     "Mormolocul respiră cu branhii.",
+     true
+    ]
+   ],
+   "o": [
+    [
+     "Așază în ordine dezvoltarea fluturelui.",
+     "ou",
+     "larvă",
+     "pupă",
+     "fluture adult"
+    ],
+    [
+     "Așază în ordine dezvoltarea broaștei.",
+     "icre",
+     "mormoloc",
+     "broscuță",
+     "broască adultă"
+    ]
+   ]
+  },
+  "bio.body.org.7": {
+   "q": [
+    [
+     "Cum se numește un grup de celule asemănătoare, cu aceeași funcție?",
+     "Țesut",
+     "Organ",
+     "Sistem",
+     "Organism"
+    ],
+    [
+     "Din ce sunt formate organele?",
+     "Din mai multe țesuturi",
+     "Dintr-o singură celulă",
+     "Din oase",
+     "Din sânge"
+    ],
+    [
+     "Ce tip de țesut formează mușchii care mișcă oasele?",
+     "Țesut muscular",
+     "Țesut epitelial",
+     "Țesut nervos",
+     "Țesut conjunctiv"
+    ],
+    [
+     "Ce este un sistem de organe?",
+     "Organe care lucrează împreună pentru o funcție",
+     "Un singur organ mare",
+     "O celulă specializată",
+     "O boală"
+    ]
+   ],
+   "tf": [
+    [
+     "Țesuturile formează organe.",
+     true
+    ],
+    [
+     "Pielea este un țesut epitelial care acoperă corpul.",
+     true
+    ],
+    [
+     "Sistemele de organe lucrează independent, fără legătură.",
+     false
+    ]
+   ],
+   "o": [
+    [
+     "Așază nivelurile de organizare de la mic la mare.",
+     "celulă",
+     "țesut",
+     "organ",
+     "sistem de organe",
+     "organism"
+    ]
+   ]
+  },
+  "bio.skeleton.7": {
+   "q": [
+    [
+     "Ce organ protejează craniul?",
+     "Creierul",
+     "Inima",
+     "Plămânii",
+     "Stomacul"
+    ],
+    [
+     "Care os este un os lung?",
+     "Femurul",
+     "Omoplatul",
+     "Oasele încheieturii mâinii",
+     "Vertebra"
+    ],
+    [
+     "Ce leagă oasele între ele?",
+     "Articulațiile",
+     "Nervii",
+     "Tendoanele sângelui",
+     "Pielea"
+    ],
+    [
+     "Unde se formează celulele sângelui?",
+     "În măduva osoasă",
+     "În stomac",
+     "În plămâni",
+     "În ficat numai"
+    ]
+   ],
+   "tf": [
+    [
+     "Cutia toracică protejează inima și plămânii.",
+     true
+    ],
+    [
+     "Oasele sunt corpuri moarte, care nu se schimbă.",
+     false
+    ],
+    [
+     "Calciul ajută la formarea oaselor sănătoase.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "craniu",
+      "protejează creierul"
+     ],
+     [
+      "coloana vertebrală",
+      "susține trunchiul"
+     ],
+     [
+      "cutia toracică",
+      "protejează inima și plămânii"
+     ],
+     [
+      "femur",
+      "osul coapsei"
+     ]
+    ]
+   ]
+  },
+  "bio.muscles.7": {
+   "q": [
+    [
+     "Cu ce se leagă mușchii scheletici de oase?",
+     "Tendoane",
+     "Ligamente de piele",
+     "Vene",
+     "Nervi doar"
+    ],
+    [
+     "Care mușchi se mișcă fără voia noastră?",
+     "Mușchiul inimii",
+     "Bicepsul",
+     "Cvadricepsul",
+     "Mușchii de la picior"
+    ],
+    [
+     "Ce se întâmplă cu bicepsul când îndoim brațul?",
+     "Se contractă",
+     "Se relaxează complet",
+     "Dispare",
+     "Se transformă în os"
+    ],
+    [
+     "Ce ajută la întărirea mușchilor?",
+     "Mișcarea regulată",
+     "Stat mult în pat",
+     "Lipsa mișcării",
+     "Dormitul puțin"
+    ]
+   ],
+   "tf": [
+    [
+     "Mușchii scheletici sunt voluntari.",
+     true
+    ],
+    [
+     "Inima este formată din mușchi netezi.",
+     false
+    ],
+    [
+     "Mușchii lucrează în perechi.",
+     true
+    ]
+   ]
+  },
+  "bio.digestive.7": {
+   "q": [
+    [
+     "Unde se absorb cele mai multe substanțe utile din hrană?",
+     "În intestinul subțire",
+     "În esofag",
+     "În stomac",
+     "În gură"
+    ],
+    [
+     "Ce organ face legătura dintre gură și stomac?",
+     "Esofagul",
+     "Traheea",
+     "Intestinul gros",
+     "Ficatul"
+    ],
+    [
+     "Ce se absoarbe în principal în intestinul gros?",
+     "Apa",
+     "Proteinele",
+     "Zahărul",
+     "Oxigenul"
+    ],
+    [
+     "Ce organ produce bila?",
+     "Ficatul",
+     "Stomacul",
+     "Pancreasul",
+     "Esofagul"
+    ]
+   ],
+   "tf": [
+    [
+     "Digestia începe în gură.",
+     true
+    ],
+    [
+     "Stomacul absoarbe aproape toate substanțele utile.",
+     false
+    ],
+    [
+     "Saliva ajută la digestia unor alimente.",
+     true
+    ]
+   ],
+   "o": [
+    [
+     "Așază în ordine drumul hranei prin tubul digestiv.",
+     "gură",
+     "esofag",
+     "stomac",
+     "intestin subțire",
+     "intestin gros"
+    ]
+   ]
+  },
+  "bio.nutrition.7": {
+   "q": [
+    [
+     "Ce nutrienți sunt necesari în principal pentru creșterea corpului?",
+     "Proteinele",
+     "Dulciurile",
+     "Sarea",
+     "Cafeaua"
+    ],
+    [
+     "Care aliment este bogat în glucide?",
+     "Pâinea",
+     "Uleiul",
+     "Peștele",
+     "Ouăle"
+    ],
+    [
+     "Ce nutrienți găsim din belșug în fructe și legume?",
+     "Vitamine și minerale",
+     "Numai grăsimi",
+     "Numai proteine",
+     "Nicio substanță utilă"
+    ],
+    [
+     "Care obicei contribuie la o alimentație sănătoasă?",
+     "Mese variate cu legume și fructe",
+     "Doar dulciuri",
+     "Fără mic dejun",
+     "Doar băuturi acidulate"
+    ]
+   ],
+   "tf": [
+    [
+     "Proteinele ajută la construirea țesuturilor.",
+     true
+    ],
+    [
+     "O alimentație sănătoasă conține un singur fel de aliment.",
+     false
+    ],
+    [
+     "Apa este necesară zilnic.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare aliment în categoria potrivită.",
+     "Bogat în proteine",
+     "Bogat în glucide",
+     [
+      "ouă",
+      "carne de pui",
+      "brânză",
+      "fasole"
+     ],
+     [
+      "pâine",
+      "paste",
+      "orez",
+      "cartofi"
+     ]
+    ]
+   ]
+  },
+  "bio.respiratory.7": {
+   "q": [
+    [
+     "Unde are loc schimbul de gaze?",
+     "În alveolele pulmonare",
+     "În trahee",
+     "În nas",
+     "În laringe"
+    ],
+    [
+     "Care este ordinea corectă a căilor respiratorii?",
+     "Nas, faringe, laringe, trahee, bronhii",
+     "Nas, bronhii, trahee, laringe",
+     "Gură, esofag, trahee",
+     "Nas, esofag, stomac"
+    ],
+    [
+     "Ce gaz trece din aer în sânge în plămâni?",
+     "Oxigenul",
+     "Dioxidul de carbon",
+     "Azotul numai",
+     "Hidrogenul"
+    ],
+    [
+     "Ce mușchi ajută mult la respirație?",
+     "Diafragma",
+     "Bicepsul",
+     "Tricepsul",
+     "Mușchiul inimii"
+    ]
+   ],
+   "tf": [
+    [
+     "Alveolele pulmonare sunt locul schimbului de gaze.",
+     true
+    ],
+    [
+     "Prin expirație eliminăm mai mult oxigen decât dioxid de carbon.",
+     false
+    ],
+    [
+     "Fumatul dăunează plămânilor.",
+     true
+    ]
+   ],
+   "o": [
+    [
+     "Așază în ordine drumul aerului.",
+     "nas",
+     "faringe",
+     "laringe",
+     "trahee",
+     "bronhii",
+     "plămâni"
+    ]
+   ]
+  },
+  "bio.circulatory.7": {
+   "q": [
+    [
+     "Ce vase duc sângele de la inimă către corp?",
+     "Arterele",
+     "Venele",
+     "Capilarele numai",
+     "Bronhiile"
+    ],
+    [
+     "Ce celule din sânge transportă oxigenul?",
+     "Globulele roșii",
+     "Globulele albe",
+     "Trombocitele",
+     "Plasma"
+    ],
+    [
+     "Ce rol au trombocitele?",
+     "Ajută la oprirea sângerării",
+     "Transportă oxigen",
+     "Apără de microbi",
+     "Digeră hrana"
+    ],
+    [
+     "Câte camere are inima umană?",
+     "4",
+     "2",
+     "3",
+     "6"
+    ]
+   ],
+   "tf": [
+    [
+     "Venele aduc sângele la inimă.",
+     true
+    ],
+    [
+     "Globulele albe transportă oxigenul.",
+     false
+    ],
+    [
+     "Capilarele sunt vase foarte subțiri.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "globule roșii",
+      "transportă oxigen"
+     ],
+     [
+      "globule albe",
+      "apără organismul"
+     ],
+     [
+      "trombocite",
+      "oprirea sângerării"
+     ],
+     [
+      "plasmă",
+      "partea lichidă a sângelui"
+     ]
+    ]
+   ]
+  },
+  "bio.excretory.7": {
+   "q": [
+    [
+     "Ce organ filtrează sângele și produce urina?",
+     "Rinichiul",
+     "Ficatul",
+     "Stomacul",
+     "Plămânul"
+    ],
+    [
+     "Unde se adună urina înainte să fie eliminată?",
+     "În vezica urinară",
+     "În uretere numai",
+     "În rinichi",
+     "În intestin"
+    ],
+    [
+     "Prin ce se elimină dioxidul de carbon?",
+     "Prin plămâni",
+     "Prin rinichi",
+     "Prin piele numai",
+     "Prin vezica urinară"
+    ],
+    [
+     "Ce ajută rinichii să funcționeze bine?",
+     "Apa băută zilnic",
+     "Lipsa lichidelor",
+     "Sărurile în exces",
+     "Zahărul mult"
+    ]
+   ],
+   "tf": [
+    [
+     "Transpirația elimină apă și săruri prin piele.",
+     true
+    ],
+    [
+     "Rinichii sunt organe ale sistemului respirator.",
+     false
+    ],
+    [
+     "Uretra elimină urina din corp.",
+     true
+    ]
+   ]
+  },
+  "bio.nervous.7": {
+   "q": [
+    [
+     "Ce parte a encefalului ajută la echilibru și coordonare?",
+     "Cerebelul",
+     "Creierul mare",
+     "Măduva spinării",
+     "Nervul optic"
+    ],
+    [
+     "Din ce este format centrul sistemului nervos?",
+     "Encefal și măduva spinării",
+     "Doar nervi",
+     "Doar creier",
+     "Inimă și plămâni"
+    ],
+    [
+     "Ce este reflexul?",
+     "Un răspuns rapid, involuntar",
+     "O decizie luată cu grijă",
+     "O boală",
+     "Un mușchi"
+    ],
+    [
+     "Ce rol au nervii?",
+     "Transmit semnale între organe și centrii nervoși",
+     "Digeră hrana",
+     "Fac sângele",
+     "Produc oase"
+    ]
+   ],
+   "tf": [
+    [
+     "Măduva spinării face parte din sistemul nervos central.",
+     true
+    ],
+    [
+     "Reflexul necesită gândire îndelungată.",
+     false
+    ],
+    [
+     "Odihna ajută sistemul nervos.",
+     true
+    ]
+   ]
+  },
+  "bio.senses.7": {
+   "q": [
+    [
+     "Unde se formează imaginea în ochi?",
+     "Pe retină",
+     "Pe cristalin",
+     "Pe pleoapă",
+     "Pe cornee"
+    ],
+    [
+     "Ce simț are limba?",
+     "Gustul",
+     "Mirosul",
+     "Văzul",
+     "Auzul"
+    ],
+    [
+     "Ce nerv duce informațiile din ochi către creier?",
+     "Nervul optic",
+     "Nervul auditiv",
+     "Nervul sciatic",
+     "Nervul olfactiv"
+    ],
+    [
+     "Ce parte a urechii se află în interior, cea mai adâncă?",
+     "Urechea internă",
+     "Urechea externă",
+     "Pavilionul",
+     "Canalul extern"
+    ]
+   ],
+   "tf": [
+    [
+     "Pielea este organ de simț pentru tact.",
+     true
+    ],
+    [
+     "Mirosul se simte cu ajutorul limbii.",
+     false
+    ],
+    [
+     "Zgomotul puternic poate strica auzul.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "ochi",
+      "văz"
+     ],
+     [
+      "ureche",
+      "auz"
+     ],
+     [
+      "nas",
+      "miros"
+     ],
+     [
+      "limbă",
+      "gust"
+     ],
+     [
+      "piele",
+      "tact"
+     ]
+    ]
+   ]
+  },
+  "bio.endocrine.7": {
+   "q": [
+    [
+     "Ce produc glandele endocrine?",
+     "Hormoni",
+     "Oase",
+     "Globule roșii",
+     "Lacrimi doar"
+    ],
+    [
+     "Ce hormon produce pancreasul pentru reglarea glicemiei?",
+     "Insulina",
+     "Adrenalina",
+     "Tiroxina",
+     "Melatonina"
+    ],
+    [
+     "Ce glandă reglează metabolismul?",
+     "Tiroida",
+     "Pancreasul",
+     "Hipofiza",
+     "Rinichiul"
+    ],
+    [
+     "Cum circulă hormonii prin corp?",
+     "Prin sânge",
+     "Prin aer",
+     "Prin oase",
+     "Prin mușchi"
+    ]
+   ],
+   "tf": [
+    [
+     "Hormonii sunt transportați prin sânge.",
+     true
+    ],
+    [
+     "Hipofiza nu are legătură cu creșterea.",
+     false
+    ],
+    [
+     "Insulina reglează nivelul zahărului din sânge.",
+     true
+    ]
+   ]
+  },
+  "bio.reproduction.7": {
+   "q": [
+    [
+     "Cum se numește celula formată din unirea gameților?",
+     "Zigot",
+     "Spermatozoid",
+     "Ovul",
+     "Embrion"
+    ],
+    [
+     "Unde se dezvoltă embrionul uman?",
+     "În uter",
+     "În stomac",
+     "În ovar",
+     "În trompă numai"
+    ],
+    [
+     "Cât durează aproximativ sarcina la om?",
+     "Nouă luni",
+     "Trei luni",
+     "Un an",
+     "O lună"
+    ],
+    [
+     "Ce etapă urmează după copilărie?",
+     "Adolescența",
+     "Bătrânețea",
+     "Embrionul",
+     "Maturitatea târzie"
+    ]
+   ],
+   "tf": [
+    [
+     "Zigotul este prima celulă a unui nou organism.",
+     true
+    ],
+    [
+     "Embrionul se dezvoltă în stomacul mamei.",
+     false
+    ],
+    [
+     "Adolescența aduce schimbări fizice și emoționale.",
+     true
+    ]
+   ],
+   "o": [
+    [
+     "Așază în ordine etapele vieții omului.",
+     "zigot",
+     "embrion",
+     "copilărie",
+     "adolescență",
+     "maturitate"
+    ]
+   ]
+  },
+  "bio.cell.division.8": {
+   "q": [
+    [
+     "Ce rezultă din mitoza unei celule?",
+     "Două celule identice cu ea",
+     "Patru celule diferite",
+     "O celulă cu jumătate din cromozomi",
+     "Un țesut gata format"
+    ],
+    [
+     "Ce se formează prin meioză?",
+     "Gameți",
+     "Celule ale pielii",
+     "Celule ale mușchilor",
+     "Celule ale oaselor"
+    ],
+    [
+     "Câți cromozomi are o celulă a corpului uman?",
+     "46",
+     "23",
+     "92",
+     "12"
+    ],
+    [
+     "Câți cromozomi are un gamet uman?",
+     "23",
+     "46",
+     "12",
+     "92"
+    ]
+   ],
+   "tf": [
+    [
+     "Mitoza ajută la creșterea organismului și la vindecarea rănilor.",
+     true
+    ],
+    [
+     "Gameții au același număr de cromozomi ca celulele corpului.",
+     false
+    ],
+    [
+     "Înainte de mitoză, cromozomii se copiază.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "mitoză",
+      "două celule identice"
+     ],
+     [
+      "meioză",
+      "gameți cu jumătate din cromozomi"
+     ],
+     [
+      "zigot",
+      "celula-ou"
+     ],
+     [
+      "cromozomi",
+      "poartă informația ereditară"
+     ]
+    ]
+   ]
+  },
+  "bio.dna.8": {
+   "q": [
+    [
+     "Unde se află cromozomii în celulă?",
+     "În nucleu",
+     "În membrană",
+     "În peretele celular",
+     "În citoplasmă, liberi"
+    ],
+    [
+     "Ce este o genă?",
+     "O porțiune de ADN care determină o însușire",
+     "O celulă mică",
+     "Un organ",
+     "Un tip de țesut"
+    ],
+    [
+     "Ce formă are molecula de ADN?",
+     "Dublu helix",
+     "Cerc",
+     "Pătrat",
+     "Triunghi"
+    ],
+    [
+     "De la cine moștenește un copil cromozomii?",
+     "De la ambii părinți",
+     "Doar de la mamă",
+     "Doar de la tată",
+     "De la niciunul"
+    ]
+   ],
+   "tf": [
+    [
+     "ADN-ul conține informația ereditară.",
+     true
+    ],
+    [
+     "Genele sunt mai mari decât cromozomii.",
+     false
+    ],
+    [
+     "Un copil primește jumătate din cromozomi de la fiecare părinte.",
+     true
+    ]
+   ]
+  },
+  "bio.heredity.8": {
+   "q": [
+    [
+     "Ce este genotipul?",
+     "Alcătuirea genetică a individului",
+     "Aspectul lui exterior",
+     "Numărul de frunze",
+     "Numărul de cromozomi"
+    ],
+    [
+     "Ce genotip are un individ homozigot recesiv?",
+     "aa",
+     "AA",
+     "Aa",
+     "aA"
+    ],
+    [
+     "Ce fenotip are un individ cu genotipul Aa?",
+     "Dominant",
+     "Recesiv",
+     "Mixt, ca o culoare intermediară",
+     "Nu are"
+    ],
+    [
+     "Ce este un individ heterozigot?",
+     "Are două alele diferite pentru caracter",
+     "Are două alele identice",
+     "Nu are alele",
+     "Are trei alele"
+    ]
+   ],
+   "tf": [
+    [
+     "Alela recesivă se manifestă numai când este în dublu exemplar.",
+     true
+    ],
+    [
+     "Genotipul și fenotipul sunt același lucru.",
+     false
+    ],
+    [
+     "Mendel a lucrat cu plante de mazăre.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "AA",
+      "homozigot dominant"
+     ],
+     [
+      "Aa",
+      "heterozigot"
+     ],
+     [
+      "aa",
+      "homozigot recesiv"
+     ],
+     [
+      "alelă",
+      "forma unei gene"
+     ]
+    ]
+   ]
+  },
+  "bio.punnett.8": {
+   "q": [
+    [
+     "Ce gameți produce un individ Aa?",
+     "A și a",
+     "Numai A",
+     "Numai a",
+     "Aa"
+    ],
+    [
+     "Ce raport fenotipic apare la Aa × Aa?",
+     "3 dominant : 1 recesiv",
+     "1 : 1",
+     "1 : 3",
+     "Toți dominanți"
+    ],
+    [
+     "Din încrucișarea AA × aa, ce genotip au toți descendenții?",
+     "Aa",
+     "AA",
+     "aa",
+     "Jumătate AA, jumătate aa"
+    ],
+    [
+     "Ce se obține la Aa × aa?",
+     "50 % Aa și 50 % aa",
+     "Toți Aa",
+     "Toți aa",
+     "25 % AA"
+    ]
+   ]
+  },
+  "bio.mutation.8": {
+   "q": [
+    [
+     "Ce este mutația?",
+     "O schimbare a materialului genetic",
+     "O boală contagioasă",
+     "O adaptare de moment",
+     "Un tip de celulă"
+    ],
+    [
+     "Care este o cauză a mutațiilor?",
+     "Radiațiile și unele substanțe chimice",
+     "Hrana sănătoasă",
+     "Somnul",
+     "Mersul pe jos"
+    ],
+    [
+     "De ce există variabilitate între indivizii unei specii?",
+     "Din combinarea genelor părinților și din mutații",
+     "Pentru că toți au aceleași gene",
+     "Din cauza vremii",
+     "Din cauza vârstei"
+    ],
+    [
+     "Ce este hemofilia?",
+     "O boală ereditară a coagulării sângelui",
+     "Un tip de gripă",
+     "O alergie",
+     "O infecție"
+    ]
+   ],
+   "tf": [
+    [
+     "Toate mutațiile sunt dăunătoare.",
+     false
+    ],
+    [
+     "Variabilitatea este importantă pentru evoluție.",
+     true
+    ],
+    [
+     "Hemofilia este o boală cu cauză genetică.",
+     true
+    ]
+   ]
+  },
+  "bio.evolution.8": {
+   "q": [
+    [
+     "Cine a formulat teoria selecției naturale?",
+     "Charles Darwin",
+     "Gregor Mendel",
+     "Louis Pasteur",
+     "Isaac Newton"
+    ],
+    [
+     "Ce se întâmplă cu indivizii mai bine adaptați?",
+     "Supraviețuiesc și se înmulțesc mai ușor",
+     "Dispar primii",
+     "Nu se mai înmulțesc",
+     "Devin mai mari mereu"
+    ],
+    [
+     "Cât durează de obicei evoluția unei specii noi?",
+     "Multe generații, sute sau mii de ani și mai mult",
+     "O zi",
+     "O săptămână",
+     "O lună"
+    ],
+    [
+     "Ce arată ciocurile diferite ale păsărilor din Galapagos?",
+     "Adaptarea la hrană diferită",
+     "Că păsările sunt bolnave",
+     "Că nu s-au schimbat",
+     "Că au migrat din Africa numai"
+    ]
+   ],
+   "tf": [
+    [
+     "În selecția naturală supraviețuiesc cei mai bine adaptați.",
+     true
+    ],
+    [
+     "Evoluția are loc într-o singură generație.",
+     false
+    ],
+    [
+     "Însușirile avantajoase se pot transmite urmașilor.",
+     true
+    ]
+   ],
+   "o": [
+    [
+     "Așază etapele selecției naturale.",
+     "Indivizii diferă între ei",
+     "Mediul schimbă condițiile",
+     "Cei adaptați supraviețuiesc și se înmulțesc",
+     "Însușirile avantajoase devin frecvente"
+    ]
+   ]
+  },
+  "bio.fossils.8": {
+   "q": [
+    [
+     "Ce sunt fosilele?",
+     "Rămășițe sau urme ale unor organisme vechi",
+     "Roci noi",
+     "Plante vii",
+     "Obiecte din plastic"
+    ],
+    [
+     "Ce fosile sunt, de obicei, mai vechi?",
+     "Cele din straturile de jos",
+     "Cele de la suprafață",
+     "Cele din apă",
+     "Cele din muzee"
+    ],
+    [
+     "Ce dovadă a evoluției este asemănarea ADN-ului?",
+     "Specii înrudite au ADN mai asemănător",
+     "Toate speciile au ADN identic",
+     "ADN-ul nu se studiază",
+     "Doar plantele au ADN"
+    ],
+    [
+     "În ce se păstrează de obicei fosilele?",
+     "În roci sedimentare",
+     "În foc",
+     "În aer",
+     "În apă pură"
+    ]
+   ],
+   "tf": [
+    [
+     "Fosilele ajută la reconstituirea istoriei vieții.",
+     true
+    ],
+    [
+     "Fosilele sunt întotdeauna animale vii.",
+     false
+    ],
+    [
+     "Straturile de jos ale rocilor sunt de obicei mai vechi.",
+     true
+    ]
+   ]
+  },
+  "bio.humanevol.8": {
+   "q": [
+    [
+     "Cum se numește omul actual?",
+     "Homo sapiens",
+     "Homo erectus",
+     "Australopithecus",
+     "Neanderthal"
+    ],
+    [
+     "Unde au apărut strămoșii omului?",
+     "În Africa",
+     "În Antarctica",
+     "În Australia",
+     "În America de Sud"
+    ],
+    [
+     "Care a fost o etapă importantă în evoluția omului?",
+     "Mersul pe două picioare",
+     "Zborul",
+     "Viața în apă",
+     "Hibernarea"
+    ],
+    [
+     "Ce au în comun oamenii și maimuțele?",
+     "Strămoși comuni",
+     "Aceeași specie",
+     "Același număr de picioare doar",
+     "Nimic"
+    ]
+   ],
+   "tf": [
+    [
+     "Toți oamenii actuali aparțin aceleiași specii.",
+     true
+    ],
+    [
+     "Omul provine din maimuța actuală.",
+     false
+    ],
+    [
+     "Stăpânirea focului a fost importantă pentru oameni.",
+     true
+    ]
+   ]
+  },
+  "bio.ecology.8": {
+   "q": [
+    [
+     "Care este un factor abiotic?",
+     "Temperatura",
+     "Lupul",
+     "Ciuperca",
+     "Stejarul"
+    ],
+    [
+     "Ce este biocenoza?",
+     "Totalitatea populațiilor dintr-un ecosistem",
+     "Doar plantele",
+     "Locul fizic de viață",
+     "Doar animalele"
+    ],
+    [
+     "Ce este biotopul?",
+     "Mediul neînsuflețit al ecosistemului",
+     "Ființele vii",
+     "O populație de lupi",
+     "O boală"
+    ],
+    [
+     "Ce relație este între o căpușă și un câine?",
+     "Parazitism",
+     "Simbioză",
+     "Competiție între prădători",
+     "Neutralitate"
+    ]
+   ],
+   "tf": [
+    [
+     "Lumina este un factor abiotic.",
+     true
+    ],
+    [
+     "O populație include specii diferite.",
+     false
+    ],
+    [
+     "Prădătorii și prada fac parte din relațiile biotice.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare factor în categoria potrivită.",
+     "Abiotic",
+     "Biotic",
+     [
+      "lumina",
+      "temperatura",
+      "apa",
+      "solul"
+     ],
+     [
+      "lupul",
+      "iarba",
+      "ciupercile",
+      "bacteriile"
+     ]
+    ]
+   ]
+  },
+  "bio.pollution.8": {
+   "q": [
+    [
+     "Care este o sursă de poluare a aerului?",
+     "Gazele de eșapament",
+     "Plantarea copacilor",
+     "Panourile solare",
+     "Mersul pe bicicletă"
+    ],
+    [
+     "Care gest reduce poluarea?",
+     "Reciclarea deșeurilor",
+     "Arderea plasticului",
+     "Aruncarea ambalajelor în râu",
+     "Folosirea mașinii pentru distanțe mici"
+    ],
+    [
+     "Ce este o energie regenerabilă?",
+     "Energia solară",
+     "Cărbunele",
+     "Petrolul",
+     "Gazul natural"
+    ],
+    [
+     "Ce provoacă poluarea apei?",
+     "Deversarea deșeurilor în râuri",
+     "Ploaia curată",
+     "Zăpada",
+     "Izvoarele de munte"
+    ]
+   ],
+   "tf": [
+    [
+     "Reciclarea reduce cantitatea de deșeuri.",
+     true
+    ],
+    [
+     "Ploile acide sunt cauzate de aerul curat.",
+     false
+    ],
+    [
+     "Energia eoliană este regenerabilă.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare faptă în grupa potrivită.",
+     "Reduce poluarea",
+     "Crește poluarea",
+     [
+      "reciclăm sticla",
+      "mergem cu bicicleta",
+      "folosim panouri solare",
+      "plantăm copaci"
+     ],
+     [
+      "ardem gunoiul",
+      "aruncăm uleiul în chiuvetă",
+      "lăsăm motorul pornit",
+      "abandonăm deșeuri în pădure"
+     ]
+    ]
+   ]
+  },
+  "bio.biodiversity.8": {
+   "q": [
+    [
+     "Ce este biodiversitatea?",
+     "Varietatea ființelor vii dintr-o zonă",
+     "Numărul de oameni",
+     "Numărul de clădiri",
+     "Cantitatea de apă"
+    ],
+    [
+     "Care este o cauză a pierderii biodiversității?",
+     "Distrugerea habitatelor",
+     "Plantarea pădurilor",
+     "Reciclarea",
+     "Protejarea rezervațiilor"
+    ],
+    [
+     "Ce zonă din România este foarte bogată în specii?",
+     "Delta Dunării",
+     "Un oraș mare",
+     "O autostradă",
+     "O carieră"
+    ],
+    [
+     "Ce este o specie dispărută?",
+     "O specie care nu mai există nicăieri",
+     "O specie foarte numeroasă",
+     "O specie nouă",
+     "O specie periculoasă"
+    ]
+   ],
+   "tf": [
+    [
+     "Parcurile naționale ajută la protejarea biodiversității.",
+     true
+    ],
+    [
+     "Distrugerea habitatelor nu afectează speciile.",
+     false
+    ],
+    [
+     "Fiecare specie are un rol în ecosistem.",
+     true
+    ]
+   ]
+  }
+ }
+}

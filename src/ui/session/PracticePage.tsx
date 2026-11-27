@@ -2,6 +2,8 @@ import { useCallback, useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { getExplanation, getSkill } from '@/engine/content/registry'
+import { isBig } from '@/older/ageBand'
+import { recordBitDone } from '@/older/olderStore'
 import { localize, type Item, type Skill } from '@/engine/types'
 import { getSessionItems } from './itemSource'
 import SessionResults from './SessionResults'
@@ -12,8 +14,14 @@ import { useSessionProgress } from './useSessionProgress'
 const PRACTICE_COUNT = 8
 const SPRINT_COUNT = 20
 
-function itemsFor(skill: Skill, mode: SessionMode): Item[] {
-  const count = mode === 'sprint' ? SPRINT_COUNT : mode === 'check' ? skill.masteryCheck.items : PRACTICE_COUNT
+/** `?n=10` sets the length of a check (the self-chosen test of grades V–VIII) */
+function parseCount(raw: string | null): number | null {
+  const n = Number(raw)
+  return Number.isInteger(n) && n >= 1 && n <= 30 ? n : null
+}
+
+function itemsFor(skill: Skill, mode: SessionMode, checkCount: number | null = null): Item[] {
+  const count = mode === 'sprint' ? SPRINT_COUNT : mode === 'check' ? (checkCount ?? skill.masteryCheck.items) : PRACTICE_COUNT
   return getSessionItems(skill, count)
 }
 
@@ -31,10 +39,11 @@ export default function PracticePage() {
   const progress = useSessionProgress()
   const resetReward = progress.reset
 
+  const checkCount = parseCount(params.get('n'))
   const [mode, setMode] = useState<SessionMode | null>(() => parseMode(params.get('mode')))
   const [items, setItems] = useState<Item[] | null>(() => {
     const initial = parseMode(params.get('mode'))
-    return initial && skill ? itemsFor(skill, initial) : null
+    return initial && skill ? itemsFor(skill, initial, checkCount) : null
   })
   const [runId, setRunId] = useState(0)
   const [summary, setSummary] = useState<SessionSummary | null>(null)
@@ -42,13 +51,13 @@ export default function PracticePage() {
   const start = useCallback(
     (m: SessionMode) => {
       if (!skill) return
-      setItems(itemsFor(skill, m))
+      setItems(itemsFor(skill, m, checkCount))
       setMode(m)
       setSummary(null)
       setRunId((n) => n + 1)
       resetReward()
     },
-    [skill, resetReward],
+    [skill, resetReward, checkCount],
   )
 
   const explanationFor = useCallback(
@@ -62,7 +71,7 @@ export default function PracticePage() {
     [skill],
   )
 
-  const backToList = () => navigate('/practice')
+  const backToList = () => navigate(progress.profile && isBig(progress.profile.grade) ? '/learn' : '/practice')
 
   if (!skill) {
     return (
@@ -83,6 +92,7 @@ export default function PracticePage() {
         summary={summary}
         reward={progress.reward}
         isGuest={progress.isGuest}
+        profile={progress.profile}
         onAgain={() => start(summary.mode)}
         onDone={backToList}
       />
@@ -101,6 +111,7 @@ export default function PracticePage() {
         onAttempt={progress.onAttempt}
         onFinish={(s) => {
           setSummary(s)
+          if (s.completed && progress.profile) recordBitDone(progress.profile.id)
           progress.onFinish(s)
         }}
         onExit={backToList}

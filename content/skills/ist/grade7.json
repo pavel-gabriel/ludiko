@@ -1,0 +1,668 @@
+[
+ {
+  "id": "ist.discoveries.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Marile descoperiri geografice",
+   "en": "The Great Geographical Discoveries"
+  },
+  "prerequisites": [
+   "ist.crusades.6",
+   "ist.ottoman.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "disc"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "disc"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.discoveries.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.discoveries.7",
+   "kind": "data",
+   "title": "Skill ist.discoveries.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.renaissance.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Renașterea: artă, știință, tipar",
+   "en": "The Renaissance: art, science, printing"
+  },
+  "prerequisites": [
+   "ist.discoveries.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "ren"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "ren"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.renaissance.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.renaissance.7",
+   "kind": "data",
+   "title": "Skill ist.renaissance.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.reformation.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Reforma religioasă",
+   "en": "The Reformation"
+  },
+  "prerequisites": [
+   "ist.renaissance.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "ref"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "ref"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.reformation.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.reformation.7",
+   "kind": "data",
+   "title": "Skill ist.reformation.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.enlightenment.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Absolutismul și Iluminismul",
+   "en": "Absolutism and the Enlightenment"
+  },
+  "prerequisites": [
+   "ist.reformation.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "enl"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "enl"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.enlightenment.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.enlightenment.7",
+   "kind": "data",
+   "title": "Skill ist.enlightenment.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.revolutions.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Revoluțiile: americană, franceză, Napoleon",
+   "en": "The revolutions: American, French, Napoleon"
+  },
+  "prerequisites": [
+   "ist.enlightenment.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "rev"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "rev"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.revolutions.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.revolutions.7",
+   "kind": "data",
+   "title": "Skill ist.revolutions.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.industrial.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Revoluția industrială",
+   "en": "The Industrial Revolution"
+  },
+  "prerequisites": [
+   "ist.revolutions.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "ind"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "ind"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.industrial.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.industrial.7",
+   "kind": "data",
+   "title": "Skill ist.industrial.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.phanariot.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Brâncoveanu, Cantemir și epoca fanariotă",
+   "en": "Brâncoveanu, Cantemir and the Phanariot era"
+  },
+  "prerequisites": [
+   "ist.mihai.6",
+   "ist.ottoman.6",
+   "ist.enlightenment.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "phan"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "phan"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.phanariot.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.phanariot.7",
+   "kind": "data",
+   "title": "Skill ist.phanariot.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.1821.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Anul 1821 și Regulamentele Organice",
+   "en": "The year 1821 and the Organic Regulations"
+  },
+  "prerequisites": [
+   "ist.phanariot.7",
+   "ist.revolutions.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "y1821"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "y1821"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.1821.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.1821.7",
+   "kind": "data",
+   "title": "Skill ist.1821.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.1848.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Revoluția de la 1848",
+   "en": "The Revolution of 1848"
+  },
+  "prerequisites": [
+   "ist.1821.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "y1848"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "y1848"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.1848.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.1848.7",
+   "kind": "data",
+   "title": "Skill ist.1848.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.union.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Unirea Principatelor și Alexandru Ioan Cuza",
+   "en": "The Union of the Principalities and Alexandru Ioan Cuza"
+  },
+  "prerequisites": [
+   "ist.1848.7",
+   "ist.union1859.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "union"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "union"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.union.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.union.7",
+   "kind": "data",
+   "title": "Skill ist.union.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.independence.7",
+  "subject": "ist",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Independența și Regatul României",
+   "en": "Independence and the Kingdom of Romania"
+  },
+  "prerequisites": [
+   "ist.union.7",
+   "ist.independence.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "indep"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "indep"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.independence.7"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.independence.7",
+   "kind": "data",
+   "title": "Skill ist.independence.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ }
+]

@@ -21,7 +21,7 @@ export const ITEM_TYPES = [
   'listen-and-answer',
 ] as const;
 
-export const SUBJECT_IDS = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'] as const;
+export const SUBJECT_IDS = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim'] as const;
 export const REVIEW_STATUSES = ['auto-checked', 'beta', 'reviewed'] as const;
 export const VISUAL_KINDS = ['number-line', 'base10-blocks', 'clock', 'money', 'objects', 'fraction', 'shape', 'ruler', 'grid', 'image'] as const;
 

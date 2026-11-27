@@ -1,0 +1,699 @@
+[
+  {
+    "id": "mat.alg8.expand",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "4.2"
+      }
+    ],
+    "title": {
+      "ro": "Formule de calcul prescurtat: dezvoltări",
+      "en": "Short-cut formulas: expansions"
+    },
+    "prerequisites": [
+      "mat.int.muldiv",
+      "mat.nat.order.powers"
+    ],
+    "itemSources": [
+      {
+        "generator": "algebra",
+        "params": {
+          "modes": [
+            "expandSq",
+            "expandSq",
+            "expandDiff",
+            "expandProd",
+            "identity",
+            "numeric"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.alg8.expand"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.alg8.expand",
+      "kind": "data",
+      "title": "Skill mat.alg8.expand",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.alg8.factor",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "4.2"
+      }
+    ],
+    "title": {
+      "ro": "Descompunerea în factori",
+      "en": "Factorisation"
+    },
+    "prerequisites": [
+      "mat.alg8.expand"
+    ],
+    "itemSources": [
+      {
+        "generator": "algebra",
+        "params": {
+          "modes": [
+            "factor"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.alg8.factor"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.alg8.factor",
+      "kind": "data",
+      "title": "Skill mat.alg8.factor",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.alg8.simplify",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "4.2"
+      }
+    ],
+    "title": {
+      "ro": "Calcul algebric: reducere și valori numerice",
+      "en": "Algebraic calculation: simplifying and numerical values"
+    },
+    "prerequisites": [
+      "mat.alg8.expand",
+      "mat.eq7.linear"
+    ],
+    "itemSources": [
+      {
+        "generator": "algebra",
+        "params": {
+          "modes": [
+            "eval",
+            "eval",
+            "simplify",
+            "simplify"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.alg8.simplify"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.alg8.simplify",
+      "kind": "data",
+      "title": "Skill mat.alg8.simplify",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.real8.radicals",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "4.2"
+      }
+    ],
+    "title": {
+      "ro": "Calcule cu radicali",
+      "en": "Calculating with radicals"
+    },
+    "prerequisites": [
+      "mat.sqrt7.perfect",
+      "mat.real7.irrational"
+    ],
+    "itemSources": [
+      {
+        "generator": "sqrt",
+        "params": {
+          "modes": [
+            "simplify",
+            "simplify",
+            "radSum",
+            "prodRoot",
+            "expr"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.real8.radicals"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.real8.radicals",
+      "kind": "data",
+      "title": "Skill mat.real8.radicals",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.eq8.linear",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Ecuații cu paranteze și fracții",
+      "en": "Equations with brackets and fractions"
+    },
+    "prerequisites": [
+      "mat.eq7.linear",
+      "mat.alg8.simplify"
+    ],
+    "itemSources": [
+      {
+        "generator": "linear-equation",
+        "params": {
+          "kinds": [
+            "paren",
+            "paren",
+            "frac",
+            "rational",
+            "both"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eq8.linear"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.eq8.linear",
+      "kind": "data",
+      "title": "Skill mat.eq8.linear",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.ineq8",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.1"
+      }
+    ],
+    "title": {
+      "ro": "Inecuații de gradul I",
+      "en": "Linear inequalities"
+    },
+    "prerequisites": [
+      "mat.eq7.linear",
+      "mat.int.numberline"
+    ],
+    "itemSources": [
+      {
+        "generator": "linear-equation",
+        "params": {
+          "kinds": [
+            "ineq"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.ineq8"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.ineq8",
+      "kind": "data",
+      "title": "Skill mat.ineq8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.func8.value",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.3"
+      }
+    ],
+    "title": {
+      "ro": "Funcția liniară: valori și puncte pe grafic",
+      "en": "The linear function: values and points on the graph"
+    },
+    "prerequisites": [
+      "mat.eq7.linear",
+      "mat.int.muldiv"
+    ],
+    "itemSources": [
+      {
+        "generator": "linear-function",
+        "params": {
+          "modes": [
+            "value",
+            "value",
+            "pointValue",
+            "point",
+            "monotone"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.func8.value"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.func8.value",
+      "kind": "data",
+      "title": "Skill mat.func8.value",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.func8.graph",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.3"
+      }
+    ],
+    "title": {
+      "ro": "Graficul funcției liniare: intersecții, panta, ecuația dreptei",
+      "en": "The graph of the linear function: intersections, slope, equation of the line"
+    },
+    "prerequisites": [
+      "mat.func8.value",
+      "mat.eq7.system"
+    ],
+    "itemSources": [
+      {
+        "generator": "linear-function",
+        "params": {
+          "modes": [
+            "zero",
+            "oy",
+            "slope",
+            "slope",
+            "eqline",
+            "line2"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.func8.graph"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.func8.graph",
+      "kind": "data",
+      "title": "Skill mat.func8.graph",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.solid8.prism",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Cub, paralelipiped și prismă: arii și volume",
+      "en": "Cube, cuboid and prism: areas and volumes"
+    },
+    "prerequisites": [
+      "mat.geom7.quad",
+      "mat.geom7.pyth"
+    ],
+    "itemSources": [
+      {
+        "generator": "areas-volumes",
+        "params": {
+          "topics": [
+            "cube",
+            "cube",
+            "box",
+            "box",
+            "prism"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.solid8.prism"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.solid8.prism",
+      "kind": "data",
+      "title": "Skill mat.solid8.prism",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.solid8.pyramid",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Piramida regulată: apotema, arii, volum",
+      "en": "The regular pyramid: apothem, areas, volume"
+    },
+    "prerequisites": [
+      "mat.solid8.prism",
+      "mat.geom7.pyth"
+    ],
+    "itemSources": [
+      {
+        "generator": "areas-volumes",
+        "params": {
+          "topics": [
+            "pyramid"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.solid8.pyramid"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.solid8.pyramid",
+      "kind": "data",
+      "title": "Skill mat.solid8.pyramid",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.solid8.round",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Cilindru, con, sferă și cerc: arii și volume",
+      "en": "Cylinder, cone, sphere and circle: areas and volumes"
+    },
+    "prerequisites": [
+      "mat.solid8.prism",
+      "mat.geom7.pyth"
+    ],
+    "itemSources": [
+      {
+        "generator": "areas-volumes",
+        "params": {
+          "topics": [
+            "circle",
+            "cylinder",
+            "cone",
+            "sphere"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.solid8.round"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.solid8.round",
+      "kind": "data",
+      "title": "Skill mat.solid8.round",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.prob8.simple",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.6"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.4"
+      }
+    ],
+    "title": {
+      "ro": "Probabilități: cazuri favorabile și cazuri posibile",
+      "en": "Probability: favourable and possible cases"
+    },
+    "prerequisites": [
+      "mat.frac6.ops",
+      "mat.divis6.factor"
+    ],
+    "itemSources": [
+      {
+        "generator": "probability",
+        "params": {
+          "scenarios": [
+            "urn",
+            "die",
+            "numbers",
+            "dice2",
+            "coins"
+          ],
+          "asks": [
+            "prob",
+            "prob",
+            "fav",
+            "total",
+            "percent",
+            "complement"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.prob8.simple"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.prob8.simple",
+      "kind": "data",
+      "title": "Skill mat.prob8.simple",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.stat8",
+    "subject": "mat",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.6"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.3"
+      }
+    ],
+    "title": {
+      "ro": "Statistică: medie, mediană, modul",
+      "en": "Statistics: mean, median, mode"
+    },
+    "prerequisites": [
+      "mat.stat6"
+    ],
+    "itemSources": [
+      {
+        "generator": "statistics",
+        "params": {
+          "modes": [
+            "mean",
+            "median",
+            "median",
+            "mode",
+            "missing",
+            "weighted"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stat8"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.stat8",
+      "kind": "data",
+      "title": "Skill mat.stat8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  }
+]

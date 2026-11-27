@@ -37,6 +37,7 @@ const TermsPage = lazy(() => import('@/components/legal/TermsPage'));
 const CreateRoom = lazy(() => import('@/components/lobby/CreateRoom'));
 const JoinRoom = lazy(() => import('@/components/lobby/JoinRoom'));
 const LobbyPage = lazy(() => import('@/components/lobby/LobbyPage'));
+const ChallengePage = lazy(() => import('@/ui/older/ChallengePage'));
 const GameRouter = lazy(() => import('@/components/games/GameRouter'));
 const InteractiveSetupPage = lazy(() => import('@/components/lobby/InteractiveSetupPage'));
 const InteractiveGamePage = lazy(
@@ -84,6 +85,7 @@ export default function AppRoutes() {
           <Route path="/learn/mission/:subject" element={<MissionPage />} />
           <Route path="/learn/bit/:subject/:index" element={<BitPage />} />
           <Route path="/learn/map/:subject" element={<SkillMapPage />} />
+          <Route path="/learn/challenge" element={<ChallengePage />} />
           <Route path="/learn/parent" element={<ParentPage />} />
           <Route path="/learn/exam" element={<ExamPickerPage />} />
           <Route path="/learn/exam/:exam/:test" element={<ExamRunPage />} />

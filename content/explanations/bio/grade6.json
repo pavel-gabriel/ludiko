@@ -1,0 +1,602 @@
+[
+  {
+    "id": "exp.bio.plant.root.6",
+    "skillId": "bio.plant.root.6",
+    "title": {
+      "ro": "Rădăcina",
+      "en": "The root"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Rădăcina fixează planta în sol și absoarbe apa cu sărurile minerale. Ea crește de obicei în pământ, în sens opus luminii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "La vârful rădăcinii se află perișorii absorbanți, prin care intră apa. Unele rădăcini păstrează hrană: morcovul, sfecla și ridichea au rădăcini cărnoase."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥕",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Rădăcina poate fi pivotantă (o rădăcină principală și altele mai mici, ca la stejar) sau firoasă (multe rădăcini subțiri, ca la grâu)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.plant.root.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.plant.root.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.plant.stem.6",
+    "skillId": "bio.plant.stem.6",
+    "title": {
+      "ro": "Tulpina",
+      "en": "The stem"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Tulpina susține frunzele, florile și fructele și transportă sevele între rădăcină și frunze. Sevă brută urcă de jos în sus, iar sevă elaborată coboară de la frunze spre restul plantei."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌿",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Tulpina poate fi erbacee (moale și verde, ca la floarea-soarelui) sau lemnoasă (tare, ca la stejar). Copacii au trunchi, iar la grâu tulpina este pai."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌲",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Anual, în trunchiul copacilor se formează un inel de creștere; numărându-le, putem afla vârsta copacului. Tulpina se poate târî, agăța sau înfășura."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎋",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.plant.stem.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.plant.stem.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.plant.leaf.6",
+    "skillId": "bio.plant.leaf.6",
+    "title": {
+      "ro": "Frunza",
+      "en": "The leaf"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Frunza are limb (partea lățită), pețiol (codița) și nervuri. Prin nervuri circulă seva. Frunzele sunt verzi pentru că au clorofilă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍃",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pe fața inferioară a frunzei sunt mici deschideri, numite stomate, prin care intră și ies gazele: aer și vapori de apă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Toamna, clorofila se descompune, iar frunzele devin galbene sau roșii. Frunzele pot fi simple sau compuse, cu marginea întreagă sau crestată."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍂",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.plant.leaf.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.plant.leaf.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.plant.photo.6",
+    "skillId": "bio.plant.photo.6",
+    "title": {
+      "ro": "Fotosinteza și respirația plantelor",
+      "en": "Photosynthesis and plant respiration"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fotosinteza este procesul prin care plantele verzi fac hrană: din apă, dioxid de carbon și lumină produc substanțe organice (zahăr) și oxigen. Are loc în cloroplaste, cu ajutorul clorofilei."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "În timpul fotosintezei plantele eliberează oxigen, deci curăță aerul. Fotosinteza are loc numai la lumină."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍃",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Plantele respiră tot timpul, ziua și noaptea: iau oxigen și elimină dioxid de carbon. Respirația și fotosinteza sunt procese diferite."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫧",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.plant.photo.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.plant.photo.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.plant.flower.6",
+    "skillId": "bio.plant.flower.6",
+    "title": {
+      "ro": "Floarea",
+      "en": "The flower"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Floarea este organul de reproducere al plantelor cu flori. Are caliciu (sepale), corolă (petale), stamine (partea masculină) și pistil (partea feminină)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌸",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Staminele produc polen, iar pistilul conține ovulele. Când polenul ajunge pe pistil, are loc polenizarea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐝",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Polenizarea se face prin insecte, vânt sau apă. După fecundare ovulele devin semințe, iar ovarul devine fruct."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌼",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.plant.flower.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.plant.flower.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.plant.fruit.6",
+    "skillId": "bio.plant.fruit.6",
+    "title": {
+      "ro": "Fructul, sămânța și germinația",
+      "en": "Fruit, seed and germination"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fructul se dezvoltă din ovarul florii și protejează semințele. Sămânța conține embrionul viitoarei plante și hrană de rezervă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Germinația este pornirea creșterii semințelor. Are nevoie de apă, aer și căldură; lumina nu este obligatorie la început."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫘",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai întâi iese radicula (viitoarea rădăcină), apoi tulpinița cu frunzulițe. Semințele sunt răspândite de vânt, apă, animale și oameni."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.plant.fruit.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.plant.fruit.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.plant.repro.6",
+    "skillId": "bio.plant.repro.6",
+    "title": {
+      "ro": "Reproducerea plantelor",
+      "en": "Plant reproduction"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Plantele se înmulțesc prin semințe (reproducere sexuată) sau fără semințe (reproducere vegetativă)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌷",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "La reproducerea vegetativă o parte a plantei dă naștere unei plante noi: cartoful prin tuberculi, căpșunul prin stoloni, salcia prin butași."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥔",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Plantele fără flori, ca feriga, se înmulțesc prin spori. Plantele noi obținute vegetativ sunt identice cu planta-mamă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍓",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.plant.repro.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.plant.repro.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.animal.feed.6",
+    "skillId": "bio.animal.feed.6",
+    "title": {
+      "ro": "Hrănirea animalelor",
+      "en": "Animal nutrition"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "După hrană, animalele pot fi ierbivore (mănâncă plante), carnivore (mănâncă alte animale) sau omnivore (mănâncă și plante, și animale)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐄",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Hrana trece prin tubul digestiv: este măcinată, digerată, iar substanțele utile sunt absorbite. Resturile se elimină."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐺",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Rumegătoarele, ca vaca, au stomacul cu mai multe compartimente și rumegă hrana. Păsările nu au dinți; folosesc gușa și stomacul muscular pentru a mărunți hrana."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦝",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.animal.feed.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.animal.feed.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.animal.move.6",
+    "skillId": "bio.animal.move.6",
+    "title": {
+      "ro": "Locomoția animalelor",
+      "en": "Animal locomotion"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Locomoția este deplasarea animalelor dintr-un loc în altul. Poate fi prin mers și alergare, zbor, înot, târâre sau sărituri."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐆",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Peștii înoată cu ajutorul înotătoarelor, păsările zboară cu aripile, șerpii se târăsc, broaștele sar. Fiecare mod de deplasare se potrivește corpului și mediului."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐟",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Animalele se mișcă pentru a găsi hrană, a scăpa de dușmani, a-și găsi adăpost sau parteneri. Unele fac migrații lungi, ca berzele."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦅",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.animal.move.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.animal.move.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.animal.breath.6",
+    "skillId": "bio.animal.breath.6",
+    "title": {
+      "ro": "Respirația și circulația la animale",
+      "en": "Respiration and circulation in animals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Animalele iau oxigen din mediu și elimină dioxid de carbon. Peștii respiră cu branhii, mamiferele, păsările și reptilele cu plămâni, iar insectele cu trahei."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐟",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Amfibienii respiră prin piele și prin plămâni. Râma respiră prin piele, care trebuie să fie umedă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫁",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Sângele circulă prin corp și duce oxigen și hrană către celule. La vertebrate, inima pompează sângele prin vase."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "❤️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.animal.breath.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.animal.breath.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.animal.senses.6",
+    "skillId": "bio.animal.senses.6",
+    "title": {
+      "ro": "Simțurile și sistemul nervos la animale",
+      "en": "Senses and the nervous system in animals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Animalele simt lumea prin organe de simț: ochi, urechi, nas, limbă, piele. Ele trimit informații către sistemul nervos."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👁️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Sistemul nervos (creier, măduvă și nervi) primește informațiile și dă comenzi corpului. Animalele pot avea reacții înnăscute (reflexe) și învățate."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👃",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare animal are simțuri dezvoltate după viața lui: câinele miroase foarte bine, bufnița vede și noaptea, liliacul se orientează după ecou."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.animal.senses.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.animal.senses.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.animal.repro.6",
+    "skillId": "bio.animal.repro.6",
+    "title": {
+      "ro": "Reproducerea și dezvoltarea animalelor",
+      "en": "Animal reproduction and development"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Animalele pot depune ouă (ovipare) sau pot naște pui vii (vivipare). Păsările, peștii și reptilele sunt de obicei ovipare, iar majoritatea mamiferelor sunt vivipare."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥚",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dezvoltarea poate fi directă (puiul seamănă cu adultul, ca la câine) sau indirectă, cu metamorfoză, ca la fluture: ou, larvă, pupă, adult."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐣",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "La broască etapele sunt: icre, mormoloc, broscuță, broască adultă. Unele animale își îngrijesc puii, altele nu."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.animal.repro.6",
+      "kind": "explanation",
+      "title": "Explanation for bio.animal.repro.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

@@ -1,0 +1,553 @@
+[
+  {
+    "id": "fiz.speed.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Viteza medie și transformări de viteză",
+      "en": "Average speed and speed conversions"
+    },
+    "prerequisites": [
+      "fiz.speed.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": [
+            "avgspeed",
+            "speed"
+          ]
+        }
+      },
+      {
+        "generator": "fiz-convert",
+        "params": {
+          "family": "speed"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.speed.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.speed.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.speed.7",
+      "kind": "data",
+      "title": "Skill fiz.speed.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.weight.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Greutatea",
+      "en": "Weight"
+    },
+    "prerequisites": [
+      "fiz.force.intro.6",
+      "fiz.massvol.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "weight"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.weight.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.weight.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.weight.7",
+      "kind": "data",
+      "title": "Skill fiz.weight.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.elastic.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Forța elastică",
+      "en": "Elastic force"
+    },
+    "prerequisites": [
+      "fiz.weight.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "hooke"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.elastic.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.elastic.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.elastic.7",
+      "kind": "data",
+      "title": "Skill fiz.elastic.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.friction.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Frecarea",
+      "en": "Friction"
+    },
+    "prerequisites": [
+      "fiz.force.intro.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.friction.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.friction.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.friction.7",
+      "kind": "data",
+      "title": "Skill fiz.friction.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.pressure.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Presiunea",
+      "en": "Pressure"
+    },
+    "prerequisites": [
+      "fiz.weight.7",
+      "fiz.area.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "pressure"
+        }
+      },
+      {
+        "generator": "fiz-convert",
+        "params": {
+          "family": "pressure"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.pressure.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.pressure.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.pressure.7",
+      "kind": "data",
+      "title": "Skill fiz.pressure.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.liquid.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Presiunea în lichide și forța arhimedică",
+      "en": "Pressure in liquids and buoyant force"
+    },
+    "prerequisites": [
+      "fiz.pressure.7",
+      "fiz.density.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": [
+            "hydro",
+            "archimedes"
+          ]
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.liquid.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.liquid.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.liquid.7",
+      "kind": "data",
+      "title": "Skill fiz.liquid.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.work.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Lucrul mecanic",
+      "en": "Mechanical work"
+    },
+    "prerequisites": [
+      "fiz.weight.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "work"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.work.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.work.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.work.7",
+      "kind": "data",
+      "title": "Skill fiz.work.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.power.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Puterea mecanică",
+      "en": "Mechanical power"
+    },
+    "prerequisites": [
+      "fiz.work.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": "power"
+        }
+      },
+      {
+        "generator": "fiz-convert",
+        "params": {
+          "family": "power"
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.power.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.power.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.power.7",
+      "kind": "data",
+      "title": "Skill fiz.power.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.energy.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Energia mecanică",
+      "en": "Mechanical energy"
+    },
+    "prerequisites": [
+      "fiz.work.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-calc",
+        "params": {
+          "kind": [
+            "potential",
+            "kinetic"
+          ]
+        }
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.energy.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.energy.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.energy.7",
+      "kind": "data",
+      "title": "Skill fiz.energy.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "fiz.lever.7",
+    "subject": "fiz",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "FIZ-VI-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Pârghia",
+      "en": "The lever"
+    },
+    "prerequisites": [
+      "fiz.weight.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "fiz-lever"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "fiz.lever.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.fiz.lever.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.fiz.lever.7",
+      "kind": "data",
+      "title": "Skill fiz.lever.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  }
+]

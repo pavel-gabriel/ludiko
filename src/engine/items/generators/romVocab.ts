@@ -1,12 +1,13 @@
 /**
  * `word-relations` generator: antonyms and synonyms (Romanian vocabulary, grades I–II).
- * params: { relation: 'antonym' | 'synonym' }
+ * params: { relation: 'antonym' | 'synonym' }  (+ grades V-VIII: level 'gimnaziu', relation 'paronym' | 'homonym', see romWordsAdv.ts)
  * Distractors never belong to the same meaning cluster as the target or the answer, so exactly
  * one option is right even when a word has both a synonym and an antonym.
  */
 import type { ChoiceItem, Item } from '../../types';
 import { registerGenerator, type GeneratorFn } from './registry';
 import { ANTONYMS, SYNONYMS, type WordPair } from './romData';
+import { isAdvancedRelation, wordRelationsAdv } from './romWordsAdv';
 import { baseFields, optionCount, pick, shuffle } from './util';
 
 /** word -> id of its connected component over both relations */
@@ -35,6 +36,8 @@ const ALL_WORDS: string[] = [...CLUSTER.keys()];
 const isVerb = (w: string): boolean => w.startsWith('a ');
 
 export const wordRelations: GeneratorFn = (params, ctx): Item => {
+  /* grades V-VIII: harder pairs, paronyms, homonyms */
+  if (isAdvancedRelation(params)) return wordRelationsAdv(params, ctx);
   const { rng, difficulty: d } = ctx;
   const relation = params.relation === 'synonym' ? 'synonym' : 'antonym';
   const pairs: readonly WordPair[] = relation === 'synonym' ? SYNONYMS : ANTONYMS;

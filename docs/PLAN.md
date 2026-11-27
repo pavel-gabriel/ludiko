@@ -279,10 +279,10 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 - [x] EN II and EN IV practice in the official format (calificative); EN II science section waits for grade I–II science content — see [`EXAM_PRACTICE.md`](./EXAM_PRACTICE.md)
 
 ### Phase 2 — Grades V–VIII
-- [ ] Extend the skill graphs (math, Romanian) and diagnostics through grade VIII
-- [ ] Sciences (Biology, Physics, Chemistry, mapped so the proposed "Științe" merge for V–VII is a remap), History, Geography
-- [ ] Marks 1–10 for tests; EN VI and EN VIII simulations
-- [ ] More autonomy for older kids: self-chosen missions, challenge modes
+- [x] Extend the skill graphs (math, Romanian) and diagnostics through grade VIII (beta content, needs teacher review)
+- [ ] Sciences (Biology, Physics, Chemistry, mapped so the proposed "Științe" merge for V–VII is a remap), History, Geography — Bio/Fiz/Chim + History done (beta); Geography in progress
+- [ ] Marks 1–10 for tests (done, estimated marks); EN VI and EN VIII simulations
+- [x] More autonomy for older kids: self-chosen missions, challenge modes
 
 ### Phase 3 — Sustainability & stores
 - [ ] School/teacher plan; optional family extras (never the core)

@@ -1,0 +1,528 @@
+[
+  {
+    "id": "bio.cell.division.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Diviziunea celulară",
+      "en": "Cell division"
+    },
+    "prerequisites": [
+      "bio.cell.5",
+      "bio.body.org.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.cell.division.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.cell.division.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.cell.division.8",
+      "kind": "data",
+      "title": "Skill bio.cell.division.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.dna.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "ADN, gene și cromozomi",
+      "en": "DNA, genes and chromosomes"
+    },
+    "prerequisites": [
+      "bio.cell.division.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.dna.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.dna.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.dna.8",
+      "kind": "data",
+      "title": "Skill bio.dna.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.heredity.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Ereditatea: legile lui Mendel",
+      "en": "Heredity: Mendel's laws"
+    },
+    "prerequisites": [
+      "bio.dna.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.heredity.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.heredity.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.heredity.8",
+      "kind": "data",
+      "title": "Skill bio.heredity.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.punnett.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Încrucișări monohibride",
+      "en": "Monohybrid crosses"
+    },
+    "prerequisites": [
+      "bio.heredity.8",
+      "mat.frac.equiv"
+    ],
+    "itemSources": [
+      {
+        "generator": "bio-punnett"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.punnett.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.punnett.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.punnett.8",
+      "kind": "data",
+      "title": "Skill bio.punnett.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.mutation.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Variabilitate și mutații",
+      "en": "Variation and mutations"
+    },
+    "prerequisites": [
+      "bio.dna.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.mutation.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.mutation.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.mutation.8",
+      "kind": "data",
+      "title": "Skill bio.mutation.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.evolution.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.4"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Evoluția și selecția naturală",
+      "en": "Evolution and natural selection"
+    },
+    "prerequisites": [
+      "bio.adapt.5",
+      "bio.mutation.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.evolution.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.evolution.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.evolution.8",
+      "kind": "data",
+      "title": "Skill bio.evolution.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.fossils.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.4"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Fosilele și dovezile evoluției",
+      "en": "Fossils and evidence for evolution"
+    },
+    "prerequisites": [
+      "bio.evolution.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.fossils.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.fossils.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.fossils.8",
+      "kind": "data",
+      "title": "Skill bio.fossils.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.humanevol.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.4"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Evoluția omului",
+      "en": "Human evolution"
+    },
+    "prerequisites": [
+      "bio.evolution.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.humanevol.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.humanevol.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.humanevol.8",
+      "kind": "data",
+      "title": "Skill bio.humanevol.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.ecology.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.4"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Ecologie: factori și populații",
+      "en": "Ecology: factors and populations"
+    },
+    "prerequisites": [
+      "bio.ecosystem.5",
+      "bio.foodchain.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.ecology.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.ecology.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.ecology.8",
+      "kind": "data",
+      "title": "Skill bio.ecology.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.pollution.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "4.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Poluarea și protecția mediului",
+      "en": "Pollution and environmental protection"
+    },
+    "prerequisites": [
+      "bio.ecology.8",
+      "bio.protect.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.pollution.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.pollution.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.pollution.8",
+      "kind": "data",
+      "title": "Skill bio.pollution.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.biodiversity.8",
+    "subject": "bio",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "4.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Biodiversitatea și arii protejate",
+      "en": "Biodiversity and protected areas"
+    },
+    "prerequisites": [
+      "bio.ecology.8",
+      "bio.protect.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.biodiversity.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.biodiversity.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.biodiversity.8",
+      "kind": "data",
+      "title": "Skill bio.biodiversity.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  }
+]

@@ -8,7 +8,7 @@
   "additionalProperties": false,
   "properties": {
     "id": { "type": "string", "pattern": "^[a-z0-9]+(\\.[a-z0-9]+)+$" },
-    "subject": { "enum": ["mat", "rom", "stiinte", "ist", "geo", "civ", "logic"] },
+    "subject": { "enum": ["mat", "rom", "stiinte", "ist", "geo", "civ", "logic", "bio", "fiz", "chim"] },
     "grade": { "type": "integer", "minimum": 0, "maximum": 8 },
     "semester": { "enum": [1, 2] },
     "competences": {

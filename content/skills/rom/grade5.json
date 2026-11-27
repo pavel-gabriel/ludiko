@@ -1,0 +1,582 @@
+[
+ {
+  "id": "rom.text.literal.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Citim texte: ce spune textul",
+   "en": "Reading texts: what the text says"
+  },
+  "prerequisites": [
+   "rom.text.mainidea.4",
+   "rom.text.inference.4"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.literal.5"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.literal.5",
+   "kind": "data",
+   "title": "Skill rom.text.literal.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.text.modes.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Narațiune, descriere, dialog",
+   "en": "Narration, description, dialogue"
+  },
+  "prerequisites": [
+   "rom.text.types.3",
+   "rom.text.literal.5"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.modes.5"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.modes.5",
+   "kind": "data",
+   "title": "Skill rom.text.modes.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.vocab.synonym.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.4"
+   }
+  ],
+  "title": {
+   "ro": "Sinonime și antonime mai greu",
+   "en": "Harder synonyms and antonyms"
+  },
+  "prerequisites": [
+   "rom.vocab.synonym.2",
+   "rom.vocab.context.3"
+  ],
+  "itemSources": [
+   {
+    "generator": "word-relations",
+    "params": {
+     "relation": "synonym",
+     "level": "gimnaziu"
+    }
+   },
+   {
+    "generator": "word-relations",
+    "params": {
+     "relation": "antonym",
+     "level": "gimnaziu"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.vocab.synonym.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.vocab.synonym.5",
+   "kind": "data",
+   "title": "Skill rom.vocab.synonym.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.vocab.homonym.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.4"
+   }
+  ],
+  "title": {
+   "ro": "Omonime: același cuvânt, alte sensuri",
+   "en": "Homonyms: same word, different meanings"
+  },
+  "prerequisites": [
+   "rom.vocab.context.3"
+  ],
+  "itemSources": [
+   {
+    "generator": "word-relations",
+    "params": {
+     "relation": "homonym"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.vocab.homonym.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.vocab.homonym.5",
+   "kind": "data",
+   "title": "Skill rom.vocab.homonym.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.morph.noun.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Substantivul: gen, număr, comun și propriu",
+   "en": "The noun: gender, number, common and proper"
+  },
+  "prerequisites": [
+   "rom.sent.punct.1"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "noun"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.morph.noun.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.morph.noun.5",
+   "kind": "data",
+   "title": "Skill rom.morph.noun.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.morph.pos.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Părți de vorbire: substantiv, articol, adjectiv, pronume, numeral",
+   "en": "Parts of speech: noun, article, adjective, pronoun, numeral"
+  },
+  "prerequisites": [
+   "rom.morph.noun.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "parts-of-speech",
+    "params": {
+     "labels": [
+      "substantiv",
+      "articol",
+      "adjectiv",
+      "pronume",
+      "numeral"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.morph.pos.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.morph.pos.5",
+   "kind": "data",
+   "title": "Skill rom.morph.pos.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.spell.sa.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Ortografie: s-a / sa, s-au / sau",
+   "en": "Spelling: s-a / sa, s-au / sau"
+  },
+  "prerequisites": [
+   "rom.vocab.context.3",
+   "rom.sent.punct.1"
+  ],
+  "itemSources": [
+   {
+    "generator": "spelling-pairs",
+    "params": {
+     "groups": [
+      "sa",
+      "sau",
+      "sa_au"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.spell.sa.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.spell.sa.5",
+   "kind": "data",
+   "title": "Skill rom.spell.sa.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.spell.ia.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Ortografie: i-a / ia, i-au / iau",
+   "en": "Spelling: i-a / ia, i-au / iau"
+  },
+  "prerequisites": [
+   "rom.spell.sa.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "spelling-pairs",
+    "params": {
+     "groups": [
+      "ia",
+      "iau"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.spell.ia.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.spell.ia.5",
+   "kind": "data",
+   "title": "Skill rom.spell.ia.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.punct.basic.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Punctuație: punct, virgulă, semne de la sfârșit",
+   "en": "Punctuation: full stop, comma, end marks"
+  },
+  "prerequisites": [
+   "rom.sent.punct.1"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "punct"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.punct.basic.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.punct.basic.5",
+   "kind": "data",
+   "title": "Skill rom.punct.basic.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.spell.caps.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Majuscule: când scriem cu literă mare",
+   "en": "Capital letters: when to use them"
+  },
+  "prerequisites": [
+   "rom.sent.punct.1"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "caps"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.spell.caps.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.spell.caps.5",
+   "kind": "data",
+   "title": "Skill rom.spell.caps.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.vocab.sense.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.4"
+   }
+  ],
+  "title": {
+   "ro": "Sens propriu, sens figurat, cuvinte cu mai multe sensuri",
+   "en": "Literal and figurative meaning, polysemy"
+  },
+  "prerequisites": [
+   "rom.vocab.homonym.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "sense"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.vocab.sense.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.vocab.sense.5",
+   "kind": "data",
+   "title": "Skill rom.vocab.sense.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.fig.basic.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Figuri de stil: epitet, comparație, personificare",
+   "en": "Figures of speech: epithet, comparison, personification"
+  },
+  "prerequisites": [
+   "rom.text.types.3",
+   "rom.vocab.context.3"
+  ],
+  "itemSources": [
+   {
+    "generator": "figures-of-speech",
+    "params": {
+     "figures": [
+      "epitet",
+      "comparație",
+      "personificare"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.fig.basic.5"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.fig.basic.5",
+   "kind": "data",
+   "title": "Skill rom.fig.basic.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.text.mainidea.5",
+  "subject": "rom",
+  "grade": 5,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Ideea principală și titlul",
+   "en": "Main idea and title"
+  },
+  "prerequisites": [
+   "rom.text.literal.5"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade5.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.mainidea.5"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.mainidea.5",
+   "kind": "data",
+   "title": "Skill rom.text.mainidea.5",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ }
+]

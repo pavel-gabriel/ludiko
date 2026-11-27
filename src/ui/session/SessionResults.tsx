@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'
 import Confetti from '@/components/ui/Confetti'
 import { localize } from '@/engine/types'
 import { AlbumLink, BonusStickers } from '@/ui/album/BonusStickers'
+import { isBig } from '@/older/ageBand'
+import { markFromScore } from '@/older/marks'
+import { getShowMascot } from '@/older/olderStore'
 import { MascotSvg } from '@/ui/mascot/Mascot'
+import MarkCard from '@/ui/older/MarkCard'
 import { playFinish } from '@/utils/sounds'
 import type { SessionReward, SessionSummary } from './types'
 
@@ -14,12 +18,14 @@ interface SessionResultsProps {
   reward: SessionReward | null
   /** No profile selected: progress is not saved */
   isGuest?: boolean
+  /** The child playing: grades V–VIII get calmer copy, an optional mascot and (check mode) an estimated mark */
+  profile?: { id: string; grade: number } | null
   onAgain: () => void
   onDone: () => void
 }
 
 /** End-of-session screen: always encouraging, stars from 1 up, never a "fail" state. */
-export default function SessionResults({ summary, reward, isGuest, onAgain, onDone }: SessionResultsProps) {
+export default function SessionResults({ summary, reward, isGuest, profile, onAgain, onDone }: SessionResultsProps) {
   const { t, i18n } = useTranslation()
   const { stars, total, correct, mode } = summary
 
@@ -27,17 +33,25 @@ export default function SessionResults({ summary, reward, isGuest, onAgain, onDo
     playFinish()
   }, [])
 
+  const big = !!profile && isBig(profile.grade)
+  const showMascot = !big || getShowMascot(profile!.id)
+  // the estimated mark appears only after a test (check mode) that was completed, never after practice
+  const mark = big && mode === 'check' && summary.completed ? markFromScore(correct, total) : null
+  const ns = big ? 'older.results' : 'session.results'
+
   const tier = stars >= 3 ? 'three' : stars === 2 ? 'two' : stars === 1 ? 'one' : 'none'
-  const headline = mode === 'sprint' && summary.completed ? t('session.results.timeUp') : t(`session.results.${tier}.title`)
+  const headline = mode === 'sprint' && summary.completed ? t('session.results.timeUp') : t(`${ns}.${tier}.title`)
 
   return (
     <main className="mx-auto min-h-screen w-full max-w-md px-4 pb-10 pt-8">
       {stars >= 2 && <Confetti />}
 
       <section className="rounded-3xl bg-white p-6 text-center shadow-md" aria-labelledby="session-results-title">
-        <div className="flex justify-center">
-          <MascotSvg mood={stars >= 2 ? 'cheer' : 'encourage'} size={112} decorative />
-        </div>
+        {showMascot && (
+          <div className="flex justify-center">
+            <MascotSvg mood={stars >= 2 ? 'cheer' : 'encourage'} size={112} decorative />
+          </div>
+        )}
         <div
           className="mt-1 flex justify-center gap-2 text-5xl"
           role="img"
@@ -52,13 +66,14 @@ export default function SessionResults({ summary, reward, isGuest, onAgain, onDo
         <h1 id="session-results-title" className="mt-3 text-3xl font-extrabold text-ludiko-text">
           {headline}
         </h1>
-        <p className="mt-2 text-lg font-semibold text-ludiko-text/80">{t(`session.results.${tier}.body`)}</p>
+        <p className="mt-2 text-lg font-semibold text-ludiko-text/80">{t(`${ns}.${tier}.body`)}</p>
 
         {total > 0 && (
           <p className="mt-4 rounded-2xl bg-ludiko-bg px-4 py-3 text-xl font-extrabold text-ludiko-text">
             {t(mode === 'sprint' ? 'session.results.sprintScore' : 'session.results.score', { correct, total })}
           </p>
         )}
+        {mark !== null && <MarkCard mark={mark} className="mt-3" />}
       </section>
 
       {reward?.sticker && (
