@@ -48,6 +48,11 @@ import './stiinte';
 import './istGenerators';
 // Geography (geo) generators
 import './geoDirections';
+// Natural sciences gimnaziu (bio V-VIII, fiz VI-VIII, chim VII-VIII): curated quizzes + physics/chemistry/biology calculators
+import './natQuiz';
+import './natCalc';
+import './natChem';
+import './natBio';
 // Logic puzzles (patterns, odd-one-out, analogies, mini-sudoku, robot path, who-lives-where)
 import './logicPatterns';
 import './logicOddOne';

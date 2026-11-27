@@ -1,0 +1,602 @@
+[
+  {
+    "id": "exp.fiz.heat.8",
+    "skillId": "fiz.heat.8",
+    "title": {
+      "ro": "Căldura și energia termică",
+      "en": "Heat and thermal energy"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Căldura este energia care trece de la un corp mai cald la unul mai rece. Se măsoară în jouli (J)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔥",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Căldura necesară încălzirii unui corp este Q = m · c · Δt, unde c este căldura specifică a substanței (de exemplu, pentru apă c = 4200 J/(kg·K))."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥘",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Substanțele cu căldură specifică mare se încălzesc și se răcesc mai greu. Apa are căldură specifică mare, de aceea mările încălzesc și răcesc lent clima."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌡️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.heat.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.heat.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.expansion.8",
+    "skillId": "fiz.expansion.8",
+    "title": {
+      "ro": "Dilatarea și propagarea căldurii",
+      "en": "Expansion and heat transfer"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Majoritatea corpurilor se dilată (cresc în dimensiuni) când sunt încălzite și se contractă când se răcesc. Gazele se dilată cel mai mult, solidele cel mai puțin."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌡️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Căldura se propagă prin conducție (în solide, de exemplu lingura din oală), prin convecție (în lichide și gaze, prin curenți) și prin radiație (de la Soare, fără mediu material)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧱",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Metalele sunt bune conducătoare de căldură, iar lemnul, plasticul și aerul sunt izolatoare. Hainele groase și geamurile termopan ne ajută să păstrăm căldura."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥄",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.expansion.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.expansion.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.statechange.8",
+    "skillId": "fiz.statechange.8",
+    "title": {
+      "ro": "Schimbarea stării de agregare",
+      "en": "Changes of state"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Topirea gheții are loc la 0 °C, iar fierberea apei la 100 °C la presiune normală. În timpul schimbării de stare, temperatura rămâne constantă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧊",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru topire și vaporizare substanța absoarbe căldură; la solidificare și condensare cedează căldură."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Evaporarea are loc la orice temperatură, doar la suprafața lichidului, iar fierberea are loc în toată masa lichidului la temperatura de fierbere."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♨️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.statechange.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.statechange.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.charge.8",
+    "skillId": "fiz.charge.8",
+    "title": {
+      "ro": "Sarcina electrică și electrizarea",
+      "en": "Electric charge and electrification"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Corpurile pot avea sarcină electrică pozitivă sau negativă. Electronii au sarcină negativă, iar protonii pozitivă. Un corp neutru are sarcini egale pozitive și negative."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚡",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Prin frecare, un corp poate primi sau pierde electroni și se electrizează. De exemplu, un balon frecat de păr atrage bucăți mici de hârtie."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎈",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Sarcinile de același fel se resping, iar cele de semne contrarii se atrag. Unitatea de măsură a sarcinii este coulombul (C)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧲",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.charge.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.charge.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.current.8",
+    "skillId": "fiz.current.8",
+    "title": {
+      "ro": "Curentul electric și circuitul",
+      "en": "Electric current and the circuit"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Curentul electric este mișcarea ordonată a sarcinilor electrice. Într-un metal, aceasta este mișcarea electronilor."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Intensitatea curentului arată câtă sarcină trece prin circuit în unitatea de timp: I = Q / t. Se măsoară în amperi (A), 1 A = 1 C/s."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💡",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Un circuit simplu are sursă, consumator, conductoare și întrerupător. Curentul circulă doar când circuitul este închis. Ampermetrul se leagă în serie."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔌",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.current.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.current.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.ohm.8",
+    "skillId": "fiz.ohm.8",
+    "title": {
+      "ro": "Tensiunea, rezistența și legea lui Ohm",
+      "en": "Voltage, resistance and Ohm's law"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Tensiunea electrică (U) este mărimea care face să circule curentul; se măsoară în volți (V) cu voltmetrul, legat în paralel."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔌",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Rezistența electrică (R) arată cât de mult se opune un conductor trecerii curentului; se măsoară în ohmi (Ω)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📈",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Legea lui Ohm: I = U / R, adică U = I · R. Dacă tensiunea crește, curentul crește; dacă rezistența crește, curentul scade."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧮",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.ohm.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.ohm.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.resistors.8",
+    "skillId": "fiz.resistors.8",
+    "title": {
+      "ro": "Gruparea rezistoarelor",
+      "en": "Resistors in series and parallel"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "La gruparea în serie, rezistoarele sunt legate unul după altul și curentul care le străbate este același. Rezistența echivalentă este suma: Rs = R1 + R2 + ..."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔗",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "La gruparea în paralel, rezistoarele sunt legate între aceleași două puncte, iar tensiunea pe ele este aceeași. Pentru două rezistoare: Rp = R1 · R2 / (R1 + R2)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔀",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Rezistența echivalentă în serie este mai mare decât oricare dintre rezistoare, iar în paralel este mai mică decât oricare dintre ele. Două rezistoare egale în paralel dau jumătate din valoare."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔌",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.resistors.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.resistors.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.elpower.8",
+    "skillId": "fiz.elpower.8",
+    "title": {
+      "ro": "Puterea și energia electrică",
+      "en": "Electric power and energy"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Puterea electrică arată câtă energie transformă un consumator în fiecare secundă: P = U · I. Se măsoară în wați (W)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💡",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Energia electrică consumată este W = P · t. În facturi se folosește kilowattora (kWh): 1 kWh este energia consumată de un aparat de 1 kW într-o oră."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔌",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Un bec de 100 W folosit 10 ore consumă 1000 Wh = 1 kWh. Aparatele cu putere mare, folosite mult timp, consumă mai multă energie."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📟",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.elpower.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.elpower.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.magnet.8",
+    "skillId": "fiz.magnet.8",
+    "title": {
+      "ro": "Magneți și electromagnetism",
+      "en": "Magnets and electromagnetism"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un magnet are doi poli, nord și sud. Polii de același nume se resping, iar cei de nume contrar se atrag. Magnetul atrage fierul, nichelul și cobaltul."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧲",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pământul se comportă ca un magnet uriaș, de aceea busola indică direcția nord-sud. Câmpul magnetic este spațiul în care se simt forțele magnetice."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧭",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Un conductor străbătut de curent creează câmp magnetic. Un electromagnet este o bobină cu miez de fier: atrage obiecte când trece curent și încetează când curentul se oprește."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔌",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.magnet.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.magnet.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.light.8",
+    "skillId": "fiz.light.8",
+    "title": {
+      "ro": "Propagarea luminii",
+      "en": "Propagation of light"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Lumina se propagă în linie dreaptă, prin raze, în medii transparente. Viteza luminii în vid este de aproximativ 300 000 km/s."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Sursele de lumină sunt primare (Soarele, becul) sau secundare (Luna, care reflectă lumina). Corpurile pot fi transparente, translucide sau opace."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔦",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Din propagarea rectilinie a luminii rezultă umbra și penumbra, precum și eclipsele de Soare și de Lună."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌑",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.light.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.light.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.reflection.8",
+    "skillId": "fiz.reflection.8",
+    "title": {
+      "ro": "Reflexia luminii",
+      "en": "Reflection of light"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Reflexia este întoarcerea luminii la întâlnirea unei suprafețe. Pe oglinzi plane, imaginea este virtuală, de aceeași mărime cu obiectul și simetrică față de oglindă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪞",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Legea reflexiei: unghiul de incidență este egal cu unghiul de reflexie, măsurate față de normală. Dacă unghiul de incidență este 30°, cel de reflexie este tot 30°."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💡",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Reflexia pe o suprafață rugoasă este difuză, iar pe una netedă este regulată. De aceea vedem obiectele din jur, chiar dacă nu sunt oglinzi."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "↗️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.reflection.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.reflection.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.lenses.8",
+    "skillId": "fiz.lenses.8",
+    "title": {
+      "ro": "Refracția luminii și lentilele",
+      "en": "Refraction and lenses"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Refracția este schimbarea direcției luminii când trece dintr-un mediu transparent în altul, de exemplu din aer în apă. De aceea un creion pare frânt într-un pahar cu apă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Lentila convergentă (convexă) adună razele într-un punct, numit focar, iar cea divergentă (concavă) le împrăștie."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥤",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Lupa este o lentilă convergentă. Ochelarii corectează vederea: lentilele convergente pentru hipermetropi, cele divergente pentru miopi."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👓",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.lenses.8",
+      "kind": "explanation",
+      "title": "Explanation for fiz.lenses.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

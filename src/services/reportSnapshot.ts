@@ -9,7 +9,7 @@ import type { CardContent, Item, SubjectId } from '@/engine/types'
 export const REPORT_CONTEXTS = ['practice', 'bit', 'mission', 'exam', 'game', 'placement'] as const
 export type ReportContext = (typeof REPORT_CONTEXTS)[number]
 
-const SUBJECTS: readonly SubjectId[] = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic']
+const SUBJECTS: readonly SubjectId[] = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim']
 
 export const SNAPSHOT_MAX_OPTIONS = 10
 export const SNAPSHOT_MAX_OPTION_LENGTH = 120

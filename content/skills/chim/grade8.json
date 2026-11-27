@@ -1,0 +1,539 @@
+[
+  {
+    "id": "chim.reaction.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Reacții chimice",
+      "en": "Chemical reactions"
+    },
+    "prerequisites": [
+      "chim.chemphys.7",
+      "chim.valence.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.reaction.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.reaction.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.reaction.8",
+      "kind": "data",
+      "title": "Skill chim.reaction.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.balance.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Ecuații chimice și coeficienți",
+      "en": "Chemical equations and coefficients"
+    },
+    "prerequisites": [
+      "chim.reaction.8",
+      "chim.formula.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "chim-balance"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.balance.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.balance.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.balance.8",
+      "kind": "data",
+      "title": "Skill chim.balance.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.masslaw.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Legea conservării masei",
+      "en": "Law of conservation of mass"
+    },
+    "prerequisites": [
+      "chim.balance.8",
+      "chim.molmass.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "chim-masslaw"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.masslaw.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.masslaw.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.masslaw.8",
+      "kind": "data",
+      "title": "Skill chim.masslaw.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.oxides.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Oxizii",
+      "en": "Oxides"
+    },
+    "prerequisites": [
+      "chim.valence.7",
+      "chim.reaction.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.oxides.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.oxides.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.oxides.8",
+      "kind": "data",
+      "title": "Skill chim.oxides.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.acids.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Acizii",
+      "en": "Acids"
+    },
+    "prerequisites": [
+      "chim.oxides.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.acids.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.acids.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.acids.8",
+      "kind": "data",
+      "title": "Skill chim.acids.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.bases.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Bazele",
+      "en": "Bases"
+    },
+    "prerequisites": [
+      "chim.oxides.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.bases.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.bases.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.bases.8",
+      "kind": "data",
+      "title": "Skill chim.bases.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.ph.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "pH-ul și indicatorii",
+      "en": "pH and indicators"
+    },
+    "prerequisites": [
+      "chim.acids.8",
+      "chim.bases.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "chim-ph"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.ph.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.ph.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.ph.8",
+      "kind": "data",
+      "title": "Skill chim.ph.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.salts.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Sărurile și neutralizarea",
+      "en": "Salts and neutralisation"
+    },
+    "prerequisites": [
+      "chim.ph.8",
+      "chim.balance.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.salts.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.salts.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.salts.8",
+      "kind": "data",
+      "title": "Skill chim.salts.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.water.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Apa",
+      "en": "Water"
+    },
+    "prerequisites": [
+      "stiinte.water.cycle",
+      "chim.matter.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.water.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.water.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.water.8",
+      "kind": "data",
+      "title": "Skill chim.water.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.solutions.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Soluții și concentrația procentuală",
+      "en": "Solutions and percent concentration"
+    },
+    "prerequisites": [
+      "chim.water.8",
+      "mat.equation.big"
+    ],
+    "itemSources": [
+      {
+        "generator": "chim-solution"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.solutions.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.solutions.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.solutions.8",
+      "kind": "data",
+      "title": "Skill chim.solutions.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "chim.metals.8",
+    "subject": "chim",
+    "grade": 8,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "CHIM-VII-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Metalele",
+      "en": "Metals"
+    },
+    "prerequisites": [
+      "chim.reaction.8"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "chim.metals.8"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.chim.metals.8"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.chim.metals.8",
+      "kind": "data",
+      "title": "Skill chim.metals.8",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  }
+]

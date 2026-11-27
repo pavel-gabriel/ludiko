@@ -4,7 +4,7 @@
  *
  *   Bit 1  Matematică
  *   Bit 2  Limba română
- *   Bit 3  a subject from the child's other available ones (stiinte, logic, ist, geo, civ), rotating by day
+ *   Bit 3  a subject from the child's other available ones (stiinte, logic, ist, geo, civ, bio, fiz, chim), rotating by day
  *
  * A subject's bit is a slice of its stored mission (deriveBits), or, when its placement is not finished,
  * a short chunk of the placement, so the plan both checks and practises.
@@ -24,7 +24,7 @@ import { DAY_MS } from './time';
 /** The subjects that always take bit 1 and bit 2, in order */
 export const PLAN_CORE_SUBJECTS: readonly SubjectId[] = ['mat', 'rom'];
 /** Candidates for the rotating bit 3 */
-export const PLAN_ROTATING_SUBJECTS: readonly SubjectId[] = ['stiinte', 'logic', 'ist', 'geo', 'civ'];
+export const PLAN_ROTATING_SUBJECTS: readonly SubjectId[] = ['stiinte', 'logic', 'ist', 'geo', 'civ', 'bio', 'fiz', 'chim'];
 /** A placement chunk is this many probes (~3 items each, about 3 minutes) */
 export const PLAN_CHECK_PROBES = 2;
 

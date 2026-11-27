@@ -1,0 +1,552 @@
+[
+  {
+    "id": "exp.fiz.measure.6",
+    "skillId": "fiz.measure.6",
+    "title": {
+      "ro": "Mărimi fizice și instrumente de măsură",
+      "en": "Physical quantities and measuring instruments"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fizica studiază fenomenele naturii. O mărime fizică este ceva ce se poate măsura: lungimea, masa, timpul, temperatura."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📏",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare mărime se măsoară cu un instrument: rigla pentru lungime, balanța pentru masă, cronometrul pentru timp, termometrul pentru temperatură."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "O măsurătoare are valoare numerică și unitate de măsură, de exemplu 12 cm. Pentru a măsura corect, privim scala drept din față și citim cea mai apropiată diviziune."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌡️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.measure.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.measure.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.length.6",
+    "skillId": "fiz.length.6",
+    "title": {
+      "ro": "Lungimea și unitățile ei",
+      "en": "Length and its units"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Unitatea de măsură a lungimii în Sistemul Internațional este metrul (m). Folosim și multipli (kilometrul) și submultipli (decimetrul, centimetrul, milimetrul)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📐",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "1 km = 1000 m, 1 m = 10 dm = 100 cm = 1000 mm. Când trecem la o unitate mai mică, înmulțim, iar când trecem la una mai mare, împărțim."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🛤️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Exemplu: 3 m = 3 · 100 cm = 300 cm; 2500 m = 2500 : 1000 km = 2,5 km. Ordinea de mărime: km, m, dm, cm, mm, de la cea mai mare la cea mai mică."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐜",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.length.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.length.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.massvol.6",
+    "skillId": "fiz.massvol.6",
+    "title": {
+      "ro": "Masa și volumul",
+      "en": "Mass and volume"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Masa arată cât de multă materie are un corp. Se măsoară în kilograme (kg). 1 t = 1000 kg, 1 kg = 1000 g, 1 g = 1000 mg."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Volumul arată cât spațiu ocupă un corp. În SI se măsoară în metri cubi (m³). Mai folosim litrul și mililitrul: 1 l = 1 dm³, 1 ml = 1 cm³."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥛",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Volumul unui lichid se măsoară cu cilindrul gradat sau cu pahar gradat. Volumul unui corp solid neregulat se află prin scufundarea lui în apă: diferența de nivel este volumul."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧊",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.massvol.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.massvol.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.area.6",
+    "skillId": "fiz.area.6",
+    "title": {
+      "ro": "Aria și volumul corpurilor",
+      "en": "Area and volume of bodies"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Aria arată cât de mare este o suprafață. Se măsoară în metri pătrați (m²). Pentru dreptunghi, aria este lungimea înmulțită cu lățimea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⬜",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Volumul unui cuboid este lungimea · lățimea · înălțimea și se măsoară în m³ sau cm³. Trecem de la o unitate de arie la alta înmulțind sau împărțind cu 100."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📦",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru volum, trecerea între m³, dm³ și cm³ înseamnă înmulțire sau împărțire cu 1000. Exemplu: 1 m² = 100 dm² = 10 000 cm²."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧮",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.area.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.area.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.time.6",
+    "skillId": "fiz.time.6",
+    "title": {
+      "ro": "Timpul și unitățile lui",
+      "en": "Time and its units"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Unitatea de măsură a timpului în SI este secunda (s). Folosim și minutul și ora: 1 min = 60 s, 1 h = 60 min = 3600 s."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⏱️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru a trece de la ore la minute, înmulțim cu 60; de la minute la secunde, tot cu 60. Invers, împărțim la 60."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⏰",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Exemplu: 2 h 30 min = 2 · 60 + 30 = 150 min. Timpul se măsoară cu ceasul, cu cronometrul sau cu clepsidra."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📆",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.time.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.time.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.temp.6",
+    "skillId": "fiz.temp.6",
+    "title": {
+      "ro": "Temperatura și termometrul",
+      "en": "Temperature and the thermometer"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Temperatura arată cât de cald sau cât de rece este un corp. Se măsoară cu termometrul, în grade Celsius (°C)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌡️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Apa îngheață la 0 °C și fierbe la 100 °C (la presiune normală). Temperatura corpului uman sănătos este de aproximativ 37 °C."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧊",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Termometrul cu lichid se bazează pe dilatarea lichidului când se încălzește. Pentru o citire corectă așteptăm să se oprească lichidul și citim la nivelul lui."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔥",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.temp.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.temp.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.states.6",
+    "skillId": "fiz.states.6",
+    "title": {
+      "ro": "Stările de agregare",
+      "en": "States of matter"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Substanțele există în trei stări de agregare: solidă, lichidă și gazoasă. Corpurile solide au formă și volum proprii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧊",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Lichidele au volum propriu, dar iau forma vasului. Gazele nu au nici formă, nici volum propriu și umplu tot spațiul disponibil."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Schimbarea stării: topirea (solid în lichid), solidificarea (lichid în solid), vaporizarea (lichid în gaz), condensarea (gaz în lichid). Apa trece prin toate trei stările."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☁️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.states.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.states.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.motion.6",
+    "skillId": "fiz.motion.6",
+    "title": {
+      "ro": "Mișcarea și repausul",
+      "en": "Motion and rest"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un corp este în mișcare dacă își schimbă poziția față de un alt corp numit reper; altfel este în repaus. Mișcarea și repausul sunt relative."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚲",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Traiectoria este linia pe care o descrie corpul în mișcare. Poate fi dreaptă (mișcare rectilinie) sau curbă, de exemplu circulară."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🛑",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Un pasager este în repaus față de scaunul lui, dar în mișcare față de copacii de lângă drum. Distanța parcursă se măsoară în metri."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🛤️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.motion.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.motion.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.speed.6",
+    "skillId": "fiz.speed.6",
+    "title": {
+      "ro": "Viteza",
+      "en": "Speed"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Viteza arată cât de repede se mișcă un corp: distanța parcursă în unitatea de timp. Formula este v = d / t."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚗",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Unitatea de măsură în SI este metrul pe secundă (m/s). Se mai folosește kilometrul pe oră (km/h)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⏱️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă un biciclist parcurge 60 m în 10 s, viteza lui este v = 60 : 10 = 6 m/s. Din formulă putem afla și distanța d = v · t sau timpul t = d / v."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📏",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.speed.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.speed.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.density.6",
+    "skillId": "fiz.density.6",
+    "title": {
+      "ro": "Densitatea",
+      "en": "Density"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Densitatea arată cât de multă masă are un volum dat dintr-o substanță: ρ = m / V. Se măsoară în kg/m³ sau g/cm³."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧱",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Densitatea apei este 1 g/cm³ (1000 kg/m³). Corpurile mai puțin dense decât apa plutesc, cele mai dense se scufundă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪵",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Fierul este mai dens decât lemnul, deci un cui de fier se scufundă, iar o bucată de lemn plutește. Din formulă: m = ρ · V și V = m / ρ."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚓",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.density.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.density.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.force.intro.6",
+    "skillId": "fiz.force.intro.6",
+    "title": {
+      "ro": "Forța și efectele ei",
+      "en": "Force and its effects"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Forța este rezultatul unei interacțiuni între corpuri. Poate pune un corp în mișcare, îl poate opri, îi poate schimba direcția sau îl poate deforma."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏋️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Forța se măsoară în newtoni (N), cu dinamometrul. Este caracterizată de valoare, direcție și sens, deci se reprezintă printr-o săgeată."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚽",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Efecte dinamice: schimbă mișcarea. Efecte statice: deformează corpul. Forța poate fi de contact (împingerea) sau la distanță (magnetismul, greutatea)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧲",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.force.intro.6",
+      "kind": "explanation",
+      "title": "Explanation for fiz.force.intro.6",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

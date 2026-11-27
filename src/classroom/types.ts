@@ -18,7 +18,7 @@ export const SKILLS_PER_SUBJECT_MAX = 400
 export const SYNC_MIN_INTERVAL_MS = 10 * 60 * 1000
 
 /** Subject ids accepted in a progress summary and an assignment (same list as the engine's SubjectId) */
-export const CLASS_SUBJECTS: readonly SubjectId[] = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic']
+export const CLASS_SUBJECTS: readonly SubjectId[] = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim']
 
 export interface ClassDoc {
   /** Firestore document id (not stored in the document) */

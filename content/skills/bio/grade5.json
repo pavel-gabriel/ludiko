@@ -1,0 +1,532 @@
+[
+  {
+    "id": "bio.living.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Caracteristicile ființelor vii",
+      "en": "Characteristics of living things"
+    },
+    "prerequisites": [
+      "stiinte.living",
+      "stiinte.lifecycle"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.living.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.living.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.living.5",
+      "kind": "data",
+      "title": "Skill bio.living.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.cell.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Celula: părțile și rolul ei",
+      "en": "The cell: parts and role"
+    },
+    "prerequisites": [
+      "bio.living.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.cell.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.cell.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.cell.5",
+      "kind": "data",
+      "title": "Skill bio.cell.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.microscope.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.3"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Microscopul și mărirea",
+      "en": "The microscope and magnification"
+    },
+    "prerequisites": [
+      "bio.cell.5",
+      "mat.mul.1digit"
+    ],
+    "itemSources": [
+      {
+        "generator": "bio-magnify"
+      },
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.microscope.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.microscope.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.microscope.5",
+      "kind": "data",
+      "title": "Skill bio.microscope.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.kingdoms.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Regnurile lumii vii",
+      "en": "The kingdoms of living things"
+    },
+    "prerequisites": [
+      "bio.living.5",
+      "stiinte.animals.groups"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.kingdoms.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.kingdoms.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.kingdoms.5",
+      "kind": "data",
+      "title": "Skill bio.kingdoms.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.plant.groups.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Grupele de plante",
+      "en": "Groups of plants"
+    },
+    "prerequisites": [
+      "bio.kingdoms.5",
+      "stiinte.plants.parts"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.plant.groups.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.plant.groups.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.plant.groups.5",
+      "kind": "data",
+      "title": "Skill bio.plant.groups.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.animal.inv.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Animalele nevertebrate",
+      "en": "Invertebrate animals"
+    },
+    "prerequisites": [
+      "bio.kingdoms.5",
+      "stiinte.animals.groups"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.animal.inv.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.animal.inv.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.animal.inv.5",
+      "kind": "data",
+      "title": "Skill bio.animal.inv.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.animal.vert.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Vertebratele și grupele lor",
+      "en": "Vertebrates and their groups"
+    },
+    "prerequisites": [
+      "stiinte.animals.vertebrates",
+      "bio.kingdoms.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.animal.vert.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.animal.vert.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.animal.vert.5",
+      "kind": "data",
+      "title": "Skill bio.animal.vert.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.ecosystem.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.4"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Ecosistemul",
+      "en": "The ecosystem"
+    },
+    "prerequisites": [
+      "stiinte.habitat",
+      "bio.living.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.ecosystem.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.ecosystem.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.ecosystem.5",
+      "kind": "data",
+      "title": "Skill bio.ecosystem.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.foodchain.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.4"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Lanțuri trofice",
+      "en": "Food chains"
+    },
+    "prerequisites": [
+      "stiinte.foodchain",
+      "bio.ecosystem.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.foodchain.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.foodchain.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.foodchain.5",
+      "kind": "data",
+      "title": "Skill bio.foodchain.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.adapt.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.4"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Adaptări la mediul de viață",
+      "en": "Adaptations to the environment"
+    },
+    "prerequisites": [
+      "stiinte.habitat",
+      "bio.animal.vert.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.adapt.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.adapt.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.adapt.5",
+      "kind": "data",
+      "title": "Skill bio.adapt.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.protect.5",
+    "subject": "bio",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "4.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.3"
+      }
+    ],
+    "title": {
+      "ro": "Ocrotirea naturii",
+      "en": "Protecting nature"
+    },
+    "prerequisites": [
+      "stiinte.environment.protect",
+      "bio.ecosystem.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.protect.5"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.protect.5"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.protect.5",
+      "kind": "data",
+      "title": "Skill bio.protect.5",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  }
+]

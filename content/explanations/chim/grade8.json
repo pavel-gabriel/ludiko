@@ -1,0 +1,552 @@
+[
+  {
+    "id": "exp.chim.reaction.8",
+    "skillId": "chim.reaction.8",
+    "title": {
+      "ro": "Reacții chimice",
+      "en": "Chemical reactions"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Reacția chimică este transformarea unor substanțe, numite reactanți, în alte substanțe, numite produși de reacție. Se scrie: reactanți → produși."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💥",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Exemplu: hidrogen + oxigen → apă. Atomii nu dispar și nu apar, ci se grupează altfel."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔥",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Reacții importante: combinarea (A + B → AB), descompunerea (AB → A + B), substituția (un element înlocuiește altul). Arderea este reacția cu oxigenul."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.reaction.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.reaction.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.balance.8",
+    "skillId": "chim.balance.8",
+    "title": {
+      "ro": "Ecuații chimice și coeficienți",
+      "en": "Chemical equations and coefficients"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "O ecuație chimică trebuie să aibă același număr de atomi din fiecare element în stânga și în dreapta săgeții. Se echilibrează cu coeficienți, nu cu indici."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Exemplu: H2 + O2 → H2O. Dreapta are un singur O, stânga doi, deci scriem 2 H2O. Acum sunt 4 H în dreapta, deci 2 H2: 2 H2 + O2 → 2 H2O."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧮",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Numărăm atomii în ambele părți. Nu schimbăm niciodată indicii din formule, pentru că s-ar schimba substanța. Coeficientul 1 nu se scrie."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔢",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.balance.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.balance.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.masslaw.8",
+    "skillId": "chim.masslaw.8",
+    "title": {
+      "ro": "Legea conservării masei",
+      "en": "Law of conservation of mass"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Legea conservării masei (Lavoisier): într-o reacție chimică, masa reactanților este egală cu masa produșilor. Masa totală nu se schimbă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă 12 g de magneziu reacționează cu 8 g de oxigen, se formează 12 + 8 = 20 g de oxid de magneziu."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔥",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă un produs este un gaz care se pierde într-un vas deschis, masa pare mai mică, dar în vas închis masa se păstrează. Pentru a afla o masă lipsă, scădem din total masele cunoscute."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📦",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.masslaw.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.masslaw.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.oxides.8",
+    "skillId": "chim.oxides.8",
+    "title": {
+      "ro": "Oxizii",
+      "en": "Oxides"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Oxizii sunt compuși formați din oxigen și încă un element. Se obțin prin arderea elementelor în oxigen. Exemple: CO2, CaO, Fe2O3, SO2."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔥",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Oxizii metalelor (CaO, MgO) sunt oxizi bazici, iar oxizii nemetalelor (CO2, SO2) sunt oxizi acizi."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪨",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Oxidul de calciu (varul nears) reacționează cu apa și dă hidroxid de calciu. Dioxidul de carbon reacționează cu apa și dă un acid slab, acidul carbonic."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💨",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.oxides.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.oxides.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.acids.8",
+    "skillId": "chim.acids.8",
+    "title": {
+      "ro": "Acizii",
+      "en": "Acids"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Acizii sunt compuși care conțin hidrogen și un rest acid. Exemple: HCl (acid clorhidric), H2SO4 (acid sulfuric), HNO3 (acid azotic)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Acizii au gust acru (nu se gustă în laborator), schimbă culoarea indicatorilor (turnesolul devine roșu) și reacționează cu metalele active, formând hidrogen."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Acidul sulfuric este foarte periculos: se lucrează cu mănuși și ochelari. Acizii slabi se găsesc în alimente: acidul citric în lămâie, acidul acetic în oțet."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚠️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.acids.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.acids.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.bases.8",
+    "skillId": "chim.bases.8",
+    "title": {
+      "ro": "Bazele",
+      "en": "Bases"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Bazele (hidroxizii) conțin un metal și gruparea OH. Exemple: NaOH (hidroxid de sodiu), KOH, Ca(OH)2. Bazele solubile se numesc alcalii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧼",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Bazele au gust leșietic (nu se gustă), sunt alunecoase, colorează turnesolul în albastru și fenolftaleina în roșu-violet."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Hidroxidul de sodiu (soda caustică) este coroziv. Se folosește la fabricarea săpunului. Bazele neutralizează acizii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚠️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.bases.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.bases.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.ph.8",
+    "skillId": "chim.ph.8",
+    "title": {
+      "ro": "pH-ul și indicatorii",
+      "en": "pH and indicators"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "pH-ul arată cât de acidă sau bazică este o soluție. Scara pH merge de la 0 la 14."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌈",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "pH sub 7 înseamnă soluție acidă, pH = 7 înseamnă soluție neutră (apa pură), iar pH peste 7 înseamnă soluție bazică."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Indicatorii (turnesolul, fenolftaleina, hârtia indicatoare universală) își schimbă culoarea în funcție de pH. Sucul de lămâie are pH aproximativ 2, săpunul în jur de 10."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📊",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.ph.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.ph.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.salts.8",
+    "skillId": "chim.salts.8",
+    "title": {
+      "ro": "Sărurile și neutralizarea",
+      "en": "Salts and neutralisation"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Sărurile sunt compuși formați dintr-un metal și un rest acid: NaCl, CaCO3, CuSO4. Sarea de bucătărie este clorura de sodiu."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧂",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Neutralizarea este reacția dintre un acid și o bază, care formează sare și apă: HCl + NaOH → NaCl + H2O."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚗️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Sărurile se folosesc în alimentație (NaCl), în construcții (CaCO3 în calcar și marmură) și în agricultură (îngrășăminte). Soluția rezultată la neutralizare completă are pH apropiat de 7."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔄",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.salts.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.salts.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.water.8",
+    "skillId": "chim.water.8",
+    "title": {
+      "ro": "Apa",
+      "en": "Water"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Apa este o substanță compusă, cu formula H2O. Pură, este incoloră, fără gust și miros, cu densitatea 1 g/cm³. Îngheață la 0 °C și fierbe la 100 °C."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Apa este un solvent foarte bun: dizolvă multe substanțe (sare, zahăr), dar nu dizolvă uleiul. Apa dură conține mulți compuși de calciu și magneziu."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌊",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Apa se poluează ușor, dar poate fi epurată prin filtrare, decantare și dezinfectare. Folosim apa cu grijă și o economisim."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.water.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.water.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.solutions.8",
+    "skillId": "chim.solutions.8",
+    "title": {
+      "ro": "Soluții și concentrația procentuală",
+      "en": "Solutions and percent concentration"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "O soluție este un amestec omogen între un solvent (de obicei apa) și o substanță dizolvată (solutul). Masa soluției este ms = md + masa solventului."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥤",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Concentrația procentuală arată câte grame de substanță dizolvată sunt în 100 g de soluție: c = md / ms · 100."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧂",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Exemplu: 20 g de sare în 100 g de soluție înseamnă c = 20 %. Din formulă aflăm md = c · ms / 100 și ms = md · 100 / c."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.solutions.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.solutions.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.chim.metals.8",
+    "skillId": "chim.metals.8",
+    "title": {
+      "ro": "Metalele",
+      "en": "Metals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Metalele sunt bune conducătoare de căldură și de electricitate, au luciu metalic și sunt, în general, maleabile și ductile. Mercurul este lichid la temperatura camerei."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔩",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Metalele diferă prin reactivitate: sodiul și potasiul reacționează violent cu apa, fierul ruginește încet, iar aurul și platina aproape nu reacționează."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪙",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Aliajele sunt amestecuri de metale: bronzul (cupru și staniu), alama (cupru și zinc), oțelul (fier și carbon). Reciclarea metalelor economisește resurse."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚡",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.chim.metals.8",
+      "kind": "explanation",
+      "title": "Explanation for chim.metals.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

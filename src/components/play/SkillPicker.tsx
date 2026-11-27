@@ -20,7 +20,7 @@ interface SkillPickerProps {
   initialGrade?: Grade;
 }
 
-const SUBJECT_ORDER: SubjectId[] = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'];
+const SUBJECT_ORDER: SubjectId[] = ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim'];
 
 const chip = (on: boolean) =>
   `rounded-xl px-3 py-2 text-sm font-bold transition-colors ${
