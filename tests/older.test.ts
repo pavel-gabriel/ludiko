@@ -161,3 +161,13 @@ describe('level statement for gimnaziu', () => {
     expect(levelStatement(result(3), 'ro')).not.toContain('Nota estimată')
   })
 })
+
+describe('daily rotation for older kids', () => {
+  it('keeps primary-only subjects (Științe) out of the rotation from grade V', async () => {
+    const { isSubjectCurrent } = await import('@/learner/availability');
+    expect(isSubjectCurrent('stiinte', 4)).toBe(true);
+    expect(isSubjectCurrent('stiinte', 8)).toBe(false);
+    expect(isSubjectCurrent('bio', 8)).toBe(true);
+    expect(isSubjectCurrent('fiz', 5)).toBe(false);
+  });
+});

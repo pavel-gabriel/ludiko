@@ -49,7 +49,7 @@ Rules:
   (`localStorage`, `src/learner/planStore.ts`), so re-reads are stable. Done-ness is never stored: it is derived
   from the mission steps (`completeMissionStep`) or the placement probes, so it syncs with the progress.
 - All bits done = celebration on the home. The per-subject cards (check, mission, map) stay under "Toate materiile".
-- "Tema de la clasă" (class assignments) stays an extra card; the exam card stays for grades II–IV only.
+- "Tema de la clasă" (class assignments) stays an extra card; the exam card shows for grades II–IV and VI–VIII (grade V: none; VI → EN VI, VII–VIII → EN VIII simulations).
 
 ## 2. Push reminders: architecture
 

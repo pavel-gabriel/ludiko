@@ -6,7 +6,7 @@
  */
 import type { Difficulty, Grade, Item, ItemType, LocalizedText, SubjectId } from '@/engine/types'
 
-export type ExamId = 'en2' | 'en4'
+export type ExamId = 'en2' | 'en4' | 'en6' | 'en8'
 /** The two papers of an exam, in the official order: 1 = limba română, 2 = matematică (+ explorarea mediului / științe) */
 export type ExamTestNo = 1 | 2
 
@@ -31,6 +31,8 @@ export interface ExamPart {
   count: number
   /** Generators are asked for this difficulty; the section is sorted easy -> hard afterwards */
   difficulty: Difficulty
+  /** Gimnaziu simulations: points per item of this part (weighted scoring). Absent = unweighted paper. */
+  points?: number
 }
 
 export interface ExamSection {
@@ -53,6 +55,10 @@ export interface ExamBlueprint {
   /** Item types that fit a paper-style test: audio and map-tapping items are left out */
   allowedTypes: ItemType[]
   sections: ExamSection[]
+  /** Gimnaziu simulations (src/exam/gimBlueprints.ts): which of the several tests of this paper (1..n) */
+  variant?: number
+  /** Gimnaziu simulations: fixed seed, so "Test 2" is always the same paper */
+  seed?: number
 }
 
 /* ------------------------------------------------------------------ */
@@ -79,6 +85,9 @@ export interface AssembledTest {
   skippedSections: string[]
   /** Parts that could not deliver their full count (never happens for the shipped blueprints; tested) */
   shortfalls: { partId: string; wanted: number; got: number }[]
+  /** Weighted (gimnaziu) papers only: points and competence tag per item id */
+  itemMeta?: Record<string, { points: number; competence: string }>
+  variant?: number
 }
 
 /** Per-item verdict collected by the runner; absent id = not answered */

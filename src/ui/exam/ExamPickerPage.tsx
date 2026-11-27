@@ -2,10 +2,12 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { BLUEPRINTS, examForGrade, requiredQuestionCount } from '@/exam/blueprints'
+import { gimExamsForGrade } from '@/exam/gimBlueprints'
 import type { ExamId } from '@/exam/types'
 import { localize } from '@/engine/types'
 import LearnShell from '@/ui/learn/LearnShell'
 import RequireProfile from '@/ui/learn/RequireProfile'
+import GimExamPicker from './GimExamPicker'
 
 const EXAMS: ExamId[] = ['en2', 'en4']
 
@@ -82,7 +84,14 @@ function Picker({ grade }: { grade: number }) {
   )
 }
 
-/** /learn/exam — choose EN II or EN IV, then Test 1 or 2 */
+/** /learn/exam — EN II / EN IV (Test 1 or 2), or for grades VI–VIII the EN VI / EN VIII simulations */
 export default function ExamPickerPage() {
-  return <RequireProfile>{(profile) => <Picker grade={profile.grade} />}</RequireProfile>
+  return (
+    <RequireProfile>
+      {(profile) => {
+        const gim = gimExamsForGrade(profile.grade)
+        return gim.length ? <GimExamPicker exams={gim} /> : <Picker grade={profile.grade} />
+      }}
+    </RequireProfile>
+  )
 }

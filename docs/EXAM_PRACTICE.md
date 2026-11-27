@@ -1,4 +1,4 @@
-# National-exam practice (EN II and EN IV)
+# National-exam practice (EN II, EN IV, EN VI and EN VIII)
 
 Phase 1D feature: **/learn/exam**. A child in grades II–IV can take a full-length practice paper in the
 shape of the *Evaluare Națională* at the end of grade II or grade IV, built from skills Ludiko already
@@ -115,3 +115,69 @@ planner. Stars (and possibly a sticker) are awarded like any finished session.
 reproducible by seed; no duplicate items over 20 seeds per blueprint; graceful skip of missing science;
 scoring boundaries, sections, practice list; `recordExamResults`. `tests/examUi.test.tsx`: picker, entry
 cards by grade, start → answer → results with no verdicts, pause, hidden clock, time-up, leaving.
+
+## 7. Gimnaziu simulations: EN VI and EN VIII
+
+Code: `src/exam/gimBlueprints.ts` (data), `src/exam/gimScoring.ts` (points and marks), UI in
+`src/ui/exam/GimExamPicker.tsx`, `ExamGimRunPage.tsx`, `ExamGimResults.tsx`; route
+`/learn/exam/:exam/:test/:variant` (lazy). Strings live in the `examGim` i18n namespace. The runner,
+assembler, timer and `recordExamResults` are shared with the II/IV simulations, which are unchanged.
+
+**The structure below is an APPROXIMATION** written from general knowledge of the public format, not read
+from the current methodology or any paper (same verification caveat as §1). Section names, item counts, point
+weights and durations are Ludiko's own design in the shape of the real exams. Nothing from a real paper
+(text, numbers, figures, wording) is used; every item comes from Ludiko's own generators and banks
+(provenance OWN, ai-draft, beta). To verify before quoting to parents: the exact durations, point split and
+whether the 10 official points ("din oficiu") exist in the current methodology.
+
+| Exam | Paper (test 1 / test 2) | Tests | Time | Structure (points) |
+|---|---|---|---|---|
+| EN VIII | Limba și literatura română | 4 | 120 min | Literary text (20), non-literary text (20), language: 10 items x 3 (30) = 70 |
+| EN VIII | Matematică | 4 | 120 min | I: 6 x 5 (calculations), II: 6 x 5 (algebra, functions), III: 3 x 10 (geometry, problems) = 90 |
+| EN VI | Limbă și comunicare (Romanian part) | 3 | 90 min | Literary text (20), non-literary text (20), language: 10 items x 2 (20) = 60 |
+| EN VI | Matematică și Științe | 3 | 90 min | Maths: 5 x 4 + 5 x 4 (40), sciences (bio 3, fiz 3, geo 2) x 3 (24) = 64 |
+
+- **Several fixed tests per paper.** Each test has a fixed seed (`ExamBlueprint.seed`), so "Testul 2" is always
+  the same paper; tests differ by skill rotation and seed (a test asserts they are all different).
+- **Sources.** Maths: `mat.*5-8` (EN VIII: grade VII–VIII skills mostly; EN VI: grade V–VI). Romanian: `rom.*5-8`
+  (reading texts from the grade V–VIII text banks, language items from the generators). EN VI sciences:
+  `bio.*.5/6`, `fiz.*.6`, `geo.*.5/6`. History (`ist.*`) is not part of either simulation (not a natural science;
+  not in EN VIII Romanian/Maths). Reading passages are the existing banks (about 50–100 words); longer 150–300
+  word passages are not written yet (see below).
+- **Points.** Every part has `points` per item. A reading text earns **partial points** (share of its questions
+  answered right: `partialFraction`); all other items are all-or-nothing. Mastery still gets one boolean per item.
+- **Scoring.** `scoreGimExam`: points earned / maximum points. EN VIII: estimated mark
+  `markFromScore(points, max)` = 1 + 9 x share, shown with a Romanian comma, "Nota estimată: 8,50", always
+  with "Estimativă — nu e notă oficială". No 10 "din oficiu" points are added (the formula already starts
+  at 1). **EN VI officially has no mark** (only a results report), so Ludiko shows the **percentage and the
+  per-competence feedback** and says so on the picker and the results.
+- **Competences.** Feedback groups are Ludiko's own (understanding the text, grammar and syntax, vocabulary and
+  figures of speech, spelling and punctuation, numerical calculation, algebra/functions/ratios, geometry and
+  problems, biology, physics, geography), not official programa codes.
+- **Tone.** Older-kids copy; the child sees the estimate straight away (no calificative for grades V+), calm colours,
+  no red, no "fail" wording; the clock, pause and no-cut-off rules of §3 apply. Targets are at least 44 px; the
+  layout is one column at 400 px.
+- **Availability.** `gimExamsForGrade`: grade VI -> EN VI; grades VII and VIII -> EN VIII (recommended) and EN VI;
+  grade V -> none. The exam card is on the learner home and the parent view for grades II–IV and VI–VIII
+  (`ExamEntryCard`); `/learn/exam` shows the EN VI / EN VIII picker for grades VI–VIII and the old II/IV picker
+  otherwise.
+
+### Not simulated yet (TODO)
+
+- **Modern language (EN VI, *Limbă și comunicare*)**: there is no English (or other modern-language) item source
+  in the content registry, so that half of the paper is left out and the picker says so. Add it when an
+  English subject ships.
+- **Writing tasks** (redactare, EN VIII Română): needs free-text input and manual or AI marking. Not simulated;
+  the Romanian paper is therefore out of 70, not 100.
+- **Longer reading passages** (150–300 words) for EN VIII Română: the existing grade VII–VIII text banks (3 passages
+  per skill, 50–100 words) are reused; writing longer original passages needs human review and is left as a
+  content task.
+- Tasks that need the pupil to show a full solution (EN VIII Maths II/III) are approximated by number-input and
+  choice items at higher difficulty.
+
+### Tests
+
+`tests/examGimnaziu.test.tsx`: 14 blueprints reference real V–VIII skills; deterministic assembly, counts and
+points per section equal the definition, valid paper-style items with provenance, tests of one paper differ;
+scoring (all right -> 10,00, nothing -> 1,00, weighted points, partial credit for texts, EN VI without a mark);
+availability by grade and entry cards; picker for a grade VIII / VI profile; results screens (mark vs percentage).

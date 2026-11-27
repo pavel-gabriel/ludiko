@@ -133,6 +133,7 @@ export function assembleTest(blueprint: ExamBlueprint, opts: AssembleOptions = {
   const sections: AssembledSection[] = []
   const skippedSections: string[] = []
   const shortfalls: AssembledTest['shortfalls'] = []
+  const itemMeta: NonNullable<AssembledTest['itemMeta']> = {}
 
   blueprint.sections.forEach((section, si) => {
     const items: Item[] = []
@@ -144,6 +145,7 @@ export function assembleTest(blueprint: ExamBlueprint, opts: AssembleOptions = {
       const got = assemblePart(part, skills, mix(seed, si * 100 + pi), ctx)
       if (got.length < part.count) shortfalls.push({ partId: part.id, wanted: part.count, got: got.length })
       items.push(...got)
+      if (part.points !== undefined) for (const it of got) itemMeta[it.id] = { points: part.points, competence: part.competence }
     })
     if (!resolvedAny || items.length === 0) {
       if (section.optional) skippedSections.push(section.id)
@@ -165,6 +167,8 @@ export function assembleTest(blueprint: ExamBlueprint, opts: AssembleOptions = {
     sections,
     skippedSections,
     shortfalls,
+    ...(Object.keys(itemMeta).length ? { itemMeta } : {}),
+    ...(blueprint.variant !== undefined ? { variant: blueprint.variant } : {}),
   }
 }
 

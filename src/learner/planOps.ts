@@ -13,7 +13,7 @@ import { getSkillsBySubject } from '@/engine/content/registry';
 import type { SubjectId } from '@/engine/types';
 import { toDayString } from '@/profiles/profileService';
 import type { ChildProfile, ProfileProgress } from '@/profiles/types';
-import { isSubjectAvailable } from './availability';
+import { isSubjectAvailable, isSubjectCurrent } from './availability';
 import { deriveBits } from './bitOps';
 import { PLAN_CHECK_ITEMS, type PlanBit, type TodayPlan } from './contract';
 import { ensureMission } from './missionOps';
@@ -69,7 +69,7 @@ function hasWork(progress: ProfileProgress, subject: SubjectId, now: number): bo
 
 /** The rotating subjects in the order they should be tried today */
 export function rotatingOrder(progress: ProfileProgress, profile: ChildProfile, day: string, now: number): SubjectId[] {
-  const available = PLAN_ROTATING_SUBJECTS.filter((s) => isSubjectAvailable(s, profile.grade));
+  const available = PLAN_ROTATING_SUBJECTS.filter((s) => isSubjectCurrent(s, profile.grade));
   const busy = available.filter((s) => hasWork(progress, s, now));
   const pool = busy.length ? busy : available;
   if (pool.length === 0) return [];
