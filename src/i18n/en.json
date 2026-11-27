@@ -601,7 +601,9 @@
       "reviewHint": "You can try these once more:",
       "reviewNone": "Nothing to repeat. Excellent!",
       "again": "Once more",
-      "done": "That's enough for today"
+      "done": "That's enough for today",
+      "estimatedMark": "Estimated mark: {{mark}}",
+      "estimatedNote": "An estimate — not an official mark."
     }
   },
   "learn": {
@@ -740,7 +742,9 @@
       "redoTitle": "Redo the check?",
       "redoBody": "The current check result is deleted and your child will take it again, in short games.",
       "redoYes": "Yes, redo it",
-      "redoNo": "No, keep it"
+      "redoNo": "No, keep it",
+      "estimatedMark": "Estimated mark (from mastered competences): {{mark}}",
+      "marksNote": "For grades V–VIII results are shown as estimated marks — not official marks."
     },
     "locked": {
       "note": "{{subject}} starts in {{grade}}. Until then, let's discover something else!",
@@ -1310,7 +1314,9 @@
         "saved": "The answers were added to your child's progress.",
         "guest": "Without a child profile the results are not saved.",
         "practiceMore": "Show all {{n}} topics",
-        "practiceLess": "Show fewer"
+        "practiceLess": "Show fewer",
+        "mark": "Estimated mark",
+        "markNote": "An estimate — not an official mark. Formula: 1 + 9 × (correct answers / total)."
       }
     },
     "descriptor": {
@@ -1451,5 +1457,92 @@
       "mulBig": "Multiplying by 1 and 2 digits",
       "fractions": "Fractions"
     }
+  },
+  "older": {
+    "greeting": "Hi, {{name}}",
+    "greetingSub": "What do you want to work on today?",
+    "bitKinds": {
+      "warmup": "Review",
+      "island": "New chapter",
+      "challenge": "Test"
+    },
+    "bits": {
+      "title": "Today's plan",
+      "subtitle": "A few short sessions, in whatever order you like.",
+      "allDone": "Today's plan is complete. Well done.",
+      "doneTitle": "Session complete",
+      "doneBody": "One more step. Well done.",
+      "allDoneBody": "You've finished today's plan. See you tomorrow.",
+      "another": "Another session?",
+      "anotherCta": "Yes, one more",
+      "stop": "That's enough for today"
+    },
+    "mascot": {
+      "toggle": "Show Ludi",
+      "on": "Ludi is shown",
+      "off": "Ludi is hidden"
+    },
+    "pick": {
+      "title": "Choose for yourself",
+      "subtitle": "Pick a subject and a chapter, then practise or test yourself.",
+      "subject": "Subject",
+      "chapter": "Chapter",
+      "chooseChapter": "Pick a chapter",
+      "gradeSem": "{{grade}} · {{sem}}",
+      "practice": "Practise",
+      "test": "Test yourself",
+      "practiceDesc": "8 exercises with explanations",
+      "testDesc": "10 questions, with an estimated mark",
+      "none": "There are no exercises for this subject at your level yet."
+    },
+    "goal": {
+      "title": "This week's goal",
+      "body": "Choose how many sessions you want to do this week.",
+      "option": "{{n}} sessions",
+      "progress": "{{done}} of {{goal}} sessions this week",
+      "reached": "Goal reached. Well done!",
+      "change": "Change goal",
+      "remove": "No goal"
+    },
+    "challenge": {
+      "title": "Today's challenge",
+      "body": "5 questions across subjects, from what you have already practised.",
+      "cta": "Start the challenge",
+      "timer": "With a timer",
+      "timerHint": "It only measures time; nobody is rushing you.",
+      "best": "Best this week: {{mark}}",
+      "bestNone": "You haven't tried it this week yet.",
+      "resultTitle": "Today's challenge: done",
+      "time": "Time: {{time}}",
+      "newBest": "Best result of the week.",
+      "again": "Another try",
+      "home": "Back to today's plan",
+      "empty": "We don't have enough exercises for a challenge at your level yet.",
+      "sessionTitle": "Today's challenge"
+    },
+    "mark": {
+      "label": "Estimated mark: {{mark}}",
+      "disclaimer": "An estimate — not an official mark.",
+      "short": "estimated mark"
+    },
+    "results": {
+      "three": {
+        "title": "Very good result",
+        "body": "You have this chapter well in hand."
+      },
+      "two": {
+        "title": "Good result",
+        "body": "A little more practice and you will have it."
+      },
+      "one": {
+        "title": "A good start",
+        "body": "Practise a bit more, then try again."
+      },
+      "none": {
+        "title": "Session complete",
+        "body": "Try again when you are ready."
+      }
+    },
+    "streakZero": "No active days yet this week"
   }
 }

@@ -18,12 +18,16 @@ interface BitDoneProps {
   allDone: boolean
   /** There is another bit left to offer */
   hasNext: boolean
+  /** Grades V–VIII: calmer copy */
+  big?: boolean
+  /** Show Ludi (always for the younger bands; a setting for grades V–VIII) */
+  mascot?: boolean
   onNext: () => void
   onStop: () => void
 }
 
 /** A small celebration after each bit, then "Încă un bit?" or "Gata pe azi" — never pressure to continue */
-export default function BitDone({ kind, stars, passed, reward, allDone, hasNext, onNext, onStop }: BitDoneProps) {
+export default function BitDone({ kind, stars, passed, reward, allDone, hasNext, onNext, onStop, big = false, mascot = true }: BitDoneProps) {
   const { t } = useTranslation()
   useEffect(() => {
     playFinish()
@@ -31,8 +35,8 @@ export default function BitDone({ kind, stars, passed, reward, allDone, hasNext,
   const body =
     passed === undefined
       ? allDone
-        ? t('bits.allDoneBody')
-        : t('bits.doneBody')
+        ? t(big ? 'older.bits.allDoneBody' : 'bits.allDoneBody')
+        : t(big ? 'older.bits.doneBody' : 'bits.doneBody')
       : passed
         ? t('learn.mission.checkPassed')
         : t('learn.mission.checkNotYet')
@@ -42,11 +46,11 @@ export default function BitDone({ kind, stars, passed, reward, allDone, hasNext,
       {(stars >= 2 || passed) && <Confetti />}
       <div className="rounded-3xl bg-white p-6 text-center shadow-md">
         <div className="flex items-end justify-center gap-2">
-          <MascotSvg mood={stars >= 2 || passed ? 'cheer' : 'encourage'} size={104} decorative />
+          {mascot && <MascotSvg mood={stars >= 2 || passed ? 'cheer' : 'encourage'} size={104} decorative />}
           <span className="pb-2 text-4xl" aria-hidden="true">{BIT_ICON[kind]}</span>
         </div>
         <h1 id="bit-done-title" className="mt-2 text-3xl font-extrabold text-ludiko-text">
-          {t('bits.doneTitle')}
+          {t(big ? 'older.bits.doneTitle' : 'bits.doneTitle')}
         </h1>
         <p className="mt-2 text-lg font-semibold text-ludiko-text/80">{body}</p>
         <div className="mt-3 flex justify-center gap-2 text-4xl" role="img" aria-label={t('learn.mission.stepStars', { n: stars })}>
@@ -72,14 +76,14 @@ export default function BitDone({ kind, stars, passed, reward, allDone, hasNext,
 
       {hasNext && (
         <div className="rounded-3xl bg-ludiko-green p-4 text-center shadow-md">
-          <p className="text-xl font-extrabold text-ludiko-text">{t('bits.another')}</p>
+          <p className="text-xl font-extrabold text-ludiko-text">{t(big ? 'older.bits.another' : 'bits.another')}</p>
           <button
             type="button"
             onClick={onNext}
             data-testid="bit-another"
             className="mt-3 min-h-[60px] w-full rounded-2xl bg-white text-xl font-extrabold text-ludiko-text shadow-md active:scale-95"
           >
-            {t('bits.anotherCta')}
+            {t(big ? 'older.bits.anotherCta' : 'bits.anotherCta')}
           </button>
         </div>
       )}
@@ -92,7 +96,7 @@ export default function BitDone({ kind, stars, passed, reward, allDone, hasNext,
           hasNext ? 'bg-white' : 'bg-ludiko-green'
         }`}
       >
-        {t('bits.stop')}
+        {t(big ? 'older.bits.stop' : 'bits.stop')}
       </button>
     </section>
   )

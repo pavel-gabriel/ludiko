@@ -5,6 +5,8 @@ import LegalLink from '@/components/legal/LegalLink'
 import type { SubjectId } from '@/engine/types'
 import type { ParentSummary } from '@/learner'
 import { isPushSupported, needsInstall } from '@/services/pushAvailability'
+import { isBig } from '@/older/ageBand'
+import { formatMark, markFromScore } from '@/older/marks'
 import ExamEntryCard from '@/ui/exam/ExamEntryCard'
 import ProgressBar from './ProgressBar'
 import { subjectEmoji } from './subjects'
@@ -73,6 +75,7 @@ export default function ParentView({ profileName, profileGrade, summary, titleOf
   const { t, i18n } = useTranslation()
   const [confirm, setConfirm] = useState<SubjectId | null>(null)
   const en = i18n.language.startsWith('en')
+  const big = isBig(profileGrade)
   const pick = (text: { ro: string; en: string }) => (en && text.en) || text.ro
 
   return (
@@ -80,6 +83,12 @@ export default function ParentView({ profileName, profileGrade, summary, titleOf
       <p className="rounded-2xl bg-ludiko-yellow px-4 py-3 text-center text-sm font-bold text-ludiko-text">
         {t('learn.parent.intro', { name: profileName })}
       </p>
+
+      {big && (
+        <p className="rounded-2xl bg-white px-4 py-3 text-center text-sm font-bold text-ludiko-text" data-testid="marks-note">
+          {t('learn.parent.marksNote')}
+        </p>
+      )}
 
       <p className={`${section} text-base font-bold text-ludiko-text`} data-testid="play-days">
         <span aria-hidden="true">🌈 </span>
@@ -124,6 +133,11 @@ export default function ParentView({ profileName, profileGrade, summary, titleOf
               value={s.totalSkills ? s.masteredCount / s.totalSkills : 0}
               label={t('learn.parent.mastered', { done: s.masteredCount, total: s.totalSkills })}
             />
+            {big && s.totalSkills > 0 && (
+              <p className="mt-2 text-sm font-bold text-ludiko-text" data-testid="parent-mark">
+                {t('learn.parent.estimatedMark', { mark: formatMark(markFromScore(s.masteredCount, s.totalSkills) ?? 1, i18n.language) })}
+              </p>
+            )}
           </div>
 
           <div className={section}>

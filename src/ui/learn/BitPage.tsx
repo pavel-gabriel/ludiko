@@ -7,6 +7,8 @@ import { triggerClassSync } from '@/classroom/syncGate'
 import { learnerService, type Bit } from '@/learner'
 import type { ChildProfile } from '@/profiles/types'
 import { hasPushSubscription } from '@/services/pushAvailability'
+import { isBig } from '@/older/ageBand'
+import { getShowMascot, recordBitDone } from '@/older/olderStore'
 import { getSessionItems } from '@/ui/session/itemSource'
 import SessionRunner from '@/ui/session/SessionRunner'
 import type { SessionSummary } from '@/ui/session/types'
@@ -46,6 +48,8 @@ function BitRunner({ profile, subject, index, plan }: { profile: ChildProfile; s
   const [view, setView] = useState<View>({ name: 'loading' })
   const [nonce, setNonce] = useState(0)
   const runs = useRef(0)
+  const big = isBig(profile.grade)
+  const showMascot = !big || getShowMascot(profile.id)
   const earned = useRef<number[]>([])
   const checkResult = useRef<boolean | undefined>(undefined)
 
@@ -121,6 +125,7 @@ function BitRunner({ profile, subject, index, plan }: { profile: ChildProfile; s
       const nextIndex = (pending.find((b) => b.index > bit.index) ?? pending[0])?.index
       if (bits.every((b) => b.done) && !bit.done) progressStore.onMissionComplete()
       reportPlayedToday()
+      recordBitDone(profile.id)
       triggerClassSync(profile.id)
       let allDone = bits.every((b) => b.done)
       let nextPath = nextIndex === undefined ? undefined : `/learn/bit/${subject}/${nextIndex}`
@@ -206,6 +211,8 @@ function BitRunner({ profile, subject, index, plan }: { profile: ChildProfile; s
         <LearnShell>
           <BitDone
             kind={bit!.kind}
+            big={big}
+            mascot={showMascot}
             stars={view.stars}
             passed={view.passed}
             reward={progressStore.reward}
@@ -224,7 +231,7 @@ function BitRunner({ profile, subject, index, plan }: { profile: ChildProfile; s
           key={view.runId}
           items={view.items}
           mode={isCheck ? 'check' : 'practice'}
-          title={t('bits.sessionTitle', { kind: t(`bits.kinds.${bit!.kind}`), title: titleOf(step.skillId) })}
+          title={t('bits.sessionTitle', { kind: t(big ? `older.bitKinds.${bit!.kind}` : `bits.kinds.${bit!.kind}`), title: titleOf(step.skillId) })}
           getExplanation={isCheck ? undefined : explanationFor}
           onAttempt={recorder.onAttempt}
           onFinish={(summary) => {

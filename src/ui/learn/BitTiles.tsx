@@ -23,7 +23,7 @@ const COLS: Record<number, string> = { 1: 'grid-cols-1', 2: 'grid-cols-2', 3: 'g
  * "Biții de azi": the day's plan across subjects, 1–3 tiles of about 3 minutes each (Matematică, Limba română,
  * a rotating subject). A tick on the finished ones; a small celebration when all of them are done.
  */
-export default function BitTiles({ bits }: { bits: PlanBit[] }) {
+export default function BitTiles({ bits, big = false, mascot = true }: { bits: PlanBit[]; big?: boolean; mascot?: boolean }) {
   const { t } = useTranslation()
   const allDone = bits.length > 0 && bits.every((b) => b.done)
   const next = bits.find((b) => !b.done)?.index
@@ -34,19 +34,19 @@ export default function BitTiles({ bits }: { bits: PlanBit[] }) {
         <div className="min-w-0 flex-1">
           <h2 className="text-xl font-extrabold text-ludiko-text">
             <span aria-hidden="true">✨ </span>
-            {t('bits.title')}
+            {t(big ? 'older.bits.title' : 'bits.title')}
           </h2>
           <p className="text-sm font-semibold text-ludiko-text/80" data-testid="plan-status">
-            {allDone ? t('bits.allDone') : t('bits.subtitle')}
+            {allDone ? t(big ? 'older.bits.allDone' : 'bits.allDone') : t(big ? 'older.bits.subtitle' : 'bits.subtitle')}
           </p>
         </div>
-        {allDone && <MascotSvg mood="cheer" size={64} className="-my-2 shrink-0" decorative />}
+        {allDone && mascot && <MascotSvg mood="cheer" size={64} className="-my-2 shrink-0" decorative />}
       </div>
 
       <ul className={`mt-3 grid gap-2 ${COLS[Math.min(3, Math.max(1, bits.length))]}`}>
         {bits.map((bit) => {
           const subject = t(`learn.subject.${bit.subject}`)
-          const what = bit.source === 'placement' ? t('bits.plan.check') : t(`bits.kinds.${bit.kind}`)
+          const what = bit.source === 'placement' ? t('bits.plan.check') : t(big ? `older.bitKinds.${bit.kind}` : `bits.kinds.${bit.kind}`)
           return (
             <li key={bit.index} className="min-w-0">
               <Link
@@ -56,7 +56,7 @@ export default function BitTiles({ bits }: { bits: PlanBit[] }) {
                 data-source={bit.source}
                 data-done={bit.done}
                 aria-label={t('bits.tile', { kind: `${subject}, ${what}`, state: t(bit.done ? 'bits.state.done' : 'bits.state.todo') })}
-                className={`relative flex min-h-[136px] flex-col items-center justify-center gap-1 rounded-2xl px-1 py-3 text-center shadow-sm transition-transform active:scale-95 ${
+                className={`relative flex ${big ? 'min-h-[104px]' : 'min-h-[136px]'} flex-col items-center justify-center gap-1 rounded-2xl px-1 py-3 text-center shadow-sm transition-transform active:scale-95 ${
                   bit.done ? 'bg-white/80' : bit.source === 'placement' ? 'bg-ludiko-yellow' : TONE[bit.kind]
                 } ${bit.index === next ? 'ring-4 ring-white' : ''}`}
               >
