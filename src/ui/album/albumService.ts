@@ -1,5 +1,7 @@
+import { earnedMilestones } from '@/learner/extrasUnlocks'
+import * as profiles from '@/profiles/profileService'
 import { addSticker, getProgress } from '@/profiles/profileService'
-import type { ProfileProgress } from '@/profiles/types'
+import type { ChildProfile, ProfileProgress } from '@/profiles/types'
 import { dueSpecialStickers, migrateStickers, missionBonusSticker } from './earning'
 
 /** Skills the child has mastered: each one is an island conquered */
@@ -17,11 +19,19 @@ export function masteredSkillIds(progress: Pick<ProfileProgress, 'skills'>): str
 export async function awardSpecials(profileId: string): Promise<string[]> {
   const progress = await getProgress(profileId)
   const added: string[] = []
+  // the grade tells which level checks are expected; without a profile that milestone simply waits
+  let grade: { grade: ChildProfile['grade'] } | undefined
+  try {
+    grade = await profiles.getProfile(profileId)
+  } catch {
+    grade = undefined
+  }
+  const milestones = earnedMilestones(progress, grade)
   // set stickers depend on regular ones only, so one extra pass is enough; the loop is just a safety net
   for (let pass = 0; pass < 2; pass++) {
     const due = dueSpecialStickers(
       progress.stickers,
-      { masteredSkillIds: masteredSkillIds(progress), playDays: progress.playDays.length },
+      { masteredSkillIds: masteredSkillIds(progress), playDays: progress.playDays.length, milestones },
       added,
     )
     if (due.length === 0) break

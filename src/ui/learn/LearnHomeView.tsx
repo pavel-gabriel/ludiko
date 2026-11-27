@@ -6,7 +6,9 @@ import type { SubjectId } from '@/engine/types'
 import type { AssignmentBit, PlanBit } from '@/learner'
 import { isBig } from '@/older/ageBand'
 import { getShowMascot, setShowMascot } from '@/older/olderStore'
+import type { MilestoneId } from '@/learner/extrasUnlocks'
 import { MascotSvg } from '@/ui/mascot/Mascot'
+import MascotLookPicker from '@/ui/mascot/MascotLookPicker'
 import ChallengeCard from '@/ui/older/ChallengeCard'
 import ChoosePanel from '@/ui/older/ChoosePanel'
 import WeeklyGoalCard from '@/ui/older/WeeklyGoalCard'
@@ -52,6 +54,8 @@ export interface LearnHomeViewProps {
   assignments?: AssignmentBit[]
   /** Stickers in the album (the chip shows it); absent in fixtures */
   stickerCount?: number
+  /** Milestones reached (unlock Ludi's looks); absent in fixtures: no look picker */
+  milestones?: MilestoneId[]
 }
 
 /** "N zile de joacă" with the language's own plural form; zero is an invitation, never a reset message */
@@ -111,7 +115,7 @@ function SubjectRow({ s }: { s: SubjectHome }) {
 }
 
 /** The learner's front door: greeting, stars, gentle streak, today's plan, and every subject below */
-export default function LearnHomeView({ profile, stars, playDays, plan, subjects, checks, locked, lockedNote, assignments, stickerCount }: LearnHomeViewProps) {
+export default function LearnHomeView({ profile, stars, playDays, plan, subjects, checks, locked, lockedNote, assignments, stickerCount, milestones }: LearnHomeViewProps) {
   const { t, i18n } = useTranslation()
   const [open, setOpen] = useState(false)
   const big = isBig(profile.grade)
@@ -231,6 +235,8 @@ export default function LearnHomeView({ profile, stars, playDays, plan, subjects
       </section>
 
       <ExamEntryCard grade={profile.grade} />
+
+      {pid && milestones && showMascot && <MascotLookPicker profileId={pid} earned={milestones} />}
 
       {big && pid && (
         <label className="mx-auto flex min-h-[44px] items-center gap-3 text-sm font-bold text-ludiko-text">

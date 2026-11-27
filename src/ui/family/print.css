@@ -1,0 +1,38 @@
+/* "Printează / Salvează PDF": only the history is printed, as plain black on white */
+.family-print-only {
+  display: none;
+}
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  .family-print,
+  .family-print * {
+    visibility: visible !important;
+  }
+  .family-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff !important;
+    color: #000 !important;
+    padding: 0 !important;
+  }
+  .family-print section,
+  .family-print li {
+    break-inside: avoid;
+  }
+  .family-print * {
+    box-shadow: none !important;
+  }
+  .family-print-only {
+    display: block;
+  }
+  .family-noprint {
+    display: none !important;
+  }
+  @page {
+    margin: 14mm;
+  }
+}

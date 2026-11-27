@@ -967,7 +967,157 @@
       "done": "Gata, copiii au fost importați."
     },
     "badge": "Sincronizat în cloud",
-    "profilesLink": "Ai deja un cont de părinte? Intră aici"
+    "profilesLink": "Ai deja un cont de părinte? Intră aici",
+    "extras": {
+      "title": "Extra pentru familie",
+      "subtitle": "Doar pentru adulți. Învățarea rămâne gratuită, mereu; aici sunt unelte în plus pentru voi.",
+      "allChildren": "Toți copiii",
+      "history": {
+        "title": "Istoricul progresului",
+        "intro": "Totul este calculat din ce se află pe acest dispozitiv. Duratele sunt estimări.",
+        "print": "Printează / Salvează PDF",
+        "printHint": "În fereastra de printare alege „Salvează ca PDF”.",
+        "printTitle": "Ludiko: istoricul progresului lui {{name}}",
+        "printedOn": "Generat la {{date}}",
+        "open": "Istoric complet",
+        "loading": "Se pregătește istoricul…",
+        "back": "Înapoi la pagina pentru părinți",
+        "empty": "Încă nu e nimic de arătat. După primele jocuri, istoricul apare aici."
+      },
+      "month": {
+        "title": "Ce s-a schimbat luna aceasta",
+        "none": "Luna aceasta a fost liniștită. Un joc scurt azi este de ajuns ca să reluați.",
+        "mastered_one": "A stăpânit o insulă nouă.",
+        "mastered_few": "A stăpânit {{count}} insule noi.",
+        "mastered_other": "A stăpânit {{count}} de insule noi.",
+        "subjectMastered_one": "{{subject}}: o insulă nouă stăpânită.",
+        "subjectMastered_few": "{{subject}}: {{count}} insule noi stăpânite.",
+        "subjectMastered_other": "{{subject}}: {{count}} de insule noi stăpânite.",
+        "gapsDown_one": "{{subject}}: cu o lacună mai puțin decât la verificarea dinainte.",
+        "gapsDown_few": "{{subject}}: cu {{count}} lacune mai puține decât la verificarea dinainte.",
+        "gapsDown_other": "{{subject}}: cu {{count}} de lacune mai puține decât la verificarea dinainte.",
+        "checked": "{{subject}}: a făcut verificarea de nivel.",
+        "playDays_one": "S-a jucat într-o zi (luna dinainte: {{before}}).",
+        "playDays_few": "S-a jucat în {{count}} zile (luna dinainte: {{before}}).",
+        "playDays_other": "S-a jucat în {{count}} de zile (luna dinainte: {{before}}).",
+        "playDaysMore_one": "S-a jucat într-o zi, mai mult decât luna dinainte ({{before}}).",
+        "playDaysMore_few": "S-a jucat în {{count}} zile, mai mult decât luna dinainte ({{before}}).",
+        "playDaysMore_other": "S-a jucat în {{count}} de zile, mai mult decât luna dinainte ({{before}}).",
+        "minutes_one": "Aproximativ un minut de exersat.",
+        "minutes_few": "Aproximativ {{count}} minute de exersat.",
+        "minutes_other": "Aproximativ {{count}} de minute de exersat."
+      },
+      "weekly": {
+        "title": "Insule stăpânite pe săptămâni",
+        "desc": "Ultimele 12 săptămâni. O insulă este o competență stăpânită.",
+        "chart": "Insule stăpânite pe săptămâni, de la cea mai veche la cea mai nouă: {{values}}",
+        "weekOf": "Săptămâna care începe pe {{date}}: {{count}}",
+        "total_one": "O insulă stăpânită în 12 săptămâni",
+        "total_few": "{{count}} insule stăpânite în 12 săptămâni",
+        "total_other": "{{count}} de insule stăpânite în 12 săptămâni",
+        "subjectTitle": "Pe materii",
+        "mastered": "{{done}} din {{total}} insule stăpânite"
+      },
+      "checks": {
+        "title": "Verificări de nivel",
+        "none": "Nu s-a făcut încă nicio verificare.",
+        "row": "{{date}}: {{level}}, {{gaps}}",
+        "gapsNone": "nicio lacună",
+        "gaps_one": "o lacună",
+        "gaps_few": "{{count}} lacune",
+        "gaps_other": "{{count}} de lacune"
+      },
+      "level": {
+        "prep": "clasa pregătitoare",
+        "grade": "clasa {{grade}}",
+        "full": "{{grade}}, semestrul {{semester}}"
+      },
+      "calendar": {
+        "title": "Zilele de joacă",
+        "desc": "Ultimele 8 săptămâni. Zilele fără joc nu contează; important este că reveniți.",
+        "label": "Calendarul zilelor de joacă din ultimele 8 săptămâni",
+        "cell": "{{date}}: {{state}}",
+        "state": {
+          "0": "nicio joacă",
+          "1": "a jucat",
+          "2": "a lucrat la o misiune",
+          "3": "a lucrat la mai multe misiuni",
+          "future": "încă nu a venit"
+        },
+        "days": [
+          "L",
+          "Ma",
+          "Mi",
+          "J",
+          "V",
+          "S",
+          "D"
+        ],
+        "total_one": "O zi de joacă în 8 săptămâni",
+        "total_few": "{{count}} zile de joacă în 8 săptămâni",
+        "total_other": "{{count}} de zile de joacă în 8 săptămâni"
+      },
+      "practice": {
+        "title": "Timp de exersat (estimare)",
+        "total_one": "Aproximativ un minut în ultimele 8 săptămâni.",
+        "total_few": "Aproximativ {{count}} minute în ultimele 8 săptămâni.",
+        "total_other": "Aproximativ {{count}} de minute în ultimele 8 săptămâni.",
+        "perDay": "Medie: aproximativ {{count}} min într-o zi de joacă.",
+        "note": "Estimat din misiunile terminate; nu este măsurat cu ceasul.",
+        "chart": "Minute estimate pe săptămâni, de la cea mai veche la cea mai nouă: {{values}}"
+      },
+      "overview": {
+        "title": "Toți copiii",
+        "intro": "Pe scurt, pentru fiecare copil de pe acest dispozitiv.",
+        "back": "Înapoi la pagina pentru părinți",
+        "empty": "Nu există încă niciun profil.",
+        "line": "{{grade}}: {{days}}, {{mastered}}, {{checks}}",
+        "days_zero": "nicio zi de joacă săptămâna asta",
+        "days_one": "o zi de joacă săptămâna asta",
+        "days_few": "{{count}} zile de joacă săptămâna asta",
+        "days_other": "{{count}} de zile de joacă săptămâna asta",
+        "mastered_zero": "nicio insulă stăpânită încă",
+        "mastered_one": "o insulă stăpânită",
+        "mastered_few": "{{count}} insule stăpânite",
+        "mastered_other": "{{count}} de insule stăpânite",
+        "checks_zero": "nicio verificare de nivel",
+        "checks_one": "o verificare de nivel",
+        "checks_few": "{{count}} verificări de nivel",
+        "checks_other": "{{count}} de verificări de nivel",
+        "lastPlay": "Ultima joacă: {{date}}",
+        "neverPlayed": "Încă nu a jucat",
+        "open": "Vezi istoricul lui {{name}}"
+      },
+      "looks": {
+        "title": "Cum arată Ludi?",
+        "open": "Schimbă înfățișarea lui Ludi",
+        "close": "Gata",
+        "group": "Alege înfățișarea lui Ludi",
+        "chosen": "aleasă",
+        "locked": "încă blocată",
+        "names": {
+          "classic": "Clasic",
+          "mint": "Mentă",
+          "sky": "Cer",
+          "sunny": "Soare",
+          "scarf": "Fular",
+          "cap": "Șapcă",
+          "glasses": "Ochelari",
+          "crown": "Coroană"
+        },
+        "hint": {
+          "island": "Stăpânește o insulă la {{subject}}.",
+          "days7": "Joacă-te în 7 zile (nu trebuie să fie una după alta).",
+          "checksAll": "Termină „Hai să vedem ce știi” la toate materiile."
+        },
+        "note": "Înfățișările se câștigă învățând, niciodată cu bani."
+      },
+      "sticker": {
+        "island": "Prima insulă la {{subject}}",
+        "days7": "7 zile de joacă",
+        "checksAll": "Toate verificările făcute"
+      }
+    }
   },
   "classroom": {
     "title": "Clasa",
