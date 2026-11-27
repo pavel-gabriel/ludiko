@@ -1,0 +1,536 @@
+[
+ {
+  "id": "rom.text.characters.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Personaje și trăsături",
+   "en": "Characters and traits"
+  },
+  "prerequisites": [
+   "rom.text.characters.3",
+   "rom.text.literal.5"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.characters.6"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.characters.6",
+   "kind": "data",
+   "title": "Skill rom.text.characters.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.text.nonliterary.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Texte nonliterare: anunț, instrucțiuni, articol",
+   "en": "Non-literary texts: notice, instructions, article"
+  },
+  "prerequisites": [
+   "rom.text.mainidea.5"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.nonliterary.6"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.nonliterary.6",
+   "kind": "data",
+   "title": "Skill rom.text.nonliterary.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.vocab.lexfamily.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.4"
+   }
+  ],
+  "title": {
+   "ro": "Familia lexicală și derivarea",
+   "en": "Word families and derivation"
+  },
+  "prerequisites": [
+   "rom.vocab.sense.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "lexfamily"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.vocab.lexfamily.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.vocab.lexfamily.6",
+   "kind": "data",
+   "title": "Skill rom.vocab.lexfamily.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.morph.verb.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Verbul: persoană, număr și timp",
+   "en": "The verb: person, number and tense"
+  },
+  "prerequisites": [
+   "rom.morph.pos.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "verb-forms",
+    "params": {
+     "kinds": [
+      "person",
+      "tense"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.morph.verb.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.morph.verb.6",
+   "kind": "data",
+   "title": "Skill rom.morph.verb.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.spell.nai.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Ortografie: n-ai / nai, ne-a / nea, mi-au / miau",
+   "en": "Spelling: n-ai / nai, ne-a / nea, mi-au / miau"
+  },
+  "prerequisites": [
+   "rom.spell.ia.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "spelling-pairs",
+    "params": {
+     "groups": [
+      "nai",
+      "nea",
+      "miau",
+      "mi"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.spell.nai.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.spell.nai.6",
+   "kind": "data",
+   "title": "Skill rom.spell.nai.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.morph.pos.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Părți de vorbire: verb, adverb, prepoziție, conjuncție, interjecție",
+   "en": "Parts of speech: verb, adverb, preposition, conjunction, interjection"
+  },
+  "prerequisites": [
+   "rom.morph.pos.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "parts-of-speech",
+    "params": {
+     "labels": [
+      "verb",
+      "adverb",
+      "prepoziție",
+      "conjuncție",
+      "interjecție"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.morph.pos.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.morph.pos.6",
+   "kind": "data",
+   "title": "Skill rom.morph.pos.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.morph.mood.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Verbul: modurile",
+   "en": "The verb: moods"
+  },
+  "prerequisites": [
+   "rom.morph.verb.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "verb-forms",
+    "params": {
+     "kinds": [
+      "mood"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.morph.mood.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.morph.mood.6",
+   "kind": "data",
+   "title": "Skill rom.morph.mood.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.spell.la.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Ortografie: l-a / la, într-o, m-ai / mai",
+   "en": "Spelling: l-a / la, într-o, m-ai / mai"
+  },
+  "prerequisites": [
+   "rom.spell.nai.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "spelling-pairs",
+    "params": {
+     "groups": [
+      "la",
+      "intro",
+      "untro",
+      "mai"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.spell.la.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.spell.la.6",
+   "kind": "data",
+   "title": "Skill rom.spell.la.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.vocab.paronym.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.4"
+   }
+  ],
+  "title": {
+   "ro": "Paronime: cuvinte care seamănă",
+   "en": "Paronyms: look-alike words"
+  },
+  "prerequisites": [
+   "rom.vocab.homonym.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "word-relations",
+    "params": {
+     "relation": "paronym"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.vocab.paronym.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.vocab.paronym.6",
+   "kind": "data",
+   "title": "Skill rom.vocab.paronym.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.fig.more.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Figuri de stil: metaforă, enumerație, repetiție",
+   "en": "Figures of speech: metaphor, enumeration, repetition"
+  },
+  "prerequisites": [
+   "rom.fig.basic.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "figures-of-speech",
+    "params": {
+     "figures": [
+      "metaforă",
+      "enumerație",
+      "repetiție"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.fig.more.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.fig.more.6",
+   "kind": "data",
+   "title": "Skill rom.fig.more.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.punct.comma.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Virgula în propoziție",
+   "en": "The comma in a sentence"
+  },
+  "prerequisites": [
+   "rom.punct.basic.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "comma"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.punct.comma.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.punct.comma.6",
+   "kind": "data",
+   "title": "Skill rom.punct.comma.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.text.inference.6",
+  "subject": "rom",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Citim printre rânduri",
+   "en": "Reading between the lines"
+  },
+  "prerequisites": [
+   "rom.text.inference.4",
+   "rom.text.characters.6"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.inference.6"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.inference.6",
+   "kind": "data",
+   "title": "Skill rom.text.inference.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ }
+]

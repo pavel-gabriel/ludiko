@@ -28,7 +28,8 @@ function jsonFiles(dir: string): string[] {
   });
 }
 
-const romSkills = getSkillsBySubject('rom');
+/* grades 0-IV only: the V-VIII skills are covered by tests/romGimnaziu.test.ts */
+const romSkills = getSkillsBySubject('rom').filter((s) => s.grade <= 4);
 const romFiles = [
   ...jsonFiles(join(CONTENT, 'skills', 'rom')),
   ...jsonFiles(join(CONTENT, 'items', 'rom')),
@@ -505,7 +506,8 @@ describe('rom generators over every generator-backed skill', () => {
 /* ------------------------------------------------------------------ */
 
 const textFiles = jsonFiles(join(CONTENT, 'items', 'rom'));
-const texts: ReadAndAnswerItem[] = textFiles.flatMap((f) => readJson(f));
+const romSkillIds = new Set(romSkills.map((s) => s.id));
+const texts: ReadAndAnswerItem[] = textFiles.flatMap((f) => readJson(f) as ReadAndAnswerItem[]).filter((t) => romSkillIds.has(t.skillId));
 const sentencesOf = (p: string): string[] => p.split(/(?<=[.!?])\s+/).filter(Boolean);
 const wordsOfText = (s: string): string[] => s.split(/\s+/).filter(Boolean);
 

@@ -1,0 +1,1682 @@
+[
+ {
+  "id": "exp.rom.text.literal.5",
+  "skillId": "rom.text.literal.5",
+  "title": {
+   "ro": "Găsim informația în text",
+   "en": "Finding the information in the text"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Citește textul cu atenție, o dată pe tot, apoi încă o dată pe bucăți. Informațiile cerute se află scrise chiar în text."
+    }
+   },
+   {
+    "text": {
+     "ro": "La fiecare întrebare caută în text cuvintele din întrebare. Răspunsul este lângă ele: nume, locuri, numere, culori."
+    }
+   },
+   {
+    "text": {
+     "ro": "Textele nonliterare (anunțuri, instrucțiuni) au date clare: ora, locul, ce trebuie să aduci. Nu te lăsa păcălit de ce ai presupune: alege doar ce scrie."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.literal.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.literal.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.modes.5",
+  "skillId": "rom.text.modes.5",
+  "title": {
+   "ro": "Modurile de expunere",
+   "en": "Modes of expression"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Narațiunea povestește întâmplări: ce s-a petrecut, în ce ordine. Caută verbe de acțiune și cuvinte ca „apoi”, „a doua zi”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Descrierea arată cum arată un loc, o ființă sau un obiect: culori, forme, sunete, mirosuri. Aici nu se întâmplă nimic nou, ci „se pictează cu cuvinte”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Dialogul este convorbirea dintre personaje, marcată cu linie de dialog (—). Monologul este ceea ce își spune un personaj singur."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.modes.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.modes.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.vocab.synonym.5",
+  "skillId": "rom.vocab.synonym.5",
+  "title": {
+   "ro": "Același sens, sens opus",
+   "en": "Same meaning, opposite meaning"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Sinonimele sunt cuvinte cu sens apropiat: „viteaz” și „curajos”. Le poți schimba între ele fără să schimbi ideea."
+    }
+   },
+   {
+    "text": {
+     "ro": "Antonimele sunt cuvinte cu sens opus: „bogat” și „sărac”. Ele funcționează în perechi."
+    }
+   },
+   {
+    "text": {
+     "ro": "Ca să alegi corect, spune propoziția în minte cu cuvântul găsit. Dacă se păstrează sensul, e sinonim; dacă se întoarce sensul, e antonim."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.vocab.synonym.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.vocab.synonym.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.vocab.homonym.5",
+  "skillId": "rom.vocab.homonym.5",
+  "title": {
+   "ro": "Cuvinte care arată la fel",
+   "en": "Words that look the same"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Omonimele se scriu și se pronunță la fel, dar au sensuri diferite: „lac” (apă) și „lac” (vopsea)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Ca să afli sensul, citește propoziția întreagă. Cuvintele din jur îți spun despre ce este vorba."
+    }
+   },
+   {
+    "text": {
+     "ro": "Când două propoziții folosesc cuvântul în același sens, vorbesc despre același lucru: de pildă ambele despre apă sau ambele despre vopsea."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.vocab.homonym.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.vocab.homonym.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.morph.noun.5",
+  "skillId": "rom.morph.noun.5",
+  "title": {
+   "ro": "Ce este substantivul?",
+   "en": "What is a noun?"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Substantivul denumește ființe, lucruri, fenomene sau idei: „copil”, „masă”, „ploaie”, „bunătate”. Răspunde la întrebările cine? ce?"
+    }
+   },
+   {
+    "text": {
+     "ro": "Substantivul comun denumește tot ce este de același fel (râu, oraș). Cel propriu denumește ceva anume și se scrie cu literă mare (Dunărea, Brașov)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Substantivul are gen (masculin, feminin, neutru) și număr (singular sau plural). Verifică cu „un/o” la singular și „doi/două” la plural."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.morph.noun.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.morph.noun.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.morph.pos.5",
+  "skillId": "rom.morph.pos.5",
+  "title": {
+   "ro": "Cum recunoaștem partea de vorbire",
+   "en": "How to recognise the part of speech"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Pune o întrebare cuvântului: Ce fel de...? arată adjectiv (casă veche). Câți? Al câtelea? arată numeral (trei, al doilea)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Pronumele ține locul substantivului (ea, noi, cine). Articolul însoțește substantivul (un, o, niște) și arată dacă îl știm deja sau nu."
+    }
+   },
+   {
+    "text": {
+     "ro": "Citește cuvântul în propoziție, nu singur: același cuvânt poate fi altceva în altă propoziție."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.morph.pos.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.morph.pos.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.spell.sa.5",
+  "skillId": "rom.spell.sa.5",
+  "title": {
+   "ro": "s-a, sa, s-au, sau",
+   "en": "s-a, sa, s-au, sau"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Cu cratimă (s-a, s-au) avem „se” + „a/au”: ele se leagă de un verb („s-a spălat”). Poți spune „el s-a spălat”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Fără cratimă, „sau” înseamnă „ori”: „ciocolată sau înghețată?”. Dacă poți pune „ori”, scrii „sau”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Forma „sa” (fără cratimă) este rară și arată cine are ceva („casa sa”). La început, pune întrebarea: este un verb sau o alegere?"
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.spell.sa.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.spell.sa.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.spell.ia.5",
+  "skillId": "rom.spell.ia.5",
+  "title": {
+   "ro": "i-a, ia, i-au, iau",
+   "en": "i-a, ia, i-au, iau"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "„Ia” și „iau” vin de la verbul „a lua”: „Ea ia autobuzul. Eu iau pâine.”"
+    }
+   },
+   {
+    "text": {
+     "ro": "Cu cratimă (i-a, i-au) avem „i” (lui/ei) + „a/au”: cineva a făcut ceva pentru cineva („i-a dat o carte”)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Test: înlocuiește cu „dat” sau „adus”. Dacă merge („i-a dat”), scrie cu cratimă. Dacă înlocuiești cu „primește”, scrie „ia”."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.spell.ia.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.spell.ia.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.punct.basic.5",
+  "skillId": "rom.punct.basic.5",
+  "title": {
+   "ro": "Semnele de punctuație",
+   "en": "Punctuation marks"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Punctul închide o afirmație, semnul întrebării o întrebare, semnul exclamării o bucurie, o mirare sau un ordin."
+    }
+   },
+   {
+    "text": {
+     "ro": "Virgula desparte cuvintele dintr-o enumerație și numele celui căruia ne adresăm: „Maria, vino!”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Două puncte anunță o enumerație sau replica cuiva. Ghilimelele încadrează ce a spus altcineva."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.punct.basic.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.punct.basic.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.spell.caps.5",
+  "skillId": "rom.spell.caps.5",
+  "title": {
+   "ro": "Literă mare sau literă mică",
+   "en": "Capital or small letter"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Literă mare scriem la începutul propoziției, la numele de persoane, de locuri și de ape (Ioana, Cluj, Dunărea)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Zilele săptămânii și lunile se scriu cu literă mică în mijlocul propoziției: luni, iulie."
+    }
+   },
+   {
+    "text": {
+     "ro": "În titluri doar primul cuvânt are literă mare, cu excepția numelor proprii. După două puncte, la citat, începem cu literă mare."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.spell.caps.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.spell.caps.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.vocab.sense.5",
+  "skillId": "rom.vocab.sense.5",
+  "title": {
+   "ro": "Sens propriu și sens figurat",
+   "en": "Literal and figurative meaning"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Sensul propriu este cel obișnuit, din dicționar: „apă rece” arată temperatura. Sensul figurat este „împrumutat”: „primire rece”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Un cuvânt polisemantic are mai multe sensuri înrudite: „coadă” (la animal, la tigaie, la rând)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Citește propoziția: dacă cuvântul nu mai arată lucrul obișnuit, ci o trăsătură sau o stare, sensul este figurat."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.vocab.sense.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.vocab.sense.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.fig.basic.5",
+  "skillId": "rom.fig.basic.5",
+  "title": {
+   "ro": "Primele figuri de stil",
+   "en": "First figures of speech"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Epitetul este un cuvânt care spune cum este ceva, într-un fel expresiv: „pădure deasă”, „cântec duios”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Comparația apropie două lucruri cu „ca”, „precum”: „Alerga ca vântul”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Personificarea dă trăsături omenești lucrurilor sau animalelor: „vântul șoptește”, „pârâul râde”."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.fig.basic.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.fig.basic.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.mainidea.5",
+  "skillId": "rom.text.mainidea.5",
+  "title": {
+   "ro": "Ce spune textul pe scurt",
+   "en": "What the text says in short"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Ideea principală răspunde la întrebarea: despre ce este vorba, pe scurt? Ea cuprinde tot textul, nu un singur detaliu."
+    }
+   },
+   {
+    "text": {
+     "ro": "Un detaliu apare într-o propoziție. Ideea principală se vede în aproape toate propozițiile."
+    }
+   },
+   {
+    "text": {
+     "ro": "Titlul potrivit este scurt și se leagă de toată povestea, nu doar de un moment."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.mainidea.5",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.mainidea.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.characters.6",
+  "skillId": "rom.text.characters.6",
+  "title": {
+   "ro": "Cum ne dăm seama cum este un personaj",
+   "en": "How to tell what a character is like"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Trăsăturile se văd din fapte: ce face personajul în situații grele. Cine ajută este generos, cine așteaptă cu răbdare este răbdător."
+    }
+   },
+   {
+    "text": {
+     "ro": "Spusele personajului arată și ele cum este: o replică ironică, amabilă sau rea ne dă indicii."
+    }
+   },
+   {
+    "text": {
+     "ro": "Povestitorul poate spune direct cum este (harnic, fricos). Când nu spune, tu tragi concluzii din fapte și vorbe."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.characters.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.characters.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.nonliterary.6",
+  "skillId": "rom.text.nonliterary.6",
+  "title": {
+   "ro": "Citim texte din viața de zi cu zi",
+   "en": "Reading everyday texts"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Anunțul spune ce, când, unde și cine. Caută data, ora și locul: ele sunt, de obicei, cele cerute."
+    }
+   },
+   {
+    "text": {
+     "ro": "Instrucțiunile se citesc în ordine: pașii sunt numerotați sau legați de „mai întâi”, „apoi”, „la sfârșit”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Articolul informează. Distinge faptele (care se pot verifica) de păreri. Verifică ce spune textul, nu ce crezi tu."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.nonliterary.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.nonliterary.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.vocab.lexfamily.6",
+  "skillId": "rom.vocab.lexfamily.6",
+  "title": {
+   "ro": "Cuvinte din aceeași familie",
+   "en": "Words from the same family"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Cuvintele din aceeași familie lexicală au aceeași rădăcină: floare, florărie, florar, înflorit."
+    }
+   },
+   {
+    "text": {
+     "ro": "Derivarea formează cuvinte noi cu prefixe (ne-, dez-) și sufixe (-ar, -ărie, -ică): fericit, nefericit; pădure, pădurar."
+    }
+   },
+   {
+    "text": {
+     "ro": "Atenție la cuvinte care sună asemănător, dar au altă rădăcină: „școală” și „șoarece” nu fac parte din aceeași familie."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.vocab.lexfamily.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.vocab.lexfamily.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.morph.verb.6",
+  "skillId": "rom.morph.verb.6",
+  "title": {
+   "ro": "Cum se schimbă verbul",
+   "en": "How the verb changes"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Verbul arată o acțiune. El se schimbă după persoană (eu, tu, el) și număr (singular sau plural): scriu, scrii, scrie; scriem, scrieți, scriu."
+    }
+   },
+   {
+    "text": {
+     "ro": "Prezentul arată ce se întâmplă acum (citesc). Imperfectul arată ceva obișnuit în trecut (citeam). Perfectul compus (am citit) arată o acțiune terminată."
+    }
+   },
+   {
+    "text": {
+     "ro": "Viitorul se formează cu voi, vei, va... + verb (voi citi). Mai mult ca perfectul (citisem) arată ceva petrecut înaintea altei întâmplări din trecut."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.morph.verb.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.morph.verb.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.spell.nai.6",
+  "skillId": "rom.spell.nai.6",
+  "title": {
+   "ro": "n-ai, ne-a, mi-a, mi-au",
+   "en": "n-ai, ne-a, mi-a, mi-au"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Cu cratimă (n-ai, ne-a, mi-a) sunt două cuvinte lipite: „nu ai”, „ne a”. Poți pune „nu ai” în locul lui „n-ai”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Fără cratimă, „nai” este un instrument muzical, „nea” se folosește în „nea Ion”, iar „miau” este sunetul pe care îl face pisica."
+    }
+   },
+   {
+    "text": {
+     "ro": "Pentru „mi-a / mi-au” alegi după cine face acțiunea: „bunicul mi-a dat” (unul), „bunicii mi-au dat” (mai mulți)."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.spell.nai.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.spell.nai.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.morph.pos.6",
+  "skillId": "rom.morph.pos.6",
+  "title": {
+   "ro": "Verb, adverb, prepoziție, conjuncție, interjecție",
+   "en": "Verb, adverb, preposition, conjunction, interjection"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Verbul arată ce face cineva (citește, doarme). Adverbul spune cum, când sau unde se face acțiunea (repede, mâine, aici) și nu se schimbă."
+    }
+   },
+   {
+    "text": {
+     "ro": "Prepoziția leagă un cuvânt de substantiv (la școală, pe masă). Conjuncția leagă cuvinte sau propoziții (și, dar, sau, dacă, că)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Interjecția exprimă o stare sau imită un sunet și are, de obicei, semn de exclamare după ea: vai!, bravo!, uf!"
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.morph.pos.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.morph.pos.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.morph.mood.6",
+  "skillId": "rom.morph.mood.6",
+  "title": {
+   "ro": "Moduri ale verbului",
+   "en": "Moods of the verb"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Indicativul spune ce se întâmplă (merg, am mers, voi merge). Conjunctivul exprimă o dorință sau o nevoie: „să merg”, „să citești”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Condițional-optativul (aș merge, ar veni) arată ce s-ar putea întâmpla. Imperativul dă un ordin sau o rugăminte (Citește!)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Modurile nepersonale sunt infinitivul (a citi), gerunziul (citind), participiul (citit, citită) și supinul (de citit)."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.morph.mood.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.morph.mood.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.spell.la.6",
+  "skillId": "rom.spell.la.6",
+  "title": {
+   "ro": "l-a, la, într-o, m-ai, mai",
+   "en": "l-a, la, într-o, m-ai, mai"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "„La” este prepoziție: „la școală”. „L-a” este „l (pe el)” + „a”: „Ion l-a ajutat”. Încearcă să pui „pe el” după verb."
+    }
+   },
+   {
+    "text": {
+     "ro": "„M-ai” este „mă” + „ai”: „M-ai chemat”. „Mai” înseamnă „încă” sau arată comparația: „mai mult”, „mai înalt”."
+    }
+   },
+   {
+    "text": {
+     "ro": "„Într-o” se scrie cu două cuvinte lipite prin cratimă, cu î: într-o casă (la feminin), într-un oraș (la masculin). Nu „intr-o”."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.spell.la.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.spell.la.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.vocab.paronym.6",
+  "skillId": "rom.vocab.paronym.6",
+  "title": {
+   "ro": "Paronime",
+   "en": "Paronyms"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Paronimele sunt cuvinte care se aseamănă la sunet, dar au sensuri diferite: „familiar” și „familial”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Nu le alege după sunet. Gândește-te la ce înseamnă fiecare și citește propoziția cu atenție."
+    }
+   },
+   {
+    "text": {
+     "ro": "Cuvântul potrivit este cel care are sens în propoziție: „adopt un câine”, dar „mă adaptez la școală”."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.vocab.paronym.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.vocab.paronym.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.fig.more.6",
+  "skillId": "rom.fig.more.6",
+  "title": {
+   "ro": "Metaforă, enumerație, repetiție",
+   "en": "Metaphor, enumeration, repetition"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Metafora spune direct că un lucru „este” altul: „cartea este o fereastră”. Nu apare „ca”, așa că nu este comparație."
+    }
+   },
+   {
+    "text": {
+     "ro": "Enumerația înșiră mai multe elemente de același fel: „mere, pere, struguri și nuci”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Repetiția reia același cuvânt pentru a insista: „ninge, ninge, ninge”."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.fig.more.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.fig.more.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.punct.comma.6",
+  "skillId": "rom.punct.comma.6",
+  "title": {
+   "ro": "Când punem virgulă",
+   "en": "When to use a comma"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Punem virgulă între cuvinte care se înșiră (mere, pere, nuci) și după cuvântul căruia ne adresăm (Mamă, ai venit!)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Punem virgulă înaintea lui „dar”, „iar”, „însă” când leagă două propoziții: „Voiam să plec, dar a plouat”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Nu punem virgulă între subiect și predicat și nici între verb și complementul lui direct."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.punct.comma.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.punct.comma.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.inference.6",
+  "skillId": "rom.text.inference.6",
+  "title": {
+   "ro": "Concluzii din indicii",
+   "en": "Conclusions from clues"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Unele lucruri nu sunt spuse, ci sugerate: un oftat, o privire spre cer, un gest făcut încet."
+    }
+   },
+   {
+    "text": {
+     "ro": "Pune cap la cap indiciile din text și întreabă-te: de ce a făcut așa? Ce simte?"
+    }
+   },
+   {
+    "text": {
+     "ro": "Concluzia ta trebuie să se sprijine pe text. Dacă n-ai nicio dovadă în text, nu alege acel răspuns."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.inference.6",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.inference.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.intention.7",
+  "skillId": "rom.text.intention.7",
+  "title": {
+   "ro": "De ce a scris autorul textul",
+   "en": "Why the author wrote the text"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Un text poate informa, convinge, amuza sau emoționa. Întreabă-te: ce vrea autorul să facă în mintea cititorului?"
+    }
+   },
+   {
+    "text": {
+     "ro": "Indicii: întrebări adresate cititorului, exemple, exagerări, ton glumeț sau grav."
+    }
+   },
+   {
+    "text": {
+     "ro": "Intenția se vede în ansamblul textului, nu într-o singură propoziție. Alege răspunsul care se potrivește cu tot textul."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.intention.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.intention.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.theme.7",
+  "skillId": "rom.text.theme.7",
+  "title": {
+   "ro": "Tema și mesajul textului",
+   "en": "The theme and the message"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Tema este subiectul mare despre care vorbește textul: prietenia, curajul, trecerea timpului."
+    }
+   },
+   {
+    "text": {
+     "ro": "Mesajul este ideea pe care o desprindem noi: ce învățăm din întâmplare sau din poezie."
+    }
+   },
+   {
+    "text": {
+     "ro": "Simbolurile (un pom, un ceas, un râu) pot reprezenta idei mai mari: obiectul spune și altceva decât pare."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.theme.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.theme.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.synt.subject.7",
+  "skillId": "rom.synt.subject.7",
+  "title": {
+   "ro": "Subiect și predicat",
+   "en": "Subject and predicate"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Subiectul răspunde la întrebările cine? ce? față de verb: „Copiii cântă” (cine cântă? copiii)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Predicatul verbal este verbul care arată acțiunea: „cântă”, „a ajuns”. Predicatul nominal este format din verbul „a fi” (sau pare, devine) + un nume: „este medic”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Caută mai întâi verbul, apoi întreabă: cine face acțiunea? Așa găsești subiectul. Subiectul poate fi și după verb."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.synt.subject.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.synt.subject.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.synt.attribute.7",
+  "skillId": "rom.synt.attribute.7",
+  "title": {
+   "ro": "Atributul",
+   "en": "The attribute"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Atributul precizează un substantiv și răspunde la întrebările care? ce fel de? al cui? câți?"
+    }
+   },
+   {
+    "text": {
+     "ro": "Poate fi adjectiv („pisică neagră”), substantiv la genitiv („cartea Mariei”) sau grup cu prepoziție („ceasul de pe perete”)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Dacă un cuvânt nu poate fi scos fără să rămână substantivul „gol” (carte? care carte?), atunci este atribut."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.synt.attribute.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.synt.attribute.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.vocab.compound.7",
+  "skillId": "rom.vocab.compound.7",
+  "title": {
+   "ro": "Cum se îmbogățește vocabularul",
+   "en": "How vocabulary grows"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Compunerea alătură două cuvinte: „bună + voință = bunăvoință”, „floarea-soarelui”, „nu-mă-uita”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Conversiunea schimbă partea de vorbire fără să schimbe forma: „Binele învinge” (aici „bine” este substantiv); „Cântă bine” (adverb)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Derivarea cu prefix și sufix, compunerea și conversiunea sunt mijloace interne. Împrumutul din alte limbi (weekend) este mijloc extern."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.vocab.compound.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.vocab.compound.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.fig.adv.7",
+  "skillId": "rom.fig.adv.7",
+  "title": {
+   "ro": "Hiperbolă, antiteză, inversiune",
+   "en": "Hyperbole, antithesis, inversion"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Hiperbola exagerează: „Am așteptat o veșnicie”. Nu trebuie să fie crezută, are rol de accent."
+    }
+   },
+   {
+    "text": {
+     "ro": "Antiteza pune față în față două idei opuse: „Unii râdeau, alții plângeau”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Inversiunea schimbă ordinea normală a cuvintelor, de obicei ca să sune poetic: „Frumoasă este țara mea!”"
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.fig.adv.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.fig.adv.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.argument.7",
+  "skillId": "rom.text.argument.7",
+  "title": {
+   "ro": "Argumente și opinii",
+   "en": "Arguments and opinions"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Într-un text argumentativ, autorul are o părere (opinie) și o susține cu argumente: motive, exemple, date."
+    }
+   },
+   {
+    "text": {
+     "ro": "Un fapt se poate verifica („opt ore de somn”); o opinie spune ce crede cineva („părerea mea este...”)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Scrisoarea oficială sau cererea au formule de adresare și de încheiere (Domnule primar... Cu stimă)."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.argument.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.argument.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.synt.complement.7",
+  "skillId": "rom.synt.complement.7",
+  "title": {
+   "ro": "Complementul direct, indirect și circumstanțial",
+   "en": "Direct, indirect and adverbial complements"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Complementul direct răspunde la ce? pe cine?: „citește lecția”. Complementul indirect răspunde la cui? despre ce? de ce? „Dau cartea Mariei”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Complementul circumstanțial arată circumstanța: unde? (în curte), când? (mâine), cum? (repede)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Pune întrebarea după verb. Dacă întrebarea este „unde?”, „când?” sau „cum?”, nu este direct sau indirect, ci circumstanțial."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.synt.complement.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.synt.complement.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.morph.pos.7",
+  "skillId": "rom.morph.pos.7",
+  "title": {
+   "ro": "Toate părțile de vorbire",
+   "en": "All the parts of speech"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Părțile flexibile se schimbă: substantiv, articol, adjectiv, pronume, numeral, verb. Cele neflexibile rămân la fel: adverb, prepoziție, conjuncție, interjecție."
+    }
+   },
+   {
+    "text": {
+     "ro": "Una și aceeași formă poate fi alt lucru în altă propoziție: „bine” este adverb în „cântă bine” și substantiv în „binele”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Citește propoziția, apoi cere cuvântului o întrebare: ce fel de? cum? câți? cine? ce face?"
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.morph.pos.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.morph.pos.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.spell.cratima.7",
+  "skillId": "rom.spell.cratima.7",
+  "title": {
+   "ro": "Cratima în cuvinte lipite",
+   "en": "The hyphen in joined words"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Cratima leagă două cuvinte rostite împreună, când unul își pierde o vocală: „nu ai” = n-ai, „mi a” = mi-a, „mă ai” = m-ai."
+    }
+   },
+   {
+    "text": {
+     "ro": "Cuvântul fără cratimă are alt sens: „mai” (încă), „sau” (ori), „miau” (sunetul pisicii)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Regula sigură: despărțirea în două cuvinte trebuie să aibă sens. Dacă nu are, scrii forma fără cratimă."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.spell.cratima.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.spell.cratima.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.verse.7",
+  "skillId": "rom.verse.7",
+  "title": {
+   "ro": "Cum este făcută o poezie",
+   "en": "How a poem is built"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Versul este un rând din poezie. Strofa este un grup de versuri: distih (2), terțină (3), catren (4)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Rima este potrivirea sunetelor de la sfârșitul versurilor: „floare – soare”. Schemele sunt aabb (împerecheată), abab (încrucișată), abba (îmbrățișată)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Măsura este numărul de silabe dintr-un vers. Ritmul este alternarea silabelor accentuate și neaccentuate."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.verse.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.verse.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.punct.dialog.7",
+  "skillId": "rom.punct.dialog.7",
+  "title": {
+   "ro": "Dialog și citat",
+   "en": "Dialogue and quotation"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Replicile dintr-un dialog încep cu linie de dialog (—). Cuvintele naratorului se scriu după replică și încep cu literă mică: „— Vii? a întrebat Ana.”"
+    }
+   },
+   {
+    "text": {
+     "ro": "Citatul se pune între ghilimele: Bunicul a spus: „Vine primăvara.”"
+    }
+   },
+   {
+    "text": {
+     "ro": "Monologul este ceea ce își spune un personaj singur; dialogul implică două sau mai multe personaje."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.punct.dialog.7",
+   "kind": "explanation",
+   "title": "Explanation for rom.punct.dialog.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.analysis.8",
+  "skillId": "rom.text.analysis.8",
+  "title": {
+   "ro": "Cum analizăm un text literar",
+   "en": "How to analyse a literary text"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Începe cu o citire atentă: cine povestește (narator), unde și când se petrece acțiunea, cine sunt personajele."
+    }
+   },
+   {
+    "text": {
+     "ro": "Apoi caută tema, simbolurile (obiecte care înseamnă mai mult) și figurile de stil. Fiecare are un rol: de a face descrierea mai vie sau mai emoționantă."
+    }
+   },
+   {
+    "text": {
+     "ro": "Pentru un răspuns bun: spune ideea, dă un exemplu din text, explică în ce fel susține exemplul ideea ta."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.analysis.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.analysis.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.nonliterary.8",
+  "skillId": "rom.text.nonliterary.8",
+  "title": {
+   "ro": "Fapt sau opinie",
+   "en": "Fact or opinion"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Faptul se poate verifica (cifre, date, nume). Opinia exprimă un punct de vedere: „cea mai bună decizie”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Când este prezentat un citat, întreabă cine îl spune și ce interes are. Reportajul sau știrea informează."
+    }
+   },
+   {
+    "text": {
+     "ro": "Scopul textului poate fi să informeze, să avertizeze sau să convingă. Indicii: verbe la imperativ, întrebări, cifre, exprimări de tipul „sfatul meu”."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.nonliterary.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.nonliterary.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.synt.clause.8",
+  "skillId": "rom.synt.clause.8",
+  "title": {
+   "ro": "Propoziție și frază",
+   "en": "Clause and complex sentence"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "O propoziție are un singur predicat. Numărăm predicatele ca să aflăm câte propoziții are o frază."
+    }
+   },
+   {
+    "text": {
+     "ro": "Coordonarea leagă propoziții egale prin „și”, „dar”, „iar”, „sau”, „deci” sau doar prin virgulă. Fiecare poate sta singură."
+    }
+   },
+   {
+    "text": {
+     "ro": "În subordonare, o propoziție depinde de alta și este introdusă prin „că”, „care”, „dacă”, „când”, „deși” etc. Ea nu are sens singură."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.synt.clause.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.synt.clause.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.synt.subordinate.8",
+  "skillId": "rom.synt.subordinate.8",
+  "title": {
+   "ro": "Ce fel de subordonată este",
+   "en": "What kind of subordinate clause it is"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Subordonata ține locul unei părți de propoziție: subiect (subiectivă), atribut (atributivă), complement (completivă și circumstanțială)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Pune întrebarea după verbul din propoziția principală: ce? (completivă directă), care? (atributivă), când? (de timp), de ce? (de cauză), ca să ce? (de scop)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Dacă este introdusă prin „care” și explică un substantiv, este atributivă. Dacă este introdusă prin „deși”, este concesivă; prin „dacă”, condițională."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.synt.subordinate.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.synt.subordinate.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.fig.review.8",
+  "skillId": "rom.fig.review.8",
+  "title": {
+   "ro": "Cum recunoaștem figura",
+   "en": "How to spot the figure"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Verifică semnele sigure: „ca/precum” = comparație; același cuvânt reluat = repetiție; ordinea schimbată = inversiune."
+    }
+   },
+   {
+    "text": {
+     "ro": "Dacă lucrurile au gesturi omenești (râde, șoptește) = personificare. Dacă X „este” Y = metaforă. Dacă apare ceva exagerat = hiperbolă."
+    }
+   },
+   {
+    "text": {
+     "ro": "Un cuvânt care arată cum este ceva = epitet. Dacă vezi două idei opuse = antiteză. Dacă vezi o înșiruire = enumerație."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.fig.review.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.fig.review.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.punct.phrase.8",
+  "skillId": "rom.punct.phrase.8",
+  "title": {
+   "ro": "Virgula între propoziții",
+   "en": "The comma between clauses"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Punem virgulă între propoziții coordonate legate prin „dar”, „iar”, „însă”, „deci”."
+    }
+   },
+   {
+    "text": {
+     "ro": "Subordonata așezată înaintea principalei se desparte prin virgulă: „Când a sunat telefonul, mama era în grădină.”"
+    }
+   },
+   {
+    "text": {
+     "ro": "De regulă nu punem virgulă înainte de completivele introduse prin „că”: „Am aflat că ai câștigat.” Atenție la propozițiile explicative: ele se pun între virgule."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.punct.phrase.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.punct.phrase.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.text.compare.8",
+  "skillId": "rom.text.compare.8",
+  "title": {
+   "ro": "Cum comparăm două texte",
+   "en": "How to compare two texts"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Compară mai întâi tema: despre ce vorbesc ambele texte? Apoi forma: proză sau poezie, rimă sau dialog."
+    }
+   },
+   {
+    "text": {
+     "ro": "Când două persoane au păreri diferite, notează argumentul fiecăreia și găsește valoarea pe care o apără (egalitate, libertate, confort)."
+    }
+   },
+   {
+    "text": {
+     "ro": "Răspunsul bun spune ce au în comun textele și în ce se deosebesc, cu un exemplu din fiecare."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.text.compare.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.text.compare.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.verse.8",
+  "skillId": "rom.verse.8",
+  "title": {
+   "ro": "Lirică și epică",
+   "en": "Lyric and epic"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Textul liric exprimă sentimente prin voce proprie (eul liric) și folosește, de obicei, versuri, rimă și figuri de stil."
+    }
+   },
+   {
+    "text": {
+     "ro": "Textul epic povestește o acțiune cu personaje, spusă de un narator. Poate fi în proză sau în versuri."
+    }
+   },
+   {
+    "text": {
+     "ro": "Imaginile artistice vorbesc simțurilor: vizuale (culori), auditive (sunete), olfactive (mirosuri). Tema este subiectul, mesajul este ideea."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.verse.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.verse.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.morph.review.8",
+  "skillId": "rom.morph.review.8",
+  "title": {
+   "ro": "Recapitulare: morfologie",
+   "en": "Review: morphology"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Recunoaște partea de vorbire punând întrebarea potrivită: cine? ce face? cum? câți? care?"
+    }
+   },
+   {
+    "text": {
+     "ro": "La verb, află întâi persoana și numărul, apoi modul (indicativ, conjunctiv, imperativ etc.) și, la indicativ, timpul."
+    }
+   },
+   {
+    "text": {
+     "ro": "Verifică mereu în propoziție: același cuvânt își poate schimba partea de vorbire."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.morph.review.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.morph.review.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.spell.review.8",
+  "skillId": "rom.spell.review.8",
+  "title": {
+   "ro": "Ortografia cuvintelor lipite",
+   "en": "Spelling of joined words"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Cu cratimă se scriu formele lipite „s-a, s-au, i-a, i-au, l-a, n-ai, ne-a, mi-a, m-ai”: ele pot fi descompuse în două cuvinte."
+    }
+   },
+   {
+    "text": {
+     "ro": "Fără cratimă: „sau”, „ia/iau”, „la”, „nai”, „mai”, „miau”: sunt cuvinte de sine stătătoare."
+    }
+   },
+   {
+    "text": {
+     "ro": "Metoda sigură: încearcă să înlocuiești. Dacă merge „ori”, scrii „sau”; dacă merge „nu ai”, scrii „n-ai”; dacă merge „pe el”, scrii „l-a”."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.spell.review.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.spell.review.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.rom.synt.roles.8",
+  "skillId": "rom.synt.roles.8",
+  "title": {
+   "ro": "Recapitulare: funcții sintactice",
+   "en": "Review: syntactic functions"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Găsește predicatul, apoi subiectul: cine face acțiunea? Apoi caută complementele cu întrebările ce? cui? unde? când? cum?"
+    }
+   },
+   {
+    "text": {
+     "ro": "Atributul precizează un substantiv (care? ce fel de?). Predicatul nominal are „a fi” + nume."
+    }
+   },
+   {
+    "text": {
+     "ro": "Verifică: fiecare cuvânt are un rol. Dacă nu ești sigur, scoate cuvântul și vezi ce se schimbă."
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.rom.synt.roles.8",
+   "kind": "explanation",
+   "title": "Explanation for rom.synt.roles.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ }
+]

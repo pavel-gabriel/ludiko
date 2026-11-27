@@ -1,0 +1,1496 @@
+[
+ {
+  "id": "item.rom.text.characters.6.t01",
+  "type": "read-and-answer",
+  "skillId": "rom.text.characters.6",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.characters.6",
+  "passage": {
+   "ro": "Mihaela a primit de la bunica un cățel mic, pe care l-a numit Pufi. În prima zi, fetița a vrut să se joace până seara, dar Pufi tremura de frică într-un colț. Mihaela a lăsat jucăriile deoparte, s-a așezat lângă el și i-a vorbit încet, ore în șir. În zilele următoare, a pregătit singură mâncarea cățelului și l-a scos la plimbare, deși afară ploua. Colegii o strigau la fotbal, dar ea răspundea zâmbind că Pufi are nevoie de ea. După o lună, cățelul alerga vesel după fetiță prin toată curtea."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.characters.6.t01.q1",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t01.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce trăsătură a ajutat-o pe Mihaela să-l liniștească pe cățel?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "graba"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "răbdarea"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "încăpățânarea"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.characters.6.t01.q2",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t01.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce a făcut Mihaela deși afară ploua?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a rămas în casă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "l-a scos pe Pufi la plimbare"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a plecat la fotbal"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.characters.6.t01.q3",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t01.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Care pereche de cuvinte o descrie cel mai bine pe Mihaela?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "grijulie și responsabilă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "leneșă și grăbită"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "nepăsătoare și vorbăreață"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.characters.6.t01.q4",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t01.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Mihaela a renunțat la cățel când colegii au chemat-o la fotbal."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.characters.6.t01",
+   "kind": "item",
+   "title": "Text item.rom.text.characters.6.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.characters.6.t02",
+  "type": "read-and-answer",
+  "skillId": "rom.text.characters.6",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.characters.6",
+  "passage": {
+   "ro": "Moș Gheorghe era fierarul satului. Avea mâinile bătătorite și o voce groasă, dar ochii îi străluceau blând. Când cineva venea cu o unealtă stricată, el nu cerea bani mulți. — Dacă ai nevoie de ea la muncă, o dreg gratis, spunea el. Copiii se adunau seara la poarta atelierului să privească scânteile. Moșul îi lăsa să intre, dar îi povățuia mereu: — Să nu atingeți fierul înroșit! Unii îl socoteau mai aspru, dar toți știau că pe el te puteai bizui."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.characters.6.t02.q1",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t02.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce trăsătură arată replica „Dacă ai nevoie de ea la muncă, o dreg gratis”?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "zgârcenia"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "generozitatea"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "mândria"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.characters.6.t02.q2",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t02.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Cum se purta moșul cu copiii?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "îi alunga de la atelier"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "îi lăsa să intre, dar îi avertiza să fie atenți"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "îi punea să lucreze"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.characters.6.t02.q3",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t02.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce înseamnă „pe el te puteai bizui”?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "putea fi de încredere"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "era foarte puternic"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "știa multe povești"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.characters.6.t02.q4",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t02.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Moș Gheorghe cerea sume mari pentru reparații."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.characters.6.t02",
+   "kind": "item",
+   "title": "Text item.rom.text.characters.6.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.characters.6.t03",
+  "type": "read-and-answer",
+  "skillId": "rom.text.characters.6",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.characters.6",
+  "passage": {
+   "ro": "La concursul de atletism al școlii, Teo se pregătea de luni de zile. În ziua cursei, a ajuns primul la jumătatea traseului. Deodată, a văzut că Dan, un coleg din altă clasă, căzuse și își strângea glezna. Teo a ezitat o clipă, apoi s-a întors și l-a ajutat să se ridice. Au trecut linia de sosire ultimii, sprijinindu-se unul pe altul. Mulți au aplaudat. Teo n-a primit nicio medalie, dar profesorul de sport i-a spus că a câștigat ceva mai important."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.characters.6.t03.q1",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t03.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce trăsătură a arătat Teo prin gestul său?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "dorința de a câștiga cu orice preț"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "spiritul de întrajutorare"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "teama de concurs"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.characters.6.t03.q2",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t03.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce i s-a întâmplat lui Dan?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a căzut și s-a lovit la gleznă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a ieșit din concurs"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a ajuns primul"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.characters.6.t03.q3",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t03.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce a vrut să spună profesorul prin „a câștigat ceva mai important”?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "că a primit un premiu mare"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "că a dat dovadă de omenie"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "că a alergat repede"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.characters.6.t03.q4",
+    "skillId": "rom.text.characters.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.characters.6.t03.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.characters.6.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Teo a câștigat medalia de aur."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.characters.6.t03",
+   "kind": "item",
+   "title": "Text item.rom.text.characters.6.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.nonliterary.6.t01",
+  "type": "read-and-answer",
+  "skillId": "rom.text.nonliterary.6",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.nonliterary.6",
+  "passage": {
+   "ro": "Ca să ai o plantă de fasole în ghiveci, ai nevoie de un ghiveci cu orificii în fund, pământ reavăn, câteva boabe de fasole și apă. Mai întâi, umple ghiveciul cu pământ până la două degete sub margine. Apoi pune în pământ trei boabe, la adâncimea unei falange. Acoperă-le ușor și udă pământul cu puțină apă. Așază ghiveciul lângă o fereastră luminoasă. După câteva zile vor apărea primii colți."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.nonliterary.6.t01.q1",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t01.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce fel de text este acesta?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "un text cu instrucțiuni"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "o poveste"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "o descriere de peisaj"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.nonliterary.6.t01.q2",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t01.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Câte boabe se pun în pământ?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "una"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "trei"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "zece"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.nonliterary.6.t01.q3",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t01.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Unde se așază ghiveciul?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "într-un loc întunecos"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "afară, în ploaie"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "lângă o fereastră luminoasă"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.rom.text.nonliterary.6.t01.q4",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t01.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Boabele se acoperă cu un strat gros de pământ."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.nonliterary.6.t01",
+   "kind": "item",
+   "title": "Text item.rom.text.nonliterary.6.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.nonliterary.6.t02",
+  "type": "read-and-answer",
+  "skillId": "rom.text.nonliterary.6",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.nonliterary.6",
+  "passage": {
+   "ro": "Biblioteca din oraș a anunțat că, de luna viitoare, programul se prelungește până la ora 20:00, de luni până vineri. Decizia a fost luată după ce un sondaj a arătat că mulți elevi vin la bibliotecă abia după terminarea orelor. În plus, sala de lectură va fi dotată cu zece calculatoare noi, pe care cititorii le vor putea folosi gratuit. Conducerea speră că schimbările vor atrage mai mulți tineri. Cei interesați se pot înscrie la ghișeul de la parter."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.nonliterary.6.t02.q1",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t02.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce se schimbă la bibliotecă?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "intrarea devine gratuită"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "programul se prelungește până la ora 20:00"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "biblioteca se mută"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.nonliterary.6.t02.q2",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t02.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "De ce s-a luat această decizie?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "un sondaj a arătat că elevii vin mai târziu"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "bibliotecarii au cerut vacanță"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "cărțile s-au înmulțit"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.nonliterary.6.t02.q3",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t02.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce dotare nouă va avea sala de lectură?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "zece calculatoare"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "o sută de cărți"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "două imprimante"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.nonliterary.6.t02.q4",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t02.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Programul prelungit este valabil și sâmbăta."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.nonliterary.6.t02",
+   "kind": "item",
+   "title": "Text item.rom.text.nonliterary.6.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.nonliterary.6.t03",
+  "type": "read-and-answer",
+  "skillId": "rom.text.nonliterary.6",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.nonliterary.6",
+  "passage": {
+   "ro": "Biblioteca școlii organizează concursul de desene „Orașul meu verde”, pentru elevii claselor a V-a – a VIII-a. Lucrările se realizează pe coli de format A3, cu creioane colorate sau acuarele. Fiecare elev poate depune o singură lucrare, până pe 15 noiembrie, la doamna bibliotecară. Cele mai frumoase trei desene vor fi expuse în holul școlii, iar autorii lor vor primi cărți. Rezultatele se afișează pe 20 noiembrie."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.nonliterary.6.t03.q1",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t03.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Cine poate participa la concurs?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "elevii claselor a V-a – a VIII-a"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "doar elevii clasei a V-a"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "toți copiii din oraș"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.nonliterary.6.t03.q2",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t03.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Până când se depun lucrările?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "până pe 20 noiembrie"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "până pe 15 noiembrie"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "până în decembrie"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.nonliterary.6.t03.q3",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t03.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce vor primi autorii celor mai frumoase trei desene?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "diplome"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "bani"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "cărți"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.rom.text.nonliterary.6.t03.q4",
+    "skillId": "rom.text.nonliterary.6",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.nonliterary.6.t03.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.nonliterary.6.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Un elev poate depune mai multe lucrări."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.nonliterary.6.t03",
+   "kind": "item",
+   "title": "Text item.rom.text.nonliterary.6.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.inference.6.t01",
+  "type": "read-and-answer",
+  "skillId": "rom.text.inference.6",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.inference.6",
+  "passage": {
+   "ro": "Rucsacul era gata de aseară. Ana verificase de trei ori dacă are harta, lanterna, sticla cu apă și ghetele groase. Dimineața s-a trezit înainte să sune ceasul și a privit pe geam: cerul era cenușiu, iar ramurile se legănau puternic. Ana a oftat, a lăsat rucsacul lângă ușă și s-a dus să-i scrie lui Vlad un mesaj."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.inference.6.t01.q1",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t01.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "De ce a oftat Ana?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "pentru că era obosită"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "pentru că excursia era pusă în pericol de vreme"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "pentru că uitase harta"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.inference.6.t01.q2",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t01.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce voia probabil să-i scrie lui Vlad?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "că excursia ar putea fi amânată"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "că a pierdut rucsacul"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "că a plecat deja"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.inference.6.t01.q3",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t01.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce arată faptul că a verificat rucsacul de trei ori?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "că era neatentă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "că era bine pregătită și nerăbdătoare"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "că nu avea încredere în Vlad"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.inference.6.t01.q4",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t01.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Afară era soare și liniște."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.inference.6.t01",
+   "kind": "item",
+   "title": "Text item.rom.text.inference.6.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.inference.6.t02",
+  "type": "read-and-answer",
+  "skillId": "rom.text.inference.6",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.inference.6",
+  "passage": {
+   "ro": "Bunicul a scos din ladă o cutie învelită în hârtie îngălbenită. A deschis-o încet, ca și cum ar fi vrut să nu trezească pe cineva. Înăuntru erau o fotografie, un fluier de lemn și o scrisoare cu marginile roase. Bunicul a privit fotografia mult timp, apoi a șoptit: „Câți ani au trecut...”. Mihai a înțeles că acea cutie ținea ceva foarte drag bunicului."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.inference.6.t02.q1",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t02.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "De ce a deschis bunicul cutia încet?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "pentru că era grea"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "pentru că obiectele din ea erau prețioase pentru el"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "pentru că dormea cineva în casă"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.inference.6.t02.q2",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t02.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce arată șoapta „Câți ani au trecut...”?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "amintiri și nostalgie"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "supărare pe Mihai"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "grabă"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.inference.6.t02.q3",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t02.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce obiecte erau în cutie?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "o fotografie, un fluier și o scrisoare"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "monede vechi și o hartă"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "doar scrisori"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.inference.6.t02.q4",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t02.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Mihai nu și-a dat seama că cutia este importantă pentru bunic."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.inference.6.t02",
+   "kind": "item",
+   "title": "Text item.rom.text.inference.6.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "item.rom.text.inference.6.t03",
+  "type": "read-and-answer",
+  "skillId": "rom.text.inference.6",
+  "difficulty": 4,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.rom.text.inference.6",
+  "passage": {
+   "ro": "Pe terenul de baschet, scorul era egal și mai erau zece secunde. Ioana a primit mingea, dar a văzut că o colegă, Sara, era liberă lângă coș. Ioana ar fi putut arunca ea, dar și-a amintit că Sara se antrenase mai mult la aruncările de aproape. A pasat. Mingea a intrat în coș chiar la semnalul final. Sala a izbucnit în urale, iar Ioana a zâmbit larg, fără să ceară vreun aplauz pentru ea."
+  },
+  "questions": [
+   {
+    "id": "item.rom.text.inference.6.t03.q1",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t03.q1",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "De ce a pasat Ioana mingea?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "pentru că era obosită"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "pentru că credea că Sara are șanse mai mari"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "pentru că regulamentul o cerea"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.inference.6.t03.q2",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t03.q2",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Ce arată purtarea Ioanei?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "modestie și spirit de echipă"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "invidie"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "neatenție"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.rom.text.inference.6.t03.q3",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t03.q3",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Cum s-a încheiat meciul pentru echipa Ioanei?"
+    },
+    "type": "choice",
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a pierdut la limită"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a câștigat chiar în ultima clipă"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a rămas la egalitate"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.rom.text.inference.6.t03.q4",
+    "skillId": "rom.text.inference.6",
+    "difficulty": 4,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.rom.text.inference.6.t03.q4",
+     "kind": "item",
+     "title": "Question item.rom.text.inference.6.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original text and questions drafted for the competence; awaiting human review"
+    },
+    "prompt": {
+     "ro": "Adevărat sau fals? Ioana a aruncat mingea în coș."
+    },
+    "type": "true-false",
+    "correct": false
+   }
+  ],
+  "provenance": {
+   "id": "prov.item.rom.text.inference.6.t03",
+   "kind": "item",
+   "title": "Text item.rom.text.inference.6.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions drafted for the competence; awaiting human review"
+  }
+ }
+]

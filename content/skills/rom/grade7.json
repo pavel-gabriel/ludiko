@@ -1,0 +1,547 @@
+[
+ {
+  "id": "rom.text.intention.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Intenția autorului",
+   "en": "The author's intention"
+  },
+  "prerequisites": [
+   "rom.text.characters.6"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade7.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.intention.7"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.intention.7",
+   "kind": "data",
+   "title": "Skill rom.text.intention.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.text.theme.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Tema și mesajul",
+   "en": "Theme and message"
+  },
+  "prerequisites": [
+   "rom.text.inference.6"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade7.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.theme.7"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.theme.7",
+   "kind": "data",
+   "title": "Skill rom.text.theme.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.synt.subject.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.2"
+   }
+  ],
+  "title": {
+   "ro": "Subiectul și predicatul",
+   "en": "Subject and predicate"
+  },
+  "prerequisites": [
+   "rom.morph.mood.6",
+   "rom.morph.pos.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "syntax-roles",
+    "params": {
+     "labels": [
+      "subiect",
+      "predicat verbal",
+      "predicat nominal"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.synt.subject.7"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.synt.subject.7",
+   "kind": "data",
+   "title": "Skill rom.synt.subject.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.synt.attribute.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.2"
+   }
+  ],
+  "title": {
+   "ro": "Atributul",
+   "en": "The attribute"
+  },
+  "prerequisites": [
+   "rom.synt.subject.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "syntax-roles",
+    "params": {
+     "labels": [
+      "atribut",
+      "subiect",
+      "predicat verbal",
+      "complement direct"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.synt.attribute.7"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.synt.attribute.7",
+   "kind": "data",
+   "title": "Skill rom.synt.attribute.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.vocab.compound.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.4"
+   }
+  ],
+  "title": {
+   "ro": "Compunere și conversiune",
+   "en": "Compounding and conversion"
+  },
+  "prerequisites": [
+   "rom.vocab.lexfamily.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "compound"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.vocab.compound.7"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.vocab.compound.7",
+   "kind": "data",
+   "title": "Skill rom.vocab.compound.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.fig.adv.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Figuri de stil: hiperbolă, antiteză, inversiune",
+   "en": "Figures of speech: hyperbole, antithesis, inversion"
+  },
+  "prerequisites": [
+   "rom.fig.more.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "figures-of-speech",
+    "params": {
+     "figures": [
+      "hiperbolă",
+      "antiteză",
+      "inversiune"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.fig.adv.7"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.fig.adv.7",
+   "kind": "data",
+   "title": "Skill rom.fig.adv.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.text.argument.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Texte argumentative și informative",
+   "en": "Argumentative and informative texts"
+  },
+  "prerequisites": [
+   "rom.text.nonliterary.6"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade7.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.argument.7"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.argument.7",
+   "kind": "data",
+   "title": "Skill rom.text.argument.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.synt.complement.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.2"
+   }
+  ],
+  "title": {
+   "ro": "Complementele",
+   "en": "Complements"
+  },
+  "prerequisites": [
+   "rom.synt.attribute.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "syntax-roles",
+    "params": {
+     "labels": [
+      "complement direct",
+      "complement indirect",
+      "complement circumstanțial de loc",
+      "complement circumstanțial de timp",
+      "complement circumstanțial de mod"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.synt.complement.7"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.synt.complement.7",
+   "kind": "data",
+   "title": "Skill rom.synt.complement.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.morph.pos.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Părți de vorbire: recapitulare",
+   "en": "Parts of speech: review"
+  },
+  "prerequisites": [
+   "rom.morph.pos.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "parts-of-speech",
+    "params": {
+     "labels": [
+      "substantiv",
+      "articol",
+      "adjectiv",
+      "pronume",
+      "numeral",
+      "verb",
+      "adverb",
+      "prepoziție",
+      "conjuncție",
+      "interjecție"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.morph.pos.7"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.morph.pos.7",
+   "kind": "data",
+   "title": "Skill rom.morph.pos.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.spell.cratima.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Ortografie: cratima — recapitulare",
+   "en": "Spelling: the hyphen — review"
+  },
+  "prerequisites": [
+   "rom.spell.la.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "spelling-pairs",
+    "params": {
+     "groups": [
+      "sa_au",
+      "mi",
+      "mai",
+      "miau",
+      "untro",
+      "intro"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.spell.cratima.7"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.spell.cratima.7",
+   "kind": "data",
+   "title": "Skill rom.spell.cratima.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.verse.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Versificație: rimă, ritm, măsură, strofă",
+   "en": "Versification: rhyme, rhythm, metre, stanza"
+  },
+  "prerequisites": [
+   "rom.fig.more.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "verse"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.verse.7"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.verse.7",
+   "kind": "data",
+   "title": "Skill rom.verse.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.punct.dialog.7",
+  "subject": "rom",
+  "grade": 7,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Punctuația dialogului și a citatului",
+   "en": "Punctuation of dialogue and quotation"
+  },
+  "prerequisites": [
+   "rom.punct.comma.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "dialog"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.punct.dialog.7"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.punct.dialog.7",
+   "kind": "data",
+   "title": "Skill rom.punct.dialog.7",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ }
+]

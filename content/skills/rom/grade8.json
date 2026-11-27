@@ -1,0 +1,482 @@
+[
+ {
+  "id": "rom.text.analysis.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Analiza textului literar: temă, simbol, procedee",
+   "en": "Analysing a literary text: theme, symbol, devices"
+  },
+  "prerequisites": [
+   "rom.text.theme.7"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.analysis.8"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.analysis.8",
+   "kind": "data",
+   "title": "Skill rom.text.analysis.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.text.nonliterary.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Texte nonliterare: fapte, opinii, scopul textului",
+   "en": "Non-literary texts: facts, opinions, purpose"
+  },
+  "prerequisites": [
+   "rom.text.argument.7"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.nonliterary.8"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.nonliterary.8",
+   "kind": "data",
+   "title": "Skill rom.text.nonliterary.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.synt.clause.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.2"
+   }
+  ],
+  "title": {
+   "ro": "Fraza: propoziții coordonate și subordonate",
+   "en": "The complex sentence: coordination and subordination"
+  },
+  "prerequisites": [
+   "rom.synt.complement.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "syntax-roles",
+    "params": {
+     "kinds": [
+      "clause"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.synt.clause.8"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.synt.clause.8",
+   "kind": "data",
+   "title": "Skill rom.synt.clause.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.synt.subordinate.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.2"
+   }
+  ],
+  "title": {
+   "ro": "Subordonata: subiectivă, atributivă, completivă, circumstanțială",
+   "en": "Subordinate clauses: subject, attributive, completive, adverbial"
+  },
+  "prerequisites": [
+   "rom.synt.clause.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "syntax-roles",
+    "params": {
+     "kinds": [
+      "subordinate"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.synt.subordinate.8"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.synt.subordinate.8",
+   "kind": "data",
+   "title": "Skill rom.synt.subordinate.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.fig.review.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Figuri de stil: recapitulare",
+   "en": "Figures of speech: review"
+  },
+  "prerequisites": [
+   "rom.fig.adv.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "figures-of-speech",
+    "params": {
+     "figures": [
+      "epitet",
+      "comparație",
+      "personificare",
+      "metaforă",
+      "enumerație",
+      "repetiție",
+      "hiperbolă",
+      "antiteză",
+      "inversiune"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.fig.review.8"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.fig.review.8",
+   "kind": "data",
+   "title": "Skill rom.fig.review.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.punct.phrase.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Punctuația în frază",
+   "en": "Punctuation in complex sentences"
+  },
+  "prerequisites": [
+   "rom.punct.dialog.7",
+   "rom.synt.clause.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "phrase"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.punct.phrase.8"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.punct.phrase.8",
+   "kind": "data",
+   "title": "Skill rom.punct.phrase.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.text.compare.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Compararea punctelor de vedere și a textelor",
+   "en": "Comparing viewpoints and texts"
+  },
+  "prerequisites": [
+   "rom.text.analysis.8",
+   "rom.text.nonliterary.8"
+  ],
+  "itemSources": [
+   {
+    "bank": "rom/texts-grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.rom.text.compare.8"
+  ],
+  "masteryCheck": {
+   "items": 3,
+   "minCorrect": 2
+  },
+  "provenance": {
+   "id": "prov.skill.rom.text.compare.8",
+   "kind": "data",
+   "title": "Skill rom.text.compare.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.verse.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Textul liric și epic",
+   "en": "Lyric and epic text"
+  },
+  "prerequisites": [
+   "rom.verse.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "rom-quiz",
+    "params": {
+     "topic": "verse2"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.rom.verse.8"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.verse.8",
+   "kind": "data",
+   "title": "Skill rom.verse.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.morph.review.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Morfologie: părți de vorbire și verb — recapitulare",
+   "en": "Morphology: parts of speech and the verb — review"
+  },
+  "prerequisites": [
+   "rom.morph.pos.7",
+   "rom.morph.mood.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "parts-of-speech",
+    "params": {}
+   },
+   {
+    "generator": "verb-forms",
+    "params": {}
+   }
+  ],
+  "explanations": [
+   "exp.rom.morph.review.8"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.morph.review.8",
+   "kind": "data",
+   "title": "Skill rom.morph.review.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.spell.review.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "4.3"
+   }
+  ],
+  "title": {
+   "ro": "Ortografie: recapitulare",
+   "en": "Spelling: review"
+  },
+  "prerequisites": [
+   "rom.spell.cratima.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "spelling-pairs",
+    "params": {}
+   }
+  ],
+  "explanations": [
+   "exp.rom.spell.review.8"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.spell.review.8",
+   "kind": "data",
+   "title": "Skill rom.spell.review.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ },
+ {
+  "id": "rom.synt.roles.8",
+  "subject": "rom",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LLR-V-VIII-2017",
+    "code": "2.2"
+   }
+  ],
+  "title": {
+   "ro": "Funcții sintactice: recapitulare",
+   "en": "Syntactic functions: review"
+  },
+  "prerequisites": [
+   "rom.synt.complement.7",
+   "rom.synt.subordinate.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "syntax-roles",
+    "params": {}
+   }
+  ],
+  "explanations": [
+   "exp.rom.synt.roles.8"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.rom.synt.roles.8",
+   "kind": "data",
+   "title": "Skill rom.synt.roles.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa; reading level aimed at the grade"
+  }
+ }
+]

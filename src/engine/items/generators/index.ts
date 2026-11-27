@@ -35,6 +35,13 @@ import './romSyllables';
 import './romWordPicture';
 import './romSentences';
 import './romVocab';
+// Romanian gimnaziu (V-VIII): spelling pairs, parts of speech, verb forms, syntax roles, figures of speech, curated quiz
+import './romSpelling';
+import './romPos';
+import './romVerbs';
+import './romSyntax';
+import './romFigures';
+import './romQuiz';
 // science generators (sci-sort, sci-which, sci-tf, sci-relation, sci-order)
 import './stiinte';
 // history (grade IV) generators
