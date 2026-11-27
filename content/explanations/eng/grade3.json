@@ -1,0 +1,479 @@
+[
+  {
+    "id": "exp.eng.havegot.3",
+    "skillId": "eng.havegot.3",
+    "title": {
+      "ro": "Ce am eu?",
+      "en": "What have I got?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cu «I», «you», «we», «they» spunem «have got»: «I have got a red bike.»",
+          "en": "With «I», «you», «we» and «they» we say «have got»: «I have got a red bike.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚲",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu «he», «she», «it» spunem «has got»: «She has got long hair.» «My dog has got four legs.»",
+          "en": "With «he», «she» and «it» we say «has got»: «She has got long hair.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐶",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru „nu am”: «I haven't got a sister.» «She hasn't got a computer.» Întrebări: «Have you got a pen?» «Has he got a bike?»",
+          "en": "For „not”: «I haven't got a sister.» «She hasn't got a computer.» Questions: «Have you got a pen?» «Has he got a bike?»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🖊️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.havegot.3",
+      "kind": "explanation",
+      "title": "Explanation for eng.havegot.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.tobe.3",
+    "skillId": "eng.tobe.3",
+    "title": {
+      "ro": "Nu este / este?",
+      "en": "Is not / is it?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pentru „nu” adăugăm «not»: «I am not hungry.» «She isn't at home.» «They aren't in the kitchen.»",
+          "en": "For „no” we add «not»: «I am not hungry.» «She isn't at home.» «They aren't in the kitchen.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru întrebare punem «am / is / are» la început: «Is he your brother?» «Are you ready?»",
+          "en": "For a question we put «am / is / are» first: «Is he your brother?» «Are you ready?»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "❓",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu «Where» și «How old»: «Where is my bag?» «Where are my socks?» «How old are you?»",
+          "en": "With «Where» and «How old»: «Where is my bag?» «Where are my socks?» «How old are you?»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎒",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.tobe.3",
+      "kind": "explanation",
+      "title": "Explanation for eng.tobe.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.plurals.3",
+    "skillId": "eng.plurals.3",
+    "title": {
+      "ro": "Unul sau mai mulți?",
+      "en": "One or more than one?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "De obicei adăugăm «-s»: «one cat, two cats». După «-s», «-x», «-ch», «-sh» adăugăm «-es»: «box, boxes».",
+          "en": "We usually add «-s»: «one cat, two cats». After «-s», «-x», «-ch» and «-sh» we add «-es»: «box, boxes»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐱",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Când cuvântul se termină în consoană + «y», schimbăm «y» în «ies»: «baby, babies», «strawberry, strawberries».",
+          "en": "When a word ends in consonant + «y» we change «y» to «ies»: «baby, babies»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👶",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Unele cuvinte sunt speciale: «child, children», «mouse, mice», «foot, feet», «man, men», «woman, women», «tooth, teeth», iar «sheep» rămâne «sheep».",
+          "en": "Some words are special: «child, children», «mouse, mice», «foot, feet», «man, men», «woman, women», «tooth, teeth» and «sheep» stays «sheep»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐑",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.plurals.3",
+      "kind": "explanation",
+      "title": "Explanation for eng.plurals.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.articles.3",
+    "skillId": "eng.articles.3",
+    "title": {
+      "ro": "a, an sau the?",
+      "en": "a, an or the?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Folosim «a» înaintea unui cuvânt care începe cu sunet de consoană: «a dog», «a big house».",
+          "en": "We use «a» before a consonant sound: «a dog», «a big house»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐶",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Folosim «an» înaintea unui cuvânt care începe cu sunet de vocală: «an apple», «an elephant», «an orange».",
+          "en": "We use «an» before a vowel sound: «an apple», «an elephant», «an orange»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Folosim «the» pentru ceva unic sau despre care știm deja: «The sun is hot.» «Look at the sky!»",
+          "en": "We use «the» for something unique or already known: «The sun is hot.» «Look at the sky!»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.articles.3",
+      "kind": "explanation",
+      "title": "Explanation for eng.articles.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.present.3",
+    "skillId": "eng.present.3",
+    "title": {
+      "ro": "Ce fac în fiecare zi?",
+      "en": "What do I do every day?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Prezentul simplu spune ce facem des sau mereu. Cu «I», «you», «we», «they» verbul nu se schimbă: «We go to school by bus.»",
+          "en": "The simple present tells what we do often. With «I», «you», «we» and «they» the verb does not change: «We go to school by bus.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚌",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu «he», «she», «it» adăugăm «-s»: «She plays the piano.» «The cat sleeps.»",
+          "en": "With «he», «she» and «it» we add «-s»: «She plays the piano.» «The cat sleeps.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎹",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Unele verbe iau «-es»: «go, goes», «watch, watches», «teach, teaches». Notă: «have» devine «has».",
+          "en": "Some verbs take «-es»: «go, goes», «watch, watches», «teach, teaches». «have» becomes «has»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📺",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.present.3",
+      "kind": "explanation",
+      "title": "Explanation for eng.present.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.daily.3",
+    "skillId": "eng.daily.3",
+    "title": {
+      "ro": "O zi de-a mea",
+      "en": "A day in my life"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Dimineața: «get up» (mă trezesc), «brush my teeth» (mă spăl pe dinți), «have breakfast» (iau micul dejun).",
+          "en": "In the morning: «get up», «brush my teeth» and «have breakfast»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌅",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Peste zi: «go to school» (merg la școală), «do my homework» (îmi fac temele), «have lunch» (iau prânzul).",
+          "en": "During the day: «go to school», «do my homework» and «have lunch»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏫",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Seara: «watch TV» (mă uit la televizor), «wash my hands» (mă spăl pe mâini), «go to bed» (mă culc). Se spune «have breakfast», nu „make breakfast” când mănânci!",
+          "en": "In the evening: «watch TV», «wash my hands» and «go to bed». We say «have breakfast» when we eat it."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌙",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.daily.3",
+      "kind": "explanation",
+      "title": "Explanation for eng.daily.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.time.3",
+    "skillId": "eng.time.3",
+    "title": {
+      "ro": "Cât este ceasul?",
+      "en": "What time is it?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Când minutarul este pe 12, spunem ora fixă: «It's four o'clock.» (Este ora patru.)",
+          "en": "When the long hand points to 12 we say «It's four o'clock.»"
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 4,
+          "minutes": 0
+        }
+      },
+      {
+        "text": {
+          "ro": "Când minutarul este pe 6 spunem «half past»: «It's half past four.» (Este patru și jumătate.)",
+          "en": "When the long hand points to 6 we say «half past»: «It's half past four.»"
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 4,
+          "minutes": 30
+        }
+      },
+      {
+        "text": {
+          "ro": "Orele se spun cu numerele: «one o'clock», «seven o'clock», «half past nine». Privește întâi ora scurtă, apoi minutarul.",
+          "en": "Hours use number words: «one o'clock», «seven o'clock», «half past nine». Look at the short hand first, then the long hand."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 9,
+          "minutes": 30
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.time.3",
+      "kind": "explanation",
+      "title": "Explanation for eng.time.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.wordorder.3",
+    "skillId": "eng.wordorder.3",
+    "title": {
+      "ro": "Cuvintele în ordine",
+      "en": "Words in order"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În engleză propoziția începe de obicei cu cine face ceva: «Tom has got a dog.» (Tom are un câine.)",
+          "en": "An English sentence usually starts with who does something: «Tom has got a dog.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐶",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi urmează verbul, apoi restul: «She can sing.» «I like pizza.» Nu schimbăm locul cuvintelor ca în română.",
+          "en": "Then comes the verb and then the rest: «She can sing.» «I like pizza.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎤",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "O propoziție începe cu literă mare și se termină cu punct sau semn de întrebare: «Is he your brother?»",
+          "en": "A sentence starts with a capital letter and ends with a full stop or a question mark: «Is he your brother?»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "✍️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.wordorder.3",
+      "kind": "explanation",
+      "title": "Explanation for eng.wordorder.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.reading.3",
+    "skillId": "eng.reading.3",
+    "title": {
+      "ro": "Cum citesc un text în engleză?",
+      "en": "How do I read an English text?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Citește textul o dată, încet, până la capăt. Nu e nevoie să înțelegi fiecare cuvânt.",
+          "en": "Read the text once, slowly, to the end. You do not need to understand every word."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📖",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Apoi citește întrebarea și caută răspunsul în text. Răspunsul este de obicei scris acolo.",
+          "en": "Then read the question and look for the answer in the text. The answer is usually written there."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "La „adevărat sau fals” («true» or «false») verifică propoziția cu textul, cuvânt cu cuvânt. Dacă un cuvânt nu se potrivește, propoziția e falsă.",
+          "en": "For «true» or «false», check the sentence against the text, word by word. If a word does not fit, the sentence is false."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "✅",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.reading.3",
+      "kind": "explanation",
+      "title": "Explanation for eng.reading.3",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  }
+]

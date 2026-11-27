@@ -105,6 +105,15 @@ export interface SkillMapNode {
   /** Playable now: all prerequisites at least practised */
   unlocked: boolean;
   dueForReview: boolean;
+  /**
+   * Position on the subject's island route (0-based; src/engine/planner/route.ts): prerequisites first,
+   * then (grade, semester), then authored order. getSkillMap returns the nodes in this order.
+   */
+  route?: number;
+  /** Mastered by the level check and not practised since: "already known", skipped on the route */
+  known?: boolean;
+  /** The next island on the route: what the planner introduces next (at most one node per subject) */
+  next?: boolean;
 }
 
 export interface ParentSummary {

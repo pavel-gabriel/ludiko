@@ -1,0 +1,144 @@
+{
+  "provenance": {
+    "id": "prov.data.eng.primary-reading",
+    "kind": "data",
+    "title": "Ludiko short English reading texts with comprehension questions (grades III-IV)",
+    "author": "Ludiko",
+    "source": "ai-draft",
+    "licence": "OWN",
+    "notes": "Ten original texts of 30-70 words (no textbook or exam text). British English. 'a' is the correct answer (it appears in the text, ignoring a leading 'a'), 'x' the wrong options; type 'tf' questions give an English statement 's' and its truth value. Awaiting review by an English teacher."
+  },
+  "texts": [
+    {
+      "id": "r3-ana",
+      "g": 3,
+      "title": "My family",
+      "text": "My name is Ana. I am eight years old. I live in a small house with my mum, my dad and my brother Tom. We have a cat. Its name is Mimi. Mimi is white and she likes milk. I love my family.",
+      "q": [
+        { "ro": "Câți ani are Ana?", "en": "How old is Ana?", "a": "eight", "x": ["seven", "nine", "ten"] },
+        { "ro": "Cum se numește pisica?", "en": "What is the cat's name?", "a": "Mimi", "x": ["Tom", "Ana", "Milk"] },
+        { "ro": "De ce culoare este pisica?", "en": "What colour is the cat?", "a": "white", "x": ["black", "brown", "yellow"] },
+        { "tf": false, "s": "Ana lives in a big house." },
+        { "tf": true, "s": "Ana has got a brother." }
+      ]
+    },
+    {
+      "id": "r3-saturday",
+      "g": 3,
+      "title": "A sunny Saturday",
+      "text": "It is Saturday today. The weather is sunny. Ben and his sister Mia are in the park. Ben plays football with his friends. Mia sits on the swing. After that they eat ice cream. The ice cream is cold and sweet. They are very happy.",
+      "q": [
+        { "ro": "Ce zi a săptămânii este azi?", "en": "What day is it today?", "a": "Saturday", "x": ["Sunday", "Monday", "Friday"] },
+        { "ro": "Cum este vremea?", "en": "What is the weather like?", "a": "sunny", "x": ["rainy", "windy", "snowy"] },
+        { "ro": "Ce joacă Ben?", "en": "What does Ben play?", "a": "football", "x": ["chess", "tennis", "hockey"] },
+        { "tf": false, "s": "Mia plays football." },
+        { "tf": true, "s": "The children eat ice cream." }
+      ]
+    },
+    {
+      "id": "r3-bag",
+      "g": 3,
+      "title": "My new bag",
+      "text": "I have got a new school bag. It is blue and red. In my bag I have got two books, a pencil, a ruler and a small apple. My friend Dan has got a green bag. His bag is old, but he likes it. We go to school together every morning.",
+      "q": [
+        { "ro": "Ce culori are ghiozdanul nou?", "en": "What colours is the new bag?", "a": "blue and red", "x": ["green", "black and white", "yellow and brown"] },
+        { "ro": "Câte cărți are în ghiozdan?", "en": "How many books are in the bag?", "a": "two", "x": ["one", "three", "four"] },
+        { "ro": "Cine are un ghiozdan verde?", "en": "Who has got a green bag?", "a": "Dan", "x": ["Tom", "Mia", "the teacher"] },
+        { "tf": false, "s": "Dan's bag is new." },
+        { "tf": true, "s": "The apple is small." }
+      ]
+    },
+    {
+      "id": "r3-farm",
+      "g": 3,
+      "title": "On the farm",
+      "text": "Mr Hill is a farmer. He has got a big farm with six cows, ten hens and two horses. Every morning he gets up at five o'clock. He gives milk to the cat and food to the hens. In the evening he goes to bed early.",
+      "q": [
+        { "ro": "Ce meserie are domnul Hill?", "en": "What is Mr Hill's job?", "a": "a farmer", "x": ["a doctor", "a teacher", "a cook"] },
+        { "ro": "Câte vaci are?", "en": "How many cows has he got?", "a": "six", "x": ["five", "ten", "two"] },
+        { "ro": "La ce oră se trezește?", "en": "What time does he get up?", "a": "five o'clock", "x": ["six o'clock", "seven o'clock", "eight o'clock"] },
+        { "tf": true, "s": "He has got two horses." },
+        { "tf": false, "s": "He goes to bed late." }
+      ]
+    },
+    {
+      "id": "r3-room",
+      "g": 3,
+      "title": "My room",
+      "text": "My room is small but nice. There is a bed, a desk and a lamp in it. The bed is next to the window. My teddy bear is on the bed. My books are on the desk. I like my room because it is quiet.",
+      "q": [
+        { "ro": "Unde este patul?", "en": "Where is the bed?", "a": "next to the window", "x": ["behind the door", "under the desk", "in the garden"] },
+        { "ro": "Ce este pe pat?", "en": "What is on the bed?", "a": "a teddy bear", "x": ["a lamp", "a book", "a cat"] },
+        { "ro": "De ce îi place camera?", "en": "Why does the writer like the room?", "a": "it is quiet", "x": ["it is big", "it is red", "it is cold"] },
+        { "tf": false, "s": "The books are under the bed." },
+        { "tf": true, "s": "There is a lamp in the room." }
+      ]
+    },
+    {
+      "id": "r4-sofia",
+      "g": 4,
+      "title": "Sofia's week",
+      "text": "Hello! My name is Sofia and I am nine years old. I live in Sibiu, a city in Romania. I go to school from Monday to Friday. My favourite subject is English because I like singing songs and playing word games. After school I do my homework, and then I play with my dog, Rex. On Sundays we visit my grandparents.",
+      "q": [
+        { "ro": "Unde locuiește Sofia?", "en": "Where does Sofia live?", "a": "Sibiu", "x": ["Cluj", "Iași", "Brașov"] },
+        { "ro": "Care este materia ei preferată?", "en": "What is her favourite subject?", "a": "English", "x": ["Maths", "Music", "Art"] },
+        { "ro": "Cum se numește câinele?", "en": "What is the dog's name?", "a": "Rex", "x": ["Max", "Tom", "Bobi"] },
+        { "tf": false, "s": "Sofia goes to school on Saturday." },
+        { "tf": true, "s": "On Sundays they visit the grandparents." }
+      ]
+    },
+    {
+      "id": "r4-zoo",
+      "g": 4,
+      "title": "A day at the zoo",
+      "text": "Today our class is at the zoo. We can see lions, monkeys and a very tall giraffe. The monkeys are funny because they jump from tree to tree. The lion is sleeping, so it is quiet. At twelve o'clock we eat our sandwiches in the park. Then we take the bus back to school.",
+      "q": [
+        { "ro": "Unde este clasa astăzi?", "en": "Where is the class today?", "a": "at the zoo", "x": ["at the cinema", "at school", "at the library"] },
+        { "ro": "Care animal este foarte înalt?", "en": "Which animal is very tall?", "a": "giraffe", "x": ["lion", "monkey", "zebra"] },
+        { "ro": "Ce face leul?", "en": "What is the lion doing?", "a": "sleeping", "x": ["running", "eating", "jumping"] },
+        { "ro": "La ce oră mănâncă sandvișurile?", "en": "What time do they eat the sandwiches?", "a": "twelve o'clock", "x": ["ten o'clock", "one o'clock", "three o'clock"] },
+        { "tf": true, "s": "The children go back to school by bus." },
+        { "tf": false, "s": "The monkeys are sad." }
+      ]
+    },
+    {
+      "id": "r4-seasons",
+      "g": 4,
+      "title": "Seasons in Romania",
+      "text": "In winter it is cold in Romania. There is a lot of snow, and the children make a snowman. They wear warm coats, hats, scarves and gloves. In summer it is hot and sunny. People go to the sea and eat ice cream. My favourite season is autumn, because the leaves are red and yellow.",
+      "q": [
+        { "ro": "Ce fac copiii iarna?", "en": "What do the children make in winter?", "a": "a snowman", "x": ["a kite", "a cake", "a boat"] },
+        { "ro": "Care este anotimpul preferat al autorului?", "en": "What is the writer's favourite season?", "a": "autumn", "x": ["spring", "summer", "winter"] },
+        { "ro": "De ce culori sunt frunzele toamna?", "en": "What colour are the leaves in autumn?", "a": "red and yellow", "x": ["green and blue", "black and white", "orange and purple"] },
+        { "tf": false, "s": "In summer it is cold." },
+        { "tf": true, "s": "People eat ice cream in summer." }
+      ]
+    },
+    {
+      "id": "r4-pet",
+      "g": 4,
+      "title": "Tom's new pet",
+      "text": "Tom wants a pet. His mum says no, but his dad says yes. On Saturday they go to a small shop and look at the animals. There are fish, birds and rabbits. Tom chooses a white rabbit with long ears. He calls it Snow. Now Snow lives in a big box in Tom's room and eats carrots every day.",
+      "q": [
+        { "ro": "Ce animal alege Tom?", "en": "Which pet does Tom choose?", "a": "a rabbit", "x": ["a cat", "a dog", "a bird"] },
+        { "ro": "Cum se numește animalul?", "en": "What is the pet's name?", "a": "Snow", "x": ["Milk", "Ice", "Sugar"] },
+        { "ro": "Ce mănâncă iepurele în fiecare zi?", "en": "What does the rabbit eat every day?", "a": "carrots", "x": ["fish", "bread", "cheese"] },
+        { "tf": false, "s": "Tom's mum says yes." },
+        { "tf": true, "s": "The rabbit has got long ears." }
+      ]
+    },
+    {
+      "id": "r4-maya",
+      "g": 4,
+      "title": "A busy day",
+      "text": "Maya has got a busy day. She gets up at half past six and has breakfast at seven. School starts at eight o'clock. She has English on Tuesday and Thursday. After school she goes to the library, and at five o'clock she plays the piano. She goes to bed at nine.",
+      "q": [
+        { "ro": "La ce oră se trezește Maya?", "en": "What time does Maya get up?", "a": "half past six", "x": ["six o'clock", "half past seven", "seven o'clock"] },
+        { "ro": "Ce face Maya la ora cinci?", "en": "What does Maya do at five o'clock?", "a": "plays the piano", "x": ["goes to the library", "has breakfast", "goes to bed"] },
+        { "ro": "În ce zile are engleză?", "en": "On which days does she have English?", "a": "Tuesday and Thursday", "x": ["Monday and Friday", "Monday and Tuesday", "Wednesday and Friday"] },
+        { "tf": true, "s": "She goes to bed at nine." },
+        { "tf": false, "s": "She has breakfast at eight." }
+      ]
+    }
+  ]
+}

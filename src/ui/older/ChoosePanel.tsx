@@ -1,8 +1,12 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { getSkillsBySubject } from '@/engine/content/registry'
 import { localize, type Skill, type SubjectId } from '@/engine/types'
+import { getProgress } from '@/profiles/profileService'
+import type { SkillProgress } from '@/profiles/types'
+import FilterChips from '@/ui/common/FilterChips'
+import { matchesState, stateOptions, type StateFilter } from '@/ui/common/skillBuckets'
 import { skillHasItems } from '@/ui/session/itemSource'
 import { subjectEmoji } from '@/ui/learn/subjects'
 
@@ -20,13 +24,30 @@ export function chaptersFor(subject: SubjectId, grade: number): Skill[] {
  * "Alege-ți singur": subject -> chapter (skills grouped by grade and semester) -> "Exersează" (practice session)
  * or "Testează-te" (check mode, 10 items, ends with the estimated mark). Both reuse /practice/:skillId.
  */
-export default function ChoosePanel({ subjects, grade }: { subjects: SubjectId[]; grade: number }) {
+export default function ChoosePanel({ subjects, grade, profileId }: { subjects: SubjectId[]; grade: number; profileId?: string }) {
   const { t, i18n } = useTranslation()
   const [open, setOpen] = useState(false)
   const [subject, setSubject] = useState<SubjectId | null>(null)
   const [skillId, setSkillId] = useState('')
+  const [state, setState] = useState<StateFilter>('all')
+  const [progress, setProgress] = useState<Record<string, SkillProgress> | null>(null)
 
-  const chapters = useMemo(() => (subject ? chaptersFor(subject, grade) : []), [subject, grade])
+  // the child's own progress lets the chapter list be filtered: to do / in progress / done
+  useEffect(() => {
+    if (!open || !profileId) return
+    let live = true
+    getProgress(profileId).then(
+      (p) => live && setProgress(p.skills),
+      () => live && setProgress(null),
+    )
+    return () => {
+      live = false
+    }
+  }, [open, profileId])
+
+  const allChapters = useMemo(() => (subject ? chaptersFor(subject, grade) : []), [subject, grade])
+  const stateOf = (id: string) => progress?.[id]?.state
+  const chapters = allChapters.filter((s) => matchesState(state, stateOf(s.id)))
   const groups = useMemo(() => {
     const out: { key: string; grade: number; semester: number; skills: Skill[] }[] = []
     for (const s of chapters) {
@@ -60,28 +81,37 @@ export default function ChoosePanel({ subjects, grade }: { subjects: SubjectId[]
 
       {open && (
         <div id="choose-body" className="flex flex-col gap-3 px-4 pb-4">
-          <div role="group" aria-label={t('older.pick.subject')} className="flex flex-wrap gap-2">
-            {subjects.map((s) => (
-              <button
-                key={s}
-                type="button"
-                data-testid={`pick-subject-${s}`}
-                aria-pressed={subject === s}
-                onClick={() => {
-                  setSubject(s)
-                  setSkillId('')
-                }}
-                className={`inline-flex min-h-[44px] items-center gap-1 rounded-full px-4 text-sm font-extrabold text-ludiko-text active:scale-95 ${
-                  subject === s ? 'bg-ludiko-purple ring-2 ring-ludiko-text/30' : 'bg-ludiko-bg'
-                }`}
-              >
-                <span aria-hidden="true">{subjectEmoji(s)}</span>
-                {t(`learn.subject.${s}`)}
-              </button>
-            ))}
-          </div>
+          <FilterChips
+            label={t('older.pick.subject')}
+            options={subjects.map((s) => ({ value: s, label: t(`learn.subject.${s}`), icon: subjectEmoji(s) }))}
+            value={(subject ?? '') as SubjectId}
+            onChange={(s) => {
+              setSubject(s)
+              setSkillId('')
+            }}
+            testId="pick-subject"
+          />
 
-          {subject && chapters.length === 0 && (
+          {subject && progress && allChapters.length > 0 && (
+            <FilterChips
+              label={t('filters.state')}
+              options={stateOptions(t, allChapters.map((s) => stateOf(s.id)))}
+              value={state}
+              onChange={(v) => {
+                setState(v)
+                setSkillId('')
+              }}
+              testId="pick-state"
+            />
+          )}
+
+          {subject && allChapters.length > 0 && chapters.length === 0 && (
+            <p className="text-sm font-semibold text-ludiko-text/80" data-testid="pick-filter-empty">
+              {t('filters.none')}
+            </p>
+          )}
+
+          {subject && allChapters.length === 0 && (
             <p className="text-sm font-semibold text-ludiko-text/80" data-testid="pick-none">
               {t('older.pick.none')}
             </p>

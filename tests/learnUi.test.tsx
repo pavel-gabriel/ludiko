@@ -445,6 +445,9 @@ describe('/learn/map/:subject', () => {
     ]
     renderAt('/learn/map/mat')
     await settle()
+    // hidden (locked) islands stay out of the route until asked for
+    expect(screen.queryByTestId('island-mat.count.20')).toBeNull()
+    fireEvent.click(screen.getByTestId('toggle-locked'))
 
     const expected: Record<string, string> = {
       'mat.count.10': 'mastered',

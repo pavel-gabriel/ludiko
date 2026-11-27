@@ -19,7 +19,9 @@ import ProgressBar from './ProgressBar'
 import RequireSubject from './RequireSubject'
 import { lockedPath } from './RequireSubject'
 import { nextPlanBit, planBitPath } from './planRoutes'
-import { parseSubject } from './subjects'
+import { checkSubjects } from '@/learner/checkSubjects'
+import { nextToCheck } from './CheckProgressCard'
+import { LEARN_SUBJECTS, parseSubject } from './subjects'
 import { useAttemptRecorder } from './useAttemptRecorder'
 
 /** After this much play time we offer a rest (docs/PLAN.md §4: 3-minute bites) */
@@ -31,7 +33,7 @@ type Phase =
   | { name: 'busy' }
   | { name: 'probe'; skillId: string; items: Item[]; runId: number }
   | { name: 'break' }
-  | { name: 'done' }
+  | { name: 'done'; next?: SubjectId }
   | { name: 'chunkDone'; next?: PlanBit; allDone: boolean }
   | { name: 'unavailable' }
   | { name: 'error' }
@@ -47,6 +49,22 @@ const COMPLETION_SUMMARY: SessionSummary = {
   review: [],
   attempts: [],
   durationMs: 0,
+}
+
+/** After a finished check: the next subject whose check is still to do (resume first), if any */
+async function nextSubjectToCheck(profile: ChildProfile, done: SubjectId): Promise<SubjectId | undefined> {
+  try {
+    const subjects = checkSubjects(profile, LEARN_SUBJECTS).filter((s) => s !== done)
+    const states = await Promise.all(
+      subjects.map(async (s) => {
+        const rec = await learnerService.getPlacement(profile.id, s)
+        return { subject: s, placement: rec?.completedAt !== undefined ? ('done' as const) : rec ? ('inProgress' as const) : ('none' as const) }
+      }),
+    )
+    return nextToCheck(states)?.subject
+  } catch {
+    return undefined // a nicety: the plan button is always there
+  }
 }
 
 /** `plan`: played as one bit of today's plan (a short chunk of the check, then back to the plan) */
@@ -92,7 +110,7 @@ function Placement({ profile, subject, plan }: { profile: ChildProfile; subject:
         }
         setProgress(1)
         triggerClassSync(profile.id)
-        setPhase({ name: 'done' })
+        setPhase({ name: 'done', next: await nextSubjectToCheck(profile, subject) })
         return
       }
       const skill = getSkill(next.skillId)
@@ -203,9 +221,12 @@ function Placement({ profile, subject, plan }: { profile: ChildProfile; subject:
         <LearnShell>
           <PlacementCelebration
             reward={progressStore.reward}
-            onMission={() => navigate(`/learn/mission/${subject}`)}
+            onPlan={() => navigate('/learn')}
             onMap={() => navigate(`/learn/map/${subject}`)}
             onParents={toParents}
+            nextSubject={
+              phase.next ? { name: t(`learn.subject.${phase.next}`), onGo: () => navigate(`/learn/check/${phase.next}`) } : undefined
+            }
           />
         </LearnShell>
       )
@@ -237,6 +258,6 @@ export default function PlacementPage() {
   if (!subject) return <Navigate to="/learn" replace />
   const plan = params.get('plan') === '1'
   return (
-    <RequireSubject subject={subject}>{(profile) => <Placement profile={profile} subject={subject} plan={plan} />}</RequireSubject>
+    <RequireSubject subject={subject}>{(profile) => <Placement key={subject} profile={profile} subject={subject} plan={plan} />}</RequireSubject>
   )
 }

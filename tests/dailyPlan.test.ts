@@ -135,7 +135,7 @@ describe('daily plan', () => {
       thirdSmall.add((await learnerService.getTodayPlan(small.id, now)).bits[2].subject)
       thirdBig.add((await learnerService.getTodayPlan(big.id, now)).bits[2].subject)
     }
-    expect([...thirdSmall].sort()).toEqual(['logic', 'stiinte']) // grade I: nothing above its grade, both used
+    expect([...thirdSmall].sort()).toEqual(['eng', 'logic', 'stiinte']) // grade I: nothing above its grade, all three used
     expect([...thirdBig].every((s) => PLAN_ROTATING_SUBJECTS.includes(s as SubjectId))).toBe(true)
     expect(thirdBig.size).toBeGreaterThanOrEqual(4) // grade IV rotates through the others
     // two consecutive days differ
@@ -222,7 +222,7 @@ describe('daily plan', () => {
     const progress = await getProgress(profile.id)
     expect(getSkillsBySubject('logic').every((s) => progress.skills[s.id]?.state !== 'gap')).toBe(true)
     const order = rotatingOrder(progress, profile, toDayString(MAR_20), MAR_20)
-    expect(order.sort()).toEqual(['civ', 'geo', 'ist', 'stiinte']) // logic has nothing to do: it sits this one out
+    expect(order.sort()).toEqual(['civ', 'eng', 'geo', 'ist', 'stiinte']) // logic has nothing to do: it sits this one out
     expect((await learnerService.getTodayPlan(profile.id, MAR_20)).bits[2].subject).not.toBe('logic')
 
     // a gap brings it back

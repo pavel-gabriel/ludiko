@@ -137,7 +137,7 @@ export default function LearnPreviewPage() {
         <BreakOffer progress={0.45} onStop={noop} onContinue={noop} />
       </Frame>
       <Frame id="check-done" title="Check: celebration (child)">
-        <PlacementCelebration reward={{ stars: 3, sticker: '🦊', newSticker: true, saved: true }} onMission={noop} onMap={noop} onParents={noop} />
+        <PlacementCelebration reward={{ stars: 3, sticker: '🦊', newSticker: true, saved: true }} onPlan={noop} onMap={noop} onParents={noop} />
       </Frame>
       <Frame id="mission-path" title="Mission: treasure path">
         <TreasurePath

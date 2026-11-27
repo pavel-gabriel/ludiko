@@ -1642,5 +1642,166 @@
       "geo": "Geografie",
       "misc": "Alte cerințe"
     }
+  },
+  "filters": {
+    "all": "Toate",
+    "todo": "De făcut",
+    "doing": "În lucru",
+    "done": "Gata",
+    "locked": "Ascunse",
+    "known": "Știi deja",
+    "islands": "Ce insule vezi",
+    "showLocked": "Arată și insulele ascunse",
+    "lockedHidden": "Insule ascunse: {{n}}. Se deschid pe drum.",
+    "showThem": "Arată-le",
+    "subject": "Materia",
+    "grade": "Clasa",
+    "state": "Cum stai",
+    "allSubjects": "Toate materiile",
+    "allGrades": "Toate clasele",
+    "none": "Nimic aici. Alege alt filtru.",
+    "count": "{{n}} din {{total}}"
+  },
+  "guide": {
+    "help": "Cum se folosește?",
+    "next": "Înainte",
+    "done": "Am înțeles!",
+    "skip": "Sari peste",
+    "stepOf": "{{n}} din {{total}}",
+    "learn": {
+      "check": {
+        "small": "Începe de aici: vedem împreună ce știi deja. E o joacă!",
+        "big": "Începe cu verificarea: aflăm ce știi deja."
+      },
+      "plan": {
+        "small": "Aici e planul de azi. Apasă pe primul bit ca să începi!",
+        "big": "Planul de azi: câteva minute pe materie."
+      },
+      "subjects": {
+        "small": "Aici găsești toate materiile și harta cu insule.",
+        "big": "Toate materiile, cu verificarea și harta lor."
+      },
+      "help": {
+        "small": "Ai uitat ceva? Apasă pe semnul întrebării și îți arăt din nou.",
+        "big": "Semnul întrebării deschide din nou ghidul."
+      }
+    },
+    "map": {
+      "next": {
+        "small": "Apasă pe o insulă ca să te joci. Începe cu următoarea insulă!",
+        "big": "Apasă o insulă ca să exersezi. Începe cu următoarea."
+      },
+      "filters": {
+        "small": "Aici alegi ce insule vezi: de făcut, în lucru sau gata.",
+        "big": "Filtrează insulele după stadiu."
+      },
+      "route": "Drumul insulelor",
+      "nextTitle": "Următoarea insulă",
+      "go": "Hai la insulă!",
+      "nextBadge": "Următoarea",
+      "stateKnown": "Știi deja",
+      "progress": "Insule gata până la clasa ta: {{done}} din {{total}}",
+      "knownNote": "Din verificare: știi deja {{n}}. Pe acestea le sărim.",
+      "stop": "Oprirea {{n}}",
+      "noNext": "Ai explorat tot ce e deschis acum. Bravo! Continuă cu insulele în lucru.",
+      "checkFirst": "Fă întâi verificarea, ca să știm de unde pornești pe drum."
+    },
+    "check": {
+      "title": {
+        "small": "Hai să vedem ce știi!",
+        "big": "Verifică ce știi"
+      },
+      "body": {
+        "small": "Câteva jocuri scurte pe materie și aflăm de unde pornim. Fără note!",
+        "big": "Câteva exerciții scurte pe materie. Aflăm de unde pornești."
+      },
+      "progress": "Verificate: {{done}} din {{total}}",
+      "start": "Începe cu {{subject}}",
+      "resume": "Continuă la {{subject}}",
+      "status": {
+        "done": "gata",
+        "inProgress": "început",
+        "none": "de verificat"
+      },
+      "subjectAria": "{{subject}}: {{status}}",
+      "afterPlan": "Vezi planul de azi",
+      "afterNext": "Acum hai la {{subject}}",
+      "allDone": "Ai verificat toate materiile. Planul de azi te așteaptă!"
+    },
+    "welcome": {
+      "title": "Bun venit la Ludiko!",
+      "body": "Fă-ți un profil și vedem împreună ce știi deja.",
+      "cta": "Începe aici"
+    },
+    "items": {
+      "choice": {
+        "small": "Apasă pe răspunsul bun.",
+        "big": "Alege răspunsul corect."
+      },
+      "picture-choice": {
+        "small": "Apasă pe imaginea potrivită.",
+        "big": "Alege imaginea corectă."
+      },
+      "true-false": {
+        "small": "Apasă pe Adevărat sau pe Fals.",
+        "big": "Adevărat sau fals?"
+      },
+      "number-input": {
+        "small": "Scrie numărul și apasă Gata.",
+        "big": "Scrie numărul, apoi Gata."
+      },
+      "fill-gap": {
+        "small": "Completează locul gol, apoi apasă Gata.",
+        "big": "Completează golul, apoi Gata."
+      },
+      "order": {
+        "small": "Atinge cardurile pe rând, în ordinea bună. Apoi apasă Gata.",
+        "big": "Atinge cardurile în ordine, apoi Gata."
+      },
+      "sort": {
+        "small": "Atinge un card, apoi grupa lui. La final apasă Gata.",
+        "big": "Card, apoi grupa lui. La final, Gata."
+      },
+      "match": {
+        "small": "Apasă un card din stânga, apoi perechea lui din dreapta.",
+        "big": "Stânga, apoi perechea din dreapta."
+      },
+      "hotspot": {
+        "small": "Atinge locul potrivit de pe imagine.",
+        "big": "Atinge locul corect pe imagine."
+      },
+      "read-and-answer": {
+        "small": "Citește textul, apoi răspunde la întrebări.",
+        "big": "Citește textul, apoi răspunde."
+      },
+      "listen-and-answer": {
+        "small": "Ascultă, apoi apasă pe răspunsul bun.",
+        "big": "Ascultă, apoi alege răspunsul."
+      }
+    },
+    "modes": {
+      "title": "Cum se joacă?",
+      "race": {
+        "small": "Răspunde la întrebări una după alta. Fiecare răspuns bun te duce mai aproape de finish. Cine ajunge primul câștigă!",
+        "big": "Răspunde la toate întrebările. Primul la finish câștigă."
+      },
+      "sprint": {
+        "small": "Ceasul merge! Răspunde la cât mai multe întrebări până se termină timpul.",
+        "big": "Timp fix: cât mai multe răspunsuri corecte."
+      },
+      "memory": {
+        "small": "Întoarce câte două cărți. Dacă se potrivesc, rămân la tine. Ține minte unde sunt!",
+        "big": "Întoarce câte două cărți și găsește perechile."
+      },
+      "duel": {
+        "small": "Doi jucători, un telefon: fiecare are partea lui de ecran. Răspundeți amândoi deodată!",
+        "big": "Doi jucători pe același telefon, fiecare pe partea lui."
+      },
+      "friends": {
+        "small": "Unul dintre voi creează camera și primește un cod. Ceilalți apasă „Intră cu un cod” și scriu codul. Apoi gazda pornește jocul.",
+        "big": "Gazda creează camera și dă codul. Ceilalți intră cu codul."
+      }
+    },
+    "readHint": "Ce am de făcut?"
   }
 }

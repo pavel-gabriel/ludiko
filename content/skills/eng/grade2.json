@@ -1,0 +1,512 @@
+[
+  {
+    "id": "eng.numbers.100.2",
+    "subject": "eng",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Numerele până la 100 în engleză",
+      "en": "Numbers up to 100 in English"
+    },
+    "prerequisites": [
+      "eng.numbers.20.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-number",
+        "params": {
+          "max": 100,
+          "kinds": [
+            "digit-to-word",
+            "word-to-digit",
+            "next",
+            "order",
+            "sum"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.numbers.100.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.numbers.100.2",
+      "kind": "data",
+      "title": "Skill eng.numbers.100.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.days.2",
+    "subject": "eng",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Zilele săptămânii în engleză",
+      "en": "Days of the week in English"
+    },
+    "prerequisites": [
+      "eng.numbers.20.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-calendar",
+        "params": {
+          "list": "days",
+          "kinds": [
+            "en-to-ro",
+            "ro-to-en",
+            "after",
+            "before",
+            "order",
+            "position"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.days.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.days.2",
+      "kind": "data",
+      "title": "Skill eng.days.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.months.2",
+    "subject": "eng",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Lunile și anotimpurile în engleză",
+      "en": "Months and seasons in English"
+    },
+    "prerequisites": [
+      "eng.days.2",
+      "eng.weather.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-calendar",
+        "params": {
+          "list": "months",
+          "kinds": [
+            "en-to-ro",
+            "ro-to-en",
+            "after",
+            "before",
+            "order",
+            "position",
+            "season"
+          ]
+        }
+      },
+      {
+        "generator": "eng-primary-vocab",
+        "params": {
+          "topics": [
+            "seasons"
+          ],
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture",
+            "ro-to-en",
+            "en-to-ro"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.months.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.months.2",
+      "kind": "data",
+      "title": "Skill eng.months.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.food.2",
+    "subject": "eng",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Fructe, legume și băuturi în engleză",
+      "en": "Fruit, vegetables and drinks"
+    },
+    "prerequisites": [
+      "eng.food.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-vocab",
+        "params": {
+          "topics": [
+            "food2"
+          ],
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture",
+            "ro-to-en",
+            "en-to-ro",
+            "odd",
+            "match",
+            "sort",
+            "true-false"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.food.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.food.2",
+      "kind": "data",
+      "title": "Skill eng.food.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.prepositions.2",
+    "subject": "eng",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Unde este? in, on, under, behind, next to",
+      "en": "Where is it? Prepositions of place"
+    },
+    "prerequisites": [
+      "eng.house.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-grammar",
+        "params": {
+          "topics": [
+            "prepositions"
+          ],
+          "grades": [
+            2,
+            2
+          ],
+          "kinds": [
+            "gap",
+            "translate",
+            "tf",
+            "order"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.prepositions.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.prepositions.2",
+      "kind": "data",
+      "title": "Skill eng.prepositions.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.likes.2",
+    "subject": "eng",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Îmi place / nu-mi place: I like, I don't like",
+      "en": "Likes and dislikes"
+    },
+    "prerequisites": [
+      "eng.food.0",
+      "eng.greet.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-grammar",
+        "params": {
+          "topics": [
+            "likes"
+          ],
+          "grades": [
+            2,
+            2
+          ],
+          "kinds": [
+            "gap",
+            "translate",
+            "tf",
+            "order"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.likes.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.likes.2",
+      "kind": "data",
+      "title": "Skill eng.likes.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.tobe.2",
+    "subject": "eng",
+    "grade": 2,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "A fi: I am, you are, he is",
+      "en": "The verb to be: am, is, are"
+    },
+    "prerequisites": [
+      "eng.greet.1",
+      "eng.family.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-grammar",
+        "params": {
+          "topics": [
+            "tobe"
+          ],
+          "grades": [
+            2,
+            2
+          ],
+          "kinds": [
+            "gap",
+            "translate",
+            "tf",
+            "order"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.tobe.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.tobe.2",
+      "kind": "data",
+      "title": "Skill eng.tobe.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.can.2",
+    "subject": "eng",
+    "grade": 2,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Ce pot să fac: can și can't",
+      "en": "What I can do: can and can't"
+    },
+    "prerequisites": [
+      "eng.actions.1",
+      "eng.tobe.2"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-grammar",
+        "params": {
+          "topics": [
+            "can"
+          ],
+          "grades": [
+            2,
+            2
+          ],
+          "kinds": [
+            "gap",
+            "translate",
+            "tf",
+            "order"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.can.2"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.can.2",
+      "kind": "data",
+      "title": "Skill eng.can.2",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  }
+]
