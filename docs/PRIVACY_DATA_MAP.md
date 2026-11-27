@@ -37,6 +37,7 @@ GitHub secrets `VITE_FIREBASE_*`). The owner must check the Firebase console (se
 | D5 | Language choice | localStorage `i18nextLng` (i18next detector cache) | same | until cleared | functional | `src/i18n/config.ts` |
 | D6 | "Offline ready" toast shown flag | localStorage `ludiko-offline-ready-shown` | same | until cleared | functional | `src/components/ui/PwaToast.tsx` |
 | D7 | "New sticker" memory | localStorage `ludiko.album.seen.<profileId>` | same | until cleared | functional | `src/ui/album/albumService.ts` |
+| D7b | Mascot look chosen by the child (id of one of 8 looks) | localStorage `ludiko-mascot-look-<profileId>` | same | until cleared (device-local, deliberately NOT synced: firestore.rules unchanged) | functional | `src/ui/mascot/lookStore.ts` |
 | D8 | Parent-account session note: `uid`, **email**, lastSync, synced child ids, tombstones (deleted children: id + nickname/avatar/grade) | localStorage `ludiko.family.v1` | same | removed on sign out / account deletion | contract / consent | `src/family/familyState.ts` |
 | D9 | Random per-install device id | localStorage `ludiko.family.device` | same | until cleared | legitimate interest (conflict debugging) | `familyState.ts` |
 | D10 | Push reminder settings: `id` (SHA-256 of the endpoint), hour, language, active | localStorage `ludiko.push.v1` | same | removed when reminders are turned off | consent | `src/services/pushAvailability.ts` |

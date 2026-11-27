@@ -1,6 +1,9 @@
 import type { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
+import type { LookId } from '@/learner/extrasUnlocks'
 import { COLORS } from '@/ui/visuals/palette'
+import { LookAccessory, lookColors } from './looks'
+import { useActiveLook } from './lookStore'
 import './mascot.css'
 
 /**
@@ -19,8 +22,6 @@ export type MascotMood = 'wave' | 'think' | 'cheer' | 'encourage' | 'sleep'
 export const MASCOT_MOODS: readonly MascotMood[] = ['wave', 'think', 'cheer', 'encourage', 'sleep']
 
 const LINE = COLORS.line
-const BODY = '#DDA0DD'
-const WING = '#C98BCB'
 const BELLY = '#FFF6D6'
 const BEAK = '#F6B26B'
 const INK = '#4A4A4A'
@@ -39,6 +40,8 @@ export interface MascotSvgProps {
   label?: string
   /** Pure decoration next to text that already says everything: hidden from screen readers */
   decorative?: boolean
+  /** Colour variant / accessory; default = the child's chosen look on this device (see lookStore) */
+  look?: LookId
 }
 
 const BODY_ANIM: Record<MascotMood, string> = {
@@ -50,13 +53,13 @@ const BODY_ANIM: Record<MascotMood, string> = {
 }
 
 /** A wing hangs from its shoulder; `angle` swings it (left wing: + lifts it outward, right wing: - lifts it) */
-function Wing({ side, angle, animClass }: { side: 'l' | 'r'; angle: number; animClass?: string }) {
+function Wing({ side, angle, animClass, fill }: { side: 'l' | 'r'; angle: number; animClass?: string; fill: string }) {
   const px = side === 'l' ? 30 : 90
   const cx = side === 'l' ? 26 : 94
   return (
     <g transform={`rotate(${angle} ${px} 66)`}>
       <g className={`ludi-part ${animClass ?? ''}`}>
-        <ellipse cx={cx} cy={83} rx={9} ry={18} fill={WING} stroke={LINE} strokeWidth={SW} />
+        <ellipse cx={cx} cy={83} rx={9} ry={18} fill={fill} stroke={LINE} strokeWidth={SW} />
       </g>
     </g>
   )
@@ -195,22 +198,26 @@ export function MascotSvg({
   animated = true,
   label,
   decorative = false,
+  look,
 }: MascotSvgProps) {
   const { t } = useTranslation()
+  const active = useActiveLook()
+  const chosen = look ?? active
+  const { body: BODY, wing: WING } = lookColors(chosen)
   const accessible = decorative
     ? { 'aria-hidden': true as const }
     : { role: 'img' as const, 'aria-label': label ?? t(`mascot.label.${mood}`) }
 
   // wings per mood
-  let left = <Wing side="l" angle={8} />
-  let right = <Wing side="r" angle={-8} />
-  if (mood === 'wave') right = <Wing side="r" angle={-122} animClass="ludi-wing-wave" />
+  let left = <Wing side="l" angle={8} fill={WING} />
+  let right = <Wing side="r" angle={-8} fill={WING} />
+  if (mood === 'wave') right = <Wing side="r" angle={-122} animClass="ludi-wing-wave" fill={WING} />
   if (mood === 'cheer') {
-    left = <Wing side="l" angle={128} />
-    right = <Wing side="r" angle={-128} />
+    left = <Wing side="l" angle={128} fill={WING} />
+    right = <Wing side="r" angle={-128} fill={WING} />
   }
-  if (mood === 'think') left = <Wing side="l" angle={-64} />
-  if (mood === 'encourage') right = <Wing side="r" angle={52} />
+  if (mood === 'think') left = <Wing side="l" angle={-64} fill={WING} />
+  if (mood === 'encourage') right = <Wing side="r" angle={52} fill={WING} />
 
   let extras: ReactNode = null
   if (mood === 'wave') {
@@ -255,6 +262,7 @@ export function MascotSvg({
       height={size}
       className={`ludi-svg ${animated ? 'ludi-anim' : ''} ${className}`}
       data-mood={mood}
+      data-look={chosen}
       focusable="false"
       {...accessible}
     >
@@ -283,6 +291,7 @@ export function MascotSvg({
           <Beak mood={mood} />
           {left}
           {right}
+          <LookAccessory look={chosen} />
         </g>
       </g>
       {extras}

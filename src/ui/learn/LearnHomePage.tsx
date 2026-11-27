@@ -4,6 +4,7 @@ import { refreshClassData } from '@/classroom/syncGate'
 import { knownStickers } from '@/ui/album/earning'
 import { learnerService, type AssignmentBit } from '@/learner'
 import { availableSubjects, lockedSubjects, subjectMinGrade } from '@/learner/availability'
+import { earnedMilestones, type MilestoneId } from '@/learner/extrasUnlocks'
 import { checkSubjects } from '@/learner/checkSubjects'
 import type { ChildProfile } from '@/profiles/types'
 import { getProgress } from '@/profiles/profileService'
@@ -13,7 +14,7 @@ import RequireProfile from './RequireProfile'
 import { LEARN_SUBJECTS, parseSubject } from './subjects'
 import { useAsync } from './useAsync'
 
-type HomeData = Pick<LearnHomeViewProps, 'stars' | 'playDays' | 'plan' | 'subjects' | 'checks' | 'locked' | 'assignments' | 'stickerCount'>
+type HomeData = Pick<LearnHomeViewProps, 'stars' | 'playDays' | 'plan' | 'subjects' | 'checks' | 'locked' | 'assignments' | 'stickerCount' | 'milestones'>
 
 async function loadSubject(profileId: string, subject: SubjectHome['subject']): Promise<SubjectHome> {
   const placement = await learnerService.getPlacement(profileId, subject)
@@ -32,7 +33,10 @@ async function loadHome(profile: ChildProfile): Promise<HomeData> {
   // stars and the streak are nice-to-have: never block the front door on them
   const [playDays, progress] = await Promise.all([
     learnerService.getParentSummary(profileId).then((s) => s.playDaysThisWeek, () => 0),
-    getProgress(profileId).then((p) => ({ stars: p.stars, stickers: knownStickers(p.stickers).length }), () => ({ stars: 0, stickers: 0 })),
+    getProgress(profileId).then(
+      (p) => ({ stars: p.stars, stickers: knownStickers(p.stickers).length, milestones: earnedMilestones(p, profile) }),
+      () => ({ stars: 0, stickers: 0, milestones: [] as MilestoneId[] }),
+    ),
   ])
   // class assignments come from a local copy: absent link, empty cache or a failure all mean "none"
   const assignments: AssignmentBit[] = await (async () => learnerService.getClassAssignments(profileId))().catch(() => [])
@@ -47,6 +51,7 @@ async function loadHome(profile: ChildProfile): Promise<HomeData> {
     stars: progress.stars,
     assignments,
     stickerCount: progress.stickers,
+    milestones: progress.milestones,
   }
 }
 

@@ -22,6 +22,7 @@ export function stickerName(t: TFunction, id: string, skillTitle?: (skillId: str
   const special = parseSpecial(id)
   if (!special) return id
   if (special.kind === 'streak') return t('album.special.streak', { n: special.ref })
+  if (special.kind === 'extra') return t(`family.extras.sticker.${special.ref.startsWith('island:') ? 'island' : special.ref}`, { subject: t(`learn.subject.${special.ref.slice(7)}`) })
   if (special.kind === 'set') return t('album.special.set', { set: t(`album.sets.${special.ref}`) })
   const title = skillTitle?.(special.ref)
   return title ? t('album.special.skill', { title }) : t('album.special.skillUnknown')
