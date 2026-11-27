@@ -46,6 +46,8 @@ import './romQuiz';
 import './stiinte';
 // history (grade IV) generators
 import './istGenerators';
+// history gimnaziu (V-VIII): events-driven timelines + curated facts
+import './istGimnaziu';
 // Geography (geo) generators
 import './geoDirections';
 // Logic puzzles (patterns, odd-one-out, analogies, mini-sudoku, robot path, who-lives-where)

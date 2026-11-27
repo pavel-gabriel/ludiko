@@ -1,0 +1,2752 @@
+[
+ {
+  "id": "exp.ist.time.bc.5",
+  "skillId": "ist.time.bc.5",
+  "title": {
+   "ro": "Axa timpului: î.Hr. și d.Hr.",
+   "en": "The timeline: BC and AD"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Anii se numără de la un punct de referință. Anii dinaintea lui se scriu „î.Hr.” și merg „înapoi”: 200 î.Hr. este mai vechi decât 100 î.Hr.",
+     "en": "Years are counted from a reference point. Years before it are written “BC” and run “backwards”: 200 BC is older than 100 BC."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -200,
+     "to": 0,
+     "step": 50,
+     "marks": [
+      -200,
+      -100
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "După punctul de referință urmează anii d.Hr., care cresc normal: 100 d.Hr. este mai nou decât 50 d.Hr. Nu există anul 0.",
+     "en": "After the reference point come the AD years, which grow normally: AD 100 is more recent than AD 50. There is no year 0."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 0,
+     "to": 300,
+     "step": 50,
+     "marks": [
+      100,
+      200
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Ca să afli secolul: împarte anul la 100 și rotunjește în sus. Anul 44 î.Hr. este în secolul I î.Hr., iar 476 d.Hr. în secolul V.",
+     "en": "To find the century: divide the year by 100 and round up. The year 44 BC is in the 1st century BC, and AD 476 in the 5th century."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -100,
+     "to": 500,
+     "step": 100,
+     "marks": [
+      -44,
+      476
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.time.bc.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.time.bc.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.prehistory.5",
+  "skillId": "ist.prehistory.5",
+  "title": {
+   "ro": "Preistoria: de la piatră la metale",
+   "en": "Prehistory: from stone to metals"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Preistoria este timpul dinaintea scrisului. Oamenii din paleolitic vânau, pescuiau și culegeau fructe, iar uneltele lor erau din piatră, os și lemn.",
+     "en": "Prehistory is the time before writing. People in the Palaeolithic hunted, fished and gathered fruit, and their tools were of stone, bone and wood."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🦴",
+     "count": 3
+    }
+   },
+   {
+    "text": {
+     "ro": "În neolitic oamenii au început să cultive plante și să crească animale. Au apărut satele, olăritul și țesutul.",
+     "en": "In the Neolithic people began to grow plants and keep animals. Villages, pottery and weaving appeared."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌾",
+     "count": 4
+    }
+   },
+   {
+    "text": {
+     "ro": "Apoi au venit metalele: cuprul, bronzul (cupru și staniu) și fierul. Arheologii studiază urmele lor ca să înțeleagă acele vremuri.",
+     "en": "Then came metals: copper, bronze (copper and tin) and iron. Archaeologists study their traces to understand those times."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⚒️",
+     "count": 3
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.prehistory.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.prehistory.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.orient.5",
+  "skillId": "ist.orient.5",
+  "title": {
+   "ro": "Orientul antic: Egipt și Mesopotamia",
+   "en": "The ancient Orient: Egypt and Mesopotamia"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Egiptul antic s-a dezvoltat pe malurile Nilului. Conducătorul se numea faraon, iar piramidele erau morminte pentru faraoni.",
+     "en": "Ancient Egypt developed along the Nile. The ruler was called pharaoh, and the pyramids were tombs for pharaohs."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔺",
+     "count": 3
+    }
+   },
+   {
+    "text": {
+     "ro": "Mesopotamia era „țara dintre două râuri”, Tigru și Eufrat. Aici s-au construit zigguratele, temple în trepte.",
+     "en": "Mesopotamia was “the land between two rivers”, the Tigris and the Euphrates. Here ziggurats, stepped temples, were built."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏺",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Ambele civilizații au inventat scrierea: hieroglifele în Egipt, cuneiformul pe tăblițe de lut în Mesopotamia. Hammurabi a lăsat unul dintre cele mai vechi coduri de legi.",
+     "en": "Both civilisations invented writing: hieroglyphs in Egypt, cuneiform on clay tablets in Mesopotamia. Hammurabi left one of the oldest law codes."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -3500,
+     "to": -1500,
+     "step": 500,
+     "marks": [
+      -3300,
+      -1754
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.orient.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.orient.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.greece.5",
+  "skillId": "ist.greece.5",
+  "title": {
+   "ro": "Grecia antică: polisul, Atena și Sparta",
+   "en": "Ancient Greece: the polis, Athens and Sparta"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Grecia antică era formată din multe cetăți-stat numite poleis (polis la singular). Fiecare avea legile și armata ei.",
+     "en": "Ancient Greece was made of many city-states called poleis (polis in the singular). Each had its own laws and army."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏛️",
+     "count": 3
+    }
+   },
+   {
+    "text": {
+     "ro": "Atena a creat democrația, „puterea poporului”: cetățenii votau în adunare. Sparta punea accent pe disciplină și pe educația militară.",
+     "en": "Athens created democracy, “the power of the people”: citizens voted in an assembly. Sparta stressed discipline and military education."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗳️",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Grecii credeau în zei, ca Zeus și Atena, și organizau la Olimpia jocuri în cinstea lor. Prima olimpiadă este datată în 776 î.Hr.",
+     "en": "The Greeks believed in gods such as Zeus and Athena, and held games at Olympia in their honour. The first Olympics is dated 776 BC."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -800,
+     "to": -400,
+     "step": 100,
+     "marks": [
+      -776,
+      -508,
+      -490
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.greece.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.greece.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.greece.wars.5",
+  "skillId": "ist.greece.wars.5",
+  "title": {
+   "ro": "Greci, perși și Alexandru cel Mare",
+   "en": "Greeks, Persians and Alexander the Great"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Grecii s-au luptat cu perșii la Marathon (490 î.Hr.) și la Salamina (480 î.Hr.) și au câștigat.",
+     "en": "The Greeks fought the Persians at Marathon (490 BC) and Salamis (480 BC) and won."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -500,
+     "to": -400,
+     "step": 20,
+     "marks": [
+      -490,
+      -480
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Atena a construit Partenonul pe Acropole, dar mai târziu a purtat un război lung cu Sparta (din 431 î.Hr.).",
+     "en": "Athens built the Parthenon on the Acropolis, but later fought a long war with Sparta (from 431 BC)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -460,
+     "to": -420,
+     "step": 10,
+     "marks": [
+      -447,
+      -431
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Alexandru cel Mare, rege al Macedoniei din 336 î.Hr., a cucerit un imperiu uriaș. Prin cuceririle lui, cultura greacă s-a răspândit în Orient.",
+     "en": "Alexander the Great, king of Macedonia from 336 BC, conquered a huge empire. Through his conquests Greek culture spread in the East."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -340,
+     "to": -320,
+     "step": 5,
+     "marks": [
+      -336,
+      -323
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.greece.wars.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.greece.wars.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.rome.republic.5",
+  "skillId": "ist.rome.republic.5",
+  "title": {
+   "ro": "Roma antică: de la oraș la republică",
+   "en": "Ancient Rome: from city to republic"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "După tradiție, Roma a fost întemeiată în 753 î.Hr. Mai târziu a devenit republică (tradițional, din 509 î.Hr.), condusă de consuli și de Senat.",
+     "en": "By tradition Rome was founded in 753 BC. Later it became a republic (traditionally from 509 BC), led by consuls and the Senate."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -800,
+     "to": -400,
+     "step": 100,
+     "marks": [
+      -753,
+      -509
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Roma a purtat războaiele punice cu Cartagina. Generalul cartaginez Hannibal a trecut Alpii în 218 î.Hr., dar Cartagina a fost distrusă în 146 î.Hr.",
+     "en": "Rome fought the Punic Wars against Carthage. The Carthaginian general Hannibal crossed the Alps in 218 BC, but Carthage was destroyed in 146 BC."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -300,
+     "to": -100,
+     "step": 50,
+     "marks": [
+      -264,
+      -218,
+      -146
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Iulius Cezar, general și om politic, a trecut Rubiconul în 49 î.Hr. și a fost asasinat în 44 î.Hr. Apoi Octavian a devenit Augustus, în 27 î.Hr.",
+     "en": "Julius Caesar, a general and politician, crossed the Rubicon in 49 BC and was assassinated in 44 BC. Then Octavian became Augustus, in 27 BC."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -60,
+     "to": -20,
+     "step": 10,
+     "marks": [
+      -49,
+      -44,
+      -27
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.rome.republic.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.rome.republic.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.rome.empire.5",
+  "skillId": "ist.rome.empire.5",
+  "title": {
+   "ro": "Imperiul Roman și moștenirea lui",
+   "en": "The Roman Empire and its legacy"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Augustus a fost primul împărat (27 î.Hr.). Imperiul a ajuns la cea mai mare întindere sub Traian, în 117.",
+     "en": "Augustus was the first emperor (27 BC). The empire reached its greatest extent under Trajan, in 117."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -50,
+     "to": 150,
+     "step": 50,
+     "marks": [
+      -27,
+      117
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Romanii au construit drumuri, apeducte, poduri și arene precum Colosseumul (inaugurat în anul 80). Dreptul roman le-a influențat pe cele de azi.",
+     "en": "The Romans built roads, aqueducts, bridges and arenas like the Colosseum (inaugurated in AD 80). Roman law influenced modern law."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏟️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "În 395 imperiul a fost împărțit în două, iar în 476 s-a încheiat Imperiul Roman de Apus. Limba latină a rămas la baza limbilor romanice, inclusiv a limbii române.",
+     "en": "In 395 the empire was split in two and in 476 the Western Roman Empire came to an end. Latin remained the base of the Romance languages, including Romanian."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 300,
+     "to": 500,
+     "step": 50,
+     "marks": [
+      395,
+      476
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.rome.empire.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.rome.empire.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.dacians.5",
+  "skillId": "ist.dacians.5",
+  "title": {
+   "ro": "Geto-dacii: regi, cetăți, credințe",
+   "en": "The Geto-Dacians: kings, fortresses, beliefs"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Geto-dacii făceau parte din marea familie a tracilor. Trăiau în sate și în cetăți întărite pe dealuri, ca Sarmizegetusa Regia.",
+     "en": "The Geto-Dacians belonged to the great Thracian family. They lived in villages and in fortresses strengthened on hills, like Sarmizegetusa Regia."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏔️",
+     "count": 3
+    }
+   },
+   {
+    "text": {
+     "ro": "Burebista (în jurul anului 82 î.Hr.) a unit triburile într-un stat puternic. După moartea lui, statul s-a împărțit.",
+     "en": "Burebista (around 82 BC) united the tribes into a strong state. After his death the state broke apart."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": -100,
+     "to": 0,
+     "step": 20,
+     "marks": [
+      -82,
+      -44
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Dacii îl cinsteau pe zeul Zamolxe și aveau sanctuare pe înălțimi. Decebal, rege din anul 87, a condus ultima luptă pentru independență.",
+     "en": "The Dacians honoured the god Zalmoxis and had sanctuaries on hilltops. Decebalus, king from 87, led the last fight for independence."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 80,
+     "to": 110,
+     "step": 10,
+     "marks": [
+      87,
+      101,
+      106
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.dacians.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.dacians.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.romanization.5",
+  "skillId": "ist.romanization.5",
+  "title": {
+   "ro": "Războaiele dacice și romanizarea",
+   "en": "The Dacian Wars and Romanization"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Împăratul Traian a purtat două războaie cu dacii: 101–102 și 105–106. Scenele lor sunt sculptate pe Columna lui Traian din Roma.",
+     "en": "Emperor Trajan fought two wars against the Dacians: 101–102 and 105–106. Their scenes are carved on Trajan's Column in Rome."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 100,
+     "to": 115,
+     "step": 5,
+     "marks": [
+      101,
+      106,
+      113
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În 106, o mare parte din Dacia a devenit provincie romană. Capitala a fost Ulpia Traiana Sarmizegetusa.",
+     "en": "In 106 a large part of Dacia became a Roman province. The capital was Ulpia Traiana Sarmizegetusa."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏛️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Coloniștii, soldații și localnicii au trăit împreună și au adoptat limba latină. Așa a început romanizarea, din care s-a format poporul român. Administrația romană s-a retras în jurul anului 271.",
+     "en": "Colonists, soldiers and locals lived together and adopted Latin. This is how Romanization began, from which the Romanian people formed. Roman administration withdrew around 271."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 100,
+     "to": 300,
+     "step": 50,
+     "marks": [
+      106,
+      271
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.romanization.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.romanization.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.christianity.5",
+  "skillId": "ist.christianity.5",
+  "title": {
+   "ro": "Creștinismul în lumea romană",
+   "en": "Christianity in the Roman world"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Creștinismul a apărut în provincia romană Iudeea și s-a răspândit în tot imperiul. În unele perioade, creștinii au fost persecutați.",
+     "en": "Christianity began in the Roman province of Judea and spread through the whole empire. In some periods Christians were persecuted."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✝️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Prin Edictul de la Milano (313), împăratul Constantin cel Mare a dat libertate religioasă. În 325 s-a ținut conciliul de la Niceea.",
+     "en": "By the Edict of Milan (313), Emperor Constantine the Great gave religious freedom. In 325 the Council of Nicaea was held."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 300,
+     "to": 400,
+     "step": 20,
+     "marks": [
+      313,
+      325,
+      380
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În 380 creștinismul a devenit religie oficială. Cuvinte românești vechi ca „biserică”, „cruce” sau „înger” vin din latină, semn că vorbitorii de latină din Dacia și Dobrogea au devenit creștini.",
+     "en": "In 380 Christianity became the official religion. Old Romanian words like “biserică”, “cruce” or “înger” come from Latin, a sign that Latin speakers in Dacia and Dobruja became Christian."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 300,
+     "to": 400,
+     "step": 20,
+     "marks": [
+      313,
+      380
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.christianity.5",
+   "kind": "explanation",
+   "title": "Explanation for ist.christianity.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.mid.begin.6",
+  "skillId": "ist.mid.begin.6",
+  "title": {
+   "ro": "Începutul Evului Mediu: de la 476 la Carol cel Mare",
+   "en": "The early Middle Ages: from 476 to Charlemagne"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Convențional, Evul Mediu începe în 476, când se încheie Imperiul Roman de Apus, și durează cam o mie de ani.",
+     "en": "By convention the Middle Ages begin in 476, when the Western Roman Empire ends, and last about a thousand years."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 300,
+     "to": 1500,
+     "step": 300,
+     "marks": [
+      476
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În locul imperiului au apărut regate ale unor popoare germanice. Cel mai puternic a fost regatul francilor, condus de Clovis (481).",
+     "en": "In place of the empire, kingdoms of Germanic peoples appeared. The strongest was the kingdom of the Franks, led by Clovis (481)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 450,
+     "to": 850,
+     "step": 100,
+     "marks": [
+      476,
+      481
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Carol cel Mare a fost încoronat împărat în 800. După el, imperiul s-a împărțit (Verdun, 843), iar în 962 s-a format Sfântul Imperiu Roman.",
+     "en": "Charlemagne was crowned emperor in 800. After him the empire was divided (Verdun, 843) and in 962 the Holy Roman Empire formed."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 750,
+     "to": 1000,
+     "step": 50,
+     "marks": [
+      800,
+      843,
+      962
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.mid.begin.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.mid.begin.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.feudal.6",
+  "skillId": "ist.feudal.6",
+  "title": {
+   "ro": "Feudalismul: seniori, vasali, cavaleri și orașe",
+   "en": "Feudalism: lords, vassals, knights and towns"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "În feudalism, seniorul dădea pământ (feudă) vasalului, iar vasalul jura credință și îi oferea ajutor militar.",
+     "en": "In feudalism the lord gave land (a fief) to the vassal, and the vassal swore loyalty and gave military help."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏰",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Țăranii șerbi lucrau pământul seniorului și aveau obligații. Cavalerii luptau călare și apărau castelul.",
+     "en": "Serf peasants worked the lord's land and had duties. Knights fought on horseback and defended the castle."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🛡️",
+     "count": 3
+    }
+   },
+   {
+    "text": {
+     "ro": "Orașele au crescut, iar meșteșugarii s-au organizat în bresle. În 1215, Magna Carta a limitat puterea regelui Angliei.",
+     "en": "Towns grew and craftsmen organised themselves in guilds. In 1215 the Magna Carta limited the power of the King of England."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1000,
+     "to": 1400,
+     "step": 100,
+     "marks": [
+      1066,
+      1215,
+      1347
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.feudal.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.feudal.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.byzantium.6",
+  "skillId": "ist.byzantium.6",
+  "title": {
+   "ro": "Imperiul Bizantin",
+   "en": "The Byzantine Empire"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Imperiul Bizantin este Imperiul Roman de Răsărit. Capitala lui era Constantinopol, un mare oraș comercial.",
+     "en": "The Byzantine Empire is the Eastern Roman Empire. Its capital was Constantinople, a great trading city."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏛️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Sub Iustinian (527–565) imperiul a ajuns foarte puternic. Atunci s-a sfințit biserica Sfânta Sofia (537).",
+     "en": "Under Justinian (527–565) the empire became very strong. Then the church of Hagia Sophia was consecrated (537)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 500,
+     "to": 600,
+     "step": 25,
+     "marks": [
+      527,
+      537,
+      565
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În 1054 Biserica s-a despărțit în ortodoxă și catolică. În 1453, otomanii au cucerit Constantinopolul și imperiul a căzut.",
+     "en": "In 1054 the Church split into Orthodox and Catholic. In 1453 the Ottomans captured Constantinople and the empire fell."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1000,
+     "to": 1500,
+     "step": 100,
+     "marks": [
+      1054,
+      1453
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.byzantium.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.byzantium.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.islam.6",
+  "skillId": "ist.islam.6",
+  "title": {
+   "ro": "Islamul și lumea arabă",
+   "en": "Islam and the Arab world"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Islamul a apărut în Peninsula Arabă, în jurul profetului Mahomed. Hegira (622) este începutul calendarului musulman.",
+     "en": "Islam arose in the Arabian Peninsula around the prophet Muhammad. The Hijra (622) is the start of the Muslim calendar."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 550,
+     "to": 700,
+     "step": 50,
+     "marks": [
+      570,
+      622,
+      632
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Cartea sfântă este Coranul. Califul conducea comunitatea și statul, iar arabii au format un imperiu întins, cu capitala la Bagdad (din 762).",
+     "en": "The holy book is the Quran. The caliph led the community and the state, and the Arabs formed a vast empire with the capital at Baghdad (from 762)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 650,
+     "to": 800,
+     "step": 50,
+     "marks": [
+      661,
+      711,
+      762
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Învățații arabi au adus progrese în matematică, medicină și astronomie, iar cifrele de azi au ajuns în Europa prin ei.",
+     "en": "Arab scholars made progress in mathematics, medicine and astronomy, and today's numerals reached Europe through them."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔢",
+     "count": 10
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.islam.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.islam.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.crusades.6",
+  "skillId": "ist.crusades.6",
+  "title": {
+   "ro": "Cruciadele și legăturile cu Orientul",
+   "en": "The Crusades and the links with the East"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Cruciadele au fost expediții creștine din Europa spre Orientul Apropiat. Prima a început în 1096, iar Ierusalimul a fost cucerit în 1099.",
+     "en": "The Crusades were Christian expeditions from Europe to the Near East. The first began in 1096 and Jerusalem was captured in 1099."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1050,
+     "to": 1300,
+     "step": 50,
+     "marks": [
+      1096,
+      1099,
+      1187
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Saladin a recucerit Ierusalimul în 1187. În 1204, cruciații au ajuns să cucerească Constantinopolul.",
+     "en": "Saladin recaptured Jerusalem in 1187. In 1204 the Crusaders ended up capturing Constantinople."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1150,
+     "to": 1250,
+     "step": 25,
+     "marks": [
+      1187,
+      1204
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Prin cruciade și comerț, europenii au aflat despre mărfuri și idei din Orient. Marco Polo a pornit spre Asia în 1271.",
+     "en": "Through crusades and trade Europeans learned about goods and ideas from the East. Marco Polo set out for Asia in 1271."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1250,
+     "to": 1300,
+     "step": 10,
+     "marks": [
+      1271,
+      1291
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.crusades.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.crusades.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.migrations.6",
+  "skillId": "ist.migrations.6",
+  "title": {
+   "ro": "Popoarele migratoare și românii",
+   "en": "Migrating peoples and the Romanians"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "După retragerea romană, spațiul românesc a fost străbătut de popoare migratoare: huni, slavi, maghiari, tătari și altele.",
+     "en": "After the Roman withdrawal the Romanian space was crossed by migrating peoples: Huns, Slavs, Hungarians, Tatars and others."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 300,
+     "to": 1300,
+     "step": 100,
+     "marks": [
+      375,
+      550,
+      895,
+      1241
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Slavii s-au stabilit treptat la nord de Dunăre în secolele VI–VII. De aceea româna are și cuvinte de origine slavă.",
+     "en": "The Slavs gradually settled north of the Danube in the 6th–7th centuries. That is why Romanian also has words of Slavic origin."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗣️",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Poporul român s-a format în timp, în jurul Carpaților și al Dunării, din amestecul dintre daco-romani și alte populații.",
+     "en": "The Romanian people formed over time, around the Carpathians and the Danube, from the mixing of Daco-Romans with other populations."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏔️",
+     "count": 3
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.migrations.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.migrations.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.states.6",
+  "skillId": "ist.states.6",
+  "title": {
+   "ro": "Formarea statelor medievale românești",
+   "en": "The formation of the medieval Romanian states"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "La început au existat cnezate și voievodate. Diploma cavalerilor ioaniți (1247) le menționează.",
+     "en": "At first there were knezates and voivodeships. The Diploma of the Knights of St John (1247) mentions them."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1200,
+     "to": 1400,
+     "step": 50,
+     "marks": [
+      1241,
+      1247
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Basarab I a întărit Țara Românească și l-a învins pe regele Ungariei la Posada, în 1330.",
+     "en": "Basarab I strengthened Wallachia and defeated the King of Hungary at Posada in 1330."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1300,
+     "to": 1360,
+     "step": 10,
+     "marks": [
+      1330,
+      1352
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Bogdan I a întemeiat Moldova independentă, în jurul anului 1359. Transilvania a rămas un voievodat în Regatul Ungariei.",
+     "en": "Bogdan I founded independent Moldavia around 1359. Transylvania remained a voivodeship in the Kingdom of Hungary."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1330,
+     "to": 1390,
+     "step": 10,
+     "marks": [
+      1359,
+      1386
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.states.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.states.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.mircea.6",
+  "skillId": "ist.mircea.6",
+  "title": {
+   "ro": "Mircea cel Bătrân și apărarea Țării Românești",
+   "en": "Mircea the Elder and the defence of Wallachia"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Mircea cel Bătrân a devenit domn al Țării Românești în 1386 și a domnit până în 1418. A stăpânit și Dobrogea.",
+     "en": "Mircea the Elder became ruler of Wallachia in 1386 and ruled until 1418. He also held Dobruja."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1380,
+     "to": 1420,
+     "step": 10,
+     "marks": [
+      1386,
+      1418
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În 1395 a luptat la Rovine cu armata sultanului Baiazid I, iar în 1396 a participat la cruciada de la Nicopole.",
+     "en": "In 1395 he fought the army of Sultan Bayezid I at Rovine and in 1396 took part in the Crusade of Nicopolis."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1390,
+     "to": 1400,
+     "step": 1,
+     "marks": [
+      1395,
+      1396
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Spre sfârșitul domniei, Dobrogea a intrat sub stăpânire otomană (aprox. 1417). Mircea a rămas un simbol al apărării țării.",
+     "en": "Towards the end of his reign Dobruja came under Ottoman rule (about 1417). Mircea remained a symbol of defending the country."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1400,
+     "to": 1420,
+     "step": 5,
+     "marks": [
+      1417,
+      1418
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.mircea.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.mircea.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.stefan.6",
+  "skillId": "ist.stefan.6",
+  "title": {
+   "ro": "Ștefan cel Mare, Vlad Țepeș, Iancu de Hunedoara",
+   "en": "Stephen the Great, Vlad the Impaler, John Hunyadi"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Iancu de Hunedoara, voievod al Transilvaniei, a apărat Belgradul în 1456 împotriva otomanilor.",
+     "en": "John Hunyadi, voivode of Transylvania, defended Belgrade against the Ottomans in 1456."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1440,
+     "to": 1470,
+     "step": 5,
+     "marks": [
+      1444,
+      1456
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Vlad Țepeș a domnit în Țara Românească și a luptat cu otomanii. Ștefan cel Mare a domnit în Moldova din 1457 până în 1504.",
+     "en": "Vlad the Impaler ruled Wallachia and fought the Ottomans. Stephen the Great ruled Moldavia from 1457 until 1504."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1450,
+     "to": 1510,
+     "step": 10,
+     "marks": [
+      1457,
+      1462,
+      1476,
+      1504
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Ștefan a câștigat la Vaslui (1475) și a ridicat multe mănăstiri, ca Putna. În 1484 a pierdut Chilia și Cetatea Albă.",
+     "en": "Stephen won at Vaslui (1475) and built many monasteries, like Putna. In 1484 he lost Chilia and Cetatea Albă."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1465,
+     "to": 1490,
+     "step": 5,
+     "marks": [
+      1466,
+      1475,
+      1484
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.stefan.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.stefan.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.ottoman.6",
+  "skillId": "ist.ottoman.6",
+  "title": {
+   "ro": "Imperiul Otoman și Țările Române",
+   "en": "The Ottoman Empire and the Romanian Lands"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Otomanii au cucerit Constantinopolul în 1453 și au înaintat spre Europa. Conducătorul lor era sultanul.",
+     "en": "The Ottomans captured Constantinople in 1453 and advanced towards Europe. Their ruler was the sultan."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1390,
+     "to": 1530,
+     "step": 20,
+     "marks": [
+      1396,
+      1453,
+      1526
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Țările Române au ajuns să plătească tribut (haraci) sultanului. Aceasta se numește suzeranitate otomană.",
+     "en": "The Romanian Lands came to pay tribute (haraci) to the sultan. This is called Ottoman suzerainty."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🪙",
+     "count": 4
+    }
+   },
+   {
+    "text": {
+     "ro": "Chiar sub suzeranitate, Moldova și Țara Românească și-au păstrat domni, legi și biserică proprii; nu au fost pașalâcuri.",
+     "en": "Even under suzerainty, Moldavia and Wallachia kept their own princes, laws and church; they were not pashaliks."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏰",
+     "count": 2
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.ottoman.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.ottoman.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.mihai.6",
+  "skillId": "ist.mihai.6",
+  "title": {
+   "ro": "Mihai Viteazul și prima unire",
+   "en": "Michael the Brave and the first union"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Mihai Viteazul a devenit domn al Țării Românești în 1593. În 1594 s-a alăturat luptei antiotomane a Ligii Sfinte.",
+     "en": "Michael the Brave became ruler of Wallachia in 1593. In 1594 he joined the anti-Ottoman struggle of the Holy League."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1590,
+     "to": 1600,
+     "step": 1,
+     "marks": [
+      1593,
+      1594,
+      1595
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În 1595 a luptat la Călugăreni împotriva otomanilor. În 1599, la Șelimbăr, a câștigat în Transilvania și a intrat în Alba Iulia.",
+     "en": "In 1595 he fought the Ottomans at Călugăreni. In 1599 at Șelimbăr he won in Transylvania and entered Alba Iulia."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1594,
+     "to": 1600,
+     "step": 1,
+     "marks": [
+      1595,
+      1599
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În 1600 a ajuns să conducă Țara Românească, Transilvania și Moldova: o primă unire a celor trei țări. A murit în 1601.",
+     "en": "In 1600 he came to rule Wallachia, Transylvania and Moldavia: a first union of the three lands. He died in 1601."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1598,
+     "to": 1602,
+     "step": 1,
+     "marks": [
+      1600,
+      1601
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.mihai.6",
+   "kind": "explanation",
+   "title": "Explanation for ist.mihai.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.discoveries.7",
+  "skillId": "ist.discoveries.7",
+  "title": {
+   "ro": "Marile descoperiri geografice",
+   "en": "The Great Geographical Discoveries"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Busola, harta și caravela au făcut posibile călătoriile pe mări deschise. Portughezii și spaniolii au plecat să caute drumuri noi spre Asia.",
+     "en": "The compass, the map and the caravel made voyages over open seas possible. The Portuguese and Spanish went looking for new routes to Asia."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⛵",
+     "count": 3
+    }
+   },
+   {
+    "text": {
+     "ro": "În 1492 Columb a ajuns în America, iar în 1498 Vasco da Gama a ajuns pe mare în India.",
+     "en": "In 1492 Columbus reached the Americas and in 1498 Vasco da Gama reached India by sea."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1480,
+     "to": 1530,
+     "step": 10,
+     "marks": [
+      1488,
+      1492,
+      1498
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Expediția lui Magellan a pornit în 1519 și s-a încheiat în 1522: prima călătorie în jurul Pământului. Lumea veche și cea nouă au intrat în contact, cu urmări mari.",
+     "en": "Magellan's expedition set out in 1519 and ended in 1522: the first voyage around the Earth. The old and new worlds came into contact, with great consequences."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1515,
+     "to": 1525,
+     "step": 1,
+     "marks": [
+      1519,
+      1522
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.discoveries.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.discoveries.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.renaissance.7",
+  "skillId": "ist.renaissance.7",
+  "title": {
+   "ro": "Renașterea: artă, știință, tipar",
+   "en": "The Renaissance: art, science, printing"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Renașterea a început în Italia. Umaniștii puneau omul și educația în centru și admirau cultura antică.",
+     "en": "The Renaissance began in Italy. Humanists put the human being and education at the centre and admired ancient culture."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🎨",
+     "count": 3
+    }
+   },
+   {
+    "text": {
+     "ro": "Leonardo da Vinci și Michelangelo au creat opere de artă celebre, ca Mona Lisa și statuia David.",
+     "en": "Leonardo da Vinci and Michelangelo created famous works of art, such as the Mona Lisa and the statue of David."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1500,
+     "to": 1510,
+     "step": 1,
+     "marks": [
+      1503,
+      1504,
+      1508
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Gutenberg a pus la punct tiparul (aprox. 1450), iar Copernic și Galilei au schimbat felul în care înțelegem cerul.",
+     "en": "Gutenberg developed printing (about 1450), and Copernicus and Galileo changed how we understand the sky."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1440,
+     "to": 1620,
+     "step": 20,
+     "marks": [
+      1450,
+      1543,
+      1609
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.renaissance.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.renaissance.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.reformation.7",
+  "skillId": "ist.reformation.7",
+  "title": {
+   "ro": "Reforma religioasă",
+   "en": "The Reformation"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "În 1517, Martin Luther a publicat cele 95 de teze, în care critica unele practici ale Bisericii. A început Reforma.",
+     "en": "In 1517 Martin Luther published the 95 Theses, criticising some practices of the Church. The Reformation began."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1510,
+     "to": 1560,
+     "step": 10,
+     "marks": [
+      1517,
+      1521,
+      1555
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Au apărut biserici protestante (luterani, calvini, anglicani). Biserica Catolică a răspuns prin Contrareformă (Conciliul de la Trento).",
+     "en": "Protestant churches appeared (Lutherans, Calvinists, Anglicans). The Catholic Church answered with the Counter-Reformation (Council of Trent)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1530,
+     "to": 1550,
+     "step": 5,
+     "marks": [
+      1534,
+      1536,
+      1545
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Conflictele religioase au dus la războaie. Pacea de la Westfalia (1648) a încheiat Războiul de Treizeci de Ani.",
+     "en": "Religious conflicts led to wars. The Peace of Westphalia (1648) ended the Thirty Years' War."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1550,
+     "to": 1650,
+     "step": 25,
+     "marks": [
+      1555,
+      1648
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.reformation.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.reformation.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.enlightenment.7",
+  "skillId": "ist.enlightenment.7",
+  "title": {
+   "ro": "Absolutismul și Iluminismul",
+   "en": "Absolutism and the Enlightenment"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "În absolutism, monarhul are puterea concentrată în mâinile lui. Ludovic al XIV-lea al Franței este exemplul cel mai cunoscut.",
+     "en": "In absolutism the monarch holds power in his own hands. Louis XIV of France is the best-known example."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👑",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Iluminismul punea accent pe rațiune. Montesquieu a propus separarea puterilor, Rousseau a scris „Contractul social”.",
+     "en": "The Enlightenment stressed reason. Montesquieu proposed the separation of powers and Rousseau wrote “The Social Contract”."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1740,
+     "to": 1770,
+     "step": 10,
+     "marks": [
+      1748,
+      1751,
+      1762
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Unii monarhi, ca Petru I, Maria Tereza și Iosif al II-lea, au făcut reforme inspirate de ideile epocii.",
+     "en": "Some monarchs, like Peter I, Maria Theresa and Joseph II, made reforms inspired by the ideas of the age."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1700,
+     "to": 1790,
+     "step": 10,
+     "marks": [
+      1703,
+      1740,
+      1780
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.enlightenment.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.enlightenment.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.revolutions.7",
+  "skillId": "ist.revolutions.7",
+  "title": {
+   "ro": "Revoluțiile: americană, franceză, Napoleon",
+   "en": "The revolutions: American, French, Napoleon"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "În 1776, coloniile americane și-au proclamat independența față de Marea Britanie. Au creat Statele Unite și o constituție (1787).",
+     "en": "In 1776 the American colonies declared independence from Great Britain. They created the United States and a constitution (1787)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1770,
+     "to": 1790,
+     "step": 5,
+     "marks": [
+      1776,
+      1783,
+      1787
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În 1789 a început Revoluția franceză. Declarația drepturilor omului și cetățeanului a proclamat libertatea și egalitatea în fața legii.",
+     "en": "In 1789 the French Revolution began. The Declaration of the Rights of Man and of the Citizen proclaimed liberty and equality before the law."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1785,
+     "to": 1795,
+     "step": 1,
+     "marks": [
+      1789
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Napoleon Bonaparte a devenit împărat în 1804 și a fost învins la Waterloo în 1815. Codul său civil a influențat multe țări.",
+     "en": "Napoleon Bonaparte became emperor in 1804 and was defeated at Waterloo in 1815. His civil code influenced many countries."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1800,
+     "to": 1820,
+     "step": 5,
+     "marks": [
+      1804,
+      1815
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.revolutions.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.revolutions.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.industrial.7",
+  "skillId": "ist.industrial.7",
+  "title": {
+   "ro": "Revoluția industrială",
+   "en": "The Industrial Revolution"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Revoluția industrială a început în Marea Britanie. Mașinile cu abur (Watt, 1769) au înlocuit munca manuală în fabrici și în mine.",
+     "en": "The Industrial Revolution began in Great Britain. Steam engines (Watt, 1769) replaced hand work in factories and mines."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏭",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Locomotiva și calea ferată (1825) au accelerat transportul. Telegraful și telefonul (1876) au accelerat comunicarea.",
+     "en": "The locomotive and the railway (1825) sped up transport. The telegraph and the telephone (1876) sped up communication."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1820,
+     "to": 1880,
+     "step": 10,
+     "marks": [
+      1825,
+      1844,
+      1876
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Orașele au crescut, mulți oameni au plecat de la sat la oraș, iar condițiile de muncă au dus la noi idei despre drepturile muncitorilor.",
+     "en": "Towns grew, many people moved from villages to cities, and working conditions led to new ideas about workers' rights."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏙️",
+     "count": 3
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.industrial.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.industrial.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.phanariot.7",
+  "skillId": "ist.phanariot.7",
+  "title": {
+   "ro": "Brâncoveanu, Cantemir și epoca fanariotă",
+   "en": "Brâncoveanu, Cantemir and the Phanariot era"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Constantin Brâncoveanu a domnit în Țara Românească între 1688 și 1714. Epoca lui este cunoscută pentru artă și mănăstiri, ca Hurezi.",
+     "en": "Constantin Brâncoveanu ruled Wallachia between 1688 and 1714. His era is known for art and monasteries such as Hurezi."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1685,
+     "to": 1715,
+     "step": 5,
+     "marks": [
+      1688,
+      1714
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Din 1711 (Moldova) și 1716 (Țara Românească), sultanul a numit domni fanarioți. Dimitrie Cantemir, domn al Moldovei, a fost și un mare învățat.",
+     "en": "From 1711 (Moldavia) and 1716 (Wallachia) the sultan appointed Phanariot princes. Dimitrie Cantemir, ruler of Moldavia, was also a great scholar."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1705,
+     "to": 1720,
+     "step": 5,
+     "marks": [
+      1711,
+      1716
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Românii din afara arcului carpatic au pierdut teritorii: Bucovina (1775) și Basarabia (1812). În Transilvania, Școala Ardeleană a cerut drepturi prin Supplex (1791).",
+     "en": "Romanians lost territories: Bukovina (1775) and Bessarabia (1812). In Transylvania the Transylvanian School asked for rights through the Supplex (1791)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1770,
+     "to": 1815,
+     "step": 5,
+     "marks": [
+      1775,
+      1791,
+      1812
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.phanariot.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.phanariot.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.1821.7",
+  "skillId": "ist.1821.7",
+  "title": {
+   "ro": "Anul 1821 și Regulamentele Organice",
+   "en": "The year 1821 and the Organic Regulations"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Gheorghe Lazăr a deschis în 1818 o școală în limba română la București, un pas spre trezirea națională.",
+     "en": "In 1818 Gheorghe Lazăr opened a Romanian-language school in Bucharest, a step towards the national awakening."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1815,
+     "to": 1830,
+     "step": 5,
+     "marks": [
+      1818,
+      1821
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În 1821, Tudor Vladimirescu a condus o mișcare în Țara Românească. După ea, domnii fanarioți au fost înlocuiți cu domni pământeni.",
+     "en": "In 1821 Tudor Vladimirescu led a movement in Wallachia. After it the Phanariot princes were replaced with native princes."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1818,
+     "to": 1830,
+     "step": 2,
+     "marks": [
+      1821,
+      1826
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Regulamentele Organice (1831–1832) au funcționat ca prime constituții: separarea puterilor, reforme administrative. Pacea de la Adrianopol (1829) a deschis comerțul pe Dunăre.",
+     "en": "The Organic Regulations (1831–1832) worked as the first constitutions: separation of powers, administrative reforms. The Peace of Adrianople (1829) opened trade on the Danube."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1825,
+     "to": 1835,
+     "step": 1,
+     "marks": [
+      1829,
+      1831,
+      1832
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.1821.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.1821.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.1848.7",
+  "skillId": "ist.1848.7",
+  "title": {
+   "ro": "Revoluția de la 1848",
+   "en": "The Revolution of 1848"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "În 1848 au avut loc revoluții în multe țări europene. Tinerii români, adunați în societăți ca „Frăția” (1843), voiau drepturi și o țară modernă.",
+     "en": "In 1848 revolutions took place in many European countries. Young Romanians, gathered in societies like “Frăția” (1843), wanted rights and a modern country."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1838,
+     "to": 1850,
+     "step": 2,
+     "marks": [
+      1840,
+      1843,
+      1848
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În Țara Românească programul revoluției a fost Proclamația de la Islaz. În Transilvania, românii s-au adunat la Blaj. Nicolae Bălcescu și Avram Iancu au fost lideri.",
+     "en": "In Wallachia the revolution's programme was the Islaz Proclamation. In Transylvania the Romanians gathered at Blaj. Nicolae Bălcescu and Avram Iancu were leaders."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📜",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Revoluția a fost înfrântă, dar ideile ei au rămas. Ele au pregătit Unirea de la 1859.",
+     "en": "The revolution was defeated, but its ideas stayed. They prepared the Union of 1859."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1845,
+     "to": 1860,
+     "step": 5,
+     "marks": [
+      1848,
+      1849,
+      1856
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.1848.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.1848.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.union.7",
+  "skillId": "ist.union.7",
+  "title": {
+   "ro": "Unirea Principatelor și Alexandru Ioan Cuza",
+   "en": "The Union of the Principalities and Alexandru Ioan Cuza"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "După războiul Crimeii, Pacea de la Paris (1856) a deschis drumul. În 1857 Divanurile ad-hoc au cerut unirea.",
+     "en": "After the Crimean War the Peace of Paris (1856) opened the way. In 1857 the Ad hoc Divans asked for union."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1853,
+     "to": 1860,
+     "step": 1,
+     "marks": [
+      1856,
+      1857,
+      1859
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În ianuarie 1859, Alexandru Ioan Cuza a fost ales domn în Moldova și în Țara Românească. Așa s-au unit Principatele.",
+     "en": "In January 1859 Alexandru Ioan Cuza was elected ruler in Moldavia and Wallachia. This is how the Principalities united."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1856,
+     "to": 1862,
+     "step": 1,
+     "marks": [
+      1859,
+      1862
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Cuza a făcut reforme: secularizarea (1863) și reforma agrară (1864). În 1866 a fost înlocuit de Carol I, iar România a adoptat o constituție modernă.",
+     "en": "Cuza made reforms: secularisation (1863) and land reform (1864). In 1866 he was replaced by Carol I and Romania adopted a modern constitution."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1860,
+     "to": 1868,
+     "step": 1,
+     "marks": [
+      1863,
+      1864,
+      1866
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.union.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.union.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.independence.7",
+  "skillId": "ist.independence.7",
+  "title": {
+   "ro": "Independența și Regatul României",
+   "en": "Independence and the Kingdom of Romania"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Carol I a devenit domnitor în 1866. În mai 1877, România și-a proclamat independența față de Imperiul Otoman.",
+     "en": "Carol I became prince in 1866. In May 1877 Romania proclaimed its independence from the Ottoman Empire."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1865,
+     "to": 1880,
+     "step": 5,
+     "marks": [
+      1866,
+      1877
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Armata română a luptat în 1877–1878, inclusiv la Plevna. Congresul de la Berlin (1878) a recunoscut independența, iar România a primit Dobrogea.",
+     "en": "The Romanian army fought in 1877–1878, including at Plevna. The Congress of Berlin (1878) recognised independence and Romania received Dobruja."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1875,
+     "to": 1882,
+     "step": 1,
+     "marks": [
+      1877,
+      1878,
+      1881
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "În 1881 România a devenit regat. Au urmat modernizări, ca podul de la Cernavodă (1895), dar și tensiuni sociale, ca răscoala din 1907.",
+     "en": "In 1881 Romania became a kingdom. Modernisations followed, like the Cernavodă bridge (1895), but also social tensions, like the 1907 revolt."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1880,
+     "to": 1910,
+     "step": 5,
+     "marks": [
+      1881,
+      1895,
+      1907
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.independence.7",
+   "kind": "explanation",
+   "title": "Explanation for ist.independence.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.ww1.8",
+  "skillId": "ist.ww1.8",
+  "title": {
+   "ro": "Primul Război Mondial",
+   "en": "The First World War"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "În 1914 a început Primul Război Mondial. Două alianțe s-au înfruntat: Antanta și Puterile Centrale.",
+     "en": "In 1914 the First World War began. Two alliances faced each other: the Entente and the Central Powers."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1912,
+     "to": 1920,
+     "step": 1,
+     "marks": [
+      1914,
+      1916,
+      1918
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "România a intrat în război în 1916. În vara lui 1917, armata română a rezistat la Mărăști, Mărășești și Oituz.",
+     "en": "Romania entered the war in 1916. In the summer of 1917 the Romanian army held out at Mărăști, Mărășești and Oituz."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1914,
+     "to": 1919,
+     "step": 1,
+     "marks": [
+      1916,
+      1917
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Armistițiul din 11 noiembrie 1918 a oprit luptele, iar tratatul de la Versailles (1919) a reglementat pacea.",
+     "en": "The armistice of 11 November 1918 stopped the fighting and the Treaty of Versailles (1919) settled the peace."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1917,
+     "to": 1920,
+     "step": 1,
+     "marks": [
+      1918,
+      1919
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.ww1.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.ww1.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.union1918.8",
+  "skillId": "ist.union1918.8",
+  "title": {
+   "ro": "Marea Unire din 1918 și România Mare",
+   "en": "The Great Union of 1918 and Greater Romania"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "În 1918 s-au unit cu România Basarabia (martie), Bucovina (noiembrie) și Transilvania (1 decembrie, la Alba Iulia).",
+     "en": "In 1918 Bessarabia (March), Bukovina (November) and Transylvania (1 December, at Alba Iulia) united with Romania."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1914,
+     "to": 1924,
+     "step": 1,
+     "marks": [
+      1918
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Așa s-a format România Mare, condusă de regele Ferdinand și de regina Maria.",
+     "en": "This is how Greater Romania formed, led by King Ferdinand and Queen Marie."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👑",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Au urmat reforma agrară (1921), încoronarea de la Alba Iulia (1922) și Constituția din 1923.",
+     "en": "The land reform (1921), the coronation at Alba Iulia (1922) and the Constitution of 1923 followed."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1918,
+     "to": 1925,
+     "step": 1,
+     "marks": [
+      1921,
+      1922,
+      1923
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.union1918.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.union1918.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.interwar.8",
+  "skillId": "ist.interwar.8",
+  "title": {
+   "ro": "România în perioada interbelică",
+   "en": "Romania between the wars"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Perioada interbelică este timpul dintre cele două războaie mondiale, 1918–1939.",
+     "en": "The interwar period is the time between the two world wars, 1918–1939."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1918,
+     "to": 1939,
+     "step": 5,
+     "marks": [
+      1918,
+      1939
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "România avea partide, parlament și o viață culturală vie: Brâncuși, radioul (1928), universități.",
+     "en": "Romania had parties, a parliament and a lively cultural life: Brâncuși, radio (1928), universities."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1920,
+     "to": 1930,
+     "step": 2,
+     "marks": [
+      1923,
+      1928
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Marea Criză din 1929 a lovit economia lumii, iar în anii 1930 democrația a slăbit în multe țări, și în România.",
+     "en": "The Great Depression of 1929 hit the world economy and in the 1930s democracy weakened in many countries, including Romania."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1928,
+     "to": 1940,
+     "step": 2,
+     "marks": [
+      1929,
+      1930,
+      1938
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.interwar.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.interwar.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.totalitarian.8",
+  "skillId": "ist.totalitarian.8",
+  "title": {
+   "ro": "Regimuri totalitare în Europa",
+   "en": "Totalitarian regimes in Europe"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Într-un regim totalitar, statul controlează aproape toată viața: partid unic, propagandă, cenzură.",
+     "en": "In a totalitarian regime the state controls almost all of life: a single party, propaganda, censorship."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📢",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "După revoluția din 1917 s-a format URSS (1922). În Italia, Mussolini a preluat puterea în 1922.",
+     "en": "After the revolution of 1917 the USSR was formed (1922). In Italy Mussolini took power in 1922."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1916,
+     "to": 1924,
+     "step": 1,
+     "marks": [
+      1917,
+      1922
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Hitler a devenit cancelar în 1933. Regimul nazist a persecutat evrei și alte grupuri (Holocaust). Libertățile cetățenilor au fost suprimate.",
+     "en": "Hitler became chancellor in 1933. The Nazi regime persecuted Jews and other groups (the Holocaust). Citizens' freedoms were suppressed."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1930,
+     "to": 1940,
+     "step": 2,
+     "marks": [
+      1933,
+      1936,
+      1938
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.totalitarian.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.totalitarian.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.ww2.8",
+  "skillId": "ist.ww2.8",
+  "title": {
+   "ro": "Al Doilea Război Mondial",
+   "en": "The Second World War"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "Al Doilea Război Mondial a început în 1939 și s-a purtat între Aliați și Axă (Germania, Italia, Japonia).",
+     "en": "The Second World War began in 1939 and was fought between the Allies and the Axis (Germany, Italy, Japan)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1938,
+     "to": 1946,
+     "step": 1,
+     "marks": [
+      1939,
+      1945
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Franța a capitulat în 1940, Germania a atacat URSS în 1941, iar aliații au debarcat în Normandia în 1944.",
+     "en": "France surrendered in 1940, Germany attacked the USSR in 1941 and the Allies landed in Normandy in 1944."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1939,
+     "to": 1946,
+     "step": 1,
+     "marks": [
+      1940,
+      1941,
+      1944
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Războiul s-a încheiat în Europa în 1945. A fost creată ONU, pentru a apăra pacea.",
+     "en": "The war ended in Europe in 1945. The UN was created to protect peace."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1943,
+     "to": 1947,
+     "step": 1,
+     "marks": [
+      1945
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.ww2.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.ww2.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.ww2ro.8",
+  "skillId": "ist.ww2ro.8",
+  "title": {
+   "ro": "România în Al Doilea Război Mondial",
+   "en": "Romania in the Second World War"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "În 1940, România a pierdut teritorii: Basarabia și nordul Bucovinei (ultimatum sovietic) și nord-vestul Transilvaniei (Dictatul de la Viena).",
+     "en": "In 1940 Romania lost territories: Bessarabia and northern Bukovina (Soviet ultimatum) and northwestern Transylvania (Vienna Award)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1938,
+     "to": 1942,
+     "step": 1,
+     "marks": [
+      1939,
+      1940,
+      1941
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "România a intrat în război alături de Germania în 1941. La 23 august 1944 și-a schimbat tabăra și s-a alăturat Aliaților.",
+     "en": "Romania entered the war alongside Germany in 1941. On 23 August 1944 it changed sides and joined the Allies."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1940,
+     "to": 1946,
+     "step": 1,
+     "marks": [
+      1941,
+      1944
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Tratatul de la Paris (1947) a stabilit granițele de după război. În România a urmat instaurarea regimului comunist.",
+     "en": "The Paris Peace Treaty (1947) set the post-war borders. In Romania the communist regime was established."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1944,
+     "to": 1948,
+     "step": 1,
+     "marks": [
+      1945,
+      1947
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.ww2ro.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.ww2ro.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.coldwar.8",
+  "skillId": "ist.coldwar.8",
+  "title": {
+   "ro": "Războiul Rece",
+   "en": "The Cold War"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "După 1945, lumea s-a împărțit în două blocuri: cel occidental, condus de SUA, și cel estic, condus de URSS.",
+     "en": "After 1945 the world divided into two blocs: the Western, led by the USA, and the Eastern, led by the USSR."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1945,
+     "to": 1991,
+     "step": 10,
+     "marks": [
+      1945,
+      1991
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Blocurile au creat alianțe: NATO (1949) și Pactul de la Varșovia (1955). Europa era despărțită de „Cortina de Fier”.",
+     "en": "The blocs created alliances: NATO (1949) and the Warsaw Pact (1955). Europe was split by the “Iron Curtain”."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1947,
+     "to": 1957,
+     "step": 1,
+     "marks": [
+      1947,
+      1949,
+      1955
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Zidul Berlinului (1961) a fost simbolul diviziunii. Uniunea Sovietică s-a destrămat în 1991, iar Războiul Rece s-a încheiat.",
+     "en": "The Berlin Wall (1961) was the symbol of the division. The Soviet Union broke up in 1991 and the Cold War ended."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1960,
+     "to": 1992,
+     "step": 4,
+     "marks": [
+      1961,
+      1969,
+      1991
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.coldwar.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.coldwar.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.communism.8",
+  "skillId": "ist.communism.8",
+  "title": {
+   "ro": "Comunismul în România",
+   "en": "Communism in Romania"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "La 30 decembrie 1947, regele Mihai a abdicat și s-a proclamat republica. Partidul Comunist a devenit partid unic.",
+     "en": "On 30 December 1947 King Michael abdicated and the republic was proclaimed. The Communist Party became the single party."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1945,
+     "to": 1950,
+     "step": 1,
+     "marks": [
+      1947,
+      1948,
+      1949
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Statul a naționalizat întreprinderile (1948) și a colectivizat agricultura (din 1949). Libertățile au fost limitate, iar Securitatea supraveghea oamenii.",
+     "en": "The state nationalised enterprises (1948) and collectivised agriculture (from 1949). Freedoms were limited and the Securitate watched people."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔒",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Din 1965, Ceaușescu a condus țara. În anii 1980, lipsurile și controlul au crescut, iar mulți oameni au suferit.",
+     "en": "From 1965 Ceaușescu led the country. In the 1980s shortages and control grew and many people suffered."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1960,
+     "to": 1990,
+     "step": 5,
+     "marks": [
+      1965,
+      1968,
+      1977
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.communism.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.communism.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.rev1989.8",
+  "skillId": "ist.rev1989.8",
+  "title": {
+   "ro": "Revoluția din 1989 și tranziția",
+   "en": "The Revolution of 1989 and the transition"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "În 1989, regimurile comuniste din Europa de Est au căzut: Zidul Berlinului în noiembrie, iar în România revoluția a început la Timișoara în decembrie.",
+     "en": "In 1989 the communist regimes of Eastern Europe fell: the Berlin Wall in November, and in Romania the revolution began in Timișoara in December."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1985,
+     "to": 1992,
+     "step": 1,
+     "marks": [
+      1987,
+      1989
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Tranziția a însemnat trecerea la pluripartidism, libertăți și economie de piață, cu multe dificultăți.",
+     "en": "The transition meant moving to a multi-party system, freedoms and a market economy, with many difficulties."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗳️",
+     "count": 3
+    }
+   },
+   {
+    "text": {
+     "ro": "Primele alegeri libere au fost în 1990, iar Constituția a fost adoptată în 1991.",
+     "en": "The first free elections were in 1990 and the Constitution was adopted in 1991."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1988,
+     "to": 1997,
+     "step": 1,
+     "marks": [
+      1990,
+      1991,
+      1996
+     ]
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.rev1989.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.rev1989.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.ist.eu.8",
+  "skillId": "ist.eu.8",
+  "title": {
+   "ro": "România în NATO și Uniunea Europeană",
+   "en": "Romania in NATO and the European Union"
+  },
+  "reviewStatus": "beta",
+  "frames": [
+   {
+    "text": {
+     "ro": "După Al Doilea Război Mondial, state europene au început să coopereze: Tratatul de la Roma (1957), apoi Maastricht (1992).",
+     "en": "After the Second World War European states began to cooperate: the Treaty of Rome (1957), then Maastricht (1992)."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1955,
+     "to": 1995,
+     "step": 5,
+     "marks": [
+      1957,
+      1992
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "România a intrat în Consiliul Europei în 1993, în NATO în 2004 și în Uniunea Europeană la 1 ianuarie 2007.",
+     "en": "Romania joined the Council of Europe in 1993, NATO in 2004 and the European Union on 1 January 2007."
+    },
+    "visual": {
+     "kind": "number-line",
+     "from": 1990,
+     "to": 2010,
+     "step": 2,
+     "marks": [
+      1993,
+      2004,
+      2007
+     ]
+    }
+   },
+   {
+    "text": {
+     "ro": "Ca membri ai UE, românii au drept de a studia, a lucra și a călători în alte state membre; NATO oferă apărare comună.",
+     "en": "As EU members Romanians have the right to study, work and travel in other member states; NATO provides common defence."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🇪🇺",
+     "count": 1
+    }
+   }
+  ],
+  "provenance": {
+   "id": "prov.exp.ist.eu.8",
+   "kind": "explanation",
+   "title": "Explanation for ist.eu.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; dates double-checked; awaiting human review"
+  }
+ }
+]

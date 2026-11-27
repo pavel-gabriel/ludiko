@@ -1,0 +1,608 @@
+[
+ {
+  "id": "ist.ww1.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Primul Război Mondial",
+   "en": "The First World War"
+  },
+  "prerequisites": [
+   "ist.industrial.7",
+   "ist.independence.7"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "ww1"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "ww1"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.ww1.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.ww1.8",
+   "kind": "data",
+   "title": "Skill ist.ww1.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.union1918.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Marea Unire din 1918 și România Mare",
+   "en": "The Great Union of 1918 and Greater Romania"
+  },
+  "prerequisites": [
+   "ist.ww1.8",
+   "ist.union1918.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "union18"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "union18"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.union1918.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.union1918.8",
+   "kind": "data",
+   "title": "Skill ist.union1918.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.interwar.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "România în perioada interbelică",
+   "en": "Romania between the wars"
+  },
+  "prerequisites": [
+   "ist.union1918.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "interwar"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "interwar"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.interwar.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.interwar.8",
+   "kind": "data",
+   "title": "Skill ist.interwar.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.totalitarian.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Regimuri totalitare în Europa",
+   "en": "Totalitarian regimes in Europe"
+  },
+  "prerequisites": [
+   "ist.ww1.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "tot"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "tot"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.totalitarian.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.totalitarian.8",
+   "kind": "data",
+   "title": "Skill ist.totalitarian.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.ww2.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Al Doilea Război Mondial",
+   "en": "The Second World War"
+  },
+  "prerequisites": [
+   "ist.totalitarian.8",
+   "ist.interwar.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "ww2"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "ww2"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.ww2.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.ww2.8",
+   "kind": "data",
+   "title": "Skill ist.ww2.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.ww2ro.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "România în Al Doilea Război Mondial",
+   "en": "Romania in the Second World War"
+  },
+  "prerequisites": [
+   "ist.ww2.8",
+   "ist.interwar.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "ww2ro"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "ww2ro"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.ww2ro.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.ww2ro.8",
+   "kind": "data",
+   "title": "Skill ist.ww2ro.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.coldwar.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Războiul Rece",
+   "en": "The Cold War"
+  },
+  "prerequisites": [
+   "ist.ww2.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "cold"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "cold"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.coldwar.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.coldwar.8",
+   "kind": "data",
+   "title": "Skill ist.coldwar.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.communism.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Comunismul în România",
+   "en": "Communism in Romania"
+  },
+  "prerequisites": [
+   "ist.ww2ro.8",
+   "ist.coldwar.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "comm"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "comm"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.communism.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.communism.8",
+   "kind": "data",
+   "title": "Skill ist.communism.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.rev1989.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Revoluția din 1989 și tranziția",
+   "en": "The Revolution of 1989 and the transition"
+  },
+  "prerequisites": [
+   "ist.communism.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "rev89"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "rev89"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.rev1989.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.rev1989.8",
+   "kind": "data",
+   "title": "Skill ist.rev1989.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ },
+ {
+  "id": "ist.eu.8",
+  "subject": "ist",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "1.2"
+   },
+   {
+    "programa": "IST-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "România în NATO și Uniunea Europeană",
+   "en": "Romania in NATO and the European Union"
+  },
+  "prerequisites": [
+   "ist.rev1989.8",
+   "ist.coldwar.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "ist-events",
+    "params": {
+     "tags": [
+      "eu"
+     ]
+    }
+   },
+   {
+    "generator": "ist-gim",
+    "params": {
+     "tags": [
+      "eu"
+     ]
+    }
+   },
+   {
+    "bank": "ist/grade5-8.json"
+   }
+  ],
+  "explanations": [
+   "exp.ist.eu.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.ist.eu.8",
+   "kind": "data",
+   "title": "Skill ist.eu.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa IST-V-VIII-2017; facts in own words"
+  }
+ }
+]

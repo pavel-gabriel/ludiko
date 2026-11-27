@@ -404,7 +404,7 @@ describe('content on disk', () => {
       rom: ['CLR-2013', 'LLR-III-IV-2014', 'LLR-V-VIII-2017'],
       stiinte: ['MEM-2013', 'STI-III-IV-2014'],
       civ: ['CIV-III-IV-2014'],
-      ist: ['IST-IV-2014'],
+      ist: ['IST-IV-2014', 'IST-V-VIII-2017'],
       geo: ['GEO-IV-2014'],
       logic: ['LUDIKO-LOGIC'],
     };

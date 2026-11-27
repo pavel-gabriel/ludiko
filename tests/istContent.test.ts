@@ -25,13 +25,14 @@ function jsonFiles(dir: string): string[] {
   });
 }
 
-const istSkills = getSkillsBySubject('ist');
-const istFiles = [
+/* grade IV only: the V-VIII skills are covered by tests/istGimnaziu.test.ts */
+const istSkills = getSkillsBySubject('ist').filter((s) => s.grade <= 4);
+const istFiles = ([
   ...jsonFiles(join(CONTENT, 'skills', 'ist')),
   ...jsonFiles(join(CONTENT, 'items', 'ist')),
   ...jsonFiles(join(CONTENT, 'explanations', 'ist')),
   ...jsonFiles(join(CONTENT, 'data', 'ist')),
-];
+]).filter((f) => !/grade5-8|grade[5-8]\.json|gimnaziu/.test(f));
 const bankItems = istSkills.flatMap((s) => getItemsForSkill(s.id));
 
 /** The response a perfect child would give */
