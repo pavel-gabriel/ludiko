@@ -4,6 +4,11 @@ import { buildReportSnapshot, type ReportSnapshot } from '@/services/reportSnaps
 
 const GENERATED_ID = /^gen\.(.+)\.(\d+)\.(\d+)$/
 
+/** The skill whose content pack `reconstructSnapshot` needs loaded (docs/ENGINE.md "Content packs") */
+export function snapshotSkillId(itemId: string, skillId?: string): string | undefined {
+  return GENERATED_ID.exec(itemId)?.[1] ?? skillId
+}
+
 /**
  * Old reports have no snapshot. Rebuild what the child saw from the item id:
  * - generated ids (gen.<skillId>.<seed>.<index>) are deterministic given the seed, so regenerate them;

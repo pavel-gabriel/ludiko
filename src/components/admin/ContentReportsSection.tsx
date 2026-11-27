@@ -13,16 +13,20 @@ import {
   type ReportSnapshot,
   type ReportStatus,
 } from '@/services/reportService';
-import { reconstructSnapshot } from './reconstructItem';
+import { packsForSkills } from '@/engine/content/packs';
+import { usePacks } from '@/ui/content/ContentGate';
+import { reconstructSnapshot, snapshotSkillId } from './reconstructItem';
 
 const MAX_COMMENTS_SHOWN = 3;
 
 /** The question as the child saw it, with the correct option marked. */
 function ItemDetails({ g }: { g: ReportGroup }) {
   const { t } = useTranslation();
+  // Rebuilding needs the skill's content pack (generators + bank)
+  const { status } = usePacks(g.snapshot ? [] : packsForSkills([snapshotSkillId(g.itemId, g.skillId)]));
   const rebuilt = useMemo(
-    () => (g.snapshot ? undefined : reconstructSnapshot(g.itemId, g.skillId)),
-    [g.snapshot, g.itemId, g.skillId],
+    () => (g.snapshot || status !== 'ready' ? undefined : reconstructSnapshot(g.itemId, g.skillId)),
+    [g.snapshot, g.itemId, g.skillId, status],
   );
   const snap: ReportSnapshot | undefined = g.snapshot ?? rebuilt;
   const skillId = snap?.skillId ?? g.skillId;

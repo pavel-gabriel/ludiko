@@ -7,6 +7,7 @@
  */
 import { applyMasteryCheck as engineMasteryCheck } from '@/engine/mastery';
 import { getSkill } from '@/engine/content/registry';
+import { ensureContentForSkills } from '@/engine/content/packs';
 import type { SubjectId } from '@/engine/types';
 import {
   applyAttemptCounters,
@@ -92,7 +93,10 @@ export const learnerService: LearnerService = {
 
   async placementNext(profileId, subject, now = Date.now()) {
     const profile = await requireProfile(profileId);
-    return updateProgress(profileId, (progress) => advancePlacement(progress, profile, subject, now));
+    const next = await updateProgress(profileId, (progress) => advancePlacement(progress, profile, subject, now));
+    // The page plays the probe synchronously: load its skill's content pack first (docs/ENGINE.md "Content packs")
+    if (next && 'skillId' in next && typeof next.skillId === 'string') await ensureContentForSkills([next.skillId]);
+    return next;
   },
 
   async placementRecord(profileId, subject, skillId, results) {
@@ -110,10 +114,13 @@ export const learnerService: LearnerService = {
 
   async getTodayMission(profileId, subject, now = Date.now()) {
     const profile = await requireProfile(profileId);
-    return updateProgress(profileId, (progress): Mission | undefined => {
+    const mission = await updateProgress(profileId, (progress): Mission | undefined => {
       if (progress.placements?.[subject]?.completedAt === undefined) return undefined;
       return clone(ensureMission(progress, profile, subject, now));
     });
+    // Steps generate items and show explanations synchronously: load their content packs first
+    if (mission) await ensureContentForSkills(mission.steps.map((s) => s.skillId));
+    return mission;
   },
 
   async getTodayPlan(profileId, now = Date.now()) {

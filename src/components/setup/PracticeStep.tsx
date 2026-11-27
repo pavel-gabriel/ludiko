@@ -4,7 +4,9 @@ import type { Grade } from '@/engine/types';
 import type { Operation } from '@/utils/types';
 import { GAME_TYPES } from '@/utils/constants';
 import SkillPicker from '@/components/play/SkillPicker';
-import { PLAY_PRESETS } from '@/components/play/presets';
+import { PLAY_PRESETS, PRESET_SKILL_IDS } from '@/components/play/presets';
+import { packsForSkills } from '@/engine/content/packs';
+import { usePacks } from '@/ui/content/ContentGate';
 import { skillUsable } from '@/services/itemGame';
 import { resolveSkillNames } from '@/components/play/skillNames';
 import OptionCard from './OptionCard';
@@ -41,6 +43,8 @@ const chip = (on: boolean) =>
 export default function PracticeStep({ choices, onChange, grade, showAll, onShowAll, picking, onPicking }: PracticeStepProps) {
   const { t, i18n } = useTranslation();
   const kind = itemKindOf(choices.mode);
+  /* `skillUsable` is exact only once a skill's content pack is loaded (re-renders when they arrive) */
+  usePacks(packsForSkills([...PRESET_SKILL_IDS, ...choices.skillIds]));
   const filtered = grade !== null && !showAll;
   /* a short list first (for the child's grade when there is a profile); "Arată toate" opens the rest */
   const base = useMemo(() => (grade !== null ? presetsForGrade(grade) : starterPresets()), [grade]);

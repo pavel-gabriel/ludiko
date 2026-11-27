@@ -1,7 +1,9 @@
 import { useCallback, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
-import { assembleTest, testItems } from '@/exam/assemble'
+import { assembleTest, blueprintSkills, testItems } from '@/exam/assemble'
+import { packsForSkills } from '@/engine/content/packs'
+import ContentGate from '@/ui/content/ContentGate'
 import { getGimBlueprint, gimQuestionCount, isGimExam, maxPoints } from '@/exam/gimBlueprints'
 import { partialFraction, scoreGimExam, type GimScore } from '@/exam/gimScoring'
 import type { AssembledTest, ExamBlueprint, ExamTestNo } from '@/exam/types'
@@ -149,5 +151,13 @@ export default function ExamGimRunPage() {
   const testNo: ExamTestNo | null = test === '1' ? 1 : test === '2' ? 2 : null
   const bp = isGimExam(exam) && testNo ? getGimBlueprint(exam, testNo, Number(variant)) : undefined
   if (!bp) return <Navigate to="/learn/exam" replace />
-  return <RequireProfile>{(profile) => <GimFlow profile={profile} bp={bp} />}</RequireProfile>
+  return (
+    <RequireProfile>
+      {(profile) => (
+        <ContentGate packs={packsForSkills(blueprintSkills(bp))} backTo="/learn/exam">
+          <GimFlow profile={profile} bp={bp} />
+        </ContentGate>
+      )}
+    </RequireProfile>
+  )
 }

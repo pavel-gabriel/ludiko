@@ -76,6 +76,9 @@
 
 ### Key Patterns
 - `key={localIndex}` on QuestionCard/ShapeCard forces clean remount per question
+- Content is lazy (docs/ENGINE.md "Content packs"): skill index always loaded; items/explanations/generators per
+  subject × grade band in `src/engine/content/packs/<id>.ts` — await `ensureContentForSkills` / `<ContentGate>` before
+  generating items; a new generator module must be imported by the pack(s) that use it
 - Sounds via Web Audio oscillators (`src/utils/sounds.ts`), respects settingsStore.soundEnabled
 - Firebase env vars from `.env` locally, GitHub Actions secrets in CI
 - SPA routing on GitHub Pages: `public/404.html` + redirect script in `index.html`

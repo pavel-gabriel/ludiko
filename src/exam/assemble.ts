@@ -33,6 +33,27 @@ export function resolveSkills(selector: SkillSelector): Skill[] {
     .sort((a, b) => a.id.localeCompare(b.id))
 }
 
+/**
+ * Every skill a blueprint may draw from (index only, before any content is loaded): the exam pages load
+ * these skills' content packs before `assembleTest` (docs/ENGINE.md "Content packs").
+ */
+export function blueprintSkills(bp: ExamBlueprint): Skill[] {
+  const out = new Set<Skill>()
+  for (const section of bp.sections) {
+    for (const part of section.parts) {
+      const sel = part.skills
+      const found =
+        'ids' in sel
+          ? sel.ids.map((id) => getSkill(id))
+          : getAllSkills().filter(
+              (s) => s.subject === sel.subject && sel.grades.includes(s.grade) && (sel.idPrefix === undefined || s.id.startsWith(sel.idPrefix)),
+            )
+      for (const s of found) if (s) out.add(s)
+    }
+  }
+  return [...out]
+}
+
 const text = (t: LocalizedText | undefined) => t?.ro ?? ''
 
 /**

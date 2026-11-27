@@ -4,7 +4,6 @@
  */
 import spellingFile from '../../../../content/data/rom/spelling.json';
 import grammarFile from '../../../../content/data/rom/grammar.json';
-import vocabFile from '../../../../content/data/rom/vocab-gimnaziu.json';
 import quizFile from '../../../../content/data/rom/quiz-gimnaziu.json';
 
 /* ---- spelling ------------------------------------------------------ */
@@ -89,26 +88,19 @@ export interface FigureEntry {
 export const FIGURE_LABELS: readonly string[] = grammarFile.figures.labels;
 export const FIGURE_ITEMS: readonly FigureEntry[] = (grammarFile.figures.items as [string, string][]).map(([figure, line]) => ({ figure, line }));
 
-/* ---- vocabulary ---------------------------------------------------- */
+/* ---- vocabulary: in ./romGimVocabData (the grade 0–IV word-relations generator reuses it, and it should
+ * not pull the gimnaziu grammar/spelling/quiz lists into the primary content pack) ---- */
 
-export type WordPair = readonly [string, string];
-export const GIM_SYNONYMS = vocabFile.synonyms as unknown as WordPair[];
-export const GIM_ANTONYMS = vocabFile.antonyms as unknown as WordPair[];
-
-export interface ParonymEntry {
-  /** Sentence with one {{gap}} */
-  t: string;
-  correct: string;
-  wrong: string;
-}
-export const PARONYMS: readonly ParonymEntry[] = (vocabFile.paronyms as [string, string, string][]).map(([t, correct, wrong]) => ({ t, correct, wrong }));
-
-export interface HomonymEntry {
-  w: string;
-  /** Each sense lists at least two example sentences */
-  senses: string[][];
-}
-export const HOMONYMS: readonly HomonymEntry[] = vocabFile.homonyms as HomonymEntry[];
+export {
+  GIM_ANTONYMS,
+  GIM_SYNONYMS,
+  HOMONYMS,
+  PARONYMS,
+  capitalize,
+  type HomonymEntry,
+  type ParonymEntry,
+  type WordPair,
+} from './romGimVocabData';
 
 /* ---- curated multiple-choice quiz ---------------------------------- */
 
@@ -123,6 +115,3 @@ export const QUIZ: Record<string, readonly QuizEntry[]> = Object.fromEntries(
     rows.map(([prompt, correct, ...wrong]) => ({ prompt, correct, wrong })),
   ]),
 );
-
-/** Uppercase the first letter (Romanian locale) — used when a gap opens a sentence */
-export const capitalize = (s: string): string => (s ? s.charAt(0).toLocaleUpperCase('ro') + s.slice(1) : s);

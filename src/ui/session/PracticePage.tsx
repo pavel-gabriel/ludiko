@@ -2,6 +2,8 @@ import { useCallback, useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { getExplanation, getSkill } from '@/engine/content/registry'
+import { packsForSkills } from '@/engine/content/packs'
+import ContentGate from '@/ui/content/ContentGate'
 import { isBig } from '@/older/ageBand'
 import { recordBitDone } from '@/older/olderStore'
 import { localize, type Item, type Skill } from '@/engine/types'
@@ -30,8 +32,17 @@ function parseMode(raw: string | null): SessionMode | null {
 }
 
 /** /practice/:skillId — pick a mode, run a session, see the results. `?mode=` skips the picker. */
+/** Loads the skill's content pack first (docs/ENGINE.md "Content packs"), then the session works synchronously */
 export default function PracticePage() {
   const { skillId = '' } = useParams()
+  return (
+    <ContentGate packs={packsForSkills([skillId])} backTo="/practice">
+      <PracticeSession key={skillId} skillId={skillId} />
+    </ContentGate>
+  )
+}
+
+function PracticeSession({ skillId }: { skillId: string }) {
   const [params] = useSearchParams()
   const { t, i18n } = useTranslation()
   const navigate = useNavigate()

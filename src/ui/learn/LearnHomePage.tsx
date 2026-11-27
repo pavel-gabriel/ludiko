@@ -6,6 +6,7 @@ import { learnerService, type AssignmentBit } from '@/learner'
 import { availableSubjects, lockedSubjects, subjectMinGrade } from '@/learner/availability'
 import { earnedMilestones, type MilestoneId } from '@/learner/extrasUnlocks'
 import { checkSubjects } from '@/learner/checkSubjects'
+import { prefetchProfileContent } from '@/learner/prefetch'
 import type { ChildProfile } from '@/profiles/types'
 import { getProgress } from '@/profiles/profileService'
 import LearnHomeView, { type LearnHomeViewProps, type SubjectHome } from './LearnHomeView'
@@ -63,6 +64,12 @@ function LearnHome({ profile }: { profile: ChildProfile }) {
   useEffect(() => {
     if (profile.classLink) refreshClassData(profile.id, refresh)
   }, [profile.id, profile.classLink, refresh])
+
+  // once the home is on screen: download this child's content packs in the background (offline afterwards)
+  const loaded = data !== undefined && data !== null
+  useEffect(() => {
+    if (loaded) prefetchProfileContent(profile.grade, LEARN_SUBJECTS)
+  }, [loaded, profile.grade])
 
   // /learn?locked=geo: a screen for a subject above the child's grade sent them here (see RequireSubject)
   const [params] = useSearchParams()

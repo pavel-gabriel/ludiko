@@ -121,6 +121,53 @@ conquered one after another instead of "randomly".
   (skipped), with filter chips (Toate / De făcut / În lucru / Gata / Ascunse) and a remembered toggle for
   locked islands.
 
+## Content packs (lazy content, docs/PLAN.md §10)
+
+A child only downloads the subjects and grades they use; the engine stays synchronous over what is loaded.
+
+* **Skill index** (`src/engine/content/registry.ts`, always loaded, precached): every skill of every subject
+  and grade from `content/skills/**` (eager glob). `getAllSkills` / `getSkill` / `getSkillsBySubject` — so
+  placement, planner, route, map, availability and cross-subject prerequisites (geo → mat, fiz → mat) work
+  without any pack.
+* **Packs** (`src/engine/content/packs/<packId>.ts`, one lazy chunk group each): `packId = <subject>-<band>`,
+  band `p` = grades 0–IV, `g` = V–VIII (`packIds.ts`; 16 packs: `mat-p`, `mat-g`, `rom-p`, `rom-g`, `eng-p`,
+  `eng-g`, `stiinte-p`, `logic-p`, `civ-p`, `ist-p`, `ist-g`, `geo-p`, `geo-g`, `bio-g`, `fiz-g`, `chim-g`).
+  A pack module imports `virtual:ludiko-pack/<packId>` (its static items + explanations) and the generator
+  modules its skills use (which self-register and import their `content/data` datasets).
+* **Build split** (`scripts/contentPacksPlugin.ts`, a Vite plugin also active in vitest): splits
+  `content/{items,explanations}` by record — an item goes to its skill's pack, an explanation to the pack of
+  every skill/item referencing it (or whose id it is) — so file names do not matter. After bundling it
+  lists the chunks reachable only through packs; `vite.config.ts` removes them from the workbox precache.
+* **Registry over loaded packs**: `registerPack`, `isPackLoaded`, `isSkillContentLoaded`;
+  `getItemsForSkill` / `getExplanation` return nothing until the skill's pack is loaded, and
+  `generateItems` throws "Unknown generator … is its content pack loaded?".
+* **Async boundary** (`src/engine/content/packs.ts`): `ensurePacks(ids)`, `ensureContentForSkills(skills)`,
+  `ensureContent(subject, maxGrade?)`, `packsFor({ subjects, maxGrade })`, `packsForSkills`, `prefetchPacks`
+  (sequential, never throws). Callers:
+  * `learnerService.getTodayMission` / `getTodayBits` / `placementNext` await the packs of the skills they
+    return, so Mission/Bit/Placement pages stay synchronous;
+  * `<ContentGate packs>` / `usePacks` (`src/ui/content/ContentGate.tsx`) — `/practice/:skillId`, exam runs
+    (`blueprintSkills(bp)`), the skill picker list; loading / friendly offline error with retry;
+  * ClassAssignmentPage, ChallengePage, `initRoomGame` (host builds race items), admin report rebuild await
+    `ensureContentForSkills` first;
+  * `skillHasItems` trusts a declared `bank` source and `skillUsable` answers optimistically (uncached)
+    until the skill's pack is loaded.
+* **Offline**: the learner home calls `prefetchProfileContent(grade, subjects)` (`src/learner/prefetch.ts`)
+  once rendered: packs of the child's playable subjects for grades ≤ theirs, math and Romanian first, the
+  child's own band first, one at a time in idle time (skipped with Save-Data). The service worker caches
+  every non-precached `/assets/*.js` with CacheFirst (`ludiko-packs`, hashed so immutable).
+* **Tests**: `tests/setup.ts` calls `loadAllContentForTests()` (`tests/helpers/loadAllContent.ts`, eager glob
+  of every pack), so tests keep calling `generateItems` / `getItemsForSkill` synchronously.
+  `tests/contentPacks.test.ts` checks the split loses nothing, every pack alone registers the generators its
+  skills use (`vi.resetModules`), pack sizes, and what grade I / VIII profiles download.
+* **Adding content**: a new subject or band needs `src/engine/content/packs/<packId>.ts`; a new generator
+  module must be imported by the pack(s) whose skills use it (the per-pack test fails otherwise). Keep
+  gimnaziu-only datasets out of modules primary generators import (e.g. `romGimVocabData.ts`).
+
+Numbers (2026-11, `npm run build`): index 412 KB raw / 43 KB gzip; largest pack `ist-g` 405 / 95 KB;
+grade I child's packs 151 KB gzip, grade VIII 601 KB gzip; precache 5.4 MB → 2.7 MB. Before: one 2.2 MB
+(352 KB gzip) registry chunk + a 977 KB (298 KB gzip) generators chunk loaded before the learner home.
+
 ## Simulation (tests/engine.simulation.test.ts)
 
 Grade II learner who knows only grade 0 (13 gaps after placement): with pLearn 0.2/item and 8 % slips,

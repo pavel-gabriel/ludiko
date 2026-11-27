@@ -3,7 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { getAllSkills } from '@/engine/content/registry';
 import { localize, type Grade, type Skill, type SubjectId } from '@/engine/types';
 import { MAX_SKILLS, skillUsable, type ItemGameKind } from '@/services/itemGame';
-import { PLAY_PRESETS } from './presets';
+import { packsForSkills } from '@/engine/content/packs';
+import ContentGate, { usePacks } from '@/ui/content/ContentGate';
+import { PLAY_PRESETS, PRESET_SKILL_IDS } from './presets';
 import FilterChips from '@/ui/common/FilterChips';
 
 interface SkillPickerProps {
@@ -39,6 +41,8 @@ export default function SkillPicker({ value, onChange, kind, embedded = false, i
   const open = embedded || openState;
 
   const skills = useMemo(() => getAllSkills(), []);
+  /* `skillUsable` is exact only once a skill's content pack is loaded: load the presets' and the chosen ones */
+  usePacks(packsForSkills([...PRESET_SKILL_IDS, ...value]));
   const subjects = useMemo(
     () => SUBJECT_ORDER.filter((s) => skills.some((k) => k.subject === s)),
     [skills],
@@ -166,30 +170,32 @@ export default function SkillPicker({ value, onChange, kind, embedded = false, i
           {list.length === 0 ? (
             <p className="text-sm text-gray-500">{t('play.noSkills')}</p>
           ) : (
-            <ul className="space-y-1.5" aria-label={t('play.title')}>
-              {list.map((s) => {
-                const on = value.includes(s.id);
-                const playable = skillUsable(s.id, kind);
-                const blocked = !playable || (!on && full);
-                return (
-                  <li key={s.id}>
-                    <button
-                      type="button"
-                      aria-pressed={on}
-                      disabled={blocked && !on}
-                      onClick={() => toggle(s.id)}
-                      className={`w-full rounded-xl px-3 py-2 text-left text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
-                        on ? 'bg-ludiko-green text-ludiko-text' : 'bg-gray-100 hover:bg-gray-200'
-                      }`}
-                    >
-                      <span aria-hidden="true">{on ? '✓ ' : ''}</span>
-                      {name(s)}
-                      {!playable && <span className="block text-xs font-normal text-gray-500">{t('play.notPlayable')}</span>}
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
+            <ContentGate inline packs={packsForSkills(list)}>
+              <ul className="space-y-1.5" aria-label={t('play.title')}>
+                {list.map((s) => {
+                  const on = value.includes(s.id);
+                  const playable = skillUsable(s.id, kind);
+                  const blocked = !playable || (!on && full);
+                  return (
+                    <li key={s.id}>
+                      <button
+                        type="button"
+                        aria-pressed={on}
+                        disabled={blocked && !on}
+                        onClick={() => toggle(s.id)}
+                        className={`w-full rounded-xl px-3 py-2 text-left text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                          on ? 'bg-ludiko-green text-ludiko-text' : 'bg-gray-100 hover:bg-gray-200'
+                        }`}
+                      >
+                        <span aria-hidden="true">{on ? '✓ ' : ''}</span>
+                        {name(s)}
+                        {!playable && <span className="block text-xs font-normal text-gray-500">{t('play.notPlayable')}</span>}
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </ContentGate>
           )}
         </div>
       )}

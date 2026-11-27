@@ -1,7 +1,9 @@
 import { useCallback, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Navigate, useNavigate, useParams } from 'react-router-dom'
-import { assembleTest, testItems } from '@/exam/assemble'
+import { assembleTest, blueprintSkills, testItems } from '@/exam/assemble'
+import { packsForSkills } from '@/engine/content/packs'
+import ContentGate from '@/ui/content/ContentGate'
 import { BLUEPRINTS, getBlueprint, parseExamId, requiredQuestionCount } from '@/exam/blueprints'
 import { scoreExam } from '@/exam/scoring'
 import type { AssembledTest, ExamScore, ExamTestNo } from '@/exam/types'
@@ -157,5 +159,13 @@ export default function ExamRunPage() {
   const testNo = rawTest === '1' ? 1 : rawTest === '2' ? 2 : null
   const bp = exam && testNo ? getBlueprint(exam, testNo) : undefined
   if (!exam || !testNo || !bp) return <Navigate to="/learn/exam" replace />
-  return <RequireProfile>{(profile) => <ExamFlow profile={profile} blueprintId={bp.id} exam={exam} testNo={testNo} />}</RequireProfile>
+  return (
+    <RequireProfile>
+      {(profile) => (
+        <ContentGate packs={packsForSkills(blueprintSkills(bp))} backTo="/learn/exam">
+          <ExamFlow profile={profile} blueprintId={bp.id} exam={exam} testNo={testNo} />
+        </ContentGate>
+      )}
+    </RequireProfile>
+  )
 }
