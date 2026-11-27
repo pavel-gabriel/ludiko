@@ -55,6 +55,26 @@ import './logicAnalogy';
 import './logicSudoku';
 import './logicRobot';
 import './logicWhere';
+// Math grades V-VIII (fractions-ops, decimals, powers, divisibility, integers, percentages, proportions, linear-equation,
+// system-2x2, sqrt, pythagoras, areas-volumes, algebra, linear-function, probability, statistics, angles, segments-units)
+import './fractionsOps';
+import './decimals';
+import './powers';
+import './divisibility';
+import './integers';
+import './percentages';
+import './proportions';
+import './linearEquation';
+import './system2x2';
+import './sqrt';
+import './pythagoras';
+import './areasVolumes';
+import './algebra';
+import './linearFunction';
+import './probability';
+import './statistics';
+import './angles';
+import './segmentsUnits';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';
