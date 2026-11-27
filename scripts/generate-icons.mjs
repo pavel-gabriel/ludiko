@@ -16,7 +16,10 @@ const maskableSvg = svg
   .replace(/<rect[^>]*\/>/, '<rect width="512" height="512" fill="#FFB6C1"/>')
   .replace(/<(path|circle)/g, '<$1 transform="translate(256 256) scale(0.8) translate(-256 -256)"');
 
+const monoSvg = readFileSync(path.join(outDir, 'icon-monochrome.svg'), 'utf8');
+
 const targets = [
+  { file: 'icon-monochrome-512.png', size: 512, src: monoSvg },
   { file: 'icon-192.png', size: 192, src: svg },
   { file: 'icon-512.png', size: 512, src: svg },
   { file: 'icon-maskable-512.png', size: 512, src: maskableSvg },

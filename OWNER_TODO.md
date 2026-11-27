@@ -2,7 +2,7 @@
 
 > Kept up to date by Claude at the end of each work wave. Tick items as you finish them
 > (`- [x]`), or tell Claude in chat and it will tick them for you.
-> Last updated: 2026-11-26 (Firebase automation added).
+> Last updated: 2026-11-27 (store release kit added).
 
 ## ⚙️ Automate Firebase (do this once, then the rule deploys below happen by themselves)
 
@@ -25,6 +25,36 @@ on demand. It only needs one more secret.
       **`cleanup-rooms`**.
 - From now on: any change to `firestore.rules` / `database.rules.json` merged to `main` is deployed automatically
   (if the secret is missing the job just warns and skips).
+
+## 📱 App stores (Play Store + App Store): everything preparable is in `store/`
+
+Repo side is ready (PWA manifest with screenshots and maskable/monochrome icons, offline page, Android TWA kit,
+iOS Capacitor guide, store listing texts in RO/EN, parental gate on all external links). What only you can do:
+
+- [ ] **Decide the domain.** TWA verification needs `/.well-known/assetlinks.json` at the host root, so a
+      `.../ludiko/` sub-path can never work. The repo already serves `www.ludiko.ro` (`public/CNAME`, `base = '/'`).
+      Keep that (register/renew the domain, DNS to GitHub Pages, HTTPS enforced), or use a user-site repo
+      `pavel-gabriel.github.io`. Options in `store/android/README.md` §1.
+- [ ] **Allow the hidden `.well-known` folder in the Pages deploy**: `upload-pages-artifact@v3` drops dot-folders.
+      Replace that step with the manual tarball in `store/android/README.md` §1 (not done in the repo on purpose: it
+      changes the live deploy). Then check `https://www.ludiko.ro/.well-known/assetlinks.json` opens.
+- [ ] **Confirm the ids**: Android package id `ro.ludiko.app` (permanent!) in `store/android/twa-manifest.json`
+      and `public/.well-known/assetlinks.json`; same bundle id in `store/ios/capacitor.config.json`; support e-mail
+      (`RIGHTS_CONTACT` in `src/utils/constants.ts`) for the store listings.
+- [ ] **Google Play developer account**: US$25 one-time. New personal accounts must run a closed test with 12+
+      testers for 14 days before production.
+- [ ] **Apple Developer Program**: US$99 / year, plus a Mac with Xcode for the iOS build (`store/ios/README.md`).
+- [ ] **Android signing key** as GitHub secrets: `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`,
+      `ANDROID_KEY_ALIAS`, `ANDROID_KEY_PASSWORD` (how: `store/android/README.md` §2), then run the workflow task
+      **`build-android`**. After the first Play upload copy the *App signing key* SHA-256 from Play Console into
+      `public/.well-known/assetlinks.json` (it is a zeros placeholder now) and deploy.
+- [ ] **Kids Category / Families**: in App Store Connect choose the Kids Category and an age band (6-8 or 9-11);
+      in Play Console pick "Children" in the target audience and complete the Data safety and IARC forms with the
+      answers in `store/listing/ro.md` / `en.md`. Re-check them after any change that adds data collection.
+- [ ] **Native value for App Store guideline 4.2**: a Capacitor build that is only the website can be rejected.
+      Plan the local-notification reminder described in `store/ios/README.md` (small code change, needs a Mac to test).
+- [ ] Optional: take better store screenshots with a seeded test profile (`scripts/generate-screenshots.mjs`) and
+      at Apple's sizes; the current ones come from public preview routes.
 
 ## 🔴 Needed for features that are already live
 

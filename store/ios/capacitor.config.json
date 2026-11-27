@@ -1,0 +1,16 @@
+{
+  "appId": "ro.ludiko.app",
+  "appName": "Ludiko",
+  "webDir": "www",
+  "ios": {
+    "contentInset": "always",
+    "limitsNavigationsToAppBoundDomains": true,
+    "backgroundColor": "#FFF8F0"
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon",
+      "iconColor": "#DDA0DD"
+    }
+  }
+}

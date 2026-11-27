@@ -8,3 +8,15 @@ dist
 
 # Claude Code agent worktrees (local only)
 .claude/worktrees/
+
+# Store builds: never commit signing keys or generated native projects
+store/android/*.keystore
+store/android/*.jks
+store/android/*.aab
+store/android/*.apk
+store/android/app/
+store/android/build/
+store/android/.gradle/
+store/ios/ios/
+store/ios/node_modules/
+store/ios/www/

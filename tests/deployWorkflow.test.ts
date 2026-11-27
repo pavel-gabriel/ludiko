@@ -32,6 +32,27 @@ describe('deploy workflow (site + Firebase upkeep)', () => {
   });
 });
 
+describe('build-android task (Play Store AAB)', () => {
+  it('is a manual task in the existing workflow, not a new workflow file', () => {
+    expect(wf).toMatch(/options:[\s\S]*- build-android/)
+    expect(wf).toContain('\n  build-android:')
+    expect(wf).toMatch(/build-android:\s*\n\s*if: github\.event_name == 'workflow_dispatch' && inputs\.task == 'build-android'/)
+    expect(existsSync(join(ROOT, '.github/workflows/build-android.yml'))).toBe(false)
+  })
+  it('pins Bubblewrap to an exact version and never uses @latest', () => {
+    expect(wf).toMatch(/BUBBLEWRAP_CLI: '@bubblewrap\/cli@\d+\.\d+\.\d+'/)
+    expect(wf).not.toMatch(/bubblewrap\/cli@(latest|\^|~)/)
+  })
+  it('only builds when all four signing secrets exist, otherwise warns and exits cleanly', () => {
+    for (const s of ['ANDROID_KEYSTORE_BASE64', 'ANDROID_KEYSTORE_PASSWORD', 'ANDROID_KEY_ALIAS', 'ANDROID_KEY_PASSWORD']) expect(wf).toContain(`secrets.${s}`)
+    expect(wf).toContain('::warning::ANDROID_KEYSTORE_BASE64')
+    expect(wf).toContain("steps.secrets.outputs.build == 'true'")
+  })
+  it('never leaves the keystore on the runner', () => {
+    expect(wf).toContain('rm -f android.keystore')
+  })
+})
+
 describe('Firebase rules sanity', () => {
   it('RTDB rules use no client-SDK-only methods (numChildren is not available in rules)', () => {
     const rtdb = readFileSync(join(ROOT, 'database.rules.json'), 'utf8');

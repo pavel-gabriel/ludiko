@@ -15,30 +15,41 @@ export default defineConfig({
     VitePWA({
       registerType: 'prompt',
       injectRegister: false, // registered by <PwaToast /> via virtual:pwa-register/react
-      includeAssets: ['icons/apple-touch-icon.png', 'icons/icon.svg'],
+      includeAssets: ['icons/apple-touch-icon.png', 'icons/icon.svg', 'icons/icon-monochrome.svg', 'offline.html'],
       manifest: {
         name: 'Ludiko',
         short_name: 'Ludiko',
-        description: 'Jocuri educaționale pentru copii',
+        description: 'Învață jucându-te: tutore gratuit de matematică pentru clasele 0-VIII, fără reclame, funcționează offline.',
         lang: 'ro',
+        dir: 'ltr',
+        categories: ['education', 'kids'],
         start_url: base,
         scope: base,
         id: base,
         display: 'standalone',
         orientation: 'any',
+        prefer_related_applications: false,
         theme_color: '#FFB6C1', // ludiko-pink
         background_color: '#FFF8F0', // ludiko-bg
         icons: [
           { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
           { src: 'icons/icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+          { src: 'icons/icon-monochrome-512.png', sizes: '512x512', type: 'image/png', purpose: 'monochrome' },
           { src: 'icons/icon.svg', sizes: 'any', type: 'image/svg+xml' },
+        ],
+        screenshots: [
+          { src: 'screenshots/phone-home.png', sizes: '1080x1920', type: 'image/png', form_factor: 'narrow', label: 'Ecranul principal Ludiko' },
+          { src: 'screenshots/phone-items.png', sizes: '1080x1920', type: 'image/png', form_factor: 'narrow', label: 'Exerciții cu imagini' },
+          { src: 'screenshots/phone-singleplayer.png', sizes: '1080x1920', type: 'image/png', form_factor: 'narrow', label: 'Joc de unul singur' },
+          { src: 'screenshots/tablet-home.png', sizes: '1280x800', type: 'image/png', form_factor: 'wide', label: 'Ludiko pe tabletă' },
+          { src: 'screenshots/tablet-items.png', sizes: '1280x800', type: 'image/png', form_factor: 'wide', label: 'Exerciții pe tabletă' },
         ],
       },
       workbox: {
         // App shell + built assets. Dyslexic .woff fallbacks are skipped (woff2 is enough).
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,ico,webmanifest}'],
-        globIgnores: ['404.html'],
+        globIgnores: ['404.html', 'screenshots/**'], // store screenshots are not needed offline,
         // The content registry chunk (all skills, explanations and item banks) is about 2.2 MB and must be precached for offline use
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         navigateFallback: `${base}index.html`,
