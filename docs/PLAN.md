@@ -280,7 +280,7 @@ Each phase ships something usable. Order follows the agreed priorities: **math +
 
 ### Phase 2 — Grades V–VIII
 - [x] Extend the skill graphs (math, Romanian) and diagnostics through grade VIII (beta content, needs teacher review)
-- [ ] Sciences (Biology, Physics, Chemistry, mapped so the proposed "Științe" merge for V–VII is a remap), History, Geography — Bio/Fiz/Chim + History done (beta); Geography in progress
+- [x] Sciences (Biology, Physics, Chemistry, mapped so the proposed "Științe" merge for V–VII is a remap), History, Geography (beta, needs teacher review)
 - [ ] Marks 1–10 for tests (done, estimated marks); EN VI and EN VIII simulations
 - [x] More autonomy for older kids: self-chosen missions, challenge modes
 

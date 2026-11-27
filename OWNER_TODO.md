@@ -112,6 +112,8 @@ on demand. It only needs one more secret.
     paronyms/homonyms; reading texts are short (40–98 words) for VII–VIII.
   - History V–VIII: approximate/traditional dates (flagged `approx` in `content/data/ist/events-gimnaziu.json`),
     wording of WW2 / Holocaust / 1989 items.
+  - Geography V–VIII: Romania extreme points/area/coastline, rounded river lengths and peak heights, county ↔
+    historical region, EU list (27, 2026), Romanian spellings of world capitals.
   - Biology/Physics/Chemistry: facts, grade placement of topics, school constants (g = 10 N/kg, c(apă) = 4200).
 - [ ] **Deploy rules** (task `deploy-rules`): Firestore rules now accept the subjects bio/fiz/chim — until deployed,
       progress for those subjects is not synced to parent/class accounts.
