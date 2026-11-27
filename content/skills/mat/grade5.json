@@ -1,0 +1,803 @@
+[
+  {
+    "id": "mat.nat.muldiv.big",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.1"
+      }
+    ],
+    "title": {
+      "ro": "Înmulțirea și împărțirea numerelor naturale mari",
+      "en": "Multiplying and dividing big natural numbers"
+    },
+    "prerequisites": [
+      "mat.mul.2digit",
+      "mat.div.1digit.rem"
+    ],
+    "itemSources": [
+      {
+        "generator": "multiplication",
+        "params": {
+          "aMin": 100,
+          "aMax": 9999,
+          "bMin": 10,
+          "bMax": 99,
+          "max": 999999
+        }
+      },
+      {
+        "generator": "multiplication",
+        "params": {
+          "aMin": 100,
+          "aMax": 999,
+          "bMin": 100,
+          "bMax": 999,
+          "max": 999999
+        }
+      },
+      {
+        "generator": "division",
+        "params": {
+          "dMin": 11,
+          "dMax": 99,
+          "max": 99999,
+          "remainder": false
+        }
+      },
+      {
+        "generator": "division",
+        "params": {
+          "dMin": 11,
+          "dMax": 99,
+          "max": 99999,
+          "remainder": true
+        }
+      }
+    ],
+    "explanations": [
+      "exp.nat.muldiv.big"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.nat.muldiv.big",
+      "kind": "data",
+      "title": "Skill mat.nat.muldiv.big",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.nat.powers",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Puteri cu exponent natural",
+      "en": "Powers with a natural exponent"
+    },
+    "prerequisites": [
+      "mat.mul.1digit",
+      "mat.mul.table.large"
+    ],
+    "itemSources": [
+      {
+        "generator": "powers",
+        "params": {
+          "modes": [
+            "eval",
+            "eval",
+            "special",
+            "pow10",
+            "expFind",
+            "compare"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.nat.powers"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.nat.powers",
+      "kind": "data",
+      "title": "Skill mat.nat.powers",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.nat.order.powers",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.1"
+      }
+    ],
+    "title": {
+      "ro": "Ordinea operațiilor cu puteri",
+      "en": "Order of operations with powers"
+    },
+    "prerequisites": [
+      "mat.order.ops",
+      "mat.nat.powers"
+    ],
+    "itemSources": [
+      {
+        "generator": "powers",
+        "params": {
+          "modes": [
+            "orderOps"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.nat.order.powers"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.nat.order.powers",
+      "kind": "data",
+      "title": "Skill mat.nat.order.powers",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.nat.equation",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Ecuații simple în mulțimea numerelor naturale",
+      "en": "Simple equations in the natural numbers"
+    },
+    "prerequisites": [
+      "mat.equation.big"
+    ],
+    "itemSources": [
+      {
+        "generator": "linear-equation",
+        "params": {
+          "kinds": [
+            "basic",
+            "basic",
+            "word"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.nat.equation"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.nat.equation",
+      "kind": "data",
+      "title": "Skill mat.nat.equation",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.divis.divisors",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Divizori, multipli și numere prime",
+      "en": "Divisors, multiples and prime numbers"
+    },
+    "prerequisites": [
+      "mat.mul.table.large",
+      "mat.div.table",
+      "mat.div.1digit.exact"
+    ],
+    "itemSources": [
+      {
+        "generator": "divisibility",
+        "params": {
+          "modes": [
+            "divisorCount",
+            "notDivisor",
+            "multiples",
+            "multiples",
+            "primeSelect",
+            "primeTf",
+            "countPrimes"
+          ],
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.divis.divisors"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.divis.divisors",
+      "kind": "data",
+      "title": "Skill mat.divis.divisors",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.divis.criteria",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.1"
+      }
+    ],
+    "title": {
+      "ro": "Criterii de divizibilitate (2, 3, 5, 9, 10)",
+      "en": "Divisibility criteria (2, 3, 5, 9, 10)"
+    },
+    "prerequisites": [
+      "mat.divis.divisors",
+      "mat.div.1digit.exact"
+    ],
+    "itemSources": [
+      {
+        "generator": "divisibility",
+        "params": {
+          "modes": [
+            "criteria",
+            "criteria",
+            "criteriaTf",
+            "digitFind"
+          ],
+          "criteria": [
+            2,
+            3,
+            5,
+            9,
+            10
+          ],
+          "max": 1000
+        }
+      }
+    ],
+    "explanations": [
+      "exp.divis.criteria"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.divis.criteria",
+      "kind": "data",
+      "title": "Skill mat.divis.criteria",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.frac.equiv",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Fracții echivalente, simplificare, comparare",
+      "en": "Equivalent fractions, simplifying, comparing"
+    },
+    "prerequisites": [
+      "mat.fraction.compare",
+      "mat.divis.divisors"
+    ],
+    "itemSources": [
+      {
+        "generator": "fractions-ops",
+        "params": {
+          "modes": [
+            "equiv",
+            "equiv",
+            "simplify",
+            "compare",
+            "order"
+          ],
+          "maxDen": 12
+        }
+      }
+    ],
+    "explanations": [
+      "exp.frac.equiv"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.frac.equiv",
+      "kind": "data",
+      "title": "Skill mat.frac.equiv",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.frac.addsub",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Adunarea și scăderea fracțiilor",
+      "en": "Adding and subtracting fractions"
+    },
+    "prerequisites": [
+      "mat.frac.equiv",
+      "mat.add.carry.1000"
+    ],
+    "itemSources": [
+      {
+        "generator": "fractions-ops",
+        "params": {
+          "modes": [
+            "add",
+            "sub"
+          ],
+          "maxDen": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.frac.addsub"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.frac.addsub",
+      "kind": "data",
+      "title": "Skill mat.frac.addsub",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.frac.muldiv",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Înmulțirea și împărțirea fracțiilor; fracție dintr-un număr",
+      "en": "Multiplying and dividing fractions; a fraction of a number"
+    },
+    "prerequisites": [
+      "mat.frac.equiv",
+      "mat.mul.1digit"
+    ],
+    "itemSources": [
+      {
+        "generator": "fractions-ops",
+        "params": {
+          "modes": [
+            "mul",
+            "div",
+            "of",
+            "of"
+          ],
+          "maxDen": 9
+        }
+      }
+    ],
+    "explanations": [
+      "exp.frac.muldiv"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.frac.muldiv",
+      "kind": "data",
+      "title": "Skill mat.frac.muldiv",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.dec.convert",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Numere zecimale: citire, comparare, transformări",
+      "en": "Decimal numbers: reading, comparing, converting"
+    },
+    "prerequisites": [
+      "mat.frac.equiv",
+      "mat.num.1m.place"
+    ],
+    "itemSources": [
+      {
+        "generator": "decimals",
+        "params": {
+          "modes": [
+            "compare",
+            "order",
+            "locate",
+            "toDecimal",
+            "toFraction",
+            "round"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.dec.convert"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.dec.convert",
+      "kind": "data",
+      "title": "Skill mat.dec.convert",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.dec.ops",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Operații cu numere zecimale",
+      "en": "Operations with decimal numbers"
+    },
+    "prerequisites": [
+      "mat.dec.convert",
+      "mat.add.1m",
+      "mat.mul.1digit"
+    ],
+    "itemSources": [
+      {
+        "generator": "decimals",
+        "params": {
+          "modes": [
+            "add",
+            "sub",
+            "mul",
+            "div"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.dec.ops"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.dec.ops",
+      "kind": "data",
+      "title": "Skill mat.dec.ops",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.percent.intro",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.2"
+      }
+    ],
+    "title": {
+      "ro": "Procente: introducere",
+      "en": "Percentages: introduction"
+    },
+    "prerequisites": [
+      "mat.frac.equiv",
+      "mat.dec.convert"
+    ],
+    "itemSources": [
+      {
+        "generator": "percentages",
+        "params": {
+          "modes": [
+            "of",
+            "of",
+            "fracToPct",
+            "pctToFrac",
+            "decToPct"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.percent.intro"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.percent.intro",
+      "kind": "data",
+      "title": "Skill mat.percent.intro",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.geom5.segments",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Segmente, lungimi și unități de măsură",
+      "en": "Segments, lengths and units of measurement"
+    },
+    "prerequisites": [
+      "mat.measure.convert",
+      "mat.geom.perimeter",
+      "mat.length.m"
+    ],
+    "itemSources": [
+      {
+        "generator": "segments-units",
+        "params": {
+          "modes": [
+            "segment",
+            "midpoint",
+            "line"
+          ]
+        }
+      },
+      {
+        "generator": "segments-units",
+        "params": {
+          "modes": [
+            "convert"
+          ],
+          "groups": [
+            "length",
+            "mass",
+            "capacity",
+            "area",
+            "volume"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.geom5.segments"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.geom5.segments",
+      "kind": "data",
+      "title": "Skill mat.geom5.segments",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.geom5.angles",
+    "subject": "mat",
+    "grade": 5,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Unghiuri: tipuri și măsurare",
+      "en": "Angles: kinds and measuring"
+    },
+    "prerequisites": [
+      "mat.geom.shapes",
+      "mat.sub.1m"
+    ],
+    "itemSources": [
+      {
+        "generator": "angles",
+        "params": {
+          "modes": [
+            "types",
+            "complement",
+            "supplement",
+            "compose",
+            "bisector"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.geom5.angles"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.geom5.angles",
+      "kind": "data",
+      "title": "Skill mat.geom5.angles",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  }
+]

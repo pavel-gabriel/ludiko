@@ -1,0 +1,708 @@
+[
+  {
+    "id": "mat.sqrt7.perfect",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Rădăcina pătrată a numerelor pozitive",
+      "en": "Square roots of positive numbers"
+    },
+    "prerequisites": [
+      "mat.pow6.rules",
+      "mat.nat.powers"
+    ],
+    "itemSources": [
+      {
+        "generator": "sqrt",
+        "params": {
+          "modes": [
+            "perfect",
+            "perfect",
+            "perfectFrac",
+            "between",
+            "approx",
+            "expr"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.sqrt7.perfect"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.sqrt7.perfect",
+      "kind": "data",
+      "title": "Skill mat.sqrt7.perfect",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.real7.irrational",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.1"
+      }
+    ],
+    "title": {
+      "ro": "Numere raționale și iraționale; numere reale",
+      "en": "Rational and irrational numbers; real numbers"
+    },
+    "prerequisites": [
+      "mat.sqrt7.perfect",
+      "mat.frac6.ops"
+    ],
+    "itemSources": [
+      {
+        "generator": "sqrt",
+        "params": {
+          "modes": [
+            "irrational",
+            "irrational",
+            "irrationalTf",
+            "classify",
+            "classify",
+            "compare"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.real7.irrational"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.real7.irrational",
+      "kind": "data",
+      "title": "Skill mat.real7.irrational",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.rat7.ops",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Operații cu numere raționale (negative)",
+      "en": "Operations with rational numbers (negative)"
+    },
+    "prerequisites": [
+      "mat.int.muldiv",
+      "mat.frac6.ops"
+    ],
+    "itemSources": [
+      {
+        "generator": "fractions-ops",
+        "params": {
+          "modes": [
+            "add",
+            "sub",
+            "mul",
+            "div",
+            "mixed",
+            "compare"
+          ],
+          "negative": true,
+          "maxDen": 9
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rat7.ops"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.rat7.ops",
+      "kind": "data",
+      "title": "Skill mat.rat7.ops",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.rat7.powers",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Puteri cu exponent întreg",
+      "en": "Powers with an integer exponent"
+    },
+    "prerequisites": [
+      "mat.pow6.rules",
+      "mat.int.muldiv"
+    ],
+    "itemSources": [
+      {
+        "generator": "powers",
+        "params": {
+          "modes": [
+            "neg",
+            "neg",
+            "intExp",
+            "intExp"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.rat7.powers"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.rat7.powers",
+      "kind": "data",
+      "title": "Skill mat.rat7.powers",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.eq7.linear",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Ecuații de gradul I cu o necunoscută",
+      "en": "Linear equations in one unknown"
+    },
+    "prerequisites": [
+      "mat.nat.equation",
+      "mat.int.muldiv"
+    ],
+    "itemSources": [
+      {
+        "generator": "linear-equation",
+        "params": {
+          "kinds": [
+            "both",
+            "both",
+            "paren",
+            "frac",
+            "rational",
+            "verify"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eq7.linear"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.eq7.linear",
+      "kind": "data",
+      "title": "Skill mat.eq7.linear",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.eq7.system",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Sisteme de două ecuații liniare",
+      "en": "Systems of two linear equations"
+    },
+    "prerequisites": [
+      "mat.eq7.linear"
+    ],
+    "itemSources": [
+      {
+        "generator": "system-2x2"
+      }
+    ],
+    "explanations": [
+      "exp.eq7.system"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.eq7.system",
+      "kind": "data",
+      "title": "Skill mat.eq7.system",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.eq7.problems",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.2"
+      }
+    ],
+    "title": {
+      "ro": "Probleme care se rezolvă cu ecuații",
+      "en": "Problems solved with equations"
+    },
+    "prerequisites": [
+      "mat.eq7.linear"
+    ],
+    "itemSources": [
+      {
+        "generator": "linear-equation",
+        "params": {
+          "kinds": [
+            "word"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eq7.problems"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.eq7.problems",
+      "kind": "data",
+      "title": "Skill mat.eq7.problems",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.prop7.problems",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.3"
+      }
+    ],
+    "title": {
+      "ro": "Probleme de proporționalitate și procente",
+      "en": "Proportionality and percentage problems"
+    },
+    "prerequisites": [
+      "mat.ratio.proportional",
+      "mat.percent6"
+    ],
+    "itemSources": [
+      {
+        "generator": "proportions",
+        "params": {
+          "modes": [
+            "direct",
+            "inverse",
+            "scale",
+            "split"
+          ]
+        }
+      },
+      {
+        "generator": "percentages",
+        "params": {
+          "modes": [
+            "whole",
+            "increase",
+            "decrease",
+            "chain"
+          ],
+          "hard": true
+        }
+      }
+    ],
+    "explanations": [
+      "exp.prop7.problems"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.prop7.problems",
+      "kind": "data",
+      "title": "Skill mat.prop7.problems",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.geom7.quad",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Patrulatere: perimetre și arii",
+      "en": "Quadrilaterals: perimeters and areas"
+    },
+    "prerequisites": [
+      "mat.geom.perimeter",
+      "mat.nat.muldiv.big"
+    ],
+    "itemSources": [
+      {
+        "generator": "areas-volumes",
+        "params": {
+          "topics": [
+            "rect",
+            "square",
+            "tri",
+            "para",
+            "trap",
+            "rhombus"
+          ]
+        }
+      },
+      {
+        "generator": "angles",
+        "params": {
+          "modes": [
+            "polygon"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.geom7.quad"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.geom7.quad",
+      "kind": "data",
+      "title": "Skill mat.geom7.quad",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.geom7.pyth",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Teorema lui Pitagora",
+      "en": "The Pythagorean theorem"
+    },
+    "prerequisites": [
+      "mat.sqrt7.perfect",
+      "mat.geom7.quad",
+      "mat.nat.powers"
+    ],
+    "itemSources": [
+      {
+        "generator": "pythagoras",
+        "params": {
+          "modes": [
+            "hyp",
+            "hyp",
+            "leg",
+            "leg",
+            "perimeter",
+            "ladder",
+            "diagonalRect"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.geom7.pyth"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.geom7.pyth",
+      "kind": "data",
+      "title": "Skill mat.geom7.pyth",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.geom7.pyth.converse",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.4"
+      }
+    ],
+    "title": {
+      "ro": "Reciproca teoremei lui Pitagora și aplicații",
+      "en": "The converse of the Pythagorean theorem and applications"
+    },
+    "prerequisites": [
+      "mat.geom7.pyth"
+    ],
+    "itemSources": [
+      {
+        "generator": "pythagoras",
+        "params": {
+          "modes": [
+            "converse",
+            "converseSelect",
+            "converseSelect",
+            "height",
+            "diagonalSquare",
+            "eqHeight"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.geom7.pyth.converse"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.geom7.pyth.converse",
+      "kind": "data",
+      "title": "Skill mat.geom7.pyth.converse",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.geom7.similar",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.5"
+      }
+    ],
+    "title": {
+      "ro": "Asemănarea triunghiurilor: introducere",
+      "en": "Similar triangles: introduction"
+    },
+    "prerequisites": [
+      "mat.ratio.basic",
+      "mat.tri6.basics"
+    ],
+    "itemSources": [
+      {
+        "generator": "proportions",
+        "params": {
+          "modes": [
+            "similar"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.geom7.similar"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.geom7.similar",
+      "kind": "data",
+      "title": "Skill mat.geom7.similar",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.geom7.parallel",
+    "subject": "mat",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.2"
+      }
+    ],
+    "title": {
+      "ro": "Drepte paralele tăiate de o secantă",
+      "en": "Parallel lines cut by a transversal"
+    },
+    "prerequisites": [
+      "mat.angle6.pairs"
+    ],
+    "itemSources": [
+      {
+        "generator": "angles",
+        "params": {
+          "modes": [
+            "parallel"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.geom7.parallel"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.geom7.parallel",
+      "kind": "data",
+      "title": "Skill mat.geom7.parallel",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  }
+]

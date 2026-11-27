@@ -1,0 +1,730 @@
+[
+  {
+    "id": "mat.divis6.factor",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.2"
+      }
+    ],
+    "title": {
+      "ro": "Descompunerea în factori primi",
+      "en": "Prime factorisation"
+    },
+    "prerequisites": [
+      "mat.divis.divisors",
+      "mat.divis.criteria"
+    ],
+    "itemSources": [
+      {
+        "generator": "divisibility",
+        "params": {
+          "modes": [
+            "factor",
+            "factor",
+            "factorCount",
+            "primeSelect",
+            "primeTf",
+            "countPrimes"
+          ],
+          "max": 100
+        }
+      }
+    ],
+    "explanations": [
+      "exp.divis6.factor"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.divis6.factor",
+      "kind": "data",
+      "title": "Skill mat.divis6.factor",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.divis6.gcdlcm",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Cel mai mare divizor comun și cel mai mic multiplu comun",
+      "en": "Greatest common divisor and least common multiple"
+    },
+    "prerequisites": [
+      "mat.divis6.factor"
+    ],
+    "itemSources": [
+      {
+        "generator": "divisibility",
+        "params": {
+          "modes": [
+            "gcd",
+            "gcd",
+            "lcm",
+            "lcm",
+            "coprime"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.divis6.gcdlcm"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.divis6.gcdlcm",
+      "kind": "data",
+      "title": "Skill mat.divis6.gcdlcm",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.pow6.rules",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Reguli de calcul cu puteri",
+      "en": "Rules for calculating with powers"
+    },
+    "prerequisites": [
+      "mat.nat.powers"
+    ],
+    "itemSources": [
+      {
+        "generator": "powers",
+        "params": {
+          "modes": [
+            "product",
+            "quotient",
+            "power",
+            "eval",
+            "expFind"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.pow6.rules"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.pow6.rules",
+      "kind": "data",
+      "title": "Skill mat.pow6.rules",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.frac6.ops",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.3"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.1"
+      }
+    ],
+    "title": {
+      "ro": "Operații cu numere raționale pozitive",
+      "en": "Operations with positive rational numbers"
+    },
+    "prerequisites": [
+      "mat.frac.addsub",
+      "mat.frac.muldiv",
+      "mat.dec.ops",
+      "mat.divis6.gcdlcm"
+    ],
+    "itemSources": [
+      {
+        "generator": "fractions-ops",
+        "params": {
+          "modes": [
+            "add",
+            "sub",
+            "mul",
+            "div",
+            "mixed",
+            "mixed"
+          ],
+          "maxDen": 12
+        }
+      },
+      {
+        "generator": "decimals",
+        "params": {
+          "modes": [
+            "add",
+            "sub",
+            "mul",
+            "div"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.frac6.ops"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.frac6.ops",
+      "kind": "data",
+      "title": "Skill mat.frac6.ops",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.ratio.basic",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.4"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.5"
+      }
+    ],
+    "title": {
+      "ro": "Rapoarte și proporții",
+      "en": "Ratios and proportions"
+    },
+    "prerequisites": [
+      "mat.frac.equiv",
+      "mat.nat.muldiv.big"
+    ],
+    "itemSources": [
+      {
+        "generator": "proportions",
+        "params": {
+          "modes": [
+            "ratio",
+            "ratio",
+            "prop",
+            "prop",
+            "propTf"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.ratio.basic"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.ratio.basic",
+      "kind": "data",
+      "title": "Skill mat.ratio.basic",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.ratio.proportional",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.5"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.2"
+      }
+    ],
+    "title": {
+      "ro": "Mărimi direct și invers proporționale",
+      "en": "Directly and inversely proportional quantities"
+    },
+    "prerequisites": [
+      "mat.ratio.basic",
+      "mat.nat.muldiv.big"
+    ],
+    "itemSources": [
+      {
+        "generator": "proportions",
+        "params": {
+          "modes": [
+            "direct",
+            "direct",
+            "inverse",
+            "inverse",
+            "scale",
+            "split"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.ratio.proportional"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.ratio.proportional",
+      "kind": "data",
+      "title": "Skill mat.ratio.proportional",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.percent6",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.5"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.2"
+      }
+    ],
+    "title": {
+      "ro": "Procente: probleme",
+      "en": "Percentages: problems"
+    },
+    "prerequisites": [
+      "mat.percent.intro",
+      "mat.ratio.basic"
+    ],
+    "itemSources": [
+      {
+        "generator": "percentages",
+        "params": {
+          "modes": [
+            "of",
+            "whatPercent",
+            "whole",
+            "increase",
+            "decrease",
+            "chain"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.percent6"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.percent6",
+      "kind": "data",
+      "title": "Skill mat.percent6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.int.numberline",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.5"
+      }
+    ],
+    "title": {
+      "ro": "Numerele întregi: axa, opusul, modulul, ordinea",
+      "en": "Integers: the number line, opposite, absolute value, order"
+    },
+    "prerequisites": [
+      "mat.num.1m.place",
+      "mat.sub.1m"
+    ],
+    "itemSources": [
+      {
+        "generator": "integers",
+        "params": {
+          "modes": [
+            "line",
+            "line",
+            "opp",
+            "abs",
+            "absEq",
+            "order",
+            "compare",
+            "dist"
+          ],
+          "range": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.int.numberline"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.int.numberline",
+      "kind": "data",
+      "title": "Skill mat.int.numberline",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.int.addsub",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Adunarea și scăderea numerelor întregi",
+      "en": "Adding and subtracting integers"
+    },
+    "prerequisites": [
+      "mat.int.numberline",
+      "mat.sub.1m"
+    ],
+    "itemSources": [
+      {
+        "generator": "integers",
+        "params": {
+          "modes": [
+            "jump",
+            "add",
+            "add",
+            "sub",
+            "sub"
+          ],
+          "range": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.int.addsub"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.int.addsub",
+      "kind": "data",
+      "title": "Skill mat.int.addsub",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.int.muldiv",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.2"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.3"
+      }
+    ],
+    "title": {
+      "ro": "Înmulțirea și împărțirea numerelor întregi",
+      "en": "Multiplying and dividing integers"
+    },
+    "prerequisites": [
+      "mat.int.addsub",
+      "mat.mul.table.large",
+      "mat.div.table"
+    ],
+    "itemSources": [
+      {
+        "generator": "integers",
+        "params": {
+          "modes": [
+            "mul",
+            "mul",
+            "div",
+            "div",
+            "expr"
+          ],
+          "range": 10
+        }
+      }
+    ],
+    "explanations": [
+      "exp.int.muldiv"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.int.muldiv",
+      "kind": "data",
+      "title": "Skill mat.int.muldiv",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.angle6.pairs",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "3.4"
+      }
+    ],
+    "title": {
+      "ro": "Unghiuri adiacente, complementare, suplementare, opuse la vârf",
+      "en": "Adjacent, complementary, supplementary and vertical angles"
+    },
+    "prerequisites": [
+      "mat.geom5.angles"
+    ],
+    "itemSources": [
+      {
+        "generator": "angles",
+        "params": {
+          "modes": [
+            "complement",
+            "supplement",
+            "opposite",
+            "opposite",
+            "bisector",
+            "types"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.angle6.pairs"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.angle6.pairs",
+      "kind": "data",
+      "title": "Skill mat.angle6.pairs",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.tri6.basics",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "2.1"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "5.2"
+      }
+    ],
+    "title": {
+      "ro": "Triunghiul: unghiuri, clasificare, inegalitatea triunghiului",
+      "en": "The triangle: angles, kinds, triangle inequality"
+    },
+    "prerequisites": [
+      "mat.angle6.pairs",
+      "mat.geom.shapes"
+    ],
+    "itemSources": [
+      {
+        "generator": "angles",
+        "params": {
+          "modes": [
+            "triangleSum",
+            "isosceles",
+            "exterior",
+            "triangleKind",
+            "sidesKind",
+            "triangleIneq"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.tri6.basics"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.tri6.basics",
+      "kind": "data",
+      "title": "Skill mat.tri6.basics",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  },
+  {
+    "id": "mat.stat6",
+    "subject": "mat",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "1.6"
+      },
+      {
+        "programa": "MAT-V-VIII-2017",
+        "code": "6.3"
+      }
+    ],
+    "title": {
+      "ro": "Statistică: media, modulul, amplitudinea",
+      "en": "Statistics: mean, mode, range"
+    },
+    "prerequisites": [
+      "mat.nat.muldiv.big",
+      "mat.add.1m"
+    ],
+    "itemSources": [
+      {
+        "generator": "statistics",
+        "params": {
+          "modes": [
+            "mean",
+            "mean",
+            "mode",
+            "range",
+            "missing",
+            "freq"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.stat6"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.mat.stat6",
+      "kind": "data",
+      "title": "Skill mat.stat6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes (MAT-V-VIII-2017) to verify against the official programa"
+    }
+  }
+]
