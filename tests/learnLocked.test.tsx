@@ -68,9 +68,9 @@ const subjectsListed = () => Array.from(screen.getByTestId('all-subjects').child
 
 describe('/learn shows only the subjects of the child\'s grade', () => {
   it.each([
-    [0, ['subject-mat', 'subject-rom', 'subject-stiinte', 'subject-logic'], /Istorie, Geografie: de la clasa a IV-a/],
-    [1, ['subject-mat', 'subject-rom', 'subject-stiinte', 'subject-logic'], /Istorie, Geografie: de la clasa a IV-a/],
-    [3, ['subject-mat', 'subject-rom', 'subject-stiinte', 'subject-civ', 'subject-logic'], /Istorie, Geografie: de la clasa a IV-a/],
+    [0, ['subject-mat', 'subject-rom', 'subject-eng', 'subject-stiinte', 'subject-logic'], /Istorie, Geografie: de la clasa a IV-a/],
+    [1, ['subject-mat', 'subject-rom', 'subject-eng', 'subject-stiinte', 'subject-logic'], /Istorie, Geografie: de la clasa a IV-a/],
+    [3, ['subject-mat', 'subject-rom', 'subject-eng', 'subject-stiinte', 'subject-civ', 'subject-logic'], /Istorie, Geografie: de la clasa a IV-a/],
   ] as const)('grade %i: playable list, and a non-clickable teaser for the rest', async (grade, listed, teaser) => {
     withGrade(grade)
     renderAt('/learn')
@@ -92,7 +92,7 @@ describe('/learn shows only the subjects of the child\'s grade', () => {
     renderAt('/learn')
     await settle()
     openAllSubjects()
-    expect(subjectsListed()).toEqual(['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic'].map((s) => `subject-${s}`))
+    expect(subjectsListed()).toEqual(['mat', 'rom', 'eng', 'stiinte', 'ist', 'geo', 'civ', 'logic'].map((s) => `subject-${s}`))
     for (const t of screen.getAllByTestId('locked-teaser')) expect(t.closest('a')).toBeNull()
     const text = screen.getAllByTestId('locked-teaser').map((t) => t.textContent).join(' ')
     expect(text).toMatch(/Biologie/)

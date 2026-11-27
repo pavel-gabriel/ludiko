@@ -1,0 +1,449 @@
+[
+  {
+    "id": "eng.greet.0",
+    "subject": "eng",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Salutări și politețe în engleză",
+      "en": "Greetings and polite words"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "eng-primary-greet",
+        "params": {
+          "grades": [
+            0,
+            0
+          ],
+          "kinds": [
+            "situation",
+            "en-to-ro",
+            "ro-to-en",
+            "match"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.greet.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.greet.0",
+      "kind": "data",
+      "title": "Skill eng.greet.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.colours.0",
+    "subject": "eng",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Culorile în engleză",
+      "en": "Colours in English"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "eng-primary-vocab",
+        "params": {
+          "topics": [
+            "colours"
+          ],
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture",
+            "ro-to-en",
+            "en-to-ro",
+            "true-false"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.colours.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.colours.0",
+      "kind": "data",
+      "title": "Skill eng.colours.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.numbers.10.0",
+    "subject": "eng",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Numerele de la 1 la 10 în engleză",
+      "en": "Numbers 1 to 10 in English"
+    },
+    "prerequisites": [],
+    "itemSources": [
+      {
+        "generator": "eng-primary-number",
+        "params": {
+          "max": 10,
+          "kinds": [
+            "digit-to-word",
+            "word-to-digit",
+            "count",
+            "next",
+            "order"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.numbers.10.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.numbers.10.0",
+      "kind": "data",
+      "title": "Skill eng.numbers.10.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.animals.0",
+    "subject": "eng",
+    "grade": 0,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Animale de companie în engleză",
+      "en": "Pets and animals in English"
+    },
+    "prerequisites": [
+      "eng.greet.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-vocab",
+        "params": {
+          "topics": [
+            "pets"
+          ],
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture",
+            "true-false",
+            "match",
+            "odd"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.animals.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.animals.0",
+      "kind": "data",
+      "title": "Skill eng.animals.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.family.0",
+    "subject": "eng",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Familia în engleză",
+      "en": "Family in English"
+    },
+    "prerequisites": [
+      "eng.greet.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-vocab",
+        "params": {
+          "topics": [
+            "family"
+          ],
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture",
+            "true-false",
+            "match",
+            "odd"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.family.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.family.0",
+      "kind": "data",
+      "title": "Skill eng.family.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.body.0",
+    "subject": "eng",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Părțile corpului în engleză",
+      "en": "Parts of the body in English"
+    },
+    "prerequisites": [
+      "eng.greet.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-vocab",
+        "params": {
+          "topics": [
+            "body"
+          ],
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture",
+            "true-false",
+            "match",
+            "odd"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.body.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.body.0",
+      "kind": "data",
+      "title": "Skill eng.body.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.food.0",
+    "subject": "eng",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Mâncare în engleză",
+      "en": "Food in English"
+    },
+    "prerequisites": [
+      "eng.colours.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-vocab",
+        "params": {
+          "topics": [
+            "food"
+          ],
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture",
+            "ro-to-en",
+            "en-to-ro",
+            "odd",
+            "match",
+            "sort",
+            "true-false"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.food.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.food.0",
+      "kind": "data",
+      "title": "Skill eng.food.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.toys.0",
+    "subject": "eng",
+    "grade": 0,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "1.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Jucării în engleză",
+      "en": "Toys in English"
+    },
+    "prerequisites": [
+      "eng.colours.0",
+      "eng.numbers.10.0"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-vocab",
+        "params": {
+          "topics": [
+            "toys"
+          ],
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture",
+            "ro-to-en",
+            "en-to-ro",
+            "odd",
+            "match",
+            "sort",
+            "true-false"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.toys.0"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.toys.0",
+      "kind": "data",
+      "title": "Skill eng.toys.0",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  }
+]

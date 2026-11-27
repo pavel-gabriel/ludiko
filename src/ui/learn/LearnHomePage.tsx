@@ -4,6 +4,7 @@ import { refreshClassData } from '@/classroom/syncGate'
 import { knownStickers } from '@/ui/album/earning'
 import { learnerService, type AssignmentBit } from '@/learner'
 import { availableSubjects, lockedSubjects, subjectMinGrade } from '@/learner/availability'
+import { checkSubjects } from '@/learner/checkSubjects'
 import type { ChildProfile } from '@/profiles/types'
 import { getProgress } from '@/profiles/profileService'
 import LearnHomeView, { type LearnHomeViewProps, type SubjectHome } from './LearnHomeView'
@@ -12,7 +13,7 @@ import RequireProfile from './RequireProfile'
 import { LEARN_SUBJECTS, parseSubject } from './subjects'
 import { useAsync } from './useAsync'
 
-type HomeData = Pick<LearnHomeViewProps, 'stars' | 'playDays' | 'plan' | 'subjects' | 'locked' | 'assignments' | 'stickerCount'>
+type HomeData = Pick<LearnHomeViewProps, 'stars' | 'playDays' | 'plan' | 'subjects' | 'checks' | 'locked' | 'assignments' | 'stickerCount'>
 
 async function loadSubject(profileId: string, subject: SubjectHome['subject']): Promise<SubjectHome> {
   const placement = await learnerService.getPlacement(profileId, subject)
@@ -35,8 +36,11 @@ async function loadHome(profile: ChildProfile): Promise<HomeData> {
   ])
   // class assignments come from a local copy: absent link, empty cache or a failure all mean "none"
   const assignments: AssignmentBit[] = await (async () => learnerService.getClassAssignments(profileId))().catch(() => [])
+  // "Hai să vedem ce știi": the subjects the check card tracks (current at this grade, something to check)
+  const tracked = new Set(checkSubjects(profile, playable))
   return {
     subjects,
+    checks: subjects.filter((s) => tracked.has(s.subject)),
     plan,
     locked: lockedSubjects(LEARN_SUBJECTS, profile.grade),
     playDays,

@@ -1,0 +1,426 @@
+[
+  {
+    "id": "exp.eng.time.4",
+    "skillId": "eng.time.4",
+    "title": {
+      "ro": "Minute înainte și după oră",
+      "en": "Minutes past and to"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Când minutarul este pe 3 spunem «a quarter past»: «It's a quarter past four.» (patru și un sfert).",
+          "en": "When the long hand is on 3 we say «a quarter past»: «It's a quarter past four.»"
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 4,
+          "minutes": 15
+        }
+      },
+      {
+        "text": {
+          "ro": "Când minutarul este pe 9 spunem «a quarter to» ora următoare: «It's a quarter to five.» (cinci fără un sfert).",
+          "en": "When the long hand is on 9 we say «a quarter to» the next hour: «It's a quarter to five.»"
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 4,
+          "minutes": 45
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru alte minute: până la jumătate spunem «past», după jumătate spunem «to»: «ten past four», «twenty-five to five».",
+          "en": "For other minutes: up to half past we say «past» and after that «to»: «ten past four», «twenty-five to five»."
+        },
+        "visual": {
+          "kind": "clock",
+          "hours": 4,
+          "minutes": 10
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.time.4",
+      "kind": "explanation",
+      "title": "Explanation for eng.time.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.present.4",
+    "skillId": "eng.present.4",
+    "title": {
+      "ro": "Don't, doesn't, do și does",
+      "en": "Don't, doesn't, do and does"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pentru „nu” folosim «don't» cu «I», «you», «we», «they»: «We don't go to school on Sunday.»",
+          "en": "For „no” we use «don't» with «I», «you», «we» and «they»: «We don't go to school on Sunday.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚫",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu «he», «she», «it» folosim «doesn't», iar verbul rămâne simplu, fără «-s»: «She doesn't eat meat.»",
+          "en": "With «he», «she» and «it» we use «doesn't» and the verb stays simple, without «-s»: «She doesn't eat meat.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥩",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Întrebările încep cu «Do» sau «Does»: «Do you play chess?» «Does he live in Cluj?» Cu «What», «Where»: «Where does she work?»",
+          "en": "Questions start with «Do» or «Does»: «Do you play chess?» «Does he live in Cluj?»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♟️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.present.4",
+      "kind": "explanation",
+      "title": "Explanation for eng.present.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.continuous.4",
+    "skillId": "eng.continuous.4",
+    "title": {
+      "ro": "Acțiuni care se întâmplă acum",
+      "en": "Actions happening now"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pentru ce se întâmplă chiar acum folosim «am / is / are» + verb cu «-ing»: «I am reading.» «She is playing.»",
+          "en": "For things happening right now we use «am / is / are» + verb with «-ing»: «I am reading.» «She is playing.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📖",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu «they», «we», «you» folosim «are»: «They are watching TV.» Pentru „nu”: «He isn't running.»",
+          "en": "With «they», «we» and «you» we use «are»: «They are watching TV.» For „no”: «He isn't running.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📺",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Întrebări: «What are you doing?» «Is she singing?» Răspuns scurt: «Yes, she is.» sau «No, she isn't.»",
+          "en": "Questions: «What are you doing?» «Is she singing?» Short answers: «Yes, she is.» or «No, she isn't.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎤",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.continuous.4",
+      "kind": "explanation",
+      "title": "Explanation for eng.continuous.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.questions.4",
+    "skillId": "eng.questions.4",
+    "title": {
+      "ro": "Cuvinte pentru întrebări",
+      "en": "Question words"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "«What» întreabă „ce”: «What is your name?». «Where» întreabă „unde”: «Where do you live?». «Who» întreabă „cine”: «Who is that boy?»",
+          "en": "«What» asks about things, «Where» about places and «Who» about people."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "❓",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "«When» întreabă „când”: «When is your birthday?». «Why» întreabă „de ce”: «Why are you sad?»",
+          "en": "«When» asks about time and «Why» asks for a reason."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📅",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "«How» întreabă „cum”: «How are you?», «How old are you?». «How many» întreabă „câți / câte”: «How many books have you got?»",
+          "en": "«How» asks „how”: «How are you?», «How old are you?». «How many» asks about numbers."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔢",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.questions.4",
+      "kind": "explanation",
+      "title": "Explanation for eng.questions.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.adjectives.4",
+    "skillId": "eng.adjectives.4",
+    "title": {
+      "ro": "Perechi de cuvinte opuse",
+      "en": "Pairs of opposite words"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Multe cuvinte care descriu au un opus: «big» (mare) – «small» (mic), «tall» (înalt) – «short» (scund).",
+          "en": "Many describing words have an opposite: «big» – «small», «tall» – «short»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐘",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Alte perechi: «hot» – «cold», «fast» – «slow», «old» – «new», «happy» – «sad», «clean» – «dirty».",
+          "en": "More pairs: «hot» – «cold», «fast» – «slow», «old» – «new», «happy» – «sad», «clean» – «dirty»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔥",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Încă câteva: «full» – «empty», «open» – «closed», «heavy» – «light», «thick» – «thin», «strong» – «weak», «good» – «bad».",
+          "en": "A few more: «full» – «empty», «open» – «closed», «heavy» – «light», «thick» – «thin», «strong» – «weak» and «good» – «bad»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.adjectives.4",
+      "kind": "explanation",
+      "title": "Explanation for eng.adjectives.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.jobs.4",
+    "skillId": "eng.jobs.4",
+    "title": {
+      "ro": "Cine lucrează unde?",
+      "en": "Who works where?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Meserii: «teacher» (profesor), «doctor», «farmer» (fermier), «cook» (bucătar), «firefighter» (pompier).",
+          "en": "Jobs: «teacher», «doctor», «farmer», «cook» and «firefighter»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧑‍🏫",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai sunt «pilot», «police officer» (polițist), «painter» (pictor) și «astronaut». Spunem «I am a teacher.»",
+          "en": "More jobs: «pilot», «police officer», «painter» and «astronaut». We say «I am a teacher.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧑‍🚀",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Locuri din oraș: «shop» (magazin), «hospital» (spital), «bank» (bancă), «post office» (poștă), «library», «park», «church», «castle», «station».",
+          "en": "Places in town: «shop», «hospital», «bank», «post office», «library», «park», «church», «castle» and «station»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏥",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.jobs.4",
+      "kind": "explanation",
+      "title": "Explanation for eng.jobs.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.wordorder.4",
+    "skillId": "eng.wordorder.4",
+    "title": {
+      "ro": "Construim propoziții",
+      "en": "Building sentences"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În propoziții lungi cuvintele rămân în aceeași ordine: cine, ce face, unde sau când. «Tom plays chess with his grandpa.»",
+          "en": "In longer sentences the order stays the same: who, what they do, where or when."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♟️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "În întrebări, cuvântul de întrebare este primul: «Where does she work?» «What time do you get up?»",
+          "en": "In questions the question word comes first: «Where does she work?»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "❓",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Verifică: ai literă mare la început? Ai pus punct sau semn de întrebare la sfârșit? Se potrivește propoziția cu sensul?",
+          "en": "Check: a capital letter at the start? A full stop or question mark at the end? Does the sentence make sense?"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "✅",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.wordorder.4",
+      "kind": "explanation",
+      "title": "Explanation for eng.wordorder.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.reading.4",
+    "skillId": "eng.reading.4",
+    "title": {
+      "ro": "Citesc și înțeleg un text mai lung",
+      "en": "Reading a longer text"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Citește tot textul, apoi încă o dată, căutând cine («who»), ce («what»), unde («where») și când («when»).",
+          "en": "Read the whole text, then once more, looking for «who», «what», «where» and «when»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📖",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Răspunsul la fiecare întrebare se află într-o propoziție din text. Subliniază-l cu gândul.",
+          "en": "The answer to each question is in a sentence of the text. Find it in your mind."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Fii atent la numere și ore: «half past six» nu este «six o'clock». O singură literă sau cifră poate schimba răspunsul.",
+          "en": "Watch numbers and times: «half past six» is not «six o'clock». One word or number can change the answer."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⏰",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.reading.4",
+      "kind": "explanation",
+      "title": "Explanation for eng.reading.4",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  }
+]

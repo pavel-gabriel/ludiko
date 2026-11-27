@@ -1,0 +1,347 @@
+{
+  "provenance": {
+    "id": "prov.data.eng.primary-lists",
+    "kind": "data",
+    "title": "Ludiko English lists for primary grades: greetings and introductions, days, months",
+    "author": "Ludiko",
+    "source": "ai-draft",
+    "licence": "OWN",
+    "notes": "Original everyday phrases and calendar words with Romanian meanings. British English (the week starts on Monday; seasons follow the northern hemisphere: Dec-Feb winter, Mar-May spring, Jun-Aug summer, Sep-Nov autumn). Awaiting review by an English teacher."
+  },
+  "days": [
+    {
+      "en": "Monday",
+      "ro": "luni"
+    },
+    {
+      "en": "Tuesday",
+      "ro": "marți"
+    },
+    {
+      "en": "Wednesday",
+      "ro": "miercuri"
+    },
+    {
+      "en": "Thursday",
+      "ro": "joi"
+    },
+    {
+      "en": "Friday",
+      "ro": "vineri"
+    },
+    {
+      "en": "Saturday",
+      "ro": "sâmbătă"
+    },
+    {
+      "en": "Sunday",
+      "ro": "duminică"
+    }
+  ],
+  "months": [
+    {
+      "en": "January",
+      "ro": "ianuarie",
+      "season": "winter"
+    },
+    {
+      "en": "February",
+      "ro": "februarie",
+      "season": "winter"
+    },
+    {
+      "en": "March",
+      "ro": "martie",
+      "season": "spring"
+    },
+    {
+      "en": "April",
+      "ro": "aprilie",
+      "season": "spring"
+    },
+    {
+      "en": "May",
+      "ro": "mai",
+      "season": "spring"
+    },
+    {
+      "en": "June",
+      "ro": "iunie",
+      "season": "summer"
+    },
+    {
+      "en": "July",
+      "ro": "iulie",
+      "season": "summer"
+    },
+    {
+      "en": "August",
+      "ro": "august",
+      "season": "summer"
+    },
+    {
+      "en": "September",
+      "ro": "septembrie",
+      "season": "autumn"
+    },
+    {
+      "en": "October",
+      "ro": "octombrie",
+      "season": "autumn"
+    },
+    {
+      "en": "November",
+      "ro": "noiembrie",
+      "season": "autumn"
+    },
+    {
+      "en": "December",
+      "ro": "decembrie",
+      "season": "winter"
+    }
+  ],
+  "greetings": [
+    {
+      "intent": "hello",
+      "en": "Hello!",
+      "ro": "Bună!",
+      "grade": 0,
+      "situation": {
+        "ro": "Întâlnești un prieten și vrei să-l saluți. Ce spui?",
+        "en": "You meet a friend and want to greet them. What do you say?"
+      },
+      "avoid": [
+        "afternoon",
+        "howare",
+        "morning",
+        "nicemeet",
+        "seeyou"
+      ]
+    },
+    {
+      "intent": "goodbye",
+      "en": "Goodbye!",
+      "ro": "La revedere!",
+      "grade": 0,
+      "situation": {
+        "ro": "Pleci de la școală și îți saluți colegii. Ce spui?",
+        "en": "You leave school and say bye to your classmates. What do you say?"
+      },
+      "avoid": [
+        "night",
+        "seeyou"
+      ]
+    },
+    {
+      "intent": "morning",
+      "en": "Good morning!",
+      "ro": "Bună dimineața!",
+      "grade": 0,
+      "situation": {
+        "ro": "Este ora 8 dimineața și intri în clasă. Ce spui?",
+        "en": "It is 8 o'clock in the morning and you walk into class. What do you say?"
+      },
+      "avoid": [
+        "afternoon"
+      ]
+    },
+    {
+      "intent": "night",
+      "en": "Good night!",
+      "ro": "Noapte bună!",
+      "grade": 0,
+      "situation": {
+        "ro": "Mergi la culcare și îi spui mamei. Ce spui?",
+        "en": "You are going to bed and tell your mum. What do you say?"
+      },
+      "avoid": [
+        "goodbye"
+      ]
+    },
+    {
+      "intent": "thanks",
+      "en": "Thank you!",
+      "ro": "Mulțumesc!",
+      "grade": 0,
+      "situation": {
+        "ro": "Un prieten îți dă un creion. Ce spui?",
+        "en": "A friend gives you a pencil. What do you say?"
+      }
+    },
+    {
+      "intent": "please",
+      "en": "Please.",
+      "ro": "Te rog.",
+      "grade": 0,
+      "situation": {
+        "ro": "Ceri frumos o bucată de tort. Ce cuvânt adaugi?",
+        "en": "You ask politely for a piece of cake. Which word do you add?"
+      }
+    },
+    {
+      "intent": "sorry",
+      "en": "Sorry!",
+      "ro": "Scuze!",
+      "grade": 0,
+      "situation": {
+        "ro": "Ai călcat din greșeală pe piciorul cuiva. Ce spui?",
+        "en": "You stepped on someone's foot by mistake. What do you say?"
+      }
+    },
+    {
+      "intent": "yes",
+      "en": "Yes.",
+      "ro": "Da.",
+      "grade": 0
+    },
+    {
+      "intent": "no",
+      "en": "No.",
+      "ro": "Nu.",
+      "grade": 0
+    },
+    {
+      "intent": "afternoon",
+      "en": "Good afternoon!",
+      "ro": "Bună ziua!",
+      "grade": 1,
+      "situation": {
+        "ro": "Este ora 3 după-amiaza și saluți un vecin. Ce spui?",
+        "en": "It is 3 o'clock in the afternoon and you greet a neighbour. What do you say?"
+      }
+    },
+    {
+      "intent": "howare",
+      "en": "How are you?",
+      "ro": "Ce mai faci?",
+      "grade": 1,
+      "situation": {
+        "ro": "Vrei să afli cum se simte un prieten. Ce întrebi?",
+        "en": "You want to know how a friend feels. What do you ask?"
+      },
+      "avoid": [
+        "nicemeet"
+      ]
+    },
+    {
+      "intent": "fine",
+      "en": "I'm fine, thank you.",
+      "ro": "Sunt bine, mulțumesc.",
+      "grade": 1,
+      "avoid": [
+        "thanks",
+        "hello",
+        "morning",
+        "goodbye"
+      ],
+      "situation": {
+        "ro": "Cineva te întreabă «How are you?». Ce răspunzi dacă te simți bine?",
+        "en": "Someone asks you “How are you?”. What do you answer if you feel well?"
+      }
+    },
+    {
+      "intent": "yourname",
+      "en": "What's your name?",
+      "ro": "Cum te cheamă?",
+      "grade": 1,
+      "situation": {
+        "ro": "Vrei să afli numele unui copil nou. Ce întrebi?",
+        "en": "You want to know a new child's name. What do you ask?"
+      }
+    },
+    {
+      "intent": "myname",
+      "en": "My name is Ana.",
+      "ro": "Mă numesc Ana.",
+      "grade": 1,
+      "avoid": [
+        "hello",
+        "morning",
+        "goodbye"
+      ],
+      "situation": {
+        "ro": "Te cheamă Ana și cineva te întreabă «What's your name?». Ce răspunzi?",
+        "en": "Your name is Ana and someone asks “What's your name?”. What do you answer?"
+      }
+    },
+    {
+      "intent": "age",
+      "en": "How old are you?",
+      "ro": "Câți ani ai?",
+      "grade": 1,
+      "situation": {
+        "ro": "Vrei să afli vârsta unui prieten. Ce întrebi?",
+        "en": "You want to know a friend's age. What do you ask?"
+      }
+    },
+    {
+      "intent": "imseven",
+      "en": "I'm seven.",
+      "ro": "Am șapte ani.",
+      "grade": 1,
+      "avoid": [
+        "hello",
+        "morning",
+        "goodbye"
+      ],
+      "situation": {
+        "ro": "Ai 7 ani și cineva te întreabă «How old are you?». Ce răspunzi?",
+        "en": "You are 7 and someone asks “How old are you?”. What do you answer?"
+      }
+    },
+    {
+      "intent": "nicemeet",
+      "en": "Nice to meet you.",
+      "ro": "Mă bucur să te cunosc.",
+      "grade": 1,
+      "avoid": [
+        "thanks",
+        "goodbye"
+      ],
+      "situation": {
+        "ro": "Cunoști un copil nou și vrei să fii politicos. Ce spui?",
+        "en": "You meet a new child and want to be polite. What do you say?"
+      }
+    },
+    {
+      "intent": "from",
+      "en": "Where are you from?",
+      "ro": "De unde ești?",
+      "grade": 2,
+      "situation": {
+        "ro": "Vrei să afli în ce țară s-a născut un coleg. Ce întrebi?",
+        "en": "You want to know which country a classmate comes from. What do you ask?"
+      }
+    },
+    {
+      "intent": "fromro",
+      "en": "I'm from Romania.",
+      "ro": "Sunt din România.",
+      "grade": 2,
+      "avoid": [
+        "hello",
+        "morning",
+        "goodbye"
+      ],
+      "situation": {
+        "ro": "Cineva te întreabă «Where are you from?». Ce răspunzi?",
+        "en": "Someone asks you “Where are you from?”. What do you answer?"
+      }
+    },
+    {
+      "intent": "seeyou",
+      "en": "See you tomorrow!",
+      "ro": "Ne vedem mâine!",
+      "grade": 2,
+      "avoid": [
+        "morning",
+        "hello",
+        "night"
+      ],
+      "situation": {
+        "ro": "Te desparți de un prieten pe care îl vei vedea și mâine. Ce spui?",
+        "en": "You say goodbye to a friend you will see again tomorrow. What do you say?"
+      }
+    }
+  ]
+}

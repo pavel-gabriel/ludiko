@@ -162,7 +162,7 @@ service cloud.firestore {
                             && request.resource.data.snapshot.skillId is string
                             && request.resource.data.snapshot.skillId.size() <= 100
                             && request.resource.data.snapshot.subject in
-                                 ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim']
+                                 ['mat', 'rom', 'eng', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim']
                             && request.resource.data.snapshot.grade is number
                             && request.resource.data.snapshot.grade >= 0
                             && request.resource.data.snapshot.grade <= 8
@@ -328,7 +328,7 @@ service cloud.firestore {
           return d.keys().hasAll(['subjects', 'playDaysThisWeek', 'updatedAt'])
               && d.keys().hasOnly(['subjects', 'playDaysThisWeek', 'updatedAt'])
               && d.subjects is map
-              && d.subjects.keys().hasOnly(['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim'])
+              && d.subjects.keys().hasOnly(['mat', 'rom', 'eng', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim'])
               && (!('mat' in d.subjects) || validSubjectProgress(d.subjects.mat))
               && (!('rom' in d.subjects) || validSubjectProgress(d.subjects.rom))
               && (!('stiinte' in d.subjects) || validSubjectProgress(d.subjects.stiinte))
@@ -336,6 +336,7 @@ service cloud.firestore {
               && (!('geo' in d.subjects) || validSubjectProgress(d.subjects.geo))
               && (!('civ' in d.subjects) || validSubjectProgress(d.subjects.civ))
               && (!('logic' in d.subjects) || validSubjectProgress(d.subjects.logic))
+              && (!('eng' in d.subjects) || validSubjectProgress(d.subjects.eng))
               && (!('bio' in d.subjects) || validSubjectProgress(d.subjects.bio))
               && (!('fiz' in d.subjects) || validSubjectProgress(d.subjects.fiz))
               && (!('chim' in d.subjects) || validSubjectProgress(d.subjects.chim))
@@ -357,7 +358,7 @@ service cloud.firestore {
         function validAssignment(d) {
           return d.keys().hasAll(['subject', 'skillIds', 'title', 'dueDay', 'createdAt'])
               && d.keys().hasOnly(['subject', 'skillIds', 'title', 'dueDay', 'createdAt'])
-              && d.subject in ['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim']
+              && d.subject in ['mat', 'rom', 'eng', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim']
               && d.skillIds is list && d.skillIds.size() >= 1 && d.skillIds.size() <= 10
               && d.title is string && d.title.size() >= 1 && d.title.size() <= 60
               && d.dueDay is string && d.dueDay.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')
@@ -448,10 +449,10 @@ service cloud.firestore {
               && g.playDays is list && g.playDays.size() <= 1500
               && (!('placements' in g)
                   || (g.placements is map
-                      && g.placements.keys().hasOnly(['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim'])))
+                      && g.placements.keys().hasOnly(['mat', 'rom', 'eng', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim'])))
               && (!('levelHistory' in g)
                   || (g.levelHistory is map
-                      && g.levelHistory.keys().hasOnly(['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim'])))
+                      && g.levelHistory.keys().hasOnly(['mat', 'rom', 'eng', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim'])))
               && (!('missions' in g) || (g.missions is list && g.missions.size() <= 14));
         }
 

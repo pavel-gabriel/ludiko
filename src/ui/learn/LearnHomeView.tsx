@@ -11,8 +11,13 @@ import ChallengeCard from '@/ui/older/ChallengeCard'
 import ChoosePanel from '@/ui/older/ChoosePanel'
 import WeeklyGoalCard from '@/ui/older/WeeklyGoalCard'
 import ExamEntryCard from '@/ui/exam/ExamEntryCard'
+import CoachMarks, { type CoachStep } from '@/ui/guide/CoachMarks'
+import GuideButton from '@/ui/guide/GuideButton'
+import { ageBand, bandText } from '@/ui/guide/guideStore'
+import { useFirstRunGuide } from '@/ui/guide/useFirstRunGuide'
 import AssignmentCard from './AssignmentCard'
 import BitTiles from './BitTiles'
+import CheckProgressCard from './CheckProgressCard'
 import { subjectEmoji } from './subjects'
 
 export interface SubjectHome {
@@ -34,6 +39,11 @@ export interface LearnHomeViewProps {
   plan?: PlanBit[]
   /** Subjects the child's grade has content for, for "Toate materiile" */
   subjects: SubjectHome[]
+  /**
+   * Subjects the "Hai să vedem ce știi" card tracks (checkSubjects), with their check state; the card shows
+   * while one is not done. Absent: no card.
+   */
+  checks?: SubjectHome[]
   /** Subjects that start in a later grade: a small non-clickable teaser */
   locked?: LockedSubject[]
   /** A subject the child tried to open that has nothing for their grade yet (friendly note) */
@@ -101,11 +111,20 @@ function SubjectRow({ s }: { s: SubjectHome }) {
 }
 
 /** The learner's front door: greeting, stars, gentle streak, today's plan, and every subject below */
-export default function LearnHomeView({ profile, stars, playDays, plan, subjects, locked, lockedNote, assignments, stickerCount }: LearnHomeViewProps) {
+export default function LearnHomeView({ profile, stars, playDays, plan, subjects, checks, locked, lockedNote, assignments, stickerCount }: LearnHomeViewProps) {
   const { t, i18n } = useTranslation()
   const [open, setOpen] = useState(false)
   const big = isBig(profile.grade)
+  const band = ageBand(profile.grade)
   const pid = profile.id ?? ''
+  const guide = useFirstRunGuide('learn', pid || undefined)
+  const checking = !!checks && checks.some((c) => c.placement !== 'done')
+  const guideSteps: CoachStep[] = [
+    ...(checking ? [{ target: 'check-cta', text: bandText(t, 'guide.learn.check', band) }] : []),
+    ...(plan && plan.length > 0 ? [{ target: 'plan', text: bandText(t, 'guide.learn.plan', band) }] : []),
+    { target: 'subjects', text: bandText(t, 'guide.learn.subjects', band) },
+    { target: 'help', text: bandText(t, 'guide.learn.help', band) },
+  ]
   const [mascotOn, setMascotOn] = useState(() => (big && pid ? getShowMascot(pid) : true))
   const showMascot = !big || mascotOn
   const streak = big && playDays <= 0 ? t('older.streakZero') : streakText(t, i18n.language, playDays)
@@ -158,13 +177,20 @@ export default function LearnHomeView({ profile, stars, playDays, plan, subjects
           {t('album.homeChip')}
           {stickerCount !== undefined && <span className="ml-1 rounded-full bg-white/70 px-2 text-xs">{stickerCount}</span>}
         </Link>
+        <GuideButton onClick={guide.show} className="ml-auto" />
       </div>
 
-      {plan && plan.length > 0 && <BitTiles bits={plan} big={big} mascot={showMascot} />}
+      {checking && <CheckProgressCard checks={checks!} band={band} />}
+
+      {plan && plan.length > 0 && (
+        <div data-guide="plan">
+          <BitTiles bits={plan} big={big} mascot={showMascot} />
+        </div>
+      )}
 
       {big && pid && (
         <>
-          <ChoosePanel subjects={subjects.map((x) => x.subject)} grade={profile.grade ?? 5} />
+          <ChoosePanel subjects={subjects.map((x) => x.subject)} grade={profile.grade ?? 5} profileId={pid} />
           <WeeklyGoalCard profileId={pid} />
           <ChallengeCard profileId={pid} />
         </>
@@ -172,7 +198,7 @@ export default function LearnHomeView({ profile, stars, playDays, plan, subjects
 
       {assignments && assignments.length > 0 && <AssignmentCard assignments={assignments} />}
 
-      <section aria-label={t('bits.plan.allSubjects')} className="flex flex-col gap-2">
+      <section aria-label={t('bits.plan.allSubjects')} className="flex flex-col gap-2" data-guide="subjects">
         <button
           type="button"
           onClick={() => setOpen((o) => !o)}
@@ -221,6 +247,8 @@ export default function LearnHomeView({ profile, stars, playDays, plan, subjects
           {t('older.mascot.toggle')}
         </label>
       )}
+
+      {guide.open && <CoachMarks steps={guideSteps} band={band} onClose={guide.close} />}
 
       <Link
         to="/learn/parent"

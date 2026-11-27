@@ -46,6 +46,7 @@ GitHub secrets `VITE_FIREBASE_*`). The owner must check the Firebase console (se
 | D14 | PWA caches: app shell (incl. self-hosted fonts), content bundles (`ludiko-content`, 90 days), sounds | Cache Storage (Workbox) | same | `cleanupOutdatedCaches` | functional | `vite.config.ts` |
 | D15 | Profile backup file (JSON) the parent downloads | the parent's files | the parent | the parent's decision | n/a | `src/components/profiles/ProfileSettings.tsx` |
 | D16 | Read-aloud ("Citește-mi") | none stored. Uses the browser's `speechSynthesis`; some browsers use online voices run by the browser vendor (lesson text only) | browser vendor | n/a | n/a | `src/ui/speech/useReadAloud.ts` |
+| D17 | UI conveniences: which first-run guides a profile saw, how often an item type's how-to line was shown, the map's "show hidden islands" toggle | localStorage `ludiko.ui.guide.<screen>.<profileId>`, `ludiko.ui.guide.item.<type>.<profileId>`, `ludiko.ui.filters.map.showLocked` | same | until cleared | functional | `src/ui/common/devicePref.ts`, `src/ui/guide/guideStore.ts` |
 
 No cookies are set by Ludiko. Firebase Auth uses IndexedDB, not cookies.
 
@@ -207,4 +208,4 @@ Priority: **H** high, **M** medium, **L** low.
 ## 5. How the policy maps to this audit
 
 `src/legal/privacy.ts` sections: who (operator, contact), data (D*, C*, R*), why, where (T1-T5, region TODO), retention, rights, children, storage
-(D1-D16, no cookies), changes, version. Anything in §4 that the owner fixes should be removed from the "data" and "retention" sections at the same time.
+(D1-D17, no cookies), changes, version. Anything in §4 that the owner fixes should be removed from the "data" and "retention" sections at the same time.

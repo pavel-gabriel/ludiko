@@ -2,7 +2,8 @@
 
 Pure, deterministic TypeScript in `src/engine/{mastery,diagnostic,planner}` — no UI, no clock,
 no randomness (callers pass `now`). Implements docs/PLAN.md §4 (core loop, level statement) and §6.
-Tests: `tests/engine.*.test.ts` (incl. an end-to-end learner simulation).
+Tests: `tests/engine.*.test.ts` (incl. an end-to-end learner simulation; route + next island in
+`tests/engine.route.test.ts`).
 
 ## Session flow (how the UI calls it)
 
@@ -84,8 +85,9 @@ answer moves 2 steps down. Passing a check moves one step up. All numbers live i
 `{ steps: { kind, skillId, itemCount }[], totalItems, estimatedSeconds }`.
 
 * **review**: up to 2 mastered skills whose review is due, most overdue first (3 items).
-* **new**: at most 1 — a `gap` (else never-seen, within `ceiling`) whose prerequisites are all
-  ≥ practised, foundations first (6 items + 60 s explanation).
+* **new**: at most 1 — **the next island on the route** (`route.ts`, below): a `gap` whose
+  prerequisites are all ≥ practised (gap repair, in route order), else the first never-seen skill on
+  the route whose prerequisites are all ≥ practised, within `ceiling` (6 items + 60 s explanation).
 * **check**: 1 skill ready for its mastery check (`masteryCheck.items`, never shrunk).
 * **practice**: 1–2 learning/practised skills (learning first, then due, then least recently seen).
 * Review/practice/check never pick a skill with a prerequisite in `gap`.
@@ -94,8 +96,51 @@ answer moves 2 steps down. Passing a check moves one step up. All numbers live i
 * **Order shown**: review₁ (warm-up), check, new, practice₁, review₂, practice₂ — each skill once,
   so never the same skill twice in a row. Nothing to do ⇒ the earliest upcoming reviews.
 
+## Island route — `planner/route.ts`
+
+The child's map and the planner share ONE ordered path through a subject's skills, so islands are
+conquered one after another instead of "randomly".
+
+* `routeOrder(skills)`: Kahn's topological sort with a priority — among skills whose prerequisites are
+  already on the route, the lowest (grade, semester) first, then the order the skills are authored in
+  `content/skills/**` (registry order). Every prerequisite comes before its dependants; the route never
+  goes back to an earlier level (content validation keeps prerequisites at or below a skill's level).
+  Prerequisites outside the set are ignored; a cycle cannot loop. `routeIndex` = skillId → position.
+* `newCandidates(skills, progress, { ceiling })`: gaps with ready prerequisites (route order), then
+  never-seen skills with ready prerequisites within the ceiling (route order). `nextIsland` = the first.
+  The planner's `new` step takes it; a due review still opens the mission (warm-up) and a check /
+  practice still run, as before.
+* **Why it was "random" before:** `new` was sorted by *prerequisite depth* first (then level), so a
+  shallow grade I geometry skill (depth 1) came before grade 0 addition (depth 2), and grade III numbers
+  before grade I subtraction — while the map showed a grade/semester grid in alphabetical order with no
+  visible sequence, and placement-known skills were shown as "Cucerită" like real achievements.
+* Read model (`learner/readModels.buildSkillMap`, `getSkillMap`): nodes in route order with `route`
+  (position), `next` (the planner's next island, same ceiling as the mission) and `known` (mastered by
+  the level check and not practised since — placement seeding never stamps `stateChangedAt`). The map
+  shows numbered stops on a dotted path, the next island highlighted, known islands as "Știi deja"
+  (skipped), with filter chips (Toate / De făcut / În lucru / Gata / Ascunse) and a remembered toggle for
+  locked islands.
+
 ## Simulation (tests/engine.simulation.test.ts)
 
 Grade II learner who knows only grade 0 (13 gaps after placement): with pLearn 0.2/item and 8 % slips,
 all gaps close in ~13–15 daily missions; a slow learner (pLearn 0.04, 15 % slips) closes them in
 ~35–45. Every mission stays ≤ 10 minutes.
+
+## English as a foreign language, primary (`eng.*.0`–`eng.*.4`)
+
+41 skills for grades 0–IV (programa *Limba modernă 1*, tagged `LM1-CP-IV-2013`, codes to verify), British spelling.
+Content: `content/skills/eng/grade0–4.json`, `content/explanations/eng/grade0–4.json` (3 frames each) and the curated
+datasets `content/data/eng/primary-{vocab,lists,grammar,reading}.json` (all own work, `ai-draft`, awaiting an English teacher).
+Generators (`src/engine/items/generators/engPrimary*.ts`): `eng-primary-vocab` (picture↔word, ro↔en, odd one out,
+match, sort, true/false), `eng-primary-number` (1–10/20/100), `eng-primary-calendar` (days, months, seasons),
+`eng-primary-time` (o'clock … quarter to, five-minute steps), `eng-primary-grammar` (gap / translate / true-false /
+word order over the sentence bank, plus adjective opposites), `eng-primary-greet`, `eng-primary-read` (original 30–70
+word texts + 3 questions). Prompts are Romanian with an English version; distractors come only from words already taught.
+
+**Listening (no recorded audio).** An English word or phrase taught inside a prompt or explanation frame is written
+between `«…»` (e.g. `ro: "Ascultă și alege imaginea: «cat»."`). `src/ui/speech/englishSpeech.ts` extracts the marked text;
+`ItemShell` shows an extra "Ascultă" button for `eng` items of grades 0–II, `FramesPlayer` for the frames of every `eng`
+skill, and the reading passage is read with an English voice. `useReadAloud('en')` / `<ReadAloudButton lang="en">` pick an
+English voice (en-GB first, then en-US) regardless of the UI language; without an argument nothing changes. The button is
+hidden when the device has no English voice.

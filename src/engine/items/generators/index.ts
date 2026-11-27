@@ -85,6 +85,11 @@ import './statistics';
 import './angles';
 import './segmentsUnits';
 
+// English as a foreign language, primary (eng.*.0-4): vocabulary, numbers, calendar, time, grammar banks, greetings, reading
+import './engPrimaryVocab';
+import './engPrimaryNumbers';
+import './engPrimaryGrammar';
+
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';
 export { mulberry32 } from './util';

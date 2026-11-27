@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import CloseButton from '@/components/ui/CloseButton';
+import HowToPlay from '@/ui/guide/HowToPlay';
 
 /** Two big cards: start a room, or join one with a code (the two-on-one-phone duel lives on the home screen) */
 export default function MultiplayerPage() {
@@ -36,6 +37,7 @@ export default function MultiplayerPage() {
           <span className="text-2xl font-extrabold leading-tight text-ludiko-text">{t('home.joinRoomTitle')}</span>
           <span className="text-sm leading-snug text-ludiko-text opacity-80">{t('home.joinRoomSub')}</span>
         </button>
+        <HowToPlay topic="friends" />
       </div>
     </div>
   );

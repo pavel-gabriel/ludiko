@@ -1,0 +1,426 @@
+[
+  {
+    "id": "exp.eng.greet.0",
+    "skillId": "eng.greet.0",
+    "title": {
+      "ro": "Cum salutăm în engleză?",
+      "en": "How do we say hello in English?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Când te întâlnești cu cineva spui «Hello!». Înseamnă „Bună!”. Apasă butonul „Ascultă” ca să auzi cum sună.",
+          "en": "When you meet someone you say «Hello!». Press the listen button to hear it."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dimineața spui «Good morning!», iar seara, înainte de culcare, «Good night!». La plecare spui «Goodbye!».",
+          "en": "In the morning you say «Good morning!» and at bedtime «Good night!». When you leave you say «Goodbye!»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌅",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cuvintele frumoase: «Please» înseamnă „te rog”, «Thank you» înseamnă „mulțumesc”, iar «Sorry» înseamnă „scuze”.",
+          "en": "Polite words: «Please», «Thank you» and «Sorry»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🙏",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.greet.0",
+      "kind": "explanation",
+      "title": "Explanation for eng.greet.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.colours.0",
+    "skillId": "eng.colours.0",
+    "title": {
+      "ro": "Culorile în engleză",
+      "en": "Colours in English"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Roșu se spune «red», albastru se spune «blue», iar verde se spune «green».",
+          "en": "«Red», «blue» and «green» are three colours."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔴",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Galben este «yellow», portocaliu este «orange», iar mov este «purple».",
+          "en": "«Yellow», «orange» and «purple» are more colours."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🟡",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Maro este «brown», negru este «black», iar alb este «white». Poți arăta cu degetul lucruri de aceste culori!",
+          "en": "«Brown», «black» and «white». Point at things of these colours!"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚫",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.colours.0",
+      "kind": "explanation",
+      "title": "Explanation for eng.colours.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.numbers.10.0",
+    "skillId": "eng.numbers.10.0",
+    "title": {
+      "ro": "Numărăm în engleză până la zece",
+      "en": "Counting to ten in English"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Hai să numărăm: «one», «two», «three», «four», «five».",
+          "en": "Let us count: «one», «two», «three», «four», «five»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 5
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai departe: «six», «seven», «eight», «nine», «ten».",
+          "en": "Next: «six», «seven», «eight», «nine», «ten»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 10
+        }
+      },
+      {
+        "text": {
+          "ro": "Numără obiectele din imagine și spune numărul în engleză, cu voce tare: «one», «two», «three».",
+          "en": "Count the things in the picture and say the number in English, out loud: «one», «two», «three»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.numbers.10.0",
+      "kind": "explanation",
+      "title": "Explanation for eng.numbers.10.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.animals.0",
+    "skillId": "eng.animals.0",
+    "title": {
+      "ro": "Animalele mele",
+      "en": "My animals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pisica este «cat», iar câinele este «dog». Asculți cum sună?",
+          "en": "The cat is a «cat» and the dog is a «dog»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐱",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pasărea este «bird», peștele este «fish», iar iepurele este «rabbit».",
+          "en": "«Bird», «fish» and «rabbit»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐰",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai sunt «mouse» (șoarece), «horse» (cal), «duck» (rață), «frog» (broască) și «turtle» (broască țestoasă).",
+          "en": "More animals: «mouse», «horse», «duck», «frog» and «turtle»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐸",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.animals.0",
+      "kind": "explanation",
+      "title": "Explanation for eng.animals.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.family.0",
+    "skillId": "eng.family.0",
+    "title": {
+      "ro": "Familia mea",
+      "en": "My family"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Mama este «mum», iar tata este «dad».",
+          "en": "Mother is «mum» and father is «dad»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👩",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Fratele este «brother», iar sora este «sister». Bebelușul este «baby».",
+          "en": "«Brother», «sister» and «baby»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👧",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Bunica este «grandma», iar bunicul este «grandpa». Câți oameni sunt în familia ta?",
+          "en": "«Grandma» and «grandpa». How many people are in your family?"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👴",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.family.0",
+      "kind": "explanation",
+      "title": "Explanation for eng.family.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.body.0",
+    "skillId": "eng.body.0",
+    "title": {
+      "ro": "Corpul meu",
+      "en": "My body"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ochiul este «eye», nasul este «nose», urechea este «ear» și gura este «mouth».",
+          "en": "«Eye», «nose», «ear» and «mouth»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👀",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mâna este «hand», brațul este «arm», piciorul este «leg», iar laba piciorului este «foot».",
+          "en": "«Hand», «arm», «leg» and «foot»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "✋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dintele este «tooth» și limba este «tongue». Atinge fiecare parte a corpului când o auzi!",
+          "en": "«Tooth» and «tongue». Touch each part of your body when you hear it!"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦷",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.body.0",
+      "kind": "explanation",
+      "title": "Explanation for eng.body.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.food.0",
+    "skillId": "eng.food.0",
+    "title": {
+      "ro": "Ce mâncăm?",
+      "en": "What do we eat?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Mărul este «apple», banana este «banana», iar pâinea este «bread».",
+          "en": "«Apple», «banana» and «bread»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Laptele este «milk», brânza este «cheese», iar oul este «egg».",
+          "en": "«Milk», «cheese» and «egg»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥛",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Tortul este «cake», pizza este «pizza», iar înghețata este «ice cream». Care e preferata ta?",
+          "en": "«Cake», «pizza» and «ice cream». Which is your favourite?"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍦",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.food.0",
+      "kind": "explanation",
+      "title": "Explanation for eng.food.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.toys.0",
+    "skillId": "eng.toys.0",
+    "title": {
+      "ro": "Jucăriile mele",
+      "en": "My toys"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Mingea este «ball», ursulețul de pluș este «teddy bear», iar zmeul este «kite».",
+          "en": "«Ball», «teddy bear» and «kite»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚽",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mașinuța este «car», trenulețul este «train», iar robotul este «robot».",
+          "en": "«Car», «train» and «robot»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚗",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai sunt «balloon» (balon), «drum» (tobă), «puzzle» și «bike» (bicicletă). Cu ce te joci tu?",
+          "en": "More toys: «balloon», «drum», «puzzle» and «bike». What do you play with?"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎈",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.toys.0",
+      "kind": "explanation",
+      "title": "Explanation for eng.toys.0",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  }
+]

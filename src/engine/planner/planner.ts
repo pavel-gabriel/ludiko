@@ -6,6 +6,7 @@ import type { Skill, SkillState, SubjectId } from '../types';
 import { buildGraph, depths, levelKey, type Level } from '../diagnostic/graph';
 import { isDue, isReadyForCheck } from '../mastery/bkt';
 import { DEFAULT_MASTERY_CONFIG, type MasteryConfig, type MasteryRecord, type ProgressMap } from '../mastery/types';
+import { newCandidates } from './route';
 
 export type StepKind = 'new' | 'practice' | 'review' | 'check';
 
@@ -65,13 +66,12 @@ export interface PlanOptions {
   mastery?: MasteryConfig;
 }
 
-const AT_LEAST_PRACTISED: SkillState[] = ['practised', 'mastered'];
-
 /**
  * Selection (each skill appears at most once):
  * - review:   up to 2 `mastered` skills whose spaced review is due (most overdue first)
- * - new:      at most 1 `gap` (else never-seen) skill whose prerequisites are all ≥ practised,
- *             foundations first (shallowest prerequisite depth, then lowest level)
+ * - new:      at most 1: the NEXT ISLAND ON THE ROUTE (route.ts) — a `gap` whose prerequisites are all
+ *             ≥ practised (gap repair, route order), else the first never-seen skill on the route whose
+ *             prerequisites are all ≥ practised (within `ceiling`)
  * - check:    1 practised skill ready for its mastery check (`isReadyForCheck`)
  * - practice: 1–2 `learning`/`practised` skills (learning first, then due, then least recently seen)
  * Review/practice/check never pick a skill that has a prerequisite in state `gap`.
@@ -93,7 +93,6 @@ export function planMission(skills: Skill[], progress: ProgressMap, opts: PlanOp
   const foundation = (a: string, b: string) =>
     depth[a] - depth[b] || levelKey(graph[a]) - levelKey(graph[b]) || (a < b ? -1 : a > b ? 1 : 0);
   const noGapPrereq = (id: string) => graph[id].prereqs.every((p) => st(p) !== 'gap');
-  const prereqsReady = (id: string) => graph[id].prereqs.every((p) => AT_LEAST_PRACTISED.includes(st(p)));
   const used = new Set<string>();
   const take = (list: string[], n: number) => {
     const out = list.filter((id) => !used.has(id)).slice(0, n);
@@ -113,14 +112,8 @@ export function planMission(skills: Skill[], progress: ProgressMap, opts: PlanOp
       .sort((a, b) => rec(a)!.nextReview! - rec(b)!.nextReview! || foundation(a, b)),
     cfg.maxReviews,
   );
-  const withinCeiling = (id: string) => !opts.ceiling || levelKey(graph[id]) <= levelKey(opts.ceiling);
-  const newOnes = take(
-    [
-      ...ids.filter((id) => st(id) === 'gap' && prereqsReady(id)).sort(foundation),
-      ...ids.filter((id) => st(id) === 'unknown' && prereqsReady(id) && withinCeiling(id)).sort(foundation),
-    ],
-    cfg.maxNew,
-  );
+  // the next island on the route (gap repair first), see route.ts
+  const newOnes = take(newCandidates(pool, progress, { ceiling: opts.ceiling }), cfg.maxNew);
   const practice = take(
     ids
       .filter((id) => (st(id) === 'learning' || st(id) === 'practised') && noGapPrereq(id))

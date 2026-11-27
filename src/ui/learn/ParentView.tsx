@@ -8,6 +8,7 @@ import { isPushSupported, needsInstall } from '@/services/pushAvailability'
 import { isBig } from '@/older/ageBand'
 import { formatMark, markFromScore } from '@/older/marks'
 import ExamEntryCard from '@/ui/exam/ExamEntryCard'
+import FilterChips from '@/ui/common/FilterChips'
 import ProgressBar from './ProgressBar'
 import { subjectEmoji } from './subjects'
 
@@ -74,6 +75,8 @@ const heading = 'text-sm font-extrabold uppercase tracking-wide text-ludiko-text
 export default function ParentView({ profileName, profileGrade, summary, titleOf, onRedo }: ParentViewProps) {
   const { t, i18n } = useTranslation()
   const [confirm, setConfirm] = useState<SubjectId | null>(null)
+  const [only, setOnly] = useState<'all' | SubjectId>('all')
+  const shown = summary.subjects.filter((s) => only === 'all' || s.subject === only)
   const en = i18n.language.startsWith('en')
   const big = isBig(profileGrade)
   const pick = (text: { ro: string; en: string }) => (en && text.en) || text.ro
@@ -95,7 +98,20 @@ export default function ParentView({ profileName, profileGrade, summary, titleOf
         {t('learn.parent.playDays', { n: summary.playDaysThisWeek })}
       </p>
 
-      {summary.subjects.map((s) => (
+      {summary.subjects.length > 2 && (
+        <FilterChips
+          label={t('filters.subject')}
+          options={[
+            { value: 'all' as const, label: t('filters.allSubjects') },
+            ...summary.subjects.map((s) => ({ value: s.subject, label: t(`learn.subject.${s.subject}`), icon: subjectEmoji(s.subject) })),
+          ]}
+          value={only}
+          onChange={setOnly}
+          testId="parent-filter"
+        />
+      )}
+
+      {shown.map((s) => (
         <section
           key={s.subject}
           className="flex flex-col gap-3 rounded-3xl bg-ludiko-bg p-3 ring-2 ring-white"
