@@ -1,0 +1,623 @@
+{
+ "provenance": {
+  "id": "prov.data.eng.gim-adjectives",
+  "kind": "data",
+  "title": "Ludiko list of English adjectives with comparative and superlative forms",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Standard comparison forms (facts, British spelling) compiled by us; Romanian glosses are our own. Awaiting review by an English teacher."
+ },
+ "adjectives": [
+  {
+   "b": "tall",
+   "c": "taller",
+   "s": "tallest",
+   "g": "er",
+   "ro": "înalt",
+   "A": "Tom",
+   "B": "Dan",
+   "tail": "in the class"
+  },
+  {
+   "b": "short",
+   "c": "shorter",
+   "s": "shortest",
+   "g": "er",
+   "ro": "scund",
+   "A": "Ana",
+   "B": "Maria",
+   "tail": "in the class"
+  },
+  {
+   "b": "small",
+   "c": "smaller",
+   "s": "smallest",
+   "g": "er",
+   "ro": "mic",
+   "A": "This box",
+   "B": "that box",
+   "tail": "in the shop"
+  },
+  {
+   "b": "long",
+   "c": "longer",
+   "s": "longest",
+   "g": "er",
+   "ro": "lung",
+   "A": "This road",
+   "B": "that road",
+   "tail": "in the town"
+  },
+  {
+   "b": "old",
+   "c": "older",
+   "s": "oldest",
+   "g": "er",
+   "ro": "bătrân",
+   "A": "Grandpa",
+   "B": "Dad",
+   "tail": "in our family"
+  },
+  {
+   "b": "young",
+   "c": "younger",
+   "s": "youngest",
+   "g": "er",
+   "ro": "tânăr",
+   "A": "Ioana",
+   "B": "Maria",
+   "tail": "in the class"
+  },
+  {
+   "b": "fast",
+   "c": "faster",
+   "s": "fastest",
+   "g": "er",
+   "ro": "rapid",
+   "A": "Alex",
+   "B": "Dan",
+   "tail": "in the team"
+  },
+  {
+   "b": "cheap",
+   "c": "cheaper",
+   "s": "cheapest",
+   "g": "er",
+   "ro": "ieftin",
+   "A": "This pen",
+   "B": "that pen",
+   "tail": "in the shop"
+  },
+  {
+   "b": "cold",
+   "c": "colder",
+   "s": "coldest",
+   "g": "er",
+   "ro": "rece",
+   "A": "Today",
+   "B": "yesterday",
+   "tail": "of the week"
+  },
+  {
+   "b": "high",
+   "c": "higher",
+   "s": "highest",
+   "g": "er",
+   "ro": "înalt (ca un munte)",
+   "A": "This tower",
+   "B": "that house",
+   "tail": "in the city"
+  },
+  {
+   "b": "strong",
+   "c": "stronger",
+   "s": "strongest",
+   "g": "er",
+   "ro": "puternic",
+   "A": "Tom",
+   "B": "Dan",
+   "tail": "in the team"
+  },
+  {
+   "b": "slow",
+   "c": "slower",
+   "s": "slowest",
+   "g": "er",
+   "ro": "lent",
+   "A": "The bus",
+   "B": "the train",
+   "tail": "of all"
+  },
+  {
+   "b": "quiet",
+   "c": "quieter",
+   "s": "quietest",
+   "g": "er",
+   "ro": "liniștit",
+   "A": "Our street",
+   "B": "their street",
+   "tail": "in the town"
+  },
+  {
+   "b": "clean",
+   "c": "cleaner",
+   "s": "cleanest",
+   "g": "er",
+   "ro": "curat",
+   "A": "My room",
+   "B": "your room",
+   "tail": "in the house"
+  },
+  {
+   "b": "dark",
+   "c": "darker",
+   "s": "darkest",
+   "g": "er",
+   "ro": "întunecat",
+   "A": "The cellar",
+   "B": "the kitchen",
+   "tail": "in the house"
+  },
+  {
+   "b": "loud",
+   "c": "louder",
+   "s": "loudest",
+   "g": "er",
+   "ro": "tare (sunet)",
+   "A": "The music",
+   "B": "the TV",
+   "tail": "in the house"
+  },
+  {
+   "b": "warm",
+   "c": "warmer",
+   "s": "warmest",
+   "g": "er",
+   "ro": "călduț",
+   "A": "Summer",
+   "B": "spring",
+   "tail": "of the year"
+  },
+  {
+   "b": "rich",
+   "c": "richer",
+   "s": "richest",
+   "g": "er",
+   "ro": "bogat",
+   "A": "Mr Pop",
+   "B": "Mr Ionescu",
+   "tail": "in our town"
+  },
+  {
+   "b": "deep",
+   "c": "deeper",
+   "s": "deepest",
+   "g": "er",
+   "ro": "adânc",
+   "A": "This lake",
+   "B": "that pond",
+   "tail": "in the park"
+  },
+  {
+   "b": "nice",
+   "c": "nicer",
+   "s": "nicest",
+   "g": "e",
+   "ro": "drăguț",
+   "A": "Maria's cake",
+   "B": "Ana's cake",
+   "tail": "at the party"
+  },
+  {
+   "b": "large",
+   "c": "larger",
+   "s": "largest",
+   "g": "e",
+   "ro": "mare (ca suprafață)",
+   "A": "This room",
+   "B": "that room",
+   "tail": "in the house"
+  },
+  {
+   "b": "wide",
+   "c": "wider",
+   "s": "widest",
+   "g": "e",
+   "ro": "lat",
+   "A": "This road",
+   "B": "that path",
+   "tail": "in the village"
+  },
+  {
+   "b": "safe",
+   "c": "safer",
+   "s": "safest",
+   "g": "e",
+   "ro": "sigur",
+   "A": "This bridge",
+   "B": "that bridge",
+   "tail": "in the city"
+  },
+  {
+   "b": "brave",
+   "c": "braver",
+   "s": "bravest",
+   "g": "e",
+   "ro": "curajos",
+   "A": "Dan",
+   "B": "Tom",
+   "tail": "in the class"
+  },
+  {
+   "b": "big",
+   "c": "bigger",
+   "s": "biggest",
+   "g": "dbl",
+   "ro": "mare",
+   "A": "This dog",
+   "B": "that cat",
+   "tail": "in the street"
+  },
+  {
+   "b": "hot",
+   "c": "hotter",
+   "s": "hottest",
+   "g": "dbl",
+   "ro": "fierbinte",
+   "A": "Today",
+   "B": "yesterday",
+   "tail": "of the summer"
+  },
+  {
+   "b": "thin",
+   "c": "thinner",
+   "s": "thinnest",
+   "g": "dbl",
+   "ro": "subțire",
+   "A": "This book",
+   "B": "that book",
+   "tail": "on the shelf"
+  },
+  {
+   "b": "fat",
+   "c": "fatter",
+   "s": "fattest",
+   "g": "dbl",
+   "ro": "gras",
+   "A": "The black cat",
+   "B": "the white cat",
+   "tail": "in the garden"
+  },
+  {
+   "b": "sad",
+   "c": "sadder",
+   "s": "saddest",
+   "g": "dbl",
+   "ro": "trist",
+   "A": "This story",
+   "B": "that story",
+   "tail": "in the book"
+  },
+  {
+   "b": "wet",
+   "c": "wetter",
+   "s": "wettest",
+   "g": "dbl",
+   "ro": "ud",
+   "A": "This towel",
+   "B": "that towel",
+   "tail": "in the bathroom"
+  },
+  {
+   "b": "happy",
+   "c": "happier",
+   "s": "happiest",
+   "g": "y",
+   "ro": "fericit",
+   "A": "Ioana",
+   "B": "Maria",
+   "tail": "in the class"
+  },
+  {
+   "b": "easy",
+   "c": "easier",
+   "s": "easiest",
+   "g": "y",
+   "ro": "ușor",
+   "A": "This test",
+   "B": "that test",
+   "tail": "of the term"
+  },
+  {
+   "b": "funny",
+   "c": "funnier",
+   "s": "funniest",
+   "g": "y",
+   "ro": "amuzant",
+   "A": "Dan",
+   "B": "Tom",
+   "tail": "in the class"
+  },
+  {
+   "b": "busy",
+   "c": "busier",
+   "s": "busiest",
+   "g": "y",
+   "ro": "ocupat",
+   "A": "Dad",
+   "B": "Mum",
+   "tail": "in our family"
+  },
+  {
+   "b": "heavy",
+   "c": "heavier",
+   "s": "heaviest",
+   "g": "y",
+   "ro": "greu (ca greutate)",
+   "A": "This bag",
+   "B": "that bag",
+   "tail": "in the room"
+  },
+  {
+   "b": "lazy",
+   "c": "lazier",
+   "s": "laziest",
+   "g": "y",
+   "ro": "leneș",
+   "A": "Our cat",
+   "B": "their cat",
+   "tail": "in the street"
+  },
+  {
+   "b": "noisy",
+   "c": "noisier",
+   "s": "noisiest",
+   "g": "y",
+   "ro": "gălăgios",
+   "A": "This class",
+   "B": "that class",
+   "tail": "in the school"
+  },
+  {
+   "b": "tidy",
+   "c": "tidier",
+   "s": "tidiest",
+   "g": "y",
+   "ro": "ordonat",
+   "A": "Ana's desk",
+   "B": "Dan's desk",
+   "tail": "in the class"
+  },
+  {
+   "b": "early",
+   "c": "earlier",
+   "s": "earliest",
+   "g": "y",
+   "ro": "timpuriu",
+   "A": "Tom",
+   "B": "Dan",
+   "tail": "in the class"
+  },
+  {
+   "b": "pretty",
+   "c": "prettier",
+   "s": "prettiest",
+   "g": "y",
+   "ro": "frumușel",
+   "A": "This dress",
+   "B": "that dress",
+   "tail": "in the shop"
+  },
+  {
+   "b": "healthy",
+   "c": "healthier",
+   "s": "healthiest",
+   "g": "y",
+   "ro": "sănătos",
+   "A": "This salad",
+   "B": "that pizza",
+   "tail": "on the menu"
+  },
+  {
+   "b": "dirty",
+   "c": "dirtier",
+   "s": "dirtiest",
+   "g": "y",
+   "ro": "murdar",
+   "A": "My shoes",
+   "B": "your shoes",
+   "tail": "in the hall"
+  },
+  {
+   "b": "friendly",
+   "c": "friendlier",
+   "s": "friendliest",
+   "g": "y",
+   "ro": "prietenos",
+   "A": "Our dog",
+   "B": "their dog",
+   "tail": "in the street"
+  },
+  {
+   "b": "beautiful",
+   "c": "more beautiful",
+   "s": "most beautiful",
+   "g": "more",
+   "ro": "frumos",
+   "A": "This picture",
+   "B": "that picture",
+   "tail": "in the room"
+  },
+  {
+   "b": "expensive",
+   "c": "more expensive",
+   "s": "most expensive",
+   "g": "more",
+   "ro": "scump",
+   "A": "This watch",
+   "B": "that watch",
+   "tail": "in the shop"
+  },
+  {
+   "b": "interesting",
+   "c": "more interesting",
+   "s": "most interesting",
+   "g": "more",
+   "ro": "interesant",
+   "A": "This book",
+   "B": "that book",
+   "tail": "in the library"
+  },
+  {
+   "b": "dangerous",
+   "c": "more dangerous",
+   "s": "most dangerous",
+   "g": "more",
+   "ro": "periculos",
+   "A": "This road",
+   "B": "that road",
+   "tail": "in the town"
+  },
+  {
+   "b": "famous",
+   "c": "more famous",
+   "s": "most famous",
+   "g": "more",
+   "ro": "celebru",
+   "A": "This singer",
+   "B": "that singer",
+   "tail": "in Romania"
+  },
+  {
+   "b": "difficult",
+   "c": "more difficult",
+   "s": "most difficult",
+   "g": "more",
+   "ro": "dificil",
+   "A": "Maths",
+   "B": "History",
+   "tail": "at school"
+  },
+  {
+   "b": "boring",
+   "c": "more boring",
+   "s": "most boring",
+   "g": "more",
+   "ro": "plictisitor",
+   "A": "This film",
+   "B": "that film",
+   "tail": "of the year"
+  },
+  {
+   "b": "comfortable",
+   "c": "more comfortable",
+   "s": "most comfortable",
+   "g": "more",
+   "ro": "confortabil",
+   "A": "This sofa",
+   "B": "that sofa",
+   "tail": "in the house"
+  },
+  {
+   "b": "popular",
+   "c": "more popular",
+   "s": "most popular",
+   "g": "more",
+   "ro": "popular",
+   "A": "This game",
+   "B": "that game",
+   "tail": "at school"
+  },
+  {
+   "b": "important",
+   "c": "more important",
+   "s": "most important",
+   "g": "more",
+   "ro": "important",
+   "A": "Health",
+   "B": "money",
+   "tail": "in life"
+  },
+  {
+   "b": "delicious",
+   "c": "more delicious",
+   "s": "most delicious",
+   "g": "more",
+   "ro": "delicios",
+   "A": "This soup",
+   "B": "that soup",
+   "tail": "on the menu"
+  },
+  {
+   "b": "modern",
+   "c": "more modern",
+   "s": "most modern",
+   "g": "more",
+   "ro": "modern",
+   "A": "This school",
+   "B": "that school",
+   "tail": "in the town"
+  },
+  {
+   "b": "careful",
+   "c": "more careful",
+   "s": "most careful",
+   "g": "more",
+   "ro": "atent",
+   "A": "Ana",
+   "B": "Maria",
+   "tail": "in the class"
+  },
+  {
+   "b": "exciting",
+   "c": "more exciting",
+   "s": "most exciting",
+   "g": "more",
+   "ro": "captivant",
+   "A": "This game",
+   "B": "that game",
+   "tail": "of the year"
+  },
+  {
+   "b": "crowded",
+   "c": "more crowded",
+   "s": "most crowded",
+   "g": "more",
+   "ro": "aglomerat",
+   "A": "This street",
+   "B": "that street",
+   "tail": "in the city"
+  },
+  {
+   "b": "intelligent",
+   "c": "more intelligent",
+   "s": "most intelligent",
+   "g": "more",
+   "ro": "inteligent",
+   "A": "Maria",
+   "B": "Ioana",
+   "tail": "in the class"
+  },
+  {
+   "b": "good",
+   "c": "better",
+   "s": "best",
+   "g": "irr",
+   "ro": "bun",
+   "A": "This film",
+   "B": "that film",
+   "tail": "of the year"
+  },
+  {
+   "b": "bad",
+   "c": "worse",
+   "s": "worst",
+   "g": "irr",
+   "ro": "rău",
+   "A": "The weather today",
+   "B": "the weather yesterday",
+   "tail": "of the week"
+  }
+ ]
+}

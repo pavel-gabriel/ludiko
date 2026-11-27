@@ -1,0 +1,787 @@
+[
+ {
+  "id": "item.eng.read.7.t01",
+  "type": "read-and-answer",
+  "skillId": "eng.read.7",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.7",
+  "provenance": {
+   "id": "prov.item.eng.read.7.t01",
+   "kind": "item",
+   "title": "Item item.eng.read.7.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Hi Laura, Thanks for your email! I have never been to Scotland, but I would love to visit it one day. You asked about my town, so here is some news. I live in Sibiu, a beautiful city in Transylvania. I have lived here since I was born, and I have never thought of moving. There are lots of old buildings in the centre and many cafés where people meet on Saturdays. Last week I went to a concert in the main square with my cousins. It was free, and the music was great. I should study for my English test tomorrow, so I must stop now. Please write soon and send me some photos of your school! Best wishes, Mihai",
+   "en": "Hi Laura, Thanks for your email! I have never been to Scotland, but I would love to visit it one day. You asked about my town, so here is some news. I live in Sibiu, a beautiful city in Transylvania. I have lived here since I was born, and I have never thought of moving. There are lots of old buildings in the centre and many cafés where people meet on Saturdays. Last week I went to a concert in the main square with my cousins. It was free, and the music was great. I should study for my English test tomorrow, so I must stop now. Please write soon and send me some photos of your school! Best wishes, Mihai"
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.7.t01.q1",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t01.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Has Mihai ever been to Scotland?",
+     "en": "Choose the correct answer: Has Mihai ever been to Scotland?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "Yes, he has.",
+       "en": "Yes, he has."
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "Yes, last year.",
+       "en": "Yes, last year."
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "No, he hasn't.",
+       "en": "No, he hasn't."
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.7.t01.q2",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t01.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Where did Mihai go last week?",
+     "en": "Choose the correct answer: Where did Mihai go last week?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "to a concert",
+       "en": "to a concert"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "to a café",
+       "en": "to a café"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "to Scotland",
+       "en": "to Scotland"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.7.t01.q3",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t01.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Mihai has lived in Sibiu all his life.",
+     "en": "True or false? Mihai has lived in Sibiu all his life."
+    },
+    "correct": true
+   },
+   {
+    "id": "item.eng.read.7.t01.q4",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t01.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Mihai has already finished his English test.",
+     "en": "True or false? Mihai has already finished his English test."
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.7.t02",
+  "type": "read-and-answer",
+  "skillId": "eng.read.7",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.7",
+  "provenance": {
+   "id": "prov.item.eng.read.7.t02",
+   "kind": "item",
+   "title": "Item item.eng.read.7.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Our school has started a recycling project this year, and it has already changed a lot of things. There are now three coloured bins in every classroom: one for paper, one for plastic and one for glass. At first, many pupils forgot to use them, so the class captains made posters to remind everybody. Last month the school collected over two hundred kilos of paper! The money from selling it has bought new books for the library. Mrs Dumitru, the science teacher, says that we should also bring our own bottles to school, because plastic is bad for the environment. Some pupils think the project is too much work, but most of us have become more careful. Next year we are going to plant trees in the school yard.",
+   "en": "Our school has started a recycling project this year, and it has already changed a lot of things. There are now three coloured bins in every classroom: one for paper, one for plastic and one for glass. At first, many pupils forgot to use them, so the class captains made posters to remind everybody. Last month the school collected over two hundred kilos of paper! The money from selling it has bought new books for the library. Mrs Dumitru, the science teacher, says that we should also bring our own bottles to school, because plastic is bad for the environment. Some pupils think the project is too much work, but most of us have become more careful. Next year we are going to plant trees in the school yard."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.7.t02.q1",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t02.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: How many bins are there in every classroom?",
+     "en": "Choose the correct answer: How many bins are there in every classroom?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "two",
+       "en": "two"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "four",
+       "en": "four"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "three",
+       "en": "three"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.7.t02.q2",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t02.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What did the school buy with the money from the paper?",
+     "en": "Choose the correct answer: What did the school buy with the money from the paper?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "new books",
+       "en": "new books"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "plants",
+       "en": "plants"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "bins",
+       "en": "bins"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.7.t02.q3",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t02.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The school collected paper last month.",
+     "en": "True or false? The school collected paper last month."
+    },
+    "correct": true
+   },
+   {
+    "id": "item.eng.read.7.t02.q4",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t02.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? All the pupils think the project is too much work.",
+     "en": "True or false? All the pupils think the project is too much work."
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.7.t03",
+  "type": "read-and-answer",
+  "skillId": "eng.read.7",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.7",
+  "provenance": {
+   "id": "prov.item.eng.read.7.t03",
+   "kind": "item",
+   "title": "Item item.eng.read.7.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "I have always liked eating, but I have never been good at cooking. Last month my grandfather decided to teach me. He says that every young person should know how to make at least three dishes. We started with an omelette. I broke two eggs on the floor, but my grandfather only laughed. Then we made a vegetable soup. I have made it four times since then, and it gets better every time. Yesterday I cooked dinner for my parents for the first time. They said it was delicious, although I think I put too much salt in it. Next weekend I am going to try a chocolate cake. I hope that I won't burn it!",
+   "en": "I have always liked eating, but I have never been good at cooking. Last month my grandfather decided to teach me. He says that every young person should know how to make at least three dishes. We started with an omelette. I broke two eggs on the floor, but my grandfather only laughed. Then we made a vegetable soup. I have made it four times since then, and it gets better every time. Yesterday I cooked dinner for my parents for the first time. They said it was delicious, although I think I put too much salt in it. Next weekend I am going to try a chocolate cake. I hope that I won't burn it!"
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.7.t03.q1",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t03.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Who is teaching the narrator to cook?",
+     "en": "Choose the correct answer: Who is teaching the narrator to cook?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a teacher",
+       "en": "a teacher"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a friend",
+       "en": "a friend"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "the narrator's grandfather",
+       "en": "the narrator's grandfather"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.7.t03.q2",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t03.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What did the narrator cook yesterday?",
+     "en": "Choose the correct answer: What did the narrator cook yesterday?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "dinner for the parents",
+       "en": "dinner for the parents"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "an omelette",
+       "en": "an omelette"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a chocolate cake",
+       "en": "a chocolate cake"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.7.t03.q3",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t03.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The narrator is a very good cook.",
+     "en": "True or false? The narrator is a very good cook."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.7.t03.q4",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t03.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The narrator has made the soup four times.",
+     "en": "True or false? The narrator has made the soup four times."
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.7.t04",
+  "type": "read-and-answer",
+  "skillId": "eng.read.7",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.7",
+  "provenance": {
+   "id": "prov.item.eng.read.7.t04",
+   "kind": "item",
+   "title": "Item item.eng.read.7.t04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "On Tuesday I lost my phone on the bus. I realised it when I got home, and I felt terrible because all my photos and phone numbers were on it. My dad suggested that I call the bus company, so I phoned them immediately. A friendly woman said that nobody had brought a phone to the office yet, but she promised to call me if somebody found it. For two days I heard nothing, and I thought I would never see my phone again. Then, on Thursday afternoon, the woman rang. A girl had found the phone under a seat and had taken it to the office. I went there straight away and thanked the girl with a big box of chocolates. Now I never leave my phone in my pocket.",
+   "en": "On Tuesday I lost my phone on the bus. I realised it when I got home, and I felt terrible because all my photos and phone numbers were on it. My dad suggested that I call the bus company, so I phoned them immediately. A friendly woman said that nobody had brought a phone to the office yet, but she promised to call me if somebody found it. For two days I heard nothing, and I thought I would never see my phone again. Then, on Thursday afternoon, the woman rang. A girl had found the phone under a seat and had taken it to the office. I went there straight away and thanked the girl with a big box of chocolates. Now I never leave my phone in my pocket."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.7.t04.q1",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t04.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t04.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Where did the narrator lose the phone?",
+     "en": "Choose the correct answer: Where did the narrator lose the phone?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "at school",
+       "en": "at school"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "in the park",
+       "en": "in the park"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "on the bus",
+       "en": "on the bus"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.7.t04.q2",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t04.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t04.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Who found the phone?",
+     "en": "Choose the correct answer: Who found the phone?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a girl",
+       "en": "a girl"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "the bus driver",
+       "en": "the bus driver"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "the narrator's dad",
+       "en": "the narrator's dad"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.7.t04.q3",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t04.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t04.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The narrator phoned the bus company at once.",
+     "en": "True or false? The narrator phoned the bus company at once."
+    },
+    "correct": true
+   },
+   {
+    "id": "item.eng.read.7.t04.q4",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t04.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t04.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The narrator got the phone back on Tuesday.",
+     "en": "True or false? The narrator got the phone back on Tuesday."
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.7.t05",
+  "type": "read-and-answer",
+  "skillId": "eng.read.7",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.7",
+  "provenance": {
+   "id": "prov.item.eng.read.7.t05",
+   "kind": "item",
+   "title": "Item item.eng.read.7.t05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Doctors say that teenagers should sleep for at least eight hours every night, but many of us go to bed too late. My friend Radu used to stay up until midnight playing computer games. He was always tired in class, and his marks became worse. Last spring his mother talked to him, and he agreed to try a new routine. Now he turns off his computer at nine o'clock and reads for half an hour before bed. He has also started to ride his bike to school instead of going by bus. After two months, he says that he feels much better and he has more energy for football. His marks have improved too. Maybe we should all follow his example!",
+   "en": "Doctors say that teenagers should sleep for at least eight hours every night, but many of us go to bed too late. My friend Radu used to stay up until midnight playing computer games. He was always tired in class, and his marks became worse. Last spring his mother talked to him, and he agreed to try a new routine. Now he turns off his computer at nine o'clock and reads for half an hour before bed. He has also started to ride his bike to school instead of going by bus. After two months, he says that he feels much better and he has more energy for football. His marks have improved too. Maybe we should all follow his example!"
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.7.t05.q1",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t05.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t05.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: How many hours of sleep should teenagers have?",
+     "en": "Choose the correct answer: How many hours of sleep should teenagers have?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "at least five",
+       "en": "at least five"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "ten or more",
+       "en": "ten or more"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "at least eight",
+       "en": "at least eight"
+      }
+     }
+    ],
+    "correctId": "c"
+   },
+   {
+    "id": "item.eng.read.7.t05.q2",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t05.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t05.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What does Radu do at nine o'clock now?",
+     "en": "Choose the correct answer: What does Radu do at nine o'clock now?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "He turns off his computer.",
+       "en": "He turns off his computer."
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "He plays football.",
+       "en": "He plays football."
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "He rides his bike.",
+       "en": "He rides his bike."
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.7.t05.q3",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t05.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t05.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Radu used to go to bed early.",
+     "en": "True or false? Radu used to go to bed early."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.7.t05.q4",
+    "skillId": "eng.read.7",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.7.t05.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.7.t05.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Radu's marks have improved.",
+     "en": "True or false? Radu's marks have improved."
+    },
+    "correct": true
+   }
+  ]
+ }
+]

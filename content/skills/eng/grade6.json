@@ -1,0 +1,605 @@
+[
+ {
+  "id": "eng.vocab.topics.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.1"
+   }
+  ],
+  "title": {
+   "ro": "Vocabular: hobby-uri, meserii, oraș, transport, vreme, călătorii",
+   "en": "Vocabulary: hobbies, jobs, town, transport, weather, travel"
+  },
+  "prerequisites": [
+   "eng.vocab.topics.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-vocab",
+    "params": {
+     "topics": [
+      "hobbies",
+      "jobs",
+      "town",
+      "transport",
+      "weather",
+      "travel"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.vocab.topics.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.vocab.topics.6",
+   "kind": "data",
+   "title": "Skill eng.vocab.topics.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.past.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Past simple: verbe regulate și neregulate",
+   "en": "Past simple: regular and irregular verbs"
+  },
+  "prerequisites": [
+   "eng.grammar.present.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-verb",
+    "params": {
+     "mode": "past"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.past.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.past.6",
+   "kind": "data",
+   "title": "Skill eng.grammar.past.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.irregular.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Verbe neregulate frecvente (forma de trecut)",
+   "en": "Common irregular verbs (past simple)"
+  },
+  "prerequisites": [
+   "eng.grammar.past.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-irregular",
+    "params": {
+     "set": "A",
+     "ask": [
+      "past"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.irregular.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.irregular.6",
+   "kind": "data",
+   "title": "Skill eng.grammar.irregular.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.pastq.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Întrebări și negații la past simple",
+   "en": "Past simple questions and negatives"
+  },
+  "prerequisites": [
+   "eng.grammar.past.6",
+   "eng.grammar.questions.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-verb",
+    "params": {
+     "mode": "past-q"
+    }
+   },
+   {
+    "generator": "eng-gim-order",
+    "params": {
+     "grades": [
+      6
+     ],
+     "kinds": [
+      "q",
+      "n"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.pastq.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.pastq.6",
+   "kind": "data",
+   "title": "Skill eng.grammar.pastq.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.freq.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Adverbe de frecvență",
+   "en": "Adverbs of frequency"
+  },
+  "prerequisites": [
+   "eng.grammar.present.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "freq"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.freq.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.freq.6",
+   "kind": "data",
+   "title": "Skill eng.grammar.freq.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.pastcont.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Past continuous",
+   "en": "Past continuous"
+  },
+  "prerequisites": [
+   "eng.grammar.continuous.5",
+   "eng.grammar.past.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-verb",
+    "params": {
+     "mode": "past-cont"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.pastcont.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.pastcont.6",
+   "kind": "data",
+   "title": "Skill eng.grammar.pastcont.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.compar.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Comparativ și superlativ",
+   "en": "Comparatives and superlatives"
+  },
+  "prerequisites": [
+   "eng.vocab.topics.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-adj",
+    "params": {
+     "mode": "mix"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.compar.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.compar.6",
+   "kind": "data",
+   "title": "Skill eng.grammar.compar.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.quantity.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Numărabil și nenumărabil: some, any, much, many",
+   "en": "Countable and uncountable: some, any, much, many"
+  },
+  "prerequisites": [
+   "eng.grammar.articles.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-noun",
+    "params": {
+     "mode": "countable"
+    }
+   },
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "quantity"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.quantity.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.quantity.6",
+   "kind": "data",
+   "title": "Skill eng.grammar.quantity.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.future.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Viitorul: will și be going to",
+   "en": "Future: will and be going to"
+  },
+  "prerequisites": [
+   "eng.grammar.present.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-verb",
+    "params": {
+     "mode": "future"
+    }
+   },
+   {
+    "generator": "eng-gim-order",
+    "params": {
+     "grades": [
+      6
+     ],
+     "kinds": [
+      "s"
+     ]
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.future.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.future.6",
+   "kind": "data",
+   "title": "Skill eng.grammar.future.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.grammar.modals.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.2"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "4.2"
+   }
+  ],
+  "title": {
+   "ro": "Verbe modale: can, must, should",
+   "en": "Modal verbs: can, must, should"
+  },
+  "prerequisites": [
+   "eng.grammar.present.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "modals-basic"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.grammar.modals.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.grammar.modals.6",
+   "kind": "data",
+   "title": "Skill eng.grammar.modals.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.read.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Citim texte (100-105 de cuvinte)",
+   "en": "Reading texts (100-105 words)"
+  },
+  "prerequisites": [
+   "eng.read.short.5",
+   "eng.grammar.past.6"
+  ],
+  "itemSources": [
+   {
+    "bank": "eng/gim6.json"
+   }
+  ],
+  "explanations": [
+   "exp.eng.read.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.read.6",
+   "kind": "data",
+   "title": "Skill eng.read.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "eng.func.directions.6",
+  "subject": "eng",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "1.1"
+   },
+   {
+    "programa": "LM1-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Limbaj funcțional: direcții în oraș",
+   "en": "Functional language: asking for and giving directions"
+  },
+  "prerequisites": [
+   "eng.grammar.prep.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "eng-gim-quiz",
+    "params": {
+     "topic": "directions"
+    }
+   }
+  ],
+  "explanations": [
+   "exp.eng.func.directions.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.eng.func.directions.6",
+   "kind": "data",
+   "title": "Skill eng.func.directions.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Limba modernă 1, clasele V-VIII, 2017); content in our own words"
+  }
+ }
+]

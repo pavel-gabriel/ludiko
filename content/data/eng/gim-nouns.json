@@ -1,0 +1,577 @@
+{
+ "provenance": {
+  "id": "prov.data.eng.gim-nouns",
+  "kind": "data",
+  "title": "Ludiko list of English nouns: plurals, articles, uncountable nouns",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Standard noun forms (facts) compiled by us; Romanian glosses are our own. Awaiting review by an English teacher."
+ },
+ "countable": [
+  {
+   "s": "book",
+   "p": "books",
+   "g": "s",
+   "ro": "carte",
+   "art": "a"
+  },
+  {
+   "s": "pen",
+   "p": "pens",
+   "g": "s",
+   "ro": "pix",
+   "art": "a"
+  },
+  {
+   "s": "table",
+   "p": "tables",
+   "g": "s",
+   "ro": "masă",
+   "art": "a"
+  },
+  {
+   "s": "cat",
+   "p": "cats",
+   "g": "s",
+   "ro": "pisică",
+   "art": "a"
+  },
+  {
+   "s": "dog",
+   "p": "dogs",
+   "g": "s",
+   "ro": "câine",
+   "art": "a"
+  },
+  {
+   "s": "ruler",
+   "p": "rulers",
+   "g": "s",
+   "ro": "riglă",
+   "art": "a"
+  },
+  {
+   "s": "chair",
+   "p": "chairs",
+   "g": "s",
+   "ro": "scaun",
+   "art": "a"
+  },
+  {
+   "s": "bag",
+   "p": "bags",
+   "g": "s",
+   "ro": "geantă",
+   "art": "a"
+  },
+  {
+   "s": "flower",
+   "p": "flowers",
+   "g": "s",
+   "ro": "floare",
+   "art": "a"
+  },
+  {
+   "s": "school",
+   "p": "schools",
+   "g": "s",
+   "ro": "școală",
+   "art": "a"
+  },
+  {
+   "s": "friend",
+   "p": "friends",
+   "g": "s",
+   "ro": "prieten",
+   "art": "a"
+  },
+  {
+   "s": "girl",
+   "p": "girls",
+   "g": "s",
+   "ro": "fată",
+   "art": "a"
+  },
+  {
+   "s": "car",
+   "p": "cars",
+   "g": "s",
+   "ro": "mașină",
+   "art": "a"
+  },
+  {
+   "s": "house",
+   "p": "houses",
+   "g": "s",
+   "ro": "casă",
+   "art": "a"
+  },
+  {
+   "s": "apple",
+   "p": "apples",
+   "g": "s",
+   "ro": "măr",
+   "art": "an"
+  },
+  {
+   "s": "egg",
+   "p": "eggs",
+   "g": "s",
+   "ro": "ou",
+   "art": "an"
+  },
+  {
+   "s": "orange",
+   "p": "oranges",
+   "g": "s",
+   "ro": "portocală",
+   "art": "an"
+  },
+  {
+   "s": "umbrella",
+   "p": "umbrellas",
+   "g": "s",
+   "ro": "umbrelă",
+   "art": "an"
+  },
+  {
+   "s": "elephant",
+   "p": "elephants",
+   "g": "s",
+   "ro": "elefant",
+   "art": "an"
+  },
+  {
+   "s": "hour",
+   "p": "hours",
+   "g": "s",
+   "ro": "oră",
+   "art": "an"
+  },
+  {
+   "s": "university",
+   "p": "universities",
+   "g": "ies",
+   "ro": "universitate",
+   "art": "a"
+  },
+  {
+   "s": "uniform",
+   "p": "uniforms",
+   "g": "s",
+   "ro": "uniformă",
+   "art": "a"
+  },
+  {
+   "s": "bus",
+   "p": "buses",
+   "g": "es",
+   "ro": "autobuz",
+   "art": "a"
+  },
+  {
+   "s": "box",
+   "p": "boxes",
+   "g": "es",
+   "ro": "cutie",
+   "art": "a"
+  },
+  {
+   "s": "watch",
+   "p": "watches",
+   "g": "es",
+   "ro": "ceas de mână",
+   "art": "a"
+  },
+  {
+   "s": "dish",
+   "p": "dishes",
+   "g": "es",
+   "ro": "farfurie",
+   "art": "a"
+  },
+  {
+   "s": "class",
+   "p": "classes",
+   "g": "es",
+   "ro": "clasă",
+   "art": "a"
+  },
+  {
+   "s": "glass",
+   "p": "glasses",
+   "g": "es",
+   "ro": "pahar",
+   "art": "a"
+  },
+  {
+   "s": "brush",
+   "p": "brushes",
+   "g": "es",
+   "ro": "perie",
+   "art": "a"
+  },
+  {
+   "s": "church",
+   "p": "churches",
+   "g": "es",
+   "ro": "biserică",
+   "art": "a"
+  },
+  {
+   "s": "bench",
+   "p": "benches",
+   "g": "es",
+   "ro": "bancă (în parc)",
+   "art": "a"
+  },
+  {
+   "s": "fox",
+   "p": "foxes",
+   "g": "es",
+   "ro": "vulpe",
+   "art": "a"
+  },
+  {
+   "s": "sandwich",
+   "p": "sandwiches",
+   "g": "es",
+   "ro": "sandviș",
+   "art": "a"
+  },
+  {
+   "s": "city",
+   "p": "cities",
+   "g": "ies",
+   "ro": "oraș",
+   "art": "a"
+  },
+  {
+   "s": "baby",
+   "p": "babies",
+   "g": "ies",
+   "ro": "bebeluș",
+   "art": "a"
+  },
+  {
+   "s": "country",
+   "p": "countries",
+   "g": "ies",
+   "ro": "țară",
+   "art": "a"
+  },
+  {
+   "s": "story",
+   "p": "stories",
+   "g": "ies",
+   "ro": "poveste",
+   "art": "a"
+  },
+  {
+   "s": "family",
+   "p": "families",
+   "g": "ies",
+   "ro": "familie",
+   "art": "a"
+  },
+  {
+   "s": "party",
+   "p": "parties",
+   "g": "ies",
+   "ro": "petrecere",
+   "art": "a"
+  },
+  {
+   "s": "lady",
+   "p": "ladies",
+   "g": "ies",
+   "ro": "doamnă",
+   "art": "a"
+  },
+  {
+   "s": "berry",
+   "p": "berries",
+   "g": "ies",
+   "ro": "fruct de pădure",
+   "art": "a"
+  },
+  {
+   "s": "diary",
+   "p": "diaries",
+   "g": "ies",
+   "ro": "jurnal",
+   "art": "a"
+  },
+  {
+   "s": "boy",
+   "p": "boys",
+   "g": "ys",
+   "ro": "băiat",
+   "art": "a"
+  },
+  {
+   "s": "day",
+   "p": "days",
+   "g": "ys",
+   "ro": "zi",
+   "art": "a"
+  },
+  {
+   "s": "toy",
+   "p": "toys",
+   "g": "ys",
+   "ro": "jucărie",
+   "art": "a"
+  },
+  {
+   "s": "key",
+   "p": "keys",
+   "g": "ys",
+   "ro": "cheie",
+   "art": "a"
+  },
+  {
+   "s": "monkey",
+   "p": "monkeys",
+   "g": "ys",
+   "ro": "maimuță",
+   "art": "a"
+  },
+  {
+   "s": "holiday",
+   "p": "holidays",
+   "g": "ys",
+   "ro": "vacanță",
+   "art": "a"
+  },
+  {
+   "s": "leaf",
+   "p": "leaves",
+   "g": "ves",
+   "ro": "frunză",
+   "art": "a"
+  },
+  {
+   "s": "knife",
+   "p": "knives",
+   "g": "ves",
+   "ro": "cuțit",
+   "art": "a"
+  },
+  {
+   "s": "wolf",
+   "p": "wolves",
+   "g": "ves",
+   "ro": "lup",
+   "art": "a"
+  },
+  {
+   "s": "shelf",
+   "p": "shelves",
+   "g": "ves",
+   "ro": "raft",
+   "art": "a"
+  },
+  {
+   "s": "life",
+   "p": "lives",
+   "g": "ves",
+   "ro": "viață",
+   "art": "a"
+  },
+  {
+   "s": "wife",
+   "p": "wives",
+   "g": "ves",
+   "ro": "soție",
+   "art": "a"
+  },
+  {
+   "s": "thief",
+   "p": "thieves",
+   "g": "ves",
+   "ro": "hoț",
+   "art": "a"
+  },
+  {
+   "s": "loaf",
+   "p": "loaves",
+   "g": "ves",
+   "ro": "franzelă",
+   "art": "a"
+  },
+  {
+   "s": "potato",
+   "p": "potatoes",
+   "g": "oes",
+   "ro": "cartof",
+   "art": "a"
+  },
+  {
+   "s": "tomato",
+   "p": "tomatoes",
+   "g": "oes",
+   "ro": "roșie",
+   "art": "a"
+  },
+  {
+   "s": "hero",
+   "p": "heroes",
+   "g": "oes",
+   "ro": "erou",
+   "art": "a"
+  },
+  {
+   "s": "photo",
+   "p": "photos",
+   "g": "os",
+   "ro": "fotografie",
+   "art": "a"
+  },
+  {
+   "s": "piano",
+   "p": "pianos",
+   "g": "os",
+   "ro": "pian",
+   "art": "a"
+  },
+  {
+   "s": "radio",
+   "p": "radios",
+   "g": "os",
+   "ro": "radio",
+   "art": "a"
+  },
+  {
+   "s": "zoo",
+   "p": "zoos",
+   "g": "os",
+   "ro": "grădină zoologică",
+   "art": "a"
+  },
+  {
+   "s": "man",
+   "p": "men",
+   "g": "irr",
+   "ro": "bărbat",
+   "art": "a"
+  },
+  {
+   "s": "woman",
+   "p": "women",
+   "g": "irr",
+   "ro": "femeie",
+   "art": "a"
+  },
+  {
+   "s": "child",
+   "p": "children",
+   "g": "irr",
+   "ro": "copil",
+   "art": "a"
+  },
+  {
+   "s": "foot",
+   "p": "feet",
+   "g": "irr",
+   "ro": "labă a piciorului",
+   "art": "a"
+  },
+  {
+   "s": "tooth",
+   "p": "teeth",
+   "g": "irr",
+   "ro": "dinte",
+   "art": "a"
+  },
+  {
+   "s": "goose",
+   "p": "geese",
+   "g": "irr",
+   "ro": "gâscă",
+   "art": "a"
+  },
+  {
+   "s": "sheep",
+   "p": "sheep",
+   "g": "same",
+   "ro": "oaie",
+   "art": "a"
+  }
+ ],
+ "uncountable": [
+  {
+   "s": "water",
+   "ro": "apă"
+  },
+  {
+   "s": "milk",
+   "ro": "lapte"
+  },
+  {
+   "s": "bread",
+   "ro": "pâine"
+  },
+  {
+   "s": "rice",
+   "ro": "orez"
+  },
+  {
+   "s": "sugar",
+   "ro": "zahăr"
+  },
+  {
+   "s": "money",
+   "ro": "bani"
+  },
+  {
+   "s": "information",
+   "ro": "informații"
+  },
+  {
+   "s": "advice",
+   "ro": "sfaturi"
+  },
+  {
+   "s": "furniture",
+   "ro": "mobilă"
+  },
+  {
+   "s": "homework",
+   "ro": "temă"
+  },
+  {
+   "s": "luggage",
+   "ro": "bagaje"
+  },
+  {
+   "s": "news",
+   "ro": "știri"
+  },
+  {
+   "s": "weather",
+   "ro": "vreme"
+  },
+  {
+   "s": "music",
+   "ro": "muzică"
+  },
+  {
+   "s": "butter",
+   "ro": "unt"
+  },
+  {
+   "s": "traffic",
+   "ro": "trafic"
+  },
+  {
+   "s": "knowledge",
+   "ro": "cunoștințe"
+  },
+  {
+   "s": "hair",
+   "ro": "păr"
+  }
+ ]
+}
