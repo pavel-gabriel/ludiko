@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { localize, type CardContent, type Item, type ItemResult } from '@/engine/types';
 import ReadAloudButton from '@/ui/speech/ReadAloudButton';
+import { itemEnglishSpeech } from '@/ui/speech/englishSpeech';
 import VisualSlot from './VisualSlot';
 
 /** Text + optional visual of one card/option */
@@ -60,6 +61,8 @@ export default function ItemShell({ item, result, onContinue, correctAnswer, hin
   const promptId = useId();
   const continueRef = useRef<HTMLButtonElement>(null);
   const wrong = result !== null && !result.correct;
+  // English subject, grades 0-II: «…» in the prompt are spoken with an English voice (docs/ENGINE.md)
+  const englishText = itemEnglishSpeech(item.skillId, localize(item.prompt, i18n.language));
 
   useEffect(() => {
     if (wrong) continueRef.current?.focus();
@@ -79,6 +82,7 @@ export default function ItemShell({ item, result, onContinue, correctAnswer, hin
           {item.audio && !hideAudio && <AudioButton src={item.audio.src} />}
         </div>
         <ReadAloudButton text={localize(item.prompt, i18n.language)} />
+        {englishText && <ReadAloudButton text={englishText} lang="en" />}
         {item.visual && <VisualSlot spec={item.visual} />}
         {hint && <p className="text-sm font-semibold text-gray-500">{hint}</p>}
       </div>

@@ -1,0 +1,426 @@
+[
+  {
+    "id": "exp.eng.numbers.100.2",
+    "skillId": "eng.numbers.100.2",
+    "title": {
+      "ro": "Zeci în engleză",
+      "en": "Tens in English"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Zecile sunt «twenty», «thirty», «forty», «fifty», «sixty», «seventy», «eighty», «ninety». Pentru 100 spunem «one hundred».",
+          "en": "The tens are «twenty», «thirty», «forty», «fifty», «sixty», «seventy», «eighty» and «ninety». 100 is «one hundred»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔟",
+          "count": 10
+        }
+      },
+      {
+        "text": {
+          "ro": "Numerele ca 24 se spun în două părți, cu liniuță: «twenty-four». Mai întâi zecile, apoi unitatea.",
+          "en": "Numbers like 24 have two parts with a hyphen: «twenty-four». First the tens, then the ones."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 24
+        }
+      },
+      {
+        "text": {
+          "ro": "Alte exemple: 37 este «thirty-seven», 58 este «fifty-eight», 99 este «ninety-nine».",
+          "en": "More examples: 37 is «thirty-seven», 58 is «fifty-eight», 99 is «ninety-nine»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 9
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.numbers.100.2",
+      "kind": "explanation",
+      "title": "Explanation for eng.numbers.100.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.days.2",
+    "skillId": "eng.days.2",
+    "title": {
+      "ro": "Zilele săptămânii",
+      "en": "The days of the week"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "În engleză săptămâna începe cu luni: «Monday», «Tuesday», «Wednesday», «Thursday», «Friday».",
+          "en": "The week starts with «Monday», «Tuesday», «Wednesday», «Thursday» and «Friday»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📅",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Weekendul are «Saturday» (sâmbătă) și «Sunday» (duminică). Zilele se scriu cu literă mare!",
+          "en": "The weekend has «Saturday» and «Sunday». Days are written with a capital letter!"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌞",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ordinea: «Monday», «Tuesday», «Wednesday», «Thursday», «Friday», «Saturday», «Sunday». Apoi se ia de la capăt.",
+          "en": "The order is «Monday» to «Sunday», and then it starts again."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔁",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.days.2",
+      "kind": "explanation",
+      "title": "Explanation for eng.days.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.months.2",
+    "skillId": "eng.months.2",
+    "title": {
+      "ro": "Cele 12 luni și 4 anotimpuri",
+      "en": "Twelve months and four seasons"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Anotimpurile sunt «spring» (primăvara), «summer» (vara), «autumn» (toamna) și «winter» (iarna).",
+          "en": "The seasons are «spring», «summer», «autumn» and «winter»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌷",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Lunile de iarnă: «December», «January», «February». Lunile de primăvară: «March», «April», «May».",
+          "en": "Winter months: «December», «January» and «February». Spring months: «March», «April» and «May»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⛄",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Vara: «June», «July», «August». Toamna: «September», «October», «November». Lunile se scriu cu literă mare.",
+          "en": "Summer: «June», «July», «August». Autumn: «September», «October», «November». Months start with a capital letter."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍂",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.months.2",
+      "kind": "explanation",
+      "title": "Explanation for eng.months.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.food.2",
+    "skillId": "eng.food.2",
+    "title": {
+      "ro": "La masă",
+      "en": "At the table"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fructe: «grapes» (struguri), «pear» (pară), «cherry» (cireașă), «strawberry» (căpșună), «lemon» (lămâie).",
+          "en": "Fruit: «grapes», «pear», «cherry», «strawberry» and «lemon»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍓",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Legume și mâncare: «tomato» (roșie), «carrot» (morcov), «potato» (cartof), «rice» (orez), «soup» (supă).",
+          "en": "«Tomato», «carrot», «potato», «rice» and «soup»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥕",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Băuturi și dulciuri: «juice», «tea», «chocolate», «biscuit», «sweets», și «sandwich».",
+          "en": "Drinks and treats: «juice», «tea», «chocolate», «biscuit», «sweets» and «sandwich»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧃",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.food.2",
+      "kind": "explanation",
+      "title": "Explanation for eng.food.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.prepositions.2",
+    "skillId": "eng.prepositions.2",
+    "title": {
+      "ro": "Unde este pisica?",
+      "en": "Where is the cat?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "«in» înseamnă „în”, «on» înseamnă „pe”, «under» înseamnă „sub”. «The cat is under the table.»",
+          "en": "«in», «on» and «under» tell us where things are. «The cat is under the table.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐱",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "«behind» înseamnă „în spatele”, «in front of» înseamnă „în fața”, «next to» înseamnă „lângă”, «between» înseamnă „între”.",
+          "en": "«behind», «in front of», «next to» and «between»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📦",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Citește propoziția: «The ball is in the box.» Mingea este în cutie. Alege cuvântul care arată unde este lucrul.",
+          "en": "Read the sentence: «The ball is in the box.» Choose the word that tells you where it is."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚽",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.prepositions.2",
+      "kind": "explanation",
+      "title": "Explanation for eng.prepositions.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.likes.2",
+    "skillId": "eng.likes.2",
+    "title": {
+      "ro": "Ce îți place?",
+      "en": "What do you like?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "«I like pizza.» înseamnă „Îmi place pizza.”. După «I», «you», «we» și «they» folosim «like».",
+          "en": "«I like pizza.» After «I», «you», «we» and «they» we use «like»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍕",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "După «he» și «she» folosim «likes»: «She likes apples.» Nu uita litera «s»!",
+          "en": "After «he» and «she» we use «likes»: «She likes apples.» Do not forget the «s»!"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru „nu”: «I don't like soup.» și «She doesn't like fish.» Întrebare: «Do you like cheese?» sau «Does he like cats?»",
+          "en": "For „no”: «I don't like soup.» and «She doesn't like fish.» Questions: «Do you like cheese?» and «Does he like cats?»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧀",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.likes.2",
+      "kind": "explanation",
+      "title": "Explanation for eng.likes.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.tobe.2",
+    "skillId": "eng.tobe.2",
+    "title": {
+      "ro": "Verbul „a fi” în engleză",
+      "en": "The verb \"to be\""
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cu «I» folosim «am»: «I am seven.» Cu «you», «we», «they» folosim «are»: «You are my friend.»",
+          "en": "With «I» we use «am»: «I am seven.» With «you», «we» and «they» we use «are»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🙋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu «he», «she» și «it» folosim «is»: «He is my brother.» «It is a big dog.»",
+          "en": "With «he», «she» and «it» we use «is»: «He is my brother.» «It is a big dog.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👦",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru mai mulți (plural) folosim «are»: «The apples are red.» «Ben and Mia are in the garden.»",
+          "en": "For more than one we use «are»: «The apples are red.» «Ben and Mia are in the garden.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 2
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.tobe.2",
+      "kind": "explanation",
+      "title": "Explanation for eng.tobe.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.can.2",
+    "skillId": "eng.can.2",
+    "title": {
+      "ro": "Pot / nu pot",
+      "en": "I can / I can't"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "«I can swim.» înseamnă „Pot să înot.”. «can» este la fel pentru toate persoanele: «He can dance.»",
+          "en": "«I can swim.» «can» stays the same for everyone: «He can dance.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏊",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru „nu pot” spunem «can't»: «A dog can't fly.» Verbul după «can» nu se schimbă.",
+          "en": "For „cannot” we say «can't»: «A dog can't fly.» The verb after «can» does not change."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐶",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Întrebarea începe cu «Can»: «Can you run fast?» Răspunzi «Yes, I can.» sau «No, I can't.»",
+          "en": "A question starts with «Can»: «Can you run fast?» You answer «Yes, I can.» or «No, I can't.»"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏃",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.can.2",
+      "kind": "explanation",
+      "title": "Explanation for eng.can.2",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  }
+]

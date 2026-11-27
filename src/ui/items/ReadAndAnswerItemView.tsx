@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { checkResponse } from '@/engine/items/check';
 import { localize, type ItemResponse, type ItemResult, type ReadAndAnswerItem } from '@/engine/types';
 import ReadAloudButton from '@/ui/speech/ReadAloudButton';
+import { isEngSkillId } from '@/ui/speech/englishSpeech';
 import ChoiceItemView from './ChoiceItemView';
 import TrueFalseItemView from './TrueFalseItemView';
 import VisualSlot from './VisualSlot';
@@ -77,7 +78,7 @@ export default function ReadAndAnswerItemView({
             {passage}
           </p>
           <div className="mt-2 flex justify-end empty:hidden">
-            <ReadAloudButton text={passage} />
+            <ReadAloudButton text={passage} lang={isEngSkillId(item.skillId) ? 'en' : undefined} />
           </div>
         </div>
       </section>

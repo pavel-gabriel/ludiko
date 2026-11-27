@@ -1,0 +1,426 @@
+[
+  {
+    "id": "exp.eng.greet.1",
+    "skillId": "eng.greet.1",
+    "title": {
+      "ro": "Mă prezint în engleză",
+      "en": "Introducing myself"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Întrebi «What's your name?» (Cum te cheamă?). Răspunzi «My name is Ana.» (Mă numesc Ana.).",
+          "en": "You ask «What's your name?» and answer «My name is Ana.»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🙋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru vârstă întrebi «How old are you?» (Câți ani ai?). Răspunzi «I'm seven.» (Am șapte ani.).",
+          "en": "For age you ask «How old are you?» and answer «I'm seven.»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎂",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Întrebi «How are you?» (Ce mai faci?) și răspunzi «I'm fine, thank you.». După-amiaza saluți cu «Good afternoon!».",
+          "en": "You ask «How are you?» and answer «I'm fine, thank you.». In the afternoon you say «Good afternoon!»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "😊",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.greet.1",
+      "kind": "explanation",
+      "title": "Explanation for eng.greet.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.clothes.1",
+    "skillId": "eng.clothes.1",
+    "title": {
+      "ro": "Ce port astăzi?",
+      "en": "What am I wearing today?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cămașa este «shirt», pantalonii sunt «trousers», rochia este «dress», iar pantofii sunt «shoes».",
+          "en": "«Shirt», «trousers», «dress» and «shoes»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👕",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pălăria este «hat», șapca este «cap», șosetele sunt «socks», iar ghetele sunt «boots».",
+          "en": "«Hat», «cap», «socks» and «boots»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧢",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Iarna purtăm «coat» (palton), «scarf» (fular) și «gloves» (mănuși). Ochelarii sunt «glasses».",
+          "en": "In winter we wear a «coat», a «scarf» and «gloves». «Glasses» help us see."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧣",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.clothes.1",
+      "kind": "explanation",
+      "title": "Explanation for eng.clothes.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.weather.1",
+    "skillId": "eng.weather.1",
+    "title": {
+      "ro": "Cum este vremea?",
+      "en": "What is the weather like?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Când sunt nori sau soare spunem «cloudy» (înnorat) sau «sunny» (însorit).",
+          "en": "We say «cloudy» or «sunny»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "☀️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Când plouă este «rainy», când bate vântul este «windy», iar când ninge este «snowy».",
+          "en": "«Rainy», «windy» and «snowy»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌧️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai există «stormy» (cu furtună), «cold» (frig) și «rainbow» (curcubeu).",
+          "en": "There are also «stormy», «cold» and «rainbow»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌈",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.weather.1",
+      "kind": "explanation",
+      "title": "Explanation for eng.weather.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.numbers.20.1",
+    "skillId": "eng.numbers.20.1",
+    "title": {
+      "ro": "Numărăm până la douăzeci",
+      "en": "Counting to twenty"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "După «ten» urmează «eleven» și «twelve». Apoi «thirteen», «fourteen», «fifteen».",
+          "en": "After «ten» come «eleven» and «twelve», then «thirteen», «fourteen» and «fifteen»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 12
+        }
+      },
+      {
+        "text": {
+          "ro": "Continuăm cu «sixteen», «seventeen», «eighteen», «nineteen». Observă: de la 13 la 19 cuvintele se termină în «-teen».",
+          "en": "Then «sixteen», «seventeen», «eighteen» and «nineteen». Numbers 13 to 19 end in «-teen»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 16
+        }
+      },
+      {
+        "text": {
+          "ro": "Numărul 20 este «twenty». Atenție la «thirteen» (13) și «thirty» (30): sună aproape la fel, dar nu sunt la fel!",
+          "en": "20 is «twenty». Be careful: «thirteen» and «thirty» sound almost the same but are different numbers."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⭐",
+          "count": 20
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.numbers.20.1",
+      "kind": "explanation",
+      "title": "Explanation for eng.numbers.20.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.actions.1",
+    "skillId": "eng.actions.1",
+    "title": {
+      "ro": "Ce face el?",
+      "en": "What is he doing?"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "A alerga este «run», a înota este «swim», a merge pe jos este «walk», iar a zbura este «fly».",
+          "en": "«Run», «swim», «walk» and «fly»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏃",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "A dormi este «sleep», a bea este «drink», a plânge este «cry», iar a râde este «laugh».",
+          "en": "«Sleep», «drink», «cry» and «laugh»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "😴",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "A cânta este «sing», a dansa este «dance», a scrie este «write», a desena este «draw», iar a bate din palme este «clap».",
+          "en": "«Sing», «dance», «write», «draw» and «clap»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💃",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.actions.1",
+      "kind": "explanation",
+      "title": "Explanation for eng.actions.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.school.1",
+    "skillId": "eng.school.1",
+    "title": {
+      "ro": "În ghiozdanul meu",
+      "en": "In my school bag"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Cartea este «book», pixul este «pen», creionul este «pencil», iar rigla este «ruler».",
+          "en": "«Book», «pen», «pencil» and «ruler»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📖",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ghiozdanul este «bag», foarfecele este «scissors», iar hârtia este «paper».",
+          "en": "«Bag», «scissors» and «paper»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎒",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Școala este «school», calculatorul este «computer», globul pământesc este «globe», iar creionul colorat este «crayon».",
+          "en": "«School», «computer», «globe» and «crayon»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏫",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.school.1",
+      "kind": "explanation",
+      "title": "Explanation for eng.school.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.farm.1",
+    "skillId": "eng.farm.1",
+    "title": {
+      "ro": "La fermă și la zoo",
+      "en": "On the farm and at the zoo"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "La fermă trăiesc «pig» (porc), «cow» (vacă), «sheep» (oaie) și «hen» (găină).",
+          "en": "On the farm live a «pig», a «cow», a «sheep» and a «hen»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐮",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "La zoo vezi «elephant», «lion», «monkey», «tiger» și «giraffe».",
+          "en": "At the zoo you see an «elephant», a «lion», a «monkey», a «tiger» and a «giraffe»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦁",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai sunt «bear» (urs), «zebra», «snake» (șarpe), «owl» (bufniță) și «penguin» (pinguin). Care îți place cel mai mult?",
+          "en": "Also «bear», «zebra», «snake», «owl» and «penguin». Which one do you like best?"
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐧",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.farm.1",
+      "kind": "explanation",
+      "title": "Explanation for eng.farm.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  },
+  {
+    "id": "exp.eng.house.1",
+    "skillId": "eng.house.1",
+    "title": {
+      "ro": "Casa mea",
+      "en": "My house"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Casa este «house», ușa este «door», iar fereastra este «window».",
+          "en": "«House», «door» and «window»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Patul este «bed», scaunul este «chair», canapeaua este «sofa», iar cada este «bath».",
+          "en": "«Bed», «chair», «sofa» and «bath»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🛏️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai sunt «TV» (televizor), «lamp» (veioză), «phone» (telefon), «key» (cheie) și «clock» (ceas de perete).",
+          "en": "Also «TV», «lamp», «phone», «key» and «clock»."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔑",
+          "count": 1
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.eng.house.1",
+      "kind": "explanation",
+      "title": "Explanation for eng.house.1",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review (English teacher)"
+    }
+  }
+]

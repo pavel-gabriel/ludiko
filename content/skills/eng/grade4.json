@@ -1,0 +1,467 @@
+[
+  {
+    "id": "eng.time.4",
+    "subject": "eng",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Ora exactă: quarter past, quarter to, five past",
+      "en": "Telling the time: quarters and minutes"
+    },
+    "prerequisites": [
+      "eng.time.3"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-time",
+        "params": {
+          "level": 4,
+          "kinds": [
+            "clock-to-text",
+            "text-to-clock",
+            "text-to-digital"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.time.4"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.time.4",
+      "kind": "data",
+      "title": "Skill eng.time.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.present.4",
+    "subject": "eng",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Prezentul simplu: negativ și întrebări cu do / does",
+      "en": "Simple present: don't, doesn't, do, does"
+    },
+    "prerequisites": [
+      "eng.present.3"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-grammar",
+        "params": {
+          "topics": [
+            "present"
+          ],
+          "grades": [
+            4,
+            4
+          ],
+          "kinds": [
+            "gap",
+            "translate",
+            "tf",
+            "order"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.present.4"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.present.4",
+      "kind": "data",
+      "title": "Skill eng.present.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.continuous.4",
+    "subject": "eng",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Ce fac acum? Present continuous",
+      "en": "What are they doing now? Present continuous"
+    },
+    "prerequisites": [
+      "eng.present.4",
+      "eng.actions.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-grammar",
+        "params": {
+          "topics": [
+            "continuous"
+          ],
+          "grades": [
+            4,
+            4
+          ],
+          "kinds": [
+            "gap",
+            "translate",
+            "tf",
+            "order"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.continuous.4"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.continuous.4",
+      "kind": "data",
+      "title": "Skill eng.continuous.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.questions.4",
+    "subject": "eng",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Întrebări cu What, Where, Who, When, How",
+      "en": "Question words"
+    },
+    "prerequisites": [
+      "eng.tobe.2",
+      "eng.numbers.100.2"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-grammar",
+        "params": {
+          "topics": [
+            "questions"
+          ],
+          "grades": [
+            4,
+            4
+          ],
+          "kinds": [
+            "gap",
+            "translate",
+            "tf",
+            "order"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.questions.4"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.questions.4",
+      "kind": "data",
+      "title": "Skill eng.questions.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.adjectives.4",
+    "subject": "eng",
+    "grade": 4,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Cuvinte opuse: big / small, hot / cold",
+      "en": "Opposites: big and small, hot and cold"
+    },
+    "prerequisites": [
+      "eng.havegot.3"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-grammar",
+        "params": {
+          "topics": [
+            "opposites"
+          ],
+          "grades": [
+            4,
+            4
+          ],
+          "kinds": [
+            "gap"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.adjectives.4"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.adjectives.4",
+      "kind": "data",
+      "title": "Skill eng.adjectives.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.jobs.4",
+    "subject": "eng",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Meserii și locuri din oraș în engleză",
+      "en": "Jobs and places in town"
+    },
+    "prerequisites": [
+      "eng.articles.3",
+      "eng.farm.1"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-vocab",
+        "params": {
+          "topics": [
+            "jobs",
+            "places"
+          ],
+          "kinds": [
+            "picture-to-word",
+            "word-to-picture",
+            "ro-to-en",
+            "en-to-ro",
+            "odd",
+            "match",
+            "sort"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.jobs.4"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.jobs.4",
+      "kind": "data",
+      "title": "Skill eng.jobs.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.wordorder.4",
+    "subject": "eng",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Propoziții mai lungi: așezăm cuvintele",
+      "en": "Longer sentences: word order"
+    },
+    "prerequisites": [
+      "eng.wordorder.3",
+      "eng.present.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-grammar",
+        "params": {
+          "topics": [
+            "tobe",
+            "can",
+            "likes",
+            "prepositions",
+            "havegot",
+            "present",
+            "daily",
+            "plurals",
+            "articles",
+            "continuous",
+            "questions"
+          ],
+          "grades": [
+            3,
+            4
+          ],
+          "kinds": [
+            "order"
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.wordorder.4"
+    ],
+    "masteryCheck": {
+      "items": 5,
+      "minCorrect": 4
+    },
+    "provenance": {
+      "id": "prov.skill.eng.wordorder.4",
+      "kind": "data",
+      "title": "Skill eng.wordorder.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  },
+  {
+    "id": "eng.reading.4",
+    "subject": "eng",
+    "grade": 4,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.1"
+      },
+      {
+        "programa": "LM1-CP-IV-2013",
+        "code": "3.2"
+      }
+    ],
+    "title": {
+      "ro": "Texte scurte: înțelegem și răspundem",
+      "en": "Short texts: read and answer"
+    },
+    "prerequisites": [
+      "eng.reading.3",
+      "eng.present.4"
+    ],
+    "itemSources": [
+      {
+        "generator": "eng-primary-read",
+        "params": {
+          "grades": [
+            4,
+            4
+          ]
+        }
+      }
+    ],
+    "explanations": [
+      "exp.eng.reading.4"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.eng.reading.4",
+      "kind": "data",
+      "title": "Skill eng.reading.4",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "English as a foreign language, primary (programa Limba moderna 1, CP-IV); competence codes to verify against the official programa; British spelling; original content"
+    }
+  }
+]

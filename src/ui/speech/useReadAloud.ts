@@ -15,15 +15,17 @@ function wantedPrefix(uiLang: string): 'ro' | 'en' {
   return uiLang.toLowerCase().startsWith('ro') ? 'ro' : 'en';
 }
 
-function pickVoice(synth: SpeechSynthesis, prefix: 'ro' | 'en'): SpeechSynthesisVoice | null {
+function pickVoice(synth: SpeechSynthesis, prefix: 'ro' | 'en', preferGb = false): SpeechSynthesisVoice | null {
   const voices = synth.getVoices?.() ?? [];
-  const match = (v: SpeechSynthesisVoice) => v.lang.toLowerCase().replace('_', '-').startsWith(prefix);
-  const matching = voices.filter(match);
-  return (
-    matching.find((v) => v.lang.toLowerCase().replace('_', '-') === (prefix === 'ro' ? 'ro-ro' : 'en-us')) ??
-    matching[0] ??
-    null
-  );
+  const norm = (v: SpeechSynthesisVoice) => v.lang.toLowerCase().replace('_', '-');
+  const matching = voices.filter((v) => norm(v).startsWith(prefix));
+  // Forced English (English as a subject): British first, as taught in Romanian schools
+  const wanted = prefix === 'ro' ? ['ro-ro'] : preferGb ? ['en-gb', 'en-us'] : ['en-us'];
+  for (const w of wanted) {
+    const hit = matching.find((v) => norm(v) === w);
+    if (hit) return hit;
+  }
+  return matching[0] ?? null;
 }
 
 export interface ReadAloud {
@@ -38,10 +40,11 @@ export interface ReadAloud {
  * "Citește-mi": Web Speech API wrapper. `available` is false when speechSynthesis or a matching
  * ro-RO (en-* for the English UI) voice is missing, so callers can hide their button.
  * Speech stops on unmount, so it never leaks into the next item.
+ * `forceLang: 'en'` speaks English whatever the UI language (English as a subject, see englishSpeech.ts).
  */
-export function useReadAloud(): ReadAloud {
+export function useReadAloud(forceLang?: 'en'): ReadAloud {
   const { i18n } = useTranslation();
-  const prefix = wantedPrefix(i18n.language || 'ro');
+  const prefix = forceLang ?? wantedPrefix(i18n.language || 'ro');
   const [voice, setVoice] = useState<SpeechSynthesisVoice | null>(null);
   const [speaking, setSpeaking] = useState(false);
 
@@ -51,12 +54,12 @@ export function useReadAloud(): ReadAloud {
       setVoice(null);
       return;
     }
-    const refresh = () => setVoice(pickVoice(synth, prefix));
+    const refresh = () => setVoice(pickVoice(synth, prefix, forceLang === 'en'));
     refresh();
     // Voices often load asynchronously
     synth.addEventListener?.('voiceschanged', refresh);
     return () => synth.removeEventListener?.('voiceschanged', refresh);
-  }, [prefix]);
+  }, [prefix, forceLang]);
 
   const stop = useCallback(() => {
     getSynth()?.cancel();
