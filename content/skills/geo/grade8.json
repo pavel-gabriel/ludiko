@@ -1,0 +1,591 @@
+[
+ {
+  "id": "geo.ro.position.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.1"
+   }
+  ],
+  "title": {
+   "ro": "România: poziție geografică, vecini și apartenență europeană",
+   "en": "Romania: geographic position, neighbours and European membership"
+  },
+  "prerequisites": [
+   "geo.romania.position.4",
+   "geo.europe.neighbours.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "ro-position"
+    }
+   },
+   {
+    "generator": "geo-sort",
+    "params": {
+     "kind": "neighbour"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.position.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.position.8",
+   "kind": "data",
+   "title": "Skill geo.ro.position.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.carpathians.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.2"
+   }
+  ],
+  "title": {
+   "ro": "Carpații românești: grupe, masive și vârfuri",
+   "en": "The Romanian Carpathians: groups, massifs and peaks"
+  },
+  "prerequisites": [
+   "geo.relief.carpathians.4",
+   "geo.ro.position.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-peak"
+   },
+   {
+    "generator": "geo-sort",
+    "params": {
+     "kind": "massif-group"
+    }
+   },
+   {
+    "generator": "geo-order",
+    "params": {
+     "set": "ro-peaks"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.carpathians.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.carpathians.8",
+   "kind": "data",
+   "title": "Skill geo.ro.carpathians.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.relief.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.3"
+   }
+  ],
+  "title": {
+   "ro": "Dealuri, podișuri, câmpii și Delta Dunării",
+   "en": "Hills, plateaus, plains and the Danube Delta"
+  },
+  "prerequisites": [
+   "geo.relief.lowlands.4",
+   "geo.ro.carpathians.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "ro-relief"
+    }
+   },
+   {
+    "generator": "geo-relief-unit"
+   },
+   {
+    "generator": "geo-sort",
+    "params": {
+     "kind": "relief-form"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.relief.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.relief.8",
+   "kind": "data",
+   "title": "Skill geo.ro.relief.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.climate.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.4"
+   }
+  ],
+  "title": {
+   "ro": "Clima României",
+   "en": "The climate of Romania"
+  },
+  "prerequisites": [
+   "geo.climate.4",
+   "geo.ro.relief.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "ro-climate"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.climate.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.climate.8",
+   "kind": "data",
+   "title": "Skill geo.ro.climate.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.rivers.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.5"
+   }
+  ],
+  "title": {
+   "ro": "Râurile României: bazine, vărsări, lungimi",
+   "en": "The rivers of Romania: basins, mouths, lengths"
+  },
+  "prerequisites": [
+   "geo.rivers.4",
+   "geo.ro.relief.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-river"
+   },
+   {
+    "generator": "geo-order",
+    "params": {
+     "set": "ro-rivers"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.rivers.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.rivers.8",
+   "kind": "data",
+   "title": "Skill geo.ro.rivers.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.danube.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.6"
+   }
+  ],
+  "title": {
+   "ro": "Dunărea, Delta Dunării, lacurile și Marea Neagră",
+   "en": "The Danube, the Danube Delta, lakes and the Black Sea"
+  },
+  "prerequisites": [
+   "geo.danube.delta.4",
+   "geo.blacksea.4",
+   "geo.ro.rivers.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "ro-danube"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.danube.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.danube.8",
+   "kind": "data",
+   "title": "Skill geo.ro.danube.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.veg.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.7"
+   }
+  ],
+  "title": {
+   "ro": "Vegetația, fauna, solurile și ariile protejate",
+   "en": "Vegetation, wildlife, soils and protected areas"
+  },
+  "prerequisites": [
+   "geo.nature.zones.4",
+   "geo.ro.climate.8",
+   "geo.ro.relief.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "ro-veg"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.veg.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.veg.8",
+   "kind": "data",
+   "title": "Skill geo.ro.veg.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.resources.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Resursele naturale ale României",
+   "en": "The natural resources of Romania"
+  },
+  "prerequisites": [
+   "geo.ro.relief.8",
+   "geo.ro.rivers.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "ro-resources"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.resources.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.resources.8",
+   "kind": "data",
+   "title": "Skill geo.ro.resources.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.population.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Populația și așezările României",
+   "en": "The population and settlements of Romania"
+  },
+  "prerequisites": [
+   "geo.people.settlements.4",
+   "geo.ro.position.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "ro-population"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.population.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.population.8",
+   "kind": "data",
+   "title": "Skill geo.ro.population.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.counties.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Județele României și reședințele lor",
+   "en": "The counties of Romania and their seats"
+  },
+  "prerequisites": [
+   "geo.counties.capital.4",
+   "geo.ro.population.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-county"
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.counties.8"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.counties.8",
+   "kind": "data",
+   "title": "Skill geo.ro.counties.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.regions.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Regiunile istorice ale României",
+   "en": "The historical regions of Romania"
+  },
+  "prerequisites": [
+   "geo.ro.counties.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-sort",
+    "params": {
+     "kind": "county-region"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.regions.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.regions.8",
+   "kind": "data",
+   "title": "Skill geo.ro.regions.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.ro.economy.8",
+  "subject": "geo",
+  "grade": 8,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "3.4"
+   }
+  ],
+  "title": {
+   "ro": "Economia României: agricultură, industrie, servicii, transport",
+   "en": "The economy of Romania: farming, industry, services, transport"
+  },
+  "prerequisites": [
+   "geo.ro.resources.8",
+   "geo.ro.population.8"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "ro-economy"
+    }
+   },
+   {
+    "bank": "geo/grade8.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.ro.economy.8"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.ro.economy.8",
+   "kind": "data",
+   "title": "Skill geo.ro.economy.8",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ }
+]

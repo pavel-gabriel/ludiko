@@ -25,7 +25,7 @@ function jsonFiles(dir: string): string[] {
   });
 }
 
-const geoSkills = getSkillsBySubject('geo');
+const geoSkills = getSkillsBySubject('geo').filter((s) => s.grade === 4);
 const geoItems: Item[] = geoSkills.flatMap((s) => getItemsForSkill(s.id));
 const mapData = readJson(join(CONTENT, 'data/geo/romania-map.json')) as {
   image: { labelled: string; blank: string; viewBox: [number, number] };

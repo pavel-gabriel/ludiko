@@ -1,0 +1,2389 @@
+[
+ {
+  "id": "exp.geo.earth.universe.5",
+  "skillId": "geo.earth.universe.5",
+  "title": {
+   "ro": "Soarele, planetele și Luna",
+   "en": "The Sun, the planets and the Moon"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Soarele este o stea: ne dă lumină și căldură. În jurul lui se rotesc opt planete: Mercur, Venus, Pământ, Marte, Jupiter, Saturn, Uranus și Neptun.",
+     "en": "The Sun is a star that gives us light and heat. Eight planets travel around it: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "☀️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Pământul este a treia planetă de la Soare. Luna este satelitul lui natural și nu are lumină proprie: ne luminează doar cu lumina primită de la Soare.",
+     "en": "Earth is the third planet from the Sun. The Moon is its natural satellite and has no light of its own: it only reflects sunlight."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌍",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Jupiter este cea mai mare planetă, Mercur cea mai apropiată de Soare, Marte „planeta roșie”. Sistemul Solar face parte din galaxia Calea Lactee.",
+     "en": "Jupiter is the biggest planet, Mercury the closest to the Sun, Mars the \"red planet\". The Solar System is part of the Milky Way galaxy."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🪐",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.earth.universe.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.earth.universe.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.earth.motions.5",
+  "skillId": "geo.earth.motions.5",
+  "title": {
+   "ro": "Rotația și revoluția",
+   "en": "Rotation and revolution"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Pământul se rotește în jurul axei sale în aproximativ 24 de ore, de la vest spre est. De aceea avem zi și noapte.",
+     "en": "The Earth spins around its axis in about 24 hours, from west to east. That is why we have day and night."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌗",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "În același timp, Pământul se mișcă în jurul Soarelui. Un tur complet, numit revoluție, durează aproximativ un an: 365 de zile și 6 ore.",
+     "en": "At the same time the Earth travels around the Sun. One full trip, called revolution, takes about a year: 365 days and 6 hours."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌍",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Axa Pământului este înclinată. Din cauza înclinării și a revoluției, lumina cade diferit în timpul anului și apar cele patru anotimpuri.",
+     "en": "The Earth's axis is tilted. Because of the tilt and the revolution, sunlight falls differently during the year and the four seasons appear."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🍂",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.earth.motions.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.earth.motions.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.earth.continents.5",
+  "skillId": "geo.earth.continents.5",
+  "title": {
+   "ro": "Continentele și oceanele",
+   "en": "Continents and oceans"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Uscatul este împărțit în continente: Europa, Asia, Africa, America, Australia și Antarctica. Asia este cel mai mare, iar Australia și Oceania cel mai mic.",
+     "en": "The land is divided into continents: Europe, Asia, Africa, America, Australia and Antarctica. Asia is the largest and Australia and Oceania the smallest."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌍",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Oceanele acoperă cea mai mare parte a planetei: Pacific (cel mai mare), Atlantic, Indian și Arctic. Apa lor este sărată.",
+     "en": "Oceans cover most of the planet: the Pacific (the largest), Atlantic, Indian and Arctic. Their water is salty."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌊",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Când așezi continentele după suprafață, folosește numere rotunjite și sigure: Asia, America, Africa, Antarctica, Europa, Australia și Oceania.",
+     "en": "When you order continents by area, use rounded, safe figures: Asia, America, Africa, Antarctica, Europe, Australia and Oceania."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧭",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.earth.continents.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.earth.continents.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.map.coords.5",
+  "skillId": "geo.map.coords.5",
+  "title": {
+   "ro": "Paralele, meridiane și coordonate",
+   "en": "Parallels, meridians and coordinates"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Ecuatorul este paralela 0°. El împarte Pământul în emisfera nordică și emisfera sudică. Paralelele sunt cercuri paralele cu Ecuatorul.",
+     "en": "The Equator is the 0° parallel. It splits the Earth into the northern and southern hemispheres. Parallels are circles parallel to the Equator."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌐",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Meridianele sunt semicercuri care unesc cei doi poli. Meridianul Greenwich este meridianul 0° și împarte globul în emisfera estică și cea vestică.",
+     "en": "Meridians are half circles joining the two poles. The Greenwich meridian is 0° and splits the globe into the eastern and western hemispheres."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧭",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Latitudinea arată cât de departe ești de Ecuator (maximum 90°), longitudinea cât de departe ești de meridianul 0° (maximum 180°). România este în emisfera nordică și estică.",
+     "en": "Latitude tells how far you are from the Equator (up to 90°), longitude how far from the 0° meridian (up to 180°). Romania is in the northern and eastern hemispheres."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📍",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.map.coords.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.map.coords.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.map.read.5",
+  "skillId": "geo.map.read.5",
+  "title": {
+   "ro": "Cum citim o hartă",
+   "en": "How to read a map"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "O hartă este o reprezentare micșorată a Pământului sau a unei părți din el. Titlul îți spune despre ce este harta.",
+     "en": "A map is a reduced picture of the Earth or part of it. The title tells you what the map is about."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗺️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Legenda explică semnele și culorile. Pe hărțile fizice, verdele arată de obicei câmpiile, maro munții, albastru apele.",
+     "en": "The legend explains the signs and colours. On physical maps green usually shows plains, brown mountains and blue waters."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🎨",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Curbele de nivel unesc puncte cu aceeași altitudine. Când sunt apropiate, terenul este abrupt; când sunt departe, panta este lină.",
+     "en": "Contour lines join points of the same altitude. When they are close the ground is steep; when they are far apart the slope is gentle."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⛰️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.map.read.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.map.read.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.map.scale.5",
+  "skillId": "geo.map.scale.5",
+  "title": {
+   "ro": "Scara hărții",
+   "en": "The scale of a map"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Scara spune cât de mult s-a micșorat realitatea. La scara 1:100 000, 1 cm de pe hartă înseamnă 100 000 cm în realitate, adică 1 km.",
+     "en": "The scale says how much reality was shrunk. At 1:100 000, 1 cm on the map means 100 000 cm in reality, which is 1 km."
+    },
+    "visual": {
+     "kind": "ruler",
+     "to": 5,
+     "unit": "cm",
+     "objectEnd": 3
+    }
+   },
+   {
+    "text": {
+     "ro": "Ca să afli distanța reală, măsori pe hartă și înmulțești cu numărul de după „1:”. Apoi transformi: 100 cm = 1 m și 1000 m = 1 km.",
+     "en": "To find the real distance, measure on the map and multiply by the number after \"1:\". Then convert: 100 cm = 1 m and 1000 m = 1 km."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✖️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Atenție la virgulă: 4,5 cm la scara 1:100 000 înseamnă 4,5 km. Verifică mereu dacă răspunsul are sens ca ordin de mărime.",
+     "en": "Watch the decimal comma: 4.5 cm at 1:100 000 means 4.5 km. Always check that the answer makes sense in size."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧮",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.map.scale.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.map.scale.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.relief.forms.5",
+  "skillId": "geo.relief.forms.5",
+  "title": {
+   "ro": "Formele de relief",
+   "en": "Landforms"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Principalele forme de relief sunt munții, dealurile, podișurile și câmpiile. Muntele are vârf și versanți, câmpia este joasă și aproape plană.",
+     "en": "The main landforms are mountains, hills, plateaus and plains. A mountain has a peak and slopes; a plain is low and almost flat."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⛰️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Relieful se formează încet prin mișcările scoarței, vulcani și cutremure, dar și prin eroziune: apa, vântul și gheața sculptează rocile.",
+     "en": "Relief forms slowly through crust movements, volcanoes and earthquakes, and also through erosion: water, wind and ice carve the rocks."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌋",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Cel mai înalt vârf este Everest, în Himalaya. Cea mai adâncă fosă oceanică este Fosa Marianelor, la mai bine de 10 000 m adâncime.",
+     "en": "The highest peak is Everest, in the Himalaya. The deepest ocean trench is the Mariana Trench, more than 10 000 m deep."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏔️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.relief.forms.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.relief.forms.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.climate.general.5",
+  "skillId": "geo.climate.general.5",
+  "title": {
+   "ro": "Vremea și clima",
+   "en": "Weather and climate"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Vremea este starea aerului într-un loc, la un moment dat: poate fi însorit azi și ploios mâine. Clima este vremea obișnuită dintr-o regiune, observată mulți ani.",
+     "en": "Weather is the state of the air at a place and time: sunny today, rainy tomorrow. Climate is the usual weather of a region seen over many years."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⛅",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Măsurăm vremea cu instrumente: termometrul (temperatura), pluviometrul (precipitațiile), barometrul (presiunea), anemometrul (vântul).",
+     "en": "We measure weather with instruments: the thermometer (temperature), rain gauge (precipitation), barometer (pressure), anemometer (wind)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌡️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Pe Pământ sunt zone termice: caldă lângă Ecuator, temperată (aici e România) și rece lângă poli. Pe munte, temperatura scade cu altitudinea.",
+     "en": "The Earth has thermal zones: warm near the Equator, temperate (where Romania is) and cold near the poles. In the mountains temperature drops with altitude."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌍",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.climate.general.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.climate.general.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.waters.world.5",
+  "skillId": "geo.waters.world.5",
+  "title": {
+   "ro": "Apele Pământului",
+   "en": "The waters of the Earth"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Cea mai mare parte a apei se află în oceane și mări, unde este sărată. Râurile și majoritatea lacurilor au apă dulce.",
+     "en": "Most water is in the oceans and seas, where it is salty. Rivers and most lakes hold fresh water."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌊",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Un râu începe la izvor, primește afluenți și se varsă într-un alt râu, într-un lac, într-o mare sau într-un ocean. Locul în care se varsă se numește vărsare.",
+     "en": "A river starts at a spring, receives tributaries and flows into another river, a lake, a sea or an ocean. Where it flows in is the mouth."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏞️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Apa circulă: se evaporă, vaporii se condensează în nori și cad ca precipitații. Ghețarii sunt mase uriașe de gheață care se mișcă încet.",
+     "en": "Water circulates: it evaporates, the vapour condenses in clouds and falls as precipitation. Glaciers are huge masses of ice that move slowly."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💧",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.waters.world.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.waters.world.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.life.zones.5",
+  "skillId": "geo.life.zones.5",
+  "title": {
+   "ro": "Zonele de vegetație și solurile",
+   "en": "Vegetation zones and soils"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Vegetația depinde de climă. Lângă Ecuator crește pădurea ecuatorială, în zona caldă și uscată savana și deșertul, aproape de poli tundra.",
+     "en": "Vegetation depends on climate. Near the Equator the rainforest grows; in warm dry areas, savanna and desert; near the poles, tundra."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌴",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Fiecare zonă are animalele ei: leul și elefantul în savană, cămila în deșert, renul în tundră, maimuțele în pădurea ecuatorială.",
+     "en": "Each zone has its animals: the lion and elephant in the savanna, the camel in the desert, the reindeer in the tundra, monkeys in the rainforest."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🐪",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Solul este stratul de la suprafață pe care cresc plantele. Partea fertilă se numește humus. Biosfera este învelișul Pământului în care există viață.",
+     "en": "Soil is the surface layer where plants grow. Its fertile part is humus. The biosphere is the layer of the Earth where life exists."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌱",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.life.zones.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.life.zones.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.population.5",
+  "skillId": "geo.population.5",
+  "title": {
+   "ro": "Populația și așezările",
+   "en": "People and settlements"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Pe Pământ trăiesc aproximativ 8 miliarde de oameni, așezați inegal: mulți în câmpii fertile și pe coaste, puțini în deșerturi, munți înalți și zone polare.",
+     "en": "About 8 billion people live on Earth, spread unevenly: many on fertile plains and coasts, few in deserts, high mountains and polar areas."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👥",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Densitatea populației arată câți locuitori sunt, în medie, pe un km². Natalitatea măsoară nașterile, mortalitatea decesele, migrația mutările dintr-un loc în altul.",
+     "en": "Population density shows how many people live, on average, on one km². Birth rate measures births, death rate deaths, migration moves from one place to another."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📊",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Așezările pot fi rurale (sate) sau urbane (orașe). Oamenii lucrează în agricultură, industrie sau servicii, iar astăzi mai mulți oameni trăiesc în orașe.",
+     "en": "Settlements are rural (villages) or urban (cities). People work in farming, industry or services, and today more people live in cities."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏘️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.population.5",
+   "kind": "explanation",
+   "title": "Explanation for geo.population.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.position.6",
+  "skillId": "geo.europe.position.6",
+  "title": {
+   "ro": "Europa pe hartă",
+   "en": "Europe on the map"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Europa se află în emisfera nordică, la vest de Asia. Este scăldată de Oceanul Atlantic la vest, Oceanul Arctic la nord și Marea Mediterană la sud.",
+     "en": "Europe lies in the northern hemisphere, west of Asia. It is washed by the Atlantic Ocean in the west, the Arctic Ocean in the north and the Mediterranean Sea in the south."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🇪🇺",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Limita convențională cu Asia sunt Munții Urali. Strâmtoarea Gibraltar o desparte de Africa. Suprafața Europei este de aproximativ 10 milioane km².",
+     "en": "The conventional border with Asia is the Ural Mountains. The Strait of Gibraltar separates it from Africa. Europe covers about 10 million km²."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗺️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Peninsule mari: Scandinavică, Iberică, Italică și Balcanică. Cea mai mare insulă este Marea Britanie. Mările apropiate: Neagră, Baltică, a Nordului.",
+     "en": "Big peninsulas: Scandinavian, Iberian, Italian and Balkan. The largest island is Great Britain. Nearby seas: Black, Baltic and North."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧭",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.position.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.position.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.relief.6",
+  "skillId": "geo.europe.relief.6",
+  "title": {
+   "ro": "Relieful Europei",
+   "en": "The relief of Europe"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Alpii sunt cei mai înalți munți din Europa Centrală și de Vest. Pirineii despart Franța de Spania, Apeninii străbat Italia, Carpații formează un arc prin România.",
+     "en": "The Alps are the highest mountains in Central and Western Europe. The Pyrenees separate France from Spain, the Apennines run through Italy, the Carpathians form an arc through Romania."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏔️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "În nord se află Munții Scandinaviei și fiordurile, săpate de ghețari. În Italia sunt vulcanii Vezuviu și Etna, iar Islanda are vulcani și gheizere.",
+     "en": "In the north are the Scandinavian Mountains and the fjords carved by glaciers. Italy has the volcanoes Vesuvius and Etna, and Iceland has volcanoes and geysers."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌋",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Câmpiile ocupă o mare parte din Europa. Cea mai întinsă este Câmpia Europei de Est, iar Țările de Jos sunt aproape în întregime joase.",
+     "en": "Plains cover much of Europe. The largest is the Eastern European Plain, and the Netherlands is almost entirely low."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌾",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.relief.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.relief.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.climate.6",
+  "skillId": "geo.europe.climate.6",
+  "title": {
+   "ro": "Clima și vegetația Europei",
+   "en": "Climate and vegetation of Europe"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "În Europa predomină clima temperată. Oceanul Atlantic face vestul mai blând și mai umed, iar spre est clima devine mai continentală: veri calde și ierni reci.",
+     "en": "A temperate climate prevails in Europe. The Atlantic makes the west milder and wetter, and towards the east the climate turns more continental: warm summers and cold winters."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌦️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Sudul, lângă Mediterană, are veri calde și uscate și ierni blânde. Nordul îndepărtat este rece, cu tundră.",
+     "en": "The south, near the Mediterranean, has warm dry summers and mild winters. The far north is cold, with tundra."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "☀️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Vegetația urmează clima: tundră în nord, taiga, păduri de foioase în centru, stepă în est, măslini și viță-de-vie în sud.",
+     "en": "Vegetation follows climate: tundra in the north, taiga, broadleaf forests in the centre, steppe in the east, olives and vines in the south."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌲",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.climate.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.climate.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.waters.6",
+  "skillId": "geo.europe.waters.6",
+  "title": {
+   "ro": "Apele Europei",
+   "en": "The waters of Europe"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Volga este cel mai lung râu din Europa și se varsă în Marea Caspică. Dunărea este al doilea ca lungime și se varsă în Marea Neagră.",
+     "en": "The Volga is Europe's longest river and flows into the Caspian Sea. The Danube is the second longest and flows into the Black Sea."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏞️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Dunărea curge prin zece țări. Rinul trece prin Elveția, Germania și Țările de Jos și se varsă în Marea Nordului. Sena străbate Parisul, Tamisa Londra.",
+     "en": "The Danube flows through ten countries. The Rhine crosses Switzerland, Germany and the Netherlands and flows into the North Sea. The Seine runs through Paris, the Thames through London."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌉",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Marea Mediterană comunică cu Atlanticul prin Strâmtoarea Gibraltar. Cel mai mare lac din Europa este Ladoga, în nord-vestul Rusiei.",
+     "en": "The Mediterranean connects to the Atlantic through the Strait of Gibraltar. The largest lake in Europe is Ladoga, in north-western Russia."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌊",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.waters.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.waters.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.map.scale.6",
+  "skillId": "geo.map.scale.6",
+  "title": {
+   "ro": "Scări mari și mici",
+   "en": "Large and small scales"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Scara 1:50 000 este mai mare decât 1:500 000, pentru că numărul de după „1:” este mai mic. O scară mare arată puține zone, dar cu multe detalii.",
+     "en": "The scale 1:50 000 is larger than 1:500 000 because the number after \"1:\" is smaller. A large scale shows a small area with many details."
+    },
+    "visual": {
+     "kind": "ruler",
+     "to": 5,
+     "unit": "cm",
+     "objectEnd": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Pentru distanța pe hartă dintr-o distanță reală, împarți: distanța reală în cm : numărul de după „1:”. 20 km la 1:200 000 înseamnă 2 000 000 cm : 200 000 = 10 cm.",
+     "en": "To find the map distance from a real one, divide: real distance in cm : the number after \"1:\". 20 km at 1:200 000 is 2 000 000 cm : 200 000 = 10 cm."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "➗",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Poți afla scara dintr-o pereche cunoscută: 3 cm pe hartă și 6 km în realitate înseamnă 600 000 cm : 3 = 200 000, deci scara este 1:200 000. Este o proporție.",
+     "en": "You can find the scale from a known pair: 3 cm on the map and 6 km in reality means 600 000 cm : 3 = 200 000, so the scale is 1:200 000. It is a proportion."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⚖️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.map.scale.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.map.scale.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.capitals.6",
+  "skillId": "geo.europe.capitals.6",
+  "title": {
+   "ro": "Țări și capitale europene",
+   "en": "European countries and capitals"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Fiecare țară are o capitală, orașul unde se află guvernul. De exemplu: Franța – Paris, Germania – Berlin, Italia – Roma, Spania – Madrid.",
+     "en": "Every country has a capital, the city where the government sits. For example: France – Paris, Germany – Berlin, Italy – Rome, Spain – Madrid."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏛️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Alte perechi de ținut minte: Polonia – Varșovia, Ungaria – Budapesta, Bulgaria – Sofia, Grecia – Atena, Austria – Viena, Ucraina – Kiev.",
+     "en": "More pairs to remember: Poland – Warsaw, Hungary – Budapest, Bulgaria – Sofia, Greece – Athens, Austria – Vienna, Ukraine – Kyiv."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗺️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Învață perechile în grupuri mici, după vecinătate pe hartă, și leagă fiecare capitală de un fapt: un râu, un monument, o poveste.",
+     "en": "Learn pairs in small groups by neighbourhood on the map, and tie each capital to a fact: a river, a monument, a story."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧠",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.capitals.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.capitals.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.countries.6",
+  "skillId": "geo.europe.countries.6",
+  "title": {
+   "ro": "Toate țările Europei",
+   "en": "All the countries of Europe"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Europa are peste patruzeci de state, mari și mici: de la Rusia, cea mai mare, până la state foarte mici ca San Marino sau Liechtenstein.",
+     "en": "Europe has over forty states, large and small: from Russia, the largest, to tiny ones like San Marino or Liechtenstein."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🇪🇺",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Unele țări nu au ieșire la mare: Austria, Cehia, Ungaria, Slovacia, Elveția, Serbia, Moldova, Luxemburg sunt câteva exemple.",
+     "en": "Some countries have no sea coast: Austria, Czechia, Hungary, Slovakia, Switzerland, Serbia, Moldova and Luxembourg are a few examples."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏔️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Capitalele mai puțin cunoscute: Țările de Jos – Amsterdam, Elveția – Berna, Cehia – Praga, Serbia – Belgrad, Republica Moldova – Chișinău.",
+     "en": "Less familiar capitals: Netherlands – Amsterdam, Switzerland – Bern, Czechia – Prague, Serbia – Belgrade, Moldova – Chișinău."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏙️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.countries.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.countries.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.neighbours.6",
+  "skillId": "geo.europe.neighbours.6",
+  "title": {
+   "ro": "România și vecinii ei",
+   "en": "Romania and its neighbours"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "România se învecinează cu cinci țări: Ucraina la nord și est, Republica Moldova la est, Ungaria la vest, Serbia la sud-vest și Bulgaria la sud.",
+     "en": "Romania borders five countries: Ukraine in the north and east, Moldova in the east, Hungary in the west, Serbia in the south-west and Bulgaria in the south."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧭",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Granițele folosesc în mare parte râuri: Dunărea cu Bulgaria și o parte din Serbia, Prutul cu Republica Moldova. La est se află și Marea Neagră.",
+     "en": "Borders often follow rivers: the Danube with Bulgaria and part of Serbia, the Prut with Moldova. In the east lies the Black Sea."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌉",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Capitalele vecinilor: Kiev, Chișinău, Budapesta, Belgrad, Sofia. Austria sau Polonia nu sunt vecine cu România, chiar dacă sunt aproape.",
+     "en": "Neighbours' capitals: Kyiv, Chișinău, Budapest, Belgrade, Sofia. Austria and Poland are not neighbours of Romania even though they are close."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏙️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.neighbours.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.neighbours.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.eu.6",
+  "skillId": "geo.europe.eu.6",
+  "title": {
+   "ro": "Uniunea Europeană",
+   "en": "The European Union"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Uniunea Europeană (UE) reunește 27 de state care cooperează în economie și în multe alte domenii. România este membră din 1 ianuarie 2007.",
+     "en": "The European Union (EU) brings together 27 states that cooperate in the economy and many other fields. Romania has been a member since 1 January 2007."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🇪🇺",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Simbolurile UE: steagul albastru cu 12 stele galbene în cerc, imnul „Oda bucuriei” și Ziua Europei, pe 9 mai.",
+     "en": "EU symbols: the blue flag with 12 yellow stars in a circle, the anthem \"Ode to Joy\" and Europe Day on 9 May."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⭐",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Nu toate țările europene sunt membre: Norvegia, Elveția, Serbia, Ucraina, Moldova și Regatul Unit nu sunt. Nu toate statele UE folosesc euro; România are încă leul.",
+     "en": "Not all European countries are members: Norway, Switzerland, Serbia, Ukraine, Moldova and the United Kingdom are not. Not every EU state uses the euro; Romania still has the leu."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💶",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.eu.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.eu.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.population.6",
+  "skillId": "geo.europe.population.6",
+  "title": {
+   "ro": "Populația Europei",
+   "en": "The population of Europe"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Europa are o densitate mare a populației, iar majoritatea oamenilor locuiesc în orașe. Multe țări au populație îmbătrânită.",
+     "en": "Europe has a high population density and most people live in cities. Many countries have an ageing population."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👥",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Limbile europene fac parte din mari familii: romanice (româna, franceza, italiana), germanice (germana, engleza) și slave (poloneza, rusa).",
+     "en": "European languages belong to large families: Romance (Romanian, French, Italian), Germanic (German, English) and Slavic (Polish, Russian)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗣️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Cea mai populată țară (cu Rusia) este Rusia, iar cel mai mic stat este Vatican. Religia cea mai răspândită este creștinismul.",
+     "en": "The most populous country (including Russia) is Russia and the smallest state is the Vatican. The most widespread religion is Christianity."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏙️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.population.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.population.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.europe.economy.6",
+  "skillId": "geo.europe.economy.6",
+  "title": {
+   "ro": "Economia Europei",
+   "en": "The economy of Europe"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Europa are industrie și servicii puternice. Germania este cunoscută pentru automobile, Elveția pentru ceasuri și ciocolată, Țările de Jos pentru portul Rotterdam.",
+     "en": "Europe has strong industry and services. Germany is known for cars, Switzerland for watches and chocolate, the Netherlands for the port of Rotterdam."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏭",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Resurse: petrol și gaze din Marea Nordului (Norvegia), energie eoliană în Danemarca, cărbune, ape și păduri. Agricultura este puternică în câmpii.",
+     "en": "Resources: oil and gas from the North Sea (Norway), wind energy in Denmark, coal, waters and forests. Farming is strong on the plains."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌾",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Turismul este important pe coasta mediteraneană și în Alpi. Tunelul de sub Canalul Mânecii leagă Marea Britanie de Franța.",
+     "en": "Tourism matters on the Mediterranean coast and in the Alps. The tunnel under the English Channel links Great Britain and France."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✈️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.europe.economy.6",
+   "kind": "explanation",
+   "title": "Explanation for geo.europe.economy.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.asia.physical.7",
+  "skillId": "geo.asia.physical.7",
+  "title": {
+   "ro": "Asia fizică",
+   "en": "Physical Asia"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Asia este cel mai mare continent. Aici se află Himalaya, cu Everest, cel mai înalt vârf de pe Pământ, și Podișul Tibet.",
+     "en": "Asia is the largest continent. It holds the Himalaya, with Everest, the highest peak on Earth, and the Tibetan Plateau."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏔️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Fluvii mari: Yangtze, Huanghe, Gange, Mekong. Lacul Baikal din Siberia este cel mai adânc lac din lume. Deșerturile Gobi și Arabia sunt mari.",
+     "en": "Great rivers: Yangtze, Yellow River, Ganges, Mekong. Lake Baikal in Siberia is the deepest lake in the world. The Gobi and Arabian deserts are large."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏞️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Clima variază mult: taiga rece în Siberia, deșert în centru și vest, musoni cu ploi de vară în sud și sud-est. Japonia are vulcani și cutremure.",
+     "en": "The climate varies greatly: cold taiga in Siberia, desert in the centre and west, monsoons with summer rains in the south and south-east. Japan has volcanoes and earthquakes."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌧️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.asia.physical.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.asia.physical.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.asia.human.7",
+  "skillId": "geo.asia.human.7",
+  "title": {
+   "ro": "Oamenii și statele Asiei",
+   "en": "People and states of Asia"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Mai mult de jumătate dintre oamenii lumii trăiesc în Asia. China și India sunt foarte populate, iar orașe ca Tokyo au milioane de locuitori.",
+     "en": "More than half of the world's people live in Asia. China and India are very populous and cities like Tokyo have millions of inhabitants."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👥",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Orezul este hrana de bază în multe țări, iar ceaiul este o băutură răspândită. Aici au apărut hinduismul și budismul.",
+     "en": "Rice is the staple food in many countries and tea is a widespread drink. Hinduism and Buddhism arose here."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🍚",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Capitale de ținut minte: China – Beijing, India – New Delhi, Japonia – Tokyo, Coreea de Sud – Seul, Vietnam – Hanoi, Iran – Teheran.",
+     "en": "Capitals to remember: China – Beijing, India – New Delhi, Japan – Tokyo, South Korea – Seoul, Vietnam – Hanoi, Iran – Tehran."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏙️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.asia.human.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.asia.human.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.africa.7",
+  "skillId": "geo.africa.7",
+  "title": {
+   "ro": "Africa",
+   "en": "Africa"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Africa este traversată de Ecuator. În nord se află Sahara, cel mai mare deșert cald din lume, iar în centru pădurea ecuatorială din bazinul Congo.",
+     "en": "Africa is crossed by the Equator. In the north lies the Sahara, the largest hot desert in the world, and in the centre the Congo rainforest."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏜️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Nilul traversează Egiptul și se varsă în Marea Mediterană. Kilimanjaro este cel mai înalt vârf (aproximativ 5 900 m), iar Lacul Victoria cel mai mare lac. Canalul Suez leagă Mediterana de Marea Roșie.",
+     "en": "The Nile crosses Egypt and flows into the Mediterranean. Kilimanjaro is the highest peak (about 5 900 m) and Lake Victoria the largest lake. The Suez Canal links the Mediterranean and the Red Sea."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌊",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Savana are ierburi înalte, leii și elefanții. Capitale: Egipt – Cairo, Maroc – Rabat, Nigeria – Abuja, Kenya – Nairobi, Etiopia – Addis Abeba.",
+     "en": "The savanna has tall grass, lions and elephants. Capitals: Egypt – Cairo, Morocco – Rabat, Nigeria – Abuja, Kenya – Nairobi, Ethiopia – Addis Ababa."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🦁",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.africa.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.africa.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.world.relief.7",
+  "skillId": "geo.world.relief.7",
+  "title": {
+   "ro": "Munții și vârfurile lumii",
+   "en": "The world's mountains and peaks"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Lanțuri mari: Himalaya și Karakoram în Asia, Anzii în America de Sud, Munții Stâncoși și Apalașii în America de Nord, Alpii și Pirineii în Europa, Atlas în Africa.",
+     "en": "Great ranges: the Himalaya and Karakoram in Asia, the Andes in South America, the Rockies and Appalachians in North America, the Alps and Pyrenees in Europe, the Atlas in Africa."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏔️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Cele mai înalte vârfuri pe continente: Everest (Asia, aproximativ 8 849 m), Aconcagua (America de Sud), Denali (America de Nord), Kilimanjaro (Africa), Vinson (Antarctica).",
+     "en": "The highest peaks by continent: Everest (Asia, about 8 849 m), Aconcagua (South America), Denali (North America), Kilimanjaro (Africa), Vinson (Antarctica)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧗",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Când ordonezi vârfuri, folosește mereu înălțimile rotunjite, iar între două vârfuri alege-l pe cel cu numărul mai mare: 8 849 > 6 961 > 6 190 > 5 895.",
+     "en": "When you order peaks, always use the rounded heights and pick the bigger number: 8 849 > 6 961 > 6 190 > 5 895."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔢",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.world.relief.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.world.relief.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.americas.north.7",
+  "skillId": "geo.americas.north.7",
+  "title": {
+   "ro": "America de Nord și Centrală",
+   "en": "North and Central America"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Cele trei state mari sunt Canada, Statele Unite și Mexic. Capitalele: Ottawa, Washington și Ciudad de México. Cuba este cea mai mare insulă din Caraibe.",
+     "en": "The three big states are Canada, the United States and Mexico. Capitals: Ottawa, Washington and Mexico City. Cuba is the largest island in the Caribbean."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗽",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "În vest sunt Munții Stâncoși, în est Apalașii. Mississippi se varsă în Golful Mexic. Marile Lacuri se află între SUA și Canada, cu cascada Niagara.",
+     "en": "The Rockies lie in the west and the Appalachians in the east. The Mississippi flows into the Gulf of Mexico. The Great Lakes lie between the USA and Canada, with Niagara Falls."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏞️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Denali, în Alaska, este cel mai înalt vârf. Canalul Panama leagă Atlanticul de Pacific. Groenlanda este cea mai mare insulă din lume.",
+     "en": "Denali, in Alaska, is the highest peak. The Panama Canal links the Atlantic and the Pacific. Greenland is the largest island in the world."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🚢",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.americas.north.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.americas.north.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.americas.south.7",
+  "skillId": "geo.americas.south.7",
+  "title": {
+   "ro": "America de Sud",
+   "en": "South America"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Anzii se întind pe vestul continentului, cel mai lung lanț muntos de pe uscat. Cel mai înalt vârf este Aconcagua.",
+     "en": "The Andes run along the west of the continent, the longest mountain range on land. The highest peak is Aconcagua."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⛰️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Amazonul străbate cea mai mare pădure ecuatorială. Brazilia este cea mai mare țară și vorbește portugheză; în majoritatea celorlalte țări se vorbește spaniola.",
+     "en": "The Amazon crosses the largest rainforest. Brazil is the largest country and speaks Portuguese; in most other countries Spanish is spoken."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌳",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Capitale: Brazilia – Brasilia, Argentina – Buenos Aires, Chile – Santiago, Peru – Lima. Deșertul Atacama este foarte uscat, iar Titicaca un lac aflat la mare înălțime.",
+     "en": "Capitals: Brazil – Brasília, Argentina – Buenos Aires, Chile – Santiago, Peru – Lima. The Atacama is a very dry desert and Titicaca a lake at great altitude."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏙️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.americas.south.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.americas.south.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.oceania.7",
+  "skillId": "geo.oceania.7",
+  "title": {
+   "ro": "Australia și Oceania",
+   "en": "Australia and Oceania"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Australia este cel mai mic continent și se află în emisfera sudică. Capitala este Canberra, nu Sydney, care este cel mai mare oraș.",
+     "en": "Australia is the smallest continent and lies in the southern hemisphere. The capital is Canberra, not Sydney, which is the largest city."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🦘",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Interiorul Australiei este arid (outback). Pe coasta de nord-est se află Marea Barieră de Corali. Cangurii și koala sunt animale tipice.",
+     "en": "The interior of Australia is arid (the outback). On the north-east coast lies the Great Barrier Reef. Kangaroos and koalas are typical animals."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🐨",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Oceania cuprinde mii de insule din Pacific. Noua Zeelandă are capitala Wellington și păsărea kiwi ca simbol.",
+     "en": "Oceania includes thousands of Pacific islands. New Zealand has Wellington as its capital and the kiwi bird as a symbol."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏝️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.oceania.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.oceania.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.antarctica.7",
+  "skillId": "geo.antarctica.7",
+  "title": {
+   "ro": "Antarctica",
+   "en": "Antarctica"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Antarctica este continentul din jurul Polului Sud, acoperit aproape în întregime de un strat gros de gheață. Este cel mai rece continent.",
+     "en": "Antarctica is the continent around the South Pole, almost completely covered by a thick layer of ice. It is the coldest continent."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧊",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Nu are populație permanentă: acolo lucrează, temporar, oameni de știință în stații de cercetare. Pe coaste trăiesc pinguini și foci.",
+     "en": "It has no permanent population: scientists work there temporarily in research stations. Penguins and seals live on the coasts."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🐧",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Tratatul Antarctic din 1959 păstrează continentul pentru știință și pace. Cel mai înalt vârf este Vinson. Aisbergurile sunt bucăți uriașe de gheață plutitoare.",
+     "en": "The Antarctic Treaty of 1959 reserves the continent for science and peace. The highest peak is Vinson. Icebergs are huge floating pieces of ice."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🛰️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.antarctica.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.antarctica.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.world.capitals.7",
+  "skillId": "geo.world.capitals.7",
+  "title": {
+   "ro": "Capitalele lumii",
+   "en": "Capitals around the world"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Unele capitale nu sunt cele mai mari orașe: Washington (nu New York), Canberra (nu Sydney), Brasilia (nu Rio de Janeiro), Ottawa (nu Toronto).",
+     "en": "Some capitals are not the largest cities: Washington (not New York), Canberra (not Sydney), Brasília (not Rio de Janeiro), Ottawa (not Toronto)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏛️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Învață pe continente: în Africa Cairo, Rabat, Nairobi; în Asia Beijing, Tokyo, New Delhi; în America Ottawa, Washington, Lima, Buenos Aires.",
+     "en": "Learn by continent: in Africa Cairo, Rabat, Nairobi; in Asia Beijing, Tokyo, New Delhi; in the Americas Ottawa, Washington, Lima, Buenos Aires."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌍",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Pentru sortare, întreabă-te: pe ce continent este țara? Folosește hărți și puncte de reper, nu doar memorarea fiecărui nume.",
+     "en": "When sorting, ask yourself: on which continent is the country? Use maps and landmarks, not only memorising each name."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧭",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.world.capitals.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.world.capitals.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.world.rivers.7",
+  "skillId": "geo.world.rivers.7",
+  "title": {
+   "ro": "Fluviile lumii",
+   "en": "The world's rivers"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Fluvii mari pe continente: Nilul și Congo în Africa, Amazon în America de Sud, Mississippi în America de Nord, Yangtze și Gange în Asia, Volga și Dunărea în Europa.",
+     "en": "Great rivers by continent: the Nile and Congo in Africa, the Amazon in South America, the Mississippi in North America, the Yangtze and Ganges in Asia, the Volga and Danube in Europe."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌊",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Fiecare se varsă undeva: Nilul în Marea Mediterană, Amazon în Atlantic, Mississippi în Golful Mexic, Gange în Golful Bengal, Volga în Marea Caspică.",
+     "en": "Each one empties somewhere: the Nile into the Mediterranean, the Amazon into the Atlantic, the Mississippi into the Gulf of Mexico, the Ganges into the Bay of Bengal, the Volga into the Caspian."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌐",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "„Se varsă direct” înseamnă în locul unde curge apa fluviului, nu mai departe. Rinul se varsă în Marea Nordului, care este parte din Atlantic, dar răspunsul cerut este marea.",
+     "en": "\"Flows directly into\" means the place where the river's water empties, not further on. The Rhine flows into the North Sea, which is part of the Atlantic, but the sea is the answer asked for."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔍",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.world.rivers.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.world.rivers.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.world.issues.7",
+  "skillId": "geo.world.issues.7",
+  "title": {
+   "ro": "Probleme ale lumii",
+   "en": "World issues"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Arderea cărbunelui, petrolului și gazelor eliberează dioxid de carbon și contribuie la încălzirea globală. Energia solară, eoliană și hidro sunt regenerabile.",
+     "en": "Burning coal, oil and gas releases carbon dioxide and contributes to global warming. Solar, wind and hydro energy are renewable."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌡️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Defrișările, poluarea apelor și a aerului, plasticul din oceane și deșertificarea pun în pericol natura și oamenii.",
+     "en": "Deforestation, water and air pollution, plastic in the oceans and desertification endanger nature and people."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌳",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Dezastrele naturale: cutremure, erupții, inundații, uragane, secete. Putem reduce riscurile prin prevenție, reciclare și dezvoltare durabilă.",
+     "en": "Natural disasters: earthquakes, eruptions, floods, hurricanes, droughts. We can reduce risks through prevention, recycling and sustainable development."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "♻️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.world.issues.7",
+   "kind": "explanation",
+   "title": "Explanation for geo.world.issues.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.position.8",
+  "skillId": "geo.ro.position.8",
+  "title": {
+   "ro": "România pe hartă",
+   "en": "Romania on the map"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "România se află în sud-estul Europei Centrale, în emisfera nordică și estică. Suprafața este de aproximativ 238 000 km², iar capitala este București.",
+     "en": "Romania lies in south-eastern Central Europe, in the northern and eastern hemispheres. Its area is about 238 000 km² and its capital is Bucharest."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🇷🇴",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Se învecinează cu Ucraina, Republica Moldova, Ungaria, Serbia și Bulgaria. La est are ieșire la Marea Neagră, cu un litoral de aproximativ 245 km.",
+     "en": "It borders Ukraine, Moldova, Hungary, Serbia and Bulgaria. In the east it has access to the Black Sea, with a coastline of about 245 km."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧭",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Punctele extreme: nord – Horodiștea (Botoșani), sud – Zimnicea (Teleorman), vest – Beba Veche (Timiș), est – Sulina (Tulcea). România este în NATO din 2004 și în UE din 2007.",
+     "en": "Extreme points: north – Horodiștea (Botoșani), south – Zimnicea (Teleorman), west – Beba Veche (Timiș), east – Sulina (Tulcea). Romania has been in NATO since 2004 and in the EU since 2007."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📍",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.position.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.position.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.carpathians.8",
+  "skillId": "geo.ro.carpathians.8",
+  "title": {
+   "ro": "Carpații românești",
+   "en": "The Romanian Carpathians"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Carpații formează un arc în centrul țării și au trei grupe: Orientali, Meridionali și Occidentali. Aproximativ o treime din țară este muntoasă.",
+     "en": "The Carpathians form an arc in the middle of the country in three groups: Eastern, Southern and Western. About a third of the country is mountainous."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⛰️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Meridionalii au cele mai înalte vârfuri: Moldoveanu (Făgăraș, aproximativ 2 544 m), Omu (Bucegi), Peleaga (Retezat), Parângul Mare. Orientalii: Pietrosu Rodnei, Ceahlău, Rarău. Occidentalii sunt Apuseni, Semenic, Poiana Ruscă.",
+     "en": "The Southern group has the highest peaks: Moldoveanu (Făgăraș, about 2 544 m), Omu (Bucegi), Peleaga (Retezat), Parângul Mare. Eastern: Pietrosu Rodnei, Ceahlău, Rarău. Western: Apuseni, Semenic, Poiana Ruscă."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏔️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Pentru ordonare, compară numerele rotunjite și alege întâi cel mai mare. Unele vârfuri sunt foarte apropiate ca înălțime, așa că folosim doar perechi cu diferențe clare.",
+     "en": "To order, compare the rounded numbers and start with the biggest. Some peaks are very close in height, so we only use pairs with clear differences."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔢",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.carpathians.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.carpathians.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.relief.8",
+  "skillId": "geo.ro.relief.8",
+  "title": {
+   "ro": "Dealuri, podișuri și câmpii",
+   "en": "Hills, plateaus and plains"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "În afara Carpaților, relieful coboară în trepte: Subcarpații, apoi dealurile și podișurile (Transilvaniei, Moldovei, Getic, Dobrogei), apoi câmpiile.",
+     "en": "Outside the Carpathians the relief steps down: the Subcarpathians, then hills and plateaus (Transylvanian, Moldavian, Getic, Dobrogea), then plains."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏞️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Câmpia Română, în sud, este cea mai mare câmpie. Câmpia de Vest se află la granița cu Ungaria și Serbia. Podișul Transilvaniei este în interiorul arcului carpatic.",
+     "en": "The Romanian Plain, in the south, is the largest. The Western Plain is on the border with Hungary and Serbia. The Transylvanian Plateau lies inside the Carpathian arc."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌾",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Delta Dunării este cea mai tânără unitate de relief, formată din aluviunile aduse de fluviu. Munții Măcinului din Dobrogea sunt printre cei mai vechi și mai joși.",
+     "en": "The Danube Delta is the youngest relief unit, built from the silt the river brings. The Măcin Mountains in Dobrogea are among the oldest and lowest."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🦢",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.relief.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.relief.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.climate.8",
+  "skillId": "geo.ro.climate.8",
+  "title": {
+   "ro": "Clima României",
+   "en": "The climate of Romania"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "România are climă temperat-continentală, cu patru anotimpuri. Aici ajung mase de aer oceanice, dinspre vest, și mase de aer foarte reci sau foarte calde dinspre est.",
+     "en": "Romania has a temperate-continental climate with four seasons. Oceanic air masses reach it from the west and very cold or very hot air from the east."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌦️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Cele mai multe precipitații cad în Carpați, iar cele mai puține în Dobrogea și pe litoral. Pe munte, temperatura scade cu altitudinea.",
+     "en": "Most precipitation falls in the Carpathians and the least in Dobrogea and on the coast. In the mountains temperature drops with altitude."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌧️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Crivățul este un vânt rece de iarnă în est și în Bărăgan. Austrul bate în sud-vest. Vara este mai cald în sud și în câmpii.",
+     "en": "The Crivăț is a cold winter wind in the east and in the Bărăgan. The Austru blows in the south-west. Summer is hotter in the south and on the plains."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "❄️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.climate.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.climate.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.rivers.8",
+  "skillId": "geo.ro.rivers.8",
+  "title": {
+   "ro": "Râurile României",
+   "en": "The rivers of Romania"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Majoritatea râurilor izvorăsc din Carpați și se varsă în Dunăre, direct sau prin alte râuri: Oltul, Jiul, Argeșul, Ialomița, Siretul, Prutul.",
+     "en": "Most rivers rise in the Carpathians and flow into the Danube, directly or through other rivers: the Olt, Jiu, Argeș, Ialomița, Siret and Prut."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏞️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Mureșul și Someșul se varsă în Tisa, în afara țării. Bistrița este afluent al Siretului. Dunărea se varsă în Marea Neagră.",
+     "en": "The Mureș and Someș flow into the Tisza, outside the country. The Bistrița is a tributary of the Siret. The Danube flows into the Black Sea."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌊",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Orașele mari se află pe ape: București pe Dâmbovița, Cluj-Napoca pe Someșul Mic, Timișoara pe Bega, Iași pe Bahlui, Pitești pe Argeș. Lungimile se dau „aproximativ”.",
+     "en": "Big cities stand on waters: Bucharest on the Dâmbovița, Cluj-Napoca on the Someșul Mic, Timișoara on the Bega, Iași on the Bahlui, Pitești on the Argeș. Lengths are given as approximate."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌉",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.rivers.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.rivers.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.danube.8",
+  "skillId": "geo.ro.danube.8",
+  "title": {
+   "ro": "Dunărea, Delta și Marea Neagră",
+   "en": "The Danube, the Delta and the Black Sea"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Dunărea intră în România la Baziaș, trece prin Cazane și Porțile de Fier și ajunge la Delta Dunării, unde formează brațele Chilia, Sulina și Sfântu Gheorghe.",
+     "en": "The Danube enters Romania at Baziaș, passes through the Cazane and the Iron Gates and reaches the Danube Delta, where it forms the Chilia, Sulina and Sfântu Gheorghe arms."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌊",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Delta Dunării este rezervație a biosferei, cu pelicani, stuf și o mare biodiversitate. Canalul Dunăre–Marea Neagră scurtează drumul spre Constanța.",
+     "en": "The Danube Delta is a biosphere reserve with pelicans, reeds and great biodiversity. The Danube–Black Sea Canal shortens the way to Constanța."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🦩",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Marea Neagră are salinitate mai mică decât oceanele. Constanța este cel mai mare port. Lacuri: Razim-Sinoe, Techirghiol (nămol), Sfânta Ana (crater), Izvorul Muntelui (artificial).",
+     "en": "The Black Sea is less salty than the oceans. Constanța is the biggest port. Lakes: Razim-Sinoe, Techirghiol (mud), Sfânta Ana (crater), Izvorul Muntelui (artificial)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⚓",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.danube.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.danube.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.veg.8",
+  "skillId": "geo.ro.veg.8",
+  "title": {
+   "ro": "Vegetație, faună și soluri",
+   "en": "Vegetation, wildlife and soils"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Vegetația se schimbă pe etaje: stepa și silvostepa în câmpii, pădurile de foioase (fag, stejar) pe dealuri, pădurile de conifere (molid) în munți, pajiști alpine sus.",
+     "en": "Vegetation changes by level: steppe and wooded steppe on plains, broadleaf forests (beech, oak) on hills, conifer forests (spruce) in the mountains, alpine meadows higher up."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌲",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "În Carpați trăiesc ursul brun, lupul, capra neagră. În Deltă – pelicani și stuf. Cel mai fertil sol, cernoziomul, se află în Câmpia Română și în Dobrogea.",
+     "en": "The Carpathians are home to brown bears, wolves and chamois. The Delta has pelicans and reeds. The most fertile soil, chernozem, lies in the Romanian Plain and in Dobrogea."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🐻",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Parcurile naționale protejează natura: Retezat, Piatra Craiului, Rodna, Ceahlău, Cheile Bicazului. Delta Dunării este rezervație a biosferei.",
+     "en": "National parks protect nature: Retezat, Piatra Craiului, Rodna, Ceahlău, Bicaz Gorge. The Danube Delta is a biosphere reserve."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌿",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.veg.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.veg.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.resources.8",
+  "skillId": "geo.ro.resources.8",
+  "title": {
+   "ro": "Resursele naturale",
+   "en": "Natural resources"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Resursele neregenerabile sunt epuizabile: petrolul (Prahova), gazele (Transilvania, Marea Neagră), huila (Valea Jiului), lignitul (Oltenia), sarea (Praid, Slănic), aurul (Apuseni).",
+     "en": "Non-renewable resources run out: oil (Prahova), gas (Transylvania, the Black Sea), hard coal (Jiu Valley), lignite (Oltenia), salt (Praid, Slănic), gold (Apuseni)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⛏️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Resursele regenerabile se refac: lemnul din păduri, apa pentru hidrocentrale (Porțile de Fier, Vidraru), vântul (Dobrogea), soarele.",
+     "en": "Renewable resources renew themselves: timber from forests, water for hydropower plants (Iron Gates, Vidraru), wind (Dobrogea), the sun."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💨",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Energia nucleară se produce la Cernavodă. Asociază fiecare resursă cu zona ei și cu felul ei: regenerabilă sau nu.",
+     "en": "Nuclear energy is produced at Cernavodă. Link each resource to its area and its type: renewable or not."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⚡",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.resources.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.resources.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.population.8",
+  "skillId": "geo.ro.population.8",
+  "title": {
+   "ro": "Populația României",
+   "en": "The population of Romania"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "România are aproximativ 19 milioane de locuitori, iar populația scade ușor și îmbătrânește. Puțin peste jumătate trăiește în orașe.",
+     "en": "Romania has about 19 million inhabitants and the population is slowly falling and ageing. A little over half live in cities."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👥",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Limba oficială este româna. Cea mai mare minoritate este cea maghiară; mai sunt romi, ucraineni, germani și alții. Densitatea este de aproximativ 80 loc./km².",
+     "en": "The official language is Romanian. The largest minority is Hungarian; there are also Roma, Ukrainians, Germans and others. Density is about 80 inhabitants per km²."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏘️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Unitățile administrative sunt județele (41, plus municipiul București), municipiile, orașele și comunele. București este cel mai mare oraș.",
+     "en": "Administrative units are counties (41, plus the municipality of Bucharest), municipalities, towns and communes. Bucharest is the largest city."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏙️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.population.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.population.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.counties.8",
+  "skillId": "geo.ro.counties.8",
+  "title": {
+   "ro": "Județe și reședințe",
+   "en": "Counties and seats"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "România are 41 de județe și municipiul București. Fiecare județ are o reședință, orașul în care se află conducerea județului. Județul Ilfov nu are reședință proprie.",
+     "en": "Romania has 41 counties and the municipality of Bucharest. Each county has a seat, the city where the county government sits. Ilfov County has no seat of its own."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗺️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Câteva perechi: Brașov – Brașov, Sibiu – Sibiu, Cluj – Cluj-Napoca, Dolj – Craiova, Prahova – Ploiești, Constanța – Constanța, Mureș – Târgu Mureș.",
+     "en": "A few pairs: Brașov – Brașov, Sibiu – Sibiu, Cluj – Cluj-Napoca, Dolj – Craiova, Prahova – Ploiești, Constanța – Constanța, Mureș – Târgu Mureș."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏙️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Atenție la numele care nu seamănă cu județul: Argeș – Pitești, Gorj – Târgu Jiu, Covasna – Sfântu Gheorghe, Harghita – Miercurea Ciuc, Vâlcea – Râmnicu Vâlcea.",
+     "en": "Watch the names that do not look like the county: Argeș – Pitești, Gorj – Târgu Jiu, Covasna – Sfântu Gheorghe, Harghita – Miercurea Ciuc, Vâlcea – Râmnicu Vâlcea."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔍",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.counties.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.counties.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.regions.8",
+  "skillId": "geo.ro.regions.8",
+  "title": {
+   "ro": "Regiunile istorice",
+   "en": "Historical regions"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "România are regiuni istorice: Muntenia, Oltenia, Moldova, Transilvania, Banat, Crișana, Maramureș și Dobrogea. Nu sunt unități administrative, ci regiuni cu istorie comună.",
+     "en": "Romania has historical regions: Muntenia, Oltenia, Moldova, Transylvania, Banat, Crișana, Maramureș and Dobrogea. They are not administrative units but regions with a shared history."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏰",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Exemple: Prahova și Argeș în Muntenia, Dolj și Gorj în Oltenia, Iași și Suceava în Moldova, Cluj și Brașov în Transilvania, Timiș în Banat, Constanța în Dobrogea.",
+     "en": "Examples: Prahova and Argeș in Muntenia, Dolj and Gorj in Oltenia, Iași and Suceava in Moldova, Cluj and Brașov in Transylvania, Timiș in Banat, Constanța in Dobrogea."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧭",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Unele județe de graniță între regiuni sunt discutabile, de aceea exercițiile folosesc doar cazuri clare.",
+     "en": "Some counties on the borders between regions are debatable, so the exercises use only clear cases."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⚠️",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.regions.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.regions.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ },
+ {
+  "id": "exp.geo.ro.economy.8",
+  "skillId": "geo.ro.economy.8",
+  "title": {
+   "ro": "Economia României",
+   "en": "The economy of Romania"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Agricultura: cereale și floarea-soarelui în câmpii, vița-de-vie și pomii pe dealuri, creșterea animalelor în zone de deal și munte.",
+     "en": "Farming: cereals and sunflower on the plains, vines and fruit trees on the hills, livestock on hills and mountains."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌾",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Industria: petrochimie la Ploiești, siderurgie la Galați, automobile la Mioveni (Dacia), construcții navale la Constanța. Serviciile (comerț, IT, educație, sănătate) sunt un sector mare.",
+     "en": "Industry: petrochemicals at Ploiești, steel at Galați, cars at Mioveni (Dacia), shipbuilding at Constanța. Services (trade, IT, education, health) are a large sector."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏭",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Transport: porturile (Constanța), aeroportul Henri Coandă, căile ferate, autostrăzi și Transfăgărășanul. Turismul: litoral, munți, Delta.",
+     "en": "Transport: ports (Constanța), Henri Coandă airport, railways, motorways and the Transfăgărășan road. Tourism: seaside, mountains, the Delta."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🚆",
+     "count": 1
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.geo.ro.economy.8",
+   "kind": "explanation",
+   "title": "Explanation for geo.ro.economy.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting human review"
+  }
+ }
+]

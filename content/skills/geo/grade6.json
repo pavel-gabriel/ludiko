@@ -1,0 +1,543 @@
+[
+ {
+  "id": "geo.europe.position.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.1"
+   }
+  ],
+  "title": {
+   "ro": "Europa: poziție, limite, peninsule și mări",
+   "en": "Europe: position, limits, peninsulas and seas"
+  },
+  "prerequisites": [
+   "geo.earth.continents.5",
+   "geo.romania.position.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "europe-position"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.position.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.position.6",
+   "kind": "data",
+   "title": "Skill geo.europe.position.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.europe.relief.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.2"
+   }
+  ],
+  "title": {
+   "ro": "Relieful Europei: munți și câmpii",
+   "en": "The relief of Europe: mountains and plains"
+  },
+  "prerequisites": [
+   "geo.europe.position.6",
+   "geo.relief.forms.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "europe-relief"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.relief.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.relief.6",
+   "kind": "data",
+   "title": "Skill geo.europe.relief.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.europe.climate.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.3"
+   }
+  ],
+  "title": {
+   "ro": "Clima și vegetația Europei",
+   "en": "The climate and vegetation of Europe"
+  },
+  "prerequisites": [
+   "geo.europe.position.6",
+   "geo.climate.general.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "europe-climate"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.climate.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.climate.6",
+   "kind": "data",
+   "title": "Skill geo.europe.climate.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.europe.waters.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "1.4"
+   }
+  ],
+  "title": {
+   "ro": "Apele Europei: râuri, lacuri, mări",
+   "en": "The waters of Europe: rivers, lakes, seas"
+  },
+  "prerequisites": [
+   "geo.europe.position.6",
+   "geo.waters.world.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "europe-waters"
+    }
+   },
+   {
+    "generator": "geo-world",
+    "params": {
+     "only": "mouth"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.waters.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.waters.6",
+   "kind": "data",
+   "title": "Skill geo.europe.waters.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.map.scale.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 1,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "2.1"
+   }
+  ],
+  "title": {
+   "ro": "Scara hărții: scări mari și mici, calcule și proporții",
+   "en": "Map scale: large and small scales, calculations and proportions"
+  },
+  "prerequisites": [
+   "geo.map.scale.5",
+   "mat.ratio.basic"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-scale",
+    "params": {
+     "level": 2
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.map.scale.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.map.scale.6",
+   "kind": "data",
+   "title": "Skill geo.map.scale.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.europe.capitals.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "2.2"
+   }
+  ],
+  "title": {
+   "ro": "Țări și capitale din Europa (cele mai importante)",
+   "en": "Countries and capitals of Europe (the main ones)"
+  },
+  "prerequisites": [
+   "geo.europe.position.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-capital",
+    "params": {
+     "scope": "europe-core"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.capitals.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.capitals.6",
+   "kind": "data",
+   "title": "Skill geo.europe.capitals.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.europe.countries.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "2.3"
+   }
+  ],
+  "title": {
+   "ro": "Țările Europei: toate capitalele, țări fără ieșire la mare",
+   "en": "The countries of Europe: all capitals, landlocked countries"
+  },
+  "prerequisites": [
+   "geo.europe.capitals.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-capital",
+    "params": {
+     "scope": "europe"
+    }
+   },
+   {
+    "generator": "geo-sort",
+    "params": {
+     "kind": "landlocked"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.countries.6"
+  ],
+  "masteryCheck": {
+   "items": 5,
+   "minCorrect": 4
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.countries.6",
+   "kind": "data",
+   "title": "Skill geo.europe.countries.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.europe.neighbours.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "2.4"
+   }
+  ],
+  "title": {
+   "ro": "România și vecinii ei",
+   "en": "Romania and its neighbours"
+  },
+  "prerequisites": [
+   "geo.europe.capitals.6",
+   "geo.romania.position.4"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-capital",
+    "params": {
+     "scope": "neighbours"
+    }
+   },
+   {
+    "generator": "geo-sort",
+    "params": {
+     "kind": "neighbour"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.neighbours.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.neighbours.6",
+   "kind": "data",
+   "title": "Skill geo.europe.neighbours.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.europe.eu.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "3.1"
+   }
+  ],
+  "title": {
+   "ro": "Uniunea Europeană: state membre și simboluri",
+   "en": "The European Union: member states and symbols"
+  },
+  "prerequisites": [
+   "geo.europe.capitals.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "europe-eu"
+    }
+   },
+   {
+    "generator": "geo-eu"
+   },
+   {
+    "generator": "geo-sort",
+    "params": {
+     "kind": "eu"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.eu.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.eu.6",
+   "kind": "data",
+   "title": "Skill geo.europe.eu.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.europe.population.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "3.2"
+   }
+  ],
+  "title": {
+   "ro": "Populația Europei: țări, limbi, orașe",
+   "en": "The population of Europe: countries, languages, cities"
+  },
+  "prerequisites": [
+   "geo.europe.position.6",
+   "geo.population.5"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "europe-population"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.population.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.population.6",
+   "kind": "data",
+   "title": "Skill geo.europe.population.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ },
+ {
+  "id": "geo.europe.economy.6",
+  "subject": "geo",
+  "grade": 6,
+  "semester": 2,
+  "competences": [
+   {
+    "programa": "GEO-V-VIII-2017",
+    "code": "3.3"
+   }
+  ],
+  "title": {
+   "ro": "Economia Europei: resurse, industrie, agricultură, turism",
+   "en": "The economy of Europe: resources, industry, farming, tourism"
+  },
+  "prerequisites": [
+   "geo.europe.eu.6",
+   "geo.europe.population.6"
+  ],
+  "itemSources": [
+   {
+    "generator": "geo-quiz",
+    "params": {
+     "topic": "europe-economy"
+    }
+   },
+   {
+    "bank": "geo/grade6.json"
+   }
+  ],
+  "explanations": [
+   "exp.geo.europe.economy.6"
+  ],
+  "masteryCheck": {
+   "items": 4,
+   "minCorrect": 3
+  },
+  "provenance": {
+   "id": "prov.skill.geo.europe.economy.6",
+   "kind": "data",
+   "title": "Skill geo.europe.economy.6",
+   "author": "Ludiko",
+   "source": "own",
+   "licence": "OWN",
+   "notes": "competence codes to verify against the official programa (Geografie, clasele V-VIII, 2017); content in our own words"
+  }
+ }
+]
