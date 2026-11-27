@@ -21,6 +21,7 @@ import {
   initMemoryGameState,
   initShapeGameState,
 } from '@/services/gameSession';
+import { ensureContentForSkills } from '@/engine/content/packs';
 import { buildGameItems, gameKind, isItemGame, ITEM_SPRINT_POOL } from '@/services/itemGame';
 import type { GameSettings, MemoryCard, Question, ShapeQuestion } from '@/utils/types';
 
@@ -44,6 +45,8 @@ export async function initRoomGame(roomId: string, settings: GameSettings, playe
   }
 
   if (isItemGame(settings)) {
+    // The host generates the items: load the chosen skills' content packs first (docs/ENGINE.md "Content packs")
+    await ensureContentForSkills(settings.skillIds!);
     const items = buildGameItems(settings.skillIds!, {
       count: sprint ? ITEM_SPRINT_POOL : settings.rounds,
       kind: gameKind(settings),

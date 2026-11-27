@@ -1,69 +1,94 @@
 /**
- * Content registry: loads every JSON file under content/{skills,items,explanations}/ at build time
- * (Vite `import.meta.glob`, eager) and exposes lookup helpers. Validation happens in CI
- * (tests/contentValidation.test.ts), not at runtime.
+ * Content registry (docs/ENGINE.md "Content packs").
+ *
+ * - **Skill index** (always loaded): every skill of every subject and grade, from content/skills/**
+ *   (Vite `import.meta.glob`, eager). Placement, planner, map and availability only need this, and
+ *   cross-subject prerequisites (geo → mat, fiz → mat) resolve because the index has every skill.
+ * - **Packs** (loaded on demand): static items and explanations per subject × grade band, registered by
+ *   `registerPack` once `ensurePacks` (./packs.ts) has loaded them. Item/explanation lookups are
+ *   synchronous over what is loaded; callers await `ensureContentForSkills` (or a `ContentGate`) first.
+ *
+ * Validation happens in CI (tests/contentValidation.test.ts), not at runtime.
  */
 import type { Explanation, Grade, Item, Skill, SubjectId } from '../types';
+import { packIdOf } from './packIds';
 
-const modules = import.meta.glob('../../../content/{skills,items,explanations}/**/*.json', {
+const skillFiles = import.meta.glob('../../../content/skills/**/*.json', {
   eager: true,
   import: 'default',
 }) as Record<string, unknown>;
 
-interface Registry {
+export interface PackData {
+  items: Item[];
+  explanations: Explanation[];
+}
+
+interface SkillIndex {
   skills: Skill[];
   skillsById: Map<string, Skill>;
-  itemsBySkill: Map<string, Item[]>;
-  explanationsById: Map<string, Explanation>;
 }
 
-let cached: Registry | null = null;
+let index: SkillIndex | null = null;
+const itemsBySkill = new Map<string, Item[]>();
+const explanationsById = new Map<string, Explanation>();
+const loadedPacks = new Set<string>();
 
-function buildRegistry(files: Record<string, unknown>): Registry {
-  const skills: Skill[] = [];
-  const items: Item[] = [];
-  const explanations: Explanation[] = [];
-  for (const [path, data] of Object.entries(files)) {
-    if (!Array.isArray(data)) continue;
-    if (path.includes('/content/skills/')) skills.push(...(data as Skill[]));
-    else if (path.includes('/content/items/')) items.push(...(data as Item[]));
-    else if (path.includes('/content/explanations/')) explanations.push(...(data as Explanation[]));
+function skillIndex(): SkillIndex {
+  if (!index) {
+    const skills: Skill[] = [];
+    for (const data of Object.values(skillFiles)) if (Array.isArray(data)) skills.push(...(data as Skill[]));
+    index = { skills, skillsById: new Map(skills.map((s) => [s.id, s])) };
   }
-  const itemsBySkill = new Map<string, Item[]>();
-  for (const it of items) {
-    const list = itemsBySkill.get(it.skillId) ?? [];
-    list.push(it);
-    itemsBySkill.set(it.skillId, list);
-  }
-  return {
-    skills,
-    skillsById: new Map(skills.map((s) => [s.id, s])),
-    itemsBySkill,
-    explanationsById: new Map(explanations.map((e) => [e.id, e])),
-  };
-}
-
-function registry(): Registry {
-  return (cached ??= buildRegistry(modules));
+  return index;
 }
 
 export function getAllSkills(): Skill[] {
-  return registry().skills;
+  return skillIndex().skills;
 }
 
 export function getSkill(id: string): Skill | undefined {
-  return registry().skillsById.get(id);
+  return skillIndex().skillsById.get(id);
 }
 
 export function getSkillsBySubject(subject: SubjectId, grade?: Grade): Skill[] {
-  return registry().skills.filter((s) => s.subject === subject && (grade === undefined || s.grade === grade));
+  return skillIndex().skills.filter((s) => s.subject === subject && (grade === undefined || s.grade === grade));
 }
 
-/** Static (authored) items for a skill. Generated items come from the generators, not here. */
+/** The content pack holding a skill's items and explanations */
+export function packOfSkill(skill: Pick<Skill, 'subject' | 'grade'>): string {
+  return packIdOf(skill.subject, skill.grade);
+}
+
+/** Add a loaded pack's items and explanations (idempotent) */
+export function registerPack(packId: string, data: PackData): void {
+  if (loadedPacks.has(packId)) return;
+  loadedPacks.add(packId);
+  for (const it of data.items) {
+    const list = itemsBySkill.get(it.skillId);
+    if (list) list.push(it);
+    else itemsBySkill.set(it.skillId, [it]);
+  }
+  for (const e of data.explanations) explanationsById.set(e.id, e);
+}
+
+export function isPackLoaded(packId: string): boolean {
+  return loadedPacks.has(packId);
+}
+
+/** The skill's items and explanations are in memory (its pack is loaded) */
+export function isSkillContentLoaded(skill: Pick<Skill, 'subject' | 'grade'>): boolean {
+  return loadedPacks.has(packOfSkill(skill));
+}
+
+/**
+ * Static (authored) items for a skill. Generated items come from the generators, not here.
+ * Empty until the skill's pack is loaded (`ensureContentForSkills`).
+ */
 export function getItemsForSkill(skillId: string): Item[] {
-  return registry().itemsBySkill.get(skillId) ?? [];
+  return itemsBySkill.get(skillId) ?? [];
 }
 
+/** Undefined until the pack of a skill using it is loaded */
 export function getExplanation(id: string): Explanation | undefined {
-  return registry().explanationsById.get(id);
+  return explanationsById.get(id);
 }

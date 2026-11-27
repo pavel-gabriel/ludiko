@@ -9,7 +9,7 @@
  * in `gameEngine.ts`; their game state has `questions` and no `items`, and the pages render by what the
  * game state contains, so an old room state keeps working untouched.
  */
-import { getSkill } from '@/engine/content/registry';
+import { getSkill, isSkillContentLoaded } from '@/engine/content/registry';
 import { generateItems, mulberry32 } from '@/engine/items/generators';
 import type { Difficulty as ItemDifficulty, Item, ItemType, Skill } from '@/engine/types';
 import { getSessionItems } from '@/ui/session/itemSource';
@@ -138,7 +138,8 @@ export function buildGameItems(skillIds: readonly string[], opts: BuildItemsOpti
 const usableCache = new Map<string, boolean>();
 
 /**
- * Does the skill produce enough playable material for the mode?
+ * Does the skill produce enough playable material for the mode? Optimistic (true) until the skill's
+ * content pack is loaded; `initRoomGame` loads it before generating.
  * At least 4 items of an allowed type in a sample.
  * (Text-comprehension skills, made of read-and-answer items, are not.)
  */
@@ -146,6 +147,9 @@ export function skillUsable(skillId: string, kind: ItemGameKind): boolean {
   const key = `${skillId}:${kind}`;
   const hit = usableCache.get(key);
   if (hit !== undefined) return hit;
+  /* Content pack not loaded yet (pickers gate their lists on it): assume yes, don't cache the guess */
+  const skill = getSkill(skillId);
+  if (skill && !isSkillContentLoaded(skill)) return true;
   let ok = false;
   try {
     ok = buildGameItems([skillId], { count: 4, kind, seed: 1 }).length >= 4;

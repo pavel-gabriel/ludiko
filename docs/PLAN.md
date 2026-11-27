@@ -189,6 +189,17 @@ Fluency modes (Race, Sprint) are offered only for skills that are already `pract
 
 - **Offline-first PWA:** a service worker caches the app shell and content bundles per subject and grade; progress is stored locally (IndexedDB) and synced when online.
 - **Low-end budget:** target a 2 GB RAM Android phone on slow 3G. Initial JS < 250 KB gzipped (code-split per game mode); content bundles < 1 MB per subject-grade; SVG over raster.
+- **Content packs (done, docs/ENGINE.md "Content packs"):** content is split into an always-loaded **skill index**
+  (every skill of every subject/grade: ids, titles, prerequisites, itemSources — 412 KB raw / 43 KB gzip, precached)
+  and 16 lazy **packs** per subject × grade band (`mat-p` = grades 0–IV, `mat-g` = V–VIII, …) holding the static
+  items, explanations, generators and their datasets. Pages load a pack before generating items (`ContentGate`,
+  learnerService); the learner home prefetches the active child's packs (their subjects, grades ≤ theirs) when
+  idle; the service worker runtime-caches packs (CacheFirst) and precaches only the app shell + index.
+  Before: one 2.2 MB (352 KB gzip) content chunk + a 977 KB (298 KB gzip) generators chunk, both needed before the
+  learner home rendered, and a 5.4 MB precache for everyone. After: precache 2.7 MB (default 2 MiB per-file limit
+  again); largest pack `ist-g` 405 KB raw / 95 KB gzip; a grade I child downloads 151 KB gzip of packs
+  (mat/rom/eng/stiinte/logic primary), a grade VIII child 601 KB gzip (everything they can be checked on).
+  Budget: a pack (with its pack-only dependencies) stays < 1 MB raw.
 - **Shared devices:** several child profiles on one phone (siblings, or a parent's phone).
 - **Audio for pre-readers:** pre-recorded Romanian narration for grade 0–II items and explanations (on-device TTS for `ro-RO` is not reliable offline). Audio packs are downloaded separately.
 - **Accessibility:** dyslexia font (exists), large tap targets, no colour-only signals, ARIA (exists), reduced motion.
