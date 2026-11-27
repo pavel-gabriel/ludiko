@@ -631,7 +631,8 @@
       "logic": "Logic puzzles",
       "bio": "Biology",
       "fiz": "Physics",
-      "chim": "Chemistry"
+      "chim": "Chemistry",
+      "eng": "English"
     },
     "home": {
       "missionTitle": "Today's mission",
