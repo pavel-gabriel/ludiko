@@ -5,6 +5,10 @@
  * Special stickers (island conquered, set finished, play-day milestones) use prefixed ids, see `specialSticker`.
  */
 
+import type { SubjectId } from '@/engine/types'
+import { parseExtraSticker } from '@/learner/extrasUnlocks'
+import { subjectEmoji } from '@/ui/learn/subjects'
+
 export type SetId = 'animals' | 'fruits' | 'space' | 'sea' | 'sport'
 
 export interface Sticker {
@@ -83,13 +87,13 @@ export const LEGACY_STICKERS = ['🦊', '🐼', '🦄', '🐙', '🦋', '🐢', 
 
 /* ---------------- special stickers ---------------- */
 
-export type SpecialKind = 'skill' | 'set' | 'streak'
+export type SpecialKind = 'skill' | 'set' | 'streak' | 'extra'
 
 export interface SpecialSticker {
   id: string
   kind: SpecialKind
   emoji: string
-  /** skill id, set id or play-day count */
+  /** skill id, set id, play-day count or milestone id */
   ref: string
 }
 
@@ -119,10 +123,21 @@ export function parseSpecial(id: string): SpecialSticker | undefined {
   if (prefix === 'set' && STICKER_SETS.some((x) => x.id === ref)) {
     return { id, kind: 'set', ref, emoji: SET_EMOJI[ref as SetId] }
   }
+  if (prefix === 'extra') return parseExtra(id)
   if (prefix === 'streak' && (STREAK_MILESTONES as readonly number[]).includes(Number(ref))) {
     return { id, kind: 'streak', ref, emoji: STREAK_EMOJI[Number(ref)] }
   }
   return undefined
+}
+
+const EXTRA_EMOJI = { days7: '🥳', checksAll: '🎓' } as const
+
+/** Parse a special sticker id; see `parseSpecial` for the other kinds */
+function parseExtra(id: string): SpecialSticker | undefined {
+  const milestone = parseExtraSticker(id)
+  if (!milestone) return undefined
+  const emoji = milestone === 'days7' || milestone === 'checksAll' ? EXTRA_EMOJI[milestone] : subjectEmoji(milestone.slice('island:'.length) as SubjectId)
+  return { id, kind: 'extra', ref: milestone, emoji }
 }
 
 /** What to draw for any sticker id (regular or special); undefined for unknown ids */

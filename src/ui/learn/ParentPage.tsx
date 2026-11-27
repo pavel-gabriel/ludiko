@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import FamilyAccountCard from '@/components/family/FamilyAccountCard'
@@ -10,6 +11,9 @@ import LearnShell, { LearnError, LearnLoading } from './LearnShell'
 import ParentView from './ParentView'
 import RequireProfile from './RequireProfile'
 import { useAsync } from './useAsync'
+
+/* The family extras (history, all children) are their own chunk: the parents page works without them */
+const FamilyExtras = lazy(() => import('@/ui/family/FamilyExtras'))
 
 function Parent({ profile }: { profile: ChildProfile }) {
   const { t, i18n } = useTranslation()
@@ -38,6 +42,11 @@ function Parent({ profile }: { profile: ChildProfile }) {
           )
         }}
       />
+      <div className="mt-4">
+        <Suspense fallback={null}>
+          <FamilyExtras profile={profile} />
+        </Suspense>
+      </div>
       {/* "Cont de părinte": the parent area only, never on child screens */}
       <div className="mt-4">
         <FamilyAccountCard />

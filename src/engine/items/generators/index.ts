@@ -89,6 +89,10 @@ import './segmentsUnits';
 import './engPrimaryVocab';
 import './engPrimaryNumbers';
 import './engPrimaryGrammar';
+// English gimnaziu (eng.*.5-8): verb tenses, irregular verbs, nouns, adjectives, vocabulary, word order, curated quizzes, passive, reported speech, word formation
+import './engGimVerbs';
+import './engGimWords';
+import './engGimTransform';
 
 export { getGenerator, listGenerators, registerGenerator } from './registry';
 export type { GeneratorContext, GeneratorFn } from './registry';

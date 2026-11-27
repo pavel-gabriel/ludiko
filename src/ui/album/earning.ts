@@ -1,3 +1,4 @@
+import { extraStickerId, type MilestoneId } from '@/learner/extrasUnlocks'
 import {
   ALL_STICKER_IDS,
   STICKER_SETS,
@@ -84,6 +85,8 @@ export interface SpecialInput {
   masteredSkillIds: readonly string[]
   /** Distinct play days so far */
   playDays: number
+  /** Learning milestones reached (src/learner/extrasUnlocks): each has an extra sticker */
+  milestones?: readonly MilestoneId[]
 }
 
 /**
@@ -100,6 +103,10 @@ export function dueSpecialStickers(owned: readonly string[], input: SpecialInput
   for (const days of STREAK_MILESTONES) {
     const id = streakStickerId(days)
     if (input.playDays >= days && !have.has(id)) due.push(id)
+  }
+  for (const m of input.milestones ?? []) {
+    const id = extraStickerId(m)
+    if (!have.has(id)) due.push(id)
   }
   for (const set of STICKER_SETS) {
     const id = setStickerId(set.id)

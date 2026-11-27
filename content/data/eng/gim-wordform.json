@@ -1,0 +1,486 @@
+{
+ "provenance": {
+  "id": "prov.data.eng.gim-wordform",
+  "kind": "data",
+  "title": "Ludiko word-formation items (prefixes and suffixes) for grade VIII",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Original sentences written by us; distractors are plausible mis-formations or contextually wrong real words. Awaiting review by an English teacher."
+ },
+ "entries": [
+  {
+   "sentence": "My brother is very ___ with his money. (care)",
+   "base": "care",
+   "c": "careful",
+   "w": [
+    "careless",
+    "carefull",
+    "carely"
+   ],
+   "affix": "ful"
+  },
+  {
+   "sentence": "She is a very ___ girl. She always helps. (help)",
+   "base": "help",
+   "c": "helpful",
+   "w": [
+    "helpless",
+    "helpfull",
+    "helpy"
+   ],
+   "affix": "ful"
+  },
+  {
+   "sentence": "The torch is ___ without batteries. (use)",
+   "base": "use",
+   "c": "useless",
+   "w": [
+    "useful",
+    "usefull",
+    "uselss"
+   ],
+   "affix": "less"
+  },
+  {
+   "sentence": "The garden is full of ___ flowers. (colour)",
+   "base": "colour",
+   "c": "colourful",
+   "w": [
+    "colourless",
+    "colourly",
+    "colourness"
+   ],
+   "affix": "ful"
+  },
+  {
+   "sentence": "The ___ in the cave scared us. (dark)",
+   "base": "dark",
+   "c": "darkness",
+   "w": [
+    "darkly",
+    "darkful",
+    "darken"
+   ],
+   "affix": "ness"
+  },
+  {
+   "sentence": "The film was very ___. We laughed a lot. (fun)",
+   "base": "fun",
+   "c": "funny",
+   "w": [
+    "funless",
+    "funful",
+    "funly"
+   ],
+   "affix": "y"
+  },
+  {
+   "sentence": "Eating fruit is ___. (health)",
+   "base": "health",
+   "c": "healthy",
+   "w": [
+    "healthless",
+    "healthly",
+    "healthness"
+   ],
+   "affix": "y"
+  },
+  {
+   "sentence": "The weather is ___ today, so take an umbrella. (rain)",
+   "base": "rain",
+   "c": "rainy",
+   "w": [
+    "rainless",
+    "rainful",
+    "rainly"
+   ],
+   "affix": "y"
+  },
+  {
+   "sentence": "It was a ___ day, so we wore sunglasses. (sun)",
+   "base": "sun",
+   "c": "sunny",
+   "w": [
+    "sunless",
+    "suny",
+    "sunful"
+   ],
+   "affix": "y"
+  },
+  {
+   "sentence": "The soup was ___. I loved it. (taste)",
+   "base": "taste",
+   "c": "tasty",
+   "w": [
+    "tasteless",
+    "tastey",
+    "tastly"
+   ],
+   "affix": "y"
+  },
+  {
+   "sentence": "His ___ was clear to everyone. (sad)",
+   "base": "sad",
+   "c": "sadness",
+   "w": [
+    "sadly",
+    "sadful",
+    "sadless"
+   ],
+   "affix": "ness"
+  },
+  {
+   "sentence": "She smiled ___ when she opened the present. (happy)",
+   "base": "happy",
+   "c": "happily",
+   "w": [
+    "happiness",
+    "happyly",
+    "unhappy"
+   ],
+   "affix": "ly"
+  },
+  {
+   "sentence": "They walked ___ so as not to wake the baby. (quiet)",
+   "base": "quiet",
+   "c": "quietly",
+   "w": [
+    "quietness",
+    "quietful",
+    "quitely"
+   ],
+   "affix": "ly"
+  },
+  {
+   "sentence": "He answered the questions ___. (easy)",
+   "base": "easy",
+   "c": "easily",
+   "w": [
+    "easiness",
+    "easyly",
+    "easiful"
+   ],
+   "affix": "ly"
+  },
+  {
+   "sentence": "She did her homework ___. She made no mistakes. (careful)",
+   "base": "careful",
+   "c": "carefully",
+   "w": [
+    "carefulness",
+    "carefuly",
+    "carefull"
+   ],
+   "affix": "ly"
+  },
+  {
+   "sentence": "Please don't speak so ___! The baby is sleeping. (loud)",
+   "base": "loud",
+   "c": "loudly",
+   "w": [
+    "loudness",
+    "loudful",
+    "loudy"
+   ],
+   "affix": "ly"
+  },
+  {
+   "sentence": "He didn't tell the truth. He is ___. (honest)",
+   "base": "honest",
+   "c": "dishonest",
+   "w": [
+    "unhonest",
+    "inhonest",
+    "honestless"
+   ],
+   "affix": "dis"
+  },
+  {
+   "sentence": "I ___ with you. You are wrong. (agree)",
+   "base": "agree",
+   "c": "disagree",
+   "w": [
+    "unagree",
+    "misagree",
+    "agreeless"
+   ],
+   "affix": "dis"
+  },
+  {
+   "sentence": "It is ___ to see the top of that mountain in this fog. (possible)",
+   "base": "possible",
+   "c": "impossible",
+   "w": [
+    "unpossible",
+    "dispossible",
+    "inpossible"
+   ],
+   "affix": "im"
+  },
+  {
+   "sentence": "Don't be so ___! Say please. (polite)",
+   "base": "polite",
+   "c": "impolite",
+   "w": [
+    "unpolite",
+    "dispolite",
+    "inpolite"
+   ],
+   "affix": "im"
+  },
+  {
+   "sentence": "This answer is ___. Look again. (correct)",
+   "base": "correct",
+   "c": "incorrect",
+   "w": [
+    "uncorrect",
+    "discorrect",
+    "imcorrect"
+   ],
+   "affix": "in"
+  },
+  {
+   "sentence": "The verb \"go\" is an ___ verb. (regular)",
+   "base": "regular",
+   "c": "irregular",
+   "w": [
+    "unregular",
+    "inregular",
+    "disregular"
+   ],
+   "affix": "ir"
+  },
+  {
+   "sentence": "Don't be ___! Wait for your turn. (patient)",
+   "base": "patient",
+   "c": "impatient",
+   "w": [
+    "unpatient",
+    "dispatient",
+    "inpatient"
+   ],
+   "affix": "im"
+  },
+  {
+   "sentence": "We were ___ when we lost the match. (happy)",
+   "base": "happy",
+   "c": "unhappy",
+   "w": [
+    "dishappy",
+    "happyless",
+    "unhappiness"
+   ],
+   "affix": "un"
+  },
+  {
+   "sentence": "He was ___ and lost his wallet. (lucky)",
+   "base": "lucky",
+   "c": "unlucky",
+   "w": [
+    "inlucky",
+    "dislucky",
+    "lucklessly"
+   ],
+   "affix": "un"
+  },
+  {
+   "sentence": "It's ___. Your sister got more cake. (fair)",
+   "base": "fair",
+   "c": "unfair",
+   "w": [
+    "infair",
+    "disfair",
+    "fairless"
+   ],
+   "affix": "un"
+  },
+  {
+   "sentence": "It is ___ to see snow in July. (usual)",
+   "base": "usual",
+   "c": "unusual",
+   "w": [
+    "inusual",
+    "disusual",
+    "usualless"
+   ],
+   "affix": "un"
+  },
+  {
+   "sentence": "His room is very ___. Clothes are everywhere. (tidy)",
+   "base": "tidy",
+   "c": "untidy",
+   "w": [
+    "distidy",
+    "intidy",
+    "tidyless"
+   ],
+   "affix": "un"
+  },
+  {
+   "sentence": "The name of that actor is ___ to me. (known)",
+   "base": "known",
+   "c": "unknown",
+   "w": [
+    "inknown",
+    "disknown",
+    "knownless"
+   ],
+   "affix": "un"
+  },
+  {
+   "sentence": "My mother is a ___. She teaches maths. (teach)",
+   "base": "teach",
+   "c": "teacher",
+   "w": [
+    "teachor",
+    "teachment",
+    "teachful"
+   ],
+   "affix": "er"
+  },
+  {
+   "sentence": "He is a famous ___. He plays in the national team. (play)",
+   "base": "play",
+   "c": "player",
+   "w": [
+    "playor",
+    "playment",
+    "playful"
+   ],
+   "affix": "er"
+  },
+  {
+   "sentence": "A ___ asked me the way to the museum. (visit)",
+   "base": "visit",
+   "c": "visitor",
+   "w": [
+    "visiter",
+    "visition",
+    "visitful"
+   ],
+   "affix": "or"
+  },
+  {
+   "sentence": "My uncle is an ___. He works in films. (act)",
+   "base": "act",
+   "c": "actor",
+   "w": [
+    "acter",
+    "action",
+    "actful"
+   ],
+   "affix": "or"
+  },
+  {
+   "sentence": "The ___ stopped the bus at the school. (drive)",
+   "base": "drive",
+   "c": "driver",
+   "w": [
+    "drivor",
+    "drivement",
+    "driveful"
+   ],
+   "affix": "er"
+  },
+  {
+   "sentence": "This new ___ is a machine that cleans windows. (invent)",
+   "base": "invent",
+   "c": "invention",
+   "w": [
+    "inventor",
+    "inventive",
+    "inventful"
+   ],
+   "affix": "ion"
+  },
+  {
+   "sentence": "She has a large ___ of stamps. (collect)",
+   "base": "collect",
+   "c": "collection",
+   "w": [
+    "collector",
+    "collectful",
+    "collectly"
+   ],
+   "affix": "ion"
+  },
+  {
+   "sentence": "Reading gives me great ___. (enjoy)",
+   "base": "enjoy",
+   "c": "enjoyment",
+   "w": [
+    "enjoyable",
+    "enjoyer",
+    "enjoyful"
+   ],
+   "affix": "ment"
+  },
+  {
+   "sentence": "This game is very ___. (enjoy)",
+   "base": "enjoy",
+   "c": "enjoyable",
+   "w": [
+    "enjoyment",
+    "enjoyless",
+    "enjoyly"
+   ],
+   "affix": "able"
+  },
+  {
+   "sentence": "The two countries signed an ___. (agree)",
+   "base": "agree",
+   "c": "agreement",
+   "w": [
+    "agreeable",
+    "agreeful",
+    "agreeness"
+   ],
+   "affix": "ment"
+  },
+  {
+   "sentence": "This chair is very ___. I could sleep on it. (comfort)",
+   "base": "comfort",
+   "c": "comfortable",
+   "w": [
+    "uncomfortable",
+    "comfortful",
+    "comfortly"
+   ],
+   "affix": "able"
+  },
+  {
+   "sentence": "Without a roof, the family was ___. (home)",
+   "base": "home",
+   "c": "homeless",
+   "w": [
+    "homely",
+    "homeful",
+    "homeness"
+   ],
+   "affix": "less"
+  },
+  {
+   "sentence": "The situation is ___. Nobody can help. (hope)",
+   "base": "hope",
+   "c": "hopeless",
+   "w": [
+    "hopeful",
+    "hopely",
+    "hopeness"
+   ],
+   "affix": "less"
+  },
+  {
+   "sentence": "She was ___ about the results. She hoped they were good. (hope)",
+   "base": "hope",
+   "c": "hopeful",
+   "w": [
+    "hopeless",
+    "hopely",
+    "hopeness"
+   ],
+   "affix": "ful"
+  }
+ ]
+}

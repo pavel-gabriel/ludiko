@@ -1,0 +1,2493 @@
+[
+ {
+  "id": "exp.eng.vocab.topics.5",
+  "skillId": "eng.vocab.topics.5",
+  "title": {
+   "ro": "Cuvinte din viața de zi cu zi",
+   "en": "Everyday words"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Învățăm cuvinte pe teme: familie (mother, father, sister), școală (pencil, desk), mâncare (soup, cake).",
+     "en": "We learn words by topic: family (mother, father, sister), school (pencil, desk), food (soup, cake)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👨‍👩‍👧",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Alte teme: casa (kitchen, sofa), animalele (horse, rabbit), corpul (head, hand) și hainele (jumper, trousers).",
+     "en": "More topics: home (kitchen, sofa), animals (horse, rabbit), the body (head, hand) and clothes (jumper, trousers)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏫",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Ajută să grupezi cuvintele pe teme și să le spui în propoziții: „My brother has a red jumper.”",
+     "en": "It helps to group words by topic and to use them in sentences: \"My brother has a red jumper.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🍎",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.vocab.topics.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.vocab.topics.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.tobe.5",
+  "skillId": "eng.grammar.tobe.5",
+  "title": {
+   "ro": "To be, have got și there is / there are",
+   "en": "To be, have got and there is / there are"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "To be: I am, you are, he/she/it is, we/you/they are. Întrebare: „Are you ten?” Negativ: „He is not (isn’t) at home.”",
+     "en": "To be: I am, you are, he/she/it is, we/you/they are. Question: \"Are you ten?\" Negative: \"He is not (isn’t) at home.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🙋",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Have got = a avea: „I have got a bike.” „She has got two brothers.” Întrebare: „Has he got a pen?”",
+     "en": "Have got means \"to have\": \"I have got a bike.\" \"She has got two brothers.\" Question: \"Has he got a pen?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🎒",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "There is + un singur lucru, there are + mai multe: „There is a book on the desk.” „There are five apples.” Negativ: „There isn’t any milk.”",
+     "en": "There is + one thing, there are + more than one: \"There is a book on the desk.\" \"There are five apples.\" Negative: \"There isn’t any milk.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🪑",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.tobe.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.tobe.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.present.5",
+  "skillId": "eng.grammar.present.5",
+  "title": {
+   "ro": "Present simple: obiceiuri și fapte",
+   "en": "Present simple: habits and facts"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Folosim present simple pentru obiceiuri și fapte: „I play football on Sundays.” Verbul rămâne la forma de bază.",
+     "en": "We use the present simple for habits and facts: \"I play football on Sundays.\" The verb stays in its base form."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "☀️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "La he / she / it adăugăm -s: „She plays.” După s, sh, ch, x, o adăugăm -es: „He watches TV.” „She goes.” Consoană + y devine -ies: „study – studies”.",
+     "en": "With he / she / it we add -s: \"She plays.\" After s, sh, ch, x, o we add -es: \"He watches TV.\" \"She goes.\" Consonant + y becomes -ies: \"study – studies\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⚽",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Atenție: have devine has („He has a dog”). Nu spunem „He play”, ci „He plays”.",
+     "en": "Careful: have becomes has (\"He has a dog\"). We do not say \"He play\" but \"He plays\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📅",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.present.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.present.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.pronouns.5",
+  "skillId": "eng.grammar.pronouns.5",
+  "title": {
+   "ro": "Pronume și adjective posesive",
+   "en": "Pronouns and possessive adjectives"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Pronume personale: I, you, he, she, it, we, they. Ele sunt subiectul: „She is my friend.”",
+     "en": "Subject pronouns: I, you, he, she, it, we, they. They are the subject: \"She is my friend.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧑",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "După verb sau prepoziție folosim me, you, him, her, it, us, them: „Give it to me.” Posesive: my, your, his, her, its, our, their.",
+     "en": "After a verb or preposition we use me, you, him, her, it, us, them: \"Give it to me.\" Possessives: my, your, his, her, its, our, their."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👦",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Posesorul se arată cu ’s: „my sister’s bag”. Aproape: this / these; departe: that / those.",
+     "en": "The owner is shown with ’s: \"my sister’s bag\". Near: this / these; far: that / those."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🐶",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.pronouns.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.pronouns.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.questions.5",
+  "skillId": "eng.grammar.questions.5",
+  "title": {
+   "ro": "Întrebări și negații la present simple",
+   "en": "Present simple questions and negatives"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Întrebare: Do / Does + subiect + verb de bază: „Do you like pizza?” „Does she play chess?” Verbul nu mai are -s.",
+     "en": "Question: Do / Does + subject + base verb: \"Do you like pizza?\" \"Does she play chess?\" The verb has no -s any more."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "❓",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Negativ: don’t / doesn’t + verb de bază: „I don’t like spiders.” „He doesn’t play chess.”",
+     "en": "Negative: don’t / doesn’t + base verb: \"I don’t like spiders.\" \"He doesn’t play chess.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🚫",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Cuvinte interogative: What (ce), Where (unde), When (când), Who (cine), How many (câți): „Where does your uncle live?”",
+     "en": "Question words: What, Where, When, Who, How many: \"Where does your uncle live?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔤",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.questions.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.questions.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.continuous.5",
+  "skillId": "eng.grammar.continuous.5",
+  "title": {
+   "ro": "Present continuous: ce se întâmplă acum",
+   "en": "Present continuous: what is happening now"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Present continuous = am / is / are + verb cu -ing: „They are playing football.” Îl folosim pentru ce se întâmplă acum.",
+     "en": "Present continuous = am / is / are + verb + -ing: \"They are playing football.\" We use it for what is happening now."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏃",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Ortografie: live – living (cade e), stop – stopping (se dublează consoana), run – running. Negativ: „She isn’t sleeping.”",
+     "en": "Spelling: live – living (drop the e), stop – stopping (double the consonant), run – running. Negative: \"She isn’t sleeping.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📺",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Cuvinte-semnal: now, at the moment, Look!, Listen! Unele verbe nu se folosesc așa: like, want, know („I like pizza”, nu „I am liking”).",
+     "en": "Signal words: now, at the moment, Look!, Listen! Some verbs are not used like this: like, want, know (\"I like pizza\", not \"I am liking\")."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "☔",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.continuous.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.continuous.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.plurals.5",
+  "skillId": "eng.grammar.plurals.5",
+  "title": {
+   "ro": "Pluralul substantivelor",
+   "en": "Plural nouns"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "De obicei adăugăm -s: book – books, boy – boys. După s, sh, ch, x adăugăm -es: bus – buses, watch – watches.",
+     "en": "Usually we add -s: book – books, boy – boys. After s, sh, ch, x we add -es: bus – buses, watch – watches."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📚",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Consoană + y devine -ies: city – cities, baby – babies. La f / fe: leaf – leaves, knife – knives. Unele cu o: potato – potatoes, dar photo – photos.",
+     "en": "Consonant + y becomes -ies: city – cities, baby – babies. With f / fe: leaf – leaves, knife – knives. Some with o: potato – potatoes, but photo – photos."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🚌",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Plurale neregulate (trebuie învățate): man – men, woman – women, child – children, foot – feet, tooth – teeth, sheep – sheep.",
+     "en": "Irregular plurals (learn them): man – men, woman – women, child – children, foot – feet, tooth – teeth, sheep – sheep."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏙️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.plurals.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.plurals.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.articles.5",
+  "skillId": "eng.grammar.articles.5",
+  "title": {
+   "ro": "Articolul: a, an, the, some, any",
+   "en": "Articles: a, an, the, some, any"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "A înaintea unui sunet de consoană (a book, a university), an înaintea unui sunet de vocală (an apple, an hour). Contează sunetul, nu litera.",
+     "en": "\"A\" comes before a consonant sound (a book, a university), \"an\" before a vowel sound (an apple, an hour). The sound matters, not the letter."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🍎",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "The pentru ceva știut sau unic: „the sun”, „the cat from my garden”. Cu instrumente muzicale: „play the guitar”.",
+     "en": "\"The\" is for something known or unique: \"the sun\", \"the cat from my garden\". With instruments: \"play the guitar\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🥚",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Some în propoziții afirmative și oferte („some milk”), any în întrebări și negații („Is there any milk?” „We haven’t got any.”).",
+     "en": "\"Some\" is for statements and offers (\"some milk\"), \"any\" for questions and negatives (\"Is there any milk?\" \"We haven’t got any.\")."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌞",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.articles.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.articles.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.prep.5",
+  "skillId": "eng.grammar.prep.5",
+  "title": {
+   "ro": "Prepoziții de loc și de timp",
+   "en": "Prepositions of place and time"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Loc: in (în), on (pe), under (sub), next to (lângă), between (între), in front of (în fața). „The ball is in the box.”",
+     "en": "Place: in, on, under, next to, between, in front of. \"The ball is in the box.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📍",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Timp: at + ora (at seven o’clock), on + ziua (on Monday), in + luna / anotimpul (in June, in summer).",
+     "en": "Time: at + clock time (at seven o’clock), on + day (on Monday), in + month / season (in June, in summer)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⏰",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Expresii fixe: at home, at school, at night, in the morning, on Saturday morning.",
+     "en": "Fixed phrases: at home, at school, at night, in the morning, on Saturday morning."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📅",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.prep.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.prep.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.read.short.5",
+  "skillId": "eng.read.short.5",
+  "title": {
+   "ro": "Cum citim un text scurt",
+   "en": "How to read a short text"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Citește întâi tot textul o dată, fără să te oprești la fiecare cuvânt nou. Încearcă să înțelegi despre ce este vorba.",
+     "en": "Read the whole text once without stopping at every new word. Try to understand what it is about."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📖",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Apoi citește întrebarea și caută în text cuvintele ei: numere, nume, locuri. Răspunsul este de obicei în aceeași propoziție.",
+     "en": "Then read the question and look for its key words in the text: numbers, names, places. The answer is usually in the same sentence."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔍",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "La adevărat / fals compară cu textul, nu cu ce crezi tu. Dacă textul spune altceva, răspunsul este fals.",
+     "en": "For true / false compare with the text, not with what you think. If the text says something different, the answer is false."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✅",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.read.short.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.read.short.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.func.basic.5",
+  "skillId": "eng.func.basic.5",
+  "title": {
+   "ro": "Limbaj de zi cu zi: saluturi, prezentări, cumpărături",
+   "en": "Everyday language: greetings, introductions, shopping"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Salut: Hello, Hi, Good morning, Goodbye, See you tomorrow. „How are you?” – „I’m fine, thanks.”",
+     "en": "Greetings: Hello, Hi, Good morning, Goodbye, See you tomorrow. \"How are you?\" – \"I’m fine, thanks.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👋",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Prezentare: „This is my friend, Dan.” – „Nice to meet you.” – „Nice to meet you, too.” Mulțumesc: „Thank you.” – „You’re welcome.”",
+     "en": "Introductions: \"This is my friend, Dan.\" – \"Nice to meet you.\" – \"Nice to meet you, too.\" Thanks: \"Thank you.\" – \"You’re welcome.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🤝",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "La magazin: „Can I help you?” „How much is it?” „I’d like a kilo of apples, please.” „Here you are.” Spunem mereu please.",
+     "en": "In a shop: \"Can I help you?\" \"How much is it?\" \"I’d like a kilo of apples, please.\" \"Here you are.\" Always say please."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🛒",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.func.basic.5",
+   "kind": "explanation",
+   "title": "Explanation for eng.func.basic.5",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.vocab.topics.6",
+  "skillId": "eng.vocab.topics.6",
+  "title": {
+   "ro": "Cuvinte noi: hobby-uri, meserii, oraș, călătorii",
+   "en": "New words: hobbies, jobs, town, travel"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Hobby-uri (painting, fishing, hiking) și meserii (nurse, farmer, firefighter). „My uncle is a vet.”",
+     "en": "Hobbies (painting, fishing, hiking) and jobs (nurse, farmer, firefighter). \"My uncle is a vet.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🎨",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Orașul (bank, museum, bridge) și transportul (train, tram, lorry, underground). Atenție la engleza britanică: lorry, petrol, underground.",
+     "en": "The town (bank, museum, bridge) and transport (train, tram, lorry, underground). Note British English: lorry, petrol, underground."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👩‍⚕️",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Vremea (foggy, storm, rainbow) și călătoria (passport, suitcase, tourist). Învață cuvintele într-o propoziție, nu singure.",
+     "en": "Weather (foggy, storm, rainbow) and travel (passport, suitcase, tourist). Learn words in a sentence, not alone."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🚉",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.vocab.topics.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.vocab.topics.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.past.6",
+  "skillId": "eng.grammar.past.6",
+  "title": {
+   "ro": "Past simple: ce s-a întâmplat",
+   "en": "Past simple: what happened"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Past simple spune ce s-a întâmplat și s-a terminat: „I visited my aunt yesterday.” Forma este aceeași pentru toate persoanele.",
+     "en": "The past simple says what happened and is finished: \"I visited my aunt yesterday.\" The form is the same for all persons."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⏪",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Verbe regulate: + -ed (play – played), + -d (live – lived), consoană + y: -ied (study – studied), dublare: stop – stopped, travel – travelled.",
+     "en": "Regular verbs: + -ed (play – played), + -d (live – lived), consonant + y: -ied (study – studied), doubling: stop – stopped, travel – travelled."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✈️",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Verbe neregulate (trebuie învățate): go – went, see – saw, eat – ate, buy – bought. Cuvinte-semnal: yesterday, last week, two days ago, in 2019.",
+     "en": "Irregular verbs (learn them): go – went, see – saw, eat – ate, buy – bought. Signal words: yesterday, last week, two days ago, in 2019."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📆",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.past.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.past.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.irregular.6",
+  "skillId": "eng.grammar.irregular.6",
+  "title": {
+   "ro": "Verbe neregulate frecvente",
+   "en": "Common irregular verbs"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Verbele neregulate nu primesc -ed: go – went, come – came, make – made, take – took, give – gave. Nu există „goed” sau „buyed”.",
+     "en": "Irregular verbs do not take -ed: go – went, come – came, make – made, take – took, give – gave. There is no \"goed\" or \"buyed\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📋",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Unele nu se schimbă: cut – cut, put – put, read – read (se scrie la fel, se pronunță „red”).",
+     "en": "Some do not change: cut – cut, put – put, read – read (same spelling, pronounced \"red\")."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧠",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Învață-le în grupe cu sunet asemănător: buy – bought, bring – brought, think – thought; sing – sang, drink – drank, swim – swam.",
+     "en": "Learn them in groups that sound alike: buy – bought, bring – brought, think – thought; sing – sang, drink – drank, swim – swam."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🎯",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.irregular.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.irregular.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.pastq.6",
+  "skillId": "eng.grammar.pastq.6",
+  "title": {
+   "ro": "Întrebări și negații la past simple",
+   "en": "Past simple questions and negatives"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Întrebare: Did + subiect + verb de bază: „Did you watch the match?” Verbul revine la forma de bază, fără -ed.",
+     "en": "Question: Did + subject + base verb: \"Did you watch the match?\" The verb goes back to the base form, without -ed."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "❓",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Negativ: didn’t + verb de bază: „She didn’t see the film.” Nu spunem „She didn’t saw”.",
+     "en": "Negative: didn’t + base verb: \"She didn’t see the film.\" We do not say \"She didn’t saw\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🚫",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Cu was / were nu folosim did: „Were you at home?” „We weren’t there.” Întrebare cu cuvânt interogativ: „Where did they go?”",
+     "en": "With was / were we do not use did: \"Were you at home?\" \"We weren’t there.\" Question word + did: \"Where did they go?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⏪",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.pastq.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.pastq.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.freq.6",
+  "skillId": "eng.grammar.freq.6",
+  "title": {
+   "ro": "Adverbe de frecvență",
+   "en": "Adverbs of frequency"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "De la mereu la niciodată: always (100%), usually, often, sometimes, rarely / hardly ever, never (0%).",
+     "en": "From always to never: always (100%), usually, often, sometimes, rarely / hardly ever, never (0%)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📅",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Poziție: înaintea verbului principal („I often walk”), dar după to be („She is never late”).",
+     "en": "Position: before the main verb (\"I often walk\"), but after to be (\"She is never late\")."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔁",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Never are deja sens negativ: „I never eat fish.” (nu „I don’t never eat”). Întrebare: „How often do you play tennis?”",
+     "en": "\"Never\" is already negative: \"I never eat fish.\" (not \"I don’t never eat\"). Question: \"How often do you play tennis?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🚫",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.freq.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.freq.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.pastcont.6",
+  "skillId": "eng.grammar.pastcont.6",
+  "title": {
+   "ro": "Past continuous: ce se petrecea atunci",
+   "en": "Past continuous: what was happening then"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Past continuous = was / were + verb cu -ing: „At eight o’clock I was reading.” Arată o acțiune în desfășurare în trecut.",
+     "en": "Past continuous = was / were + verb + -ing: \"At eight o’clock I was reading.\" It shows an action in progress in the past."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌧️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Was cu I / he / she / it, were cu you / we / they: „They were playing.” Negativ: „She wasn’t sleeping.”",
+     "en": "\"Was\" with I / he / she / it, \"were\" with you / we / they: \"They were playing.\" Negative: \"She wasn’t sleeping.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📖",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Cu while: „While I was cooking, the phone rang.” Acțiunea lungă este past continuous, cea scurtă care o întrerupe este past simple.",
+     "en": "With \"while\": \"While I was cooking, the phone rang.\" The long action is past continuous, the short one that interrupts it is past simple."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📞",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.pastcont.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.pastcont.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.compar.6",
+  "skillId": "eng.grammar.compar.6",
+  "title": {
+   "ro": "Comparativ și superlativ",
+   "en": "Comparatives and superlatives"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Adjective scurte: -er / -est: tall – taller – the tallest. Terminate în e: nice – nicer – nicest. Dublare: big – bigger – biggest.",
+     "en": "Short adjectives: -er / -est: tall – taller – the tallest. Ending in e: nice – nicer – nicest. Doubling: big – bigger – biggest."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📏",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Consoană + y: happy – happier – happiest. Adjective lungi: more / most: beautiful – more beautiful – the most beautiful.",
+     "en": "Consonant + y: happy – happier – happiest. Long adjectives: more / most: beautiful – more beautiful – the most beautiful."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🐢",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Neregulate: good – better – the best, bad – worse – the worst. Comparăm cu than: „Tom is taller than Dan.” Superlativ: „the tallest in the class”.",
+     "en": "Irregular: good – better – the best, bad – worse – the worst. We compare with \"than\": \"Tom is taller than Dan.\" Superlative: \"the tallest in the class\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏆",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.compar.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.compar.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.quantity.6",
+  "skillId": "eng.grammar.quantity.6",
+  "title": {
+   "ro": "Numărabil, nenumărabil, some, any, much, many",
+   "en": "Countable, uncountable, some, any, much, many"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Numărabile: a book, two books. Nenumărabile nu au plural și nu primesc a / an: water, milk, bread, money, information, advice.",
+     "en": "Countable: a book, two books. Uncountable nouns have no plural and no a / an: water, milk, bread, money, information, advice."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🍎",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "How many + numărabil plural („How many apples?”), how much + nenumărabil („How much water?”). În negații: „There isn’t much milk.”",
+     "en": "How many + plural countable (\"How many apples?\"), how much + uncountable (\"How much water?\"). In negatives: \"There isn’t much milk.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🥛",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "a lot of merge cu ambele: „a lot of friends”, „a lot of traffic”. Some: afirmativ și oferte; any: întrebări și negații.",
+     "en": "\"A lot of\" goes with both: \"a lot of friends\", \"a lot of traffic\". Some: statements and offers; any: questions and negatives."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "❓",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.quantity.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.quantity.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.future.6",
+  "skillId": "eng.grammar.future.6",
+  "title": {
+   "ro": "Viitorul: will și be going to",
+   "en": "The future: will and be going to"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Will + verb de bază: „It will be sunny tomorrow.” Pentru predicții, promisiuni și decizii luate acum. Negativ: won’t.",
+     "en": "Will + base verb: \"It will be sunny tomorrow.\" For predictions, promises and decisions made now. Negative: won’t."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔮",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Be going to = am / is / are going to + verb: „We are going to visit Paris.” Pentru planuri făcute înainte și pentru ce se vede că urmează.",
+     "en": "Be going to = am / is / are going to + verb: \"We are going to visit Paris.\" For plans made earlier and for what we can see is coming."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📅",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Atenție: nu punem -s după will („will plays” este greșit) și nu spunem „will to play”. Negativ: „He isn’t going to come.”",
+     "en": "Careful: no -s after will (\"will plays\" is wrong) and no \"will to play\". Negative: \"He isn’t going to come.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌤️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.future.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.future.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.modals.6",
+  "skillId": "eng.grammar.modals.6",
+  "title": {
+   "ro": "Verbe modale: can, must, should",
+   "en": "Modal verbs: can, must, should"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Can = pot / știu: „I can swim.” Negativ: can’t. Could = trecut: „I could ride a bike at five.” Întrebare: „Can you help me?”",
+     "en": "Can = ability: \"I can swim.\" Negative: can’t. Could = past: \"I could ride a bike at five.\" Question: \"Can you help me?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💪",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Must / have to = obligație: „You must do your homework.” Mustn’t = interzis; don’t have to = nu este nevoie.",
+     "en": "Must / have to = obligation: \"You must do your homework.\" Mustn’t = forbidden; don’t have to = not necessary."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⚠️",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Should = sfat: „You should go to bed early.” După modale folosim mereu verbul de bază, fără -s și fără to: „She can swim.”",
+     "en": "Should = advice: \"You should go to bed early.\" After modals we always use the base verb, without -s and without to: \"She can swim.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💡",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.modals.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.modals.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.read.6",
+  "skillId": "eng.read.6",
+  "title": {
+   "ro": "Cum citim un text mai lung",
+   "en": "How to read a longer text"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Textele povestesc adesea ce s-a întâmplat: caută verbele la trecut și ordinea întâmplărilor (first, then, after that).",
+     "en": "Texts often tell what happened: look for past verbs and the order of events (first, then, after that)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📖",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Subliniază mental cuvintele-cheie: cine, ce, când, unde. Întrebările urmează de obicei ordinea textului.",
+     "en": "Mentally underline the key words: who, what, when, where. The questions usually follow the order of the text."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🕐",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Nu alege un răspuns doar pentru că are un cuvânt din text. Verifică dacă înseamnă același lucru cu ce spune textul.",
+     "en": "Do not choose an answer just because it has a word from the text. Check that it means the same as what the text says."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔍",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.read.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.read.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.func.directions.6",
+  "skillId": "eng.func.directions.6",
+  "title": {
+   "ro": "Cum cerem și dăm indicații",
+   "en": "Asking for and giving directions"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Cerem politicos: „Excuse me, how do I get to the station?” sau „Where is the post office?”",
+     "en": "We ask politely: \"Excuse me, how do I get to the station?\" or \"Where is the post office?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗺️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Indicații: Go straight on (înainte), Turn left / right, Take the second turning, Cross the road, Walk along this street, at the traffic lights.",
+     "en": "Directions: Go straight on, Turn left / right, Take the second turning, Cross the road, Walk along this street, at the traffic lights."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "↰",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Locuri: next to (lângă), opposite (vizavi), between (între), at the corner (la colț), near here (aproape). „It’s five minutes on foot.”",
+     "en": "Places: next to, opposite, between, at the corner, near here. \"It’s five minutes on foot.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏦",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.func.directions.6",
+   "kind": "explanation",
+   "title": "Explanation for eng.func.directions.6",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.vocab.topics.7",
+  "skillId": "eng.vocab.topics.7",
+  "title": {
+   "ro": "Cuvinte noi: sănătate, mediu, tehnologie, sentimente",
+   "en": "New words: health, environment, technology, feelings"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Sănătate (fever, cough, medicine, allergy) și cumpărături (receipt, discount, refund, queue).",
+     "en": "Health (fever, cough, medicine, allergy) and shopping (receipt, discount, refund, queue)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🩺",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Mediu (pollution, recycling, energy, waste) și tehnologie (laptop, password, download, battery).",
+     "en": "Environment (pollution, recycling, energy, waste) and technology (laptop, password, download, battery)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "♻️",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Sentimente: excited, nervous, proud, worried, disappointed. „I felt nervous before the test.” Folosește-le în propoziții scurte.",
+     "en": "Feelings: excited, nervous, proud, worried, disappointed. \"I felt nervous before the test.\" Use them in short sentences."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💻",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.vocab.topics.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.vocab.topics.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.irregular.7",
+  "skillId": "eng.grammar.irregular.7",
+  "title": {
+   "ro": "Verbe neregulate: participiul trecut",
+   "en": "Irregular verbs: the past participle"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Verbele neregulate au trei forme: infinitiv, past simple, participiu trecut: write – wrote – written, take – took – taken.",
+     "en": "Irregular verbs have three forms: base, past simple, past participle: write – wrote – written, take – took – taken."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📋",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Uneori past simple și participiul sunt la fel: buy – bought – bought, make – made – made, have – had – had.",
+     "en": "Sometimes the past simple and the participle are the same: buy – bought – bought, make – made – made, have – had – had."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔢",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Altele diferă: go – went – gone, see – saw – seen, eat – ate – eaten. Participiul se folosește cu have / has („I have seen”) și la pasiv.",
+     "en": "Others differ: go – went – gone, see – saw – seen, eat – ate – eaten. The participle is used with have / has (\"I have seen\") and in the passive."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✅",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.irregular.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.irregular.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.perfect.7",
+  "skillId": "eng.grammar.perfect.7",
+  "title": {
+   "ro": "Present perfect",
+   "en": "Present perfect"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Present perfect = have / has + participiu trecut: „I have finished my homework.” „She has lived here since 2019.”",
+     "en": "Present perfect = have / has + past participle: \"I have finished my homework.\" \"She has lived here since 2019.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🕰️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Îl folosim pentru experiențe fără dată („I have never been to London”), pentru rezultate de acum („I have lost my keys”) și cu for / since.",
+     "en": "We use it for experiences with no date (\"I have never been to London\"), for results now (\"I have lost my keys\") and with for / since."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌍",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Cuvinte frecvente: ever, never, already, just, yet, so far. Negativ: haven’t / hasn’t. Întrebare: „Have you ever eaten sushi?”",
+     "en": "Common words: ever, never, already, just, yet, so far. Negative: haven’t / hasn’t. Question: \"Have you ever eaten sushi?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✔️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.perfect.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.perfect.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.compar.7",
+  "skillId": "eng.grammar.compar.7",
+  "title": {
+   "ro": "Comparații: as...as, than, too, enough",
+   "en": "Comparisons: as...as, than, too, enough"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Egalitate: as + adjectiv + as: „My bag is as heavy as yours.” Negativ: „not as big as”.",
+     "en": "Equality: as + adjective + as: \"My bag is as heavy as yours.\" Negative: \"not as big as\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⚖️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Comparativ cu than: „taller than”, „more interesting than”. Perechea: „The more you practise, the better you get.” Adverbe: „more carefully”.",
+     "en": "Comparative with than: \"taller than\", \"more interesting than\". The pair: \"The more you practise, the better you get.\" Adverbs: \"more carefully\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🌡️",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Too = prea mult (negativ): „too cold to swim”. Enough = suficient, vine după adjectiv: „tall enough”, „not old enough”.",
+     "en": "Too = more than is good (negative): \"too cold to swim\". Enough = sufficient, after an adjective: \"tall enough\", \"not old enough\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🚗",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.compar.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.compar.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.futureforms.7",
+  "skillId": "eng.grammar.futureforms.7",
+  "title": {
+   "ro": "Will, going to sau present continuous?",
+   "en": "Will, going to or present continuous?"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Will: predicții fără dovezi („I think it will rain”), promisiuni, decizii luate acum („I’ll open the window”).",
+     "en": "Will: predictions without evidence (\"I think it will rain\"), promises, decisions made now (\"I’ll open the window\")."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔮",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Be going to: planuri făcute înainte („I’m going to study medicine”) și predicții cu dovezi („Look at those clouds! It’s going to rain.”).",
+     "en": "Be going to: plans made before (\"I’m going to study medicine\") and predictions with evidence (\"Look at those clouds! It’s going to rain.\")."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📋",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Present continuous: aranjamente fixate („I’m meeting Dan at six”). Present simple: orare („The train leaves at seven”).",
+     "en": "Present continuous: fixed arrangements (\"I’m meeting Dan at six\"). Present simple: timetables (\"The train leaves at seven\")."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗓️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.futureforms.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.futureforms.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.wordorder.7",
+  "skillId": "eng.grammar.wordorder.7",
+  "title": {
+   "ro": "Ordinea cuvintelor",
+   "en": "Word order"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Propoziția afirmativă: subiect + verb + restul: „My brother plays football.” Timpul vine de obicei la sfârșit.",
+     "en": "A statement: subject + verb + the rest: \"My brother plays football.\" The time usually comes at the end."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔤",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Întrebarea: (cuvânt interogativ) + auxiliar + subiect + verb: „Where did he go?” „Have you finished?” Subiectul vine după auxiliar.",
+     "en": "A question: (question word) + auxiliary + subject + verb: \"Where did he go?\" \"Have you finished?\" The subject comes after the auxiliary."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔀",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Negativul: subiect + auxiliar + not + verb: „We do not have to wear a uniform.” Prima literă mare arată începutul propoziției.",
+     "en": "A negative: subject + auxiliary + not + verb: \"We do not have to wear a uniform.\" The capital letter shows where the sentence starts."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✍️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.wordorder.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.wordorder.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.perfectvs.7",
+  "skillId": "eng.grammar.perfectvs.7",
+  "title": {
+   "ro": "Present perfect sau past simple?",
+   "en": "Present perfect or past simple?"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Past simple: acțiune încheiată la un moment precis din trecut: yesterday, last week, in 2019, two days ago. „I saw the film last week.”",
+     "en": "Past simple: a finished action at a definite time in the past: yesterday, last week, in 2019, two days ago. \"I saw the film last week.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📅",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Present perfect: legătură cu prezentul, fără moment precis: „I have seen that film.” Cu since / for / so far / already / never.",
+     "en": "Present perfect: a link with now, no definite time: \"I have seen that film.\" With since / for / so far / already / never."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🆚",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Nu combinăm present perfect cu un moment încheiat: nu „I have seen it yesterday”, ci „I saw it yesterday”.",
+     "en": "We do not combine the present perfect with a finished time: not \"I have seen it yesterday\" but \"I saw it yesterday\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔎",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.perfectvs.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.perfectvs.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.modals.7",
+  "skillId": "eng.grammar.modals.7",
+  "title": {
+   "ro": "Modale: may, might, could, had better",
+   "en": "Modals: may, might, could, had better"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "May / might = posibilitate: „It might rain later.” May cere și permisiune: „May I borrow your pen?”",
+     "en": "May / might = possibility: \"It might rain later.\" May also asks for permission: \"May I borrow your pen?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🤔",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Could = cerere politicoasă („Could you open the window?”) sau abilitate în trecut („I couldn’t swim”). Would you like…? = ofertă.",
+     "en": "Could = polite request (\"Could you open the window?\") or past ability (\"I couldn’t swim\"). Would you like…? = offer."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🙏",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Mustn’t = interzis; don’t have to = nu e nevoie. Had better = sfat puternic: „You had better take a coat.” Shall we…? = sugestie.",
+     "en": "Mustn’t = forbidden; don’t have to = not necessary. Had better = strong advice: \"You had better take a coat.\" Shall we…? = suggestion."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "☂️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.modals.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.modals.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.phrasal.7",
+  "skillId": "eng.grammar.phrasal.7",
+  "title": {
+   "ro": "Verbe frazale frecvente (I)",
+   "en": "Common phrasal verbs (I)"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Un verb frazal = verb + particulă, cu alt sens: get up (a te ridica din pat), wake up (a te trezi), sit down, stand up.",
+     "en": "A phrasal verb = verb + particle with a new meaning: get up, wake up, sit down, stand up."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⬆️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Alte exemple: turn on / off (a porni / a opri), put on / take off (a îmbrăca / a scoate), look for (a căuta), look after (a avea grijă).",
+     "en": "More examples: turn on / off, put on / take off, look for (search), look after (take care of)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔦",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Învață verbul frazal întreg, într-o propoziție: „Don’t give up!” „Let’s find out.” „Hurry up!”",
+     "en": "Learn the whole phrasal verb in a sentence: \"Don’t give up!\" \"Let’s find out.\" \"Hurry up!\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧥",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.phrasal.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.phrasal.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.quantifiers.7",
+  "skillId": "eng.grammar.quantifiers.7",
+  "title": {
+   "ro": "Cuantificatori: few, little, enough, too",
+   "en": "Quantifiers: few, little, enough, too"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Few + numărabil plural, little + nenumărabil. A few / a little = câțiva / puțin (suficient); few / little = aproape deloc.",
+     "en": "Few + plural countable, little + uncountable. A few / a little = some (enough); few / little = hardly any."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔢",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Too much + nenumărabil, too many + numărabil: „too much noise”, „too many cars”. Plenty of = din belșug. Enough: „enough food”.",
+     "en": "Too much + uncountable, too many + countable: \"too much noise\", \"too many cars\". Plenty of = more than enough. Enough: \"enough food\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🥤",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Every / each + singular („Every student has a locker”). All / both + plural („Both my parents work”).",
+     "en": "Every / each + singular (\"Every student has a locker\"). All / both + plural (\"Both my parents work\")."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⚖️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.quantifiers.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.quantifiers.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.read.7",
+  "skillId": "eng.read.7",
+  "title": {
+   "ro": "Cum citim texte despre experiențe",
+   "en": "How to read texts about experiences"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Observă timpurile: present perfect („has lived”) arată ce s-a întâmplat până acum, past simple („went”) un moment încheiat.",
+     "en": "Notice the tenses: present perfect (\"has lived\") shows what has happened up to now, past simple (\"went\") a finished time."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📖",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Caută cuvintele care leagă ideile: but, so, because, although, then. Ele arată cauza și rezultatul.",
+     "en": "Look for the words that link ideas: but, so, because, although, then. They show cause and result."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🕰️",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "La o întrebare de inferență, răspunsul nu este scris cuvânt cu cuvânt, dar textul îl arată. Verifică mereu cu textul.",
+     "en": "In an inference question the answer is not written word for word, but the text shows it. Always check against the text."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧩",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.read.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.read.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.func.invitations.7",
+  "skillId": "eng.func.invitations.7",
+  "title": {
+   "ro": "Invitații, sugestii și răspunsuri",
+   "en": "Invitations, suggestions and replies"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Invităm: „Would you like to come to my party?” „Do you want to come with us?” Sugerăm: „Let’s play football.” „Why don’t we go to the beach?” „How about going for a walk?”",
+     "en": "Inviting: \"Would you like to come to my party?\" \"Do you want to come with us?\" Suggesting: \"Let’s play football.\" \"Why don’t we go to the beach?\" \"How about going for a walk?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🎉",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Acceptăm: „Yes, I’d love to. Thank you!” „Good idea!” „Sure, no problem.”",
+     "en": "Accepting: \"Yes, I’d love to. Thank you!\" \"Good idea!\" \"Sure, no problem.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💬",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Refuzăm politicos: „I’m sorry, I can’t. I have homework.” „I’m afraid I can’t.” „I’d rather play outside.” Spunem și motivul.",
+     "en": "Refusing politely: \"I’m sorry, I can’t. I have homework.\" \"I’m afraid I can’t.\" \"I’d rather play outside.\" Give a reason too."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👍",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.func.invitations.7",
+   "kind": "explanation",
+   "title": "Explanation for eng.func.invitations.7",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.vocab.topics.8",
+  "skillId": "eng.vocab.topics.8",
+  "title": {
+   "ro": "Cuvinte noi: media, carieră, societate, știință, artă",
+   "en": "New words: media, careers, society, science, arts"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Media (newspaper, headline, documentary, interview) și carieră (salary, employee, qualification, deadline).",
+     "en": "Media (newspaper, headline, documentary, interview) and careers (salary, employee, qualification, deadline)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📰",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Societate (community, volunteer, equality, citizen, tradition) și știință (experiment, invention, evidence, research).",
+     "en": "Society (community, volunteer, equality, citizen, tradition) and science (experiment, invention, evidence, research)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💼",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Artă (exhibition, orchestra, novel, performance, gallery). Grupează cuvintele pe teme și caută-le în texte.",
+     "en": "Arts (exhibition, orchestra, novel, performance, gallery). Group words by topic and look for them in texts."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔬",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.vocab.topics.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.vocab.topics.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.cond.8",
+  "skillId": "eng.grammar.cond.8",
+  "title": {
+   "ro": "Condiționale tip 0 și tip 1",
+   "en": "Conditionals 0 and 1"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Tip 0 (adevăruri generale): If + present, present: „If you heat ice, it melts.” Putem spune și „when”.",
+     "en": "Type 0 (general truths): If + present, present: \"If you heat ice, it melts.\" We can also say \"when\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧊",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Tip 1 (posibilitate reală în viitor): If + present simple, will + verb: „If it rains, we will stay at home.” Nu folosim will după if.",
+     "en": "Type 1 (a real possibility in the future): If + present simple, will + verb: \"If it rains, we will stay at home.\" We do not use will after if."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "☔",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Unless = if not: „I won’t go unless you come.” Virgula apare când propoziția cu if este prima: „If I see him, I’ll tell him.”",
+     "en": "Unless = if not: \"I won’t go unless you come.\" We use a comma when the if-clause comes first: \"If I see him, I’ll tell him.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "➡️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.cond.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.cond.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.passive.8",
+  "skillId": "eng.grammar.passive.8",
+  "title": {
+   "ro": "Diateza pasivă",
+   "en": "The passive"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Pasivul: obiect + to be + participiu trecut (+ by agent): „English is spoken all over the world.” Folosim pasivul când acțiunea contează mai mult decât cine o face.",
+     "en": "The passive: object + to be + past participle (+ by agent): \"English is spoken all over the world.\" We use it when the action matters more than who does it."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏗️",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Present: is / are + participiu („Apples are grown by farmers”). Past: was / were + participiu („The window was broken by Tom”).",
+     "en": "Present: is / are + participle (\"Apples are grown by farmers\"). Past: was / were + participle (\"The window was broken by Tom\")."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🪟",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Din activ în pasiv: „Farmers grow apples.” → „Apples are grown by farmers.” Obiectul devine subiect, iar to be se acordă cu el.",
+     "en": "From active to passive: \"Farmers grow apples.\" → \"Apples are grown by farmers.\" The object becomes the subject and to be agrees with it."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📖",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.passive.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.passive.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.tenses.8",
+  "skillId": "eng.grammar.tenses.8",
+  "title": {
+   "ro": "Alegem timpul potrivit",
+   "en": "Choosing the right tense"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Citește mai întâi cuvântul-semnal: every day, usually → present simple; now, at the moment, Look! → present continuous.",
+     "en": "Read the signal word first: every day, usually → present simple; now, at the moment, Look! → present continuous."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧭",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "yesterday, last week, in 2019, ago → past simple; since, for, so far, never → present perfect.",
+     "en": "yesterday, last week, in 2019, ago → past simple; since, for, so far, never → present perfect."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⏳",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Apoi verifică forma: auxiliarul (am / is / are, have / has, did) și verbul (cu -ing, cu -ed, participiu). O formă greșită se vede imediat.",
+     "en": "Then check the form: the auxiliary (am / is / are, have / has, did) and the verb (-ing, -ed, participle). A wrong form is easy to spot."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✅",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.tenses.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.tenses.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.relative.8",
+  "skillId": "eng.grammar.relative.8",
+  "title": {
+   "ro": "Propoziții relative",
+   "en": "Relative clauses"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Who pentru persoane: „The girl who lives next door is my friend.” Which / that pentru lucruri: „The book that I read was good.”",
+     "en": "Who for people: \"The girl who lives next door is my friend.\" Which / that for things: \"The book that I read was good.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧑‍🤝‍🧑",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Where pentru locuri: „This is the town where I was born.” Whose arată posesia: „The man whose car was stolen called the police.”",
+     "en": "Where for places: \"This is the town where I was born.\" Whose shows possession: \"The man whose car was stolen called the police.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏠",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Nu repetăm subiectul: nu „The man who he called”, ci „The man who called”. Cu whose nu mai punem un alt posesiv.",
+     "en": "We do not repeat the subject: not \"The man who he called\" but \"The man who called\". After whose we do not add another possessive."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🚗",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.relative.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.relative.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.patterns.8",
+  "skillId": "eng.grammar.patterns.8",
+  "title": {
+   "ro": "Verb + -ing sau to + verb",
+   "en": "Verb + -ing or to + verb"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "După enjoy, finish, mind, suggest, look forward to folosim -ing: „I enjoy listening to music.” „We finished painting.”",
+     "en": "After enjoy, finish, mind, suggest, look forward to we use -ing: \"I enjoy listening to music.\" \"We finished painting.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🎵",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "După want, decide, hope, promise, would like folosim to + verb: „She wants to be a doctor.” „He decided to ride his bike.”",
+     "en": "After want, decide, hope, promise, would like we use to + verb: \"She wants to be a doctor.\" \"He decided to ride his bike.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🎯",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "După prepoziții folosim -ing: „good at playing”, „interested in learning”. După modale și let / make: verb de bază: „Let’s play.” „She makes me clean.”",
+     "en": "After prepositions we use -ing: \"good at playing\", \"interested in learning\". After modals and let / make: the base verb: \"Let’s play.\" \"She makes me clean.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔗",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.patterns.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.patterns.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.reported.8",
+  "skillId": "eng.grammar.reported.8",
+  "title": {
+   "ro": "Vorbirea indirectă (de bază)",
+   "en": "Reported speech (basics)"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Reproducem ce a spus cineva: „Tom said that he was tired.” Pronumele se schimbă (I → he / she), iar timpul „coboară” cu un pas.",
+     "en": "We report what somebody said: \"Tom said that he was tired.\" Pronouns change (I → he / she) and the tense moves one step back."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💬",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Present simple → past simple („I like pizza” → „she liked pizza”). Present continuous → past continuous („I am playing” → „he was playing”). Will → would.",
+     "en": "Present simple → past simple (\"I like pizza\" → \"she liked pizza\"). Present continuous → past continuous (\"I am playing\" → \"he was playing\"). Will → would."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "⏪",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Say + that: „She said that she was busy.” Tell + persoană: „He told me that he was ill.” Nu spunem „He said me”.",
+     "en": "Say + that: \"She said that she was busy.\" Tell + person: \"He told me that he was ill.\" We do not say \"He said me\"."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🗣️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.reported.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.reported.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.phrasal.8",
+  "skillId": "eng.grammar.phrasal.8",
+  "title": {
+   "ro": "Verbe frazale frecvente (II)",
+   "en": "Common phrasal verbs (II)"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Cu run: run out of (a rămâne fără), run into (a întâlni din întâmplare). Cu take: take off (a decola), take after (a semăna cu), take up (a începe un hobby).",
+     "en": "With run: run out of, run into (meet by chance). With take: take off, take after (be similar to), take up (start a hobby)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🏃",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Cu put: put off (a amâna), put up with (a suporta). Cu look: look up (a căuta în dicționar), look forward to (a aștepta cu plăcere).",
+     "en": "With put: put off (postpone), put up with (tolerate). With look: look up (in a dictionary), look forward to (wait with pleasure)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧩",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Altele: get on with (a te înțelege cu), carry on (a continua), break down (a se strica), figure out (a descoperi). Învață-le în propoziții.",
+     "en": "Others: get on with (have good relations with), carry on (continue), break down (stop working), figure out (work out). Learn them in sentences."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔧",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.phrasal.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.phrasal.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.usedto.8",
+  "skillId": "eng.grammar.usedto.8",
+  "title": {
+   "ro": "Used to și modale de probabilitate",
+   "en": "Used to and modals of probability"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Used to + verb = ceva ce se făcea des în trecut și nu mai este adevărat: „I used to play with toy cars.” Întrebare / negativ: „Did you use to…?” „We didn’t use to…”",
+     "en": "Used to + verb = something that often happened in the past and is no longer true: \"I used to play with toy cars.\" Question / negative: \"Did you use to…?\" \"We didn’t use to…\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "👴",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Be used to + -ing = obișnuit cu: „I am used to getting up early.” Nu confunda cele două.",
+     "en": "Be used to + -ing = accustomed to: \"I am used to getting up early.\" Do not confuse the two."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🤔",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Probabilitate: must be (aproape sigur) „He must be happy.” might / may (posibil) „It might rain.” can’t be (imposibil) „She can’t be at school, she is on holiday.”",
+     "en": "Probability: must be (almost sure) \"He must be happy.\" might / may (possible) \"It might rain.\" can’t be (impossible) \"She can’t be at school, she is on holiday.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔍",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.usedto.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.usedto.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.grammar.wordform.8",
+  "skillId": "eng.grammar.wordform.8",
+  "title": {
+   "ro": "Prefixe și sufixe",
+   "en": "Prefixes and suffixes"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Prefixe care dau sens opus: un- (unhappy, unfair), dis- (disagree, dishonest), im- (impossible, impolite), in- (incorrect), ir- (irregular).",
+     "en": "Prefixes that give the opposite meaning: un- (unhappy, unfair), dis- (disagree, dishonest), im- (impossible, impolite), in- (incorrect), ir- (irregular)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔧",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Sufixe pentru adjective: -ful (careful, helpful), -less (useless, homeless), -y (sunny, funny), -able (enjoyable).",
+     "en": "Suffixes for adjectives: -ful (careful, helpful), -less (useless, homeless), -y (sunny, funny), -able (enjoyable)."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "➕",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "Sufixe pentru substantive și adverbe: -ness (sadness), -ment (agreement), -ion (invention), -er / -or (teacher, visitor), -ly (quickly, happily). Citește propoziția ca să afli ce parte de vorbire îți trebuie.",
+     "en": "Suffixes for nouns and adverbs: -ness (sadness), -ment (agreement), -ion (invention), -er / -or (teacher, visitor), -ly (quickly, happily). Read the sentence to see which part of speech you need."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🔠",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.grammar.wordform.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.grammar.wordform.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.read.8",
+  "skillId": "eng.read.8",
+  "title": {
+   "ro": "Cum citim texte informative și interviuri",
+   "en": "How to read informative texts and interviews"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Găsește ideea principală a fiecărui paragraf: de obicei se află în prima sau în ultima propoziție.",
+     "en": "Find the main idea of each paragraph: it is usually in the first or the last sentence."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📖",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "Atenție la pasiv („was started”, „is used”) și la condiționale („If we take…, we will…”): ele spun ce se întâmplă sau ce se va întâmpla.",
+     "en": "Watch for the passive (\"was started\", \"is used\") and conditionals (\"If we take…, we will…\"): they say what happens or will happen."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "🧠",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "La adevărat / fals caută în text cifre, nume, negații (not, never). O singură negație schimbă răspunsul.",
+     "en": "For true / false look in the text for numbers, names and negatives (not, never). A single negative changes the answer."
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✍️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.read.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.read.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ },
+ {
+  "id": "exp.eng.func.opinion.8",
+  "skillId": "eng.func.opinion.8",
+  "title": {
+   "ro": "Opinii, telefon și e-mail formal",
+   "en": "Opinions, phone calls and formal emails"
+  },
+  "frames": [
+   {
+    "text": {
+     "ro": "Opinii: „In my opinion…”, „I think…”, „What do you think about…?” Acord: „I agree with you.” Dezacord politicos: „I’m afraid I don’t agree.”",
+     "en": "Opinions: \"In my opinion…\", \"I think…\", \"What do you think about…?\" Agreeing: \"I agree with you.\" Disagreeing politely: \"I’m afraid I don’t agree.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "💭",
+     "count": 1
+    }
+   },
+   {
+    "text": {
+     "ro": "La telefon: „Hello, this is Maria speaking.” „Can I speak to Dan, please?” „Sorry, could you speak up?” Sfat: „If I were you, I’d talk to your teacher.”",
+     "en": "On the phone: \"Hello, this is Maria speaking.\" \"Can I speak to Dan, please?\" \"Sorry, could you speak up?\" Advice: \"If I were you, I’d talk to your teacher.\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "📞",
+     "count": 2
+    }
+   },
+   {
+    "text": {
+     "ro": "E-mail formal: începem cu „Dear Mr Popa,” și încheiem cu „Yours sincerely,” sau „Best wishes,”. Reclamăm politicos: „Excuse me, this phone doesn’t work. Can I change it?”",
+     "en": "Formal email: we start with \"Dear Mr Popa,\" and finish with \"Yours sincerely,\" or \"Best wishes,\". We complain politely: \"Excuse me, this phone doesn’t work. Can I change it?\""
+    },
+    "visual": {
+     "kind": "objects",
+     "icon": "✉️",
+     "count": 3
+    }
+   }
+  ],
+  "reviewStatus": "beta",
+  "provenance": {
+   "id": "prov.exp.eng.func.opinion.8",
+   "kind": "explanation",
+   "title": "Explanation for eng.func.opinion.8",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original explanation drafted for the competence; awaiting review by an English teacher"
+  }
+ }
+]

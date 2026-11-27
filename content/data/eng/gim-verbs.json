@@ -1,0 +1,728 @@
+{
+ "provenance": {
+  "id": "prov.data.eng.gim-verbs",
+  "kind": "data",
+  "title": "Ludiko list of irregular and regular English verbs for grades V-VIII",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Standard verb forms (facts, British spelling: practise) compiled by us; Romanian glosses are our own. \"be\" past is given as was/were. Awaiting review by an English teacher."
+ },
+ "irregular": [
+  {
+   "b": "be",
+   "p": "was/were",
+   "pp": "been",
+   "ro": "a fi",
+   "set": "A"
+  },
+  {
+   "b": "begin",
+   "p": "began",
+   "pp": "begun",
+   "ro": "a începe",
+   "set": "B"
+  },
+  {
+   "b": "break",
+   "p": "broke",
+   "pp": "broken",
+   "ro": "a sparge",
+   "set": "A"
+  },
+  {
+   "b": "bring",
+   "p": "brought",
+   "pp": "brought",
+   "ro": "a aduce",
+   "set": "A"
+  },
+  {
+   "b": "build",
+   "p": "built",
+   "pp": "built",
+   "ro": "a construi",
+   "set": "B"
+  },
+  {
+   "b": "buy",
+   "p": "bought",
+   "pp": "bought",
+   "ro": "a cumpăra",
+   "set": "A"
+  },
+  {
+   "b": "catch",
+   "p": "caught",
+   "pp": "caught",
+   "ro": "a prinde",
+   "set": "A"
+  },
+  {
+   "b": "choose",
+   "p": "chose",
+   "pp": "chosen",
+   "ro": "a alege",
+   "set": "B"
+  },
+  {
+   "b": "come",
+   "p": "came",
+   "pp": "come",
+   "ro": "a veni",
+   "set": "A"
+  },
+  {
+   "b": "cost",
+   "p": "cost",
+   "pp": "cost",
+   "ro": "a costa",
+   "set": "B"
+  },
+  {
+   "b": "cut",
+   "p": "cut",
+   "pp": "cut",
+   "ro": "a tăia",
+   "set": "A"
+  },
+  {
+   "b": "do",
+   "p": "did",
+   "pp": "done",
+   "ro": "a face (o activitate)",
+   "set": "A"
+  },
+  {
+   "b": "draw",
+   "p": "drew",
+   "pp": "drawn",
+   "ro": "a desena",
+   "set": "B"
+  },
+  {
+   "b": "drink",
+   "p": "drank",
+   "pp": "drunk",
+   "ro": "a bea",
+   "set": "A"
+  },
+  {
+   "b": "drive",
+   "p": "drove",
+   "pp": "driven",
+   "ro": "a conduce",
+   "set": "A"
+  },
+  {
+   "b": "eat",
+   "p": "ate",
+   "pp": "eaten",
+   "ro": "a mânca",
+   "set": "A"
+  },
+  {
+   "b": "fall",
+   "p": "fell",
+   "pp": "fallen",
+   "ro": "a cădea",
+   "set": "A"
+  },
+  {
+   "b": "feel",
+   "p": "felt",
+   "pp": "felt",
+   "ro": "a simți",
+   "set": "A"
+  },
+  {
+   "b": "find",
+   "p": "found",
+   "pp": "found",
+   "ro": "a găsi",
+   "set": "A"
+  },
+  {
+   "b": "fly",
+   "p": "flew",
+   "pp": "flown",
+   "ro": "a zbura",
+   "set": "A"
+  },
+  {
+   "b": "forget",
+   "p": "forgot",
+   "pp": "forgotten",
+   "ro": "a uita",
+   "set": "B"
+  },
+  {
+   "b": "get",
+   "p": "got",
+   "pp": "got",
+   "ro": "a obține",
+   "set": "A"
+  },
+  {
+   "b": "give",
+   "p": "gave",
+   "pp": "given",
+   "ro": "a da",
+   "set": "A"
+  },
+  {
+   "b": "go",
+   "p": "went",
+   "pp": "gone",
+   "ro": "a merge",
+   "set": "A"
+  },
+  {
+   "b": "grow",
+   "p": "grew",
+   "pp": "grown",
+   "ro": "a crește",
+   "set": "B"
+  },
+  {
+   "b": "have",
+   "p": "had",
+   "pp": "had",
+   "ro": "a avea",
+   "set": "A"
+  },
+  {
+   "b": "hear",
+   "p": "heard",
+   "pp": "heard",
+   "ro": "a auzi",
+   "set": "A"
+  },
+  {
+   "b": "hide",
+   "p": "hid",
+   "pp": "hidden",
+   "ro": "a ascunde",
+   "set": "B"
+  },
+  {
+   "b": "hit",
+   "p": "hit",
+   "pp": "hit",
+   "ro": "a lovi",
+   "set": "B"
+  },
+  {
+   "b": "hold",
+   "p": "held",
+   "pp": "held",
+   "ro": "a ține",
+   "set": "B"
+  },
+  {
+   "b": "keep",
+   "p": "kept",
+   "pp": "kept",
+   "ro": "a păstra",
+   "set": "B"
+  },
+  {
+   "b": "know",
+   "p": "knew",
+   "pp": "known",
+   "ro": "a ști",
+   "set": "A"
+  },
+  {
+   "b": "leave",
+   "p": "left",
+   "pp": "left",
+   "ro": "a pleca",
+   "set": "A"
+  },
+  {
+   "b": "lend",
+   "p": "lent",
+   "pp": "lent",
+   "ro": "a împrumuta (cuiva)",
+   "set": "B"
+  },
+  {
+   "b": "lose",
+   "p": "lost",
+   "pp": "lost",
+   "ro": "a pierde",
+   "set": "A"
+  },
+  {
+   "b": "make",
+   "p": "made",
+   "pp": "made",
+   "ro": "a fabrica",
+   "set": "A"
+  },
+  {
+   "b": "mean",
+   "p": "meant",
+   "pp": "meant",
+   "ro": "a însemna",
+   "set": "B"
+  },
+  {
+   "b": "meet",
+   "p": "met",
+   "pp": "met",
+   "ro": "a întâlni",
+   "set": "A"
+  },
+  {
+   "b": "pay",
+   "p": "paid",
+   "pp": "paid",
+   "ro": "a plăti",
+   "set": "B"
+  },
+  {
+   "b": "put",
+   "p": "put",
+   "pp": "put",
+   "ro": "a pune",
+   "set": "A"
+  },
+  {
+   "b": "read",
+   "p": "read",
+   "pp": "read",
+   "ro": "a citi",
+   "set": "A"
+  },
+  {
+   "b": "ride",
+   "p": "rode",
+   "pp": "ridden",
+   "ro": "a merge (pe bicicletă)",
+   "set": "B"
+  },
+  {
+   "b": "ring",
+   "p": "rang",
+   "pp": "rung",
+   "ro": "a suna",
+   "set": "B"
+  },
+  {
+   "b": "run",
+   "p": "ran",
+   "pp": "run",
+   "ro": "a alerga",
+   "set": "A"
+  },
+  {
+   "b": "say",
+   "p": "said",
+   "pp": "said",
+   "ro": "a zice",
+   "set": "A"
+  },
+  {
+   "b": "see",
+   "p": "saw",
+   "pp": "seen",
+   "ro": "a vedea",
+   "set": "A"
+  },
+  {
+   "b": "sell",
+   "p": "sold",
+   "pp": "sold",
+   "ro": "a vinde",
+   "set": "B"
+  },
+  {
+   "b": "send",
+   "p": "sent",
+   "pp": "sent",
+   "ro": "a trimite",
+   "set": "A"
+  },
+  {
+   "b": "shut",
+   "p": "shut",
+   "pp": "shut",
+   "ro": "a închide cu zgomot",
+   "set": "B"
+  },
+  {
+   "b": "sing",
+   "p": "sang",
+   "pp": "sung",
+   "ro": "a cânta",
+   "set": "A"
+  },
+  {
+   "b": "sit",
+   "p": "sat",
+   "pp": "sat",
+   "ro": "a sta jos",
+   "set": "A"
+  },
+  {
+   "b": "sleep",
+   "p": "slept",
+   "pp": "slept",
+   "ro": "a dormi",
+   "set": "A"
+  },
+  {
+   "b": "speak",
+   "p": "spoke",
+   "pp": "spoken",
+   "ro": "a vorbi",
+   "set": "A"
+  },
+  {
+   "b": "spend",
+   "p": "spent",
+   "pp": "spent",
+   "ro": "a cheltui",
+   "set": "B"
+  },
+  {
+   "b": "stand",
+   "p": "stood",
+   "pp": "stood",
+   "ro": "a sta în picioare",
+   "set": "B"
+  },
+  {
+   "b": "steal",
+   "p": "stole",
+   "pp": "stolen",
+   "ro": "a fura",
+   "set": "B"
+  },
+  {
+   "b": "swim",
+   "p": "swam",
+   "pp": "swum",
+   "ro": "a înota",
+   "set": "A"
+  },
+  {
+   "b": "take",
+   "p": "took",
+   "pp": "taken",
+   "ro": "a lua",
+   "set": "A"
+  },
+  {
+   "b": "teach",
+   "p": "taught",
+   "pp": "taught",
+   "ro": "a preda",
+   "set": "B"
+  },
+  {
+   "b": "tell",
+   "p": "told",
+   "pp": "told",
+   "ro": "a spune (cuiva)",
+   "set": "A"
+  },
+  {
+   "b": "think",
+   "p": "thought",
+   "pp": "thought",
+   "ro": "a gândi",
+   "set": "A"
+  },
+  {
+   "b": "throw",
+   "p": "threw",
+   "pp": "thrown",
+   "ro": "a arunca",
+   "set": "B"
+  },
+  {
+   "b": "understand",
+   "p": "understood",
+   "pp": "understood",
+   "ro": "a înțelege",
+   "set": "B"
+  },
+  {
+   "b": "wake",
+   "p": "woke",
+   "pp": "woken",
+   "ro": "a se trezi",
+   "set": "B"
+  },
+  {
+   "b": "wear",
+   "p": "wore",
+   "pp": "worn",
+   "ro": "a purta",
+   "set": "A"
+  },
+  {
+   "b": "win",
+   "p": "won",
+   "pp": "won",
+   "ro": "a câștiga",
+   "set": "B"
+  },
+  {
+   "b": "write",
+   "p": "wrote",
+   "pp": "written",
+   "ro": "a scrie",
+   "set": "A"
+  }
+ ],
+ "regular": [
+  {
+   "b": "walk",
+   "ro": "a se plimba"
+  },
+  {
+   "b": "play",
+   "ro": "a se juca"
+  },
+  {
+   "b": "watch",
+   "ro": "a se uita"
+  },
+  {
+   "b": "clean",
+   "ro": "a curăța"
+  },
+  {
+   "b": "help",
+   "ro": "a ajuta"
+  },
+  {
+   "b": "listen",
+   "ro": "a asculta"
+  },
+  {
+   "b": "look",
+   "ro": "a privi"
+  },
+  {
+   "b": "work",
+   "ro": "a lucra"
+  },
+  {
+   "b": "talk",
+   "ro": "a discuta"
+  },
+  {
+   "b": "want",
+   "ro": "a vrea"
+  },
+  {
+   "b": "need",
+   "ro": "a avea nevoie"
+  },
+  {
+   "b": "open",
+   "ro": "a deschide"
+  },
+  {
+   "b": "start",
+   "ro": "a porni"
+  },
+  {
+   "b": "visit",
+   "ro": "a vizita"
+  },
+  {
+   "b": "jump",
+   "ro": "a sări"
+  },
+  {
+   "b": "cook",
+   "ro": "a găti"
+  },
+  {
+   "b": "paint",
+   "ro": "a picta"
+  },
+  {
+   "b": "climb",
+   "ro": "a se urca"
+  },
+  {
+   "b": "wash",
+   "ro": "a spăla"
+  },
+  {
+   "b": "brush",
+   "ro": "a peria"
+  },
+  {
+   "b": "dance",
+   "ro": "a dansa"
+  },
+  {
+   "b": "live",
+   "ro": "a locui"
+  },
+  {
+   "b": "love",
+   "ro": "a iubi"
+  },
+  {
+   "b": "like",
+   "ro": "a plăcea"
+  },
+  {
+   "b": "use",
+   "ro": "a folosi"
+  },
+  {
+   "b": "smile",
+   "ro": "a zâmbi"
+  },
+  {
+   "b": "close",
+   "ro": "a închide"
+  },
+  {
+   "b": "move",
+   "ro": "a se muta"
+  },
+  {
+   "b": "arrive",
+   "ro": "a ajunge"
+  },
+  {
+   "b": "decide",
+   "ro": "a hotărî"
+  },
+  {
+   "b": "invite",
+   "ro": "a invita"
+  },
+  {
+   "b": "study",
+   "ro": "a studia"
+  },
+  {
+   "b": "try",
+   "ro": "a încerca"
+  },
+  {
+   "b": "carry",
+   "ro": "a căra"
+  },
+  {
+   "b": "cry",
+   "ro": "a plânge"
+  },
+  {
+   "b": "hurry",
+   "ro": "a se grăbi"
+  },
+  {
+   "b": "worry",
+   "ro": "a-și face griji"
+  },
+  {
+   "b": "copy",
+   "ro": "a copia"
+  },
+  {
+   "b": "stop",
+   "ro": "a se opri"
+  },
+  {
+   "b": "plan",
+   "ro": "a planifica"
+  },
+  {
+   "b": "drop",
+   "ro": "a scăpa"
+  },
+  {
+   "b": "shop",
+   "ro": "a face cumpărături"
+  },
+  {
+   "b": "chat",
+   "ro": "a sta de vorbă"
+  },
+  {
+   "b": "travel",
+   "ro": "a călători"
+  },
+  {
+   "b": "stay",
+   "ro": "a rămâne"
+  },
+  {
+   "b": "enjoy",
+   "ro": "a se bucura"
+  },
+  {
+   "b": "fix",
+   "ro": "a repara"
+  },
+  {
+   "b": "miss",
+   "ro": "a-i duce dorul"
+  },
+  {
+   "b": "pass",
+   "ro": "a trece"
+  },
+  {
+   "b": "finish",
+   "ro": "a termina"
+  },
+  {
+   "b": "push",
+   "ro": "a împinge"
+  },
+  {
+   "b": "wait",
+   "ro": "a aștepta"
+  },
+  {
+   "b": "learn",
+   "ro": "a învăța"
+  },
+  {
+   "b": "ask",
+   "ro": "a întreba"
+  },
+  {
+   "b": "answer",
+   "ro": "a răspunde"
+  },
+  {
+   "b": "laugh",
+   "ro": "a râde"
+  },
+  {
+   "b": "call",
+   "ro": "a chema"
+  },
+  {
+   "b": "turn",
+   "ro": "a întoarce"
+  },
+  {
+   "b": "repeat",
+   "ro": "a repeta"
+  },
+  {
+   "b": "practise",
+   "ro": "a exersa"
+  },
+  {
+   "b": "collect",
+   "ro": "a colecționa"
+  }
+ ]
+}

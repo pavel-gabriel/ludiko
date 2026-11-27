@@ -1,0 +1,787 @@
+[
+ {
+  "id": "item.eng.read.8.t01",
+  "type": "read-and-answer",
+  "skillId": "eng.read.8",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.8",
+  "provenance": {
+   "id": "prov.item.eng.read.8.t01",
+   "kind": "item",
+   "title": "Item item.eng.read.8.t01",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "If you walk past Room 12 on Thursday afternoons, you will hear voices and music. This is the school radio club, which was started three years ago by a group of pupils and their Romanian teacher. Every week, the members choose a topic, write short scripts and record them. The programmes are played in the corridors during the long break. Last term there was an interview with the school cook, who explained that all the soup is made from fresh vegetables, and many pupils were surprised. According to the club's leader, Teodora, the most difficult part is speaking clearly into the microphone. \"When I first tried, I was so nervous that I forgot my own name,\" she says, laughing. If more pupils join, the club will be able to start a news programme in English. Anyone who is interested can come on Thursday at four o'clock.",
+   "en": "If you walk past Room 12 on Thursday afternoons, you will hear voices and music. This is the school radio club, which was started three years ago by a group of pupils and their Romanian teacher. Every week, the members choose a topic, write short scripts and record them. The programmes are played in the corridors during the long break. Last term there was an interview with the school cook, who explained that all the soup is made from fresh vegetables, and many pupils were surprised. According to the club's leader, Teodora, the most difficult part is speaking clearly into the microphone. \"When I first tried, I was so nervous that I forgot my own name,\" she says, laughing. If more pupils join, the club will be able to start a news programme in English. Anyone who is interested can come on Thursday at four o'clock."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.8.t01.q1",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t01.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t01.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Who started the radio club?",
+     "en": "Choose the correct answer: Who started the radio club?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a group of pupils and a teacher",
+       "en": "a group of pupils and a teacher"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "the headteacher",
+       "en": "the headteacher"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "the school cook",
+       "en": "the school cook"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.8.t01.q2",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t01.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t01.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: When are the programmes played?",
+     "en": "Choose the correct answer: When are the programmes played?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "on Thursday evenings",
+       "en": "on Thursday evenings"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "during the long break",
+       "en": "during the long break"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "after school",
+       "en": "after school"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.8.t01.q3",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t01.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t01.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The radio club meets on Thursday afternoons.",
+     "en": "True or false? The radio club meets on Thursday afternoons."
+    },
+    "correct": true
+   },
+   {
+    "id": "item.eng.read.8.t01.q4",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t01.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t01.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Teodora found speaking into the microphone easy.",
+     "en": "True or false? Teodora found speaking into the microphone easy."
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.8.t02",
+  "type": "read-and-answer",
+  "skillId": "eng.read.8",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.8",
+  "provenance": {
+   "id": "prov.item.eng.read.8.t02",
+   "kind": "item",
+   "title": "Item item.eng.read.8.t02",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Plastic is cheap, light and strong, which is why it is used for so many things: bottles, bags, toys and even clothes. However, plastic does not disappear quickly. A bottle that is thrown away today can stay in nature for hundreds of years. Every year, millions of tonnes of plastic reach the oceans, where animals sometimes mistake it for food. Scientists have found tiny pieces of plastic in rivers, in the sea and even in the air. Fortunately, there are many things that ordinary people can do. If we take a cloth bag to the shop, we will use fewer plastic bags. Bottles and containers should be put in the right bin so that they can be recycled. Many towns have also introduced rules that forbid some single-use items. Small changes in our daily habits can make a big difference if millions of people follow them.",
+   "en": "Plastic is cheap, light and strong, which is why it is used for so many things: bottles, bags, toys and even clothes. However, plastic does not disappear quickly. A bottle that is thrown away today can stay in nature for hundreds of years. Every year, millions of tonnes of plastic reach the oceans, where animals sometimes mistake it for food. Scientists have found tiny pieces of plastic in rivers, in the sea and even in the air. Fortunately, there are many things that ordinary people can do. If we take a cloth bag to the shop, we will use fewer plastic bags. Bottles and containers should be put in the right bin so that they can be recycled. Many towns have also introduced rules that forbid some single-use items. Small changes in our daily habits can make a big difference if millions of people follow them."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.8.t02.q1",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t02.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t02.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Why is plastic used for so many things?",
+     "en": "Choose the correct answer: Why is plastic used for so many things?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "It is cheap, light and strong.",
+       "en": "It is cheap, light and strong."
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "It disappears quickly.",
+       "en": "It disappears quickly."
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "It is a natural material.",
+       "en": "It is a natural material."
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.8.t02.q2",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t02.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t02.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What should we do with bottles and containers?",
+     "en": "Choose the correct answer: What should we do with bottles and containers?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "bury them in the garden",
+       "en": "bury them in the garden"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "put them in the right bin",
+       "en": "put them in the right bin"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "throw them in the river",
+       "en": "throw them in the river"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.8.t02.q3",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t02.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t02.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Plastic disappears in a few days.",
+     "en": "True or false? Plastic disappears in a few days."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.8.t02.q4",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t02.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t02.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? A cloth bag helps us use fewer plastic bags.",
+     "en": "True or false? A cloth bag helps us use fewer plastic bags."
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.8.t03",
+  "type": "read-and-answer",
+  "skillId": "eng.read.8",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.8",
+  "provenance": {
+   "id": "prov.item.eng.read.8.t03",
+   "kind": "item",
+   "title": "Item item.eng.read.8.t03",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Last week our school magazine interviewed Vlad Ionescu, a fifteen-year-old who has invented a simple device for watering plants. Vlad, how did you get the idea? \"My grandmother has a big garden, and every summer she was worried that her flowers would die when she went on holiday. I wanted to help her.\" The device, which is made from an old plastic bottle and a small tube, gives water to the plants slowly for several days. It cost less than five lei to make. Vlad tested it for a whole month before showing it to anyone. \"If it hadn't worked, I would have been very disappointed,\" he admits. Now several neighbours are using it, and a local shop has asked if they could sell it. Vlad says he doesn't know yet whether he will accept. His advice for other young people is simple: \"Never be afraid of failing. Every mistake teaches you something.\"",
+   "en": "Last week our school magazine interviewed Vlad Ionescu, a fifteen-year-old who has invented a simple device for watering plants. Vlad, how did you get the idea? \"My grandmother has a big garden, and every summer she was worried that her flowers would die when she went on holiday. I wanted to help her.\" The device, which is made from an old plastic bottle and a small tube, gives water to the plants slowly for several days. It cost less than five lei to make. Vlad tested it for a whole month before showing it to anyone. \"If it hadn't worked, I would have been very disappointed,\" he admits. Now several neighbours are using it, and a local shop has asked if they could sell it. Vlad says he doesn't know yet whether he will accept. His advice for other young people is simple: \"Never be afraid of failing. Every mistake teaches you something.\""
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.8.t03.q1",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t03.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t03.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What did Vlad invent?",
+     "en": "Choose the correct answer: What did Vlad invent?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "a device for watering plants",
+       "en": "a device for watering plants"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "a new phone",
+       "en": "a new phone"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "a school bag",
+       "en": "a school bag"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.8.t03.q2",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t03.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t03.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Why did Vlad make the device?",
+     "en": "Choose the correct answer: Why did Vlad make the device?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "to sell it in a shop",
+       "en": "to sell it in a shop"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "to help his grandmother with her flowers",
+       "en": "to help his grandmother with her flowers"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "to win a prize",
+       "en": "to win a prize"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.8.t03.q3",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t03.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t03.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The device was expensive to make.",
+     "en": "True or false? The device was expensive to make."
+    },
+    "correct": false
+   },
+   {
+    "id": "item.eng.read.8.t03.q4",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t03.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t03.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Vlad has already decided to sell his device.",
+     "en": "True or false? Vlad has already decided to sell his device."
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.8.t04",
+  "type": "read-and-answer",
+  "skillId": "eng.read.8",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.8",
+  "provenance": {
+   "id": "prov.item.eng.read.8.t04",
+   "kind": "item",
+   "title": "Item item.eng.read.8.t04",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "Last weekend, thirty pupils from our school took part in a volunteer project in the old part of town. The aim was to clean the park next to the river, which had been neglected for years. We started at nine o'clock in the morning, wearing gloves and carrying big bags. In two hours, we collected so much rubbish that we filled twenty bags! Some of it was dangerous, like broken glass, so the teachers told us to be careful. After lunch, a gardener showed us how to plant flowers along the paths. By four o'clock, the park looked completely different. A woman who was walking her dog stopped to thank us. \"I have lived here for forty years,\" she said, \"and I have never seen it so clean.\" We were tired, but we felt proud. Next month, we are going to repair the benches.",
+   "en": "Last weekend, thirty pupils from our school took part in a volunteer project in the old part of town. The aim was to clean the park next to the river, which had been neglected for years. We started at nine o'clock in the morning, wearing gloves and carrying big bags. In two hours, we collected so much rubbish that we filled twenty bags! Some of it was dangerous, like broken glass, so the teachers told us to be careful. After lunch, a gardener showed us how to plant flowers along the paths. By four o'clock, the park looked completely different. A woman who was walking her dog stopped to thank us. \"I have lived here for forty years,\" she said, \"and I have never seen it so clean.\" We were tired, but we felt proud. Next month, we are going to repair the benches."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.8.t04.q1",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t04.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t04.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: How many bags of rubbish did the pupils fill?",
+     "en": "Choose the correct answer: How many bags of rubbish did the pupils fill?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "twenty",
+       "en": "twenty"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "thirty",
+       "en": "thirty"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "forty",
+       "en": "forty"
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.8.t04.q2",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t04.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t04.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What did the gardener show the pupils?",
+     "en": "Choose the correct answer: What did the gardener show the pupils?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "how to clean glass",
+       "en": "how to clean glass"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "how to plant flowers",
+       "en": "how to plant flowers"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "how to repair benches",
+       "en": "how to repair benches"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.8.t04.q3",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t04.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t04.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The teachers told the pupils to be careful with the glass.",
+     "en": "True or false? The teachers told the pupils to be careful with the glass."
+    },
+    "correct": true
+   },
+   {
+    "id": "item.eng.read.8.t04.q4",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t04.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t04.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? The pupils repaired the benches last weekend.",
+     "en": "True or false? The pupils repaired the benches last weekend."
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "item.eng.read.8.t05",
+  "type": "read-and-answer",
+  "skillId": "eng.read.8",
+  "difficulty": 3,
+  "prompt": {
+   "ro": "Citește textul și răspunde la întrebări.",
+   "en": "Read the text and answer the questions."
+  },
+  "reviewStatus": "beta",
+  "explanationId": "exp.eng.read.8",
+  "provenance": {
+   "id": "prov.item.eng.read.8.t05",
+   "kind": "item",
+   "title": "Item item.eng.read.8.t05",
+   "author": "Ludiko",
+   "source": "ai-draft",
+   "licence": "OWN",
+   "notes": "original text and questions written by us for the programa topic; British spelling; awaiting review by an English teacher"
+  },
+  "passage": {
+   "ro": "When people are asked what they want to be, small children often answer quickly: a pilot, a doctor or a football player. Teenagers, however, are usually less sure. Choosing a career is not easy because the world of work is changing fast. Many jobs that exist today were not known thirty years ago, and some jobs of the past have disappeared. Experts advise young people to find out what they are good at and what they enjoy. They should also talk to adults who work in different fields. If you can spend a day with a professional, you will understand the job better. Learning languages is also useful, because it gives you more choices, whether you stay in Romania or work abroad. Finally, nobody should be afraid to change their mind. Many successful people started in one field and later found happiness in another.",
+   "en": "When people are asked what they want to be, small children often answer quickly: a pilot, a doctor or a football player. Teenagers, however, are usually less sure. Choosing a career is not easy because the world of work is changing fast. Many jobs that exist today were not known thirty years ago, and some jobs of the past have disappeared. Experts advise young people to find out what they are good at and what they enjoy. They should also talk to adults who work in different fields. If you can spend a day with a professional, you will understand the job better. Learning languages is also useful, because it gives you more choices, whether you stay in Romania or work abroad. Finally, nobody should be afraid to change their mind. Many successful people started in one field and later found happiness in another."
+  },
+  "questions": [
+   {
+    "id": "item.eng.read.8.t05.q1",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t05.q1",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t05.q1",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: Why is choosing a career not easy?",
+     "en": "Choose the correct answer: Why is choosing a career not easy?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "The world of work is changing fast.",
+       "en": "The world of work is changing fast."
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "There are no jobs.",
+       "en": "There are no jobs."
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "Teenagers do not like work.",
+       "en": "Teenagers do not like work."
+      }
+     }
+    ],
+    "correctId": "a"
+   },
+   {
+    "id": "item.eng.read.8.t05.q2",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t05.q2",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t05.q2",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "choice",
+    "prompt": {
+     "ro": "Alege răspunsul corect: What do experts advise young people to do?",
+     "en": "Choose the correct answer: What do experts advise young people to do?"
+    },
+    "options": [
+     {
+      "id": "a",
+      "text": {
+       "ro": "stop talking to adults",
+       "en": "stop talking to adults"
+      }
+     },
+     {
+      "id": "b",
+      "text": {
+       "ro": "find out what they are good at",
+       "en": "find out what they are good at"
+      }
+     },
+     {
+      "id": "c",
+      "text": {
+       "ro": "choose a job quickly",
+       "en": "choose a job quickly"
+      }
+     }
+    ],
+    "correctId": "b"
+   },
+   {
+    "id": "item.eng.read.8.t05.q3",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t05.q3",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t05.q3",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? Learning languages gives you more choices.",
+     "en": "True or false? Learning languages gives you more choices."
+    },
+    "correct": true
+   },
+   {
+    "id": "item.eng.read.8.t05.q4",
+    "skillId": "eng.read.8",
+    "difficulty": 3,
+    "reviewStatus": "beta",
+    "provenance": {
+     "id": "prov.item.eng.read.8.t05.q4",
+     "kind": "item",
+     "title": "Item item.eng.read.8.t05.q4",
+     "author": "Ludiko",
+     "source": "ai-draft",
+     "licence": "OWN",
+     "notes": "original question written by us; awaiting review"
+    },
+    "type": "true-false",
+    "prompt": {
+     "ro": "Adevărat sau fals? People cannot change their career.",
+     "en": "True or false? People cannot change their career."
+    },
+    "correct": false
+   }
+  ]
+ }
+]

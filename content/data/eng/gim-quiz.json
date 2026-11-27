@@ -1,0 +1,4192 @@
+{
+ "provenance": {
+  "id": "prov.data.eng.gim-quiz",
+  "kind": "data",
+  "title": "Ludiko English grammar and functional-language quiz banks (grades V-VIII)",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Original gap-fill and multiple-choice entries written by us for the programa topics (Limba moderna 1, gimnaziu); British spelling; none copied from a textbook or exam. gaps: [sentence with ___, correct, three wrong options]; qs: [question, correct, three wrong options]. Awaiting review by an English teacher."
+ },
+ "topics": {
+  "tobe": {
+   "gaps": [
+    [
+     "I ___ a student.",
+     "am",
+     [
+      "is",
+      "are",
+      "be"
+     ]
+    ],
+    [
+     "She ___ my sister.",
+     "is",
+     [
+      "am",
+      "are",
+      "be"
+     ]
+    ],
+    [
+     "We ___ in the classroom.",
+     "are",
+     [
+      "is",
+      "am",
+      "be"
+     ]
+    ],
+    [
+     "They ___ from Romania.",
+     "are",
+     [
+      "is",
+      "am",
+      "be"
+     ]
+    ],
+    [
+     "My dog ___ very big.",
+     "is",
+     [
+      "are",
+      "am",
+      "be"
+     ]
+    ],
+    [
+     "___ you ten years old?",
+     "Are",
+     [
+      "Is",
+      "Am",
+      "Do"
+     ]
+    ],
+    [
+     "He ___ not at home today.",
+     "is",
+     [
+      "are",
+      "am",
+      "do"
+     ]
+    ],
+    [
+     "I ___ got a new bike.",
+     "have",
+     [
+      "has",
+      "am",
+      "is"
+     ]
+    ],
+    [
+     "She ___ got two brothers.",
+     "has",
+     [
+      "have",
+      "is",
+      "are"
+     ]
+    ],
+    [
+     "We ___ got a big garden.",
+     "have",
+     [
+      "has",
+      "are",
+      "is"
+     ]
+    ],
+    [
+     "My cat ___ got green eyes.",
+     "has",
+     [
+      "have",
+      "is",
+      "are"
+     ]
+    ],
+    [
+     "___ he got a pencil case?",
+     "Has",
+     [
+      "Have",
+      "Is",
+      "Does"
+     ]
+    ],
+    [
+     "There ___ a book on the desk.",
+     "is",
+     [
+      "are",
+      "am",
+      "have"
+     ]
+    ],
+    [
+     "There ___ five apples in the bag.",
+     "are",
+     [
+      "is",
+      "am",
+      "has"
+     ]
+    ],
+    [
+     "There ___ any milk in the fridge.",
+     "isn't",
+     [
+      "aren't",
+      "don't",
+      "haven't"
+     ]
+    ],
+    [
+     "There ___ any chairs in the kitchen.",
+     "aren't",
+     [
+      "isn't",
+      "doesn't",
+      "hasn't"
+     ]
+    ],
+    [
+     "Tom and Ana ___ friends.",
+     "are",
+     [
+      "is",
+      "am",
+      "be"
+     ]
+    ],
+    [
+     "It ___ a sunny day.",
+     "is",
+     [
+      "are",
+      "am",
+      "have"
+     ]
+    ],
+    [
+     "I ___ not hungry.",
+     "am",
+     [
+      "is",
+      "are",
+      "do"
+     ]
+    ],
+    [
+     "\"Are you tired?\" \"No, I ___.\"",
+     "am not",
+     [
+      "aren't",
+      "isn't",
+      "don't"
+     ]
+    ],
+    [
+     "My parents ___ at work now.",
+     "are",
+     [
+      "is",
+      "am",
+      "has"
+     ]
+    ],
+    [
+     "Mr Pop ___ our English teacher.",
+     "is",
+     [
+      "are",
+      "am",
+      "have"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is correct?",
+     "She is twelve.",
+     [
+      "She twelve.",
+      "She are twelve.",
+      "She am twelve."
+     ]
+    ],
+    [
+     "What is the short answer to \"Is he a doctor?\" (negative)",
+     "No, he isn't.",
+     [
+      "No, he doesn't.",
+      "No, he not is.",
+      "No, he haven't."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "They have got a car.",
+     [
+      "They has got a car.",
+      "They is got a car.",
+      "They are got a car."
+     ]
+    ]
+   ]
+  },
+  "pronouns": {
+   "gaps": [
+    [
+     "___ is my brother. He is ten.",
+     "He",
+     [
+      "She",
+      "It",
+      "They"
+     ]
+    ],
+    [
+     "Anna is my friend. ___ lives near the school.",
+     "She",
+     [
+      "He",
+      "It",
+      "They"
+     ]
+    ],
+    [
+     "The cat is hungry. Give ___ some milk.",
+     "it",
+     [
+      "he",
+      "they",
+      "its"
+     ]
+    ],
+    [
+     "Look at Tom. ___ is running.",
+     "He",
+     [
+      "Him",
+      "His",
+      "Them"
+     ]
+    ],
+    [
+     "This is my book. Give it to ___.",
+     "me",
+     [
+      "I",
+      "my",
+      "mine"
+     ]
+    ],
+    [
+     "We like football. Do you like ___?",
+     "it",
+     [
+      "we",
+      "they",
+      "its"
+     ]
+    ],
+    [
+     "Jim and Sue are my cousins. ___ live in Cluj.",
+     "They",
+     [
+      "Them",
+      "Their",
+      "We"
+     ]
+    ],
+    [
+     "I have a dog. ___ name is Rex.",
+     "Its",
+     [
+      "It",
+      "Hers",
+      "Them"
+     ]
+    ],
+    [
+     "Maria has a sister. ___ sister is a nurse.",
+     "Her",
+     [
+      "She",
+      "His",
+      "Hers"
+     ]
+    ],
+    [
+     "Ben has a bike. ___ bike is red.",
+     "His",
+     [
+      "He",
+      "Him",
+      "Her"
+     ]
+    ],
+    [
+     "We have a house. ___ house is big.",
+     "Our",
+     [
+      "We",
+      "Us",
+      "Ours"
+     ]
+    ],
+    [
+     "My friends are here. ___ names are Dan and Ioana.",
+     "Their",
+     [
+      "They",
+      "Them",
+      "Our"
+     ]
+    ],
+    [
+     "Can you help ___, please? I am lost.",
+     "me",
+     [
+      "I",
+      "my",
+      "mine"
+     ]
+    ],
+    [
+     "Please listen to ___, children.",
+     "me",
+     [
+      "I",
+      "my",
+      "mine"
+     ]
+    ],
+    [
+     "The teacher is kind. We like ___.",
+     "her",
+     [
+      "she",
+      "his",
+      "they"
+     ]
+    ],
+    [
+     "That is Maria's bag. It is ___ bag.",
+     "her",
+     [
+      "she",
+      "hers",
+      "his"
+     ]
+    ],
+    [
+     "This is Tom's pen. It is ___ pen.",
+     "his",
+     [
+      "he",
+      "him",
+      "her"
+     ]
+    ],
+    [
+     "My name is Alex. ___ am ten years old.",
+     "I",
+     [
+      "Me",
+      "My",
+      "Mine"
+     ]
+    ],
+    [
+     "___ pencils (here, near me) are mine.",
+     "These",
+     [
+      "Those",
+      "This",
+      "That"
+     ]
+    ],
+    [
+     "___ girl (over there) is my cousin.",
+     "That",
+     [
+      "This",
+      "These",
+      "Those"
+     ]
+    ],
+    [
+     "___ is my school bag. (here, near me)",
+     "This",
+     [
+      "That",
+      "These",
+      "Those"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which is the correct possessive form? \"the bag of my sister\"",
+     "my sister's bag",
+     [
+      "my sisters bag",
+      "my sister bag",
+      "my sisters' bag"
+     ]
+    ],
+    [
+     "Which word is used for things that are near you (plural)?",
+     "these",
+     [
+      "those",
+      "this",
+      "that"
+     ]
+    ]
+   ]
+  },
+  "qwords": {
+   "gaps": [
+    [
+     "___ is your name?",
+     "What",
+     [
+      "Where",
+      "Who",
+      "When"
+     ]
+    ],
+    [
+     "___ do you live? In Brasov.",
+     "Where",
+     [
+      "What",
+      "Who",
+      "When"
+     ]
+    ],
+    [
+     "___ is your birthday? In May.",
+     "When",
+     [
+      "Where",
+      "Who",
+      "Which"
+     ]
+    ],
+    [
+     "___ is that boy? He is my cousin.",
+     "Who",
+     [
+      "What",
+      "Where",
+      "Whose"
+     ]
+    ],
+    [
+     "___ old are you?",
+     "How",
+     [
+      "What",
+      "Who",
+      "When"
+     ]
+    ],
+    [
+     "___ brothers do you have?",
+     "How many",
+     [
+      "How much",
+      "How old",
+      "How long"
+     ]
+    ],
+    [
+     "___ is your favourite colour?",
+     "What",
+     [
+      "Who",
+      "When",
+      "How"
+     ]
+    ],
+    [
+     "___ is the party? At five o'clock.",
+     "What time",
+     [
+      "How many",
+      "Who",
+      "Where"
+     ]
+    ],
+    [
+     "___ is this? It is my pencil case.",
+     "What",
+     [
+      "Who",
+      "Where",
+      "When"
+     ]
+    ],
+    [
+     "___ does she go to school? By bus.",
+     "How",
+     [
+      "Who",
+      "Where",
+      "Whose"
+     ]
+    ],
+    [
+     "___ book is this? It is Tom's.",
+     "Whose",
+     [
+      "Who",
+      "What",
+      "Where"
+     ]
+    ],
+    [
+     "___ is your teacher? Mrs Ionescu.",
+     "Who",
+     [
+      "What",
+      "Where",
+      "How"
+     ]
+    ],
+    [
+     "___ juice do you want? Orange juice.",
+     "What",
+     [
+      "Who",
+      "When",
+      "Where"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which question asks about a place?",
+     "Where is the bank?",
+     [
+      "What is the bank?",
+      "Who is the bank?",
+      "When is the bank?"
+     ]
+    ],
+    [
+     "Which question asks about a person?",
+     "Who is your best friend?",
+     [
+      "When is your best friend?",
+      "Where is your best friend?",
+      "How is your best friend?"
+     ]
+    ],
+    [
+     "Which question asks about the time?",
+     "When do you get up?",
+     [
+      "Where do you get up?",
+      "Who gets up?",
+      "How many get up?"
+     ]
+    ],
+    [
+     "Which is the correct question?",
+     "Where do you live?",
+     [
+      "Where you live?",
+      "Where live you?",
+      "Where are you live?"
+     ]
+    ],
+    [
+     "Which is the correct question?",
+     "What does he like?",
+     [
+      "What he likes?",
+      "What does he likes?",
+      "What do he like?"
+     ]
+    ]
+   ]
+  },
+  "articles": {
+   "gaps": [
+    [
+     "I have ___ apple in my bag.",
+     "an",
+     [
+      "a",
+      "some",
+      "any"
+     ]
+    ],
+    [
+     "She is ___ teacher.",
+     "a",
+     [
+      "an",
+      "some",
+      "any"
+     ]
+    ],
+    [
+     "He has ___ umbrella.",
+     "an",
+     [
+      "a",
+      "some",
+      "many"
+     ]
+    ],
+    [
+     "This is ___ egg.",
+     "an",
+     [
+      "a",
+      "some",
+      "many"
+     ]
+    ],
+    [
+     "We have ___ English lesson at ten.",
+     "an",
+     [
+      "a",
+      "any",
+      "many"
+     ]
+    ],
+    [
+     "I'd like ___ glass of water, please.",
+     "a",
+     [
+      "an",
+      "any",
+      "many"
+     ]
+    ],
+    [
+     "My cousin is ___ engineer.",
+     "an",
+     [
+      "a",
+      "some",
+      "many"
+     ]
+    ],
+    [
+     "Look at ___ sun! It is so bright.",
+     "the",
+     [
+      "a",
+      "an",
+      "some"
+     ]
+    ],
+    [
+     "I play ___ guitar on Fridays.",
+     "the",
+     [
+      "a",
+      "an",
+      "many"
+     ]
+    ],
+    [
+     "___ moon is beautiful tonight.",
+     "The",
+     [
+      "A",
+      "An",
+      "Some"
+     ]
+    ],
+    [
+     "I have ___ sandwiches in my bag.",
+     "some",
+     [
+      "a",
+      "an",
+      "much"
+     ]
+    ],
+    [
+     "Do you have ___ brothers or sisters?",
+     "any",
+     [
+      "a",
+      "an",
+      "much"
+     ]
+    ],
+    [
+     "We haven't got ___ milk.",
+     "any",
+     [
+      "a",
+      "an",
+      "some"
+     ]
+    ],
+    [
+     "There is ___ orange on the table.",
+     "an",
+     [
+      "a",
+      "some",
+      "many"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is correct?",
+     "I have a dog and a cat.",
+     [
+      "I have an dog and an cat.",
+      "I have dog and cat a.",
+      "I have the dog and the a cat."
+     ]
+    ],
+    [
+     "Which word needs \"an\"?",
+     "hour",
+     [
+      "house",
+      "horse",
+      "hat"
+     ]
+    ],
+    [
+     "Which word needs \"a\"?",
+     "university",
+     [
+      "umbrella",
+      "apple",
+      "egg"
+     ]
+    ]
+   ]
+  },
+  "prep": {
+   "gaps": [
+    [
+     "The book is ___ the table.",
+     "on",
+     [
+      "in",
+      "at",
+      "under"
+     ]
+    ],
+    [
+     "The cat is sleeping ___ the bed. (below it)",
+     "under",
+     [
+      "on",
+      "between",
+      "at"
+     ]
+    ],
+    [
+     "The ball is ___ the box. (inside it)",
+     "in",
+     [
+      "on",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "My school is ___ the park and the library.",
+     "between",
+     [
+      "on",
+      "in",
+      "at"
+     ]
+    ],
+    [
+     "The shop is ___ the bank. (next to it)",
+     "next to",
+     [
+      "in",
+      "on",
+      "to"
+     ]
+    ],
+    [
+     "I get up ___ seven o'clock.",
+     "at",
+     [
+      "in",
+      "on",
+      "to"
+     ]
+    ],
+    [
+     "My birthday is ___ June.",
+     "in",
+     [
+      "on",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "We have maths ___ Monday.",
+     "on",
+     [
+      "in",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "She goes to bed ___ night.",
+     "at",
+     [
+      "in",
+      "on",
+      "to"
+     ]
+    ],
+    [
+     "I play football ___ the afternoon.",
+     "in",
+     [
+      "on",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "We go on holiday ___ summer.",
+     "in",
+     [
+      "on",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "The party is ___ Saturday morning.",
+     "on",
+     [
+      "in",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "There is a picture ___ the wall.",
+     "on",
+     [
+      "under",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "The teacher is ___ front of the class.",
+     "in",
+     [
+      "on",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "My bag is ___ my desk. (below it)",
+     "under",
+     [
+      "between",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "I live ___ Romania.",
+     "in",
+     [
+      "on",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "I am ___ home.",
+     "at",
+     [
+      "in",
+      "on",
+      "to"
+     ]
+    ],
+    [
+     "The children are ___ school.",
+     "at",
+     [
+      "on",
+      "of",
+      "to"
+     ]
+    ],
+    [
+     "Christmas is ___ December.",
+     "in",
+     [
+      "on",
+      "at",
+      "to"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which preposition is used with days of the week?",
+     "on",
+     [
+      "in",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "Which preposition is used with months?",
+     "in",
+     [
+      "on",
+      "at",
+      "to"
+     ]
+    ],
+    [
+     "Which preposition is used with clock times?",
+     "at",
+     [
+      "in",
+      "on",
+      "to"
+     ]
+    ]
+   ]
+  },
+  "func-basic": {
+   "gaps": [
+    [
+     "___ I have a kilo of apples, please?",
+     "Can",
+     [
+      "Do",
+      "Am",
+      "Are"
+     ]
+    ],
+    [
+     "How ___ is the T-shirt? Ten pounds.",
+     "much",
+     [
+      "many",
+      "old",
+      "long"
+     ]
+    ],
+    [
+     "Here you ___. That's two pounds.",
+     "are",
+     [
+      "is",
+      "have",
+      "do"
+     ]
+    ],
+    [
+     "I'd ___ a cheese sandwich, please.",
+     "like",
+     [
+      "likes",
+      "want to",
+      "am"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "What do you say when you meet someone in the morning?",
+     "Good morning!",
+     [
+      "Good night!",
+      "Goodbye!",
+      "See you!"
+     ]
+    ],
+    [
+     "What do you say when you leave your friends?",
+     "Goodbye! See you tomorrow.",
+     [
+      "Nice to meet you.",
+      "Good morning.",
+      "How do you do?"
+     ]
+    ],
+    [
+     "What do you answer to \"How are you?\"",
+     "I'm fine, thanks.",
+     [
+      "I'm ten years old.",
+      "I'm from Romania.",
+      "My name is Tom."
+     ]
+    ],
+    [
+     "What do you answer to \"Nice to meet you\"?",
+     "Nice to meet you, too.",
+     [
+      "You're welcome.",
+      "I'm sorry.",
+      "No, thanks."
+     ]
+    ],
+    [
+     "What do you say when someone gives you a present?",
+     "Thank you!",
+     [
+      "You're welcome.",
+      "Excuse me.",
+      "I'm sorry."
+     ]
+    ],
+    [
+     "What do you answer to \"Thank you\"?",
+     "You're welcome.",
+     [
+      "Thank you.",
+      "I'm sorry.",
+      "Excuse me."
+     ]
+    ],
+    [
+     "Which question asks about the price?",
+     "How much is it?",
+     [
+      "How many is it?",
+      "How old is it?",
+      "How long is it?"
+     ]
+    ],
+    [
+     "What does the shop assistant say?",
+     "Can I help you?",
+     [
+      "Can I go home?",
+      "Are you hungry?",
+      "What's your name?"
+     ]
+    ],
+    [
+     "What do you say to ask for something politely?",
+     "Can I have a glass of water, please?",
+     [
+      "Give me water.",
+      "I want water now.",
+      "Water, water!"
+     ]
+    ],
+    [
+     "What do you say to get someone's attention politely?",
+     "Excuse me, please.",
+     [
+      "Hey you!",
+      "Go away!",
+      "Come here!"
+     ]
+    ],
+    [
+     "What do you say when you step on someone's foot?",
+     "I'm sorry.",
+     [
+      "Excuse me.",
+      "You're welcome.",
+      "Well done."
+     ]
+    ],
+    [
+     "What do you answer to \"Would you like some tea?\" (you want some)",
+     "Yes, please.",
+     [
+      "Yes, I'm.",
+      "Yes, you are.",
+      "Yes, it is."
+     ]
+    ],
+    [
+     "How do you introduce your friend?",
+     "This is my friend, Dan.",
+     [
+      "He is a my friend.",
+      "Is my friend Dan.",
+      "Dan this friend."
+     ]
+    ],
+    [
+     "What do you say to ask the time?",
+     "What time is it?",
+     [
+      "What is time?",
+      "How many time is it?",
+      "Which hour it is?"
+     ]
+    ],
+    [
+     "Which answer to \"What time is it?\" is correct? (3:30)",
+     "It's half past three.",
+     [
+      "It's three and thirty hours.",
+      "It's at three.",
+      "They are three."
+     ]
+    ],
+    [
+     "How do you ask someone to repeat?",
+     "Sorry, can you say that again?",
+     [
+      "Sorry, I am again.",
+      "Repeat now.",
+      "What you said?"
+     ]
+    ]
+   ]
+  },
+  "freq": {
+   "gaps": [
+    [
+     "I ___ brush my teeth in the morning. (100%)",
+     "always",
+     [
+      "never",
+      "sometimes",
+      "hardly ever"
+     ]
+    ],
+    [
+     "My brother ___ eats vegetables. (0%)",
+     "never",
+     [
+      "always",
+      "usually",
+      "often"
+     ]
+    ],
+    [
+     "We ___ go to the cinema. (about 30%)",
+     "sometimes",
+     [
+      "always",
+      "never",
+      "usually"
+     ]
+    ],
+    [
+     "She is ___ late for school. (0%)",
+     "never",
+     [
+      "always",
+      "usually",
+      "often"
+     ]
+    ],
+    [
+     "They ___ play football on Sundays. (90%)",
+     "usually",
+     [
+      "never",
+      "hardly ever",
+      "rarely"
+     ]
+    ],
+    [
+     "Tom ___ watches TV in the evening. (100%)",
+     "always",
+     [
+      "never",
+      "rarely",
+      "hardly ever"
+     ]
+    ],
+    [
+     "I ___ drink coffee. I don't like it. (0%)",
+     "never",
+     [
+      "always",
+      "often",
+      "usually"
+     ]
+    ],
+    [
+     "It ___ snows in July in Romania. (almost 0%)",
+     "hardly ever",
+     [
+      "always",
+      "usually",
+      "often"
+     ]
+    ],
+    [
+     "She ___ late for class. (never)",
+     "is never",
+     [
+      "never is",
+      "does never be",
+      "is not never"
+     ]
+    ],
+    [
+     "My dad ___ at home on Saturdays. (usually)",
+     "is usually",
+     [
+      "usually is",
+      "usually be",
+      "does usually"
+     ]
+    ],
+    [
+     "He ___ gets up early. (often)",
+     "often",
+     [
+      "is often",
+      "does often",
+      "often is"
+     ]
+    ],
+    [
+     "We ___ have PE twice a week. (the number of times)",
+     "twice",
+     [
+      "two",
+      "second",
+      "double"
+     ]
+    ],
+    [
+     "I visit my grandparents ___ week. (7 days out of 7)",
+     "every",
+     [
+      "all",
+      "some",
+      "any"
+     ]
+    ],
+    [
+     "How ___ do you play tennis? Twice a week.",
+     "often",
+     [
+      "much",
+      "many",
+      "long"
+     ]
+    ],
+    [
+     "My mum ___ cooks dinner on Sundays. (100%)",
+     "always",
+     [
+      "never",
+      "hardly ever",
+      "rarely"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is correct?",
+     "I never eat fish.",
+     [
+      "I eat never fish.",
+      "Never I eat fish.",
+      "I eat fish never."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "He is always happy.",
+     [
+      "He always is happy.",
+      "Always he is happy.",
+      "He is happy always is."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "We sometimes play chess.",
+     [
+      "We play sometimes chess.",
+      "We sometimes plays chess.",
+      "Sometimes we plays chess."
+     ]
+    ],
+    [
+     "Which word means \"0% of the time\"?",
+     "never",
+     [
+      "always",
+      "often",
+      "sometimes"
+     ]
+    ],
+    [
+     "Which word means \"100% of the time\"?",
+     "always",
+     [
+      "never",
+      "rarely",
+      "sometimes"
+     ]
+    ],
+    [
+     "Which word means \"not often\"?",
+     "rarely",
+     [
+      "usually",
+      "always",
+      "often"
+     ]
+    ]
+   ]
+  },
+  "quantity": {
+   "gaps": [
+    [
+     "How ___ water do you drink?",
+     "much",
+     [
+      "many",
+      "few",
+      "a few"
+     ]
+    ],
+    [
+     "How ___ apples are there?",
+     "many",
+     [
+      "much",
+      "little",
+      "a little"
+     ]
+    ],
+    [
+     "There isn't ___ sugar in my tea.",
+     "much",
+     [
+      "many",
+      "few",
+      "a few"
+     ]
+    ],
+    [
+     "We haven't got ___ eggs.",
+     "many",
+     [
+      "much",
+      "little",
+      "a little"
+     ]
+    ],
+    [
+     "I have ___ friends in my class. (a large number)",
+     "a lot of",
+     [
+      "much",
+      "a little",
+      "little"
+     ]
+    ],
+    [
+     "Would you like ___ milk? (an offer)",
+     "some",
+     [
+      "any",
+      "many",
+      "a few"
+     ]
+    ],
+    [
+     "Is there ___ bread in the kitchen?",
+     "any",
+     [
+      "many",
+      "a few",
+      "few"
+     ]
+    ],
+    [
+     "There are ___ pencils on the desk. (not many, but some)",
+     "a few",
+     [
+      "a little",
+      "much",
+      "any"
+     ]
+    ],
+    [
+     "I have ___ time. Let's hurry. (not much)",
+     "a little",
+     [
+      "a few",
+      "many",
+      "several"
+     ]
+    ],
+    [
+     "___ milk is in the fridge.",
+     "Some",
+     [
+      "Many",
+      "A few",
+      "Several"
+     ]
+    ],
+    [
+     "There is a lot ___ traffic in the city.",
+     "of",
+     [
+      "from",
+      "for",
+      "with"
+     ]
+    ],
+    [
+     "We ate ___ pizza last night. (a large amount)",
+     "a lot of",
+     [
+      "a few",
+      "many",
+      "several"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which noun is uncountable?",
+     "rice",
+     [
+      "egg",
+      "banana",
+      "sandwich"
+     ]
+    ],
+    [
+     "Which noun is uncountable?",
+     "water",
+     [
+      "bottle",
+      "cup",
+      "glass"
+     ]
+    ],
+    [
+     "Which noun is countable?",
+     "apple",
+     [
+      "bread",
+      "milk",
+      "money"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "There is some cheese on the table.",
+     [
+      "There are some cheese on the table.",
+      "There is some cheeses on the table.",
+      "There are a cheese on the table."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "How much money have you got?",
+     [
+      "How many money have you got?",
+      "How much moneys have you got?",
+      "How many moneys have you got?"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "I need some information.",
+     [
+      "I need an information.",
+      "I need informations.",
+      "I need a informations."
+     ]
+    ]
+   ]
+  },
+  "modals-basic": {
+   "gaps": [
+    [
+     "I ___ swim very well. (I have the ability)",
+     "can",
+     [
+      "must",
+      "should",
+      "might"
+     ]
+    ],
+    [
+     "She ___ speak French. (she has no ability)",
+     "can't",
+     [
+      "mustn't",
+      "needn't",
+      "doesn't can"
+     ]
+    ],
+    [
+     "___ you help me with this exercise? (a request)",
+     "Can",
+     [
+      "Must",
+      "Should",
+      "Do"
+     ]
+    ],
+    [
+     "You ___ be late for school. (it is a bad idea and against the rules)",
+     "mustn't",
+     [
+      "don't have to",
+      "can",
+      "aren't"
+     ]
+    ],
+    [
+     "You ___ wear a uniform at our school. (it is a rule)",
+     "have to",
+     [
+      "can",
+      "mustn't",
+      "might to"
+     ]
+    ],
+    [
+     "You look tired. You ___ go to bed early. (advice)",
+     "should",
+     [
+      "can",
+      "mustn't",
+      "are able"
+     ]
+    ],
+    [
+     "It's Sunday. We ___ get up early. (not necessary)",
+     "don't have to",
+     [
+      "mustn't",
+      "can't",
+      "shouldn't"
+     ]
+    ],
+    [
+     "You ___ eat so many sweets. They are bad for your teeth. (advice)",
+     "shouldn't",
+     [
+      "should",
+      "must",
+      "can"
+     ]
+    ],
+    [
+     "___ I open the window? (asking permission)",
+     "Can",
+     [
+      "Must",
+      "Do",
+      "Am"
+     ]
+    ],
+    [
+     "Children ___ play near the road. It is dangerous. (forbidden)",
+     "mustn't",
+     [
+      "don't have to",
+      "can",
+      "may to"
+     ]
+    ],
+    [
+     "She ___ come to the party. She is in another country. (it is not possible)",
+     "can't",
+     [
+      "doesn't",
+      "isn't",
+      "don't"
+     ]
+    ],
+    [
+     "My brother ___ ride a bike when he was five. (past ability)",
+     "could",
+     [
+      "can",
+      "must",
+      "should"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is correct?",
+     "He can run fast.",
+     [
+      "He can runs fast.",
+      "He cans run fast.",
+      "He can to run fast."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "She must do her homework.",
+     [
+      "She musts do her homework.",
+      "She must to do her homework.",
+      "She must does her homework."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "Can you swim?",
+     [
+      "Do you can swim?",
+      "Can you to swim?",
+      "Are you can swim?"
+     ]
+    ],
+    [
+     "Which is the negative of \"I can ride a bike\"?",
+     "I can't ride a bike.",
+     [
+      "I don't can ride a bike.",
+      "I can't to ride a bike.",
+      "I not can ride a bike."
+     ]
+    ],
+    [
+     "Which modal gives advice?",
+     "should",
+     [
+      "can't",
+      "have to",
+      "mustn't"
+     ]
+    ],
+    [
+     "Which modal means \"it is forbidden\"?",
+     "mustn't",
+     [
+      "don't have to",
+      "can",
+      "should"
+     ]
+    ]
+   ]
+  },
+  "directions": {
+   "gaps": [
+    [
+     "Excuse me, ___ is the post office? (asking about a place)",
+     "where",
+     [
+      "who",
+      "what",
+      "when"
+     ]
+    ],
+    [
+     "Turn ___ at the traffic lights. (the opposite of \"right\")",
+     "left",
+     [
+      "right",
+      "back",
+      "front"
+     ]
+    ],
+    [
+     "Go ___ this street for two minutes.",
+     "along",
+     [
+      "at",
+      "in",
+      "to"
+     ]
+    ],
+    [
+     "Take the second ___ on the right.",
+     "turning",
+     [
+      "turns",
+      "turned",
+      "turnings"
+     ]
+    ],
+    [
+     "The museum is ___ the cinema and the bank. (in the middle of them)",
+     "between",
+     [
+      "opposite",
+      "behind",
+      "at"
+     ]
+    ],
+    [
+     "The library is ___ the school. (on the other side of the road)",
+     "opposite",
+     [
+      "between",
+      "under",
+      "in"
+     ]
+    ],
+    [
+     "How can I get ___ the zoo?",
+     "to",
+     [
+      "at",
+      "in",
+      "on"
+     ]
+    ],
+    [
+     "The bus stop is ___ here. (not far)",
+     "near",
+     [
+      "nearly",
+      "next",
+      "between"
+     ]
+    ],
+    [
+     "It's about five minutes ___ foot.",
+     "on",
+     [
+      "by",
+      "at",
+      "in"
+     ]
+    ],
+    [
+     "You can go ___ bus number 5.",
+     "by",
+     [
+      "with",
+      "to",
+      "at"
+     ]
+    ],
+    [
+     "Cross ___ road at the zebra crossing.",
+     "the",
+     [
+      "a",
+      "an",
+      "some"
+     ]
+    ],
+    [
+     "Turn right ___ the end of the street.",
+     "at",
+     [
+      "in",
+      "on",
+      "to"
+     ]
+    ],
+    [
+     "Walk ___ the bridge and you are at the park.",
+     "over",
+     [
+      "in",
+      "at",
+      "to"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which question asks the way?",
+     "Excuse me, how do I get to the station?",
+     [
+      "Excuse me, what is the station?",
+      "Excuse me, who is the station?",
+      "Excuse me, how old is the station?"
+     ]
+    ],
+    [
+     "What does \"Go straight on\" mean?",
+     "Do not turn; keep going forward.",
+     [
+      "Turn left.",
+      "Turn right.",
+      "Stop here."
+     ]
+    ],
+    [
+     "What does \"Turn left\" mean?",
+     "Go to the left side.",
+     [
+      "Go to the right side.",
+      "Go back.",
+      "Stop."
+     ]
+    ],
+    [
+     "What does \"opposite the park\" mean?",
+     "on the other side of the street from the park",
+     [
+      "inside the park",
+      "behind the park",
+      "under the park"
+     ]
+    ],
+    [
+     "What does \"next to the bank\" mean?",
+     "beside the bank",
+     [
+      "far from the bank",
+      "inside the bank",
+      "under the bank"
+     ]
+    ],
+    [
+     "What does \"at the corner\" mean?",
+     "where two streets meet",
+     [
+      "in the middle of the street",
+      "inside a house",
+      "far from the road"
+     ]
+    ],
+    [
+     "Which is a correct answer to \"Where's the chemist's?\"",
+     "It's next to the supermarket.",
+     [
+      "It is a medicine.",
+      "I'm fine.",
+      "Yes, it is."
+     ]
+    ],
+    [
+     "Which sentence tells you to continue forward?",
+     "Go straight on.",
+     [
+      "Turn around.",
+      "Turn left.",
+      "Cross the road."
+     ]
+    ],
+    [
+     "What do you say to ask someone to repeat directions?",
+     "Sorry, could you say that again, please?",
+     [
+      "Sorry, where am I?",
+      "Sorry, I am the way.",
+      "Sorry, who is the way?"
+     ]
+    ]
+   ]
+  },
+  "comparison": {
+   "gaps": [
+    [
+     "My bag is as ___ as yours. (the same weight)",
+     "heavy",
+     [
+      "heavier",
+      "heaviest",
+      "more heavy"
+     ]
+    ],
+    [
+     "Tom is taller ___ his brother.",
+     "than",
+     [
+      "that",
+      "as",
+      "then"
+     ]
+    ],
+    [
+     "This test was ___ than the last one. (not so hard)",
+     "easier",
+     [
+      "easy",
+      "more easy",
+      "the easiest"
+     ]
+    ],
+    [
+     "She runs ___ than me.",
+     "faster",
+     [
+      "fast",
+      "more fast",
+      "the fastest"
+     ]
+    ],
+    [
+     "He speaks English ___ than his sister. (his English is better)",
+     "better",
+     [
+      "well",
+      "gooder",
+      "more good"
+     ]
+    ],
+    [
+     "This is the ___ film I have ever seen. (very bad)",
+     "worst",
+     [
+      "baddest",
+      "most bad",
+      "worse"
+     ]
+    ],
+    [
+     "The Danube is ___ than the Olt.",
+     "longer",
+     [
+      "more long",
+      "long",
+      "the longest"
+     ]
+    ],
+    [
+     "Mount Everest is the ___ mountain in the world.",
+     "highest",
+     [
+      "higher",
+      "most high",
+      "high"
+     ]
+    ],
+    [
+     "My room is not as big ___ yours.",
+     "as",
+     [
+      "than",
+      "that",
+      "like"
+     ]
+    ],
+    [
+     "The soup isn't hot ___. Let's heat it.",
+     "enough",
+     [
+      "too",
+      "very",
+      "so"
+     ]
+    ],
+    [
+     "It is ___ hot today! I can't work.",
+     "too",
+     [
+      "enough",
+      "as",
+      "than"
+     ]
+    ],
+    [
+     "He is ___ to drive a car. He is only fifteen.",
+     "not old enough",
+     [
+      "too old",
+      "so old",
+      "old too"
+     ]
+    ],
+    [
+     "The more you practise, ___ you get.",
+     "the better",
+     [
+      "better",
+      "the best",
+      "more good"
+     ]
+    ],
+    [
+     "Today is ___ day of the year! (hot)",
+     "the hottest",
+     [
+      "hotter",
+      "hottest",
+      "more hot"
+     ]
+    ],
+    [
+     "My cousin is two years ___ than me.",
+     "older",
+     [
+      "oldest",
+      "more old",
+      "the older"
+     ]
+    ],
+    [
+     "I like cats ___ than dogs. (I prefer cats)",
+     "more",
+     [
+      "most",
+      "much",
+      "many"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is correct?",
+     "She is more intelligent than me.",
+     [
+      "She is intelligenter than me.",
+      "She is more intelligent that me.",
+      "She is the most intelligent than me."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "This is the most interesting book.",
+     [
+      "This is the interestingest book.",
+      "This is the more interesting book.",
+      "This is most interesting book."
+     ]
+    ],
+    [
+     "Which is the comparative of \"good\"?",
+     "better",
+     [
+      "gooder",
+      "more good",
+      "best"
+     ]
+    ],
+    [
+     "Which is the superlative of \"bad\"?",
+     "worst",
+     [
+      "baddest",
+      "most bad",
+      "worse"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "Maths is as difficult as physics.",
+     [
+      "Maths is as difficult than physics.",
+      "Maths is so difficult as physics.",
+      "Maths is difficult as physics."
+     ]
+    ],
+    [
+     "Which is the comparative of the adverb \"carefully\"?",
+     "more carefully",
+     [
+      "carefulier",
+      "carefullier",
+      "most carefully"
+     ]
+    ]
+   ]
+  },
+  "future-contrast": {
+   "gaps": [
+    [
+     "Tomorrow it ___ be sunny. (a prediction)",
+     "will",
+     [
+      "is",
+      "does",
+      "has"
+     ]
+    ],
+    [
+     "I think Romania ___ win the match.",
+     "will",
+     [
+      "is",
+      "does",
+      "are"
+     ]
+    ],
+    [
+     "They ___ going to visit us on Sunday.",
+     "are",
+     [
+      "will",
+      "do",
+      "have"
+     ]
+    ],
+    [
+     "I ___ going to study medicine. (my plan)",
+     "am",
+     [
+      "will",
+      "do",
+      "have"
+     ]
+    ],
+    [
+     "Look! That boy ___ going to fall.",
+     "is",
+     [
+      "will",
+      "does",
+      "are"
+     ]
+    ],
+    [
+     "It's cold. I think I ___ close the window. (a decision now)",
+     "will",
+     [
+      "am going",
+      "do",
+      "have"
+     ]
+    ],
+    [
+     "___ you going to watch the match tonight?",
+     "Are",
+     [
+      "Will",
+      "Do",
+      "Have"
+     ]
+    ],
+    [
+     "She ___ not come to the party tomorrow. (negative)",
+     "will",
+     [
+      "is",
+      "does",
+      "has"
+     ]
+    ],
+    [
+     "We ___ go on holiday next week. We have booked the hotel. (an arrangement)",
+     "are going to",
+     [
+      "will to",
+      "going",
+      "do going"
+     ]
+    ],
+    [
+     "What time ___ the train leave tomorrow? (a timetable)",
+     "does",
+     [
+      "will to",
+      "is going",
+      "do"
+     ]
+    ],
+    [
+     "My plane ___ at seven o'clock tomorrow. (a timetable)",
+     "leaves",
+     [
+      "leaving",
+      "leave",
+      "is leave"
+     ]
+    ],
+    [
+     "Don't worry. I ___ help you. (a promise)",
+     "will",
+     [
+      "am going",
+      "do",
+      "have"
+     ]
+    ],
+    [
+     "He ___ be a doctor when he grows up.",
+     "will",
+     [
+      "is",
+      "does",
+      "are"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is correct?",
+     "I will see you tomorrow.",
+     [
+      "I will to see you tomorrow.",
+      "I will sees you tomorrow.",
+      "I wills see you tomorrow."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "She is going to buy a car.",
+     [
+      "She is going buy a car.",
+      "She going to buy a car.",
+      "She goes to buying a car."
+     ]
+    ],
+    [
+     "Which is the negative of \"We will go\"?",
+     "We won't go.",
+     [
+      "We don't will go.",
+      "We won't to go.",
+      "We will not to go."
+     ]
+    ],
+    [
+     "Which form do we use for a plan we made before speaking?",
+     "be going to",
+     [
+      "simple past",
+      "past continuous",
+      "present perfect"
+     ]
+    ],
+    [
+     "Which form is often used for a prediction with no evidence (\"I think...\")?",
+     "will",
+     [
+      "simple past",
+      "present perfect",
+      "past continuous"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "I am meeting Dan at six tonight.",
+     [
+      "I meeting Dan at six tonight.",
+      "I meets Dan at six tonight.",
+      "I am meet Dan at six tonight."
+     ]
+    ]
+   ]
+  },
+  "modals-more": {
+   "gaps": [
+    [
+     "It ___ rain later. Take an umbrella. (it is possible)",
+     "might",
+     [
+      "must",
+      "have to",
+      "would"
+     ]
+    ],
+    [
+     "___ I borrow your pen, please? (a polite request)",
+     "May",
+     [
+      "Must",
+      "Would to",
+      "Am"
+     ]
+    ],
+    [
+     "You ___ wear a helmet when you ride a bike. (it is the law)",
+     "must",
+     [
+      "might",
+      "may not",
+      "can to"
+     ]
+    ],
+    [
+     "You ___ stay if you don't want to. (it is not necessary)",
+     "don't have to",
+     [
+      "mustn't",
+      "can't",
+      "shouldn't"
+     ]
+    ],
+    [
+     "Shall we ___ to the cinema? (a suggestion)",
+     "go",
+     [
+      "going",
+      "to go",
+      "went"
+     ]
+    ],
+    [
+     "___ you like a cup of tea? (an offer)",
+     "Would",
+     [
+      "Do",
+      "Are",
+      "Will"
+     ]
+    ],
+    [
+     "You ___ better take a coat. (strong advice)",
+     "had",
+     [
+      "have",
+      "would",
+      "should"
+     ]
+    ],
+    [
+     "She is not here. She ___ be at school. (probably)",
+     "may",
+     [
+      "must to",
+      "can to",
+      "is"
+     ]
+    ],
+    [
+     "When I was a child, I ___ swim. (I was not able to)",
+     "couldn't",
+     [
+      "can't",
+      "mustn't",
+      "didn't can"
+     ]
+    ],
+    [
+     "___ you pass me the salt, please? (a polite request)",
+     "Could",
+     [
+      "Must",
+      "Do",
+      "Are"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "\"You mustn't smoke here\" means...",
+     "It is forbidden.",
+     [
+      "It is not necessary.",
+      "It is possible.",
+      "It is a good idea."
+     ]
+    ],
+    [
+     "\"You don't have to come\" means...",
+     "It is not necessary.",
+     [
+      "It is forbidden.",
+      "It is a rule.",
+      "It is dangerous."
+     ]
+    ],
+    [
+     "Which sentence is polite?",
+     "Could you open the window, please?",
+     [
+      "Open the window!",
+      "You open the window now.",
+      "Window, open!"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "You should see a doctor.",
+     [
+      "You should to see a doctor.",
+      "You should sees a doctor.",
+      "You shoulds see a doctor."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "We might go to the beach.",
+     [
+      "We might to go to the beach.",
+      "We might goes to the beach.",
+      "We mights go to the beach."
+     ]
+    ],
+    [
+     "Which modal expresses a strong rule?",
+     "must",
+     [
+      "might",
+      "could",
+      "may"
+     ]
+    ]
+   ]
+  },
+  "phrasal-1": {
+   "gaps": [
+    [
+     "Wake ___! It's seven o'clock.",
+     "up",
+     [
+      "on",
+      "in",
+      "at"
+     ]
+    ],
+    [
+     "Please turn ___ the light. It's dark.",
+     "on",
+     [
+      "off",
+      "in",
+      "at"
+     ]
+    ],
+    [
+     "I'm looking ___ my keys. I can't find them.",
+     "for",
+     [
+      "after",
+      "up",
+      "at"
+     ]
+    ],
+    [
+     "Can you look ___ my cat while I'm away?",
+     "after",
+     [
+      "for",
+      "at",
+      "up"
+     ]
+    ],
+    [
+     "Don't give ___! Try again.",
+     "up",
+     [
+      "on",
+      "out",
+      "off"
+     ]
+    ],
+    [
+     "Put ___ your jacket. It's cold outside.",
+     "on",
+     [
+      "up",
+      "in",
+      "at"
+     ]
+    ],
+    [
+     "Take ___ your shoes, please.",
+     "off",
+     [
+      "on",
+      "up",
+      "in"
+     ]
+    ],
+    [
+     "Sit ___, please. We are starting.",
+     "down",
+     [
+      "of",
+      "in",
+      "at"
+     ]
+    ],
+    [
+     "Stand ___ when the teacher comes in.",
+     "up",
+     [
+      "in",
+      "on",
+      "at"
+     ]
+    ],
+    [
+     "I'll pick you ___ at six.",
+     "up",
+     [
+      "on",
+      "in",
+      "at"
+     ]
+    ],
+    [
+     "Let's find ___ what time the film starts.",
+     "out",
+     [
+      "up",
+      "in",
+      "off"
+     ]
+    ],
+    [
+     "Switch ___ the TV. It's late.",
+     "off",
+     [
+      "in",
+      "at",
+      "for"
+     ]
+    ],
+    [
+     "Hurry ___! We are late.",
+     "up",
+     [
+      "on",
+      "off",
+      "at"
+     ]
+    ],
+    [
+     "Come ___! The door is open. (enter)",
+     "in",
+     [
+      "up",
+      "at",
+      "off"
+     ]
+    ],
+    [
+     "It was cold, so she ___ her coat before going out.",
+     "put on",
+     [
+      "took off",
+      "gave up",
+      "turned off"
+     ]
+    ],
+    [
+     "We ___ the old TV and bought a new one.",
+     "threw away",
+     [
+      "gave up",
+      "woke up",
+      "put on"
+     ]
+    ],
+    [
+     "My grandmother ___ my little brother every day.",
+     "looks after",
+     [
+      "looks for",
+      "looks up",
+      "gives up"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "What does \"give up\" mean?",
+     "stop trying",
+     [
+      "start",
+      "win",
+      "laugh"
+     ]
+    ],
+    [
+     "What does \"look for\" mean?",
+     "search",
+     [
+      "watch",
+      "visit",
+      "call"
+     ]
+    ],
+    [
+     "What does \"turn off\" mean?",
+     "stop a machine or a light",
+     [
+      "start",
+      "buy",
+      "break"
+     ]
+    ],
+    [
+     "What does \"get up\" mean?",
+     "leave your bed",
+     [
+      "go to bed",
+      "sit down",
+      "fall"
+     ]
+    ],
+    [
+     "What does \"take off\" (a coat) mean?",
+     "remove",
+     [
+      "buy",
+      "wash",
+      "wear"
+     ]
+    ],
+    [
+     "What does \"find out\" mean?",
+     "discover information",
+     [
+      "lose",
+      "hide",
+      "forget"
+     ]
+    ]
+   ]
+  },
+  "quantifiers": {
+   "gaps": [
+    [
+     "We need ___ time to finish. (not enough yet)",
+     "more",
+     [
+      "many",
+      "few",
+      "a few"
+     ]
+    ],
+    [
+     "There are ___ students in the room. (hardly any)",
+     "few",
+     [
+      "little",
+      "much",
+      "a little"
+     ]
+    ],
+    [
+     "I have ___ money. I can't buy it. (almost none)",
+     "little",
+     [
+      "few",
+      "many",
+      "a few"
+     ]
+    ],
+    [
+     "There are only ___ biscuits left. (a small number)",
+     "a few",
+     [
+      "a little",
+      "much",
+      "any"
+     ]
+    ],
+    [
+     "I need ___ help with this. (some)",
+     "a little",
+     [
+      "a few",
+      "many",
+      "several"
+     ]
+    ],
+    [
+     "___ student has a locker. (one by one)",
+     "Every",
+     [
+      "All",
+      "Both",
+      "Many"
+     ]
+    ],
+    [
+     "___ of my friends play football. (all of them)",
+     "All",
+     [
+      "Every",
+      "Much",
+      "A little"
+     ]
+    ],
+    [
+     "___ my parents work at the hospital. (my mum and my dad)",
+     "Both",
+     [
+      "Every",
+      "Each",
+      "Much"
+     ]
+    ],
+    [
+     "There is too ___ noise in here.",
+     "much",
+     [
+      "many",
+      "few",
+      "a few"
+     ]
+    ],
+    [
+     "There are too ___ cars in the city centre.",
+     "many",
+     [
+      "much",
+      "little",
+      "a little"
+     ]
+    ],
+    [
+     "I am not tall ___ to reach the shelf.",
+     "enough",
+     [
+      "too",
+      "very",
+      "so"
+     ]
+    ],
+    [
+     "The water is too ___ to drink.",
+     "dirty",
+     [
+      "clean",
+      "enough",
+      "much"
+     ]
+    ],
+    [
+     "Is there ___ food for everybody?",
+     "enough",
+     [
+      "too",
+      "very",
+      "much"
+     ]
+    ],
+    [
+     "We have plenty ___ time. Don't hurry.",
+     "of",
+     [
+      "for",
+      "to",
+      "from"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is correct?",
+     "There are few people at the beach today.",
+     [
+      "There are little people at the beach today.",
+      "There is few people at the beach today.",
+      "There are much people at the beach today."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "I have a little time.",
+     [
+      "I have a few time.",
+      "I have little times.",
+      "I have a little times."
+     ]
+    ],
+    [
+     "Which word goes with countable nouns?",
+     "few",
+     [
+      "little",
+      "much",
+      "a little"
+     ]
+    ],
+    [
+     "Which word goes with uncountable nouns?",
+     "little",
+     [
+      "few",
+      "many",
+      "several"
+     ]
+    ],
+    [
+     "Which means \"not enough\"?",
+     "too little",
+     [
+      "too many",
+      "plenty of",
+      "a lot of"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "Each pupil has a book.",
+     [
+      "Each pupils have a book.",
+      "Each pupil have a book.",
+      "Each of pupil has a book."
+     ]
+    ]
+   ]
+  },
+  "invitations": {
+   "gaps": [
+    [
+     "Why ___ we go to the beach on Saturday?",
+     "don't",
+     [
+      "aren't",
+      "can't to",
+      "not"
+     ]
+    ],
+    [
+     "How ___ going for a walk? (a suggestion)",
+     "about",
+     [
+      "are",
+      "do",
+      "shall"
+     ]
+    ],
+    [
+     "___ you like to come to the cinema with us?",
+     "Would",
+     [
+      "Do",
+      "Are",
+      "Will"
+     ]
+    ],
+    [
+     "Shall I ___ the door for you? (an offer)",
+     "open",
+     [
+      "opening",
+      "to open",
+      "opened"
+     ]
+    ],
+    [
+     "Do you want ___ come with us?",
+     "to",
+     [
+      "for",
+      "at",
+      "in"
+     ]
+    ],
+    [
+     "Thanks for ___ me to your party.",
+     "inviting",
+     [
+      "invite",
+      "to invite",
+      "invited"
+     ]
+    ],
+    [
+     "I'd love ___, but I have a piano lesson.",
+     "to come",
+     [
+      "come",
+      "coming",
+      "to coming"
+     ]
+    ],
+    [
+     "What about ___ a pizza tonight?",
+     "making",
+     [
+      "make",
+      "to make",
+      "made"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is an invitation?",
+     "Would you like to come to my party?",
+     [
+      "Where is my party?",
+      "I went to a party.",
+      "The party was boring."
+     ]
+    ],
+    [
+     "How do you accept an invitation politely?",
+     "Yes, I'd love to. Thank you!",
+     [
+      "No, never.",
+      "I don't care.",
+      "Maybe you are right."
+     ]
+    ],
+    [
+     "How do you refuse an invitation politely?",
+     "I'm sorry, I can't. I have homework.",
+     [
+      "No!",
+      "I hate parties.",
+      "Go away."
+     ]
+    ],
+    [
+     "Which sentence makes a suggestion?",
+     "Let's play football.",
+     [
+      "I play football.",
+      "Do you play football?",
+      "He plays football."
+     ]
+    ],
+    [
+     "Which answer agrees with \"Let's go to the zoo\"?",
+     "Good idea!",
+     [
+      "No, I am not.",
+      "Yes, it was.",
+      "I go to the zoo."
+     ]
+    ],
+    [
+     "Which answer disagrees politely with \"Let's watch TV\"?",
+     "I'd rather play outside.",
+     [
+      "You are wrong!",
+      "Never ever.",
+      "Who cares?"
+     ]
+    ],
+    [
+     "What can you say to start a phone call to a friend?",
+     "Hello, Ana. It's Tom. Are you free on Saturday?",
+     [
+      "Hello, who are you the Saturday?",
+      "Saturday free Ana.",
+      "Hi, I'm Tom the free."
+     ]
+    ],
+    [
+     "How do you ask for the time and place of a party?",
+     "When and where is the party?",
+     [
+      "What and who is the party?",
+      "How many is the party?",
+      "Which party is who?"
+     ]
+    ],
+    [
+     "Which reply to \"Can you come on Sunday?\" means \"yes\"?",
+     "Sure, I'd love to.",
+     [
+      "I'm afraid not.",
+      "I can't.",
+      "No, thanks."
+     ]
+    ],
+    [
+     "Which reply means \"no\"?",
+     "I'm afraid I can't.",
+     [
+      "Sure, no problem.",
+      "That sounds great.",
+      "Yes, of course."
+     ]
+    ]
+   ]
+  },
+  "conditionals": {
+   "gaps": [
+    [
+     "If you heat ice, it ___. (a general fact)",
+     "melts",
+     [
+      "melted",
+      "melting",
+      "would melt"
+     ]
+    ],
+    [
+     "If it rains tomorrow, we ___ at home.",
+     "will stay",
+     [
+      "stayed",
+      "would stay",
+      "staying"
+     ]
+    ],
+    [
+     "If I ___ time tomorrow, I will call you.",
+     "have",
+     [
+      "will have",
+      "had",
+      "would have"
+     ]
+    ],
+    [
+     "If you ___ hard, you will pass the exam.",
+     "study",
+     [
+      "will study",
+      "studied",
+      "would study"
+     ]
+    ],
+    [
+     "If she ___ the bus, she will be late.",
+     "misses",
+     [
+      "will miss",
+      "missed",
+      "would miss"
+     ]
+    ],
+    [
+     "If we don't hurry, we ___ the train.",
+     "will miss",
+     [
+      "missed",
+      "would miss",
+      "missing"
+     ]
+    ],
+    [
+     "Water ___ if you cool it to 0 degrees Celsius. (a fact)",
+     "freezes",
+     [
+      "froze",
+      "freezing",
+      "would freeze"
+     ]
+    ],
+    [
+     "If you mix red and blue, you ___ purple. (a fact)",
+     "get",
+     [
+      "got",
+      "getting",
+      "would get"
+     ]
+    ],
+    [
+     "What ___ you do if you lose your key?",
+     "will",
+     [
+      "would",
+      "did",
+      "are"
+     ]
+    ],
+    [
+     "Unless you ___ a jacket, you will be cold.",
+     "wear",
+     [
+      "will wear",
+      "wore",
+      "don't wear"
+     ]
+    ],
+    [
+     "I will go out if it ___ raining.",
+     "stops",
+     [
+      "will stop",
+      "stopped",
+      "stopping"
+     ]
+    ],
+    [
+     "If you ___ me, I will help you.",
+     "ask",
+     [
+      "will ask",
+      "asked",
+      "would ask"
+     ]
+    ],
+    [
+     "If I see him, I ___ him your message.",
+     "will give",
+     [
+      "gave",
+      "would give",
+      "giving"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is a zero conditional (a general truth)?",
+     "If you heat water to 100 degrees, it boils.",
+     [
+      "If it rains, we will stay home.",
+      "If I won, I would travel.",
+      "If she had come, I would have met her."
+     ]
+    ],
+    [
+     "Which sentence is a first conditional (a real possibility in the future)?",
+     "If it snows, we will build a snowman.",
+     [
+      "If you cool water, it freezes.",
+      "If I were rich, I would buy a boat.",
+      "If he had known, he would have called."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "If it rains, we will stay at home.",
+     [
+      "If it will rain, we will stay at home.",
+      "If it rains, we stay will at home.",
+      "If it rained, we will stay at home."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "If you press this button, the light comes on.",
+     [
+      "If you will press this button, the light comes on.",
+      "If you pressed this button, the light comes on.",
+      "If you press this button, the light will to come on."
+     ]
+    ],
+    [
+     "What does \"unless\" mean?",
+     "if not",
+     [
+      "and",
+      "because",
+      "when"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "I won't go unless you come with me.",
+     [
+      "I won't go unless you don't come with me.",
+      "I won't go unless you will come with me.",
+      "I won't go unless you come with me not."
+     ]
+    ]
+   ]
+  },
+  "relative": {
+   "gaps": [
+    [
+     "The girl ___ lives next door is my friend.",
+     "who",
+     [
+      "which",
+      "where",
+      "whose"
+     ]
+    ],
+    [
+     "This is the book ___ I told you about.",
+     "that",
+     [
+      "who",
+      "where",
+      "whose"
+     ]
+    ],
+    [
+     "That's the man ___ car was stolen.",
+     "whose",
+     [
+      "who",
+      "which",
+      "where"
+     ]
+    ],
+    [
+     "The museum ___ we visited was very old.",
+     "which",
+     [
+      "who",
+      "where",
+      "whose"
+     ]
+    ],
+    [
+     "This is the town ___ I was born.",
+     "where",
+     [
+      "who",
+      "which",
+      "whose"
+     ]
+    ],
+    [
+     "A doctor is a person ___ helps sick people.",
+     "who",
+     [
+      "which",
+      "where",
+      "whose"
+     ]
+    ],
+    [
+     "A bike is something ___ has two wheels.",
+     "that",
+     [
+      "who",
+      "where",
+      "whose"
+     ]
+    ],
+    [
+     "I have a friend ___ father is a pilot.",
+     "whose",
+     [
+      "who",
+      "which",
+      "where"
+     ]
+    ],
+    [
+     "The film ___ we saw yesterday was excellent.",
+     "that",
+     [
+      "who",
+      "whose",
+      "where"
+     ]
+    ],
+    [
+     "Do you know the woman ___ is talking to Tom?",
+     "who",
+     [
+      "which",
+      "where",
+      "whose"
+     ]
+    ],
+    [
+     "That's the shop ___ I bought these shoes.",
+     "where",
+     [
+      "who",
+      "whose",
+      "what"
+     ]
+    ],
+    [
+     "A library is a place ___ you can borrow books.",
+     "where",
+     [
+      "who",
+      "whose",
+      "which"
+     ]
+    ],
+    [
+     "The students ___ passed the test were happy.",
+     "who",
+     [
+      "which",
+      "where",
+      "whose"
+     ]
+    ],
+    [
+     "The phone ___ is on the table is mine.",
+     "that",
+     [
+      "who",
+      "whose",
+      "where"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which relative pronoun is for people?",
+     "who",
+     [
+      "which",
+      "where",
+      "whose"
+     ]
+    ],
+    [
+     "Which relative pronoun is for places?",
+     "where",
+     [
+      "who",
+      "whose",
+      "which"
+     ]
+    ],
+    [
+     "Which relative pronoun shows possession?",
+     "whose",
+     [
+      "who",
+      "which",
+      "where"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "The man who called you is my uncle.",
+     [
+      "The man which called you is my uncle.",
+      "The man where called you is my uncle.",
+      "The man whose called you is my uncle."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "The car that I bought is red.",
+     [
+      "The car who I bought is red.",
+      "The car where I bought is red.",
+      "The car whose I bought is red."
+     ]
+    ]
+   ]
+  },
+  "phrasal-2": {
+   "gaps": [
+    [
+     "Please fill ___ this form.",
+     "in",
+     [
+      "on",
+      "at",
+      "off"
+     ]
+    ],
+    [
+     "I can't ___ with this noise any more.",
+     "put up",
+     [
+      "put on",
+      "put off",
+      "put out"
+     ]
+    ],
+    [
+     "We ran ___ of milk, so I went to the shop.",
+     "out",
+     [
+      "up",
+      "off",
+      "away"
+     ]
+    ],
+    [
+     "The meeting was ___ until next week. (moved to a later date)",
+     "put off",
+     [
+      "put on",
+      "put in",
+      "put up"
+     ]
+    ],
+    [
+     "Can you turn the music ___? It's too loud.",
+     "down",
+     [
+      "up",
+      "on",
+      "in"
+     ]
+    ],
+    [
+     "She ___ her mother. They both have blue eyes.",
+     "takes after",
+     [
+      "takes off",
+      "takes up",
+      "takes in"
+     ]
+    ],
+    [
+     "I ___ English when I was eight. (began to study it as a hobby)",
+     "took up",
+     [
+      "took off",
+      "took after",
+      "took in"
+     ]
+    ],
+    [
+     "The plane ___ at ten o'clock.",
+     "took off",
+     [
+      "took up",
+      "took after",
+      "took in"
+     ]
+    ],
+    [
+     "He ___ his old friends in town. (met them by chance)",
+     "ran into",
+     [
+      "ran out",
+      "ran up",
+      "ran off"
+     ]
+    ],
+    [
+     "Let's ___ for the weekend. (leave home for a short trip)",
+     "go away",
+     [
+      "go on",
+      "go off",
+      "go up"
+     ]
+    ],
+    [
+     "I'm looking ___ to the holidays.",
+     "forward",
+     [
+      "up",
+      "after",
+      "for"
+     ]
+    ],
+    [
+     "Can you ___ the word in the dictionary? (search for its meaning)",
+     "look up",
+     [
+      "look after",
+      "look at",
+      "look into"
+     ]
+    ],
+    [
+     "We have to ___ how to open this box.",
+     "figure out",
+     [
+      "figure on",
+      "figure up",
+      "figure in"
+     ]
+    ],
+    [
+     "We get ___ well with our neighbours. (we have good relations)",
+     "on",
+     [
+      "off",
+      "in",
+      "up"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "What does \"put off\" mean?",
+     "postpone",
+     [
+      "cancel",
+      "continue",
+      "finish"
+     ]
+    ],
+    [
+     "What does \"run out of\" mean?",
+     "have none left",
+     [
+      "run fast",
+      "visit",
+      "find"
+     ]
+    ],
+    [
+     "What does \"take after\" mean?",
+     "be similar to a family member",
+     [
+      "follow",
+      "leave",
+      "visit"
+     ]
+    ],
+    [
+     "What does \"look forward to\" mean?",
+     "wait for with pleasure",
+     [
+      "look back",
+      "search",
+      "avoid"
+     ]
+    ],
+    [
+     "What does \"get on with\" mean?",
+     "have a good relationship with",
+     [
+      "go away",
+      "enter",
+      "forget"
+     ]
+    ],
+    [
+     "Which phrasal verb means \"to stop doing something\"?",
+     "give up",
+     [
+      "take up",
+      "look up",
+      "get up"
+     ]
+    ],
+    [
+     "What does \"carry on\" mean?",
+     "continue",
+     [
+      "stop",
+      "lose",
+      "break"
+     ]
+    ],
+    [
+     "What does \"break down\" mean (a car)?",
+     "stop working",
+     [
+      "start",
+      "win",
+      "jump"
+     ]
+    ]
+   ]
+  },
+  "usedto": {
+   "gaps": [
+    [
+     "I ___ play with toy cars when I was little. (a past habit)",
+     "used to",
+     [
+      "use to",
+      "was used",
+      "am used to"
+     ]
+    ],
+    [
+     "She ___ to live in Cluj, but now she lives in Iasi.",
+     "used",
+     [
+      "use",
+      "is used",
+      "was using"
+     ]
+    ],
+    [
+     "Did you ___ to play the piano?",
+     "use",
+     [
+      "used",
+      "using",
+      "be used"
+     ]
+    ],
+    [
+     "We didn't ___ to have a computer.",
+     "use",
+     [
+      "used",
+      "using",
+      "be used"
+     ]
+    ],
+    [
+     "He has a big smile. He ___ be happy. (I am almost sure)",
+     "must",
+     [
+      "can't",
+      "mustn't",
+      "shouldn't"
+     ]
+    ],
+    [
+     "She is on holiday, so she ___ be at school now. (I am sure it is not true)",
+     "can't",
+     [
+      "must",
+      "mustn't",
+      "needn't"
+     ]
+    ],
+    [
+     "The lights are off. They ___ be at home. (it is possible)",
+     "might not",
+     [
+      "must",
+      "can",
+      "have to"
+     ]
+    ],
+    [
+     "It ___ rain tonight, but I'm not sure.",
+     "might",
+     [
+      "must",
+      "can't",
+      "has to"
+     ]
+    ],
+    [
+     "That dog is so big. It ___ weigh fifty kilos! (a guess)",
+     "must",
+     [
+      "mustn't",
+      "can't",
+      "doesn't"
+     ]
+    ],
+    [
+     "When I was little, we ___ spend the summer at the seaside. (a past habit)",
+     "would",
+     [
+      "will",
+      "are",
+      "do"
+     ]
+    ],
+    [
+     "Tom ___ live in Brasov. Now he lives in Sibiu.",
+     "used to",
+     [
+      "is used to",
+      "use to",
+      "using to"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which sentence is correct?",
+     "He used to have long hair.",
+     [
+      "He use to have long hair.",
+      "He used have long hair.",
+      "He was used have long hair."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "I am used to getting up early.",
+     [
+      "I am used to get up early.",
+      "I used to getting up early.",
+      "I use to get up early."
+     ]
+    ],
+    [
+     "What does \"I'm used to the cold\" mean?",
+     "The cold is normal for me.",
+     [
+      "I had the cold before.",
+      "I like the cold only in the past.",
+      "I often feel cold."
+     ]
+    ],
+    [
+     "Which modal shows you are almost sure something is true?",
+     "must",
+     [
+      "might",
+      "could",
+      "may"
+     ]
+    ],
+    [
+     "Which modal shows you are sure something is NOT true?",
+     "can't",
+     [
+      "might",
+      "may",
+      "should"
+     ]
+    ],
+    [
+     "Which modal shows a small possibility?",
+     "might",
+     [
+      "must",
+      "can't",
+      "have to"
+     ]
+    ],
+    [
+     "Which sentence is about a past habit that does not exist now?",
+     "I used to walk to school.",
+     [
+      "I am used to walking to school.",
+      "I walk to school.",
+      "I am walking to school."
+     ]
+    ]
+   ]
+  },
+  "patterns": {
+   "gaps": [
+    [
+     "I enjoy ___ to music.",
+     "listening",
+     [
+      "listen",
+      "to listen",
+      "listened"
+     ]
+    ],
+    [
+     "She wants ___ a doctor.",
+     "to be",
+     [
+      "being",
+      "be",
+      "been"
+     ]
+    ],
+    [
+     "He decided ___ his bike to school.",
+     "to ride",
+     [
+      "riding",
+      "ride",
+      "rode"
+     ]
+    ],
+    [
+     "We finished ___ the room.",
+     "painting",
+     [
+      "to paint",
+      "paint",
+      "painted"
+     ]
+    ],
+    [
+     "I'd like ___ a glass of water.",
+     "to have",
+     [
+      "having",
+      "have",
+      "had"
+     ]
+    ],
+    [
+     "My brother is good at ___ football.",
+     "playing",
+     [
+      "play",
+      "to play",
+      "played"
+     ]
+    ],
+    [
+     "She is interested ___ learning Spanish.",
+     "in",
+     [
+      "on",
+      "at",
+      "of"
+     ]
+    ],
+    [
+     "He is afraid ___ dogs.",
+     "of",
+     [
+      "from",
+      "on",
+      "at"
+     ]
+    ],
+    [
+     "I look forward to ___ you soon.",
+     "seeing",
+     [
+      "see",
+      "to see",
+      "saw"
+     ]
+    ],
+    [
+     "Let's ___ a game.",
+     "play",
+     [
+      "playing",
+      "to play",
+      "played"
+     ]
+    ],
+    [
+     "You must ___ your homework.",
+     "do",
+     [
+      "doing",
+      "to do",
+      "does"
+     ]
+    ],
+    [
+     "My mum makes me ___ my room.",
+     "clean",
+     [
+      "cleaning",
+      "to clean",
+      "cleaned"
+     ]
+    ],
+    [
+     "Can you help me ___ this box?",
+     "carry",
+     [
+      "carrying",
+      "carries",
+      "carried"
+     ]
+    ],
+    [
+     "I don't mind ___ the dishes.",
+     "washing",
+     [
+      "wash",
+      "to wash",
+      "washed"
+     ]
+    ],
+    [
+     "Do you like ___ to the cinema?",
+     "going",
+     [
+      "go",
+      "goes",
+      "went"
+     ]
+    ],
+    [
+     "He promised ___ me.",
+     "to help",
+     [
+      "helping",
+      "help",
+      "helped"
+     ]
+    ],
+    [
+     "She hates ___ up early.",
+     "getting",
+     [
+      "get",
+      "gets",
+      "got"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which verb is followed by -ing?",
+     "enjoy",
+     [
+      "want",
+      "decide",
+      "hope"
+     ]
+    ],
+    [
+     "Which verb is followed by \"to + verb\"?",
+     "decide",
+     [
+      "enjoy",
+      "finish",
+      "mind"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "I want to learn English.",
+     [
+      "I want learning English.",
+      "I want learn English.",
+      "I want to learning English."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "She enjoys swimming.",
+     [
+      "She enjoys to swim.",
+      "She enjoys swim.",
+      "She enjoys to swimming."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "He suggested going to the park.",
+     [
+      "He suggested to go to the park.",
+      "He suggested go to the park.",
+      "He suggested to going to the park."
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "We are looking forward to meeting you.",
+     [
+      "We are looking forward to meet you.",
+      "We are looking forward meeting you.",
+      "We look forward to meet you."
+     ]
+    ]
+   ]
+  },
+  "opinion": {
+   "gaps": [
+    [
+     "___ my opinion, the book is better than the film.",
+     "In",
+     [
+      "On",
+      "At",
+      "By"
+     ]
+    ],
+    [
+     "I ___ with you. It's a good plan.",
+     "agree",
+     [
+      "am agree",
+      "agrees",
+      "agreeing"
+     ]
+    ],
+    [
+     "What ___ you think about school uniforms?",
+     "do",
+     [
+      "are",
+      "does",
+      "will"
+     ]
+    ],
+    [
+     "Sorry, I ___ catch that. Could you repeat it?",
+     "didn't",
+     [
+      "don't can",
+      "am not",
+      "wasn't"
+     ]
+    ],
+    [
+     "Would you ___ me a favour? (a request)",
+     "do",
+     [
+      "make",
+      "have",
+      "take"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which phrase asks for someone's opinion?",
+     "What do you think about this film?",
+     [
+      "What is this film?",
+      "Who made this film?",
+      "When is this film?"
+     ]
+    ],
+    [
+     "Which phrase gives an opinion?",
+     "In my opinion, it's a great idea.",
+     [
+      "It's a great idea?",
+      "Who is my opinion?",
+      "I opinion it's great."
+     ]
+    ],
+    [
+     "Which phrase shows agreement?",
+     "I agree with you.",
+     [
+      "I don't think so.",
+      "I'm not sure about that.",
+      "That's wrong."
+     ]
+    ],
+    [
+     "Which phrase shows disagreement politely?",
+     "I'm afraid I don't agree.",
+     [
+      "You are stupid.",
+      "Be quiet.",
+      "That is nonsense."
+     ]
+    ],
+    [
+     "How do you answer the phone politely?",
+     "Hello, this is Maria speaking.",
+     [
+      "Who are you?",
+      "What?",
+      "Yes, Maria."
+     ]
+    ],
+    [
+     "How do you ask to speak to someone on the phone?",
+     "Can I speak to Dan, please?",
+     [
+      "Give me Dan now.",
+      "I want Dan.",
+      "Dan phone, please."
+     ]
+    ],
+    [
+     "What do you say if you didn't hear well on the phone?",
+     "Sorry, could you speak up, please?",
+     [
+      "Stop talking.",
+      "Who are you now?",
+      "I hear no."
+     ]
+    ],
+    [
+     "Which sentence gives advice?",
+     "If I were you, I'd talk to your teacher.",
+     [
+      "I am your teacher.",
+      "You talked to your teacher.",
+      "Your teacher talks."
+     ]
+    ],
+    [
+     "Which sentence complains politely in a shop?",
+     "Excuse me, this phone doesn't work. Can I change it?",
+     [
+      "This is rubbish!",
+      "Give me my money!",
+      "You are bad."
+     ]
+    ],
+    [
+     "Which phrase shows you are not sure?",
+     "I'm not sure. Maybe it's true.",
+     [
+      "I'm sure it is.",
+      "It is definitely true.",
+      "I know."
+     ]
+    ],
+    [
+     "Which phrase can end a formal email to a teacher?",
+     "Yours sincerely,",
+     [
+      "See ya!",
+      "Hey, bye!",
+      "Whatever."
+     ]
+    ],
+    [
+     "Which phrase starts a formal email to Mr Popa?",
+     "Dear Mr Popa,",
+     [
+      "Hey Popa!",
+      "Yo Mr Popa",
+      "Hi, you"
+     ]
+    ]
+   ]
+  },
+  "reported": {
+   "gaps": [
+    [
+     "He said he ___ tired. (direct: \"I am tired.\")",
+     "was",
+     [
+      "were",
+      "be",
+      "been"
+     ]
+    ],
+    [
+     "She ___ that she was busy.",
+     "said",
+     [
+      "told",
+      "spoke",
+      "asked"
+     ]
+    ],
+    [
+     "He ___ me that he was ill.",
+     "told",
+     [
+      "said",
+      "spoke",
+      "talked"
+     ]
+    ]
+   ],
+   "qs": [
+    [
+     "Which is the reported form of: Ana said, \"I like pizza.\"?",
+     "Ana said she liked pizza.",
+     [
+      "Ana said I like pizza.",
+      "Ana said she like pizza.",
+      "Ana said she is liking pizza."
+     ]
+    ],
+    [
+     "Which word often introduces reported speech?",
+     "that",
+     [
+      "unless",
+      "whose",
+      "until"
+     ]
+    ],
+    [
+     "Which sentence is correct?",
+     "He told me he was hungry.",
+     [
+      "He told that he was hungry.",
+      "He said me he was hungry.",
+      "He telled me he was hungry."
+     ]
+    ],
+    [
+     "Which is the reported form of \"I will call you\" (said Dan)?",
+     "Dan said he would call me.",
+     [
+      "Dan said he will call you.",
+      "Dan said I would call him.",
+      "Dan said he would calls me."
+     ]
+    ],
+    [
+     "Which is the reported form of \"We are playing\" (said the boys)?",
+     "The boys said they were playing.",
+     [
+      "The boys said we were playing.",
+      "The boys said they are play.",
+      "The boys said they was playing."
+     ]
+    ],
+    [
+     "Which is the reported form of \"She works here\" (said Tom)?",
+     "Tom said she worked there.",
+     [
+      "Tom said she works here.",
+      "Tom said she working there.",
+      "Tom said she was work there."
+     ]
+    ]
+   ]
+  }
+ }
+}

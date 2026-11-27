@@ -959,7 +959,144 @@
       "done": "Done, the children were imported."
     },
     "badge": "Synced to the cloud",
-    "profilesLink": "Already have a parent account? Sign in here"
+    "profilesLink": "Already have a parent account? Sign in here",
+    "extras": {
+      "title": "Extras for the family",
+      "subtitle": "For adults only. Learning stays free, always; these are extra tools for you.",
+      "allChildren": "All children",
+      "history": {
+        "title": "Progress history",
+        "intro": "Everything is worked out from what is stored on this device. Durations are estimates.",
+        "print": "Print / Save as PDF",
+        "printHint": "In the print window choose “Save as PDF”.",
+        "printTitle": "Ludiko: progress history of {{name}}",
+        "printedOn": "Created on {{date}}",
+        "open": "Full history",
+        "loading": "Preparing the history…",
+        "back": "Back to the parents page",
+        "empty": "Nothing to show yet. After the first games the history appears here."
+      },
+      "month": {
+        "title": "What changed this month",
+        "none": "This month was quiet. One short game today is enough to start again.",
+        "mastered_one": "Mastered one new island.",
+        "mastered_other": "Mastered {{count}} new islands.",
+        "subjectMastered_one": "{{subject}}: one new island mastered.",
+        "subjectMastered_other": "{{subject}}: {{count}} new islands mastered.",
+        "gapsDown_one": "{{subject}}: one gap fewer than at the check before.",
+        "gapsDown_other": "{{subject}}: {{count}} gaps fewer than at the check before.",
+        "checked": "{{subject}}: did the level check.",
+        "playDays_one": "Played on one day (month before: {{before}}).",
+        "playDays_other": "Played on {{count}} days (month before: {{before}}).",
+        "playDaysMore_one": "Played on one day, more than the month before ({{before}}).",
+        "playDaysMore_other": "Played on {{count}} days, more than the month before ({{before}}).",
+        "minutes_one": "About one minute of practice.",
+        "minutes_other": "About {{count}} minutes of practice."
+      },
+      "weekly": {
+        "title": "Islands mastered per week",
+        "desc": "The last 12 weeks. An island is a mastered skill.",
+        "chart": "Islands mastered per week, oldest to newest: {{values}}",
+        "weekOf": "Week starting {{date}}: {{count}}",
+        "total_one": "One island mastered in 12 weeks",
+        "total_other": "{{count}} islands mastered in 12 weeks",
+        "subjectTitle": "By subject",
+        "mastered": "{{done}} of {{total}} islands mastered"
+      },
+      "checks": {
+        "title": "Level checks",
+        "none": "No level check done yet.",
+        "row": "{{date}}: {{level}}, {{gaps}}",
+        "gapsNone": "no gaps",
+        "gaps_one": "one gap",
+        "gaps_other": "{{count}} gaps"
+      },
+      "level": {
+        "prep": "preparatory grade",
+        "grade": "grade {{grade}}",
+        "full": "{{grade}}, semester {{semester}}"
+      },
+      "calendar": {
+        "title": "Play days",
+        "desc": "The last 8 weeks. Days without play do not count against anyone; coming back is what matters.",
+        "label": "Calendar of play days in the last 8 weeks",
+        "cell": "{{date}}: {{state}}",
+        "state": {
+          "0": "no play",
+          "1": "played",
+          "2": "worked on a mission",
+          "3": "worked on several missions",
+          "future": "not here yet"
+        },
+        "days": [
+          "M",
+          "Tu",
+          "W",
+          "Th",
+          "F",
+          "Sa",
+          "Su"
+        ],
+        "total_one": "One play day in 8 weeks",
+        "total_other": "{{count}} play days in 8 weeks"
+      },
+      "practice": {
+        "title": "Practice time (estimate)",
+        "total_one": "About one minute in the last 8 weeks.",
+        "total_other": "About {{count}} minutes in the last 8 weeks.",
+        "perDay": "Average: about {{count}} min on a play day.",
+        "note": "Estimated from finished missions; not measured with a clock.",
+        "chart": "Estimated minutes per week, oldest to newest: {{values}}"
+      },
+      "overview": {
+        "title": "All children",
+        "intro": "A short summary for every child on this device.",
+        "back": "Back to the parents page",
+        "empty": "There is no profile yet.",
+        "line": "{{grade}}: {{days}}, {{mastered}}, {{checks}}",
+        "days_zero": "no play days this week",
+        "days_one": "one play day this week",
+        "days_other": "{{count}} play days this week",
+        "mastered_zero": "no islands mastered yet",
+        "mastered_one": "one island mastered",
+        "mastered_other": "{{count}} islands mastered",
+        "checks_zero": "no level checks",
+        "checks_one": "one level check",
+        "checks_other": "{{count}} level checks",
+        "lastPlay": "Last played: {{date}}",
+        "neverPlayed": "Has not played yet",
+        "open": "See the history of {{name}}"
+      },
+      "looks": {
+        "title": "How does Ludi look?",
+        "open": "Change how Ludi looks",
+        "close": "Done",
+        "group": "Choose how Ludi looks",
+        "chosen": "chosen",
+        "locked": "not unlocked yet",
+        "names": {
+          "classic": "Classic",
+          "mint": "Mint",
+          "sky": "Sky",
+          "sunny": "Sunny",
+          "scarf": "Scarf",
+          "cap": "Cap",
+          "glasses": "Glasses",
+          "crown": "Crown"
+        },
+        "hint": {
+          "island": "Master an island in {{subject}}.",
+          "days7": "Play on 7 days (they do not have to be in a row).",
+          "checksAll": "Finish “Let’s see what you know” in every subject."
+        },
+        "note": "Looks are earned by learning, never with money."
+      },
+      "sticker": {
+        "island": "First island in {{subject}}",
+        "days7": "7 play days",
+        "checksAll": "All level checks done"
+      }
+    }
   },
   "classroom": {
     "title": "Class",
@@ -1585,7 +1722,7 @@
       "mark": "You get an estimated mark (1–10).",
       "parentTitle": "About these simulations",
       "parentNote": "The structure (parts, number of tasks, points, duration) is an approximation based on the public description of the evaluations; it does not reproduce any real paper. All texts and tasks are original or generated. The result is a practice estimate, not an official mark.",
-      "todo": "The modern-language part of the grade VI evaluation and the Romanian writing task are not simulated yet."
+      "todo": "Writing tasks (Romanian composition, English writing) are not simulated yet. The English part of grade VI covers reading, vocabulary and grammar, and functional language."
     },
     "start": {
       "title": "Ready for the simulation?",
@@ -1612,7 +1749,7 @@
       "unanswered": "{{n}} tasks were left unanswered.",
       "overtime": "You went over the recommended time; it did not count in the result.",
       "saved": "The answers were added to your progress.",
-      "todo": "The modern-language part (grade VI) and the writing task (Romanian) are not included.",
+      "todo": "Writing tasks (Romanian composition, English writing) are not included.",
       "starsLabel": "{{n}} stars earned"
     },
     "comp": {
@@ -1626,6 +1763,9 @@
       "bio": "Biology",
       "fiz": "Physics",
       "geo": "Geography",
+      "eng_read": "English: reading",
+      "eng_lang": "English: vocabulary and grammar",
+      "eng_func": "English: functional language",
       "misc": "Other tasks"
     }
   },

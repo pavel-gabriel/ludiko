@@ -410,7 +410,7 @@ describe('content on disk', () => {
       bio: ['BIO-V-VIII-2017'],
       fiz: ['FIZ-VI-VIII-2017'],
       chim: ['CHIM-VII-VIII-2017'],
-      eng: ['LM1-CP-IV-2013'],
+      eng: ['LM1-CP-IV-2013', 'LM1-V-VIII-2017'],
     };
     for (const x of skills) {
       expect(x.provenance.source).toBe('own');
