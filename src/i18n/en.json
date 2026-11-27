@@ -1789,5 +1789,24 @@
       }
     },
     "readHint": "What do I do?"
+  },
+  "voice": {
+    "title": "Reading voice",
+    "pick": "Choose a voice",
+    "auto": "Automatic (best available)",
+    "sample": "Listen to a sample",
+    "sample_ro": "Bună! Eu sunt vocea care îți citește exercițiile. Trei plus patru egal șapte.",
+    "sample_en": "Hello! I am the voice that reads to you. Three plus four equals seven.",
+    "speed": "Speed",
+    "speedAuto": "Automatic",
+    "speedReset": "Automatic speed",
+    "roVoices": "Romanian",
+    "enVoices": "English",
+    "remote": "online",
+    "tipTitle": "Tip for parents: a better voice",
+    "tipAndroid": "Android: Settings > General management > Text-to-speech output > Speech Services by Google > Install voice data > Romanian.",
+    "tipWindows": "Windows / Edge: in Edge pick an online \"Natural\" voice (Alina or Emil). It needs internet.",
+    "tipIos": "iPhone / iPad: Settings > Accessibility > Spoken Content > Voices > Romanian > Ioana (Enhanced).",
+    "tipNote": "After installing, reopen the app and pick the voice from the list."
   }
 }

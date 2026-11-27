@@ -242,7 +242,7 @@ describe('useReadAloud', () => {
     expect(container).toBeEmptyDOMElement();
   });
 
-  it('speaks with the ro-RO voice at rate 0.9 and stops on unmount', () => {
+  it('speaks with the ro-RO voice at rate 0.95 and stops on unmount', () => {
     const { synth, spoken } = mockSpeech([
       { lang: 'en-US', name: 'English' },
       { lang: 'ro_RO', name: 'Romanian' },
@@ -251,7 +251,7 @@ describe('useReadAloud', () => {
     expect(result.current.available).toBe(true);
     act(() => result.current.speak('Bună ziua'));
     expect(spoken).toHaveLength(1);
-    expect(spoken[0]).toMatchObject({ text: 'Bună ziua', rate: 0.9, lang: 'ro_RO' });
+    expect(spoken[0]).toMatchObject({ text: 'Bună ziua', rate: 0.95, lang: 'ro_RO' });
     expect(result.current.speaking).toBe(true);
     synth.cancel.mockClear();
     unmount();

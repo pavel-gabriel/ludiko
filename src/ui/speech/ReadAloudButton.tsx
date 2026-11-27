@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import type { AgeBand } from '@/older/ageBand';
 import { useReadAloud } from './useReadAloud';
 
 /**
@@ -11,14 +12,16 @@ export default function ReadAloudButton({
   className = '',
   lang,
   label,
+  band,
 }: {
   text: string;
   className?: string;
   lang?: 'en';
   label?: string;
+  band?: AgeBand;
 }) {
   const { t } = useTranslation();
-  const { available, speaking, speak, stop } = useReadAloud(lang);
+  const { available, speaking, speak, stop } = useReadAloud(lang, band);
   if (!available || !text.trim()) return null;
   const idleLabel = label ?? (lang === 'en' ? t('items.listen') : t('items.readAloud'));
   return (

@@ -5,6 +5,8 @@ import type { Explanation, MediaRef } from '@/engine/types'
 import { localize } from '@/engine/types'
 import Visual from '@/ui/visuals/Visual'
 import ReadAloudButton from '@/ui/speech/ReadAloudButton'
+import { useProfileStore } from '@/store/profileStore'
+import { ageBand } from '@/older/ageBand'
 import { frameEnglishSpeech } from '@/ui/speech/englishSpeech'
 import { resolveMediaSrc } from '@/ui/visuals/ImageVisual'
 import { MascotSvg } from '@/ui/mascot/Mascot'
@@ -44,6 +46,7 @@ function Player({ explanation, onDone, hideMascot }: Props) {
   const isLast = index >= total - 1
   // English subject: «…» in the frame text are spoken with an English voice (docs/ENGINE.md)
   const englishText = frameEnglishSpeech(explanation.skillId, localize(frame.text, lang))
+  const band = ageBand(useProfileStore((s) => s.activeProfile?.grade))
 
   const stopAudio = useCallback(() => {
     const a = audioRef.current
@@ -189,8 +192,8 @@ function Player({ explanation, onDone, hideMascot }: Props) {
       </div>
 
       <div className="mt-3 flex justify-center empty:hidden">
-        <ReadAloudButton key={index} text={localize(frame.text, lang)} />
-        {englishText && <ReadAloudButton key={`en${index}`} text={englishText} lang="en" className="ml-2" />}
+        <ReadAloudButton key={index} text={localize(frame.text, lang)} band={band} />
+        {englishText && <ReadAloudButton key={`en${index}`} text={englishText} lang="en" band={band} className="ml-2" />}
       </div>
 
       {frame.audio && (
