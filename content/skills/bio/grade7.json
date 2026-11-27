@@ -1,0 +1,570 @@
+[
+  {
+    "id": "bio.body.org.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Organizarea corpului uman",
+      "en": "Organisation of the human body"
+    },
+    "prerequisites": [
+      "bio.cell.5",
+      "stiinte.body.systems"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.body.org.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.body.org.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.body.org.7",
+      "kind": "data",
+      "title": "Skill bio.body.org.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.skeleton.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Sistemul osos",
+      "en": "The skeletal system"
+    },
+    "prerequisites": [
+      "bio.body.org.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.skeleton.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.skeleton.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.skeleton.7",
+      "kind": "data",
+      "title": "Skill bio.skeleton.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.muscles.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Sistemul muscular",
+      "en": "The muscular system"
+    },
+    "prerequisites": [
+      "bio.skeleton.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.muscles.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.muscles.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.muscles.7",
+      "kind": "data",
+      "title": "Skill bio.muscles.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.digestive.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Sistemul digestiv",
+      "en": "The digestive system"
+    },
+    "prerequisites": [
+      "bio.body.org.7",
+      "stiinte.body.hygiene"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.digestive.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.digestive.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.digestive.7",
+      "kind": "data",
+      "title": "Skill bio.digestive.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.nutrition.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "4.1"
+      }
+    ],
+    "title": {
+      "ro": "Nutrienți și alimentație sănătoasă",
+      "en": "Nutrients and healthy eating"
+    },
+    "prerequisites": [
+      "bio.digestive.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.nutrition.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.nutrition.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.nutrition.7",
+      "kind": "data",
+      "title": "Skill bio.nutrition.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.respiratory.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Sistemul respirator",
+      "en": "The respiratory system"
+    },
+    "prerequisites": [
+      "bio.body.org.7",
+      "bio.animal.breath.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.respiratory.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.respiratory.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.respiratory.7",
+      "kind": "data",
+      "title": "Skill bio.respiratory.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.circulatory.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Sistemul circulator și sângele",
+      "en": "The circulatory system and blood"
+    },
+    "prerequisites": [
+      "bio.respiratory.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.circulatory.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.circulatory.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.circulatory.7",
+      "kind": "data",
+      "title": "Skill bio.circulatory.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.excretory.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Sistemul excretor",
+      "en": "The excretory system"
+    },
+    "prerequisites": [
+      "bio.circulatory.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.excretory.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.excretory.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.excretory.7",
+      "kind": "data",
+      "title": "Skill bio.excretory.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.nervous.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Sistemul nervos",
+      "en": "The nervous system"
+    },
+    "prerequisites": [
+      "bio.body.org.7",
+      "bio.animal.senses.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.nervous.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.nervous.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.nervous.7",
+      "kind": "data",
+      "title": "Skill bio.nervous.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.senses.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Organele de simț",
+      "en": "The sense organs"
+    },
+    "prerequisites": [
+      "bio.nervous.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.senses.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.senses.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.senses.7",
+      "kind": "data",
+      "title": "Skill bio.senses.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.endocrine.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Glandele și hormonii",
+      "en": "Glands and hormones"
+    },
+    "prerequisites": [
+      "bio.nervous.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.endocrine.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.endocrine.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.endocrine.7",
+      "kind": "data",
+      "title": "Skill bio.endocrine.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.reproduction.7",
+    "subject": "bio",
+    "grade": 7,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.2"
+      }
+    ],
+    "title": {
+      "ro": "Reproducerea și dezvoltarea omului",
+      "en": "Human reproduction and development"
+    },
+    "prerequisites": [
+      "bio.endocrine.7"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.reproduction.7"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.reproduction.7"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.reproduction.7",
+      "kind": "data",
+      "title": "Skill bio.reproduction.7",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  }
+]

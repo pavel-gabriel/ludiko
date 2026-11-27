@@ -1,0 +1,502 @@
+[
+  {
+    "id": "exp.fiz.speed.7",
+    "skillId": "fiz.speed.7",
+    "title": {
+      "ro": "Viteza medie și transformări de viteză",
+      "en": "Average speed and speed conversions"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Când un corp se mișcă neuniform, folosim viteza medie: vm = distanța totală : timpul total. Nu facem media aritmetică a vitezelor."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚆",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru transformări: 1 m/s = 3,6 km/h. De exemplu, 10 m/s = 36 km/h, iar 72 km/h = 20 m/s."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏃",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Exemplu: 60 km în 2 h și apoi 90 km în 3 h înseamnă 150 km în 5 h, deci vm = 30 km/h. Timpul se adună, distanța se adună."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚡",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.speed.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.speed.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.weight.7",
+    "skillId": "fiz.weight.7",
+    "title": {
+      "ro": "Greutatea",
+      "en": "Weight"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Greutatea este forța cu care Pământul atrage un corp. Se măsoară în newtoni (N). Direcția ei este verticală, spre centrul Pământului."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Formula este G = m · g, unde g este accelerația gravitațională, aproximativ 10 N/kg (în școală). Un corp cu masa 3 kg are greutatea 30 N."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⬇️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Masa și greutatea sunt diferite: masa rămâne aceeași oriunde, dar greutatea depinde de planetă. Pe Lună greutatea este de aproximativ șase ori mai mică."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.weight.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.weight.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.elastic.7",
+    "skillId": "fiz.elastic.7",
+    "title": {
+      "ro": "Forța elastică",
+      "en": "Elastic force"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Forța elastică apare într-un corp deformat (resort, arc, elastic) și tinde să-l readucă la forma inițială."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪀",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pentru deformări mici, forța elastică este proporțională cu alungirea: F = k · Δl, unde k este constanta elastică."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📏",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Dinamometrul funcționează pe acest principiu: un resort se alungește mai mult când forța crește. Dacă alungirea se dublează, forța se dublează."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧵",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.elastic.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.elastic.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.friction.7",
+    "skillId": "fiz.friction.7",
+    "title": {
+      "ro": "Frecarea",
+      "en": "Friction"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Frecarea este forța care apare între două suprafețe în contact și se opune mișcării. Se manifestă și între corpuri aflate în repaus, dacă se încearcă mișcarea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🛷",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Frecarea depinde de natura suprafețelor și de forța cu care se apasă una pe alta. Suprafețele aspre au frecare mare, cele lucioase, mai mică."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧤",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Uneori frecarea este utilă (frânele, încălțămintea, scrisul), alteori dăunătoare (uzura pieselor). O reducem cu ulei, rulmenți sau suprafețe netede."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚲",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.friction.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.friction.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.pressure.7",
+    "skillId": "fiz.pressure.7",
+    "title": {
+      "ro": "Presiunea",
+      "en": "Pressure"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Presiunea arată cât de tare apasă o forță pe unitatea de suprafață: p = F / S. Se măsoară în pascali (Pa), 1 Pa = 1 N/m²."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👣",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Aceeași forță produce presiune mai mare pe o suprafață mai mică. De aceea cuțitul ascuțit taie mai bine, iar schiurile nu se scufundă în zăpadă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⛷️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Forța este cea perpendiculară pe suprafață, de exemplu greutatea unui corp pe masă. 1 kPa = 1000 Pa, 1 hPa = 100 Pa."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📌",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.pressure.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.pressure.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.liquid.7",
+    "skillId": "fiz.liquid.7",
+    "title": {
+      "ro": "Presiunea în lichide și forța arhimedică",
+      "en": "Pressure in liquids and buoyant force"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Lichidele apasă asupra fundului și pereților vasului. Presiunea hidrostatică este p = ρ · g · h și crește odată cu adâncimea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌊",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Un corp scufundat într-un lichid este împins în sus cu o forță numită forța arhimedică: FA = ρ · g · V, unde V este volumul scufundat."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚓",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă greutatea corpului este mai mică decât forța arhimedică, corpul plutește; dacă este mai mare, se scufundă. Vasele comunicante au același nivel al lichidului."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🛟",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.liquid.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.liquid.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.work.7",
+    "skillId": "fiz.work.7",
+    "title": {
+      "ro": "Lucrul mecanic",
+      "en": "Mechanical work"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Se efectuează lucru mecanic atunci când o forță deplasează un corp pe o distanță. Lucrul mecanic este L = F · d, dacă forța are direcția deplasării."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏗️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Unitatea de măsură este joule-ul (J): 1 J = 1 N · 1 m. Dacă nu există deplasare, nu există lucru mecanic, oricât de mare ar fi forța."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📦",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Exemplu: ridicăm o greutate de 50 N la înălțimea de 2 m, deci L = 50 · 2 = 100 J. Dacă ținem un rucsac pe loc, nu efectuăm lucru mecanic în sens fizic."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⛓️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.work.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.work.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.power.7",
+    "skillId": "fiz.power.7",
+    "title": {
+      "ro": "Puterea mecanică",
+      "en": "Mechanical power"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Puterea arată cât de repede se efectuează un lucru mecanic: P = L / t. Se măsoară în wați (W), 1 W = 1 J/s."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚙️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Un motor mai puternic efectuează același lucru mecanic în mai puțin timp. 1 kW = 1000 W, 1 MW = 1 000 000 W."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏋️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Dacă ridicăm 200 J în 4 s, puterea este 50 W. Din formulă, L = P · t și t = L / P."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⏲️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.power.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.power.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.energy.7",
+    "skillId": "fiz.energy.7",
+    "title": {
+      "ro": "Energia mecanică",
+      "en": "Mechanical energy"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Energia este capacitatea unui corp de a efectua lucru mecanic. Se măsoară în jouli (J). Energia mecanică are două forme: cinetică și potențială."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⛰️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Energia cinetică a unui corp în mișcare este Ec = m · v² / 2. Energia potențială gravitațională este Ep = m · g · h și depinde de înălțime."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏎️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Într-o coborâre, energia potențială se transformă în energie cinetică. Fără frecare, energia mecanică totală se conservă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🎢",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.energy.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.energy.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.fiz.lever.7",
+    "skillId": "fiz.lever.7",
+    "title": {
+      "ro": "Pârghia",
+      "en": "The lever"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pârghia este o bară rigidă care se poate roti în jurul unui punct fix, numit punct de sprijin. Exemple: foarfeca, levierul, balansoarul, cleștele."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚖️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Pârghia este în echilibru când F1 · d1 = F2 · d2, unde d1 și d2 sunt brațele forțelor (distanțele până la punctul de sprijin)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔨",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Cu cât brațul forței este mai lung, cu atât forța necesară este mai mică. De aceea o ușă se deschide mai ușor când o împingem departe de balamale."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🛠️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.fiz.lever.7",
+      "kind": "explanation",
+      "title": "Explanation for fiz.lever.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

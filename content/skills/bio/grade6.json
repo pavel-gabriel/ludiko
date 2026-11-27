@@ -1,0 +1,573 @@
+[
+  {
+    "id": "bio.plant.root.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Rădăcina",
+      "en": "The root"
+    },
+    "prerequisites": [
+      "bio.plant.groups.5",
+      "stiinte.plants.parts"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.plant.root.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.plant.root.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.plant.root.6",
+      "kind": "data",
+      "title": "Skill bio.plant.root.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.plant.stem.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Tulpina",
+      "en": "The stem"
+    },
+    "prerequisites": [
+      "bio.plant.root.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.plant.stem.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.plant.stem.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.plant.stem.6",
+      "kind": "data",
+      "title": "Skill bio.plant.stem.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.plant.leaf.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Frunza",
+      "en": "The leaf"
+    },
+    "prerequisites": [
+      "bio.plant.stem.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.plant.leaf.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.plant.leaf.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.plant.leaf.6",
+      "kind": "data",
+      "title": "Skill bio.plant.leaf.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.plant.photo.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "3.1"
+      }
+    ],
+    "title": {
+      "ro": "Fotosinteza și respirația plantelor",
+      "en": "Photosynthesis and plant respiration"
+    },
+    "prerequisites": [
+      "bio.plant.leaf.6",
+      "stiinte.plants.needs"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.plant.photo.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.plant.photo.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.plant.photo.6",
+      "kind": "data",
+      "title": "Skill bio.plant.photo.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.plant.flower.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Floarea",
+      "en": "The flower"
+    },
+    "prerequisites": [
+      "bio.plant.stem.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.plant.flower.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.plant.flower.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.plant.flower.6",
+      "kind": "data",
+      "title": "Skill bio.plant.flower.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.plant.fruit.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Fructul, sămânța și germinația",
+      "en": "Fruit, seed and germination"
+    },
+    "prerequisites": [
+      "bio.plant.flower.6",
+      "stiinte.lifecycle"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.plant.fruit.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.plant.fruit.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.plant.fruit.6",
+      "kind": "data",
+      "title": "Skill bio.plant.fruit.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.plant.repro.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Reproducerea plantelor",
+      "en": "Plant reproduction"
+    },
+    "prerequisites": [
+      "bio.plant.flower.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.plant.repro.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.plant.repro.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.plant.repro.6",
+      "kind": "data",
+      "title": "Skill bio.plant.repro.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.animal.feed.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Hrănirea animalelor",
+      "en": "Animal nutrition"
+    },
+    "prerequisites": [
+      "bio.animal.vert.5",
+      "stiinte.animals.diet"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.animal.feed.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.animal.feed.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.animal.feed.6",
+      "kind": "data",
+      "title": "Skill bio.animal.feed.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.animal.move.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 1,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.1"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Locomoția animalelor",
+      "en": "Animal locomotion"
+    },
+    "prerequisites": [
+      "bio.animal.vert.5",
+      "bio.animal.inv.5"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.animal.move.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.animal.move.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.animal.move.6",
+      "kind": "data",
+      "title": "Skill bio.animal.move.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.animal.breath.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Respirația și circulația la animale",
+      "en": "Respiration and circulation in animals"
+    },
+    "prerequisites": [
+      "bio.animal.feed.6"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.animal.breath.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.animal.breath.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.animal.breath.6",
+      "kind": "data",
+      "title": "Skill bio.animal.breath.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.animal.senses.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Simțurile și sistemul nervos la animale",
+      "en": "Senses and the nervous system in animals"
+    },
+    "prerequisites": [
+      "bio.animal.move.6",
+      "stiinte.body.senses"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.animal.senses.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.animal.senses.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.animal.senses.6",
+      "kind": "data",
+      "title": "Skill bio.animal.senses.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  },
+  {
+    "id": "bio.animal.repro.6",
+    "subject": "bio",
+    "grade": 6,
+    "semester": 2,
+    "competences": [
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "1.2"
+      },
+      {
+        "programa": "BIO-V-VIII-2017",
+        "code": "2.1"
+      }
+    ],
+    "title": {
+      "ro": "Reproducerea și dezvoltarea animalelor",
+      "en": "Animal reproduction and development"
+    },
+    "prerequisites": [
+      "bio.animal.breath.6",
+      "stiinte.animals.young"
+    ],
+    "itemSources": [
+      {
+        "generator": "nat-quiz",
+        "params": {
+          "topic": "bio.animal.repro.6"
+        }
+      }
+    ],
+    "explanations": [
+      "exp.bio.animal.repro.6"
+    ],
+    "masteryCheck": {
+      "items": 4,
+      "minCorrect": 3
+    },
+    "provenance": {
+      "id": "prov.skill.bio.animal.repro.6",
+      "kind": "data",
+      "title": "Skill bio.animal.repro.6",
+      "author": "Ludiko",
+      "source": "own",
+      "licence": "OWN",
+      "notes": "competence codes to verify against the official programa; content written by Ludiko, no textbook material"
+    }
+  }
+]

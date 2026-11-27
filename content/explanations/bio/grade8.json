@@ -1,0 +1,552 @@
+[
+  {
+    "id": "exp.bio.cell.division.8",
+    "skillId": "bio.cell.division.8",
+    "title": {
+      "ro": "Diviziunea celulară",
+      "en": "Cell division"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Celulele se înmulțesc prin diviziune. Dintr-o celulă-mamă rezultă celule-fiice. Așa cresc organismele și se vindecă rănile."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧫",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "La mitoză, o celulă dă două celule-fiice identice cu ea, cu același număr de cromozomi. Cromozomii se copiază înainte de diviziune."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "✂️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "La meioză se formează gameții (celulele sexuale), care au jumătate din numărul de cromozomi ai celulei-mamă. La om, celulele corpului au 46 de cromozomi, iar gameții au 23."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔬",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.cell.division.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.cell.division.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.dna.8",
+    "skillId": "bio.dna.8",
+    "title": {
+      "ro": "ADN, gene și cromozomi",
+      "en": "DNA, genes and chromosomes"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "ADN-ul este molecula care păstrează informația ereditară. Are forma unei scări răsucite, numită dublu helix."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧬",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "O genă este o bucată de ADN care conține informația pentru o însușire, de exemplu culoarea ochilor. Mai multe gene sunt așezate pe un cromozom."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📖",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Cromozomii se află în nucleul celulei. Moștenim jumătate din cromozomi de la mamă și jumătate de la tată. Ereditatea este transmiterea însușirilor de la părinți la urmași."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔬",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.dna.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.dna.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.heredity.8",
+    "skillId": "bio.heredity.8",
+    "title": {
+      "ro": "Ereditatea: legile lui Mendel",
+      "en": "Heredity: Mendel's laws"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Gregor Mendel a studiat ereditatea la mazăre. Un caracter poate avea două forme, numite alele: alela dominantă (A) se manifestă, alela recesivă (a) se ascunde."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Genotipul este alcătuirea genetică (AA, Aa, aa), iar fenotipul este însușirea care se vede. Un individ AA sau Aa are fenotip dominant, iar aa are fenotip recesiv."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Individul cu două alele la fel (AA sau aa) este homozigot; cel cu alele diferite (Aa) este heterozigot. Fiecare părinte transmite urmașului câte o alelă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📊",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.heredity.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.heredity.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.punnett.8",
+    "skillId": "bio.punnett.8",
+    "title": {
+      "ro": "Încrucișări monohibride",
+      "en": "Monohybrid crosses"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Pentru a prezice descendenții, scriem gameții fiecărui părinte pe marginea unui tabel, numit pătratul lui Punnett."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🟩",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare căsuță se completează cu câte o alelă de la fiecare părinte. La încrucișarea Aa × Aa obținem AA, Aa, Aa, aa."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🟨",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Din cele patru căsuțe, una este AA, două sunt Aa, una este aa. Deci 25 % AA, 50 % Aa, 25 % aa, adică 75 % fenotip dominant și 25 % fenotip recesiv."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📐",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.punnett.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.punnett.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.mutation.8",
+    "skillId": "bio.mutation.8",
+    "title": {
+      "ro": "Variabilitate și mutații",
+      "en": "Variation and mutations"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Indivizii aceleiași specii nu sunt identici: există variabilitate. Ea apare din combinarea genelor de la părinți și din mutații."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔀",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mutația este o schimbare bruscă a materialului genetic. Poate fi rară, poate apărea natural sau cauzată de radiații și unele substanțe."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧬",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Unele mutații sunt dăunătoare, altele nu au efect, iar altele pot fi avantajoase. Mutațiile sunt materia primă a evoluției. Anumite boli ereditare, ca hemofilia, au cauză genetică."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌼",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.mutation.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.mutation.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.evolution.8",
+    "skillId": "bio.evolution.8",
+    "title": {
+      "ro": "Evoluția și selecția naturală",
+      "en": "Evolution and natural selection"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Evoluția este schimbarea speciilor în timp, în multe generații. Charles Darwin a explicat-o prin selecția naturală."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐢",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Indivizii dintr-o specie diferă între ei. Cei mai bine adaptați mediului supraviețuiesc mai ușor, se înmulțesc și transmit însușirile avantajoase urmașilor."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦎",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Treptat, în populație devin mai frecvente însușirile avantajoase. Așa apar noi specii și adaptări, cum sunt ciocurile diferite ale păsărilor din insulele Galapagos."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.evolution.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.evolution.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.fossils.8",
+    "skillId": "bio.fossils.8",
+    "title": {
+      "ro": "Fosilele și dovezile evoluției",
+      "en": "Fossils and evidence for evolution"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Fosilele sunt rămășițe sau urme ale unor ființe vii care au trăit demult, păstrate în roci. Ele arată cum arătau organismele din trecut."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦴",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Studiind straturile de roci, oamenii de știință pot spune care fosile sunt mai vechi, cele din straturile de jos, și care mai noi."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🪨",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Dovezi ale evoluției sunt fosilele, asemănările dintre organe (aripa păsării și membrul anterior al mamiferului) și asemănările dintre ADN-ul diferitelor specii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦖",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.fossils.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.fossils.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.humanevol.8",
+    "skillId": "bio.humanevol.8",
+    "title": {
+      "ro": "Evoluția omului",
+      "en": "Human evolution"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Omul actual (Homo sapiens) face parte din ordinul primatelor, alături de maimuțe. Nu provine dintr-o maimuță actuală, ci avem strămoși comuni."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Strămoșii omului au apărut în Africa. Au început să meargă pe două picioare, au folosit unelte, au stăpânit focul și au dezvoltat limbajul."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦍",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Creierul s-a mărit în timp, iar oamenii au învățat să trăiască în grupuri, să vâneze și să cultive pământul. Toți oamenii actuali aparțin aceleiași specii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔥",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.humanevol.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.humanevol.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.ecology.8",
+    "skillId": "bio.ecology.8",
+    "title": {
+      "ro": "Ecologie: factori și populații",
+      "en": "Ecology: factors and populations"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ecologia studiază relațiile dintre ființele vii și mediul lor. Factorii abiotici sunt cei neînsuflețiți (lumina, temperatura, apa, solul), iar cei biotici sunt ființele vii și relațiile dintre ele."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌲",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "O populație este grupul de indivizi ai aceleiași specii care trăiește într-un loc. Toate populațiile unui ecosistem formează biocenoza, iar locul lor de viață este biotopul."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌡️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Relațiile dintre organisme pot fi prădătorism, competiție, parazitism, simbioză. Într-o rețea trofică, lanțurile se leagă și formează o rețea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦌",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.ecology.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.ecology.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.pollution.8",
+    "skillId": "bio.pollution.8",
+    "title": {
+      "ro": "Poluarea și protecția mediului",
+      "en": "Pollution and environmental protection"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Poluarea apare când în aer, apă sau sol ajung substanțe care fac rău ființelor vii. Surse: fabricile, traficul, deșeurile, îngrășămintele folosite în exces."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏭",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Poluarea aerului produce ploi acide și încălzirea globală. Apa poluată afectează peștii și sănătatea oamenilor. Solul poluat nu mai dă recolte bune."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🗑️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Protejăm mediul prin reducerea, reutilizarea și reciclarea deșeurilor, prin energii regenerabile, plantări de copaci și transport nepoluant. Fiecare gest contează."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.pollution.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.pollution.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.biodiversity.8",
+    "skillId": "bio.biodiversity.8",
+    "title": {
+      "ro": "Biodiversitatea și arii protejate",
+      "en": "Biodiversity and protected areas"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Biodiversitatea este varietatea ființelor vii: specii, gene și ecosisteme diferite. Cu cât este mai bogată, cu atât natura este mai stabilă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦋",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Biodiversitatea scade din cauza distrugerii habitatelor, a poluării, a vânătorii excesive și a speciilor invazive. Speciile pot deveni rare, amenințate sau dispărute."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌿",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Păstrăm biodiversitatea prin parcuri naționale, rezervații și legi. România are biodiversitate mare, mai ales în Carpați și în Delta Dunării. Fiecare specie are un rol."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦅",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.biodiversity.8",
+      "kind": "explanation",
+      "title": "Explanation for bio.biodiversity.8",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

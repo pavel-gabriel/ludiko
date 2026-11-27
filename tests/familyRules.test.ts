@@ -69,7 +69,7 @@ describe('firestore.rules: Families section', () => {
   })
 
   it('subjects in placements/levelHistory are limited to the known ones', () => {
-    const subjects = "['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic']"
+    const subjects = "['mat', 'rom', 'stiinte', 'ist', 'geo', 'civ', 'logic', 'bio', 'fiz', 'chim']"
     expect(section.split(subjects).length - 1).toBe(2)
   })
 

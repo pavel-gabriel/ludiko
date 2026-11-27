@@ -1,0 +1,1119 @@
+{
+ "provenance": {
+  "id": "prov.data.nat.chim",
+  "kind": "data",
+  "title": "Ludiko curated chim questions for gimnaziu",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Original questions drafted for the gimnaziu programa; no textbook or exam material. Awaiting review by a subject teacher."
+ },
+ "topics": {
+  "chim.matter.7": {
+   "q": [
+    [
+     "Care este o substanță?",
+     "Fierul",
+     "Cuiul",
+     "Paharul",
+     "Mașina"
+    ],
+    [
+     "Care este un corp?",
+     "Cuiul de fier",
+     "Fierul",
+     "Apa pură",
+     "Oxigenul"
+    ],
+    [
+     "Care este o proprietate fizică?",
+     "Culoarea",
+     "Ruginirea",
+     "Arderea",
+     "Descompunerea"
+    ],
+    [
+     "Care este o substanță compusă?",
+     "Apa",
+     "Oxigenul",
+     "Fierul",
+     "Aurul"
+    ]
+   ],
+   "tf": [
+    [
+     "Fierul este o substanță, iar cuiul este un corp.",
+     true
+    ],
+    [
+     "Oxigenul este o substanță compusă.",
+     false
+    ],
+    [
+     "Duritatea este o proprietate fizică.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare element în grupa potrivită.",
+     "Substanță",
+     "Corp",
+     [
+      "fier",
+      "apă",
+      "zahăr",
+      "sare"
+     ],
+     [
+      "cui",
+      "pahar",
+      "lingură",
+      "monedă"
+     ]
+    ]
+   ]
+  },
+  "chim.mixtures.7": {
+   "q": [
+    [
+     "Cum separăm nisipul de apă?",
+     "Prin filtrare",
+     "Prin magnet",
+     "Prin distilare",
+     "Prin congelare"
+    ],
+    [
+     "Cum separăm pilitura de fier de nisip?",
+     "Cu un magnet",
+     "Prin filtrare",
+     "Prin evaporare",
+     "Prin distilare"
+    ],
+    [
+     "Cum obținem sarea din apa sărată?",
+     "Prin evaporare",
+     "Prin filtrare",
+     "Cu magnet",
+     "Prin decantare"
+    ],
+    [
+     "Care este un amestec omogen?",
+     "Sarea dizolvată în apă",
+     "Nisip cu apă",
+     "Ulei cu apă",
+     "Pietriș cu nisip"
+    ]
+   ],
+   "tf": [
+    [
+     "Apa cu ulei este un amestec eterogen.",
+     true
+    ],
+    [
+     "Într-un amestec, substanțele își pierd complet proprietățile.",
+     false
+    ],
+    [
+     "Distilarea separă lichidele cu puncte de fierbere diferite.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "filtrare",
+      "nisip din apă"
+     ],
+     [
+      "magnet",
+      "pilitură de fier"
+     ],
+     [
+      "evaporare",
+      "sare din apă sărată"
+     ],
+     [
+      "decantare",
+      "ulei de pe apă"
+     ]
+    ]
+   ]
+  },
+  "chim.chemphys.7": {
+   "q": [
+    [
+     "Care este un fenomen chimic?",
+     "Arderea lemnului",
+     "Topirea gheții",
+     "Ruperea hârtiei",
+     "Fierberea apei"
+    ],
+    [
+     "Care este un fenomen fizic?",
+     "Evaporarea apei",
+     "Ruginirea fierului",
+     "Putrezirea fructelor",
+     "Arderea benzinei"
+    ],
+    [
+     "Ce arată formarea unei substanțe noi?",
+     "Un fenomen chimic",
+     "Un fenomen fizic",
+     "O simplă amestecare",
+     "O schimbare de formă"
+    ],
+    [
+     "Care este un semn al unei reacții chimice?",
+     "Degajarea unui gaz",
+     "Ruperea unei bucăți",
+     "Schimbarea formei",
+     "Mărirea volumului la încălzire"
+    ]
+   ],
+   "tf": [
+    [
+     "Ruginirea fierului este un fenomen chimic.",
+     true
+    ],
+    [
+     "Topirea ceții este un fenomen chimic.",
+     false
+    ],
+    [
+     "La un fenomen fizic nu se formează substanțe noi.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare fenomen în grupa potrivită.",
+     "Fizic",
+     "Chimic",
+     [
+      "topirea gheții",
+      "fierberea apei",
+      "ruperea hârtiei",
+      "dizolvarea zahărului"
+     ],
+     [
+      "arderea lemnului",
+      "ruginirea fierului",
+      "coacerea pâinii",
+      "putrezirea fructelor"
+     ]
+    ]
+   ]
+  },
+  "chim.atom.7": {
+   "q": [
+    [
+     "Ce particule se află în nucleul atomului?",
+     "Protoni și neutroni",
+     "Electroni și protoni",
+     "Doar electroni",
+     "Doar neutroni"
+    ],
+    [
+     "Ce sarcină electrică au neutronii?",
+     "Nu au sarcină",
+     "Pozitivă",
+     "Negativă",
+     "Variabilă"
+    ],
+    [
+     "Cum se calculează numărul de masă?",
+     "A = Z + N",
+     "A = Z − N",
+     "A = Z · N",
+     "A = N − Z"
+    ],
+    [
+     "Ce sunt izotopii?",
+     "Atomi cu același Z și număr diferit de neutroni",
+     "Atomi cu același A și Z diferit",
+     "Molecule",
+     "Ioni negativi"
+    ]
+   ],
+   "tf": [
+    [
+     "Numărul atomic Z este egal cu numărul de protoni.",
+     true
+    ],
+    [
+     "Electronii se află în nucleu.",
+     false
+    ],
+    [
+     "Atomul neutru are tot atâția electroni câți protoni.",
+     true
+    ]
+   ]
+  },
+  "chim.config.7": {
+   "q": [
+    [
+     "Câți electroni încap cel mult pe stratul K?",
+     "2",
+     "8",
+     "4",
+     "18"
+    ],
+    [
+     "Care este distribuția electronilor la sodiu (Z = 11)?",
+     "2, 8, 1",
+     "2, 9",
+     "8, 3",
+     "2, 8, 2"
+    ],
+    [
+     "Ce arată numărul de straturi cu electroni?",
+     "Perioada elementului",
+     "Grupa elementului",
+     "Masa atomică",
+     "Numărul de neutroni"
+    ],
+    [
+     "Ce au gazele nobile pe ultimul strat?",
+     "Strat complet",
+     "Un singur electron",
+     "Niciun electron",
+     "Șapte electroni"
+    ]
+   ],
+   "tf": [
+    [
+     "Stratul L poate avea cel mult 8 electroni.",
+     true
+    ],
+    [
+     "Electronii se așază mai întâi pe stratul cel mai îndepărtat.",
+     false
+    ]
+   ]
+  },
+  "chim.periodic.7": {
+   "q": [
+    [
+     "Cum sunt așezate elementele în sistemul periodic?",
+     "În ordinea crescătoare a numărului atomic",
+     "În ordine alfabetică",
+     "După culoare",
+     "După masă numai la întâmplare"
+    ],
+    [
+     "Ce au în comun elementele din aceeași perioadă?",
+     "Același număr de straturi electronice",
+     "Același număr de protoni",
+     "Același număr de neutroni",
+     "Aceeași culoare"
+    ],
+    [
+     "Care dintre elemente este gaz nobil?",
+     "Neonul",
+     "Sodiul",
+     "Clorul",
+     "Calciul"
+    ],
+    [
+     "Care dintre elemente este un halogen?",
+     "Clorul",
+     "Sodiul",
+     "Neonul",
+     "Magneziul"
+    ]
+   ],
+   "tf": [
+    [
+     "Elementele aceleiași grupe principale au proprietăți asemănătoare.",
+     true
+    ],
+    [
+     "Sodiul este un gaz nobil.",
+     false
+    ],
+    [
+     "Mendeleev a alcătuit primul tabel periodic.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "Li",
+      "litiu"
+     ],
+     [
+      "Na",
+      "sodiu"
+     ],
+     [
+      "Cl",
+      "clor"
+     ],
+     [
+      "Ne",
+      "neon"
+     ],
+     [
+      "K",
+      "potasiu"
+     ]
+    ]
+   ]
+  },
+  "chim.symbols.7": {
+   "q": [
+    [
+     "Care este simbolul sodiului?",
+     "Na",
+     "So",
+     "S",
+     "N"
+    ],
+    [
+     "Care este simbolul fierului?",
+     "Fe",
+     "F",
+     "Fi",
+     "Fr"
+    ],
+    [
+     "Care este simbolul cuprului?",
+     "Cu",
+     "C",
+     "Co",
+     "Cp"
+    ],
+    [
+     "Cum se scrie corect simbolul clorului?",
+     "Cl",
+     "CL",
+     "cl",
+     "cL"
+    ]
+   ],
+   "tf": [
+    [
+     "K este simbolul potasiului.",
+     true
+    ],
+    [
+     "Simbolul calciului este C.",
+     false
+    ]
+   ],
+   "m": [
+    [
+     [
+      "oxigen",
+      "O"
+     ],
+     [
+      "carbon",
+      "C"
+     ],
+     [
+      "azot",
+      "N"
+     ],
+     [
+      "sulf",
+      "S"
+     ],
+     [
+      "hidrogen",
+      "H"
+     ],
+     [
+      "magneziu",
+      "Mg"
+     ]
+    ],
+    [
+     [
+      "sodiu",
+      "Na"
+     ],
+     [
+      "potasiu",
+      "K"
+     ],
+     [
+      "fier",
+      "Fe"
+     ],
+     [
+      "cupru",
+      "Cu"
+     ],
+     [
+      "aluminiu",
+      "Al"
+     ],
+     [
+      "zinc",
+      "Zn"
+     ]
+    ]
+   ]
+  },
+  "chim.formula.7": {
+   "q": [
+    [
+     "Câți atomi are molecula de H2O?",
+     "3",
+     "2",
+     "1",
+     "4"
+    ],
+    [
+     "Ce arată indicele din formula chimică?",
+     "Numărul de atomi ai elementului",
+     "Numărul de molecule",
+     "Masa atomului",
+     "Valența elementului"
+    ],
+    [
+     "Ce arată coeficientul 3 din 3 H2O?",
+     "Numărul de molecule",
+     "Numărul de atomi de H",
+     "Numărul de atomi de O",
+     "Masa apei"
+    ],
+    [
+     "Câți atomi de oxigen are formula Ca(OH)2?",
+     "2",
+     "1",
+     "3",
+     "4"
+    ]
+   ],
+   "tf": [
+    [
+     "CO2 conține doi atomi de oxigen.",
+     true
+    ],
+    [
+     "Indicele 1 se scrie întotdeauna lângă simbol.",
+     false
+    ]
+   ]
+  },
+  "chim.valence.7": {
+   "q": [
+    [
+     "Care este valența oxigenului în apă?",
+     "II",
+     "I",
+     "III",
+     "IV"
+    ],
+    [
+     "Care este formula oxidului de magneziu, Mg(II) și O(II)?",
+     "MgO",
+     "Mg2O",
+     "MgO2",
+     "Mg2O2"
+    ],
+    [
+     "Ce regulă folosim pentru formulă?",
+     "Încrucișarea valențelor",
+     "Adunarea maselor",
+     "Alfabetul",
+     "Colorarea"
+    ],
+    [
+     "Care este valența hidrogenului?",
+     "I",
+     "II",
+     "III",
+     "0"
+    ]
+   ],
+   "tf": [
+    [
+     "În H2O hidrogenul are valența I.",
+     true
+    ],
+    [
+     "Formula oxidului de sodiu, cu Na(I) și O(II), este NaO.",
+     false
+    ]
+   ]
+  },
+  "chim.molmass.7": {
+   "q": [
+    [
+     "Care este masa molară a apei (H = 1, O = 16)?",
+     "18 g/mol",
+     "17 g/mol",
+     "16 g/mol",
+     "20 g/mol"
+    ],
+    [
+     "Care este masa molară a CO2 (C = 12, O = 16)?",
+     "44 g/mol",
+     "28 g/mol",
+     "32 g/mol",
+     "24 g/mol"
+    ],
+    [
+     "Cum se calculează masa moleculară?",
+     "Adunăm masele atomice, ținând cont de indici",
+     "Înmulțim indicii",
+     "Scădem masele atomice",
+     "Împărțim masele atomice"
+    ]
+   ],
+   "tf": [
+    [
+     "Masa molară a apei este 18 g/mol.",
+     true
+    ],
+    [
+     "Masa molară se calculează fără să ținem cont de indici.",
+     false
+    ]
+   ]
+  },
+  "chim.reaction.8": {
+   "q": [
+    [
+     "Cum se numesc substanțele care intră într-o reacție?",
+     "Reactanți",
+     "Produși",
+     "Catalizatori numai",
+     "Soluții"
+    ],
+    [
+     "Cum se numesc substanțele care rezultă?",
+     "Produși de reacție",
+     "Reactanți",
+     "Amestecuri",
+     "Solvenți"
+    ],
+    [
+     "Ce tip de reacție este 2 H2O → 2 H2 + O2?",
+     "Descompunere",
+     "Combinare",
+     "Substituție",
+     "Neutralizare"
+    ],
+    [
+     "Ce este arderea?",
+     "Reacția unei substanțe cu oxigenul",
+     "Topirea unei substanțe",
+     "Dizolvarea în apă",
+     "Evaporarea"
+    ]
+   ],
+   "tf": [
+    [
+     "În reacțiile chimice atomii dispar.",
+     false
+    ],
+    [
+     "Reactanții sunt scriși în stânga săgeții.",
+     true
+    ],
+    [
+     "Arderea este o reacție chimică.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "combinare",
+      "A + B → AB"
+     ],
+     [
+      "descompunere",
+      "AB → A + B"
+     ],
+     [
+      "substituție",
+      "A + BC → AC + B"
+     ],
+     [
+      "ardere",
+      "reacție cu oxigenul"
+     ]
+    ]
+   ]
+  },
+  "chim.balance.8": {
+   "q": [
+    [
+     "Cu ce se echilibrează o ecuație chimică?",
+     "Cu coeficienți",
+     "Cu indici",
+     "Cu paranteze",
+     "Cu săgeți"
+    ],
+    [
+     "Care ecuație este echilibrată?",
+     "2 H2 + O2 → 2 H2O",
+     "H2 + O2 → H2O",
+     "H2 + 2 O2 → H2O",
+     "2 H2 + 2 O2 → H2O"
+    ],
+    [
+     "Ce nu se schimbă niciodată la echilibrare?",
+     "Indicii din formule",
+     "Coeficienții",
+     "Ordinea reactanților",
+     "Numărul de reactanți scris"
+    ],
+    [
+     "Ce înseamnă coeficientul 3 din 3 H2?",
+     "Trei molecule de H2",
+     "Trei atomi în moleculă",
+     "Valența 3",
+     "Masa 3"
+    ]
+   ],
+   "tf": [
+    [
+     "O ecuație echilibrată are același număr de atomi de fiecare fel în ambele părți.",
+     true
+    ],
+    [
+     "Putem echilibra o ecuație schimbând indicii.",
+     false
+    ]
+   ]
+  },
+  "chim.masslaw.8": {
+   "q": [
+    [
+     "Ce spune legea conservării masei?",
+     "Masa reactanților este egală cu masa produșilor",
+     "Masa produșilor este mai mare",
+     "Masa reactanților dispare",
+     "Masa depinde de temperatură"
+    ],
+    [
+     "Cine a formulat legea conservării masei?",
+     "Lavoisier",
+     "Mendeleev",
+     "Newton",
+     "Darwin"
+    ],
+    [
+     "10 g de A reacționează cu 6 g de B. Câte grame de produs se formează?",
+     "16 g",
+     "4 g",
+     "60 g",
+     "10 g"
+    ],
+    [
+     "De ce pare să scadă masa când arde lemnul într-un vas deschis?",
+     "Gazele rezultate scapă în aer",
+     "Masa dispare",
+     "Lemnul devine ușor",
+     "Căldura are masă negativă"
+    ]
+   ],
+   "tf": [
+    [
+     "Masa se conservă într-o reacție chimică.",
+     true
+    ],
+    [
+     "Atomii dispar în timpul reacției, deci masa scade.",
+     false
+    ]
+   ]
+  },
+  "chim.oxides.8": {
+   "q": [
+    [
+     "Care dintre acestea este un oxid?",
+     "CO2",
+     "NaCl",
+     "HCl",
+     "NaOH"
+    ],
+    [
+     "Ce tip de oxid este CaO?",
+     "Bazic",
+     "Acid",
+     "Neutru",
+     "Gazos mereu"
+    ],
+    [
+     "Ce tip de oxid este SO2?",
+     "Acid",
+     "Bazic",
+     "Metalic",
+     "Solid mereu"
+    ],
+    [
+     "Cum se obține un oxid?",
+     "Prin arderea unui element în oxigen",
+     "Prin dizolvarea în apă",
+     "Prin filtrare",
+     "Prin evaporare"
+    ]
+   ],
+   "tf": [
+    [
+     "Oxizii metalelor sunt, de obicei, bazici.",
+     true
+    ],
+    [
+     "CO2 este un oxid bazic.",
+     false
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare oxid în grupa potrivită.",
+     "Oxid bazic",
+     "Oxid acid",
+     [
+      "CaO",
+      "MgO",
+      "Na2O",
+      "CuO"
+     ],
+     [
+      "CO2",
+      "SO2",
+      "SO3",
+      "P2O5"
+     ]
+    ]
+   ]
+  },
+  "chim.acids.8": {
+   "q": [
+    [
+     "Care este formula acidului clorhidric?",
+     "HCl",
+     "NaCl",
+     "NaOH",
+     "HNO3"
+    ],
+    [
+     "Ce culoare capătă turnesolul în acid?",
+     "Roșu",
+     "Albastru",
+     "Verde",
+     "Galben"
+    ],
+    [
+     "Ce acid se găsește în lămâie?",
+     "Acidul citric",
+     "Acidul sulfuric",
+     "Acidul clorhidric",
+     "Acidul azotic"
+    ],
+    [
+     "Ce se degajă la reacția dintre un acid și un metal activ?",
+     "Hidrogen",
+     "Oxigen",
+     "Clor",
+     "Azot"
+    ]
+   ],
+   "tf": [
+    [
+     "Acidul sulfuric este periculos și se manipulează cu atenție.",
+     true
+    ],
+    [
+     "Acizii colorează turnesolul în albastru.",
+     false
+    ]
+   ],
+   "m": [
+    [
+     [
+      "HCl",
+      "acid clorhidric"
+     ],
+     [
+      "H2SO4",
+      "acid sulfuric"
+     ],
+     [
+      "HNO3",
+      "acid azotic"
+     ],
+     [
+      "H3PO4",
+      "acid fosforic"
+     ]
+    ]
+   ]
+  },
+  "chim.bases.8": {
+   "q": [
+    [
+     "Ce grupare conțin bazele?",
+     "OH",
+     "H",
+     "Cl",
+     "NO3"
+    ],
+    [
+     "Ce culoare capătă turnesolul într-o bază?",
+     "Albastru",
+     "Roșu",
+     "Verde",
+     "Incolor"
+    ],
+    [
+     "Care este formula hidroxidului de sodiu?",
+     "NaOH",
+     "NaCl",
+     "Na2O",
+     "HNaO2"
+    ],
+    [
+     "Ce indicator devine roșu-violet în bază?",
+     "Fenolftaleina",
+     "Zahărul",
+     "Sarea",
+     "Apa"
+    ]
+   ],
+   "tf": [
+    [
+     "Hidroxidul de sodiu este coroziv.",
+     true
+    ],
+    [
+     "Bazele colorează fenolftaleina în galben.",
+     false
+    ]
+   ]
+  },
+  "chim.ph.8": {
+   "q": [
+    [
+     "Ce pH are apa pură?",
+     "7",
+     "0",
+     "14",
+     "1"
+    ],
+    [
+     "O soluție cu pH = 3 este:",
+     "acidă",
+     "bazică",
+     "neutră",
+     "sărată"
+    ],
+    [
+     "O soluție cu pH = 12 este:",
+     "bazică",
+     "acidă",
+     "neutră",
+     "acru"
+    ],
+    [
+     "Ce soluție are, de obicei, pH acid?",
+     "Sucul de lămâie",
+     "Săpunul",
+     "Apa de var",
+     "Soda caustică"
+    ]
+   ],
+   "tf": [
+    [
+     "pH-ul 7 corespunde unei soluții neutre.",
+     true
+    ],
+    [
+     "Cu cât pH-ul este mai mic de 7, cu atât soluția este mai bazică.",
+     false
+    ]
+   ]
+  },
+  "chim.salts.8": {
+   "q": [
+    [
+     "Ce se formează la reacția dintre un acid și o bază?",
+     "Sare și apă",
+     "Doar apă",
+     "Oxid și gaz",
+     "Metal și apă"
+    ],
+    [
+     "Care este formula sării de bucătărie?",
+     "NaCl",
+     "NaOH",
+     "HCl",
+     "Na2O"
+    ],
+    [
+     "Din ce este format, în principal, calcarul?",
+     "Carbonat de calciu",
+     "Clorură de sodiu",
+     "Sulfat de cupru",
+     "Oxid de fier"
+    ],
+    [
+     "Cum se numește reacția acid + bază?",
+     "Neutralizare",
+     "Ardere",
+     "Descompunere",
+     "Filtrare"
+    ]
+   ],
+   "tf": [
+    [
+     "Clorura de sodiu este o sare.",
+     true
+    ],
+    [
+     "La neutralizare se formează numai gaze.",
+     false
+    ]
+   ]
+  },
+  "chim.water.8": {
+   "q": [
+    [
+     "Care este formula apei?",
+     "H2O",
+     "HO2",
+     "H2O2",
+     "OH"
+    ],
+    [
+     "Ce proprietate are apa pură?",
+     "Incoloră și fără miros",
+     "Albastră",
+     "Cu miros puternic",
+     "Dulce"
+    ],
+    [
+     "Ce substanță NU se dizolvă în apă?",
+     "Uleiul",
+     "Sarea",
+     "Zahărul",
+     "Alcoolul"
+    ],
+    [
+     "Cum se poate curăța apa de impuritățile solide?",
+     "Prin filtrare",
+     "Prin congelare",
+     "Prin încălzire în exces",
+     "Prin amestecare cu ulei"
+    ]
+   ],
+   "tf": [
+    [
+     "Apa este un bun solvent pentru multe substanțe.",
+     true
+    ],
+    [
+     "Apa fierbe la 50 °C la presiune normală.",
+     false
+    ]
+   ]
+  },
+  "chim.solutions.8": {
+   "q": [
+    [
+     "Ce este solventul într-o soluție de sare în apă?",
+     "Apa",
+     "Sarea",
+     "Aerul",
+     "Vasul"
+    ],
+    [
+     "Care este formula concentrației procentuale?",
+     "c = md / ms · 100",
+     "c = ms / md · 100",
+     "c = md + ms",
+     "c = md · ms"
+    ],
+    [
+     "Ce arată c = 10 %?",
+     "10 g de substanță dizolvată în 100 g de soluție",
+     "10 g de soluție",
+     "10 g de apă",
+     "10 g de solvent la 100 g sare"
+    ]
+   ],
+   "tf": [
+    [
+     "Masa soluției este suma dintre masa solutului și cea a solventului.",
+     true
+    ],
+    [
+     "O soluție de 5 % este mai concentrată decât una de 20 %.",
+     false
+    ]
+   ]
+  },
+  "chim.metals.8": {
+   "q": [
+    [
+     "Care metal este lichid la temperatura camerei?",
+     "Mercurul",
+     "Fierul",
+     "Aurul",
+     "Cuprul"
+    ],
+    [
+     "Care metal reacționează violent cu apa?",
+     "Sodiul",
+     "Aurul",
+     "Cuprul",
+     "Argintul"
+    ],
+    [
+     "Din ce este format oțelul?",
+     "Fier și carbon",
+     "Cupru și zinc",
+     "Cupru și staniu",
+     "Aluminiu și argint"
+    ],
+    [
+     "Ce proprietate au metalele?",
+     "Conduc bine electricitatea",
+     "Sunt izolatoare",
+     "Se sparg ușor ca sticla",
+     "Nu au luciu"
+    ]
+   ],
+   "tf": [
+    [
+     "Aurul este un metal puțin reactiv.",
+     true
+    ],
+    [
+     "Alama este un aliaj de cupru și zinc.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare metal în grupa potrivită.",
+     "Foarte reactiv",
+     "Puțin reactiv",
+     [
+      "sodiu",
+      "potasiu",
+      "calciu",
+      "litiu"
+     ],
+     [
+      "aur",
+      "platină",
+      "argint",
+      "cupru"
+     ]
+    ]
+   ]
+  }
+ }
+}

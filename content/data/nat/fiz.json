@@ -1,0 +1,1521 @@
+{
+ "provenance": {
+  "id": "prov.data.nat.fiz",
+  "kind": "data",
+  "title": "Ludiko curated fiz questions for gimnaziu",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Original questions drafted for the gimnaziu programa; no textbook or exam material. Awaiting review by a subject teacher."
+ },
+ "topics": {
+  "fiz.measure.6": {
+   "q": [
+    [
+     "Cu ce instrument măsurăm masa unui obiect?",
+     "Balanța",
+     "Rigla",
+     "Termometrul",
+     "Cronometrul"
+    ],
+    [
+     "Ce este o mărime fizică?",
+     "Ceva ce se poate măsura",
+     "O culoare",
+     "O părere",
+     "O poveste"
+    ],
+    [
+     "Cu ce măsurăm timpul unei curse?",
+     "Cronometrul",
+     "Rigla",
+     "Barometrul",
+     "Termometrul"
+    ],
+    [
+     "Ce trebuie să conțină orice măsurătoare?",
+     "Valoare numerică și unitate de măsură",
+     "Doar numele obiectului",
+     "Doar o poză",
+     "Doar culoarea"
+    ]
+   ],
+   "tf": [
+    [
+     "Lungimea este o mărime fizică.",
+     true
+    ],
+    [
+     "Termometrul măsoară masa.",
+     false
+    ],
+    [
+     "Rezultatul unei măsurători se scrie cu unitatea de măsură.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "lungime",
+      "riglă"
+     ],
+     [
+      "masă",
+      "balanță"
+     ],
+     [
+      "timp",
+      "cronometru"
+     ],
+     [
+      "temperatură",
+      "termometru"
+     ],
+     [
+      "volum",
+      "cilindru gradat"
+     ]
+    ]
+   ]
+  },
+  "fiz.length.6": {
+   "q": [
+    [
+     "Câți milimetri are un metru?",
+     "1000",
+     "100",
+     "10",
+     "10 000"
+    ],
+    [
+     "Care este unitatea de lungime în SI?",
+     "metrul",
+     "centimetrul",
+     "kilometrul",
+     "milimetrul"
+    ],
+    [
+     "Cum transformăm metri în centimetri?",
+     "Înmulțim cu 100",
+     "Împărțim la 100",
+     "Înmulțim cu 10",
+     "Împărțim la 10"
+    ],
+    [
+     "Care este cea mai mică unitate dintre acestea?",
+     "mm",
+     "cm",
+     "dm",
+     "m"
+    ]
+   ],
+   "tf": [
+    [
+     "1 km are 1000 m.",
+     true
+    ],
+    [
+     "1 cm este mai mare decât 1 dm.",
+     false
+    ],
+    [
+     "Când trecem de la m la cm, valoarea numerică crește.",
+     true
+    ]
+   ]
+  },
+  "fiz.massvol.6": {
+   "q": [
+    [
+     "Câte grame are un kilogram?",
+     "1000",
+     "100",
+     "10",
+     "10 000"
+    ],
+    [
+     "Cât este 1 litru în dm³?",
+     "1 dm³",
+     "10 dm³",
+     "100 dm³",
+     "0,1 dm³"
+    ],
+    [
+     "Cum aflăm volumul unei pietre neregulate?",
+     "Prin scufundarea ei în apă și citirea diferenței de nivel",
+     "Cu o riglă",
+     "Cu un termometru",
+     "Cu un cronometru"
+    ],
+    [
+     "Cu ce se măsoară volumul unui lichid?",
+     "Cilindru gradat",
+     "Balanță",
+     "Riglă",
+     "Cronometru"
+    ]
+   ],
+   "tf": [
+    [
+     "1 ml este egal cu 1 cm³.",
+     true
+    ],
+    [
+     "Masa și volumul sunt același lucru.",
+     false
+    ],
+    [
+     "O tonă are 1000 kg.",
+     true
+    ]
+   ]
+  },
+  "fiz.area.6": {
+   "q": [
+    [
+     "Cum se calculează aria unui dreptunghi?",
+     "lungime · lățime",
+     "lungime + lățime",
+     "2 · (lungime + lățime)",
+     "lungime : lățime"
+    ],
+    [
+     "Cât este 1 m² în dm²?",
+     "100",
+     "10",
+     "1000",
+     "10 000"
+    ],
+    [
+     "Cum se calculează volumul unui cuboid?",
+     "lungime · lățime · înălțime",
+     "lungime + lățime + înălțime",
+     "lungime · lățime",
+     "6 · lungime"
+    ],
+    [
+     "Care este unitatea ariei în SI?",
+     "m²",
+     "m",
+     "m³",
+     "cm"
+    ]
+   ],
+   "tf": [
+    [
+     "Aria se măsoară în unități pătrate.",
+     true
+    ],
+    [
+     "1 dm³ are 100 cm³.",
+     false
+    ],
+    [
+     "Un cub cu muchia de 2 cm are volumul 8 cm³.",
+     true
+    ]
+   ]
+  },
+  "fiz.time.6": {
+   "q": [
+    [
+     "Câte secunde are un minut?",
+     "60",
+     "100",
+     "30",
+     "1000"
+    ],
+    [
+     "Câte minute are 2 ore?",
+     "120",
+     "60",
+     "200",
+     "100"
+    ],
+    [
+     "Cu ce măsurăm precis timpul unei curse scurte?",
+     "Cronometrul",
+     "Calendarul",
+     "Ceasul de perete numai",
+     "Busola"
+    ],
+    [
+     "Cât este 1 oră în secunde?",
+     "3600",
+     "360",
+     "6000",
+     "600"
+    ]
+   ],
+   "tf": [
+    [
+     "O oră are 60 de minute.",
+     true
+    ],
+    [
+     "1 minut are 100 de secunde.",
+     false
+    ],
+    [
+     "Secunda este unitatea de timp în SI.",
+     true
+    ]
+   ]
+  },
+  "fiz.temp.6": {
+   "q": [
+    [
+     "La ce temperatură îngheață apa pură la presiune normală?",
+     "0 °C",
+     "100 °C",
+     "10 °C",
+     "−10 °C"
+    ],
+    [
+     "La ce temperatură fierbe apa pură la presiune normală?",
+     "100 °C",
+     "0 °C",
+     "50 °C",
+     "37 °C"
+    ],
+    [
+     "Cu ce măsurăm temperatura?",
+     "Termometrul",
+     "Barometrul",
+     "Manometrul",
+     "Cronometrul"
+    ],
+    [
+     "Ce temperatură are, în mod normal, corpul uman sănătos?",
+     "Aproximativ 37 °C",
+     "Aproximativ 10 °C",
+     "Aproximativ 60 °C",
+     "Aproximativ 100 °C"
+    ]
+   ],
+   "tf": [
+    [
+     "Temperatura se măsoară în grade Celsius.",
+     true
+    ],
+    [
+     "Apa fierbe la 0 °C.",
+     false
+    ],
+    [
+     "Termometrul cu lichid funcționează pentru că lichidul se dilată la încălzire.",
+     true
+    ]
+   ]
+  },
+  "fiz.states.6": {
+   "q": [
+    [
+     "Care stare de agregare are volum propriu, dar ia forma vasului?",
+     "Lichidă",
+     "Solidă",
+     "Gazoasă",
+     "Plasmă solidă"
+    ],
+    [
+     "Cum se numește trecerea din stare lichidă în stare gazoasă?",
+     "Vaporizare",
+     "Topire",
+     "Solidificare",
+     "Condensare"
+    ],
+    [
+     "Cum se numește trecerea din lichid în solid?",
+     "Solidificare",
+     "Topire",
+     "Vaporizare",
+     "Sublimare"
+    ],
+    [
+     "Care stare nu are formă și nici volum propriu?",
+     "Gazoasă",
+     "Solidă",
+     "Lichidă",
+     "Cristalină"
+    ]
+   ],
+   "tf": [
+    [
+     "Gazele umplu tot spațiul disponibil.",
+     true
+    ],
+    [
+     "Solidele iau forma vasului în care sunt puse.",
+     false
+    ],
+    [
+     "Condensarea este trecerea din gaz în lichid.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "topire",
+      "solid în lichid"
+     ],
+     [
+      "solidificare",
+      "lichid în solid"
+     ],
+     [
+      "vaporizare",
+      "lichid în gaz"
+     ],
+     [
+      "condensare",
+      "gaz în lichid"
+     ]
+    ]
+   ]
+  },
+  "fiz.motion.6": {
+   "q": [
+    [
+     "Când se află un corp în mișcare?",
+     "Când își schimbă poziția față de un reper",
+     "Când nu se mișcă niciodată",
+     "Când este mai greu",
+     "Când este cald"
+    ],
+    [
+     "Ce este traiectoria?",
+     "Linia descrisă de corp în mișcare",
+     "Viteza corpului",
+     "Masa corpului",
+     "Timpul mișcării"
+    ],
+    [
+     "Un pasager din tren este în repaus față de:",
+     "scaunul pe care stă",
+     "copacii de lângă linie",
+     "gara pe lângă care trece",
+     "un alt tren care vine din față"
+    ],
+    [
+     "Ce tip de traiectorie are mișcarea unui automobil pe un drum drept?",
+     "Rectilinie",
+     "Circulară",
+     "Curbă mereu",
+     "Spirală"
+    ]
+   ],
+   "tf": [
+    [
+     "Mișcarea și repausul sunt relative.",
+     true
+    ],
+    [
+     "Un corp este în repaus față de orice reper.",
+     false
+    ],
+    [
+     "Traiectoria poate fi o linie curbă.",
+     true
+    ]
+   ]
+  },
+  "fiz.speed.6": {
+   "q": [
+    [
+     "Care este formula vitezei?",
+     "v = d / t",
+     "v = d · t",
+     "v = t / d",
+     "v = d + t"
+    ],
+    [
+     "În ce unitate de măsură se exprimă viteza în SI?",
+     "m/s",
+     "m",
+     "s",
+     "kg"
+    ],
+    [
+     "Cum aflăm distanța dacă știm viteza și timpul?",
+     "d = v · t",
+     "d = v / t",
+     "d = v + t",
+     "d = t / v"
+    ]
+   ],
+   "tf": [
+    [
+     "Viteza este distanța parcursă în unitatea de timp.",
+     true
+    ],
+    [
+     "Un corp cu viteză mai mare parcurge aceeași distanță în timp mai mare.",
+     false
+    ]
+   ]
+  },
+  "fiz.density.6": {
+   "q": [
+    [
+     "Care este formula densității?",
+     "ρ = m / V",
+     "ρ = m · V",
+     "ρ = V / m",
+     "ρ = m + V"
+    ],
+    [
+     "Care este densitatea apei?",
+     "1 g/cm³",
+     "10 g/cm³",
+     "0,1 g/cm³",
+     "100 g/cm³"
+    ],
+    [
+     "Un corp mai puțin dens decât apa, pus în apă:",
+     "plutește",
+     "se scufundă",
+     "se dizolvă",
+     "se evaporă"
+    ],
+    [
+     "Care este unitatea de densitate în SI?",
+     "kg/m³",
+     "kg",
+     "m³",
+     "N"
+    ]
+   ],
+   "tf": [
+    [
+     "Lemnul are o densitate mai mică decât a apei, deci plutește.",
+     true
+    ],
+    [
+     "Densitatea este masa totală a unui corp, indiferent de volum.",
+     false
+    ]
+   ]
+  },
+  "fiz.force.intro.6": {
+   "q": [
+    [
+     "Care este unitatea de forță în SI?",
+     "newtonul",
+     "kilogramul",
+     "metrul",
+     "joule-ul"
+    ],
+    [
+     "Cu ce instrument se măsoară forța?",
+     "Dinamometrul",
+     "Termometrul",
+     "Balanța cu brațe",
+     "Cronometrul"
+    ],
+    [
+     "Care este un efect static al forței?",
+     "Deformarea unui corp",
+     "Schimbarea vitezei",
+     "Oprirea unui corp",
+     "Schimbarea direcției"
+    ],
+    [
+     "Care forță acționează la distanță?",
+     "Forța magnetică",
+     "Împingerea unei uși",
+     "Trasul unei sănii",
+     "Lovitura unei mingi"
+    ]
+   ],
+   "tf": [
+    [
+     "Forța se măsoară cu dinamometrul.",
+     true
+    ],
+    [
+     "O forță nu poate schimba direcția unui corp.",
+     false
+    ],
+    [
+     "Forța are valoare, direcție și sens.",
+     true
+    ]
+   ]
+  },
+  "fiz.speed.7": {
+   "q": [
+    [
+     "Cum se calculează viteza medie?",
+     "Distanța totală împărțită la timpul total",
+     "Media celor două viteze",
+     "Suma vitezelor",
+     "Produsul dintre distanță și timp"
+    ],
+    [
+     "Câți km/h sunt 1 m/s?",
+     "3,6",
+     "36",
+     "0,36",
+     "1"
+    ],
+    [
+     "Care este viteza mai mare?",
+     "20 m/s",
+     "50 km/h",
+     "10 km/h",
+     "30 km/h"
+    ]
+   ],
+   "tf": [
+    [
+     "72 km/h înseamnă 20 m/s.",
+     true
+    ],
+    [
+     "Viteza medie este media aritmetică a vitezelor din fiecare tronson.",
+     false
+    ]
+   ]
+  },
+  "fiz.weight.7": {
+   "q": [
+    [
+     "Care este formula greutății?",
+     "G = m · g",
+     "G = m / g",
+     "G = m + g",
+     "G = g / m"
+    ],
+    [
+     "În ce unitate se măsoară greutatea?",
+     "N",
+     "kg",
+     "m",
+     "J"
+    ],
+    [
+     "Care este direcția greutății?",
+     "Verticală, spre centrul Pământului",
+     "Orizontală",
+     "Spre cer",
+     "În orice direcție"
+    ],
+    [
+     "Ce se întâmplă cu masa unui astronaut pe Lună?",
+     "Rămâne aceeași",
+     "Se înjumătățește",
+     "Crește de șase ori",
+     "Devine zero"
+    ]
+   ],
+   "tf": [
+    [
+     "Masa și greutatea sunt aceeași mărime fizică.",
+     false
+    ],
+    [
+     "Pe Lună greutatea unui corp este mai mică decât pe Pământ.",
+     true
+    ]
+   ]
+  },
+  "fiz.elastic.7": {
+   "q": [
+    [
+     "De ce depinde forța elastică a unui resort?",
+     "De alungirea lui",
+     "De culoarea lui",
+     "De temperatura camerei",
+     "De locul unde este agățat"
+    ],
+    [
+     "Care este formula legii lui Hooke?",
+     "F = k · Δl",
+     "F = k / Δl",
+     "F = k + Δl",
+     "F = Δl / k"
+    ],
+    [
+     "Dacă alungirea unui resort se dublează, forța elastică:",
+     "se dublează",
+     "se înjumătățește",
+     "rămâne la fel",
+     "devine zero"
+    ]
+   ],
+   "tf": [
+    [
+     "Un resort deformat tinde să revină la forma inițială.",
+     true
+    ],
+    [
+     "Forța elastică nu depinde de alungire.",
+     false
+    ]
+   ]
+  },
+  "fiz.friction.7": {
+   "q": [
+    [
+     "Cum acționează forța de frecare?",
+     "Se opune mișcării",
+     "Ajută mereu mișcarea",
+     "Atrage corpurile",
+     "Este mereu zero"
+    ],
+    [
+     "Pe ce suprafață este frecarea mai mică?",
+     "Pe gheață",
+     "Pe asfalt aspru",
+     "Pe nisip",
+     "Pe covor"
+    ],
+    [
+     "Cum reducem frecarea dintre piesele unui mecanism?",
+     "Ungem cu ulei",
+     "Le facem mai aspre",
+     "Le apăsăm mai tare",
+     "Le curățăm cu nisip"
+    ],
+    [
+     "Unde este frecarea utilă?",
+     "La frânele bicicletei",
+     "La rulmenții unui scuter",
+     "La o pârtie de sanie",
+     "La patinaj"
+    ]
+   ],
+   "tf": [
+    [
+     "Frecarea se opune mișcării.",
+     true
+    ],
+    [
+     "Frecarea apare doar între lichide.",
+     false
+    ],
+    [
+     "Uleiul poate reduce frecarea.",
+     true
+    ]
+   ]
+  },
+  "fiz.pressure.7": {
+   "q": [
+    [
+     "Care este formula presiunii?",
+     "p = F / S",
+     "p = F · S",
+     "p = S / F",
+     "p = F + S"
+    ],
+    [
+     "În ce unitate se măsoară presiunea în SI?",
+     "pascal",
+     "newton",
+     "metru pătrat",
+     "joule"
+    ],
+    [
+     "De ce taie mai bine un cuțit ascuțit?",
+     "Suprafața de contact este mică, deci presiunea e mare",
+     "Are masă mai mare",
+     "Este mai cald",
+     "Este mai colorat"
+    ],
+    [
+     "Cum scădem presiunea pe zăpadă?",
+     "Folosim schiuri late",
+     "Stăm într-un picior",
+     "Purtăm pantofi cu toc",
+     "Alergăm mai încet"
+    ]
+   ],
+   "tf": [
+    [
+     "La aceeași forță, o suprafață mai mică dă presiune mai mare.",
+     true
+    ],
+    [
+     "1 kPa are 10 Pa.",
+     false
+    ],
+    [
+     "Un ac ascuțit exercită presiune mare.",
+     true
+    ]
+   ]
+  },
+  "fiz.liquid.7": {
+   "q": [
+    [
+     "Cum variază presiunea într-un lichid cu adâncimea?",
+     "Crește",
+     "Scade",
+     "Rămâne constantă",
+     "Dispare"
+    ],
+    [
+     "Cine a descoperit principiul forței arhimedice?",
+     "Arhimede",
+     "Newton",
+     "Galileo",
+     "Pascal"
+    ],
+    [
+     "Când plutește un corp într-un lichid?",
+     "Când greutatea lui este mai mică decât forța arhimedică",
+     "Când este negru",
+     "Când este foarte mic",
+     "Când este foarte cald"
+    ],
+    [
+     "De ce depinde forța arhimedică?",
+     "De densitatea lichidului și de volumul scufundat",
+     "De culoarea corpului",
+     "De temperatura vasului",
+     "De forma vasului numai"
+    ]
+   ],
+   "tf": [
+    [
+     "Presiunea hidrostatică crește cu adâncimea.",
+     true
+    ],
+    [
+     "Forța arhimedică acționează de sus în jos.",
+     false
+    ],
+    [
+     "Vasele comunicante au același nivel al lichidului.",
+     true
+    ]
+   ]
+  },
+  "fiz.work.7": {
+   "q": [
+    [
+     "Care este formula lucrului mecanic?",
+     "L = F · d",
+     "L = F / d",
+     "L = F + d",
+     "L = d / F"
+    ],
+    [
+     "În ce unitate se măsoară lucrul mecanic?",
+     "joule",
+     "newton",
+     "watt",
+     "pascal"
+    ],
+    [
+     "Când NU se efectuează lucru mecanic?",
+     "Când nu există deplasare",
+     "Când forța este mare",
+     "Când corpul e greu",
+     "Când este cald"
+    ],
+    [
+     "Câți jouli reprezintă 1 N · 1 m?",
+     "1 J",
+     "10 J",
+     "100 J",
+     "0,1 J"
+    ]
+   ],
+   "tf": [
+    [
+     "Dacă nu există deplasare, lucrul mecanic este zero.",
+     true
+    ],
+    [
+     "Lucrul mecanic se măsoară în newtoni.",
+     false
+    ]
+   ]
+  },
+  "fiz.power.7": {
+   "q": [
+    [
+     "Care este formula puterii mecanice?",
+     "P = L / t",
+     "P = L · t",
+     "P = t / L",
+     "P = L + t"
+    ],
+    [
+     "Care este unitatea de putere în SI?",
+     "watt",
+     "joule",
+     "newton",
+     "pascal"
+    ],
+    [
+     "Cât este 1 kW în wați?",
+     "1000 W",
+     "100 W",
+     "10 W",
+     "1 000 000 W"
+    ]
+   ],
+   "tf": [
+    [
+     "Puterea măsoară cât de repede se efectuează lucrul mecanic.",
+     true
+    ],
+    [
+     "Un motor cu putere mai mică efectuează același lucru în mai puțin timp.",
+     false
+    ]
+   ]
+  },
+  "fiz.energy.7": {
+   "q": [
+    [
+     "De ce depinde energia cinetică?",
+     "De masă și de viteză",
+     "De culoare",
+     "De înălțime numai",
+     "De temperatură"
+    ],
+    [
+     "Care este formula energiei potențiale gravitaționale?",
+     "Ep = m · g · h",
+     "Ep = m · v² / 2",
+     "Ep = F / S",
+     "Ep = m / g"
+    ],
+    [
+     "Ce se întâmplă cu energia potențială când un corp cade liber?",
+     "Scade, se transformă în energie cinetică",
+     "Crește",
+     "Rămâne zero",
+     "Dispare fără urmă"
+    ]
+   ],
+   "tf": [
+    [
+     "Un corp aflat mai sus are energie potențială mai mare.",
+     true
+    ],
+    [
+     "Un corp în repaus are energie cinetică mare.",
+     false
+    ]
+   ]
+  },
+  "fiz.lever.7": {
+   "q": [
+    [
+     "Ce este punctul de sprijin al unei pârghii?",
+     "Punctul în jurul căruia se rotește bara",
+     "Capătul cel mai greu",
+     "Mijlocul obligatoriu",
+     "Locul unde aplicăm forța numai"
+    ],
+    [
+     "Care este condiția de echilibru a pârghiei?",
+     "F1 · d1 = F2 · d2",
+     "F1 + d1 = F2 + d2",
+     "F1 / d1 = F2 · d2",
+     "F1 = d2"
+    ],
+    [
+     "Cum scădem forța necesară?",
+     "Mărim brațul forței",
+     "Micșorăm brațul forței",
+     "Dăm drumul pârghiei",
+     "Folosim o bară mai scurtă"
+    ]
+   ],
+   "tf": [
+    [
+     "Foarfeca este alcătuită din două pârghii.",
+     true
+    ],
+    [
+     "Cu un braț mai scurt, forța necesară este mai mică.",
+     false
+    ]
+   ]
+  },
+  "fiz.heat.8": {
+   "q": [
+    [
+     "Cum circulă căldura între două corpuri în contact?",
+     "De la corpul mai cald la cel mai rece",
+     "De la corpul mai rece la cel mai cald",
+     "În ambele sensuri egal mereu",
+     "Nu circulă"
+    ],
+    [
+     "Care este formula căldurii primite la încălzire?",
+     "Q = m · c · Δt",
+     "Q = m / c",
+     "Q = c / m",
+     "Q = m + c + Δt"
+    ],
+    [
+     "Ce arată căldura specifică?",
+     "Căldura necesară pentru 1 kg încălzit cu 1 K",
+     "Temperatura de topire",
+     "Masa unui corp",
+     "Volumul unui corp"
+    ]
+   ],
+   "tf": [
+    [
+     "Căldura se măsoară în jouli.",
+     true
+    ],
+    [
+     "Apa se încălzește repede deoarece are căldura specifică mică.",
+     false
+    ]
+   ]
+  },
+  "fiz.expansion.8": {
+   "q": [
+    [
+     "Cum se propagă căldura de la Soare spre Pământ?",
+     "Prin radiație",
+     "Prin conducție",
+     "Prin convecție",
+     "Nu se propagă"
+    ],
+    [
+     "Cum se propagă căldura printr-o bară de metal?",
+     "Prin conducție",
+     "Prin radiație",
+     "Prin convecție",
+     "Prin evaporare"
+    ],
+    [
+     "Care material este bun izolator termic?",
+     "Lemnul",
+     "Cuprul",
+     "Aluminiul",
+     "Fierul"
+    ],
+    [
+     "Ce se întâmplă cu un corp solid când îl încălzim?",
+     "Se dilată",
+     "Se contractă mereu",
+     "Se evaporă mereu",
+     "Se micșorează"
+    ]
+   ],
+   "tf": [
+    [
+     "Gazele se dilată mai mult decât solidele.",
+     true
+    ],
+    [
+     "Metalele sunt izolatoare termice bune.",
+     false
+    ],
+    [
+     "Convecția are loc în lichide și gaze.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare material în grupa potrivită.",
+     "Bun conducător termic",
+     "Izolator termic",
+     [
+      "cuprul",
+      "aluminiul",
+      "fierul",
+      "argintul"
+     ],
+     [
+      "lemnul",
+      "polistirenul",
+      "lâna",
+      "aerul"
+     ]
+    ]
+   ]
+  },
+  "fiz.statechange.8": {
+   "q": [
+    [
+     "Ce se întâmplă cu temperatura în timpul topirii gheții la 0 °C?",
+     "Rămâne constantă",
+     "Crește mereu",
+     "Scade mereu",
+     "Devine 100 °C"
+    ],
+    [
+     "Ce trebuie să primească o substanță ca să se topească?",
+     "Căldură",
+     "Frig",
+     "Apă",
+     "Aer"
+    ],
+    [
+     "Unde are loc evaporarea?",
+     "La suprafața lichidului",
+     "Doar la fund",
+     "Numai la 100 °C",
+     "Nu are loc niciodată"
+    ],
+    [
+     "Ce face apa când condensează?",
+     "Cedează căldură",
+     "Absoarbe căldură",
+     "Rămâne la fel",
+     "Îngheață"
+    ]
+   ],
+   "tf": [
+    [
+     "Evaporarea are loc la orice temperatură.",
+     true
+    ],
+    [
+     "La topire, substanța cedează căldură.",
+     false
+    ],
+    [
+     "În timpul fierberii, temperatura apei pure rămâne constantă.",
+     true
+    ]
+   ],
+   "o": [
+    [
+     "Așază în ordine schimbările de stare ale apei dintr-o gheață încălzită continuu.",
+     "gheață",
+     "apă lichidă",
+     "vapori de apă"
+    ]
+   ]
+  },
+  "fiz.charge.8": {
+   "q": [
+    [
+     "Ce sarcină electrică au electronii?",
+     "Negativă",
+     "Pozitivă",
+     "Nu au",
+     "Neutră"
+    ],
+    [
+     "Cum se comportă două sarcini de același fel?",
+     "Se resping",
+     "Se atrag",
+     "Nu interacționează",
+     "Se anulează mereu"
+    ],
+    [
+     "Cum se numește unitatea de măsură a sarcinii electrice?",
+     "coulomb",
+     "volt",
+     "amper",
+     "ohm"
+    ],
+    [
+     "Cum se poate electriza un balon?",
+     "Prin frecare",
+     "Prin încălzire în apă",
+     "Prin tăiere",
+     "Prin udare"
+    ]
+   ],
+   "tf": [
+    [
+     "Sarcinile de semn contrar se atrag.",
+     true
+    ],
+    [
+     "Un corp neutru nu are deloc sarcini electrice.",
+     false
+    ],
+    [
+     "Electrizarea prin frecare transferă electroni.",
+     true
+    ]
+   ]
+  },
+  "fiz.current.8": {
+   "q": [
+    [
+     "Cum se numește unitatea de măsură a intensității curentului?",
+     "amper",
+     "volt",
+     "ohm",
+     "watt"
+    ],
+    [
+     "Ce instrument măsoară intensitatea curentului?",
+     "Ampermetrul",
+     "Voltmetrul",
+     "Ohmmetrul",
+     "Termometrul"
+    ],
+    [
+     "Când circulă curentul într-un circuit?",
+     "Când circuitul este închis",
+     "Când este deschis",
+     "Când nu are sursă",
+     "Niciodată"
+    ],
+    [
+     "Cum se leagă ampermetrul în circuit?",
+     "În serie",
+     "În paralel",
+     "Nu se leagă",
+     "Doar la sursă"
+    ]
+   ],
+   "tf": [
+    [
+     "Curentul electric este mișcarea ordonată a sarcinilor electrice.",
+     true
+    ],
+    [
+     "Ampermetrul se leagă în paralel cu consumatorul.",
+     false
+    ],
+    [
+     "1 mA este de o mie de ori mai mic decât 1 A.",
+     true
+    ]
+   ],
+   "m": [
+    [
+     [
+      "sursă",
+      "produce tensiune"
+     ],
+     [
+      "consumator",
+      "transformă energia electrică"
+     ],
+     [
+      "întrerupător",
+      "deschide sau închide circuitul"
+     ],
+     [
+      "ampermetru",
+      "măsoară intensitatea"
+     ]
+    ]
+   ]
+  },
+  "fiz.ohm.8": {
+   "q": [
+    [
+     "Cum se leagă voltmetrul?",
+     "În paralel",
+     "În serie",
+     "Nu se leagă",
+     "Numai pe întrerupător"
+    ],
+    [
+     "Care este unitatea de rezistență electrică?",
+     "ohm",
+     "amper",
+     "volt",
+     "coulomb"
+    ],
+    [
+     "Cum scrie legea lui Ohm?",
+     "I = U / R",
+     "I = U · R",
+     "I = R / U",
+     "I = U + R"
+    ],
+    [
+     "Ce se întâmplă cu intensitatea dacă rezistența crește la aceeași tensiune?",
+     "Scade",
+     "Crește",
+     "Rămâne la fel",
+     "Devine infinită"
+    ]
+   ],
+   "tf": [
+    [
+     "Voltmetrul măsoară tensiunea.",
+     true
+    ],
+    [
+     "Cu cât rezistența este mai mare, cu atât curentul este mai mare, la aceeași tensiune.",
+     false
+    ]
+   ]
+  },
+  "fiz.resistors.8": {
+   "q": [
+    [
+     "Cum se calculează rezistența echivalentă în serie?",
+     "Se adună rezistențele",
+     "Se înmulțesc rezistențele",
+     "Se scad rezistențele",
+     "Se împart rezistențele"
+    ],
+    [
+     "Două rezistoare egale cu R sunt legate în paralel. Rezistența echivalentă este:",
+     "R/2",
+     "2R",
+     "R",
+     "R²"
+    ],
+    [
+     "Ce mărime este aceeași în rezistoarele legate în serie?",
+     "Intensitatea curentului",
+     "Tensiunea",
+     "Rezistența",
+     "Puterea"
+    ]
+   ],
+   "tf": [
+    [
+     "În paralel, rezistența echivalentă este mai mică decât cea mai mică rezistență.",
+     true
+    ],
+    [
+     "În serie, tensiunea pe fiecare rezistor este egală cu tensiunea sursei.",
+     false
+    ]
+   ]
+  },
+  "fiz.elpower.8": {
+   "q": [
+    [
+     "Care este formula puterii electrice?",
+     "P = U · I",
+     "P = U / I",
+     "P = I / U",
+     "P = U + I"
+    ],
+    [
+     "Ce măsoară kilowattora?",
+     "Energia electrică",
+     "Puterea",
+     "Tensiunea",
+     "Curentul"
+    ],
+    [
+     "Ce energie consumă un aparat de 1 kW într-o oră?",
+     "1 kWh",
+     "10 kWh",
+     "0,1 kWh",
+     "3600 kWh"
+    ]
+   ],
+   "tf": [
+    [
+     "Un bec de 100 W folosit 10 ore consumă 1 kWh.",
+     true
+    ],
+    [
+     "Puterea electrică se măsoară în amperi.",
+     false
+    ]
+   ]
+  },
+  "fiz.magnet.8": {
+   "q": [
+    [
+     "Ce se întâmplă între doi poli nord ai doi magneți?",
+     "Se resping",
+     "Se atrag",
+     "Nu se simt",
+     "Se anulează"
+    ],
+    [
+     "Pe ce se bazează funcționarea busolei?",
+     "Pe câmpul magnetic al Pământului",
+     "Pe lumina Soarelui",
+     "Pe gravitație",
+     "Pe vânt"
+    ],
+    [
+     "Ce este un electromagnet?",
+     "O bobină cu miez de fier străbătută de curent",
+     "Un magnet de plastic",
+     "Un magnet de lemn",
+     "O baterie"
+    ],
+    [
+     "Ce material este atras de magnet?",
+     "Fierul",
+     "Lemnul",
+     "Sticla",
+     "Plasticul"
+    ]
+   ],
+   "tf": [
+    [
+     "Orice metal este atras de magnet.",
+     false
+    ],
+    [
+     "Un electromagnet își pierde magnetismul când curentul se oprește.",
+     true
+    ]
+   ]
+  },
+  "fiz.light.8": {
+   "q": [
+    [
+     "Cum se propagă lumina într-un mediu omogen?",
+     "În linie dreaptă",
+     "În zigzag",
+     "În cerc",
+     "Nu se propagă"
+    ],
+    [
+     "Care este o sursă de lumină primară?",
+     "Soarele",
+     "Luna",
+     "Oglinda",
+     "Un perete alb"
+    ],
+    [
+     "Ce tip de corp lasă lumina să treacă complet?",
+     "Transparent",
+     "Opac",
+     "Translucid",
+     "Metalic"
+    ],
+    [
+     "Ce se formează în spatele unui corp opac luminat?",
+     "Umbra",
+     "Raza",
+     "Curcubeul",
+     "Reflexia"
+    ]
+   ],
+   "tf": [
+    [
+     "Luna este sursă primară de lumină.",
+     false
+    ],
+    [
+     "Umbra este o consecință a propagării rectilinii a luminii.",
+     true
+    ]
+   ],
+   "s": [
+    [
+     "Pune fiecare corp în grupa potrivită.",
+     "Sursă de lumină",
+     "Nu este sursă",
+     [
+      "Soarele",
+      "becul",
+      "lumânarea aprinsă",
+      "ecranul telefonului aprins"
+     ],
+     [
+      "Luna",
+      "masa",
+      "carte",
+      "oglinda"
+     ]
+    ]
+   ]
+  },
+  "fiz.reflection.8": {
+   "q": [
+    [
+     "Care este legea reflexiei?",
+     "Unghiul de incidență este egal cu unghiul de reflexie",
+     "Unghiul de incidență este dublul celui de reflexie",
+     "Cele două unghiuri sunt mereu 90°",
+     "Nu există legi"
+    ],
+    [
+     "Care este unghiul de reflexie dacă unghiul de incidență este 40°?",
+     "40°",
+     "50°",
+     "80°",
+     "20°"
+    ],
+    [
+     "Cum este imaginea într-o oglindă plană?",
+     "Virtuală și de aceeași mărime",
+     "Reală și mai mare",
+     "Virtuală și mai mică",
+     "Reală și întoarsă"
+    ],
+    [
+     "Care este unghiul de reflexie dacă unghiul de incidență este 25°?",
+     "25°",
+     "65°",
+     "50°",
+     "155°"
+    ],
+    [
+     "Ce apare când lumina cade pe o suprafață rugoasă?",
+     "Reflexie difuză",
+     "Reflexie regulată",
+     "Refracție totală",
+     "Nicio reflexie"
+    ]
+   ],
+   "tf": [
+    [
+     "Unghiurile se măsoară față de normala la suprafață.",
+     true
+    ],
+    [
+     "O suprafață rugoasă nu reflectă lumina deloc.",
+     false
+    ],
+    [
+     "Imaginea dintr-o oglindă plană este virtuală.",
+     true
+    ]
+   ]
+  },
+  "fiz.lenses.8": {
+   "q": [
+    [
+     "De ce pare frânt un creion într-un pahar cu apă?",
+     "Din cauza refracției",
+     "Din cauza reflexiei totale",
+     "Din cauza umbrei",
+     "Din cauza magnetismului"
+    ],
+    [
+     "Ce lentilă adună razele de lumină?",
+     "Convergentă",
+     "Divergentă",
+     "Plană",
+     "Opacă"
+    ],
+    [
+     "Ce tip de lentilă este lupa?",
+     "Convergentă",
+     "Divergentă",
+     "Plan-paralelă",
+     "Cilindrică"
+    ],
+    [
+     "Ce lentile folosesc miopii?",
+     "Divergente",
+     "Convergente",
+     "Plane",
+     "Colorate"
+    ]
+   ],
+   "tf": [
+    [
+     "Refracția apare la trecerea luminii dintr-un mediu în altul.",
+     true
+    ],
+    [
+     "Lentila divergentă adună razele într-un punct.",
+     false
+    ]
+   ]
+  }
+ }
+}

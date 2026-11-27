@@ -1,0 +1,552 @@
+[
+  {
+    "id": "exp.bio.living.5",
+    "skillId": "bio.living.5",
+    "title": {
+      "ro": "Caracteristicile ființelor vii",
+      "en": "Characteristics of living things"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Ființele vii se hrănesc, respiră, cresc, se înmulțesc, reacționează la mediu și mor. Fiecare dintre aceste însușiri se numește caracteristică a vieții."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "O piatră nu se hrănește și nu crește, deci este neînsuflețită. O plantă crește, se hrănește singură prin frunze și se înmulțește prin semințe, deci este vie."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐕",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Ființele vii sunt făcute din celule. Pentru a vedea dacă ceva este viu, verificăm mai multe caracteristici, nu doar una: un nor se mișcă, dar nu este viu."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍄",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.living.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.living.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.cell.5",
+    "skillId": "bio.cell.5",
+    "title": {
+      "ro": "Celula: părțile și rolul ei",
+      "en": "The cell: parts and role"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Celula este unitatea de bază a ființelor vii: cărămida din care sunt construite plantele, animalele și ciupercile. Unele ființe, ca bacteriile, au o singură celulă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔬",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Celula are membrană (învelișul), citoplasmă (lichidul dinăuntru) și nucleu (conducerea celulei, care păstrează informația)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧫",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Celula vegetală are în plus perete celular, care îi dă formă, și cloroplaste verzi, cu care plantele fac hrană. Celula animală nu are perete și nici cloroplaste."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌿",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.cell.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.cell.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.microscope.5",
+    "skillId": "bio.microscope.5",
+    "title": {
+      "ro": "Microscopul și mărirea",
+      "en": "The microscope and magnification"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Microscopul optic ne arată lucruri prea mici pentru ochi, cum sunt celulele. Privim prin ocular, iar lentilele din apropierea preparatului se numesc obiective."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔬",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Mărirea totală este mărirea ocularului înmulțită cu mărirea obiectivului. Dacă ocularul mărește de 10 ori, iar obiectivul de 40 de ori, vedem preparatul mărit de 400 de ori."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👁️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Preparatul se pune pe platină, între lamă și lamelă. Lumina vine de jos, de la oglindă sau de la lampă, iar claritatea se reglează cu șurubul macrometric și cel micrometric."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🔍",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.microscope.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.microscope.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.kingdoms.5",
+    "skillId": "bio.kingdoms.5",
+    "title": {
+      "ro": "Regnurile lumii vii",
+      "en": "The kingdoms of living things"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Oamenii de știință grupează ființele vii în regnuri. Cele mai cunoscute sunt regnul plantelor, regnul animalelor și regnul ciupercilor."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌳",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Plantele fac singure hrană prin fotosinteză. Animalele nu pot face hrană, ci o iau de la alte viețuitoare și, de obicei, se mișcă. Ciupercile nu au clorofilă și se hrănesc cu materie organică."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐘",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Mai există bacterii și alte organisme foarte mici, formate dintr-o singură celulă, care se grupează separat. Fiecare regn are caracteristici proprii după care îl recunoaștem."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍄",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.kingdoms.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.kingdoms.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.plant.groups.5",
+    "skillId": "bio.plant.groups.5",
+    "title": {
+      "ro": "Grupele de plante",
+      "en": "Groups of plants"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Plantele se împart în grupe după organele pe care le au. Algele nu au rădăcină, tulpină și frunze adevărate, iar mușchii sunt plante mici, fără flori."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌿",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Feriga are rădăcină, tulpină și frunze, dar nu face flori; se înmulțește prin spori. Gimnospermele, de exemplu bradul, au semințe neacoperite într-un fruct și de obicei conuri."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌲",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Angiospermele au flori și semințe închise în fruct, de exemplu mărul sau grâul. Sunt cea mai numeroasă și mai variată grupă de plante."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌸",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.plant.groups.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.plant.groups.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.animal.inv.5",
+    "skillId": "bio.animal.inv.5",
+    "title": {
+      "ro": "Animalele nevertebrate",
+      "en": "Invertebrate animals"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Nevertebratele sunt animale fără coloană vertebrală. Cele mai multe animale de pe Pământ sunt nevertebrate."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐛",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Insectele au corpul împărțit în cap, torace și abdomen, șase picioare și, de obicei, aripi: albina, fluturele, mușca. Păianjenii au opt picioare."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦋",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Melcii și scoicile au corpul moale și, de multe ori, cochilie. Râmele au corpul alungit, format din inele. Racii au carapace și multe picioare articulate."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐌",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.animal.inv.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.animal.inv.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.animal.vert.5",
+    "skillId": "bio.animal.vert.5",
+    "title": {
+      "ro": "Vertebratele și grupele lor",
+      "en": "Vertebrates and their groups"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Vertebratele au coloană vertebrală. Se împart în cinci clase: pești, amfibieni, reptile, păsări și mamifere."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐟",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Peștii respiră cu branhii și au solzi. Amfibienii, ca broasca, trăiesc și în apă, și pe uscat și au pielea umedă. Reptilele, ca șopârla, au solzi uscați și ouă cu coajă moale."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐸",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Păsările au pene, cioc și ouă cu coajă tare. Mamiferele au păr și își hrănesc puii cu lapte. Majoritatea nasc pui vii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐦",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.animal.vert.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.animal.vert.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.ecosystem.5",
+    "skillId": "bio.ecosystem.5",
+    "title": {
+      "ro": "Ecosistemul",
+      "en": "The ecosystem"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Un ecosistem este un loc în care ființele vii și mediul lor neînsuflețit (apă, aer, sol, lumină) se influențează între ele. Exemple: pădurea, lacul, pajiștea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌲",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ecosistemul are o parte vie, formată din plante, animale, ciuperci și bacterii, și o parte neînsuflețită: lumină, temperatură, apă, aer, sol."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦊",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare ființă își are locul ei în ecosistem. Dacă dispare una, se schimbă și viața celorlalte, pentru că ele depind una de alta."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍄",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.ecosystem.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.ecosystem.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.foodchain.5",
+    "skillId": "bio.foodchain.5",
+    "title": {
+      "ro": "Lanțuri trofice",
+      "en": "Food chains"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Lanțul trofic arată cine mănâncă pe cine. Începe întotdeauna cu o plantă, numită producător, pentru că ea își face singură hrana."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌾",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Animalele care mănâncă plante sunt consumatori de ordinul I (ierbivore). Cele care mănâncă ierbivore sunt consumatori de ordinul II (carnivore)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐁",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Descompunătorii, ca ciupercile și bacteriile, descompun resturile ființelor moarte și întorc substanțe în sol. Săgeata din lanț arată către cel care mănâncă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦉",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.foodchain.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.foodchain.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.adapt.5",
+    "skillId": "bio.adapt.5",
+    "title": {
+      "ro": "Adaptări la mediul de viață",
+      "en": "Adaptations to the environment"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Adaptarea este o însușire care ajută o ființă vie să trăiască într-un anumit mediu. Cactusul are tulpina groasă, care păstrează apa, și frunze transformate în spini."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐪",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Ursul polar are blană deasă și strat gros de grăsime pentru frig. Cămila stă mult fără apă și are tălpi late pentru nisip. Peștii au corp alungit și înoată cu înotătoare."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐻‍❄️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Camuflajul face animalul greu de văzut: cameleonul își schimbă culoarea. Adaptările apar în timp, în multe generații, nu de la o zi la alta."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌵",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.adapt.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.adapt.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.protect.5",
+    "skillId": "bio.protect.5",
+    "title": {
+      "ro": "Ocrotirea naturii",
+      "en": "Protecting nature"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Omul poate strica natura prin poluare, defrișări, vânat necontrolat și risipă. Dispar astfel păduri, ape curate și animale."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌍",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Se ocrotesc natura și speciile rare prin parcuri naționale, rezervații și legi. În România există parcuri naționale, de exemplu în Carpați și în Delta Dunării."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "♻️",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Fiecare poate ajuta: colectăm selectiv deșeurile, economisim apa, nu rupem florile rare, nu aruncăm gunoaie în natură și plantăm copaci."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🐾",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.protect.5",
+      "kind": "explanation",
+      "title": "Explanation for bio.protect.5",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]

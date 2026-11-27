@@ -1,0 +1,602 @@
+[
+  {
+    "id": "exp.bio.body.org.7",
+    "skillId": "bio.body.org.7",
+    "title": {
+      "ro": "Organizarea corpului uman",
+      "en": "Organisation of the human body"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Corpul uman are mai multe niveluri de organizare: celulele formează țesuturi, țesuturile formează organe, iar organele care lucrează împreună formează sisteme de organe."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧬",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Există patru tipuri de țesuturi: epitelial (acoperă), conjunctiv (susține și leagă), muscular (mișcă) și nervos (transmite semnale)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫀",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Sistemele de organe sunt: osos, muscular, digestiv, respirator, circulator, excretor, nervos, endocrin și reproducător. Ele colaborează pentru a ține corpul în viață."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧍",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.body.org.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.body.org.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.skeleton.7",
+    "skillId": "bio.skeleton.7",
+    "title": {
+      "ro": "Sistemul osos",
+      "en": "The skeletal system"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Scheletul susține corpul, apără organele (craniul — creierul, cutia toracică — inima și plămânii) și, împreună cu mușchii, ne permite să ne mișcăm."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦴",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Oasele pot fi lungi (femurul), scurte (din încheietura mâinii) sau late (omoplatul). Articulațiile leagă oasele între ele."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💀",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Un adult are aproximativ 206 oase. Calciul și mișcarea fac oasele puternice. Oasele conțin și măduvă osoasă, unde se formează celulele sângelui."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦵",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.skeleton.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.skeleton.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.muscles.7",
+    "skillId": "bio.muscles.7",
+    "title": {
+      "ro": "Sistemul muscular",
+      "en": "The muscular system"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Mușchii se contractă și se relaxează, iar astfel mișcă oasele. Mușchii scheletici sunt legați de oase prin tendoane."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💪",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Există trei tipuri de mușchi: scheletici (voluntari), netezi (în pereții organelor, involuntari) și mușchiul inimii (cardiac, involuntar)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🏃",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Mușchii lucrează în perechi: când bicepsul se contractă, tricepsul se relaxează, și brațul se îndoaie. Mișcarea regulată îi întărește."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫀",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.muscles.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.muscles.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.digestive.7",
+    "skillId": "bio.digestive.7",
+    "title": {
+      "ro": "Sistemul digestiv",
+      "en": "The digestive system"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Digestia transformă alimentele în substanțe mici, pe care sângele le poate duce la celule. Începe în gură, unde dinții mărunțesc hrana, iar saliva o înmoaie."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍎",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Hrana trece prin esofag în stomac, unde suc gastric o amestecă. În intestinul subțire se absorb substanțele utile; în intestinul gros se absoarbe apa."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫃",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Ficatul produce bila, iar pancreasul produce sucuri digestive. Resturile neabsorbite se elimină."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥄",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.digestive.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.digestive.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.nutrition.7",
+    "skillId": "bio.nutrition.7",
+    "title": {
+      "ro": "Nutrienți și alimentație sănătoasă",
+      "en": "Nutrients and healthy eating"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Nutrienții sunt substanțele din alimente de care corpul are nevoie: glucide (energie), lipide (rezervă de energie), proteine (construcție), vitamine, minerale și apă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥦",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Proteinele se găsesc în carne, ouă, lapte și leguminoase. Glucidele se găsesc în pâine, paste, fructe. Vitaminele și mineralele se găsesc în legume și fructe."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🍞",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "O alimentație sănătoasă este variată și echilibrată. Dulciurile, sucurile și grăsimile se consumă rar, iar apa se bea zilnic."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🥛",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.nutrition.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.nutrition.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.respiratory.7",
+    "skillId": "bio.respiratory.7",
+    "title": {
+      "ro": "Sistemul respirator",
+      "en": "The respiratory system"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Aerul intră pe nas sau pe gură, trece prin faringe, laringe și trahee, apoi prin bronhii ajunge la plămâni."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫁",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "În plămâni, în mici saci numiți alveole, oxigenul trece în sânge, iar dioxidul de carbon trece din sânge în aer și este expirat."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👃",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Diafragma și mușchii dintre coaste ajută la inspirație și expirație. Fumatul și aerul poluat strică plămânii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌬️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.respiratory.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.respiratory.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.circulatory.7",
+    "skillId": "bio.circulatory.7",
+    "title": {
+      "ro": "Sistemul circulator și sângele",
+      "en": "The circulatory system and blood"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Inima pompează sângele prin vase: arterele duc sângele de la inimă, venele îl aduc la inimă, iar capilarele fac schimbul de substanțe cu celulele."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "❤️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Sângele are plasmă și celule: globulele roșii duc oxigen, globulele albe apără organismul, iar trombocitele ajută la oprirea sângerării."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🩸",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Inima are patru camere: două atrii și două ventricule. Circulația mică duce sângele la plămâni, iar cea mare, în tot corpul. Pulsul arată câte bătăi are inima într-un minut."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🩺",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.circulatory.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.circulatory.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.excretory.7",
+    "skillId": "bio.excretory.7",
+    "title": {
+      "ro": "Sistemul excretor",
+      "en": "The excretory system"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Excreția scoate din corp substanțele de care nu mai are nevoie sau care fac rău. Organele principale sunt rinichii, ureterele, vezica urinară și uretra."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🫘",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Rinichii filtrează sângele și produc urina. Urina se adună în vezica urinară și se elimină prin uretră."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "💧",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Corpul elimină deșeuri și prin piele (transpirație) și prin plămâni (dioxid de carbon). Apa băută suficient ajută rinichii."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🚽",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.excretory.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.excretory.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.nervous.7",
+    "skillId": "bio.nervous.7",
+    "title": {
+      "ro": "Sistemul nervos",
+      "en": "The nervous system"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Sistemul nervos primește informații, le prelucrează și dă comenzi. Are un centru (encefalul și măduva spinării) și nervi care străbat tot corpul."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧠",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Encefalul cuprinde creierul (gândire, memorie, simțuri), cerebelul (echilibru și coordonare) și trunchiul cerebral (respirație, bătăile inimii)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "⚡",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Reflexul este un răspuns rapid, fără să ne gândim, de exemplu tragem mâna de pe ceva fierbinte. Somnul și odihna ajută sistemul nervos."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🖐️",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.nervous.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.nervous.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.senses.7",
+    "skillId": "bio.senses.7",
+    "title": {
+      "ro": "Organele de simț",
+      "en": "The sense organs"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Avem cinci simțuri: văzul (ochi), auzul (urechi), mirosul (nas), gustul (limbă) și simțul tactil (piele)."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👁️",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "În ochi, lumina trece prin cristalin și formează imaginea pe retină; nervul optic o trimite la creier. Urechea are trei părți: externă, medie și internă; vibrațiile sunetului ajung la nervul auditiv."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👂",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Limba are papile gustative pentru dulce, sărat, acru și amar. Pielea simte atingerea, presiunea, căldura și frigul. Protejăm ochii și urechile de zgomot și de lumină prea puternică."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👅",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.senses.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.senses.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.endocrine.7",
+    "skillId": "bio.endocrine.7",
+    "title": {
+      "ro": "Glandele și hormonii",
+      "en": "Glands and hormones"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Glandele endocrine produc hormoni, substanțe care circulă prin sânge și reglează creșterea, metabolismul, somnul, starea de spirit."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🧪",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Glanda tiroidă reglează metabolismul, pancreasul produce insulină care reglează glicemia, iar hipofiza comandă alte glande și influențează creșterea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🦋",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "În adolescență, hormonii sexuali duc la schimbări ale corpului. Sistemul endocrin lucrează împreună cu sistemul nervos."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "📈",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.endocrine.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.endocrine.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  },
+  {
+    "id": "exp.bio.reproduction.7",
+    "skillId": "bio.reproduction.7",
+    "title": {
+      "ro": "Reproducerea și dezvoltarea omului",
+      "en": "Human reproduction and development"
+    },
+    "reviewStatus": "beta",
+    "frames": [
+      {
+        "text": {
+          "ro": "Omul se înmulțește prin reproducere sexuată: celula-ou (zigot) se formează când gametul feminin și cel masculin se unesc."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👶",
+          "count": 1
+        }
+      },
+      {
+        "text": {
+          "ro": "Dezvoltarea embrionului are loc în uter, pe parcursul sarcinii, de aproximativ nouă luni. După naștere urmează copilăria, adolescența, maturitatea și bătrânețea."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "🌱",
+          "count": 2
+        }
+      },
+      {
+        "text": {
+          "ro": "Adolescența aduce schimbări fizice și emoționale. Igiena, alimentația echilibrată și informarea corectă ajută la dezvoltare sănătoasă."
+        },
+        "visual": {
+          "kind": "objects",
+          "icon": "👨‍👩‍👧",
+          "count": 3
+        }
+      }
+    ],
+    "provenance": {
+      "id": "prov.exp.bio.reproduction.7",
+      "kind": "explanation",
+      "title": "Explanation for bio.reproduction.7",
+      "author": "Ludiko",
+      "source": "ai-draft",
+      "licence": "OWN",
+      "notes": "original explanation drafted for the competence; awaiting human review"
+    }
+  }
+]
