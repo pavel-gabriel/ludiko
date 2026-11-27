@@ -1686,7 +1686,7 @@
       "go": "Let's go!",
       "nextBadge": "Next",
       "stateKnown": "Already known",
-      "progress": "Islands done: {{done}} of {{total}}",
+      "progress": "Islands done up to your grade: {{done}} of {{total}}",
       "knownNote": "From the check: you already know {{n}}. We skip those.",
       "stop": "Stop {{n}}",
       "noNext": "You have explored everything open right now. Well done! Keep going with the islands in progress.",

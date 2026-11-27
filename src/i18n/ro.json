@@ -1700,7 +1700,7 @@
       "go": "Hai la insulă!",
       "nextBadge": "Următoarea",
       "stateKnown": "Știi deja",
-      "progress": "Insule gata: {{done}} din {{total}}",
+      "progress": "Insule gata până la clasa ta: {{done}} din {{total}}",
       "knownNote": "Din verificare: știi deja {{n}}. Pe acestea le sărim.",
       "stop": "Oprirea {{n}}",
       "noNext": "Ai explorat tot ce e deschis acum. Bravo! Continuă cu insulele în lucru.",
