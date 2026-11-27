@@ -48,6 +48,8 @@ import './stiinte';
 import './istGenerators';
 // Geography (geo) generators
 import './geoDirections';
+// Geography gimnaziu (V-VIII): curated quiz, capitals, sorting, EU, counties, rivers, peaks, orders, world, relief units, map scale
+import './geoGimnaziu';
 // Logic puzzles (patterns, odd-one-out, analogies, mini-sudoku, robot path, who-lives-where)
 import './logicPatterns';
 import './logicOddOne';

@@ -1,0 +1,3257 @@
+{
+"provenance": {
+"id": "prov.data.geo.quiz-gimnaziu",
+"kind": "data",
+"title": "Ludiko curated geography questions for grades V-VIII",
+"author": "Ludiko",
+"source": "ai-draft",
+"licence": "OWN",
+"notes": "Original multiple-choice and true/false items drafted for the gimnaziu (V-VIII) geography programa; no textbook, workbook or exam material. Round or 'aproximativ' figures only. Awaiting review by a geography teacher."
+},
+"topics": {
+"universe": {
+"mcq": [
+[
+"Ce este Soarele?",
+"o stea",
+"o planetă",
+"un satelit natural",
+"o cometă"
+],
+[
+"Care este a treia planetă față de Soare?",
+"Pământul",
+"Venus",
+"Marte",
+"Mercur"
+],
+[
+"Cum se numește satelitul natural al Pământului?",
+"Luna",
+"Soarele",
+"Marte",
+"Venus"
+],
+[
+"Care este cea mai mare planetă din Sistemul Solar?",
+"Jupiter",
+"Pământul",
+"Marte",
+"Mercur"
+],
+[
+"Care planetă este cunoscută drept „planeta roșie”?",
+"Marte",
+"Venus",
+"Saturn",
+"Neptun"
+],
+[
+"Câte planete are Sistemul Solar?",
+"opt",
+"șase",
+"nouă",
+"zece"
+],
+[
+"Cum se numește galaxia în care se află Sistemul Solar?",
+"Calea Lactee",
+"Andromeda",
+"Orion",
+"Lumea Mare"
+],
+[
+"Care planetă este cea mai apropiată de Soare?",
+"Mercur",
+"Venus",
+"Pământul",
+"Marte"
+],
+[
+"Care planetă este cunoscută pentru inelele ei vizibile?",
+"Saturn",
+"Marte",
+"Venus",
+"Mercur"
+],
+[
+"În cât timp ajunge lumina Soarelui la Pământ?",
+"aproximativ 8 minute",
+"aproximativ 8 secunde",
+"aproximativ 8 ore",
+"aproximativ 8 zile"
+],
+[
+"Ce se află în centrul Sistemului Solar?",
+"Soarele",
+"Pământul",
+"Luna",
+"Jupiter"
+]
+],
+"tf": [
+[
+"Luna are lumină proprie.",
+false
+],
+[
+"Pământul este o planetă.",
+true
+],
+[
+"Soarele este o planetă.",
+false
+],
+[
+"Marte este mai aproape de Soare decât Venus.",
+false
+],
+[
+"Pământul are un singur satelit natural.",
+true
+],
+[
+"Planetele se rotesc în jurul Soarelui.",
+true
+],
+[
+"Soarele este o stea.",
+true
+],
+[
+"Luna se rotește în jurul Pământului.",
+true
+]
+]
+},
+"motions": {
+"mcq": [
+[
+"Cum se numește mișcarea Pământului în jurul axei sale?",
+"rotație",
+"revoluție",
+"oscilație",
+"translație lunară"
+],
+[
+"Ce se produce din cauza rotației Pământului?",
+"alternanța zilei cu noaptea",
+"alternanța anotimpurilor",
+"apariția mareelor mici",
+"înclinarea axei"
+],
+[
+"Cât durează o rotație completă a Pământului?",
+"aproximativ 24 de ore",
+"aproximativ 12 ore",
+"aproximativ 30 de zile",
+"aproximativ un an"
+],
+[
+"Cum se numește mișcarea Pământului în jurul Soarelui?",
+"revoluție",
+"rotație",
+"răsărit",
+"eclipsă"
+],
+[
+"Cât durează o revoluție completă a Pământului în jurul Soarelui?",
+"aproximativ un an",
+"o zi",
+"o lună",
+"o săptămână"
+],
+[
+"Câte zile are un an obișnuit?",
+"365",
+"360",
+"300",
+"366"
+],
+[
+"Ce produce succesiunea anotimpurilor?",
+"înclinarea axei și revoluția în jurul Soarelui",
+"rotația în jurul axei",
+"mișcarea Lunii",
+"vânturile"
+],
+[
+"În ce sens se rotește Pământul în jurul axei sale?",
+"de la vest spre est",
+"de la est spre vest",
+"de la nord spre sud",
+"de la sud spre nord"
+],
+[
+"Câte ore are o zi?",
+"24",
+"12",
+"48",
+"60"
+],
+[
+"Ce anotimp este în emisfera nordică când în cea sudică este iarnă?",
+"vara",
+"iarna",
+"primăvara",
+"toamna"
+]
+],
+"tf": [
+[
+"Ziua și noaptea apar din cauza rotației Pământului.",
+true
+],
+[
+"Anotimpurile apar din cauza rotației Pământului în jurul axei.",
+false
+],
+[
+"Anul bisect are 366 de zile.",
+true
+],
+[
+"Pământul se rotește în jurul Soarelui într-o zi.",
+false
+],
+[
+"Vara, în emisfera nordică, zilele sunt mai lungi decât iarna.",
+true
+],
+[
+"Axa Pământului este înclinată.",
+true
+],
+[
+"Soarele se rotește în jurul Pământului.",
+false
+]
+]
+},
+"coords": {
+"mcq": [
+[
+"Cum se numește linia imaginară care împarte Pământul în emisfera nordică și emisfera sudică?",
+"Ecuatorul",
+"Meridianul zero",
+"Tropicul Racului",
+"Cercul polar"
+],
+[
+"Ce valoare are latitudinea Ecuatorului?",
+"0°",
+"90°",
+"180°",
+"45°"
+],
+[
+"Cum se numesc liniile care unesc Polul Nord cu Polul Sud?",
+"meridiane",
+"paralele",
+"curbe de nivel",
+"izobare"
+],
+[
+"Cum se numesc cercurile paralele cu Ecuatorul?",
+"paralele",
+"meridiane",
+"diametre",
+"izoterme"
+],
+[
+"Care meridian este considerat meridianul de origine (0°)?",
+"meridianul Greenwich",
+"meridianul Ecuatorului",
+"meridianul Polului",
+"meridianul 180°"
+],
+[
+"Care este latitudinea maximă posibilă?",
+"90°",
+"180°",
+"45°",
+"360°"
+],
+[
+"Care este longitudinea maximă posibilă (est sau vest)?",
+"180°",
+"90°",
+"45°",
+"360°"
+],
+[
+"Ce coordonată arată distanța unui loc față de Ecuator?",
+"latitudinea",
+"longitudinea",
+"altitudinea",
+"scara"
+],
+[
+"Ce coordonată arată distanța unui loc față de meridianul zero?",
+"longitudinea",
+"latitudinea",
+"altitudinea",
+"adâncimea"
+],
+[
+"În ce emisferă se află România față de Ecuator?",
+"nordică",
+"sudică",
+"estică",
+"vestică"
+],
+[
+"Cum se numesc cele două puncte în care axa Pământului „înțeapă” suprafața?",
+"polii",
+"tropicele",
+"meridianele",
+"paralelele"
+]
+],
+"tf": [
+[
+"Ecuatorul are latitudinea 0°.",
+true
+],
+[
+"România se află în emisfera sudică.",
+false
+],
+[
+"Meridianele sunt cercuri paralele între ele.",
+false
+],
+[
+"Paralelele sunt paralele cu Ecuatorul.",
+true
+],
+[
+"Latitudinea poate fi nordică sau sudică.",
+true
+],
+[
+"Polul Nord are latitudinea 90° nord.",
+true
+],
+[
+"România se află aproximativ între 43° și 48° latitudine nordică.",
+true
+]
+]
+},
+"maps": {
+"mcq": [
+[
+"Cum se numește harta întregii lumi?",
+"planiglobul (planisfera)",
+"planul orașului",
+"atlasul zonei",
+"globul local"
+],
+[
+"Ce explică semnele de pe o hartă?",
+"legenda",
+"scara",
+"titlul",
+"coordonatele"
+],
+[
+"Ce unesc curbele de nivel?",
+"puncte cu aceeași altitudine",
+"orașe mari",
+"puncte cu aceeași temperatură",
+"granițe"
+],
+[
+"Ce culoare arată de obicei apele pe hărți?",
+"albastru",
+"verde",
+"maro",
+"roșu"
+],
+[
+"Pe o hartă fizică, ce culoare arată de obicei câmpiile joase?",
+"verde",
+"albastru",
+"alb",
+"maro închis"
+],
+[
+"Pe o hartă fizică, ce culoare arată de obicei munții înalți?",
+"maro",
+"verde",
+"albastru",
+"galben deschis"
+],
+[
+"Față de ce nivel se măsoară altitudinea absolută?",
+"nivelul mării",
+"nivelul râului",
+"nivelul orașului",
+"vârful muntelui"
+],
+[
+"Ce arată o hartă politică?",
+"țările și granițele lor",
+"relieful",
+"clima",
+"vegetația"
+],
+[
+"Ce arată o hartă fizică?",
+"relieful și apele",
+"doar granițele",
+"doar orașele",
+"doar drumurile"
+],
+[
+"Ce instrument ne arată direcția nord?",
+"busola",
+"termometrul",
+"barometrul",
+"pluviometrul"
+]
+],
+"tf": [
+[
+"Harta este o reprezentare micșorată a Pământului sau a unei părți din el.",
+true
+],
+[
+"Scara hărții arată câte ore durează drumul.",
+false
+],
+[
+"Legenda hărții explică semnele folosite pe ea.",
+true
+],
+[
+"Curbele de nivel apropiate arată un teren abrupt.",
+true
+],
+[
+"Planul unui oraș este o hartă cu scară foarte mare.",
+true
+],
+[
+"Pe hărți, nordul se află de obicei în partea de sus.",
+true
+]
+]
+},
+"relief": {
+"mcq": [
+[
+"Ce formă de relief este mai înaltă decât dealurile?",
+"muntele",
+"câmpia",
+"valea",
+"lunca"
+],
+[
+"Cum se numește forma de relief joasă și aproape plană?",
+"câmpia",
+"muntele",
+"vulcanul",
+"peștera"
+],
+[
+"Ce este un vulcan?",
+"o formă de relief prin care iese lavă din interiorul Pământului",
+"un lac adânc",
+"un râu de munte",
+"un deal acoperit de pădure"
+],
+[
+"Cum se numește mișcarea bruscă a scoarței terestre?",
+"cutremur",
+"furtună",
+"inundație",
+"avalanșă"
+],
+[
+"Care este cel mai înalt vârf de pe Pământ?",
+"Everest",
+"Mont Blanc",
+"Moldoveanu",
+"Kilimanjaro"
+],
+[
+"Cum se numește partea cea mai înaltă a unui munte?",
+"vârf",
+"bază",
+"vale",
+"culoar"
+],
+[
+"Ce poate sculpta relieful încet, prin ape, vânt și gheață?",
+"eroziunea",
+"rotația",
+"revoluția",
+"evaporarea"
+],
+[
+"Ce formă de relief este de obicei străbătută de un râu?",
+"valea",
+"vârful",
+"craterul",
+"creasta"
+],
+[
+"Cum se numesc cavitățile naturale din roci, formate mai ales în calcar?",
+"peșteri",
+"delte",
+"dune",
+"văi glaciare"
+],
+[
+"Care este cea mai adâncă fosă oceanică?",
+"Fosa Marianelor",
+"Marea Neagră",
+"Lacul Baikal",
+"Canalul Mânecii"
+]
+],
+"tf": [
+[
+"Câmpiile au altitudini mai mici decât munții.",
+true
+],
+[
+"Podișurile sunt forme de relief plate și înalte.",
+true
+],
+[
+"Din craterul unui vulcan poate ieși lavă.",
+true
+],
+[
+"Cutremurele se produc în atmosferă.",
+false
+],
+[
+"Everest este în Europa.",
+false
+],
+[
+"Dunele sunt forme de relief formate de vânt în deșerturi.",
+true
+]
+]
+},
+"climate": {
+"mcq": [
+[
+"Cum se numește starea aerului într-un loc, într-un moment dat?",
+"vremea",
+"clima",
+"relieful",
+"scara"
+],
+[
+"Cum se numește vremea obișnuită dintr-o regiune, observată mulți ani?",
+"clima",
+"vremea de azi",
+"prognoza",
+"altitudinea"
+],
+[
+"Cu ce instrument se măsoară temperatura aerului?",
+"termometru",
+"barometru",
+"pluviometru",
+"anemometru"
+],
+[
+"Cu ce instrument se măsoară cantitatea de precipitații?",
+"pluviometru",
+"termometru",
+"busolă",
+"barometru"
+],
+[
+"Cu ce instrument se măsoară presiunea atmosferică?",
+"barometru",
+"termometru",
+"pluviometru",
+"seismograf"
+],
+[
+"Ce se întâmplă, în general, cu temperatura aerului când urcăm pe munte?",
+"scade",
+"crește",
+"rămâne la fel",
+"se dublează"
+],
+[
+"Ce zonă termică se află în jurul Ecuatorului?",
+"zona caldă",
+"zona temperată",
+"zona rece",
+"zona polară de gheață"
+],
+[
+"În ce zonă termică se află România?",
+"zona temperată",
+"zona caldă",
+"zona rece",
+"zona ecuatorială"
+],
+[
+"Cum se numește aerul care se mișcă pe orizontală?",
+"vânt",
+"ceață",
+"ploaie",
+"rouă"
+],
+[
+"Care strat al atmosferei ne conține vremea (nori, ploi)?",
+"troposfera",
+"stratosfera",
+"exosfera",
+"ionosfera"
+],
+[
+"Ce gaz din atmosferă este indispensabil respirației noastre?",
+"oxigenul",
+"heliul",
+"neonul",
+"hidrogenul"
+]
+],
+"tf": [
+[
+"Vremea se poate schimba de la o zi la alta.",
+true
+],
+[
+"Clima unui loc se schimbă de la o oră la alta.",
+false
+],
+[
+"Zonele polare sunt foarte reci.",
+true
+],
+[
+"Ploaia, ninsoarea și grindina sunt precipitații.",
+true
+],
+[
+"Pe Ecuator clima este rece tot anul.",
+false
+],
+[
+"Atmosfera ne protejează de o parte din radiațiile Soarelui.",
+true
+]
+]
+},
+"waters": {
+"mcq": [
+[
+"Care este cel mai mare ocean?",
+"Oceanul Pacific",
+"Oceanul Atlantic",
+"Oceanul Indian",
+"Oceanul Arctic"
+],
+[
+"Ce fel de apă este cea din oceane?",
+"sărată",
+"dulce",
+"distilată",
+"înghețată mereu"
+],
+[
+"Cum se numește locul în care un râu începe?",
+"izvor",
+"vărsare",
+"confluență",
+"estuar"
+],
+[
+"Cum se numește locul în care un râu se varsă în mare sau ocean?",
+"vărsare",
+"izvor",
+"afluent",
+"cascadă"
+],
+[
+"Cum se numește un râu mic care se varsă într-un râu mai mare?",
+"afluent",
+"fluviu",
+"estuar",
+"canal"
+],
+[
+"Ce este un lac?",
+"o întindere de apă înconjurată de uscat",
+"un râu foarte lung",
+"o parte din ocean",
+"un izvor de munte"
+],
+[
+"Care este ordinea corectă a ciclului apei?",
+"evaporare, condensare, precipitații",
+"precipitații, evaporare, rotație",
+"condensare, rotație, evaporare",
+"revoluție, evaporare, ploaie"
+],
+[
+"Ce sunt ghețarii?",
+"mase mari de gheață care se mișcă încet",
+"râuri de munte",
+"lacuri sărate",
+"izvoare calde"
+],
+[
+"Unde se află cea mai mare parte a apei de pe Pământ?",
+"în oceane și mări",
+"în râuri",
+"în lacuri",
+"în atmosferă"
+],
+[
+"Care este cel mai adânc lac de pe Pământ?",
+"Baikal",
+"Victoria",
+"Snagov",
+"Techirghiol"
+]
+],
+"tf": [
+[
+"Apa râurilor este, în general, dulce.",
+true
+],
+[
+"Ghețarii se află doar la tropice.",
+false
+],
+[
+"Un fluviu se varsă în mare sau ocean.",
+true
+],
+[
+"Apa de ploaie provine din vaporii de apă condensați.",
+true
+],
+[
+"Mările fac parte din oceane sau sunt legate de ele.",
+true
+],
+[
+"Toate lacurile au apă sărată.",
+false
+]
+]
+},
+"life": {
+"mcq": [
+[
+"Ce zonă de vegetație are copaci foarte înalți și mult verde, în zona ecuatorială?",
+"pădurea ecuatorială (junglă)",
+"tundra",
+"stepa",
+"deșertul"
+],
+[
+"Ce zonă de vegetație are mușchi și licheni, în apropierea polilor?",
+"tundra",
+"savana",
+"pădurea ecuatorială",
+"stepa"
+],
+[
+"Ce zonă are ierburi înalte și puțini copaci, în zona caldă, cu animale ca leul și elefantul?",
+"savana",
+"tundra",
+"taigaua",
+"pădurea de foioase"
+],
+[
+"Ce zonă de vegetație se află în zonele foarte uscate și are puține plante?",
+"deșertul",
+"pădurea ecuatorială",
+"taigaua",
+"pajiștea alpină"
+],
+[
+"Care este un animal tipic deșertului?",
+"cămila",
+"pinguinul",
+"ursul polar",
+"maimuța din junglă"
+],
+[
+"Ce animal trăiește în tundră?",
+"renul",
+"elefantul",
+"cămila",
+"leul"
+],
+[
+"Ce se numește humus?",
+"partea fertilă, bogată în resturi de plante, din sol",
+"o rocă dură",
+"un tip de nor",
+"un vânt cald"
+],
+[
+"Ce sunt solurile?",
+"stratul superior al scoarței, pe care cresc plantele",
+"straturile adânci de rocă",
+"râurile subterane",
+"norii joși"
+],
+[
+"Ce este taigaua?",
+"pădure de conifere din nordul rece",
+"pădure de foioase din zona temperată",
+"pajiște uscată",
+"savană tropicală"
+],
+[
+"Care este învelișul Pământului în care există viață?",
+"biosfera",
+"litosfera",
+"atmosfera de sus",
+"hidrosfera adâncă"
+]
+],
+"tf": [
+[
+"Pădurea ecuatorială se află în zona caldă, ecuatorială.",
+true
+],
+[
+"Tundra are păduri dese de stejar.",
+false
+],
+[
+"Plantele au nevoie de lumină și apă.",
+true
+],
+[
+"Solul fertil conține humus.",
+true
+],
+[
+"În deșert plouă foarte mult.",
+false
+],
+[
+"Savana are anotimp ploios și anotimp uscat.",
+true
+]
+]
+},
+"population": {
+"mcq": [
+[
+"Cam câți oameni trăiesc pe Pământ?",
+"aproximativ 8 miliarde",
+"aproximativ 8 milioane",
+"aproximativ 800 de milioane",
+"aproximativ 80 de miliarde"
+],
+[
+"Ce arată densitatea populației?",
+"câți oameni locuiesc, în medie, pe un kilometru pătrat",
+"câți oameni au murit",
+"câte orașe există",
+"cât de înalt este un loc"
+],
+[
+"Cum se numesc așezările mici, de la țară?",
+"sate",
+"megalopolisuri",
+"capitale",
+"metropole"
+],
+[
+"Cum se numește mutarea oamenilor dintr-un loc în altul, pentru a locui acolo?",
+"migrație",
+"natalitate",
+"revoluție",
+"eroziune"
+],
+[
+"Ce arată natalitatea?",
+"numărul de nașteri",
+"numărul de decese",
+"numărul de orașe",
+"numărul de școli"
+],
+[
+"Ce arată mortalitatea?",
+"numărul de decese",
+"numărul de nașteri",
+"numărul de sate",
+"numărul de limbi"
+],
+[
+"Care continent este cel mai populat?",
+"Asia",
+"Europa",
+"Australia",
+"Antarctica"
+],
+[
+"Care este un exemplu de activitate din agricultură?",
+"cultivarea grâului",
+"construirea unui avion",
+"predarea la școală",
+"repararea unui telefon"
+],
+[
+"Care este un exemplu de activitate din servicii?",
+"transportul de pasageri",
+"extragerea cărbunelui",
+"cultivarea porumbului",
+"creșterea oilor"
+],
+[
+"Unde trăiește, de obicei, un număr mai mare de oameni?",
+"în orașe, în lumea de azi",
+"în deșerturile mari",
+"pe ghețari",
+"pe vârfuri de munți"
+]
+],
+"tf": [
+[
+"Antarctica are populație permanentă numeroasă.",
+false
+],
+[
+"Populația lumii este distribuită inegal.",
+true
+],
+[
+"Satul este o așezare rurală.",
+true
+],
+[
+"Orașele sunt așezări urbane.",
+true
+],
+[
+"Câmpiile fertile sunt adesea dens populate.",
+true
+],
+[
+"Deșerturile și zonele polare sunt dens populate.",
+false
+]
+]
+},
+"continents": {
+"mcq": [
+[
+"Care este cel mai mare continent ca suprafață?",
+"Asia",
+"Africa",
+"Europa",
+"Antarctica"
+],
+[
+"Care este cel mai mic continent ca suprafață?",
+"Australia și Oceania",
+"Europa",
+"Antarctica",
+"America de Sud"
+],
+[
+"Pe ce continent se află România?",
+"Europa",
+"Asia",
+"Africa",
+"America"
+],
+[
+"Care continent este acoperit aproape în întregime de gheață?",
+"Antarctica",
+"Europa",
+"Africa",
+"Asia"
+],
+[
+"Care continent este străbătut de Ecuator și are Sahara în nord?",
+"Africa",
+"Europa",
+"Antarctica",
+"Australia"
+],
+[
+"Pe ce continent se află Himalaya?",
+"Asia",
+"Africa",
+"America",
+"Europa"
+],
+[
+"Pe ce continent se află Munții Anzi?",
+"America",
+"Europa",
+"Africa",
+"Asia"
+],
+[
+"Care ocean se află între Europa și America?",
+"Oceanul Atlantic",
+"Oceanul Pacific",
+"Oceanul Indian",
+"Oceanul Arctic"
+],
+[
+"Care ocean se află între Africa, Asia și Australia?",
+"Oceanul Indian",
+"Oceanul Atlantic",
+"Oceanul Arctic",
+"Marea Neagră"
+],
+[
+"Câte continente se învață în programa de geografie din România (America luată ca un continent)?",
+"șase",
+"cinci",
+"opt",
+"zece"
+]
+],
+"tf": [
+[
+"Oceanul Pacific este cel mai mare ocean.",
+true
+],
+[
+"Europa este mai mare decât Africa.",
+false
+],
+[
+"Antarctica se află în jurul Polului Sud.",
+true
+],
+[
+"Oceanul Arctic este în jurul Polului Nord.",
+true
+],
+[
+"Africa se află complet în emisfera nordică.",
+false
+]
+]
+},
+"europe-position": {
+"mcq": [
+[
+"Care ocean se află la vestul Europei?",
+"Oceanul Atlantic",
+"Oceanul Pacific",
+"Oceanul Indian",
+"Oceanul Arctic"
+],
+[
+"Care mare se află la sudul Europei?",
+"Marea Mediterană",
+"Marea Baltică",
+"Marea Nordului",
+"Marea Neagră"
+],
+[
+"Ce munți formează, convențional, limita dintre Europa și Asia?",
+"Munții Urali",
+"Alpii",
+"Carpații",
+"Pirineii"
+],
+[
+"Ce strâmtoare separă Europa de Africa, la vest?",
+"Strâmtoarea Gibraltar",
+"Strâmtoarea Bosfor",
+"Canalul Mânecii",
+"Canalul Suez"
+],
+[
+"Care este cea mai mare peninsulă a Europei?",
+"Peninsula Scandinavă",
+"Peninsula Iberică",
+"Peninsula Italică",
+"Peninsula Balcanică"
+],
+[
+"Cum se numește peninsula în care se află Spania și Portugalia?",
+"Peninsula Iberică",
+"Peninsula Italică",
+"Peninsula Balcanică",
+"Peninsula Scandinavă"
+],
+[
+"Cum se numește peninsula în forma unei cizme?",
+"Peninsula Italică",
+"Peninsula Iberică",
+"Peninsula Scandinavă",
+"Peninsula Balcanică"
+],
+[
+"Care este cea mai mare insulă a Europei?",
+"Marea Britanie",
+"Islanda",
+"Irlanda",
+"Sicilia"
+],
+[
+"Care mare se află în nordul Germaniei și Poloniei?",
+"Marea Baltică",
+"Marea Neagră",
+"Marea Mediterană",
+"Marea Adriatică"
+],
+[
+"Câte milioane km² are aproximativ Europa?",
+"aproximativ 10 milioane",
+"aproximativ 1 milion",
+"aproximativ 40 de milioane",
+"aproximativ 100 de milioane"
+]
+],
+"tf": [
+[
+"Europa se află în întregime în emisfera nordică.",
+true
+],
+[
+"Marea Neagră se află la vestul Europei.",
+false
+],
+[
+"Marea Britanie este o insulă.",
+true
+],
+[
+"Europa este mai mică decât Africa.",
+true
+],
+[
+"Peninsula Balcanică se află în sud-estul Europei.",
+true
+],
+[
+"Munții Urali formează limita estică convențională a Europei.",
+true
+]
+]
+},
+"europe-relief": {
+"mcq": [
+[
+"Care sunt cei mai înalți munți din Europa Centrală și de Vest?",
+"Alpii",
+"Carpații",
+"Pirineii",
+"Apeninii"
+],
+[
+"Ce munți despart Franța de Spania?",
+"Pirineii",
+"Alpii",
+"Carpații",
+"Urali"
+],
+[
+"În ce țară se află vulcanul Vezuviu?",
+"Italia",
+"Spania",
+"Grecia",
+"Franța"
+],
+[
+"Ce munți se află în Italia, de-a lungul peninsulei?",
+"Apeninii",
+"Alpii Dinarici",
+"Carpații",
+"Pirineii"
+],
+[
+"Ce munți formează un arc în nordul și estul României, și ajung și în Ucraina, Polonia, Slovacia?",
+"Carpații",
+"Alpii",
+"Pirineii",
+"Munții Scandinaviei"
+],
+[
+"În ce țări se află Munții Scandinaviei?",
+"Norvegia și Suedia",
+"Franța și Spania",
+"Italia și Elveția",
+"Grecia și Albania"
+],
+[
+"Care este cea mai întinsă câmpie a Europei?",
+"Câmpia Europei de Est",
+"Câmpia Română",
+"Câmpia Padului",
+"Câmpia Panonică"
+],
+[
+"Cum se numesc golfurile înguste și adânci, săpate de ghețari, din Norvegia?",
+"fiorduri",
+"delte",
+"estuare",
+"lagune"
+],
+[
+"În ce țară se află vulcanul Etna?",
+"Italia",
+"Franța",
+"Germania",
+"Polonia"
+],
+[
+"Ce țară europeană are cea mai mare parte din teritoriu plat, sub nivelul mării sau aproape de el?",
+"Țările de Jos",
+"Elveția",
+"Austria",
+"Norvegia"
+]
+],
+"tf": [
+[
+"Alpii trec prin Elveția și Austria.",
+true
+],
+[
+"Țările de Jos au relief în mare parte plat și jos.",
+true
+],
+[
+"Pirineii se află în Scandinavia.",
+false
+],
+[
+"Islanda are vulcani și gheizere.",
+true
+],
+[
+"Carpații trec prin România.",
+true
+],
+[
+"Munții Urali se află în vestul Franței.",
+false
+]
+]
+},
+"europe-climate": {
+"mcq": [
+[
+"Ce tip de climă predomină în Europa?",
+"temperată",
+"ecuatorială",
+"polară în întregime",
+"tropicală"
+],
+[
+"Ce climă are sudul Europei, la Marea Mediterană?",
+"mediteraneană, cu veri calde și uscate",
+"polară",
+"ecuatorială",
+"de deșert rece"
+],
+[
+"Ce face Oceanul Atlantic pentru clima Europei de Vest?",
+"o face mai blândă și umedă",
+"o face foarte uscată",
+"o face polară",
+"o face de deșert"
+],
+[
+"Cum se schimbă clima, în general, spre est în Europa?",
+"devine mai continentală, cu ierni mai reci și veri mai calde",
+"devine ecuatorială",
+"devine mai umedă și mai blândă",
+"nu se schimbă deloc"
+],
+[
+"Ce vegetație apare în nordul îndepărtat al Europei?",
+"tundra",
+"savana",
+"pădurea ecuatorială",
+"stepa tropicală"
+],
+[
+"Ce plante cresc, de obicei, în climatul mediteraneean?",
+"măslini și viță-de-vie",
+"mușchi și licheni",
+"palmieri de deșert",
+"conifere de taiga"
+],
+[
+"Ce zonă de vegetație este întâlnită în estul Ucrainei, câmpie cu ierburi?",
+"stepa",
+"tundra",
+"taigaua",
+"pădurea ecuatorială"
+],
+[
+"Ce fel de pădure este tipică Europei Centrale?",
+"pădure de foioase și amestec",
+"pădure ecuatorială",
+"mangrove",
+"savană cu baobabi"
+]
+],
+"tf": [
+[
+"Iernile sunt mai blânde în vestul Europei decât în estul ei, la aceeași latitudine.",
+true
+],
+[
+"Europa are o climă ecuatorială.",
+false
+],
+[
+"În sud, verile sunt calde și destul de uscate.",
+true
+],
+[
+"Tundra se întâlnește în nordul Europei.",
+true
+],
+[
+"Peste tot în Europa climatul este mediteraneean.",
+false
+]
+]
+},
+"europe-waters": {
+"mcq": [
+[
+"Care este cel mai lung râu din Europa?",
+"Volga",
+"Dunărea",
+"Rinul",
+"Sena"
+],
+[
+"Care este al doilea ca lungime râu din Europa, care curge prin România?",
+"Dunărea",
+"Volga",
+"Rinul",
+"Tamisa"
+],
+[
+"În ce mare se varsă Volga?",
+"Marea Caspică",
+"Marea Neagră",
+"Marea Baltică",
+"Marea Nordului"
+],
+[
+"În ce mare se varsă Dunărea?",
+"Marea Neagră",
+"Marea Adriatică",
+"Marea Baltică",
+"Marea Mediterană"
+],
+[
+"Pe ce râu se află Parisul?",
+"Sena",
+"Tamisa",
+"Rinul",
+"Dunărea"
+],
+[
+"Pe ce râu se află Londra?",
+"Tamisa",
+"Sena",
+"Elba",
+"Volga"
+],
+[
+"Pe ce râu se află Viena și Budapesta?",
+"Dunărea",
+"Rinul",
+"Vistula",
+"Tamisa"
+],
+[
+"Ce mare este legată de Oceanul Atlantic prin Strâmtoarea Gibraltar?",
+"Marea Mediterană",
+"Marea Baltică",
+"Marea Neagră",
+"Marea Caspică"
+],
+[
+"Prin câte țări curge Dunărea?",
+"zece",
+"două",
+"cinci",
+"douăzeci"
+],
+[
+"Care este un lac mare din Europa, în nord-vestul Rusiei?",
+"Ladoga",
+"Baikal",
+"Victoria",
+"Titicaca"
+],
+[
+"În ce mare se varsă Vistula, râul Poloniei?",
+"Marea Baltică",
+"Marea Neagră",
+"Marea Nordului",
+"Marea Mediterană"
+]
+],
+"tf": [
+[
+"Dunărea se varsă în Marea Neagră.",
+true
+],
+[
+"Rinul curge prin Germania.",
+true
+],
+[
+"Volga se află în Franța.",
+false
+],
+[
+"Dunărea este un râu european.",
+true
+],
+[
+"Marea Baltică este în sudul Europei.",
+false
+],
+[
+"Pe malurile Dunării se află mai multe capitale.",
+true
+]
+]
+},
+"europe-population": {
+"mcq": [
+[
+"Care este cea mai populată țară din Europa (incluzând Rusia)?",
+"Rusia",
+"Germania",
+"Franța",
+"Italia"
+],
+[
+"Care este cel mai mic stat din Europa?",
+"Vatican",
+"Monaco",
+"Malta",
+"Luxemburg"
+],
+[
+"Cum este, în general, densitatea populației în Europa?",
+"mare",
+"foarte mică",
+"nulă",
+"mai mică decât în Antarctica"
+],
+[
+"Din ce grup de limbi face parte româna?",
+"limbi romanice",
+"limbi germanice",
+"limbi slave",
+"limbi turcice"
+],
+[
+"Din ce grup de limbi face parte germana?",
+"limbi germanice",
+"limbi romanice",
+"limbi slave",
+"limbi fino-ugrice"
+],
+[
+"Din ce grup de limbi face parte polona?",
+"limbi slave",
+"limbi romanice",
+"limbi germanice",
+"limbi bantu"
+],
+[
+"Care religie este cea mai răspândită în Europa?",
+"creștinismul",
+"budismul",
+"hinduismul",
+"shintoismul"
+],
+[
+"Ce spunem despre populația multor țări europene?",
+"îmbătrânește (mai mulți vârstnici)",
+"este foarte tânără peste tot",
+"dispare complet",
+"crește foarte rapid peste tot"
+],
+[
+"Care e capitala cea mai populată din Europa?",
+"Moscova",
+"București",
+"Viena",
+"Lisabona"
+]
+],
+"tf": [
+[
+"Majoritatea europenilor trăiesc în orașe.",
+true
+],
+[
+"Franceza este o limbă romanică.",
+true
+],
+[
+"Europa are cea mai mică densitate a populației din lume.",
+false
+],
+[
+"În Europa se vorbesc mai multe limbi.",
+true
+],
+[
+"Vatican este cel mai mare stat din Europa.",
+false
+]
+]
+},
+"europe-eu": {
+"mcq": [
+[
+"Câte state membre are Uniunea Europeană (2026)?",
+"27",
+"15",
+"30",
+"50"
+],
+[
+"În ce an a aderat România la Uniunea Europeană?",
+"2007",
+"1993",
+"2004",
+"2014"
+],
+[
+"Cu ce culori este steagul Uniunii Europene?",
+"albastru, cu stele galbene în cerc",
+"roșu, cu o stea albă",
+"verde cu galben",
+"alb cu albastru"
+],
+[
+"Câte stele galbene are steagul Uniunii Europene?",
+"12",
+"27",
+"7",
+"15"
+],
+[
+"Ce zi este Ziua Europei?",
+"9 mai",
+"1 decembrie",
+"24 ianuarie",
+"21 iunie"
+],
+[
+"Care este moneda comună folosită de multe state din UE?",
+"euro",
+"leul",
+"dolarul",
+"lira sterlină"
+],
+[
+"În ce oraș se află sediul Comisiei Europene?",
+"Bruxelles",
+"București",
+"Paris",
+"Roma"
+],
+[
+"Ce moneda are România (2026)?",
+"leul",
+"euro",
+"forintul",
+"lira"
+],
+[
+"Care țară a ieșit din Uniunea Europeană în 2020?",
+"Regatul Unit",
+"Franța",
+"Germania",
+"Polonia"
+],
+[
+"Ce permite libera circulație în UE?",
+"să călătorești și să muncești în alt stat membru",
+"să nu mai plătești impozite",
+"să nu mai înveți limbi",
+"să ai mereu aceeași monedă"
+]
+],
+"tf": [
+[
+"România este membră a Uniunii Europene.",
+true
+],
+[
+"Moldova este stat membru UE.",
+false
+],
+[
+"Norvegia este stat membru UE.",
+false
+],
+[
+"Elveția este stat membru UE.",
+false
+],
+[
+"Franța și Germania sunt state membre UE.",
+true
+],
+[
+"Toate statele membre folosesc moneda euro.",
+false
+]
+]
+},
+"europe-economy": {
+"mcq": [
+[
+"Ce țară europeană este renumită pentru ceasuri și ciocolată?",
+"Elveția",
+"Portugalia",
+"Bulgaria",
+"Grecia"
+],
+[
+"Care este un mare port european, în Țările de Jos?",
+"Rotterdam",
+"Praga",
+"Viena",
+"Budapesta"
+],
+[
+"Ce resursă importantă se extrage din Marea Nordului?",
+"petrol și gaze",
+"diamante",
+"aur",
+"cafea"
+],
+[
+"Pentru ce activitate este cunoscută coasta mediteraneeană?",
+"turism",
+"exploatarea de petrol",
+"culturi de orez tropical",
+"creșterea renilor"
+],
+[
+"Ce industrie este puternică în Germania?",
+"industria de automobile",
+"pescuitul oceanic",
+"extracția de aur",
+"culturile de banane"
+],
+[
+"Ce țară produce multă energie eoliană, cu turbine pe uscat și în mare?",
+"Danemarca",
+"Egipt",
+"Mongolia",
+"Peru"
+],
+[
+"Ce țară este renumită pentru pescuit și fiorduri?",
+"Norvegia",
+"Ungaria",
+"Cehia",
+"Austria"
+],
+[
+"Ce mijloc de transport leagă Marea Britanie de Franța, pe sub apă?",
+"tunelul de sub Canalul Mânecii",
+"metroul din Paris",
+"podul de pe Dunăre",
+"canalul Suez"
+]
+],
+"tf": [
+[
+"Agricultura se practică mai ales în câmpii și zone cu sol fertil.",
+true
+],
+[
+"Europa nu are industrie.",
+false
+],
+[
+"Turismul este o activitate importantă în sudul Europei.",
+true
+],
+[
+"Alpii sunt folosiți pentru sporturi de iarnă.",
+true
+]
+]
+},
+"asia-physical": {
+"mcq": [
+[
+"Care este cel mai mare continent al lumii?",
+"Asia",
+"Africa",
+"America",
+"Europa"
+],
+[
+"Ce lanț muntos se află între India și China?",
+"Himalaya",
+"Alpii",
+"Anzii",
+"Atlas"
+],
+[
+"Care este cel mai înalt vârf din lume, aflat în Asia?",
+"Everest",
+"Aconcagua",
+"Kilimanjaro",
+"Elbrus"
+],
+[
+"Care este cel mai adânc lac din lume, aflat în Siberia?",
+"Baikal",
+"Victoria",
+"Superior",
+"Ladoga"
+],
+[
+"Care este un mare deșert din Mongolia și nordul Chinei?",
+"Gobi",
+"Sahara",
+"Kalahari",
+"Atacama"
+],
+[
+"Ce vânturi aduc ploile de vară în sudul și sud-estul Asiei?",
+"musonii",
+"alizeele din Atlantic",
+"crivățul",
+"austrul"
+],
+[
+"Ce fluviu străbate China și se varsă în Marea Chinei de Est?",
+"Yangtze",
+"Gange",
+"Nil",
+"Mississippi"
+],
+[
+"Ce fluviu sfânt pentru hinduși curge în India?",
+"Gange",
+"Dunărea",
+"Amazon",
+"Rinul"
+],
+[
+"Ce vegetație formează în Siberia o pădure imensă de conifere?",
+"taigaua",
+"savana",
+"mangrovele",
+"pădurea ecuatorială"
+],
+[
+"Care țară asiatică este formată din arhipelaguri cu vulcani și cutremure frecvente?",
+"Japonia",
+"Mongolia",
+"Nepal",
+"Kazahstan"
+],
+[
+"Ce ocean scaldă Asia la sud?",
+"Oceanul Indian",
+"Oceanul Atlantic",
+"Oceanul Arctic",
+"Marea Baltică"
+]
+],
+"tf": [
+[
+"Everest se află în Himalaya.",
+true
+],
+[
+"Asia este cel mai mic continent.",
+false
+],
+[
+"Gobi este un deșert din Asia.",
+true
+],
+[
+"Muntele Fuji se află în Japonia.",
+true
+],
+[
+"Munții Anzi se află în Asia.",
+false
+],
+[
+"În Asia există atât zone de deșert, cât și de pădure ecuatorială.",
+true
+]
+]
+},
+"asia-human": {
+"mcq": [
+[
+"Care continent are cea mai numeroasă populație?",
+"Asia",
+"Africa",
+"Europa",
+"America"
+],
+[
+"Câte persoane din lume trăiesc în Asia?",
+"mai mult de jumătate",
+"mai puțin de 10%",
+"aproximativ un sfert",
+"aproximativ 1%"
+],
+[
+"Ce cereală este hrana de bază în multe țări asiatice?",
+"orezul",
+"porumbul",
+"secara",
+"ovăzul"
+],
+[
+"Ce băutură este foarte răspândită în China și India?",
+"ceaiul",
+"laptele de cămilă",
+"sucul de portocale",
+"berea"
+],
+[
+"Care religie a apărut în India și are mulți credincioși acolo?",
+"hinduismul",
+"creștinismul",
+"shintoismul",
+"iudaismul"
+],
+[
+"Care este un mare oraș al Japoniei?",
+"Tokyo",
+"Seul",
+"Hanoi",
+"Manila"
+],
+[
+"Ce animal este un simbol al Chinei și trăiește în păduri de bambus?",
+"ursul panda",
+"kiwi",
+"cangurul",
+"lama"
+],
+[
+"Care este o țară asiatică foarte populată?",
+"India",
+"Elveția",
+"Polonia",
+"Cuba"
+],
+[
+"Ce activitate este importantă în Orientul Mijlociu, în țări ca Arabia Saudită?",
+"extracția de petrol",
+"pescuitul de cod",
+"creșterea renilor",
+"culturile de cafea de munte"
+]
+],
+"tf": [
+[
+"Tokyo este capitala Japoniei.",
+true
+],
+[
+"Majoritatea populației lumii trăiește în Asia.",
+true
+],
+[
+"Orezul se cultivă în zone calde și ploioase din Asia.",
+true
+],
+[
+"Beijing este capitala Indiei.",
+false
+],
+[
+"Asia are puține orașe mari.",
+false
+]
+]
+},
+"africa": {
+"mcq": [
+[
+"Care este cel mai mare deșert cald din lume?",
+"Sahara",
+"Gobi",
+"Atacama",
+"Kalahari"
+],
+[
+"Care fluviu are un curs foarte lung și traversează Egiptul?",
+"Nilul",
+"Congo",
+"Amazon",
+"Dunărea"
+],
+[
+"Care este cel mai înalt vârf al Africii?",
+"Kilimanjaro",
+"Everest",
+"Mont Blanc",
+"Aconcagua"
+],
+[
+"Ce insulă mare se află în Oceanul Indian, la est de Africa?",
+"Madagascar",
+"Cuba",
+"Groenlanda",
+"Sicilia"
+],
+[
+"Ce canal leagă Marea Mediterană de Marea Roșie?",
+"Canalul Suez",
+"Canalul Panama",
+"Canalul Mânecii",
+"Canalul Dunăre–Marea Neagră"
+],
+[
+"Ce vegetație este tipică în jurul Ecuatorului, în bazinul fluviului Congo?",
+"pădurea ecuatorială",
+"tundra",
+"stepa rece",
+"taigaua"
+],
+[
+"Ce animale trăiesc în savana africană?",
+"leul și elefantul",
+"pinguinul și ursul polar",
+"cangurul și koala",
+"lama și condorul"
+],
+[
+"Care este un munte din nord-vestul Africii?",
+"Munții Atlas",
+"Himalaya",
+"Alpii",
+"Anzii"
+],
+[
+"Care este cel mai mare lac din Africa?",
+"Lacul Victoria",
+"Lacul Baikal",
+"Marea Moartă",
+"Lacul Ladoga"
+],
+[
+"Ce deșert se află în sud-vestul Africii, pe coasta Atlanticului?",
+"Namib",
+"Gobi",
+"Sahara",
+"Thar"
+],
+[
+"Care este capitala Egiptului?",
+"Cairo",
+"Rabat",
+"Tunis",
+"Alger"
+]
+],
+"tf": [
+[
+"Sahara se află în nordul Africii.",
+true
+],
+[
+"Africa este traversată de Ecuator.",
+true
+],
+[
+"Africa este cel mai mare continent.",
+false
+],
+[
+"Savana are ierburi înalte și arbori răzleți.",
+true
+],
+[
+"Kilimanjaro se află în Europa.",
+false
+],
+[
+"Nilul se varsă în Marea Mediterană.",
+true
+]
+]
+},
+"america-north": {
+"mcq": [
+[
+"Care sunt cele trei state mari din America de Nord?",
+"Canada, SUA și Mexic",
+"Brazilia, Peru și Chile",
+"Cuba, Panama și Peru",
+"Canada, Brazilia și Mexic"
+],
+[
+"Ce lanț muntos se află în vestul Americii de Nord?",
+"Munții Stâncoși",
+"Anzii",
+"Alpii",
+"Himalaya"
+],
+[
+"Care este cel mai înalt vârf din America de Nord?",
+"Denali",
+"Everest",
+"Aconcagua",
+"Kilimanjaro"
+],
+[
+"Ce lacuri mari se află între SUA și Canada?",
+"Marile Lacuri",
+"Lacurile Alpine",
+"Lacurile Siberiei",
+"Lacurile Anzilor"
+],
+[
+"Ce fluviu străbate SUA și se varsă în Golful Mexic?",
+"Mississippi",
+"Amazon",
+"Yangtze",
+"Volga"
+],
+[
+"Care este cea mai mare insulă din lume, aflată în America de Nord?",
+"Groenlanda",
+"Cuba",
+"Islanda",
+"Jamaica"
+],
+[
+"Ce canal leagă Oceanul Atlantic de Oceanul Pacific în America Centrală?",
+"Canalul Panama",
+"Canalul Suez",
+"Canalul Mânecii",
+"Canalul Kiel"
+],
+[
+"Care este capitala Canadei?",
+"Ottawa",
+"Toronto",
+"Montreal",
+"Vancouver"
+],
+[
+"Care este capitala Statelor Unite ale Americii?",
+"Washington",
+"New York",
+"Los Angeles",
+"Chicago"
+],
+[
+"Care este cea mai mare insulă din Marea Caraibilor?",
+"Cuba",
+"Jamaica",
+"Panama",
+"Mexic"
+]
+],
+"tf": [
+[
+"Mexic se află în America de Nord.",
+true
+],
+[
+"New York este capitala SUA.",
+false
+],
+[
+"Cataracta Niagara se află între SUA și Canada.",
+true
+],
+[
+"Munții Anzi se află în America de Nord.",
+false
+],
+[
+"În Caraibe pot apărea uragane.",
+true
+]
+]
+},
+"america-south": {
+"mcq": [
+[
+"Ce lanț muntos lung se întinde pe vestul Americii de Sud?",
+"Anzii",
+"Munții Stâncoși",
+"Alpii",
+"Apalașii"
+],
+[
+"Care fluviu străbate cea mai mare pădure ecuatorială din lume?",
+"Amazon",
+"Nilul",
+"Mississippi",
+"Gange"
+],
+[
+"Care este cel mai înalt vârf din America de Sud?",
+"Aconcagua",
+"Denali",
+"Everest",
+"Kilimanjaro"
+],
+[
+"Care este cea mai mare țară din America de Sud?",
+"Brazilia",
+"Argentina",
+"Chile",
+"Peru"
+],
+[
+"Ce limbă se vorbește în Brazilia?",
+"portugheza",
+"spaniola",
+"franceza",
+"engleza"
+],
+[
+"Care deșert foarte uscat se află pe coasta Chile?",
+"Atacama",
+"Gobi",
+"Sahara",
+"Namib"
+],
+[
+"Ce lac aflat la mare altitudine este între Peru și Bolivia?",
+"Titicaca",
+"Baikal",
+"Victoria",
+"Ladoga"
+],
+[
+"Ce insule din Pacific, aparținând Ecuadorului, sunt renumite pentru animalele lor?",
+"Insulele Galapagos",
+"Insulele Hawaii",
+"Insulele Feroe",
+"Insulele Canare"
+],
+[
+"Care este capitala Argentinei?",
+"Buenos Aires",
+"Lima",
+"Santiago",
+"Montevideo"
+],
+[
+"Care este capitala Braziliei?",
+"Brasilia",
+"Rio de Janeiro",
+"São Paulo",
+"Buenos Aires"
+]
+],
+"tf": [
+[
+"Amazonul se află în America de Sud.",
+true
+],
+[
+"Anzii sunt un lanț muntos foarte lung.",
+true
+],
+[
+"În Brazilia se vorbește spaniola.",
+false
+],
+[
+"Rio de Janeiro este capitala Braziliei.",
+false
+],
+[
+"Ecuatorul trece prin America de Sud.",
+true
+]
+]
+},
+"oceania": {
+"mcq": [
+[
+"Care este capitala Australiei?",
+"Canberra",
+"Sydney",
+"Melbourne",
+"Perth"
+],
+[
+"Ce animal marsupial este un simbol al Australiei?",
+"cangurul",
+"pinguinul",
+"ursul panda",
+"lama"
+],
+[
+"Cum se numește marele recif de corali din nord-estul Australiei?",
+"Marea Barieră de Corali",
+"Marele Canion",
+"Marele Lac Sărat",
+"Marele Zid"
+],
+[
+"Cum se numește regiunea aridă din interiorul Australiei?",
+"Outback",
+"Savana africană",
+"Taigaua",
+"Pampa"
+],
+[
+"Care este capitala Noii Zeelande?",
+"Wellington",
+"Auckland",
+"Sydney",
+"Suva"
+],
+[
+"În ce ocean se află Oceania?",
+"Oceanul Pacific",
+"Oceanul Atlantic",
+"Oceanul Arctic",
+"Marea Neagră"
+],
+[
+"În ce emisferă se află Australia?",
+"emisfera sudică",
+"emisfera nordică",
+"doar emisfera nordică",
+"Polul Nord"
+],
+[
+"Ce pasăre fără zbor este un simbol al Noii Zeelande?",
+"kiwi",
+"pelicanul",
+"vulturul",
+"barza"
+],
+[
+"Care oraș este cel mai mare din Australia?",
+"Sydney",
+"Canberra",
+"Wellington",
+"Darwin"
+]
+],
+"tf": [
+[
+"Australia este cel mai mic continent.",
+true
+],
+[
+"Canguri trăiesc natural în Europa.",
+false
+],
+[
+"Noua Zeelandă este formată din insule.",
+true
+],
+[
+"Canberra este capitala Australiei.",
+true
+],
+[
+"Marea Barieră de Corali se află lângă Africa.",
+false
+]
+]
+},
+"antarctica": {
+"mcq": [
+[
+"Cu ce este acoperită aproape tot Antarctica?",
+"gheață",
+"pădure",
+"deșert de nisip",
+"iarbă"
+],
+[
+"Care este cel mai rece continent?",
+"Antarctica",
+"Asia",
+"Europa",
+"Africa"
+],
+[
+"Unde se află Polul Sud geografic?",
+"în Antarctica",
+"în Arctica",
+"în Australia",
+"în Africa"
+],
+[
+"Ce păsări nu zboară și trăiesc pe coastele Antarcticii?",
+"pinguinii",
+"vulturii",
+"papagalii",
+"ciorile"
+],
+[
+"Cine locuiește, de obicei, în Antarctica?",
+"oameni de știință, pe timp limitat, în stații",
+"mari orașe cu milioane de locuitori",
+"familii de fermieri",
+"turiști permanenți"
+],
+[
+"Ce se studiază mult în Antarctica?",
+"clima și gheața",
+"culturile de grâu",
+"industria auto",
+"orezul"
+],
+[
+"Ce este un aisberg?",
+"o bucată uriașă de gheață plutitoare",
+"un vulcan",
+"un râu cald",
+"un deșert"
+],
+[
+"Cum se numește tratatul din 1959 prin care Antarctica este dedicată științei și păcii?",
+"Tratatul Antarctic",
+"Tratatul de la Roma",
+"Tratatul Atlanticului",
+"Tratatul Polar Nord"
+]
+],
+"tf": [
+[
+"Antarctica nu are populație permanentă.",
+true
+],
+[
+"Antarctica este un continent cald.",
+false
+],
+[
+"Antarctica se află în jurul Polului Sud.",
+true
+],
+[
+"În Antarctica există orașe mari.",
+false
+],
+[
+"Gheața Antarcticii este foarte groasă.",
+true
+]
+]
+},
+"world-issues": {
+"mcq": [
+[
+"Ce gaz din atmosferă, în exces, contribuie la încălzirea globală?",
+"dioxidul de carbon",
+"oxigenul",
+"azotul",
+"heliul"
+],
+[
+"Ce înseamnă defrișare?",
+"tăierea pădurilor pe suprafețe mari",
+"plantarea pădurilor",
+"construirea de drumuri",
+"curățarea râurilor"
+],
+[
+"Ce este o sursă de energie regenerabilă?",
+"energia solară",
+"cărbunele",
+"petrolul",
+"gazele naturale"
+],
+[
+"Ce este reciclarea?",
+"refolosirea materialelor, ca hârtia sau sticla",
+"arderea deșeurilor",
+"aruncarea gunoiului în râuri",
+"tăierea copacilor"
+],
+[
+"Ce poate provoca poluarea apelor?",
+"moartea peștilor și apă nepotabilă",
+"creșterea numărului de păduri",
+"răcirea Soarelui",
+"formarea munților"
+],
+[
+"Ce dezastru natural este provocat de mișcări ale scoarței terestre?",
+"cutremurul",
+"seceta",
+"înghețul",
+"ploaia"
+],
+[
+"Ce dezastru poate provoca revărsarea unui râu?",
+"inundația",
+"cutremurul",
+"erupția vulcanică",
+"înghețul"
+],
+[
+"Ce este deșertificarea?",
+"transformarea unor terenuri în deșert",
+"înflorirea deșertului",
+"ridicarea unui munte",
+"construirea unui lac"
+],
+[
+"Ce înseamnă dezvoltare durabilă?",
+"folosirea resurselor fără a le epuiza pentru generațiile viitoare",
+"consumul tuturor resurselor acum",
+"oprirea oricărei activități",
+"folosirea doar a cărbunelui"
+]
+],
+"tf": [
+[
+"Energia eoliană este o energie regenerabilă.",
+true
+],
+[
+"Defrișările ajută la protejarea biodiversității.",
+false
+],
+[
+"Plasticul aruncat poate ajunge în oceane.",
+true
+],
+[
+"Reciclarea ajută la reducerea deșeurilor.",
+true
+],
+[
+"Încălzirea globală înseamnă că temperaturile medii cresc în timp.",
+true
+]
+]
+},
+"ro-position": {
+"mcq": [
+[
+"În ce parte a Europei se află România?",
+"în sud-estul Europei Centrale",
+"în nordul Europei",
+"în vestul îndepărtat al Europei",
+"în Asia"
+],
+[
+"Cam câți km² are România?",
+"aproximativ 238 000",
+"aproximativ 23 000",
+"aproximativ 2 380 000",
+"aproximativ 2 380"
+],
+[
+"Care este capitala României?",
+"București",
+"Cluj-Napoca",
+"Iași",
+"Constanța"
+],
+[
+"Care dintre aceste țări este vecină cu România?",
+"Ungaria",
+"Polonia",
+"Austria",
+"Grecia"
+],
+[
+"Cu câte țări se învecinează România?",
+"cinci",
+"trei",
+"șapte",
+"două"
+],
+[
+"Ce mare scaldă România la est?",
+"Marea Neagră",
+"Marea Adriatică",
+"Marea Baltică",
+"Marea Mediterană"
+],
+[
+"Pe ce râu trece granița de sud cu Bulgaria?",
+"Dunărea",
+"Mureșul",
+"Oltul",
+"Prutul"
+],
+[
+"Pe ce râu trece granița de est cu Republica Moldova?",
+"Prutul",
+"Dunărea",
+"Oltul",
+"Jiul"
+],
+[
+"Cam cât are litoralul românesc la Marea Neagră?",
+"aproximativ 245 km",
+"aproximativ 24 km",
+"aproximativ 2 450 km",
+"aproximativ 2 km"
+],
+[
+"În ce an a aderat România la NATO?",
+"2004",
+"1989",
+"2007",
+"2014"
+],
+[
+"În ce an a aderat România la Uniunea Europeană?",
+"2007",
+"2004",
+"1999",
+"2014"
+],
+[
+"Unde se află punctul extrem nordic al României (Horodiștea)?",
+"în județul Botoșani",
+"în județul Timiș",
+"în județul Teleorman",
+"în județul Tulcea"
+]
+],
+"tf": [
+[
+"România are ieșire la Marea Neagră.",
+true
+],
+[
+"România se învecinează cu Polonia.",
+false
+],
+[
+"România se află în emisfera nordică.",
+true
+],
+[
+"România este stat membru al Uniunii Europene.",
+true
+],
+[
+"Dunărea formează o parte a granițelor României.",
+true
+],
+[
+"România se învecinează cu Cehia.",
+false
+]
+]
+},
+"ro-relief": {
+"mcq": [
+[
+"Cam ce pondere din teritoriul României au munții?",
+"aproximativ o treime",
+"aproximativ 90%",
+"aproximativ 5%",
+"aproximativ două treimi"
+],
+[
+"Ce unitate de relief se află în interiorul arcului carpatic?",
+"Podișul Transilvaniei",
+"Câmpia Română",
+"Delta Dunării",
+"Podișul Dobrogei"
+],
+[
+"Care este cea mai mare câmpie din România?",
+"Câmpia Română",
+"Câmpia de Vest",
+"Câmpia Transilvaniei",
+"Câmpia Moldovei"
+],
+[
+"Care este cea mai tânără unitate de relief a României?",
+"Delta Dunării",
+"Munții Măcinului",
+"Podișul Dobrogei",
+"Subcarpații"
+],
+[
+"Ce unitate de relief se află între Dunăre și Marea Neagră?",
+"Podișul Dobrogei",
+"Podișul Moldovei",
+"Podișul Getic",
+"Dealurile de Vest"
+],
+[
+"Ce munți sunt cei mai vechi și mai joși din România, în Dobrogea?",
+"Munții Măcinului",
+"Munții Făgăraș",
+"Munții Retezat",
+"Munții Rodnei"
+],
+[
+"Cum se numește sectorul îngust, între stânci, pe unde trece Dunărea în sud-vest?",
+"Cazanele Dunării (Defileul Dunării)",
+"Valea Prahovei",
+"Culoarul Mureșului",
+"Pasul Predeal"
+],
+[
+"Ce culoar de vale leagă Muntenia de Transilvania pe lângă Sinaia și Predeal?",
+"Valea Prahovei",
+"Valea Jiului",
+"Valea Arieșului",
+"Valea Bistriței"
+],
+[
+"Ce zonă de relief se află lângă munți, dar în exteriorul arcului carpatic?",
+"Subcarpații",
+"Delta Dunării",
+"Câmpia de Vest",
+"Podișul Dobrogei"
+]
+],
+"tf": [
+[
+"Carpații Meridionali au cele mai înalte vârfuri din România.",
+true
+],
+[
+"Câmpia Română se află în nordul țării.",
+false
+],
+[
+"Delta Dunării este formată din aluviuni aduse de Dunăre.",
+true
+],
+[
+"Podișul Transilvaniei este înconjurat de Carpați.",
+true
+],
+[
+"Munții Apuseni fac parte din Carpații Orientali.",
+false
+]
+]
+},
+"ro-climate": {
+"mcq": [
+[
+"Ce tip de climă are România?",
+"temperat-continentală",
+"ecuatorială",
+"polară",
+"de deșert"
+],
+[
+"Câte anotimpuri are România?",
+"patru",
+"două",
+"trei",
+"șase"
+],
+[
+"Cum se numește vântul rece care bate iarna în Moldova și Bărăgan?",
+"crivățul",
+"austrul",
+"alizeul",
+"mistralul"
+],
+[
+"Unde plouă și ninge, în general, cel mai mult în România?",
+"în Munții Carpați",
+"în Delta Dunării",
+"pe litoral",
+"în Dobrogea"
+],
+[
+"Unde plouă, în general, cel mai puțin în România?",
+"în Dobrogea și pe litoral",
+"în Munții Rodnei",
+"în Munții Făgăraș",
+"în Munții Apuseni"
+],
+[
+"Cum se schimbă temperatura medie anuală când urcăm în munți?",
+"scade",
+"crește",
+"rămâne aceeași",
+"nu depinde de altitudine"
+],
+[
+"Ce influențează clima României dinspre vest?",
+"masele de aer oceanice, umede",
+"aerul ecuatorial",
+"ghețarii",
+"musonii"
+]
+],
+"tf": [
+[
+"Vara temperaturile sunt mai ridicate decât iarna în România.",
+true
+],
+[
+"Clima României este tropicală.",
+false
+],
+[
+"Pe vârfurile munților temperaturile sunt mai scăzute.",
+true
+],
+[
+"Crivățul este un vânt cald.",
+false
+],
+[
+"În România există patru anotimpuri.",
+true
+]
+]
+},
+"ro-danube": {
+"mcq": [
+[
+"În ce mare se varsă Dunărea?",
+"Marea Neagră",
+"Marea Adriatică",
+"Marea Caspică",
+"Marea Baltică"
+],
+[
+"Cum se numesc cele trei brațe principale ale Dunării în Deltă?",
+"Chilia, Sulina și Sfântu Gheorghe",
+"Mamaia, Neptun și Olimp",
+"Mureș, Olt și Jiu",
+"Argeș, Ialomița și Siret"
+],
+[
+"Ce hidrocentrală mare se află pe Dunăre, la granița cu Serbia?",
+"Porțile de Fier",
+"Vidraru",
+"Izvorul Muntelui",
+"Lotru"
+],
+[
+"Ce hidrocentrală se află pe Argeș, în Carpații Meridionali, cu un baraj foarte înalt?",
+"Vidraru",
+"Porțile de Fier",
+"Stejaru",
+"Cernavodă"
+],
+[
+"Ce lac artificial se află pe Bistrița, în județul Neamț?",
+"Izvorul Muntelui (Bicaz)",
+"Snagov",
+"Techirghiol",
+"Sfânta Ana"
+],
+[
+"Ce lac din Dobrogea este cunoscut pentru nămolul terapeutic?",
+"Techirghiol",
+"Roșu",
+"Bâlea",
+"Snagov"
+],
+[
+"Ce lac de crater vulcanic se află în Munții Harghita?",
+"Lacul Sfânta Ana",
+"Lacul Roșu",
+"Lacul Bâlea",
+"Lacul Snagov"
+],
+[
+"Care este cel mai mare port al României la Marea Neagră?",
+"Constanța",
+"Galați",
+"Tulcea",
+"Brăila"
+],
+[
+"Ce stațiune de pe litoral este cea mai apropiată de Constanța, la nord?",
+"Mamaia",
+"Vama Veche",
+"Sinaia",
+"Sovata"
+],
+[
+"Ce statut are Delta Dunării?",
+"rezervație a biosferei",
+"oraș mare",
+"zonă industrială",
+"deșert"
+],
+[
+"Ce păsări sunt un simbol al Deltei Dunării?",
+"pelicanii",
+"pinguinii",
+"papagalii",
+"vulturii de munte"
+],
+[
+"Ce canal scurtează drumul navelor spre Marea Neagră, între Cernavodă și Constanța?",
+"Canalul Dunăre–Marea Neagră",
+"Canalul Suez",
+"Canalul Panama",
+"Canalul Mânecii"
+]
+],
+"tf": [
+[
+"Salinitatea Mării Negre este mai mică decât cea a oceanelor.",
+true
+],
+[
+"Delta Dunării se află în județul Tulcea.",
+true
+],
+[
+"Marea Neagră se află la vestul României.",
+false
+],
+[
+"Dunărea intră în România pe la Baziaș.",
+true
+],
+[
+"Lacul Snagov este un lac din Munții Făgăraș.",
+false
+]
+]
+},
+"ro-veg": {
+"mcq": [
+[
+"Ce copac este caracteristic pădurilor de foioase din dealuri și munți joși?",
+"fagul",
+"molidul",
+"palmierul",
+"baobabul"
+],
+[
+"Ce copac este frecvent în pădurile de conifere din munți?",
+"molidul",
+"stejarul",
+"măslinul",
+"bananierul"
+],
+[
+"Ce plantă formează întinderi mari în Delta Dunării?",
+"stuful",
+"cactusul",
+"orezul",
+"ceaiul"
+],
+[
+"Ce sol fertil se află în Câmpia Română și în Dobrogea?",
+"cernoziomul",
+"solul nisipos de deșert",
+"podzolul de tundră",
+"solul înghețat"
+],
+[
+"Ce animal mare, omnivor, trăiește în pădurile Carpaților?",
+"ursul brun",
+"tigrul",
+"leul",
+"elefantul"
+],
+[
+"Care animal trăiește în zonele stâncoase înalte ale Carpaților?",
+"capra neagră",
+"cămila",
+"zebra",
+"lama"
+],
+[
+"Ce este un parc național?",
+"o zonă protejată pentru natura sa",
+"un teren de fotbal",
+"o fabrică",
+"un oraș"
+],
+[
+"Ce parc național se află în Munții Retezat?",
+"Parcul Național Retezat",
+"Parcul Național Ceahlău",
+"Parcul Național Rodna",
+"Parcul Național Semenic"
+],
+[
+"Ce zonă se află deasupra pădurilor, la altitudini mari, cu pajiști și stânci?",
+"etajul alpin",
+"stepa",
+"câmpia de lunca",
+"deșertul"
+],
+[
+"Cum se numește zona de tranziție între stepă și pădure?",
+"silvostepa",
+"tundra",
+"taigaua",
+"savana"
+]
+],
+"tf": [
+[
+"Pădurile acoperă aproximativ o treime din România.",
+true
+],
+[
+"În Câmpia Română predomină tundra.",
+false
+],
+[
+"Cernoziomul este un sol foarte fertil.",
+true
+],
+[
+"Delta Dunării are o mare biodiversitate.",
+true
+],
+[
+"Bursucul este un animal tipic deșertului.",
+false
+]
+]
+},
+"ro-resources": {
+"mcq": [
+[
+"Unde se află importante zăcăminte de petrol din România, în jurul Ploieștiului?",
+"județul Prahova",
+"județul Tulcea",
+"județul Sibiu",
+"județul Botoșani"
+],
+[
+"Ce resursă se extrage din Valea Jiului?",
+"huilă (cărbune)",
+"sare",
+"petrol",
+"aur"
+],
+[
+"Ce zăcământ este important în Oltenia, în județul Gorj?",
+"lignit",
+"sare gemă",
+"gaze din Marea Neagră",
+"minereu de fier"
+],
+[
+"Ce se extrage în Munții Apuseni, de exemplu la Brad și Roșia Montană (zonă istorică)?",
+"aur",
+"petrol",
+"huilă",
+"sare"
+],
+[
+"Care este un loc cunoscut pentru sare, în județul Harghita?",
+"Praid",
+"Roșia Montană",
+"Brad",
+"Mediaș"
+],
+[
+"În ce zonă se află mari zăcăminte de gaze naturale?",
+"Podișul Transilvaniei",
+"Delta Dunării",
+"Munții Rodnei",
+"Munții Făgăraș"
+],
+[
+"Ce centrală produce energie nucleară în România?",
+"Cernavodă",
+"Rovinari",
+"Turceni",
+"Porțile de Fier"
+],
+[
+"Ce regiune a României are potențial eolian ridicat?",
+"Dobrogea",
+"Munții Făgăraș",
+"Maramureș",
+"Podișul Transilvaniei"
+],
+[
+"Ce este o resursă regenerabilă?",
+"lemnul dintr-o pădure gestionată corect",
+"petrolul",
+"huila",
+"gazele naturale"
+],
+[
+"Ce hidrocentrală mare se află pe Dunăre?",
+"Porțile de Fier I",
+"Vidraru",
+"Bicaz",
+"Lotru-Ciunget"
+]
+],
+"tf": [
+[
+"Petrolul este o resursă neregenerabilă.",
+true
+],
+[
+"România nu are deloc păduri.",
+false
+],
+[
+"Sarea se extrage din ocne și saline.",
+true
+],
+[
+"Energia solară este o energie regenerabilă.",
+true
+],
+[
+"Huila se extrage din Delta Dunării.",
+false
+]
+]
+},
+"ro-population": {
+"mcq": [
+[
+"Cam câți locuitori are România?",
+"aproximativ 19 milioane",
+"aproximativ 1,9 milioane",
+"aproximativ 190 de milioane",
+"aproximativ 1,9 miliarde"
+],
+[
+"Care este cel mai mare oraș al României?",
+"București",
+"Cluj-Napoca",
+"Timișoara",
+"Iași"
+],
+[
+"Care este limba oficială a României?",
+"româna",
+"maghiara",
+"germana",
+"engleza"
+],
+[
+"Care este cea mai numeroasă minoritate națională din România?",
+"maghiarii",
+"germanii",
+"turcii",
+"slovacii"
+],
+[
+"Cum se numesc unitățile administrative de bază, de la țară?",
+"comune",
+"metropole",
+"regiuni de dezvoltare",
+"state"
+],
+[
+"Câte județe are România?",
+"41, plus municipiul București",
+"30",
+"50",
+"10"
+],
+[
+"Ce arată densitatea populației în România?",
+"numărul mediu de locuitori pe km²",
+"numărul de orașe",
+"numărul de școli",
+"numărul de râuri"
+],
+[
+"Cum evoluează populația României în ultimele decenii?",
+"scade ușor și îmbătrânește",
+"crește foarte rapid",
+"rămâne exact la fel",
+"se dublează"
+],
+[
+"Aproximativ cât din populația României locuiește în mediul urban?",
+"puțin peste jumătate",
+"aproximativ 10%",
+"aproximativ 95%",
+"aproximativ 1%"
+],
+[
+"Care este cel mai mare oraș din Transilvania?",
+"Cluj-Napoca",
+"Brașov",
+"Sibiu",
+"Oradea"
+]
+],
+"tf": [
+[
+"București este capitala și cel mai mare oraș al României.",
+true
+],
+[
+"România are 41 de județe.",
+true
+],
+[
+"Majoritatea locuitorilor sunt români.",
+true
+],
+[
+"În România se vorbește doar limba română.",
+false
+],
+[
+"Cluj-Napoca este capitala României.",
+false
+]
+]
+},
+"ro-economy": {
+"mcq": [
+[
+"Ce culturi se întâlnesc mult în Câmpia Română?",
+"grâu, porumb și floarea-soarelui",
+"banane și cafea",
+"orez și ceai",
+"măsline"
+],
+[
+"Unde se cultivă, de preferat, vița-de-vie?",
+"pe dealuri și în zone însorite",
+"pe vârfuri de munte",
+"în Delta Dunării",
+"în lacuri"
+],
+[
+"Ce oraș este cunoscut pentru industria petrochimică?",
+"Ploiești",
+"Sibiu",
+"Suceava",
+"Baia Mare"
+],
+[
+"Ce oraș este cunoscut pentru siderurgie (oțel) pe malul Dunării?",
+"Galați",
+"Sinaia",
+"Sovata",
+"Alba Iulia"
+],
+[
+"Ce oraș este cunoscut pentru producția de automobile Dacia?",
+"Mioveni (lângă Pitești)",
+"Tulcea",
+"Sibiu",
+"Cluj-Napoca"
+],
+[
+"Ce activitate este importantă pe litoral în timpul verii?",
+"turismul",
+"extracția de huilă",
+"pescuitul polar",
+"culturile de ceai"
+],
+[
+"Ce drum de munte celebru traversează Munții Făgăraș?",
+"Transfăgărășan",
+"Autostrada A1",
+"Valea Prahovei",
+"Drumul Mării"
+],
+[
+"Ce sector include băncile, comerțul, educația și sănătatea?",
+"serviciile",
+"agricultura",
+"industria extractivă",
+"silvicultura"
+],
+[
+"Cum se numește creșterea animalelor, în România importantă în zonele de deal și munte?",
+"zootehnia",
+"silvicultura",
+"minieritul",
+"turismul rural"
+],
+[
+"Ce aeroport internațional se află lângă București, la Otopeni?",
+"Henri Coandă",
+"Avram Iancu",
+"Traian Vuia",
+"Mihail Kogălniceanu"
+]
+],
+"tf": [
+[
+"Agricultura este o activitate importantă în câmpii.",
+true
+],
+[
+"Constanța este un port important la Marea Neagră.",
+true
+],
+[
+"România nu are turism.",
+false
+],
+[
+"Serviciile sunt un sector economic important.",
+true
+],
+[
+"Cluj-Napoca are o industrie IT dezvoltată.",
+true
+]
+]
+},
+"world-relief": {
+"mcq": [
+[
+"Cel mai înalt lanț muntos din lume este...",
+"Himalaya",
+"Alpii",
+"Munții Stâncoși",
+"Pirineii"
+],
+[
+"Cel mai lung lanț muntos de pe uscat este...",
+"Anzii",
+"Himalaya",
+"Alpii",
+"Carpații"
+]
+],
+"tf": [
+[
+"Alpii se află în America de Sud.",
+false
+],
+[
+"Anzii se află în America de Sud.",
+true
+]
+]
+}
+}
+}

@@ -1,0 +1,664 @@
+{
+ "provenance": {
+  "id": "prov.data.geo.romania",
+  "kind": "data",
+  "title": "Ludiko curated Romania geography dataset",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Counties and county seats (Ilfov has no seat of its own; Bucharest is a separate municipality), approximate river lengths and mouths, peak heights rounded as commonly published, relief units and massifs. Facts only, own wording; river lengths 'approximately'. Region assignment omitted where historically ambiguous. Awaiting review by a geography teacher."
+ },
+ "capital": "București",
+ "counties": [
+  {
+   "id": "alba",
+   "ro": "Alba",
+   "seat": "Alba Iulia",
+   "region": "Transilvania"
+  },
+  {
+   "id": "arad",
+   "ro": "Arad",
+   "seat": "Arad",
+   "region": null
+  },
+  {
+   "id": "arges",
+   "ro": "Argeș",
+   "seat": "Pitești",
+   "region": "Muntenia"
+  },
+  {
+   "id": "bacau",
+   "ro": "Bacău",
+   "seat": "Bacău",
+   "region": "Moldova"
+  },
+  {
+   "id": "bihor",
+   "ro": "Bihor",
+   "seat": "Oradea",
+   "region": null
+  },
+  {
+   "id": "bistrita-nasaud",
+   "ro": "Bistrița-Năsăud",
+   "seat": "Bistrița",
+   "region": "Transilvania"
+  },
+  {
+   "id": "botosani",
+   "ro": "Botoșani",
+   "seat": "Botoșani",
+   "region": "Moldova"
+  },
+  {
+   "id": "brasov",
+   "ro": "Brașov",
+   "seat": "Brașov",
+   "region": "Transilvania"
+  },
+  {
+   "id": "braila",
+   "ro": "Brăila",
+   "seat": "Brăila",
+   "region": "Muntenia"
+  },
+  {
+   "id": "buzau",
+   "ro": "Buzău",
+   "seat": "Buzău",
+   "region": "Muntenia"
+  },
+  {
+   "id": "caras-severin",
+   "ro": "Caraș-Severin",
+   "seat": "Reșița",
+   "region": "Banat"
+  },
+  {
+   "id": "calarasi",
+   "ro": "Călărași",
+   "seat": "Călărași",
+   "region": "Muntenia"
+  },
+  {
+   "id": "cluj",
+   "ro": "Cluj",
+   "seat": "Cluj-Napoca",
+   "region": "Transilvania"
+  },
+  {
+   "id": "constanta",
+   "ro": "Constanța",
+   "seat": "Constanța",
+   "region": "Dobrogea"
+  },
+  {
+   "id": "covasna",
+   "ro": "Covasna",
+   "seat": "Sfântu Gheorghe",
+   "region": "Transilvania"
+  },
+  {
+   "id": "dambovita",
+   "ro": "Dâmbovița",
+   "seat": "Târgoviște",
+   "region": "Muntenia"
+  },
+  {
+   "id": "dolj",
+   "ro": "Dolj",
+   "seat": "Craiova",
+   "region": "Oltenia"
+  },
+  {
+   "id": "galati",
+   "ro": "Galați",
+   "seat": "Galați",
+   "region": "Moldova"
+  },
+  {
+   "id": "giurgiu",
+   "ro": "Giurgiu",
+   "seat": "Giurgiu",
+   "region": "Muntenia"
+  },
+  {
+   "id": "gorj",
+   "ro": "Gorj",
+   "seat": "Târgu Jiu",
+   "region": "Oltenia"
+  },
+  {
+   "id": "harghita",
+   "ro": "Harghita",
+   "seat": "Miercurea Ciuc",
+   "region": "Transilvania"
+  },
+  {
+   "id": "hunedoara",
+   "ro": "Hunedoara",
+   "seat": "Deva",
+   "region": "Transilvania"
+  },
+  {
+   "id": "ialomita",
+   "ro": "Ialomița",
+   "seat": "Slobozia",
+   "region": "Muntenia"
+  },
+  {
+   "id": "iasi",
+   "ro": "Iași",
+   "seat": "Iași",
+   "region": "Moldova"
+  },
+  {
+   "id": "ilfov",
+   "ro": "Ilfov",
+   "seat": null,
+   "region": "Muntenia"
+  },
+  {
+   "id": "maramures",
+   "ro": "Maramureș",
+   "seat": "Baia Mare",
+   "region": null
+  },
+  {
+   "id": "mehedinti",
+   "ro": "Mehedinți",
+   "seat": "Drobeta-Turnu Severin",
+   "region": "Oltenia"
+  },
+  {
+   "id": "mures",
+   "ro": "Mureș",
+   "seat": "Târgu Mureș",
+   "region": "Transilvania"
+  },
+  {
+   "id": "neamt",
+   "ro": "Neamț",
+   "seat": "Piatra Neamț",
+   "region": "Moldova"
+  },
+  {
+   "id": "olt",
+   "ro": "Olt",
+   "seat": "Slatina",
+   "region": "Oltenia"
+  },
+  {
+   "id": "prahova",
+   "ro": "Prahova",
+   "seat": "Ploiești",
+   "region": "Muntenia"
+  },
+  {
+   "id": "satu-mare",
+   "ro": "Satu Mare",
+   "seat": "Satu Mare",
+   "region": null
+  },
+  {
+   "id": "salaj",
+   "ro": "Sălaj",
+   "seat": "Zalău",
+   "region": null
+  },
+  {
+   "id": "sibiu",
+   "ro": "Sibiu",
+   "seat": "Sibiu",
+   "region": "Transilvania"
+  },
+  {
+   "id": "suceava",
+   "ro": "Suceava",
+   "seat": "Suceava",
+   "region": "Moldova"
+  },
+  {
+   "id": "teleorman",
+   "ro": "Teleorman",
+   "seat": "Alexandria",
+   "region": "Muntenia"
+  },
+  {
+   "id": "timis",
+   "ro": "Timiș",
+   "seat": "Timișoara",
+   "region": "Banat"
+  },
+  {
+   "id": "tulcea",
+   "ro": "Tulcea",
+   "seat": "Tulcea",
+   "region": "Dobrogea"
+  },
+  {
+   "id": "vaslui",
+   "ro": "Vaslui",
+   "seat": "Vaslui",
+   "region": "Moldova"
+  },
+  {
+   "id": "valcea",
+   "ro": "Vâlcea",
+   "seat": "Râmnicu Vâlcea",
+   "region": "Oltenia"
+  },
+  {
+   "id": "vrancea",
+   "ro": "Vrancea",
+   "seat": "Focșani",
+   "region": "Moldova"
+  }
+ ],
+ "rivers": [
+  {
+   "id": "dunarea",
+   "ro": "Dunărea",
+   "lengthKm": 2850,
+   "mouth": "Marea Neagră"
+  },
+  {
+   "id": "prutul",
+   "ro": "Prutul",
+   "lengthKm": 950,
+   "mouth": "Dunărea"
+  },
+  {
+   "id": "muresul",
+   "ro": "Mureșul",
+   "lengthKm": 760,
+   "mouth": "Tisa"
+  },
+  {
+   "id": "siretul",
+   "ro": "Siretul",
+   "lengthKm": 700,
+   "mouth": "Dunărea"
+  },
+  {
+   "id": "oltul",
+   "ro": "Oltul",
+   "lengthKm": 615,
+   "mouth": "Dunărea"
+  },
+  {
+   "id": "ialomita",
+   "ro": "Ialomița",
+   "lengthKm": 415,
+   "mouth": "Dunărea"
+  },
+  {
+   "id": "somesul",
+   "ro": "Someșul",
+   "lengthKm": 375,
+   "mouth": "Tisa"
+  },
+  {
+   "id": "argesul",
+   "ro": "Argeșul",
+   "lengthKm": 350,
+   "mouth": "Dunărea"
+  },
+  {
+   "id": "jiul",
+   "ro": "Jiul",
+   "lengthKm": 340,
+   "mouth": "Dunărea"
+  },
+  {
+   "id": "bistrita",
+   "ro": "Bistrița",
+   "lengthKm": 285,
+   "mouth": "Siretul"
+  }
+ ],
+ "cityRivers": [
+  {
+   "city": "București",
+   "river": "Dâmbovița"
+  },
+  {
+   "city": "Cluj-Napoca",
+   "river": "Someșul Mic"
+  },
+  {
+   "city": "Timișoara",
+   "river": "Bega"
+  },
+  {
+   "city": "Iași",
+   "river": "Bahlui"
+  },
+  {
+   "city": "Oradea",
+   "river": "Crișul Repede"
+  },
+  {
+   "city": "Arad",
+   "river": "Mureșul"
+  },
+  {
+   "city": "Târgu Mureș",
+   "river": "Mureșul"
+  },
+  {
+   "city": "Brăila",
+   "river": "Dunărea"
+  },
+  {
+   "city": "Tulcea",
+   "river": "Dunărea"
+  },
+  {
+   "city": "Giurgiu",
+   "river": "Dunărea"
+  },
+  {
+   "city": "Slatina",
+   "river": "Oltul"
+  },
+  {
+   "city": "Râmnicu Vâlcea",
+   "river": "Oltul"
+  },
+  {
+   "city": "Bacău",
+   "river": "Bistrița"
+  },
+  {
+   "city": "Piatra Neamț",
+   "river": "Bistrița"
+  },
+  {
+   "city": "Suceava",
+   "river": "Suceava"
+  },
+  {
+   "city": "Pitești",
+   "river": "Argeșul"
+  },
+  {
+   "city": "Târgu Jiu",
+   "river": "Jiul"
+  },
+  {
+   "city": "Sibiu",
+   "river": "Cibin"
+  },
+  {
+   "city": "Alba Iulia",
+   "river": "Mureșul"
+  },
+  {
+   "city": "Deva",
+   "river": "Mureșul"
+  },
+  {
+   "city": "Reșița",
+   "river": "Bârzava"
+  }
+ ],
+ "peaks": [
+  {
+   "ro": "Moldoveanu",
+   "massif": "Făgăraș",
+   "group": "Carpații Meridionali",
+   "heightM": 2544
+  },
+  {
+   "ro": "Omu",
+   "massif": "Bucegi",
+   "group": "Carpații Meridionali",
+   "heightM": 2505
+  },
+  {
+   "ro": "Peleaga",
+   "massif": "Retezat",
+   "group": "Carpații Meridionali",
+   "heightM": 2509
+  },
+  {
+   "ro": "Parângul Mare",
+   "massif": "Parâng",
+   "group": "Carpații Meridionali",
+   "heightM": 2518
+  },
+  {
+   "ro": "Pietrosu Rodnei",
+   "massif": "Rodna",
+   "group": "Carpații Orientali",
+   "heightM": 2303
+  },
+  {
+   "ro": "Cindrel",
+   "massif": "Cindrel",
+   "group": "Carpații Meridionali",
+   "heightM": 2244
+  },
+  {
+   "ro": "La Om",
+   "massif": "Piatra Craiului",
+   "group": "Carpații Meridionali",
+   "heightM": 2238
+  },
+  {
+   "ro": "Țarcu",
+   "massif": "Țarcu",
+   "group": "Carpații Meridionali",
+   "heightM": 2190
+  },
+  {
+   "ro": "Pietrosul Călimanilor",
+   "massif": "Călimani",
+   "group": "Carpații Orientali",
+   "heightM": 2100
+  },
+  {
+   "ro": "Ciucaș",
+   "massif": "Ciucaș",
+   "group": "Carpații Orientali",
+   "heightM": 1954
+  },
+  {
+   "ro": "Toaca",
+   "massif": "Ceahlău",
+   "group": "Carpații Orientali",
+   "heightM": 1904
+  },
+  {
+   "ro": "Vlădeasa",
+   "massif": "Apuseni",
+   "group": "Carpații Occidentali",
+   "heightM": 1836
+  },
+  {
+   "ro": "Rarău",
+   "massif": "Rarău",
+   "group": "Carpații Orientali",
+   "heightM": 1651
+  },
+  {
+   "ro": "Piatra Goznei",
+   "massif": "Semenic",
+   "group": "Carpații Occidentali",
+   "heightM": 1447
+  }
+ ],
+ "massifs": [
+  {
+   "ro": "Rodna",
+   "group": "Carpații Orientali"
+  },
+  {
+   "ro": "Ceahlău",
+   "group": "Carpații Orientali"
+  },
+  {
+   "ro": "Călimani",
+   "group": "Carpații Orientali"
+  },
+  {
+   "ro": "Harghita",
+   "group": "Carpații Orientali"
+  },
+  {
+   "ro": "Rarău",
+   "group": "Carpații Orientali"
+  },
+  {
+   "ro": "Bucegi",
+   "group": "Carpații Meridionali"
+  },
+  {
+   "ro": "Făgăraș",
+   "group": "Carpații Meridionali"
+  },
+  {
+   "ro": "Parâng",
+   "group": "Carpații Meridionali"
+  },
+  {
+   "ro": "Retezat",
+   "group": "Carpații Meridionali"
+  },
+  {
+   "ro": "Piatra Craiului",
+   "group": "Carpații Meridionali"
+  },
+  {
+   "ro": "Cozia",
+   "group": "Carpații Meridionali"
+  },
+  {
+   "ro": "Apuseni",
+   "group": "Carpații Occidentali"
+  },
+  {
+   "ro": "Semenic",
+   "group": "Carpații Occidentali"
+  },
+  {
+   "ro": "Poiana Ruscă",
+   "group": "Carpații Occidentali"
+  }
+ ],
+ "reliefUnits": [
+  {
+   "ro": "Carpații Orientali",
+   "form": "munți",
+   "note": "în estul Carpaților românești, de la Maramureș până la Valea Prahovei"
+  },
+  {
+   "ro": "Carpații Meridionali",
+   "form": "munți",
+   "note": "în sudul Carpaților, cu cele mai înalte vârfuri din țară"
+  },
+  {
+   "ro": "Carpații Occidentali",
+   "form": "munți",
+   "note": "în vestul țării, mai joși decât ceilalți munți carpatici"
+  },
+  {
+   "ro": "Subcarpații",
+   "form": "dealuri și podișuri",
+   "note": "dealuri aflate la exteriorul arcului carpatic"
+  },
+  {
+   "ro": "Podișul Transilvaniei",
+   "form": "dealuri și podișuri",
+   "note": "în interiorul arcului carpatic"
+  },
+  {
+   "ro": "Podișul Moldovei",
+   "form": "dealuri și podișuri",
+   "note": "în estul țării, între Carpați și Prut"
+  },
+  {
+   "ro": "Podișul Getic",
+   "form": "dealuri și podișuri",
+   "note": "în sud, între Carpații Meridionali și Câmpia Română"
+  },
+  {
+   "ro": "Podișul Dobrogei",
+   "form": "dealuri și podișuri",
+   "note": "în sud-est, între Dunăre și Marea Neagră"
+  },
+  {
+   "ro": "Dealurile de Vest",
+   "form": "dealuri și podișuri",
+   "note": "în vest, între Carpații Occidentali și Câmpia de Vest"
+  },
+  {
+   "ro": "Câmpia Română",
+   "form": "câmpii",
+   "note": "în sudul țării, cea mai mare câmpie"
+  },
+  {
+   "ro": "Câmpia de Vest",
+   "form": "câmpii",
+   "note": "în vestul țării, la granița cu Ungaria și Serbia"
+  }
+ ],
+ "reliefForms": [
+  "munți",
+  "dealuri și podișuri",
+  "câmpii"
+ ],
+ "features": [
+  {
+   "ro": "Retezat",
+   "form": "munți"
+  },
+  {
+   "ro": "Făgăraș",
+   "form": "munți"
+  },
+  {
+   "ro": "Bucegi",
+   "form": "munți"
+  },
+  {
+   "ro": "Apuseni",
+   "form": "munți"
+  },
+  {
+   "ro": "Subcarpații Prahovei",
+   "form": "dealuri și podișuri"
+  },
+  {
+   "ro": "Podișul Transilvaniei",
+   "form": "dealuri și podișuri"
+  },
+  {
+   "ro": "Podișul Moldovei",
+   "form": "dealuri și podișuri"
+  },
+  {
+   "ro": "Podișul Dobrogei",
+   "form": "dealuri și podișuri"
+  },
+  {
+   "ro": "Bărăganul",
+   "form": "câmpii"
+  },
+  {
+   "ro": "Câmpia Banatului",
+   "form": "câmpii"
+  },
+  {
+   "ro": "Câmpia Română",
+   "form": "câmpii"
+  },
+  {
+   "ro": "Câmpia Tisei",
+   "form": "câmpii"
+  }
+ ]
+}

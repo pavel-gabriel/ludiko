@@ -405,7 +405,7 @@ describe('content on disk', () => {
       stiinte: ['MEM-2013', 'STI-III-IV-2014'],
       civ: ['CIV-III-IV-2014'],
       ist: ['IST-IV-2014'],
-      geo: ['GEO-IV-2014'],
+      geo: ['GEO-IV-2014', 'GEO-V-VIII-2017'],
       logic: ['LUDIKO-LOGIC'],
     };
     for (const x of skills) {

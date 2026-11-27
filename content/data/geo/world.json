@@ -1,0 +1,328 @@
+{
+ "provenance": {
+  "id": "prov.data.geo.world",
+  "kind": "data",
+  "title": "Ludiko curated world geography facts (orders, mountains, rivers)",
+  "author": "Ludiko",
+  "source": "ai-draft",
+  "licence": "OWN",
+  "notes": "Well-established rounded figures only (areas in million km2, heights in m, planet order); order sets are chosen so neighbouring values differ clearly. Awaiting review by a geography teacher."
+ },
+ "planetsFromSun": [
+  {
+   "ro": "Mercur",
+   "en": "Mercury"
+  },
+  {
+   "ro": "Venus",
+   "en": "Venus"
+  },
+  {
+   "ro": "Pământ",
+   "en": "Earth"
+  },
+  {
+   "ro": "Marte",
+   "en": "Mars"
+  },
+  {
+   "ro": "Jupiter",
+   "en": "Jupiter"
+  },
+  {
+   "ro": "Saturn",
+   "en": "Saturn"
+  },
+  {
+   "ro": "Uranus",
+   "en": "Uranus"
+  },
+  {
+   "ro": "Neptun",
+   "en": "Neptune"
+  }
+ ],
+ "planetsBySize": [
+  {
+   "ro": "Jupiter",
+   "en": "Jupiter",
+   "v": 139820
+  },
+  {
+   "ro": "Saturn",
+   "en": "Saturn",
+   "v": 116460
+  },
+  {
+   "ro": "Pământ",
+   "en": "Earth",
+   "v": 12742
+  },
+  {
+   "ro": "Marte",
+   "en": "Mars",
+   "v": 6779
+  },
+  {
+   "ro": "Mercur",
+   "en": "Mercury",
+   "v": 4879
+  }
+ ],
+ "continentsByArea": [
+  {
+   "ro": "Asia",
+   "en": "Asia",
+   "v": 44.6
+  },
+  {
+   "ro": "America",
+   "en": "America",
+   "v": 42.5
+  },
+  {
+   "ro": "Africa",
+   "en": "Africa",
+   "v": 30.4
+  },
+  {
+   "ro": "Antarctica",
+   "en": "Antarctica",
+   "v": 14.2
+  },
+  {
+   "ro": "Europa",
+   "en": "Europe",
+   "v": 10.2
+  },
+  {
+   "ro": "Australia și Oceania",
+   "en": "Australia and Oceania",
+   "v": 8.5
+  }
+ ],
+ "oceansByArea": [
+  {
+   "ro": "Oceanul Pacific",
+   "en": "Pacific Ocean",
+   "v": 165
+  },
+  {
+   "ro": "Oceanul Atlantic",
+   "en": "Atlantic Ocean",
+   "v": 106
+  },
+  {
+   "ro": "Oceanul Indian",
+   "en": "Indian Ocean",
+   "v": 70
+  },
+  {
+   "ro": "Oceanul Arctic",
+   "en": "Arctic Ocean",
+   "v": 15
+  }
+ ],
+ "worldPeaks": [
+  {
+   "ro": "Everest",
+   "en": "Everest",
+   "continent": "Asia",
+   "continentEn": "Asia",
+   "v": 8849
+  },
+  {
+   "ro": "Aconcagua",
+   "en": "Aconcagua",
+   "continent": "America de Sud",
+   "continentEn": "South America",
+   "v": 6961
+  },
+  {
+   "ro": "Denali",
+   "en": "Denali",
+   "continent": "America de Nord",
+   "continentEn": "North America",
+   "v": 6190
+  },
+  {
+   "ro": "Kilimanjaro",
+   "en": "Kilimanjaro",
+   "continent": "Africa",
+   "continentEn": "Africa",
+   "v": 5895
+  },
+  {
+   "ro": "Vinson",
+   "en": "Vinson Massif",
+   "continent": "Antarctica",
+   "continentEn": "Antarctica",
+   "v": 4892
+  },
+  {
+   "ro": "Kosciuszko",
+   "en": "Kosciuszko",
+   "continent": "Australia",
+   "continentEn": "Australia",
+   "v": 2228
+  }
+ ],
+ "mountains": [
+  {
+   "ro": "Himalaya",
+   "en": "Himalaya",
+   "continent": "asia"
+  },
+  {
+   "ro": "Anzii",
+   "en": "Andes",
+   "continent": "america-sud"
+  },
+  {
+   "ro": "Munții Stâncoși",
+   "en": "Rocky Mountains",
+   "continent": "america-nord"
+  },
+  {
+   "ro": "Munții Apalași",
+   "en": "Appalachians",
+   "continent": "america-nord"
+  },
+  {
+   "ro": "Alpii",
+   "en": "Alps",
+   "continent": "europa"
+  },
+  {
+   "ro": "Pirineii",
+   "en": "Pyrenees",
+   "continent": "europa"
+  },
+  {
+   "ro": "Munții Atlas",
+   "en": "Atlas Mountains",
+   "continent": "africa"
+  },
+  {
+   "ro": "Munții Drakensberg",
+   "en": "Drakensberg",
+   "continent": "africa"
+  },
+  {
+   "ro": "Munții Scandinaviei",
+   "en": "Scandinavian Mountains",
+   "continent": "europa"
+  },
+  {
+   "ro": "Karakoram",
+   "en": "Karakoram",
+   "continent": "asia"
+  },
+  {
+   "ro": "Marele Lanț Divizor",
+   "en": "Great Dividing Range",
+   "continent": "oceania"
+  }
+ ],
+ "rivers": [
+  {
+   "ro": "Nilul",
+   "en": "Nile",
+   "continent": "africa",
+   "mouth": {
+    "ro": "Marea Mediterană",
+    "en": "Mediterranean Sea"
+   }
+  },
+  {
+   "ro": "Congo",
+   "en": "Congo",
+   "continent": "africa",
+   "mouth": {
+    "ro": "Oceanul Atlantic",
+    "en": "Atlantic Ocean"
+   }
+  },
+  {
+   "ro": "Amazon",
+   "en": "Amazon",
+   "continent": "america-sud",
+   "mouth": {
+    "ro": "Oceanul Atlantic",
+    "en": "Atlantic Ocean"
+   }
+  },
+  {
+   "ro": "Mississippi",
+   "en": "Mississippi",
+   "continent": "america-nord",
+   "mouth": {
+    "ro": "Golful Mexic",
+    "en": "Gulf of Mexico"
+   }
+  },
+  {
+   "ro": "Yangtze",
+   "en": "Yangtze",
+   "continent": "asia",
+   "mouth": {
+    "ro": "Marea Chinei de Est",
+    "en": "East China Sea"
+   }
+  },
+  {
+   "ro": "Gange",
+   "en": "Ganges",
+   "continent": "asia",
+   "mouth": {
+    "ro": "Golful Bengal",
+    "en": "Bay of Bengal"
+   }
+  },
+  {
+   "ro": "Volga",
+   "en": "Volga",
+   "continent": "europa",
+   "mouth": {
+    "ro": "Marea Caspică",
+    "en": "Caspian Sea"
+   }
+  },
+  {
+   "ro": "Rinul",
+   "en": "Rhine",
+   "continent": "europa",
+   "mouth": {
+    "ro": "Marea Nordului",
+    "en": "North Sea"
+   }
+  },
+  {
+   "ro": "Dunărea",
+   "en": "Danube",
+   "continent": "europa",
+   "mouth": {
+    "ro": "Marea Neagră",
+    "en": "Black Sea"
+   }
+  },
+  {
+   "ro": "Vistula",
+   "en": "Vistula",
+   "continent": "europa",
+   "mouth": {
+    "ro": "Marea Baltică",
+    "en": "Baltic Sea"
+   }
+  },
+  {
+   "ro": "Niprul",
+   "en": "Dnieper",
+   "continent": "europa",
+   "mouth": {
+    "ro": "Marea Neagră",
+    "en": "Black Sea"
+   }
+  }
+ ]
+}
