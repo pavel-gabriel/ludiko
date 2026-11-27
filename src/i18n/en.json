@@ -315,7 +315,10 @@
       "correctLabel": "Correct answer",
       "reconstructed": "reconstructed",
       "noDetails": "no details",
-      "openExercise": "Open the exercise",
+      "openExercise": "Open this exact question",
+      "hideExercise": "Hide the question",
+      "tryCorrect": "Answer judged correct",
+      "tryWrong": "Answer judged wrong",
       "grade": "grade {{n}}",
       "gradeZero": "preparatory grade",
       "contexts": {
@@ -333,7 +336,11 @@
         "ist": "History",
         "geo": "Geography",
         "civ": "Civics",
-        "logic": "Logic"
+        "logic": "Logic",
+        "bio": "Biology",
+        "fiz": "Physics",
+        "chim": "Chemistry",
+        "eng": "English"
       }
     }
   },
@@ -860,7 +867,11 @@
       "ist": "History",
       "geo": "Geography",
       "civ": "Civics",
-      "logic": "Logic"
+      "logic": "Logic",
+      "bio": "Biology",
+      "fiz": "Physics",
+      "chim": "Chemistry",
+      "eng": "English"
     },
     "grades": {
       "0": "Prep",

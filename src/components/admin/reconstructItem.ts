@@ -1,5 +1,6 @@
 import { getItemsForSkill, getSkill } from '@/engine/content/registry'
 import { generateItems } from '@/engine/items/generators'
+import type { Item } from '@/engine/types'
 import { buildReportSnapshot, type ReportSnapshot } from '@/services/reportSnapshot'
 
 const GENERATED_ID = /^gen\.(.+)\.(\d+)\.(\d+)$/
@@ -25,6 +26,26 @@ export function reconstructSnapshot(itemId: string, skillId?: string): ReportSna
     if (!skillId) return undefined
     const item = getItemsForSkill(skillId).find((i) => i.id === itemId)
     return item ? buildReportSnapshot(item, 'practice', '/') : undefined
+  } catch {
+    return undefined
+  }
+}
+
+/**
+ * The exact item behind a report, so the admin can open THAT question (not a new one):
+ * generated ids are regenerated from their seed, bank ids are looked up. undefined when it cannot be rebuilt.
+ */
+export function reconstructItem(itemId: string, skillId?: string): Item | undefined {
+  try {
+    const gen = GENERATED_ID.exec(itemId)
+    if (gen) {
+      const skill = getSkill(gen[1])
+      if (!skill) return undefined
+      const index = Number(gen[3])
+      return generateItems(skill, index + 1, { seed: Number(gen[2]) }).find((i) => i.id === itemId)
+    }
+    if (!skillId) return undefined
+    return getItemsForSkill(skillId).find((i) => i.id === itemId)
   } catch {
     return undefined
   }
