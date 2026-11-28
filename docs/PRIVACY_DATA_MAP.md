@@ -34,7 +34,7 @@ GitHub secrets `VITE_FIREBASE_*`). The owner must check the Firebase console (se
 | D2 | Learning progress: skill states, mastery numbers, attempts/correct counts, stars, stickers, play days, placement results, level history, last 14 missions | IndexedDB `ludiko-profiles` / store `progress` | same | same | same | `src/profiles/types.ts` |
 | D3 | Active profile id | localStorage `ludiko-active-profile` | same | removed on deleting that profile | same | `profileService.ts` |
 | D4 | Settings: language, dyslexic font, sound | localStorage `ludiko-settings` (zustand persist) | same | until cleared | strictly necessary / functional | `src/store/settingsStore.ts` |
-| D5 | Language choice | localStorage `i18nextLng` (i18next detector cache) | same | until cleared | functional | `src/i18n/config.ts` |
+| D5 | Language choice | localStorage `ludiko-lang` (set only when the user picks a language; default Romanian) | same | until cleared | functional | `src/i18n/config.ts` |
 | D6 | "Offline ready" toast shown flag | localStorage `ludiko-offline-ready-shown` | same | until cleared | functional | `src/components/ui/PwaToast.tsx` |
 | D7 | "New sticker" memory | localStorage `ludiko.album.seen.<profileId>` | same | until cleared | functional | `src/ui/album/albumService.ts` |
 | D7b | Mascot look chosen by the child (id of one of 8 looks) | localStorage `ludiko-mascot-look-<profileId>` | same | until cleared (device-local, deliberately NOT synced: firestore.rules unchanged) | functional | `src/ui/mascot/lookStore.ts` |
