@@ -4,6 +4,10 @@ on:
   pull_request:
     branches: [main, dev]
 
+# Least privilege: PR checks only read the repository (docs/SECURITY.md)
+permissions:
+  contents: read
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -29,11 +33,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '21'
 
-      - name: Compile Firebase rules in the emulators
-        run: npx --yes firebase-tools@15.35.0 emulators:exec --only firestore,database --project demo-ludiko "echo rules OK"
+      # firebase + firebase-admin are needed by the executable rules tests
+      - run: npm ci
+
+      # Compiles both rules files AND runs tests/rules/emulator-rules.mjs (allowed flows + attacks, docs/SECURITY.md)
+      - name: Compile and test Firebase rules in the emulators
+        run: npx --yes firebase-tools@15.35.0 emulators:exec --only firestore,database --project demo-ludiko "node tests/rules/emulator-rules.mjs"

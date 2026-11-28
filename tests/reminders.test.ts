@@ -10,6 +10,7 @@ import {
   DEFAULT_TIMEZONE,
   isSubscriptionExpired,
   subscriptionExpiryCutoff,
+  isAllowedPushEndpoint,
 } from '../scripts/reminders/logic.mjs';
 import {
   runReminders,
@@ -330,7 +331,7 @@ describe('runReminders', () => {
     VAPID_SUBJECT: 'mailto:owner@example.org',
     FIREBASE_SERVICE_ACCOUNT: '{"project_id":"test"}',
   };
-  const endpointFor = (name: string) => `https://push.example.test/${name}-SECRET-ENDPOINT`;
+  const endpointFor = (name: string) => `https://fcm.googleapis.com/fcm/send/${name}-SECRET-ENDPOINT`;
   const sub = (name: string, extra: Record<string, unknown> = {}) => ({
     active: true,
     endpoint: endpointFor(name),
@@ -349,7 +350,7 @@ describe('runReminders', () => {
       { id: 'boom', data: sub('boom') },
       { id: 'played', data: sub('played', { lastPlayedDay: '2026-07-01' }) },
       { id: 'sentToday', data: sub('sentToday', { lastSentDay: '2026-07-01' }) },
-      { id: 'badUrl', data: sub('badUrl', { endpoint: 'http://insecure.example.test/x' }) },
+      { id: 'badUrl', data: sub('badUrl', { endpoint: 'https://attacker.example.test/x' }) },
       { id: 'paused', data: sub('paused', { active: false }) },
     ];
     const fake = fakeFirestore(rows);
@@ -392,7 +393,7 @@ describe('runReminders', () => {
     // Due subscriptions are sent to (ok, gone410, gone404, boom); badUrl is rejected before sending
     const sentTo = t.sendNotification.mock.calls.map((c) => c[0].endpoint);
     expect(sentTo).toHaveLength(4);
-    expect(sentTo).not.toContain('http://insecure.example.test/x');
+    expect(sentTo).not.toContain('https://attacker.example.test/x');
     expect(sentTo).not.toContain(endpointFor('played'));
 
     const [subscription, payload, options] = t.sendNotification.mock.calls[0] as unknown as [
@@ -423,7 +424,7 @@ describe('runReminders', () => {
     expect(everything).not.toContain('SECRET-ENDPOINT');
     expect(everything).not.toContain('auth-boom');
     expect(everything).not.toContain('p256-boom');
-    expect(everything).toContain('push.example.test');
+    expect(everything).toContain('fcm.googleapis.com');
     expect(everything).toContain('500');
   });
 
@@ -600,5 +601,28 @@ describe('normalizeVapidSubject (owner pasted a bare email)', async () => {
   });
   it('rejects values that are not an email or https URL', () => {
     for (const bad of ['', '   ', 'hello', 'http://x.ro', 'mailto:', undefined]) expect(normalizeVapidSubject(bad as never)).toBeNull();
+  });
+});
+
+describe('isAllowedPushEndpoint (docs/SECURITY.md S-01, mirrors firestore.rules)', () => {
+  it('accepts the browser push services', () => {
+    for (const ep of [
+      'https://fcm.googleapis.com/fcm/send/abc',
+      'https://fcm.googleapis.com/wp/abc',
+      'https://updates.push.services.mozilla.com/wpush/v2/abc',
+      'https://web.push.apple.com/QabcXYZ',
+      'https://wns2-db5p.notify.windows.com/w/?token=abc',
+    ]) expect(isAllowedPushEndpoint(ep), ep).toBe(true);
+  });
+  it('rejects any other host, lookalikes, http and oversized endpoints', () => {
+    for (const ep of [
+      'https://attacker.example/x',
+      'https://fcm.googleapis.com.evil.example/fcm/send/x',
+      'https://evilgoogleapis.com/x',
+      'http://fcm.googleapis.com/fcm/send/x',
+      'https://fcm.googleapis.com',
+      `https://fcm.googleapis.com/${'a'.repeat(1100)}`,
+      42,
+    ]) expect(isAllowedPushEndpoint(ep as string), String(ep)).toBe(false);
   });
 });

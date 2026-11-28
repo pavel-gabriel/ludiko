@@ -2,6 +2,12 @@
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
+    <!-- Security (docs/SECURITY.md): GitHub Pages cannot send headers, so the CSP and referrer policy live here.
+         The sha256 is the inline SPA-redirect script below: if you edit that script, update the hash
+         (tests/securityMeta.test.ts recomputes it). Firebase: Auth (googleapis, apis.google.com, firebaseapp.com
+         iframe), Firestore (googleapis), RTDB (firebaseio.com / firebasedatabase.app, wss + long-poll scripts). -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-9H2PrOOsoO83j+B0+WyBtdZvggyAhI/S58G9vWvZoak=' https://apis.google.com https://*.firebaseio.com https://*.firebasedatabase.app; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; media-src 'self' data: blob:; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com https://*.firebasedatabase.app wss://*.firebasedatabase.app https://*.firebaseapp.com; frame-src 'self' https://*.firebaseapp.com https://*.web.app https://apis.google.com https://accounts.google.com; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#FFB6C1" />
     <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />

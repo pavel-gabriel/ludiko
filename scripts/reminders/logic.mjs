@@ -149,3 +149,15 @@ export function normalizeVapidSubject(raw) {
   else return null;
   return /^mailto:[^\s@]+@[^\s@]+\.[^\s@]+$/i.test(s) ? s : null;
 }
+
+/**
+ * Hosts of the browser push services (Google FCM, Mozilla autopush, Apple, Windows WNS). The sender only POSTs to these,
+ * mirroring firestore.rules `pushSubscriptions`, so a forged subscription cannot aim the job at an arbitrary
+ * server (docs/SECURITY.md S-01).
+ */
+export const PUSH_ENDPOINT_PATTERN =
+  /^https:\/\/(([a-z0-9-]+\.)*googleapis\.com|([a-z0-9-]+\.)*push\.services\.mozilla\.com|([a-z0-9-]+\.)*push\.apple\.com|[a-z0-9-]+\.notify\.windows\.com)\/.+$/;
+
+export function isAllowedPushEndpoint(endpoint) {
+  return typeof endpoint === 'string' && endpoint.length <= 1024 && PUSH_ENDPOINT_PATTERN.test(endpoint);
+}
