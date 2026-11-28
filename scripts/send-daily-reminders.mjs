@@ -14,6 +14,7 @@ import {
   pickMessage,
   subscriptionExpiryCutoff,
   normalizeVapidSubject,
+  isAllowedPushEndpoint,
 } from './reminders/logic.mjs';
 
 export const PAGE_SIZE = 500;
@@ -107,7 +108,7 @@ export async function mapWithConcurrency(items, limit, worker) {
 
 function isValidSubscription(sub) {
   if (typeof sub.endpoint !== 'string' || sub.endpoint.length === 0 || sub.endpoint.length > 1024) return false;
-  if (!sub.endpoint.startsWith('https://')) return false;
+  if (!isAllowedPushEndpoint(sub.endpoint)) return false;
   return typeof sub.keys?.p256dh === 'string' && typeof sub.keys?.auth === 'string';
 }
 

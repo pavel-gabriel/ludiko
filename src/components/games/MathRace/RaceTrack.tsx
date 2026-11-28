@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { Player } from '@/utils/types';
 
 interface RaceTrackProps {
@@ -17,8 +18,9 @@ export default function RaceTrack({
   progress,
   totalQuestions,
 }: RaceTrackProps) {
+  const { t } = useTranslation();
   return (
-    <div className="w-full space-y-3" role="region" aria-label="Race track">
+    <div className="w-full space-y-3" role="region" aria-label={t('a11y.raceTrack')}>
       {players.map((player) => {
         const correct = progress[player.id] ?? 0;
         /* Position as a percentage of the track (0% to 100%) */

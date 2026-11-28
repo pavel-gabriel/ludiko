@@ -13,7 +13,8 @@
     "check:size": "node scripts/check-bundle-size.mjs",
     "icons": "node scripts/generate-icons.mjs",
     "lint": "eslint src --ext .ts,.tsx",
-    "rules:check": "npx --yes firebase-tools@15.35.0 emulators:exec --only firestore,database --project demo-ludiko \"echo rules OK\""
+    "rules:check": "npx --yes firebase-tools@15.35.0 emulators:exec --only firestore,database --project demo-ludiko \"echo rules OK\"",
+    "rules:test": "npx --yes firebase-tools@15.35.0 emulators:exec --only firestore,database --project demo-ludiko \"node tests/rules/emulator-rules.mjs\""
   },
   "dependencies": {
     "@fontsource/nunito": "^5.3.0",

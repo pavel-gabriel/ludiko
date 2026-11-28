@@ -7,6 +7,7 @@
   "home": {
     "singlePlayer": "Jucător Unic",
     "multiplayer": "Multi-Jucător",
+    "onlineUnavailable": "Jocul cu prietenii are nevoie de internet și nu este disponibil acum.",
     "createRoom": "Creează Cameră",
     "joinRoom": "Intră în Cameră",
     "teacherMode": "Mod Profesor",
@@ -261,6 +262,24 @@
       "titleNeeded": "Scrie un titlu pentru sesiune.",
       "studentsNeeded": "Alege cel puțin un elev."
     }
+  },
+  "a11y": {
+    "close": "Închide",
+    "toggleLanguage": "Schimbă limba",
+    "chooseAvatar": "Alege un avatar",
+    "selectedAvatar": "Avatar ales: {{avatar}}. Apasă ca să schimbi.",
+    "playerList": "Lista jucătorilor",
+    "raceTrack": "Pista de cursă",
+    "memoryGrid": "Cărțile jocului de memorie",
+    "podium": "Podium: primii 3 jucători",
+    "errorTitle": "Hopa!",
+    "errorBody": "Ceva nu a mers bine.",
+    "errorHome": "Acasă"
+  },
+  "notFound": {
+    "title": "Pagina nu există",
+    "body": "Poate linkul este vechi sau greșit. Hai înapoi acasă!",
+    "home": "Acasă"
   },
   "credits": {
     "title": "Credite și licențe",
@@ -1576,6 +1595,7 @@
     "hint": "Numele este ales din lista noastră: nu scrie numele tău real."
   },
   "setup": {
+    "startFailed": "Nu am putut porni jocul. Verifică conexiunea la internet și încearcă din nou.",
     "contexts": {
       "single": "Joc singur",
       "room": "Cameră nouă",

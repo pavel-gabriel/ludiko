@@ -32,10 +32,10 @@ on:
         type: boolean
         default: true
 
+# Least privilege (docs/SECURITY.md): every job only reads the repo; only the Pages `deploy` job gets
+# pages/id-token, so the reminder/maintenance jobs (which hold Firebase service-account secrets) cannot publish the site.
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 env:
   FIREBASE_PROJECT: ludiko-2e197
@@ -83,6 +83,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     concurrency:
       group: pages
       cancel-in-progress: true

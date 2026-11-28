@@ -92,7 +92,7 @@ export default function GameResults({
           <div
             className="flex items-end justify-center gap-2 sm:gap-3 mb-6"
             role="img"
-            aria-label="Podium: top 3 players"
+            aria-label={t('a11y.podium')}
           >
             {podiumDisplay.map((player, displayIdx) => {
               const rank = podiumOrder[displayIdx];

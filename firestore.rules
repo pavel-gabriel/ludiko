@@ -34,10 +34,23 @@ service cloud.firestore {
     // Teacher profiles: teachers can read/write their own profile.
     // `list` is admin-only (the admin dashboard counts teachers); get of
     // individual docs stays owner-only.
+    // Create/update: real (non-anonymous) accounts only and exactly the TeacherProfile fields (docs/SECURITY.md S-03).
     match /teachers/{uid} {
+      function validTeacher(d) {
+        return d.keys().hasOnly(['uid', 'email', 'displayName', 'createdAt'])
+            && (!('uid' in d) || d.uid == uid)
+            && (!('email' in d) || (d.email is string && d.email.size() <= 320))
+            && (!('displayName' in d) || (d.displayName is string && d.displayName.size() <= 200))
+            && (!('createdAt' in d) || d.createdAt is number);
+      }
+
       allow get: if request.auth != null && request.auth.uid == uid;
       allow list: if isAdmin();
-      allow write: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null
+                            && request.auth.uid == uid
+                            && request.auth.token.firebase.sign_in_provider != 'anonymous'
+                            && validTeacher(request.resource.data);
+      allow delete: if request.auth != null && request.auth.uid == uid;
     }
 
     // ===== BEGIN v1 teacher sessions (docs/PRIVACY_DATA_MAP.md F3) =====
@@ -55,10 +68,15 @@ service cloud.firestore {
 
     match /sessions/{sessionId} {
       allow read: if request.auth != null && resource.data.teacherUid == request.auth.uid;
+      // real (non-anonymous) teacher accounts only, like sessionCodes; the owner cannot be changed (S-03)
       allow create: if request.auth != null
+                    && request.auth.token.firebase.sign_in_provider != 'anonymous'
                     && request.resource.data.teacherUid == request.auth.uid;
-      allow update, delete: if request.auth != null
-                            && resource.data.teacherUid == request.auth.uid;
+      allow update: if request.auth != null
+                    && resource.data.teacherUid == request.auth.uid
+                    && request.resource.data.teacherUid == resource.data.teacherUid;
+      allow delete: if request.auth != null
+                    && resource.data.teacherUid == request.auth.uid;
     }
 
     match /sessionCodes/{codeKey} {
@@ -123,6 +141,17 @@ service cloud.firestore {
     // status 'open'. Reads and status updates are admin-only (isAdmin()).
     // Deletes are denied.
     match /contentReports/{reportId} {
+      // Up to 10 option texts, each a string of at most 120 chars (SNAPSHOT_MAX_OPTION_LENGTH). Rules cannot loop,
+      // so each index is checked; without this a list element could hold a ~1 MiB blob or nested map (S-05).
+      function okOption(o, i) {
+        return o.size() <= i || (o[i] is string && o[i].size() <= 120);
+      }
+      function validReportOptions(o) {
+        return o is list && o.size() <= 10
+            && okOption(o, 0) && okOption(o, 1) && okOption(o, 2) && okOption(o, 3) && okOption(o, 4)
+            && okOption(o, 5) && okOption(o, 6) && okOption(o, 7) && okOption(o, 8) && okOption(o, 9);
+      }
+
       allow read: if isAdmin();
       allow create: if request.auth != null
                     && request.resource.data.keys().hasOnly(
@@ -174,8 +203,7 @@ service cloud.firestore {
                                 || (request.resource.data.snapshot.visualKind is string
                                     && request.resource.data.snapshot.visualKind.size() <= 40))
                             && (!('options' in request.resource.data.snapshot)
-                                || (request.resource.data.snapshot.options is list
-                                    && request.resource.data.snapshot.options.size() <= 10))));
+                                || validReportOptions(request.resource.data.snapshot.options))));
       allow update: if isAdmin()
                     && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
                     && request.resource.data.status in ['open', 'resolved', 'dismissed'];
@@ -193,7 +221,11 @@ service cloud.firestore {
                                'lastPlayedDay', 'lastSentDay', 'createdAt', 'updatedAt'])
           && d.endpoint is string
           && d.endpoint.size() <= 1024
-          && d.endpoint.matches('^https://.+')
+          // only real browser push services (FCM, Mozilla autopush, Apple, Windows WNS): the sender POSTs to this URL,
+          // so an arbitrary https host would turn the reminder job into a request cannon (docs/SECURITY.md S-01)
+          && d.endpoint.matches('^https://(([a-z0-9-]+[.])*googleapis[.]com|([a-z0-9-]+[.])*push[.]services[.]mozilla[.]com|([a-z0-9-]+[.])*push[.]apple[.]com|[a-z0-9-]+[.]notify[.]windows[.]com)/.+')
+          // the document id is sha-256(endpoint): one document per endpoint, and the endpoint cannot be re-pointed
+          && subId == hashing.sha256(d.endpoint).toHexString().lower()
           && d['keys'] is map
           && d['keys'].keys().hasOnly(['p256dh', 'auth'])
           && d['keys'].keys().hasAll(['p256dh', 'auth'])

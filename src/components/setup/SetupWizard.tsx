@@ -67,6 +67,7 @@ export default function SetupWizard({ context, startLabel, onStart }: SetupWizar
   const [picking, setPicking] = useState(() => isCustomSelection(choices));
   const [advanced, setAdvanced] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [startFailed, setStartFailed] = useState(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
 
   /* memory (pictures) skips "Ce exersăm?" */
@@ -101,8 +102,13 @@ export default function SetupWizard({ context, startLabel, onStart }: SetupWizar
       return;
     }
     setLoading(true);
+    setStartFailed(false);
     try {
       await onStart({ settings: toRoomSettings(context, choices), identity: choices.identity, identity2: choices.identity2 });
+    } catch (err) {
+      /* rooms live in Firebase: without a connection (or without the online setup) the game cannot start, say so */
+      console.error('start failed', err);
+      setStartFailed(true);
     } finally {
       setLoading(false);
     }
@@ -210,6 +216,12 @@ export default function SetupWizard({ context, startLabel, onStart }: SetupWizar
           />
         )}
       </div>
+
+      {startFailed && (
+        <p role="alert" className="mb-2 rounded-2xl bg-ludiko-orange/60 p-3 text-center text-sm font-bold" data-testid="start-failed">
+          {t('setup.startFailed')}
+        </p>
+      )}
 
       {/* Back / Next (always at the bottom, where thumbs are) */}
       <footer className="sticky bottom-0 -mx-4 flex gap-3 border-t border-black/5 bg-ludiko-bg/95 px-4 py-3 backdrop-blur">

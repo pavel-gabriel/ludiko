@@ -495,7 +495,7 @@ describe('setup wizard: duel (two on one phone)', () => {
     for (let i = 0; i < 5; i++) {
       const r = renderPage(<InteractiveSetupPage />)
       toWho()
-      const avatars = Array.from(document.querySelectorAll('button[aria-label^="Selected avatar"]')).map((b) => b.textContent?.replace(/[▴▾]/g, '').trim())
+      const avatars = Array.from(document.querySelectorAll('button[aria-expanded][aria-label*="vatar"]')).map((b) => b.textContent?.replace(/[▴▾]/g, '').trim())
       expect(new Set(avatars).size).toBe(2)
       r.unmount()
     }

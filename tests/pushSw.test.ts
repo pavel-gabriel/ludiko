@@ -56,6 +56,18 @@ describe('public/push-sw.js', () => {
     expect(options.data.url).toBe('https://user.github.io/ludiko/learn')
   })
 
+  it('never points a notification at another site (docs/SECURITY.md S-12)', async () => {
+    const sw = loadSw('https://ludiko.example/')
+    for (const url of ['https://evil.example/x', '//evil.example/x', 'javascript:alert(1)', 'data:text/html,x']) {
+      const { event, done } = pushEvent({ title: 'T', body: 'B', url })
+      sw.handlers.push(event)
+      await done()
+    }
+    for (const call of sw.showNotification.mock.calls as unknown as [string, { data: { url: string } }][]) {
+      expect(call[1].data.url.startsWith('https://ludiko.example/'), call[1].data.url).toBe(true)
+    }
+  })
+
   it('still shows something sensible for an empty or non-JSON payload', async () => {
     const sw = loadSw('https://ludiko.example/')
     const waits: Promise<unknown>[] = []

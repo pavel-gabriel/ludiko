@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { MemoryCard } from '@/utils/types';
 
 interface MemoryBoardProps {
@@ -39,6 +40,7 @@ export default function MemoryBoard({
   onFlip,
   disabled,
 }: MemoryBoardProps) {
+  const { t } = useTranslation();
   const cols = getGridCols(cards.length);
   const emojiSize = getEmojiSize(cards.length);
   const isLarge = cards.length > 24;
@@ -48,7 +50,7 @@ export default function MemoryBoard({
       className="grid gap-1 sm:gap-1.5 w-full max-w-lg mx-auto"
       style={{ gridTemplateColumns: `repeat(${cols}, 1fr)` }}
       role="grid"
-      aria-label="Memory card grid"
+      aria-label={t('a11y.memoryGrid')}
     >
       {cards.map((card, i) => {
         const isFlipped = flippedIndices.includes(i);

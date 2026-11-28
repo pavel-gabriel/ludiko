@@ -48,7 +48,8 @@ describe('database.rules.json: rooms (F2)', () => {
     const player = (room.players as Node).$playerId as Node
     const w = player['.write'] as string
     expect(w).toContain('$playerId == auth.uid')
-    expect(w).toContain("$playerId.beginsWith(auth.uid + '_')")
+    expect(w).toContain("$playerId == auth.uid + '_2'")
+    expect(w).not.toContain('beginsWith') // exactly one extra local player, not `{uid}_N` (docs/SECURITY.md S-06)
     expect(w).toContain("newData.child('isHost').val() == false")
     expect(player.$other).toEqual({ '.validate': false })
     expect((player.name as Node)['.validate']).toContain('length <= 30')

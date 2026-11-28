@@ -1,4 +1,5 @@
 import { Component, type ReactNode, type ErrorInfo } from 'react';
+import i18n from '@/i18n/config';
 
 interface Props {
   children: ReactNode;
@@ -31,17 +32,16 @@ export default class ErrorBoundary extends Component<Props, State> {
           aria-live="assertive"
         >
           <span className="text-6xl mb-4" aria-hidden="true">😵</span>
-          <h1 className="text-2xl font-bold mb-2">Oops!</h1>
-          <p className="text-gray-500 mb-6">Something went wrong.</p>
+          <h1 className="text-2xl font-bold mb-2">{i18n.t('a11y.errorTitle')}</h1>
+          <p className="text-gray-500 mb-6">{i18n.t('a11y.errorBody')}</p>
           <button
             onClick={() => {
               this.setState({ hasError: false });
               window.location.href = import.meta.env.BASE_URL || '/';
             }}
-            aria-label="Go to home page"
             className="bg-ludiko-blue px-6 py-3 rounded-xl font-bold text-ludiko-text shadow-md hover:shadow-lg transition-all"
           >
-            Go Home
+            {i18n.t('a11y.errorHome')}
           </button>
         </div>
       );

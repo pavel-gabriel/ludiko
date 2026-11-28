@@ -6,6 +6,7 @@
   },
   "home": {
     "singlePlayer": "Single Player",
+    "onlineUnavailable": "Playing with friends needs the internet and is not available right now.",
     "multiplayer": "Multiplayer",
     "createRoom": "Create Room",
     "joinRoom": "Join Room",
@@ -261,6 +262,24 @@
       "titleNeeded": "Write a title for the session.",
       "studentsNeeded": "Pick at least one student."
     }
+  },
+  "a11y": {
+    "close": "Close",
+    "toggleLanguage": "Change language",
+    "chooseAvatar": "Choose an avatar",
+    "selectedAvatar": "Selected avatar: {{avatar}}. Press to change.",
+    "playerList": "Player list",
+    "raceTrack": "Race track",
+    "memoryGrid": "Memory game cards",
+    "podium": "Podium: top 3 players",
+    "errorTitle": "Oops!",
+    "errorBody": "Something went wrong.",
+    "errorHome": "Home"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The link may be old or mistyped. Let's go back home!",
+    "home": "Home"
   },
   "credits": {
     "title": "Credits & licences",
@@ -1549,6 +1568,7 @@
     "hint": "The name comes from our list: never type your real name."
   },
   "setup": {
+    "startFailed": "We could not start the game. Check your internet connection and try again.",
     "contexts": {
       "single": "Solo game",
       "room": "New room",

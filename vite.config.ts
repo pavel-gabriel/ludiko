@@ -68,6 +68,8 @@ export default defineConfig({
         // Never serve the SPA shell for content bundles or Firebase endpoints
         navigateFallbackDenylist: [/^\/content\//, /^\/__\//, /^\/sounds\//],
         cleanupOutdatedCaches: true,
+        // take control of the first page load, so the content packs prefetched in the first visit are runtime-cached (offline from the start)
+        clientsClaim: true,
         // Web Push handlers (public/push-sw.js, docs/NOTIFICATIONS.md): push + notificationclick
         importScripts: ['push-sw.js'],
         runtimeCaching: [
