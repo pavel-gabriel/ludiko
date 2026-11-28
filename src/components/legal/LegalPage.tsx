@@ -104,7 +104,7 @@ export default function LegalPage({ kind, texts }: LegalPageProps) {
           <ol className="list-decimal space-y-0.5 pl-5 text-sm">
             {doc.sections.map((s) => (
               <li key={s.id}>
-                <a href={`#legal-${s.id}`} className="text-ludiko-purple hover:underline">
+                <a href={`#legal-${s.id}`} className="inline-flex min-h-[44px] items-center text-ludiko-purple hover:underline">
                   {s.title}
                 </a>
               </li>

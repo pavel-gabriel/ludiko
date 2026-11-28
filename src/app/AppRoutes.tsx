@@ -58,7 +58,8 @@ const ClassesPage = lazy(() => import('@/components/teacher/classes/ClassesPage'
 const ClassPage = lazy(() => import('@/components/teacher/classes/ClassPage'));
 const ClassCodesPage = lazy(() => import('@/components/teacher/classes/ClassCodesPage'));
 const ClassAssignmentPage = lazy(() => import('@/ui/learn/ClassAssignmentPage'));
-const DevClassroomPage = lazy(() => import('@/classroom/dev/DevClassroomPage'));
+const NotFoundPage = lazy(() => import('@/components/lobby/NotFoundPage'));
+const DevClassroomPage =lazy(() => import('@/classroom/dev/DevClassroomPage'));
 const DevFamilyPage = lazy(() => import('@/family/dev/DevFamilyPage'));
 
 function ScrollToTop() {
@@ -133,6 +134,9 @@ export default function AppRoutes() {
           <Route path="/teacher/classes" element={<ClassesPage />} />
           <Route path="/teacher/classes/:classId" element={<ClassPage />} />
           <Route path="/teacher/classes/:classId/codes" element={<ClassCodesPage />} />
+
+          {/* Anything else: a friendly "page not found" (public/404.html restores deep links first) */}
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
     </>

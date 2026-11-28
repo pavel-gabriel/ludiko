@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const EMOJI_OPTIONS = ['🦊', '🐸', '🐱', '🐶', '🐰', '🦁', '🐼', '🐨', '🦄', '🐙', '🦋', '🐝', '🐯', '🐮', '🐷', '🐵'];
 
@@ -22,6 +23,7 @@ interface EmojiPickerProps {
  * inline with other elements while the grid wraps to the next line.
  */
 export default function EmojiPicker({ selected, onChange, exclude = [], gridClassName = '' }: EmojiPickerProps) {
+  const { t } = useTranslation();
   const [expanded, setExpanded] = useState(false);
   const available = EMOJI_OPTIONS.filter((e) => !exclude.includes(e));
 
@@ -30,7 +32,7 @@ export default function EmojiPicker({ selected, onChange, exclude = [], gridClas
       <button
         type="button"
         onClick={() => setExpanded(!expanded)}
-        aria-label={`Selected avatar: ${selected}. Click to change.`}
+        aria-label={t('a11y.selectedAvatar', { avatar: selected })}
         aria-expanded={expanded}
         className="shrink-0 flex items-center gap-1 px-3 py-2 rounded-xl bg-ludiko-purple/10 hover:bg-ludiko-purple/20 transition-colors"
       >
@@ -43,7 +45,7 @@ export default function EmojiPicker({ selected, onChange, exclude = [], gridClas
         <div
           className={`flex flex-wrap gap-2 w-full ${gridClassName}`}
           role="listbox"
-          aria-label="Choose an avatar"
+          aria-label={t('a11y.chooseAvatar')}
         >
           {available.map((emoji) => (
             <button

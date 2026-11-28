@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useSettingsStore } from '@/store/settingsStore';
 
 export default function LanguageToggle() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const setLanguage = useSettingsStore((s) => s.setLanguage);
 
   const toggle = () => {
@@ -14,9 +14,9 @@ export default function LanguageToggle() {
   return (
     <button
       onClick={toggle}
-      className="px-3 py-1.5 rounded-lg bg-white shadow text-sm font-bold
+      className="min-h-[44px] min-w-[44px] px-3 py-1.5 rounded-lg bg-white shadow text-sm font-bold
                  text-ludiko-text hover:bg-gray-50 transition-colors"
-      aria-label="Toggle language"
+      aria-label={t('a11y.toggleLanguage')}
     >
       {i18n.language === 'ro' ? 'RO' : 'EN'}
     </button>

@@ -262,6 +262,24 @@
       "studentsNeeded": "Pick at least one student."
     }
   },
+  "a11y": {
+    "close": "Close",
+    "toggleLanguage": "Change language",
+    "chooseAvatar": "Choose an avatar",
+    "selectedAvatar": "Selected avatar: {{avatar}}. Press to change.",
+    "playerList": "Player list",
+    "raceTrack": "Race track",
+    "memoryGrid": "Memory game cards",
+    "podium": "Podium: top 3 players",
+    "errorTitle": "Oops!",
+    "errorBody": "Something went wrong.",
+    "errorHome": "Home"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The link may be old or mistyped. Let's go back home!",
+    "home": "Home"
+  },
   "credits": {
     "title": "Credits & licences",
     "intro": "Ludiko is built with these open works. Thank you to their authors!",

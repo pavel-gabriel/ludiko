@@ -124,7 +124,7 @@ export default function LobbyPage() {
           <h3 className="text-sm font-semibold text-gray-500 mb-2">
             {t('lobby.players')} ({room.players.length})
           </h3>
-          <ul className="space-y-2" role="list" aria-label="Player list">
+          <ul className="space-y-2" role="list" aria-label={t('a11y.playerList')}>
             {room.players.map((player) => (
               <li
                 key={player.id}

@@ -187,7 +187,7 @@ export default function TeacherLogin() {
 
         <button
           onClick={() => setMode(mode === 'login' ? 'register' : 'login')}
-          className="mt-4 w-full text-center text-sm text-ludiko-purple hover:underline"
+          className="mt-4 min-h-[44px] w-full text-center text-sm text-ludiko-purple hover:underline"
           aria-pressed={mode === 'register'}
         >
           {mode === 'login' ? t('teacher.switchToRegister') : t('teacher.switchToLogin')}

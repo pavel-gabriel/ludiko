@@ -27,13 +27,15 @@ export default function SettingsPage() {
           <span className="font-semibold">{t('settings.sound')}</span>
           <button
             onClick={toggleSound}
-            className={`w-14 h-8 rounded-full transition-colors relative ${
+            role="switch"
+            aria-checked={soundEnabled}
+            className={`w-14 h-11 rounded-full transition-colors relative ${
               soundEnabled ? 'bg-ludiko-green' : 'bg-gray-300'
             }`}
             aria-label={t('settings.sound')}
           >
             <span
-              className={`absolute top-1 w-6 h-6 rounded-full bg-white shadow transition-transform ${
+              className={`absolute top-2.5 w-6 h-6 rounded-full bg-white shadow transition-transform ${
                 soundEnabled ? 'left-7' : 'left-1'
               }`}
             />
@@ -48,7 +50,9 @@ export default function SettingsPage() {
               <button
                 key={lang}
                 onClick={() => handleLanguageChange(lang)}
-                className={`px-3 py-1.5 rounded-lg font-bold text-sm transition-colors ${
+                aria-pressed={language === lang}
+                lang={lang}
+                className={`min-h-[44px] min-w-[44px] px-3 py-1.5 rounded-lg font-bold text-sm transition-colors ${
                   language === lang
                     ? 'bg-ludiko-purple text-white'
                     : 'bg-gray-100 hover:bg-gray-200'
@@ -69,13 +73,15 @@ export default function SettingsPage() {
           <span className="font-semibold">{t('settings.dyslexicFont')}</span>
           <button
             onClick={toggleDyslexicFont}
-            className={`w-14 h-8 rounded-full transition-colors relative ${
+            role="switch"
+            aria-checked={dyslexicFont}
+            className={`w-14 h-11 rounded-full transition-colors relative ${
               dyslexicFont ? 'bg-ludiko-green' : 'bg-gray-300'
             }`}
             aria-label={t('settings.dyslexicFont')}
           >
             <span
-              className={`absolute top-1 w-6 h-6 rounded-full bg-white shadow transition-transform ${
+              className={`absolute top-2.5 w-6 h-6 rounded-full bg-white shadow transition-transform ${
                 dyslexicFont ? 'left-7' : 'left-1'
               }`}
             />
@@ -85,7 +91,7 @@ export default function SettingsPage() {
         {/* Credits & licences */}
         <Link
           to="/credits"
-          className="block mt-4 text-center text-sm font-semibold text-ludiko-purple hover:underline"
+          className="mt-4 flex min-h-[44px] items-center justify-center text-center text-sm font-semibold text-ludiko-purple hover:underline"
         >
           {t('credits.title')}
         </Link>

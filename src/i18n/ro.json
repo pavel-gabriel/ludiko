@@ -262,6 +262,24 @@
       "studentsNeeded": "Alege cel puțin un elev."
     }
   },
+  "a11y": {
+    "close": "Închide",
+    "toggleLanguage": "Schimbă limba",
+    "chooseAvatar": "Alege un avatar",
+    "selectedAvatar": "Avatar ales: {{avatar}}. Apasă ca să schimbi.",
+    "playerList": "Lista jucătorilor",
+    "raceTrack": "Pista de cursă",
+    "memoryGrid": "Cărțile jocului de memorie",
+    "podium": "Podium: primii 3 jucători",
+    "errorTitle": "Hopa!",
+    "errorBody": "Ceva nu a mers bine.",
+    "errorHome": "Acasă"
+  },
+  "notFound": {
+    "title": "Pagina nu există",
+    "body": "Poate linkul este vechi sau greșit. Hai înapoi acasă!",
+    "home": "Acasă"
+  },
   "credits": {
     "title": "Credite și licențe",
     "intro": "Ludiko folosește aceste lucrări deschise. Mulțumim autorilor lor!",
