@@ -6,6 +6,7 @@
   },
   "home": {
     "singlePlayer": "Single Player",
+    "onlineUnavailable": "Playing with friends needs the internet and is not available right now.",
     "multiplayer": "Multiplayer",
     "createRoom": "Create Room",
     "joinRoom": "Join Room",
@@ -1567,6 +1568,7 @@
     "hint": "The name comes from our list: never type your real name."
   },
   "setup": {
+    "startFailed": "We could not start the game. Check your internet connection and try again.",
     "contexts": {
       "single": "Solo game",
       "room": "New room",

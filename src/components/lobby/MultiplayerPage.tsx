@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import CloseButton from '@/components/ui/CloseButton';
 import HowToPlay from '@/ui/guide/HowToPlay';
+import { firebaseEnabled } from '@/services/firebase';
 
 /** Two big cards: start a room, or join one with a code (the two-on-one-phone duel lives on the home screen) */
 export default function MultiplayerPage() {
@@ -17,6 +18,11 @@ export default function MultiplayerPage() {
       </div>
 
       <div className="flex w-full max-w-sm flex-col gap-4">
+        {!firebaseEnabled && (
+          <p role="status" className="rounded-2xl bg-ludiko-yellow p-3 text-center text-sm font-bold" data-testid="online-unavailable">
+            {t('home.onlineUnavailable')}
+          </p>
+        )}
         <button
           type="button"
           onClick={() => navigate('/create')}

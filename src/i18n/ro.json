@@ -7,6 +7,7 @@
   "home": {
     "singlePlayer": "Jucător Unic",
     "multiplayer": "Multi-Jucător",
+    "onlineUnavailable": "Jocul cu prietenii are nevoie de internet și nu este disponibil acum.",
     "createRoom": "Creează Cameră",
     "joinRoom": "Intră în Cameră",
     "teacherMode": "Mod Profesor",
@@ -1594,6 +1595,7 @@
     "hint": "Numele este ales din lista noastră: nu scrie numele tău real."
   },
   "setup": {
+    "startFailed": "Nu am putut porni jocul. Verifică conexiunea la internet și încearcă din nou.",
     "contexts": {
       "single": "Joc singur",
       "room": "Cameră nouă",

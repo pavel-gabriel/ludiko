@@ -108,7 +108,7 @@ describe('AnimalNamePicker', () => {
 
   it('choosing an avatar changes the animal in the name', () => {
     render(<Harness />)
-    fireEvent.click(screen.getByRole('button', { name: /Selected avatar/ }))
+    fireEvent.click(screen.getByRole('button', { name: /Selected avatar|Avatar ales/ }))
     fireEvent.click(screen.getByRole('option', { name: '🦁' }))
     expect(screen.getByTestId('animal-name').textContent).toBe('Leul Vesel')
   })
@@ -160,7 +160,7 @@ describe('no free-text name for kids', () => {
     for (let i = 0; i < 15; i++) {
       const { unmount, container } = render(<MemoryRouter><InteractiveSetupPage /></MemoryRouter>)
       toWhoStep()
-      const triggers = Array.from(container.querySelectorAll('button[aria-label^="Selected avatar"]')).map((b) => b.textContent)
+      const triggers = Array.from(container.querySelectorAll('button[aria-expanded][aria-label*="vatar"]')).map((b) => b.textContent)
       expect(new Set(triggers.map((t) => t?.replace(/[▴▾]/g, '').trim())).size).toBe(2)
       unmount()
     }
