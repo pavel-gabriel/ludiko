@@ -112,6 +112,7 @@ let errorSpy: ReturnType<typeof vi.spyOn>;
 
 beforeAll(async () => {
   await i18n.changeLanguage('ro');
+  await import('../src/services/session/rtdbPort'); // the multiplayer session loads lazily: warm it up before the fake clock
 });
 beforeEach(() => {
   vi.useFakeTimers();

@@ -24,6 +24,7 @@ const rm = vi.hoisted(() => ({
 vi.mock('@/services/roomManager', () => rm)
 vi.mock('@/services/authService', () => ({ ensureAnonymousAuth: vi.fn(async () => null), getCurrentUid: () => 'u1' }))
 
+import { useRoomStore } from '@/store/roomStore'
 import CreateRoom from '@/components/lobby/CreateRoom'
 import SinglePlayerPage from '@/components/lobby/SinglePlayerPage'
 import InteractiveSetupPage from '@/components/lobby/InteractiveSetupPage'
@@ -50,6 +51,12 @@ const profile = (grade: Grade): ChildProfile => ({
 
 function Where() {
   return <div data-testid="where">{useLocation().pathname}</div>
+}
+
+/** The room a solo / duel start put in the store (it is local: no RTDB room is created) */
+const startedRoom = async () => {
+  await waitFor(() => expect(useRoomStore.getState().room).not.toBeNull())
+  return useRoomStore.getState().room!
 }
 
 const renderPage = (ui: ReactElement, path = '/setup') =>
@@ -81,6 +88,7 @@ beforeEach(() => {
   vi.clearAllMocks()
   localStorage.clear()
   useProfileStore.setState({ profiles: [], activeProfile: null, loaded: true })
+  useRoomStore.setState({ room: null, currentPlayer: null })
 })
 afterEach(() => cleanup())
 
@@ -290,8 +298,7 @@ describe('setup wizard navigation', () => {
     fireEvent.click(screen.getByRole('button', { name: /Memorie/ }))
     next(); next()
     fireEvent.click(screen.getByTestId('setup-start'))
-    await waitFor(() => expect(rm.createRoomInDB).toHaveBeenCalled())
-    const settings = rm.buildRoom.mock.calls.at(-1)![1] as Record<string, unknown>
+    const settings = (await startedRoom()).settings as unknown as Record<string, unknown>
     expect(settings.gameType).toBe('memoryGame')
     expect(settings).not.toHaveProperty('skillIds')
   })
@@ -426,11 +433,11 @@ describe('setup wizard: starting', () => {
     const shown = screen.getByTestId('animal-name').textContent
     next()
     fireEvent.click(screen.getByTestId('setup-start'))
-    await waitFor(() => expect(rm.createRoomInDB).toHaveBeenCalled())
-    const [name, settings] = rm.buildRoom.mock.calls[0]
-    expect(name).toBe(shown)
-    expect(settings).toMatchObject({ gameType: 'mathRace', gameMode: 'raceToFinish', skillIds: ['rom.syll.count.0', 'rom.syll.split.1'], subject: 'rom' })
-    expect((rm.createRoomInDB.mock.calls[0] as unknown[])[0]).toMatchObject({ status: 'playing' })
+    const started = await startedRoom()
+    expect(started.players[0].name).toBe(shown)
+    expect(started.settings).toMatchObject({ gameType: 'mathRace', gameMode: 'raceToFinish', skillIds: ['rom.syll.count.0', 'rom.syll.split.1'], subject: 'rom' })
+    expect(started).toMatchObject({ status: 'playing', local: true })
+    expect(rm.createRoomInDB).not.toHaveBeenCalled() // solo never touches Firebase
     await waitFor(() => expect(screen.getByTestId('where')).toHaveTextContent('/game'))
   })
 
@@ -457,8 +464,7 @@ describe('setup wizard: starting', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Greu' }))
     fireEvent.change(screen.getByLabelText('Runde'), { target: { value: '12' } })
     fireEvent.click(screen.getByTestId('setup-start'))
-    await waitFor(() => expect(rm.createRoomInDB).toHaveBeenCalled())
-    expect(rm.buildRoom.mock.calls[0][1]).toMatchObject({ difficulty: 'hard', rounds: 12 })
+    expect((await startedRoom()).settings).toMatchObject({ difficulty: 'hard', rounds: 12 })
   })
 
   it('shape mode lives in the advanced settings of the classic shape game', async () => {
@@ -469,8 +475,7 @@ describe('setup wizard: starting', () => {
     fireEvent.click(screen.getByRole('button', { name: /Setări avansate/ }))
     fireEvent.click(screen.getByRole('button', { name: 'Găsește cuvântul' }))
     fireEvent.click(screen.getByTestId('setup-start'))
-    await waitFor(() => expect(rm.createRoomInDB).toHaveBeenCalled())
-    expect(rm.buildRoom.mock.calls[0][1]).toMatchObject({ gameType: 'shapeMatch', shapeMode: 'word' })
+    expect((await startedRoom()).settings).toMatchObject({ gameType: 'shapeMatch', shapeMode: 'word' })
   })
 })
 
@@ -505,10 +510,11 @@ describe('setup wizard: duel (two on one phone)', () => {
     renderPage(<InteractiveSetupPage />)
     toWho(); next()
     fireEvent.click(screen.getByTestId('setup-start'))
-    await waitFor(() => expect(rm.createRoomInDB).toHaveBeenCalled())
-    expect(rm.buildRoom.mock.calls[0][1]).toMatchObject({ gameMode: 'raceToFinish', skillIds: ['mat.add.nocarry.20', 'mat.add.carry.20'] })
-    const room = (rm.createRoomInDB.mock.calls[0] as unknown[])[0] as { status: string; players: { avatar: string; name: string }[] }
+    const room = await startedRoom()
+    expect(room.settings).toMatchObject({ gameMode: 'raceToFinish', skillIds: ['mat.add.nocarry.20', 'mat.add.carry.20'] })
     expect(room.status).toBe('playing')
+    expect(room.local).toBe(true)
+    expect(rm.createRoomInDB).not.toHaveBeenCalled() // two on one phone never touches Firebase
     expect(room.players).toHaveLength(2)
     expect(room.players[0].avatar).not.toBe(room.players[1].avatar)
     expect(ANIMALS.map((a) => a.emoji)).toEqual(expect.arrayContaining(room.players.map((p) => p.avatar)))

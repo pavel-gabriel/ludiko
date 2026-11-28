@@ -2,16 +2,8 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
-import { buildRoomMemoryCards } from '@/services/roomGame';
-import {
-  initMemoryGameState,
-  listenToGameState,
-  recordCorrectAnswer,
-  recordPlayerFinished,
-  setGamePhase,
-  type RTDBGameState,
-} from '@/services/gameSession';
-import { replayRoom, deleteRoom, removePlayer, listenToRoom } from '@/services/roomManager';
+import { useSessionPort } from '@/services/session';
+import type { RTDBGameState } from '@/services/gameState';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import type { MemoryCard } from '@/utils/types';
 import CountdownOverlay from '@/components/games/MathRace/CountdownOverlay';
@@ -22,6 +14,7 @@ export default function MemoryGamePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { room, currentPlayer, reset, setRoom } = useRoomStore();
+  const port = useSessionPort(room);
 
   const [gameState, setGameState] = useState<RTDBGameState | null>(null);
   const [countdown, setCountdown] = useState(COUNTDOWN_SECONDS);
@@ -43,10 +36,10 @@ export default function MemoryGamePage() {
   const totalPairs = settings?.rounds ?? 8;
 
   const handleExit = useCallback(() => {
-    if (isHost && room) deleteRoom(room.id);
+    if (isHost && room) void port.close();
     reset();
     navigate('/');
-  }, [reset, navigate, isHost, room]);
+  }, [reset, navigate, isHost, room, port]);
 
   /* Intercept browser back button */
   useEffect(() => {
@@ -59,7 +52,7 @@ export default function MemoryGamePage() {
   /* Listen for room changes — handle deletion (host left) and replay (back to waiting) */
   useEffect(() => {
     if (!room) return;
-    const unsub = listenToRoom(room.id, (r) => {
+    const unsub = port.listenRoom((r) => {
       if (!r) { reset(); navigate('/'); return; }
       /* Keep players list fresh (disconnects) so finish checks stay correct */
       setRoom({ ...r, id: room.id });
@@ -71,15 +64,14 @@ export default function MemoryGamePage() {
   /* ----- STEP 1: Host generates memory cards ----- */
   useEffect(() => {
     if (!room || !isHost || !settings) return;
-    const memCards = buildRoomMemoryCards(settings);
     const playerIds = room.players.map((p) => p.id);
-    initMemoryGameState(room.id, memCards, playerIds);
+    void port.initGame(settings, playerIds);
   }, [room?.id, isHost]);
 
   /* ----- STEP 2: Subscribe to game state ----- */
   useEffect(() => {
     if (!room) return;
-    const unsub = listenToGameState(room.id, (state) => {
+    const unsub = port.listenGame((state) => {
       setGameState(state);
       /* Adopt the board once — functional update avoids the stale-closure
          trap where `cards` is frozen at [] and every snapshot overwrites */
@@ -99,7 +91,7 @@ export default function MemoryGamePage() {
       if (left <= 0) {
         clearInterval(interval);
         setShowCountdown(false);
-        if (isHost && room) setGamePhase(room.id, 'playing');
+        if (isHost && room) port.setPhase('playing');
         return;
       }
       left -= 1;
@@ -121,7 +113,7 @@ export default function MemoryGamePage() {
       if (remaining <= 1) {
         clearInterval(timerRef.current!);
         setTimeRemaining(0);
-        if (isHost && room) setGamePhase(room.id, 'finished');
+        if (isHost && room) port.setPhase('finished');
         return;
       }
       remaining -= 1;
@@ -137,7 +129,7 @@ export default function MemoryGamePage() {
     const finishTimes = gameState.finishTimes ?? {};
     const allFinished = room.players.every((p) => finishTimes[p.id]);
     if (allFinished) {
-      setGamePhase(room.id, 'finished');
+      port.setPhase('finished');
     }
   }, [gameState?.finishTimes, isHost]);
 
@@ -167,12 +159,12 @@ export default function MemoryGamePage() {
             setMatchedIndices(newMatched);
 
             const pairsFound = newMatched.size / 2;
-            await recordCorrectAnswer(room.id, currentPlayer.id, pairsFound);
+            await port.recordCorrectAnswer(currentPlayer.id, pairsFound);
 
             /* This player found all pairs — record finish (game continues for others) */
             if (pairsFound >= cards.length / 2 && !finishedRef.current) {
               finishedRef.current = true;
-              await recordPlayerFinished(room.id, currentPlayer.id);
+              await port.recordPlayerFinished(currentPlayer.id);
             }
           }
 
@@ -181,7 +173,7 @@ export default function MemoryGamePage() {
         }, isMatch ? 500 : 800);
       }
     },
-    [flippedIndices, matchedIndices, checking, cards, gameState, room, currentPlayer],
+    [flippedIndices, matchedIndices, checking, cards, gameState, room, currentPlayer, port],
   );
 
   /* Cleanup timeout on unmount */
@@ -202,10 +194,11 @@ export default function MemoryGamePage() {
   const iAmDone = finishedRef.current || matchedIndices.size / 2 >= actualPairs;
 
   const isSinglePlayer = room.players.length === 1 && !room.classroomSessionId;
+  const restartInPlace = isSinglePlayer || port.local;
 
   if (gameState?.phase === 'finished') {
     const handleReplay = async () => {
-      if (isSinglePlayer) {
+      if (restartInPlace) {
         setFlippedIndices([]);
         setMatchedIndices(new Set());
         setTries(0);
@@ -213,11 +206,11 @@ export default function MemoryGamePage() {
         finishedRef.current = false;
         setShowCountdown(true);
         setCountdown(COUNTDOWN_SECONDS);
-        const newCards = buildRoomMemoryCards(settings!);
-        setCards(newCards);
-        await initMemoryGameState(room.id, newCards, [currentPlayer.id]);
+        /* The board arrives through listenGame once the new game is generated; keep the old one until then */
+        setCards([]);
+        await port.initGame(settings!, [currentPlayer.id]);
       } else {
-        await replayRoom(room.id);
+        await port.replay();
         navigate('/lobby');
       }
     };
@@ -232,7 +225,7 @@ export default function MemoryGamePage() {
         startedAt={gameState.startedAt}
         isSinglePlayer={isSinglePlayer}
         onPlayAgain={handleReplay}
-        onNewGame={async () => { await removePlayer(room.id, currentPlayer.id); reset(); navigate('/'); }}
+        onNewGame={async () => { await port.leave(currentPlayer.id); reset(); navigate('/'); }}
       />
     );
   }

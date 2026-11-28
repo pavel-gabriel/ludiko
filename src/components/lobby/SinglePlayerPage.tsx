@@ -1,8 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
-import { buildRoom, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
-import { ensureAnonymousAuth } from '@/services/authService';
+import { buildLocalPlayer, buildLocalRoom } from '@/services/session/localRoom';
 import SetupWizard from '@/components/setup/SetupWizard';
 import type { SetupResult } from '@/components/setup/setupModel';
 import { identityAvatar, identityName } from '@/utils/animalNames';
@@ -13,12 +12,10 @@ export default function SinglePlayerPage() {
   const navigate = useNavigate();
   const { setRoom, setCurrentPlayer } = useRoomStore();
 
+  /* Solo is played on this device only: no Firebase, no network (services/session/localSession.ts) */
   const handlePlay = async ({ settings, identity }: SetupResult) => {
-    await ensureAnonymousAuth();
-    const room = buildRoom(identityName(identity, i18n.language), settings, identityAvatar(identity));
-    room.status = 'playing';
-    await createRoomInDB(room);
-    registerDisconnectCleanup(room.id, true, undefined, room.code);
+    const player = buildLocalPlayer(identityName(identity, i18n.language), 0, identityAvatar(identity));
+    const room = buildLocalRoom([player], settings);
     setRoom(room);
     setCurrentPlayer(room.players[0]);
     navigate('/game');
