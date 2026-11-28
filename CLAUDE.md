@@ -64,6 +64,7 @@
 ### Services (src/services/)
 - `firebase.ts` — Lazy init, guarded by `firebaseEnabled` flag (works without env vars)
 - `roomManager.ts` — CRUD rooms in RTDB, join by code, disconnect cleanup
+- `session/` — `GameSessionPort` (what game pages use): `localSession.ts` (in memory; solo + two-on-one-phone rooms have `room.local`, no Firebase/network) or `rtdbPort.ts` (multiplayer, lazy-imported so Firebase stays out of solo chunks); pick via `useSessionPort(room)`. `gameState.ts` = Firebase-free game plan builder
 - `gameSession.ts` — Init game state, listen, record answers, advance phases
 - `gameEngine.ts` — Pure functions: generate math/shape/memory questions
 - `authService.ts` — Anonymous Firebase Auth (guarded by firebaseEnabled)

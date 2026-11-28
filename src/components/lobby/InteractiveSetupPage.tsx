@@ -1,8 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
-import { buildRoom, buildPlayer, coPlayerId, createRoomInDB, registerDisconnectCleanup } from '@/services/roomManager';
-import { ensureAnonymousAuth } from '@/services/authService';
+import { buildLocalPlayer, buildLocalRoom, localCoPlayerId } from '@/services/session/localRoom';
 import SetupWizard from '@/components/setup/SetupWizard';
 import type { SetupResult } from '@/components/setup/setupModel';
 import { identityAvatar, identityName } from '@/utils/animalNames';
@@ -17,17 +16,11 @@ export default function InteractiveSetupPage() {
     const avatar1 = identityAvatar(identity);
     const avatar2 = identityAvatar(identity2);
     if (avatar1 === avatar2) return;
-    await ensureAnonymousAuth();
-    const room = buildRoom(identityName(identity, i18n.language), settings, avatar1);
-
-    /* Add player 2 to the room */
-    const player2 = buildPlayer(identityName(identity2, i18n.language), 1, avatar2, coPlayerId(room.hostId));
-    player2.isReady = true;
-    room.players.push(player2);
-    room.status = 'playing';
-
-    await createRoomInDB(room);
-    registerDisconnectCleanup(room.id, true, undefined, room.code);
+    /* Two on one phone is played on this device only: no Firebase, no network */
+    const player1 = buildLocalPlayer(identityName(identity, i18n.language), 0, avatar1);
+    const player2 = buildLocalPlayer(identityName(identity2, i18n.language), 1, avatar2, localCoPlayerId(player1.id));
+    player2.isHost = false;
+    const room = buildLocalRoom([player1, player2], settings);
     setRoom(room);
     setCurrentPlayer(room.players[0]);
     navigate('/game/interactive');

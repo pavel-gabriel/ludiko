@@ -11,66 +11,27 @@
  * for the chosen game type rather than leaving the room stuck on "get ready".
  */
 import {
-  generateMemoryCards,
-  generateNumericQuestion,
-  generateShapeQuestion,
-} from '@/services/gameEngine';
-import {
   initItemGameState,
   initMathGameState,
   initMemoryGameState,
   initShapeGameState,
 } from '@/services/gameSession';
-import { ensureContentForSkills } from '@/engine/content/packs';
-import { buildGameItems, gameKind, isItemGame, ITEM_SPRINT_POOL } from '@/services/itemGame';
-import type { GameSettings, MemoryCard, Question, ShapeQuestion } from '@/utils/types';
+import { buildGamePlan } from '@/services/gameState';
+import type { GameSettings } from '@/utils/types';
 
-/** v1 question pool for a timed sprint, so players don't run out */
-export const V1_SPRINT_POOL = 100;
+export { V1_SPRINT_POOL, buildRoomMemoryCards } from '@/services/gameState';
 
-/**
- * Memory board for the room: always classic picture pairs (v1 emoji cards), whatever the settings say.
- * An old memory room that still carries `skillIds` (text cards were once built from items) plays with pictures.
- */
-export function buildRoomMemoryCards(settings: GameSettings): MemoryCard[] {
-  return generateMemoryCards(settings.rounds);
-}
-
+/** RTDB host side: generate the game (see `buildGamePlan`) and write it under rooms/{roomId}/game */
 export async function initRoomGame(roomId: string, settings: GameSettings, playerIds: string[]): Promise<void> {
-  const sprint = settings.gameMode === 'timedSprint';
-
-  if (settings.gameType === 'memoryGame') {
-    await initMemoryGameState(roomId, buildRoomMemoryCards(settings), playerIds);
-    return;
-  }
-
-  if (isItemGame(settings)) {
-    // The host generates the items: load the chosen skills' content packs first (docs/ENGINE.md "Content packs")
-    await ensureContentForSkills(settings.skillIds!);
-    const items = buildGameItems(settings.skillIds!, {
-      count: sprint ? ITEM_SPRINT_POOL : settings.rounds,
-      kind: gameKind(settings),
-      difficulty: settings.difficulty,
-    });
-    if (items.length > 0) {
-      await initItemGameState(roomId, items, playerIds, settings.gameType);
-      return;
-    }
-    /* unplayable selection: fall through to the v1 generators */
-  }
-
-  if (settings.gameType === 'shapeMatch') {
-    const count = sprint ? V1_SPRINT_POOL : settings.rounds;
-    const questions: ShapeQuestion[] = [];
-    for (let i = 0; i < count; i++) questions.push(generateShapeQuestion(settings.difficulty));
-    await initShapeGameState(roomId, questions, playerIds);
-  } else {
-    /* Numeric games: mathRace, equations, countingGame, numberSequence */
-    const count = sprint ? V1_SPRINT_POOL : settings.rounds;
-    const questions: Question[] = [];
-    for (let i = 0; i < count; i++) {
-      questions.push(generateNumericQuestion(settings.gameType, settings.difficulty, settings.operations));
-    }
-    await initMathGameState(roomId, questions, playerIds, settings.gameType);
+  const plan = await buildGamePlan(settings);
+  switch (plan.kind) {
+    case 'memory':
+      return initMemoryGameState(roomId, plan.cards, playerIds);
+    case 'item':
+      return initItemGameState(roomId, plan.items, playerIds, plan.gameType);
+    case 'shape':
+      return initShapeGameState(roomId, plan.questions, playerIds);
+    default:
+      return initMathGameState(roomId, plan.questions, playerIds, plan.gameType);
   }
 }

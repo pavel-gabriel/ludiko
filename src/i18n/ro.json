@@ -99,6 +99,7 @@
     "tryAgain": "Mai încearcă!",
     "timeUp": "Timpul a expirat!",
     "getReady": "Pregătește-te!",
+    "loadFailed": "Nu am putut încărca exercițiile. Conectează-te la internet o dată și încearcă din nou.",
     "howMany": "Câte",
     "findMissing": "Găsește numărul lipsă",
     "go": "Start!",

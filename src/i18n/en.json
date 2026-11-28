@@ -99,6 +99,7 @@
     "tryAgain": "Try again!",
     "timeUp": "Time's up!",
     "getReady": "Get ready!",
+    "loadFailed": "Could not load the exercises. Connect to the internet once and try again.",
     "howMany": "How many",
     "findMissing": "Find the missing number",
     "go": "Go!",

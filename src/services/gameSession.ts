@@ -3,35 +3,9 @@ import { rtdb } from '@/services/firebase';
 import type { Item } from '@/engine/types';
 import type { Question, ShapeQuestion, MemoryCard, GameType } from '@/utils/types';
 import { normalizeItems, sanitizeForRtdb } from '@/services/rtdbSafe';
+import type { RTDBGameState } from '@/services/gameState';
 
-/** Shape of the game state stored in RTDB under rooms/{roomId}/game */
-export interface RTDBGameState {
-  /** Which game is being played */
-  gameType: GameType;
-  /** Math questions (Math Race / Timed Sprint), v1 rooms */
-  questions?: Question[];
-  /**
-   * v2: shared-model items (any skill) for Race / Sprint / Duel. Present instead of `questions` when the
-   * room was created with `settings.skillIds`. RTDB-safe (see `sanitizeForRtdb`).
-   */
-  items?: Item[];
-  /** Shape questions (Shape Match) */
-  shapeQuestions?: ShapeQuestion[];
-  /** Memory cards layout (Memory Game) — shared board for all players */
-  memoryCards?: MemoryCard[];
-  /** Index of the current question (host advances this; not used for Memory) */
-  currentIndex: number;
-  /** Per-player progress: playerId -> score (correct answers or matched pairs) */
-  progress: Record<string, number>;
-  /** Game phase: countdown, playing, finished */
-  phase: 'countdown' | 'playing' | 'finished';
-  /** Timestamp when the current question started (for timer sync) */
-  questionStartedAt: number;
-  /** Timestamp (ms) when game started playing (set by host) */
-  startedAt?: number;
-  /** Per-player finish timestamps (ms) — set when a player completes all rounds */
-  finishTimes?: Record<string, number>;
-}
+export type { RTDBGameState } from '@/services/gameState';
 
 /** Build the initial progress map for all players */
 function buildProgress(playerIds: string[]): Record<string, number> {

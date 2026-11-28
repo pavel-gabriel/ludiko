@@ -29,6 +29,11 @@ export interface Room {
   status: 'waiting' | 'playing' | 'finished';
   settings: GameSettings;
   createdAt: number;
+  /**
+   * Played on this device only (solo, two on one phone): the game state lives in memory
+   * (services/session/localSession.ts), never in Firebase. Absent = a room in RTDB.
+   */
+  local?: boolean;
   /** Classroom session fields (set when room is created via teacher flow) */
   classroomSessionId?: string;
   classroomMode?: ClassroomMode;

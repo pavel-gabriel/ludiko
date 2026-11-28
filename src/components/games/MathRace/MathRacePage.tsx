@@ -2,19 +2,13 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
-import { initRoomGame } from '@/services/roomGame';
-import {
-  listenToGameState,
-  recordCorrectAnswer,
-  recordPlayerFinished,
-  setGamePhase,
-  type RTDBGameState,
-} from '@/services/gameSession';
-import { replayRoom, deleteRoom, removePlayer, listenToRoom } from '@/services/roomManager';
+import { useSessionPort } from '@/services/session';
+import type { RTDBGameState } from '@/services/gameState';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import RaceTrack from './RaceTrack';
 import QuestionCard from './QuestionCard';
 import CountdownOverlay from './CountdownOverlay';
+import Button from '@/components/ui/Button';
 import GameResults from '@/components/leaderboard/GameResults';
 import ItemQuestionCard from '@/components/games/shared/ItemQuestionCard';
 
@@ -25,6 +19,9 @@ export default function MathRacePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { room, currentPlayer, reset, setRoom } = useRoomStore();
+  const port = useSessionPort(room);
+  /* The game's content could not be loaded (a skill's content pack, offline and never downloaded) */
+  const [loadFailed, setLoadFailed] = useState(false);
 
   const [gameState, setGameState] = useState<RTDBGameState | null>(null);
   const [countdown, setCountdown] = useState(COUNTDOWN_SECONDS);
@@ -45,10 +42,10 @@ export default function MathRacePage() {
   const displayTotal = itemCount ? Math.min(settings?.rounds ?? 10, itemCount) : (settings?.rounds ?? 10);
 
   const handleExit = useCallback(() => {
-    if (isHost && room) deleteRoom(room.id);
+    if (isHost && room) void port.close();
     reset();
     navigate('/');
-  }, [reset, navigate, isHost, room]);
+  }, [reset, navigate, isHost, room, port]);
 
   /* Intercept browser back button — exit cleanly instead of re-mounting */
   useEffect(() => {
@@ -61,7 +58,7 @@ export default function MathRacePage() {
   /* Listen for room changes — handle deletion (host left) and replay (back to waiting) */
   useEffect(() => {
     if (!room) return;
-    const unsub = listenToRoom(room.id, (r) => {
+    const unsub = port.listenRoom((r) => {
       if (!r) { reset(); navigate('/'); return; }
       /* Keep players list fresh (disconnects) so finish checks stay correct */
       setRoom({ ...r, id: room.id });
@@ -75,13 +72,13 @@ export default function MathRacePage() {
   useEffect(() => {
     if (!room || !isHost || !settings) return;
     const playerIds = room.players.map((p) => p.id);
-    initRoomGame(room.id, settings, playerIds);
+    port.initGame(settings, playerIds).catch(() => setLoadFailed(true));
   }, [room?.id, isHost]);
 
   /* ----- STEP 2: Subscribe to game state from RTDB ----- */
   useEffect(() => {
     if (!room) return;
-    const unsubscribe = listenToGameState(room.id, setGameState);
+    const unsubscribe = port.listenGame(setGameState);
     return () => unsubscribe();
   }, [room?.id]);
 
@@ -94,7 +91,7 @@ export default function MathRacePage() {
       if (left <= 0) {
         clearInterval(interval);
         setShowCountdown(false);
-        if (isHost && room) setGamePhase(room.id, 'playing');
+        if (isHost && room) port.setPhase('playing');
         return;
       }
       left -= 1;
@@ -143,7 +140,7 @@ export default function MathRacePage() {
       if (remaining <= 1) {
         clearInterval(timerRef.current!);
         setTimeRemaining(0);
-        if (isHost && room) setGamePhase(room.id, 'finished');
+        if (isHost && room) port.setPhase('finished');
         return;
       }
       remaining -= 1;
@@ -159,9 +156,9 @@ export default function MathRacePage() {
     if (!room || !currentPlayer || !gameState || gameState.phase !== 'playing') return;
     if (localIndex >= displayTotal && !finishedRef.current) {
       finishedRef.current = true;
-      recordPlayerFinished(room.id, currentPlayer.id).then(() => {
+      port.recordPlayerFinished(currentPlayer.id).then(() => {
         /* Any player finishing ends the game for everyone */
-        setGamePhase(room.id, 'finished');
+        port.setPhase('finished');
       });
     }
   }, [localIndex]);
@@ -172,7 +169,7 @@ export default function MathRacePage() {
     if (!room || !currentPlayer || !gameState || gameState.phase !== 'playing') return;
     if (localIndex >= displayTotal && !finishedRef.current) {
       finishedRef.current = true;
-      recordPlayerFinished(room.id, currentPlayer.id);
+      port.recordPlayerFinished(currentPlayer.id);
     }
   }, [localIndex]);
 
@@ -183,7 +180,7 @@ export default function MathRacePage() {
     const finishTimes = gameState.finishTimes ?? {};
     const allFinished = room.players.every((p) => finishTimes[p.id]);
     if (allFinished) {
-      setGamePhase(room.id, 'finished');
+      port.setPhase('finished');
     }
   }, [gameState?.finishTimes, isHost, isSprint]);
 
@@ -198,13 +195,13 @@ export default function MathRacePage() {
       /* Only correct answers count toward score */
       if (answer === currentQ.correctAnswer) {
         const newCount = (gameState.progress[currentPlayer.id] ?? 0) + 1;
-        await recordCorrectAnswer(room.id, currentPlayer.id, newCount);
+        await port.recordCorrectAnswer(currentPlayer.id, newCount);
       }
 
       /* Always advance to the next question */
       setLocalIndex((prev) => prev + 1);
     },
-    [gameState, room, currentPlayer, localIndex],
+    [gameState, room, currentPlayer, localIndex, port],
   );
 
   /* ----- Handle answer to an item (v2): one point per correct item ----- */
@@ -213,11 +210,11 @@ export default function MathRacePage() {
       if (!gameState || !room || !currentPlayer) return;
       if (correct) {
         const newCount = (gameState.progress[currentPlayer.id] ?? 0) + 1;
-        await recordCorrectAnswer(room.id, currentPlayer.id, newCount);
+        await port.recordCorrectAnswer(currentPlayer.id, newCount);
       }
       setLocalIndex((prev) => prev + 1);
     },
-    [gameState, room, currentPlayer],
+    [gameState, room, currentPlayer, port],
   );
 
   /* ----- Navigation guards ----- */
@@ -231,21 +228,23 @@ export default function MathRacePage() {
   const playerDone = localIndex >= displayTotal;
 
   const isSinglePlayer = room.players.length === 1 && !room.classroomSessionId;
+  /* Games played on this device restart in place; only rooms on several phones go back to the lobby */
+  const restartInPlace = isSinglePlayer || port.local;
 
   if (gameState?.phase === 'finished') {
     const resultsTotal = displayTotal;
 
     const handleReplay = async () => {
-      if (isSinglePlayer) {
+      if (restartInPlace) {
         /* Single player: restart game in-place instead of going to lobby */
         setLocalIndex(0);
         finishedRef.current = false;
         setShowCountdown(true);
         setCountdown(COUNTDOWN_SECONDS);
         /* Re-generate questions/items and re-init game state */
-        if (settings) await initRoomGame(room.id, settings, [currentPlayer.id]);
+        if (settings) await port.initGame(settings, [currentPlayer.id]).catch(() => setLoadFailed(true));
       } else {
-        await replayRoom(room.id);
+        await port.replay();
         navigate('/lobby');
       }
     };
@@ -260,7 +259,7 @@ export default function MathRacePage() {
         startedAt={gameState.startedAt}
         isSinglePlayer={isSinglePlayer}
         onPlayAgain={handleReplay}
-        onNewGame={async () => { await removePlayer(room.id, currentPlayer.id); reset(); navigate('/'); }}
+        onNewGame={async () => { await port.leave(currentPlayer.id); reset(); navigate('/'); }}
       />
     );
   }
@@ -268,7 +267,16 @@ export default function MathRacePage() {
   if (!gameState || !(gameState.questions?.length || gameState.items?.length)) {
     return (
       <div className="page">
-        <p className="text-lg text-gray-500">{t('game.getReady')}</p>
+        {loadFailed ? (
+          <div className="card w-full max-w-md text-center" role="alert">
+            <p className="mb-4 text-lg font-bold">{t('game.loadFailed')}</p>
+            <Button variant="blue" size="md" onClick={handleExit}>
+              {t('game.exitGame')}
+            </Button>
+          </div>
+        ) : (
+          <p className="text-lg text-gray-500">{t('game.getReady')}</p>
+        )}
       </div>
     );
   }

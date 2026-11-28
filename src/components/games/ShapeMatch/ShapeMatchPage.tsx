@@ -2,29 +2,19 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
-import { generateShapeQuestion } from '@/services/gameEngine';
-import {
-  initShapeGameState,
-  listenToGameState,
-  recordCorrectAnswer,
-  recordPlayerFinished,
-  setGamePhase,
-  type RTDBGameState,
-} from '@/services/gameSession';
-import { replayRoom, deleteRoom, removePlayer, listenToRoom } from '@/services/roomManager';
+import { useSessionPort } from '@/services/session';
+import type { RTDBGameState } from '@/services/gameState';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import CountdownOverlay from '@/components/games/MathRace/CountdownOverlay';
 import RaceTrack from '@/components/games/MathRace/RaceTrack';
 import ShapeCard from './ShapeCard';
 import GameResults from '@/components/leaderboard/GameResults';
 
-/** Large question pool for Timed Sprint */
-const SPRINT_POOL_SIZE = 100;
-
 export default function ShapeMatchPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { room, currentPlayer, reset, setRoom } = useRoomStore();
+  const port = useSessionPort(room);
 
   const [gameState, setGameState] = useState<RTDBGameState | null>(null);
   const [countdown, setCountdown] = useState(COUNTDOWN_SECONDS);
@@ -42,10 +32,10 @@ export default function ShapeMatchPage() {
   const shapeMode = settings?.shapeMode ?? 'image';
 
   const handleExit = useCallback(() => {
-    if (isHost && room) deleteRoom(room.id);
+    if (isHost && room) void port.close();
     reset();
     navigate('/');
-  }, [reset, navigate, isHost, room]);
+  }, [reset, navigate, isHost, room, port]);
 
   /* Intercept browser back button */
   useEffect(() => {
@@ -58,7 +48,7 @@ export default function ShapeMatchPage() {
   /* Listen for room changes — handle deletion (host left) and replay (back to waiting) */
   useEffect(() => {
     if (!room) return;
-    const unsub = listenToRoom(room.id, (r) => {
+    const unsub = port.listenRoom((r) => {
       if (!r) { reset(); navigate('/'); return; }
       /* Keep players list fresh (disconnects) so finish checks stay correct */
       setRoom({ ...r, id: room.id });
@@ -70,18 +60,14 @@ export default function ShapeMatchPage() {
   /* ----- STEP 1: Host generates questions ----- */
   useEffect(() => {
     if (!room || !isHost || !settings) return;
-    const count = isSprint ? SPRINT_POOL_SIZE : totalQuestions;
-    const questions = Array.from({ length: count }, () =>
-      generateShapeQuestion(settings.difficulty),
-    );
     const playerIds = room.players.map((p) => p.id);
-    initShapeGameState(room.id, questions, playerIds);
+    void port.initGame(settings, playerIds);
   }, [room?.id, isHost]);
 
   /* ----- STEP 2: Subscribe to game state ----- */
   useEffect(() => {
     if (!room) return;
-    const unsub = listenToGameState(room.id, setGameState);
+    const unsub = port.listenGame(setGameState);
     return () => unsub();
   }, [room?.id]);
 
@@ -94,7 +80,7 @@ export default function ShapeMatchPage() {
       if (left <= 0) {
         clearInterval(interval);
         setShowCountdown(false);
-        if (isHost && room) setGamePhase(room.id, 'playing');
+        if (isHost && room) port.setPhase('playing');
         return;
       }
       left -= 1;
@@ -142,7 +128,7 @@ export default function ShapeMatchPage() {
       if (remaining <= 1) {
         clearInterval(timerRef.current!);
         setTimeRemaining(0);
-        if (isHost && room) setGamePhase(room.id, 'finished');
+        if (isHost && room) port.setPhase('finished');
         return;
       }
       remaining -= 1;
@@ -158,8 +144,8 @@ export default function ShapeMatchPage() {
     if (!room || !currentPlayer || !gameState || gameState.phase !== 'playing') return;
     if (localIndex >= totalQuestions && !finishedRef.current) {
       finishedRef.current = true;
-      recordPlayerFinished(room.id, currentPlayer.id).then(() => {
-        setGamePhase(room.id, 'finished');
+      port.recordPlayerFinished(currentPlayer.id).then(() => {
+        port.setPhase('finished');
       });
     }
   }, [localIndex]);
@@ -170,7 +156,7 @@ export default function ShapeMatchPage() {
     if (!room || !currentPlayer || !gameState || gameState.phase !== 'playing') return;
     if (localIndex >= totalQuestions && !finishedRef.current) {
       finishedRef.current = true;
-      recordPlayerFinished(room.id, currentPlayer.id);
+      port.recordPlayerFinished(currentPlayer.id);
     }
   }, [localIndex]);
 
@@ -181,7 +167,7 @@ export default function ShapeMatchPage() {
     const finishTimes = gameState.finishTimes ?? {};
     const allFinished = room.players.every((p) => finishTimes[p.id]);
     if (allFinished) {
-      setGamePhase(room.id, 'finished');
+      port.setPhase('finished');
     }
   }, [gameState?.finishTimes, isHost, isSprint]);
 
@@ -190,11 +176,11 @@ export default function ShapeMatchPage() {
       if (!gameState || !room || !currentPlayer) return;
       if (correct) {
         const newCount = (gameState.progress[currentPlayer.id] ?? 0) + 1;
-        await recordCorrectAnswer(room.id, currentPlayer.id, newCount);
+        await port.recordCorrectAnswer(currentPlayer.id, newCount);
       }
       setLocalIndex((prev) => prev + 1);
     },
-    [gameState, room, currentPlayer],
+    [gameState, room, currentPlayer, port],
   );
 
   if (!room || !currentPlayer) {
@@ -206,24 +192,18 @@ export default function ShapeMatchPage() {
   const playerDone = localIndex >= totalQuestions;
 
   const isSinglePlayer = room.players.length === 1 && !room.classroomSessionId;
+  const restartInPlace = isSinglePlayer || port.local;
 
   if (gameState?.phase === 'finished') {
     const handleReplay = async () => {
-      if (isSinglePlayer) {
+      if (restartInPlace) {
         setLocalIndex(0);
         finishedRef.current = false;
         setShowCountdown(true);
         setCountdown(COUNTDOWN_SECONDS);
-        if (settings) {
-          const count = isSprint ? 100 : totalQuestions;
-          const newQs = [];
-          for (let i = 0; i < count; i++) {
-            newQs.push(generateShapeQuestion(settings.difficulty));
-          }
-          await initShapeGameState(room.id, newQs, [currentPlayer.id]);
-        }
+        if (settings) await port.initGame(settings, [currentPlayer.id]);
       } else {
-        await replayRoom(room.id);
+        await port.replay();
         navigate('/lobby');
       }
     };
@@ -238,7 +218,7 @@ export default function ShapeMatchPage() {
         startedAt={gameState.startedAt}
         isSinglePlayer={isSinglePlayer}
         onPlayAgain={handleReplay}
-        onNewGame={async () => { await removePlayer(room.id, currentPlayer.id); reset(); navigate('/'); }}
+        onNewGame={async () => { await port.leave(currentPlayer.id); reset(); navigate('/'); }}
       />
     );
   }

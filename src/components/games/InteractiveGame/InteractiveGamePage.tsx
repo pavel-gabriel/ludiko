@@ -3,17 +3,11 @@ import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRoomStore } from '@/store/roomStore';
 import { useAuthStore } from '@/store/authStore';
-import { initRoomGame } from '@/services/roomGame';
-import {
-  listenToGameState,
-  recordCorrectAnswer,
-  recordPlayerFinished,
-  setGamePhase,
-  type RTDBGameState,
-} from '@/services/gameSession';
-import { deleteRoom } from '@/services/roomManager';
+import { useSessionPort } from '@/services/session';
+import type { RTDBGameState } from '@/services/gameState';
 import { COUNTDOWN_SECONDS } from '@/utils/constants';
 import CountdownOverlay from '@/components/games/MathRace/CountdownOverlay';
+import Button from '@/components/ui/Button';
 import GameResults from '@/components/leaderboard/GameResults';
 import InteractiveQuestionPanel from './InteractiveQuestionPanel';
 import InteractiveShapePanel from './InteractiveShapePanel';
@@ -25,6 +19,9 @@ export default function InteractiveGamePage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { room, currentPlayer, reset } = useRoomStore();
+  const port = useSessionPort(room);
+  /* The game's content could not be loaded (a skill's content pack, offline and never downloaded) */
+  const [loadFailed, setLoadFailed] = useState(false);
   const { uid } = useAuthStore();
 
   const [gameState, setGameState] = useState<RTDBGameState | null>(null);
@@ -61,10 +58,10 @@ export default function InteractiveGamePage() {
   const exitTarget = uid ? '/teacher' : '/';
 
   const handleExit = useCallback(() => {
-    if (room) deleteRoom(room.id);
+    if (room) void port.close();
     reset();
     navigate(exitTarget);
-  }, [reset, navigate, room, exitTarget]);
+  }, [reset, navigate, room, exitTarget, port]);
 
   /* Intercept browser back button */
   useEffect(() => {
@@ -78,13 +75,13 @@ export default function InteractiveGamePage() {
   useEffect(() => {
     if (!room || !settings) return;
     const playerIds = room.players.map((p) => p.id);
-    initRoomGame(room.id, settings, playerIds);
+    port.initGame(settings, playerIds).catch(() => setLoadFailed(true));
   }, [room?.id]);
 
   /* Subscribe to game state */
   useEffect(() => {
     if (!room) return;
-    const unsubscribe = listenToGameState(room.id, setGameState);
+    const unsubscribe = port.listenGame(setGameState);
     return () => unsubscribe();
   }, [room?.id]);
 
@@ -97,7 +94,7 @@ export default function InteractiveGamePage() {
       if (left <= 0) {
         clearInterval(interval);
         setShowCountdown(false);
-        if (room) setGamePhase(room.id, 'playing');
+        if (room) port.setPhase('playing');
         return;
       }
       left -= 1;
@@ -119,7 +116,7 @@ export default function InteractiveGamePage() {
         if (globalLeft <= 1) {
           clearInterval(timerRef.current!);
           setTimeRemaining(0);
-          if (room) setGamePhase(room.id, 'finished');
+          if (room) port.setPhase('finished');
           return;
         }
         globalLeft -= 1;
@@ -160,7 +157,7 @@ export default function InteractiveGamePage() {
     const done = isMemory ? memoryScore1 >= displayTotal : localIndex1 >= displayTotal;
     if (done && !finished1Ref.current) {
       finished1Ref.current = true;
-      recordPlayerFinished(room.id, player1.id);
+      port.recordPlayerFinished(player1.id);
     }
   }, [localIndex1, memoryScore1]);
 
@@ -170,7 +167,7 @@ export default function InteractiveGamePage() {
     const done = isMemory ? memoryScore2 >= displayTotal : localIndex2 >= displayTotal;
     if (done && !finished2Ref.current) {
       finished2Ref.current = true;
-      recordPlayerFinished(room.id, player2.id);
+      port.recordPlayerFinished(player2.id);
     }
   }, [localIndex2, memoryScore2]);
 
@@ -178,7 +175,7 @@ export default function InteractiveGamePage() {
   useEffect(() => {
     if (!room || !gameState || gameState.phase !== 'playing') return;
     if (finished1Ref.current || finished2Ref.current) {
-      setGamePhase(room.id, 'finished');
+      port.setPhase('finished');
     }
   }, [localIndex1, localIndex2, memoryScore1, memoryScore2, gameState?.phase]);
 
@@ -190,11 +187,11 @@ export default function InteractiveGamePage() {
       if (!currentQ) return;
       if (answer === currentQ.correctAnswer) {
         const newCount = (gameState.progress[player1.id] ?? 0) + 1;
-        await recordCorrectAnswer(room.id, player1.id, newCount);
+        await port.recordCorrectAnswer(player1.id, newCount);
       }
       setLocalIndex1((prev) => prev + 1);
     },
-    [gameState, room, player1, localIndex1],
+    [gameState, room, player1, localIndex1, port],
   );
 
   const handleMathAnswer2 = useCallback(
@@ -204,11 +201,11 @@ export default function InteractiveGamePage() {
       if (!currentQ) return;
       if (answer === currentQ.correctAnswer) {
         const newCount = (gameState.progress[player2.id] ?? 0) + 1;
-        await recordCorrectAnswer(room.id, player2.id, newCount);
+        await port.recordCorrectAnswer(player2.id, newCount);
       }
       setLocalIndex2((prev) => prev + 1);
     },
-    [gameState, room, player2, localIndex2],
+    [gameState, room, player2, localIndex2, port],
   );
 
   /* Item answer handlers (v2): one point per correct item */
@@ -218,11 +215,11 @@ export default function InteractiveGamePage() {
       if (!room || !player || !gameState) return;
       if (correct) {
         const newCount = (gameState.progress[player.id] ?? 0) + 1;
-        await recordCorrectAnswer(room.id, player.id, newCount);
+        await port.recordCorrectAnswer(player.id, newCount);
       }
       (playerNo === 1 ? setLocalIndex1 : setLocalIndex2)((prev) => prev + 1);
     },
-    [room, player1, player2, gameState],
+    [room, player1, player2, gameState, port],
   );
 
   /* Shape answer handlers */
@@ -231,11 +228,11 @@ export default function InteractiveGamePage() {
       if (!room || !player1 || !gameState) return;
       if (correct) {
         const newCount = (gameState.progress[player1.id] ?? 0) + 1;
-        await recordCorrectAnswer(room.id, player1.id, newCount);
+        await port.recordCorrectAnswer(player1.id, newCount);
       }
       setLocalIndex1((prev) => prev + 1);
     },
-    [room, player1, gameState],
+    [room, player1, gameState, port],
   );
 
   const handleShapeAnswer2 = useCallback(
@@ -243,27 +240,27 @@ export default function InteractiveGamePage() {
       if (!room || !player2 || !gameState) return;
       if (correct) {
         const newCount = (gameState.progress[player2.id] ?? 0) + 1;
-        await recordCorrectAnswer(room.id, player2.id, newCount);
+        await port.recordCorrectAnswer(player2.id, newCount);
       }
       setLocalIndex2((prev) => prev + 1);
     },
-    [room, player2, gameState],
+    [room, player2, gameState, port],
   );
 
   /* Memory match handlers */
   const handleMemoryMatch1 = useCallback(async () => {
     if (!room || !player1 || !gameState) return;
     const newCount = (gameState.progress[player1.id] ?? 0) + 1;
-    await recordCorrectAnswer(room.id, player1.id, newCount);
+    await port.recordCorrectAnswer(player1.id, newCount);
     setMemoryScore1((prev) => prev + 1);
-  }, [room, player1, gameState]);
+  }, [room, player1, gameState, port]);
 
   const handleMemoryMatch2 = useCallback(async () => {
     if (!room || !player2 || !gameState) return;
     const newCount = (gameState.progress[player2.id] ?? 0) + 1;
-    await recordCorrectAnswer(room.id, player2.id, newCount);
+    await port.recordCorrectAnswer(player2.id, newCount);
     setMemoryScore2((prev) => prev + 1);
-  }, [room, player2, gameState]);
+  }, [room, player2, gameState, port]);
 
   /* Navigation guards */
   if (!room || !currentPlayer || !player1 || !player2) {
@@ -284,7 +281,7 @@ export default function InteractiveGamePage() {
     setShowCountdown(true);
     setCountdown(COUNTDOWN_SECONDS);
 
-    await initRoomGame(room.id, settings, room.players.map((p) => p.id));
+    await port.initGame(settings, room.players.map((p) => p.id)).catch(() => setLoadFailed(true));
   };
 
   if (gameState?.phase === 'finished') {
@@ -297,7 +294,7 @@ export default function InteractiveGamePage() {
         gameMode="raceToFinish"
         startedAt={gameState.startedAt}
         onPlayAgain={handleReplay}
-        onNewGame={() => { if (room) deleteRoom(room.id); reset(); navigate(exitTarget); }}
+        onNewGame={() => { if (room) void port.close(); reset(); navigate(exitTarget); }}
       />
     );
   }
@@ -314,7 +311,16 @@ export default function InteractiveGamePage() {
   if (!isReady) {
     return (
       <div className="page">
-        <p className="text-lg text-gray-500">{t('game.getReady')}</p>
+        {loadFailed ? (
+          <div className="card w-full max-w-md text-center" role="alert">
+            <p className="mb-4 text-lg font-bold">{t('game.loadFailed')}</p>
+            <Button variant="blue" size="md" onClick={handleExit}>
+              {t('game.exitGame')}
+            </Button>
+          </div>
+        ) : (
+          <p className="text-lg text-gray-500">{t('game.getReady')}</p>
+        )}
       </div>
     );
   }
