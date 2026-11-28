@@ -17,8 +17,11 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    // Romanian by default on first load, whatever the browser language. English only after the user picks it
+    // (the choice is remembered under its own key; the old auto-detected `i18nextLng` value is ignored on purpose).
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['localStorage'],
+      lookupLocalStorage: 'ludiko-lang',
       caches: ['localStorage'],
     },
   });
