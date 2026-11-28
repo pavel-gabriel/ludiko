@@ -2,7 +2,7 @@
 
 > Kept up to date by Claude at the end of each work wave. Tick items as you finish them
 > (`- [x]`), or tell Claude in chat and it will tick them for you.
-> Last updated: 2026-11-27 (store release kit added).
+> Last updated: 2026-11-28 (security review: section "🔒 Security", details in `docs/SECURITY.md`).
 
 ## ⚙️ Automate Firebase (do this once, then the rule deploys below happen by themselves)
 
@@ -25,6 +25,60 @@ on demand. It only needs one more secret.
       **`cleanup-rooms`**.
 - From now on: any change to `firestore.rules` / `database.rules.json` merged to `main` is deployed automatically
   (if the secret is missing the job just warns and skips).
+
+## 🔒 Security (from the security review, `docs/SECURITY.md`)
+
+Already fixed in code: rules tightening (push endpoints, teacher profiles, report size, RTDB rooms), the CSP and
+referrer meta tags, the `/dev/family` wipe link, push-SW scope, workflow permissions, non-breaking dependency
+updates. Rules changes deploy automatically when merged to `main` (job `firebase-rules`). Check that it ran, then
+turn reminders on and off once on a real phone (Chrome + Firefox if possible).
+
+**Stop other sites and scripts from using our Firebase (most important):**
+- [ ] **Firebase App Check** (console → App Check). Register the web app with **reCAPTCHA Enterprise**
+      (and later the Android TWA with **Play Integrity**). Start in *monitor* mode, watch the metrics for a week,
+      then **Enforce** for Cloud Firestore and Realtime Database. This also needs a small code change
+      (`initializeAppCheck` in `src/services/firebase.ts`) and two CSP additions (`https://www.google.com/recaptcha/`
+      and `https://www.gstatic.com/recaptcha/` in `script-src` and `frame-src`); ask Claude when ready. Mention
+      reCAPTCHA in the privacy policy (it sends device signals to Google; children's app).
+- [ ] **Restrict the browser API key** (Google Cloud console → APIs & Services → Credentials → the "Browser key"
+      used in `VITE_FIREBASE_API_KEY`):
+      *Application restrictions* → **HTTP referrers**: `https://www.ludiko.ro/*`, `https://ludiko.ro/*`,
+      `https://ludiko-2e197.firebaseapp.com/*` (plus `http://localhost:5173/*` only if you develop locally).
+      *API restrictions* → only **Identity Toolkit API**, **Token Service API**, **Cloud Firestore API**
+      (add others only if something breaks). Then test sign-in, a family sync and a multiplayer room on the live site.
+- [ ] **Auth → Settings → Authorized domains:** keep only `www.ludiko.ro`, `ludiko.ro`, `ludiko-2e197.firebaseapp.com`
+      (and `localhost` if you develop locally); remove old ones (e.g. `*.github.io`).
+- [ ] **Auth → Settings:** turn on **Email enumeration protection**; set a **password policy** (min. 8 chars);
+      lower the **sign-up quota** per IP (anonymous sign-ups) to what a school class needs (e.g. 100/hour).
+- [ ] **Budget alerts** (Google Cloud → Billing → Budgets & alerts) at e.g. 5 € and 20 € / month, so abuse is noticed.
+
+**GitHub:**
+- [ ] **Branch protection on `main`** (Settings → Branches): require a pull request and the **Tests** checks
+      (`test`, `rules`). Reason: `main` auto-deploys the site **and the security rules**.
+- [ ] **2FA** on GitHub, Google (Firebase/Cloud), the domain registrar (plus registrar lock), Play Console and Apple Developer.
+- [ ] **Least-privilege service accounts:** `FIREBASE_SERVICE_ACCOUNT` (reminders) = **Cloud Datastore User** only;
+      give the maintenance job its own account instead of the deploy one; rotate JSON keys yearly
+      (or switch to keyless *Workload Identity Federation*, ask Claude).
+- [ ] Optional: enable **Dependabot** (security updates + `github-actions` version updates) and Secret scanning
+      push protection (Settings → Code security).
+
+**Product decisions (tell Claude which you want):**
+- [ ] **Stronger classroom codes (S-04):** v1 student codes `LION-42` have only 2,700 values per session and a child in the
+      room can find classmates' codes. Options: 4-digit codes (`LION-4271`), or 6-char codes like the class join
+      codes, and bind each student result to the device that first used the code.
+- [ ] Hide the remaining read-only `/dev/*` preview pages in production too (optional).
+- [ ] Planned major upgrades (they clear the remaining audit findings): `firebase` 12, `i18next` 26, `vitest` 4+.
+
+**Protect the app and brand against cloning (see "Can someone steal our app?" in `docs/SECURITY.md`):**
+- [ ] The repo is **public**. To make it private and keep GitHub Pages you need a **paid GitHub plan** (Pro/Team).
+      Free alternative: private source repo + public repo with only the built site, or Firebase Hosting / Cloudflare
+      Pages (these also allow real security headers such as anti-clickjacking).
+- [ ] `LICENSE`: write the **real legal owner** (your name or company) instead of just "Ludiko"; ask a lawyer to check.
+- [ ] **Register the trademark "Ludiko"** (word and logo) at **OSIM** (classes 9, 41, maybe 42) or EUIPO (EU-wide).
+- [ ] Publish the store apps only from **your own** developer accounts; keep the Android upload key and Play App
+      Signing key safe; fill in `assetlinks.json` with the real fingerprint.
+- [ ] Ask Claude to add a few **canary items** (unique invented details) to the content, and keep their list private.
+      They prove copying.
 
 ## 📱 App stores (Play Store + App Store): everything preparable is in `store/`
 

@@ -155,5 +155,5 @@ fails if the code is taken, and a new one is drawn).
   (`buildClassProgress`), `heatmap.ts` (pure aggregation, CSV), `assignmentCache.ts`, `api.ts` (lazy access and
   test/fixture override), `dev/` (fixture for `/dev/classroom`).
 - Routes: `/teacher/classes`, `/teacher/classes/:classId`, `/teacher/classes/:classId/codes`,
-  `/learn/class/:assignmentId`, `/dev/classroom` (all lazy).
+  `/learn/class/:assignmentId`, `/dev/classroom` (all lazy; `/dev/classroom` exists only in the Vite dev server, docs/SECURITY.md S-08).
 - i18n: top-level `classroom` namespace in `ro.json` and `en.json`.

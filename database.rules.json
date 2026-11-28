@@ -7,7 +7,7 @@
         device that knows its (unguessable, 20 character) id; the id is found through the exact-key index
         roomCodes/{CODE}.
       - The host (uid == hostId) controls settings, status and game. A player writes only their own player entry
-        (key == auth.uid, or `{uid}_2` for a second local player such as the duel) and their own progress and
+        (key == auth.uid, or exactly `{uid}_2` for a second local player such as the duel) and their own progress and
         finish time. A guest may also set the status back to "waiting" (replay), finish the game and clear
         the game state, nothing else.
       - Rooms can only be joined for 6 hours after creation (createdAt) and while the status is "waiting".
@@ -37,7 +37,8 @@
           ".validate": "newData.isString() && (newData.val() == 'waiting' || newData.val() == 'playing' || newData.val() == 'finished')"
         },
         "createdAt": {
-          ".validate": "newData.isNumber()"
+          /* at most a day ahead of the server clock (tolerates wrong device clocks), so a room cannot stay joinable forever */
+          ".validate": "newData.isNumber() && newData.val() <= now + 86400000"
         },
         "settings": {
           ".validate": "newData.hasChildren(['gameType', 'gameMode', 'difficulty', 'rounds', 'timePerRound'])",
@@ -67,7 +68,7 @@
         "players": {
           /* a player writes only their own entry: key == uid (or `{uid}_2`) */
           "$playerId": {
-            ".write": "auth != null && ($playerId == auth.uid || $playerId.beginsWith(auth.uid + '_')) && (!newData.exists() || newData.child('isHost').val() == false) && (data.exists() || (root.child('rooms').child($roomId).child('status').val() == 'waiting' && root.child('rooms').child($roomId).child('createdAt').val() > now - 21600000))",
+            ".write": "auth != null && ($playerId == auth.uid || $playerId == auth.uid + '_2') && (!newData.exists() || newData.child('isHost').val() == false) && (data.exists() || (root.child('rooms').child($roomId).child('status').val() == 'waiting' && root.child('rooms').child($roomId).child('createdAt').val() > now - 21600000))",
             ".validate": "newData.hasChildren(['id', 'name', 'avatar', 'score', 'isHost', 'isReady']) && newData.child('id').val() == $playerId",
             "id": { ".validate": "newData.isString()" },
             "name": { ".validate": "newData.isString() && newData.val().length >= 1 && newData.val().length <= 30" },
@@ -89,13 +90,13 @@
           },
           "progress": {
             "$playerId": {
-              ".write": "auth != null && ($playerId == auth.uid || $playerId.beginsWith(auth.uid + '_')) && root.child('rooms').child($roomId).child('players').child($playerId).exists()",
+              ".write": "auth != null && ($playerId == auth.uid || $playerId == auth.uid + '_2') && root.child('rooms').child($roomId).child('players').child($playerId).exists()",
               ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1000"
             }
           },
           "finishTimes": {
             "$playerId": {
-              ".write": "auth != null && ($playerId == auth.uid || $playerId.beginsWith(auth.uid + '_')) && root.child('rooms').child($roomId).child('players').child($playerId).exists()",
+              ".write": "auth != null && ($playerId == auth.uid || $playerId == auth.uid + '_2') && root.child('rooms').child($roomId).child('players').child($playerId).exists()",
               ".validate": "newData.isNumber()"
             }
           }
@@ -116,7 +117,7 @@
         ".validate": "newData.hasChildren(['roomId', 'hostId', 'createdAt'])",
         "roomId": { ".validate": "newData.isString() && newData.val().length >= 8 && newData.val().length <= 40" },
         "hostId": { ".validate": "newData.isString() && newData.val() == auth.uid" },
-        "createdAt": { ".validate": "newData.isNumber()" },
+        "createdAt": { ".validate": "newData.isNumber() && newData.val() <= now + 86400000" },
         "$other": { ".validate": false }
       }
     }

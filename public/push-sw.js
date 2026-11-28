@@ -7,7 +7,9 @@
 function resolveInScope(url) {
   var path = typeof url === 'string' && url ? url : 'learn';
   try {
-    return new URL(path.replace(/^\/+/, ''), self.registration.scope).href;
+    var href = new URL(path.replace(/^\/+/, ''), self.registration.scope).href;
+    // never open another site, even if a payload carries an absolute URL (docs/SECURITY.md S-12)
+    return href.indexOf(self.registration.scope) === 0 ? href : self.registration.scope;
   } catch (e) {
     return self.registration.scope;
   }

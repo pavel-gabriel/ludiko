@@ -58,8 +58,10 @@ const ClassesPage = lazy(() => import('@/components/teacher/classes/ClassesPage'
 const ClassPage = lazy(() => import('@/components/teacher/classes/ClassPage'));
 const ClassCodesPage = lazy(() => import('@/components/teacher/classes/ClassCodesPage'));
 const ClassAssignmentPage = lazy(() => import('@/ui/learn/ClassAssignmentPage'));
-const DevClassroomPage = lazy(() => import('@/classroom/dev/DevClassroomPage'));
-const DevFamilyPage = lazy(() => import('@/family/dev/DevFamilyPage'));
+/* Fixture pages that swap in fake APIs and REPLACE this device's local profiles: dev server only, never in the
+   production build (a shared link to them would wipe a child's progress; docs/SECURITY.md S-08). */
+const DevClassroomPage = import.meta.env.DEV ? lazy(() => import('@/classroom/dev/DevClassroomPage')) : null;
+const DevFamilyPage = import.meta.env.DEV ? lazy(() => import('@/family/dev/DevFamilyPage')) : null;
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -102,8 +104,8 @@ export default function AppRoutes() {
           {/* Dev previews (Phase 0) */}
           <Route path="/dev/learn" element={<LearnPreviewPage />} />
           <Route path="/dev/mascot" element={<MascotPreviewPage />} />
-          <Route path="/dev/classroom" element={<DevClassroomPage />} />
-          <Route path="/dev/family" element={<DevFamilyPage />} />
+          {DevClassroomPage && <Route path="/dev/classroom" element={<DevClassroomPage />} />}
+          {DevFamilyPage && <Route path="/dev/family" element={<DevFamilyPage />} />}
           <Route path="/dev/frames" element={<FramesPreviewPage />} />
           <Route path="/dev/items" element={<ItemsPreviewPage />} />
           <Route path="/singleplayer" element={<SinglePlayerPage />} />
